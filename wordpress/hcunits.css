@@ -1,0 +1,77 @@
+div.setMenu {
+	overflow-x: auto;
+	white-space: nowrap;
+	margin-right: 50px;
+}
+
+div.setItem {
+	border-bottom: 2px solid red;
+	width: 50px;
+	padding:2px;
+	text-align:center;
+	float:left;
+	color: #000000;
+	border: 1px solid #000000;
+	border-radius: 5px;
+	background-color: #FFFFFF;
+	margin: 1px;
+}
+
+img.setIcon {
+	width: 32px;
+	height: 32px;
+	margin:3px;
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.setName {
+	font-size:10px;
+	font-weight:bold;
+}
+
+div.teamOwner {
+	font-size:18px;
+}
+
+input.teamInput {
+	padding: 0px;
+	border: 1px solid transparent;
+}
+
+input#teamName {
+	font-size:24px;
+}
+
+select.teamSelect {
+	padding: 0px;
+	border: 1px solid transparent;
+	font-size:12px;
+}
+
+div.quickSearchContainer {
+	position: relative;
+	width: 200px;
+	border: 1px solid #000000;
+	border-radius: 5px;
+	background-color: #FFFFFF;
+}
+
+input.quickSearchInput {
+	width: 160px;
+	border: none;
+}
+
+input.quickSearchInput:focus {
+	border: none;
+}
+
+button.quickSearchButton {
+	padding: 14px 10px;
+	float: right;
+	border: none;
+	top: 2px;
+	right: 2px;
+	border-radius: 5px;
+}

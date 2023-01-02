@@ -1,0 +1,111 @@
+# Commands to connect to the wordpress MySQL database
+mysql wordpress -u root -p
+
+
+# Delete the 'team_abilities' table
+DROP TABLE wp_team_abilities;
+
+# Create the units table
+CREATE TABLE wp_units (
+  -- The ID of the unit.
+  unit_id TEXT(16) NOT NULL PRIMARY KEY,
+
+  -- The plain text name of the unit.
+  name TEXT(128) NOT NULL,
+
+  -- The “real name” of the unit.
+  real_name VARCHAR(128) NOT NULL,
+
+  -- The set to which this unit belongs.
+  set_id VARCHAR(16) NOT NULL,
+  
+  -- The point value of the unit.
+  points SMALL_INT NOT NULL,
+
+  -- The rarity of the unit.
+  rarity ENUM('common', 'uncommon', 'rare', 'super_rare', 'chase', 'ultra_chase'),
+
+  -- Whether the unit is legal for modern tournament play.
+  age ENUM('modern', 'golden') NOT NULL,
+
+  -- The type of the unit.
+  type ENUM('character', 'object', 'map', 'battlefield_condition', 'event_dial', 'resource', 'equipment', 'terrain', 'bystander', 'tarot_card', 'relic') NOT NULL,
+
+  -- The team abilities of the unit.
+  team_abilities JSON,
+
+  -- The range value of the unit.
+  range TINY_INT,
+
+  -- The number of targets (ie. lightning bolts) of the unit.
+  targets TINY_INT,
+
+  -- The dimensions of the unit base.
+  dimensions ENUM('1x1', '1x2', '2x2', '2x4', '3x6'),
+
+  -- The keywords of the unit.
+  keywords JSON,
+
+  -- The dial.
+  speed_type ENUM('boot', 'wing', 'dolphin'),
+  speed_sub_type ENUM('transporter'),
+  attack_type ENUM('fist', 'autonomous', 'sharpshooter', 'duo', 'team'),
+  defense_type ENUM('shield', 'indomitable', 'vehicle'),
+  damage_type ENUM('starburst', 'giant', 'fist', 'tiny'),
+  dial_start TINYINT,
+  dial_size TINYINT,
+  dial JSON,
+
+  speed_special_power TEXT(1024),
+  attack_special_power TEXT(1024),
+  defense_special_power TEXT(1024),
+  damage_special_power TEXT(1024),
+  trait_0 TEXT(1024),
+  trait_1 TEXT(1024),
+  trait_2 TEXT(1024),
+);
+
+CREATE TABLE wp_sets (
+  id VARCHAR(16) NOT NULL PRIMARY KEY,
+  name VARCHAR(128) NOT NULL,
+  release_date DATE NOT NULL,
+  universe ENUM('dc', 'marvel', 'indy', 'other')
+);
+
+LOAD XML LOCAL INFILE 'hcunits/sets.xml'
+  REPLACE
+  INTO TABLE wp_sets
+  ROWS IDENTIFIED BY '<row>';
+
+CREATE TABLE wp_team_abilities (
+  name VARCHAR(32) NOT NULL PRIMARY KEY,
+  universe ENUM('dc', 'marvel', 'star_trek', 'universal', 'other'),
+  rules TEXT(1024),
+  copyable BOOL,
+  wildcard BOOL
+);
+
+CREATE TABLE wp_keywords (
+  keyword VARCHAR(64) NOT NULL PRIMARY KEY,
+  type ENUM('named', 'generic')
+);
+
+Things in team build:
+Main force
+Sideline
+Objects
+Equipment
+Maps
+Location
+Tarot Cards
+Terrain
+ATAs
+
+Rules:
+Less than or equal to point limit
+0 or 1 Prime
+0 to 3 Objects
+1 to 3 Maps
+Equipment assigned to characters
+Theme team checks
+Sideline has Designated Effects
