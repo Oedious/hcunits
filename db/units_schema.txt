@@ -60,8 +60,13 @@ CREATE TABLE wp_units (
   defense_special_power TEXT(1024),
   damage_special_power TEXT(1024),
 
-  improved_movement SET('elevated', 'hindering', 'blocking', 'outdoor_blocking', 'destroy_blocking', 'characters', 'move_through'),
-  improved_targeting SET('elevated', 'hindering', 'blocking', 'destroy_blocking', 'characters', 'adjacent'),
+  -- Should be in the form of an array of strings, with values from:
+  -- "Elevated", "Hindering", "Blocking", "Outdoor Blocking", "Destroy Blocking", "Characters", "Move Through".
+  improved_movement JSON,
+
+  -- Should be in the form of an array of strings, with values from:
+  -- "Elevated", "Hindering", "Blocking", "Destroy Blocking", "Characters", "Adjacent"
+  improved_targeting JSON,
 
   -- The range value of the unit.
   unit_range TINYINT,
