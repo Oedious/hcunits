@@ -1,105 +1,728 @@
 <resultset>
   <row>
     <unit_id>av4e001</unit_id>
-    <name>Captain America</name>
-    <real_name>Steve Rogers</real_name>
     <set_id>av4e</set_id>
-    <points>90</points>
+    <collector_number>001</collector_number>
+    <name>Captain America</name>
+    <type>character</type>
+    <point_value>90</point_value>
     <rarity>common</rarity>
     <age>modern</age>
-    <type>character</type>
-    <team_abilities>{["Avengers"]}</team_abilities>
+    <real_name>Steve Rogers</real_name>
+    <team_abilities>["Avengers"]</team_abilities>
     <unit_range>5</unit_range>
     <targets>2</targets>
     <dimensions>1x1</dimensions>
-    <keywords>{["Avengers", "Howling Commandos", "Invaders", "Past", "S.H.I.E.L.D.", "Soldier"]}</keywords>
+    <keywords>["Avengers", "Howling Commandos", "Invaders", "Past", "S.H.I.E.L.D.", "Soldier"]</keywords>
     <speed_type>boot</speed_type>
     <attack_type>fist</attack_type>
     <defense_type>indomitable</defense_type>
     <damage_type>starburst</damage_type>
     <dial_start>1</dial_start>
     <dial_size>12</dial_size>
-    <dial>{[{
-        "speed_color": "gray",
+    <dial>[{
+        "speed_power": "Running Shot",
         "speed_value": 10,
         "attack_value": 11,
-        "defense_color": "orange",
+        "defense_power": "Toughness",
         "defense_value": 18,
-        "damage_color": "black",
+        "damage_power": "Outwit",
         "damage_value": 3
       },
       {
-        "speed_color": "gray",
+        "speed_power": "Running Shot",
         "speed_value": 8,
         "attack_value": 11,
-        "defense_color": "orange",
+        "defense_power": "Toughness",
         "defense_value": 18,
-        "damage_color": "black",
+        "damage_power": "Outwit",
         "damage_value": 3
       },
       {
-        "speed_color": "gray",
+        "speed_power": "Running Shot",
         "speed_value": 8,
         "attack_value": 11,
-        "defense_color": "orange",
+        "defense_power": "Toughness",
         "defense_value": 17,
-        "damage_color": "black",
+        "damage_power": "Outwit",
         "damage_value": 3
       },
       {
-        "speed_color": "gray",
+        "speed_power": "Running Shot",
         "speed_value": 8,
         "attack_value": 11,
-        "defense_color": "orange",
+        "defense_power": "Toughness",
         "defense_value": 17,
-        "damage_color": "black",
+        "damage_power": "Outwit",
         "damage_value": 3
       },
       {
-        "speed_color": "dark_green",
+        "speed_power": "Charge",
         "speed_value": 8,
-        "attack_color": "light_green",
+        "attack_power": "Quake",
         "attack_value": 11,
-        "defense_color": "light_green",
-        "defense_value": 17,
-        "damage_value": 3
-      },
-      {
-        "speed_color": "dark_green",
-        "speed_value": 8,
-        "attack_color": "light_green",
-        "attack_value": 11,
-        "defense_color": "light_green",
+        "defense_power": "Combat Reflexes",
         "defense_value": 17,
         "damage_value": 3
       },
       {
-        "speed_color": "dark_green",
+        "speed_power": "Charge",
         "speed_value": 8,
-        "attack_color": "light_green",
+        "attack_power": "Quake",
         "attack_value": 11,
-        "defense_color": "light_green",
+        "defense_power": "Combat Reflexes",
         "defense_value": 17,
         "damage_value": 3
       },
       {
-        "speed_color": "red",
+        "speed_power": "Charge",
+        "speed_value": 8,
+        "attack_power": "Quake",
+        "attack_value": 11,
+        "defense_power": "Combat Reflexes",
+        "defense_value": 17,
+        "damage_value": 3
+      },
+      {
+        "speed_power": "Flurry",
         "speed_value": 8,
         "attack_value": 10,
-        "defense_color": "purple",
+        "defense_power": "Willpower",
         "defense_value": 17,
-        "damage_color": "purple",
+        "damage_power": "Close Combat Expert",
         "damage_value": 2
       },
       {
-        "speed_color": "red",
+        "speed_power": "Flurry",
         "speed_value": 8,
         "attack_value": 10,
-        "defense_color": "purple",
+        "defense_power": "Willpower",
         "defense_value": 16,
-        "damage_color": "purple",
+        "damage_power": "Close Combat Expert",
         "damage_value": 2
-      }
-    ]}
+      }]
+  </row>
+  <row>
+    <unit_id>av4e001-45</unit_id>
+    <set_id>av4e</set_id>
+    <collector_number>001</collector_number>
+    <name>Captain America</name>
+    <type>character</type>
+    <point_value>45</point_value>
+    <rarity>common</rarity>
+    <age>modern</age>
+    <real_name>Steve Rogers</real_name>
+    <team_abilities>["Avengers"]</team_abilities>
+    <unit_range>5</unit_range>
+    <targets>2</targets>
+    <dimensions>1x1</dimensions>
+    <keywords>["Avengers", "Howling Commandos", "Invaders", "Past", "S.H.I.E.L.D.", "Soldier"]</keywords>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_start>5</dial_start>
+    <dial_size>12</dial_size>
+    <dial>[{
+        "speed_power": "Charge",
+        "speed_value": 8,
+        "attack_power": "Quake",
+        "attack_value": 11,
+        "defense_power": "Combat Reflexes",
+        "defense_value": 17,
+        "damage_value": 3
+      },
+      {
+        "speed_power": "Charge",
+        "speed_value": 8,
+        "attack_power": "Quake",
+        "attack_value": 11,
+        "defense_power": "Combat Reflexes",
+        "defense_value": 17,
+        "damage_value": 3
+      },
+      {
+        "speed_power": "Charge",
+        "speed_value": 8,
+        "attack_power": "Quake",
+        "attack_value": 11,
+        "defense_power": "Combat Reflexes",
+        "defense_value": 17,
+        "damage_value": 3
+      },
+      {
+        "speed_power": "Flurry",
+        "speed_value": 8,
+        "attack_value": 10,
+        "defense_power": "Willpower",
+        "defense_value": 17,
+        "damage_power": "Close Combat Expert",
+        "damage_value": 2
+      },
+      {
+        "speed_power": "Flurry",
+        "speed_value": 8,
+        "attack_value": 10,
+        "defense_power": "Willpower",
+        "defense_value": 16,
+        "damage_power": "Close Combat Expert",
+        "damage_value": 2
+      }]
+  </row>
+  <row>
+    <unit_id>av4e002</unit_id>
+    <set_id>av4e</set_id>
+    <collector_number>002</collector_number>
+    <name>S.H.I.E.L.D. Operative</name>
+    <type>character</type>
+    <point_value>15</point_value>
+    <rarity>common</rarity>
+    <age>modern</age>
+    <real_name>Various</real_name>
+    <team_abilities>["S.H.I.E.L.D."]</team_abilities>
+    <unit_range>4</unit_range>
+    <targets>1</targets>
+    <dimensions>1x1</dimensions>
+    <keywords>["S.H.I.E.L.D.", "Soldier", "Spy"]</keywords>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_start>1</dial_start>
+    <dial_size>12</dial_size>
+    <dial>[{
+        "speed_power": "Stealth",
+        "speed_value": 6,
+        "attack_value": 10,
+        "defense_power": "Combat Reflexes",
+        "defense_value": 16,
+        "damage_power": "Close Combat Expert",
+        "damage_value": 1
+      },
+      {
+        "speed_power": "Plasticity",
+        "speed_value": 6,
+        "attack_value": 9,
+        "defense_power": "Combat Reflexes",
+        "defense_value": 16,
+        "damage_power": "Close Combat Expert",
+        "damage_value": 2
+      },
+      {
+        "speed_power": "Plasticity",
+        "speed_value": 6,
+        "attack_value": 9,
+        "defense_power": "Combat Reflexes",
+        "defense_value": 16,
+        "damage_value": 1
+      }]
+  </row>
+  <row>
+    <unit_id>av4e003</unit_id>
+    <set_id>av4e</set_id>
+    <collector_number>003</collector_number>
+    <name>Hydra Agent</name>
+    <type>character</type>
+    <point_value>15</point_value>
+    <rarity>common</rarity>
+    <age>modern</age>
+    <real_name>Various</real_name>
+    <team_abilities>["Hydra"]</team_abilities>
+    <unit_range>4</unit_range>
+    <targets>1</targets>
+    <dimensions>1x1</dimensions>
+    <keywords>["Hydra", "Soldier", "Spy"]</keywords>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_start>1</dial_start>
+    <dial_size>12</dial_size>
+    <dial>[{
+        "speed_power": "Running Shot",
+        "speed_value": 6,
+        "attack_power": "Pulse Wave",
+        "attack_value": 10,
+        "defense_value": 16,
+        "damage_value": 1
+      },
+      {
+        "speed_power": "Running Shot",
+        "speed_value": 6,
+        "attack_power": "Pulse Wave",
+        "attack_value": 9,
+        "defense_value": 16,
+        "damage_power": "Ranged Combat Expert",
+        "damage_value": 1
+      },
+      {
+        "speed_power": "Running Shot",
+        "speed_value": 6,
+        "attack_power": "Pulse Wave",
+        "attack_value": 9,
+        "defense_value": 16,
+        "damage_power": "Ranged Combat Expert",
+        "damage_value": 1
+      }]
+  </row>
+  <row>
+    <unit_id>av4e004</unit_id>
+    <set_id>av4e</set_id>
+    <collector_number>004</collector_number>
+    <name>Winter Soldier</name>
+    <type>character</type>
+    <point_value>60</point_value>
+    <rarity>common</rarity>
+    <age>modern</age>
+    <real_name>Bucky Barnes</real_name>
+    <team_abilities>["Team Player"]</team_abilities>
+    <unit_range>5</unit_range>
+    <targets>1</targets>
+    <dimensions>1x1</dimensions>
+    <keywords>["Hydra", "Thunderbolts", "Assassin", "Past", "Soldier", "Spy"]</keywords>
+    <speed_special_power>{
+      "name": "WITHOUT A TRACE",
+      "value": "Stealth, Plasticity. // FREE: Place Winter Soldier in a square of hindering terrain within range and line of fire.",
+      "powers": ["Stealth", "Plasticity"]
+    }</speed_special_power>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_start>1</dial_start>
+    <dial_size>12</dial_size>
+    <dial>[{
+        "speed_power": "Special",
+        "speed_value": 8,
+        "attack_power": "Energy Explosion",
+        "attack_value": 11,
+        "defense_value": 18,
+        "damage_power": "Close Combat Expert",
+        "damage_value": 3
+      },
+      {
+        "speed_power": "Special",
+        "speed_value": 8,
+        "attack_power": "Energy Explosion",
+        "attack_value": 10,
+        "defense_value": 17,
+        "damage_power": "Close Combat Expert",
+        "damage_value": 2
+      },
+      {
+        "speed_power": "Special",
+        "speed_value": 8,
+        "attack_power": "Energy Explosion",
+        "attack_value": 10,
+        "defense_value": 17,
+        "damage_power": "Close Combat Expert",
+        "damage_value": 2
+      },
+      {
+        "speed_power": "Plasticity",
+        "speed_value": 7,
+        "attack_value": 11,
+        "defense_power": "Toughness",
+        "defense_value": 17,
+        "damage_power": "Ranged Combat Expert",
+        "damage_value": 2
+      },
+      {
+        "speed_power": "Plasticity",
+        "speed_value": 7,
+        "attack_value": 10,
+        "defense_power": "Toughness",
+        "defense_value": 17,
+        "damage_power": "Ranged Combat Expert",
+        "damage_value": 2
+      },
+      {
+        "speed_power": "Plasticity",
+        "speed_value": 7,
+        "attack_value": 10,
+        "defense_power": "Toughness",
+        "defense_value": 16,
+        "damage_power": "Ranged Combat Expert",
+        "damage_value": 3
+      }]
+  </row>
+  <row>
+    <unit_id>av4e005</unit_id>
+    <set_id>av4e</set_id>
+    <collector_number>005</collector_number>
+    <name>Hawkeye</name>
+    <type>character</type>
+    <point_value>75</point_value>
+    <rarity>common</rarity>
+    <age>modern</age>
+    <real_name>Clint Barton</real_name>
+    <team_abilities>["Avengers"]</team_abilities>
+    <unit_range>7</unit_range>
+    <targets>2</targets>
+    <dimensions>1x1</dimensions>
+    <keywords>["Avengers", "Defenders", "S.H.I.E.L.D.", "Thunderbolts", "Celebrity"]</keywords>
+    <trait_0>{
+      "name": "FOLLOW-UP",
+      "value": "FREE: Once per turn for all characters with a Follow-Up trait, make an attack using Hawkeye's printed combat values, but only to target a single character hit with an attack made by another friendly character with the Avengers keyword."
+    }</trait_0>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_start>1</dial_start>
+    <dial_size>12</dial_size>
+    <dial>[{
+        "speed_power": "Running Shot",
+        "speed_value": 8,
+        "attack_power": "Energy Explosion",
+        "attack_value": 11,
+        "defense_power": "Willpower",
+        "defense_value": 17,
+        "damage_value": 3
+      },
+      {
+        "speed_power": "Running Shot",
+        "speed_value": 8,
+        "attack_power": "Energy Explosion",
+        "attack_value": 11,
+        "defense_power": "Willpower",
+        "defense_value": 17,
+        "damage_value": 3
+      },
+      {
+        "speed_power": "Running Shot",
+        "speed_value": 8,
+        "attack_power": "Precision Strike",
+        "attack_value": 11,
+        "defense_value": 18,
+        "damage_power": "Ranged Combat Expert",
+        "damage_value": 2
+      },
+      {
+        "speed_power": "Running Shot",
+        "speed_value": 8,
+        "attack_power": "Precision Strike",
+        "attack_value": 11,
+        "defense_value": 18,
+        "damage_power": "Ranged Combat Expert",
+        "damage_value": 2
+      },
+      {
+        "speed_value": 6,
+        "attack_power": "Penetrating/Psychic Blast",
+        "attack_value": 11,
+        "defense_power": "Super Senses",
+        "defense_value": 17,
+        "damage_power": "Ranged Combat Expert",
+        "damage_value": 3
+      },
+      {
+        "speed_value": 6,
+        "attack_power": "Penetrating/Psychic Blast",
+        "attack_value": 12,
+        "defense_power": "Super Senses",
+        "defense_value": 17,
+        "damage_power": "Ranged Combat Expert",
+        "damage_value": 3
+      },
+      {
+        "speed_value": 6,
+        "attack_power": "Pulse Wave",
+        "attack_value": 12,
+        "defense_power": "Super Senses",
+        "defense_value": 16,
+        "damage_power": "Ranged Combat Expert",
+        "damage_value": 3
+      }]
+  </row>
+  <row>
+    <unit_id>av4e006</unit_id>
+    <set_id>av4e</set_id>
+    <collector_number>006</collector_number>
+    <name>Falcon</name>
+    <type>character</type>
+    <point_value>50</point_value>
+    <rarity>common</rarity>
+    <age>modern</age>
+    <real_name>Sam Wilson</real_name>
+    <team_abilities>["Avengers"]</team_abilities>
+    <improved_movement>characters</improved_movement>
+    <unit_range>5</unit_range>
+    <targets>2</targets>
+    <dimensions>1x1</dimensions>
+    <keywords>["Avengers", "Heroes for Hire", "S.H.I.E.L.D.", "Soldier"]</keywords>
+    <trait_0>{
+      "name": "AERIAL COMBAT MANEUVERS",
+      "value": "Super Senses, but succeeds on a 4-6 for range attacks (succeeds normally for close attacks).",
+      "powers": ["Super Senses"]
+    }</trait_0>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_start>1</dial_start>
+    <dial_size>12</dial_size>
+    <dial>[{
+        "speed_power": "Charge",
+        "speed_value": 10,
+        "attack_power": "Quake",
+        "attack_value": 11,
+        "defense_power": "Energy Shield/Deflection",
+        "defense_value": 17,
+        "damage_value": 3
+      },
+      {
+        "speed_power": "Charge",
+        "speed_value": 8,
+        "attack_power": "Quake",
+        "attack_value": 11,
+        "defense_power": "Energy Shield/Deflection",
+        "defense_value": 17,
+        "damage_value": 3
+      },
+      {
+        "speed_power": "Running Shot",
+        "speed_value": 8,
+        "attack_value": 10,
+        "defense_power": "Energy Shield/Deflection",
+        "defense_value": 17,
+        "damage_power": "Perplex",
+        "damage_value": 3
+      },
+      {
+        "speed_power": "Running Shot",
+        "speed_value": 8,
+        "attack_value": 10,
+        "defense_power": "Energy Shield/Deflection",
+        "defense_value": 17,
+        "damage_power": "Perplex",
+        "damage_value": 3
+      },
+      {
+        "speed_power": "Charge",
+        "speed_value": 8,
+        "attack_value": 10,
+        "defense_power": "Willpower",
+        "defense_value": 18,
+        "damage_power": "Close Combat Expert",
+        "damage_value": 2
+      },
+      {
+        "speed_power": "Charge",
+        "speed_value": 6,
+        "attack_value": 10,
+        "defense_power": "Willpower",
+        "defense_value": 18,
+        "damage_power": "Close Combat Expert",
+        "damage_value": 2
+      }]
+  </row>
+  <row>
+    <unit_id>av4e007</unit_id>
+    <set_id>av4e</set_id>
+    <collector_number>007</collector_number>
+    <name>Mindless One</name>
+    <type>character</type>
+    <point_value>15</point_value>
+    <rarity>common</rarity>
+    <age>modern</age>
+    <real_name>Various</real_name>
+    <team_abilities>["Mystics"]</team_abilities>
+    <unit_range>4</unit_range>
+    <targets>1</targets>
+    <dimensions>1x1</dimensions>
+    <keywords>["Monster", "Mystical"]</keywords>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_start>1</dial_start>
+    <dial_size>12</dial_size>
+    <dial>[{
+        "speed_power": "Plasticity",
+        "speed_value": 6,
+        "attack_value": 10,
+        "defense_value": 16,
+        "damage_power": "Empower",
+        "damage_value": 1
+      },
+      {
+        "speed_power": "Plasticity",
+        "speed_value": 6,
+        "attack_value": 9,
+        "defense_value": 16,
+        "damage_power": "Empower",
+        "damage_value": 2
+      },
+      {
+        "speed_power": "Plasticity",
+        "speed_value": 6,
+        "attack_value": 9,
+        "defense_value": 16,
+        "damage_power": "Empower",
+        "damage_value": 2
+      }]
+  </row>
+  <row>
+    <unit_id>av4e008</unit_id>
+    <set_id>av4e</set_id>
+    <collector_number>008</collector_number>
+    <name>Gorilla-Man</name>
+    <type>character</type>
+    <point_value>60</point_value>
+    <rarity>common</rarity>
+    <age>modern</age>
+    <real_name>Kenneth Hale</real_name>
+    <team_abilities>["Avengers"]</team_abilities>
+    <improved_movement>elevated, characters</improved_movement>
+    <unit_range>4</unit_range>
+    <targets>1</targets>
+    <dimensions>1x1</dimensions>
+    <keywords>["Agents of Atlas", "Avengers", "S.H.I.E.L.D.", "Wakanda", "Winter Guard", "Animal", "Spy"]</keywords>
+    <trait_0>{
+      "name": "FOLLOW-UP",
+      "value": "FREE: Once per turn for all characters with a Follow-Up trait, make an attack using Gorilla-Man's printed combat values, but only to target a single character hit with an attack made by another friendly character with the Wakanda keyword."
+    }</trait_0>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_start>1</dial_start>
+    <dial_size>12</dial_size>
+    <dial>[{
+        "speed_power": "Plasticity",
+        "speed_value": 9,
+        "attack_value": 10,
+        "defense_power": "Combat Reflexes",
+        "defense_value": 18,
+        "damage_power": "Close Combat Expert",
+        "damage_value": 3
+      },
+      {
+        "speed_power": "Plasticity",
+        "speed_value": 9,
+        "attack_value": 10,
+        "defense_power": "Combat Reflexes",
+        "defense_value": 17,
+        "damage_power": "Close Combat Expert",
+        "damage_value": 3
+      },
+      {
+        "speed_power": "Flurry",
+        "speed_value": 8,
+        "attack_value": 11,
+        "defense_power": "Toughness",
+        "defense_value": 17,
+        "damage_power": "Battle Fury",
+        "damage_value": 3
+      },
+      {
+        "speed_power": "Flurry",
+        "speed_value": 8,
+        "attack_value": 11,
+        "defense_power": "Toughness",
+        "defense_value": 16,
+        "damage_power": "Battle Fury",
+        "damage_value": 3
+      },
+      {
+        "speed_power": "Flurry",
+        "speed_value": 8,
+        "attack_power": "Blades/Claws/Fangs",
+        "attack_value": 11,
+        "defense_power": "Toughness",
+        "defense_value": 17,
+        "damage_value": 4
+      },
+      {
+        "speed_power": "Plasticity",
+        "speed_value": 7,
+        "attack_power": "Blades/Claws/Fangs",
+        "attack_value": 10,
+        "defense_power": "Regeneration",
+        "defense_value": 17,
+        "damage_value": 4
+      },
+      {
+        "speed_power": "Plasticity",
+        "speed_value": 7,
+        "attack_power": "Blades/Claws/Fangs",
+        "attack_value": 10,
+        "defense_power": "Regeneration",
+        "defense_value": 18,
+        "damage_value": 4
+      }]
+  </row>
+  <row>
+    <unit_id>av4e009</unit_id>
+    <set_id>av4e</set_id>
+    <collector_number>009</collector_number>
+    <name>Patriot</name>
+    <type>character</type>
+    <point_value>40</point_value>
+    <rarity>common</rarity>
+    <age>modern</age>
+    <real_name>Elijah Bradley</real_name>
+    <team_abilities>["Avengers"]</team_abilities>
+    <unit_range>4</unit_range>
+    <targets>1</targets>
+    <dimensions>1x1</dimensions>
+    <keywords>["Young Avengers", "Soldier"]</keywords>
+    <trait_0>{
+      "name": "YOUNG AVENGERS, ASSEMBLE",
+      "value": "Defend, Leadership.",
+      "powers": ["Defend", "Leadership"]
+    }</trait_0>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_start>1</dial_start>
+    <dial_size>12</dial_size>
+    <dial>[{
+        "speed_power": "Charge",
+        "speed_value": 8,
+        "attack_power": "Quake",
+        "attack_value": 10,
+        "defense_power": "Toughness",
+        "defense_value": 18,
+        "damage_value": 3
+      },
+      {
+        "speed_power": "Charge",
+        "speed_value": 8,
+        "attack_power": "Quake",
+        "attack_value": 10,
+        "defense_power": "Toughness",
+        "defense_value": 17,
+        "damage_value": 3
+      },
+      {
+        "speed_power": "Charge",
+        "speed_value": 8,
+        "attack_power": "Quake",
+        "attack_value": 11,
+        "defense_power": "Toughness",
+        "defense_value": 17,
+        "damage_value": 3
+      },
+      {
+        "speed_power": "Leap/Climb",
+        "speed_value": 6,
+        "attack_value": 11,
+        "defense_power": "Toughness",
+        "defense_value": 17,
+        "damage_power": "Empower",
+        "damage_value": 2
+      },
+      {
+        "speed_power": "Leap/Climb",
+        "speed_value": 6,
+        "attack_value": 10,
+        "defense_power": "Toughness",
+        "defense_value": 18,
+        "damage_power": "Empower",
+        "damage_value": 2
+      }]
   </row>
 </resultset>

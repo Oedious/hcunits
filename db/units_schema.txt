@@ -1,6 +1,8 @@
 # Commands to connect to the wordpress MySQL database
 mysql wordpress -u root -p
 
+# Wordpress plugins directory:
+/var/www/html/wp-content/plugins
 
 # Delete the 'team_abilities' table
 DROP TABLE wp_team_abilities;
@@ -8,19 +10,22 @@ DROP TABLE wp_team_abilities;
 # Create the units table
 CREATE TABLE wp_units (
   -- The ID of the unit.
-  unit_id VARCHAR(16) NOT NULL PRIMARY KEY,
-
-  -- The plain text name of the unit.
-  name TEXT(128) NOT NULL,
-
-  -- The “real name” of the unit.
-  real_name TEXT(128) NOT NULL,
+  unit_id VARCHAR(32) NOT NULL PRIMARY KEY,
 
   -- The set to which this unit belongs.
   set_id VARCHAR(16) NOT NULL,
   
+  -- The collector's number of the unit within a set (may contain letters).
+  collector_number VARCHAR(16) NOT NULL,
+  
+  -- The plain text name of the unit.
+  name TEXT(128) NOT NULL,
+
+  -- The type of the unit.
+  type ENUM('character', 'object', 'map', 'battlefield_condition', 'event_dial', 'resource', 'equipment', 'terrain', 'bystander', 'tarot_card', 'relic') NOT NULL,
+
   -- The point value of the unit.
-  points SMALLINT NOT NULL,
+  point_value SMALLINT NOT NULL,
 
   -- The rarity of the unit.
   rarity ENUM('common', 'uncommon', 'rare', 'super_rare', 'chase', 'ultra_chase'),
@@ -28,8 +33,15 @@ CREATE TABLE wp_units (
   -- Whether the unit is legal for modern tournament play.
   age ENUM('modern', 'golden') NOT NULL,
 
-  -- The type of the unit.
-  type ENUM('character', 'object', 'map', 'battlefield_condition', 'event_dial', 'resource', 'equipment', 'terrain', 'bystander', 'tarot_card', 'relic') NOT NULL,
+  -- For units that have multiple starting lines, the lower-point value entries
+  -- should have a link to the highest-point (parent) unit.
+  parent_unit_id VARCHAR(16),
+
+  -- The “real name” of the unit.
+  real_name TEXT(128),
+
+  -- Additional special type traits that have restrictions on team construction
+  special_type ENUM('none', 'unique', 'prime', 'title_character'),
 
   -- The team abilities of the unit.
   team_abilities JSON,
@@ -40,13 +52,23 @@ CREATE TABLE wp_units (
   -- The keywords of the unit.
   keywords JSON,
 
-  -- The dial.
+  trait_0 TEXT(1024),
+  trait_1 TEXT(1024),
+  trait_2 TEXT(1024),
+  speed_special_power TEXT(1024),
+  attack_special_power TEXT(1024),
+  defense_special_power TEXT(1024),
+  damage_special_power TEXT(1024),
+
+  improved_movement SET('elevated', 'hindering', 'blocking', 'outdoor_blocking', 'destroy_blocking', 'characters', 'move_through'),
+  improved_targeting SET('elevated', 'hindering', 'blocking', 'destroy_blocking', 'characters', 'adjacent'),
 
   -- The range value of the unit.
   unit_range TINYINT,
 
   -- The number of targets (ie. lightning bolts) of the unit.
   targets TINYINT,
+
   speed_type ENUM('boot', 'wing', 'dolphin'),
   speed_sub_type ENUM('transporter'),
   attack_type ENUM('fist', 'autonomous', 'sharpshooter', 'duo', 'team'),
@@ -54,19 +76,13 @@ CREATE TABLE wp_units (
   damage_type ENUM('starburst', 'giant', 'fist', 'tiny'),
   dial_start TINYINT,
   dial_size TINYINT,
-  dial JSON,
-
-  speed_special_power TEXT(1024),
-  attack_special_power TEXT(1024),
-  defense_special_power TEXT(1024),
-  damage_special_power TEXT(1024),
-  trait_0 TEXT(1024),
-  trait_1 TEXT(1024),
-  trait_2 TEXT(1024),
-
-  improved_movement SET('elevated', 'hindering', 'blocking', 'outdoor_blocking', 'destroy_blocking', 'characters', 'move_through'),
-  improved_targeting SET('elevated', 'hindering', 'blocking', 'destroy_blocking', 'characters', 'adjacent')
+  dial JSON
 );
+
+LOAD XML LOCAL INFILE 'set_av4e.xml'
+  REPLACE
+  INTO TABLE wp_units
+  ROWS IDENTIFIED BY '<row>';
 
 CREATE TABLE wp_sets (
   id VARCHAR(16) NOT NULL PRIMARY KEY,
@@ -117,6 +133,9 @@ ATAs
 Rules:
 Less than or equal to point limit
 0 or 1 Prime
+0 or 1 Title character
+No promo game elements (purple rings)
+Unique units are unique
 0 to 3 Objects
 1 to 3 Maps
 Equipment assigned to characters
