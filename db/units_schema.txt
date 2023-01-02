@@ -72,7 +72,7 @@ CREATE TABLE wp_sets (
   universe ENUM('dc', 'marvel', 'indy', 'other')
 );
 
-LOAD XML LOCAL INFILE 'hcunits/sets.xml'
+LOAD XML LOCAL INFILE 'sets.xml'
   REPLACE
   INTO TABLE wp_sets
   ROWS IDENTIFIED BY '<row>';
@@ -84,6 +84,11 @@ CREATE TABLE wp_team_abilities (
   copyable BOOL,
   wildcard BOOL
 );
+
+LOAD XML LOCAL INFILE 'team_abilities.xml'
+  REPLACE
+  INTO TABLE wp_team_abilities
+  ROWS IDENTIFIED BY '<row>';
 
 CREATE TABLE wp_keywords (
   keyword VARCHAR(64) NOT NULL PRIMARY KEY,
