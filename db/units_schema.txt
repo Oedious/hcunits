@@ -8,19 +8,19 @@ DROP TABLE wp_team_abilities;
 # Create the units table
 CREATE TABLE wp_units (
   -- The ID of the unit.
-  unit_id TEXT(16) NOT NULL PRIMARY KEY,
+  unit_id VARCHAR(16) NOT NULL PRIMARY KEY,
 
   -- The plain text name of the unit.
   name TEXT(128) NOT NULL,
 
   -- The “real name” of the unit.
-  real_name VARCHAR(128) NOT NULL,
+  real_name TEXT(128) NOT NULL,
 
   -- The set to which this unit belongs.
   set_id VARCHAR(16) NOT NULL,
   
   -- The point value of the unit.
-  points SMALL_INT NOT NULL,
+  points SMALLINT NOT NULL,
 
   -- The rarity of the unit.
   rarity ENUM('common', 'uncommon', 'rare', 'super_rare', 'chase', 'ultra_chase'),
@@ -34,12 +34,6 @@ CREATE TABLE wp_units (
   -- The team abilities of the unit.
   team_abilities JSON,
 
-  -- The range value of the unit.
-  range TINY_INT,
-
-  -- The number of targets (ie. lightning bolts) of the unit.
-  targets TINY_INT,
-
   -- The dimensions of the unit base.
   dimensions ENUM('1x1', '1x2', '2x2', '2x4', '3x6'),
 
@@ -47,6 +41,12 @@ CREATE TABLE wp_units (
   keywords JSON,
 
   -- The dial.
+
+  -- The range value of the unit.
+  unit_range TINYINT,
+
+  -- The number of targets (ie. lightning bolts) of the unit.
+  targets TINYINT,
   speed_type ENUM('boot', 'wing', 'dolphin'),
   speed_sub_type ENUM('transporter'),
   attack_type ENUM('fist', 'autonomous', 'sharpshooter', 'duo', 'team'),
@@ -63,6 +63,9 @@ CREATE TABLE wp_units (
   trait_0 TEXT(1024),
   trait_1 TEXT(1024),
   trait_2 TEXT(1024),
+
+  improved_movement SET('elevated', 'hindering', 'blocking', 'outdoor_blocking', 'destroy_blocking', 'characters', 'move_through'),
+  improved_targeting SET('elevated', 'hindering', 'blocking', 'destroy_blocking', 'characters', 'adjacent')
 );
 
 CREATE TABLE wp_sets (
@@ -94,6 +97,11 @@ CREATE TABLE wp_keywords (
   keyword VARCHAR(64) NOT NULL PRIMARY KEY,
   type ENUM('named', 'generic')
 );
+
+LOAD XML LOCAL INFILE 'keywords.xml'
+  REPLACE
+  INTO TABLE wp_keywords
+  ROWS IDENTIFIED BY '<row>';
 
 Things in team build:
 Main force
