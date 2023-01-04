@@ -1,0 +1,223 @@
+/* Build Container styles */
+#buildContainer {
+  background-color: #F0F0F0;
+  display: flex;
+  flex-flow: column;
+  height: 100vh;
+}
+
+/* Team Header styles */
+#teamHeaderContainer {
+  background: linear-gradient(135deg, rgb(238,238,238) 0%,rgb(169,184,195) 100%);
+  padding: 30px, 0px;
+  display: inline-block;
+}
+
+#teamHeader {
+  max-width: 50%;
+  margin: auto;
+  padding: 30px;
+}
+
+#teamHeader * {
+  background-color: transparent;
+  border-color: transparent;
+  display: inline-block;
+  margin: 0px;
+}
+
+#teamOwner {
+	font-size:18px;
+}
+
+.teamInput {
+	padding: 0px;
+	border: 1px solid transparent;
+}
+
+input#teamName {
+	font-size:24px;
+}
+
+.teamSelect {
+	padding: 0px;
+	border: 1px solid transparent;
+	font-size:12px;
+  background-color: transparent;
+}
+
+#teamFormatContainer {
+  display: flex;
+}
+
+#teamPointLimit {
+  flex-basis: max-content;
+}
+
+#teamFormat {
+  flex-basis: max-content;
+}
+
+/* Search Source styles */
+#searchSourceContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #212121;
+  box-shadow: 0 2px 4px rgb(0, 0, 0, 50%);
+  padding: 10px;
+}
+
+/* Quick Search styles */
+#quickSearchContainer {
+  display: flex;
+  align-items: center;
+	height: 60px;
+	border: 1px solid #000000;
+	border-radius: 5px;
+	background-color: #FFFFFF;
+	width: 300px;
+  flex-basis: max-content;
+}
+
+#quickSearchInputDiv {
+	height: 60;
+  flex-basis: max-content;
+}
+
+#quickSearchInput {
+	font-size: 20px;
+	margin-left:5px;
+	margin-top:15px;
+	border: none;
+}
+
+#quickSearchInput:focus {
+	border: none;
+}
+
+#quickSearchButtonDiv {
+  float: left;
+}
+
+#quickSearchButton {
+	width: 40px;
+	height: 58px;
+	border: none;
+	border-radius: 5px;
+}
+
+#quickSearchIcon {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 25;
+}
+
+/* Set Menu styles */
+#setMenuContainer {
+  background-color: transparent;
+}
+
+ #setMenu {
+   display: flex;
+   flex-wrap: nowrap;
+   overflow-x: auto;
+}
+
+div.setItem {
+	flex: 0 0 auto;
+	width: 50px;
+	padding-top:2px;
+  padding-bottom:2px;
+	text-align:center;
+	color: #000000;
+	border: 1px solid #000000;
+	border-radius: 5px;
+	background-color: #FFFFFF;
+  display: inline-block;
+}
+
+img.setIcon {
+	width: 32px;
+	height: 32px;
+	margin:3px;
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.setName {
+	font-size:10px;
+	font-weight:bold;
+}
+
+/* Team Body styles */
+#teamBodyContainer {
+  display: flex;
+  flex-grow: 1;
+  background-color: transparent;
+}
+
+/* Search Results styles */
+#searchResultsContainer {
+	width: 300px;
+  height: 100%;
+  border-right: 1px solid black;
+	overflow: hidden;
+	overflow-y: auto;
+}
+
+#searchResultsContainer ul {
+	margin-top: 0px;
+	margin-left: -40px;
+	font-size: 12px;
+}
+
+#searchResultsContainer li {
+	list-style-type: none;
+	margin-bottom: 3px;
+}
+
+#searchResultsContainer li:hover {
+	background-color: lightblue;
+}
+
+#searchResultsContainer li:selected {
+	background-color: lightblue;
+}
+
+.searchResultTabInner {
+	background-color: white;
+	border: 1px solid white;
+	border-radius: 20px;
+	position: relative;
+	width: 50px;
+	display: inline-block;
+	margin-top: -1px;
+	margin-bottom: -1px;
+	margin-right: 5px;
+	margin-left: -15px;
+	text-align: right;
+	padding-right: 5px;
+	font-size: 12px;
+}
+
+.searchResultTabOuter {
+	background-color: lightgreen;
+	border: 1px solid #000000;
+	border-radius: 20px;
+	position: relative;
+	width: 75px;
+	display: inline-block;
+	margin-bottom: 0px;
+	margin-right: 10px;
+	margin-left: -15px;
+	text-align: right;
+	font-weight: bold;
+	padding-right: 5px;
+	font-size: 10px;
+}
+
+#unitContainer {
+	margin-left: 300px;
+	height: 300px;
+	border: 3px solid #FF0000;
+}

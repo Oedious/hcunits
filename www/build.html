@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
+  <link type="text/css" rel="stylesheet" href="css/hcunits.css" media="screen,projection" />
+</head>
+
+<body>
+  <div id="buildContainer">
+    <div id="teamHeaderContainer">
+      <div id="teamHeader">
+        <div id="teamOwner">Team Owner</div>
+        <input type="text" class="teamInput" id="teamName" size="80%" placeholder="Team Name">
+        <input type="text" class="teamInput" size="80%" placeholder="Description">
+        <div id="teamFormatContainer">
+          <input type="number" class="teamInput" id="teamPointLimit" min="0" max="9999" placeholder="Points">
+          <select class="teamSelect" id="teamFormat">
+            <option value="modern">Modern Age</option>
+            <option value="golden">Golden Age</option>
+          </select>
+        </div>
+        <select class="teamSelect" id="teamVisibility">
+          <option value="unlisted">Unlisted</option>
+          <option value="public">Public</option>
+        </select>
+      </div>
+    </div>
+    <div id="searchSourceContainer">
+      <div id="quickSearchContainer">
+        <input type="text" id="quickSearchInput" placeholder="Search...">
+        <button type="button" id="quickSearchButton" onclick="quickSearch();">
+          <span id="quickSearchIcon" class="material-symbols-outlined">search</span>
+        </button>
+      </div>
+      <div id="setMenu">
+        <!--<?php include 'php/load_set_list.php'>-->
+        <!--[wpcode id="48"]-->
+      </div>
+    </div>
+    <div id="teamBodyContainer">
+      <div id="searchResultsContainer"></div>
+    </div>
+  </div>
+</body>
+
+</html>
