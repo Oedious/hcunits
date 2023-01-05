@@ -2,11 +2,12 @@
 <html lang="en-US">
 
 <head>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
-  <link type="text/css" rel="stylesheet" href="css/hcunits.css" media="screen,projection" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link type="text/css" rel="stylesheet" href="css/hcunits.css" media="screen,projection">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> -->
 </head>
 
 <body>
@@ -22,11 +23,11 @@
             <option value="modern">Modern Age</option>
             <option value="golden">Golden Age</option>
           </select>
-        </div>
-        <select class="teamSelect" id="teamVisibility">
-          <option value="unlisted">Unlisted</option>
-          <option value="public">Public</option>
-        </select>
+          <select class="teamSelect" id="teamVisibility">
+            <option value="unlisted">Unlisted</option>
+            <option value="public">Public</option>
+          </select>
+          </div>
       </div>
     </div>
     <div id="searchSourceContainer">
@@ -45,6 +46,23 @@
       <div id="searchResultsContainer"></div>
     </div>
   </div>
+
+  <!-- Test-only -->
+  <script>alert("before include");</script>
+  <script type="text/javascript" src="js/mock_data_source.js"></script>
+
+  <script>
+    /*
+    var setList = [wpcode id="??"];
+    var dataSource = new DataSource(setList);
+    */
+  
+    /* Test only */
+    var dataSource = new MockDataSource();
+
+
+    var mgr = new ViewManager(dataSource);
+  </script>
 </body>
 
 </html>
