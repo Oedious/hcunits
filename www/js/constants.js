@@ -1,0 +1,14 @@
+var RARITY_COMMON_COLOR = "white";
+var RARITY_UNCOMMON_COLOR = "#6ebd45";
+var RARITY_RARE_COLOR = "#a7bdc8";
+var RARITY_SUPER_RARE_COLOR = "#ffd503";
+var RARITY_CHASE_COLOR = "#ef8322";
+var RARITY_ULTRA_CHASE_COLOR = "#00a1df";
+var RARITY_TO_COLOR = {
+  "common": RARITY_COMMON_COLOR,
+  "uncommon": RARITY_UNCOMMON_COLOR,
+  "rare": RARITY_RARE_COLOR,
+  "super_rare": RARITY_SUPER_RARE_COLOR,
+  "chase": RARITY_CHASE_COLOR,
+  "ultra_chase": RARITY_ULTRA_CHASE_COLOR
+}
