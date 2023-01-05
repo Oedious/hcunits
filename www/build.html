@@ -5,8 +5,6 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   <link type="text/css" rel="stylesheet" href="css/hcunits.css" media="screen,projection">
 </head>
 
@@ -42,11 +40,20 @@
         <!--[wpcode id="48"]-->
       </div>
     </div>
-    <div id="teamBodyContainer">
-      <div id="searchResultsContainer"></div>
+    <div id="teamBodyContainer" class="row">
+      <div id="searchResultsContainer" class="col s3">
+        <div id="sideNav">
+          <ul id="searchResults" class="collection">
+          </ul>
+        </div>
+      </div>
+      <div id="teamBody" class="col s9"></div>
     </div>
   </div>
 
+  <!-- Javascript at end of body for optimized loading. -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script type="text/javascript" src="js/search_manager.js"></script>
   <script type="text/javascript" src="js/view_manager.js"></script>
 

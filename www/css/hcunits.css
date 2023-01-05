@@ -1,21 +1,12 @@
-:root {
-  --mdc-theme-primary: #fcb8ab;
-  --mdc-theme-secondary: #feeae6;
-  --mdc-theme-on-primary: #fff;
-  --mdc-theme-on-secondary: #fff;
-}
-
 /* Build Container styles */
 #buildContainer {
   background-color: #F0F0F0;
-  display: flex;
-  flex-flow: column;
-  height: 100vh;
+  overflow-y: hidden;
 }
 
 /* Team Header styles */
 #teamHeaderContainer {
-  background: linear-gradient(135deg, rgb(238,238,238) 0%,rgb(169,184,195) 100%);
+  background: linear-gradient(135deg, rgb(169,184,195) 100%, rgb(238,238,238) 0%);
   padding: 30px, 0px;
 }
 
@@ -82,33 +73,24 @@ input#teamName {
 /* Quick Search styles */
 #quickSearchContainer {
   display: flex;
+	flex-basis: max-content;
   align-items: center;
 	height: 60px;
 	border: 1px solid #000000;
 	border-radius: 5px;
 	background-color: #FFFFFF;
-	width: 300px;
-  flex-basis: max-content;
-}
-
-#quickSearchInputDiv {
-	height: 60;
-  flex-basis: max-content;
 }
 
 #quickSearchInput {
+	width: 250px;
 	font-size: 20px;
-	margin-left:5px;
-	margin-top:15px;
+	margin-left: 5px;
+	margin-top: 15px;
 	border: none;
 }
 
 #quickSearchInput:focus {
 	border: none;
-}
-
-#quickSearchButtonDiv {
-  float: left;
 }
 
 #quickSearchButton {
@@ -162,73 +144,30 @@ div.setName {
 
 /* Team Body styles */
 #teamBodyContainer {
-  display: flex;
-  flex-grow: 1;
   background-color: transparent;
+  height: 500px
 }
 
 /* Search Results styles */
 #searchResultsContainer {
-	width: 300px;
-  height: 100%;
   border-right: 1px solid black;
-	overflow: hidden;
+  width: 300px;
+  height: 500px;
+	display: flex;
+	flex-flow: row wrap;
+	flex-direction: column;
+	padding: 0px;
+}
+
+#sideNav {
 	overflow-y: auto;
+	overflow-x: hidden;
 }
 
-#searchResultsContainer ul {
-	margin-top: 0px;
-	margin-left: -40px;
-	font-size: 12px;
+#searchResults li {
+	min-height: 0px;
 }
 
-#searchResultsContainer li {
-	list-style-type: none;
-	margin-bottom: 3px;
-}
-
-#searchResultsContainer li:hover {
-	background-color: lightblue;
-}
-
-#searchResultsContainer li:selected {
-	background-color: lightblue;
-}
-
-.searchResultTabInner {
-	background-color: white;
-	border: 1px solid white;
-	border-radius: 20px;
-	position: relative;
-	width: 50px;
-	display: inline-block;
-	margin-top: -1px;
-	margin-bottom: -1px;
-	margin-right: 5px;
-	margin-left: -15px;
-	text-align: right;
-	padding-right: 5px;
-	font-size: 12px;
-}
-
-.searchResultTabOuter {
-	background-color: lightgreen;
-	border: 1px solid #000000;
-	border-radius: 20px;
-	position: relative;
-	width: 75px;
-	display: inline-block;
-	margin-bottom: 0px;
-	margin-right: 10px;
-	margin-left: -15px;
-	text-align: right;
-	font-weight: bold;
-	padding-right: 5px;
-	font-size: 10px;
-}
-
-#unitContainer {
-	margin-left: 300px;
-	height: 300px;
-	border: 3px solid #FF0000;
+.searchResultInfo {
+	font-size: 10px !important;
 }

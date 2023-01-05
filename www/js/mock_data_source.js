@@ -1,6 +1,6 @@
 var MockDataSource = function() {
   this.NUMBER_OF_SETS_ = 30;
-  this.NUMBER_OF_UNITS_ = 10;
+  this.NUMBER_OF_UNITS_ = 20;
 }
 
 MockDataSource.prototype.getSetList = function() {
@@ -31,14 +31,14 @@ MockDataSource.prototype.searchBySetId = function(setId, onSuccess, onError) {
         " " + nameSuffix[Math.floor(Math.random() * nameSuffix.length)];
     var collectorNumber =
         zeroPad(Math.floor(i / this.NUMBER_OF_UNITS_ * 70) + 1, 3);
-    var points = Math.floor(Math.random() * 200) + 5;
+    var point_value = (Math.floor(Math.random() * 40) + 1) * 5;
     var rarityIndex = Math.floor(i / this.NUMBER_OF_UNITS_ * rarityList.length);
     var rarity = rarityList[rarityIndex];
     var unit = {
       "unit_id": unitId,
       "name": name,
       "collector_number": collectorNumber,
-      "points": points,
+      "point_value": point_value,
       "rarity": rarity
     };
     unitList.push(unit);
