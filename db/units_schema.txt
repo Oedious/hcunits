@@ -102,7 +102,8 @@ LOAD XML LOCAL INFILE 'sets.xml'
   ROWS IDENTIFIED BY '<row>';
 
 CREATE TABLE wp_team_abilities (
-  name VARCHAR(32) NOT NULL PRIMARY KEY,
+  id VARCHAR(32) NOT NULL PRIMARY KEY,
+  name TEXT(32) NOT NULL PRIMARY KEY,
   universe ENUM('dc', 'marvel', 'star_trek', 'universal', 'other'),
   rules TEXT(1024),
   copyable BOOL,

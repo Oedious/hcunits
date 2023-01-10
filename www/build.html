@@ -2,76 +2,85 @@
 <html lang="en-US">
 
 <head>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  <link type="text/css" rel="stylesheet" href="css/hcunits.css" media="screen,projection">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.cdnfonts.com/css/gill-sans" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/hcunits.css" media="screen,projection">
 </head>
 
 <body>
-  <div id="buildContainer">
-    <div id="teamHeaderContainer">
-      <div id="teamHeader">
-        <div id="teamOwner">Team Owner</div>
-        <input type="text" class="teamInput" id="teamName" size="80%" placeholder="Team Name">
-        <input type="text" class="teamInput" size="80%" placeholder="Description">
-        <div id="teamFormatContainer">
-          <input type="number" class="teamInput" id="teamPointLimit" min="0" max="9999" placeholder="Points">
-          <select class="teamSelect" id="teamFormat">
-            <option value="modern">Modern Age</option>
-            <option value="golden">Golden Age</option>
-          </select>
-          <select class="teamSelect" id="teamVisibility">
-            <option value="unlisted">Unlisted</option>
-            <option value="public">Public</option>
-          </select>
-          </div>
-      </div>
-    </div>
-    <div id="searchSourceContainer">
-      <div id="quickSearchContainer">
-        <input type="text" id="quickSearchInput" placeholder="Search...">
-        <button type="button" id="quickSearchButton" onclick="quickSearch();">
-          <span id="quickSearchIcon" class="material-symbols-outlined">search</span>
-        </button>
-      </div>
-      <div id="setMenu">
-        <!--<?php include 'php/load_set_list.php'>-->
-        <!--[wpcode id="48"]-->
-      </div>
-    </div>
-    <div id="teamBodyContainer" class="row">
-      <div id="searchResultsContainer">
-        <div id="sideNav">
-          <ul id="searchResults" class="collection">
-          </ul>
+    <div id="buildContainer">
+        <div id="teamHeaderContainer">
+            <div id="teamHeader">
+                <div id="teamOwner">Team Owner</div>
+                <input type="text" class="teamInput" id="teamName" size="80%" placeholder="Team Name">
+                <input type="text" class="teamInput" size="80%" placeholder="Description">
+                <div id="teamFormatContainer">
+                    <input type="number" class="teamInput" id="teamPointLimit" min="0" max="9999" placeholder="Points">
+                    <select class="teamSelect" id="teamFormat">
+                        <option value="modern">Modern Age</option>
+                        <option value="golden">Golden Age</option>
+                    </select>
+                    <select class="teamSelect" id="teamVisibility">
+                        <option value="unlisted">Unlisted</option>
+                        <option value="public">Public</option>
+                    </select>
+                </div>
+            </div>
         </div>
-      </div>
-      <div id="teamBody"></div>
+        <div id="searchSourceContainer">
+            <div id="quickSearchContainer">
+                <input type="text" id="quickSearchInput" placeholder="Search...">
+                <button type="button" id="quickSearchButton" onclick="quickSearch();">
+                    <span id="quickSearchIcon" class="material-symbols-outlined">search</span>
+                </button>
+            </div>
+            <div id="setMenu">
+                <!--<?php include 'php/load_set_list.php'>-->
+                <!--[wpcode id="48"]-->
+            </div>
+        </div>
+        <div id="teamBodyContainer">
+            <div id="searchResultsContainer">
+                <div id="searchResultsScroll">
+                    <ul id="searchResults" class="collection"></ul>
+                </div>
+            </div>
+            <div id="unitContainer"></div>
+            <div id="teamContainer">
+                Team details go here
+            </div>
+        </div>
     </div>
-  </div>
 
-  <!-- Javascript at end of body for optimized loading. -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <script type="text/javascript" src="js/constants.js"></script>
-  <script type="text/javascript" src="js/search_manager.js"></script>
-  <script type="text/javascript" src="js/view_manager.js"></script>
+    <!-- Javascript at end of body for optimized loading. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-  <!-- Test-only -->
-  <script type="text/javascript" src="js/mock_data_source.js"></script>
+    <!-- Site-specific JS includes -->
+    <script type="text/javascript" src="js/constants.js"></script>
+    <script type="text/javascript" src="js/mock_data_source.js"></script>
+    <script type="text/javascript" src="js/unit.js"></script>
+    <script type="text/javascript" src="js/view_manager.js"></script>
 
-  <script>
-    /*
-    var setList = [wpcode id="??"];
-    var dataSource = new DataSource(setList);
-    */
-  
-    /* Test only */
-    var dataSource = new MockDataSource();
+    <!-- Include this last, as it runs the code -->
+    <script>
+        var dataSource = new MockDataSource();
+        var mgr = new ViewManager(dataSource);
+    </script>
 
-    var mgr = new ViewManager(dataSource);
-  </script>
+    <!-- Wordpress code snippets -->
+    <!--
+[wpcode id="782"]
+[wpcode id="784"]
+[wpcode id="785"]
+[wpcode id="786"]
+<script>var setList = [wpcode id="48"];</script>
+[wpcode id="794"]
+-->
+
+
 </body>
 
 </html>

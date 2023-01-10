@@ -1,12 +1,11 @@
 /* Build Container styles */
 #buildContainer {
   background-color: #F0F0F0;
-  overflow-y: hidden;
 }
 
 /* Team Header styles */
 #teamHeaderContainer {
-  background: linear-gradient(135deg, rgb(169,184,195) 100%, rgb(238,238,238) 0%);
+  background: linear-gradient(135deg, rgb(169, 184, 195) 100%, rgb(238, 238, 238) 0%);
   padding: 30px, 0px;
 }
 
@@ -24,22 +23,22 @@
 }
 
 #teamOwner {
-	font-size:18px;
+  font-size: 18px;
 }
 
 .teamInput {
-	padding: 0px;
-	border: 1px solid transparent;
+  padding: 0px;
+  border: 1px solid transparent;
 }
 
 input#teamName {
-	font-size:24px;
+  font-size: 24px;
 }
 
 .teamSelect {
-	padding: 0px;
-	border: 1px solid transparent;
-	font-size:12px;
+  padding: 0px;
+  border: 1px solid transparent;
+  font-size: 12px;
   background-color: transparent;
 }
 
@@ -60,6 +59,7 @@ input#teamName {
 #teamVisibility {
   flex-basis: max-content;
 }
+
 /* Search Source styles */
 #searchSourceContainer {
   display: flex;
@@ -73,35 +73,35 @@ input#teamName {
 /* Quick Search styles */
 #quickSearchContainer {
   display: flex;
-	flex-basis: max-content;
+  flex-basis: max-content;
   align-items: center;
-	height: 60px;
-	border: 1px solid #000000;
-	border-radius: 5px;
-	background-color: #FFFFFF;
+  height: 60px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  background-color: #FFFFFF;
 }
 
 #quickSearchInput {
-	width: 250px;
-	font-size: 20px;
-	margin-left: 5px;
-	margin-top: 15px;
-	border: none;
+  width: 250px;
+  font-size: 20px;
+  margin-left: 5px;
+  margin-top: 15px;
+  border: none;
 }
 
 #quickSearchInput:focus {
-	border: none;
+  border: none;
 }
 
 #quickSearchButton {
-	width: 40px;
-	height: 58px;
-	border: none;
-	border-radius: 5px;
+  width: 40px;
+  height: 58px;
+  border: none;
+  border-radius: 5px;
 }
 
 #quickSearchIcon {
-  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 25;
+  font-variation-settings: 'FILL'0, 'wght'400, 'GRAD'0, 'opsz'25;
 }
 
 /* Set Menu styles */
@@ -109,65 +109,302 @@ input#teamName {
   background-color: transparent;
 }
 
- #setMenu {
-   display: flex;
-   flex-wrap: nowrap;
-   overflow-x: auto;
+#setMenu {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
 }
 
 div.setItem {
-	flex: 0 0 auto;
-	width: 50px;
-	padding-top:2px;
-  padding-bottom:2px;
-	text-align:center;
-	color: #000000;
-	border: 1px solid #000000;
-	border-radius: 5px;
-	background-color: #FFFFFF;
+  flex: 0 0 auto;
+  width: 50px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  text-align: center;
+  color: #000000;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  background-color: #FFFFFF;
   display: inline-block;
 }
 
 img.setIcon {
-	width: 32px;
-	height: 32px;
-	margin:3px;
-	display:block;
-	margin-left: auto;
-	margin-right: auto;
+  width: 32px;
+  height: 32px;
+  margin: 3px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 div.setName {
-	font-size:10px;
-	font-weight:bold;
+  font-size: 10px;
+  font-weight: bold;
 }
 
 /* Team Body styles */
 #teamBodyContainer {
+  display: flex;
   background-color: transparent;
-  height: 500px
 }
 
 /* Search Results styles */
 #searchResultsContainer {
   border-right: 1px solid black;
   width: 300px;
-  height: 500px;
-	display: flex;
-	flex-flow: row wrap;
-	flex-direction: column;
-	padding: 0px;
+  height: 760px;
+
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  padding: 0px;
+
+  flex: 0 0 auto;
 }
 
-#sideNav {
-	overflow-y: auto;
-	overflow-x: hidden;
+#searchResultsScroll {
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 #searchResults li {
-	min-height: 0px;
+  min-height: 0px;
 }
 
 .searchResultInfo {
-	font-size: 10px !important;
+  font-size: 10px !important;
+}
+
+/* Unit area styles */
+#unitContainer {
+  flex: 0 0 auto;
+  position: relative;
+  width: 290px;
+  height: 760px;
+}
+
+#unitFront {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 375px;
+  height: 525px;
+  overflow: hidden;
+}
+
+#unitFrontBorders {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  border-top: 100px solid black;
+  border-radius: 15px;
+  background-color: white;
+}
+
+#unitName {
+  position: absolute;
+  left: 3px;
+  top: 0px;
+  width: 225px;
+  font-family: arial black, sans-serif;
+  font-size: 19px;
+  font-style: italic;
+  color: white;
+  text-align: center;
+}
+
+#unitKeywords {
+  position: absolute;
+  left: 3px;
+  top: 25px;
+  width: 225px;
+  text-align: center;
+  font-size: 10px;
+}
+
+.unitKeyword {
+  color: white;
+}
+
+#unitRealName {
+  position: absolute;
+  left: 7px;
+  top: 87px;
+  width: 225px;
+  color: white;
+  font-family: arial, sans-serif;
+  font-size: 9px;
+  text-align: left;
+}
+
+#unitCollectorNumber {
+  position: absolute;
+  left: 340px;
+  font-size: 11px;
+  color: white;
+}
+
+#unitImage {
+  position: absolute;
+  left: 215px;
+  top: 15px;
+  width: 150px;
+  height: 150px;
+  border: 7px solid black;
+  background-color: white;
+  border-radius: 75px;
+}
+
+#unitDial {
+  position: absolute;
+  left: -5px;
+  bottom: 70px;
+  width: 330px;
+  height: 130px;
+  border: 5px solid black;
+  border-radius: 0px 15px 15px 0px;
+}
+
+#unitDialTable {
+  border: none;
+  table-layout: fixed;
+}
+
+.unitSymbol {
+  position: absolute;
+  left: -7px;
+  width: 40px;
+  height: 24px;
+  border-radius: 10px / 12px;
+  background-color: black;
+}
+
+#unitSymbol0 {
+  position: absolute;
+  top: 0px;
+}
+
+#unitSymbol1 {
+  position: absolute;
+  top: 24px;
+}
+
+#unitSymbol2 {
+  position: absolute;
+  top: 48px;
+}
+
+#unitSymbol3 {
+  position: absolute;
+  top: 72px;
+}
+
+#unitSymbol4 {
+  position: absolute;
+  top: 96px;
+}
+
+#unitDialTable {
+  position: absolute;
+  left: 35px;
+  top: 0px;
+  width: 280px;
+  table-layout: fixed;
+}
+
+.unitDialHeader {
+  color: red;
+  padding: 0px 0px !important;
+  text-align: center;
+  width: 8.3%;
+  font-size: 10px;
+  font-family: 'Gill Sans', sans-serif;
+  font-weight: 300;
+}
+
+.unitDialRow {
+  height: 24px;
+  border-bottom: none !important;
+}
+
+.unitDialEntry {
+  padding: 0px 0px !important;
+  text-align: center;
+  font-family: 'Gill Sans', sans-serif;
+  font-weight: 300;
+}
+
+#unitTeamAbilities {
+  position: absolute;
+  right: 0px;
+  bottom: 70px;
+  width: 45px;
+  height: 130px;
+  background-color: black;
+  border-radius: 12px 0px 0px 12px;
+}
+
+#unitTeamAbility0 {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+#unitTeamAbility1 {
+  position: absolute;
+  left: 10px;
+  top: 55px;
+}
+
+#unitTeamAbility2 {
+  position: absolute;
+  left: 10px;
+  top: 100px;
+}
+
+#unitPointValue {
+  position: absolute;
+  left: 0px;
+  bottom: 40px;
+  width: 182px;
+  height: 24px;
+  color: white;
+  background-color: black;
+  border-radius: 0px 12px 12px 0px;
+  font-size: 16px;
+  font-family: arial, sans-serif;
+  text-align: center;
+}
+
+#unitHeroClixLogo {
+  position: absolute;
+  left: -5px;
+  bottom: 10px;
+}
+
+#unitBack {
+  position: absolute;
+  top: 600px;
+  left: 20px;
+}
+
+#unitBackBorders {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 375px;
+  height: 525px;
+  right: 100%;
+  bottom: 100%;
+  border-top: 15px solid black;
+  border-bottom: 15px solid black;
+  border-radius: 15px;
+  background-color: white;
+}
+
+#teamContainer {
+  flex: 1 1 auto;
+  min-width: 600px;
 }

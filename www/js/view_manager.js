@@ -1,7 +1,7 @@
 var ViewManager = function(dataSource) {
   this.dataSource_ = dataSource;
   this.loadSetMenu_();
-  this.searchMgr_ = new SearchManager(dataSource);
+  this.unit_ = null;
 }
 
 ViewManager.prototype.loadSetMenu_ = function() {
@@ -38,5 +38,43 @@ ViewManager.prototype.loadSetMenu_ = function() {
 }
 
 ViewManager.prototype.searchBySetId = function(setId) {
-  this.searchMgr_.searchBySetId(setId);
+	this.dataSource_.searchBySetId(setId,
+		function(searchResults) {
+			var units = JSON.parse(searchResults);
+			var html = "";
+			for (var unit of units) {
+				var color = RARITY_TO_COLOR[unit.rarity];
+				html += `
+          <li class="collection-item avatar">
+            <a href='' onclick='mgr.searchByUnitId("${unit.id}"); return false;'>
+              <i class="material-icons circle" style="font-size: 36px; color:${color};">account_circle</i>
+              <span class="title">${unit.collector_number} - ${unit.name}</span>
+              <p class="searchResultInfo">${unit.point_value} points</p>
+            </a>
+          </li>`;
+			}
+			document.getElementById("searchResults").innerHTML = html;
+		},
+		function(xhr, desc, err) {
+			alert("Error in searchBySetId(" + setId + "): " + desc) + " err=" + err;
+		});
+}
+
+ViewManager.prototype.searchByKeyword = function(keyword) {
+}
+
+ViewManager.prototype.searchByUnitId = function(unitId) {
+	this.dataSource_.searchByUnitId(unitId,
+		function(searchResults) {
+			var unitJson = JSON.parse(searchResults);
+			mgr.loadUnit(unitJson);
+		},
+		function(xhr, desc, err) {
+			alert("Error in searchByUnitId(" + unitId + "): " + desc) + " err=" + err;
+		});
+}
+
+ViewManager.prototype.loadUnit = function(unitJson) {
+  this.unit_ = new Unit(unitJson);
+  this.unit_.draw();
 }
