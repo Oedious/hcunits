@@ -8,7 +8,7 @@ MockDataSource.prototype.getSetList = function() {
   var setList = [];
   for (var i = 0; i < this.NUMBER_OF_SETS_; ++i) {
     var setItem = {
-      "id": "id_" + i,
+      "unit_id": "id_" + i,
       "universe": universeList[i % 4],
       "name": "Set " + i
     };
@@ -122,7 +122,7 @@ MockDataSource.prototype.searchByUnitId = function(unitId, onSuccess, onError) {
       "speed_power": "Charge",
       "speed_value": 8,
       "attack_power": "Quake",
-      "attack_value": 11,
+      "attack_value": 10,
       "defense_power": "Combat Reflexes",
       "defense_value": 17,
       "damage_value": 3
@@ -131,7 +131,7 @@ MockDataSource.prototype.searchByUnitId = function(unitId, onSuccess, onError) {
       "speed_power": "Charge",
       "speed_value": 8,
       "attack_power": "Quake",
-      "attack_value": 11,
+      "attack_value": 10,
       "defense_power": "Combat Reflexes",
       "defense_value": 17,
       "damage_value": 3

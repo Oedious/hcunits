@@ -18,7 +18,7 @@ Unit.prototype.draw = function() {
 
   var teamAbilitiesHtml = '';
   for (var i = 0; i < this.team_abilities.length; ++i) {
-    teamAbilitiesHtml += `<img id='unitTeamAbility${i}' src='wp-content/uploads/ta_${this.team_abilities[i]}.png' alt='TA0'/>`;
+    teamAbilitiesHtml += `<img id='unitTeamAbility${i}' src='../wp-content/uploads/ta_${this.team_abilities[i]}.png' alt=''/>`;
   }
 
   var html = `
@@ -32,7 +32,7 @@ Unit.prototype.draw = function() {
       <div id='unitDial'>${this.drawDial_()}</div>
       <div id='unitTeamAbilities'>${teamAbilitiesHtml}</div>
       <div id='unitPointValue'>POINT VALUE: ${this.point_value}</div>
-      <img id='unitHeroClixLogo' src='wp-content/uploads/heroclix_logo_small.png' alt=''/>
+      <img id='unitHeroClixLogo' src='../wp-content/uploads/heroclix_logo_small.png' alt=''/>
     </div>
     <div id='unitBack'>
       <div id='unitBackBorders'></div>
@@ -42,26 +42,51 @@ Unit.prototype.draw = function() {
 }
 
 Unit.prototype.drawDial_ = function() {
-  var dialHtml = `
-    <div id='unitSymbol0' class='unitSymbol'></div>
-    <div id='unitSymbol1' class='unitSymbol'></div>
-    <div id='unitSymbol2' class='unitSymbol'></div>
-    <div id='unitSymbol3' class='unitSymbol'></div>
-    <div id='unitSymbol4' class='unitSymbol'></div>
+  var html = `
+    <div class='unitTraitType'>
+      <div id='unitRange'>${this.unit_range}</div>`;
+  for (var i = 0; i < this.targets; ++i) {
+    html += `<img class='unitBolt' src='../wp-content/uploads/bolt.png' alt='' style='left: ${20 + i * 5}px;'\>`;
+  }
+  html += `
+    </div>
+    <div id='unitSpeedType' class='unitTraitType'>
+      <img class='unitTraitImg' src='../wp-content/uploads/${this.speed_type}.png'/>
+    </div>
+    <div id='unitAttackType' class='unitTraitType'>
+      <img class='unitTraitImg' src='../wp-content/uploads/${this.attack_type}.png'/>
+    </div>
+    <div id='unitDefenseType' class='unitTraitType'>
+      <img class='unitTraitImg' src='../wp-content/uploads/${this.defense_type}.png'/>
+    </div>
+    <div id='unitDamageType' class='unitTraitType'>
+      <img class='unitTraitImg' src='../wp-content/uploads/${this.damage_type}.png'/>
+    </div>
     <table id='unitDialTable'>`;
 
-  dialHtml += `<tr class='unitDialRow'>`;
+  html += `<tr class='unitDialRow'>`;
   for (var col = 0; col < this.dial_size; ++col) {
-    dialHtml += `<th class='unitDialHeader'>${col + 1}</th>`;
+    html += `<th class='unitDialHeader'>${col + 1}</th>`;
   }
-  dialHtml += `</tr>`;
+  html += `</tr>`;
   for (var row = 0; row < 4; ++row) {
-    dialHtml += `<tr class='unitDialRow'>`;
+    var rowType = ['speed', 'attack', 'defense', 'damage'][row];
+    html += `<tr class='unitDialRow'>`;
     for (var col = 0; col < this.dial_size; ++col) {
-      dialHtml += `<td class='unitDialEntry'></td>`;
+      if ((col + 1) >= this.dial_start && col < this.dial.length) {
+        var power = this.dial[col][rowType + '_power'];
+        var style = '';
+        if (power) {
+          style = POWER_TO_STYLE[power];
+        }
+        var value = this.dial[col][rowType + '_value'];
+        html += `<td class='unitDialEntry' style='${style}'>${value}</td>`;
+      } else {
+        html += `<td class='unitDialEntryKO'>KO</td>`;
+      }
     }
-    dialHtml += `</tr>`;
+    html += `</tr>`;
   }
-  dialHtml += `</table>`;
-  return dialHtml;
+  html += `</table>`;
+  return html;
 }

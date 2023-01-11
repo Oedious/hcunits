@@ -152,7 +152,7 @@ div.setName {
 #searchResultsContainer {
   border-right: 1px solid black;
   width: 300px;
-  height: 760px;
+  height: 1100px;
 
   display: flex;
   flex-direction: column;
@@ -179,8 +179,8 @@ div.setName {
 #unitContainer {
   flex: 0 0 auto;
   position: relative;
-  width: 290px;
-  height: 760px;
+  width: 400px;
+  height: 1100px;
 }
 
 #unitFront {
@@ -272,38 +272,55 @@ div.setName {
   table-layout: fixed;
 }
 
-.unitSymbol {
+.unitTraitType {
   position: absolute;
   left: -7px;
   width: 40px;
   height: 24px;
+  top: 0px;
   border-radius: 10px / 12px;
   background-color: black;
 }
 
-#unitSymbol0 {
+#unitRange {
   position: absolute;
-  top: 0px;
+  left: 12px;
+  top: 2px;
+  color: white;
+  font-size: 12px;
+  font-family: 'Gill Sans', sans-serif;
+  font-weight: 300;
 }
 
-#unitSymbol1 {
+.unitBolt {
+  position: absolute;
+  top: 4px;
+}
+
+#unitSpeedType {
   position: absolute;
   top: 24px;
 }
 
-#unitSymbol2 {
+#unitAttackType {
   position: absolute;
   top: 48px;
 }
 
-#unitSymbol3 {
+#unitDefenseType {
   position: absolute;
   top: 72px;
 }
 
-#unitSymbol4 {
+#unitDamageType {
   position: absolute;
   top: 96px;
+}
+
+.unitTraitImg {
+  position: absolute;
+  right: 10px;
+  top: 2px;
 }
 
 #unitDialTable {
@@ -334,6 +351,17 @@ div.setName {
   text-align: center;
   font-family: 'Gill Sans', sans-serif;
   font-weight: 300;
+  box-shadow: inset 0px 0px 0px 2px white;
+  box-sizing: border-box;
+  border-radius: 0px;
+}
+
+.unitDialEntryKO {
+  padding: 0px 0px !important;
+  text-align: center;
+  font-family: comic sans ms;
+  font-weight: 700;
+  color: red;
 }
 
 #unitTeamAbilities {
@@ -386,7 +414,7 @@ div.setName {
 
 #unitBack {
   position: absolute;
-  top: 600px;
+  top: 550px;
   left: 20px;
 }
 

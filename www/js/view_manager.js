@@ -27,7 +27,7 @@ ViewManager.prototype.loadSetMenu_ = function() {
     html += `
       <div class='setItem' style='border-bottom: 2px solid ${universe_color};'>
       <span class='setItemLink' onclick='mgr.searchBySetId("${setItem.id}")'>
-        <img class='setIcon' src='/wp-content/uploads/set_${setItem.id}.png' alt='${setItem.id}' title='${setItem.name}'/>
+        <img class='setIcon' src='../wp-content/uploads/set_${setItem.id}.png' alt='${setItem.id}' title='${setItem.name}'/>
         <div class='setName'>${setItem.id}</div>
       </span>
     </div>
@@ -46,7 +46,7 @@ ViewManager.prototype.searchBySetId = function(setId) {
 				var color = RARITY_TO_COLOR[unit.rarity];
 				html += `
           <li class="collection-item avatar">
-            <a href='' onclick='mgr.searchByUnitId("${unit.id}"); return false;'>
+            <a href='' onclick='mgr.searchByUnitId("${unit.unit_id}"); return false;'>
               <i class="material-icons circle" style="font-size: 36px; color:${color};">account_circle</i>
               <span class="title">${unit.collector_number} - ${unit.name}</span>
               <p class="searchResultInfo">${unit.point_value} points</p>

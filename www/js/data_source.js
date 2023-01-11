@@ -12,7 +12,7 @@ DataSource.prototype.searchBySetId = function(setId, onSuccess, onError) {
     type: 'post',
     dataType: 'text',
     data: {
-  	  action: 'search_by_set',
+  	  action: 'search_by_set_id',
   	  set_id: setId
     },
     success: onSuccess,
@@ -26,8 +26,8 @@ DataSource.prototype.searchByUnitId = function(unitId, onSuccess, onError) {
     type: 'post',
     dataType: 'text',
     data: {
-  	  action: 'search_by_unit',
-  	  set_id: unitId
+  	  action: 'search_by_unit_id',
+  	  unit_id: unitId
     },
     success: onSuccess,
     error: onError
