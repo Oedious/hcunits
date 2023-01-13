@@ -149,7 +149,7 @@ Unit.prototype.drawDial_ = function() {
           if (!powerObj) {
             powerObj = {
               name: 'Unknown power',
-              style: '',
+              style: 'color:black; background-color: white; border: 2px solid red;',
               rules: power
             }
           }
