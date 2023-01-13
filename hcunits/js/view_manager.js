@@ -28,7 +28,7 @@ ViewManager.prototype.loadSetMenu_ = function() {
     html += `
       <div class='setItem' style='border-bottom: 2px solid ${universe_color};'>
       <span class='setItemLink' onclick='mgr.searchBySetId("${setId}")'>
-        <img class='setIcon' src='../wp-content/uploads/set_${setId}.png' alt='${setId}' title='${setItem.name}'/>
+        <img class='setIcon' src='../hcunits/images/set_${setId}.png' alt='${setId}' title='${setItem.name}'/>
         <div class='setName'>${setId}</div>
       </span>
     </div>

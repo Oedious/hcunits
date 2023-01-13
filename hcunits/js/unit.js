@@ -16,7 +16,7 @@ Unit.prototype.draw = function() {
       <div id='unitTeamAbilities'>${this.drawTeamAbilities_()}</div>
       <div id='unitPointValue'>POINT VALUE: ${this.point_value}</div>
       <div id='unitHeroClixLogoClip'>
-        <img id='unitHeroClixLogo' src='../wp-content/uploads/heroclix_logo_small.png' alt=''/>
+        <img id='unitHeroClixLogo' src='../hcunits/images/heroclix_logo_small.png' alt=''/>
       </div>
     </div>`;
     /*
@@ -62,7 +62,7 @@ Unit.prototype.drawTeamAbilities_ = function() {
     var teamAbility = TEAM_ABILITY_LIST[this.team_abilities[i]];
     teamAbilitiesHtml += `
       <div id='unitTeamAbility${i}' class='tooltip'>
-        <img src='../wp-content/uploads/ta_${this.team_abilities[i]}.png' alt=''/>
+        <img src='../hcunits/images/ta_${this.team_abilities[i]}.png' alt=''/>
         <span class='tooltiptext'>${escapeHtml(teamAbility.rules)}</span>
       </div>
       `;
@@ -98,7 +98,7 @@ Unit.prototype.drawSpecialPowers_ = function() {
     }
     html += `
       <tr class='unitSpecialPowerRow'>
-        <td class='unitSpecialPower'><img src='../wp-content/uploads/sp_${type}.png' alt=''/></td>
+        <td class='unitSpecialPower'><img src='../hcunits/images/sp_${type}.png' alt=''/></td>
         <td class='unitSpecialPower'><b>${escapeHtml(power.name.toUpperCase())}</b><br>${escapeHtml(power.value)}</td>
       </tr>
       `;
@@ -113,21 +113,21 @@ Unit.prototype.drawDial_ = function() {
     <div class='unitCombatSymbol'>
       <div id='unitRange'>${this.unit_range}</div>`;
   for (var i = 0; i < this.targets; ++i) {
-    html += `<img class='unitBolt' src='../wp-content/uploads/bolt.png' alt='' height='12' width='6' style='left: ${10 + i * 4}px;'\>`;
+    html += `<img class='unitBolt' src='../hcunits/images/bolt.png' alt='' height='12' width='6' style='left: ${10 + i * 4}px;'\>`;
   }
   html += `
     </div>
     <div id='unitCombatSymbolSpeed' class='unitCombatSymbol'>
-      <img class='unitCombatSymbolImg' src='../wp-content/uploads/${this.speed_type}.png'/>
+      <img class='unitCombatSymbolImg' src='../hcunits/images/${this.speed_type}.png'/>
     </div>
     <div id='unitCombatSymbolAttack' class='unitCombatSymbol'>
-      <img class='unitCombatSymbolImg' src='../wp-content/uploads/${this.attack_type}.png'/>
+      <img class='unitCombatSymbolImg' src='../hcunits/images/${this.attack_type}.png'/>
     </div>
     <div id='unitCombatSymbolDefense' class='unitCombatSymbol'>
-      <img class='unitCombatSymbolImg' src='../wp-content/uploads/${this.defense_type}.png'/>
+      <img class='unitCombatSymbolImg' src='../hcunits/images/${this.defense_type}.png'/>
     </div>
     <div id='unitCombatSymbolDamage' class='unitCombatSymbol'>
-      <img class='unitCombatSymbolImg' src='../wp-content/uploads/${this.damage_type}.png'/>
+      <img class='unitCombatSymbolImg' src='../hcunits/images/${this.damage_type}.png'/>
     </div>
     <table id='unitDialTable'>`;
 
