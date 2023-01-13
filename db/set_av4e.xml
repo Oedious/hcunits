@@ -14,11 +14,12 @@
     <targets>2</targets>
     <dimensions>1x1</dimensions>
     <keywords>["Avengers", "Howling Commandos", "Invaders", "Past", "S.H.I.E.L.D.", "Soldier"]</keywords>
-    <trait_0>{
+    <special_powers>[{
+      "type": "trait",
       "name": "THOSE WHO OPPOSE HIS SHIELD MUST YIELD",
       "value": "Energy Shield/Deflection, Leadership.",
-      "powers": ["Energy Shield/Deflection", "Leadership"]
-    }</trait_0>
+      "powers": ["energy_shield_deflection", "leadership"]
+    }]</special_powers>
     <speed_type>boot</speed_type>
     <attack_type>fist</attack_type>
     <defense_type>indomitable</defense_type>
@@ -26,84 +27,84 @@
     <dial_start>1</dial_start>
     <dial_size>12</dial_size>
     <dial>[{
-        "speed_power": "Running Shot",
+        "speed_power": "running_shot",
         "speed_value": 10,
         "attack_value": 11,
-        "defense_power": "Toughness",
+        "defense_power": "toughness",
         "defense_value": 18,
-        "damage_power": "Outwit",
+        "damage_power": "outwit",
         "damage_value": 3
       },
       {
-        "speed_power": "Running Shot",
+        "speed_power": "running_shot",
         "speed_value": 8,
         "attack_value": 11,
-        "defense_power": "Toughness",
+        "defense_power": "toughness",
         "defense_value": 18,
-        "damage_power": "Outwit",
+        "damage_power": "outwit",
         "damage_value": 3
       },
       {
-        "speed_power": "Running Shot",
+        "speed_power": "running_shot",
         "speed_value": 8,
         "attack_value": 11,
-        "defense_power": "Toughness",
+        "defense_power": "toughness",
         "defense_value": 17,
-        "damage_power": "Outwit",
+        "damage_power": "outwit",
         "damage_value": 3
       },
       {
-        "speed_power": "Running Shot",
+        "speed_power": "running_shot",
         "speed_value": 8,
         "attack_value": 11,
-        "defense_power": "Toughness",
+        "defense_power": "toughness",
         "defense_value": 17,
-        "damage_power": "Outwit",
+        "damage_power": "outwit",
         "damage_value": 3
       },
       {
-        "speed_power": "Charge",
+        "speed_power": "charge",
         "speed_value": 8,
-        "attack_power": "Quake",
+        "attack_power": "quake",
         "attack_value": 11,
-        "defense_power": "Combat Reflexes",
+        "defense_power": "combat_reflexes",
         "defense_value": 17,
         "damage_value": 3
       },
       {
-        "speed_power": "Charge",
+        "speed_power": "charge",
         "speed_value": 8,
-        "attack_power": "Quake",
+        "attack_power": "quake",
         "attack_value": 10,
-        "defense_power": "Combat Reflexes",
+        "defense_power": "combat_reflexes",
         "defense_value": 17,
         "damage_value": 3
       },
       {
-        "speed_power": "Charge",
+        "speed_power": "charge",
         "speed_value": 8,
-        "attack_power": "Quake",
+        "attack_power": "quake",
         "attack_value": 10,
-        "defense_power": "Combat Reflexes",
+        "defense_power": "combat_reflexes",
         "defense_value": 17,
         "damage_value": 3
       },
       {
-        "speed_power": "Flurry",
+        "speed_power": "flurry",
         "speed_value": 8,
         "attack_value": 10,
-        "defense_power": "Willpower",
+        "defense_power": "willpower",
         "defense_value": 17,
-        "damage_power": "Close Combat Expert",
+        "damage_power": "close_combat_expert",
         "damage_value": 2
       },
       {
-        "speed_power": "Flurry",
+        "speed_power": "flurry",
         "speed_value": 8,
         "attack_value": 10,
-        "defense_power": "Willpower",
+        "defense_power": "willpower",
         "defense_value": 16,
-        "damage_power": "Close Combat Expert",
+        "damage_power": "close_combat_expert",
         "damage_value": 2
       }]
   </row>
@@ -122,11 +123,12 @@
     <targets>2</targets>
     <dimensions>1x1</dimensions>
     <keywords>["Avengers", "Howling Commandos", "Invaders", "Past", "S.H.I.E.L.D.", "Soldier"]</keywords>
-    <trait_0>{
+    <special_powers>[{
+      "type": "trait",
       "name": "THOSE WHO OPPOSE HIS SHIELD MUST YIELD",
       "value": "Energy Shield/Deflection, Leadership.",
-      "powers": ["Energy Shield/Deflection", "Leadership"]
-    }</trait_0>
+      "powers": ["energy_shield_deflection", "leadership"]
+    }]</special_powers>
     <speed_type>boot</speed_type>
     <attack_type>fist</attack_type>
     <defense_type>indomitable</defense_type>
@@ -134,48 +136,48 @@
     <dial_start>5</dial_start>
     <dial_size>12</dial_size>
     <dial>[{
-        "speed_power": "Charge",
+        "speed_power": "charge",
         "speed_value": 8,
-        "attack_power": "Quake",
+        "attack_power": "quake",
         "attack_value": 11,
-        "defense_power": "Combat Reflexes",
+        "defense_power": "combat_reflexes",
         "defense_value": 17,
         "damage_value": 3
       },
       {
-        "speed_power": "Charge",
+        "speed_power": "charge",
         "speed_value": 8,
-        "attack_power": "Quake",
+        "attack_power": "quake",
         "attack_value": 10,
-        "defense_power": "Combat Reflexes",
+        "defense_power": "combat_reflexes",
         "defense_value": 17,
         "damage_value": 3
       },
       {
-        "speed_power": "Charge",
+        "speed_power": "charge",
         "speed_value": 8,
-        "attack_power": "Quake",
+        "attack_power": "quake",
         "attack_value": 10,
-        "defense_power": "Combat Reflexes",
+        "defense_power": "combat_reflexes",
         "defense_value": 17,
         "damage_value": 3
       },
       {
-        "speed_power": "Flurry",
+        "speed_power": "flurry",
         "speed_value": 8,
         "attack_value": 10,
-        "defense_power": "Willpower",
+        "defense_power": "willpower",
         "defense_value": 17,
-        "damage_power": "Close Combat Expert",
+        "damage_power": "close_combat_expert",
         "damage_value": 2
       },
       {
-        "speed_power": "Flurry",
+        "speed_power": "flurry",
         "speed_value": 8,
         "attack_value": 10,
-        "defense_power": "Willpower",
+        "defense_power": "willpower",
         "defense_value": 16,
-        "damage_power": "Close Combat Expert",
+        "damage_power": "close_combat_expert",
         "damage_value": 2
       }]
   </row>
@@ -201,28 +203,28 @@
     <dial_start>1</dial_start>
     <dial_size>12</dial_size>
     <dial>[{
-        "speed_power": "Stealth",
+        "speed_power": "stealth",
         "speed_value": 6,
         "attack_value": 10,
-        "defense_power": "Combat Reflexes",
+        "defense_power": "combat_reflexes",
         "defense_value": 16,
-        "damage_power": "Close Combat Expert",
+        "damage_power": "close_combat_expert",
         "damage_value": 1
       },
       {
-        "speed_power": "Plasticity",
+        "speed_power": "plasticity",
         "speed_value": 6,
         "attack_value": 9,
-        "defense_power": "Combat Reflexes",
+        "defense_power": "combat_reflexes",
         "defense_value": 16,
-        "damage_power": "Close Combat Expert",
+        "damage_power": "close_combat_expert",
         "damage_value": 2
       },
       {
-        "speed_power": "Plasticity",
+        "speed_power": "plasticity",
         "speed_value": 6,
         "attack_value": 9,
-        "defense_power": "Combat Reflexes",
+        "defense_power": "combat_reflexes",
         "defense_value": 16,
         "damage_value": 1
       }]
@@ -249,29 +251,29 @@
     <dial_start>1</dial_start>
     <dial_size>12</dial_size>
     <dial>[{
-        "speed_power": "Running Shot",
+        "speed_power": "running_shot",
         "speed_value": 6,
-        "attack_power": "Pulse Wave",
+        "attack_power": "pulse_wave",
         "attack_value": 10,
         "defense_value": 16,
         "damage_value": 1
       },
       {
-        "speed_power": "Running Shot",
+        "speed_power": "running_shot",
         "speed_value": 6,
-        "attack_power": "Pulse Wave",
+        "attack_power": "pulse_wave",
         "attack_value": 9,
         "defense_value": 16,
-        "damage_power": "Ranged Combat Expert",
+        "damage_power": "ranged_combat_expert",
         "damage_value": 1
       },
       {
-        "speed_power": "Running Shot",
+        "speed_power": "running_shot",
         "speed_value": 6,
-        "attack_power": "Pulse Wave",
+        "attack_power": "pulse_wave",
         "attack_value": 9,
         "defense_value": 16,
-        "damage_power": "Ranged Combat Expert",
+        "damage_power": "ranged_combat_expert",
         "damage_value": 1
       }]
   </row>
@@ -290,11 +292,12 @@
     <targets>1</targets>
     <dimensions>1x1</dimensions>
     <keywords>["Hydra", "Thunderbolts", "Assassin", "Past", "Soldier", "Spy"]</keywords>
-    <speed_special_power>{
+    <special_powers>[{
+      "type": "speed",
       "name": "WITHOUT A TRACE",
       "value": "Stealth, Plasticity. // FREE: Place Winter Soldier in a square of hindering terrain within range and line of fire.",
-      "powers": ["Stealth", "Plasticity"]
-    }</speed_special_power>
+      "powers": ["stealth", "plasticity"]
+    }]</special_powers>
     <speed_type>boot</speed_type>
     <attack_type>fist</attack_type>
     <defense_type>indomitable</defense_type>
@@ -302,57 +305,57 @@
     <dial_start>1</dial_start>
     <dial_size>12</dial_size>
     <dial>[{
-        "speed_power": "Special",
+        "speed_power": "special",
         "speed_value": 8,
-        "attack_power": "Energy Explosion",
+        "attack_power": "energy_explosion",
         "attack_value": 11,
         "defense_value": 18,
-        "damage_power": "Close Combat Expert",
+        "damage_power": "close_combat_expert",
         "damage_value": 3
       },
       {
-        "speed_power": "Special",
+        "speed_power": "special",
         "speed_value": 8,
-        "attack_power": "Energy Explosion",
+        "attack_power": "energy_explosion",
         "attack_value": 10,
         "defense_value": 17,
-        "damage_power": "Close Combat Expert",
+        "damage_power": "close_combat_expert",
         "damage_value": 2
       },
       {
-        "speed_power": "Special",
+        "speed_power": "special",
         "speed_value": 8,
-        "attack_power": "Energy Explosion",
+        "attack_power": "energy_explosion",
         "attack_value": 10,
         "defense_value": 17,
-        "damage_power": "Close Combat Expert",
+        "damage_power": "close_combat_expert",
         "damage_value": 2
       },
       {
-        "speed_power": "Plasticity",
+        "speed_power": "plasticity",
         "speed_value": 7,
         "attack_value": 11,
-        "defense_power": "Toughness",
+        "defense_power": "toughness",
         "defense_value": 17,
-        "damage_power": "Ranged Combat Expert",
+        "damage_power": "ranged_combat_expert",
         "damage_value": 2
       },
       {
-        "speed_power": "Plasticity",
+        "speed_power": "plasticity",
         "speed_value": 7,
         "attack_value": 10,
-        "defense_power": "Toughness",
+        "defense_power": "toughness",
         "defense_value": 17,
-        "damage_power": "Ranged Combat Expert",
+        "damage_power": "ranged_combat_expert",
         "damage_value": 2
       },
       {
-        "speed_power": "Plasticity",
+        "speed_power": "plasticity",
         "speed_value": 7,
         "attack_value": 10,
-        "defense_power": "Toughness",
+        "defense_power": "toughness",
         "defense_value": 16,
-        "damage_power": "Ranged Combat Expert",
+        "damage_power": "ranged_combat_expert",
         "damage_value": 3
       }]
   </row>
@@ -371,10 +374,11 @@
     <targets>2</targets>
     <dimensions>1x1</dimensions>
     <keywords>["Avengers", "Defenders", "S.H.I.E.L.D.", "Thunderbolts", "Celebrity"]</keywords>
-    <trait_0>{
+    <special_powers>[{
+      "type": "trait",
       "name": "FOLLOW-UP",
       "value": "FREE: Once per turn for all characters with a Follow-Up trait, make an attack using Hawkeye's printed combat values, but only to target a single character hit with an attack made by another friendly character with the Avengers keyword."
-    }</trait_0>
+    }]</special_powers>
     <speed_type>boot</speed_type>
     <attack_type>fist</attack_type>
     <defense_type>indomitable</defense_type>
@@ -382,66 +386,66 @@
     <dial_start>1</dial_start>
     <dial_size>12</dial_size>
     <dial>[{
-        "speed_power": "Running Shot",
+        "speed_power": "running_shot",
         "speed_value": 8,
-        "attack_power": "Energy Explosion",
+        "attack_power": "energy_explosion",
         "attack_value": 11,
-        "defense_power": "Willpower",
+        "defense_power": "willpower",
         "defense_value": 17,
         "damage_value": 3
       },
       {
-        "speed_power": "Running Shot",
+        "speed_power": "running_shot",
         "speed_value": 8,
-        "attack_power": "Energy Explosion",
+        "attack_power": "energy_explosion",
         "attack_value": 11,
-        "defense_power": "Willpower",
+        "defense_power": "willpower",
         "defense_value": 17,
         "damage_value": 3
       },
       {
-        "speed_power": "Running Shot",
-        "speed_value": 8,
-        "attack_power": "Precision Strike",
-        "attack_value": 11,
-        "defense_value": 18,
-        "damage_power": "Ranged Combat Expert",
-        "damage_value": 2
-      },
-      {
-        "speed_power": "Running Shot",
+        "speed_power": "running_shot",
         "speed_value": 8,
         "attack_power": "Precision Strike",
         "attack_value": 11,
         "defense_value": 18,
-        "damage_power": "Ranged Combat Expert",
+        "damage_power": "ranged_combat_expert",
+        "damage_value": 2
+      },
+      {
+        "speed_power": "running_shot",
+        "speed_value": 8,
+        "attack_power": "Precision Strike",
+        "attack_value": 11,
+        "defense_value": 18,
+        "damage_power": "ranged_combat_expert",
         "damage_value": 2
       },
       {
         "speed_value": 6,
-        "attack_power": "Penetrating/Psychic Blast",
+        "attack_power": "penetrating_psychic_blast",
         "attack_value": 11,
-        "defense_power": "Super Senses",
+        "defense_power": "super_senses",
         "defense_value": 17,
-        "damage_power": "Ranged Combat Expert",
+        "damage_power": "ranged_combat_expert",
         "damage_value": 3
       },
       {
         "speed_value": 6,
-        "attack_power": "Penetrating/Psychic Blast",
+        "attack_power": "penetrating_psychic_blast",
         "attack_value": 12,
-        "defense_power": "Super Senses",
+        "defense_power": "super_senses",
         "defense_value": 17,
-        "damage_power": "Ranged Combat Expert",
+        "damage_power": "ranged_combat_expert",
         "damage_value": 3
       },
       {
         "speed_value": 6,
-        "attack_power": "Pulse Wave",
+        "attack_power": "pulse_wave",
         "attack_value": 12,
-        "defense_power": "Super Senses",
+        "defense_power": "super_senses",
         "defense_value": 16,
-        "damage_power": "Ranged Combat Expert",
+        "damage_power": "ranged_combat_expert",
         "damage_value": 3
       }]
   </row>
@@ -461,11 +465,12 @@
     <targets>2</targets>
     <dimensions>1x1</dimensions>
     <keywords>["Avengers", "Heroes for Hire", "S.H.I.E.L.D.", "Soldier"]</keywords>
-    <trait_0>{
+    <special_powers>[{
+      "type": "trait",
       "name": "AERIAL COMBAT MANEUVERS",
-      "value": "Super Senses, but succeeds on a 4-6 for range attacks (succeeds normally for close attacks).",
-      "powers": ["Super Senses"]
-    }</trait_0>
+      "value": "super_senses, but succeeds on a 4-6 for range attacks (succeeds normally for close attacks).",
+      "powers": ["super_senses"]
+    }]</special_powers>
     <speed_type>wing</speed_type>
     <attack_type>fist</attack_type>
     <defense_type>indomitable</defense_type>
@@ -473,57 +478,57 @@
     <dial_start>1</dial_start>
     <dial_size>12</dial_size>
     <dial>[{
-        "speed_power": "Charge",
+        "speed_power": "charge",
         "speed_value": 10,
-        "attack_power": "Quake",
+        "attack_power": "quake",
         "attack_value": 11,
-        "defense_power": "Energy Shield/Deflection",
+        "defense_power": "energy_shield_deflection",
         "defense_value": 17,
         "damage_value": 3
       },
       {
-        "speed_power": "Charge",
+        "speed_power": "charge",
         "speed_value": 8,
-        "attack_power": "Quake",
+        "attack_power": "quake",
         "attack_value": 11,
-        "defense_power": "Energy Shield/Deflection",
+        "defense_power": "energy_shield_deflection",
         "defense_value": 17,
         "damage_value": 3
       },
       {
-        "speed_power": "Running Shot",
+        "speed_power": "running_shot",
         "speed_value": 8,
         "attack_value": 10,
-        "defense_power": "Energy Shield/Deflection",
+        "defense_power": "energy_shield_deflection",
         "defense_value": 17,
         "damage_power": "Perplex",
         "damage_value": 3
       },
       {
-        "speed_power": "Running Shot",
+        "speed_power": "running_shot",
         "speed_value": 8,
         "attack_value": 10,
-        "defense_power": "Energy Shield/Deflection",
+        "defense_power": "energy_shield_deflection",
         "defense_value": 17,
         "damage_power": "Perplex",
         "damage_value": 3
       },
       {
-        "speed_power": "Charge",
+        "speed_power": "charge",
         "speed_value": 8,
         "attack_value": 10,
-        "defense_power": "Willpower",
+        "defense_power": "willpower",
         "defense_value": 18,
-        "damage_power": "Close Combat Expert",
+        "damage_power": "close_combat_expert",
         "damage_value": 2
       },
       {
-        "speed_power": "Charge",
+        "speed_power": "charge",
         "speed_value": 6,
         "attack_value": 10,
-        "defense_power": "Willpower",
+        "defense_power": "willpower",
         "defense_value": 18,
-        "damage_power": "Close Combat Expert",
+        "damage_power": "close_combat_expert",
         "damage_value": 2
       }]
   </row>
@@ -549,27 +554,27 @@
     <dial_start>1</dial_start>
     <dial_size>12</dial_size>
     <dial>[{
-        "speed_power": "Plasticity",
+        "speed_power": "plasticity",
         "speed_value": 6,
         "attack_value": 10,
         "defense_value": 16,
-        "damage_power": "Empower",
+        "damage_power": "empower",
         "damage_value": 1
       },
       {
-        "speed_power": "Plasticity",
+        "speed_power": "plasticity",
         "speed_value": 6,
         "attack_value": 9,
         "defense_value": 16,
-        "damage_power": "Empower",
+        "damage_power": "empower",
         "damage_value": 2
       },
       {
-        "speed_power": "Plasticity",
+        "speed_power": "plasticity",
         "speed_value": 6,
         "attack_value": 9,
         "defense_value": 16,
-        "damage_power": "Empower",
+        "damage_power": "empower",
         "damage_value": 2
       }]
   </row>
@@ -589,10 +594,11 @@
     <targets>1</targets>
     <dimensions>1x1</dimensions>
     <keywords>["Agents of Atlas", "Avengers", "S.H.I.E.L.D.", "Wakanda", "Winter Guard", "Animal", "Spy"]</keywords>
-    <trait_0>{
+    <special_powers>[{
+      "type": "trait",
       "name": "FOLLOW-UP",
       "value": "FREE: Once per turn for all characters with a Follow-Up trait, make an attack using Gorilla-Man's printed combat values, but only to target a single character hit with an attack made by another friendly character with the Wakanda keyword."
-    }</trait_0>
+    }]</special_powers>
     <speed_type>boot</speed_type>
     <attack_type>fist</attack_type>
     <defense_type>indomitable</defense_type>
@@ -600,65 +606,65 @@
     <dial_start>1</dial_start>
     <dial_size>12</dial_size>
     <dial>[{
-        "speed_power": "Plasticity",
+        "speed_power": "plasticity",
         "speed_value": 9,
         "attack_value": 10,
-        "defense_power": "Combat Reflexes",
+        "defense_power": "combat_reflexes",
         "defense_value": 18,
-        "damage_power": "Close Combat Expert",
+        "damage_power": "close_combat_expert",
         "damage_value": 3
       },
       {
-        "speed_power": "Plasticity",
+        "speed_power": "plasticity",
         "speed_value": 9,
         "attack_value": 10,
-        "defense_power": "Combat Reflexes",
+        "defense_power": "combat_reflexes",
         "defense_value": 17,
-        "damage_power": "Close Combat Expert",
+        "damage_power": "close_combat_expert",
         "damage_value": 3
       },
       {
-        "speed_power": "Flurry",
+        "speed_power": "flurry",
         "speed_value": 8,
         "attack_value": 11,
-        "defense_power": "Toughness",
+        "defense_power": "toughness",
         "defense_value": 17,
-        "damage_power": "Battle Fury",
+        "damage_power": "battle_fury",
         "damage_value": 3
       },
       {
-        "speed_power": "Flurry",
+        "speed_power": "flurry",
         "speed_value": 8,
         "attack_value": 11,
-        "defense_power": "Toughness",
+        "defense_power": "toughness",
         "defense_value": 16,
-        "damage_power": "Battle Fury",
+        "damage_power": "battle_fury",
         "damage_value": 3
       },
       {
-        "speed_power": "Flurry",
+        "speed_power": "flurry",
         "speed_value": 8,
-        "attack_power": "Blades/Claws/Fangs",
+        "attack_power": "blades_claws_fangs",
         "attack_value": 11,
-        "defense_power": "Toughness",
+        "defense_power": "toughness",
         "defense_value": 17,
         "damage_value": 4
       },
       {
-        "speed_power": "Plasticity",
+        "speed_power": "plasticity",
         "speed_value": 7,
-        "attack_power": "Blades/Claws/Fangs",
+        "attack_power": "blades_claws_fangs",
         "attack_value": 10,
-        "defense_power": "Regeneration",
+        "defense_power": "regeneration",
         "defense_value": 17,
         "damage_value": 4
       },
       {
-        "speed_power": "Plasticity",
+        "speed_power": "plasticity",
         "speed_value": 7,
-        "attack_power": "Blades/Claws/Fangs",
+        "attack_power": "blades_claws_fangs",
         "attack_value": 10,
-        "defense_power": "Regeneration",
+        "defense_power": "regeneration",
         "defense_value": 18,
         "damage_value": 4
       }]
@@ -678,11 +684,12 @@
     <targets>1</targets>
     <dimensions>1x1</dimensions>
     <keywords>["Young Avengers", "Soldier"]</keywords>
-    <trait_0>{
+    <special_powers>[{
+      "type": "trait",
       "name": "YOUNG AVENGERS, ASSEMBLE",
       "value": "Defend, Leadership.",
-      "powers": ["Defend", "Leadership"]
-    }</trait_0>
+      "powers": ["Defend", "leadership"]
+    }]</special_powers>
     <speed_type>boot</speed_type>
     <attack_type>fist</attack_type>
     <defense_type>indomitable</defense_type>
@@ -690,48 +697,48 @@
     <dial_start>1</dial_start>
     <dial_size>12</dial_size>
     <dial>[{
-        "speed_power": "Charge",
+        "speed_power": "charge",
         "speed_value": 8,
-        "attack_power": "Quake",
+        "attack_power": "quake",
         "attack_value": 10,
-        "defense_power": "Toughness",
+        "defense_power": "toughness",
         "defense_value": 18,
         "damage_value": 3
       },
       {
-        "speed_power": "Charge",
+        "speed_power": "charge",
         "speed_value": 8,
-        "attack_power": "Quake",
+        "attack_power": "quake",
         "attack_value": 10,
-        "defense_power": "Toughness",
+        "defense_power": "toughness",
         "defense_value": 17,
         "damage_value": 3
       },
       {
-        "speed_power": "Charge",
+        "speed_power": "charge",
         "speed_value": 8,
-        "attack_power": "Quake",
+        "attack_power": "quake",
         "attack_value": 11,
-        "defense_power": "Toughness",
+        "defense_power": "toughness",
         "defense_value": 17,
         "damage_value": 3
       },
       {
-        "speed_power": "Leap/Climb",
+        "speed_power": "leap_climb",
         "speed_value": 6,
         "attack_value": 11,
-        "defense_power": "Toughness",
+        "defense_power": "toughness",
         "defense_value": 17,
-        "damage_power": "Empower",
+        "damage_power": "empower",
         "damage_value": 2
       },
       {
-        "speed_power": "Leap/Climb",
+        "speed_power": "leap_climb",
         "speed_value": 6,
         "attack_value": 10,
-        "defense_power": "Toughness",
+        "defense_power": "toughness",
         "defense_value": 18,
-        "damage_power": "Empower",
+        "damage_power": "empower",
         "damage_value": 2
       }]
   </row>

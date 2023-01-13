@@ -3,64 +3,131 @@ var Unit = function(json) {
 }
 
 Unit.prototype.draw = function() {
-	var keywordsHtml = '<span>';
+  var html = `
+    <div id='unitFront'>
+      <div id='unitFrontBorders'></div>
+      <div id='unitName'>${escapeHtml(this.name).toUpperCase()}</div>
+      <div id='unitKeywords'>${this.drawKeywords_()}</div>
+      <div id='unitRealName'>REAL NAME: ${escapeHtml(this.real_name).toUpperCase()}</div>
+      <div id='unitCollectorNumber'>${this.collector_number}</div>
+      <div id='unitImage'></div>
+      <div id='unitSpecialPowers'>${this.drawSpecialPowers_()}<div>
+      <div id='unitDial'>${this.drawDial_()}</div>
+      <div id='unitTeamAbilities'>${this.drawTeamAbilities_()}</div>
+      <div id='unitPointValue'>POINT VALUE: ${this.point_value}</div>
+      <div id='unitHeroClixLogoClip'>
+        <img id='unitHeroClixLogo' src='../wp-content/uploads/heroclix_logo_small.png' alt=''/>
+      </div>
+    </div>`;
+    /*
+    <div id='unitBack'>
+      <div id='unitBackBorders'></div>
+      Unit Back
+    </div>
+    */
+    
+	document.getElementById('unitContainer').innerHTML = html;
+}
+
+Unit.prototype.drawKeywords_ = function() {
+	if (!this.keywords) {
+	  return '';
+	}
+	var html = `<span class='unitKeyword'>`;
 	var first = true;
 	for (var keyword of this.keywords) {
 		if (first) {
 			first = false;
 		} else {
-			keywordsHtml += ', </a>';
+			html += ', ';
 		}
-		keywordsHtml +=
-		  `<a href='' class='unitKeyword' onclick='mgr.searchByKeyword("${keyword}"); return false;'>${keyword}`;
+		var atag = `<a href='' class='unitKeyword' onclick='mgr.searchByKeyword("${escapeHtml(keyword)}"); return false;'>${keyword}</a>`;;
+		var isGeneric = (KEYWORD_LIST[keyword] == "generic");
+		if (isGeneric) {
+		  html += `<em>${atag}</em>`;
+		} else {
+		  html += atag;
+		}
 	}
-	keywordsHtml += '</a></span>';
+	html += `</span>`;
+  return html;
+}
 
+Unit.prototype.drawTeamAbilities_ = function() {
+  if (!this.team_abilities) {
+    return '';
+  }
   var teamAbilitiesHtml = '';
   for (var i = 0; i < this.team_abilities.length; ++i) {
-    teamAbilitiesHtml += `<img id='unitTeamAbility${i}' src='../wp-content/uploads/ta_${this.team_abilities[i]}.png' alt=''/>`;
+    var teamAbility = TEAM_ABILITY_LIST[this.team_abilities[i]];
+    teamAbilitiesHtml += `
+      <div id='unitTeamAbility${i}' class='tooltip'>
+        <img src='../wp-content/uploads/ta_${this.team_abilities[i]}.png' alt=''/>
+        <span class='tooltiptext'>${escapeHtml(teamAbility.rules)}</span>
+      </div>
+      `;
   }
+  return teamAbilitiesHtml;
+}
 
-  var html = `
-    <div id='unitFront'>
-      <div id='unitFrontBorders'></div>
-      <div id='unitName'>${this.name.toUpperCase()}</div>
-      <div id='unitKeywords'>${keywordsHtml}</div>
-      <div id='unitRealName'>REAL NAME: ${this.real_name.toUpperCase()}</div>
-      <div id='unitCollectorNumber'>${this.collector_number}</div>
-      <div id='unitImage'></div>
-      <div id='unitDial'>${this.drawDial_()}</div>
-      <div id='unitTeamAbilities'>${teamAbilitiesHtml}</div>
-      <div id='unitPointValue'>POINT VALUE: ${this.point_value}</div>
-      <img id='unitHeroClixLogo' src='../wp-content/uploads/heroclix_logo_small.png' alt=''/>
-    </div>
-    <div id='unitBack'>
-      <div id='unitBackBorders'></div>
-      Unit Back
-    </div>`;
-	document.getElementById('unitContainer').innerHTML = html;
+Unit.prototype.drawSpecialPowers_ = function() {
+  if (!this.special_powers) {
+    return '';
+  }
+  var html = `<table id='unitSpecialPowersTable1' class='unitSpecialPowersTable'>`;
+  const CHARS_PER_LINE = 35;
+  const LINES_PER_COL = 18;
+  var totalLines = 0;
+  var currentColumn = 1;
+  for (var i = 0; i < this.special_powers.length; ++i) {
+    var power = this.special_powers[i];
+    var type = power.type;
+    if (type != "trait") {
+      type = this[type + "_type"];
+    }
+    var lines = Math.ceil(power.name.length / CHARS_PER_LINE) +
+      Math.ceil(power.value.length / CHARS_PER_LINE);
+    // If the line count surpasses the max in the column, move to the next
+    // column.
+    // TODO: After running out of space in column 2, move to a new card.
+    if (totalLines + lines > LINES_PER_COL) {
+      ++currentColumn;
+      html += `
+        </table>
+        <table id='unitSpecialPowersTable${currentColumn}' class='unitSpecialPowersTable'>`;
+    }
+    html += `
+      <tr class='unitSpecialPowerRow'>
+        <td class='unitSpecialPower'><img src='../wp-content/uploads/sp_${type}.png' alt=''/></td>
+        <td class='unitSpecialPower'><b>${escapeHtml(power.name.toUpperCase())}</b><br>${escapeHtml(power.value)}</td>
+      </tr>
+      `;
+    totalLines += lines + 1;
+  }
+  html += `</table>`
+  return html;
 }
 
 Unit.prototype.drawDial_ = function() {
   var html = `
-    <div class='unitTraitType'>
+    <div class='unitCombatSymbol'>
       <div id='unitRange'>${this.unit_range}</div>`;
   for (var i = 0; i < this.targets; ++i) {
-    html += `<img class='unitBolt' src='../wp-content/uploads/bolt.png' alt='' style='left: ${20 + i * 5}px;'\>`;
+    html += `<img class='unitBolt' src='../wp-content/uploads/bolt.png' alt='' height='12' width='6' style='left: ${10 + i * 4}px;'\>`;
   }
   html += `
     </div>
-    <div id='unitSpeedType' class='unitTraitType'>
-      <img class='unitTraitImg' src='../wp-content/uploads/${this.speed_type}.png'/>
+    <div id='unitCombatSymbolSpeed' class='unitCombatSymbol'>
+      <img class='unitCombatSymbolImg' src='../wp-content/uploads/${this.speed_type}.png'/>
     </div>
-    <div id='unitAttackType' class='unitTraitType'>
-      <img class='unitTraitImg' src='../wp-content/uploads/${this.attack_type}.png'/>
+    <div id='unitCombatSymbolAttack' class='unitCombatSymbol'>
+      <img class='unitCombatSymbolImg' src='../wp-content/uploads/${this.attack_type}.png'/>
     </div>
-    <div id='unitDefenseType' class='unitTraitType'>
-      <img class='unitTraitImg' src='../wp-content/uploads/${this.defense_type}.png'/>
+    <div id='unitCombatSymbolDefense' class='unitCombatSymbol'>
+      <img class='unitCombatSymbolImg' src='../wp-content/uploads/${this.defense_type}.png'/>
     </div>
-    <div id='unitDamageType' class='unitTraitType'>
-      <img class='unitTraitImg' src='../wp-content/uploads/${this.damage_type}.png'/>
+    <div id='unitCombatSymbolDamage' class='unitCombatSymbol'>
+      <img class='unitCombatSymbolImg' src='../wp-content/uploads/${this.damage_type}.png'/>
     </div>
     <table id='unitDialTable'>`;
 
@@ -73,14 +140,22 @@ Unit.prototype.drawDial_ = function() {
     var rowType = ['speed', 'attack', 'defense', 'damage'][row];
     html += `<tr class='unitDialRow'>`;
     for (var col = 0; col < this.dial_size; ++col) {
-      if ((col + 1) >= this.dial_start && col < this.dial.length) {
-        var power = this.dial[col][rowType + '_power'];
-        var style = '';
+      var colOffset = col - (this.dial_start - 1);
+      if (colOffset >= 0 && colOffset < this.dial.length) {
+        var power = this.dial[colOffset][rowType + '_power'];
+        var value = this.dial[colOffset][rowType + '_value'];
         if (power) {
-          style = POWER_TO_STYLE[power];
+          var powerObj = POWER_LIST[power];
+          html += `
+            <td class='unitDialEntry' style='${powerObj.style}'>
+              <div class='tooltip'>
+                <div>${value}</div>
+                <span class='tooltiptext'><b>${powerObj.name}</b>: ${escapeHtml(powerObj.rules)}</span>
+              </div>
+            </td>`;
+        } else {
+          html += `<td class='unitDialEntry'>${value}</td>`;
         }
-        var value = this.dial[col][rowType + '_value'];
-        html += `<td class='unitDialEntry' style='${style}'>${value}</td>`;
       } else {
         html += `<td class='unitDialEntryKO'>KO</td>`;
       }

@@ -12,7 +12,7 @@ CREATE TABLE wp_units (
   -- The ID of the unit.
   unit_id VARCHAR(32) NOT NULL PRIMARY KEY,
 
-  -- The set to which this unit belongs.
+  -- The set to which this unit belongs. See set_list.js.
   set_id VARCHAR(16) NOT NULL,
   
   -- The collector's number of the unit within a set (may contain letters).
@@ -24,7 +24,7 @@ CREATE TABLE wp_units (
   -- The type of the unit.
   type ENUM('character', 'object', 'map', 'battlefield_condition', 'event_dial', 'resource', 'equipment', 'terrain', 'bystander', 'tarot_card', 'relic') NOT NULL,
 
-  -- The point value of the unit.
+  -- The point value of the unit. In the range of 0 to 10000.
   point_value SMALLINT NOT NULL,
 
   -- The rarity of the unit.
@@ -43,22 +43,23 @@ CREATE TABLE wp_units (
   -- Additional special type traits that have restrictions on team construction
   special_type ENUM('none', 'unique', 'prime', 'title_character'),
 
-  -- The team abilities of the unit.
+  -- The team abilities of the unit. See team_ability_list.js.
   team_abilities JSON,
 
   -- The dimensions of the unit base.
   dimensions ENUM('1x1', '1x2', '2x2', '2x4', '3x6'),
 
-  -- The keywords of the unit.
+  -- The keywords of the unit. See keyword_list.js.
   keywords JSON,
 
-  trait_0 TEXT(1024),
-  trait_1 TEXT(1024),
-  trait_2 TEXT(1024),
-  speed_special_power TEXT(1024),
-  attack_special_power TEXT(1024),
-  defense_special_power TEXT(1024),
-  damage_special_power TEXT(1024),
+  -- A JSON array of objects contains special powers and traits, of the format:
+  -- {
+  --   "type": string - contains "trait", "speed", "attack", "defense", or "damage"
+  --   "name": string - the name of the power.
+  --   "value": string - the description of the power.
+  --   "powers": array of strings, containing names to standard powers granted.
+  -- }
+  special_powers JSON,
 
   -- Should be in the form of an array of strings, with values from:
   -- "Elevated", "Hindering", "Blocking", "Outdoor Blocking", "Destroy Blocking", "Characters", "Move Through".
@@ -103,11 +104,11 @@ LOAD XML LOCAL INFILE 'sets.xml'
 
 CREATE TABLE wp_team_abilities (
   id VARCHAR(32) NOT NULL PRIMARY KEY,
-  name TEXT(32) NOT NULL PRIMARY KEY,
-  universe ENUM('dc', 'marvel', 'star_trek', 'universal', 'other'),
-  rules TEXT(1024),
-  copyable BOOL,
-  wildcard BOOL
+  name TEXT(32) NOT NULL,
+  universe ENUM('dc', 'marvel', 'star_trek', 'universal', 'other') NOT NULL,
+  rules TEXT(1024) NOT NULL,
+  copyable BOOL NOT NULL,
+  wildcard BOOL NOT NULL
 );
 
 LOAD XML LOCAL INFILE 'team_abilities.xml'

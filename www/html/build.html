@@ -60,7 +60,12 @@
 
     <!-- Site-specific JS includes -->
     <script type="text/javascript" src="../js/constants.js"></script>
+    <script type="text/javascript" src="../js/keyword_list.js"></script>
     <script type="text/javascript" src="../js/mock_data_source.js"></script>
+    <script type="text/javascript" src="../js/power_list.js"></script>
+    <script type="text/javascript" src="../js/search_manager.js"></script>
+    <script type="text/javascript" src="../js/set_list.js"></script>
+    <script type="text/javascript" src="../js/team_ability_list.js"></script>
     <script type="text/javascript" src="../js/unit.js"></script>
     <script type="text/javascript" src="../js/view_manager.js"></script>
 
@@ -77,8 +82,27 @@
 [wpcode id="786"]
 <script>var setList = [wpcode id="48"];</script>
 [wpcode id="794"]
--->
 
+-->
+    <script>
+        document.onkeydown = onKeyDown;
+
+        function onKeyDown(event) {
+            var KEY_LEFT = '37';
+            var KEY_UP = '38';
+            var KEY_RIGHT = '39';
+            var KEY_DOWN = '40';
+            event = event || window.event;
+            if (event.keyCode == KEY_LEFT || event.keyCode == KEY_UP) {
+                mgr.previousUnit();
+                event.preventDefault();
+            }
+            else if (event.keyCode == KEY_RIGHT || event.keyCode == KEY_DOWN) {
+                mgr.nextUnit();
+                event.preventDefault();
+            }
+        }
+    </script>
 
 </body>
 
