@@ -146,6 +146,13 @@ Unit.prototype.drawDial_ = function() {
         var value = this.dial[colOffset][rowType + '_value'];
         if (power) {
           var powerObj = POWER_LIST[power];
+          if (!powerObj) {
+            powerObj = {
+              name: 'Unknown power',
+              style: '',
+              rules: power
+            }
+          }
           html += `
             <td class='unitDialEntry' style='${powerObj.style}'>
               <div class='tooltip'>

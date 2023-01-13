@@ -308,32 +308,6 @@ div.setName {
   vertical-align: top;
     padding: 0px 3px 5px 0px !important;
 }
-/*
-#unitDialTable {
-    position: absolute;
-    left: 30px;
-    top: -2px;
-    width: 280px;
-    table-layout: fixed;
-    border-collapse: separate;
-    border-spacing: 3px !important;
-}
-
-.unitDialHeader {
-    color: red;
-    padding: 0px 0px !important;
-    text-align: center;
-    width: 8.3%;
-    font-size: 10px;
-    font-family: 'Gill Sans', sans-serif;
-    font-weight: 300;
-}
-
-.unitDialRow {
-    height: 21px;
-    border-bottom: none !important;
-}
-*/
 
 #unitDial {
     position: absolute;
@@ -430,7 +404,7 @@ div.setName {
     border-radius: 0px;
     /*border: 2px solid red;*/
     margin: 2px;
-    line-height: normal;
+    line-height: 0;
 }
 
 .unitDialEntryKO {
