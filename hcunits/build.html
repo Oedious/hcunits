@@ -57,41 +57,18 @@
 
     <!-- Site-specific JS includes -->
     <script type="text/javascript" src="../hcunits/js/constants.js"></script>
-    <script type="text/javascript" src="../hcunits//js/data_source.js"></script>
-    <script type="text/javascript" src="../hcunits//js/keyword_list.js"></script>
-    <script type="text/javascript" src="../hcunits//js/mock_data_source.js"></script>
-    <script type="text/javascript" src="../hcunits//js/power_list.js"></script>
-    <script type="text/javascript" src="../hcunits//js/search_manager.js"></script>
-    <script type="text/javascript" src="../hcunits//js/set_list.js"></script>
-    <script type="text/javascript" src="../hcunits//js/team_ability_list.js"></script>
-    <script type="text/javascript" src="../hcunits//js/unit.js"></script>
-    <script type="text/javascript" src="../hcunits//js/view_manager.js"></script>
+    <script type="text/javascript" src="../hcunits/js/data_source.js"></script>
+    <script type="text/javascript" src="../hcunits/js/keyword_list.js"></script>
+    <script type="text/javascript" src="../hcunits/js/mock_data_source.js"></script>
+    <script type="text/javascript" src="../hcunits/js/power_list.js"></script>
+    <script type="text/javascript" src="../hcunits/js/search_manager.js"></script>
+    <script type="text/javascript" src="../hcunits/js/set_list.js"></script>
+    <script type="text/javascript" src="../hcunits/js/team_ability_list.js"></script>
+    <script type="text/javascript" src="../hcunits/js/unit.js"></script>
+    <script type="text/javascript" src="../hcunits/js/view_manager.js"></script>
 
     <!-- Include this last, as it runs the code -->
-    <script>
-        //var dataSource = new DataSource();
-        var dataSource = new MockDataSource();
-        var mgr = new ViewManager(dataSource);
-
-        document.onkeydown = onKeyDown;
-
-        function onKeyDown(event) {
-            var KEY_LEFT = '37';
-            var KEY_UP = '38';
-            var KEY_RIGHT = '39';
-            var KEY_DOWN = '40';
-            event = event || window.event;
-            if (event.keyCode == KEY_LEFT || event.keyCode == KEY_UP) {
-                mgr.previousUnit();
-                event.preventDefault();
-            }
-            else if (event.keyCode == KEY_RIGHT || event.keyCode == KEY_DOWN) {
-                mgr.nextUnit();
-                event.preventDefault();
-            }
-        }
-    </script>
-
+    <script type="text/javascript" src="../hcunits/js/main.js"></script>
 </body>
 
 </html>
