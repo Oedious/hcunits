@@ -5,7 +5,7 @@ mysql wordpress -u root -p
 /var/www/html/wp-content/plugins
 
 # Delete the 'team_abilities' table
-DROP TABLE wp_team_abilities;
+DROP TABLE wp_units;
 
 # Create the units table
 CREATE TABLE wp_units (
@@ -90,41 +90,6 @@ LOAD XML LOCAL INFILE 'set_av4e.xml'
   INTO TABLE wp_units
   ROWS IDENTIFIED BY '<row>';
 
-CREATE TABLE wp_sets (
-  id VARCHAR(16) NOT NULL PRIMARY KEY,
-  name VARCHAR(128) NOT NULL,
-  release_date DATE NOT NULL,
-  universe ENUM('dc', 'marvel', 'indy', 'other')
-);
-
-LOAD XML LOCAL INFILE 'sets.xml'
-  REPLACE
-  INTO TABLE wp_sets
-  ROWS IDENTIFIED BY '<row>';
-
-CREATE TABLE wp_team_abilities (
-  id VARCHAR(32) NOT NULL PRIMARY KEY,
-  name TEXT(32) NOT NULL,
-  universe ENUM('dc', 'marvel', 'star_trek', 'universal', 'other') NOT NULL,
-  rules TEXT(1024) NOT NULL,
-  copyable BOOL NOT NULL,
-  wildcard BOOL NOT NULL
-);
-
-LOAD XML LOCAL INFILE 'team_abilities.xml'
-  REPLACE
-  INTO TABLE wp_team_abilities
-  ROWS IDENTIFIED BY '<row>';
-
-CREATE TABLE wp_keywords (
-  keyword VARCHAR(64) NOT NULL PRIMARY KEY,
-  type ENUM('named', 'generic')
-);
-
-LOAD XML LOCAL INFILE 'keywords.xml'
-  REPLACE
-  INTO TABLE wp_keywords
-  ROWS IDENTIFIED BY '<row>';
 
 Things in team build:
 Main force
