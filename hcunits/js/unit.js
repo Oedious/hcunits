@@ -6,8 +6,10 @@ Unit.prototype.draw = function() {
   var html = `
     <div id='unitFront'>
       <div id='unitFrontBorders'></div>
-      <div id='unitName'>${escapeHtml(this.name).toUpperCase()}</div>
-      <div id='unitKeywords'>${this.drawKeywords_()}</div>
+      <div id='unitHeader'>
+        <div id='unitName'>${escapeHtml(this.name).toUpperCase()}</div>
+        <div id='unitKeywords'>${this.drawKeywords_()}</div>
+      </div>
       <div id='unitRealName'>REAL NAME: ${escapeHtml(this.real_name).toUpperCase()}</div>
       <div id='unitCollectorNumber'>${this.collector_number}</div>
       <div id='unitImage'></div>

@@ -28,7 +28,7 @@ var MockDataSource = function() {
         "unit_id": "set002",
         "set_id": "set",
         "collector_number": "002",
-        "name": "Rainbow Girl",
+        "name": "Rainbow Girl, Color Keeper",
         "type": "character",
         "point_value": 300,
         "rarity": "uncommon",

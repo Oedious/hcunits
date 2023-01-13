@@ -228,25 +228,26 @@ div.setName {
     box-shadow: rgba(0, 0, 0, 0.8) 0 0 10px;
 }
 
-#unitName {
+#unitHeader {
     position: absolute;
     left: 3px;
-    top: 0px;
+    top: 2px;
     width: 225px;
+    color: white;
+    text-align: center;
+    line-height: normal;
+}
+
+#unitName {
     font-family: arial black, sans-serif;
     font-size: 19px;
     font-style: italic;
-    color: white;
-    text-align: center;
+    line-height: .9em;
 }
 
 #unitKeywords {
-    position: absolute;
-    left: 3px;
-    top: 25px;
-    width: 225px;
-    text-align: center;
     font-size: 10px;
+    line-height: 1em;
 }
 
 .unitKeyword {

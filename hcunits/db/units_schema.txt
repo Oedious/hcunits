@@ -59,7 +59,7 @@ CREATE TABLE wp_units (
   --   "value": string - the description of the power.
   --   "powers": array of strings, containing names to standard powers granted.
   -- }
-  special_powers JSON DEFAULT NULL,
+  special_powers JSON,
 
   -- Should be in the form of an array of strings, with values from:
   -- "Elevated", "Hindering", "Blocking", "Outdoor Blocking", "Destroy Blocking", "Characters", "Move Through".
