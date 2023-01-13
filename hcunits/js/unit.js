@@ -113,21 +113,21 @@ Unit.prototype.drawDial_ = function() {
     <div class='unitCombatSymbol'>
       <div id='unitRange'>${this.unit_range}</div>`;
   for (var i = 0; i < this.targets; ++i) {
-    html += `<img class='unitBolt' src='../hcunits/images/bolt.png' alt='' height='12' width='6' style='left: ${10 + i * 4}px;'\>`;
+    html += `<img class='unitBolt' src='../hcunits/images/cs_bolt.png' alt='' height='12' width='6' style='left: ${10 + i * 4}px;'\>`;
   }
   html += `
     </div>
     <div id='unitCombatSymbolSpeed' class='unitCombatSymbol'>
-      <img class='unitCombatSymbolImg' src='../hcunits/images/${this.speed_type}.png'/>
+      <img class='unitCombatSymbolImg' src='../hcunits/images/cs_${this.speed_type}.png'/>
     </div>
     <div id='unitCombatSymbolAttack' class='unitCombatSymbol'>
-      <img class='unitCombatSymbolImg' src='../hcunits/images/${this.attack_type}.png'/>
+      <img class='unitCombatSymbolImg' src='../hcunits/images/cs_${this.attack_type}.png'/>
     </div>
     <div id='unitCombatSymbolDefense' class='unitCombatSymbol'>
-      <img class='unitCombatSymbolImg' src='../hcunits/images/${this.defense_type}.png'/>
+      <img class='unitCombatSymbolImg' src='../hcunits/images/cs_${this.defense_type}.png'/>
     </div>
     <div id='unitCombatSymbolDamage' class='unitCombatSymbol'>
-      <img class='unitCombatSymbolImg' src='../hcunits/images/${this.damage_type}.png'/>
+      <img class='unitCombatSymbolImg' src='../hcunits/images/cs_${this.damage_type}.png'/>
     </div>
     <table id='unitDialTable'>`;
 

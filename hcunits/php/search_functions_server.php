@@ -24,13 +24,7 @@ function search_by_unit_id() {
 	// Deserialize JSON fields, in place.
 	$response->team_abilities = json_decode($response->team_abilities);
 	$response->keywords = json_decode($response->keywords);
-	$response->trait_0 = json_decode($response->trait_0);
-	$response->trait_1 = json_decode($response->trait_1);
-	$response->trait_2 = json_decode($response->trait_2);
-	$response->speed_special_power = json_decode($response->speed_special_power);
-	$response->attack_special_power = json_decode($response->attack_special_power);
-	$response->defense_special_power = json_decode($response->defense_special_power);
-	$response->damage_special_power = json_decode($response->damage_special_power);
+	$response->special_powers = json_decode($response->special_powers);
 	$response->improved_movement = json_decode($response->improved_movement);
 	$response->improved_targeting = json_decode($response->improved_targeting);
 	$response->dial = json_decode($response->dial);
