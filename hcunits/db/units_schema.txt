@@ -28,7 +28,7 @@ CREATE TABLE wp_units (
   point_value SMALLINT NOT NULL,
 
   -- The rarity of the unit.
-  rarity ENUM('common', 'uncommon', 'rare', 'super_rare', 'chase', 'ultra_chase'),
+  rarity ENUM('common', 'uncommon', 'rare', 'super_rare', 'chase', 'ultra_chase', 'limited_edition'),
 
   -- Whether the unit is legal for modern tournament play.
   age ENUM('modern', 'golden') NOT NULL,
@@ -75,8 +75,7 @@ CREATE TABLE wp_units (
   -- The number of targets (ie. lightning bolts) of the unit.
   targets TINYINT,
 
-  speed_type ENUM('boot', 'wing', 'dolphin'),
-  speed_sub_type ENUM('transporter'),
+  speed_type ENUM('boot', 'wing', 'dolphin', 'transport_boot', 'transport_wing', 'transport_dolphin'),
   attack_type ENUM('fist', 'autonomous', 'sharpshooter', 'duo', 'team'),
   defense_type ENUM('shield', 'indomitable', 'vehicle'),
   damage_type ENUM('starburst', 'giant', 'fist', 'tiny'),
