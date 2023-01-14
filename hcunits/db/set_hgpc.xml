@@ -28,12 +28,14 @@
   {
     "type": "speed", 
     "name": "IMPLANTED IDEAS", 
-    "value": "Mind Control. When Jean Grey uses it, after resolutions deal a hit character damage equal to its printed damage value."
+    "value": "Mind Control. When Jean Grey uses it, after resolutions deal a hit character damage equal to its printed damage value.",
+    "powers": ["mind_control"]
   }, 
   {
     "type": "defense", 
     "name": "TELEPATHIC WARNING", 
-    "value": "Energy Shield/Deflection, Super Senses."
+    "value": "Energy Shield/Deflection, Super Senses.",
+    "powers": ["energy_shield_deflection", "super_senses"]
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
@@ -175,12 +177,14 @@
   {
     "type": "speed", 
     "name": "IMPLANTED IDEAS", 
-    "value": "Mind Control. When Jean Grey uses it, after resolutions deal a hit character damage equal to its printed damage value."
+    "value": "Mind Control. When Jean Grey uses it, after resolutions deal a hit character damage equal to its printed damage value.",
+    "powers": ["mind_control"]
   }, 
   {
     "type": "defense", 
     "name": "TELEPATHIC WARNING", 
-    "value": "Energy Shield/Deflection, Super Senses."
+    "value": "Energy Shield/Deflection, Super Senses.",
+    "powers": ["energy_shield_deflection", "super_senses"]
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
@@ -272,7 +276,8 @@
   {
     "type": "defense", 
     "name": "INTERCEPTING BLASTS", 
-    "value": "Energy Shield/Deflection. // When a friendly character with the X-Men keyword within range is targeted by a range attack, modify their defense +1."
+    "value": "Energy Shield/Deflection. // When a friendly character with the X-Men keyword within range is targeted by a range attack, modify their defense +1.",
+    "powers": ["energy_shield_deflection"]
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
@@ -404,7 +409,8 @@
   {
     "type": "defense", 
     "name": "INTERCEPTING BLASTS", 
-    "value": "Energy Shield/Deflection. // When a friendly character with the X-Men keyword within range is targeted by a range attack, modify their defense +1."
+    "value": "Energy Shield/Deflection. // When a friendly character with the X-Men keyword within range is targeted by a range attack, modify their defense +1.",
+    "powers": ["energy_shield_deflection"]
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
@@ -496,7 +502,8 @@
   {
     "type": "defense", 
     "name": "GET BEHIND ME, SUGAH", 
-    "value": "Invincible. // Friendly characters with the X-Men keyword within 6 squares and line of fire can use Toughness."
+    "value": "Invincible. // Friendly characters with the X-Men keyword within 6 squares and line of fire can use Toughness.",
+    "powers": ["invincible"]
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
@@ -629,7 +636,8 @@
   {
     "type": "defense", 
     "name": "GET BEHIND ME, SUGAH", 
-    "value": "Invincible. // Friendly characters with the X-Men keyword within 6 squares and line of fire can use Toughness."
+    "value": "Invincible. // Friendly characters with the X-Men keyword within 6 squares and line of fire can use Toughness.",
+    "powers": ["invincible"]
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
@@ -722,7 +730,8 @@
   {
     "type": "attack", 
     "name": "YOU MADE ME RIP MY DRESS!", 
-    "value": "Blades/Claws/Fangs, but may use it when targeting more than one character, and she must roll a d6 for each hit target. // When Wolverine hits, after resolutions heal her 1 click for each opposing character that took damage from that attack."
+    "value": "Blades/Claws/Fangs, but may use it when targeting more than one character, and she must roll a d6 for each hit target. // When Wolverine hits, after resolutions heal her 1 click for each opposing character that took damage from that attack.",
+    "powers": ["blades_claws_fangs"]
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
@@ -854,7 +863,8 @@
   {
     "type": "attack", 
     "name": "YOU MADE ME RIP MY DRESS!", 
-    "value": "Blades/Claws/Fangs, but may use it when targeting more than one character, and she must roll a d6 for each hit target. // When Wolverine hits, after resolutions heal her 1 click for each opposing character that took damage from that attack."
+    "value": "Blades/Claws/Fangs, but may use it when targeting more than one character, and she must roll a d6 for each hit target. // When Wolverine hits, after resolutions heal her 1 click for each opposing character that took damage from that attack.",
+    "powers": ["blades_claws_fangs"]
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
@@ -946,7 +956,8 @@
   {
     "type": "attack", 
     "name": "MAGNETIZED", 
-    "value": "Telekinesis, Telekinesis as FREE. When Polaris uses it, she may instead target an opposing character she hit this turn."
+    "value": "Telekinesis, Telekinesis as FREE. When Polaris uses it, she may instead target an opposing character she hit this turn.",
+    "powers": ["telekinesis"]
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
@@ -1068,7 +1079,8 @@
   {
     "type": "attack", 
     "name": "MAGNETIZED", 
-    "value": "Telekinesis, Telekinesis as FREE. When Polaris uses it, she may instead target an opposing character she hit this turn."
+    "value": "Telekinesis, Telekinesis as FREE. When Polaris uses it, she may instead target an opposing character she hit this turn.",
+    "powers": ["telekinesis"]
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
@@ -1150,7 +1162,8 @@
   {
     "type": "attack", 
     "name": "SOLAR FIRE", 
-    "value": "Energy Explosion. // Sunfire and adjacent friendly characters with the X-Men keyword can use Poison."
+    "value": "Energy Explosion. // Sunfire and adjacent friendly characters with the X-Men keyword can use Poison.",
+    "powers": ["energy_explosion", "poison"]
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
@@ -1292,7 +1305,8 @@
   {
     "type": "attack", 
     "name": "SOLAR FIRE", 
-    "value": "Energy Explosion. // Sunfire and adjacent friendly characters with the X-Men keyword can use Poison."
+    "value": "Energy Explosion. // Sunfire and adjacent friendly characters with the X-Men keyword can use Poison.",
+    "powers": ["energy_explosion", "poison"]
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
@@ -1384,7 +1398,8 @@
   {
     "type": "damage", 
     "name": "COORDINATING OUTFITS AND POWERS", 
-    "value": "Perplex. When Synch uses it to target a friendly character, if that character has a High Fashion trait, the next time that character hits this turn they can use their High Fashion trait regardless of the attack result."
+    "value": "Perplex. When Synch uses it to target a friendly character, if that character has a High Fashion trait, the next time that character hits this turn they can use their High Fashion trait regardless of the attack result.",
+    "powers": ["perplex"]
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
@@ -1506,7 +1521,8 @@
   {
     "type": "damage", 
     "name": "COORDINATING OUTFITS AND POWERS", 
-    "value": "Perplex. When Synch uses it to target a friendly character, if that character has a High Fashion trait, the next time that character hits this turn they can use their High Fashion trait regardless of the attack result."
+    "value": "Perplex. When Synch uses it to target a friendly character, if that character has a High Fashion trait, the next time that character hits this turn they can use their High Fashion trait regardless of the attack result.",
+    "powers": ["perplex"]
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
@@ -1588,7 +1604,8 @@
   {
     "type": "damage", 
     "name": "YOU AREN'T ON THE GUEST LIST, MY DEAR", 
-    "value": "Probability Control, Shape Change. // Attack rolls of 5-5 made by friendly characters with the X-Men keyword can't be rerolled or have their dice replaced."
+    "value": "Probability Control, Shape Change. // Attack rolls of 5-5 made by friendly characters with the X-Men keyword can't be rerolled or have their dice replaced.",
+    "powers": ["probability_control", "shape_change"]
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
@@ -1731,6 +1748,7 @@
     "type": "damage", 
     "name": "YOU AREN'T ON THE GUEST LIST, MY DEAR", 
     "value": "Probability Control, Shape Change. // Attack rolls of 5-5 made by friendly characters with the X-Men keyword can't be rerolled or have their dice replaced."
+    "powers": ["probability_control", "shape_change"]
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
