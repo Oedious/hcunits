@@ -89,7 +89,8 @@ LOAD XML LOCAL INFILE 'set_av4e.xml'
   INTO TABLE wp_units
   ROWS IDENTIFIED BY '<row>';
 
-
+ALTER TABLE wp_units
+MODIFY COLUMN rarity ENUM('common', 'uncommon', 'rare', 'super_rare', 'chase', 'ultra_chase', 'limited_edition');
 Things in team build:
 Main force
 Sideline
