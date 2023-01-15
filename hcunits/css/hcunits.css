@@ -1,3 +1,6 @@
+body {
+}
+
 /* Build Container styles */
 #buildContainer {
     background-color: #F0F0F0;
@@ -285,9 +288,11 @@ div.setName {
 }
 
 .unitSpecialPowersTable {
+    font-family: Tahoma;
     font-size: 10px;
     table-layout: auto;
     width: 49%;
+    line-height: 1.5em;
 }
 
 #unitSpecialPowersTable0 {
@@ -298,8 +303,8 @@ div.setName {
 
 #unitSpecialPowersTable1 {
     position: absolute;
-    right: 5px;
-    top: 165px;
+    right: 3px;
+    top: 168px;
 }
 
 .unitSpecialPowerRow {

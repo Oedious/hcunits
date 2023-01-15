@@ -88,27 +88,32 @@ Unit.prototype.drawSpecialPowers_ = function() {
   // Start out with a minimum lines per each column and try to fit into that.
   // If it's not enough, slowly increase the size of the card until it all fits.
   this.extraLines_ = 0;
-  const LINES_PER_COL = [17, 10, 0];
-  const CHARS_PER_NAME_LINE = 25;
+  const LINES_PER_COL = [16, 9, 0];
+  const CHARS_PER_NAME_LINE = 23;
   const CHARS_PER_VALUE_LINE = 35;
   const PIXELS_PER_LINE = 14;
+  //console.log('Trying to layout')
   while (!layoutSuccessful) {
     var html = `<table id='unitSpecialPowersTable0' class='unitSpecialPowersTable'>`;
     var linesPerCol = [0, 0];
     var currentColumn = 0;
+    var currentPower = 0;
     for (var i = 0; i < this.special_powers.length && currentColumn < 2; ++i) {
       var power = this.special_powers[i];
       var type = power.type;
       if (type != "trait") {
         type = this[type + "_type"];
       }
-      var lines = Math.ceil(power.name.length / CHARS_PER_NAME_LINE) +
-        Math.ceil(power.value.length / CHARS_PER_VALUE_LINE);
+      var headerLines = Math.ceil(power.name.length / CHARS_PER_NAME_LINE);
+      var valueLines = Math.ceil(power.value.length / CHARS_PER_VALUE_LINE);
+      var lines = headerLines + valueLines;
+      //console.log(`Estimated headerLines=${headerLines} valueLines=${valueLines} for power #${currentPower}`)
       // If the line count surpasses the max in the first column, move to the
       // 2nd column. If it's already there, then increase the size and redo the
       // layout.
       if (currentColumn == 0) {
         if (linesPerCol[currentColumn] + lines > LINES_PER_COL[currentColumn] + this.extraLines_) {
+          //console.log(`Moving to 2nd col - linesPerCol[0]=${linesPerCol[0]} headerLines=${headerLines} valueLines=${valueLines} LINES_PER_COL=${LINES_PER_COL[0]} extraLines=${this.extraLines_}`)
           // Try to move to the 2nd column.
           ++currentColumn;
           html += `
@@ -118,6 +123,7 @@ Unit.prototype.drawSpecialPowers_ = function() {
       }
       if (currentColumn == 1) {
         if (linesPerCol[currentColumn] + lines > LINES_PER_COL[currentColumn] + this.extraLines_) {
+          //console.log(`OVERFLOW! - linesPerCol[1]=${linesPerCol[1]} headerLines=${headerLines} valueLines=${valueLines} LINES_PER_COL=${LINES_PER_COL[1]} extraLines=${this.extraLines_}`)
           // Couldn't fit into 2 columns - add a line and redo the layout.
           ++currentColumn;
         }
@@ -130,10 +136,13 @@ Unit.prototype.drawSpecialPowers_ = function() {
             <td class='unitSpecialPower'><b>${escapeHtml(power.name.toUpperCase())}</b><br>${escapeHtml(power.value)}</td>
           </tr>`;
       }
+      ++currentPower;
     }
     if (currentColumn < 2) {
+      //console.log(`Layout success! linesPerCol=${linesPerCol[0]}, ${linesPerCol[1]} lines=${lines} currentColumn=${currentColumn} LINES_PER_COL=${LINES_PER_COL[currentColumn]} extraLines=${this.extraLines_}`)
       layoutSuccessful = true;
     } else {
+      //console.log('adding another line')
       ++this.extraLines_;
     }
   }
