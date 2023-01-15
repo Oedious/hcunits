@@ -152,7 +152,7 @@ div.setName {
 #searchResultsContainer {
     border-right: 1px solid black;
     width: 300px;
-    height: 1100px;
+    height: 525px;
 
     display: flex;
     flex-direction: column;
@@ -204,7 +204,7 @@ div.setName {
     flex: 0 0 auto;
     position: relative;
     width: 400px;
-    height: 1100px;
+    height: 525px;
 }
 
 #unitFront {
@@ -212,8 +212,9 @@ div.setName {
     top: 20px;
     left: 20px;
     width: 375px;
-    /*height: 375px;*/
-    height: 525px;
+    /* The height is set dynamically based on the size of the text
+       of the special powers. */
+    /* height: 525px;*/
 }
 
 #unitFrontBorders {
@@ -286,16 +287,16 @@ div.setName {
 .unitSpecialPowersTable {
     font-size: 10px;
     table-layout: auto;
-    width: 48%;
+    width: 49%;
 }
 
-#unitSpecialPowersTable1 {
+#unitSpecialPowersTable0 {
     position: absolute;
     left: 5px;
     top: 80px;
 }
 
-#unitSpecialPowersTable2 {
+#unitSpecialPowersTable1 {
     position: absolute;
     right: 5px;
     top: 165px;

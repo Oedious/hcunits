@@ -1,4 +1,5 @@
 var MockDataSource = function() {
+  /*
     this.units_ = [{
         "unit_id": "set001",
         "set_id": "set",
@@ -227,19 +228,29 @@ var MockDataSource = function() {
             "damage_power": "special",
             "damage_value": 2
         }]
-    }];
+    }
+  ];*/
 }
 
 MockDataSource.prototype.searchBySetId = function(setId, onSuccess, onError) {
-    onSuccess(this.units_);
-    return;
+  this.units_ = []
+  var dataSource = this;
+  jQuery.ajax({
+    url: `../hcunits/db/set_${setId}.json`,
+    type: 'get',
+    success: function(response) {
+      dataSource.units_ = response
+      onSuccess(response);
+    },
+    error: onError
+  });
 }
 
 MockDataSource.prototype.searchByUnitId = function(unitId, onSuccess, onError) {
-    for (var unit of this.units_) {
-        if (unit.unit_id == unitId) {
-            onSuccess(unit);
-            return;
-        }
+  for (var unit of this.units_) {
+    if (unit.unit_id == unitId) {
+      onSuccess(unit);
+      return;
     }
+  }
 }

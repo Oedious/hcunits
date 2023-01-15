@@ -1,10 +1,18 @@
+const PIXELS_PER_LINE = 15;
+const MIN_CARD_HEIGHT = 525;
+
 var Unit = function(json) {
   Object.assign(this, json);
+  this.extraLines_ = 0;
 }
 
 Unit.prototype.draw = function() {
+  // Compute the special powers HTML first because it may need to resize the
+  // entire card to fit the text.
+  var specialPowersHtml = this.drawSpecialPowers_();
+  var cardHeight = MIN_CARD_HEIGHT + PIXELS_PER_LINE * this.extraLines_;
   var html = `
-    <div id='unitFront'>
+    <div id='unitFront' style='height:${cardHeight}px;'>
       <div id='unitFrontBorders'></div>
       <div id='unitHeader'>
         <div id='unitName'>${escapeHtml(this.name).toUpperCase()}</div>
@@ -13,7 +21,7 @@ Unit.prototype.draw = function() {
       <div id='unitRealName'>REAL NAME: ${escapeHtml(this.real_name).toUpperCase()}</div>
       <div id='unitCollectorNumber'>${this.collector_number}</div>
       <div id='unitImage'></div>
-      <div id='unitSpecialPowers'>${this.drawSpecialPowers_()}<div>
+      <div id='unitSpecialPowers'>${specialPowersHtml}<div>
       <div id='unitDial'>${this.drawDial_()}</div>
       <div id='unitTeamAbilities'>${this.drawTeamAbilities_()}</div>
       <div id='unitPointValue'>POINT VALUE: ${this.point_value}</div>
@@ -76,35 +84,58 @@ Unit.prototype.drawSpecialPowers_ = function() {
   if (!this.special_powers) {
     return '';
   }
-  var html = `<table id='unitSpecialPowersTable1' class='unitSpecialPowersTable'>`;
-  const CHARS_PER_LINE = 35;
-  const LINES_PER_COL = 18;
-  var totalLines = 0;
-  var currentColumn = 1;
-  for (var i = 0; i < this.special_powers.length; ++i) {
-    var power = this.special_powers[i];
-    var type = power.type;
-    if (type != "trait") {
-      type = this[type + "_type"];
+  var layoutSuccessful = false;
+  // Start out with a minimum lines per each column and try to fit into that.
+  // If it's not enough, slowly increase the size of the card until it all fits.
+  this.extraLines_ = 0;
+  const LINES_PER_COL = [17, 10, 0];
+  const CHARS_PER_NAME_LINE = 25;
+  const CHARS_PER_VALUE_LINE = 35;
+  const PIXELS_PER_LINE = 14;
+  while (!layoutSuccessful) {
+    var html = `<table id='unitSpecialPowersTable0' class='unitSpecialPowersTable'>`;
+    var linesPerCol = [0, 0];
+    var currentColumn = 0;
+    for (var i = 0; i < this.special_powers.length && currentColumn < 2; ++i) {
+      var power = this.special_powers[i];
+      var type = power.type;
+      if (type != "trait") {
+        type = this[type + "_type"];
+      }
+      var lines = Math.ceil(power.name.length / CHARS_PER_NAME_LINE) +
+        Math.ceil(power.value.length / CHARS_PER_VALUE_LINE);
+      // If the line count surpasses the max in the first column, move to the
+      // 2nd column. If it's already there, then increase the size and redo the
+      // layout.
+      if (currentColumn == 0) {
+        if (linesPerCol[currentColumn] + lines > LINES_PER_COL[currentColumn] + this.extraLines_) {
+          // Try to move to the 2nd column.
+          ++currentColumn;
+          html += `
+            </table>
+            <table id='unitSpecialPowersTable1' class='unitSpecialPowersTable'>`;
+        }
+      }
+      if (currentColumn == 1) {
+        if (linesPerCol[currentColumn] + lines > LINES_PER_COL[currentColumn] + this.extraLines_) {
+          // Couldn't fit into 2 columns - add a line and redo the layout.
+          ++currentColumn;
+        }
+      }
+      if (currentColumn < 2) {
+        linesPerCol[currentColumn] += lines + 1;
+        html += `
+          <tr class='unitSpecialPowerRow'>
+            <td class='unitSpecialPower'><img src='../hcunits/images/sp_${type}.png' alt=''/></td>
+            <td class='unitSpecialPower'><b>${escapeHtml(power.name.toUpperCase())}</b><br>${escapeHtml(power.value)}</td>
+          </tr>`;
+      }
     }
-    var lines = Math.ceil(power.name.length / CHARS_PER_LINE) +
-      Math.ceil(power.value.length / CHARS_PER_LINE);
-    // If the line count surpasses the max in the column, move to the next
-    // column.
-    // TODO: After running out of space in column 2, move to a new card.
-    if (totalLines + lines > LINES_PER_COL) {
-      ++currentColumn;
-      html += `
-        </table>
-        <table id='unitSpecialPowersTable${currentColumn}' class='unitSpecialPowersTable'>`;
+    if (currentColumn < 2) {
+      layoutSuccessful = true;
+    } else {
+      ++this.extraLines_;
     }
-    html += `
-      <tr class='unitSpecialPowerRow'>
-        <td class='unitSpecialPower'><img src='../hcunits/images/sp_${type}.png' alt=''/></td>
-        <td class='unitSpecialPower'><b>${escapeHtml(power.name.toUpperCase())}</b><br>${escapeHtml(power.value)}</td>
-      </tr>
-      `;
-    totalLines += lines + 1;
   }
   html += `</table>`
   return html;
