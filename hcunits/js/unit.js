@@ -73,7 +73,7 @@ Unit.prototype.drawTeamAbilities_ = function() {
     teamAbilitiesHtml += `
       <div id='unitTeamAbility${i}' class='tooltip'>
         <img src='../hcunits/images/ta_${this.team_abilities[i]}.png' alt=''/>
-        <span class='tooltiptext'>${escapeHtml(teamAbility.rules)}</span>
+        <span class='tooltiptext'>${escapeHtml(teamAbility.description)}</span>
       </div>
       `;
   }
@@ -90,9 +90,8 @@ Unit.prototype.drawSpecialPowers_ = function() {
   this.extraLines_ = 0;
   const LINES_PER_COL = [16, 9, 0];
   const CHARS_PER_NAME_LINE = 23;
-  const CHARS_PER_VALUE_LINE = 35;
+  const CHARS_PER_DESC_LINE = 32;
   const PIXELS_PER_LINE = 14;
-  //console.log('Trying to layout')
   while (!layoutSuccessful) {
     var html = `<table id='unitSpecialPowersTable0' class='unitSpecialPowersTable'>`;
     var linesPerCol = [0, 0];
@@ -101,19 +100,24 @@ Unit.prototype.drawSpecialPowers_ = function() {
     for (var i = 0; i < this.special_powers.length && currentColumn < 2; ++i) {
       var power = this.special_powers[i];
       var type = power.type;
-      if (type != "trait") {
+      if (type != "trait" && type != "costed_trait") {
         type = this[type + "_type"];
       }
+      pointValue = ""
+      if (power.point_value) {
+        pointValue = `<div class='unitSpecialPower'>+${power.point_value} POINTS</div>`
+      }
+      
       var headerLines = Math.ceil(power.name.length / CHARS_PER_NAME_LINE);
-      var valueLines = Math.ceil(power.value.length / CHARS_PER_VALUE_LINE);
-      var lines = headerLines + valueLines;
-      //console.log(`Estimated headerLines=${headerLines} valueLines=${valueLines} for power #${currentPower}`)
+      var descLines = Math.ceil(power.description.length / CHARS_PER_DESC_LINE);
+      var lines = headerLines + descLines;
+      // console.log(`Estimated headerLines=${headerLines} descLines=${descLines} for power #${currentPower}`)
+
       // If the line count surpasses the max in the first column, move to the
       // 2nd column. If it's already there, then increase the size and redo the
       // layout.
       if (currentColumn == 0) {
         if (linesPerCol[currentColumn] + lines > LINES_PER_COL[currentColumn] + this.extraLines_) {
-          //console.log(`Moving to 2nd col - linesPerCol[0]=${linesPerCol[0]} headerLines=${headerLines} valueLines=${valueLines} LINES_PER_COL=${LINES_PER_COL[0]} extraLines=${this.extraLines_}`)
           // Try to move to the 2nd column.
           ++currentColumn;
           html += `
@@ -123,7 +127,6 @@ Unit.prototype.drawSpecialPowers_ = function() {
       }
       if (currentColumn == 1) {
         if (linesPerCol[currentColumn] + lines > LINES_PER_COL[currentColumn] + this.extraLines_) {
-          //console.log(`OVERFLOW! - linesPerCol[1]=${linesPerCol[1]} headerLines=${headerLines} valueLines=${valueLines} LINES_PER_COL=${LINES_PER_COL[1]} extraLines=${this.extraLines_}`)
           // Couldn't fit into 2 columns - add a line and redo the layout.
           ++currentColumn;
         }
@@ -132,17 +135,18 @@ Unit.prototype.drawSpecialPowers_ = function() {
         linesPerCol[currentColumn] += lines + 1;
         html += `
           <tr class='unitSpecialPowerRow'>
-            <td class='unitSpecialPower'><img src='../hcunits/images/sp_${type}.png' alt=''/></td>
-            <td class='unitSpecialPower'><b>${escapeHtml(power.name.toUpperCase())}</b><br>${escapeHtml(power.value)}</td>
+            <td class='unitSpecialPower'>
+              <img src='../hcunits/images/sp_${type}.png' alt=''/>
+              ${pointValue}
+            </td>
+            <td class='unitSpecialPower'><b>${escapeHtml(power.name.toUpperCase())}</b><br>${escapeHtml(power.description)}</td>
           </tr>`;
       }
       ++currentPower;
     }
     if (currentColumn < 2) {
-      //console.log(`Layout success! linesPerCol=${linesPerCol[0]}, ${linesPerCol[1]} lines=${lines} currentColumn=${currentColumn} LINES_PER_COL=${LINES_PER_COL[currentColumn]} extraLines=${this.extraLines_}`)
       layoutSuccessful = true;
     } else {
-      //console.log('adding another line')
       ++this.extraLines_;
     }
   }
@@ -192,14 +196,14 @@ Unit.prototype.drawDial_ = function() {
             powerObj = {
               name: 'Unknown power',
               style: 'color:black; background-color: white; border: 2px solid red;',
-              rules: power
+              description: power
             }
           }
           html += `
             <td class='unitDialEntry' style='${powerObj.style}'>
               <div class='tooltip'>
                 <div>${value}</div>
-                <span class='tooltiptext'><b>${powerObj.name}</b>: ${escapeHtml(powerObj.rules)}</span>
+                <span class='tooltiptext'><b>${powerObj.name}</b>: ${escapeHtml(powerObj.description)}</span>
               </div>
             </td>`;
         } else {

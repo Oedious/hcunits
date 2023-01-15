@@ -70,3 +70,14 @@ SearchManager.prototype.nextUnit = function() {
   }
 }
 
+SearchManager.prototype.setCurrentUnit = function(unitId) {
+  if (this.searchResults_) {
+    for (var i = 0; i < this.searchResults_.length; ++i) {
+      if (unitId == this.searchResults_[i].unit_id) {
+        this.index_ = i;
+        break;
+      }
+    }
+  }
+}
+
