@@ -46,8 +46,8 @@ ViewManager.prototype.searchByKeyword = function(keyword) {
 }
 
 ViewManager.prototype.showUnit = function(unitId) {
-  var viewMgr = this;
   this.searchMgr_.setCurrentUnit(unitId);
+  var viewMgr = this;
 	this.dataSource_.searchByUnitId(unitId,
 		function(unitJson) {
 			viewMgr.showUnit_(unitJson);

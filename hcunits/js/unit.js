@@ -100,12 +100,10 @@ Unit.prototype.drawSpecialPowers_ = function() {
     for (var i = 0; i < this.special_powers.length && currentColumn < 2; ++i) {
       var power = this.special_powers[i];
       var type = power.type;
-      if (type != "trait" && type != "costed_trait") {
+
+      // Handling for special trait types
+      if (type != "trait" && type != "costed_trait" && type != "rally_trait") {
         type = this[type + "_type"];
-      }
-      pointValue = ""
-      if (power.point_value) {
-        pointValue = `<div class='unitSpecialPower'>+${power.point_value} POINTS</div>`
       }
       
       var headerLines = Math.ceil(power.name.length / CHARS_PER_NAME_LINE);
@@ -133,12 +131,23 @@ Unit.prototype.drawSpecialPowers_ = function() {
       }
       if (currentColumn < 2) {
         linesPerCol[currentColumn] += lines + 1;
+        var iconHtml = "";
+        if (type == "costed_trait") {
+          iconHtml = `
+            <img src='../hcunits/images/sp_${type}.png' alt=''/>
+            <div class='unitSpecialPowerPointValue'>+${power.point_value} POINTS</div>`;
+        } else if (type == "rally_trait") {
+          iconHtml = `
+            <div class='unitSpecialPowerRally' style='${RALLY_TYPE_TO_STYLE[power.rally_type]}'>
+              <img class='unitSpecialPowerIcon' src='../hcunits/images/sp_trait.png' alt=''/>
+              <img class='unitSpecialPowerRallyDie' src='../hcunits/images/d6_${power.rally_die}.png' alt='${power.rally_die}'/>
+            </div>`;
+        } else {
+          iconHtml = `<img src='../hcunits/images/sp_${type}.png' alt=''/>`;
+        }
         html += `
           <tr class='unitSpecialPowerRow'>
-            <td class='unitSpecialPower'>
-              <img src='../hcunits/images/sp_${type}.png' alt=''/>
-              ${pointValue}
-            </td>
+            <td class='unitSpecialPower'>${iconHtml}</td>
             <td class='unitSpecialPower'><b>${escapeHtml(power.name.toUpperCase())}</b><br>${escapeHtml(power.description)}</td>
           </tr>`;
       }

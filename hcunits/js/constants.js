@@ -27,6 +27,12 @@ const STYLE_BLACK = "color:white; background-color: black;";
 const STYLE_GRAY = "color:white; background-color: #7f7f7f;";
 const STYLE_WHITE = "color:black; background-color: white; border: 2px solid black;";
 
+const RALLY_TYPE_TO_STYLE = {
+  "friendly": STYLE_BLUE,
+  "opposing": STYLE_RED,
+  "all": STYLE_GREEN
+}
+
 function escapeHtml(unsafe) {
     return unsafe
          .replace(/&/g, "&amp;")

@@ -851,7 +851,7 @@
     "attack_value": "11", 
     "defense_power": "super_senses", 
     "defense_value": "18", 
-    "damage_power": "shapechange", 
+    "damage_power": "shape_change", 
     "damage_value": "3"
   }, 
   {
@@ -860,7 +860,7 @@
     "attack_value": "10", 
     "defense_power": "willpower", 
     "defense_value": "17", 
-    "damage_power": "shapechange", 
+    "damage_power": "shape_change", 
     "damage_value": "2"
   }, 
   {
@@ -869,7 +869,7 @@
     "attack_value": "10", 
     "defense_power": "willpower", 
     "defense_value": "17", 
-    "damage_power": "shapechange", 
+    "damage_power": "shape_change", 
     "damage_value": "2"
   }, 
   {
@@ -878,7 +878,7 @@
     "attack_value": "10", 
     "defense_power": "willpower", 
     "defense_value": "17", 
-    "damage_power": "shapechange", 
+    "damage_power": "shape_change", 
     "damage_value": "2"
   }, 
   {
@@ -887,7 +887,7 @@
     "attack_value": "11", 
     "defense_power": "super_senses", 
     "defense_value": "18", 
-    "damage_power": "shapechange", 
+    "damage_power": "shape_change", 
     "damage_value": "3"
   }
 ]</dial>
@@ -1298,9 +1298,11 @@
     <keywords>["Avengers", "Cosmic", "Guardians of the Galaxy", "Martial Artist"]</keywords>
     <special_powers>[
   {
-    "type": "trait", 
-    "name": "RALLY (2)", 
-    "description": ""
+    "type": "rally_trait", 
+    "name": "RALLY", 
+    "description": "FREE: Remove one of Mantis's RALLY dice to remove an action token from a friendly character within range and line of fire.", 
+    "rally_type": "friendly", 
+    "rally_die": "2"
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
@@ -2204,7 +2206,7 @@
     "attack_value": "10", 
     "defense_power": "toughness", 
     "defense_value": "17", 
-    "damage_power": "shapechange", 
+    "damage_power": "shape_change", 
     "damage_value": "3"
   }, 
   {
@@ -2214,7 +2216,7 @@
     "attack_value": "11", 
     "defense_power": "toughness", 
     "defense_value": "17", 
-    "damage_power": "shapechange", 
+    "damage_power": "shape_change", 
     "damage_value": "2"
   }, 
   {
@@ -2224,7 +2226,7 @@
     "attack_value": "11", 
     "defense_power": "toughness", 
     "defense_value": "18", 
-    "damage_power": "shapechange", 
+    "damage_power": "shape_change", 
     "damage_value": "2"
   }
 ]</dial>
@@ -2279,7 +2281,7 @@
     "attack_value": "10", 
     "defense_power": "invulnerability", 
     "defense_value": "17", 
-    "damage_power": "shapechange", 
+    "damage_power": "shape_change", 
     "damage_value": "3"
   }, 
   {
@@ -2289,7 +2291,7 @@
     "attack_value": "11", 
     "defense_power": "invulnerability", 
     "defense_value": "18", 
-    "damage_power": "shapechange", 
+    "damage_power": "shape_change", 
     "damage_value": "3"
   }, 
   {
@@ -2299,7 +2301,7 @@
     "attack_value": "10", 
     "defense_power": "invulnerability", 
     "defense_value": "17", 
-    "damage_power": "shapechange", 
+    "damage_power": "shape_change", 
     "damage_value": "3"
   }, 
   {
@@ -2949,9 +2951,11 @@
     <keywords>["Monster", "Mystical"]</keywords>
     <special_powers>[
   {
-    "type": "trait", 
-    "name": "RALLY (1)", 
-    "description": ""
+    "type": "rally_trait", 
+    "name": "RALLY", 
+    "description": "FREE: Remove two of Mindful One's RALLY dice to generate a Avengers Forever #007 Mindless One on click #1.", 
+    "rally_type": "friendly", 
+    "rally_die": "1"
   }, 
   {
     "type": "defense", 
@@ -3036,9 +3040,11 @@
     <keywords>["Monster", "Mystical"]</keywords>
     <special_powers>[
   {
-    "type": "trait", 
-    "name": "RALLY (1)", 
-    "description": ""
+    "type": "rally_trait", 
+    "name": "RALLY", 
+    "description": "FREE: Remove two of Mindful One's RALLY dice to generate a Avengers Forever #007 Mindless One on click #1.", 
+    "rally_type": "friendly", 
+    "rally_die": "1"
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
@@ -3323,7 +3329,7 @@
     "attack_value": "10", 
     "defense_power": "invulnerability", 
     "defense_value": "18", 
-    "damage_power": "shapechange", 
+    "damage_power": "shape_change", 
     "damage_value": "2"
   }, 
   {
@@ -3333,7 +3339,7 @@
     "attack_value": "10", 
     "defense_power": "invulnerability", 
     "defense_value": "18", 
-    "damage_power": "shapechange", 
+    "damage_power": "shape_change", 
     "damage_value": "2"
   }, 
   {
@@ -3343,7 +3349,7 @@
     "attack_value": "10", 
     "defense_power": "invulnerability", 
     "defense_value": "17", 
-    "damage_power": "shapechange", 
+    "damage_power": "shape_change", 
     "damage_value": "2"
   }, 
   {
@@ -3353,7 +3359,7 @@
     "attack_value": "10", 
     "defense_power": "toughness", 
     "defense_value": "17", 
-    "damage_power": "shapechange", 
+    "damage_power": "shape_change", 
     "damage_value": "2"
   }, 
   {
@@ -3363,7 +3369,7 @@
     "attack_value": "10", 
     "defense_power": "toughness", 
     "defense_value": "17", 
-    "damage_power": "shapechange", 
+    "damage_power": "shape_change", 
     "damage_value": "2"
   }
 ]</dial>
@@ -3413,7 +3419,7 @@
     "attack_value": "10", 
     "defense_power": "toughness", 
     "defense_value": "17", 
-    "damage_power": "shapechange", 
+    "damage_power": "shape_change", 
     "damage_value": "2"
   }, 
   {
@@ -3423,7 +3429,7 @@
     "attack_value": "10", 
     "defense_power": "toughness", 
     "defense_value": "17", 
-    "damage_power": "shapechange", 
+    "damage_power": "shape_change", 
     "damage_value": "2"
   }
 ]</dial>
@@ -3445,9 +3451,11 @@
     <keywords>["Champions", "Detective", "New Mutants", "X-Factor", "X-Men", "Young Avengers"]</keywords>
     <special_powers>[
   {
-    "type": "trait", 
-    "name": "RALLY (5)", 
-    "description": ""
+    "type": "rally_trait", 
+    "name": "RALLY", 
+    "description": "When another friendly character within 6 squares and line of fire rolls a single d6, you may remove one of Prodigy's RALLY dice to replace that die.", 
+    "rally_type": "opposing", 
+    "rally_die": "5"
   }, 
   {
     "type": "trait", 
@@ -3629,9 +3637,11 @@
     <keywords>["Avengers", "Celebrity", "Champions", "Inhumans", "Young Avengers"]</keywords>
     <special_powers>[
   {
-    "type": "trait", 
-    "name": "RALLY (2)", 
-    "description": ""
+    "type": "rally_trait", 
+    "name": "RALLY", 
+    "description": "When an opposing character within line of fire would roll a single d6, you may remove one of Ms. Marvel's RALLY dice to replace that die.", 
+    "rally_type": "friendly", 
+    "rally_die": "2"
   }, 
   {
     "type": "trait", 
@@ -3657,7 +3667,7 @@
     "attack_value": "11", 
     "defense_power": "impervious", 
     "defense_value": "18", 
-    "damage_power": "shapechange", 
+    "damage_power": "shape_change", 
     "damage_value": "3"
   }, 
   {
@@ -3667,7 +3677,7 @@
     "attack_value": "11", 
     "defense_power": "impervious", 
     "defense_value": "18", 
-    "damage_power": "shapechange", 
+    "damage_power": "shape_change", 
     "damage_value": "3"
   }, 
   {
@@ -3677,7 +3687,7 @@
     "attack_value": "11", 
     "defense_power": "impervious", 
     "defense_value": "18", 
-    "damage_power": "shapechange", 
+    "damage_power": "shape_change", 
     "damage_value": "3"
   }, 
   {
@@ -3687,7 +3697,7 @@
     "attack_value": "10", 
     "defense_power": "impervious", 
     "defense_value": "17", 
-    "damage_power": "shapechange", 
+    "damage_power": "shape_change", 
     "damage_value": "3"
   }, 
   {
@@ -3697,7 +3707,7 @@
     "attack_value": "10", 
     "defense_power": "toughness", 
     "defense_value": "17", 
-    "damage_power": "shapechange", 
+    "damage_power": "shape_change", 
     "damage_value": "3"
   }, 
   {
@@ -3707,7 +3717,7 @@
     "attack_value": "10", 
     "defense_power": "toughness", 
     "defense_value": "17", 
-    "damage_power": "shapechange", 
+    "damage_power": "shape_change", 
     "damage_value": "3"
   }, 
   {
@@ -3717,7 +3727,7 @@
     "attack_value": "9", 
     "defense_power": "toughness", 
     "defense_value": "17", 
-    "damage_power": "shapechange", 
+    "damage_power": "shape_change", 
     "damage_value": "3"
   }
 ]</dial>
@@ -3739,9 +3749,11 @@
     <keywords>["Avengers", "Celebrity", "Champions", "Inhumans", "Young Avengers"]</keywords>
     <special_powers>[
   {
-    "type": "trait", 
-    "name": "RALLY (2)", 
-    "description": ""
+    "type": "rally_trait", 
+    "name": "RALLY", 
+    "description": "When an opposing character within line of fire would roll a single d6, you may remove one of Ms. Marvel's RALLY dice to replace that die.", 
+    "rally_type": "friendly", 
+    "rally_die": "2"
   }, 
   {
     "type": "trait", 
@@ -3767,7 +3779,7 @@
     "attack_value": "10", 
     "defense_power": "impervious", 
     "defense_value": "17", 
-    "damage_power": "shapechange", 
+    "damage_power": "shape_change", 
     "damage_value": "3"
   }, 
   {
@@ -3777,7 +3789,7 @@
     "attack_value": "10", 
     "defense_power": "toughness", 
     "defense_value": "17", 
-    "damage_power": "shapechange", 
+    "damage_power": "shape_change", 
     "damage_value": "3"
   }, 
   {
@@ -3787,7 +3799,7 @@
     "attack_value": "10", 
     "defense_power": "toughness", 
     "defense_value": "17", 
-    "damage_power": "shapechange", 
+    "damage_power": "shape_change", 
     "damage_value": "3"
   }, 
   {
@@ -3797,7 +3809,7 @@
     "attack_value": "9", 
     "defense_power": "toughness", 
     "defense_value": "17", 
-    "damage_power": "shapechange", 
+    "damage_power": "shape_change", 
     "damage_value": "3"
   }
 ]</dial>
@@ -5089,7 +5101,7 @@
     "attack_value": "12", 
     "defense_power": "toughness", 
     "defense_value": "18", 
-    "damage_power": "shapechange", 
+    "damage_power": "shape_change", 
     "damage_value": "3"
   }, 
   {
@@ -5099,7 +5111,7 @@
     "attack_value": "11", 
     "defense_power": "toughness", 
     "defense_value": "18", 
-    "damage_power": "shapechange", 
+    "damage_power": "shape_change", 
     "damage_value": "3"
   }, 
   {
@@ -5109,7 +5121,7 @@
     "attack_value": "11", 
     "defense_power": "toughness", 
     "defense_value": "18", 
-    "damage_power": "shapechange", 
+    "damage_power": "shape_change", 
     "damage_value": "3"
   }, 
   {
@@ -10405,7 +10417,7 @@
     "attack_value": "10", 
     "defense_power": "invulnerability", 
     "defense_value": "17", 
-    "damage_power": "shapechange", 
+    "damage_power": "shape_change", 
     "damage_value": "4"
   }, 
   {
@@ -10415,7 +10427,7 @@
     "attack_value": "10", 
     "defense_power": "invulnerability", 
     "defense_value": "16", 
-    "damage_power": "shapechange", 
+    "damage_power": "shape_change", 
     "damage_value": "3"
   }, 
   {

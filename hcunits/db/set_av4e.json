@@ -933,7 +933,7 @@
     "dial": [
       {
         "defense_power": "super_senses", 
-        "damage_power": "shapechange", 
+        "damage_power": "shape_change", 
         "speed_power": "hypersonic_speed", 
         "speed_value": "8", 
         "damage_value": "3", 
@@ -942,7 +942,7 @@
       }, 
       {
         "defense_power": "willpower", 
-        "damage_power": "shapechange", 
+        "damage_power": "shape_change", 
         "speed_power": "special", 
         "speed_value": "8", 
         "damage_value": "2", 
@@ -951,7 +951,7 @@
       }, 
       {
         "defense_power": "willpower", 
-        "damage_power": "shapechange", 
+        "damage_power": "shape_change", 
         "speed_power": "special", 
         "speed_value": "8", 
         "damage_value": "2", 
@@ -960,7 +960,7 @@
       }, 
       {
         "defense_power": "willpower", 
-        "damage_power": "shapechange", 
+        "damage_power": "shape_change", 
         "speed_power": "special", 
         "speed_value": "8", 
         "damage_value": "2", 
@@ -969,7 +969,7 @@
       }, 
       {
         "defense_power": "super_senses", 
-        "damage_power": "shapechange", 
+        "damage_power": "shape_change", 
         "speed_power": "hypersonic_speed", 
         "speed_value": "8", 
         "damage_value": "3", 
@@ -1423,9 +1423,11 @@
     ], 
     "special_powers": [
       {
-        "type": "trait", 
-        "name": "RALLY (2)", 
-        "description": ""
+        "rally_type": "friendly", 
+        "type": "rally_trait", 
+        "name": "RALLY", 
+        "rally_die": "2", 
+        "description": "FREE: Remove one of Mantis's RALLY dice to remove an action token from a friendly character within range and line of fire."
       }
     ], 
     "improved_movement": [], 
@@ -2397,7 +2399,7 @@
       {
         "attack_power": "quake", 
         "defense_power": "toughness", 
-        "damage_power": "shapechange", 
+        "damage_power": "shape_change", 
         "speed_power": "flurry", 
         "speed_value": "9", 
         "damage_value": "3", 
@@ -2407,7 +2409,7 @@
       {
         "attack_power": "blades_claws_fangs", 
         "defense_power": "toughness", 
-        "damage_power": "shapechange", 
+        "damage_power": "shape_change", 
         "speed_power": "charge", 
         "speed_value": "10", 
         "damage_value": "2", 
@@ -2417,7 +2419,7 @@
       {
         "attack_power": "precision_strike", 
         "defense_power": "toughness", 
-        "damage_power": "shapechange", 
+        "damage_power": "shape_change", 
         "speed_power": "hypersonic_speed", 
         "speed_value": "9", 
         "damage_value": "2", 
@@ -2478,7 +2480,7 @@
       {
         "attack_power": "super_strength", 
         "defense_power": "invulnerability", 
-        "damage_power": "shapechange", 
+        "damage_power": "shape_change", 
         "speed_power": "charge", 
         "speed_value": "8", 
         "damage_value": "3", 
@@ -2488,7 +2490,7 @@
       {
         "attack_power": "super_strength", 
         "defense_power": "invulnerability", 
-        "damage_power": "shapechange", 
+        "damage_power": "shape_change", 
         "speed_power": "charge", 
         "speed_value": "8", 
         "damage_value": "3", 
@@ -2498,7 +2500,7 @@
       {
         "attack_power": "super_strength", 
         "defense_power": "invulnerability", 
-        "damage_power": "shapechange", 
+        "damage_power": "shape_change", 
         "speed_power": "charge", 
         "speed_value": "8", 
         "damage_value": "3", 
@@ -3204,9 +3206,11 @@
     ], 
     "special_powers": [
       {
-        "type": "trait", 
-        "name": "RALLY (1)", 
-        "description": ""
+        "rally_type": "friendly", 
+        "type": "rally_trait", 
+        "name": "RALLY", 
+        "rally_die": "1", 
+        "description": "FREE: Remove two of Mindful One's RALLY dice to generate a Avengers Forever #007 Mindless One on click #1."
       }, 
       {
         "type": "defense", 
@@ -3296,9 +3300,11 @@
     ], 
     "special_powers": [
       {
-        "type": "trait", 
-        "name": "RALLY (1)", 
-        "description": ""
+        "rally_type": "friendly", 
+        "type": "rally_trait", 
+        "name": "RALLY", 
+        "rally_die": "1", 
+        "description": "FREE: Remove two of Mindful One's RALLY dice to generate a Avengers Forever #007 Mindless One on click #1."
       }
     ], 
     "improved_movement": [], 
@@ -3600,7 +3606,7 @@
       {
         "attack_power": "quake", 
         "defense_power": "invulnerability", 
-        "damage_power": "shapechange", 
+        "damage_power": "shape_change", 
         "speed_power": "special", 
         "speed_value": "10", 
         "damage_value": "2", 
@@ -3610,7 +3616,7 @@
       {
         "attack_power": "quake", 
         "defense_power": "invulnerability", 
-        "damage_power": "shapechange", 
+        "damage_power": "shape_change", 
         "speed_power": "special", 
         "speed_value": "8", 
         "damage_value": "2", 
@@ -3620,7 +3626,7 @@
       {
         "attack_power": "quake", 
         "defense_power": "invulnerability", 
-        "damage_power": "shapechange", 
+        "damage_power": "shape_change", 
         "speed_power": "flurry", 
         "speed_value": "8", 
         "damage_value": "2", 
@@ -3630,7 +3636,7 @@
       {
         "attack_power": "quake", 
         "defense_power": "toughness", 
-        "damage_power": "shapechange", 
+        "damage_power": "shape_change", 
         "speed_power": "special", 
         "speed_value": "8", 
         "damage_value": "2", 
@@ -3640,7 +3646,7 @@
       {
         "attack_power": "quake", 
         "defense_power": "toughness", 
-        "damage_power": "shapechange", 
+        "damage_power": "shape_change", 
         "speed_power": "flurry", 
         "speed_value": "8", 
         "damage_value": "2", 
@@ -3695,7 +3701,7 @@
       {
         "attack_power": "quake", 
         "defense_power": "toughness", 
-        "damage_power": "shapechange", 
+        "damage_power": "shape_change", 
         "speed_power": "special", 
         "speed_value": "8", 
         "damage_value": "2", 
@@ -3705,7 +3711,7 @@
       {
         "attack_power": "quake", 
         "defense_power": "toughness", 
-        "damage_power": "shapechange", 
+        "damage_power": "shape_change", 
         "speed_power": "flurry", 
         "speed_value": "8", 
         "damage_value": "2", 
@@ -3741,9 +3747,11 @@
     ], 
     "special_powers": [
       {
-        "type": "trait", 
-        "name": "RALLY (5)", 
-        "description": ""
+        "rally_type": "opposing", 
+        "type": "rally_trait", 
+        "name": "RALLY", 
+        "rally_die": "5", 
+        "description": "When another friendly character within 6 squares and line of fire rolls a single d6, you may remove one of Prodigy's RALLY dice to replace that die."
       }, 
       {
         "type": "trait", 
@@ -3946,9 +3954,11 @@
     ], 
     "special_powers": [
       {
-        "type": "trait", 
-        "name": "RALLY (2)", 
-        "description": ""
+        "rally_type": "friendly", 
+        "type": "rally_trait", 
+        "name": "RALLY", 
+        "rally_die": "2", 
+        "description": "When an opposing character within line of fire would roll a single d6, you may remove one of Ms. Marvel's RALLY dice to replace that die."
       }, 
       {
         "type": "trait", 
@@ -3972,7 +3982,7 @@
       {
         "attack_power": "quake", 
         "defense_power": "impervious", 
-        "damage_power": "shapechange", 
+        "damage_power": "shape_change", 
         "speed_power": "charge", 
         "speed_value": "10", 
         "damage_value": "3", 
@@ -3982,7 +3992,7 @@
       {
         "attack_power": "quake", 
         "defense_power": "impervious", 
-        "damage_power": "shapechange", 
+        "damage_power": "shape_change", 
         "speed_power": "charge", 
         "speed_value": "10", 
         "damage_value": "3", 
@@ -3992,7 +4002,7 @@
       {
         "attack_power": "quake", 
         "defense_power": "impervious", 
-        "damage_power": "shapechange", 
+        "damage_power": "shape_change", 
         "speed_power": "charge", 
         "speed_value": "10", 
         "damage_value": "3", 
@@ -4002,7 +4012,7 @@
       {
         "attack_power": "quake", 
         "defense_power": "impervious", 
-        "damage_power": "shapechange", 
+        "damage_power": "shape_change", 
         "speed_power": "charge", 
         "speed_value": "10", 
         "damage_value": "3", 
@@ -4012,7 +4022,7 @@
       {
         "attack_power": "super_strength", 
         "defense_power": "toughness", 
-        "damage_power": "shapechange", 
+        "damage_power": "shape_change", 
         "speed_power": "plasticity", 
         "speed_value": "8", 
         "damage_value": "3", 
@@ -4022,7 +4032,7 @@
       {
         "attack_power": "super_strength", 
         "defense_power": "toughness", 
-        "damage_power": "shapechange", 
+        "damage_power": "shape_change", 
         "speed_power": "plasticity", 
         "speed_value": "8", 
         "damage_value": "3", 
@@ -4032,7 +4042,7 @@
       {
         "attack_power": "super_strength", 
         "defense_power": "toughness", 
-        "damage_power": "shapechange", 
+        "damage_power": "shape_change", 
         "speed_power": "plasticity", 
         "speed_value": "8", 
         "damage_value": "3", 
@@ -4066,9 +4076,11 @@
     ], 
     "special_powers": [
       {
-        "type": "trait", 
-        "name": "RALLY (2)", 
-        "description": ""
+        "rally_type": "friendly", 
+        "type": "rally_trait", 
+        "name": "RALLY", 
+        "rally_die": "2", 
+        "description": "When an opposing character within line of fire would roll a single d6, you may remove one of Ms. Marvel's RALLY dice to replace that die."
       }, 
       {
         "type": "trait", 
@@ -4092,7 +4104,7 @@
       {
         "attack_power": "quake", 
         "defense_power": "impervious", 
-        "damage_power": "shapechange", 
+        "damage_power": "shape_change", 
         "speed_power": "charge", 
         "speed_value": "10", 
         "damage_value": "3", 
@@ -4102,7 +4114,7 @@
       {
         "attack_power": "super_strength", 
         "defense_power": "toughness", 
-        "damage_power": "shapechange", 
+        "damage_power": "shape_change", 
         "speed_power": "plasticity", 
         "speed_value": "8", 
         "damage_value": "3", 
@@ -4112,7 +4124,7 @@
       {
         "attack_power": "super_strength", 
         "defense_power": "toughness", 
-        "damage_power": "shapechange", 
+        "damage_power": "shape_change", 
         "speed_power": "plasticity", 
         "speed_value": "8", 
         "damage_value": "3", 
@@ -4122,7 +4134,7 @@
       {
         "attack_power": "super_strength", 
         "defense_power": "toughness", 
-        "damage_power": "shapechange", 
+        "damage_power": "shape_change", 
         "speed_power": "plasticity", 
         "speed_value": "8", 
         "damage_value": "3", 
@@ -5506,7 +5518,7 @@
       {
         "attack_power": "special", 
         "defense_power": "toughness", 
-        "damage_power": "shapechange", 
+        "damage_power": "shape_change", 
         "speed_power": "charge", 
         "speed_value": "10", 
         "damage_value": "3", 
@@ -5516,7 +5528,7 @@
       {
         "attack_power": "special", 
         "defense_power": "toughness", 
-        "damage_power": "shapechange", 
+        "damage_power": "shape_change", 
         "speed_power": "charge", 
         "speed_value": "10", 
         "damage_value": "3", 
@@ -5526,7 +5538,7 @@
       {
         "attack_power": "special", 
         "defense_power": "toughness", 
-        "damage_power": "shapechange", 
+        "damage_power": "shape_change", 
         "speed_power": "charge", 
         "speed_value": "10", 
         "damage_value": "3", 
@@ -11272,7 +11284,7 @@
     "dial": [
       {
         "defense_power": "invulnerability", 
-        "damage_power": "shapechange", 
+        "damage_power": "shape_change", 
         "speed_power": "charge", 
         "speed_value": "10", 
         "damage_value": "4", 
@@ -11282,7 +11294,7 @@
       {
         "attack_power": "super_strength", 
         "defense_power": "invulnerability", 
-        "damage_power": "shapechange", 
+        "damage_power": "shape_change", 
         "speed_power": "charge", 
         "speed_value": "9", 
         "damage_value": "3", 

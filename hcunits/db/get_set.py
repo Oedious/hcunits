@@ -195,14 +195,8 @@ def parse_unit_page(set_id, unit_page):
         else:
           print("The special power type '%s' for '%s' is currently not supported" % (sp_type_str, unit_id))
           exit(1)
+
         sp_name = td_tags[1].strong.string.strip().rstrip(':')
-        # Determine if it's a costed trait and if so, what it's point value is
-        sp_point_value = None
-        match_obj = re.match(r"^\(\+(\d*) POINTS\) (.*)", sp_name)
-        if match_obj:
-          sp_type = "costed_trait"
-          sp_point_value = match_obj.group(1)
-          sp_name = match_obj.group(2)
         sp_description = td_tags[1].contents[2].strip()
         if sp_type == "improved":
           if sp_name == "MOVEMENT":
@@ -215,8 +209,25 @@ def parse_unit_page(set_id, unit_page):
             ("name", sp_name),
             ("description", sp_description)
           ])
-          if sp_point_value:
-            sp["point_value"] = sp_point_value
+
+          # Handle special trait types, like costed or rally
+          if sp_type == "trait":
+            # Determine if it's a costed trait and if so, what it's point value is
+            match_obj = re.match(r"^\(\+(\d*) POINTS\) (.*)", sp_name)
+            if match_obj:
+              sp["type"] = "costed_trait"
+              sp["name"] =match_obj.group(2)
+              sp["point_value"] = match_obj.group(1)
+    
+            # Check to see if it's a rally trait.
+            match_obj = re.match(r"^RALLY \((\d+)\)", sp_name)
+            if match_obj:
+              sp["type"] = "rally_trait"
+              sp["name"] = "RALLY"
+              sp["description"] = td_tags[1].contents[4].strip()[2:]
+              sp["rally_type"] = td_tags[1].i.string.strip()[:-13].lower()
+              sp["rally_die"] = match_obj.group(1)
+  
           special_powers.append(sp)
 
     # Parse range and number of targets

@@ -54,10 +54,13 @@ CREATE TABLE wp_units (
 
   -- A JSON array of objects contains special powers and traits, of the format:
   -- {
-  --   "type": string - contains "trait", "speed", "attack", "defense", "damage", "costed_trait"
+  --   "type": string - contains "trait", "speed", "attack", "defense", "damage", "costed_trait", "rally_trait"
   --   "name": string - the name of the power.
   --   "description": string - the description of the power.
-  --   "powers": array of strings, containing names to standard powers granted.
+  --   "powers": (Optional) array of strings, containing names to standard powers granted.
+  --   "point_value": (Optional) the additional point value for a costed trait
+  --   "rally_type": (Optional) contains "friendly", "opposing" or "all"
+  --   "rally_die": (Optional) the die value that triggers the rally effect
   -- }
   special_powers JSON,
 
