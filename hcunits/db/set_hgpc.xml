@@ -18,7 +18,7 @@
   {
     "type": "trait", 
     "name": "HELLFIRE GALA", 
-    "value": "Once per turn for all characters with this trait, when a friendly character with the X-Men keyword attacks and the attack roll includes exactly one 5, you may replace the other die with a 5."
+    "description": "Once per turn for all characters with this trait, when a friendly character with the X-Men keyword attacks and the attack roll includes exactly one 5, you may replace the other die with a 5."
   }, 
   {
     "type": "trait", 
@@ -28,12 +28,12 @@
   {
     "type": "speed", 
     "name": "IMPLANTED IDEAS", 
-    "value": "Mind Control. When Jean Grey uses it, after resolutions deal a hit character damage equal to its printed damage value."
+    "description": "Mind Control. When Jean Grey uses it, after resolutions deal a hit character damage equal to its printed damage value."
   }, 
   {
     "type": "defense", 
     "name": "TELEPATHIC WARNING", 
-    "value": "Energy Shield/Deflection, Super Senses."
+    "description": "Energy Shield/Deflection, Super Senses."
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
@@ -147,7 +147,7 @@
 ]</dial>
   </row>
   <row>
-    <unit_id>hgpc001v</unit_id>
+    <unit_id>hgpc001-40</unit_id>
     <set_id>hgpc</set_id>
     <collector_number>001</collector_number>
     <name>Jean Grey</name>
@@ -155,7 +155,7 @@
     <point_value>40</point_value>
     <rarity>limited_edition</rarity>
     <age>modern</age>
-    <parent_unit_id></parent_unit_id>
+    <parent_unit_id>hgpc001</parent_unit_id>
     <real_name>Jean Grey</real_name>
     <special_type></special_type>
     <team_abilities>["x_men"]</team_abilities>
@@ -165,17 +165,17 @@
   {
     "type": "trait", 
     "name": "HELLFIRE GALA", 
-    "value": "Once per turn for all characters with this trait, when a friendly character with the X-Men keyword attacks and the attack roll includes exactly one 5, you may replace the other die with a 5."
+    "description": "Once per turn for all characters with this trait, when a friendly character with the X-Men keyword attacks and the attack roll includes exactly one 5, you may replace the other die with a 5."
   }, 
   {
     "type": "trait", 
     "name": "HIGH FASHION: TELEKINETIC FLOATING X HEADPIECE", 
-    "value": "When a friendly character with the X-Men keyword hits and a 5-5 was rolled, after resolutions give an action token to each hit character."
+    "description": "When a friendly character with the X-Men keyword hits and a 5-5 was rolled, after resolutions give an action token to each hit character."
   }, 
   {
     "type": "speed", 
     "name": "IMPLANTED IDEAS", 
-    "value": "Mind Control. When Jean Grey uses it, after resolutions deal a hit character damage equal to its printed damage value."
+    "description": "Mind Control. When Jean Grey uses it, after resolutions deal a hit character damage equal to its printed damage value."
   }, 
   {
     "type": "defense", 
@@ -191,7 +191,7 @@
     <attack_type>fist</attack_type>
     <defense_type>indomitable</defense_type>
     <damage_type>starburst</damage_type>
-    <dial_start>1</dial_start>
+    <dial_start>6</dial_start>
     <dial_size>12</dial_size>
     <dial>[
   {
@@ -376,7 +376,7 @@
 ]</dial>
   </row>
   <row>
-    <unit_id>hgpc002v</unit_id>
+    <unit_id>hgpc002-45</unit_id>
     <set_id>hgpc</set_id>
     <collector_number>002</collector_number>
     <name>Cyclops</name>
@@ -384,7 +384,7 @@
     <point_value>45</point_value>
     <rarity>limited_edition</rarity>
     <age>modern</age>
-    <parent_unit_id></parent_unit_id>
+    <parent_unit_id>hgpc002</parent_unit_id>
     <real_name>Scott Summers</real_name>
     <special_type></special_type>
     <team_abilities>["x_men"]</team_abilities>
@@ -415,7 +415,7 @@
     <attack_type>fist</attack_type>
     <defense_type>indomitable</defense_type>
     <damage_type>starburst</damage_type>
-    <dial_start>1</dial_start>
+    <dial_start>5</dial_start>
     <dial_size>12</dial_size>
     <dial>[
   {
@@ -601,7 +601,7 @@
 ]</dial>
   </row>
   <row>
-    <unit_id>hgpc003v</unit_id>
+    <unit_id>hgpc003-45</unit_id>
     <set_id>hgpc</set_id>
     <collector_number>003</collector_number>
     <name>Rogue</name>
@@ -609,7 +609,7 @@
     <point_value>45</point_value>
     <rarity>limited_edition</rarity>
     <age>modern</age>
-    <parent_unit_id></parent_unit_id>
+    <parent_unit_id>hgpc003</parent_unit_id>
     <real_name>Anne-Marie</real_name>
     <special_type></special_type>
     <team_abilities>["x_men"]</team_abilities>
@@ -640,7 +640,7 @@
     <attack_type>fist</attack_type>
     <defense_type>indomitable</defense_type>
     <damage_type>starburst</damage_type>
-    <dial_start>1</dial_start>
+    <dial_start>5</dial_start>
     <dial_size>12</dial_size>
     <dial>[
   {
@@ -826,7 +826,7 @@
 ]</dial>
   </row>
   <row>
-    <unit_id>hgpc004v</unit_id>
+    <unit_id>hgpc004-45</unit_id>
     <set_id>hgpc</set_id>
     <collector_number>004</collector_number>
     <name>Wolverine</name>
@@ -834,7 +834,7 @@
     <point_value>45</point_value>
     <rarity>limited_edition</rarity>
     <age>modern</age>
-    <parent_unit_id></parent_unit_id>
+    <parent_unit_id>hgpc004</parent_unit_id>
     <real_name>Laura Kinney</real_name>
     <special_type></special_type>
     <team_abilities>["x_men"]</team_abilities>
@@ -865,7 +865,7 @@
     <attack_type>fist</attack_type>
     <defense_type>indomitable</defense_type>
     <damage_type>starburst</damage_type>
-    <dial_start>1</dial_start>
+    <dial_start>5</dial_start>
     <dial_size>12</dial_size>
     <dial>[
   {
@@ -1040,7 +1040,7 @@
 ]</dial>
   </row>
   <row>
-    <unit_id>hgpc005v</unit_id>
+    <unit_id>hgpc005-40</unit_id>
     <set_id>hgpc</set_id>
     <collector_number>005</collector_number>
     <name>Polaris</name>
@@ -1048,7 +1048,7 @@
     <point_value>40</point_value>
     <rarity>limited_edition</rarity>
     <age>modern</age>
-    <parent_unit_id></parent_unit_id>
+    <parent_unit_id>hgpc005</parent_unit_id>
     <real_name>Lorna Dane</real_name>
     <special_type></special_type>
     <team_abilities>["x_men"]</team_abilities>
@@ -1079,7 +1079,7 @@
     <attack_type>fist</attack_type>
     <defense_type>indomitable</defense_type>
     <damage_type>starburst</damage_type>
-    <dial_start>1</dial_start>
+    <dial_start>5</dial_start>
     <dial_size>12</dial_size>
     <dial>[
   {
@@ -1264,7 +1264,7 @@
 ]</dial>
   </row>
   <row>
-    <unit_id>hgpc006v</unit_id>
+    <unit_id>hgpc006-45</unit_id>
     <set_id>hgpc</set_id>
     <collector_number>006</collector_number>
     <name>Sunfire</name>
@@ -1272,7 +1272,7 @@
     <point_value>45</point_value>
     <rarity>limited_edition</rarity>
     <age>modern</age>
-    <parent_unit_id></parent_unit_id>
+    <parent_unit_id>hgpc006</parent_unit_id>
     <real_name>Shiro Yoshida</real_name>
     <special_type></special_type>
     <team_abilities>["x_men"]</team_abilities>
@@ -1303,7 +1303,7 @@
     <attack_type>fist</attack_type>
     <defense_type>indomitable</defense_type>
     <damage_type>starburst</damage_type>
-    <dial_start>1</dial_start>
+    <dial_start>6</dial_start>
     <dial_size>12</dial_size>
     <dial>[
   {
@@ -1478,7 +1478,7 @@
 ]</dial>
   </row>
   <row>
-    <unit_id>hgpc007v</unit_id>
+    <unit_id>hgpc007-40</unit_id>
     <set_id>hgpc</set_id>
     <collector_number>007</collector_number>
     <name>Synch</name>
@@ -1486,7 +1486,7 @@
     <point_value>40</point_value>
     <rarity>limited_edition</rarity>
     <age>modern</age>
-    <parent_unit_id></parent_unit_id>
+    <parent_unit_id>hgpc007</parent_unit_id>
     <real_name>Everett Thomas</real_name>
     <special_type>unique</special_type>
     <team_abilities>["x_men"]</team_abilities>
@@ -1517,7 +1517,7 @@
     <attack_type>fist</attack_type>
     <defense_type>indomitable</defense_type>
     <damage_type>starburst</damage_type>
-    <dial_start>1</dial_start>
+    <dial_start>5</dial_start>
     <dial_size>12</dial_size>
     <dial>[
   {
@@ -1702,7 +1702,7 @@
 ]</dial>
   </row>
   <row>
-    <unit_id>hgpc008v</unit_id>
+    <unit_id>hgpc008-45</unit_id>
     <set_id>hgpc</set_id>
     <collector_number>008</collector_number>
     <name>Emma Frost</name>
@@ -1710,7 +1710,7 @@
     <point_value>45</point_value>
     <rarity>limited_edition</rarity>
     <age>modern</age>
-    <parent_unit_id></parent_unit_id>
+    <parent_unit_id>hgpc008</parent_unit_id>
     <real_name>Emma Frost</real_name>
     <special_type></special_type>
     <team_abilities>["x_men"]</team_abilities>
@@ -1741,7 +1741,7 @@
     <attack_type>fist</attack_type>
     <defense_type>indomitable</defense_type>
     <damage_type>starburst</damage_type>
-    <dial_start>1</dial_start>
+    <dial_start>6</dial_start>
     <dial_size>12</dial_size>
     <dial>[
   {
