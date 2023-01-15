@@ -16,15 +16,15 @@ SET_MAP = {
 CACHE_DIR = ".cache"
 
 def fix_style(str):
-  return re.sub(' |-', '_', str).lower()
+  return re.sub(' |-|/', '_', str).lower()
 
 def get_set_list_cache_path(set_id):
   filename = "set_list_" + set_id + ".html"
-  return os.path.join(CACHE_DIR, filename)
+  return os.path.join(CACHE_DIR, set_id, filename)
 
-def get_unit_cache_path(unit_id):
+def get_unit_cache_path(set_id, unit_id):
   filename = "unit_" + unit_id + ".html"
-  return os.path.join(CACHE_DIR, filename)
+  return os.path.join(CACHE_DIR, set_id, filename)
 
 # Fetch the set list page
 def fetch_set_list_page(set_id):
@@ -67,7 +67,7 @@ def parse_set_list_page(set_list_page, starting_unit_id, max_units):
 
   return unit_list
       
-def fetch_unit_page(unit_id):
+def fetch_unit_page(set_id, unit_id):
   options = Options()
   options.add_argument("--headless")
   driver = webdriver.Chrome(options=options)
@@ -76,7 +76,7 @@ def fetch_unit_page(unit_id):
   driver.close()
   set_list_page = soup.prettify(formatter=lambda s: s.replace(u'\xa0', ' '))
   # Save it to disk to re-use later on
-  filename = get_unit_cache_path(unit_id)
+  filename = get_unit_cache_path(set_id, unit_id)
   f = open(filename, "w")
   f.write(set_list_page.encode('utf-8'))
   f.close()
@@ -188,7 +188,10 @@ def parse_unit_page(unit_page):
         for i in range(4):
           tag = tags[i]
           power= tag.td['title']
+          # 1-off fix to change psychic blast
           if power:
+            if power == "Psychic Blast":
+              power = "Penetrating/Psychic Blast"
             row_obj[types[i] + "_power"] = fix_style(power)
           row_obj[types[i] + "_value"] = tag.td.string.strip()
         dial.append(row_obj)
@@ -279,14 +282,14 @@ if __name__ == "__main__":
   unit_list = "<resultset>\n"
   for unit_id in unit_id_list:
     unit_list += "  <row>"
-    unit_path = get_unit_cache_path(unit_id)
+    unit_path = get_unit_cache_path(set_id, unit_id)
     if not args.skip_cache and os.path.exists(unit_path):
       print("Reading unit from cache at " + unit_path)
       f = open(unit_path, "r")
       unit_page = f.read()
       f.close()
     else:
-      unit_page = fetch_unit_page(unit_id)
+      unit_page = fetch_unit_page(set_id, unit_id)
     unit = parse_unit_page(unit_page)
     unit_list += unit
     unit_list += "  </row>\n"
