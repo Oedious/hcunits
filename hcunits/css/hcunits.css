@@ -207,7 +207,7 @@ div.setName {
   height: 525px;
 }
 
-#unitFront {
+#characterCard {
   position: absolute;
   top: 20px;
   left: 20px;
@@ -217,7 +217,7 @@ div.setName {
   /* height: 525px;*/
 }
 
-#unitFrontBorders {
+#characterCardBorders {
   position: absolute;
   left: 0px;
   top: 0px;
@@ -229,7 +229,7 @@ div.setName {
   box-shadow: rgba(0, 0, 0, 0.8) 0 0 10px;
 }
 
-#unitHeader {
+#characterHeader {
   position: absolute;
   left: 3px;
   top: 2px;
@@ -239,23 +239,23 @@ div.setName {
   line-height: normal;
 }
 
-#unitName {
+#characterName {
   font-family: arial black, sans-serif;
   font-size: 19px;
   font-style: italic;
   line-height: 1em;
 }
 
-#unitKeywords {
+#characterKeywords {
   font-size: 10px;
   line-height: 1em;
 }
 
-.unitKeyword {
+.characterKeyword {
   color: white;
 }
 
-#unitRealName {
+#characterRealName {
   position: absolute;
   left: 7px;
   top: 62px;
@@ -266,14 +266,14 @@ div.setName {
   text-align: left;
 }
 
-#unitCollectorNumber {
+#characterCollectorNumber {
   position: absolute;
   left: 340px;
   font-size: 11px;
   color: white;
 }
 
-#unitImage {
+#characterImage {
   position: absolute;
   left: 215px;
   top: 15px;
@@ -284,7 +284,7 @@ div.setName {
   border-radius: 75px;
 }
 
-.unitSpecialPowersTable {
+.characterSpecialPowersTable {
   font-family: Tahoma;
   font-size: 10px;
   table-layout: auto;
@@ -292,47 +292,47 @@ div.setName {
   line-height: 1.5em;
 }
 
-#unitSpecialPowersTable0 {
+#characterSpecialPowersTable0 {
   position: absolute;
   left: 5px;
   top: 80px;
 }
 
-#unitSpecialPowersTable1 {
+#characterSpecialPowersTable1 {
   position: absolute;
   right: 3px;
   top: 168px;
 }
 
-.unitSpecialPowerRow {
+.characterSpecialPowerRow {
   border-bottom: none !important;
 }
 
-.unitSpecialPower {
+.characterSpecialPower {
   vertical-align: top;
   padding: 0px 3px 5px 0px !important;
 }
 
-.unitSpecialPowerIcon {
+.characterSpecialPowerIcon {
   padding: 2px 2px;
 }
 
-.unitSpecialPowerRallyDie {
+.characterSpecialPowerRallyDie {
   padding: 0px 4px;
 }
 
-.unitSpecialPowerPointValue {
+.characterSpecialPowerPointValue {
   font-size: 8px;
 }
 
-.unitSpecialPowerRally {
+.characterSpecialPowerRally {
   width: 28px;
   height: 60px;
   border-radius: 14px;
   box-shadow: 0 2px 2px rgb(0, 0, 0, 50%);
 }
 
-#unitDial {
+#characterDial {
   position: absolute;
   bottom: 70px;
   width: 325px;
@@ -341,7 +341,7 @@ div.setName {
   border-radius: 0px 15px 15px 0px;
 }
 
-.unitCombatSymbol {
+.characterCombatSymbol {
   position: absolute;
   width: 28px;
   height: 24px;
@@ -351,7 +351,7 @@ div.setName {
   background-color: black;
 }
 
-#unitRange {
+#characterRange {
   position: absolute;
   right: 20px;
   top: 4px;
@@ -361,38 +361,38 @@ div.setName {
   font-weight: 300;
 }
 
-.unitBolt {
+.characterBolt {
   position: absolute;
   top: 6px;
 }
 
-#unitCombatSymbolSpeed {
+#characterCombatSymbolSpeed {
   position: absolute;
   top: 24px;
 }
 
-#unitCombatSymbolAttack {
+#characterCombatSymbolAttack {
   position: absolute;
   top: 48px;
 }
 
-#unitCombatSymbolDefense {
+#characterCombatSymbolDefense {
   position: absolute;
   top: 72px;
 }
 
-#unitCombatSymbolDamage {
+#characterCombatSymbolDamage {
   position: absolute;
   top: 96px;
 }
 
-.unitCombatSymbolImg {
+.characterCombatSymbolImg {
   position: absolute;
   right: 7px;
   top: 2px;
 }
 
-#unitDialTable {
+#characterDialTable {
   position: absolute;
   left: 30px;
   top: -2px;
@@ -402,7 +402,7 @@ div.setName {
   border-spacing: 3px !important;
 }
 
-.unitDialHeader {
+.characterDialHeader {
   color: red;
   padding: 0px 0px !important;
   text-align: center;
@@ -412,13 +412,13 @@ div.setName {
   font-weight: 300;
 }
 
-.unitDialRow {
+.characterDialRow {
   height: 21px;
   border-bottom: none !important;
   line-height: normal;
 }
 
-.unitDialEntry {
+.characterDialEntry {
   text-align: center;
   font-family: 'Gill Sans', sans-serif;
   font-weight: 300;
@@ -431,7 +431,7 @@ div.setName {
   font-size: 14px;
 }
 
-.unitDialEntryKO {
+.characterDialEntryKO {
   padding: 0px 0px !important;
   text-align: center;
   font-family: comic sans ms;
@@ -440,7 +440,7 @@ div.setName {
   font-size: 14px;
 }
 
-#unitTeamAbilities {
+#characterTeamAbilities {
   position: absolute;
   right: 0px;
   bottom: 70px;
@@ -450,25 +450,25 @@ div.setName {
   border-radius: 12px 0px 0px 12px;
 }
 
-#unitTeamAbility0 {
+#characterTeamAbility0 {
   position: absolute;
   left: 10px;
   top: 10px;
 }
 
-#unitTeamAbility1 {
+#characterTeamAbility1 {
   position: absolute;
   left: 10px;
   top: 55px;
 }
 
-#unitTeamAbility2 {
+#characterTeamAbility2 {
   position: absolute;
   left: 10px;
   top: 100px;
 }
 
-#unitPointValue {
+#characterPointValue {
   position: absolute;
   left: 0px;
   bottom: 40px;
@@ -482,7 +482,7 @@ div.setName {
   text-align: center;
 }
 
-#unitHeroClixLogoClip {
+#characterHeroClixLogoClip {
   position: absolute;
   width: 132px;
   height: 25px;
@@ -490,29 +490,9 @@ div.setName {
   overflow: hidden;
 }
 
-#unitHeroClixLogo {
+#characterHeroClixLogo {
   position: absolute;
   left: -5px;
-}
-
-#unitBack {
-  position: absolute;
-  top: 550px;
-  left: 20px;
-}
-
-#unitBackBorders {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 375px;
-  height: 525px;
-  right: 100%;
-  bottom: 100%;
-  border-top: 15px solid black;
-  border-bottom: 15px solid black;
-  border-radius: 15px;
-  background-color: white;
 }
 
 .tooltip {

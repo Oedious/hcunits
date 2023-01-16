@@ -1,7 +1,7 @@
 var ViewManager = function(dataSource) {
   this.dataSource_ = dataSource;
   this.searchMgr_ = new SearchManager(dataSource);
-  this.unit_ = null;
+  this.unitView_ = null;
   this.loadSetMenu_();
 }
 
@@ -58,8 +58,12 @@ ViewManager.prototype.showUnit = function(unitId) {
 }
 
 ViewManager.prototype.showUnit_ = function(unitJson) {
-  this.unit_ = new Unit(unitJson);
-  this.unit_.draw();
+  if (unitJson.type == "character") {
+      this.unitView_ = new CharacterView(unitJson);
+  } else {
+    throw new Error(`ViewManager doesn't know how to handle unit type ${unitJson.type}`);
+  }
+  this.unitView_.draw();
 }
 
 ViewManager.prototype.previousUnit = function() {
