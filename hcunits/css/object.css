@@ -1,0 +1,175 @@
+#objectCard {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  /* Object cards are 2.25" x 2.75" in real life */
+  width: 338px;
+  height: 412px;
+}
+
+#objectCardBorders {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  border-top: 70px solid black;
+  border-bottom: 15px solid black;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.8) 0 0 10px;
+}
+
+#objectHeader {
+  position: absolute;
+  left: 3px;
+  top: 5px;
+  width: 300px;
+  color: white;
+  text-align: center;
+  line-height: normal;
+}
+
+#objectName {
+  font-family: arial black, sans-serif;
+  font-size: 19px;
+  font-style: italic;
+  line-height: 1em;
+  color: white;
+}
+
+#objectType {
+  font-size: 10px;
+  line-height: 1em;
+  color: white;
+}
+
+#objectCollectorNumber {
+  position: absolute;
+  right: 15px;
+  font-size: 11px;
+  color: white;
+}
+
+#objectPog {
+  position: absolute;
+  left: 73px;
+  top: 80px;
+  width: 195px;
+  height: 195px;
+}
+
+#objectPogClip {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  border: 7px solid black;
+  background-color: black;
+  border-radius: 100px;
+  overflow: hidden;
+}
+
+#objectPogBackground {
+  position: absolute;
+  left: 30px;
+  top: 40px;
+  right: 0px;
+  bottom: 16px;
+  background-color: lightgray;
+}
+
+#objectPogName {
+  position: absolute;
+  left: 23%;
+  top: 15px;
+  width: 54%;
+  color: white;
+  text-align: center;
+  line-height: 1em;
+}
+
+#objectDialBackground {
+  position: absolute;
+  left: 23px;
+  top: 40px;
+  width: 62px;
+  height: 125px;
+  background-color: white;
+  border-top: 5px solid black;
+  border-right: 5px solid black;
+  border-bottom: 5px solid black;
+  border-radius: 0px 15px 20px 0px;
+  transform: skew(10deg);
+}
+
+#objectCombatSymbols {
+  position: absolute;
+  left: 0px;
+  top: 40px;
+}
+
+#objectCombatSymbolRange {
+  position: absolute;
+  top: 0px;
+  width: 70px;
+}
+
+#objectRange {
+  position: absolute;
+  right: 45px;
+  top: 4px;
+  color: white;
+  font-size: 11px;
+  font-family: 'Gill Sans', sans-serif;
+  font-weight: 300;
+}
+
+.objectBolt {
+  position: absolute;
+  top: 6px;
+}
+
+#objectCombatSymbolSpeed {
+  position: absolute;
+  width: 35px;
+  top: 24px;
+}
+
+#objectCombatSymbolAttack {
+  position: absolute;
+  width: 43px;
+  top: 48px;
+}
+
+#objectCombatSymbolDefense {
+  position: absolute;
+  width: 51px;
+  top: 72px;
+}
+
+#objectCombatSymbolDamage {
+  position: absolute;
+  width: 59px;
+  top: 96px;
+}
+
+.objectCombatSymbolImg {
+  position: absolute;
+  right: 7px;
+  top: 2px;
+}
+
+#objectDial {
+  position: absolute;
+  left: 45px;
+  top: 72px;
+}
+
+#objectSpecialPowersTable {
+  position: absolute;
+  left: 10px;
+  width: 318px;
+  top: 290px;
+}

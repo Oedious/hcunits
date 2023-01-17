@@ -26,7 +26,7 @@ class CharacterView extends UnitView {
         <div id='characterRealName'>REAL NAME: ${escapeHtml(this.unit_.real_name).toUpperCase()}</div>
         <div id='characterCollectorNumber'>${this.unit_.collector_number}</div>
         <div id='characterImage'></div>
-        <div id='characterSpecialPowers'>${specialPowersHtml}<div>
+        ${specialPowersHtml}
         <div id='characterDial'>${this.drawDial_()}</div>
         <div id='characterTeamAbilities'>${this.drawTeamAbilities_()}</div>
         <div id='characterPointValue'>POINT VALUE: ${this.unit_.point_value}</div>
@@ -42,7 +42,7 @@ class CharacterView extends UnitView {
   	if (!this.unit_.keywords) {
   	  return '';
   	}
-  	var html = `<span class='characterKeyword'>`;
+  	var html = "<span class='characterKeyword'>";
   	var first = true;
   	for (var keyword of this.unit_.keywords) {
   		if (first) {
@@ -58,7 +58,7 @@ class CharacterView extends UnitView {
   		  html += atag;
   		}
   	}
-  	html += `</span>`;
+  	html += "</span>";
     return html;
   }
   
@@ -92,7 +92,7 @@ class CharacterView extends UnitView {
     const CHARS_PER_DESC_LINE = 32;
     const PIXELS_PER_LINE = 14;
     while (!layoutSuccessful) {
-      var html = `<table id='characterSpecialPowersTable0' class='characterSpecialPowersTable'>`;
+      var html = "<table id='characterSpecialPowersTable0' class='unitSpecialPowersTable'>";
       var linesPerCol = [0, 0];
       var currentColumn = 0;
       var currentPower = 0;
@@ -119,7 +119,7 @@ class CharacterView extends UnitView {
             ++currentColumn;
             html += `
               </table>
-              <table id='characterSpecialPowersTable1' class='characterSpecialPowersTable'>`;
+              <table id='characterSpecialPowersTable1' class='unitSpecialPowersTable'>`;
           }
         }
         if (currentColumn == 1) {
@@ -133,21 +133,21 @@ class CharacterView extends UnitView {
           var iconHtml = "";
           if (type == "costed_trait") {
             iconHtml = `
-              <img src='../hcunits/images/sp_${type}.png' alt=''/>
-              <div class='characterSpecialPowerPointValue'>+${power.point_value} POINTS</div>`;
+              <img class='unitSpecialPowerIcon' src='../hcunits/images/sp_${type}.png' alt=''/>
+              <div class='unitSpecialPowerPointValue'>+${power.point_value} POINTS</div>`;
           } else if (type == "rally_trait") {
             iconHtml = `
-              <div class='characterSpecialPowerRally' style='${RALLY_TYPE_TO_STYLE[power.rally_type]}'>
-                <img class='characterSpecialPowerIcon' src='../hcunits/images/sp_trait.png' alt=''/>
-                <img class='characterSpecialPowerRallyDie' src='../hcunits/images/d6_${power.rally_die}.png' alt='${power.rally_die}'/>
+              <div class='unitSpecialPowerRally' style='${RALLY_TYPE_TO_STYLE[power.rally_type]}'>
+                <img class='unitSpecialPowerIcon' src='../hcunits/images/sp_trait.png' alt=''/>
+                <img class='unitSpecialPowerRallyDie' src='../hcunits/images/d6_${power.rally_die}.png' alt='${power.rally_die}'/>
               </div>`;
           } else {
-            iconHtml = `<img src='../hcunits/images/sp_${type}.png' alt=''/>`;
+            iconHtml = `<img class='unitSpecialPowerIcon' src='../hcunits/images/sp_${type}.png' alt=''/>`;
           }
           html += `
-            <tr class='characterSpecialPowerRow'>
-              <td class='characterSpecialPower'>${iconHtml}</td>
-              <td class='characterSpecialPower'><b>${escapeHtml(power.name.toUpperCase())}</b><br>${escapeHtml(power.description)}</td>
+            <tr class='unitSpecialPowerRow'>
+              <td class='unitSpecialPower'>${iconHtml}</td>
+              <td class='unitSpecialPower'><b>${escapeHtml(power.name.toUpperCase())}</b><br>${escapeHtml(power.description)}</td>
             </tr>`;
         }
         ++currentPower;
@@ -158,41 +158,42 @@ class CharacterView extends UnitView {
         ++this.extraLines_;
       }
     }
-    html += `</table>`
+    html += "</table>"
     return html;
   }
   
   drawDial_() {
     var html = `
-      <div class='characterCombatSymbol'>
+      <div class='combatSymbol'>
         <div id='characterRange'>${this.unit_.unit_range}</div>`;
     for (var i = 0; i < this.unit_.targets; ++i) {
       html += `<img class='characterBolt' src='../hcunits/images/cs_bolt.png' alt='' height='12' width='6' style='left: ${10 + i * 4}px;'\>`;
     }
     html += `
       </div>
-      <div id='characterCombatSymbolSpeed' class='characterCombatSymbol'>
+      <div id='characterCombatSymbolSpeed' class='combatSymbol'>
         <img class='characterCombatSymbolImg' src='../hcunits/images/cs_${this.unit_.speed_type}.png'/>
       </div>
-      <div id='characterCombatSymbolAttack' class='characterCombatSymbol'>
+      <div id='characterCombatSymbolAttack' class='combatSymbol'>
         <img class='characterCombatSymbolImg' src='../hcunits/images/cs_${this.unit_.attack_type}.png'/>
       </div>
-      <div id='characterCombatSymbolDefense' class='characterCombatSymbol'>
+      <div id='characterCombatSymbolDefense' class='combatSymbol'>
         <img class='characterCombatSymbolImg' src='../hcunits/images/cs_${this.unit_.defense_type}.png'/>
       </div>
-      <div id='characterCombatSymbolDamage' class='characterCombatSymbol'>
+      <div id='characterCombatSymbolDamage' class='combatSymbol'>
         <img class='characterCombatSymbolImg' src='../hcunits/images/cs_${this.unit_.damage_type}.png'/>
       </div>
       <table id='characterDialTable'>`;
   
-    html += `<tr class='characterDialRow'>`;
+    html += "<tr class='characterDialRow'>";
     for (var col = 0; col < this.unit_.dial_size; ++col) {
       html += `<th class='characterDialHeader'>${col + 1}</th>`;
     }
-    html += `</tr>`;
+    html += "</tr>";
+    console.log(`start=${this.unit_.dial_start} size=${this.unit_.dial_size}`);
     for (var row = 0; row < 4; ++row) {
       var rowType = ['speed', 'attack', 'defense', 'damage'][row];
-      html += `<tr class='characterDialRow'>`;
+      html += "<tr class='characterDialRow'>";
       for (var col = 0; col < this.unit_.dial_size; ++col) {
         var colOffset = col - (this.unit_.dial_start - 1);
         if (colOffset >= 0 && colOffset < this.unit_.dial.length) {
@@ -208,22 +209,22 @@ class CharacterView extends UnitView {
               }
             }
             html += `
-              <td class='characterDialEntry' style='${powerObj.style}'>
+              <td class='unitDialEntry' style='${powerObj.style}'>
                 <div class='tooltip'>
                   <div>${value}</div>
                   <span class='tooltiptext'><b>${powerObj.name}</b>: ${escapeHtml(powerObj.description)}</span>
                 </div>
               </td>`;
           } else {
-            html += `<td class='characterDialEntry'>${value}</td>`;
+            html += `<td class='unitDialEntry'>${value}</td>`;
           }
         } else {
-          html += `<td class='characterDialEntryKO'>KO</td>`;
+          html += "<td class='unitDialEntryKO'>KO</td>";
         }
       }
-      html += `</tr>`;
+      html += "</tr>";
     }
-    html += `</table>`;
+    html += "</table>";
     return html;
   }
 }

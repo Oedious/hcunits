@@ -241,6 +241,9 @@ def parse_unit_page(set_id, unit_page):
     attack_type = re.match(r"/images/units-a-(.*)\.[a-z]{3}", combat_symbols[1].td.img['src']).group(1)
     defense_type = re.match(r"/images/units-d-(.*)\.[a-z]{3}", combat_symbols[2].td.img['src']).group(1)
     damage_type = re.match(r"/images/units-g-(.*)\.[a-z]{3}", combat_symbols[3].td.img['src']).group(1)
+    # Disambiguate between the attack and damage "fist" symbols by making damage 'colossal'
+    if damage_type == "fist":
+      damage_type = "colossal"
 
     # Parse the dial
     dial_size = 0

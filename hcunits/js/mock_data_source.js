@@ -244,6 +244,7 @@ MockDataSource.prototype.searchBySetId = function(setId, onSuccess, onError) {
     },
     error: onError
   });
+  onSuccess(this.units_);
 }
 
 MockDataSource.prototype.searchByUnitId = function(unitId, onSuccess, onError) {
