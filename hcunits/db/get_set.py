@@ -202,6 +202,9 @@ class Fetcher:
           team_ability = match_obj.group(1);
           if team_ability == "No Affiliation":
             continue
+          # Fix mis-named team abilities.
+          if team_ability == "Wonder Woman":
+            team_ability = "wonder_woman_ally"
           team_abilities.append(fix_style(team_ability).replace('.', ''))
           
     if type == "character" or type == "bystander" or type == "construct":
