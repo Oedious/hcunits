@@ -42,7 +42,7 @@ CREATE TABLE wp_units (
 
   -- Additional special type traits that have restrictions on team construction
   special_type ENUM('none', 'unique', 'prime', 'title_character'),
-
+  
   -- The dimensions of the unit base.
   dimensions ENUM('1x1', '1x2', '2x2', '2x4', '3x6'),
 
@@ -71,6 +71,18 @@ CREATE TABLE wp_units (
   -- Should be in the form of an array of strings, with values from:
   -- "Elevated", "Hindering", "Blocking", "Destroy Blocking", "Characters", "Adjacent"
   improved_targeting JSON,
+
+  -- The specialized type of an object.
+  object_type ENUM('light', 'heavy', 'ultra_light', 'ultra_heavy', 'special'),
+  
+  -- Whether an object is indestructible or not.
+  object_is_indestructible BOOLEAN,
+  
+  -- Who is allowed to pick up an equipment object.
+  object_equip ENUM('any', 'friendly'),
+  
+  -- What happens when an equipment object is dropped.
+  object_unequip ENUM('ko', 'drop')
 
   -- The range value of the unit.
   unit_range TINYINT,
@@ -102,26 +114,3 @@ LOAD XML LOCAL INFILE 'set_hgpc.xml'
   REPLACE
   INTO TABLE wp_units
   ROWS IDENTIFIED BY '<row>';
-
-Things in team build:
-Main force
-Sideline
-Objects
-Equipment
-Maps
-Location
-Tarot Cards
-Terrain
-ATAs
-
-Rules:
-Less than or equal to point limit
-0 or 1 Prime
-0 or 1 Title character
-No promo game elements (purple rings)
-Unique units are unique
-0 to 3 Objects
-1 to 3 Maps
-Equipment assigned to characters
-Theme team checks
-Sideline has Designated Effects

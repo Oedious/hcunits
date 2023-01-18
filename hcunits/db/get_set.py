@@ -131,6 +131,7 @@ class Fetcher:
     real_name = None
     special_type = None
     dimensions = None
+    object_type = None
 
     # These fields are stored as JSON and must always exist, even if empty.
     team_abilities = []
@@ -154,6 +155,7 @@ class Fetcher:
         is_construct = tag_list[0].parent.parent.parent.parent.tbody.select('tr')[0].select('td')[1].strong.string.strip() == "CONSTRUCTS:"
       if is_construct:
           type = "construct"
+          object_type = "Construct"
       elif soup.find("td", class_="card_special_object"):
         type = "equipment"
       else:
@@ -176,6 +178,7 @@ class Fetcher:
           
     elif figure_rank == "bystander":
       type = figure_rank
+      object_type = "Bystander"
   
     if not type:
       raise RuntimeError("The unit type (%s) for '%s' is currently not supported" % (figure_rank, unit_id))
@@ -217,7 +220,7 @@ class Fetcher:
       for tag in tag_list:
         keywords.append(tag.string.strip())
   
-    if type == "character" or type == "bystander" or type == "equipment":
+    if type == "character" or type == "bystander" or type == "equipment" or type == "construct":
       # Parse special powers
       tag_list = soup.find_all(text=re.compile(r'\s*Special Powers\s*'))
       if len(tag_list) > 0:
@@ -351,6 +354,8 @@ class Fetcher:
       json.dumps(team_abilities), json.dumps(keywords),
       json.dumps(special_powers, indent=2), json.dumps(improved_movement),
       json.dumps(improved_targeting))
+    if object_type:
+      unit += "\n    <object_type>%s</object_type>" % object_type
     if len(dial) > 0:
       unit += """
     <unit_range>{}</unit_range>
