@@ -27,11 +27,11 @@ CREATE TABLE wp_units (
   -- The point value of the unit. In the range of 0 to 10000.
   point_value SMALLINT NOT NULL,
 
-  -- The rarity of the unit.
-  rarity ENUM('common', 'uncommon', 'rare', 'super_rare', 'chase', 'ultra_chase', 'limited_edition'),
-
   -- Whether the unit is legal for modern tournament play.
   age ENUM('modern', 'golden') NOT NULL,
+
+  -- The rarity of the unit.
+  rarity ENUM('common', 'uncommon', 'rare', 'super_rare', 'chase', 'ultra_chase', 'limited_edition'),
 
   -- For units that have multiple starting lines, the lower-point value entries
   -- should have a link to the highest-point (parent) unit.
@@ -43,11 +43,11 @@ CREATE TABLE wp_units (
   -- Additional special type traits that have restrictions on team construction
   special_type ENUM('none', 'unique', 'prime', 'title_character'),
 
-  -- The team abilities of the unit. See team_ability_list.js.
-  team_abilities JSON,
-
   -- The dimensions of the unit base.
   dimensions ENUM('1x1', '1x2', '2x2', '2x4', '3x6'),
+
+  -- The team abilities of the unit. See team_ability_list.js.
+  team_abilities JSON,
 
   -- A JSON array of strings containing the keywords of the unit. See keyword_list.js.
   keywords JSON,

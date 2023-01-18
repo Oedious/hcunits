@@ -10,7 +10,7 @@ if __name__ == "__main__":
   args = parser.parse_args()
 
   with open(args.xml_file) as xml_file:
-    xml_list = xmltodict.parse(xml_file.read())
+    xml_list = xmltodict.parse(xml_file.read(), force_list={"row"})
 
   json_list = []
   # Convert JSON fields into dicts
