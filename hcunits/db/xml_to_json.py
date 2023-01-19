@@ -2,6 +2,7 @@
 import argparse
 import json
 import xmltodict
+from collections import OrderedDict
 
 if __name__ == "__main__":
   parser = argparse.ArgumentParser()
@@ -15,13 +16,13 @@ if __name__ == "__main__":
   json_list = []
   # Convert JSON fields into dicts
   for unit in xml_list["resultset"]["row"]:
-    unit["team_abilities"] = json.loads(unit["team_abilities"])
-    unit["keywords"] = json.loads(unit["keywords"])
-    unit["special_powers"] = json.loads(unit["special_powers"])
-    unit["improved_movement"] = json.loads(unit["improved_movement"])
-    unit["improved_targeting"] = json.loads(unit["improved_targeting"])
-    unit["object_keyphrases"] = json.loads(unit["object_keyphrases"])
-    unit["dial"] = json.loads(unit["dial"])
+    unit["team_abilities"] = json.loads(unit["team_abilities"], object_pairs_hook=OrderedDict)
+    unit["keywords"] = json.loads(unit["keywords"], object_pairs_hook=OrderedDict)
+    unit["special_powers"] = json.loads(unit["special_powers"], object_pairs_hook=OrderedDict)
+    unit["improved_movement"] = json.loads(unit["improved_movement"], object_pairs_hook=OrderedDict)
+    unit["improved_targeting"] = json.loads(unit["improved_targeting"], object_pairs_hook=OrderedDict)
+    unit["object_keyphrases"] = json.loads(unit["object_keyphrases"], object_pairs_hook=OrderedDict)
+    unit["dial"] = json.loads(unit["dial"], object_pairs_hook=OrderedDict)
     json_list.append(unit)
 
   with open(args.json_file, "w") as json_file:

@@ -91,10 +91,33 @@ CREATE TABLE wp_units (
   damage_type ENUM('starburst', 'giant', 'fist', 'tiny'),
   dial_start TINYINT,
   dial_size TINYINT,
+
+  -- A JSON array of objects containing special powers and traits, of the format:
+  -- {
+  --   "click_number": number
+  --   "speed_power": (Optional) power_name
+  --   "speed_value": number
+  --   "attack_power": (Optional) power_name
+  --   "attack_value": number
+  --   "defense_power": (Optional) power_name
+  --   "defense_value": number
+  --   "damage_power": (Optional) power_name
+  --   "damage_value": number
+  -- }
   dial JSON
 );
 
 LOAD XML LOCAL INFILE 'set_av4e.xml'
+  REPLACE
+  INTO TABLE wp_units
+  ROWS IDENTIFIED BY '<row>';
+
+LOAD XML LOCAL INFILE 'set_btu.xml'
+  REPLACE
+  INTO TABLE wp_units
+  ROWS IDENTIFIED BY '<row>';
+
+LOAD XML LOCAL INFILE 'set_hgpc.xml'
   REPLACE
   INTO TABLE wp_units
   ROWS IDENTIFIED BY '<row>';
@@ -104,8 +127,3 @@ MODIFY COLUMN rarity ENUM('common', 'uncommon', 'rare', 'super_rare', 'chase', '
 
 ALTER TABLE wp_units
 MODIFY COLUMN speed_type ENUM('boot', 'wing', 'dolphin', 'transport_boot', 'transport_wing', 'transport_dolphin');
-
-LOAD XML LOCAL INFILE 'set_hgpc.xml'
-  REPLACE
-  INTO TABLE wp_units
-  ROWS IDENTIFIED BY '<row>';
