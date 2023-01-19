@@ -41,7 +41,7 @@ CREATE TABLE wp_units (
   real_name TEXT(128),
 
   -- Additional special type traits that have restrictions on team construction
-  special_type ENUM('none', 'unique', 'prime', 'title_character'),
+  special_type ENUM('unique', 'prime', 'title_character'),
   
   -- The dimensions of the unit base.
   dimensions ENUM('1x1', '1x2', '2x2', '2x4', '3x6'),
