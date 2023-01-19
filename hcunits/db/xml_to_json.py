@@ -20,6 +20,7 @@ if __name__ == "__main__":
     unit["special_powers"] = json.loads(unit["special_powers"])
     unit["improved_movement"] = json.loads(unit["improved_movement"])
     unit["improved_targeting"] = json.loads(unit["improved_targeting"])
+    unit["object_keyphrases"] = json.loads(unit["object_keyphrases"])
     unit["dial"] = json.loads(unit["dial"])
     json_list.append(unit)
 

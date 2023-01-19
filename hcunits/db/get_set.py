@@ -20,7 +20,7 @@ SET_MAP = {
 CACHE_DIR = ".cache"
 
 def fix_style(str):
-  return re.sub(' |-|/', '_', str).lower()
+  return re.sub(' |-|/', '_', str).replace(':', '').lower()
 
 def get_cache_path(set_id):
   return os.path.join(CACHE_DIR, fix_style(set_id))
@@ -65,7 +65,7 @@ class Fetcher:
     unit_count = 0
     for units_link in units_links:
       link = units_link['onclick']
-      unit_id = re.match(r"showFigure\('(.+)'\)", link).group(1)
+      unit_id = re.search(r"showFigure\('(.+)'\)", link).group(1)
       if unit_id_start and unit_id_start != unit_id:
         continue
       
@@ -100,7 +100,7 @@ class Fetcher:
     unit_id = unitIdAndName[0]
     name = " ".join(unitIdAndName[1:])
   
-    match_obj = re.match(self.set_id + r"(.*[0-9]{3})", unit_id)
+    match_obj = re.search(self.set_id + r"(.*[0-9]{3})", unit_id)
     collector_number = match_obj.group(1)
     has_parent = soup.find(text=re.compile(r'\s*Inventory options for this figure are controlled by the main/parent unit.\s*'))
     if (has_parent):
@@ -139,12 +139,13 @@ class Fetcher:
     special_powers = []
     improved_movement = []
     improved_targeting = []
+    object_keyphrases = []
     dial = []
 
     # TODO: figure out how to determine the age.
     age = "modern"
 
-    figure_rank = re.match(r"figure_rank_(.*)", figure_rank_tag["class"][0]).group(1)
+    figure_rank = re.search(r"figure_rank_(.*)", figure_rank_tag["class"][0]).group(1)
     # The type needs to be determined first because many other values are
     # conditional on it.
     if figure_rank == "" or figure_rank == "unique" or figure_rank == "prime":
@@ -155,7 +156,6 @@ class Fetcher:
         is_construct = tag_list[0].parent.parent.parent.parent.tbody.select('tr')[0].select('td')[1].strong.string.strip() == "CONSTRUCTS:"
       if is_construct:
           type = "construct"
-          object_type = "Construct"
       elif soup.find("td", class_="card_special_object"):
         type = "equipment"
       else:
@@ -178,8 +178,7 @@ class Fetcher:
           
     elif figure_rank == "bystander":
       type = figure_rank
-      object_type = "Bystander"
-  
+
     if not type:
       raise RuntimeError("The unit type (%s) for '%s' is currently not supported" % (figure_rank, unit_id))
 
@@ -200,7 +199,7 @@ class Fetcher:
       # Parse team abilities
       tag_list = soup.select("span[onclick^=showQuickSearch]")
       for tag in tag_list:
-        match_obj = re.match(r"showQuickSearch\('(.*)','team_ability'\)", tag['onclick'])
+        match_obj = re.search(r"showQuickSearch\('(.*)','team_ability'\)", tag['onclick'])
         if match_obj:
           team_ability = match_obj.group(1);
           if team_ability == "No Affiliation":
@@ -219,7 +218,53 @@ class Fetcher:
       tag_list = soup.select("span[onclick^=showByKeywordId]")
       for tag in tag_list:
         keywords.append(tag.string.strip())
-  
+        
+    if type == "equipment":
+      equip_tag = soup.find("td", class_="card_special_object").parent
+      tag_list = equip_tag.next_sibling.next_sibling.find_all("div")
+      if tag_list:
+        tag = tag_list[0]
+        # Skip the first item in the list if it's the keyword list.
+        if tag.strong:
+          tag = tag_list[1]
+
+        # TODO: Figure out why tag.string isn't giving me the contents of the div, which I need to iterate over.
+        for attr in tag.children:
+          # Ignore non-strings.
+          if not attr.string:
+            continue;
+          attr = attr.strip()
+          if attr == "INDESTRUCTIBLE" or attr.startswith("EQUIP: ") or attr.startswith("UNEQUIP: "):
+            object_keyphrases.append(fix_style(attr))
+          elif attr == "Light Object":
+            object_type = "light"
+          elif attr == "Heavy Object":
+            object_type = "heavy"
+          elif attr == "Ultra Light Object":
+            object_type = "ultra_light"
+          elif attr == "Ultra Heavy Object":
+            object_type = "ultra_heavy"
+          elif attr == "Special Object":
+            object_type = "special"
+          else:
+            # Handle equipment special powers
+            sp = attr.split(':', 1)
+            if len(sp) >= 2:
+              sp_name = sp[0]
+              sp_description = sp[1]
+              if sp_name == "EQUIP":
+                object_equip = fix_style(sp_description)
+              elif sp_name == "UNEQUIP":
+                object_unequip = fix_style(sp_description)
+              else:
+                special_powers.append(OrderedDict([
+                  ("type", "equipment"),
+                  ("name", sp_name),
+                  ("description", escape(sp_description))
+                ]))
+            else:
+              print("Skipping unknown object attribute '%s'" % attr)
+
     if type == "character" or type == "bystander" or type == "equipment" or type == "construct":
       # Parse special powers
       tag_list = soup.find_all(text=re.compile(r'\s*Special Powers\s*'))
@@ -227,7 +272,7 @@ class Fetcher:
         sp_tag = tag_list[0]
         for tr_tag in sp_tag.parent.parent.parent.parent.tbody.select('tr'):
           td_tags = tr_tag.select('td')
-          match_obj = re.match(r"/images/sp-(.*)\.[a-z]{3}", td_tags[0].img['src'])
+          match_obj = re.search(r"/images/sp-(.+)\.[a-z]{3}", td_tags[0].img['src'])
           sp_type_str = match_obj.group(1)
           if sp_type_str == "special":
             sp_type = "trait"
@@ -266,14 +311,14 @@ class Fetcher:
             # Handle special trait types, like costed or rally
             if sp_type == "trait":
               # Determine if it's a costed trait and if so, what it's point value is
-              match_obj = re.match(r"^\(\+(\d*) POINTS\) (.*)", sp_name)
+              match_obj = re.search(r"^\(\+(\d*) POINTS\) (.+)", sp_name)
               if match_obj:
                 sp["type"] = "costed_trait"
                 sp["name"] = escape(match_obj.group(2))
                 sp["point_value"] = match_obj.group(1)
       
               # Check to see if it's a rally trait.
-              match_obj = re.match(r"^RALLY \((\d+)\)", sp_name)
+              match_obj = re.search(r"^RALLY \((\d+)\)", sp_name)
               if match_obj:
                 sp["type"] = "rally_trait"
                 sp["name"] = "RALLY"
@@ -287,14 +332,14 @@ class Fetcher:
       # Parse range and number of targets
       tag = soup.find("div", {"style": "float:left;padding-top:3px;"})
       unit_range = tag.contents[0].string.strip()
-      targets = re.match(r"/images/units-targets-(\d)\.[a-z]{3}", tag.img['src']).group(1)
+      targets = re.search(r"/images/units-targets-(\d)\.[a-z]{3}", tag.img['src']).group(1)
   
       # Parse the combat symbols
       combat_symbols = soup.find("table", class_="icons").tbody.select('tr')
-      speed_type = re.match(r"/images/units-m-(.*)\.[a-z]{3}", combat_symbols[0].td.img['src']).group(1)
-      attack_type = re.match(r"/images/units-a-(.*)\.[a-z]{3}", combat_symbols[1].td.img['src']).group(1)
-      defense_type = re.match(r"/images/units-d-(.*)\.[a-z]{3}", combat_symbols[2].td.img['src']).group(1)
-      damage_type = re.match(r"/images/units-g-(.*)\.[a-z]{3}", combat_symbols[3].td.img['src']).group(1)
+      speed_type = re.search(r"/images/units-m-(.+)\.[a-z]{3}", combat_symbols[0].td.img['src']).group(1)
+      attack_type = re.search(r"/images/units-a-(.+)\.[a-z]{3}", combat_symbols[1].td.img['src']).group(1)
+      defense_type = re.search(r"/images/units-d-(.+)\.[a-z]{3}", combat_symbols[2].td.img['src']).group(1)
+      damage_type = re.search(r"/images/units-g-(.+)\.[a-z]{3}", combat_symbols[3].td.img['src']).group(1)
       # Disambiguate between the attack and damage "fist" symbols by making damage 'colossal'
       if damage_type == "fist":
         damage_type = "colossal"
@@ -356,6 +401,7 @@ class Fetcher:
       json.dumps(improved_targeting))
     if object_type:
       unit += "\n    <object_type>%s</object_type>" % object_type
+    unit += "\n    <object_keyphrases>%s</object_keyphrases>" % json.dumps(object_keyphrases)
     if len(dial) > 0:
       unit += """
     <unit_range>{}</unit_range>
