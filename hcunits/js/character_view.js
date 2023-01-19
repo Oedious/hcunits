@@ -1,5 +1,14 @@
-const PIXELS_PER_LINE = 15;
-const MIN_CARD_HEIGHT = 525;
+const SPECIAL_TYPE_TO_COLOR = {
+  "unique": "silver",
+  "prime": COLOR_GREEN,
+  "title_character": COLOR_BLACK
+};
+
+const RALLY_TYPE_TO_STYLE = {
+  "friendly": STYLE_BLUE,
+  "opposing": STYLE_RED,
+  "all": STYLE_GREEN
+}
 
 class CharacterView extends UnitView {
 
@@ -14,6 +23,8 @@ class CharacterView extends UnitView {
   draw() {
     // Compute the special powers HTML first because it may need to resize the
     // entire card to fit the text.
+    const MIN_CARD_HEIGHT = 525;
+    const PIXELS_PER_LINE = 14;
     var specialPowersHtml = this.drawSpecialPowers_();
     var cardHeight = MIN_CARD_HEIGHT + PIXELS_PER_LINE * this.extraLines_;
     var html = `
@@ -25,7 +36,7 @@ class CharacterView extends UnitView {
         </div>
         <div id='characterRealName'>REAL NAME: ${escapeHtml(this.unit_.real_name).toUpperCase()}</div>
         <div id='characterCollectorNumber'>${this.unit_.collector_number}</div>
-        <div id='characterImage'></div>
+        ${this.drawImage_()}
         ${specialPowersHtml}
         <div id='characterDial'>${this.drawDial_()}</div>
         <div id='characterTeamAbilities'>${this.drawTeamAbilities_()}</div>
@@ -62,6 +73,15 @@ class CharacterView extends UnitView {
     return html;
   }
   
+  drawImage_() {
+    var color = "black";
+    if (this.unit_.special_type) {
+      color = SPECIAL_TYPE_TO_COLOR[this.unit_.special_type];
+    }
+    var html = `<div id='characterImage' style='border: 7px solid ${color};'></div>`
+    return html;
+  }
+  
   drawTeamAbilities_() {
     if (!this.unit_.team_abilities) {
       return '';
@@ -89,8 +109,7 @@ class CharacterView extends UnitView {
     this.extraLines_ = 0;
     const LINES_PER_COL = [16, 9, 0];
     const CHARS_PER_NAME_LINE = 23;
-    const CHARS_PER_DESC_LINE = 32;
-    const PIXELS_PER_LINE = 14;
+    const CHARS_PER_DESC_LINE = 30;
     while (!layoutSuccessful) {
       var html = "<table id='characterSpecialPowersTable0' class='unitSpecialPowersTable'>";
       var linesPerCol = [0, 0];
@@ -190,7 +209,6 @@ class CharacterView extends UnitView {
       html += `<th class='characterDialHeader'>${col + 1}</th>`;
     }
     html += "</tr>";
-    console.log(`start=${this.unit_.dial_start} size=${this.unit_.dial_size}`);
     for (var row = 0; row < 4; ++row) {
       var rowType = ['speed', 'attack', 'defense', 'damage'][row];
       html += "<tr class='characterDialRow'>";

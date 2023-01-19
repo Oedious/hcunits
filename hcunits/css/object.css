@@ -28,20 +28,22 @@
   color: white;
   text-align: center;
   line-height: normal;
+
+  line-height: 1em;
+  color: white;
 }
 
 #objectName {
   font-family: arial black, sans-serif;
   font-size: 19px;
   font-style: italic;
-  line-height: 1em;
-  color: white;
 }
 
 #objectType {
-  font-size: 10px;
-  line-height: 1em;
-  color: white;
+  position: absolute;
+  top: 40px;
+  width: 100%;
+  font-size: 12px;
 }
 
 #objectCollectorNumber {
@@ -51,7 +53,15 @@
   color: white;
 }
 
-#objectPog {
+#objectKeyphrases {
+  position: absolute;
+  left: 5px;
+  top: 75px;
+  font-size: 10px;
+  font-style: bold;
+}
+
+#objectToken {
   position: absolute;
   left: 73px;
   top: 80px;
@@ -59,7 +69,7 @@
   height: 195px;
 }
 
-#objectPogClip {
+#objectTokenBorder {
   position: absolute;
   left: 0px;
   top: 0px;
@@ -69,9 +79,10 @@
   background-color: black;
   border-radius: 100px;
   overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.8) 0 0 10px;
 }
 
-#objectPogBackground {
+#objectBystanderBackground {
   position: absolute;
   left: 30px;
   top: 40px;
@@ -80,7 +91,7 @@
   background-color: lightgray;
 }
 
-#objectPogName {
+#objectBystanderName {
   position: absolute;
   left: 23%;
   top: 15px;
@@ -171,5 +182,5 @@
   position: absolute;
   left: 10px;
   width: 318px;
-  top: 290px;
+  top: 285px;
 }

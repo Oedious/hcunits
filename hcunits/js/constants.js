@@ -13,25 +13,33 @@ const RARITY_TO_COLOR = {
   "ultra_chase": RARITY_ULTRA_CHASE_COLOR
 };
 
-const STYLE_RED = "color:black; background-color: #fe0000;";
-const STYLE_ORANGE = "color:black; background-color: #ffc000;";
-const STYLE_YELLOW = "color:black; background-color: #ffff00;";
-const STYLE_LIGHT_GREEN = "color:black; background-color: #92d14f;";
-const STYLE_GREEN = "color:black; background-color: #00af50;";
-const STYLE_LIGHT_BLUE = "color:black; background-color: #01b0f1;";
-const STYLE_BLUE = "color:white; background-color: #0071c1;";
-const STYLE_PURPLE = "color:white; background-color: #7030a0;";
-const STYLE_PINK = "color:black; background-color: #ffcccc;";
-const STYLE_BROWN = "color:white; background-color: #9a6600;";
-const STYLE_BLACK = "color:white; background-color: black;";
-const STYLE_GRAY = "color:white; background-color: #7f7f7f;";
-const STYLE_WHITE = "color:black; background-color: white; border: 2px solid black;";
+const COLOR_RED = "#fe0000";
+const COLOR_ORANGE = "#ffc000";
+const COLOR_YELLOW = "#ffff00";
+const COLOR_LIGHT_GREEN = "#92d14f";
+const COLOR_GREEN = "#00af50";
+const COLOR_LIGHT_BLUE = "#01b0f1";
+const COLOR_BLUE = "#0071c1";
+const COLOR_PURPLE = "#7030a0";
+const COLOR_PINK = "#ffcccc";
+const COLOR_BROWN = "#9a6600";
+const COLOR_BLACK = "black";
+const COLOR_GRAY = "#7f7f7f";
+const COLOR_WHITE = "white";
 
-const RALLY_TYPE_TO_STYLE = {
-  "friendly": STYLE_BLUE,
-  "opposing": STYLE_RED,
-  "all": STYLE_GREEN
-}
+const STYLE_RED = "color:black; background-color: " + COLOR_RED + ";";
+const STYLE_ORANGE = "color:black; background-color: " + COLOR_ORANGE + ";";
+const STYLE_YELLOW = "color:black; background-color: " + COLOR_YELLOW + ";";
+const STYLE_LIGHT_GREEN = "color:black; background-color: " + COLOR_LIGHT_GREEN + ";";
+const STYLE_GREEN = "color:black; background-color: " + COLOR_GREEN + ";";
+const STYLE_LIGHT_BLUE = "color:black; background-color: " + COLOR_LIGHT_BLUE + ";";
+const STYLE_BLUE = "color:white; background-color: " + COLOR_BLUE + ";";
+const STYLE_PURPLE = "color:white; background-color: " + COLOR_PURPLE + ";";
+const STYLE_PINK = "color:black; background-color: " + COLOR_PINK + ";";
+const STYLE_BROWN = "color:white; background-color: " + COLOR_BROWN + ";";
+const STYLE_BLACK = "color:white; background-color:" + COLOR_BLACK + ";";
+const STYLE_GRAY = "color:white; background-color: " + COLOR_GRAY + ";";
+const STYLE_WHITE = "color:black; background-color: " + COLOR_WHITE + "; border: 2px solid black;";
 
 function escapeHtml(unsafe) {
     return unsafe

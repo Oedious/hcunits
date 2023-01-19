@@ -25,7 +25,7 @@ CREATE TABLE wp_units (
   type ENUM('character', 'object', 'map', 'battlefield_condition', 'event_dial', 'resource', 'equipment', 'terrain', 'bystander', 'tarot_card', 'relic', 'construct') NOT NULL,
 
   -- The point value of the unit. In the range of 0 to 10000.
-  point_value SMALLINT NOT NULL,
+  point_value SMALLINT,
 
   -- Whether the unit is legal for modern tournament play.
   age ENUM('modern', 'golden') NOT NULL,

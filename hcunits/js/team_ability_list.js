@@ -268,7 +268,7 @@ const TEAM_ABILITY_LIST = {
   "wonder_woman_ally": {
     "name": "Wonder Woman Ally",
     "universe": "dc",
-    "description": "Super Senses, but only succeeds on a D6 . If the character can already use Super Senses, instead increase the result of its roll for Super Senses by +1.",
+    "description": "Super Senses, but only succeeds on a D6. If the character can already use Super Senses, instead increase the result of its roll for Super Senses by +1.",
     "copyable": true,
     "wildcard": false
   },

@@ -27,6 +27,7 @@ function search_by_unit_id() {
 	$response->special_powers = json_decode($response->special_powers);
 	$response->improved_movement = json_decode($response->improved_movement);
 	$response->improved_targeting = json_decode($response->improved_targeting);
+	$response->object_keyphrases = json_decode($response->object_keyphrases);
 	$response->dial = json_decode($response->dial);
 	echo json_encode($response);
 	wp_die();
