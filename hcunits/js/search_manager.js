@@ -25,14 +25,24 @@ SearchManager.prototype.handleSearchResults_ = function(searchResults) {
     for (var i = 0; i < this.searchResults_.length; ++i) {
       var unit = this.searchResults_[i];
       var color = RARITY_TO_COLOR[unit.rarity];
-      var pointValue = unit.point_value ? unit.point_value : "0";
+      var pointValues = "";
+      if (unit.point_values.length == 0) {
+        pointValues = "0";
+      } else {
+        for (var j = 0; j < unit.point_values.length; ++j) {
+          if (j != 0) {
+            pointValues += "/";
+          }
+          pointValues += unit.point_values[j];
+        }
+      }
       html += `
         <li class='collection-item avatar'>
           <a id='searchResult_${i}' href='' onclick='mgr.showUnit("${unit.unit_id}"); return false;'>
             <i class='material-icons circle' style='font-size: 36px; color:${color};'>account_circle</i>
             <div class='searchResultInfo'>
               <span class='title'>${unit.collector_number} - ${unit.name}</span>
-              <p class='searchResultPoints'>${pointValue} points</p>
+              <p class='searchResultPoints'>${pointValues} points</p>
             </div>
           </a>
         </li>`;

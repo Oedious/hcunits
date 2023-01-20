@@ -74,16 +74,19 @@ class ObjectView extends UnitView {
         <div id='objectCollectorNumber'>${this.unit_.collector_number}</div>
         <div id='objectToken'>${this.drawToken_()}</div>
         ${this.drawSpecialPowers_()}
+        ${super.drawPointValues_()}
       </div>`;
   	document.getElementById('unitContainer').innerHTML = html;
   }
   
   getCardHeight_() {
     const MIN_CARD_HEIGHT = 412;
-    const MIN_LINES = 8;
+    // The minimum number of lines varies on whether we show the "Point Value"
+    // bar or not.
+    const MIN_LINES = this.unit_.point_values.length > 0 ? 5 : 8;
     const PIXELS_PER_LINE = 14;
     const CHARS_PER_NAME_LINE = 40;
-    const CHARS_PER_DESC_LINE = 55;
+    const CHARS_PER_DESC_LINE = 50;
     var numLines = 0;
     if (this.unit_.special_powers) {
       for (var specialPower of this.unit_.special_powers) {
@@ -252,7 +255,7 @@ class ObjectView extends UnitView {
         iconHtml = `
           <td class='unitSpecialPower'>
             <img class='unitSpecialPowerIcon' src='../hcunits/images/sp_${type}.png' alt=''/>
-            <div class='unitSpecialPowerPointValue'>+${power.point_value} POINTS</div>
+            <div class='unitSpecialPowerPointValue'>+${power.point_values} POINTS</div>
           </td>`;
       } else if (type == "rally_trait") {
         iconHtml = `

@@ -157,12 +157,20 @@
   font-size: 10px;
   font-family: 'Gill Sans', sans-serif;
   font-weight: 300;
+  text-align: center;
 }
 
 .characterDialRow {
   height: 21px;
   border-bottom: none !important;
   line-height: normal;
+}
+
+.characterDialStartingLine {
+  position: absolute;
+  width: 2px;
+  height: 100px;
+  top: 20px;  
 }
 
 #characterTeamAbilities {
@@ -191,20 +199,6 @@
   position: absolute;
   left: 10px;
   top: 100px;
-}
-
-#characterPointValue {
-  position: absolute;
-  left: 0px;
-  bottom: 40px;
-  width: 182px;
-  height: 24px;
-  color: white;
-  background-color: black;
-  border-radius: 0px 12px 12px 0px;
-  font-size: 16px;
-  font-family: arial, sans-serif;
-  text-align: center;
 }
 
 #characterHeroClixLogoClip {

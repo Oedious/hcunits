@@ -40,7 +40,7 @@ class CharacterView extends UnitView {
         ${specialPowersHtml}
         <div id='characterDial'>${this.drawDial_()}</div>
         <div id='characterTeamAbilities'>${this.drawTeamAbilities_()}</div>
-        <div id='characterPointValue'>POINT VALUE: ${this.unit_.point_value}</div>
+        ${super.drawPointValues_()}
         <div id='characterHeroClixLogoClip'>
           <img id='characterHeroClixLogo' src='../hcunits/images/heroclix_logo_small.png' alt=''/>
         </div>
@@ -212,11 +212,12 @@ class CharacterView extends UnitView {
     for (var row = 0; row < 4; ++row) {
       var rowType = ['speed', 'attack', 'defense', 'damage'][row];
       html += "<tr class='characterDialRow'>";
+      var currentClick = 0;
       for (var col = 0; col < this.unit_.dial_size; ++col) {
-        var colOffset = col - (this.unit_.dial_start - 1);
-        if (colOffset >= 0 && colOffset < this.unit_.dial.length) {
-          var power = this.unit_.dial[colOffset][rowType + '_power'];
-          var value = this.unit_.dial[colOffset][rowType + '_value'];
+        if (currentClick < this.unit_.dial.length &&
+            col == this.unit_.dial[currentClick].click_number) {
+          var power = this.unit_.dial[currentClick][rowType + '_power'];
+          var value = this.unit_.dial[currentClick][rowType + '_value'];
           if (power) {
             var powerObj = POWER_LIST[power];
             if (!powerObj) {
@@ -236,6 +237,7 @@ class CharacterView extends UnitView {
           } else {
             html += `<td class='unitDialEntry'>${value}</td>`;
           }
+          ++currentClick;
         } else {
           html += "<td class='unitDialEntryKO'>KO</td>";
         }
@@ -243,6 +245,15 @@ class CharacterView extends UnitView {
       html += "</tr>";
     }
     html += "</table>";
+
+    var currentLine = 0;
+    for (var col = 0; col < this.unit_.dial.length; ++col) {
+      if (this.unit_.dial[col].starting_line) {
+        var left = 31 + 23 * col;
+        var color = STARTING_LINE_COLORS[this.unit_.point_values.length][currentLine++];
+        html += `<div class='characterDialStartingLine' style='left: ${left}px; background-color: ${color}'></div>`
+      }
+    }
     return html;
   }
 }

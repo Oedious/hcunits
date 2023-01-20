@@ -22,6 +22,7 @@ function search_by_unit_id() {
 		WHERE unit_id = '$unit_id'
 	EOD);
 	// Deserialize JSON fields, in place.
+	$response->point_values = json_decode($response->point_values);
 	$response->team_abilities = json_decode($response->team_abilities);
 	$response->keywords = json_decode($response->keywords);
 	$response->special_powers = json_decode($response->special_powers);

@@ -50,3 +50,23 @@ function escapeHtml(unsafe) {
          .replace(/'/g, "&#039;")
          .replace(/’/g, "&#039;");
 }
+
+// This constant is first indexed by the number of point values,
+// then the order of colors corresponds to the color of each point value.
+const POINT_VALUE_COLORS = [
+  [],
+  [COLOR_WHITE],
+  [COLOR_GREEN, COLOR_RED],
+  [COLOR_RED, COLOR_BLUE, COLOR_YELLOW],
+  [COLOR_RED, COLOR_BLUE, COLOR_YELLOW, COLOR_PURPLE],
+];
+
+// This constant is first indexed by the number of starting lines,
+// then the order of colors corresponds to the color of each line.
+const STARTING_LINE_COLORS = [
+  [],
+  [COLOR_GREEN],
+  [COLOR_GREEN, COLOR_RED],
+  [COLOR_RED, COLOR_BLUE, COLOR_YELLOW],
+  [COLOR_RED, COLOR_BLUE, COLOR_YELLOW, COLOR_PURPLE],
+];
