@@ -58,14 +58,17 @@ def dials_equal(dst_dial, src_dial):
   return True;
 
 class Unit:
-  def __init__(self, set_id):
+  def __init__(self, set_id, dimensions):
     self.set_id = set_id
+    self.dimensions = dimensions
 
     # These fields are conditionally used depending on the unit type.
     self.real_name = None
     self.special_type = None
-    self.dimensions = None
     self.object_type = None
+
+    # TODO: figure out how to determine the age.
+    self.age = "modern"
 
     # These fields are stored as JSON and must always exist, even if empty.
     self.point_values = []
@@ -81,11 +84,11 @@ class Unit:
     soup = BeautifulSoup(unit_page, 'html.parser')
 
     # Extract the unit ID and the name from the first table.
-    unitIdAndName = soup.find("td", class_="tcat").strong.string.strip().split(' ')
-    self.unit_id = unitIdAndName[0]
-    self.name = " ".join(unitIdAndName[1:])
+    unit_id_and_name = soup.find("td", class_="tcat").strong.string.strip().split(' ')
+    self.unit_id = unit_id_and_name[0]
+    self.name = " ".join(unit_id_and_name[1:])
   
-    match_obj = re.search(self.set_id + r"(.*\d{3}[ab]?\.?\d?)", unit_id)
+    match_obj = re.search(self.set_id + r"(.*\d{3}[abcdt\.0-9]*)", unit_id)
     self.collector_number = match_obj.group(1)
 
     # Determine the rarity and special type
@@ -107,9 +110,6 @@ class Unit:
       self.rarity = "ultra_chase"
     else:
       raise RuntimeError("The unit rarity '%s' for '%s' is currently not supported" % (rarity, self.unit_id))
-
-    # TODO: figure out how to determine the age.
-    self.age = "modern"
 
     figure_rank = re.search(r"figure_rank_(.*)", figure_rank_tag["class"][0]).group(1)
     # The type needs to be determined first because many other values are
@@ -179,11 +179,7 @@ class Unit:
           if team_ability == "Wonder Woman":
             team_ability = "wonder_woman_ally"
           self.team_abilities.append(fix_style(team_ability).replace('.', ''))
-          
-    if self.type == "character" or self.type == "bystander" or self.type == "construct":
-      # TODO: figure out how to determine the base size
-      self.dimensions = "1x1"
-
+    
     if self.type == "character" or self.type == "bystander" or self.type == "equipment":
       # Parse keywords
       tag_list = soup.select("span[onclick^=showByKeywordId]")
@@ -354,6 +350,35 @@ class Unit:
         # Constructs and bystanders only have a single click
         if self.type == "bystander" or self.type == "construct":
           break
+      
+    # Sanity-check the dimensions.
+    if self.type == "character":
+      if self.dimensions == "1x1" or self.dimensions == "1x2":
+        max_dial_size = 12
+      elif self.dimensions == "2x2":
+        max_dial_size = 26
+      elif self.dimensions == "2x4" or self.dimensions == "3x6":
+        max_dial_size = 20
+      else:
+        raise RuntimeError("Unknown dimensions for '%s': found '%s'" % (self.unit_id, self.dimensions))
+      if self.dial_size > max_dial_size:
+        print("Warning: for unit '%s', expected a max dial size of %d, but got %d" % (self.unit_id, max_dial_size, self.dial_size))
+        self.dial_size = max_dial_size
+      if len(self.dial) > max_dial_size:
+        print("Warning: for unit '%s', expected a max dial size of %s, but got %d" % (self.unit_id, max_dial_size, len(self.dial)))
+        self.dial = self.dial[:max_dial_size]
+    elif self.type == "bystander" or self.type == "construct":
+      if self.dimensions != "1x1":
+        print("Warning: for unit '%s', expected 1x1 dimensions, but found '%s'" % (self.unit_id, self.dimensions))
+      if self.dial_size != 1:
+        print("Warning: for unit '%s', expected a dial size of 1, but got %d" % (self.unit_id, self.dial_size))
+        self.dial_size = 1
+      if len(self.dial) != 1:
+        print("Warning: for unit '%s', expected a dial size of 1, but got %d" % (self.unit_id, len(self.dial)))
+        self.dial = self.dial[:1]
+    else:
+      self.dimensions = None
+
     return True
 
   # Tries to merge the 'src_unit' into this, as the dest. Returns True if done
@@ -468,7 +493,7 @@ class Fetcher:
   def parse_set_list_page(self, set_list_page, unit_id_start, max_units):
     soup = BeautifulSoup(set_list_page, 'html.parser')
     units_links = soup.find_all("span", {"class": "units_link"})
-    unit_list = []
+    set_list = []
     
     unit_count = 0
     for units_link in units_links:
@@ -476,9 +501,25 @@ class Fetcher:
       unit_id = re.search(r"showFigure\('(.+)'\)", link).group(1)
       if unit_id_start and unit_id_start != unit_id:
         continue
-      
       unit_id_start = None
-      unit_list.append(unit_id)
+      
+      # Get the unit dimensions
+      dimensions = "1x1"
+      img_link = units_link.parent.select_one("img[src^=\/images\/units\-base\-]")
+      if img_link:
+        if img_link["src"] == "/images/units-base-double.gif":
+          dimensions = "1x2"
+        elif img_link["src"] == "/images/units-base-2x2.gif":
+          dimensions = "2x2"
+        elif img_link["src"] == "/images/units-base-2x4.gif":
+          dimensions = "2x4"
+        elif img_link["src"] == "/images/units-base-6x3.gif":
+          dimensions = "3x6"
+
+      set_list.append({
+        "unit_id": unit_id,
+        "dimensions": dimensions}
+      )
   
       # Process the unit here
       # Exit if we've already processed the requested number of units
@@ -486,7 +527,7 @@ class Fetcher:
       if unit_count >= max_units:
         break
   
-    return unit_list
+    return set_list
         
   def fetch_unit_page(self, unit_id):
     unit_path = get_unit_cache_path(self.set_id, unit_id);
@@ -528,21 +569,22 @@ if __name__ == "__main__":
   fetcher = Fetcher(args.set_id, args.skip_cache)
   try:
     set_list_page = fetcher.fetch_set_list_page()
-    unit_id_list = fetcher.parse_set_list_page(set_list_page, args.unit_id_start, int(args.max_units))
-    for unit_id in unit_id_list:
+    set_list = fetcher.parse_set_list_page(set_list_page, args.unit_id_start, int(args.max_units))
+    for set in set_list:
+      unit_id = set["unit_id"]
+      dimensions = set["dimensions"]
       if args.unit_id_stop and unit_id == args.unit_id_stop:
         break;
   
       unit_page = fetcher.fetch_unit_page(unit_id);
-      unit = Unit(args.set_id)
+      unit = Unit(args.set_id, dimensions)
       if unit.parse_unit_page(unit_page):
-        if (len(units) != 0 and
-            unit.set_id == units[-1].set_id and
-            unit.collector_number == units[-1].collector_number and
-            unit.type == units[-1].type):
+        # Check for other units with the same unit ID and if so, merge point values.
+        main_unit = next((u for u in units if u.set_id == unit.set_id and u.collector_number == unit.collector_number and u.type == unit.type), None)
+        if (main_unit):
           # Try to merge the units together and mark the current unit as invalid
           # so that it's not appending to the list below.
-          if units[-1].merge_point_values(unit):
+          if main_unit.merge_point_values(unit):
             unit = None
 
         elif unit.type == "team_up":

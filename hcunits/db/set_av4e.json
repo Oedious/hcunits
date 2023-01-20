@@ -137,6 +137,148 @@
     ]
   }, 
   {
+    "unit_id": "av4e001.1", 
+    "set_id": "av4e", 
+    "collector_number": "001.1", 
+    "name": "Captain America", 
+    "type": "character", 
+    "age": "modern", 
+    "rarity": "common", 
+    "real_name": "Steve Rogers", 
+    "dimensions": "1x1", 
+    "point_values": [
+      90, 
+      45
+    ], 
+    "team_abilities": [
+      "avengers"
+    ], 
+    "keywords": [
+      "Avengers", 
+      "Howling Commandos", 
+      "Invaders", 
+      "Past", 
+      "S.H.I.E.L.D.", 
+      "Soldier"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "TEAM UP: AVENGERS THEMED TEAM", 
+        "description": "If Captain America is part of the listed themed team, friendly characters with the Avengers keyword have Avengers Initiative team ability."
+      }, 
+      {
+        "type": "trait", 
+        "name": "THOSE WHO OPPOSE HIS SHIELD MUST YIELD", 
+        "description": "Energy Shield/Deflection, Leadership."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "5", 
+    "targets": "2", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 0, 
+        "starting_line": true, 
+        "speed_power": "running_shot", 
+        "speed_value": 10, 
+        "attack_value": 11, 
+        "defense_power": "toughness", 
+        "defense_value": 18, 
+        "damage_power": "outwit", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 1, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_value": 11, 
+        "defense_power": "toughness", 
+        "defense_value": 18, 
+        "damage_power": "outwit", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_value": 11, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_value": 11, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "quake", 
+        "attack_value": 11, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_value": 3, 
+        "starting_line": true
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "quake", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "quake", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "flurry", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "willpower", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 8, 
+        "speed_power": "flurry", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
     "unit_id": "av4e002", 
     "set_id": "av4e", 
     "collector_number": "002", 
@@ -589,6 +731,114 @@
     ]
   }, 
   {
+    "unit_id": "av4e006.1", 
+    "set_id": "av4e", 
+    "collector_number": "006.1", 
+    "name": "Falcon", 
+    "type": "character", 
+    "age": "modern", 
+    "rarity": "common", 
+    "real_name": "Sam Wilson", 
+    "dimensions": "1x1", 
+    "point_values": [
+      50
+    ], 
+    "team_abilities": [
+      "avengers"
+    ], 
+    "keywords": [
+      "Avengers", 
+      "Heroes for Hire", 
+      "S.H.I.E.L.D.", 
+      "Soldier"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "TEAM UP: CAPTAIN AMERICA", 
+        "description": "If the listed friendly character is on the map, Falcon has: \"FREE: Make an attack, but only to target a character that was hit by a friendly character named Captain America this turn.\""
+      }, 
+      {
+        "type": "trait", 
+        "name": "AERIAL COMBAT MANEUVERS", 
+        "description": "Super Senses, but succeeds on a 4-6 for range attacks (succeeds normally for close attacks)."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "5", 
+    "targets": "2", 
+    "speed_type": "wing", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 0, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 10, 
+        "attack_power": "quake", 
+        "attack_value": 11, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 1, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "quake", 
+        "attack_value": 11, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "willpower", 
+        "defense_value": 18, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "charge", 
+        "speed_value": 6, 
+        "attack_value": 10, 
+        "defense_power": "willpower", 
+        "defense_value": 18, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
     "unit_id": "av4e007", 
     "set_id": "av4e", 
     "collector_number": "007", 
@@ -787,6 +1037,102 @@
       "Young Avengers"
     ], 
     "special_powers": [
+      {
+        "type": "trait", 
+        "name": "YOUNG AVENGERS, ASSEMBLE", 
+        "description": "Defend, Leadership."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "4", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 0, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "quake", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 18, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 1, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "quake", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "quake", 
+        "attack_value": 11, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "leap_climb", 
+        "speed_value": 6, 
+        "attack_value": 11, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "empower", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "leap_climb", 
+        "speed_value": 6, 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 18, 
+        "damage_power": "empower", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "av4e009.1", 
+    "set_id": "av4e", 
+    "collector_number": "009.1", 
+    "name": "Patriot", 
+    "type": "character", 
+    "age": "modern", 
+    "rarity": "common", 
+    "real_name": "Elijah Bradley", 
+    "dimensions": "1x1", 
+    "point_values": [
+      40
+    ], 
+    "team_abilities": [
+      "avengers"
+    ], 
+    "keywords": [
+      "Soldier", 
+      "Young Avengers"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "TEAM UP: YOUNG AVENGERS", 
+        "description": "If Patriot is part of the listed themed team, he has: \"If three or more friendly characters with the Young Avengers keyword are on the map, the first time each friendly character would be KO'd, instead turn them to their last non-KO click, then roll a d6 and heal them equal to half the result. Protected: Pulse Wave.\""
+      }, 
       {
         "type": "trait", 
         "name": "YOUNG AVENGERS, ASSEMBLE", 
@@ -1137,6 +1483,138 @@
     ]
   }, 
   {
+    "unit_id": "av4e012.1", 
+    "set_id": "av4e", 
+    "collector_number": "012.1", 
+    "name": "Black Panther", 
+    "type": "character", 
+    "age": "modern", 
+    "rarity": "common", 
+    "real_name": "T'Challa", 
+    "dimensions": "1x1", 
+    "point_values": [
+      75, 
+      25
+    ], 
+    "team_abilities": [
+      "avengers"
+    ], 
+    "keywords": [
+      "Avengers", 
+      "Fantastic Four", 
+      "Illuminati", 
+      "Ruler", 
+      "Wakanda", 
+      "Warrior"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "TEAM UP: AVENGERS THEMED TEAM", 
+        "description": "If Black Panther is part of the listed themed team, friendly characters modify defense +1 if they are closer to your starting area than any other starting area."
+      }, 
+      {
+        "type": "speed", 
+        "name": "AGILE AS A PANTHER...", 
+        "description": "Charge, Stealth. Flurry, but only if Black Panther occupies hindering terrain."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 0, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 8, 
+        "attack_value": 11, 
+        "defense_power": "super_senses", 
+        "defense_value": 18, 
+        "damage_power": "leadership", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 1, 
+        "speed_power": "special", 
+        "speed_value": 8, 
+        "attack_value": 11, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "leadership", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "flurry", 
+        "speed_value": 8, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "flurry", 
+        "speed_value": 7, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "flurry", 
+        "speed_value": 7, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "special", 
+        "speed_value": 6, 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "leadership", 
+        "damage_value": 3, 
+        "starting_line": true
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "flurry", 
+        "speed_value": 6, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "flurry", 
+        "speed_value": 6, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_power": "super_senses", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
     "unit_id": "av4e013", 
     "set_id": "av4e", 
     "collector_number": "013", 
@@ -1156,6 +1634,96 @@
       "Mystical"
     ], 
     "special_powers": [
+      {
+        "type": "trait", 
+        "name": "DIMENSIONAL GATEWAY THROUGH THE MULTIVERSE", 
+        "description": "Phasing/Teleport. // Once per turn, when an adjacent friendly character with the Mystical keyword begins a move, after resolutions you may place Wong in a square adjacent to them."
+      }, 
+      {
+        "type": "defense", 
+        "name": "GUARDING THE SANCTUM", 
+        "description": "Energy Shield/Deflection, Willpower."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "4", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 0, 
+        "starting_line": true, 
+        "speed_power": "force_blast", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_power": "enhancement", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 1, 
+        "speed_power": "force_blast", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_power": "enhancement", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "force_blast", 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_power": "willpower", 
+        "defense_value": 17, 
+        "damage_power": "support", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "force_blast", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_power": "support", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "av4e013.1", 
+    "set_id": "av4e", 
+    "collector_number": "013.1", 
+    "name": "Wong", 
+    "type": "character", 
+    "age": "modern", 
+    "rarity": "common", 
+    "real_name": "Wong", 
+    "dimensions": "1x1", 
+    "point_values": [
+      40
+    ], 
+    "team_abilities": [
+      "mystics"
+    ], 
+    "keywords": [
+      "Mystical"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "TEAM UP: DR. STRANGE", 
+        "description": "If Wong and the listed friendly character are on the map, they both can use Mastermind but only to choose friendly characters with the Mystical keyword."
+      }, 
       {
         "type": "trait", 
         "name": "DIMENSIONAL GATEWAY THROUGH THE MULTIVERSE", 
@@ -1526,6 +2094,126 @@
     ]
   }, 
   {
+    "unit_id": "av4e016.1", 
+    "set_id": "av4e", 
+    "collector_number": "016.1", 
+    "name": "Wonder Man", 
+    "type": "character", 
+    "age": "modern", 
+    "rarity": "common", 
+    "real_name": "Simon Williams", 
+    "dimensions": "1x1", 
+    "point_values": [
+      65
+    ], 
+    "team_abilities": [
+      "avengers", 
+      "masters_of_evil"
+    ], 
+    "keywords": [
+      "Avengers", 
+      "Celebrity", 
+      "Masters of Evil", 
+      "Scientist"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "TEAM UP: BEAST", 
+        "description": "If Wonder Man and the listed friendly character are on the map, they both modify attack and damage +1."
+      }, 
+      {
+        "type": "costed_trait", 
+        "name": "IONIC RESURRECTION", 
+        "description": "When Wonder Man would be KO'd, you may instead replace him with Avengers Forever #027 Wonder Man on click #9, then roll a d6 and heal him equal to half the result. Protected: Pulse Wave.", 
+        "point_value": "5"
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "wing", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 0, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 10, 
+        "attack_value": 11, 
+        "defense_power": "invincible", 
+        "defense_value": 18, 
+        "damage_power": "outwit", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 1, 
+        "speed_power": "charge", 
+        "speed_value": 10, 
+        "attack_value": 11, 
+        "defense_power": "invincible", 
+        "defense_value": 18, 
+        "damage_power": "outwit", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "super_strength", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "super_strength", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "super_strength", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 3
+      }
+    ]
+  }, 
+  {
     "unit_id": "av4e017", 
     "set_id": "av4e", 
     "collector_number": "017", 
@@ -1544,6 +2232,110 @@
       "Winter Guard"
     ], 
     "special_powers": [
+      {
+        "type": "defense", 
+        "name": "ENERGY REPELLENCE", 
+        "description": "Energy Shield/Deflection, Invulnerability. // Once per game when Red Guardian or an adjacent friendly character would be hit, they may evade the attack instead."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "5", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 0, 
+        "starting_line": true, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_value": 11, 
+        "defense_power": "special", 
+        "defense_value": 18, 
+        "damage_power": "leadership", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 1, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_value": 11, 
+        "defense_power": "special", 
+        "defense_value": 18, 
+        "damage_power": "leadership", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "charge", 
+        "speed_value": 10, 
+        "attack_value": 11, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "charge", 
+        "speed_value": 10, 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "leap_climb", 
+        "speed_value": 7, 
+        "attack_value": 11, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "leap_climb", 
+        "speed_value": 7, 
+        "attack_value": 11, 
+        "defense_power": "special", 
+        "defense_value": 18, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "av4e017.1", 
+    "set_id": "av4e", 
+    "collector_number": "017.1", 
+    "name": "Red Guardian", 
+    "type": "character", 
+    "age": "modern", 
+    "rarity": "uncommon", 
+    "real_name": "Nikolai Krylenko", 
+    "dimensions": "1x1", 
+    "point_values": [
+      50
+    ], 
+    "team_abilities": [], 
+    "keywords": [
+      "Soldier", 
+      "Winter Guard"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "TEAM UP: SOLDIER THEMED TEAM", 
+        "description": "If Red Guardian is part of the listed themed team, he has: \"At the beginning of your turn, you may choose Empower or Enhancement. Friendly characters with the Winter Guard keyword can use the chosen power until you choose again.\""
+      }, 
       {
         "type": "defense", 
         "name": "ENERGY REPELLENCE", 
@@ -1646,6 +2438,95 @@
       "Spy"
     ], 
     "special_powers": [
+      {
+        "type": "damage", 
+        "name": "LOGISTICS EXPERT", 
+        "description": "Leadership. When Maria Hill uses it and succeeds, you may instead generate a Avengers Forever #002 S.H.I.E.L.D. Operative on click #1. If a 6 was rolled, also remove an action token from each friendly character named S.H.I.E.L.D. Operative."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "5", 
+    "targets": "2", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 0, 
+        "starting_line": true, 
+        "speed_power": "stealth", 
+        "speed_value": 8, 
+        "attack_power": "precision_strike", 
+        "attack_value": 11, 
+        "defense_power": "willpower", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 1, 
+        "speed_power": "stealth", 
+        "speed_value": 8, 
+        "attack_power": "precision_strike", 
+        "attack_value": 11, 
+        "defense_power": "willpower", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "running_shot", 
+        "speed_value": 6, 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "running_shot", 
+        "speed_value": 6, 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "av4e018.1", 
+    "set_id": "av4e", 
+    "collector_number": "018.1", 
+    "name": "Maria Hill", 
+    "type": "character", 
+    "age": "modern", 
+    "rarity": "uncommon", 
+    "real_name": "Maria Hill", 
+    "dimensions": "1x1", 
+    "point_values": [
+      30
+    ], 
+    "team_abilities": [
+      "shield"
+    ], 
+    "keywords": [
+      "S.H.I.E.L.D.", 
+      "Soldier", 
+      "Spy"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "TEAM UP: NICK FURY", 
+        "description": "If Maria Hill and the listed friendly character are on the map, they both can use Mastermind but only to choose friendly characters with the S.H.I.E.L.D. keyword."
+      }, 
       {
         "type": "damage", 
         "name": "LOGISTICS EXPERT", 
@@ -1818,6 +2699,135 @@
       "Soldier"
     ], 
     "special_powers": [
+      {
+        "type": "trait", 
+        "name": "I KNOW YOUR ATTACK IS COMING", 
+        "description": "Super Senses. When Bucky uses it and succeeds, after resolutions remove an action token from him."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "6", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 0, 
+        "starting_line": true, 
+        "speed_power": "running_shot", 
+        "speed_value": 10, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 11, 
+        "defense_power": "invulnerability", 
+        "defense_value": 18, 
+        "damage_power": "outwit", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 1, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 11, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 10, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 17, 
+        "damage_power": "enhancement", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 10, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 17, 
+        "damage_power": "enhancement", 
+        "damage_value": 3, 
+        "starting_line": true
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 11, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "av4e020.1", 
+    "set_id": "av4e", 
+    "collector_number": "020.1", 
+    "name": "Bucky", 
+    "type": "character", 
+    "age": "modern", 
+    "rarity": "uncommon", 
+    "real_name": "Bucky Barnes", 
+    "dimensions": "1x1", 
+    "point_values": [
+      75, 
+      50
+    ], 
+    "team_abilities": [
+      "avengers"
+    ], 
+    "keywords": [
+      "Avengers", 
+      "Howling Commandos", 
+      "Invaders", 
+      "Past", 
+      "S.H.I.E.L.D.", 
+      "Soldier"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "TEAM UP: CAPTAIN AMERICA", 
+        "description": "If Bucky and the listed friendly character are on the map, they both can use Perplex."
+      }, 
       {
         "type": "trait", 
         "name": "I KNOW YOUR ATTACK IS COMING", 
@@ -2495,6 +3505,118 @@
       "Spy"
     ], 
     "special_powers": [
+      {
+        "type": "trait", 
+        "name": "DIRECTOR OF S.H.I.E.L.D.", 
+        "description": "Leadership. When Nick Fury uses it and succeeds, you may instead generate a Avengers Forever #002 S.H.I.E.L.D. Operative on click #1. If a 6 was rolled, you may instead generate a Avengers Forever #018 Maria Hill on click #1 if there isn't a friendly Avengers Forever #018 Maria Hill on the map already."
+      }, 
+      {
+        "type": "defense", 
+        "name": "GOING UNDERGROUND", 
+        "description": "Regeneration, Super Senses, Willpower."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "5", 
+    "targets": "2", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 0, 
+        "starting_line": true, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_value": 11, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 1, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_value": 11, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_value": 11, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "stealth", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 18, 
+        "damage_power": "outwit", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "stealth", 
+        "speed_value": 6, 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 18, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "stealth", 
+        "speed_value": 6, 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 18, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "av4e026.1", 
+    "set_id": "av4e", 
+    "collector_number": "026.1", 
+    "name": "Nick Fury", 
+    "type": "character", 
+    "age": "modern", 
+    "rarity": "uncommon", 
+    "real_name": "Nick Fury", 
+    "dimensions": "1x1", 
+    "point_values": [
+      50
+    ], 
+    "team_abilities": [
+      "shield"
+    ], 
+    "keywords": [
+      "Avengers", 
+      "S.H.I.E.L.D.", 
+      "Spy"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "TEAM UP: S.H.I.E.L.D.", 
+        "description": "If Nick Fury is part of the listed themed team, he has: \"Once per turn a friendly character with the S.H.I.E.L.D. keyword can use S.H.I.E.L.D. team ability as FREE.\""
+      }, 
       {
         "type": "trait", 
         "name": "DIRECTOR OF S.H.I.E.L.D.", 
@@ -3860,7 +4982,7 @@
   {
     "unit_id": "av4e037bt", 
     "set_id": "av4e", 
-    "collector_number": "037b", 
+    "collector_number": "037bt", 
     "name": "Zabu", 
     "type": "bystander", 
     "age": "modern", 
@@ -3925,6 +5047,119 @@
       "Wakanda"
     ], 
     "special_powers": [
+      {
+        "type": "speed", 
+        "name": "BO STAFF POLE VAULT", 
+        "description": "Charge, Leap/Climb, Stealth."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "4", 
+    "targets": "2", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 0, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 8, 
+        "attack_power": "precision_strike", 
+        "attack_value": 11, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 1, 
+        "speed_power": "special", 
+        "speed_value": 8, 
+        "attack_power": "precision_strike", 
+        "attack_value": 11, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "plasticity", 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "plasticity", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "av4e038.1", 
+    "set_id": "av4e", 
+    "collector_number": "038.1", 
+    "name": "Mockingbird", 
+    "type": "character", 
+    "age": "modern", 
+    "rarity": "rare", 
+    "real_name": "Barbara Morse", 
+    "dimensions": "1x1", 
+    "point_values": [
+      40
+    ], 
+    "team_abilities": [
+      "avengers", 
+      "shield"
+    ], 
+    "keywords": [
+      "Avengers", 
+      "S.H.I.E.L.D.", 
+      "Spy", 
+      "Wakanda"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "TEAM UP: HAWKEYE", 
+        "description": "If a listed friendly character is on the map, Mockingbird has \"FREE: Make an attack, but only to target a character that was hit by a friendly character named Hawkeye this turn.\""
+      }, 
       {
         "type": "speed", 
         "name": "BO STAFF POLE VAULT", 
@@ -4283,6 +5518,159 @@
     ]
   }, 
   {
+    "unit_id": "av4e040.1", 
+    "set_id": "av4e", 
+    "collector_number": "040.1", 
+    "name": "Star-Lord", 
+    "type": "character", 
+    "age": "modern", 
+    "rarity": "rare", 
+    "real_name": "Peter Quill", 
+    "dimensions": "1x1", 
+    "point_values": [
+      100, 
+      30
+    ], 
+    "team_abilities": [
+      "guardians"
+    ], 
+    "keywords": [
+      "Cosmic", 
+      "Guardians of the Galaxy", 
+      "Soldier"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "TEAM UP: GUARDIANS OF THE GALAXY THEMED TEAM", 
+        "description": "If Star-Lord is part of the listed themed team, he has: \"When a friendly character with the Guardians of the Galaxy keyword misses with an attack, give Star-Lord a Plan token. // FREE: Remove up to 3 Plan tokens. Until your next turn, Star-Lord can use Perplex and can use it a number of times equal to the number of Plan tokens removed.\""
+      }, 
+      {
+        "type": "trait", 
+        "name": "RECRUITER", 
+        "description": "POWER: Choose a character with the Guardians of the Galaxy keyword in your KO area that hasn't been chosen for or generated by a Recruiter effect. If you do, generate a character with the Guardians of the Galaxy keyword from your Sideline that has a lower point value than the chosen character. This game, the generated character can't be replaced and your opponent scores them immediately instead of when it's KO'd."
+      }, 
+      {
+        "type": "attack", 
+        "name": "I GOT PART OF A PLAN", 
+        "description": "At the beginning of your turn, choose two. Star-Lord can use the chosen effects until he chooses again:"
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "6", 
+    "targets": "3", 
+    "speed_type": "wing", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 0, 
+        "starting_line": true, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 12, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 18, 
+        "damage_power": "leadership", 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 1, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 11, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 17, 
+        "damage_power": "leadership", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 11, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 17, 
+        "damage_power": "leadership", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 11, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 17, 
+        "damage_power": "leadership", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 17, 
+        "damage_power": "leadership", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 17, 
+        "damage_power": "leadership", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 17, 
+        "damage_power": "leadership", 
+        "damage_value": 2, 
+        "starting_line": true
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 8, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
     "unit_id": "av4e041a", 
     "set_id": "av4e", 
     "collector_number": "041a", 
@@ -4509,7 +5897,7 @@
   {
     "unit_id": "av4e041bbt", 
     "set_id": "av4e", 
-    "collector_number": "041b", 
+    "collector_number": "041bbt", 
     "name": "Robot Ant", 
     "type": "bystander", 
     "age": "modern", 
@@ -6900,7 +8288,7 @@
   {
     "unit_id": "av4e055bt", 
     "set_id": "av4e", 
-    "collector_number": "055b", 
+    "collector_number": "055bt", 
     "name": "Terraxia", 
     "type": "bystander", 
     "age": "modern", 
@@ -7084,7 +8472,7 @@
   {
     "unit_id": "av4e056bta", 
     "set_id": "av4e", 
-    "collector_number": "056b", 
+    "collector_number": "056bta", 
     "name": "Conqueror", 
     "type": "bystander", 
     "age": "modern", 
@@ -7122,7 +8510,7 @@
   {
     "unit_id": "av4e056btb", 
     "set_id": "av4e", 
-    "collector_number": "056b", 
+    "collector_number": "056btb", 
     "name": "Immortus", 
     "type": "bystander", 
     "age": "modern", 
@@ -7160,7 +8548,7 @@
   {
     "unit_id": "av4e056btc", 
     "set_id": "av4e", 
-    "collector_number": "056b", 
+    "collector_number": "056btc", 
     "name": "Kang", 
     "type": "bystander", 
     "age": "modern", 
@@ -7669,9 +9057,10 @@
     "age": "modern", 
     "rarity": "chase", 
     "real_name": "T'Challa", 
-    "dimensions": "1x1", 
+    "dimensions": "1x2", 
     "point_values": [
-      125
+      125, 
+      75
     ], 
     "team_abilities": [
       "defenders", 
@@ -7718,7 +9107,7 @@
     "attack_type": "fist", 
     "defense_type": "indomitable", 
     "damage_type": "starburst", 
-    "dial_size": "20", 
+    "dial_size": "12", 
     "dial": [
       {
         "click_number": 0, 
@@ -7763,7 +9152,8 @@
         "defense_power": "toughness", 
         "defense_value": 18, 
         "damage_power": "close_combat_expert", 
-        "damage_value": 3
+        "damage_value": 3, 
+        "starting_line": true
       }, 
       {
         "click_number": 4, 
@@ -7825,7 +9215,7 @@
   {
     "unit_id": "av4e060bt", 
     "set_id": "av4e", 
-    "collector_number": "060b", 
+    "collector_number": "060bt", 
     "name": "T'Chaka", 
     "type": "bystander", 
     "age": "modern", 
@@ -7857,135 +9247,6 @@
         "defense_value": 18, 
         "damage_power": "exploit_weakness", 
         "damage_value": 2
-      }
-    ]
-  }, 
-  {
-    "unit_id": "av4e060v", 
-    "set_id": "av4e", 
-    "collector_number": "060", 
-    "name": "Ghost Panther", 
-    "type": "character", 
-    "age": "modern", 
-    "rarity": "chase", 
-    "real_name": "T'Challa", 
-    "dimensions": "1x1", 
-    "point_values": [
-      75
-    ], 
-    "team_abilities": [
-      "defenders", 
-      "mystics"
-    ], 
-    "keywords": [
-      "Animal", 
-      "Avengers", 
-      "Celebrity", 
-      "Defenders", 
-      "Mystical", 
-      "Ruler", 
-      "Wakanda", 
-      "Warp World"
-    ], 
-    "special_powers": [
-      {
-        "type": "trait", 
-        "name": "PREDATOR OF ZARATHOS", 
-        "description": "Poison, but deals penetrating damage. // When Ghost Panther attacks, modify his attack +1 for each target that has been damaged this turn."
-      }, 
-      {
-        "type": "trait", 
-        "name": "A LEGACY OF KINGS FALLS, A LEGACY OF VENGEANCE RISES", 
-        "description": "At the beginning of the game, generate a T'Chaka bystander."
-      }, 
-      {
-        "type": "speed", 
-        "name": "A HUNTER'S INSTINCTS, A DEMON'S HUNGER", 
-        "description": "Hypersonic Speed, Stealth."
-      }, 
-      {
-        "type": "attack", 
-        "name": "HELLBOUND HEART-SHAPED HERB", 
-        "description": "Blades/Claws/Fangs. Steal Energy, but heals 2 clicks instead of 1."
-      }
-    ], 
-    "improved_movement": [], 
-    "improved_targeting": [], 
-    "object_keyphrases": [], 
-    "unit_range": "4", 
-    "targets": "1", 
-    "speed_type": "boot", 
-    "attack_type": "fist", 
-    "defense_type": "indomitable", 
-    "damage_type": "starburst", 
-    "dial_size": "12", 
-    "dial": [
-      {
-        "click_number": 0, 
-        "starting_line": true, 
-        "speed_power": "charge", 
-        "speed_value": 10, 
-        "attack_power": "blades_claws_fangs", 
-        "attack_value": 11, 
-        "defense_power": "toughness", 
-        "defense_value": 18, 
-        "damage_power": "close_combat_expert", 
-        "damage_value": 3
-      }, 
-      {
-        "click_number": 1, 
-        "speed_power": "charge", 
-        "speed_value": 10, 
-        "attack_power": "special", 
-        "attack_value": 11, 
-        "defense_power": "toughness", 
-        "defense_value": 17, 
-        "damage_power": "close_combat_expert", 
-        "damage_value": 3
-      }, 
-      {
-        "click_number": 2, 
-        "speed_power": "charge", 
-        "speed_value": 8, 
-        "attack_power": "special", 
-        "attack_value": 11, 
-        "defense_power": "combat_reflexes", 
-        "defense_value": 17, 
-        "damage_power": "battle_fury", 
-        "damage_value": 3
-      }, 
-      {
-        "click_number": 3, 
-        "speed_power": "charge", 
-        "speed_value": 8, 
-        "attack_power": "special", 
-        "attack_value": 11, 
-        "defense_power": "combat_reflexes", 
-        "defense_value": 17, 
-        "damage_power": "battle_fury", 
-        "damage_value": 3
-      }, 
-      {
-        "click_number": 4, 
-        "speed_power": "special", 
-        "speed_value": 8, 
-        "attack_power": "special", 
-        "attack_value": 10, 
-        "defense_power": "combat_reflexes", 
-        "defense_value": 17, 
-        "damage_power": "battle_fury", 
-        "damage_value": 3
-      }, 
-      {
-        "click_number": 5, 
-        "speed_power": "special", 
-        "speed_value": 8, 
-        "attack_power": "special", 
-        "attack_value": 10, 
-        "defense_power": "toughness", 
-        "defense_value": 17, 
-        "damage_power": "close_combat_expert", 
-        "damage_value": 3
       }
     ]
   }, 
@@ -8093,7 +9354,7 @@
   {
     "unit_id": "av4e061bt", 
     "set_id": "av4e", 
-    "collector_number": "061b", 
+    "collector_number": "061bt", 
     "name": "Chronal Echo", 
     "type": "bystander", 
     "age": "modern", 
@@ -8810,7 +10071,7 @@
     "age": "modern", 
     "rarity": "limited_edition", 
     "real_name": "Dane Whitman", 
-    "dimensions": "1x1", 
+    "dimensions": "1x2", 
     "point_values": [
       50
     ], 
@@ -8945,7 +10206,7 @@
     "age": "modern", 
     "rarity": "limited_edition", 
     "real_name": "Clint Barton", 
-    "dimensions": "1x1", 
+    "dimensions": "1x2", 
     "point_values": [
       50
     ], 
@@ -10182,7 +11443,7 @@
   {
     "unit_id": "av4eL050bta", 
     "set_id": "av4e", 
-    "collector_number": "L050b", 
+    "collector_number": "L050bta", 
     "name": "A.I.M. Agent", 
     "type": "bystander", 
     "age": "modern", 
@@ -10221,7 +11482,7 @@
   {
     "unit_id": "av4eL050btb", 
     "set_id": "av4e", 
-    "collector_number": "L050b", 
+    "collector_number": "L050btb", 
     "name": "A.I.M. Renegade", 
     "type": "bystander", 
     "age": "modern", 
@@ -10356,7 +11617,7 @@
   {
     "unit_id": "av4eL067bta", 
     "set_id": "av4e", 
-    "collector_number": "L067b", 
+    "collector_number": "L067bta", 
     "name": "Blazing Skull", 
     "type": "bystander", 
     "age": "modern", 
@@ -10399,7 +11660,7 @@
   {
     "unit_id": "av4eL067btb", 
     "set_id": "av4e", 
-    "collector_number": "L067b", 
+    "collector_number": "L067btb", 
     "name": "Captain America", 
     "type": "bystander", 
     "age": "modern", 
@@ -10442,7 +11703,7 @@
   {
     "unit_id": "av4eL067btc", 
     "set_id": "av4e", 
-    "collector_number": "L067b", 
+    "collector_number": "L067btc", 
     "name": "Namor", 
     "type": "bystander", 
     "age": "modern", 
