@@ -136,6 +136,17 @@ class ObjectView extends UnitView {
       return "";
     }
     var html = "<div id='objectKeyphrases'>";
+    if (this.unit_.keywords.length > 0) {
+      html += "<div><b>KEYWORDS: ";
+      for (var i = 0; i < this.unit_.keywords.length; ++i) {
+        if (i != 0) {
+          html += ", "
+        }
+    		var escapedKeyword = escapeHtml(this.unit_.keywords[i]);
+    		html += `<a href='' style='color:black;' onclick='mgr.searchByKeyword("${escapedKeyword}"); return false;'>${escapedKeyword.toUpperCase()}</a>`;
+      }
+      html += "</b></div>"
+    }
     for (var keyphrase of this.unit_.object_keyphrases) {
       var rules = OBJECT_KEYPHRASE_RULES[keyphrase];
       if (!rules) {

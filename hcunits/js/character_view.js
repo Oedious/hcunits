@@ -67,7 +67,8 @@ class CharacterView extends UnitView {
   		} else {
   			html += ', ';
   		}
-  		var atag = `<a href='' class='characterKeyword' onclick='mgr.searchByKeyword("${escapeHtml(keyword)}"); return false;'>${keyword}</a>`;;
+  		keyword = escapeHtml(keyword);
+  		var atag = `<a href='' class='characterKeyword' onclick='mgr.searchByKeyword("${keyword}"); return false;'>${keyword}</a>`;;
   		var isGeneric = (KEYWORD_LIST[keyword] == "generic");
   		if (isGeneric) {
   		  html += `<em>${atag}</em>`;
