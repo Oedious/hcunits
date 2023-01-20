@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 import argparse
 import bisect
+import copy
 import json
 import os
 import os.path
@@ -38,7 +39,7 @@ def get_unit_cache_path(set_id, unit_id):
 # or -1 if no match was found.
 def dials_equal(dst_dial, src_dial):
   if len(dst_dial) != len(src_dial):
-    return false;
+    return False;
 
   i = 0
   while i < len(dst_dial):
@@ -75,7 +76,7 @@ class Unit:
     self.improved_targeting = []
     self.object_keyphrases = []
     self.dial = []
-
+    
   def parse_unit_page(self, unit_page):
     soup = BeautifulSoup(unit_page, 'html.parser')
 
@@ -84,7 +85,7 @@ class Unit:
     self.unit_id = unitIdAndName[0]
     self.name = " ".join(unitIdAndName[1:])
   
-    match_obj = re.search(self.set_id + r"(.*[0-9]{3}[ab]{0,1})", unit_id)
+    match_obj = re.search(self.set_id + r"(.*\d{3}[ab]?\.?\d?)", unit_id)
     self.collector_number = match_obj.group(1)
 
     # Determine the rarity and special type
@@ -128,18 +129,18 @@ class Unit:
         self.special_type = figure_rank
         has_dial = soup.find("table", class_="units_dial")
         if not has_dial:
-          has_parent = has_parent = soup.find(text=re.compile(r'\s*Inventory options for this figure are controlled by the main/parent unit.\s*'))
           is_team_up = self.name.startswith("Team Up:")
-          if has_parent:
-            # We just skip these as they'll be accounted for in the unit itself.
-            print("Skipping costed trait %s" % (self.unit_id))
-          elif is_team_up:
-            # Skip these until we can fully support team-up cards
-            print("Skipping team-up %s" % (self.unit_id))
+          if is_team_up:
+            self.type = "team_up"
           else:
-            # It's an unknown type - skip it for now
-            print("Skipping unknown unit type %s" % self.unit_id)
-          return False
+            has_parent = has_parent = soup.find(text=re.compile(r'\s*Inventory options for this figure are controlled by the main/parent unit.\s*'))
+            if has_parent:
+              # We just skip these as they'll be accounted for in the unit itself.
+              print("Skipping costed trait %s" % (self.unit_id))
+            else:
+              # It's an unknown type - skip it for now
+              print("Skipping unknown unit type %s" % self.unit_id)
+            return False
     elif figure_rank == "bystander":
       self.type = figure_rank
 
@@ -150,11 +151,15 @@ class Unit:
       point_value_tag = soup.find("div", {"style": "float:right;padding-top:3px;"})
     elif self.type == "equipment":
       point_value_tag = soup.find("td", class_="tfoot")
+    elif self.type == "team_up":
+      point_value_tag = None
     else:
       raise RuntimeError("Don't know how to decode points for unit type (%s)" % unit_id)
-    point_value_str = point_value_tag.string.strip()
-    if point_value_str and len(point_value_str) > 0:
-      self.point_values.append(int(point_value_str.split(' ')[0]))
+  
+    if point_value_tag:
+      point_value_str = point_value_tag.string.strip()
+      if point_value_str and len(point_value_str) > 0:
+        self.point_values.append(int(point_value_str.split(' ')[0]))
 
     # The set ID is the first non-numeric parts of the unit_id
     if self.type == "character":
@@ -231,7 +236,11 @@ class Unit:
             else:
               print("Skipping unknown object attribute '%s'" % attr)
 
-    if self.type == "character" or self.type == "bystander" or self.type == "equipment" or self.type == "construct":
+    if (self.type == "character" or
+        self.type == "team_up" or
+        self.type == "bystander" or
+        self.type == "equipment" or
+        self.type == "construct"):
       # Parse special powers
       tag_list = soup.find_all(text=re.compile(r'\s*Special Powers\s*'))
       if len(tag_list) > 0:
@@ -259,6 +268,11 @@ class Unit:
 
           # Skip the special power that describes a construct
           if self.type == "construct" and sp_name == "CONSTRUCTS":
+            continue
+          
+          # Avoid adding duplicates.
+          if [x for x in self.special_powers if x["name"] == sp_name]:
+            print("Skipping duplicate special power '%s' for '%s'" % (sp_name, self.unit_id))
             continue
           
           sp_description = td_tags[1].contents[2].strip()
@@ -344,21 +358,11 @@ class Unit:
 
   # Tries to merge the 'src_unit' into this, as the dest. Returns True if done
   # successfully, otherwise False.
-  def try_merge(self, src_unit):
-    if (self.set_id != src_unit.set_id or
-        self.collector_number != src_unit.collector_number or
-        self.type != src_unit.type):
-      return False;
-    if (self.name != src_unit.name or
-        self.age != src_unit.age or
-        self.rarity != src_unit.rarity or
-        self.real_name != src_unit.real_name or
-        self.special_type != src_unit.special_type or
-        self.dimensions != src_unit.dimensions or
-        self.team_abilities != src_unit.team_abilities or
-        self.keywords != src_unit.keywords):
-      print("Merging '%s' and '%s' failed data validation" % (self.unit_id, src_unit.unit_id))
-      return False;
+  def merge_point_values(self, src_unit):
+    fields = ["name", "age", "rarity", "real_name", "special_type", "dimensions", "team_abilities", "keywords"]
+    for field in fields:
+      if getattr(self, field) != getattr(src_unit, field):
+        print("Warning: merging '%s' and '%s' failed '%s' validation: %s vs %s" % (self.unit_id, src_unit.unit_id, field, getattr(self, field), getattr(src_unit, field)))
 
     if not len(src_unit.point_values):
       print("Failed to merge '%s' and '%s': too many point values" % (self.unit_id, src_unit.unit_id))
@@ -429,27 +433,36 @@ class Unit:
     return xml
 
 class Fetcher:
-  def __init__(self, set_id):
+  def __init__(self, set_id, skip_cache):
     options = Options()
     options.add_argument("--headless")
     self.driver = webdriver.Chrome(options=options)
     self.set_id = set_id
+    self.skip_cache = skip_cache
     
   def close(self):
     self.driver.close()
 
   # Fetch the set list page
   def fetch_set_list_page(self):
-    set_name = SET_MAP[self.set_id];
-    self.driver.get('https://www.hcrealms.com/forum/units/units_quicksets.php?q=' + set_name)
-    soup = BeautifulSoup(self.driver.page_source, 'html.parser')
-    set_list_page = soup.prettify(formatter=lambda s: s.replace(u'\xa0', ' '))
-    # Save it to disk to re-use later on
-    filename = get_set_list_cache_path(self.set_id)
-    f = open(filename, "w")
-    f.write(set_list_page)
-    f.close()
-    print("Cached set list page to " + filename)
+    set_list_path = get_set_list_cache_path(self.set_id)
+    if not self.skip_cache and os.path.exists(set_list_path):
+      print("Reading set list from cache at " + set_list_path)
+      f = open(set_list_path, "r")
+      set_list_page = f.read()
+      f.close()
+    else:
+      set_name = SET_MAP[self.set_id];
+      self.driver.get('https://www.hcrealms.com/forum/units/units_quicksets.php?q=' + set_name)
+      soup = BeautifulSoup(self.driver.page_source, 'html.parser')
+      set_list_page = soup.prettify(formatter=lambda s: s.replace(u'\xa0', ' '))
+  
+      # Save it to disk to re-use later on
+      filename = get_set_list_cache_path(self.set_id)
+      f = open(filename, "w")
+      f.write(set_list_page)
+      f.close()
+      print("Cached set list page to " + filename)
     return set_list_page
     
   def parse_set_list_page(self, set_list_page, unit_id_start, max_units):
@@ -476,16 +489,23 @@ class Fetcher:
     return unit_list
         
   def fetch_unit_page(self, unit_id):
-    self.driver.get('https://www.hcrealms.com/forum/units/units_figure.php?q=' + unit_id)
-    soup = BeautifulSoup(self.driver.page_source, 'html.parser')
-    set_list_page = soup.prettify(formatter=lambda s: s.replace(u'\xa0', ' '))
-    # Save it to disk to re-use later on
-    filename = get_unit_cache_path(self.set_id, unit_id)
-    f = open(filename, "w")
-    f.write(set_list_page.encode('utf-8'))
-    f.close()
-    print("Cached unit page to " + filename)
-    return set_list_page
+    unit_path = get_unit_cache_path(self.set_id, unit_id);
+    if not self.skip_cache and os.path.exists(unit_path):
+      print("Reading unit from cache at " + unit_path)
+      f = open(unit_path, "r")
+      unit_page = f.read()
+      f.close()
+    else:
+      self.driver.get('https://www.hcrealms.com/forum/units/units_figure.php?q=' + unit_id)
+      soup = BeautifulSoup(self.driver.page_source, 'html.parser')
+      unit_page = soup.prettify(formatter=lambda s: s.replace(u'\xa0', ' '))
+      # Save it to disk to re-use later on
+      filename = get_unit_cache_path(self.set_id, unit_id)
+      f = open(filename, "w")
+      f.write(unit_page.encode('utf-8'))
+      f.close()
+      print("Cached unit page to " + filename)
+    return unit_page
   
 
 if __name__ == "__main__":
@@ -505,40 +525,55 @@ if __name__ == "__main__":
     os.mkdir(cache_path);
 
   units = []
-  fetcher = Fetcher(args.set_id)
+  fetcher = Fetcher(args.set_id, args.skip_cache)
   try:
-    set_list_path = get_set_list_cache_path(args.set_id)
-    if not args.skip_cache and os.path.exists(set_list_path):
-      print("Reading set list from cache at " + set_list_path)
-      f = open(set_list_path, "r")
-      set_list_page = f.read()
-      f.close()
-    else:
-      set_list_page = fetcher.fetch_set_list_page()
-  
+    set_list_page = fetcher.fetch_set_list_page()
     unit_id_list = fetcher.parse_set_list_page(set_list_page, args.unit_id_start, int(args.max_units))
-  
     for unit_id in unit_id_list:
       if args.unit_id_stop and unit_id == args.unit_id_stop:
         break;
   
-      unit_path = get_unit_cache_path(args.set_id, unit_id);
-      if not args.skip_cache and os.path.exists(unit_path):
-        print("Reading unit from cache at " + unit_path)
-        f = open(unit_path, "r")
-        unit_page = f.read()
-        f.close()
-      else:
-        unit_page = fetcher.fetch_unit_page(unit_id);
+      unit_page = fetcher.fetch_unit_page(unit_id);
       unit = Unit(args.set_id)
       if unit.parse_unit_page(unit_page):
-        if len(units) == 0 or not units[-1].try_merge(unit):
+        if (len(units) != 0 and
+            unit.set_id == units[-1].set_id and
+            unit.collector_number == units[-1].collector_number and
+            unit.type == units[-1].type):
+          # Try to merge the units together and mark the current unit as invalid
+          # so that it's not appending to the list below.
+          if units[-1].merge_point_values(unit):
+            unit = None
+
+        elif unit.type == "team_up":
+          # Find the associated unit and create a new unit from that by copying
+          # in the team-up special powers and updating the unit_id.
+          associated_unit = None
+          for u in units:
+            if u.unit_id == unit_id[:-2]:
+              associated_unit = u
+              break
+          if associated_unit:
+            collector_number = unit.collector_number
+            special_powers = unit.special_powers
+            unit = copy.deepcopy(associated_unit)
+            unit.unit_id = unit_id
+            unit.collector_number = collector_number
+            unit.special_powers = special_powers + associated_unit.special_powers
+          else:
+            print("Failed to find corresponding unit for team-up %s" % unit_id)
+            unit = None
+
+        if unit:
           units.append(unit)
   except Exception as e:
     print("An error has occurred: ", e, "\n", traceback.format_exc())
 
   fetcher.close()
-  
+
+  # Sort the units by their unit ID.
+  units.sort(key=lambda u: u.unit_id)
+
   num_processed = 0
   output_xml = "<resultset>"
   for unit in units:

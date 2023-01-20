@@ -27,15 +27,16 @@ class CharacterView extends UnitView {
     const PIXELS_PER_LINE = 14;
     var specialPowersHtml = this.drawSpecialPowers_();
     var cardHeight = MIN_CARD_HEIGHT + PIXELS_PER_LINE * this.extraLines_;
+    var borderColor = this.isTeamUp_() ? COLOR_BLUE : COLOR_BLACK;
     var html = `
       <div id='characterCard' style='height:${cardHeight}px;'>
-        <div id='characterCardBorders'></div>
+        <div id='characterCardBorders' style='border-color:${borderColor};'></div>
         <div id='characterHeader'>
           <div id='characterName'>${escapeHtml(this.unit_.name).toUpperCase()}</div>
           <div id='characterKeywords'>${this.drawKeywords_()}</div>
         </div>
         <div id='characterRealName'>REAL NAME: ${escapeHtml(this.unit_.real_name).toUpperCase()}</div>
-        <div id='characterCollectorNumber'>${this.unit_.collector_number}</div>
+        ${this.drawCollectorNumber_()}
         ${this.drawImage_()}
         ${specialPowersHtml}
         <div id='characterDial'>${this.drawDial_()}</div>
@@ -47,6 +48,11 @@ class CharacterView extends UnitView {
       </div>`;
 
   	document.getElementById('unitContainer').innerHTML = html;
+  }
+  
+  isTeamUp_() {
+    return this.unit_.special_powers.length > 0 &&
+        this.unit_.special_powers[0].name.startsWith("TEAM UP:");
   }
   
   drawKeywords_() {
@@ -73,10 +79,22 @@ class CharacterView extends UnitView {
     return html;
   }
   
+  drawCollectorNumber_() {
+    var text;
+    if (this.isTeamUp_()) {
+      text = `<span id='characterTeamUp'>TEAM UP</span>&nbsp;&nbsp;&nbsp;${this.unit_.collector_number}`;
+    } else {
+      text = this.unit_.collector_number;
+    }
+    return `<div id='characterCollectorNumber'>${text}</div>`;
+  }
+  
   drawImage_() {
     var color = "black";
     if (this.unit_.special_type) {
       color = SPECIAL_TYPE_TO_COLOR[this.unit_.special_type];
+    } else if (this.isTeamUp_()) {
+      color = COLOR_BLUE;
     }
     var html = `<div id='characterImage' style='border: 7px solid ${color};'></div>`
     return html;

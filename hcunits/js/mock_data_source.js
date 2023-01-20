@@ -240,6 +240,7 @@ MockDataSource.prototype.searchBySetId = function(setId, onSuccess, onError) {
     type: 'get',
     success: function(response) {
       dataSource.units_ = response
+      // Sort units by unit ID.
       onSuccess(response);
     },
     error: onError

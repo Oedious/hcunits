@@ -50,17 +50,22 @@
 #characterRealName {
   position: absolute;
   left: 7px;
-  top: 62px;
+  top: 63px;
   width: 225px;
   color: white;
   font-family: arial, sans-serif;
-  font-size: 9px;
+  font-size: 8px;
   text-align: left;
+}
+
+#characterTeamUp {
+  font-size: 9px;
+  font-weight: bold;
 }
 
 #characterCollectorNumber {
   position: absolute;
-  left: 340px;
+  right: 10px;
   font-size: 11px;
   color: white;
 }
