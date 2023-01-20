@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 import argparse
+import bisect
 import json
 import os
 import os.path
@@ -33,18 +34,40 @@ def get_unit_cache_path(set_id, unit_id):
   filename = "unit_" + unit_id + ".html"
   return os.path.join(get_cache_path(set_id), filename)
 
+# Returns the starting click of given dial with respect to that of this unit
+# or -1 if no match was found.
+def dials_equal(dst_dial, src_dial):
+  if len(dst_dial) != len(src_dial):
+    return false;
+
+  i = 0
+  while i < len(dst_dial):
+    src = src_dial[i]
+    dst = dst_dial[i]
+    if (src.get("speed_power") != dst.get("speed_power") or
+        src.get("speed_value") != dst.get("speed_value") or
+        src.get("attack_power") != dst.get("attack_power") or
+        src.get("attack_value") != dst.get("attack_value") or
+        src.get("defense_power") != dst.get("defense_power") or
+        src.get("defense_value") != dst.get("defense_value") or
+        src.get("damage_power") != dst.get("damage_power") or
+        src.get("damage_value") != dst.get("damage_value")):
+      return False;
+    i += 1
+  return True;
+
 class Unit:
   def __init__(self, set_id):
     self.set_id = set_id
 
     # These fields are conditionally used depending on the unit type.
-    self.parent_unit_id = None
     self.real_name = None
     self.special_type = None
     self.dimensions = None
     self.object_type = None
 
     # These fields are stored as JSON and must always exist, even if empty.
+    self.point_values = []
     self.team_abilities = []
     self.keywords = []
     self.special_powers = []
@@ -61,12 +84,9 @@ class Unit:
     self.unit_id = unitIdAndName[0]
     self.name = " ".join(unitIdAndName[1:])
   
-    match_obj = re.search(self.set_id + r"(.*[0-9]{3})", unit_id)
+    match_obj = re.search(self.set_id + r"(.*[0-9]{3}[ab]{0,1})", unit_id)
     self.collector_number = match_obj.group(1)
-    has_parent = soup.find(text=re.compile(r'\s*Inventory options for this figure are controlled by the main/parent unit.\s*'))
-    if (has_parent):
-      self.parent_unit_id = self.set_id + self.collector_number
-  
+
     # Determine the rarity and special type
     figure_rank_tag = soup.select_one("td[class^=figure_rank_]")
     rarity = figure_rank_tag.strong.string.strip()
@@ -108,6 +128,7 @@ class Unit:
         self.special_type = figure_rank
         has_dial = soup.find("table", class_="units_dial")
         if not has_dial:
+          has_parent = has_parent = soup.find(text=re.compile(r'\s*Inventory options for this figure are controlled by the main/parent unit.\s*'))
           is_team_up = self.name.startswith("Team Up:")
           if has_parent:
             # We just skip these as they'll be accounted for in the unit itself.
@@ -118,7 +139,7 @@ class Unit:
           else:
             # It's an unknown type - skip it for now
             print("Skipping unknown unit type %s" % self.unit_id)
-          return None
+          return False
     elif figure_rank == "bystander":
       self.type = figure_rank
 
@@ -131,7 +152,9 @@ class Unit:
       point_value_tag = soup.find("td", class_="tfoot")
     else:
       raise RuntimeError("Don't know how to decode points for unit type (%s)" % unit_id)
-    self.point_value = int(point_value_tag.string.strip().split(' ')[0])
+    point_value_str = point_value_tag.string.strip()
+    if point_value_str and len(point_value_str) > 0:
+      self.point_values.append(int(point_value_str.split(' ')[0]))
 
     # The set ID is the first non-numeric parts of the unit_id
     if self.type == "character":
@@ -288,16 +311,15 @@ class Unit:
         self.damage_type = "colossal"
   
       # Parse the dial
-      # TODO: figure out when dials don't start at 1
-      self.dial_start = 1
       self.dial_size = 0
       for col in soup.find_all("table", class_="power"):
-        self.dial_size += 1
         tags = col.find_all("tr")
         # If it has a title, it's a non-KO click, otherwise skip it.
         if tags[0].td.has_attr('title'):
           row_obj = OrderedDict()
           row_obj["click_number"] = self.dial_size
+          if self.dial_size == 0:
+            row_obj["starting_line"] = True
           types = ["speed", "attack", "defense", "damage"]
           for i in range(4):
             tag = tags[i]
@@ -308,27 +330,70 @@ class Unit:
                 power = "Penetrating/Psychic Blast"
               elif power == "Shapechange":
                 power = "Shape Change"
+              elif power == "Earthbound":
+                power = "Earthbound/Neutralized"
               row_obj[types[i] + "_power"] = fix_style(power)
             row_obj[types[i] + "_value"] = int(tag.td.string.strip())
           self.dial.append(row_obj)
+        self.dial_size += 1
           
         # Constructs and bystanders only have a single click
         if self.type == "bystander" or self.type == "construct":
           break
-  
-  def outputXml(self):
+    return True
+
+  # Tries to merge the 'src_unit' into this, as the dest. Returns True if done
+  # successfully, otherwise False.
+  def try_merge(self, src_unit):
+    if (self.set_id != src_unit.set_id or
+        self.collector_number != src_unit.collector_number or
+        self.type != src_unit.type):
+      return False;
+    if (self.name != src_unit.name or
+        self.age != src_unit.age or
+        self.rarity != src_unit.rarity or
+        self.real_name != src_unit.real_name or
+        self.special_type != src_unit.special_type or
+        self.dimensions != src_unit.dimensions or
+        self.team_abilities != src_unit.team_abilities or
+        self.keywords != src_unit.keywords):
+      print("Merging '%s' and '%s' failed data validation" % (self.unit_id, src_unit.unit_id))
+      return False;
+
+    if not len(src_unit.point_values):
+      print("Failed to merge '%s' and '%s': too many point values" % (self.unit_id, src_unit.unit_id))
+      return False
+
+    if self.point_values[0] <= src_unit.point_values[0]:
+      print("Failed to merge '%s' and '%s': destination unit should have larger point value than the source" % (self.unit_id, unit.unit_id))
+      return False
+
+    # The starting line should just be the difference in the number of clicks;
+    # validate that just to make sure.
+    starting_line = len(self.dial) - len(src_unit.dial)
+    if not dials_equal(self.dial[starting_line:], src_unit.dial):
+      print("Failed to merge '%s' and '%s': dial mismatch" % (self.unit_id, unit.unit_id))
+      return False
+
+    # Merge the units by adding a new point value (in sorted order) and starting line.
+    pos = 0
+    while pos < len(self.point_values) and self.point_values[pos] > src_unit.point_values[0]:
+      pos += 1;
+    self.point_values.insert(pos, src_unit.point_values[0])
+    self.dial[starting_line]["starting_line"] = True
+    # Sort the starting lines so that 
+    return True;
+
+  def output_xml(self):
     xml = """
     <unit_id>{}</unit_id>
     <set_id>{}</set_id>
     <collector_number>{}</collector_number>
     <name>{}</name>
     <type>{}</type>
-    <point_value>{}</point_value>
-    <age>{}</age>""".format(self.unit_id, self.set_id, self.collector_number, escape(self.name), self.type, self.point_value, self.age)
+    <age>{}</age>""".format(self.unit_id, self.set_id, self.collector_number, escape(self.name), self.type, self.age)
     if self.rarity:
       xml += "\n    <rarity>%s</rarity>" % self.rarity
-    if self.parent_unit_id:
-      xml += "\n    <parent_unit_id>%s</parent_unit_id>" % self.parent_unit_id
     if self.real_name:
       xml += "\n    <real_name>%s</real_name>" % escape(self.real_name)
     if self.special_type:
@@ -336,14 +401,15 @@ class Unit:
     if self.dimensions:
       xml += "\n    <dimensions>%s</dimensions>" % self.dimensions
     xml += """
+    <point_values>{}</point_values>
     <team_abilities>{}</team_abilities>
     <keywords>{}</keywords>
     <special_powers>{}</special_powers>
     <improved_movement>{}</improved_movement>
     <improved_targeting>{}</improved_targeting>""".format(
-      json.dumps(self.team_abilities), json.dumps(self.keywords),
-      json.dumps(self.special_powers, indent=2), json.dumps(self.improved_movement),
-      json.dumps(self.improved_targeting))
+      json.dumps(self.point_values), json.dumps(self.team_abilities),
+      json.dumps(self.keywords), json.dumps(self.special_powers, indent=2),
+      json.dumps(self.improved_movement), json.dumps(self.improved_targeting))
     if self.object_type:
       xml += "\n    <object_type>%s</object_type>" % self.object_type
     xml += "\n    <object_keyphrases>%s</object_keyphrases>" % json.dumps(self.object_keyphrases)
@@ -355,9 +421,8 @@ class Unit:
     <attack_type>{}</attack_type>
     <defense_type>{}</defense_type>
     <damage_type>{}</damage_type>
-    <dial_start>{}</dial_start>
     <dial_size>{}</dial_size>""".format(self.unit_range, self.targets, self.speed_type, self.attack_type,
-      self.defense_type, self.damage_type, self.dial_start, self.dial_size)
+      self.defense_type, self.damage_type, self.dial_size)
 
     # Dial must always exist, even if it's empty for some unit types.
     xml += "\n    <dial>%s</dial>" % json.dumps(self.dial, indent=2)
@@ -439,6 +504,7 @@ if __name__ == "__main__":
   if not os.path.exists(cache_path):
     os.mkdir(cache_path);
 
+  units = []
   fetcher = Fetcher(args.set_id)
   try:
     set_list_path = get_set_list_cache_path(args.set_id)
@@ -452,8 +518,6 @@ if __name__ == "__main__":
   
     unit_id_list = fetcher.parse_set_list_page(set_list_page, args.unit_id_start, int(args.max_units))
   
-    unit_list = "<resultset>"
-    num_processed = 0
     for unit_id in unit_id_list:
       if args.unit_id_stop and unit_id == args.unit_id_stop:
         break;
@@ -467,21 +531,27 @@ if __name__ == "__main__":
       else:
         unit_page = fetcher.fetch_unit_page(unit_id);
       unit = Unit(args.set_id)
-      unit.parse_unit_page(unit_page)
-      unit_xml = unit.outputXml()
-      if unit_xml:
-        unit_list += "\n  <row>"
-        unit_list += unit_xml
-        unit_list += "\n  </row>"
-        num_processed += 1
+      if unit.parse_unit_page(unit_page):
+        if len(units) == 0 or not units[-1].try_merge(unit):
+          units.append(unit)
   except Exception as e:
     print("An error has occurred: ", e, "\n", traceback.format_exc())
 
   fetcher.close()
-  unit_list += "\n</resultset>"
+  
+  num_processed = 0
+  output_xml = "<resultset>"
+  for unit in units:
+    unit_xml = unit.output_xml()
+    if unit_xml:
+      output_xml += "\n  <row>"
+      output_xml += unit_xml
+      output_xml += "\n  </row>"
+      num_processed += 1
+  output_xml += "\n</resultset>"
   filename = "set_%s.xml" % args.set_id
   f = open(filename, "w")
-  f.write(unit_list)
+  f.write(output_xml)
   f.close()
   print("Wrote %d units to %s" % (num_processed, filename))
 

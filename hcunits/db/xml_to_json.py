@@ -16,6 +16,7 @@ if __name__ == "__main__":
   json_list = []
   # Convert JSON fields into dicts
   for unit in xml_list["resultset"]["row"]:
+    unit["point_values"] = json.loads(unit["point_values"], object_pairs_hook=OrderedDict)
     unit["team_abilities"] = json.loads(unit["team_abilities"], object_pairs_hook=OrderedDict)
     unit["keywords"] = json.loads(unit["keywords"], object_pairs_hook=OrderedDict)
     unit["special_powers"] = json.loads(unit["special_powers"], object_pairs_hook=OrderedDict)

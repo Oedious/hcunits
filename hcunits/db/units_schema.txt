@@ -24,18 +24,14 @@ CREATE TABLE wp_units (
   -- The type of the unit.
   type ENUM('character', 'object', 'map', 'battlefield_condition', 'event_dial', 'resource', 'equipment', 'terrain', 'bystander', 'tarot_card', 'relic', 'construct') NOT NULL,
 
-  -- The point value of the unit. In the range of 0 to 10000.
-  point_value SMALLINT,
+  -- A JSON array of numbers containing point values of different starting lines.
+  point_values JSON,
 
   -- Whether the unit is legal for modern tournament play.
   age ENUM('modern', 'golden') NOT NULL,
 
   -- The rarity of the unit.
   rarity ENUM('common', 'uncommon', 'rare', 'super_rare', 'chase', 'ultra_chase', 'limited_edition'),
-
-  -- For units that have multiple starting lines, the lower-point value entries
-  -- should have a link to the highest-point (parent) unit.
-  parent_unit_id VARCHAR(16),
 
   -- The “real name” of the unit.
   real_name TEXT(128),
@@ -58,9 +54,9 @@ CREATE TABLE wp_units (
   --   "name": string - the name of the power.
   --   "description": string - the description of the power.
   --   "powers": (Optional) array of strings, containing names to standard powers granted.
-  --   "point_value": (Optional) the additional point value for a costed trait
-  --   "rally_type": (Optional) contains "friendly", "opposing" or "all"
-  --   "rally_die": (Optional) the die value that triggers the rally effect
+  --   "point_value": (Optional) the additional point value for a costed trait.
+  --   "rally_type": (Optional) contains "friendly", "opposing" or "all".
+  --   "rally_die": (Optional) the die value that triggers the rally effect.
   -- }
   special_powers JSON,
 
@@ -89,12 +85,12 @@ CREATE TABLE wp_units (
   attack_type ENUM('fist', 'autonomous', 'sharpshooter', 'duo', 'team'),
   defense_type ENUM('shield', 'indomitable', 'vehicle'),
   damage_type ENUM('starburst', 'giant', 'fist', 'tiny'),
-  dial_start TINYINT,
   dial_size TINYINT,
 
   -- A JSON array of objects containing special powers and traits, of the format:
   -- {
-  --   "click_number": number
+  --   "click_number": number corresponding to the element on the dial.
+  --   "starting_line": (Optional) if True, indicates that this is a starting line.
   --   "speed_power": (Optional) power_name
   --   "speed_value": number
   --   "attack_power": (Optional) power_name
