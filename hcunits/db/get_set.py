@@ -114,7 +114,7 @@ class Unit:
     figure_rank = re.search(r"figure_rank_(.*)", figure_rank_tag["class"][0]).group(1)
     # The type needs to be determined first because many other values are
     # conditional on it.
-    if figure_rank == "" or figure_rank == "unique" or figure_rank == "prime":
+    if figure_rank == "" or figure_rank == "unique" or figure_rank == "prime" or figure_rank == "special_object":
       # Look to see if it's a construct, indicated by a special power.
       is_construct = False
       tag_list = soup.find_all(text=re.compile(r'\s*Special Powers\s*'))
@@ -448,15 +448,19 @@ class Unit:
       return False
 
     if self.point_values[0] <= src_unit.point_values[0]:
-      print("Failed to merge '%s' and '%s': destination unit should have larger point value than the source" % (self.unit_id, unit.unit_id))
-      return False
+      # "Swap" the units, such that 'self' is now the the higher point unit.
+      self.__dict__, src_unit.__dict__ = src_unit.__dict__, self.__dict__
+      self.unit_id = src_unit.unit_id
 
-    # The starting line should just be the difference in the number of clicks;
-    # validate that just to make sure.
+    # Determine if the src_unit dial is a copy of the start or end of this dial.
+    # Usually, it's at the end, so check that first.
     starting_line = len(self.dial) - len(src_unit.dial)
     if not dials_equal(self.dial[starting_line:], src_unit.dial):
-      print("Failed to merge '%s' and '%s': dial mismatch" % (self.unit_id, unit.unit_id))
-      return False
+      # Otherwise, check that it's at the start.
+      if not dials_equal(self.dial[0:len(src_unit.dial)], src_unit.dial):
+        print("Failed to merge '%s' and '%s': dial mismatch" % (self.unit_id, unit.unit_id))
+        return False
+      starting_line = len(src_unit.dial)
 
     # Merge the units by adding a new point value (in sorted order) and starting line.
     pos = 0
