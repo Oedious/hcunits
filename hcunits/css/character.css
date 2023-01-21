@@ -95,16 +95,14 @@
   top: 168px;
 }
 
-#characterDial {
+.characterDial {
   position: absolute;
-  bottom: 70px;
-  width: 325px;
   height: 130px;
   border: 5px solid black;
   border-radius: 0px 15px 15px 0px;
 }
 
-#characterRange {
+.characterRange {
   position: absolute;
   right: 20px;
   top: 4px;
@@ -119,37 +117,16 @@
   top: 6px;
 }
 
-#characterCombatSymbolSpeed {
-  position: absolute;
-  top: 24px;
-}
-
-#characterCombatSymbolAttack {
-  position: absolute;
-  top: 48px;
-}
-
-#characterCombatSymbolDefense {
-  position: absolute;
-  top: 72px;
-}
-
-#characterCombatSymbolDamage {
-  position: absolute;
-  top: 96px;
-}
-
 .characterCombatSymbolImg {
   position: absolute;
   right: 7px;
   top: 2px;
 }
 
-#characterDialTable {
+.characterDialTable {
   position: absolute;
   left: 30px;
   top: -2px;
-  width: 280px;
   table-layout: fixed;
   border-collapse: separate;
   border-spacing: 3px !important;

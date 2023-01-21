@@ -27,10 +27,8 @@ class CharacterView extends UnitView {
   draw() {
     // Compute the special powers HTML first because it may need to resize the
     // entire card to fit the text.
-    const MIN_CARD_HEIGHT = 525;
-    const PIXELS_PER_LINE = 14;
     var specialPowersHtml = this.drawSpecialPowers_();
-    var cardHeight = MIN_CARD_HEIGHT + PIXELS_PER_LINE * this.extraLines_;
+    var cardHeight = this.getCardHeight_();
     var borderColor = this.isTeamUp_() ? COLOR_BLUE : COLOR_BLACK;
     var html = `
       <div id='characterCard' style='height:${cardHeight}px;'>
@@ -43,8 +41,8 @@ class CharacterView extends UnitView {
         ${this.drawCollectorNumber_()}
         ${this.drawImage_()}
         ${specialPowersHtml}
-        <div id='characterDial'>${this.drawDial_()}</div>
-        <div id='characterTeamAbilities'>${this.drawTeamAbilities_()}</div>
+        ${this.drawDial_()}
+        ${this.drawTeamAbilities_()}
         ${super.drawPointValues_()}
         <div id='characterHeroClixLogoClip'>
           <img id='characterHeroClixLogo' src='../hcunits/images/heroclix_logo_small.png' alt=''/>
@@ -59,6 +57,16 @@ class CharacterView extends UnitView {
         this.unit_.special_powers[0].name.startsWith("TEAM UP:");
   }
   
+  getCardHeight_() {
+    const MIN_CARD_HEIGHT = 525;
+    const PIXELS_PER_LINE = 14;
+    var cardHeight = MIN_CARD_HEIGHT + PIXELS_PER_LINE * this.extraLines_;
+    if (this.unit_.dial_size > 12) {
+      cardHeight += 135
+    }
+    return cardHeight;
+  }
+
   drawKeywords_() {
   	if (!this.unit_.keywords) {
   	  return '';
@@ -109,17 +117,22 @@ class CharacterView extends UnitView {
     if (!this.unit_.team_abilities) {
       return '';
     }
-    var teamAbilitiesHtml = '';
+    var bottom = 70;
+    if (this.unit_.dial_size > 12) {
+      bottom += 135
+    }
+    var html = `<div id='characterTeamAbilities' style='bottom:${bottom}px'>`
     for (var i = 0; i < this.unit_.team_abilities.length; ++i) {
       var teamAbility = TEAM_ABILITY_LIST[this.unit_.team_abilities[i]];
-      teamAbilitiesHtml += `
+      html += `
         <div id='characterTeamAbility${i}' class='tooltip'>
           <img src='../hcunits/images/ta_${this.unit_.team_abilities[i]}.png' alt=''/>
           <span class='tooltiptext'>${escapeHtml(teamAbility.description)}</span>
         </div>
         `;
     }
-    return teamAbilitiesHtml;
+    html += "</div>"
+    return html;
   }
   
   drawSpecialPowers_() {
@@ -205,77 +218,106 @@ class CharacterView extends UnitView {
   }
   
   drawDial_() {
-    var html = `
-      <div class='combatSymbol'>
-        <div id='characterRange'>${this.unit_.unit_range}</div>`;
-    for (var i = 0; i < this.unit_.targets; ++i) {
-      html += `<img class='characterBolt' src='../hcunits/images/cs_bolt.png' alt='' height='12' width='6' style='left: ${10 + i * 4}px;'\>`;
+    if (this.unit_.dial_size <= 12) {
+       var numTables = 1;
+       var tableCols = [{"start": 0, "end": this.unit_.dial_size}];
+       var bottom = [70];
+    } else if (this.unit_.dial_size <= 26) {
+      var numTables = 2;
+      var tableCols = [
+        {"start": 0, "end": 12},
+        {"start": 12, "end": this.unit_.dial_size}
+      ];
+      var bottom = [205, 70];
+    } else {
+      console.log(`Cannot draw dial for unit ${this.unit_.unit_id}: too many clicks (${this.unit_.dial_size})`)
+      return "";
     }
-    html += `
-      </div>
-      <div id='characterCombatSymbolSpeed' class='combatSymbol'>
-        <img class='characterCombatSymbolImg' src='../hcunits/images/cs_${this.unit_.speed_type}.png'/>
-      </div>
-      <div id='characterCombatSymbolAttack' class='combatSymbol'>
-        <img class='characterCombatSymbolImg' src='../hcunits/images/cs_${this.unit_.attack_type}.png'/>
-      </div>
-      <div id='characterCombatSymbolDefense' class='combatSymbol'>
-        <img class='characterCombatSymbolImg' src='../hcunits/images/cs_${this.unit_.defense_type}.png'/>
-      </div>
-      <div id='characterCombatSymbolDamage' class='combatSymbol'>
-        <img class='characterCombatSymbolImg' src='../hcunits/images/cs_${this.unit_.damage_type}.png'/>
-      </div>
-      <table id='characterDialTable'>`;
-  
-    html += "<tr class='characterDialRow'>";
-    for (var col = 0; col < this.unit_.dial_size; ++col) {
-      html += `<th class='characterDialHeader'>${col + 1}</th>`;
-    }
-    html += "</tr>";
-    for (var row = 0; row < 4; ++row) {
-      var rowType = ['speed', 'attack', 'defense', 'damage'][row];
+    var html = "";
+    var tableDialStart = 0;
+    for (var t = 0; t < numTables; ++t) {
+      var bottom = 70 + 135 * (numTables - t - 1);
+      var borderWidth = 49 + 23 * (tableCols[t].end - tableCols[t].start);
+      var tableWidth = 4 + 23 * (tableCols[t].end - tableCols[t].start);
+      html += `
+        <div class='characterDial' style='bottom:${bottom}px;width:${borderWidth}px;'>
+        <div class='combatSymbol'>
+          <div class='characterRange'>${this.unit_.unit_range}</div>`;
+      for (var i = 0; i < this.unit_.targets; ++i) {
+        html += `<img class='characterBolt' src='../hcunits/images/cs_bolt.png' alt='' height='12' width='6' style='left: ${10 + i * 4}px;'\>`;
+      }
+      html += `
+        </div>
+        <div class='combatSymbol' style='position:absolute;top:24px;'>
+          <img class='characterCombatSymbolImg' src='../hcunits/images/cs_${this.unit_.speed_type}.png'/>
+        </div>
+        <div class='combatSymbol' style='position:absolute;top:48px;'>
+          <img class='characterCombatSymbolImg' src='../hcunits/images/cs_${this.unit_.attack_type}.png'/>
+        </div>
+        <div class='combatSymbol' style='position:absolute;top:72px;'>
+          <img class='characterCombatSymbolImg' src='../hcunits/images/cs_${this.unit_.defense_type}.png'/>
+        </div>
+        <div class='combatSymbol' style='position:absolute;top:96px;'>
+          <img class='characterCombatSymbolImg' src='../hcunits/images/cs_${this.unit_.damage_type}.png'/>
+        </div>
+        <table class='characterDialTable' style='width:${tableWidth}px'>`;
+    
       html += "<tr class='characterDialRow'>";
-      var currentClick = 0;
-      for (var col = 0; col < this.unit_.dial_size; ++col) {
-        if (currentClick < this.unit_.dial.length &&
-            col == this.unit_.dial[currentClick].click_number) {
-          var power = this.unit_.dial[currentClick][rowType + '_power'];
-          var value = this.unit_.dial[currentClick][rowType + '_value'];
-          if (power) {
-            var powerObj = POWER_LIST[power];
-            if (!powerObj) {
-              powerObj = {
-                name: 'Unknown power',
-                style: 'color:black; background-color: white; border: 2px solid red;',
-                description: power
-              }
-            }
-            html += `
-              <td class='unitDialEntry' style='${powerObj.style}'>
-                <div class='tooltip'>
-                  <div>${value}</div>
-                  <span class='tooltiptext'><b>${powerObj.name}</b>: ${escapeHtml(powerObj.description)}</span>
-                </div>
-              </td>`;
-          } else {
-            html += `<td class='unitDialEntry'>${value}</td>`;
-          }
-          ++currentClick;
-        } else {
-          html += "<td class='unitDialEntryKO'>KO</td>";
-        }
+      for (var col = tableCols[t].start; col < tableCols[t].end; ++col) {
+        html += `<th class='characterDialHeader'>${col + 1}</th>`;
       }
       html += "</tr>";
-    }
-    html += "</table>";
-
-    var currentLine = 0;
-    for (var col = 0; col < this.unit_.dial.length; ++col) {
-      if (this.unit_.dial[col].starting_line) {
-        var left = 31 + 23 * col;
-        var color = STARTING_LINE_COLORS[this.unit_.point_values.length][currentLine++];
-        html += `<div class='characterDialStartingLine' style='left: ${left}px; background-color: ${color}'></div>`
+      var currentClick;
+      for (var row = 0; row < 4; ++row) {
+        var rowType = ['speed', 'attack', 'defense', 'damage'][row];
+        html += "<tr class='characterDialRow'>";
+        currentClick = tableDialStart;
+        for (var col = tableCols[t].start; col < tableCols[t].end; ++col) {
+          if (currentClick < this.unit_.dial.length &&
+              col == this.unit_.dial[currentClick].click_number) {
+            var power = this.unit_.dial[currentClick][rowType + '_power'];
+            var value = this.unit_.dial[currentClick][rowType + '_value'];
+            if (power) {
+              var powerObj = POWER_LIST[power];
+              if (!powerObj) {
+                powerObj = {
+                  name: 'Unknown power',
+                  style: 'color:black; background-color: white; border: 2px solid red;',
+                  description: power
+                }
+              }
+              html += `
+                <td class='unitDialEntry' style='${powerObj.style}'>
+                  <div class='tooltip'>
+                    <div>${value}</div>
+                    <span class='tooltiptext'><b>${powerObj.name}</b>: ${escapeHtml(powerObj.description)}</span>
+                  </div>
+                </td>`;
+            } else {
+              html += `<td class='unitDialEntry'>${value}</td>`;
+            }
+            ++currentClick;
+          } else {
+            html += "<td class='unitDialEntryKO'>KO</td>";
+          }
+        }
+        html += "</tr>";
       }
+      html += "</table>";
+
+      // The end of the dial is indicated by the last click processed.
+      var tableDialEnd = currentClick;
+      var currentLine = 0;
+      for (var click = tableDialStart; click < tableDialEnd; ++click) {
+        if (this.unit_.dial[click].starting_line) {
+          var left = 31 + 23 * click;
+          var color = STARTING_LINE_COLORS[this.unit_.point_values.length][currentLine++];
+          html += `<div class='characterDialStartingLine' style='left: ${left}px; background-color: ${color}'></div>`
+        }
+      }
+      // Update the starting click for the next table.
+      tableDialStart = tableDialEnd;
+      html += "</div>"
     }
     return html;
   }

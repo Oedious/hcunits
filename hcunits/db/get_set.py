@@ -17,7 +17,8 @@ SET_MAP = {
   "btu": "Batman Team-Up",
   "av4e": "Avengers Forever",
   "hgpc": "Hellfire Gala Premium Collection",
-  "xmxssop": "X-Men: X of Swords Storyline Organized Play"
+  "xmxssop": "X-Men: X of Swords Storyline Organized Play",
+  "xmxs": "X-Men: X of Swords"
 }
 
 CACHE_DIR = ".cache"
@@ -407,19 +408,19 @@ class Unit:
     # Sanity-check the dimensions.
     if self.type == "character":
       if self.dimensions == "1x1" or self.dimensions == "1x2":
-        max_dial_size = 12
+        exptected_dial_size = 12
       elif self.dimensions == "2x2":
-        max_dial_size = 26
+        exptected_dial_size = 26
       elif self.dimensions == "2x4" or self.dimensions == "3x6":
-        max_dial_size = 20
+        exptected_dial_size = 20
       else:
         raise RuntimeError("Unknown dimensions for '%s': found '%s'" % (self.unit_id, self.dimensions))
-      if self.dial_size > max_dial_size:
-        print("Warning: for unit '%s', expected a max dial size of %d, but got %d" % (self.unit_id, max_dial_size, self.dial_size))
-        self.dial_size = max_dial_size
-      if len(self.dial) > max_dial_size:
-        print("Warning: for unit '%s', expected a max dial size of %s, but got %d" % (self.unit_id, max_dial_size, len(self.dial)))
-        self.dial = self.dial[:max_dial_size]
+      if self.dial_size != exptected_dial_size:
+        print("Warning: for unit '%s', expected a dial size of %d, but got %d" % (self.unit_id, exptected_dial_size, self.dial_size))
+        self.dial_size = exptected_dial_size
+      if len(self.dial) > exptected_dial_size:
+        print("Warning: for unit '%s', expected a max dial size of %s, but got %d" % (self.unit_id, exptected_dial_size, len(self.dial)))
+        self.dial = self.dial[:self.dial_size]
     elif self.type == "bystander" or self.type == "construct":
       if self.dimensions != "1x1":
         print("Warning: for unit '%s', expected 1x1 dimensions, but found '%s'" % (self.unit_id, self.dimensions))
