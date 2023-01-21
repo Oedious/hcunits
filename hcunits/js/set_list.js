@@ -14,7 +14,7 @@ const SET_LIST = {
     "release_date": "2022-11-09",
     "universe": "marvel"
   },
-  "xmxsop": {
+  "xmxssop": {
     "name": "X-Men: X of Swords Storyline Organized Play",
     "release_date": "2022-08-24",
     "universe": "marvel"

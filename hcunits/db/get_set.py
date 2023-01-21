@@ -16,7 +16,8 @@ from xml.sax.saxutils import escape
 SET_MAP = {
   "btu": "Batman Team-Up",
   "av4e": "Avengers Forever",
-  "hgpc": "Hellfire Gala Premium Collection"
+  "hgpc": "Hellfire Gala Premium Collection",
+  "xmxssop": "X-Men: X of Swords Storyline Organized Play"
 }
 
 CACHE_DIR = ".cache"
@@ -87,9 +88,7 @@ class Unit:
     unit_id_and_name = soup.find("td", class_="tcat").strong.string.strip().split(' ')
     self.unit_id = unit_id_and_name[0]
     self.name = " ".join(unit_id_and_name[1:])
-  
-    match_obj = re.search(self.set_id + r"(.*\d{3}[abcdt\.0-9]*)", unit_id)
-    self.collector_number = match_obj.group(1)
+    self.collector_number = self.unit_id[len(self.set_id):]
 
     # Determine the rarity and special type
     figure_rank_tag = soup.select_one("td[class^=figure_rank_]")
@@ -129,6 +128,11 @@ class Unit:
           self.type = "mystery_card"
         else:
           self.type = "id_card"
+      elif soup.find("td", class_="card_tarot_card"):
+        if soup.find(text=re.compile(r'\s*Mystery Card\s*')):
+          self.type = "mystery_card"
+        else:
+          self.type = "tarot_card"
       else:
         self.type = "character"
         self.special_type = figure_rank
@@ -156,7 +160,7 @@ class Unit:
       point_value_tag = soup.find("div", {"style": "float:right;padding-top:3px;"})
     elif self.type == "equipment" or self.type == "id_card" or self.type == "mystery_card":
       point_value_tag = soup.find("td", class_="tfoot")
-    elif self.type == "team_up":
+    elif self.type == "team_up" or self.type == "tarot_card":
       point_value_tag = None
     else:
       raise RuntimeError("Don't know how to decode points for unit type (%s)" % unit_id)
@@ -213,7 +217,10 @@ class Unit:
           if not attr.string:
             continue;
           attr = attr.strip()
-          if attr == "INDESTRUCTIBLE" or attr.startswith("EQUIP: ") or attr.startswith("UNEQUIP: "):
+          if (attr == "INDESTRUCTIBLE" or
+              attr.startswith("EQUIP: ") or
+              attr.startswith("UNEQUIP: ") or
+              attr == "Sword Equipment"):
             self.object_keyphrases.append(fix_style(attr))
           elif attr == "Light Object":
             object_type = "light"
@@ -246,8 +253,11 @@ class Unit:
 
     # Parse equipment
     if self.type == "id_card" or self.type == "mystery_card":
-      equip_tag = soup.find("td", class_="card_id_card").parent
-      tag_list = equip_tag.next_sibling.next_sibling.find_all("div")
+      equip_tag = soup.find("td", class_="card_id_card")
+      if not equip_tag:
+        equip_tag = soup.find("td", class_="card_tarot_card")
+        
+      tag_list = equip_tag.parent.next_sibling.next_sibling.find_all("div")
       if tag_list:
         tag = tag_list[0]
         # Skip the first item in the list if it's the keyword list.
@@ -266,12 +276,21 @@ class Unit:
               ("description", escape(name_tag.parent.next_sibling.strip()[2:]))
             ]))
 
+    # Parse tarot cards
+    if self.type == "tarot_card":
+      equip_tag = soup.find("td", class_="card_tarot_card").parent
+      desc_tag = equip_tag.next_sibling.next_sibling.find("div")
+      self.special_powers.append(OrderedDict([
+        ("type", "tarot_card"),
+        ("description", escape(desc_tag.string.strip()))
+      ]))
+
+    # Parse special powers
     if (self.type == "character" or
         self.type == "team_up" or
         self.type == "bystander" or
         self.type == "equipment" or
         self.type == "construct"):
-      # Parse special powers
       tag_list = soup.find_all(text=re.compile(r'\s*Special Powers\s*'))
       if len(tag_list) > 0:
         sp_tag = tag_list[0]
@@ -298,11 +317,6 @@ class Unit:
 
           # Skip the special power that describes a construct
           if self.type == "construct" and sp_name == "CONSTRUCTS":
-            continue
-          
-          # Avoid adding duplicates.
-          if [x for x in self.special_powers if x["name"] == sp_name]:
-            print("Skipping duplicate special power '%s' for '%s'" % (sp_name, self.unit_id))
             continue
           
           sp_description = td_tags[1].contents[2].strip()
@@ -336,7 +350,12 @@ class Unit:
                 sp["rally_type"] = td_tags[1].i.string.strip()[:-13].lower()
                 sp["rally_die"] = int(match_obj.group(1))
     
-            self.special_powers.append(sp)
+            # Avoid adding duplicates.
+            dupe = [x for x in self.special_powers if x["name"] == sp["name"]]
+            if dupe:
+              print("Skipping duplicate special power '%s' for '%s'" % (sp["name"], self.unit_id))
+            else:
+              self.special_powers.append(sp)
   
     if self.type == "character" or self.type == "bystander" or self.type == "construct":
       # Parse range and number of targets
@@ -613,13 +632,15 @@ if __name__ == "__main__":
       unit_page = fetcher.fetch_unit_page(unit_id);
       unit = Unit(args.set_id, dimensions)
       if unit.parse_unit_page(unit_page):
-        # Check for other units with the same unit ID and if so, merge point values.
-        main_unit = next((u for u in units if u.set_id == unit.set_id and u.collector_number == unit.collector_number and u.type == unit.type), None)
-        if (main_unit):
-          # Try to merge the units together and mark the current unit as invalid
-          # so that it's not appending to the list below.
-          if main_unit.merge_point_values(unit):
-            unit = None
+        # If the unit ID ends in 'r', 'e', or 'v', check for other units with
+        # similar same unit ID and if so, merge point values.
+        if unit.unit_id.endswith(('r', 'e', 'v', 'x')):
+          main_unit = next((u for u in units if u.unit_id == unit.unit_id[:-1] and u.type == unit.type), None)
+          if (main_unit):
+            # Try to merge the units together and mark the current unit as invalid
+            # so that it's not appending to the list below.
+            if main_unit.merge_point_values(unit):
+              unit = None
 
         elif unit.type == "team_up":
           # Find the associated unit and create a new unit from that by copying

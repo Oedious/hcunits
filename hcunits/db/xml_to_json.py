@@ -6,11 +6,10 @@ from collections import OrderedDict
 
 if __name__ == "__main__":
   parser = argparse.ArgumentParser()
-  parser.add_argument("--xml_file", help="The XML file to read as input", required=True)
-  parser.add_argument("--json_file", help="The JSON file to write as output", required=True)
+  parser.add_argument("--set_id", help="The set ID to convert", required=True)
   args = parser.parse_args()
 
-  with open(args.xml_file) as xml_file:
+  with open("set_%s.xml" % args.set_id) as xml_file:
     xml_list = xmltodict.parse(xml_file.read(), force_list={"row"})
 
   json_list = []
@@ -26,5 +25,5 @@ if __name__ == "__main__":
     unit["dial"] = json.loads(unit["dial"], object_pairs_hook=OrderedDict)
     json_list.append(unit)
 
-  with open(args.json_file, "w") as json_file:
+  with open("set_%s.json" % args.set_id, "w") as json_file:
     json_file.write(json.dumps(json_list, indent=2))

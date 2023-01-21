@@ -12,6 +12,10 @@ const RALLY_TYPE_TO_STYLE = {
 
 class CharacterView extends UnitView {
 
+  static isType(type) {
+    return type  == "character";
+  }
+
   constructor(unitJson) {
     super(unitJson)
     this.extraLines_ = 0;
@@ -67,8 +71,8 @@ class CharacterView extends UnitView {
   		} else {
   			html += ', ';
   		}
-  		keyword = escapeHtml(keyword);
-  		var atag = `<a href='' class='characterKeyword' onclick='mgr.searchByKeyword("${keyword}"); return false;'>${keyword}</a>`;;
+  		var escapedKeyword = escapeHtml(keyword);
+  		var atag = `<a href='' class='characterKeyword' onclick='mgr.searchByKeyword("${escapedKeyword}"); return false;'>${escapedKeyword}</a>`;;
   		var isGeneric = (KEYWORD_LIST[keyword] == "generic");
   		if (isGeneric) {
   		  html += `<em>${atag}</em>`;

@@ -16,6 +16,10 @@ const OBJECT_TYPE_RULES = {
     "name": "Mystery Card",
     "title": "MYSTERY CARD",
     "description": "During force construction, you may include any number of Mystery Cards on your Sideline. All Mystery Cards are UNIQUE.<br><br>Each Mystery Card has a list of keywords and a CLUE EFFECT that allows that card to gain Clue tokens. When a CLUE EFFECT is triggered, place a Clue token on that card. If multiple Mystery Cards have the same named CLUE EFFECT, you may only place a Clue token on one of those cards when that named CLUE EFFECT is triggered.<br><br>Each Mystery Card has effects that may be used while the number of Clue tokens on that card is equal to or greater than the number listed in parenthesis next to that effect. All CLUE EFFECTS and named effects have SIDELINE ACTIVE."
+  },
+  "tarot_card": {
+    "name": "Tarot Card",
+    "title": "TAROT CARD",
   }
 }
 
@@ -39,6 +43,10 @@ const OBJECT_KEYPHRASE_RULES = {
   "unequip_drop": {
     "name": "UNEQUIP: DROP",
     "description": "When unequipped, place this equipment in the previously equipped character's square."
+  },
+  "sword_equipment": {
+    "name": "SWORD EQUIPMENT",
+    "description": "Applies to the 'SWORD BEARER' trait."
   }
 }
 
@@ -66,6 +74,15 @@ const OBJECT_TYPE_TO_INFO = {
 };
 
 class ObjectView extends UnitView {
+  
+  static isType(type) {
+    return type == "bystander" ||
+           type == "equipment" ||
+           type == "construct" ||
+           type == "id_card" ||
+           type == "mystery_card" ||
+           type == "tarot_card"
+  }
 
   constructor(unitJson) {
     super(unitJson)
@@ -89,6 +106,12 @@ class ObjectView extends UnitView {
   	document.getElementById('unitContainer').innerHTML = html;
   }
   
+  isCardType_() {
+    return this.unit_.type == "mystery_card" ||
+        this.unit_.type == "id_card" ||
+        this.unit_.type == "tarot_card"
+  }
+  
   getCardHeight_() {
     const MIN_CARD_HEIGHT = 412;
     const PIXELS_PER_LINE = 14;
@@ -97,7 +120,7 @@ class ObjectView extends UnitView {
     // The minimum number of lines varies on whether we show the "Point Value"
     // bar or not.
     var minLines = 16;
-    var hasToken = !(this.unit_.type == "mystery_card" || this.unit_.type == "id_card")
+    var hasToken = !this.isCardType_()
     if (hasToken) {
       minLines -= 8;
     }
@@ -108,8 +131,10 @@ class ObjectView extends UnitView {
     var numLines = 0;
     if (this.unit_.special_powers) {
       for (var specialPower of this.unit_.special_powers) {
-        numLines += Math.ceil(specialPower.name.length / CHARS_PER_NAME_LINE) +
-            Math.ceil(specialPower.description.length / CHARS_PER_DESC_LINE) + 1;
+        if (specialPower.name) {
+          numLines += Math.ceil(specialPower.name.length / CHARS_PER_NAME_LINE)
+        }
+        numLines += Math.ceil(specialPower.description.length / CHARS_PER_DESC_LINE) + 1;
       }
       // Don't need an extra line at the end.
       --numLines;
@@ -188,7 +213,7 @@ class ObjectView extends UnitView {
       return this.drawBystander_();
     } else if (this.unit_.type == "object" || this.unit_.type == "equipment" || this.unit_.type == "relic") {
       return this.drawObject_();
-    } else if (this.unit_.type == "id_card" || this.unit_.type == "mystery_card") {
+    } else if (this.isCardType_()) {
       return ""
     } else {
       console.log(`Cannot draw object token for unknown type '${this.unit_.type}'`);
@@ -282,7 +307,7 @@ class ObjectView extends UnitView {
       html += this.drawKeywords_();
       html += "</div>"
     }
-    var top = (this.unit_.type == "mystery_card" || this.unit_.type == "id_card") ? 100 : 285;
+    var top = this.isCardType_() ? 100 : 288;
     html += `<table id='objectSpecialPowersTable' class='unitSpecialPowersTable' style='top:${top}px;'>`;
     for (var i = 0; i < this.unit_.special_powers.length; ++i) {
       var power = this.unit_.special_powers[i];
@@ -303,7 +328,7 @@ class ObjectView extends UnitView {
               <img class='unitSpecialPowerRallyDie' src='../hcunits/images/d6_${power.rally_die}.png' alt='${power.rally_die}'/>
             </div>
           </td>`;
-      } else if (type == "equipment" || type == "mystery_card") {
+      } else if (type == "equipment" || type == "mystery_card" || type == "tarot_card") {
         // Don't use an icon.
         iconHtml = ""
       } else {
@@ -316,10 +341,14 @@ class ObjectView extends UnitView {
             <img class='unitSpecialPowerIcon' src='../hcunits/images/sp_${combatSymbolType}.png' alt=''/>
           </td>`;
       }
+      var nameHtml = ""
+      if (power.name) {
+        nameHtml = `<b>${escapeHtml(power.name.toUpperCase())}</b><br>`
+      }
       html += `
         <tr class='unitSpecialPowerRow'>
           ${iconHtml}
-          <td class='unitSpecialPower'><b>${escapeHtml(power.name.toUpperCase())}</b><br>${escapeHtml(power.description)}</td>
+          <td class='unitSpecialPower'>${name}${escapeHtml(power.description)}</td>
         </tr>`;
     }
     return html;

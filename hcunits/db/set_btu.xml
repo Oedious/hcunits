@@ -13121,6 +13121,39 @@
     <dial>[]</dial>
   </row>
   <row>
+    <unit_id>btuMC003</unit_id>
+    <set_id>btu</set_id>
+    <collector_number>MC003</collector_number>
+    <name>Which Witch Is Which?</name>
+    <type>mystery_card</type>
+    <age>modern</age>
+    <rarity>rare</rarity>
+    <point_values>[]</point_values>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Detective", "Mystery Inc."]</keywords>
+    <special_powers>[
+  {
+    "type": "mystery_card", 
+    "name": "CLUE EFFECT: Scooby Gang", 
+    "description": "When a friendly character with a listed keyword uses Perplex to target an opposing character, after resolutions gain 1 Clue token."
+  }, 
+  {
+    "type": "mystery_card", 
+    "name": "SUSPECT (3)", 
+    "description": "Once per turn, when an opposing character uses Shape Change, you may reroll the result."
+  }, 
+  {
+    "type": "mystery_card", 
+    "name": "CASE CLOSED (9)", 
+    "description": "When an opposing character is knocked back, after resolutions deal that character 1 penetrating damage."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <dial>[]</dial>
+  </row>
+  <row>
     <unit_id>btuMC004</unit_id>
     <set_id>btu</set_id>
     <collector_number>MC004</collector_number>
@@ -13184,6 +13217,39 @@
     "type": "mystery_card", 
     "name": "CASE CLOSED (9)", 
     "description": "Friendly characters have Mystics team ability. If they have the Mystery Inc. keyword, when they use it, the damage dealt is unavoidable instead."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <dial>[]</dial>
+  </row>
+  <row>
+    <unit_id>btuMC006</unit_id>
+    <set_id>btu</set_id>
+    <collector_number>MC006</collector_number>
+    <name>Murder in the City Enduring</name>
+    <type>mystery_card</type>
+    <age>modern</age>
+    <rarity>rare</rarity>
+    <point_values>[]</point_values>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Detective", "Green Lantern Corps"]</keywords>
+    <special_powers>[
+  {
+    "type": "mystery_card", 
+    "name": "CLUE EFFECT: Lantern Corps", 
+    "description": "During your turn, when a friendly character with a listed keyword has one or more action tokens removed, after resolutions gain 1 Clue token."
+  }, 
+  {
+    "type": "mystery_card", 
+    "name": "SUSPECT (6)", 
+    "description": "Friendly characters have SAFEGUARD: opposing Perplex, opposing Probability Control."
+  }, 
+  {
+    "type": "mystery_card", 
+    "name": "CASE CLOSED (9)", 
+    "description": "When this effect first becomes active, choose a friendly character with a listed keyword. This game, the chosen character modifies its combat values +1 and has Cosmic Energy team ability."
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
