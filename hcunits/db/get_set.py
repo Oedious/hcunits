@@ -124,6 +124,11 @@ class Unit:
           self.type = "construct"
       elif soup.find("td", class_="card_special_object"):
         self.type = "equipment"
+      elif soup.find("td", class_="card_id_card"):
+        if soup.find(text=re.compile(r'\s*Mystery Card\s*')):
+          self.type = "mystery_card"
+        else:
+          self.type = "id_card"
       else:
         self.type = "character"
         self.special_type = figure_rank
@@ -133,7 +138,7 @@ class Unit:
           if is_team_up:
             self.type = "team_up"
           else:
-            has_parent = has_parent = soup.find(text=re.compile(r'\s*Inventory options for this figure are controlled by the main/parent unit.\s*'))
+            has_parent = soup.find(text=re.compile(r'\s*Inventory options for this figure are controlled by the main/parent unit.\s*'))
             if has_parent:
               # We just skip these as they'll be accounted for in the unit itself.
               print("Skipping costed trait %s" % (self.unit_id))
@@ -149,25 +154,28 @@ class Unit:
 
     if self.type == "character" or self.type == "bystander" or self.type == "construct":
       point_value_tag = soup.find("div", {"style": "float:right;padding-top:3px;"})
-    elif self.type == "equipment":
+    elif self.type == "equipment" or self.type == "id_card" or self.type == "mystery_card":
       point_value_tag = soup.find("td", class_="tfoot")
     elif self.type == "team_up":
       point_value_tag = None
     else:
       raise RuntimeError("Don't know how to decode points for unit type (%s)" % unit_id)
   
+    # Parse point value.
     if point_value_tag:
       point_value_str = point_value_tag.string.strip()
       if point_value_str and len(point_value_str) > 0:
-        self.point_values.append(int(point_value_str.split(' ')[0]))
+        point_value = int(point_value_str.split(' ')[0])
+        if point_value > 0:
+          self.point_values.append(point_value)
 
     # The set ID is the first non-numeric parts of the unit_id
     if self.type == "character":
       # Parse the real_name field.
       self.real_name = soup.select_one("span[onclick^=showRealName]").string.strip()
   
+    # Parse team abilities
     if self.type == "character" or self.type == "bystander" or self.type == "construct":
-      # Parse team abilities
       tag_list = soup.select("span[onclick^=showQuickSearch]")
       for tag in tag_list:
         match_obj = re.search(r"showQuickSearch\('(.*)','team_ability'\)", tag['onclick'])
@@ -180,12 +188,17 @@ class Unit:
             team_ability = "wonder_woman_ally"
           self.team_abilities.append(fix_style(team_ability).replace('.', ''))
     
-    if self.type == "character" or self.type == "bystander" or self.type == "equipment":
-      # Parse keywords
+    # Parse keywords
+    if (self.type == "character" or
+        self.type == "bystander" or
+        self.type == "equipment" or
+        self.type == "id_card" or
+        self.type == "mystery_card"):
       tag_list = soup.select("span[onclick^=showByKeywordId]")
       for tag in tag_list:
         self.keywords.append(tag.string.strip())
-        
+
+    # Parse equipment special powers
     if self.type == "equipment":
       equip_tag = soup.find("td", class_="card_special_object").parent
       tag_list = equip_tag.next_sibling.next_sibling.find_all("div")
@@ -195,7 +208,6 @@ class Unit:
         if tag.strong:
           tag = tag_list[1]
 
-        # TODO: Figure out why tag.string isn't giving me the contents of the div, which I need to iterate over.
         for attr in tag.children:
           # Ignore non-strings.
           if not attr.string:
@@ -231,6 +243,28 @@ class Unit:
                 ]))
             else:
               print("Skipping unknown object attribute '%s'" % attr)
+
+    # Parse equipment
+    if self.type == "id_card" or self.type == "mystery_card":
+      equip_tag = soup.find("td", class_="card_id_card").parent
+      tag_list = equip_tag.next_sibling.next_sibling.find_all("div")
+      if tag_list:
+        tag = tag_list[0]
+        # Skip the first item in the list if it's the keyword list.
+        if tag.strong:
+          tag = tag_list[1]
+
+        for name in [r'\CLUE EFFECT: .*\s',
+                     r'\sSUSPECT \(\d\)\s',
+                     r'\sEVIDENCE \(\d\)\s',
+                     r'\sCASE CLOSED \(\d\)\s']:
+          name_tag = tag.find(text=re.compile(name))
+          if name_tag:
+            self.special_powers.append(OrderedDict([
+              ("type", "mystery_card"),
+              ("name", escape(name_tag.strip())),
+              ("description", escape(name_tag.parent.next_sibling.strip()[2:]))
+            ]))
 
     if (self.type == "character" or
         self.type == "team_up" or

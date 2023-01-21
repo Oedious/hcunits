@@ -1476,7 +1476,7 @@
   {
     "unit_id": "btu013bt", 
     "set_id": "btu", 
-    "collector_number": "013b", 
+    "collector_number": "013bt", 
     "name": "Clayface Duplicate", 
     "type": "bystander", 
     "age": "modern", 
@@ -4759,7 +4759,7 @@
   {
     "unit_id": "btu032bt", 
     "set_id": "btu", 
-    "collector_number": "032b", 
+    "collector_number": "032bt", 
     "name": "Negative Spirit", 
     "type": "bystander", 
     "age": "modern", 
@@ -6527,7 +6527,8 @@
     "real_name": "Arthur Curry", 
     "dimensions": "1x1", 
     "point_values": [
-      100
+      100, 
+      50
     ], 
     "team_abilities": [
       "justice_league"
@@ -6610,7 +6611,8 @@
         "defense_power": "invulnerability", 
         "defense_value": 18, 
         "damage_power": "special", 
-        "damage_value": 3
+        "damage_value": 3, 
+        "starting_line": true
       }, 
       {
         "click_number": 4, 
@@ -6669,7 +6671,8 @@
     "real_name": "Arthur Curry", 
     "dimensions": "1x1", 
     "point_values": [
-      100
+      100, 
+      50
     ], 
     "team_abilities": [
       "justice_league"
@@ -6757,7 +6760,8 @@
         "defense_power": "invulnerability", 
         "defense_value": 18, 
         "damage_power": "special", 
-        "damage_value": 3
+        "damage_value": 3, 
+        "starting_line": true
       }, 
       {
         "click_number": 4, 
@@ -6808,7 +6812,7 @@
   {
     "unit_id": "btu043bt", 
     "set_id": "btu", 
-    "collector_number": "043b", 
+    "collector_number": "043bt", 
     "name": "Tentacle", 
     "type": "bystander", 
     "age": "modern", 
@@ -6847,115 +6851,6 @@
         "speed_value": 0, 
         "attack_power": "special", 
         "attack_value": 10, 
-        "defense_value": 17, 
-        "damage_power": "empower", 
-        "damage_value": 2
-      }
-    ]
-  }, 
-  {
-    "unit_id": "btu043v", 
-    "set_id": "btu", 
-    "collector_number": "043", 
-    "name": "Aquaman", 
-    "type": "character", 
-    "age": "modern", 
-    "rarity": "rare", 
-    "real_name": "Arthur Curry", 
-    "dimensions": "1x1", 
-    "point_values": [
-      50
-    ], 
-    "team_abilities": [
-      "justice_league"
-    ], 
-    "keywords": [
-      "Atlantis", 
-      "Justice League", 
-      "Monster", 
-      "Ruler", 
-      "Warrior"
-    ], 
-    "special_powers": [
-      {
-        "type": "trait", 
-        "name": "THE KING OF THE SEVEN SEAS", 
-        "description": "At the beginning of the game generate 7 water terrain markers anywhere on the map."
-      }, 
-      {
-        "type": "trait", 
-        "name": "THE KING USED THE CONCH", 
-        "description": "Leadership. When Aquaman uses it and succeeds, after resolutions you may generate a water terrain marker in a square within range -or- generate a Tentacle bystander [MAX 8] in a square of water terrain within range. If a 6 was rolled, you may generate both."
-      }, 
-      {
-        "type": "damage", 
-        "name": "THIS IS A MONARCHY...AND I RULE", 
-        "description": "Close Combat Expert, Empower. When Aquaman uses Empower, he may treat friendly characters with Dolphin movement symbol occupying water terrain as adjacent."
-      }
-    ], 
-    "improved_movement": [], 
-    "improved_targeting": [], 
-    "object_keyphrases": [], 
-    "unit_range": "4", 
-    "targets": "1", 
-    "speed_type": "dolphin", 
-    "attack_type": "fist", 
-    "defense_type": "indomitable", 
-    "damage_type": "starburst", 
-    "dial_size": "12", 
-    "dial": [
-      {
-        "click_number": 0, 
-        "starting_line": true, 
-        "speed_power": "charge", 
-        "speed_value": 8, 
-        "attack_power": "super_strength", 
-        "attack_value": 10, 
-        "defense_power": "invulnerability", 
-        "defense_value": 18, 
-        "damage_power": "special", 
-        "damage_value": 3
-      }, 
-      {
-        "click_number": 1, 
-        "speed_power": "charge", 
-        "speed_value": 8, 
-        "attack_power": "super_strength", 
-        "attack_value": 10, 
-        "defense_power": "invulnerability", 
-        "defense_value": 17, 
-        "damage_power": "special", 
-        "damage_value": 3
-      }, 
-      {
-        "click_number": 2, 
-        "speed_power": "charge", 
-        "speed_value": 8, 
-        "attack_power": "blades_claws_fangs", 
-        "attack_value": 10, 
-        "defense_power": "combat_reflexes", 
-        "defense_value": 17, 
-        "damage_power": "empower", 
-        "damage_value": 3
-      }, 
-      {
-        "click_number": 3, 
-        "speed_power": "charge", 
-        "speed_value": 8, 
-        "attack_power": "blades_claws_fangs", 
-        "attack_value": 10, 
-        "defense_power": "combat_reflexes", 
-        "defense_value": 17, 
-        "damage_power": "empower", 
-        "damage_value": 2
-      }, 
-      {
-        "click_number": 4, 
-        "speed_power": "charge", 
-        "speed_value": 6, 
-        "attack_power": "blades_claws_fangs", 
-        "attack_value": 10, 
-        "defense_power": "combat_reflexes", 
         "defense_value": 17, 
         "damage_power": "empower", 
         "damage_value": 2
@@ -14334,6 +14229,259 @@
         "damage_value": 2
       }
     ]
+  }, 
+  {
+    "unit_id": "btuMC001", 
+    "set_id": "btu", 
+    "collector_number": "MC001", 
+    "name": "String of Cat Burglaries", 
+    "type": "mystery_card", 
+    "age": "modern", 
+    "rarity": "rare", 
+    "point_values": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Batman Family", 
+      "Detective"
+    ], 
+    "special_powers": [
+      {
+        "type": "mystery_card", 
+        "name": "CLUE EFFECT: Gotham Knights", 
+        "description": "When a friendly character with a listed keyword occupying hindering terrain hits one or more characters, after resolutions gain 1 Clue token."
+      }, 
+      {
+        "type": "mystery_card", 
+        "name": "SUSPECT (3)", 
+        "description": "When a friendly character attacks one or more equipped opposing characters, modify their attack and damage +1."
+      }, 
+      {
+        "type": "mystery_card", 
+        "name": "CASE CLOSED (9)", 
+        "description": "Friendly characters have \"POWER: Choose an adjacent equipped opposing character. Unequip that character and this character may immediately equip that equipment.\""
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "dial": []
+  }, 
+  {
+    "unit_id": "btuMC002", 
+    "set_id": "btu", 
+    "collector_number": "MC002", 
+    "name": "The Man Who Laughs", 
+    "type": "mystery_card", 
+    "age": "modern", 
+    "rarity": "rare", 
+    "point_values": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Batman Family", 
+      "Detective"
+    ], 
+    "special_powers": [
+      {
+        "type": "mystery_card", 
+        "name": "CLUE EFFECT: Gotham Knights", 
+        "description": "When a friendly character with a listed keyword occupying hindering terrain hits one or more characters, after resolutions gain 1 Clue token."
+      }, 
+      {
+        "type": "mystery_card", 
+        "name": "SUSPECT (3)", 
+        "description": "When a friendly character attacks, opposing characters can't use Mastermind."
+      }, 
+      {
+        "type": "mystery_card", 
+        "name": "CASE CLOSED (9)", 
+        "description": "When a friendly character would take damage, if it's not from an attack, roll a d6. 4-6: They take no damage instead."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "dial": []
+  }, 
+  {
+    "unit_id": "btuMC004", 
+    "set_id": "btu", 
+    "collector_number": "MC004", 
+    "name": "Foul Play in Funland", 
+    "type": "mystery_card", 
+    "age": "modern", 
+    "rarity": "rare", 
+    "point_values": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Detective", 
+      "Mystery Inc."
+    ], 
+    "special_powers": [
+      {
+        "type": "mystery_card", 
+        "name": "CLUE EFFECT: Scooby Gang", 
+        "description": "When a friendly character with a listed keyword uses Perplex to target an opposing character, after resolutions gain 1 Clue token."
+      }, 
+      {
+        "type": "mystery_card", 
+        "name": "SUSPECT (3)", 
+        "description": "Friendly characters can use Shape Change, but only succeed on a 6.."
+      }, 
+      {
+        "type": "mystery_card", 
+        "name": "CASE CLOSED (9)", 
+        "description": "When a friendly character uses Shape Change and succeeds, after resolutions heal them 1 click."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "dial": []
+  }, 
+  {
+    "unit_id": "btuMC005", 
+    "set_id": "btu", 
+    "collector_number": "MC005", 
+    "name": "The Chest of Demons", 
+    "type": "mystery_card", 
+    "age": "modern", 
+    "rarity": "rare", 
+    "point_values": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Detective", 
+      "Mystery Inc."
+    ], 
+    "special_powers": [
+      {
+        "type": "mystery_card", 
+        "name": "CLUE EFFECT: Scooby Gang", 
+        "description": "When a friendly character with a listed keyword uses Perplex to target an opposing character, after resolutions gain 1 Clue token."
+      }, 
+      {
+        "type": "mystery_card", 
+        "name": "SUSPECT (3)", 
+        "description": "Friendly characters can use Plasticity."
+      }, 
+      {
+        "type": "mystery_card", 
+        "name": "EVIDENCE (6)", 
+        "description": "Friendly characters have SAFEGUARD: Mystics team ability, Mind Control."
+      }, 
+      {
+        "type": "mystery_card", 
+        "name": "CASE CLOSED (9)", 
+        "description": "Friendly characters have Mystics team ability. If they have the Mystery Inc. keyword, when they use it, the damage dealt is unavoidable instead."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "dial": []
+  }, 
+  {
+    "unit_id": "btuMC008", 
+    "set_id": "btu", 
+    "collector_number": "MC008", 
+    "name": "Super Hero Summer Camp", 
+    "type": "mystery_card", 
+    "age": "modern", 
+    "rarity": "limited_edition", 
+    "point_values": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Detective", 
+      "Pirate", 
+      "Teen Titans"
+    ], 
+    "special_powers": [
+      {
+        "type": "mystery_card", 
+        "name": "CLUE EFFECT: Teen Titans Go!", 
+        "description": "When a friendly character with a listed keyword hits one or more opposing characters, after resolutions gain 1 Clue token."
+      }, 
+      {
+        "type": "mystery_card", 
+        "name": "SUSPECT (3)", 
+        "description": "Friendly characters have Dolphin movement symbol."
+      }, 
+      {
+        "type": "mystery_card", 
+        "name": "EVIDENCE (6)", 
+        "description": "When a friendly character hits, after resolutions they may generate a water terrain marker in their square."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "dial": []
+  }, 
+  {
+    "unit_id": "btuMC009", 
+    "set_id": "btu", 
+    "collector_number": "MC009", 
+    "name": "Unlocking Raven's Spellbook", 
+    "type": "mystery_card", 
+    "age": "modern", 
+    "rarity": "limited_edition", 
+    "point_values": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Detective", 
+      "Teen Titans"
+    ], 
+    "special_powers": [
+      {
+        "type": "mystery_card", 
+        "name": "CLUE EFFECT: Teen Titans Go!", 
+        "description": "When a friendly character with a listed keyword hits one or more opposing characters, after resolutions gain 1 Clue token."
+      }, 
+      {
+        "type": "mystery_card", 
+        "name": "CASE CLOSED (9)", 
+        "description": "Each opposing character can only be given 1 FREE action during their turn."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "dial": []
+  }, 
+  {
+    "unit_id": "btuMC010", 
+    "set_id": "btu", 
+    "collector_number": "MC010", 
+    "name": "The Planispheric Disk", 
+    "type": "mystery_card", 
+    "age": "modern", 
+    "rarity": "limited_edition", 
+    "point_values": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Detective", 
+      "Mystery Inc."
+    ], 
+    "special_powers": [
+      {
+        "type": "mystery_card", 
+        "name": "CLUE EFFECT: Scooby Gang", 
+        "description": "When a friendly character with a listed keyword uses Perplex to target an opposing character, after resolutions gain 1 Clue token."
+      }, 
+      {
+        "type": "mystery_card", 
+        "name": "SUSPECT (3)", 
+        "description": "Friendly characters can use Improved Movement: Elevated."
+      }, 
+      {
+        "type": "mystery_card", 
+        "name": "CASE CLOSED (9)", 
+        "description": "At the beginning of your turn, you may choose a friendly character and roll a d6. Move the chosen character up to the result."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "dial": []
   }, 
   {
     "unit_id": "btus001", 

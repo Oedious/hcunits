@@ -1,11 +1,21 @@
 const OBJECT_TYPE_RULES = {
+  "bystander": {
+    "name": "Bystander",
+  },
   "construct": {
-    "name": "CONSTRUCT",
-    "description": "Immediately KO this Construct if it is not within 6 squares of the character that generated it. // Constructs do not block line of fire, do not require opposing characters to break away, and opposing characters don't stop moving when they become adjacent to a Construct. Constructs can't be chosen for Mastermind or have their combat values modified by other characters."
+    "name": "Construct",
+    "title": "CONSTRUCT",
+    "description": "Immediately KO this Construct if it is not within 6 squares of the character that generated it.<br>// Constructs do not block line of fire, do not require opposing characters to break away, and opposing characters don't stop moving when they become adjacent to a Construct. Constructs can't be chosen for Mastermind or have their combat values modified by other characters."
   },
   "equipment": {
-    "name": "EQUIPMENT",
+    "name": "Equipment",
+    "title": "EQUIPMENT",
     "description": "A character that's equipped with this object can use its EFFECT."
+  },
+  "mystery_card": {
+    "name": "Mystery Card",
+    "title": "MYSTERY CARD",
+    "description": "During force construction, you may include any number of Mystery Cards on your Sideline. All Mystery Cards are UNIQUE.<br><br>Each Mystery Card has a list of keywords and a CLUE EFFECT that allows that card to gain Clue tokens. When a CLUE EFFECT is triggered, place a Clue token on that card. If multiple Mystery Cards have the same named CLUE EFFECT, you may only place a Clue token on one of those cards when that named CLUE EFFECT is triggered.<br><br>Each Mystery Card has effects that may be used while the number of Clue tokens on that card is equal to or greater than the number listed in parenthesis next to that effect. All CLUE EFFECTS and named effects have SIDELINE ACTIVE."
   }
 }
 
@@ -81,12 +91,20 @@ class ObjectView extends UnitView {
   
   getCardHeight_() {
     const MIN_CARD_HEIGHT = 412;
-    // The minimum number of lines varies on whether we show the "Point Value"
-    // bar or not.
-    const MIN_LINES = this.unit_.point_values.length > 0 ? 5 : 8;
     const PIXELS_PER_LINE = 14;
     const CHARS_PER_NAME_LINE = 40;
     const CHARS_PER_DESC_LINE = 50;
+    // The minimum number of lines varies on whether we show the "Point Value"
+    // bar or not.
+    var minLines = 16;
+    var hasToken = !(this.unit_.type == "mystery_card" || this.unit_.type == "id_card")
+    if (hasToken) {
+      minLines -= 8;
+    }
+    var hasPointValue = this.unit_.point_values.length > 0
+    if (hasPointValue) {
+      minLines -= 3;
+    }
     var numLines = 0;
     if (this.unit_.special_powers) {
       for (var specialPower of this.unit_.special_powers) {
@@ -96,7 +114,7 @@ class ObjectView extends UnitView {
       // Don't need an extra line at the end.
       --numLines;
     }
-    var extraLines = Math.max(0, numLines - MIN_LINES);
+    var extraLines = Math.max(0, numLines - minLines);
     return MIN_CARD_HEIGHT + PIXELS_PER_LINE * extraLines;
   }
   
@@ -106,23 +124,17 @@ class ObjectView extends UnitView {
     var objectTypeName;
     if (this.unit_.object_type) {
       objectTypeName = OBJECT_TYPE_TO_INFO[this.unit_.object_type].name;
-    } else if (this.unit_.type == "construct") {
-      objectTypeName = "Construct";
-    } else if (this.unit_.type == "bystander") {
-      objectTypeName = "Bystander";
-    } else if (this.unit_.type == "equipment") {
-      objectTypeName = "Equipment";
-    } else if (this.unit_.type == "relic") {
-      objectTypeName = "Relic";
+    } else if (rules) {
+      objectTypeName = rules.name;
     } else {
       objectTypeName = this.unit_.type;
     }
-    if (rules) {
+    if (rules && rules.description) {
       html = `
         <div id='objectType'>
           <div class='tooltip'>
             <i>${objectTypeName}</i>
-            <span class='tooltiptext'><b>${rules.name}</b>: ${escapeHtml(rules.description)}</span>
+            <span class='tooltiptext'><b>${rules.name}</b>: ${rules.description}</span>
           </div>
         </div>`;
     } else {
@@ -136,17 +148,7 @@ class ObjectView extends UnitView {
       return "";
     }
     var html = "<div id='objectKeyphrases'>";
-    if (this.unit_.keywords.length > 0) {
-      html += "<div><b>KEYWORDS: ";
-      for (var i = 0; i < this.unit_.keywords.length; ++i) {
-        if (i != 0) {
-          html += ", "
-        }
-    		var escapedKeyword = escapeHtml(this.unit_.keywords[i]);
-    		html += `<a href='' style='color:black;' onclick='mgr.searchByKeyword("${escapedKeyword}"); return false;'>${escapedKeyword.toUpperCase()}</a>`;
-      }
-      html += "</b></div>"
-    }
+    html += this.drawKeywords_();
     for (var keyphrase of this.unit_.object_keyphrases) {
       var rules = OBJECT_KEYPHRASE_RULES[keyphrase];
       if (!rules) {
@@ -165,11 +167,29 @@ class ObjectView extends UnitView {
     return html;
   }
   
+  drawKeywords_() {
+    if (this.unit_.keywords.length == 0) {
+      return "";
+    }
+    var html = "<div><b>KEYWORDS: ";
+    for (var i = 0; i < this.unit_.keywords.length; ++i) {
+      if (i != 0) {
+        html += ", "
+      }
+  		var escapedKeyword = escapeHtml(this.unit_.keywords[i]);
+  		html += `<a href='' style='color:black;' onclick='mgr.searchByKeyword("${escapedKeyword}"); return false;'>${escapedKeyword.toUpperCase()}</a>`;
+    }
+    html += "</b></div>"
+    return html;
+  }
+  
   drawToken_() {
     if (this.unit_.type == "bystander" || this.unit_.type == "construct") {
       return this.drawBystander_();
     } else if (this.unit_.type == "object" || this.unit_.type == "equipment" || this.unit_.type == "relic") {
       return this.drawObject_();
+    } else if (this.unit_.type == "id_card" || this.unit_.type == "mystery_card") {
+      return ""
     } else {
       console.log(`Cannot draw object token for unknown type '${this.unit_.type}'`);
       return ""
@@ -256,7 +276,14 @@ class ObjectView extends UnitView {
     if (!this.unit_.special_powers) {
       return '';
     }
-    var html = "<table id='objectSpecialPowersTable' class='unitSpecialPowersTable'>";
+    var html = "";
+    if (this.unit_.type == "mystery_card") {
+      html += "<div id='objectCardKeywords'>"
+      html += this.drawKeywords_();
+      html += "</div>"
+    }
+    var top = (this.unit_.type == "mystery_card" || this.unit_.type == "id_card") ? 100 : 285;
+    html += `<table id='objectSpecialPowersTable' class='unitSpecialPowersTable' style='top:${top}px;'>`;
     for (var i = 0; i < this.unit_.special_powers.length; ++i) {
       var power = this.unit_.special_powers[i];
       var type = power.type;
@@ -276,7 +303,7 @@ class ObjectView extends UnitView {
               <img class='unitSpecialPowerRallyDie' src='../hcunits/images/d6_${power.rally_die}.png' alt='${power.rally_die}'/>
             </div>
           </td>`;
-      } else if (type == "equipment") {
+      } else if (type == "equipment" || type == "mystery_card") {
         // Don't use an icon.
         iconHtml = ""
       } else {

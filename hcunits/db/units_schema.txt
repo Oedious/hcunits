@@ -22,7 +22,7 @@ CREATE TABLE wp_units (
   name TEXT(128) NOT NULL,
 
   -- The type of the unit.
-  type ENUM('character', 'object', 'map', 'battlefield_condition', 'event_dial', 'resource', 'equipment', 'terrain', 'bystander', 'tarot_card', 'relic', 'construct', 'case_file') NOT NULL,
+  type ENUM('character', 'object', 'map', 'battlefield_condition', 'event_dial', 'resource', 'equipment', 'terrain', 'bystander', 'tarot_card', 'relic', 'construct', 'mystery_card', 'id_card') NOT NULL,
 
   -- A JSON array of numbers containing point values of different starting lines.
   point_values JSON,

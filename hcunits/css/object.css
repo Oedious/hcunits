@@ -22,14 +22,14 @@
 
 #objectHeader {
   position: absolute;
-  left: 3px;
+  left: 5px;
   top: 5px;
-  width: 300px;
+  width: 280px;
   color: white;
   text-align: center;
   line-height: normal;
 
-  line-height: 1em;
+  line-height: 1.2em;
   color: white;
 }
 
@@ -178,9 +178,17 @@
   top: 72px;
 }
 
+#objectCardKeywords {
+  position: absolute;
+  left: 10px;
+  top: 80px;
+  width: 318px;
+  font-family: Tahoma;
+  font-size: 10px;
+}
+
 #objectSpecialPowersTable {
   position: absolute;
   left: 10px;
   width: 318px;
-  top: 285px;
 }

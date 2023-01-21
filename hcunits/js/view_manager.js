@@ -62,7 +62,9 @@ ViewManager.prototype.showUnit_ = function(unitJson) {
       this.unitView_ = new CharacterView(unitJson);
   } else if (unitJson.type == "bystander" ||
              unitJson.type == "equipment" ||
-             unitJson.type == "construct") {
+             unitJson.type == "construct" ||
+             unitJson.type == "id_card" ||
+             unitJson.type == "mystery_card") {
       this.unitView_ = new ObjectView(unitJson);
   } else {
     throw new Error(`ViewManager doesn't know how to handle unit type ${unitJson.type}`);
