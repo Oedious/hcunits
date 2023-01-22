@@ -13,44 +13,40 @@
 </head>
 
 <body>
-    <div id="buildContainer">
-        <div id="teamHeaderContainer">
-            <div id="teamHeader">
-                <div id="teamOwner">Team Owner</div>
-                <input type="text" class="teamInput" id="teamName" size="80%" placeholder="Team Name">
-                <input type="text" class="teamInput" size="80%" placeholder="Description">
-                <div id="teamFormatContainer">
-                    <input type="number" class="teamInput" id="teamPointLimit" min="0" max="9999" placeholder="Points">
-                    <select class="teamSelect" id="teamFormat">
-                        <option value="modern">Modern Age</option>
-                        <option value="golden">Golden Age</option>
-                    </select>
-                    <select class="teamSelect" id="teamVisibility">
-                        <option value="unlisted">Unlisted</option>
-                        <option value="public">Public</option>
-                    </select>
-                </div>
+    <div id="teamHeaderContainer">
+        <div id="teamHeader">
+            <div id="teamOwner">Team Owner</div>
+            <input type="text" class="teamInput" id="teamName" size="80%" placeholder="Team Name">
+            <input type="text" class="teamInput" size="80%" placeholder="Description">
+            <div id="teamFormatContainer">
+                <input type="number" class="teamInput" id="teamPointLimit" min="0" max="9999" placeholder="Points">
+                <select class="teamSelect" id="teamFormat">
+                    <option value="modern">Modern Age</option>
+                    <option value="golden">Golden Age</option>
+                </select>
+                <select class="teamSelect" id="teamVisibility">
+                    <option value="unlisted">Unlisted</option>
+                    <option value="public">Public</option>
+                </select>
             </div>
         </div>
-        <div id="searchSourceContainer">
-            <div id="quickSearchContainer">
-                <input type="text" id="quickSearchInput" placeholder="Search...">
-                <button type="button" id="quickSearchButton" onclick="quickSearch();">
-                    <span id="quickSearchIcon" class="material-symbols-outlined">search</span>
-                </button>
-            </div>
-            <div id="setMenu"></div>
+    </div>
+    <div id="searchSourceContainer">
+        <div id="quickSearchContainer">
+            <input type="text" id="quickSearchInput" placeholder="Search...">
+            <button type="button" id="quickSearchButton" onclick="quickSearch();">
+                <span id="quickSearchIcon" class="material-symbols-outlined">search</span>
+            </button>
         </div>
-        <div id="teamBodyContainer">
-            <div id="searchResultsContainer">
-                <div id="searchResultsScroll">
-                    <ul id="searchResults" class="collection"></ul>
-                </div>
-            </div>
-            <div id="unitContainer"></div>
-            <div id="teamContainer">
-                Team details go here
-            </div>
+        <div id="setMenu"></div>
+    </div>
+    <div id="teamBodyContainer">
+        <div id="searchResultsContainer">
+            <ul id="searchResults" class="collection"></ul>
+        </div>
+        <div id="unitContainer"></div>
+        <div id="teamContainer">
+            Team details go here
         </div>
     </div>
 
