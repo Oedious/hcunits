@@ -70,7 +70,7 @@
   color: white;
 }
 
-#characterImage {
+#characterTokenCircle {
   position: absolute;
   left: 215px;
   top: 15px;
@@ -79,6 +79,14 @@
   border: 7px solid black;
   background-color: white;
   border-radius: 75px;
+}
+
+#characterTokenImg {
+  position: absolute;
+  left: -7px;
+  top: -7px;
+  width: 150px;
+  height: 150px;
 }
 
 #characterSpecialPowersTable0 {

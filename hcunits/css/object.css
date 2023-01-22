@@ -63,13 +63,25 @@
 
 #objectToken {
   position: absolute;
-  left: 73px;
+  left: 71px;
   top: 90px;
   width: 195px;
   height: 195px;
+  border-radius: 100px;
+  box-shadow: rgba(0, 0, 0, 0.8) 0 0 10px;
 }
 
-#objectTokenBorder {
+#objectTokenClip {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
+  overflow: hidden;
+}
+
+#objectTokenCircle {
   position: absolute;
   left: 0px;
   top: 0px;
@@ -79,7 +91,6 @@
   background-color: black;
   border-radius: 100px;
   overflow: hidden;
-  box-shadow: rgba(0, 0, 0, 0.8) 0 0 10px;
 }
 
 #objectBystanderBackground {
@@ -89,6 +100,15 @@
   right: 0px;
   bottom: 16px;
   background-color: lightgray;
+  overflow: hidden;
+}
+
+#objectTokenImg {
+  position: absolute;
+  left: -37px;
+  top: -47px;
+  width: 195px;
+  height: 195px;
 }
 
 #objectBystanderName {
@@ -104,32 +124,32 @@
 #objectDialBackground {
   position: absolute;
   left: 23px;
-  top: 40px;
-  width: 62px;
+  top: 47px;
+  width: 72px;
   height: 125px;
   background-color: white;
   border-top: 5px solid black;
   border-right: 5px solid black;
   border-bottom: 5px solid black;
   border-radius: 0px 15px 20px 0px;
-  transform: skew(10deg);
+  transform: skew(15deg);
 }
 
 #objectCombatSymbols {
   position: absolute;
-  left: 0px;
-  top: 40px;
+  left: 7px;
+  top: 47px;
 }
 
 #objectCombatSymbolRange {
   position: absolute;
   top: 0px;
-  width: 70px;
+  width: 73px;
 }
 
 #objectRange {
   position: absolute;
-  right: 45px;
+  right: 53px;
   top: 4px;
   color: white;
   font-size: 11px;
@@ -174,7 +194,7 @@
 
 #objectDial {
   position: absolute;
-  left: 45px;
+  left: 48px;
   top: 72px;
 }
 

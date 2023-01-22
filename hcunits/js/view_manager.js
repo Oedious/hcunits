@@ -9,24 +9,24 @@ ViewManager.prototype.loadSetMenu_ = function() {
   var html = '';
   for (var setId in SET_LIST) {
     var setItem = SET_LIST[setId];
-    var universe_color;
+    var $universeColor;
     switch (setItem.universe) {
       case "dc":
-        universe_color = "blue";
+        $universeColor = "blue";
         break;
       case "marvel":
-        universe_color = "red";
+        $universeColor = "red";
         break;
       case "indy":
-        universe_color = "green";
+        $universeColor = "green";
         break;
       default:
-        universe_color = "purple";
+        $universeColor = "purple";
         break;
     }
-  
+
     html += `
-      <div class='setItem' style='border-bottom: 2px solid ${universe_color};'>
+      <div class='setItem' style='border-bottom: 2px solid ${$universeColor};'>
       <span class='setItemLink' onclick='mgr.searchBySetId("${setId}")'>
         <img class='setIcon' src='../hcunits/images/set_${setId}.png' alt='${setId}' title='${setItem.name}'/>
         <div class='setName'>${setId}</div>

@@ -99,7 +99,7 @@ class ObjectView extends UnitView {
         </div>
         ${this.drawObjectKeyphrases_()}
         <div id='objectCollectorNumber'>${this.unit_.collector_number}</div>
-        <div id='objectToken'>${this.drawToken_()}</div>
+        ${this.drawToken_()}
         ${this.drawSpecialPowers_()}
         ${super.drawPointValues_()}
       </div>`;
@@ -223,33 +223,39 @@ class ObjectView extends UnitView {
   
   drawBystander_() {
     var html = `
-      <div id='objectTokenBorder'>
-        <div id='objectBystanderBackground'></div>
-        <div id='objectDialBackground'></div>
-        <div id='objectCombatSymbols'>
-          <div id='objectCombatSymbolRange' class='combatSymbol'>
-            <div id='objectRange'>${this.unit_.unit_range}</div>`;
+      <div id='objectToken'>
+        <div id='objectTokenClip'>
+          <div id='objectTokenCircle'>
+            <div id='objectBystanderBackground'>
+              <img id='objectTokenImg' src='../hcunits/images/${this.unit_.set_id}/${this.unit_.unit_id}.png' alt='' onerror='this.style.display=\"none\"'/>
+            </div>
+          </div>
+          <div id='objectDialBackground'></div>
+          <div id='objectCombatSymbols'>
+            <div id='objectCombatSymbolRange' class='combatSymbol'>
+              <div id='objectRange'>${this.unit_.unit_range}</div>`;
     for (var i = 0; i < this.unit_.targets; ++i) {
       html += `<img class='objectBolt' src='../hcunits/images/cs_bolt.png' alt='' height='12' width='6' style='left: ${28 + i * 4}px;'\>`;
     }
     html += `
-          </div>
-          <div id='objectCombatSymbolSpeed' class='combatSymbol'>
-            <img class='objectCombatSymbolImg' src='../hcunits/images/cs_${this.unit_.speed_type}.png'/>
-          </div>
-          <div id='objectCombatSymbolAttack' class='combatSymbol'>
-            <img class='objectCombatSymbolImg' src='../hcunits/images/cs_${this.unit_.attack_type}.png'/>
-          </div>
-          <div id='objectCombatSymbolDefense' class='combatSymbol'>
-            <img class='objectCombatSymbolImg' src='../hcunits/images/cs_${this.unit_.defense_type}.png'/>
-          </div>
-          <div id='objectCombatSymbolDamage' class='combatSymbol'>
-            <img class='objectCombatSymbolImg' src='../hcunits/images/cs_${this.unit_.damage_type}.png'/>
+            </div>
+            <div id='objectCombatSymbolSpeed' class='combatSymbol'>
+              <img class='objectCombatSymbolImg' src='../hcunits/images/cs_${this.unit_.speed_type}.png'/>
+            </div>
+            <div id='objectCombatSymbolAttack' class='combatSymbol'>
+              <img class='objectCombatSymbolImg' src='../hcunits/images/cs_${this.unit_.attack_type}.png'/>
+            </div>
+            <div id='objectCombatSymbolDefense' class='combatSymbol'>
+              <img class='objectCombatSymbolImg' src='../hcunits/images/cs_${this.unit_.defense_type}.png'/>
+            </div>
+            <div id='objectCombatSymbolDamage' class='combatSymbol'>
+              <img class='objectCombatSymbolImg' src='../hcunits/images/cs_${this.unit_.damage_type}.png'/>
+            </div>
           </div>
         </div>
-      </div>
-      <div id='objectBystanderName'>${this.unit_.name.toUpperCase()}</div>
-      <div id='objectDial'>${this.drawDial_()}</div>`;
+        <div id='objectBystanderName'>${this.unit_.name.toUpperCase()}</div>
+        <div id='objectDial'>${this.drawDial_()}</div>
+      </div>`;
     return html;
   }
   
@@ -257,7 +263,11 @@ class ObjectView extends UnitView {
     var objectStyle = this.unit_.object_type ?
       OBJECT_TYPE_TO_INFO[this.unit_.object_type].style : ""
       
-    var html = `<div id='objectTokenBorder' style='background-color: lightgray; ${objectStyle}'></div>`;
+    var html =
+      `<div id='objectToken'>
+        <div id='objectTokenCircle' style='background-color: lightgray; ${objectStyle}'></div>
+        <img id='objectTokenImg' src='../hcunits/images/${this.unit_.set_id}/${this.unit_.unit_id}.png' alt='' onerror='this.style.display=\"none\"'/>
+      </div>`;
     return html;
   }
   

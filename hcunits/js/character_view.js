@@ -39,7 +39,7 @@ class CharacterView extends UnitView {
         </div>
         <div id='characterRealName'>REAL NAME: ${escapeHtml(this.unit_.real_name).toUpperCase()}</div>
         ${this.drawCollectorNumber_()}
-        ${this.drawImage_()}
+        ${this.drawToken_()}
         ${specialPowersHtml}
         ${this.drawDial_()}
         ${this.drawTeamAbilities_()}
@@ -102,14 +102,17 @@ class CharacterView extends UnitView {
     return `<div id='characterCollectorNumber'>${text}</div>`;
   }
   
-  drawImage_() {
+  drawToken_() {
     var color = "black";
     if (this.unit_.special_type) {
       color = SPECIAL_TYPE_TO_COLOR[this.unit_.special_type];
     } else if (this.isTeamUp_()) {
       color = COLOR_BLUE;
     }
-    var html = `<div id='characterImage' style='border: 7px solid ${color};'></div>`
+    var html =
+      `<div id='characterTokenCircle' style='border: 7px solid ${color};'>
+        <img id='characterTokenImg' src='../hcunits/images/${this.unit_.set_id}/${this.unit_.unit_id}.png' alt='' onerror='this.style.display=\"none\"'/>
+      </div>`
     return html;
   }
   
