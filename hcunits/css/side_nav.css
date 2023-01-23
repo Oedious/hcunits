@@ -1,0 +1,125 @@
+/* Nav Panel styles */
+#sideNav {
+  position: relative;
+  width: 300px;
+
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+
+  flex: 0 0 auto;
+
+  z-index: 1;
+  transition: 0.5s;
+}
+
+#panelTitleBar {
+  position: relative;
+  width: 300px;
+  height: 60px;
+  background-color: #90a4ae;
+  color: white;
+
+  display: flex;
+  align-items: center;
+}
+
+#panelBackIcon {
+  position: relative;
+  width: 54px;
+  height: 60px;
+  color: white;
+  text-align: center;
+  line-height: 75px;
+}
+
+#panelBackIcon:hover {
+  background-color: #78909c;
+}
+
+#panelBackIcon:focus {
+  background-color: #607d8b;
+  outline: none;
+}
+
+#panelTitle {
+  position: absolute;
+  left: 60px;
+}
+
+.navPanel {
+}
+
+.navPanel ul {
+  position: absolute;
+  margin: 0px !important;
+  width: 300px;
+  height: calc(100% - 60px);
+  overflow-y: auto;
+}
+
+.navPanel ul li {
+  min-height: 0px !important;
+  padding: 0px !important;
+}
+
+.navPanel ul li a {
+  padding: 10px 20px !important;
+  display: block;
+}
+
+.navPanel ul li a:hover {
+  background-color: #f5f5f5;
+}
+
+.navPanel ul li a:focus {
+  background-color: #e5e5e5;
+  outline: none;
+}
+
+.navPanel ul li a:active {
+  background-color: #d8d8d8;
+}
+
+.listPanelImageDiv {
+  position: absolute;
+  left: 15px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+}
+
+.listPanelInfo {
+  padding-left: 40px !important;
+  font-size: 12px !important;
+  color: black;
+}
+
+.listPanelMinorInfo {
+  left: 40px;
+  font-size: 10px !important;
+}
+
+#sideNavToggle {
+  position: absolute;
+	top: 10px;
+	left: 300px;
+	border-radius: 0px 30px 30px 0px;
+	background-color: #212121;
+	line-height: 35px;
+	width: 25px;
+	transition: 0.5s;
+	border-right: 1px solid white;
+}
+
+#sideNavToggleIcon {
+	font-size: 1.8rem;
+	text-align: center;
+	color: white;
+	line-height: 35px;
+	width: 32px;
+	left: -5px;
+	display: block;
+	position: relative;
+	transition: 0.6s;
+}

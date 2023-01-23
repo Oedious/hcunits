@@ -4,7 +4,7 @@ class UnitView {
   }
   
   draw() {
-    throw new Error("Derived classes must implement UnitView::Draw()");
+    throw new Error("Derived classes must implement UnitView::draw()");
   }
 
   drawPointValues_() {

@@ -11,6 +11,22 @@ body {
   height: 100%;
 }
 
+/* Change the style of the scrollbars to look nice */
+::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+	background: #00000000;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #aaa;
+	border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+	background: #00000000;
+}
+
 /* Team Header styles */
 #teamHeaderContainer {
   background: linear-gradient(135deg, rgb(169, 184, 195) 100%, rgb(238, 238, 238) 0%);
@@ -68,88 +84,6 @@ input#teamName {
   flex-basis: max-content;
 }
 
-/* Search Source styles */
-#searchSourceContainer {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  background-color: #212121;
-  box-shadow: 0 2px 4px rgb(0, 0, 0, 50%);
-  padding: 10px;
-}
-
-/* Quick Search styles */
-#quickSearchContainer {
-  display: flex;
-  flex-basis: max-content;
-  align-items: center;
-  height: 60px;
-  border: 1px solid #000000;
-  border-radius: 5px;
-  background-color: #FFFFFF;
-}
-
-#quickSearchInput {
-  width: 250px;
-  font-size: 20px;
-  margin-left: 5px;
-  margin-top: 15px;
-  border: none;
-}
-
-#quickSearchInput:focus {
-  border: none;
-}
-
-#quickSearchButton {
-  width: 40px;
-  height: 58px;
-  border: none;
-  border-radius: 5px;
-}
-
-#quickSearchIcon {
-  font-variation-settings: 'FILL'0, 'wght'400, 'GRAD'0, 'opsz'25;
-}
-
-/* Set Menu styles */
-#setMenuContainer {
-  background-color: transparent;
-}
-
-#setMenu {
-  display: flex;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-}
-
-div.setItem {
-  flex: 0 0 auto;
-  width: 50px;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  text-align: center;
-  color: #000000;
-  border: 1px solid #000000;
-  border-radius: 5px;
-  background-color: #FFFFFF;
-  display: inline-block;
-}
-
-img.setIcon {
-  width: 32px;
-  height: 32px;
-  margin: 3px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-div.setName {
-  font-size: 10px;
-  font-weight: bold;
-}
-
 /* Team Body styles */
 #teamBodyContainer {
   display: flex;
@@ -158,59 +92,21 @@ div.setName {
   overflow-y: auto;
 }
 
-/* Search Results styles */
-#searchResultsContainer { 
-  border-right: 1px solid black;
-  width: 300px;
-
-  display: flex;
-  flex-direction: column;
-  padding: 0px;
-
-  flex: 0 0 auto;
+#browseBySetButton a:hover {
+  background-color: #9e9e9e;
 }
 
-#searchResults {
-  overflow-y: auto;
-}
-
-#searchResults li {
-  min-height: 0px;
-  padding: 0px !important;
-}
-
-#searchResults li a {
-  padding: 10px 20px !important;
-  display: block;
-}
-
-#searchResults li a:hover {
-  background-color: #f5f5f5;
-}
-
-#searchResults li a:focus {
-  background-color: #e5e5e5;
-  outline: none;
-}
-
-#searchResults li a:active {
-  background-color: #d8d8d8;
-}
-
-.searchResultInfo {
-  padding-left: 50px !important;
-}
-
-.searchResultPoints {
-  left: 50px;
-  font-size: 10px !important;
+#browseBySetButton a:active {
+  background-color: #757575;
 }
 
 /* Unit area styles */
 #unitContainer {
   flex: 0 0 auto;
   position: relative;
+  left: 0px;
   width: 400px;
+  transition: 0.5s;
 }
 
 .tooltip {
@@ -244,4 +140,6 @@ div.setName {
 #teamContainer {
   flex: 1 1 auto;
   min-width: 600px;
+  position: relative;
+  transition: 0.5s;
 }

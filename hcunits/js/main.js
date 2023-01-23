@@ -1,6 +1,7 @@
 //var dataSource = new DataSource();
 var dataSource = new MockDataSource();
 var mgr = new ViewManager(dataSource);
+var sideNav = new SideNav(dataSource);
 
 document.onkeydown = onKeyDown;
 
@@ -11,11 +12,11 @@ function onKeyDown(event) {
   var KEY_DOWN = '40';
   event = event || window.event;
   if (event.keyCode == KEY_LEFT || event.keyCode == KEY_UP) {
-    mgr.previousUnit();
+    sideNav.previousItem();
     event.preventDefault();
   }
   else if (event.keyCode == KEY_RIGHT || event.keyCode == KEY_DOWN) {
-    mgr.nextUnit();
+    sideNav.nextItem();
     event.preventDefault();
   }
 }

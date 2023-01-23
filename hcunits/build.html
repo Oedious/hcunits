@@ -9,6 +9,7 @@
     <link type="text/css" rel="stylesheet" href="../hcunits/css/hcunits.css" media="screen,projection">
     <link type="text/css" rel="stylesheet" href="../hcunits/css/character.css" media="screen,projection">
     <link type="text/css" rel="stylesheet" href="../hcunits/css/object.css" media="screen,projection">
+    <link type="text/css" rel="stylesheet" href="../hcunits/css/side_nav.css" media="screen,projection">
     <link type="text/css" rel="stylesheet" href="../hcunits/css/unit.css" media="screen,projection">
 </head>
 
@@ -31,18 +32,31 @@
             </div>
         </div>
     </div>
-    <div id="searchSourceContainer">
-        <div id="quickSearchContainer">
-            <input type="text" id="quickSearchInput" placeholder="Search...">
-            <button type="button" id="quickSearchButton" onclick="quickSearch();">
-                <span id="quickSearchIcon" class="material-symbols-outlined">search</span>
-            </button>
+    <nav id="quickSearchBar">
+        <div class="nav-wrapper grey darken-4">
+            <ul>
+                <li id="browseBySetButton"><a href="#" onclick='sideNav.showSetList()' title="Browse by Set"><i class="material-icons">library_books</i></a></li>
+                <li>
+                    <form>
+                        <div class="input-field" style="width:300px;height:65px;color:white;" title="Quick Search">
+                            <input id="quickSearch" type="search" required>
+                            <label class="label-icon" for="quickSearch"><i class="material-icons" style="color:white;">search</i></label>
+                            <i class="material-icons">close</i>
+                        </div>
+                    </form>
+                </li>
+            </ul>
+            </form>
         </div>
-        <div id="setMenu"></div>
-    </div>
+    </nav>
     <div id="teamBodyContainer">
-        <div id="searchResultsContainer">
-            <ul id="searchResults" class="collection"></ul>
+        <div id="sideNav" style="left:0px">
+            <div id="sideNavTitle"></div>
+            <div id="setListPanel" class="navPanel"></div>
+            <div id="unitListPanel" class="navPanel"></div>
+            <div id="sideNavToggle">
+                <a href="#" onclick="sideNav.toggleVisibility()"><i id="sideNavToggleIcon" class="material-icons">chevron_left</i></a>
+            </div>
         </div>
         <div id="unitContainer"></div>
         <div id="teamContainer">
@@ -60,11 +74,16 @@
     <script type="text/javascript" src="../hcunits/js/character_view.js"></script>
     <script type="text/javascript" src="../hcunits/js/object_view.js"></script>
 
+    <script type="text/javascript" src="../hcunits/js/nav_panel.js"></script>
+    <script type="text/javascript" src="../hcunits/js/list_panel.js"></script>
+    <script type="text/javascript" src="../hcunits/js/set_list_panel.js"></script>
+    <script type="text/javascript" src="../hcunits/js/unit_list_panel.js"></script>
+    <script type="text/javascript" src="../hcunits/js/side_nav.js"></script>
+
     <script type="text/javascript" src="../hcunits/js/data_source.js"></script>
     <script type="text/javascript" src="../hcunits/js/keyword_list.js"></script>
     <script type="text/javascript" src="../hcunits/js/mock_data_source.js"></script>
     <script type="text/javascript" src="../hcunits/js/power_list.js"></script>
-    <script type="text/javascript" src="../hcunits/js/search_manager.js"></script>
     <script type="text/javascript" src="../hcunits/js/set_list.js"></script>
     <script type="text/javascript" src="../hcunits/js/team_ability_list.js"></script>
     <script type="text/javascript" src="../hcunits/js/view_manager.js"></script>
