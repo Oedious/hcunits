@@ -80,6 +80,9 @@ class SideNav {
     this.unitListPanel_.title = SET_LIST[setId].name
     this.pushPanel(this.unitListPanel_)
   }
+  
+  showQuickSearchResults(query) {
+  }
 
   isVisible() {
     return document.getElementById("sideNav").style.left == "0px"
