@@ -45,7 +45,7 @@ class CharacterView extends UnitView {
         ${this.drawTeamAbilities_()}
         ${super.drawPointValues_()}
         <div id='characterHeroClixLogoClip'>
-          <img id='characterHeroClixLogo' src='../hcunits/images/heroclix_logo_small.png' alt=''/>
+          <img id='characterHeroClixLogo' src='images/heroclix_logo_small.png' alt=''/>
         </div>
       </div>`;
 
@@ -111,7 +111,7 @@ class CharacterView extends UnitView {
     }
     var html =
       `<div id='characterTokenCircle' style='border: 7px solid ${color};'>
-        <img id='characterTokenImg' src='../hcunits/images/${this.unit_.set_id}/${this.unit_.unit_id}.png' alt='' onerror='this.style.display=\"none\"'/>
+        <img id='characterTokenImg' src='images/${this.unit_.set_id}/${this.unit_.unit_id}.png' alt='' onerror='this.style.display=\"none\"'/>
       </div>`
     return html;
   }
@@ -129,7 +129,7 @@ class CharacterView extends UnitView {
       var teamAbility = TEAM_ABILITY_LIST[this.unit_.team_abilities[i]];
       html += `
         <div id='characterTeamAbility${i}' class='tooltip'>
-          <img src='../hcunits/images/ta_${this.unit_.team_abilities[i]}.png' alt=''/>
+          <img src='images/ta_${this.unit_.team_abilities[i]}.png' alt=''/>
           <span class='tooltiptext'>${escapeHtml(teamAbility.description)}</span>
         </div>
         `;
@@ -191,16 +191,16 @@ class CharacterView extends UnitView {
           var iconHtml = "";
           if (type == "costed_trait") {
             iconHtml = `
-              <img class='unitSpecialPowerIcon' src='../hcunits/images/sp_${type}.png' alt=''/>
+              <img class='unitSpecialPowerIcon' src='images/sp_${type}.png' alt=''/>
               <div class='unitSpecialPowerPointValue'>+${power.point_value} POINTS</div>`;
           } else if (type == "rally_trait") {
             iconHtml = `
               <div class='unitSpecialPowerRally' style='${RALLY_TYPE_TO_STYLE[power.rally_type]}'>
-                <img class='unitSpecialPowerIcon' src='../hcunits/images/sp_trait.png' alt=''/>
-                <img class='unitSpecialPowerRallyDie' src='../hcunits/images/d6_${power.rally_die}.png' alt='${power.rally_die}'/>
+                <img class='unitSpecialPowerIcon' src='images/sp_trait.png' alt=''/>
+                <img class='unitSpecialPowerRallyDie' src='images/d6_${power.rally_die}.png' alt='${power.rally_die}'/>
               </div>`;
           } else {
-            iconHtml = `<img class='unitSpecialPowerIcon' src='../hcunits/images/sp_${type}.png' alt=''/>`;
+            iconHtml = `<img class='unitSpecialPowerIcon' src='images/sp_${type}.png' alt=''/>`;
           }
           html += `
             <tr class='unitSpecialPowerRow'>
@@ -247,21 +247,21 @@ class CharacterView extends UnitView {
         <div class='combatSymbol'>
           <div class='characterRange'>${this.unit_.unit_range}</div>`;
       for (var i = 0; i < this.unit_.targets; ++i) {
-        html += `<img class='characterBolt' src='../hcunits/images/cs_bolt.png' alt='' height='12' width='6' style='left: ${10 + i * 4}px;'\>`;
+        html += `<img class='characterBolt' src='images/cs_bolt.png' alt='' height='12' width='6' style='left: ${10 + i * 4}px;'\>`;
       }
       html += `
         </div>
         <div class='combatSymbol' style='position:absolute;top:24px;'>
-          <img class='characterCombatSymbolImg' src='../hcunits/images/cs_${this.unit_.speed_type}.png'/>
+          <img class='characterCombatSymbolImg' src='images/cs_${this.unit_.speed_type}.png'/>
         </div>
         <div class='combatSymbol' style='position:absolute;top:48px;'>
-          <img class='characterCombatSymbolImg' src='../hcunits/images/cs_${this.unit_.attack_type}.png'/>
+          <img class='characterCombatSymbolImg' src='images/cs_${this.unit_.attack_type}.png'/>
         </div>
         <div class='combatSymbol' style='position:absolute;top:72px;'>
-          <img class='characterCombatSymbolImg' src='../hcunits/images/cs_${this.unit_.defense_type}.png'/>
+          <img class='characterCombatSymbolImg' src='images/cs_${this.unit_.defense_type}.png'/>
         </div>
         <div class='combatSymbol' style='position:absolute;top:96px;'>
-          <img class='characterCombatSymbolImg' src='../hcunits/images/cs_${this.unit_.damage_type}.png'/>
+          <img class='characterCombatSymbolImg' src='images/cs_${this.unit_.damage_type}.png'/>
         </div>
         <table class='characterDialTable' style='width:${tableWidth}px'>`;
     

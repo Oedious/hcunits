@@ -23,7 +23,7 @@ class SetListPanel extends ListPanel {
         <li class='collection-item avatar'>
           <a href='' onclick='sideNav.showUnitList("${setId}"); return false;'>
             <div class='listPanelImageDiv'>
-              <img class='listPanelImage' src='../hcunits/images/set_${setId}.png' alt='${setId}' title='${setItem.name}'>
+              <img class='listPanelImage' src='images/set_${setId}.png' alt='${setId}' title='${setItem.name}'>
             </div>
             <div class='listPanelInfo'>
               <span class='title'>${setItem.name}</span>

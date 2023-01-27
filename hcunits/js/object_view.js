@@ -227,7 +227,7 @@ class ObjectView extends UnitView {
         <div id='objectTokenClip'>
           <div id='objectTokenCircle'>
             <div id='objectBystanderBackground'>
-              <img id='objectTokenImg' src='../hcunits/images/${this.unit_.set_id}/${this.unit_.unit_id}.png' alt='' onerror='this.style.display=\"none\"'/>
+              <img id='objectTokenImg' src='images/${this.unit_.set_id}/${this.unit_.unit_id}.png' alt='' onerror='this.style.display=\"none\"'/>
             </div>
           </div>
           <div id='objectDialBackground'></div>
@@ -235,21 +235,21 @@ class ObjectView extends UnitView {
             <div id='objectCombatSymbolRange' class='combatSymbol'>
               <div id='objectRange'>${this.unit_.unit_range}</div>`;
     for (var i = 0; i < this.unit_.targets; ++i) {
-      html += `<img class='objectBolt' src='../hcunits/images/cs_bolt.png' alt='' height='12' width='6' style='left: ${28 + i * 4}px;'\>`;
+      html += `<img class='objectBolt' src='images/cs_bolt.png' alt='' height='12' width='6' style='left: ${28 + i * 4}px;'\>`;
     }
     html += `
             </div>
             <div id='objectCombatSymbolSpeed' class='combatSymbol'>
-              <img class='objectCombatSymbolImg' src='../hcunits/images/cs_${this.unit_.speed_type}.png'/>
+              <img class='objectCombatSymbolImg' src='images/cs_${this.unit_.speed_type}.png'/>
             </div>
             <div id='objectCombatSymbolAttack' class='combatSymbol'>
-              <img class='objectCombatSymbolImg' src='../hcunits/images/cs_${this.unit_.attack_type}.png'/>
+              <img class='objectCombatSymbolImg' src='images/cs_${this.unit_.attack_type}.png'/>
             </div>
             <div id='objectCombatSymbolDefense' class='combatSymbol'>
-              <img class='objectCombatSymbolImg' src='../hcunits/images/cs_${this.unit_.defense_type}.png'/>
+              <img class='objectCombatSymbolImg' src='images/cs_${this.unit_.defense_type}.png'/>
             </div>
             <div id='objectCombatSymbolDamage' class='combatSymbol'>
-              <img class='objectCombatSymbolImg' src='../hcunits/images/cs_${this.unit_.damage_type}.png'/>
+              <img class='objectCombatSymbolImg' src='images/cs_${this.unit_.damage_type}.png'/>
             </div>
           </div>
         </div>
@@ -266,7 +266,7 @@ class ObjectView extends UnitView {
     var html =
       `<div id='objectToken'>
         <div id='objectTokenCircle' style='background-color: lightgray; ${objectStyle}'></div>
-        <img id='objectTokenImg' src='../hcunits/images/${this.unit_.set_id}/${this.unit_.unit_id}.png' alt='' onerror='this.style.display=\"none\"'/>
+        <img id='objectTokenImg' src='images/${this.unit_.set_id}/${this.unit_.unit_id}.png' alt='' onerror='this.style.display=\"none\"'/>
       </div>`;
     return html;
   }
@@ -327,15 +327,15 @@ class ObjectView extends UnitView {
       if (type == "costed_trait") {
         iconHtml = `
           <td class='unitSpecialPower'>
-            <img class='unitSpecialPowerIcon' src='../hcunits/images/sp_${type}.png' alt=''/>
+            <img class='unitSpecialPowerIcon' src='images/sp_${type}.png' alt=''/>
             <div class='unitSpecialPowerPointValue'>+${power.point_values} POINTS</div>
           </td>`;
       } else if (type == "rally_trait") {
         iconHtml = `
           <td class='unitSpecialPower'>
             <div class='unitSpecialPowerRally' style='${RALLY_TYPE_TO_STYLE[power.rally_type]}'>
-              <img class='unitSpecialPowerIcon' src='../hcunits/images/sp_trait.png' alt=''/>
-              <img class='unitSpecialPowerRallyDie' src='../hcunits/images/d6_${power.rally_die}.png' alt='${power.rally_die}'/>
+              <img class='unitSpecialPowerIcon' src='images/sp_trait.png' alt=''/>
+              <img class='unitSpecialPowerRallyDie' src='images/d6_${power.rally_die}.png' alt='${power.rally_die}'/>
             </div>
           </td>`;
       } else if (type == "equipment" || type == "mystery_card" || type == "tarot_card") {
@@ -348,7 +348,7 @@ class ObjectView extends UnitView {
         }
         iconHtml = `
           <td class='unitSpecialPower'>
-            <img class='unitSpecialPowerIcon' src='../hcunits/images/sp_${combatSymbolType}.png' alt=''/>
+            <img class='unitSpecialPowerIcon' src='images/sp_${combatSymbolType}.png' alt=''/>
           </td>`;
       }
       var nameHtml = ""

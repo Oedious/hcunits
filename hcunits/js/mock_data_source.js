@@ -236,7 +236,7 @@ MockDataSource.prototype.searchBySetId = function(setId, onSuccess, onError) {
   this.units_ = []
   var dataSource = this;
   jQuery.ajax({
-    url: `../hcunits/db/set_${setId}.json`,
+    url: `db/set_${setId}.json`,
     type: 'get',
     success: function(response) {
       dataSource.units_ = response
