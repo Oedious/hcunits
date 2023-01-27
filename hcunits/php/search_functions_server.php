@@ -2,10 +2,14 @@ function search_by_set_id() {
 	global $wpdb;
 	$set_id = $_POST['set_id'];
 	$response = $wpdb->get_results(<<<EOD
-		SELECT unit_id, name, collector_number, point_value, rarity
+		SELECT unit_id, set_id, name, collector_number, point_values, rarity
 		FROM {$wpdb->prefix}units
 		WHERE set_id = '$set_id'
 	EOD);
+
+  foreach($unit as $response) {
+  	$unit->point_values = json_decode($unit->point_values);
+  }
 	echo json_encode($response);
 	wp_die();
 }
