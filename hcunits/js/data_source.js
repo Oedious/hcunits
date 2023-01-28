@@ -2,14 +2,9 @@ var DataSource = function() {
 }
 
 DataSource.prototype.searchBySetId = function(setId, onSuccess, onError) {
-    jQuery.ajax({
-        url: ajaxurl,
-        type: 'post',
-        dataType: 'text',
-        data: {
-            action: 'search_by_set_id',
-            set_id: setId
-        },
+    jQuery.get({
+        url: `https://api.hcunits.net/sets/${setId}/`,
+        dataType: 'json',
         success: function(searchResults) {
             onSuccess(JSON.parse(searchResults));
         },
@@ -18,14 +13,9 @@ DataSource.prototype.searchBySetId = function(setId, onSuccess, onError) {
 }
 
 DataSource.prototype.searchByUnitId = function(unitId, onSuccess, onError) {
-    jQuery.ajax({
-        url: ajaxurl,
-        type: 'post',
-        dataType: 'text',
-        data: {
-            action: 'search_by_unit_id',
-            unit_id: unitId
-        },
+    jQuery.get({
+        url: `https://api.hcunits.net/units/${unitId}/`,
+        dataType: 'json',
         success: function(searchResults) {
             onSuccess(JSON.parse(searchResults));
         },

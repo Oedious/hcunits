@@ -5,10 +5,10 @@ mysql wordpress -u root -p
 /var/www/html/wp-content/plugins
 
 # Delete the 'team_abilities' table
-DROP TABLE wp_units;
+DROP TABLE units;
 
 # Create the units table
-CREATE TABLE wp_units (
+CREATE TABLE units (
   -- The ID of the unit.
   unit_id VARCHAR(32) NOT NULL PRIMARY KEY,
 
@@ -105,38 +105,38 @@ CREATE TABLE wp_units (
 
 LOAD XML LOCAL INFILE 'set_av4e.xml'
   REPLACE
-  INTO TABLE wp_units
+  INTO TABLE units
   ROWS IDENTIFIED BY '<row>';
 
 LOAD XML LOCAL INFILE 'set_btu.xml'
   REPLACE
-  INTO TABLE wp_units
+  INTO TABLE units
   ROWS IDENTIFIED BY '<row>';
 
 LOAD XML LOCAL INFILE 'set_hgpc.xml'
   REPLACE
-  INTO TABLE wp_units
+  INTO TABLE units
   ROWS IDENTIFIED BY '<row>';
 
 LOAD XML LOCAL INFILE 'set_xmxssop.xml'
   REPLACE
-  INTO TABLE wp_units
+  INTO TABLE units
   ROWS IDENTIFIED BY '<row>';
 
 LOAD XML LOCAL INFILE 'set_xmxs.xml'
   REPLACE
-  INTO TABLE wp_units
+  INTO TABLE units
   ROWS IDENTIFIED BY '<row>';
 
-ALTER TABLE wp_units
+ALTER TABLE units
 MODIFY COLUMN rarity ENUM('common', 'uncommon', 'rare', 'super_rare', 'chase', 'ultra_chase', 'limited_edition');
 
-ALTER TABLE wp_units
+ALTER TABLE units
 MODIFY COLUMN speed_type ENUM('boot', 'wing', 'dolphin', 'transport_boot', 'transport_wing', 'transport_dolphin');
 
-ALTER TABLE wp_units
+ALTER TABLE units
 MODIFY COLUMN damage_type ENUM('starburst', 'giant', 'colossal', 'tiny');
 
 SELECT unit_id, set_id, name, collector_number, point_values, rarity
-FROM wp_units
+FROM units
 WHERE set_id = 'hgpc';

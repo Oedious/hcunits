@@ -10,7 +10,7 @@ from __future__ import unicode_literals
 from django.db import models
 
 
-class Units(models.Model):
+class Unit(models.Model):
     unit_id = models.CharField(primary_key=True, max_length=32)
     set_id = models.CharField(max_length=16)
     collector_number = models.CharField(max_length=16)
@@ -39,5 +39,6 @@ class Units(models.Model):
     dial = models.JSONField()
 
     class Meta:
+        app_label = 'hcunits_api'
         managed = False
         db_table = 'units'
