@@ -1,8 +1,14 @@
+# Apache directories
+/var/www/html/hcunits  -> hcunits.net
+/var/www/html/hcunits_api  -> api.hcunits.net
+
+# Apache configuration
+/etc/apache2/sites-available/
+ -> hcunits-le-ssl.conf
+ -> hcunits-api-le-ssl.conf
+
 # Commands to connect to the wordpress MySQL database
 mysql wordpress -u root -p
-
-# Wordpress plugins directory:
-/var/www/html/wp-content/plugins
 
 # Delete the 'team_abilities' table
 DROP TABLE units;

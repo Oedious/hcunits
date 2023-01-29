@@ -4,7 +4,7 @@ var DataSource = function() {
 DataSource.prototype.searchBySetId = function(setId, onSuccess, onError) {
     jQuery.get({
         url: `https://api.hcunits.net/sets/${setId}/`,
-        dataType: 'json',
+        dataType: 'text',
         success: function(searchResults) {
             onSuccess(JSON.parse(searchResults));
         },
@@ -15,7 +15,7 @@ DataSource.prototype.searchBySetId = function(setId, onSuccess, onError) {
 DataSource.prototype.searchByUnitId = function(unitId, onSuccess, onError) {
     jQuery.get({
         url: `https://api.hcunits.net/units/${unitId}/`,
-        dataType: 'json',
+        dataType: 'text',
         success: function(searchResults) {
             onSuccess(JSON.parse(searchResults));
         },

@@ -1,5 +1,5 @@
-//var dataSource = new DataSource();
-var dataSource = new MockDataSource();
+var dataSource = new DataSource();
+//var dataSource = new MockDataSource();
 var mgr = new ViewManager(dataSource);
 var sideNav = new SideNav(dataSource);
 
