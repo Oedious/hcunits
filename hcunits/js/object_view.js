@@ -347,7 +347,7 @@ class ObjectView extends UnitView {
           combatSymbolType = this.unit_[type + "_type"];
         }
         iconHtml = `
-          <td class='unitSpecialPower'>
+          <td class='unitSpecialPowerImg'>
             <img class='unitSpecialPowerIcon' src='images/sp_${combatSymbolType}.png' alt=''/>
           </td>`;
       }

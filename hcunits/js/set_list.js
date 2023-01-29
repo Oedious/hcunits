@@ -29,13 +29,13 @@ const SET_LIST = {
     "release_date": "2022-06-01",
     "universe": "marvel"
   },
-  "ff_wotr": {
-    "name": "Fast Forces: Avengers: War of the Realms",
+  "wotr": {
+    "name": "Avengers: War of the Realms",
     "release_date": "2022-02-16",
     "universe": "marvel"
   },
-  "wotr": {
-    "name": "Avengers: War of the Realms",
+  "ffwotr": {
+    "name": "Fast Forces: Avengers: War of the Realms",
     "release_date": "2022-02-16",
     "universe": "marvel"
   },
@@ -59,7 +59,7 @@ const SET_LIST = {
     "release_date": "2021-08-25",
     "universe": "marvel"
   },
-  "ff_xmrf": {
+  "ffxmrf": {
     "name": "Fast Forces: X-Men: Rise and Fall",
     "release_date": "2021-08-25",
     "universe": "marvel"
@@ -74,19 +74,14 @@ const SET_LIST = {
     "release_date": "2021-02-17",
     "universe": "marvel"
   },
-  "ff_ffff": {
+  "ffffff": {
     "name": "Fast Forces: Fantastic Four: Future Foundation",
     "release_date": "2021-02-17",
     "universe": "marvel"
   },
-  "dc_ff": {
+  "dcff": {
     "name": "Deep Cuts: Fantastic Four",
     "release_date": "2021-02-10",
-    "universe": "marvel"
-  },
-  "ff_hx": {
-    "name": "Fast Forces: House of X",
-    "release_date": "2021-01-06",
     "universe": "marvel"
   },
   "hx": {
@@ -94,9 +89,9 @@ const SET_LIST = {
     "release_date": "2021-01-06",
     "universe": "marvel"
   },
-  "ff_svc": {
-    "name": "Fast Forces: Spider-Man and Venom: Absolute Carnage",
-    "release_date": "2020-09-09",
+  "ffhx": {
+    "name": "Fast Forces: House of X",
+    "release_date": "2021-01-06",
     "universe": "marvel"
   },
   "svc": {
@@ -104,18 +99,23 @@ const SET_LIST = {
     "release_date": "2020-09-09",
     "universe": "marvel"
   },
-  "bg_ame": {
-    "name": "Battlegrounds: Avengers vs. Masters of Evil",
-    "release_date": "2020-07-22",
+  "ffsvc": {
+    "name": "Fast Forces: Spider-Man and Venom: Absolute Carnage",
+    "release_date": "2020-09-09",
     "universe": "marvel"
   },
-  "ff_f4": {
-    "name": "Fast Forces: Fantastic Four",
+  "bgame": {
+    "name": "Battlegrounds: Avengers vs. Masters of Evil",
     "release_date": "2020-07-22",
     "universe": "marvel"
   },
   "f4": {
     "name": "Fantastic Four",
+    "release_date": "2020-07-22",
+    "universe": "marvel"
+  },
+  "fff4": {
+    "name": "Fast Forces: Fantastic Four",
     "release_date": "2020-07-22",
     "universe": "marvel"
   },

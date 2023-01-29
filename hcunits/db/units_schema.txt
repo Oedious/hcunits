@@ -6,6 +6,12 @@
 /etc/apache2/sites-available/
  -> hcunits-le-ssl.conf
  -> hcunits-api-le-ssl.conf
+ 
+# Apache log files
+/var/log/apache2/
+
+# Virtual Environment
+~/.virtualenvs/env
 
 # Commands to connect to the wordpress MySQL database
 mysql wordpress -u root -p
@@ -37,7 +43,7 @@ CREATE TABLE units (
   age ENUM('modern', 'golden') NOT NULL,
 
   -- The rarity of the unit.
-  rarity ENUM('common', 'uncommon', 'rare', 'super_rare', 'chase', 'ultra_chase', 'limited_edition'),
+  rarity ENUM('common', 'uncommon', 'rare', 'super_rare', 'chase', 'ultra_chase', 'limited_edition', 'fast_forces),
 
   -- The “real name” of the unit.
   real_name TEXT(128),
@@ -56,7 +62,7 @@ CREATE TABLE units (
 
   -- A JSON array of objects containing special powers and traits, of the format:
   -- {
-  --   "type": string - contains "trait", "speed", "attack", "defense", "damage", "costed_trait", "rally_trait"
+  --   "type": string - contains "trait", "speed", "attack", "defense", "damage", "costed_trait", "rally_trait", "title_trait"
   --   "name": string - the name of the power.
   --   "description": string - the description of the power.
   --   "powers": (Optional) array of strings, containing names to standard powers granted.

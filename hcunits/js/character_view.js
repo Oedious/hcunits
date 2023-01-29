@@ -159,7 +159,7 @@ class CharacterView extends UnitView {
         var type = power.type;
   
         // Handling for special trait types
-        if (type != "trait" && type != "costed_trait" && type != "rally_trait") {
+        if (type == "speed" || type == "attack" || type == "defense" || type == "damage") {
           type = this.unit_[type + "_type"];
         }
         
@@ -199,12 +199,19 @@ class CharacterView extends UnitView {
                 <img class='unitSpecialPowerIcon' src='images/sp_trait.png' alt=''/>
                 <img class='unitSpecialPowerRallyDie' src='images/d6_${power.rally_die}.png' alt='${power.rally_die}'/>
               </div>`;
+          } else if (type == "plus_plot_points" || type == "minus_plot_points") {
+            var textColor = type == "plus_plot_points" ? "white" : "black";
+            iconHtml = `
+              <div style='position: relative;'>
+                <img class='unitSpecialPowerIcon' src='images/sp_${type}.png' alt=''/>
+                <div class='unitSpecialPowerPlotPoints' style='color:${textColor};'>${Math.abs(power.plot_points)}</div>
+              </div>`;
           } else {
             iconHtml = `<img class='unitSpecialPowerIcon' src='images/sp_${type}.png' alt=''/>`;
           }
           html += `
             <tr class='unitSpecialPowerRow'>
-              <td class='unitSpecialPower'>${iconHtml}</td>
+              <td class='unitSpecialPowerImg'>${iconHtml}</td>
               <td class='unitSpecialPower'><b>${escapeHtml(power.name.toUpperCase())}</b><br>${escapeHtml(power.description)}</td>
             </tr>`;
         }

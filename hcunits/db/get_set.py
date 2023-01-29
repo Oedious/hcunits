@@ -18,7 +18,26 @@ SET_MAP = {
   "av4e": "Avengers Forever",
   "hgpc": "Hellfire Gala Premium Collection",
   "xmxssop": "X-Men: X of Swords Storyline Organized Play",
-  "xmxs": "X-Men: X of Swords"
+  "xmxs": "X-Men: X of Swords",
+  "msdp": "Marvel Studios Disney Plus",
+  "wotr": "Avengers: War of the Realms",
+  "ffwotr": "Fast Forces: Avengers: War of the Realms",
+  "ff2021": "Fantastic Four 2021 Storyline",
+  "affe": "Avengers Fantastic Four: Empyre",
+  "em": "Eternals Movie",
+  "xmrf": "X-Men: Rise and Fall",
+  "ffxmrf": "Fast Forces: X-Men: Rise and Fall",
+  "ww80": "Wonder Woman 80th Anniversary",
+  "ffff": "Fantastic Four: Future Foundation",
+  "ffffff": "Fast Forces: Fantastic Four: Future Foundation",
+  "dcff": "Deep Cuts: Fantastic Four",
+  "hox": "Fast Forces: House of X",
+  "ffhox": "House of X",
+  "svc": "Spider-Man and Venom: Absolute Carnage",
+  "ffsvc": "Fast Forces: Spider-Man and Venom: Absolute Carnage",
+  "bgame": "Battlegrounds: Avengers vs. Masters of Evil",
+  "f4": "Fantastic Four",
+  "fff4": "Fast Forces: Fantastic Four",
 }
 
 CACHE_DIR = ".cache"
@@ -36,6 +55,15 @@ def get_set_list_cache_path(set_id):
 def get_unit_cache_path(set_id, unit_id):
   filename = "unit_" + unit_id + ".html"
   return os.path.join(get_cache_path(set_id), filename)
+
+def clean_string(str):
+  # Convert some frequently used UTF-8 chars to ASCII.
+  str = str.replace(u"\u2019", "'")
+  str = str.replace(u"\u00e2\u0080\u0099", "'")
+  str = str.replace(u"\u00e2\u0080\u0093", "-")
+  str = str.replace(u"\u00e2\u0080\u015a", "...")
+  # Escape special XML characters.
+  return escape(str)
 
 # Returns the starting click of given dial with respect to that of this unit
 # or -1 if no match was found.
@@ -63,6 +91,9 @@ class Unit:
   def __init__(self, set_id, dimensions):
     self.set_id = set_id
     self.dimensions = dimensions
+
+    # This must be set in order to be valid.
+    self.type = None
 
     # These fields are conditionally used depending on the unit type.
     self.real_name = None
@@ -108,13 +139,21 @@ class Unit:
       self.rarity = "chase"
     elif rarity == "Rarity: Ultra Chase":
       self.rarity = "ultra_chase"
+    elif rarity == "Rarity: Fast Forces":
+      self.rarity = "fast_forces"
     else:
       raise RuntimeError("The unit rarity '%s' for '%s' is currently not supported" % (rarity, self.unit_id))
 
     figure_rank = re.search(r"figure_rank_(.*)", figure_rank_tag["class"][0]).group(1)
     # The type needs to be determined first because many other values are
     # conditional on it.
-    if figure_rank == "" or figure_rank == "unique" or figure_rank == "prime" or figure_rank == "special_object":
+    if (figure_rank == "" or
+        figure_rank == "rookie" or
+        figure_rank == "experienced" or
+        figure_rank == "veteran" or
+        figure_rank == "unique" or
+        figure_rank == "prime" or
+        figure_rank == "special_object"):
       # Look to see if it's a construct, indicated by a special power.
       is_construct = False
       tag_list = soup.find_all(text=re.compile(r'\s*Special Powers\s*'))
@@ -136,7 +175,10 @@ class Unit:
           self.type = "tarot_card"
       else:
         self.type = "character"
-        self.special_type = figure_rank
+        if figure_rank == "prime" or figure_rank == "unique":
+          self.special_type = figure_rank
+        elif soup.find_all(text=re.compile(r'\s*STARTING PLOT POINTS:\s*')):
+          self.special_type = "title_character"
         has_dial = soup.find("table", class_="units_dial")
         if not has_dial:
           is_team_up = self.name.startswith("Team Up:")
@@ -223,22 +265,22 @@ class Unit:
               attr.startswith("UNEQUIP: ") or
               attr == "Sword Equipment"):
             self.object_keyphrases.append(fix_style(attr))
-          elif attr == "Light Object":
-            object_type = "light"
+          elif attr.startswith("Light Object"):
+            self.object_type = "light"
           elif attr == "Heavy Object":
-            object_type = "heavy"
+            self.object_type = "heavy"
           elif attr == "Ultra Light Object":
-            object_type = "ultra_light"
+            self.object_type = "ultra_light"
           elif attr == "Ultra Heavy Object":
-            object_type = "ultra_heavy"
+            self.object_type = "ultra_heavy"
           elif attr == "Special Object":
-            object_type = "special"
+            self.object_type = "special"
           else:
             # Handle equipment special powers
             sp = attr.split(':', 1)
             if len(sp) >= 2:
               sp_name = sp[0]
-              sp_description = sp[1]
+              sp_description = sp[1].strip()
               if sp_name == "EQUIP":
                 object_equip = fix_style(sp_description)
               elif sp_name == "UNEQUIP":
@@ -247,7 +289,7 @@ class Unit:
                 self.special_powers.append(OrderedDict([
                   ("type", "equipment"),
                   ("name", sp_name),
-                  ("description", escape(sp_description))
+                  ("description", clean_string(sp_description))
                 ]))
             else:
               print("Skipping unknown object attribute '%s'" % attr)
@@ -273,8 +315,8 @@ class Unit:
           if name_tag:
             self.special_powers.append(OrderedDict([
               ("type", "mystery_card"),
-              ("name", escape(name_tag.strip())),
-              ("description", escape(name_tag.parent.next_sibling.strip()[2:]))
+              ("name", clean_string(name_tag.strip())),
+              ("description", clean_string(name_tag.parent.next_sibling.strip()[2:]))
             ]))
 
     # Parse tarot cards
@@ -283,7 +325,7 @@ class Unit:
       desc_tag = equip_tag.next_sibling.next_sibling.find("div")
       self.special_powers.append(OrderedDict([
         ("type", "tarot_card"),
-        ("description", escape(desc_tag.string.strip()))
+        ("description", clean_string(desc_tag.string.strip()))
       ]))
 
     # Parse special powers
@@ -311,6 +353,8 @@ class Unit:
             sp_type = "defense"
           elif sp_type_str.startswith("g-"):
             sp_type = "damage"
+          elif sp_type_str == "epic" and self.special_type == "title_character":
+            sp_type = "title_trait"
           else:
             raise RuntimeError("The special power type '%s' for '%s' is currently not supported" % (sp_type_str, unit_id))
 
@@ -329,27 +373,49 @@ class Unit:
           else:
             sp = OrderedDict([
               ("type", sp_type),
-              ("name", escape(sp_name)),
-              ("description", escape(sp_description))
+              ("name", clean_string(sp_name)),
+              ("description", clean_string(sp_description))
             ])
   
-            # Handle special trait types, like costed or rally
+            # Handle special trait types, like costed, rally, or plot points.
             if sp_type == "trait":
-              # Determine if it's a costed trait and if so, what it's point value is
+              # Handle title character traits, like plus and minus plot points.
+              if self.special_type == "title_character":
+                match_obj = re.search(r"^\(([-\+]\d+)\) (.*)", sp_name)
+                if match_obj:
+                  if match_obj.group(1)[0] == "+":
+                    prefix = "plus"
+                  else:
+                    prefix = "minus"
+                  sp["type"] = prefix + "_plot_points"
+                  sp["name"] = clean_string(match_obj.group(2))
+                  sp["plot_points"] = int(match_obj.group(1))
+
+              # Determine if it's a costed trait and if so, what it's point value is.
               match_obj = re.search(r"^\(\+(\d*) POINTS\) (.+)", sp_name)
               if match_obj:
                 sp["type"] = "costed_trait"
-                sp["name"] = escape(match_obj.group(2))
+                sp["name"] = clean_string(match_obj.group(2))
                 sp["point_value"] = match_obj.group(1)
-      
+
               # Check to see if it's a rally trait.
               match_obj = re.search(r"^RALLY \((\d+)\)", sp_name)
               if match_obj:
                 sp["type"] = "rally_trait"
                 sp["name"] = "RALLY"
-                sp["description"] = escape(td_tags[1].contents[4].strip()[2:])
-                sp["rally_type"] = td_tags[1].i.string.strip()[:-13].lower()
-                sp["rally_die"] = int(match_obj.group(1))
+                rally_die = int(match_obj.group(1))
+                if td_tags[1].i:
+                  sp["description"] = clean_string(td_tags[1].contents[4].strip()[2:])
+                  sp["rally_type"] = td_tags[1].i.string.strip()[:-13].lower()
+                else:
+                  match_obj = re.search(r"([a-zA-Z]*) Attack Rolls\. (.*)", td_tags[1].contents[2].strip())
+                  if not match_obj:
+                    match_obj = re.search(r"([a-zA-Z]*) attack rolls\. (.*)", td_tags[1].contents[2].strip())
+                  if not match_obj:
+                    raise RuntimeError("Cannot parse rally trait")
+                  sp["description"] = clean_string(match_obj.group(2))
+                  sp["rally_type"] = match_obj.group(1).lower()
+                sp["rally_die"] = rally_die
     
             # Avoid adding duplicates.
             dupe = [x for x in self.special_powers if x["name"] == sp["name"]]
@@ -478,11 +544,11 @@ class Unit:
     <collector_number>{}</collector_number>
     <name>{}</name>
     <type>{}</type>
-    <age>{}</age>""".format(self.unit_id, self.set_id, self.collector_number, escape(self.name), self.type, self.age)
+    <age>{}</age>""".format(self.unit_id, self.set_id, self.collector_number, clean_string(self.name), self.type, self.age)
     if self.rarity:
       xml += "\n    <rarity>%s</rarity>" % self.rarity
     if self.real_name:
-      xml += "\n    <real_name>%s</real_name>" % escape(self.real_name)
+      xml += "\n    <real_name>%s</real_name>" % clean_string(self.real_name)
     if self.special_type:
       xml += "\n    <special_type>%s</special_type>" % self.special_type
     if self.dimensions:
@@ -538,7 +604,7 @@ class Fetcher:
       set_name = SET_MAP[self.set_id];
       self.driver.get('https://www.hcrealms.com/forum/units/units_quicksets.php?q=' + set_name)
       soup = BeautifulSoup(self.driver.page_source, 'html.parser')
-      set_list_page = soup.prettify(formatter=lambda s: s.replace(u'\xa0', ' '))
+      set_list_page = soup.prettify(formatter=lambda s: s.replace(u'\xa0', ' ')).encode('utf-8')
   
       # Save it to disk to re-use later on
       filename = get_set_list_cache_path(self.set_id)
@@ -688,7 +754,7 @@ if __name__ == "__main__":
   output_xml += "\n</resultset>"
   filename = "set_%s.xml" % args.set_id
   f = open(filename, "w")
-  f.write(output_xml)
+  f.write(output_xml.encode('utf-8'))
   f.close()
   print("Wrote %d units to %s" % (num_processed, filename))
 
