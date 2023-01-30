@@ -65,16 +65,15 @@ def clean_string(str):
   # Escape special XML characters.
   return escape(str)
 
-# Returns the starting click of given dial with respect to that of this unit
-# or -1 if no match was found.
-def dials_equal(dst_dial, src_dial):
-  if len(dst_dial) != len(src_dial):
+# Returns true if the subdial matches the start of the dial.
+def is_subdial(dial, subdial):
+  if len(dial) < len(subdial):
     return False;
 
   i = 0
-  while i < len(dst_dial):
-    src = src_dial[i]
-    dst = dst_dial[i]
+  while i < len(subdial):
+    src = dial[i]
+    dst = subdial[i]
     if (src.get("speed_power") != dst.get("speed_power") or
         src.get("speed_value") != dst.get("speed_value") or
         src.get("attack_power") != dst.get("attack_power") or
@@ -255,11 +254,34 @@ class Unit:
         if tag.strong:
           tag = tag_list[1]
 
-        for attr in tag.children:
-          # Ignore non-strings.
-          if not attr.string:
-            continue;
-          attr = attr.strip()
+        children = list(tag.children)
+        attr_list = []
+        if len(children) == 1:
+          # The attribute list is formed by a single string that needs to be
+          # split apart.
+          parts = children[0].string.strip().split(".")
+          for part in parts:
+            part = part.strip()
+            if part == "":
+              continue
+
+            if (part.startswith("EQUIP: ") or
+                part.startswith("UNEQUIP: ") or
+                part.endswith("Object")):
+              attr_list.append(part)
+            elif part.startswith("EFFECT: "):
+              attr_list.append(part + ".")
+            elif len(attr_list) > 0 and attr_list[-1].startswith("EFFECT: "):
+              attr_list[-1] += " " + part + "."
+            else:
+              print("Skipping unknown object attribute part '%s'" % part)
+        else:
+          for attr in children:
+            # Ignore non-strings.
+            if attr.string:
+              attr_list.append(attr.strip())
+
+        for attr in attr_list:
           if (attr == "INDESTRUCTIBLE" or
               attr.startswith("EQUIP: ") or
               attr.startswith("UNEQUIP: ") or
@@ -275,24 +297,18 @@ class Unit:
             self.object_type = "ultra_heavy"
           elif attr == "Special Object":
             self.object_type = "special"
-          else:
+          elif attr.startswith("EFFECT: "):
             # Handle equipment special powers
             sp = attr.split(':', 1)
-            if len(sp) >= 2:
-              sp_name = sp[0]
-              sp_description = sp[1].strip()
-              if sp_name == "EQUIP":
-                object_equip = fix_style(sp_description)
-              elif sp_name == "UNEQUIP":
-                object_unequip = fix_style(sp_description)
-              else:
-                self.special_powers.append(OrderedDict([
-                  ("type", "equipment"),
-                  ("name", sp_name),
-                  ("description", clean_string(sp_description))
-                ]))
-            else:
-              print("Skipping unknown object attribute '%s'" % attr)
+            sp_name = sp[0]
+            sp_description = sp[1].strip()
+            self.special_powers.append(OrderedDict([
+              ("type", "equipment"),
+              ("name", sp_name),
+              ("description", clean_string(sp_description))
+            ]))
+          else:
+            print("Skipping unknown object attribute '%s'" % attr)
 
     # Parse equipment
     if self.type == "id_card" or self.type == "mystery_card":
@@ -347,7 +363,7 @@ class Unit:
             sp_type = "improved"
           elif sp_type_str.startswith("m-"):
             sp_type = "speed"
-          elif sp_type_str.startswith("a-"):
+          elif sp_type_str.startswith("a-") or sp_type_str.startswith("vehicle"):
             sp_type = "attack"
           elif sp_type_str.startswith("d-"):
             sp_type = "defense"
@@ -416,6 +432,10 @@ class Unit:
                   sp["description"] = clean_string(match_obj.group(2))
                   sp["rally_type"] = match_obj.group(1).lower()
                 sp["rally_die"] = rally_die
+                # Clean description string to remove rally rules
+                sp["description"] = sp["description"].replace("RALLY: Once per roll for each die in a finalized attack roll and for all characters with a matching RALLY die and trait color printed under their trait star, after resolutions you may choose a friendly character to gain a matching RALLY die. RALLY trait colors specify which attack type they can gain RALLY dies from. BLUE = Friendly Attack Rolls. RED = Opposing Attack Rolls. GREEN = All Attack Rolls.", "")
+                sp["description"] = sp["description"].replace(" When a character gains a RALLY die, place a die with the matching result on their card.", "")
+                sp["description"] = sp["description"].replace(" ()", "")
     
             # Avoid adding duplicates.
             dupe = [x for x in self.special_powers if x["name"] == sp["name"]]
@@ -518,23 +538,26 @@ class Unit:
       self.__dict__, src_unit.__dict__ = src_unit.__dict__, self.__dict__
       self.unit_id = src_unit.unit_id
 
-    # Determine if the src_unit dial is a copy of the start or end of this dial.
-    # Usually, it's at the end, so check that first.
+    # Starting at the end of the dial, move backwards until you find a section
+    # where the two dails match.
     starting_line = len(self.dial) - len(src_unit.dial)
-    if not dials_equal(self.dial[starting_line:], src_unit.dial):
-      # Otherwise, check that it's at the start.
-      if not dials_equal(self.dial[0:len(src_unit.dial)], src_unit.dial):
-        print("Failed to merge '%s' and '%s': dial mismatch" % (self.unit_id, unit.unit_id))
-        return False
-      starting_line = len(src_unit.dial)
+    is_match = False
+    while starting_line >= 0 and not is_match:
+      if is_subdial(self.dial[starting_line:], src_unit.dial):
+        is_match = True
+      else:
+        starting_line -= 1
+      
+    if not is_match:
+      print("Failed to merge '%s' and '%s': dial mismatch" % (self.unit_id, unit.unit_id))
+      return False
 
-    # Merge the units by adding a new point value (in sorted order) and starting line.
+    # Merge the units by adding a new point value (in descending sorted order) and starting line.
     pos = 0
     while pos < len(self.point_values) and self.point_values[pos] > src_unit.point_values[0]:
       pos += 1;
     self.point_values.insert(pos, src_unit.point_values[0])
     self.dial[starting_line]["starting_line"] = True
-    # Sort the starting lines so that 
     return True;
 
   def output_xml(self):

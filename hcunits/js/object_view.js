@@ -358,7 +358,7 @@ class ObjectView extends UnitView {
       html += `
         <tr class='unitSpecialPowerRow'>
           ${iconHtml}
-          <td class='unitSpecialPower'>${name}${escapeHtml(power.description)}</td>
+          <td class='unitSpecialPower'>${nameHtml}${escapeHtml(power.description)}</td>
         </tr>`;
     }
     return html;

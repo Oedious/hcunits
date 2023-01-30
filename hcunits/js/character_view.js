@@ -320,7 +320,7 @@ class CharacterView extends UnitView {
       var currentLine = 0;
       for (var click = tableDialStart; click < tableDialEnd; ++click) {
         if (this.unit_.dial[click].starting_line) {
-          var left = 31 + 23 * click;
+          var left = 31 + 23 * this.unit_.dial[click].click_number;
           var color = STARTING_LINE_COLORS[this.unit_.point_values.length][currentLine++];
           html += `<div class='characterDialStartingLine' style='left: ${left}px; background-color: ${color}'></div>`
         }
