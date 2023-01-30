@@ -1,24 +1,38 @@
-var DataSource = function() {
-}
-
-DataSource.prototype.searchBySetId = function(setId, onSuccess, onError) {
-    jQuery.get({
-        url: `https://api.hcunits.net/sets/${setId}/`,
-        dataType: 'text',
-        success: function(searchResults) {
-            onSuccess(JSON.parse(searchResults));
-        },
-        error: onError
-    });
-}
-
-DataSource.prototype.searchByUnitId = function(unitId, onSuccess, onError) {
-    jQuery.get({
-        url: `https://api.hcunits.net/units/${unitId}/`,
-        dataType: 'text',
-        success: function(searchResults) {
-            onSuccess(JSON.parse(searchResults));
-        },
-        error: onError
-    });
+class DataSource {
+  constructor(hostName) {
+    this.hostName_ = hostName
+  }
+  
+  searchBySetId(setId, onSuccess, onError) {
+      jQuery.get({
+          url: `${this.hostName_}/sets/${setId}/`,
+          dataType: 'text',
+          success: function(searchResults) {
+              onSuccess(JSON.parse(searchResults));
+          },
+          error: onError
+      });
+  }
+  
+  searchByUnitId(unitId, onSuccess, onError) {
+      jQuery.get({
+          url: `${this.hostName_}/units/${unitId}/`,
+          dataType: 'text',
+          success: function(searchResults) {
+              onSuccess(JSON.parse(searchResults));
+          },
+          error: onError
+      });
+  }
+  
+  quickSearch(query, onSuccess, onError) {
+      jQuery.get({
+          url: `${this.hostName_}/units/?search=${encodeURIComponent(query)}`,
+          dataType: 'text',
+          success: function(searchResults) {
+              onSuccess(JSON.parse(searchResults));
+          },
+          error: onError
+      });
+  }
 }

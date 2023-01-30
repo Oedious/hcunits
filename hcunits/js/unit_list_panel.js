@@ -10,7 +10,7 @@ class UnitListPanel extends ListPanel {
   panelName() {
     return "unitListPanel"
   }
-  
+
   numItems() {
     if (this.unitList_) {
       return this.unitList_.length;
@@ -34,16 +34,28 @@ class UnitListPanel extends ListPanel {
   }
 
   showSet(setId) {
-  var unitListPanel = this;
-  this.dataSource_.searchBySetId(setId,
-    function(unitList) {
-      unitListPanel.handleSearchResults_(unitList);
-    },
-    function(xhr, desc, err) {
-      alert("Error in searchBySetId(" + setId + "): " + desc) + " err=" + err;
-    });
+    var unitListPanel = this;
+    this.dataSource_.searchBySetId(setId,
+      function(unitList) {
+        unitListPanel.handleSearchResults_(unitList);
+      },
+      function(xhr, desc, err) {
+        alert("Error in searchBySetId(" + setId + "): " + desc) + " err=" + err;
+      });
   }
-  
+
+  showQuickSearchResults() {
+    var query = document.getElementById("quickSearch").value
+    var unitListPanel = this;
+    this.dataSource_.quickSearch(query,
+      function(unitList) {
+        unitListPanel.handleSearchResults_(unitList);
+      },
+      function(xhr, desc, err) {
+        alert("Error in showQuickSearchResults(" + query + "): " + desc) + " err=" + err;
+      });
+  }
+
   handleSearchResults_(unitList) {
     this.unitList_ = unitList;
     var html = ""
@@ -56,7 +68,8 @@ class UnitListPanel extends ListPanel {
         var pointValues = "";
         if (unit.point_values.length == 0) {
           pointValues = "0";
-        } else {
+        }
+        else {
           for (var j = 0; j < unit.point_values.length; ++j) {
             if (j != 0) {
               pointValues += "/";

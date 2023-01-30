@@ -24,10 +24,16 @@ class NavPanel {
   }
 
   showPanel() {
-    document.getElementById(this.panelName()).style.visibility = "visible"
+    var panel = document.getElementById(this.panelName());
+    if (panel.style.visibility != "visible") {
+      panel.style.visibility = "visible"
+    }
   }
   
   hidePanel() {
-    document.getElementById(this.panelName()).style.visibility = "hidden"
+    var panel = document.getElementById(this.panelName());
+    if (panel.style.visibility != "hidden") {
+      panel.style.visibility = "hidden"
+    }
   }
 }

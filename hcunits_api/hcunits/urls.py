@@ -18,8 +18,9 @@ from rest_framework.urlpatterns import format_suffix_patterns
 from hcunits.hcunits_api import views
 
 urlpatterns = [
-  path(r'sets/<set_id>/', views.set_detail),
-  path(r'units/<unit_id>/', views.unit_detail),
+  path(r'sets/<set_id>/', views.SetDetail.as_view()),
+  path(r'units/', views.UnitList.as_view()),
+  path(r'units/<unit_id>/', views.UnitDetail.as_view()),
 ]
 
 urlpatterns = format_suffix_patterns(urlpatterns)

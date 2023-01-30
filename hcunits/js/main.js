@@ -1,5 +1,7 @@
-//var dataSource = new DataSource();
-var dataSource = new MockDataSource();
+const HOST_NAME = "https://api.hcunits.net"
+//const HOST_NAME = "http://localhost:8000"
+var dataSource = new DataSource(HOST_NAME);
+//var dataSource = new MockDataSource();
 var mgr = new ViewManager(dataSource);
 var sideNav = new SideNav(dataSource);
 

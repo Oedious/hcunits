@@ -63,7 +63,7 @@ class SideNav {
       var hasBackArrow = this.panelStack_.length > 1;
       html = "<div id='panelTitleBar'>"
       if (hasBackArrow) {
-        html += "<a id='panelBackIcon' href='#' onclick='sideNav.popPanel()'><i class='material-icons'>arrow_back</i></a>"
+        html += "<a id='panelBackIcon' href='#' onclick='sideNav.popPanel(); return false;'><i class='material-icons'>arrow_back</i></a>"
       }
       html += `<div id='panelTitle'>${title}</div></div>`
     }
@@ -81,7 +81,10 @@ class SideNav {
     this.pushPanel(this.unitListPanel_)
   }
   
-  showQuickSearchResults(query) {
+  showQuickSearchResults() {
+    this.unitListPanel_.showQuickSearchResults()
+    this.unitListPanel_.title = "Quick Search"
+    this.setPanel(this.unitListPanel_)
   }
 
   setUnit(unitId) {
@@ -96,7 +99,6 @@ class SideNav {
     var sideNav = document.getElementById("sideNav")
     var unitContainer = document.getElementById("unitContainer")
     var icon = document.getElementById("sideNavToggleIcon")
-    console.log("sideNav.left=" + sideNav.style.left)
     if (!sideNav.style.left || sideNav.style.left == "0px") {
       sideNav.style.left = "-300px";
       icon.style.transform = "rotate(180deg)"

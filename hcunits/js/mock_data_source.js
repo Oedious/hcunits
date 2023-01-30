@@ -248,10 +248,28 @@ MockDataSource.prototype.searchBySetId = function(setId, onSuccess, onError) {
 }
 
 MockDataSource.prototype.searchByUnitId = function(unitId, onSuccess, onError) {
-  for (var unit of this.units_) {
-    if (unit.unit_id == unitId) {
-      onSuccess(unit);
-      return;
+  if (this.units_) {
+    for (var unit of this.units_) {
+      if (unit.unit_id == unitId) {
+        onSuccess(unit);
+        return;
+      }
     }
   }
+}
+
+MockDataSource.prototype.quickSearch = function(query, onSuccess, onError) {
+  query = query.toLowerCase()
+  var unitList = []
+  if (this.units_) {
+    for (var unit of this.units_) {
+      if (unit.unit_id.toLowerCase().includes(query) ||
+          unit.name.toLowerCase().includes(query) ||
+          (unit.real_name && unit.real_name.toLowerCase().includes(query))) {
+        unitList.push(unit)
+      }
+    }
+  }
+  onSuccess(unitList);
+  return;
 }

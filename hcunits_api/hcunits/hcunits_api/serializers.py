@@ -1,7 +1,7 @@
 from hcunits.hcunits_api.models import Unit
 from rest_framework import serializers
 
-class SetDetailSerializer(serializers.ModelSerializer):
+class UnitListSerializer(serializers.ModelSerializer):
   class Meta:
     model = Unit
     fields = ['unit_id', 'set_id', 'name', 'collector_number', 'point_values', 'rarity']
