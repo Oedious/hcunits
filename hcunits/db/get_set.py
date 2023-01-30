@@ -631,7 +631,9 @@ class Unit:
     while pos < len(self.point_values) and self.point_values[pos] > src_unit.point_values[0]:
       pos += 1;
     self.point_values.insert(pos, src_unit.point_values[0])
-    self.dial[starting_line]["starting_line"] = True
+
+    if starting_line < len(self.dial):
+      self.dial[starting_line]["starting_line"] = True
 
     # Add any missing special powers.
     for src_sp in src_unit.special_powers:
