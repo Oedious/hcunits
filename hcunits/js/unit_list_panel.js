@@ -23,6 +23,16 @@ class UnitListPanel extends ListPanel {
     document.getElementById("unitListItem_" + super.currentIndex).focus();
   }
 
+  setCurrentIndexByUnit(unitId) {
+    if (this.unitList_) {
+      for (var i = 0; i < this.unitList_.length; ++i) {
+        if (unitId == this.unitList_[i].unit_id) {
+          super.currentIndex = i
+        }
+      }
+    }
+  }
+
   showSet(setId) {
   var unitListPanel = this;
   this.dataSource_.searchBySetId(setId,
@@ -56,7 +66,7 @@ class UnitListPanel extends ListPanel {
         }
         html += `
             <li class='collection-item avatar'>
-              <a id='unitListItem_${i}' class='unitListItem' href='' onclick='mgr.showUnit("${unit.unit_id}"); return false;'>
+              <a id='unitListItem_${i}' class='unitListItem' href='' onclick='sideNav.setUnit("${unit.unit_id}"); return false;'>
                 <div class='listPanelImageDiv'>
                   <i class='material-icons circle' style='font-size: 36px; color:${color}; left:-5px;'>account_circle</i>
                 </div>

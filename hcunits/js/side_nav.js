@@ -84,6 +84,10 @@ class SideNav {
   showQuickSearchResults(query) {
   }
 
+  setUnit(unitId) {
+    this.unitListPanel_.setCurrentIndexByUnit(unitId)
+  }
+
   isVisible() {
     return document.getElementById("sideNav").style.left == "0px"
   }
