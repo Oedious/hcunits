@@ -1,0 +1,775 @@
+[
+  {
+    "unit_id": "dcff001", 
+    "set_id": "dcff", 
+    "collector_number": "001", 
+    "name": "Mr. Fantastic", 
+    "type": "character", 
+    "age": "modern", 
+    "rarity": "common", 
+    "real_name": "Reed Richards", 
+    "dimensions": "1x1", 
+    "point_values": [
+      75, 
+      20
+    ], 
+    "team_abilities": [
+      "fantastic_four"
+    ], 
+    "keywords": [
+      "Fantastic Four", 
+      "Illuminati", 
+      "Scientist"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "TORSO TRAMPOLINE", 
+        "description": "When a character's knockback path ends adjacent to Mr. Fantastic, after resolutions knock that character back a number of squares equal to the number of squares they were actually knocked back in any direction of your choosing."
+      }, 
+      {
+        "type": "defense", 
+        "name": "THIS IS OUR LAST CHANCE...", 
+        "description": "STOP. Super Senses."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "4", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 0, 
+        "starting_line": true, 
+        "speed_power": "leap_climb", 
+        "speed_value": 11, 
+        "attack_value": 11, 
+        "defense_power": "super_senses", 
+        "defense_value": 18, 
+        "damage_power": "shape_change", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 1, 
+        "speed_power": "leap_climb", 
+        "speed_value": 11, 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 18, 
+        "damage_power": "shape_change", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "leap_climb", 
+        "speed_value": 10, 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "shape_change", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "force_blast", 
+        "speed_value": 10, 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "force_blast", 
+        "speed_value": 9, 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "force_blast", 
+        "speed_value": 9, 
+        "attack_value": 9, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "leap_climb", 
+        "speed_value": 10, 
+        "attack_value": 9, 
+        "defense_power": "super_senses", 
+        "defense_value": 18, 
+        "damage_power": "shape_change", 
+        "damage_value": 2, 
+        "starting_line": true
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "force_blast", 
+        "speed_value": 9, 
+        "attack_value": 11, 
+        "defense_power": "special", 
+        "defense_value": 18, 
+        "damage_power": "outwit", 
+        "damage_value": 3
+      }
+    ]
+  }, 
+  {
+    "unit_id": "dcff002", 
+    "set_id": "dcff", 
+    "collector_number": "002", 
+    "name": "Invisible Woman", 
+    "type": "character", 
+    "age": "modern", 
+    "rarity": "common", 
+    "real_name": "Susan Storm", 
+    "dimensions": "1x1", 
+    "point_values": [
+      75, 
+      20
+    ], 
+    "team_abilities": [
+      "fantastic_four"
+    ], 
+    "keywords": [
+      "Fantastic Four", 
+      "Spy"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "FORCE FIELD SHOVE", 
+        "description": "FREE: Choose a character within range and line of fire and roll a d6. Knock that character back equal to the result in a direction of your choosing."
+      }, 
+      {
+        "type": "defense", 
+        "name": "I GUESS IT'S UP TO ME NOW...", 
+        "description": "STOP. Defend."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "6", 
+    "targets": "1", 
+    "speed_type": "wing", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 0, 
+        "starting_line": true, 
+        "speed_power": "stealth", 
+        "speed_value": 8, 
+        "attack_power": "quake", 
+        "attack_value": 11, 
+        "defense_power": "barrier", 
+        "defense_value": 19, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 1, 
+        "speed_power": "stealth", 
+        "speed_value": 8, 
+        "attack_power": "quake", 
+        "attack_value": 10, 
+        "defense_power": "barrier", 
+        "defense_value": 19, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "stealth", 
+        "speed_value": 8, 
+        "attack_power": "quake", 
+        "attack_value": 10, 
+        "defense_power": "barrier", 
+        "defense_value": 18, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_power": "incapacitate", 
+        "attack_value": 11, 
+        "defense_power": "barrier", 
+        "defense_value": 18, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_power": "incapacitate", 
+        "attack_value": 10, 
+        "defense_power": "defend", 
+        "defense_value": 19, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "stealth", 
+        "speed_value": 6, 
+        "attack_power": "incapacitate", 
+        "attack_value": 10, 
+        "defense_power": "defend", 
+        "defense_value": 18, 
+        "damage_value": 1, 
+        "starting_line": true
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "sidestep", 
+        "speed_value": 6, 
+        "attack_power": "incapacitate", 
+        "attack_value": 9, 
+        "defense_power": "special", 
+        "defense_value": 18, 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "dcff003", 
+    "set_id": "dcff", 
+    "collector_number": "003", 
+    "name": "The Thing", 
+    "type": "character", 
+    "age": "modern", 
+    "rarity": "common", 
+    "real_name": "Ben Grimm", 
+    "dimensions": "1x1", 
+    "point_values": [
+      75, 
+      20
+    ], 
+    "team_abilities": [
+      "fantastic_four"
+    ], 
+    "keywords": [
+      "Brute", 
+      "Fantastic Four"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "INCOMING, STRETCHO!", 
+        "description": "The Thing causes knockback with any attack result that includes a [4] and whenever he knocks a character back (from any source) he may choose the direction."
+      }, 
+      {
+        "type": "defense", 
+        "name": "I AIN'T FINISHED YET...", 
+        "description": "STOP. Invulnerability."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 0, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 11, 
+        "attack_value": 11, 
+        "defense_power": "impervious", 
+        "defense_value": 18, 
+        "damage_power": "empower", 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 1, 
+        "speed_power": "charge", 
+        "speed_value": 11, 
+        "attack_value": 11, 
+        "defense_power": "invulnerability", 
+        "defense_value": 18, 
+        "damage_power": "empower", 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "charge", 
+        "speed_value": 10, 
+        "attack_value": 11, 
+        "defense_power": "invulnerability", 
+        "defense_value": 18, 
+        "damage_power": "empower", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "charge", 
+        "speed_value": 10, 
+        "attack_value": 11, 
+        "defense_power": "invulnerability", 
+        "defense_value": 18, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "sidestep", 
+        "speed_value": 9, 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "sidestep", 
+        "speed_value": 9, 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "empower", 
+        "damage_value": 3, 
+        "starting_line": true
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 3
+      }
+    ]
+  }, 
+  {
+    "unit_id": "dcff004", 
+    "set_id": "dcff", 
+    "collector_number": "004", 
+    "name": "Human Torch", 
+    "type": "character", 
+    "age": "modern", 
+    "rarity": "common", 
+    "real_name": "Johnny Storm", 
+    "dimensions": "1x1", 
+    "point_values": [
+      75, 
+      20
+    ], 
+    "team_abilities": [
+      "fantastic_four"
+    ], 
+    "keywords": [
+      "Celebrity", 
+      "Fantastic Four"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "HOT FOOT!", 
+        "description": "Barrier as FREE, but only to generate one marker. When Human Torch uses it, after resolutions choose a character adjacent to to that marker and knock them back 2 squares."
+      }, 
+      {
+        "type": "defense", 
+        "name": "MY TIME TO SHINE...", 
+        "description": "STOP. Energy Shield/Deflection."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "6", 
+    "targets": "1", 
+    "speed_type": "wing", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 0, 
+        "starting_line": true, 
+        "speed_power": "running_shot", 
+        "speed_value": 10, 
+        "attack_value": 11, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 18, 
+        "damage_power": "enhancement", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 1, 
+        "speed_power": "running_shot", 
+        "speed_value": 10, 
+        "attack_value": 11, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 17, 
+        "damage_power": "enhancement", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "running_shot", 
+        "speed_value": 10, 
+        "attack_value": 12, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 17, 
+        "damage_power": "enhancement", 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "sidestep", 
+        "speed_value": 9, 
+        "attack_value": 11, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 17, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "sidestep", 
+        "speed_value": 9, 
+        "attack_value": 10, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 17, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 17, 
+        "damage_power": "enhancement", 
+        "damage_value": 3, 
+        "starting_line": true
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_value": 11, 
+        "defense_power": "special", 
+        "defense_value": 16, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "dcff005", 
+    "set_id": "dcff", 
+    "collector_number": "005", 
+    "name": "Dr. Doom", 
+    "type": "character", 
+    "age": "modern", 
+    "rarity": "common", 
+    "real_name": "Victor Von Doom", 
+    "dimensions": "1x1", 
+    "point_values": [
+      100, 
+      75, 
+      40
+    ], 
+    "team_abilities": [
+      "minions_of_doom"
+    ], 
+    "keywords": [
+      "Armor", 
+      "Cabal", 
+      "Fantastic Four", 
+      "Latveria", 
+      "Mystical", 
+      "Ruler", 
+      "Scientist"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "BELOVED RULER OF LATVERIA", 
+        "description": "Leadership."
+      }, 
+      {
+        "type": "attack", 
+        "name": "PHOTON SHOT", 
+        "description": "Energy Explosion. When Dr. Doom uses it, after resolutions each hit character is knocked back 2 squares in a direction of your choosing."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "8", 
+    "targets": "2", 
+    "speed_type": "wing", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 0, 
+        "starting_line": true, 
+        "speed_power": "running_shot", 
+        "speed_value": 10, 
+        "attack_power": "special", 
+        "attack_value": 11, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 18, 
+        "damage_power": "outwit", 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 1, 
+        "speed_power": "running_shot", 
+        "speed_value": 10, 
+        "attack_power": "special", 
+        "attack_value": 11, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 18, 
+        "damage_power": "outwit", 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "running_shot", 
+        "speed_value": 9, 
+        "attack_power": "special", 
+        "attack_value": 11, 
+        "defense_power": "invulnerability", 
+        "defense_value": 18, 
+        "damage_power": "outwit", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "sidestep", 
+        "speed_value": 9, 
+        "attack_power": "special", 
+        "attack_value": 11, 
+        "defense_power": "invulnerability", 
+        "defense_value": 18, 
+        "damage_power": "perplex", 
+        "damage_value": 3, 
+        "starting_line": true
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 11, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 3, 
+        "starting_line": true
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "force_blast", 
+        "speed_value": 7, 
+        "attack_power": "pulse_wave", 
+        "attack_value": 11, 
+        "defense_power": "regeneration", 
+        "defense_value": 18, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "force_blast", 
+        "speed_value": 6, 
+        "attack_power": "pulse_wave", 
+        "attack_value": 12, 
+        "defense_power": "regeneration", 
+        "defense_value": 18, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 3
+      }
+    ]
+  }, 
+  {
+    "unit_id": "dcff006", 
+    "set_id": "dcff", 
+    "collector_number": "006", 
+    "name": "Silver Surfer", 
+    "type": "character", 
+    "age": "modern", 
+    "rarity": "common", 
+    "real_name": "Norrin Radd", 
+    "dimensions": "1x1", 
+    "point_values": [
+      120, 
+      90, 
+      50
+    ], 
+    "team_abilities": [
+      "cosmic_energy"
+    ], 
+    "keywords": [
+      "Cosmic", 
+      "Defenders", 
+      "Herald"
+    ], 
+    "special_powers": [
+      {
+        "type": "speed", 
+        "name": "THE SILVER STREAK", 
+        "description": "Hypersonic Speed. When Silver Surfer uses it, after resolutions knock back each character 1 square that he moved through during the action in a direction of your choosing (may choose a different direction for each character)."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "6", 
+    "targets": "1", 
+    "speed_type": "wing", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 0, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 14, 
+        "attack_value": 12, 
+        "defense_power": "invulnerability", 
+        "defense_value": 18, 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 1, 
+        "speed_power": "special", 
+        "speed_value": 13, 
+        "attack_value": 11, 
+        "defense_power": "invulnerability", 
+        "defense_value": 18, 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "special", 
+        "speed_value": 13, 
+        "attack_value": 11, 
+        "defense_power": "invulnerability", 
+        "defense_value": 18, 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "special", 
+        "speed_value": 12, 
+        "attack_value": 11, 
+        "defense_power": "invulnerability", 
+        "defense_value": 18, 
+        "damage_value": 4, 
+        "starting_line": true
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "special", 
+        "speed_value": 12, 
+        "attack_value": 11, 
+        "defense_power": "invulnerability", 
+        "defense_value": 18, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "special", 
+        "speed_value": 11, 
+        "attack_value": 11, 
+        "defense_power": "invulnerability", 
+        "defense_value": 18, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "special", 
+        "speed_value": 11, 
+        "attack_value": 11, 
+        "defense_power": "invulnerability", 
+        "defense_value": 18, 
+        "damage_value": 3, 
+        "starting_line": true
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "special", 
+        "speed_value": 11, 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 8, 
+        "speed_power": "special", 
+        "speed_value": 10, 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 9, 
+        "speed_power": "earthbound_neutralized", 
+        "speed_value": 6, 
+        "attack_value": 10, 
+        "defense_power": "regeneration", 
+        "defense_value": 17, 
+        "damage_power": "support", 
+        "damage_value": 2
+      }
+    ]
+  }
+]

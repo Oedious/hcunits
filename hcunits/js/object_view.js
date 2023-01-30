@@ -76,7 +76,8 @@ const OBJECT_TYPE_TO_INFO = {
 class ObjectView extends UnitView {
   
   static isType(type) {
-    return type == "bystander" ||
+    return type == "object" ||
+           type == "bystander" ||
            type == "equipment" ||
            type == "construct" ||
            type == "id_card" ||
@@ -338,7 +339,7 @@ class ObjectView extends UnitView {
               <img class='unitSpecialPowerRallyDie' src='images/d6_${power.rally_die}.png' alt='${power.rally_die}'/>
             </div>
           </td>`;
-      } else if (type == "equipment" || type == "mystery_card" || type == "tarot_card") {
+      } else if (type == "object" || type == "equipment" || type == "mystery_card" || type == "tarot_card") {
         // Don't use an icon.
         iconHtml = ""
       } else {

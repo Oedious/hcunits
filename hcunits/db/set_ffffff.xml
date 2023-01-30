@@ -1,0 +1,611 @@
+<resultset>
+  <row>
+    <unit_id>ffffff001</unit_id>
+    <set_id>ffffff</set_id>
+    <collector_number>001</collector_number>
+    <name>Mr. Fantastic</name>
+    <type>character</type>
+    <age>modern</age>
+    <rarity>fast_forces</rarity>
+    <real_name>Reed Richards</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[50]</point_values>
+    <team_abilities>["fantastic_four"]</team_abilities>
+    <keywords>["Fantastic Four", "Illuminati", "Scientist"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "PREVENT YOU FROM HURTING ANYONE ELSE", 
+    "description": "When an opposing character would move adjacent to Mr. Fantastic, roll a d6. 4: Choose one: That character immediately ends their action -or- after resolutions, deal that character 1 penetrating damage."
+  }, 
+  {
+    "type": "trait", 
+    "name": "ARM LASSO", 
+    "description": "Plasticity, Giant Reach: 3."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 0, 
+    "starting_line": true, 
+    "speed_power": "sidestep", 
+    "speed_value": 10, 
+    "attack_value": 10, 
+    "defense_power": "barrier", 
+    "defense_value": 18, 
+    "damage_power": "outwit", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 1, 
+    "speed_power": "sidestep", 
+    "speed_value": 10, 
+    "attack_value": 10, 
+    "defense_power": "barrier", 
+    "defense_value": 18, 
+    "damage_power": "outwit", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "charge", 
+    "speed_value": 10, 
+    "attack_power": "quake", 
+    "attack_value": 11, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "charge", 
+    "speed_value": 10, 
+    "attack_power": "quake", 
+    "attack_value": 11, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "charge", 
+    "speed_value": 10, 
+    "attack_power": "quake", 
+    "attack_value": 11, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "sidestep", 
+    "speed_value": 10, 
+    "attack_value": 10, 
+    "defense_power": "regeneration", 
+    "defense_value": 18, 
+    "damage_power": "outwit", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ffffff002</unit_id>
+    <set_id>ffffff</set_id>
+    <collector_number>002</collector_number>
+    <name>Invisible Woman</name>
+    <type>character</type>
+    <age>modern</age>
+    <rarity>fast_forces</rarity>
+    <real_name>Susan Richards</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[50]</point_values>
+    <team_abilities>["fantastic_four"]</team_abilities>
+    <keywords>["Fantastic Four", "Spy"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "DIDN'T SEE THAT WALL?", 
+    "description": "When an opposing character would move adjacent to Invisible Woman, roll a d6. 4: Choose one: That character immediately ends their action -or- after resolutions, deal that character 1 penetrating damage."
+  }, 
+  {
+    "type": "trait", 
+    "name": "LIKE I'M NOT EVEN THERE", 
+    "description": "Stealth."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>6</unit_range>
+    <targets>1</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 0, 
+    "starting_line": true, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 10, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 18, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 1, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 9, 
+    "defense_power": "defend", 
+    "defense_value": 19, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 9, 
+    "defense_power": "defend", 
+    "defense_value": 19, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 10, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 18, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 10, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_value": 9, 
+    "defense_power": "regeneration", 
+    "defense_value": 18, 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ffffff003</unit_id>
+    <set_id>ffffff</set_id>
+    <collector_number>003</collector_number>
+    <name>The Thing</name>
+    <type>character</type>
+    <age>modern</age>
+    <rarity>fast_forces</rarity>
+    <real_name>Ben Grimm</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[50]</point_values>
+    <team_abilities>["fantastic_four"]</team_abilities>
+    <keywords>["Brute", "Fantastic Four"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "C'MERE... LEMME GIVE YOU A HUG", 
+    "description": "When an opposing character would move adjacent to The Thing, roll a d6. 4: Choose one: That character immediately ends their action -or- after resolutions, deal that character 1 penetrating damage."
+  }, 
+  {
+    "type": "trait", 
+    "name": "IT'S CLOBBERIN' TIME", 
+    "description": "Close Combat Expert."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 0, 
+    "starting_line": true, 
+    "speed_power": "charge", 
+    "speed_value": 11, 
+    "attack_power": "super_strength", 
+    "attack_value": 11, 
+    "defense_power": "invulnerability", 
+    "defense_value": 18, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 1, 
+    "speed_power": "charge", 
+    "speed_value": 10, 
+    "attack_power": "super_strength", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 18, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "flurry", 
+    "speed_value": 9, 
+    "attack_power": "super_strength", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "flurry", 
+    "speed_value": 9, 
+    "attack_power": "super_strength", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "flurry", 
+    "speed_value": 8, 
+    "attack_power": "super_strength", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "flurry", 
+    "speed_value": 8, 
+    "attack_value": 11, 
+    "defense_power": "regeneration", 
+    "defense_value": 18, 
+    "damage_value": 3
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ffffff004</unit_id>
+    <set_id>ffffff</set_id>
+    <collector_number>004</collector_number>
+    <name>Human Torch</name>
+    <type>character</type>
+    <age>modern</age>
+    <rarity>fast_forces</rarity>
+    <real_name>Johnny Storm</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[50]</point_values>
+    <team_abilities>["fantastic_four"]</team_abilities>
+    <keywords>["Celebrity", "Fantastic Four"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "YOU KNOW I'M HOT... 2,800 DEGREES TO BE EXACT", 
+    "description": "When an opposing character would move adjacent to Human Torch, roll a d6. 4: Choose one: That character immediately ends their action -or- after resolutions, deal that character 1 penetrating damage."
+  }, 
+  {
+    "type": "trait", 
+    "name": "SPONTANEOUS COMBUSTION", 
+    "description": "Poison."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>6</unit_range>
+    <targets>1</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 0, 
+    "starting_line": true, 
+    "speed_power": "running_shot", 
+    "speed_value": 8, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 11, 
+    "defense_value": 18, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 1, 
+    "speed_power": "running_shot", 
+    "speed_value": 9, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 10, 
+    "defense_value": 18, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "running_shot", 
+    "speed_value": 9, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 10, 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "sidestep", 
+    "speed_value": 9, 
+    "attack_power": "smoke_cloud", 
+    "attack_value": 10, 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "smoke_cloud", 
+    "attack_value": 10, 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 11, 
+    "defense_power": "regeneration", 
+    "defense_value": 18, 
+    "damage_value": 3
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ffffff005</unit_id>
+    <set_id>ffffff</set_id>
+    <collector_number>005</collector_number>
+    <name>Spider-Man</name>
+    <type>character</type>
+    <age>modern</age>
+    <rarity>fast_forces</rarity>
+    <real_name>Peter Parker</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[50]</point_values>
+    <team_abilities>["fantastic_four"]</team_abilities>
+    <keywords>["Fantastic Four", "Scientist", "Spider-Man Family"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "WEBBED FEET", 
+    "description": "When an opposing character would move adjacent to Spider-Man, roll a d6. 4: Choose one: That character immediately ends their action -or- after resolutions, deal that character 1 penetrating damage."
+  }, 
+  {
+    "type": "trait", 
+    "name": "WEB SHOOTERS", 
+    "description": "Incapacitate."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>4</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 0, 
+    "starting_line": true, 
+    "speed_power": "charge", 
+    "speed_value": 11, 
+    "attack_value": 11, 
+    "defense_power": "super_senses", 
+    "defense_value": 18, 
+    "damage_power": "probability_control", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 1, 
+    "speed_power": "charge", 
+    "speed_value": 11, 
+    "attack_value": 11, 
+    "defense_power": "super_senses", 
+    "defense_value": 18, 
+    "damage_power": "probability_control", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "hypersonic_speed", 
+    "speed_value": 10, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "hypersonic_speed", 
+    "speed_value": 10, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "hypersonic_speed", 
+    "speed_value": 9, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "sidestep", 
+    "speed_value": 9, 
+    "attack_value": 11, 
+    "defense_power": "regeneration", 
+    "defense_value": 18, 
+    "damage_value": 3
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ffffff006</unit_id>
+    <set_id>ffffff</set_id>
+    <collector_number>006</collector_number>
+    <name>Dr. Doom</name>
+    <type>character</type>
+    <age>modern</age>
+    <rarity>fast_forces</rarity>
+    <real_name>Victor Von Doom</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[100, 50]</point_values>
+    <team_abilities>["fantastic_four", "minions_of_doom"]</team_abilities>
+    <keywords>["Fantastic Four", "Latveria", "Mystical", "Ruler", "Scientist"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "ONCE AGAIN I PROVE MY SUPERIORITY", 
+    "description": "When an opposing character would move adjacent to Dr. Doom, roll a d6. 4-6: Choose one: That character immediately ends their action -or- after resolutions, deal that character 1 penetrating damage."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>8</unit_range>
+    <targets>2</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 0, 
+    "starting_line": true, 
+    "speed_power": "running_shot", 
+    "speed_value": 8, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 11, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 18, 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 1, 
+    "speed_power": "running_shot", 
+    "speed_value": 8, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 11, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 18, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "running_shot", 
+    "speed_value": 7, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "running_shot", 
+    "speed_value": 7, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 11, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 18, 
+    "damage_power": "support", 
+    "damage_value": 3, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 10, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 18, 
+    "damage_power": "support", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "support", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 11, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "support", 
+    "damage_value": 4
+  }
+]</dial>
+  </row>
+</resultset>

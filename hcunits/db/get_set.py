@@ -31,8 +31,8 @@ SET_MAP = {
   "ffff": "Fantastic Four: Future Foundation",
   "ffffff": "Fast Forces: Fantastic Four: Future Foundation",
   "dcff": "Deep Cuts: Fantastic Four",
-  "hox": "Fast Forces: House of X",
-  "ffhox": "House of X",
+  "hx": "House of X",
+  "ffhx": "Fast Forces: House of X",
   "svc": "Spider-Man and Venom: Absolute Carnage",
   "ffsvc": "Fast Forces: Spider-Man and Venom: Absolute Carnage",
   "bgame": "Battlegrounds: Avengers vs. Masters of Evil",
@@ -152,7 +152,9 @@ class Unit:
         figure_rank == "veteran" or
         figure_rank == "unique" or
         figure_rank == "prime" or
-        figure_rank == "special_object"):
+        figure_rank == "limited_edition" or
+        figure_rank == "special_object" or
+        figure_rank == "location_bonus"):
       # Look to see if it's a construct, indicated by a special power.
       is_construct = False
       tag_list = soup.find_all(text=re.compile(r'\s*Special Powers\s*'))
@@ -161,7 +163,11 @@ class Unit:
       if is_construct:
           self.type = "construct"
       elif soup.find("td", class_="card_special_object"):
-        self.type = "equipment"
+        if (soup.find(text=re.compile(r'.*EFFECT: .*')) or
+            soup.find(text=re.compile(r'.*Effect: .*'))):
+          self.type = "equipment"
+        else:
+          self.type = "object"
       elif soup.find("td", class_="card_id_card"):
         if soup.find(text=re.compile(r'\s*Mystery Card\s*')):
           self.type = "mystery_card"
@@ -172,6 +178,9 @@ class Unit:
           self.type = "mystery_card"
         else:
           self.type = "tarot_card"
+      elif soup.find("td", class_="card_location_bonus"):
+        print("Skipping location bonuses as they should be tied to a map, when they're supported.")
+        return False
       else:
         self.type = "character"
         if figure_rank == "prime" or figure_rank == "unique":
@@ -200,7 +209,7 @@ class Unit:
 
     if self.type == "character" or self.type == "bystander" or self.type == "construct":
       point_value_tag = soup.find("div", {"style": "float:right;padding-top:3px;"})
-    elif self.type == "equipment" or self.type == "id_card" or self.type == "mystery_card":
+    elif self.type == "object" or self.type == "equipment" or self.type == "id_card" or self.type == "mystery_card":
       point_value_tag = soup.find("td", class_="tfoot")
     elif self.type == "team_up" or self.type == "tarot_card":
       point_value_tag = None
@@ -244,6 +253,41 @@ class Unit:
       for tag in tag_list:
         self.keywords.append(tag.string.strip())
 
+    # Parse object special powers
+    if self.type == "object":
+      equip_tag = soup.find("td", class_="card_special_object").parent
+      tag_list = equip_tag.next_sibling.next_sibling.find_all("div")
+      for tag in tag_list:
+        # The attribute list is formed by a single string that needs to be
+        # split apart.
+        parts = tag.string.strip().split(".")
+        description = None
+        for part in parts:
+          part = part.strip()
+          if part == "":
+            continue
+
+          if part == "Light Object":
+            self.object_type = "light"
+          elif part == "Heavy Object":
+            self.object_type = "heavy"
+          elif part == "Ultra Light Object":
+            self.object_type = "ultra_light"
+          elif part == "Ultra Heavy Object":
+            self.object_type = "ultra_heavy"
+          elif part == "Special Object":
+            self.object_type = "special"
+          elif not description:
+            description = part + "."
+          else:
+            description += " " + part + "."
+
+        if description:
+          self.special_powers.append(OrderedDict([
+            ("type", "object"),
+            ("description", clean_string(description))
+          ]))
+
     # Parse equipment special powers
     if self.type == "equipment":
       equip_tag = soup.find("td", class_="card_special_object").parent
@@ -265,7 +309,8 @@ class Unit:
             if part == "":
               continue
 
-            if (part.startswith("EQUIP: ") or
+            if (part.upper() == "INDESTRUCTIBLE" or
+                part.startswith("EQUIP: ") or
                 part.startswith("UNEQUIP: ") or
                 part.endswith("Object")):
               attr_list.append(part)
@@ -282,7 +327,10 @@ class Unit:
               attr_list.append(attr.strip())
 
         for attr in attr_list:
-          if (attr == "INDESTRUCTIBLE" or
+          if len(attr) <= 0:
+            continue;
+
+          if (attr.upper() == "INDESTRUCTIBLE" or
               attr.startswith("EQUIP: ") or
               attr.startswith("UNEQUIP: ") or
               attr == "Sword Equipment"):
@@ -297,18 +345,19 @@ class Unit:
             self.object_type = "ultra_heavy"
           elif attr == "Special Object":
             self.object_type = "special"
-          elif attr.startswith("EFFECT: "):
-            # Handle equipment special powers
-            sp = attr.split(':', 1)
-            sp_name = sp[0]
-            sp_description = sp[1].strip()
-            self.special_powers.append(OrderedDict([
-              ("type", "equipment"),
-              ("name", sp_name),
-              ("description", clean_string(sp_description))
-            ]))
           else:
-            print("Skipping unknown object attribute '%s'" % attr)
+            # Handle equipment special powers, including "EFFECT"
+            sp = attr.split(':', 1)
+            if len(sp) >= 2:
+              sp_name = sp[0]
+              sp_description = sp[1].strip()
+              self.special_powers.append(OrderedDict([
+                ("type", "equipment"),
+                ("name", sp_name),
+                ("description", clean_string(sp_description))
+              ]))
+            else:
+              print("Skipping unknown object attribute '%s'" % attr)
 
     # Parse equipment
     if self.type == "id_card" or self.type == "mystery_card":
@@ -374,30 +423,33 @@ class Unit:
           else:
             raise RuntimeError("The special power type '%s' for '%s' is currently not supported" % (sp_type_str, unit_id))
 
-          sp_name = td_tags[1].strong.string.strip().rstrip(':')
+          if td_tags[1].strong:
+            sp_name = td_tags[1].strong.string.strip().rstrip(':')
+            sp_description = td_tags[1].contents[2].strip()
+          else:
+            sp_name = None
+            sp_description = td_tags[1].string.strip()
 
           # Skip the special power that describes a construct
           if self.type == "construct" and sp_name == "CONSTRUCTS":
             continue
           
-          sp_description = td_tags[1].contents[2].strip()
           if sp_type == "improved":
             if sp_name == "MOVEMENT":
               improved_movement = sp_description.split(", ")
             elif sp_name == "TARGETING":
               improved_targeting = sp_description.split(", ")
           else:
-            sp = OrderedDict([
-              ("type", sp_type),
-              ("name", clean_string(sp_name)),
-              ("description", clean_string(sp_description))
-            ])
-  
+            sp = OrderedDict([("type", sp_type)])
+            if sp_name:
+              sp["name"] = clean_string(sp_name)
+            sp["description"] = clean_string(sp_description)
+
             # Handle special trait types, like costed, rally, or plot points.
-            if sp_type == "trait":
+            if sp_type == "trait" and sp_name:
               # Handle title character traits, like plus and minus plot points.
               if self.special_type == "title_character":
-                match_obj = re.search(r"^\(([-\+]\d+)\) (.*)", sp_name)
+                match_obj = re.search(r"^\(([-\+][X\d])\) (.*)", sp_name)
                 if match_obj:
                   if match_obj.group(1)[0] == "+":
                     prefix = "plus"
@@ -405,14 +457,21 @@ class Unit:
                     prefix = "minus"
                   sp["type"] = prefix + "_plot_points"
                   sp["name"] = clean_string(match_obj.group(2))
-                  sp["plot_points"] = int(match_obj.group(1))
+                  if match_obj.group(1)[1] == "X":
+                    sp["plot_points"] = "X"
+                  else:
+                    sp["plot_points"] = int(match_obj.group(1))
 
               # Determine if it's a costed trait and if so, what it's point value is.
               match_obj = re.search(r"^\(\+(\d*) POINTS\) (.+)", sp_name)
+              # Try the alternative format. Note: this can conflict with the
+              # style of title character plot points, so ignore it in that case.
+              if not match_obj and self.special_type != "title_character":
+                match_obj = re.search(r"^\(\+(\d*)\) (.+)", sp_name)
               if match_obj:
                 sp["type"] = "costed_trait"
                 sp["name"] = clean_string(match_obj.group(2))
-                sp["point_value"] = match_obj.group(1)
+                sp["point_value"] = int(match_obj.group(1))
 
               # Check to see if it's a rally trait.
               match_obj = re.search(r"^RALLY \((\d+)\)", sp_name)
@@ -537,6 +596,7 @@ class Unit:
       # "Swap" the units, such that 'self' is now the the higher point unit.
       self.__dict__, src_unit.__dict__ = src_unit.__dict__, self.__dict__
       self.unit_id = src_unit.unit_id
+      self.collector_number = src_unit.collector_number
 
     # Starting at the end of the dial, move backwards until you find a section
     # where the two dails match.
@@ -547,10 +607,24 @@ class Unit:
         is_match = True
       else:
         starting_line -= 1
-      
+
     if not is_match:
-      print("Failed to merge '%s' and '%s': dial mismatch" % (self.unit_id, unit.unit_id))
-      return False
+    # Hack to get ffwotr dials to be merged.
+      if self.set_id == "ffwotr":
+        starting_line = len(self.dial)
+        click_num = 6
+        for click in src_unit.dial:
+          click["click_number"] = click_num
+          self.dial.append(click)
+          click_num += 1
+      else:
+        print("Failed to merge '%s' and '%s': dial mismatch" % (self.unit_id, unit.unit_id))
+        return False
+      
+    # This is a case where the dial grows longer when you pay more points, with
+    # the "starting line" being at the end of the shorter dial.
+    if starting_line == 0:
+      starting_line = len(src_unit.dial)
 
     # Merge the units by adding a new point value (in descending sorted order) and starting line.
     pos = 0
@@ -558,10 +632,26 @@ class Unit:
       pos += 1;
     self.point_values.insert(pos, src_unit.point_values[0])
     self.dial[starting_line]["starting_line"] = True
+
+    # Add any missing special powers.
+    for src_sp in src_unit.special_powers:
+      found = False
+      for dst_sp in self.special_powers:
+        if src_sp["name"] == dst_sp["name"]:
+          found = True
+          break;
+      if not found:
+        # Insert Traits at the front, otherwise at the end.
+        if src_sp["type"].find("trait") != -1:
+          self.special_powers.insert(0, src_sp)
+        else:  
+          self.special_powers.append(src_sp)
+
+    # Return true to indicate a successful merge.
     return True;
 
   def output_xml(self):
-    xml = """
+    xml = u"""
     <unit_id>{}</unit_id>
     <set_id>{}</set_id>
     <collector_number>{}</collector_number>
@@ -606,14 +696,20 @@ class Unit:
 
 class Fetcher:
   def __init__(self, set_id, skip_cache):
-    options = Options()
-    options.add_argument("--headless")
-    self.driver = webdriver.Chrome(options=options)
+    self.driver = None
     self.set_id = set_id
     self.skip_cache = skip_cache
     
+  def init_driver(self):
+    if not self.driver:
+      options = Options()
+      options.add_argument("--headless")
+      self.driver = webdriver.Chrome(options=options)
+
   def close(self):
-    self.driver.close()
+    if self.driver:
+      self.driver.close()
+      self.driver = None
 
   # Fetch the set list page
   def fetch_set_list_page(self):
@@ -625,6 +721,7 @@ class Fetcher:
       f.close()
     else:
       set_name = SET_MAP[self.set_id];
+      self.init_driver()
       self.driver.get('https://www.hcrealms.com/forum/units/units_quicksets.php?q=' + set_name)
       soup = BeautifulSoup(self.driver.page_source, 'html.parser')
       set_list_page = soup.prettify(formatter=lambda s: s.replace(u'\xa0', ' ')).encode('utf-8')
@@ -684,6 +781,7 @@ class Fetcher:
       unit_page = f.read()
       f.close()
     else:
+      self.init_driver()
       self.driver.get('https://www.hcrealms.com/forum/units/units_figure.php?q=' + unit_id)
       soup = BeautifulSoup(self.driver.page_source, 'html.parser')
       unit_page = soup.prettify(formatter=lambda s: s.replace(u'\xa0', ' '))
@@ -699,11 +797,16 @@ class Fetcher:
 if __name__ == "__main__":
   parser = argparse.ArgumentParser()
   parser.add_argument("--set_id", help="The set ID for which to get", required=True)
+  parser.add_argument("--unit_id", help="The single unit ID to handle")
   parser.add_argument("--unit_id_start", help="The unit ID from which to start")
   parser.add_argument("--unit_id_stop", help="The unit ID from which to stop")
   parser.add_argument("--skip_cache", help="If set, will avoid using the locally cached versions when available", action='store_true', default=False)
   parser.add_argument("--max_units", help="The maximum number of units parsed in a single pass", default=1000)
   args = parser.parse_args()
+
+  if args.unit_id:
+    args.unit_id_start = args.unit_id
+    args.max_units = 1
 
   # Ensure that the cache directory exists.
   if not os.path.exists(CACHE_DIR):
@@ -722,7 +825,7 @@ if __name__ == "__main__":
       dimensions = set["dimensions"]
       if args.unit_id_stop and unit_id == args.unit_id_stop:
         break;
-  
+
       unit_page = fetcher.fetch_unit_page(unit_id);
       unit = Unit(args.set_id, dimensions)
       if unit.parse_unit_page(unit_page):
@@ -740,8 +843,9 @@ if __name__ == "__main__":
           # Find the associated unit and create a new unit from that by copying
           # in the team-up special powers and updating the unit_id.
           associated_unit = None
+          associated_unit_id = unit_id[:unit_id.rfind(".")]
           for u in units:
-            if u.unit_id == unit_id[:-2]:
+            if u.unit_id == associated_unit_id:
               associated_unit = u
               break
           if associated_unit:

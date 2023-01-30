@@ -1,0 +1,675 @@
+[
+  {
+    "unit_id": "fff4001", 
+    "set_id": "fff4", 
+    "collector_number": "001", 
+    "name": "Spider-Man", 
+    "type": "character", 
+    "age": "modern", 
+    "rarity": "fast_forces", 
+    "real_name": "Peter Parker", 
+    "dimensions": "1x1", 
+    "point_values": [
+      75, 
+      50
+    ], 
+    "team_abilities": [
+      "fantastic_four", 
+      "spider_man"
+    ], 
+    "keywords": [
+      "Fantastic Four", 
+      "Scientist", 
+      "Spider-Man Family"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "WHATEVER A SPIDER CAN", 
+        "description": "Super Senses, but succeeds on a 4-6. Protected: Outwit."
+      }, 
+      {
+        "type": "trait", 
+        "name": "I'LL JUST WEB THIS GUY UP", 
+        "description": "When Spider-Man hits with a range attack, a hit target gains Immobile until your next turn."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "4", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 0, 
+        "starting_line": true, 
+        "speed_power": "hypersonic_speed", 
+        "speed_value": 8, 
+        "attack_value": 11, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 1, 
+        "speed_power": "hypersonic_speed", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "hypersonic_speed", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 17, 
+        "damage_value": 3, 
+        "starting_line": true
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "fff4002", 
+    "set_id": "fff4", 
+    "collector_number": "002", 
+    "name": "Hulk", 
+    "type": "character", 
+    "age": "modern", 
+    "rarity": "fast_forces", 
+    "real_name": "Bruce Banner", 
+    "dimensions": "1x1", 
+    "point_values": [
+      75, 
+      50
+    ], 
+    "team_abilities": [
+      "fantastic_four", 
+      "underworld"
+    ], 
+    "keywords": [
+      "Fantastic Four", 
+      "Monster"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "STRONGEST ONE THERE IS", 
+        "description": "Super Strength. When Hulk makes a close object attack, modify damage an additional +1. Protected: Outwit."
+      }, 
+      {
+        "type": "speed", 
+        "name": "LEAPING SMASH", 
+        "description": "Leap/Climb. FREE: [Improved Movement: Elevated, Hindering]. Roll a d6. Move up to the result."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 0, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 10, 
+        "attack_value": 10, 
+        "defense_power": "invincible", 
+        "defense_value": 18, 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 1, 
+        "speed_power": "special", 
+        "speed_value": 9, 
+        "attack_value": 11, 
+        "defense_power": "invincible", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_value": 11, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_value": 3, 
+        "starting_line": true
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_value": 11, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_value": 11, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_value": 12, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }
+    ]
+  }, 
+  {
+    "unit_id": "fff4003", 
+    "set_id": "fff4", 
+    "collector_number": "003", 
+    "name": "Wolverine", 
+    "type": "character", 
+    "age": "modern", 
+    "rarity": "fast_forces", 
+    "real_name": "Laura Kinney", 
+    "dimensions": "1x1", 
+    "point_values": [
+      75, 
+      50
+    ], 
+    "team_abilities": [
+      "fantastic_four", 
+      "x_men"
+    ], 
+    "keywords": [
+      "Fantastic Four", 
+      "Weapon X", 
+      "X-Force", 
+      "X-Men"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "SNIKT!", 
+        "description": "Blades/Claws/Fangs. Protected: Outwit."
+      }, 
+      {
+        "type": "speed", 
+        "name": "BIOLOGICALLY-ENGINEERED KILLING MACHINE", 
+        "description": "Charge, Flurry."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 0, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 9, 
+        "attack_power": "precision_strike", 
+        "attack_value": 11, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "battle_fury", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 1, 
+        "speed_power": "special", 
+        "speed_value": 8, 
+        "attack_power": "precision_strike", 
+        "attack_value": 11, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "battle_fury", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "special", 
+        "speed_value": 8, 
+        "attack_power": "precision_strike", 
+        "attack_value": 11, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "battle_fury", 
+        "damage_value": 2, 
+        "starting_line": true
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "special", 
+        "speed_value": 8, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "battle_fury", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "flurry", 
+        "speed_value": 7, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "battle_fury", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "flurry", 
+        "speed_value": 7, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "regeneration", 
+        "defense_value": 17, 
+        "damage_power": "battle_fury", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "fff4004", 
+    "set_id": "fff4", 
+    "collector_number": "004", 
+    "name": "Ghost Rider", 
+    "type": "character", 
+    "age": "modern", 
+    "rarity": "fast_forces", 
+    "real_name": "Danny Ketch", 
+    "dimensions": "1x1", 
+    "point_values": [
+      75, 
+      50
+    ], 
+    "team_abilities": [
+      "fantastic_four", 
+      "mystics"
+    ], 
+    "keywords": [
+      "Fantastic Four", 
+      "Marvel Knights", 
+      "Midnight Sons", 
+      "Mystical"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "A NEW KIND OF FANTASTIC TEAMWORK", 
+        "description": "When Ghost Rider hits with a close attack, until your next turn other friendly characters with the Fantastic Four keyword can use Exploit Weakness."
+      }, 
+      {
+        "type": "trait", 
+        "name": "THE NEW FANTASTIC FOUR", 
+        "description": "Passenger: 1, but only to carry characters with the Fantastic Four keyword. // Once per turn, when Ghost Rider is carried and placed adjacent to 2+ opposing characters, after resolutions he may make a close attack."
+      }, 
+      {
+        "type": "attack", 
+        "name": "NO HIDING FROM JUDGEMENT", 
+        "description": "Penetrating/Psychic Blast, [Improved Targeting: Hindering]. When making a range attack, if Ghost Rider's line of fire crosses hindering terrain, modify attack and damage +1."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "5", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 0, 
+        "starting_line": true, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 11, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 1, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_value": 3, 
+        "starting_line": true
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "plasticity", 
+        "speed_value": 7, 
+        "attack_power": "poison", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "plasticity", 
+        "speed_value": 7, 
+        "attack_power": "poison", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "plasticity", 
+        "speed_value": 7, 
+        "attack_power": "poison", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 18, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "fff4005", 
+    "set_id": "fff4", 
+    "collector_number": "005", 
+    "name": "Black Panther", 
+    "type": "character", 
+    "age": "modern", 
+    "rarity": "fast_forces", 
+    "real_name": "T'Challa", 
+    "dimensions": "1x1", 
+    "point_values": [
+      75, 
+      50
+    ], 
+    "team_abilities": [
+      "avengers", 
+      "fantastic_four"
+    ], 
+    "keywords": [
+      "Avengers", 
+      "Fantastic Four", 
+      "Illuminati", 
+      "Marvel Knights", 
+      "Ruler", 
+      "Wakanda", 
+      "Warrior"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "MANTLE OF THE BLACK PANTHER", 
+        "description": "Stealth. Shape Change, but only if occupying hindering terrain."
+      }, 
+      {
+        "type": "damage", 
+        "name": "KING OF WAKANDA", 
+        "description": "Leadership, Outwit."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "4", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 0, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 11, 
+        "defense_power": "toughness", 
+        "defense_value": 18, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 1, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 3, 
+        "starting_line": true
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "charge", 
+        "speed_value": 7, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "charge", 
+        "speed_value": 7, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "fff4006", 
+    "set_id": "fff4", 
+    "collector_number": "006", 
+    "name": "She-Thing", 
+    "type": "character", 
+    "age": "modern", 
+    "rarity": "fast_forces", 
+    "real_name": "Sharon Ventura", 
+    "dimensions": "1x1", 
+    "point_values": [
+      75, 
+      50
+    ], 
+    "team_abilities": [
+      "fantastic_four", 
+      "team_player"
+    ], 
+    "keywords": [
+      "Fantastic Four", 
+      "Monster"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "DON'T WORRY, I CAN TAKE A HIT", 
+        "description": "She-Thing takes a maximum of 1 damage from the first attack that hits her each turn. At the end of each turn, heal her 1 click if she was hit by a range attack that turn."
+      }, 
+      {
+        "type": "damage", 
+        "name": "HAD ENOUGH YET?", 
+        "description": "Close Combat Expert. When She-Thing uses it, you may modify attack or damage by an additional +1."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 0, 
+        "starting_line": true, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 1, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 2, 
+        "starting_line": true
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_power": "super_strength", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_power": "super_strength", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }
+    ]
+  }
+]

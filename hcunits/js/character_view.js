@@ -201,10 +201,11 @@ class CharacterView extends UnitView {
               </div>`;
           } else if (type == "plus_plot_points" || type == "minus_plot_points") {
             var textColor = type == "plus_plot_points" ? "white" : "black";
+            var plotPoints = power.plot_points == "X" ? "X" : Math.abs(power.plot_points);
             iconHtml = `
               <div style='position: relative;'>
                 <img class='unitSpecialPowerIcon' src='images/sp_${type}.png' alt=''/>
-                <div class='unitSpecialPowerPlotPoints' style='color:${textColor};'>${Math.abs(power.plot_points)}</div>
+                <div class='unitSpecialPowerPlotPoints' style='color:${textColor};'>${plotPoints}</div>
               </div>`;
           } else {
             iconHtml = `<img class='unitSpecialPowerIcon' src='images/sp_${type}.png' alt=''/>`;

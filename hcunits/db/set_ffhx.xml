@@ -1,0 +1,764 @@
+<resultset>
+  <row>
+    <unit_id>ffhx001</unit_id>
+    <set_id>ffhx</set_id>
+    <collector_number>001</collector_number>
+    <name>Wolverine</name>
+    <type>character</type>
+    <age>modern</age>
+    <rarity>fast_forces</rarity>
+    <real_name>James Howlett</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[75, 50]</point_values>
+    <team_abilities>["x_men"]</team_abilities>
+    <keywords>["Animal", "X-Force", "X-Men"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "THE MUTANT C.I.A.", 
+    "description": "Stealth. Improved Movement: Hindering. Improved Targeting: Hindering."
+  }, 
+  {
+    "type": "speed", 
+    "name": "X-FORCE IS A GO!", 
+    "description": "Charge. // FREE: If Wolverine occupies hindering terrain, place him in a square of hindering terrain within 3 squares and line of fire."
+  }, 
+  {
+    "type": "defense", 
+    "name": "THINK THIS ONE'S STILL ALIVE", 
+    "description": "STOP. Impervious."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 0, 
+    "starting_line": true, 
+    "speed_power": "special", 
+    "speed_value": 10, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 11, 
+    "defense_power": "toughness", 
+    "defense_value": 18, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 1, 
+    "speed_power": "special", 
+    "speed_value": 10, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 11, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "charge", 
+    "speed_value": 10, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 11, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 17, 
+    "damage_value": 3, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "charge", 
+    "speed_value": 10, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "charge", 
+    "speed_value": 10, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "special", 
+    "speed_value": 6, 
+    "attack_value": 12, 
+    "defense_power": "special", 
+    "defense_value": 15, 
+    "damage_power": "battle_fury", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "special", 
+    "speed_value": 6, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 11, 
+    "defense_power": "regeneration", 
+    "defense_value": 17, 
+    "damage_power": "battle_fury", 
+    "damage_value": 3
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ffhx002</unit_id>
+    <set_id>ffhx</set_id>
+    <collector_number>002</collector_number>
+    <name>Beast</name>
+    <type>character</type>
+    <age>modern</age>
+    <rarity>fast_forces</rarity>
+    <real_name>Hank McCoy</real_name>
+    <special_type>unique</special_type>
+    <dimensions>1x1</dimensions>
+    <point_values>[50]</point_values>
+    <team_abilities>["x_men"]</team_abilities>
+    <keywords>["Animal", "Illuminati", "Scientist", "X-Force", "X-Men"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "THE MUTANT C.I.A.", 
+    "description": "Stealth. Improved Movement: Hindering. Improved Targeting: Hindering."
+  }, 
+  {
+    "type": "trait", 
+    "name": "FIVE STEPS AHEAD", 
+    "description": "When an opposing character takes a FREE action, give Beast a Planning token. // FREE: Remove 2 Planning tokens to remove an action token from a friendly character with the X-Men keyword."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 0, 
+    "starting_line": true, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 18, 
+    "damage_power": "outwit", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 1, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 18, 
+    "damage_power": "outwit", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "outwit", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "outwit", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ffhx002.01</unit_id>
+    <set_id>ffhx</set_id>
+    <collector_number>002.01</collector_number>
+    <name>Beast</name>
+    <type>character</type>
+    <age>modern</age>
+    <rarity>fast_forces</rarity>
+    <real_name>Hank McCoy</real_name>
+    <special_type>unique</special_type>
+    <dimensions>1x1</dimensions>
+    <point_values>[50]</point_values>
+    <team_abilities>["x_men"]</team_abilities>
+    <keywords>["Animal", "Illuminati", "Scientist", "X-Force", "X-Men"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "TEAM UP: ANGEL, ARCHANGEL, CYCLOPS, ICEMAN, JEAN GREY, MARVEL GIRL", 
+    "description": "If 2+ listed friendly characters are on the map, Beast and listed friendly characters can use the X-Men Team Ability as FREE. If 4+ are on the map, when they use it, heal 2 clicks isntead. (After revealing forces, you may replace a game element's default card with an alternate card. You can't choose a Team Up card if any characters on your starting force share a name)."
+  }, 
+  {
+    "type": "trait", 
+    "name": "THE MUTANT C.I.A.", 
+    "description": "Stealth. Improved Movement: Hindering. Improved Targeting: Hindering."
+  }, 
+  {
+    "type": "trait", 
+    "name": "FIVE STEPS AHEAD", 
+    "description": "When an opposing character takes a FREE action, give Beast a Planning token. // FREE: Remove 2 Planning tokens to remove an action token from a friendly character with the X-Men keyword."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 0, 
+    "starting_line": true, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 18, 
+    "damage_power": "outwit", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 1, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 18, 
+    "damage_power": "outwit", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "outwit", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "outwit", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ffhx002.02</unit_id>
+    <set_id>ffhx</set_id>
+    <collector_number>002.02</collector_number>
+    <name>Beast</name>
+    <type>character</type>
+    <age>modern</age>
+    <rarity>fast_forces</rarity>
+    <real_name>Hank McCoy</real_name>
+    <special_type>unique</special_type>
+    <dimensions>1x1</dimensions>
+    <point_values>[50]</point_values>
+    <team_abilities>["x_men"]</team_abilities>
+    <keywords>["Animal", "Illuminati", "Scientist", "X-Force", "X-Men"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "TEAM UP: X-MEN THEMED TEAM", 
+    "description": "[After establishing themed teams, if Beast is part of a listed theme team, you may use the following effect:] If 3+ friendly characters with the X-Men keyword are on the map, Beast and friendly adjacent characters have PROTECTED: Poison. (After revealing forces, you may replace character cards with their alternates. You can\ufffdt choose a Team Up if your starting characters share a name)."
+  }, 
+  {
+    "type": "trait", 
+    "name": "THE MUTANT C.I.A.", 
+    "description": "Stealth. Improved Movement: Hindering. Improved Targeting: Hindering."
+  }, 
+  {
+    "type": "trait", 
+    "name": "FIVE STEPS AHEAD", 
+    "description": "When an opposing character takes a FREE action, give Beast a Planning token. // FREE: Remove 2 Planning tokens to remove an action token from a friendly character with the X-Men keyword."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 0, 
+    "starting_line": true, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 18, 
+    "damage_power": "outwit", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 1, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 18, 
+    "damage_power": "outwit", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "outwit", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "outwit", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ffhx003</unit_id>
+    <set_id>ffhx</set_id>
+    <collector_number>003</collector_number>
+    <name>Marvel Girl</name>
+    <type>character</type>
+    <age>modern</age>
+    <rarity>fast_forces</rarity>
+    <real_name>Jean Grey</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[75, 50]</point_values>
+    <team_abilities>["x_men"]</team_abilities>
+    <keywords>["Phoenix Force", "Quiet Council", "X-Force", "X-Men"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "THE MUTANT C.I.A.", 
+    "description": "Stealth. Improved Movement: Hindering. Improved Targeting: Hindering."
+  }, 
+  {
+    "type": "trait", 
+    "name": "KRAKOAN REVIVAL", 
+    "description": "For all characters with this trait, when a friendly standard character with the X-Men keyword and a lower point value would be KO'd by an opposing effect, you may instead choose to turn that character to it's starting click (this game) and place them adjacent to a friendly character that can use this trait. If you do, your opponent scores that character and generates a bystander on this card (of their choice) adjacent to any of their characters. Your opponent then scores 10 points for every bystander they generated this game via this trait, regardless of source."
+  }, 
+  {
+    "type": "speed", 
+    "name": "PSYCHIC INTERROGATION", 
+    "description": "Mind Control, Sidestep."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>6</unit_range>
+    <targets>1</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 0, 
+    "starting_line": true, 
+    "speed_power": "special", 
+    "speed_value": 10, 
+    "attack_value": 11, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 17, 
+    "damage_power": "enhancement", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 1, 
+    "speed_power": "special", 
+    "speed_value": 10, 
+    "attack_value": 11, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 17, 
+    "damage_power": "enhancement", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "special", 
+    "speed_value": 9, 
+    "attack_value": 10, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 17, 
+    "damage_power": "enhancement", 
+    "damage_value": 2, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "running_shot", 
+    "speed_value": 9, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 10, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "running_shot", 
+    "speed_value": 9, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 10, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 16, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "running_shot", 
+    "speed_value": 9, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 11, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 16, 
+    "damage_value": 3
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ffhx004</unit_id>
+    <set_id>ffhx</set_id>
+    <collector_number>004</collector_number>
+    <name>Domino</name>
+    <type>character</type>
+    <age>modern</age>
+    <rarity>fast_forces</rarity>
+    <real_name>Neena Thurman</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[50, 25]</point_values>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Soldier", "X-Force", "X-Men"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "THE MUTANT C.I.A.", 
+    "description": "Stealth. Improved Movement: Hindering. Improved Targeting: Hindering."
+  }, 
+  {
+    "type": "attack", 
+    "name": "NEURO-RESPONSIVE WAR MITTEN ...IT'S NOT A \"BRANCH\"", 
+    "description": "FREE: Choose one power or ability to use this turn: Blades/Claws/Fangs, Precision Strike, Giant Reach: 2."
+  }, 
+  {
+    "type": "damage", 
+    "name": "IT'S LIKE MY LUCK IS LESSER SOMEHOW, LIKE A RABBIT FOOT WITH THE FUR WORN OFF", 
+    "description": "Probability Control, but only to reroll one die of an attack roll."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>5</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 0, 
+    "starting_line": true, 
+    "speed_power": "charge", 
+    "speed_value": 10, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 1, 
+    "speed_power": "charge", 
+    "speed_value": 10, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "sidestep", 
+    "speed_value": 10, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "charge", 
+    "speed_value": 9, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 2, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "sidestep", 
+    "speed_value": 9, 
+    "attack_value": 9, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "sidestep", 
+    "speed_value": 9, 
+    "attack_value": 9, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ffhx005</unit_id>
+    <set_id>ffhx</set_id>
+    <collector_number>005</collector_number>
+    <name>Forge</name>
+    <type>character</type>
+    <age>modern</age>
+    <rarity>fast_forces</rarity>
+    <real_name>Unknown</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[75, 50]</point_values>
+    <team_abilities>["x_men"]</team_abilities>
+    <keywords>["Armor", "Scientist", "X-Force", "X-Men"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "THE MUTANT C.I.A.", 
+    "description": "Stealth. Improved Movement: Hindering. Improved Targeting: Hindering."
+  }, 
+  {
+    "type": "speed", 
+    "name": "I SAVE THE BEST TOYS FOR MYSELF", 
+    "description": "[Wing symbol], Plasticity, Sidestep."
+  }, 
+  {
+    "type": "damage", 
+    "name": "IF YOU'RE LOOKING FOR TOYS AND STUFFED ANIMALS, YOU CAME TO THE WRONG PLACE", 
+    "description": "Unique Modifier - Other friendly characters that are adjacent or have the X-Men keyword modify damage +1."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>6</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 0, 
+    "starting_line": true, 
+    "speed_power": "special", 
+    "speed_value": 8, 
+    "attack_value": 11, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 1, 
+    "speed_power": "special", 
+    "speed_value": 8, 
+    "attack_value": 11, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "special", 
+    "speed_value": 7, 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 2, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "special", 
+    "speed_value": 7, 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "special", 
+    "speed_value": 7, 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "special", 
+    "speed_value": 7, 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ffhx006</unit_id>
+    <set_id>ffhx</set_id>
+    <collector_number>006</collector_number>
+    <name>Sage</name>
+    <type>character</type>
+    <age>modern</age>
+    <rarity>fast_forces</rarity>
+    <real_name>Unknown</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[50]</point_values>
+    <team_abilities>["x_men"]</team_abilities>
+    <keywords>["Exiles", "Hellfire Club", "Scientist", "X-Force", "X-Men"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "THE MUTANT C.I.A.", 
+    "description": "Stealth. Improved Movement: Hindering. Improved Targeting: Hindering."
+  }, 
+  {
+    "type": "trait", 
+    "name": "MONITORING WORLDWIDE FOR ANTI-MUTANT ACTIVITIES", 
+    "description": "During each opponent's turn, their force can't use the following powers more than once each: Outwit, Perplex, Probability Control. (They can only use Outwit once, Perplex once, and Probability Control once.)"
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>4</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 0, 
+    "starting_line": true, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_power": "outwit", 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 1, 
+    "speed_power": "mind_control", 
+    "speed_value": 8, 
+    "attack_value": 9, 
+    "defense_power": "super_senses", 
+    "defense_value": 16, 
+    "damage_power": "perplex", 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "mind_control", 
+    "speed_value": 7, 
+    "attack_value": 9, 
+    "defense_power": "super_senses", 
+    "defense_value": 16, 
+    "damage_power": "perplex", 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_value": 8, 
+    "defense_power": "super_senses", 
+    "defense_value": 15, 
+    "damage_power": "outwit", 
+    "damage_value": 0
+  }
+]</dial>
+  </row>
+</resultset>
