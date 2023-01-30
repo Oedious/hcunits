@@ -4104,7 +4104,7 @@
   <row>
     <unit_id>ww80039</unit_id>
     <set_id>ww80</set_id>
-    <collector_number>039v</collector_number>
+    <collector_number>039</collector_number>
     <name>Strife</name>
     <type>character</type>
     <age>modern</age>
@@ -4171,7 +4171,8 @@
     "defense_power": "special", 
     "defense_value": 18, 
     "damage_power": "close_combat_expert", 
-    "damage_value": 2
+    "damage_value": 2, 
+    "starting_line": true
   }, 
   {
     "click_number": 3, 
@@ -11238,7 +11239,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_type>light</object_type>
-    <object_keyphrases>["equip_any", "unequip_ko"]</object_keyphrases>
+    <object_keyphrases>["indestructible", "equip_any", "unequip_ko"]</object_keyphrases>
     <dial>[]</dial>
   </row>
   <row>

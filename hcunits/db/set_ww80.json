@@ -4469,7 +4469,7 @@
   {
     "unit_id": "ww80039", 
     "set_id": "ww80", 
-    "collector_number": "039v", 
+    "collector_number": "039", 
     "name": "Strife", 
     "type": "character", 
     "age": "modern", 
@@ -4544,7 +4544,8 @@
         "defense_power": "special", 
         "defense_value": 18, 
         "damage_power": "close_combat_expert", 
-        "damage_value": 2
+        "damage_value": 2, 
+        "starting_line": true
       }, 
       {
         "click_number": 3, 
@@ -12209,6 +12210,7 @@
     "improved_targeting": [], 
     "object_type": "light", 
     "object_keyphrases": [
+      "indestructible", 
       "equip_any", 
       "unequip_ko"
     ], 

@@ -163,8 +163,9 @@ class Unit:
       if is_construct:
           self.type = "construct"
       elif soup.find("td", class_="card_special_object"):
-        if (soup.find(text=re.compile(r'.*EFFECT: .*')) or
-            soup.find(text=re.compile(r'.*Effect: .*'))):
+        if ((soup.find(text=re.compile(r'.*EFFECT: .*')) or
+             soup.find(text=re.compile(r'.*Effect: .*'))) and
+             not soup.find(text=re.compile(r".*is not equipment.*"))):
           self.type = "equipment"
         else:
           self.type = "object"
@@ -356,6 +357,9 @@ class Unit:
                 ("name", sp_name),
                 ("description", clean_string(sp_description))
               ]))
+            elif len(self.special_powers) > 0:
+              # Append it to the end of the previous description.
+              self.special_powers[-1]["description"] += clean_string(" " + attr)
             else:
               print("Skipping unknown object attribute '%s'" % attr)
 

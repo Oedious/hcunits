@@ -9147,13 +9147,18 @@
     <set_id>ffff</set_id>
     <collector_number>s008</collector_number>
     <name>Isotope E</name>
-    <type>equipment</type>
+    <type>object</type>
     <age>modern</age>
     <rarity>super_rare</rarity>
     <point_values>[15]</point_values>
     <team_abilities>[]</team_abilities>
     <keywords>[]</keywords>
-    <special_powers>[]</special_powers>
+    <special_powers>[
+  {
+    "type": "object", 
+    "description": "This object is not equipment. It is a special light object with the following effect: \"After revealing forces, you may move this object to your sideline. If you do, this object has: \"SIDELINE ACTIVE: At the beginning of the game, you may replace a character on your starting force with a character from your sideline of the same name and point value. If you do, KO this object. \"."
+  }
+]</special_powers>
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
