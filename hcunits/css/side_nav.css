@@ -13,6 +13,11 @@
   transition: 0.5s;
 }
 
+#sideNavTitle {
+  box-shadow: 0 2px 2px 0 rgb(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
 #panelTitleBar {
   position: relative;
   width: 300px;
