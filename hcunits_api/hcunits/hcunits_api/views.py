@@ -31,7 +31,7 @@ class UnitList(ListAPIView):
       return None
     return Unit.objects.all()
 
-class UnitDetail(ListAPIView):
+class UnitDetail(RetrieveAPIView):
   serializer_class = UnitDetailSerializer
   lookup_field = "unit_id"
 
