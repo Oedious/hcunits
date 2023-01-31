@@ -63,26 +63,33 @@
   overflow-y: auto;
 }
 
-.navPanel ul li {
+.navPanel ul .collection-header {
+  min-height: 63px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.navPanel ul .collection-item {
   min-height: 0px !important;
   padding: 0px !important;
 }
 
-.navPanel ul li a {
+.navPanel ul .collection-item a {
   padding: 10px 20px !important;
   display: block;
 }
 
-.navPanel ul li a:hover {
+.navPanel ul .collection-item a:hover {
   background-color: #f5f5f5;
 }
 
-.navPanel ul li a:focus {
+.navPanel ul .collection-item a:focus {
   background-color: #e5e5e5;
   outline: none;
 }
 
-.navPanel ul li a:active {
+.navPanel ul .collection-item a:active {
   background-color: #d8d8d8;
 }
 
@@ -96,7 +103,6 @@
 
 .listPanelInfo {
   padding-left: 40px !important;
-  font-size: 12px !important;
   color: black;
 }
 

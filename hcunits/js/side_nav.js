@@ -1,12 +1,18 @@
 class SideNav {
 
   constructor(dataSource) {
+    if (1) {
+      true
+    }
+    else {
+      false
+    }
     this.setListPanel_ = new SetListPanel()
     this.unitListPanel_ = new UnitListPanel(dataSource)
     this.panelStack_ = [this.setListPanel_];
     this.updateTitle()
   }
-  
+
   getTopPanel() {
     return this.panelStack_[this.panelStack_.length - 1];
   }
@@ -74,21 +80,28 @@ class SideNav {
     this.setPanel(this.setListPanel_)
     this.getTopPanel().showPanel()
   }
-  
+
   showUnitList(setId) {
     this.unitListPanel_.showSet(setId)
     this.unitListPanel_.title = SET_LIST[setId].name
     this.pushPanel(this.unitListPanel_)
   }
-  
+
   showQuickSearchResults() {
-    this.unitListPanel_.showQuickSearchResults()
-    this.unitListPanel_.title = "Quick Search"
-    this.setPanel(this.unitListPanel_)
+    if (document.getElementById("quickSearch").value != "") {
+      this.unitListPanel_.showQuickSearchResults()
+      this.unitListPanel_.title = "Quick Search Results"
+      this.setPanel(this.unitListPanel_)
+    }
+  }
+  
+  clearQuickSearch() {
+    document.getElementById("quickSearch").value = ""
   }
 
   setUnit(unitId) {
     this.unitListPanel_.setCurrentIndexByUnit(unitId)
+    mgr.showUnit(unitId)
   }
 
   isVisible() {

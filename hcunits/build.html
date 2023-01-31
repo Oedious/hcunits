@@ -44,13 +44,19 @@
         <nav id="quickSearchBar">
             <div class="nav-wrapper grey darken-4">
                 <ul>
-                    <li id="browseBySetButton"><a href="" onclick='sideNav.showSetList(); return false;' title="Browse by Set"><i class="material-icons">library_books</i></a></li>
-                    <li>
+                    <li id="browseBySetButton">
+                        <a href="" onclick='sideNav.showSetList(); return false;' title="Browse by Set">
+                            <i class="material-icons">library_books</i>
+                        </a>
+                    </li>
+                    <li id="quickSearchButton">
                         <form onsubmit="sideNav.showQuickSearchResults(); return false;">
-                            <div class="input-field" style="width:300px;height:65px;color:white;" title="Quick Search">
+                            <div id="quickSearchBox" class="input-field" title="Quick Search">
                                 <input id="quickSearch" type="search" required>
-                                <label class="label-icon" for="quickSearch"><i class="material-icons" style="color:white;">search</i></label>
-                                <i class="material-icons">close</i>
+                                <label class="label-icon" for="quickSearch">
+                                    <i class="material-icons" style="color:white;" onclick="sideNav.showQuickSearchResults(); return false;">search</i>
+                                </label>
+                                <i class="material-icons" onclick="sideNav.clearQuickSearch(); return false;">close</i>
                             </div>
                         </form>
                     </li>

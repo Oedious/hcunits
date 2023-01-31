@@ -111,6 +111,16 @@ input#teamName {
   background-color: #757575;
 }
 
+#quickSearchBox {
+  width:300px;
+  height:65px;
+  color:white;
+}
+
+#quickSearchBox:focus-within label i {
+  color: black !important;
+}
+
 /* Unit area styles */
 #unitContainer {
   flex: 0 0 auto;

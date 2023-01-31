@@ -5,6 +5,7 @@ class UnitListPanel extends ListPanel {
     // A unit list should always be in the form of an JSON array of units from
     // the database.
     this.unitList_ = null;
+    this.drawSetTitles_ = false;
   }
 
   panelName() {
@@ -19,8 +20,10 @@ class UnitListPanel extends ListPanel {
   }
 
   activateCurrentItem() {
-    mgr.showUnit(this.unitList_[super.currentIndex].unit_id);
-    document.getElementById("unitListItem_" + super.currentIndex).focus();
+    if (this.unitList_ && super.currentIndex < this.unitList_.length) {
+      mgr.showUnit(this.unitList_[super.currentIndex].unit_id);
+      document.getElementById("unitListItem_" + super.currentIndex).focus();
+    }
   }
 
   setCurrentIndexByUnit(unitId) {
@@ -34,6 +37,7 @@ class UnitListPanel extends ListPanel {
   }
 
   showSet(setId) {
+    this.drawSetTitles_ = false;
     var unitListPanel = this;
     this.dataSource_.searchBySetId(setId,
       function(unitList) {
@@ -45,6 +49,7 @@ class UnitListPanel extends ListPanel {
   }
 
   showQuickSearchResults() {
+    this.drawSetTitles_ = true;
     var query = document.getElementById("quickSearch").value
     var unitListPanel = this;
     this.dataSource_.quickSearch(query,
@@ -57,13 +62,27 @@ class UnitListPanel extends ListPanel {
   }
 
   handleSearchResults_(unitList) {
-    this.unitList_ = unitList;
+    this.setUnitList_(unitList);
+    var currentSetId = null
     var html = ""
     if (this.unitList_ && this.unitList_.length > 0) {
       var setName = SET_LIST[this.unitList_[0].set_id].name;
       html = "<ul class='collection with-header'>";
       for (var i = 0; i < this.unitList_.length; ++i) {
         var unit = this.unitList_[i];
+        if (currentSetId != unit.set_id && this.drawSetTitles_) {
+          var setId = unit.set_id
+          var setItem = SET_LIST[setId]
+          html += `
+            <li class='collection-header blue-grey lighten-4'>
+              <div class='listPanelImageDiv'>
+                <img class='listPanelImage' src='images/set_${setId}.png' alt='${setId}' title='${setItem.name}'>
+              </div>
+              <div class='listPanelInfo'>${setItem.name}</div>
+            </li>`
+          currentSetId = setId
+        }
+
         var color = RARITY_TO_COLOR[unit.rarity];
         var pointValues = "";
         if (unit.point_values.length == 0) {
@@ -95,5 +114,37 @@ class UnitListPanel extends ListPanel {
     document.getElementById(this.panelName()).innerHTML = html;
     super.currentIndex = 0;
     this.activateCurrentItem();
+  }
+
+  setUnitList_(unitList) {
+    // Sort the list descending by set release date, then collector number.
+    if (unitList) {
+      unitList.sort((u1, u2) => {
+        var s1 = SET_LIST[u1.set_id];
+        var s2 = SET_LIST[u2.set_id]
+        // First prioritize set release date.
+        if (s1.release_date < s2.release_date) {
+          return 1;
+        }
+        if (s1.release_date > s2.release_date) {
+          return -1
+        }
+        // Then prioritize set name length (so that Fast Forces are below main sets)
+        if (s1.name.length > s2.name.length) {
+          return 1;
+        }
+        if (s1.name.length < s2.name.length) {
+          return -1;
+        }
+        if (u1.collector_number > u2.collector_number) {
+          return 1;
+        }
+        if (u1.collector_number < u2.collector_number) {
+          return -1
+        }
+        return 0;
+      })
+    }
+    this.unitList_ = unitList
   }
 }
