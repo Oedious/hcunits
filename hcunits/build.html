@@ -41,12 +41,17 @@
                 </div>
             </div>
         </div>
-        <nav id="quickSearchBar">
+        <nav id="searchNav">
             <div class="nav-wrapper grey darken-4">
                 <ul>
-                    <li id="browseBySetButton">
+                    <li class="searchNavButton">
                         <a href="" onclick='sideNav.showSetList(); return false;' title="Browse by Set">
                             <i class="material-icons">library_books</i>
+                        </a>
+                    </li>
+                    <li class="searchNavButton">
+                        <a href="" onclick='sideNav.showFavorites(); return false;' title="Browse Favorites">
+                            <i class="material-icons">star</i>
                         </a>
                     </li>
                     <li id="quickSearchButton">
@@ -68,6 +73,7 @@
             <div id="sideNav" style="left:0px">
                 <div id="sideNavTitle"></div>
                 <div id="setListPanel" class="navPanel"></div>
+                <div id="favoritesPanel" class="navPanel"></div>
                 <div id="unitListPanel" class="navPanel"></div>
                 <div id="sideNavToggle">
                     <a href="#" onclick="sideNav.toggleVisibility(); return false;"><i id="sideNavToggleIcon" class="material-icons">chevron_left</i></a>
@@ -94,6 +100,7 @@
     <script type="text/javascript" src="js/list_panel.js"></script>
     <script type="text/javascript" src="js/set_list_panel.js"></script>
     <script type="text/javascript" src="js/unit_list_panel.js"></script>
+    <script type="text/javascript" src="js/favorites_panel.js"></script>
     <script type="text/javascript" src="js/side_nav.js"></script>
 
     <script type="text/javascript" src="js/data_source.js"></script>

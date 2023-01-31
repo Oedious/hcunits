@@ -8,6 +8,7 @@ class SideNav {
       false
     }
     this.setListPanel_ = new SetListPanel()
+    this.favoritesPanel_ = new FavoritesPanel()
     this.unitListPanel_ = new UnitListPanel(dataSource)
     this.panelStack_ = [this.setListPanel_];
     this.updateTitle()
@@ -78,6 +79,11 @@ class SideNav {
 
   showSetList() {
     this.setPanel(this.setListPanel_)
+    this.getTopPanel().showPanel()
+  }
+
+  showFavorites() {
+    this.setPanel(this.favoritesPanel_)
     this.getTopPanel().showPanel()
   }
 

@@ -99,15 +99,15 @@ input#teamName {
   overflow-y: auto;
 }
 
-#quickSearchBar {
+#searchNav {
   z-index: 2;
 }
 
-#browseBySetButton a:hover {
+.searchNavButton a:hover {
   background-color: #9e9e9e;
 }
 
-#browseBySetButton a:active {
+.searchNavButton a:active {
   background-color: #757575;
 }
 
