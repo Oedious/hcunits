@@ -113,12 +113,24 @@ input#teamName {
 
 #quickSearchBox {
   width:300px;
-  height:65px;
+  height:63px;
   color:white;
 }
 
-#quickSearchBox:focus-within label i {
+#quickSearchBox:focus-within label i,
+#quickSearchBox:focus-within #quickSearch {
   color: black !important;
+}
+
+#quickSearch {
+  color: white;
+}
+
+/* Hack to keep the colors the same when using autofill. */
+#quickSearch:-webkit-autofill,
+#quickSearch:-webkit-autofill:focus,
+#quickSearch:-webkit-autofill:active{
+  -webkit-box-shadow: 0 0 0px 1000px white inset !important;
 }
 
 /* Unit area styles */
