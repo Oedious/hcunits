@@ -26,7 +26,7 @@ class AdvancedSearchPanel extends NavPanel {
           <div class="collapsible-body">
             <div class="row">
               <div class="input-field col s12 m4">
-                <select>
+                <select id="searchOptionsNameSelect">
                   <option value="has">Has</option>
                   <option value="is">Is</option>
                   <option value="begins">Begins</option>
@@ -35,12 +35,12 @@ class AdvancedSearchPanel extends NavPanel {
                 <label>Name</label>
               </div>
               <div class="input-field col s12 m8">
-                <input id="searchOptionName" type="text" placeholder="Name" class="validate">
+                <input id="searchOptionsName" type="text" placeholder="Name" class="validate">
               </div>
             </div>
             <div class="row">
               <div class="input-field col s12 m4">
-                <select>
+                <select id="searchOptionsRealNameSelect">
                   <option value="has">Has</option>
                   <option value="is">Is</option>
                   <option value="begins">Begins</option>
@@ -49,7 +49,7 @@ class AdvancedSearchPanel extends NavPanel {
                 <label>Real Name</label>
               </div>
               <div class="input-field col s12 m8">
-                <input id="searchOptionRealName" type="text" placeholder="Real Name" class="validate">
+                <input id="searchOptionsRealName" type="text" placeholder="Real Name" class="validate">
               </div>
             </div>
             <div class="row">
@@ -61,7 +61,7 @@ class AdvancedSearchPanel extends NavPanel {
                   <option value="equals">Equals</option>
                   <option value="less_than">Less Than</option>
                   <option value="greater_than">Greater Than</option>
-                  <option value="between">Between</option>
+                  <option value="from">From</option>
                 </select>
                 <label>Point Value</label>
               </div>
@@ -80,8 +80,8 @@ class AdvancedSearchPanel extends NavPanel {
             </div>
             <div class="row">
               <div class="input-field col s12 m8">
-                <label id="searchOptionKeywordsLabel">Keywords</label>
-                <div id="searchOptionKeywords" class="chips chips-autocomplete"></div>
+                <label id="searchOptionsKeywordsLabel">Keywords</label>
+                <div id="searchOptionsKeywords" class="chips chips-autocomplete"></div>
               </div>
             </div>
           </div>
@@ -148,7 +148,7 @@ class AdvancedSearchPanel extends NavPanel {
     // Hide or show the second point value field depending on the selected option.
     $('#searchOptionsPointValueSelect').change(function(){
       var value = $(this).val();
-      if (value == "between") {
+      if (value == "from") {
         $('#searchOptionsPointValue2Label').show()
         $('#searchOptionsPointValue2').show()
       } else {
@@ -160,7 +160,7 @@ class AdvancedSearchPanel extends NavPanel {
     // Hide or show the second range value field depending on the selected option.
     $('#searchOptionsRangeSelect').change(function(){
       var value = $(this).val();
-      if (value == "between") {
+      if (value == "from") {
         $('#searchOptionsRange2Label').show()
         $('#searchOptionsRange2').show()
       } else {
@@ -174,7 +174,7 @@ class AdvancedSearchPanel extends NavPanel {
     for (const [keyword, type] of Object.entries(KEYWORD_LIST)) {
       keywordsChips[keyword] = null
     }
-    $('#searchOptionKeywords').chips({
+    $('#searchOptionsKeywords').chips({
       placeholder: "Enter a keyword",
       secondaryPlaceholder: "+keyword",
       autocompleteOnly: true,
@@ -199,7 +199,7 @@ class AdvancedSearchPanel extends NavPanel {
   drawSetSelectHtml_() {
     var html = `
       <div class='input-field col s12'>
-        <select multiple>`
+        <select id='searchOptionsSetSelect' multiple>`
     for (var setId in SET_LIST) {
       var setItem = SET_LIST[setId];
       html += `<option value='${setId}'>${setItem.name}</option>`
@@ -281,7 +281,7 @@ class AdvancedSearchPanel extends NavPanel {
           <option value="equals">Equals</option>
           <option value="less_than">Less Than</option>
           <option value="greater_than">Greater Than</option>
-          <option value="between">Between</option>
+          <option value="from">From</option>
         </select>
         <label>${combatValue}</label>
       </div>
@@ -350,5 +350,65 @@ class AdvancedSearchPanel extends NavPanel {
       <label>Improved Targeting</label>
     </div>`
     return html;
+  }
+
+  static getQuery() {
+    var query = {}
+    
+    // Handle the '*_name' parameters.
+    var name = document.getElementById('searchOptionsName').value
+    if (name) {
+      var select = document.getElementById('searchOptionsNameSelect').value
+      query[select + '_name'] = name
+    }
+
+    // Handle the '*_real_name' parameters.
+    var real_name = document.getElementById('searchOptionsRealName').value
+    if (real_name) {
+      var select = document.getElementById('searchOptionsRealNameSelect').value
+      query[select + '_real_name'] = real_name
+    }
+
+    // Handle the 'set_ids' parameter.
+    var set_ids = []
+    var setSelect = document.getElementById('searchOptionsSetSelect').value
+    for (var setOption in setSelect) {
+      if (setOption.selected) {
+        set_ids.push(setOption.value)
+      }
+    }
+    if (set_ids.length > 0) {
+      query['set_ids'] = set_ids
+    }
+
+    // Handle the '*_point_value' parameters.
+    var pointValue1 = document.getElementById('searchOptionsPointValue1').value
+    if (pointValue1) {
+      var select = document.getElementById('searchOptionsPointValueSelect').value
+      if (select != "from") {
+        query[select + '_point_value'] = pointValue1
+      } else {
+        var pointValue2 = document.getElementById('searchOptionsPointValue2').value
+        if (pointValue2) {
+          query['from_point_value'] = pointValue1
+          query['to_point_value'] = pointValue2
+        }
+      }
+    }
+    
+    // Handle 'keywords' parameters.
+    var chipsInstance = M.Chips.getInstance(document.getElementById('searchOptionsKeywords'))
+    var keywords = []
+    for (var chip of chipsInstance.chipsData) {
+      var keyword = chip.tag
+      if (keyword.length > 0) {
+        keywords.push(keyword)
+      }
+    }
+    if (keywords.length > 0) {
+      query['keywords'] = keywords
+    }
+    
+    return query
   }
 }

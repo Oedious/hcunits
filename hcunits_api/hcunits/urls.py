@@ -21,6 +21,7 @@ urlpatterns = [
   path(r'sets/<set_id>/', views.SetDetail.as_view()),
   path(r'units/', views.UnitList.as_view()),
   path(r'units/<unit_id>/', views.UnitDetail.as_view()),
+  path(r'search/', views.Search.as_view()),
 ]
 
 urlpatterns = format_suffix_patterns(urlpatterns)

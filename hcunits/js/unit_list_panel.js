@@ -63,14 +63,14 @@ class UnitListPanel extends ListPanel {
 
   showAdvancedSearchResults() {
     this.drawSetTitles_ = true;
-    var query = document.getElementById("quickSearch").value
+    var query = AdvancedSearchPanel.getQuery()
     var unitListPanel = this;
-    this.dataSource_.quickSearch(query,
+    this.dataSource_.advancedSearch(query,
       function(unitList) {
         unitListPanel.handleSearchResults_(unitList);
       },
       function(xhr, desc, err) {
-        alert("Error in showQuickSearchResults(" + query + "): " + desc) + " err=" + err;
+        alert("Error in showAdvancedSearchResults(" + query + "): " + desc) + " err=" + err;
       });
   }
 

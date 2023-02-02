@@ -156,6 +156,9 @@
 
 #searchOptions li .collapsible-body .row .input-field div ul {
   max-height: 400px;
+  
+  /* Hack to allow the dialog to be drawn outside of a parent using overflow-y. */
+  position: fixed;
 }
 
 #searchOptions .row {

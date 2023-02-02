@@ -35,4 +35,16 @@ class DataSource {
       error: onError
     });
   }
+
+  advancedSearch(query, onSuccess, onError) {
+    jQuery.post({
+      url: `${this.hostName_}/search/`,
+      data: JSON.stringify(query),
+      dataType: 'json',
+      success: function(searchResults) {
+        onSuccess(JSON.parse(searchResults));
+      },
+      error: onError
+    });
+  }
 }
