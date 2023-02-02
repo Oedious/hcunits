@@ -5,7 +5,7 @@ html,body {
 
 #siteHeader {
   position: relative;
-  z-index: 2;
+  z-index: 1;
 }
 
 /* Need to use a separate div instead of just body directly because of Wordpress */
@@ -47,48 +47,7 @@ html,body {
 }
 
 #teamHeader * {
-  background-color: transparent;
-  border-color: transparent;
-  display: inline-block;
-  margin: 0px;
-}
-
-#teamOwner {
-  font-size: 18px;
-}
-
-.teamInput {
-  padding: 0px;
-  border: 1px solid transparent;
-}
-
-input#teamName {
-  font-size: 24px;
-}
-
-.teamSelect {
-  padding: 0px;
-  border: 1px solid transparent;
-  font-size: 12px;
-  background-color: transparent;
-}
-
-#teamFormatContainer {
-  display: flex;
-  gap: 20px;
-}
-
-#teamPointLimit {
-  flex-basis: max-content;
-}
-
-#teamFormat {
-  flex-basis: max-content;
-  align-self: flex-end;
-}
-
-#teamVisibility {
-  flex-basis: max-content;
+  margin: 8px 0 0 0;
 }
 
 /* Team Body styles */
@@ -96,11 +55,6 @@ input#teamName {
   display: flex;
   background-color: transparent;
   flex: 1 1 auto;
-  overflow-y: auto;
-}
-
-#searchNav {
-  z-index: 2;
 }
 
 .searchNavButton a:hover {

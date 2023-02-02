@@ -1,14 +1,9 @@
 class SideNav {
 
   constructor(dataSource) {
-    if (1) {
-      true
-    }
-    else {
-      false
-    }
     this.setListPanel_ = new SetListPanel()
-    this.favoritesPanel_ = new FavoritesPanel()
+    this.favoritesPanel_ = null
+    this.advancedSearchPanel_ = new AdvancedSearchPanel()
     this.unitListPanel_ = new UnitListPanel(dataSource)
     this.panelStack_ = [this.setListPanel_];
     this.updateTitle()
@@ -70,9 +65,21 @@ class SideNav {
       var hasBackArrow = this.panelStack_.length > 1;
       html = "<div id='panelTitleBar'>"
       if (hasBackArrow) {
-        html += "<a id='panelBackIcon' href='#' onclick='sideNav.popPanel(); return false;'><i class='material-icons'>arrow_back</i></a>"
+        html += "<a class='panelTitleButton' href='' onclick='sideNav.popPanel(); return false;' title='Back'><i class='material-icons'>arrow_back</i></a>"
       }
-      html += `<div id='panelTitle'>${title}</div></div>`
+      html += `<div id='panelTitle'>${title}</div>`
+
+      if (this.getTopPanel() == this.advancedSearchPanel_) {
+        html += `
+        <a class='panelTitleButton' href='' onclick='sideNav.resetAdvancedSearch(); return false;' title="Reset Options">
+          <i class='material-icons'>restart_alt</i>
+        </a>
+        <a class='panelTitleButton' href='' onclick='sideNav.showAdvancedSearchResults(); return false;' title="Search">
+          <i class='material-icons'>search</i>
+        </a>
+          `
+      }
+      html += "</div>"
     }
     document.getElementById("sideNavTitle").innerHTML = html
   }
@@ -82,14 +89,32 @@ class SideNav {
     this.getTopPanel().showPanel()
   }
 
+  showUnitList(setId) {
+    this.unitListPanel_.showSet(setId)
+    this.unitListPanel_.title = SET_LIST[setId].name
+    this.pushPanel(this.unitListPanel_)
+  }
+
   showFavorites() {
+    if (!this.favoritesPanel_) {
+      this.favoritesPanel_ = new FavoritesPanel()
+    }
     this.setPanel(this.favoritesPanel_)
     this.getTopPanel().showPanel()
   }
 
-  showUnitList(setId) {
-    this.unitListPanel_.showSet(setId)
-    this.unitListPanel_.title = SET_LIST[setId].name
+  showAdvancedSearch() {
+    this.setPanel(this.advancedSearchPanel_)
+    this.getTopPanel().showPanel()
+  }
+
+  resetAdvancedSearch() {
+    this.advancedSearchPanel_ = new AdvancedSearchPanel()
+  }
+
+  showAdvancedSearchResults() {
+    this.unitListPanel_.showAdvancedSearchResults()
+    this.unitListPanel_.title = "Search Results"
     this.pushPanel(this.unitListPanel_)
   }
 

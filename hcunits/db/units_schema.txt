@@ -14,7 +14,7 @@
 ~/.virtualenvs/env
 
 # Commands to connect to the wordpress MySQL database
-mysql wordpress -u root -p
+mysql wordpress -u root -p --local-infile=1
 
 # Delete the 'team_abilities' table
 DROP TABLE units;
@@ -74,11 +74,11 @@ CREATE TABLE units (
   special_powers JSON,
 
   -- Should be in the form of an array of strings, with values from:
-  -- "Elevated", "Hindering", "Blocking", "Outdoor Blocking", "Destroy Blocking", "Characters", "Move Through".
+  -- "elevated", "hindering", "blocking", "outdoor_blocking", "destroy_blocking", "characters", "move_through".
   improved_movement JSON,
 
   -- Should be in the form of an array of strings, with values from:
-  -- "Elevated", "Hindering", "Blocking", "Destroy Blocking", "Characters", "Adjacent"
+  -- "elevated", "hindering", "blocking", "destroy_blocking", "characters", "adjacent"
   improved_targeting JSON,
 
   -- The specialized type of an object.

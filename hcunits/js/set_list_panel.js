@@ -33,6 +33,6 @@ class SetListPanel extends ListPanel {
         </li>`;
     }
     html += "</ul>"
-    document.getElementById("setListPanel").innerHTML = html;
+    document.getElementById(this.panelName()).innerHTML = html;
   }
 }

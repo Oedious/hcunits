@@ -61,6 +61,19 @@ class UnitListPanel extends ListPanel {
       });
   }
 
+  showAdvancedSearchResults() {
+    this.drawSetTitles_ = true;
+    var query = document.getElementById("quickSearch").value
+    var unitListPanel = this;
+    this.dataSource_.quickSearch(query,
+      function(unitList) {
+        unitListPanel.handleSearchResults_(unitList);
+      },
+      function(xhr, desc, err) {
+        alert("Error in showQuickSearchResults(" + query + "): " + desc) + " err=" + err;
+      });
+  }
+
   handleSearchResults_(unitList) {
     this.setUnitList_(unitList);
     var currentSetId = null

@@ -1,7 +1,7 @@
 class FavoritesPanel extends UnitListPanel {
   constructor(dataSource) {
     super(dataSource)
-    super.title = "Browse Favorites"
+    super.title = "Favorites"
   }
   
   panelName() {

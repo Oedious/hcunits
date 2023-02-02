@@ -24,20 +24,33 @@
     </nav>
     <div id="buildContainer">
         <div id="teamHeaderContainer">
-            <div id="teamHeader">
-                <div id="teamOwner">Team Owner</div>
-                <input type="text" class="teamInput" id="teamName" size="80%" placeholder="Team Name">
-                <input type="text" class="teamInput" size="80%" placeholder="Description">
-                <div id="teamFormatContainer">
-                    <input type="number" class="teamInput" id="teamPointLimit" min="0" max="9999" placeholder="Points">
-                    <select class="teamSelect" id="teamFormat">
-                        <option value="modern">Modern Age</option>
-                        <option value="golden">Golden Age</option>
-                    </select>
-                    <select class="teamSelect" id="teamVisibility">
-                        <option value="unlisted">Unlisted</option>
-                        <option value="public">Public</option>
-                    </select>
+            <div id="teamHeader" class="row">
+                <H4>Team Owner</H4>
+                <div class="input-field col s12">
+                  <input id="teamName" type="text" class="validate">
+                  <label for="teamName">Team Name</label>
+                </div>
+                <div class="input-field col s12">
+                  <input id="teamDescription" type="text">
+                  <label for="teamDescription">Description</label>
+                </div>
+                <div class="input-field col s12 m3">
+                  <input id="teamPointLimit" class="teamInput" type="number" min="0" max="9999" value="300">
+                  <label for="teamPointLimit">Points</label>
+                </div>
+                <div class="input-field col s12 m5">
+                  <select>
+                      <option value="modern">Modern</option>
+                      <option value="golden">Golden</option>
+                  </select>
+                  <label>Age</label>
+                </div>
+                <div class="input-field col s12 m4">
+                  <select>
+                      <option value="unlisted">Unlisted</option>
+                      <option value="public">Public</option>
+                  </select>
+                  <label>Visibility</label>
                 </div>
             </div>
         </div>
@@ -50,8 +63,13 @@
                         </a>
                     </li>
                     <li class="searchNavButton">
-                        <a href="" onclick='sideNav.showFavorites(); return false;' title="Browse Favorites">
+                        <a href="" onclick='sideNav.showFavorites(); return false;' title="Favorites">
                             <i class="material-icons">star</i>
+                        </a>
+                    </li>
+                    <li class="searchNavButton">
+                        <a href="" onclick='sideNav.showAdvancedSearch(); return false;' title="Advanced Search">
+                            <i class="material-icons">manage_search</i>
                         </a>
                     </li>
                     <li id="quickSearchButton">
@@ -66,15 +84,16 @@
                         </form>
                     </li>
                 </ul>
-                </form>
             </div>
         </nav>
         <div id="teamBodyContainer">
             <div id="sideNav" style="left:0px">
                 <div id="sideNavTitle"></div>
                 <div id="setListPanel" class="navPanel"></div>
-                <div id="favoritesPanel" class="navPanel"></div>
-                <div id="unitListPanel" class="navPanel"></div>
+                <div id="favoritesPanel" class="navPanel" style="visibility:hidden;"></div>
+                <div id="advancedSearchPanel" class="navPanel" style="visibility:hidden;">
+                </div>
+                <div id="unitListPanel" class="navPanel" style="visibility:hidden;"></div>
                 <div id="sideNavToggle">
                     <a href="#" onclick="sideNav.toggleVisibility(); return false;"><i id="sideNavToggleIcon" class="material-icons">chevron_left</i></a>
                 </div>
@@ -92,6 +111,15 @@
 
     <!-- Site-specific JS includes -->
     <script type="text/javascript" src="js/constants.js"></script>
+    <script type="text/javascript" src="js/combat_symbol_list.js"></script>
+    <script type="text/javascript" src="js/improved_ability_list.js"></script>
+    <script type="text/javascript" src="js/keyword_list.js"></script>
+    <script type="text/javascript" src="js/power_list.js"></script>
+    <script type="text/javascript" src="js/set_list.js"></script>
+    <script type="text/javascript" src="js/team_ability_list.js"></script>
+    <script type="text/javascript" src="js/type_list.js"></script>
+    <script type="text/javascript" src="js/universe_list.js"></script>
+
     <script type="text/javascript" src="js/unit_view.js"></script>
     <script type="text/javascript" src="js/character_view.js"></script>
     <script type="text/javascript" src="js/object_view.js"></script>
@@ -101,14 +129,11 @@
     <script type="text/javascript" src="js/set_list_panel.js"></script>
     <script type="text/javascript" src="js/unit_list_panel.js"></script>
     <script type="text/javascript" src="js/favorites_panel.js"></script>
+    <script type="text/javascript" src="js/advanced_search_panel.js"></script>
     <script type="text/javascript" src="js/side_nav.js"></script>
 
     <script type="text/javascript" src="js/data_source.js"></script>
-    <script type="text/javascript" src="js/keyword_list.js"></script>
     <script type="text/javascript" src="js/mock_data_source.js"></script>
-    <script type="text/javascript" src="js/power_list.js"></script>
-    <script type="text/javascript" src="js/set_list.js"></script>
-    <script type="text/javascript" src="js/team_ability_list.js"></script>
     <script type="text/javascript" src="js/view_manager.js"></script>
 
     <!-- Include this last, as it runs the code -->

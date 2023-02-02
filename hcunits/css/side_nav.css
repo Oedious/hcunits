@@ -27,9 +27,10 @@
 
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
-#panelBackIcon {
+.panelTitleButton {
   position: relative;
   width: 54px;
   height: 60px;
@@ -38,11 +39,11 @@
   line-height: 75px;
 }
 
-#panelBackIcon:hover {
+.panelTitleButton:hover {
   background-color: #78909c;
 }
 
-#panelBackIcon:focus {
+.panelTitleButton:focus {
   background-color: #607d8b;
   outline: none;
 }
@@ -53,43 +54,45 @@
 }
 
 .navPanel {
+  background-color: white;
 }
 
-.navPanel ul {
+.navPanel .collection,
+#searchOptions {
   position: absolute;
   margin: 0px !important;
   width: 300px;
-  height: calc(100% - 115px);
+  height: calc(100% - 120px);
   overflow-y: auto;
 }
 
-.navPanel ul .collection-header {
+.navPanel .collection .collection-header {
   min-height: 63px;
   font-size: 16px;
   display: flex;
   align-items: center;
 }
 
-.navPanel ul .collection-item {
+.navPanel .collection .collection-item {
   min-height: 0px !important;
   padding: 0px !important;
 }
 
-.navPanel ul .collection-item a {
+.navPanel .collection .collection-item a {
   padding: 10px 20px !important;
   display: block;
 }
 
-.navPanel ul .collection-item a:hover {
+.navPanel .collection .collection-item a:hover {
   background-color: #f5f5f5;
 }
 
-.navPanel ul .collection-item a:focus {
+.navPanel .collection .collection-item a:focus {
   background-color: #e5e5e5;
   outline: none;
 }
 
-.navPanel ul .collection-item a:active {
+.navPanel .collection .collection-item a:active {
   background-color: #d8d8d8;
 }
 
@@ -133,4 +136,47 @@
 	display: block;
 	position: relative;
 	transition: 0.6s;
+}
+
+#searchOptions {
+  background-color: white;
+}
+
+#searchOptions li .collapsible-body {
+  padding: 0;
+}
+
+#searchOptions li .collapsible-body .row .input-field {
+  margin: 13px 0 3px 0;
+}
+
+#searchOptions li .collapsible-body .row .input-field.col label {
+  top: -20px;
+}
+
+#searchOptions li .collapsible-body .row .input-field div ul {
+  max-height: 400px;
+}
+
+#searchOptions .row {
+  border-bottom: 1px solid lightgrey;
+  margin-bottom: 0px;
+}
+
+#searchOptionsTeamAbilities .input-field {
+  margin-bottom: 10px;  
+}
+
+#searchOptionKeywordsLabel {
+  position: absolute;
+  top: -20px;
+  font-size: .8rem;
+}
+
+.searchOptionsLabel {
+  margin: 0 0 5px 10px;
+}
+
+#searchOptionKeywords .autocomplete-content {
+  width: 300px !important;
 }
