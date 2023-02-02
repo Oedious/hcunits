@@ -1179,7 +1179,7 @@
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
-    <improved_targeting>[]</improved_targeting>
+    <improved_targeting>["hindering"]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>8</unit_range>
     <targets>1</targets>
@@ -1638,7 +1638,7 @@
     "description": "When Superman hits with a range attack, choose one to last until your next turn:"
   }
 ]</special_powers>
-    <improved_movement>[]</improved_movement>
+    <improved_movement>["destroy_blocking"]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>5</unit_range>
@@ -1774,7 +1774,7 @@
     "description": "When Superman hits with a range attack, choose one to last until your next turn:"
   }
 ]</special_powers>
-    <improved_movement>[]</improved_movement>
+    <improved_movement>["destroy_blocking"]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>5</unit_range>
@@ -2207,7 +2207,7 @@
     "description": "Willpower. When Robotman uses it, after resolutions you may move him up to a number of squares equal to the result."
   }
 ]</special_powers>
-    <improved_movement>[]</improved_movement>
+    <improved_movement>["destroy_blocking"]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>0</unit_range>
@@ -2342,7 +2342,7 @@
     "description": "Willpower. When Robotman uses it, after resolutions you may move him up to a number of squares equal to the result."
   }
 ]</special_powers>
-    <improved_movement>[]</improved_movement>
+    <improved_movement>["destroy_blocking"]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>0</unit_range>
@@ -3653,7 +3653,7 @@
     "description": "Precision Strike. // When Catwoman hits, roll a d6. 3-6: Unequip a hit character."
   }
 ]</special_powers>
-    <improved_movement>[]</improved_movement>
+    <improved_movement>["elevated"]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>4</unit_range>
@@ -3753,7 +3753,7 @@
     "description": "Precision Strike. // When Catwoman hits, roll a d6. 3-6: Unequip a hit character."
   }
 ]</special_powers>
-    <improved_movement>[]</improved_movement>
+    <improved_movement>["elevated"]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>4</unit_range>
@@ -4436,7 +4436,7 @@
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
-    <improved_targeting>[]</improved_targeting>
+    <improved_targeting>["adjacent"]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>5</unit_range>
     <targets>3</targets>
@@ -4545,7 +4545,7 @@
     "description": "STOP. Mastermind, Toughness, Regeneration. When Deathstroke uses Mastermind, he considers friendly characters within 4 squares as adjacent."
   }
 ]</special_powers>
-    <improved_movement>[]</improved_movement>
+    <improved_movement>["characters"]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>6</unit_range>
@@ -4830,7 +4830,7 @@
     "description": "Opposing characters can't target Martian Manhunter unless he has made an attack this game. // At the beginning of your turn, you may deal Martian Manhunter 1 unavoidable damage."
   }
 ]</special_powers>
-    <improved_movement>[]</improved_movement>
+    <improved_movement>["blocking", "characters"]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>5</unit_range>
@@ -4960,7 +4960,7 @@
     "description": "Opposing characters can't target Martian Manhunter unless he has made an attack this game. // At the beginning of your turn, you may deal Martian Manhunter 1 unavoidable damage."
   }
 ]</special_powers>
-    <improved_movement>[]</improved_movement>
+    <improved_movement>["blocking", "characters"]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>5</unit_range>
@@ -5303,7 +5303,7 @@
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
-    <improved_targeting>[]</improved_targeting>
+    <improved_targeting>["characters"]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>7</unit_range>
     <targets>1</targets>
@@ -5374,7 +5374,7 @@
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
-    <improved_targeting>[]</improved_targeting>
+    <improved_targeting>["destroy_blocking", "adjacent"]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>6</unit_range>
     <targets>2</targets>
@@ -5743,7 +5743,7 @@
     "description": "Leadership, Outwit."
   }
 ]</special_powers>
-    <improved_movement>[]</improved_movement>
+    <improved_movement>["destroy_blocking"]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>5</unit_range>
@@ -5872,7 +5872,7 @@
     "description": "Leadership, Outwit."
   }
 ]</special_powers>
-    <improved_movement>[]</improved_movement>
+    <improved_movement>["destroy_blocking"]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>5</unit_range>
@@ -6915,7 +6915,7 @@
     "description": "Empower, Outwit, Perplex."
   }
 ]</special_powers>
-    <improved_movement>[]</improved_movement>
+    <improved_movement>["elevated", "characters"]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>5</unit_range>
@@ -7675,7 +7675,7 @@
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
-    <improved_targeting>[]</improved_targeting>
+    <improved_targeting>["hindering"]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>6</unit_range>
     <targets>1</targets>
@@ -8161,7 +8161,7 @@
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
-    <improved_targeting>[]</improved_targeting>
+    <improved_targeting>["characters"]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>6</unit_range>
     <targets>1</targets>
@@ -8300,7 +8300,7 @@
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
-    <improved_targeting>[]</improved_targeting>
+    <improved_targeting>["elevated", "characters"]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>8</unit_range>
     <targets>1</targets>
@@ -9110,7 +9110,7 @@
     "description": "Charge. When Shaggy uses it and hits, if a hit character has the Monster or Mystical keyword, after resolutions he can use Flurry as FREE. Otherwise, after resolutions he may make an attack."
   }
 ]</special_powers>
-    <improved_movement>[]</improved_movement>
+    <improved_movement>["destroy_blocking", "characters"]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>0</unit_range>
@@ -11188,7 +11188,7 @@
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
-    <improved_targeting>[]</improved_targeting>
+    <improved_targeting>["hindering"]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>6</unit_range>
     <targets>1</targets>
@@ -12150,7 +12150,7 @@
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
-    <improved_targeting>[]</improved_targeting>
+    <improved_targeting>["hindering"]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>6</unit_range>
     <targets>2</targets>

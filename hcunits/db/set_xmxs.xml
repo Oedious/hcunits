@@ -1495,7 +1495,7 @@
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
-    <improved_targeting>[]</improved_targeting>
+    <improved_targeting>["elevated", "hindering", "blocking", "characters", "adjacent"]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>5</unit_range>
     <targets>1</targets>
@@ -1809,7 +1809,7 @@
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
-    <improved_targeting>[]</improved_targeting>
+    <improved_targeting>["adjacent"]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>7</unit_range>
     <targets>1</targets>
@@ -2343,7 +2343,7 @@
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
-    <improved_targeting>[]</improved_targeting>
+    <improved_targeting>["elevated", "hindering"]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>5</unit_range>
     <targets>2</targets>
@@ -2954,7 +2954,7 @@
     "description": "When Wolverine would be KO'd by an opposing effect, instead don't stop turning the dial and keep turning it for the damage taken (up to click #12), then place him on this card. // At the beginning of your turn, if Wolverine is on his card, heal him 1 click. If click #5 is revealed, your opponent places him within 4 squares of a friendly character. // If no other friendly characters on the map share a keyword with Wolverine while he is on his card, KO him. Protected: Pulse Wave."
   }
 ]</special_powers>
-    <improved_movement>[]</improved_movement>
+    <improved_movement>["characters"]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>0</unit_range>
@@ -3391,7 +3391,7 @@
     "description": "Leap/Climb. // When Juggernaut is given a MOVE action, after resolutions he may make a close attack."
   }
 ]</special_powers>
-    <improved_movement>[]</improved_movement>
+    <improved_movement>["destroy_blocking"]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>0</unit_range>
@@ -4037,7 +4037,7 @@
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
-    <improved_targeting>[]</improved_targeting>
+    <improved_targeting>["hindering", "characters"]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>6</unit_range>
     <targets>2</targets>
@@ -4322,7 +4322,7 @@
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
-    <improved_targeting>[]</improved_targeting>
+    <improved_targeting>["characters"]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>6</unit_range>
     <targets>2</targets>
@@ -4431,7 +4431,7 @@
     "description": "Enhancement, Exploit Weakness."
   }
 ]</special_powers>
-    <improved_movement>[]</improved_movement>
+    <improved_movement>["characters"]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>4</unit_range>
@@ -5134,7 +5134,7 @@
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
-    <improved_targeting>[]</improved_targeting>
+    <improved_targeting>["destroy_blocking", "characters"]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>6</unit_range>
     <targets>1</targets>
@@ -5977,7 +5977,7 @@
     "description": "STOP. Each time this click is revealed, if X-23 is the only character on your force, KO her."
   }
 ]</special_powers>
-    <improved_movement>[]</improved_movement>
+    <improved_movement>["characters"]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>0</unit_range>
@@ -6938,7 +6938,7 @@
     "description": "Super Senses. // When Blink is missed by an attack, after resolutions you may deal 1 penetrating damage to an opposing character within 3 squares of a Portal marker."
   }
 ]</special_powers>
-    <improved_movement>[]</improved_movement>
+    <improved_movement>["blocking", "characters"]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>5</unit_range>
@@ -7197,7 +7197,7 @@
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
-    <improved_targeting>[]</improved_targeting>
+    <improved_targeting>["elevated", "characters"]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>7</unit_range>
     <targets>1</targets>
@@ -7659,7 +7659,7 @@
     "description": "Impervious, but succeeds on a 4-6 and reduces penetrating damage. Protected: Outwit."
   }
 ]</special_powers>
-    <improved_movement>[]</improved_movement>
+    <improved_movement>["destroy_blocking"]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>0</unit_range>
@@ -8699,7 +8699,7 @@
     <team_abilities>[]</team_abilities>
     <keywords>["Arakko", "Martial Artist", "Soldier", "Warrior"]</keywords>
     <special_powers>[]</special_powers>
-    <improved_movement>[]</improved_movement>
+    <improved_movement>["characters"]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>0</unit_range>
@@ -8778,7 +8778,7 @@
     "description": "Enhancement, Outwit."
   }
 ]</special_powers>
-    <improved_movement>[]</improved_movement>
+    <improved_movement>["characters"]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>0</unit_range>
@@ -9800,7 +9800,7 @@
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
-    <improved_targeting>[]</improved_targeting>
+    <improved_targeting>["elevated", "hindering", "destroy_blocking"]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>8</unit_range>
     <targets>1</targets>
@@ -9903,7 +9903,7 @@
     "description": "When Iceman attacks, give each hit character an action token."
   }
 ]</special_powers>
-    <improved_movement>[]</improved_movement>
+    <improved_movement>["characters"]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>7</unit_range>
@@ -10243,7 +10243,7 @@
     "description": "If Sentinel Mark II rolls doubles with a successful attack roll, the damage dealt by that attack is penetrating and can't be evaded."
   }
 ]</special_powers>
-    <improved_movement>[]</improved_movement>
+    <improved_movement>["destroy_blocking"]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>10</unit_range>

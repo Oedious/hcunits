@@ -656,7 +656,9 @@
         "description": "Super Senses, but succeeds on a 4-6 for range attacks (succeeds normally for close attacks)."
       }
     ], 
-    "improved_movement": [], 
+    "improved_movement": [
+      "characters"
+    ], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
     "unit_range": "5", 
@@ -764,7 +766,9 @@
         "description": "Super Senses, but succeeds on a 4-6 for range attacks (succeeds normally for close attacks)."
       }
     ], 
-    "improved_movement": [], 
+    "improved_movement": [
+      "characters"
+    ], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
     "unit_range": "5", 
@@ -932,7 +936,10 @@
         "description": "FREE: Once per turn for all characters with a Follow-Up trait, make an attack using Gorilla-Man's printed combat values, but only to target a single character hit with an attack made by another friendly character with the Wakanda keyword."
       }
     ], 
-    "improved_movement": [], 
+    "improved_movement": [
+      "elevated", 
+      "characters"
+    ], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
     "unit_range": "4", 
@@ -1230,7 +1237,9 @@
         "description": "FREE: Roll a d6. Move Speed a number of squares up to the result."
       }
     ], 
-    "improved_movement": [], 
+    "improved_movement": [
+      "elevated"
+    ], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
     "unit_range": "0", 
@@ -3517,7 +3526,9 @@
       }
     ], 
     "improved_movement": [], 
-    "improved_targeting": [], 
+    "improved_targeting": [
+      "hindering"
+    ], 
     "object_keyphrases": [], 
     "unit_range": "5", 
     "targets": "2", 
@@ -3629,7 +3640,9 @@
       }
     ], 
     "improved_movement": [], 
-    "improved_targeting": [], 
+    "improved_targeting": [
+      "hindering"
+    ], 
     "object_keyphrases": [], 
     "unit_range": "5", 
     "targets": "2", 
@@ -3983,7 +3996,9 @@
       }
     ], 
     "improved_movement": [], 
-    "improved_targeting": [], 
+    "improved_targeting": [
+      "hindering"
+    ], 
     "object_keyphrases": [], 
     "unit_range": "6", 
     "targets": "1", 
@@ -4553,7 +4568,9 @@
         "description": "Battle Fury, Close Combat Expert."
       }
     ], 
-    "improved_movement": [], 
+    "improved_movement": [
+      "elevated"
+    ], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
     "unit_range": "6", 
@@ -4669,7 +4686,9 @@
         "description": "FREE: Choose one. Ms. Marvel can use the chosen effects until you choose again. Protected: Pulse Wave:"
       }
     ], 
-    "improved_movement": [], 
+    "improved_movement": [
+      "characters"
+    ], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
     "unit_range": "0", 
@@ -4793,7 +4812,9 @@
         "description": "Charge, Flurry, Stealth."
       }
     ], 
-    "improved_movement": [], 
+    "improved_movement": [
+      "characters"
+    ], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
     "unit_range": "3", 
@@ -6478,7 +6499,9 @@
         "description": "Battle Fury, Close Combat Expert."
       }
     ], 
-    "improved_movement": [], 
+    "improved_movement": [
+      "destroy_blocking"
+    ], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
     "unit_range": "0", 
@@ -6784,7 +6807,10 @@
         "description": "At the beginning of your turn choose one effect to last until your next turn:"
       }
     ], 
-    "improved_movement": [], 
+    "improved_movement": [
+      "elevated", 
+      "destroy_blocking"
+    ], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
     "unit_range": "0", 
@@ -7053,7 +7079,9 @@
       }
     ], 
     "improved_movement": [], 
-    "improved_targeting": [], 
+    "improved_targeting": [
+      "hindering"
+    ], 
     "object_keyphrases": [], 
     "unit_range": "7", 
     "targets": "2", 
@@ -7204,7 +7232,9 @@
       }
     ], 
     "improved_movement": [], 
-    "improved_targeting": [], 
+    "improved_targeting": [
+      "hindering"
+    ], 
     "object_keyphrases": [], 
     "unit_range": "6", 
     "targets": "2", 
@@ -7373,7 +7403,9 @@
         "description": "Combat Reflexes, Toughness, Willpower."
       }
     ], 
-    "improved_movement": [], 
+    "improved_movement": [
+      "blocking"
+    ], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
     "unit_range": "0", 
@@ -7491,7 +7523,9 @@
         "description": "STOP. Invincible."
       }
     ], 
-    "improved_movement": [], 
+    "improved_movement": [
+      "elevated"
+    ], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
     "unit_range": "0", 
@@ -7899,8 +7933,12 @@
         "description": "Penetrating/Psychic Blast. Steal Energy, but for close and range attacks."
       }
     ], 
-    "improved_movement": [], 
-    "improved_targeting": [], 
+    "improved_movement": [
+      "destroy_blocking"
+    ], 
+    "improved_targeting": [
+      "destroy_blocking"
+    ], 
     "object_keyphrases": [], 
     "unit_range": "6", 
     "targets": "1", 
@@ -8368,7 +8406,9 @@
       }
     ], 
     "improved_movement": [], 
-    "improved_targeting": [], 
+    "improved_targeting": [
+      "adjacent"
+    ], 
     "object_keyphrases": [], 
     "unit_range": "7", 
     "targets": "2", 
@@ -8627,7 +8667,10 @@
       }
     ], 
     "improved_movement": [], 
-    "improved_targeting": [], 
+    "improved_targeting": [
+      "hindering", 
+      "characters"
+    ], 
     "object_keyphrases": [], 
     "unit_range": "6", 
     "targets": "2", 
@@ -8956,8 +8999,13 @@
         "description": "STOP. Regeneration, Toughness, Willpower."
       }
     ], 
-    "improved_movement": [], 
-    "improved_targeting": [], 
+    "improved_movement": [
+      "elevated", 
+      "characters"
+    ], 
+    "improved_targeting": [
+      "elevated"
+    ], 
     "object_keyphrases": [], 
     "unit_range": "5", 
     "targets": "2", 
@@ -9098,7 +9146,9 @@
         "description": "Blades/Claws/Fangs. Steal Energy, but heals 2 clicks instead of 1."
       }
     ], 
-    "improved_movement": [], 
+    "improved_movement": [
+      "elevated"
+    ], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
     "unit_range": "4", 
@@ -9432,7 +9482,10 @@
         "description": "CLOSE: Destroy all blocking terrain within 3 squares and make a close attack targeting all opposing characters within 3 squares. Each hit character is dealt 3 damage instead of normal damage."
       }
     ], 
-    "improved_movement": [], 
+    "improved_movement": [
+      "blocking", 
+      "characters"
+    ], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
     "unit_range": "0", 
@@ -9563,7 +9616,9 @@
         "description": "KNOCKBACK. // When Green Widow knocks back one or more characters, she may choose the direction of the knockback and, after resolutions, you may place her adjacent to a character she knocked back."
       }
     ], 
-    "improved_movement": [], 
+    "improved_movement": [
+      "destroy_blocking"
+    ], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
     "unit_range": "4", 
@@ -9716,7 +9771,11 @@
         "description": "Outwit, Perplex. // When Dormammu Red hits with an attack, you may remove up to 3 Plotting tokens and increase the damage dealt this attack by the amount of Plotting tokens removed."
       }
     ], 
-    "improved_movement": [], 
+    "improved_movement": [
+      "elevated", 
+      "blocking", 
+      "characters"
+    ], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
     "unit_range": "8", 
@@ -10757,7 +10816,10 @@
       }
     ], 
     "improved_movement": [], 
-    "improved_targeting": [], 
+    "improved_targeting": [
+      "hindering", 
+      "characters"
+    ], 
     "object_keyphrases": [], 
     "unit_range": "6", 
     "targets": "2", 

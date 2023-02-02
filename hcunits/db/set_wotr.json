@@ -750,7 +750,9 @@
         "description": "Super Senses. // Friendly characters that are adjacent or have the Avengers keyword can use Super Senses."
       }
     ], 
-    "improved_movement": [], 
+    "improved_movement": [
+      "elevated"
+    ], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
     "unit_range": "4", 
@@ -1061,7 +1063,9 @@
         "description": "Stealth. // Friendly characters that are adjacent or have the Avengers keyword can use Stealth."
       }
     ], 
-    "improved_movement": [], 
+    "improved_movement": [
+      "characters"
+    ], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
     "unit_range": "4", 
@@ -1347,7 +1351,9 @@
       "Warrior"
     ], 
     "special_powers": [], 
-    "improved_movement": [], 
+    "improved_movement": [
+      "destroy_blocking"
+    ], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
     "unit_range": "0", 
@@ -1585,7 +1591,9 @@
         "description": "Energy Shield/Deflection, Toughness."
       }
     ], 
-    "improved_movement": [], 
+    "improved_movement": [
+      "elevated"
+    ], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
     "unit_range": "6", 
@@ -1706,7 +1714,9 @@
       }
     ], 
     "improved_movement": [], 
-    "improved_targeting": [], 
+    "improved_targeting": [
+      "characters"
+    ], 
     "object_keyphrases": [], 
     "unit_range": "8", 
     "targets": "2", 
@@ -2568,7 +2578,9 @@
       }
     ], 
     "improved_movement": [], 
-    "improved_targeting": [], 
+    "improved_targeting": [
+      "elevated"
+    ], 
     "object_keyphrases": [], 
     "unit_range": "7", 
     "targets": "1", 
@@ -3303,7 +3315,9 @@
         "description": "Blades/Claws/Fangs, Quake, Steal Energy. // When one or more opposing characters takes damage from Moon Knight's attack, give him a Vengeance token."
       }
     ], 
-    "improved_movement": [], 
+    "improved_movement": [
+      "elevated"
+    ], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
     "unit_range": "5", 
@@ -4713,7 +4727,9 @@
         "description": "When Wrecker hits with a close attack, after resolutions you may generate a debris marker in a hit target's square. // UNIQUE MODIFIER - Opposing character occupying or adjacent to one or more debris markers modify attack -1."
       }
     ], 
-    "improved_movement": [], 
+    "improved_movement": [
+      "destroy_blocking"
+    ], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
     "unit_range": "0", 
@@ -4839,7 +4855,9 @@
         "description": "STOP. Impervious, Regeneration."
       }
     ], 
-    "improved_movement": [], 
+    "improved_movement": [
+      "destroy_blocking"
+    ], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
     "unit_range": "0", 
@@ -4938,7 +4956,9 @@
     ], 
     "keywords": [], 
     "special_powers": [], 
-    "improved_movement": [], 
+    "improved_movement": [
+      "destroy_blocking"
+    ], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
     "unit_range": "0", 
@@ -4976,7 +4996,9 @@
     ], 
     "keywords": [], 
     "special_powers": [], 
-    "improved_movement": [], 
+    "improved_movement": [
+      "destroy_blocking"
+    ], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
     "unit_range": "0", 
@@ -5014,7 +5036,9 @@
     ], 
     "keywords": [], 
     "special_powers": [], 
-    "improved_movement": [], 
+    "improved_movement": [
+      "destroy_blocking"
+    ], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
     "unit_range": "0", 
@@ -5444,7 +5468,11 @@
       }
     ], 
     "improved_movement": [], 
-    "improved_targeting": [], 
+    "improved_targeting": [
+      "elevated", 
+      "characters", 
+      "adjacent"
+    ], 
     "object_keyphrases": [], 
     "unit_range": "6", 
     "targets": "1", 
@@ -5700,7 +5728,9 @@
       }
     ], 
     "improved_movement": [], 
-    "improved_targeting": [], 
+    "improved_targeting": [
+      "characters"
+    ], 
     "object_keyphrases": [], 
     "unit_range": "8", 
     "targets": "1", 
@@ -6039,7 +6069,9 @@
       }
     ], 
     "improved_movement": [], 
-    "improved_targeting": [], 
+    "improved_targeting": [
+      "hindering"
+    ], 
     "object_keyphrases": [], 
     "unit_range": "8", 
     "targets": "1", 
@@ -6161,7 +6193,9 @@
       }
     ], 
     "improved_movement": [], 
-    "improved_targeting": [], 
+    "improved_targeting": [
+      "characters"
+    ], 
     "object_keyphrases": [], 
     "unit_range": "6", 
     "targets": "2", 
@@ -6625,7 +6659,9 @@
         "description": "SIDELINE ACTIVE - If The Destroyer is on your Sideline and an opposing character damages a friendly character with an attack, if either character is equipped, after resolutions give The Destroyer a Seeker token and roll a d6 adding the number of Seeker tokens to the result. 6+: Generate The Destroyer from your Sideline in a square along the edge of the map in the same row or column of an equipped character, then remove all Seeker tokens and turn The Destroyer's dial to click X where X is the number of Seeker tokens removed. // If The Destroyer started the game via this trait, when it takes damage after resolutions return it to your Sideline. Protected: Pulse Wave."
       }
     ], 
-    "improved_movement": [], 
+    "improved_movement": [
+      "destroy_blocking"
+    ], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
     "unit_range": "10", 
@@ -6784,7 +6820,9 @@
       }
     ], 
     "improved_movement": [], 
-    "improved_targeting": [], 
+    "improved_targeting": [
+      "adjacent"
+    ], 
     "object_keyphrases": [], 
     "unit_range": "6", 
     "targets": "3", 
@@ -7070,8 +7108,12 @@
         "description": "Leadership. When Thor uses it, he may treat friendly characters with the Asgardian keyword within range as adjacent."
       }
     ], 
-    "improved_movement": [], 
-    "improved_targeting": [], 
+    "improved_movement": [
+      "destroy_blocking"
+    ], 
+    "improved_targeting": [
+      "characters"
+    ], 
     "object_keyphrases": [], 
     "unit_range": "6", 
     "targets": "2", 
@@ -7242,7 +7284,9 @@
       }
     ], 
     "improved_movement": [], 
-    "improved_targeting": [], 
+    "improved_targeting": [
+      "adjacent"
+    ], 
     "object_keyphrases": [], 
     "unit_range": "5", 
     "targets": "3", 
@@ -7412,8 +7456,12 @@
         "description": "Poison, but deals damage even if moved or placed this turn."
       }
     ], 
-    "improved_movement": [], 
-    "improved_targeting": [], 
+    "improved_movement": [
+      "destroy_blocking"
+    ], 
+    "improved_targeting": [
+      "destroy_blocking"
+    ], 
     "object_keyphrases": [], 
     "unit_range": "7", 
     "targets": "2", 
@@ -7551,7 +7599,10 @@
       }
     ], 
     "improved_movement": [], 
-    "improved_targeting": [], 
+    "improved_targeting": [
+      "hindering", 
+      "characters"
+    ], 
     "object_keyphrases": [], 
     "unit_range": "8", 
     "targets": "2", 
@@ -7784,7 +7835,9 @@
         "description": "POWER: Generate a Dreamstone Simulacrum bystander [MAX 1]. // If Venom hit an opposing character this turn, this trait is activated as FREE instead."
       }
     ], 
-    "improved_movement": [], 
+    "improved_movement": [
+      "elevated"
+    ], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
     "unit_range": "0", 
@@ -7954,7 +8007,9 @@
         "description": "Probability Control. Spider-Man and adjacent friendly characters have SAFEGUARD: Opposing Probability Control."
       }
     ], 
-    "improved_movement": [], 
+    "improved_movement": [
+      "elevated"
+    ], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
     "unit_range": "6", 
@@ -8065,7 +8120,9 @@
         "description": "FREE: Choose one:"
       }
     ], 
-    "improved_movement": [], 
+    "improved_movement": [
+      "destroy_blocking"
+    ], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
     "unit_range": "0", 
@@ -8213,7 +8270,9 @@
       }
     ], 
     "improved_movement": [], 
-    "improved_targeting": [], 
+    "improved_targeting": [
+      "hindering"
+    ], 
     "object_keyphrases": [], 
     "unit_range": "8", 
     "targets": "2", 
@@ -8481,7 +8540,9 @@
         "description": "If Piledriver is adjacent to a friendly character with the Wrecking Crew keyword and an opposing character, he takes a maximum of 2 damage from attacks."
       }
     ], 
-    "improved_movement": [], 
+    "improved_movement": [
+      "destroy_blocking"
+    ], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
     "unit_range": "0", 
@@ -8847,7 +8908,9 @@
         "description": "KNOCKBACK. // Charge. When Bulldozer uses it and occupies a debris marker, don't halve speed."
       }
     ], 
-    "improved_movement": [], 
+    "improved_movement": [
+      "destroy_blocking"
+    ], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
     "unit_range": "0", 
@@ -9077,8 +9140,13 @@
         "description": "Outwit. When Thor and Loki use it, after resolutions you may heal 1 click. // When Thor and Loki are KO'd, after resolutions you may generate a Thor bystander and a Loki bystander adjacent to the square they last occupied. Protected: Outwit, Pulse Wave."
       }
     ], 
-    "improved_movement": [], 
-    "improved_targeting": [], 
+    "improved_movement": [
+      "destroy_blocking"
+    ], 
+    "improved_targeting": [
+      "elevated", 
+      "hindering"
+    ], 
     "object_keyphrases": [], 
     "unit_range": "10", 
     "targets": "2", 
@@ -9429,7 +9497,9 @@
         "description": "Giant Reach: 3, Quake. // UNIQUE MODIFIER - When Thunderball hits, hit characters modify combat values by -1 until your next turn."
       }
     ], 
-    "improved_movement": [], 
+    "improved_movement": [
+      "destroy_blocking"
+    ], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
     "unit_range": "0", 
@@ -9557,8 +9627,12 @@
         "description": "MOVE: Improved Movement: Characters. Move in a direct path. After resolutions, make a close attack targeting all opposing characters moved through, regardless of adjacency. Hit characters are dealt this character's printed damage instead of normal damage."
       }
     ], 
-    "improved_movement": [], 
-    "improved_targeting": [], 
+    "improved_movement": [
+      "destroy_blocking"
+    ], 
+    "improved_targeting": [
+      "adjacent"
+    ], 
     "object_keyphrases": [], 
     "unit_range": "8", 
     "targets": "1", 
@@ -9788,7 +9862,9 @@
         "description": "Blades/Claws/Fangs, KNOCKBACK. // POWER: Move in a direct path, after resolutions make a close attack targeting an opposing character she moved through regardless of adjacency."
       }
     ], 
-    "improved_movement": [], 
+    "improved_movement": [
+      "characters"
+    ], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
     "unit_range": "0", 

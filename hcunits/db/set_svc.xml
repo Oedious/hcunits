@@ -144,7 +144,7 @@
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
-    <improved_targeting>[]</improved_targeting>
+    <improved_targeting>["hindering"]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>6</unit_range>
     <targets>2</targets>
@@ -261,7 +261,7 @@
     "description": "At the end of your turn, if Iron Fist didn't move or make an attack this turn, give him a Chi token. // FREE: Remove any number of Chi tokens to make that many close attacks against different targets, maximum damage value 3."
   }
 ]</special_powers>
-    <improved_movement>[]</improved_movement>
+    <improved_movement>["characters"]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>0</unit_range>
@@ -359,7 +359,7 @@
     "description": "Smoke Cloud. Smoke Cloud as FREE, but only to generate 3 markers."
   }
 ]</special_powers>
-    <improved_movement>[]</improved_movement>
+    <improved_movement>["elevated", "hindering"]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>4</unit_range>
@@ -538,7 +538,7 @@
     "description": "Super Senses. Once per turn, you may reroll a friendly character's Super Senses roll or Shape Change roll if that character is within range and line of fire."
   }
 ]</special_powers>
-    <improved_movement>[]</improved_movement>
+    <improved_movement>["elevated"]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>4</unit_range>
@@ -634,7 +634,7 @@
     "description": "Once per attack when an adjacent friendly character takes damage, give Venom a Protector token. // FREE: Remove a Protector token to make a close attack that deals penetrating damage."
   }
 ]</special_powers>
-    <improved_movement>[]</improved_movement>
+    <improved_movement>["elevated", "hindering"]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>4</unit_range>
@@ -777,7 +777,7 @@
     "description": "STOP. Toughness. // FREE: roll a d6. 1: Give Venom an action token. 2-5: Choose one to last until your next turn: Impervious -or- Regeneration. 6: Heal 2 clicks."
   }
 ]</special_powers>
-    <improved_movement>[]</improved_movement>
+    <improved_movement>["elevated", "hindering"]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>4</unit_range>
@@ -920,7 +920,7 @@
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
-    <improved_targeting>[]</improved_targeting>
+    <improved_targeting>["characters", "hindering"]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>6</unit_range>
     <targets>1</targets>
@@ -1815,7 +1815,7 @@
     "description": "Precision Strike. // When Spider-Man is given a MOVE action and moves 5 squares or less, after resolutions he may make a range attack using Incapacitate and may target all opposing characters within range and line of fire, but must give action tokens."
   }
 ]</special_powers>
-    <improved_movement>[]</improved_movement>
+    <improved_movement>["elevated"]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>4</unit_range>
@@ -2053,7 +2053,7 @@
     "description": "Quake. When Prowler uses it, after resolutions give a hit character an action token."
   }
 ]</special_powers>
-    <improved_movement>[]</improved_movement>
+    <improved_movement>["elevated", "hindering"]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>4</unit_range>
@@ -2406,7 +2406,7 @@
     "description": "Empower, Leadership."
   }
 ]</special_powers>
-    <improved_movement>[]</improved_movement>
+    <improved_movement>["characters"]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>0</unit_range>
@@ -2516,7 +2516,7 @@
     "description": "Hammerhead has a range of 5 and 2 targets."
   }
 ]</special_powers>
-    <improved_movement>[]</improved_movement>
+    <improved_movement>["blocking"]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>0</unit_range>
@@ -3106,7 +3106,7 @@
     "description": "Plasticity, Shape Change."
   }
 ]</special_powers>
-    <improved_movement>[]</improved_movement>
+    <improved_movement>["elevated", "hindering"]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>3</unit_range>
@@ -3214,7 +3214,7 @@
     "description": "Quake, Giant Reach: 2. Then Riot uses Quake and hits, after resolutions, give each hit character an action token."
   }
 ]</special_powers>
-    <improved_movement>[]</improved_movement>
+    <improved_movement>["elevated", "hindering"]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>0</unit_range>
@@ -3326,7 +3326,7 @@
     "description": "Super Senses, Toughness."
   }
 ]</special_powers>
-    <improved_movement>[]</improved_movement>
+    <improved_movement>["elevated", "hindering", "adjacent"]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>6</unit_range>
@@ -3453,7 +3453,7 @@
     "description": "When She-Venom hits, after resolutions a hit character gains Immobile until your next turn."
   }
 ]</special_powers>
-    <improved_movement>[]</improved_movement>
+    <improved_movement>["hindering"]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>5</unit_range>
@@ -3969,8 +3969,8 @@
     "description": "When Ghost-Spider is given a MOVE action and moves 5 squares or less, after resolutions she may make an attack."
   }
 ]</special_powers>
-    <improved_movement>[]</improved_movement>
-    <improved_targeting>[]</improved_targeting>
+    <improved_movement>["elevated", "hindering"]</improved_movement>
+    <improved_targeting>["characters"]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>5</unit_range>
     <targets>2</targets>
@@ -4213,7 +4213,7 @@
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
-    <improved_targeting>[]</improved_targeting>
+    <improved_targeting>["hindering"]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>7</unit_range>
     <targets>1</targets>
@@ -4876,7 +4876,7 @@
     "description": "Leadership, Outwit. When Iron Spider uses Leadership and succeeds, choose an equipped opposing character. When the chosen character is hit this turn, unequip it."
   }
 ]</special_powers>
-    <improved_movement>[]</improved_movement>
+    <improved_movement>["elevated", "hindering"]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>4</unit_range>
@@ -5008,7 +5008,7 @@
     "description": "Poison. When Carrion uses it and damages an opposing character, after resolutions he deals 1 penetrating damage to each adjacent opposing character."
   }
 ]</special_powers>
-    <improved_movement>[]</improved_movement>
+    <improved_movement>["hindering"]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>0</unit_range>
@@ -5112,7 +5112,7 @@
     "description": "Outwit. Once per turn, when Agent Anti-Venom uses it, after resolutions he may use Outwit an additional time but only to target a character with the Spider-Man Family or Monster keyword."
   }
 ]</special_powers>
-    <improved_movement>[]</improved_movement>
+    <improved_movement>["elevated", "hindering"]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>6</unit_range>
@@ -5239,7 +5239,7 @@
     "description": "Blades/Claws/Fangs, Giant Reach: 3. When Scream uses Blades/Claws/Fangs and the result is 5 or 6, after resolutions remove an action token from her."
   }
 ]</special_powers>
-    <improved_movement>[]</improved_movement>
+    <improved_movement>["elevated", "hindering"]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>0</unit_range>
@@ -5339,7 +5339,7 @@
     "description": "Support as FREE, but only to target characters with the Monster keyword."
   }
 ]</special_powers>
-    <improved_movement>[]</improved_movement>
+    <improved_movement>["elevated", "hindering"]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>5</unit_range>
@@ -5749,7 +5749,7 @@
     "description": "Battle Fury, Leadership, Probability Control. // Other characters with the Maximum Carnage keyword modify attack +1."
   }
 ]</special_powers>
-    <improved_movement>[]</improved_movement>
+    <improved_movement>["elevated", "hindering"]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>0</unit_range>
@@ -6189,7 +6189,7 @@
     "description": "Combat Reflexes, Super Senses, Toughness."
   }
 ]</special_powers>
-    <improved_movement>[]</improved_movement>
+    <improved_movement>["elevated", "hindering"]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>0</unit_range>
@@ -6305,7 +6305,7 @@
     "description": "When Spider-Man makes a close attack, he instead targets all adjacent opposing characters."
   }
 ]</special_powers>
-    <improved_movement>[]</improved_movement>
+    <improved_movement>["elevated", "hindering"]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>0</unit_range>
@@ -6479,7 +6479,7 @@
     "description": "Charge, Flurry, Plasticity."
   }
 ]</special_powers>
-    <improved_movement>[]</improved_movement>
+    <improved_movement>["elevated", "hindering"]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>4</unit_range>
@@ -6605,7 +6605,7 @@
     "description": "Quake. // Venom Captain Marvel deals penetrating damage."
   }
 ]</special_powers>
-    <improved_movement>[]</improved_movement>
+    <improved_movement>["blocking"]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>6</unit_range>
@@ -6724,7 +6724,7 @@
     "description": "Leadership, Probability Control."
   }
 ]</special_powers>
-    <improved_movement>[]</improved_movement>
+    <improved_movement>["adjacent"]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>7</unit_range>
@@ -6840,7 +6840,7 @@
     "description": "Once during your opponent's turn for all characters with this trait, when an opposing character is placed within 4 squares of Venom Groot, choose one: Modify that character's attack -2 this turn -or- after resolutions, deal that character 1 penetrating damage. If that character occupies printed hindering terrain, choose both."
   }
 ]</special_powers>
-    <improved_movement>[]</improved_movement>
+    <improved_movement>["elevated", "hindering"]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>4</unit_range>
@@ -6928,7 +6928,7 @@
     "description": "Giant Reach: 3. // If Venom Ghost-Spider has no action tokens she can use Battle Fury. If she has exactly 1 action token she can use Flurry. If she has 2 action tokens she can use Stealth."
   }
 ]</special_powers>
-    <improved_movement>[]</improved_movement>
+    <improved_movement>["elevated", "hindering"]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>5</unit_range>
@@ -7206,7 +7206,7 @@
     "description": "Penetrating/Psychic Blast. // Incapacitate as FREE. When Spirit Spider uses it, after resolutions deal 1 penetrating damage to each hit character that had attacked a friendly character since your last turn."
   }
 ]</special_powers>
-    <improved_movement>[]</improved_movement>
+    <improved_movement>["elevated", "hindering", "adjacent"]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>5</unit_range>
@@ -7434,7 +7434,7 @@
     "description": "Leadership. When Gwen Of Arc uses it and succeeds, when a friendly character hits this turn, after resolutions remove an action token from them."
   }
 ]</special_powers>
-    <improved_movement>[]</improved_movement>
+    <improved_movement>["characters", "elevated"]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>0</unit_range>
@@ -7652,7 +7652,7 @@
     "description": "Characters With a Webbed Gun token can't make range attacks and have \"POWER: Remove all Webbed Gun tokens from this character.\" Protected: Pulse Wave."
   }
 ]</special_powers>
-    <improved_movement>[]</improved_movement>
+    <improved_movement>["elevated", "hindering"]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>6</unit_range>
@@ -7765,7 +7765,7 @@
     "description": "Combat Reflexes. // If Spider-Hamurai is adjacent to exactly 1 opposing character and neither is adjacent to any other characters, other characters can't be moved or placed adjacent to either of them and can't target either of them."
   }
 ]</special_powers>
-    <improved_movement>[]</improved_movement>
+    <improved_movement>["elevated", "hindering"]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>0</unit_range>
@@ -7880,7 +7880,7 @@
     "description": "STOP. Combat Reflexes, Toughness."
   }
 ]</special_powers>
-    <improved_movement>[]</improved_movement>
+    <improved_movement>["elevated", "hindering"]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>4</unit_range>
@@ -8109,7 +8109,7 @@
     "description": "Toughness. Spider-Viking takes a maximum of 1 damage from range attacks."
   }
 ]</special_powers>
-    <improved_movement>[]</improved_movement>
+    <improved_movement>["characters", "hindering"]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>0</unit_range>
@@ -8219,7 +8219,7 @@
     "description": "Perplex. UNIQUE MODIFIER - When Steampunk Peni uses Perplex to target another friendly character with the Spider-Man Family keyword and doesn't choose damage, you may roll a d6 and instead modify the chosen value by half the result."
   }
 ]</special_powers>
-    <improved_movement>[]</improved_movement>
+    <improved_movement>["characters", "elevated"]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>5</unit_range>

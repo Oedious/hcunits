@@ -931,7 +931,7 @@
     "description": "Rogue can use the standard attack powers of adjacent characters (friendly and opposing). // Rogue may replace her range value with the printed range value of an adjacent character (friendly or opposing)."
   }
 ]</special_powers>
-    <improved_movement>[]</improved_movement>
+    <improved_movement>["destroy_blocking"]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>0</unit_range>
@@ -1505,7 +1505,7 @@
     "description": "STOP. Regeneration, Toughness."
   }
 ]</special_powers>
-    <improved_movement>[]</improved_movement>
+    <improved_movement>["destroy_blocking"]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>0</unit_range>
@@ -2102,7 +2102,7 @@
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
-    <improved_targeting>[]</improved_targeting>
+    <improved_targeting>["adjacent"]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>5</unit_range>
     <targets>1</targets>
@@ -2575,7 +2575,7 @@
     "description": "Impervious, Super Senses. Protected: Outwit."
   }
 ]</special_powers>
-    <improved_movement>[]</improved_movement>
+    <improved_movement>["characters"]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>0</unit_range>
@@ -2858,7 +2858,7 @@
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
-    <improved_targeting>[]</improved_targeting>
+    <improved_targeting>["hindering"]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>4</unit_range>
     <targets>2</targets>
@@ -5265,7 +5265,7 @@
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
-    <improved_targeting>[]</improved_targeting>
+    <improved_targeting>["characters", "adjacent"]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>6</unit_range>
     <targets>3</targets>

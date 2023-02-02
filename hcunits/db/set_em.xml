@@ -313,7 +313,7 @@
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
-    <improved_targeting>[]</improved_targeting>
+    <improved_targeting>["adjacent"]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>6</unit_range>
     <targets>2</targets>
@@ -406,7 +406,7 @@
     "description": "Charge, Flurry, Sidestep. When Makkari hits, immediately after the attack resolves, you may move up to 3 squares (after each attack when using Flurry)."
   }
 ]</special_powers>
-    <improved_movement>[]</improved_movement>
+    <improved_movement>["characters"]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>0</unit_range>
@@ -994,7 +994,7 @@
     "description": "Shape Change, but succeeds on 4-6."
   }
 ]</special_powers>
-    <improved_movement>[]</improved_movement>
+    <improved_movement>["hindering"]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>0</unit_range>
@@ -1698,7 +1698,7 @@
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
-    <improved_targeting>[]</improved_targeting>
+    <improved_targeting>["hindering", "characters", "adjacent"]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>7</unit_range>
     <targets>3</targets>
@@ -1808,7 +1808,7 @@
     "description": "Quake. When he uses it, after resolutions choose one: give an action token to all hit targets -or- all hit targets can use Earthbound/Neutralized until your next turn."
   }
 ]</special_powers>
-    <improved_movement>[]</improved_movement>
+    <improved_movement>["hindering", "destroy_blocking"]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>0</unit_range>
@@ -1926,7 +1926,7 @@
     "description": "Hypersonic Speed. When Kingo uses it, you may roll a d6. If you do, during Hypersonic Speed instead of one attack, he makes a number of close attacks equal to half the result using his printed combat values."
   }
 ]</special_powers>
-    <improved_movement>[]</improved_movement>
+    <improved_movement>["hindering"]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>6</unit_range>
@@ -2258,7 +2258,7 @@
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
-    <improved_targeting>[]</improved_targeting>
+    <improved_targeting>["hindering", "adjacent"]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>6</unit_range>
     <targets>2</targets>
@@ -2376,7 +2376,7 @@
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
-    <improved_targeting>[]</improved_targeting>
+    <improved_targeting>["hindering", "adjacent"]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>10</unit_range>
     <targets>2</targets>

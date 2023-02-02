@@ -1151,7 +1151,9 @@
         "description": "Impervious. Protected: Outwit."
       }
     ], 
-    "improved_movement": [], 
+    "improved_movement": [
+      "destroy_blocking"
+    ], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
     "unit_range": "0", 
@@ -4720,7 +4722,9 @@
       }
     ], 
     "improved_movement": [], 
-    "improved_targeting": [], 
+    "improved_targeting": [
+      "hindering"
+    ], 
     "object_keyphrases": [], 
     "unit_range": "8", 
     "targets": "3", 
@@ -4850,7 +4854,9 @@
         "description": "Close Combat Expert. // FREE: Remove a RALLY die from a friendly character. If you do, give a RALLY die to another friendly character."
       }
     ], 
-    "improved_movement": [], 
+    "improved_movement": [
+      "elevated"
+    ], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
     "unit_range": "0", 
@@ -4960,7 +4966,9 @@
         "description": "FREE: Choose an adjacent character. For each of Dark Beast's Research tokens, choose a standard power displayed on the Experiment's starting click. Until your next turn, the chosen character can use the chosen power(s)."
       }
     ], 
-    "improved_movement": [], 
+    "improved_movement": [
+      "elevated"
+    ], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
     "unit_range": "0", 
@@ -5077,7 +5085,9 @@
       }
     ], 
     "improved_movement": [], 
-    "improved_targeting": [], 
+    "improved_targeting": [
+      "adjacent"
+    ], 
     "object_keyphrases": [], 
     "unit_range": "0", 
     "targets": "1", 
@@ -6323,7 +6333,9 @@
         "rally_die": 5
       }
     ], 
-    "improved_movement": [], 
+    "improved_movement": [
+      "characters"
+    ], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
     "unit_range": "0", 
@@ -6437,7 +6449,9 @@
         "description": "Leadership, Close Combat Expert."
       }
     ], 
-    "improved_movement": [], 
+    "improved_movement": [
+      "destroy_blocking"
+    ], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
     "unit_range": "6", 
@@ -6584,7 +6598,9 @@
       }
     ], 
     "improved_movement": [], 
-    "improved_targeting": [], 
+    "improved_targeting": [
+      "destroy_blocking"
+    ], 
     "object_keyphrases": [], 
     "unit_range": "8", 
     "targets": "1", 
@@ -6718,8 +6734,12 @@
         "description": "Impervious, Super Senses, Willpower. Protected: Outwit."
       }
     ], 
-    "improved_movement": [], 
-    "improved_targeting": [], 
+    "improved_movement": [
+      "characters"
+    ], 
+    "improved_targeting": [
+      "adjacent"
+    ], 
     "object_keyphrases": [], 
     "unit_range": "5", 
     "targets": "2", 
@@ -7650,7 +7670,9 @@
         "description": "Charge. // Once per turn when Speed Weasel is given a CLOSE destroy action, after resolutions she can use Charge as FREE."
       }
     ], 
-    "improved_movement": [], 
+    "improved_movement": [
+      "elevated"
+    ], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
     "unit_range": "0", 
@@ -7998,7 +8020,10 @@
         "description": "Energy Explosion, Poison. // Fire Belly deals penetrating damage."
       }
     ], 
-    "improved_movement": [], 
+    "improved_movement": [
+      "elevated", 
+      "characters"
+    ], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
     "unit_range": "4", 
@@ -8109,7 +8134,11 @@
       }
     ], 
     "improved_movement": [], 
-    "improved_targeting": [], 
+    "improved_targeting": [
+      "elevated", 
+      "hindering", 
+      "characters"
+    ], 
     "object_keyphrases": [], 
     "unit_range": "8", 
     "targets": "2", 
@@ -8222,7 +8251,10 @@
       }
     ], 
     "improved_movement": [], 
-    "improved_targeting": [], 
+    "improved_targeting": [
+      "characters", 
+      "adjacent"
+    ], 
     "object_keyphrases": [], 
     "unit_range": "6", 
     "targets": "3", 
@@ -8395,7 +8427,9 @@
         "description": "Blades/Claws/Fangs. // When a friendly character KO's an opposing character, give them a Goodie Bag token."
       }
     ], 
-    "improved_movement": [], 
+    "improved_movement": [
+      "characters"
+    ], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
     "unit_range": "6", 
@@ -8785,7 +8819,9 @@
       }
     ], 
     "improved_movement": [], 
-    "improved_targeting": [], 
+    "improved_targeting": [
+      "destroy_blocking"
+    ], 
     "object_keyphrases": [], 
     "unit_range": "8", 
     "targets": "1", 

@@ -589,7 +589,9 @@
         "description": "Once per turn, you may reroll an attack roll that has a 4."
       }
     ], 
-    "improved_movement": [], 
+    "improved_movement": [
+      "blocking"
+    ], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
     "unit_range": "0", 
@@ -720,7 +722,9 @@
         "description": "Once per turn, you may reroll an attack roll that has a 4."
       }
     ], 
-    "improved_movement": [], 
+    "improved_movement": [
+      "characters"
+    ], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
     "unit_range": "4", 
@@ -851,7 +855,9 @@
         "description": "Once per turn, you may reroll an attack roll that has a 4."
       }
     ], 
-    "improved_movement": [], 
+    "improved_movement": [
+      "elevated"
+    ], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
     "unit_range": "4", 
@@ -2059,7 +2065,9 @@
         "description": "Friendly Sidekicks can use Toughness."
       }
     ], 
-    "improved_movement": [], 
+    "improved_movement": [
+      "blocking"
+    ], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
     "unit_range": "0", 
@@ -2273,7 +2281,9 @@
         "description": "Once per turn, you may reroll an attack roll that has a 4."
       }
     ], 
-    "improved_movement": [], 
+    "improved_movement": [
+      "hindering"
+    ], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
     "unit_range": "0", 
@@ -2711,7 +2721,9 @@
         "description": "UNIQUE MODIFIER - If the listed characters are on your force, Tong and the listed characters modify their combat values +1."
       }
     ], 
-    "improved_movement": [], 
+    "improved_movement": [
+      "hindering"
+    ], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
     "unit_range": "0", 
@@ -3253,7 +3265,11 @@
       }
     ], 
     "improved_movement": [], 
-    "improved_targeting": [], 
+    "improved_targeting": [
+      "elevated", 
+      "hindering", 
+      "characters"
+    ], 
     "object_keyphrases": [], 
     "unit_range": "8", 
     "targets": "1", 
@@ -5532,7 +5548,9 @@
         "description": "STOP. Invulnerability, Regeneration."
       }
     ], 
-    "improved_movement": [], 
+    "improved_movement": [
+      "blocking"
+    ], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
     "unit_range": "6", 
@@ -6037,7 +6055,9 @@
       }
     ], 
     "improved_movement": [], 
-    "improved_targeting": [], 
+    "improved_targeting": [
+      "hindering"
+    ], 
     "object_keyphrases": [], 
     "unit_range": "6", 
     "targets": "1", 
@@ -7083,7 +7103,9 @@
       }
     ], 
     "improved_movement": [], 
-    "improved_targeting": [], 
+    "improved_targeting": [
+      "characters"
+    ], 
     "object_keyphrases": [], 
     "unit_range": "10", 
     "targets": "2", 
@@ -7595,7 +7617,10 @@
         "description": "Invulnerability. Opposing characters attacking Lord Doom modify attack and damage -1."
       }
     ], 
-    "improved_movement": [], 
+    "improved_movement": [
+      "blocking", 
+      "hindering"
+    ], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
     "unit_range": "0", 

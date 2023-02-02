@@ -41,36 +41,21 @@ SET_MAP = {
 }
 
 IMPROVED_MOVEMENT_ABILITIES = {
-  "Elevated": "elevated",
-  "Hindering": "hindering",
-  "Ignores Hindering": "hindering",
-  "Blocking": "blocking",
-  "Ignores Blocking and destroys blocking terrain as the character moves through it": "blocking",
-  "Ignores Blocking and destroys blocking terrain as the character moves through it.": "blocking",
-  "Outdoor Blocking": "outdoor_blocking",
-  "Destroy Blocking": "destroy_blocking",
-  "Characters": "characters",
-  "Move Through": "move_through",
+  "elevated", "hindering", "blocking", "outdoor_blocking", "destroy_blocking", "characters", "move_through"
 }
 
 IMPROVED_MOVEMENT_RULES = {
-  "Hindering": "hindering",
   "This character can move through Blocking terrain. Immediately after movement resolves, destroy all Blocking terrain moved through": "blocking",
+  "Hindering": "hindering"
 }
 
 IMPROVED_TARGETING_ABILITIES = {
-  "Elevated": "elevated",
-  "Hindering": "hindering",
-  "Blocking": "blocking",
-  "Destroy Blocking": "destroy_blocking",
-  "Characters": "characters",
-  "Adjacent": "adjacent",
+  "elevated", "hindering", "blocking", "destroy_blocking", "characters", "adjacent"
 }
 
 IMPROVED_TARGETING_RULES = {
-  "Hindering": "hindering",
-  "Once per range attack, this character can draw a line of fire through one piece of Blocking terrain. Immediately after the attack resolves, destroy that piece of Blocking terrain": "blocking",
   "This character can make range attacks while adjacent to opposing characters. (May target adjacent or non-adjacent opposing characters.)": "adjacent",
+  "Once per range attack, this character can draw a line of fire through one piece of Blocking terrain. Immediately after the attack resolves, destroy that piece of Blocking terrain": "blocking"
 }
 CACHE_DIR = ".cache"
 
@@ -490,9 +475,9 @@ class Unit:
 
               if sp_description:
                 for value in sp_description.split(", "):
-                  value = value.strip()
+                  value = fix_style(value.strip())
                   if value in IMPROVED_MOVEMENT_ABILITIES:
-                    self.improved_movement.append(IMPROVED_MOVEMENT_ABILITIES[value])
+                    self.improved_movement.append(value)
                   else:
                     print("Skipping unknown improvement movement ability: '%s'" % value)
             elif sp_name == "TARGETING":
@@ -514,9 +499,9 @@ class Unit:
 
               if sp_description:
                 for value in sp_description.split(", "):
-                  value = value.strip()
+                  value = fix_style(value.strip())
                   if value in IMPROVED_TARGETING_ABILITIES:
-                    self.improved_targeting.append(IMPROVED_TARGETING_ABILITIES[value])
+                    self.improved_targeting.append(value)
                   else:
                     print("Skipping unknown improvement targeting ability: '%s'" % value)
           else:

@@ -1006,7 +1006,9 @@
         "description": "Rogue can use the standard attack powers of adjacent characters (friendly and opposing). // Rogue may replace her range value with the printed range value of an adjacent character (friendly or opposing)."
       }
     ], 
-    "improved_movement": [], 
+    "improved_movement": [
+      "destroy_blocking"
+    ], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
     "unit_range": "0", 
@@ -1624,7 +1626,9 @@
         "description": "STOP. Regeneration, Toughness."
       }
     ], 
-    "improved_movement": [], 
+    "improved_movement": [
+      "destroy_blocking"
+    ], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
     "unit_range": "0", 
@@ -2269,7 +2273,9 @@
       }
     ], 
     "improved_movement": [], 
-    "improved_targeting": [], 
+    "improved_targeting": [
+      "adjacent"
+    ], 
     "object_keyphrases": [], 
     "unit_range": "5", 
     "targets": "1", 
@@ -2776,7 +2782,9 @@
         "description": "Impervious, Super Senses. Protected: Outwit."
       }
     ], 
-    "improved_movement": [], 
+    "improved_movement": [
+      "characters"
+    ], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
     "unit_range": "0", 
@@ -3073,7 +3081,9 @@
       }
     ], 
     "improved_movement": [], 
-    "improved_targeting": [], 
+    "improved_targeting": [
+      "hindering"
+    ], 
     "object_keyphrases": [], 
     "unit_range": "4", 
     "targets": "2", 
@@ -5645,7 +5655,10 @@
       }
     ], 
     "improved_movement": [], 
-    "improved_targeting": [], 
+    "improved_targeting": [
+      "characters", 
+      "adjacent"
+    ], 
     "object_keyphrases": [], 
     "unit_range": "6", 
     "targets": "3", 

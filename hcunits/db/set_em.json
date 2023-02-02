@@ -341,7 +341,9 @@
       }
     ], 
     "improved_movement": [], 
-    "improved_targeting": [], 
+    "improved_targeting": [
+      "adjacent"
+    ], 
     "object_keyphrases": [], 
     "unit_range": "6", 
     "targets": "2", 
@@ -441,7 +443,9 @@
         "description": "Charge, Flurry, Sidestep. When Makkari hits, immediately after the attack resolves, you may move up to 3 squares (after each attack when using Flurry)."
       }
     ], 
-    "improved_movement": [], 
+    "improved_movement": [
+      "characters"
+    ], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
     "unit_range": "0", 
@@ -1074,7 +1078,9 @@
         "description": "Shape Change, but succeeds on 4-6."
       }
     ], 
-    "improved_movement": [], 
+    "improved_movement": [
+      "hindering"
+    ], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
     "unit_range": "0", 
@@ -1832,7 +1838,11 @@
       }
     ], 
     "improved_movement": [], 
-    "improved_targeting": [], 
+    "improved_targeting": [
+      "hindering", 
+      "characters", 
+      "adjacent"
+    ], 
     "object_keyphrases": [], 
     "unit_range": "7", 
     "targets": "3", 
@@ -1950,7 +1960,10 @@
         "description": "Quake. When he uses it, after resolutions choose one: give an action token to all hit targets -or- all hit targets can use Earthbound/Neutralized until your next turn."
       }
     ], 
-    "improved_movement": [], 
+    "improved_movement": [
+      "hindering", 
+      "destroy_blocking"
+    ], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
     "unit_range": "0", 
@@ -2076,7 +2089,9 @@
         "description": "Hypersonic Speed. When Kingo uses it, you may roll a d6. If you do, during Hypersonic Speed instead of one attack, he makes a number of close attacks equal to half the result using his printed combat values."
       }
     ], 
-    "improved_movement": [], 
+    "improved_movement": [
+      "hindering"
+    ], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
     "unit_range": "6", 
@@ -2435,7 +2450,10 @@
       }
     ], 
     "improved_movement": [], 
-    "improved_targeting": [], 
+    "improved_targeting": [
+      "hindering", 
+      "adjacent"
+    ], 
     "object_keyphrases": [], 
     "unit_range": "6", 
     "targets": "2", 
@@ -2563,7 +2581,10 @@
       }
     ], 
     "improved_movement": [], 
-    "improved_targeting": [], 
+    "improved_targeting": [
+      "hindering", 
+      "adjacent"
+    ], 
     "object_keyphrases": [], 
     "unit_range": "10", 
     "targets": "2", 

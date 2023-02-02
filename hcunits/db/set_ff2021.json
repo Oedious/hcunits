@@ -188,7 +188,11 @@
       }
     ], 
     "improved_movement": [], 
-    "improved_targeting": [], 
+    "improved_targeting": [
+      "hindering", 
+      "destroy_blocking", 
+      "adjacent"
+    ], 
     "object_keyphrases": [], 
     "unit_range": "6", 
     "targets": "1", 
@@ -694,7 +698,9 @@
       }
     ], 
     "improved_movement": [], 
-    "improved_targeting": [], 
+    "improved_targeting": [
+      "hindering"
+    ], 
     "object_keyphrases": [], 
     "unit_range": "7", 
     "targets": "1", 

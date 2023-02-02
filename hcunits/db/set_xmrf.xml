@@ -1046,7 +1046,7 @@
     "description": "Impervious. Protected: Outwit."
   }
 ]</special_powers>
-    <improved_movement>[]</improved_movement>
+    <improved_movement>["destroy_blocking"]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>0</unit_range>
@@ -4312,7 +4312,7 @@
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
-    <improved_targeting>[]</improved_targeting>
+    <improved_targeting>["hindering"]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>8</unit_range>
     <targets>3</targets>
@@ -4428,7 +4428,7 @@
     "description": "Close Combat Expert. // FREE: Remove a RALLY die from a friendly character. If you do, give a RALLY die to another friendly character."
   }
 ]</special_powers>
-    <improved_movement>[]</improved_movement>
+    <improved_movement>["elevated"]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>0</unit_range>
@@ -4528,7 +4528,7 @@
     "description": "FREE: Choose an adjacent character. For each of Dark Beast's Research tokens, choose a standard power displayed on the Experiment's starting click. Until your next turn, the chosen character can use the chosen power(s)."
   }
 ]</special_powers>
-    <improved_movement>[]</improved_movement>
+    <improved_movement>["elevated"]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>0</unit_range>
@@ -4637,7 +4637,7 @@
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
-    <improved_targeting>[]</improved_targeting>
+    <improved_targeting>["adjacent"]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>0</unit_range>
     <targets>1</targets>
@@ -5787,7 +5787,7 @@
     "rally_die": 5
   }
 ]</special_powers>
-    <improved_movement>[]</improved_movement>
+    <improved_movement>["characters"]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>0</unit_range>
@@ -5891,7 +5891,7 @@
     "description": "Leadership, Close Combat Expert."
   }
 ]</special_powers>
-    <improved_movement>[]</improved_movement>
+    <improved_movement>["destroy_blocking"]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>6</unit_range>
@@ -6027,7 +6027,7 @@
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
-    <improved_targeting>[]</improved_targeting>
+    <improved_targeting>["destroy_blocking"]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>8</unit_range>
     <targets>1</targets>
@@ -6148,8 +6148,8 @@
     "description": "Impervious, Super Senses, Willpower. Protected: Outwit."
   }
 ]</special_powers>
-    <improved_movement>[]</improved_movement>
-    <improved_targeting>[]</improved_targeting>
+    <improved_movement>["characters"]</improved_movement>
+    <improved_targeting>["adjacent"]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>5</unit_range>
     <targets>2</targets>
@@ -7000,7 +7000,7 @@
     "description": "Charge. // Once per turn when Speed Weasel is given a CLOSE destroy action, after resolutions she can use Charge as FREE."
   }
 ]</special_powers>
-    <improved_movement>[]</improved_movement>
+    <improved_movement>["elevated"]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>0</unit_range>
@@ -7315,7 +7315,7 @@
     "description": "Energy Explosion, Poison. // Fire Belly deals penetrating damage."
   }
 ]</special_powers>
-    <improved_movement>[]</improved_movement>
+    <improved_movement>["elevated", "characters"]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>4</unit_range>
@@ -7416,7 +7416,7 @@
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
-    <improved_targeting>[]</improved_targeting>
+    <improved_targeting>["elevated", "hindering", "characters"]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>8</unit_range>
     <targets>2</targets>
@@ -7515,7 +7515,7 @@
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
-    <improved_targeting>[]</improved_targeting>
+    <improved_targeting>["characters", "adjacent"]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>6</unit_range>
     <targets>3</targets>
@@ -7676,7 +7676,7 @@
     "description": "Blades/Claws/Fangs. // When a friendly character KO's an opposing character, give them a Goodie Bag token."
   }
 ]</special_powers>
-    <improved_movement>[]</improved_movement>
+    <improved_movement>["characters"]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>6</unit_range>
@@ -8028,7 +8028,7 @@
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
-    <improved_targeting>[]</improved_targeting>
+    <improved_targeting>["destroy_blocking"]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>8</unit_range>
     <targets>1</targets>
