@@ -40,7 +40,8 @@ class DataSource {
     jQuery.post({
       url: `${this.hostName_}/search/`,
       data: JSON.stringify(query),
-      dataType: 'json',
+      dataType: 'text',
+      contentType: 'application/json',
       success: function(searchResults) {
         onSuccess(JSON.parse(searchResults));
       },
