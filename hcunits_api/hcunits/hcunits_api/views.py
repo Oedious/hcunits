@@ -50,42 +50,18 @@ class Search(APIView):
     is_valid = False
     queryset = Unit.objects.all()
 
-    # Filter on "name"
-    name = request.data.get('has_name', None)
-    if name:
-      queryset = queryset.filter(name__icontains=name)
-      is_valid = True
-    name = request.data.get('is_name', None)
-    if name:
-      queryset = queryset.filter(name__iexact=name)
-      is_valid = True
-    name = request.data.get('begins_name', None)
-    if name:
-      queryset = queryset.filter(name__istartswith=name)
-      is_valid = True
-    name = request.data.get('ends_name', None)
-    if name:
-      queryset = queryset.filter(name__iendswith=name)
-      is_valid = True
+    # Filter on "name" and "real_name"
+    for field in ['name', 'real_name']:
+      for (suffix, lookup) in [('_has', '__icontains'),
+                               ('_is', '__iexact'),
+                               ('_begins', '__istartswith'),
+                               ('_ends', '__iendswith')]:
+        param = request.data.get(field + suffix, None)
+        if param:
+          kwargs = {field + lookup: param}
+          queryset = queryset.filter(**kwargs)
+          is_valid = True
       
-    # Filter on "real_name"
-    real_name = request.data.get('has_real_name', None)
-    if real_name:
-      queryset = queryset.filter(real_name__icontains=real_name)
-      is_valid = True
-    real_name = request.data.get('is_real_name', None)
-    if real_name:
-      queryset = queryset.filter(real_name__iexact=real_name)
-      is_valid = True
-    real_name = request.data.get('begins_real_name', None)
-    if real_name:
-      queryset = queryset.filter(real_name__istartswith=real_name)
-      is_valid = True
-    real_name = request.data.get('ends_real_name', None)
-    if real_name:
-      queryset = queryset.filter(real_name__iendswith=real_name)
-      is_valid = True
-
     # Handle sets as an "or", since it's impossible to have a single item in
     # multiple sets.
     set_ids = request.data.get('set_ids', None)
@@ -98,50 +74,113 @@ class Search(APIView):
       queryset = queryset.filter(query)
 
     # Filter on "point_value"
-    point_value = int(request.data.get('equals_point_value', -1))
+    point_value = int(request.data.get('point_value_equals', -1))
     if point_value >= 0:
-      query = (Q(point_values__0=point_value) |
-               Q(point_values__1=point_value) |
-               Q(point_values__2=point_value) |
-               Q(point_values__3=point_value))
+      queryset = queryset.filter(point_values__contains=point_value)
+      is_valid = True
+
+    MAX_POINT_VALUES = 4
+    for (suffix, lookup) in [('_less_than', '__lte'),
+                             ('_greater_than', '__gte')]:
+      param = int(request.data.get('point_value' + suffix, -1))
+      if param >= 0:
+        query = Q()
+        for i in range(MAX_POINT_VALUES):
+          kwargs = {'point_values__' + str(i) + lookup: param}
+          query |= Q(**kwargs)
+        queryset = queryset.filter(query)
+        is_valid = True
+
+    point_value_from = int(request.data.get('point_value_from', -1))
+    point_value_to = int(request.data.get('point_value_to', -1))
+    if point_value_from >= 0 and point_value_to >= 0:
+      query = Q()
+      for i in range(MAX_POINT_VALUES):
+        kwargs1 = {'point_values__%d__gte' % i: point_value_from}
+        kwargs2 = {'point_values__%d__lte' % i: point_value_to}
+        query |= (Q(**kwargs1) & Q(**kwargs2))
       queryset = queryset.filter(query)
       is_valid = True
 
-    point_value = int(request.data.get('less_than_point_value', -1))
-    if point_value >= 0:
-      query = (Q(point_values__0__lte=point_value) |
-               Q(point_values__1__lte=point_value) |
-               Q(point_values__2__lte=point_value) |
-               Q(point_values__3__lte=point_value))
+    # Handle 'types' as an "or", since it's impossible to have a single item of
+    # multiple types.
+    type_ids = request.data.get('types', None)
+    if type_ids and len(type_ids) > 0:
+      query = Q()
+      for type_id in type_ids:
+        if len(type_id) > 0:
+          query |= Q(type=type_id)
+          is_valid = True
       queryset = queryset.filter(query)
-      is_valid = True
-
-    point_value = int(request.data.get('greater_than_point_value', -1))
-    if point_value >= 0:
-      query = (Q(point_values__0__gte=point_value) |
-               Q(point_values__1__gte=point_value) |
-               Q(point_values__2__gte=point_value) |
-               Q(point_values__3__gte=point_value))
-      queryset = queryset.filter(query)
-      is_valid = True
-
-    from_point_value = int(request.data.get('from_point_value', -1))
-    to_point_value = int(request.data.get('to_point_value', -1))
-    if from_point_value >= 0 and to_point_value >= 0:
-      query = ((Q(point_values__0__gte=from_point_value) & Q(point_values__0__lte=to_point_value)) |
-               (Q(point_values__1__gte=from_point_value) & Q(point_values__1__lte=to_point_value)) |
-               (Q(point_values__2__gte=from_point_value) & Q(point_values__2__lte=to_point_value)) |
-               (Q(point_values__3__gte=from_point_value) & Q(point_values__3__lte=to_point_value)))
-      queryset = queryset.filter(query)
-      is_valid = True
 
     # Handle keywords, with an implicit "and" operator.
     keywords = request.data.get('keywords', None)
     if keywords and len(keywords) > 0:
-      for keyword in keywords:
-        if len(keyword) > 0:
-          queryset = queryset.filter(keywords__contains=keyword)
+      queryset = queryset.filter(keywords__contains=keywords)
+      is_valid = True
+
+    # Handle 'combat types' as an "or" for each particular type, since it's
+    # impossible to have a single item of multiple types.
+    for field in ['speed', 'attack', 'defense', 'damage']:
+      param_arr = request.data.get(field + '_types', None)
+      if param_arr and len(param_arr) > 0:
+        query = Q()
+        for param in param_arr:
+          if len(param) > 0:
+            kwargs = {field + '_type': param}
+            queryset = queryset.filter(**kwargs)
+        queryset = queryset.filter(query)
+        is_valid = True
+
+    # Filter on "unit_range" and "targets" combat values
+    for field in ['unit_range', 'targets']:
+      for (suffix, lookup) in [('_equals', ''),
+                               ('_less_than', '__lte'),
+                               ('_greater_than', '__gte')]:
+        param = int(request.data.get(field + suffix, -1))
+        if param >= 0:
+          kwargs = {field + lookup: param}
+          queryset = queryset.filter(**kwargs)
           is_valid = True
+
+      param_from = int(request.data.get(field + '_from', -1))
+      param_to = int(request.data.get(field + '_to', -1))
+      if param_from >= 0 and param_to >= 0:
+        kwargs1 = {field + '__gte': param_from}
+        kwargs2 = {field + '__lte': param_to}
+        queryset = queryset.filter(**kwargs1).filter(**kwargs2)
+        is_valid = True
+
+    # Filter on dial combat values
+    MAX_DIAL_SIZE = 26
+    for field in ['speed', 'attack', 'defense', 'damage']:
+      param = int(request.data.get(field + '_equals', -1))
+      if param >= 0:
+        kwargs = {'dial__contains': {field + '_value': param}}
+        queryset = queryset.filter(**kwargs)
+        is_valid = True
+
+      for (suffix, lookup) in [('_less_than', '__lte'),
+                               ('_greater_than', '__gte')]:
+        param = int(request.data.get(field + suffix, -1))
+        if param >= 0:
+          query = Q()
+          for i in range(MAX_DIAL_SIZE):
+            kwargs = {'dial__%d__%s_value%s' % (i, field, lookup): param}
+            query |= Q(**kwargs)
+          queryset = queryset.filter(query)
+          is_valid = True
+
+      param_from = int(request.data.get(field + '_from', -1))
+      param_to = int(request.data.get(field + '_to', -1))
+      if param_from >= 0 and param_to >= 0:
+        query = Q()
+        for i in range(MAX_DIAL_SIZE):
+          kwargs1 = {'dial__%d__%s_value__gte' % (i, field): param_from}
+          kwargs2 = {'dial__%d__%s_value__lte' % (i, field): param_to}
+          query |= (Q(**kwargs1) & Q(**kwargs2))
+        queryset = queryset.filter(query)
+        is_valid = True
 
     # Only return a valid response if there was at least one valid filter
     if not is_valid:

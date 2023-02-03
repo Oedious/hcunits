@@ -93,7 +93,7 @@ class AdvancedSearchPanel extends NavPanel {
           </div>
           <div class="collapsible-body">
             <div class="row">
-              ${this.drawCombatSymbolsSelectHtml_()}
+              ${this.drawCombatSymbolSelectHtml_()}
             </div>
             <div class="row">
               ${this.drawCombatValueSelectHtml_("Range")}
@@ -214,7 +214,7 @@ class AdvancedSearchPanel extends NavPanel {
   drawTypeSelectHtml_() {
     var html = `
       <div class='input-field col s12'>
-        <select multiple>`
+        <select id='searchOptionsTypeSelect' multiple>`
     for (var typeId in TYPE_LIST) {
       var typeItem = TYPE_LIST[typeId];
       html += `<option value='${typeId}'>${typeItem.name}</option>`
@@ -229,7 +229,7 @@ class AdvancedSearchPanel extends NavPanel {
   drawTeamAbilitySelectHtml_() {
     var html = `
       <div class='input-field col s12'>
-        <select multiple>`
+        <select id='searchOptionsTeamAbilitySelect' multiple>`
     var optGroup = null;
     for (var teamAbilityId in TEAM_ABILITY_LIST) {
       var teamAbilityItem = TEAM_ABILITY_LIST[teamAbilityId];
@@ -250,10 +250,10 @@ class AdvancedSearchPanel extends NavPanel {
     return html;
   }
 
-  drawCombatSymbolsSelectHtml_() {
+  drawCombatSymbolSelectHtml_() {
     var html = `
       <div class='input-field col s12'>
-        <select multiple>`
+        <select id='searchOptionsCombatSymbolSelect' multiple>`
     var optGroup = null;
     for (var combatSymbolId in COMBAT_SYMBOL_LIST) {
       var combatSymbolItem = COMBAT_SYMBOL_LIST[combatSymbolId];
@@ -301,7 +301,7 @@ class AdvancedSearchPanel extends NavPanel {
   drawPowerSelectHtml_() {
     var html = `
       <div class='input-field col s12'>
-        <select multiple>`
+        <select id='searchOptionsPowerSelect' multiple>`
     var optGroup = null;
     for (var powerId in POWER_LIST) {
       var powerItem = POWER_LIST[powerId];
@@ -359,26 +359,26 @@ class AdvancedSearchPanel extends NavPanel {
     var name = document.getElementById('searchOptionsName').value
     if (name) {
       var select = document.getElementById('searchOptionsNameSelect').value
-      query[select + '_name'] = name
+      query['name_' + select] = name
     }
 
     // Handle the '*_real_name' parameters.
     var real_name = document.getElementById('searchOptionsRealName').value
     if (real_name) {
       var select = document.getElementById('searchOptionsRealNameSelect').value
-      query[select + '_real_name'] = real_name
+      query['real_name_' + select] = real_name
     }
 
     // Handle the 'set_ids' parameter.
-    var set_ids = []
-    var setSelect = document.getElementById('searchOptionsSetSelect').value
-    for (var setOption in setSelect) {
-      if (setOption.selected) {
-        set_ids.push(setOption.value)
+    var setIds = []
+    var setOptions = document.getElementById('searchOptionsSetSelect').options
+    for (var option of setOptions) {
+      if (option.selected) {
+        setIds.push(option.value)
       }
     }
-    if (set_ids.length > 0) {
-      query['set_ids'] = set_ids
+    if (setIds.length > 0) {
+      query['set_ids'] = setIds
     }
 
     // Handle the '*_point_value' parameters.
@@ -386,17 +386,29 @@ class AdvancedSearchPanel extends NavPanel {
     if (pointValue1) {
       var select = document.getElementById('searchOptionsPointValueSelect').value
       if (select != "from") {
-        query[select + '_point_value'] = pointValue1
+        query['point_value_' + select] = pointValue1
       } else {
         var pointValue2 = document.getElementById('searchOptionsPointValue2').value
         if (pointValue2) {
-          query['from_point_value'] = pointValue1
-          query['to_point_value'] = pointValue2
+          query['point_value_from'] = pointValue1
+          query['point_value_to'] = pointValue2
         }
       }
     }
     
-    // Handle 'keywords' parameters.
+    // Handle unit "types" parameter.
+    var typeIds = []
+    var typeOptions = document.getElementById('searchOptionsTypeSelect').options
+    for (var option of typeOptions) {
+      if (option.selected) {
+        typeIds.push(option.value)
+      }
+    }
+    if (typeIds.length > 0) {
+      query['types'] = setIds
+    }
+    
+    // Handle 'keywords' parameter.
     var chipsInstance = M.Chips.getInstance(document.getElementById('searchOptionsKeywords'))
     var keywords = []
     for (var chip of chipsInstance.chipsData) {
@@ -409,6 +421,54 @@ class AdvancedSearchPanel extends NavPanel {
       query['keywords'] = keywords
     }
     
+    // Handle combat symbol types parameters.
+    // Although it's presented in the UI under a single select input, we need
+    // to break it apart and send each type separately.
+    var combatSymbolTypeMap = {
+      "speed": [],
+      "attack": [],
+      "defense": [],
+      "damage": []
+    }
+    var combatSymbolOptions = document.getElementById('searchOptionsCombatSymbolSelect').options
+    for (var option of combatSymbolOptions) {
+      if (option.selected) {
+        var combatSymbolType = COMBAT_SYMBOL_LIST[option.value].type
+        combatSymbolTypeMap[combatSymbolType].push(option.value)
+        typeIds.push(option.value)
+      }
+    }
+    for (const [type, symbols] of Object.entries(combatSymbolTypeMap)) {
+      if (symbols.length > 0) {
+        query[type + '_types'] = symbols
+      }
+    }
+
+    // Handle combat value types parameters.
+    const COMBAT_VALUE_TYPES = [
+      ["Range", "unit_range"],
+      ["Targets", "targets"],
+      ["Speed", "speed"],
+      ["Attack", "attack"],
+      ["Defense", "defense"],
+      ["Damage", "damage"]
+    ]
+    for (var combatValueType of COMBAT_VALUE_TYPES) {
+      var value1 = document.getElementById(`searchOptions${combatValueType[0]}1`).value
+      if (value1) {
+        var select = document.getElementById(`searchOptions${combatValueType[0]}Select`).value
+        if (select != "from") {
+          query[combatValueType[1] + '_' + select] = value1
+        } else {
+          var value2 = document.getElementById(`searchOptions${combatValueType[0]}2`).value
+          if (value2) {
+            query[combatValueType[1] + '_from'] = value1
+            query[combatValueType[1] + '_to'] = value2
+          }
+        }
+      }
+    }
+
     return query
   }
 }
