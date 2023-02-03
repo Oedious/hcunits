@@ -229,7 +229,7 @@ class AdvancedSearchPanel extends NavPanel {
   drawTeamAbilitySelectHtml_() {
     var html = `
       <div class='input-field col s12'>
-        <select id='searchOptionsTeamAbilitySelect' multiple>`
+        <select id='searchOptionsTeamAbilitiesSelect' multiple>`
     var optGroup = null;
     for (var teamAbilityId in TEAM_ABILITY_LIST) {
       var teamAbilityItem = TEAM_ABILITY_LIST[teamAbilityId];
@@ -340,7 +340,7 @@ class AdvancedSearchPanel extends NavPanel {
   drawImprovedTargetingSelectHtml_() {
     var html = `
       <div class='input-field col s12'>
-        <select id=searchOptionsImprovedTargetingSelect' multiple>`
+        <select id='searchOptionsImprovedTargetingSelect' multiple>`
     for (var abilityId in IMPROVED_TARGETING_LIST) {
       var abilityItem = IMPROVED_TARGETING_LIST[abilityId];
       html += `<option value='${abilityId}'>${abilityItem.name}</option>`
@@ -494,7 +494,7 @@ class AdvancedSearchPanel extends NavPanel {
     // Handle the 'improved movement' parameter.
     var improvedMovement = []
     var improvedMovementOptions = document.getElementById('searchOptionsImprovedMovementSelect').options
-    for (var option of setOptions) {
+    for (var option of improvedMovementOptions) {
       if (option.selected) {
         improvedMovement.push(option.value)
       }
@@ -506,7 +506,7 @@ class AdvancedSearchPanel extends NavPanel {
     // Handle the 'improved targeting' parameter.
     var improvedTargeting = []
     var improvedTargetingOptions = document.getElementById('searchOptionsImprovedTargetingSelect').options
-    for (var option of setOptions) {
+    for (var option of improvedTargetingOptions) {
       if (option.selected) {
         improvedTargeting.push(option.value)
       }
@@ -518,7 +518,7 @@ class AdvancedSearchPanel extends NavPanel {
     // Handle the 'team ability' parameter.
     var teamAbilities = []
     var teamAbilitiesOptions = document.getElementById('searchOptionsTeamAbilitiesSelect').options
-    for (var option of setOptions) {
+    for (var option of teamAbilitiesOptions) {
       if (option.selected) {
         teamAbilities.push(option.value)
       }
