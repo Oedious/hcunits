@@ -405,7 +405,7 @@ class AdvancedSearchPanel extends NavPanel {
       }
     }
     if (typeIds.length > 0) {
-      query['type'] = setIds
+      query['type'] = typeIds
     }
     
     // Handle 'keywords' parameter.
