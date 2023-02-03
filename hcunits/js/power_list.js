@@ -292,6 +292,12 @@ const POWER_LIST = {
     "description": "See Card.",
     "type": "special",
     "style": STYLE_WHITE
+  },
+  "stop": {
+    "name": "STOP",
+    "description": "When this click is revealed due to damage taken from an opponent's attack, stop turning the dial. When this character would be healed by Regeneration or Support, it’s healed 1 less click. Protected: Outwit, Pulse Wave.",
+    "type": "special",
+    "style": STYLE_WHITE
   }
 };
 

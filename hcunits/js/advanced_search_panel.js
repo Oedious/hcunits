@@ -369,7 +369,7 @@ class AdvancedSearchPanel extends NavPanel {
       query['real_name_' + select] = real_name
     }
 
-    // Handle the 'set_ids' parameter.
+    // Handle the 'set_id' parameter.
     var setIds = []
     var setOptions = document.getElementById('searchOptionsSetSelect').options
     for (var option of setOptions) {
@@ -378,7 +378,7 @@ class AdvancedSearchPanel extends NavPanel {
       }
     }
     if (setIds.length > 0) {
-      query['set_ids'] = setIds
+      query['set_id'] = setIds
     }
 
     // Handle the '*_point_value' parameters.
@@ -405,7 +405,7 @@ class AdvancedSearchPanel extends NavPanel {
       }
     }
     if (typeIds.length > 0) {
-      query['types'] = setIds
+      query['type'] = setIds
     }
     
     // Handle 'keywords' parameter.
@@ -418,7 +418,7 @@ class AdvancedSearchPanel extends NavPanel {
       }
     }
     if (keywords.length > 0) {
-      query['keywords'] = keywords
+      query['keyword'] = keywords
     }
     
     // Handle combat symbol types parameters.
@@ -435,12 +435,11 @@ class AdvancedSearchPanel extends NavPanel {
       if (option.selected) {
         var combatSymbolType = COMBAT_SYMBOL_LIST[option.value].type
         combatSymbolTypeMap[combatSymbolType].push(option.value)
-        typeIds.push(option.value)
       }
     }
     for (const [type, symbols] of Object.entries(combatSymbolTypeMap)) {
       if (symbols.length > 0) {
-        query[type + '_types'] = symbols
+        query[type + '_type'] = symbols
       }
     }
 
@@ -466,6 +465,29 @@ class AdvancedSearchPanel extends NavPanel {
             query[combatValueType[1] + '_to'] = value2
           }
         }
+      }
+    }
+
+    // Handle power types parameters.
+    // Although it's presented in the UI under a single select input, we need
+    // to break it apart and send each type separately.
+    var powerMap = {
+      "speed": [],
+      "attack": [],
+      "defense": [],
+      "damage": [],
+      "special": []
+    }
+    var powerOptions = document.getElementById('searchOptionsPowerSelect').options
+    for (var option of powerOptions) {
+      if (option.selected) {
+        var powerType = POWER_LIST[option.value].type
+        powerMap[powerType].push(option.value)
+      }
+    }
+    for (const [type, powers] of Object.entries(powerMap)) {
+      if (powers.length > 0) {
+        query[type + '_power'] = powers
       }
     }
 

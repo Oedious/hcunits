@@ -47,6 +47,9 @@ class Search(APIView):
   filter_backends = [filters.SearchFilter]
 
   def post(self, request, format=None):
+    COMBAT_TYPES = ['speed', 'attack', 'defense', 'damage']
+    POWER_TYPES = ['speed', 'attack', 'defense', 'damage', 'special']
+
     is_valid = False
     queryset = Unit.objects.all()
 
@@ -64,19 +67,21 @@ class Search(APIView):
       
     # Handle sets as an "or", since it's impossible to have a single item in
     # multiple sets.
-    set_ids = request.data.get('set_ids', None)
-    if set_ids and len(set_ids) > 0:
+    param_list = request.data.get('set_id', [])
+    if not isinstance(param_list, list):
+      param_list = [param_list]
+    if len(param_list) > 0:
       query = Q()
-      for set_id in set_ids:
-        if len(set_id) > 0:
-          query |= Q(set_id=set_id)
+      for param in param_list:
+        if len(param) > 0:
+          query |= Q(set_id=param)
           is_valid = True
       queryset = queryset.filter(query)
 
     # Filter on "point_value"
-    point_value = int(request.data.get('point_value_equals', -1))
-    if point_value >= 0:
-      queryset = queryset.filter(point_values__contains=point_value)
+    param = int(request.data.get('point_value_equals', -1))
+    if param >= 0:
+      queryset = queryset.filter(point_values__contains=param)
       is_valid = True
 
     MAX_POINT_VALUES = 4
@@ -102,31 +107,37 @@ class Search(APIView):
       queryset = queryset.filter(query)
       is_valid = True
 
-    # Handle 'types' as an "or", since it's impossible to have a single item of
+    # Handle 'type' as an "or", since it's impossible to have a single item of
     # multiple types.
-    type_ids = request.data.get('types', None)
-    if type_ids and len(type_ids) > 0:
+    param_list = request.data.get('type', [])
+    if not isinstance(param_list, list):
+      param_list = [param_list]
+    if len(param_list) > 0:
       query = Q()
-      for type_id in type_ids:
-        if len(type_id) > 0:
-          query |= Q(type=type_id)
+      for param in param_list:
+        if len(param) > 0:
+          query |= Q(type=param)
           is_valid = True
       queryset = queryset.filter(query)
 
     # Handle keywords, with an implicit "and" operator.
-    keywords = request.data.get('keywords', None)
-    if keywords and len(keywords) > 0:
-      queryset = queryset.filter(keywords__contains=keywords)
+    param_list = request.data.get('keyword', [])
+    if not isinstance(param_list, list):
+      param_list = [param_list]
+    if len(param_list) > 0:
+      queryset = queryset.filter(keywords__contains=param_list)
       is_valid = True
 
     # Handle 'combat types' as an "or" for each particular type, since it's
     # impossible to have a single item of multiple types.
-    for field in ['speed', 'attack', 'defense', 'damage']:
-      param_arr = request.data.get(field + '_types', None)
-      if param_arr and len(param_arr) > 0:
+    for field in COMBAT_TYPES:
+      param_list = request.data.get(field + '_type', [])
+      if not isinstance(param_list, list):
+        param_list = [param_list]
+      if len(param_list) > 0:
         query = Q()
-        for param in param_arr:
-          if len(param) > 0:
+        for param in param_list:
+          if param and len(param) > 0:
             kwargs = {field + '_type': param}
             queryset = queryset.filter(**kwargs)
         queryset = queryset.filter(query)
@@ -153,7 +164,7 @@ class Search(APIView):
 
     # Filter on dial combat values
     MAX_DIAL_SIZE = 26
-    for field in ['speed', 'attack', 'defense', 'damage']:
+    for field in COMBAT_TYPES:
       param = int(request.data.get(field + '_equals', -1))
       if param >= 0:
         kwargs = {'dial__contains': {field + '_value': param}}
@@ -181,6 +192,44 @@ class Search(APIView):
           query |= (Q(**kwargs1) & Q(**kwargs2))
         queryset = queryset.filter(query)
         is_valid = True
+
+    # Handle powers - when given multiples, they should all appear on the same
+    # click number or in one of the special powers.
+    powers = []
+    power_type = None
+    for field in POWER_TYPES:
+      param_list = request.data.get(field + '_power', [])
+      if not isinstance(param_list, list):
+        param_list = [param_list]
+      for param in param_list:
+        if param and len(param) > 0:
+          powers.append(param)
+          power_type = field
+    
+    # First check if there's only a single power - if so, it's a much simpler
+    # query.
+    if len(powers) == 1:
+      kwargs1 = {'dial__contains': {power_type + '_power': powers[0]}}
+      kwargs2 = {'special_powers__contains': powers[0]}
+      queryset = queryset.filter(Q(**kwargs1) | Q(**kwargs2))
+      is_valid = True
+    elif len(powers) > 1:
+      query = Q()
+      for i in range(MAX_DIAL_SIZE):
+        click_query = Q()
+        # Intentionally ignore the special power category.
+        for field in COMBAT_TYPES:
+          param_list = request.data.get(field + '_power', [])
+          if not isinstance(param_list, list):
+            param_list = [param_list]
+          for param in param_list:
+            if param and len(param) > 0:
+              kwargs1 = {'dial__%d__contains' % (i): {field + '_power': param}}
+              kwargs2 = {'special_powers__contains': param}
+              click_query &= (Q(**kwargs1) | Q(**kwargs2))
+        query |= click_query
+      queryset = queryset.filter(query)
+      is_valid = True
 
     # Only return a valid response if there was at least one valid filter
     if not is_valid:
