@@ -120,13 +120,19 @@ class Search(APIView):
           is_valid = True
       queryset = queryset.filter(query)
 
-    # Handle keywords, with an implicit "and" operator.
-    param_list = request.data.get('keyword', [])
-    if not isinstance(param_list, list):
-      param_list = [param_list]
-    if len(param_list) > 0:
-      queryset = queryset.filter(keywords__contains=param_list)
-      is_valid = True
+    # Handle keywords, team and improved abilities the same way, notably
+    # with an implicit "and" operator.
+    for (param_name, field) in [('keyword', 'keywords'),
+                                ('team_ability', 'team_abilities'),
+                                ('improved_movement', 'improved_movement'),
+                                ('improved_targeting', 'improved_targeting')]:
+      param_list = request.data.get(param_name, [])
+      if not isinstance(param_list, list):
+        param_list = [param_list]
+      if len(param_list) > 0:
+        kwargs = {field + '__contains': param_list}
+        queryset = queryset.filter(**kwargs)
+        is_valid = True
 
     # Handle 'combat types' as an "or" for each particular type, since it's
     # impossible to have a single item of multiple types.

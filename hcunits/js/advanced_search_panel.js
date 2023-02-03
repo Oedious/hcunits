@@ -325,7 +325,7 @@ class AdvancedSearchPanel extends NavPanel {
   drawImprovedMovementSelectHtml_() {
     var html = `
       <div class='input-field col s12'>
-        <select multiple>`
+        <select id='searchOptionsImprovedMovementSelect' multiple>`
     for (var abilityId in IMPROVED_MOVEMENT_LIST) {
       var abilityItem = IMPROVED_MOVEMENT_LIST[abilityId];
       html += `<option value='${abilityId}'>${abilityItem.name}</option>`
@@ -340,7 +340,7 @@ class AdvancedSearchPanel extends NavPanel {
   drawImprovedTargetingSelectHtml_() {
     var html = `
       <div class='input-field col s12'>
-        <select multiple>`
+        <select id=searchOptionsImprovedTargetingSelect' multiple>`
     for (var abilityId in IMPROVED_TARGETING_LIST) {
       var abilityItem = IMPROVED_TARGETING_LIST[abilityId];
       html += `<option value='${abilityId}'>${abilityItem.name}</option>`
@@ -491,6 +491,41 @@ class AdvancedSearchPanel extends NavPanel {
       }
     }
 
+    // Handle the 'improved movement' parameter.
+    var improvedMovement = []
+    var improvedMovementOptions = document.getElementById('searchOptionsImprovedMovementSelect').options
+    for (var option of setOptions) {
+      if (option.selected) {
+        improvedMovement.push(option.value)
+      }
+    }
+    if (improvedMovement.length > 0) {
+      query['improved_movement'] = improvedMovement
+    }
+
+    // Handle the 'improved targeting' parameter.
+    var improvedTargeting = []
+    var improvedTargetingOptions = document.getElementById('searchOptionsImprovedTargetingSelect').options
+    for (var option of setOptions) {
+      if (option.selected) {
+        improvedTargeting.push(option.value)
+      }
+    }
+    if (improvedTargeting.length > 0) {
+      query['improved_targeting'] = improvedTargeting
+    }
+
+    // Handle the 'team ability' parameter.
+    var teamAbilities = []
+    var teamAbilitiesOptions = document.getElementById('searchOptionsTeamAbilitiesSelect').options
+    for (var option of setOptions) {
+      if (option.selected) {
+        teamAbilities.push(option.value)
+      }
+    }
+    if (teamAbilities.length > 0) {
+      query['team_ability'] = teamAbilities
+    }
     return query
   }
 }
