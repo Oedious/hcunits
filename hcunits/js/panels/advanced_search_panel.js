@@ -1,3 +1,4 @@
+// Nulls in the list are where dividers where appear
 const SEARCH_OPTIONS = [
   SearchByName,
   SearchByRealName,
@@ -5,6 +6,7 @@ const SEARCH_OPTIONS = [
   SearchByPointValue,
   SearchByType,
   SearchByKeyword,
+  null,
   SearchByCombatSymbol,
   SearchByCombatValueRange,
   SearchByCombatValueTargets,
@@ -12,11 +14,14 @@ const SEARCH_OPTIONS = [
   SearchByCombatValueAttack,
   SearchByCombatValueDefense,
   SearchByCombatValueDamage,
+  null,
   SearchByPower,
   SearchByImprovedMovement,
   SearchByImprovedTargeting,
   SearchByTeamAbility,
 ]
+
+// TODO: Allow search by wildcard team abilities
 
 class AdvancedSearchPanel extends NavPanel {
   constructor(dataSource) {
@@ -24,7 +29,9 @@ class AdvancedSearchPanel extends NavPanel {
     super.title = "Advanced Search"
     this.searchOptionsMap_ = {}
     for (const option of SEARCH_OPTIONS) {
-      this.searchOptionsMap_[option.id()] = option
+      if (option) {
+        this.searchOptionsMap_[option.id()] = option
+      }
     }
     this.searchOptions_ = []
     this.draw_();
@@ -99,8 +106,16 @@ class AdvancedSearchPanel extends NavPanel {
   
   drawOptionsDropdown_() {
     var html = ""
+    var i = 0;
     for (const option of SEARCH_OPTIONS) {
-      html += `<li id='addSearchOption${option.id()}'><a href='#' onclick='sideNav.addSearchOption("${option.id()}"); return false;'>${option.title()}</a></li>`
+      if (option) {
+        html += `
+          <li id='addSearchOption${option.id()}'>
+            <a href='#' onclick='sideNav.addSearchOption("${option.id()}"); return false;'>${option.title()}</a>
+          </li>`
+      } else {
+        html += "<li class='divider'></li>"
+      }
     }
     return html
   }

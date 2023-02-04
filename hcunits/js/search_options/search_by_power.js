@@ -33,7 +33,14 @@ class SearchByPower extends SearchOption {
           </optgroup>
         </select>
       <label>Powers</label>
-    </div>`
+    </div>
+    <div class="searchOptionsLabel">
+      <label>
+        <input id="searchOptionsOnStartingLineOnly" type="checkbox" class="filled-in"/>
+        <span>On Starting Lines Only</span>
+      </label>
+    </div>
+    `
     return html;
   }
   
@@ -65,6 +72,10 @@ class SearchByPower extends SearchOption {
       if (powers.length > 0) {
         query[type + '_power'] = powers
       }
+    }
+    
+    if (document.getElementById('searchOptionsOnStartingLineOnly').checked) {
+      query['starting_lines_only'] = true
     }
  }
 }

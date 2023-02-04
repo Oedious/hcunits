@@ -200,7 +200,9 @@ class Search(APIView):
         is_valid = True
 
     # Handle powers - when given multiples, they should all appear on the same
-    # click number or in one of the special powers.
+    # click number or in one of the special powers.  If 'starting_lines_only'
+    # is True, then also check that the click is a 'starting_line'.
+    starting_lines_only = request.data.get('starting_lines_only', False)
     powers = []
     power_type = None
     for field in POWER_TYPES:
@@ -215,7 +217,13 @@ class Search(APIView):
     # First check if there's only a single power - if so, it's a much simpler
     # query.
     if len(powers) == 1:
-      kwargs1 = {'dial__contains': {power_type + '_power': powers[0]}}
+      if starting_lines_only:
+        kwargs1 = {'dial__contains': {
+          power_type + '_power': powers[0],
+          'starting_line': True
+        }}
+      else:
+        kwargs1 = {'dial__contains': {power_type + '_power': powers[0]}}
       kwargs2 = {'special_powers__contains': powers[0]}
       queryset = queryset.filter(Q(**kwargs1) | Q(**kwargs2))
       is_valid = True
@@ -224,6 +232,9 @@ class Search(APIView):
       for i in range(MAX_DIAL_SIZE):
         click_query = Q()
         # Intentionally ignore the special power category.
+        if starting_lines_only:
+          kwargs = {'dial__%d__contains' % (i): {'starting_line': True}}
+          click_query = Q(**kwargs)
         for field in COMBAT_TYPES:
           param_list = request.data.get(field + '_power', [])
           if not isinstance(param_list, list):
