@@ -13,12 +13,8 @@
   transition: 0.5s;
 }
 
-#sideNavTitle {
-  box-shadow: 0 2px 2px 0 rgb(0, 0, 0, 0.2);
-  z-index: 2;
-}
-
-#panelTitleBar {
+#sideNavHeader,
+#sideNavFooter {
   position: relative;
   width: 300px;
   height: 60px;
@@ -28,24 +24,36 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  box-shadow: 0 2px 2px 0 rgb(0, 0, 0, 0.2);
+  z-index: 2;
 }
 
-.panelTitleButton {
+#sideNavFooter {
+  position: absolute;
+  bottom: 60px;
+}
+
+.sideNavHeaderButton,
+.sideNavFooterButton {
   position: relative;
-  width: 54px;
   height: 60px;
   color: white;
   text-align: center;
   line-height: 75px;
 }
 
-.panelTitleButton:hover {
-  background-color: #78909c;
+.sideNavHeaderButton {
+  width: 54px;
 }
 
-.panelTitleButton:focus {
-  background-color: #607d8b;
-  outline: none;
+.sideNavFooterButton {
+  width: 150px;
+}
+
+.sideNavHeaderButton:hover,
+.sideNavFooterButton:hover {
+  background-color: #78909c;
 }
 
 #panelTitle {
@@ -62,8 +70,15 @@
   position: absolute;
   margin: 0px !important;
   width: 300px;
-  height: calc(100% - 120px);
   overflow-y: auto;
+}
+
+.navPanel .collection {
+  height: calc(100% - 120px);
+}
+
+#searchOptions {
+  height: calc(100% - 180px);
 }
 
 .navPanel .collection .collection-header {
@@ -138,23 +153,34 @@
 	transition: 0.6s;
 }
 
+#addSearchOptionButton {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  z-index: 3;
+}
+
+#addSearchOptionDropdown {
+  width: 200px !important;
+}
+
 #searchOptions {
   background-color: white;
 }
 
-#searchOptions li .collapsible-body {
+#searchOptions .collection-item {
   padding: 0;
 }
 
-#searchOptions li .collapsible-body .row .input-field {
+#searchOptions .collection-item .row .input-field {
   margin: 13px 0 3px 0;
 }
 
-#searchOptions li .collapsible-body .row .input-field.col label {
+#searchOptions .collection-item .row .input-field .col label {
   top: -20px;
 }
 
-#searchOptions li .collapsible-body .row .input-field div ul {
+#searchOptions .collection-item .row .input-field div ul {
   max-height: 400px;
   
   /* Hack to allow the dialog to be drawn outside of a parent using overflow-y. */
@@ -170,7 +196,7 @@
   margin-bottom: 10px;  
 }
 
-#searchOptionKeywordsLabel {
+#searchOptionsKeywordsLabel {
   position: absolute;
   top: -20px;
   font-size: .8rem;

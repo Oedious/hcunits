@@ -63,25 +63,12 @@ class SideNav {
     var title = this.getTopPanel().title
     if (title) {
       var hasBackArrow = this.panelStack_.length > 1;
-      html = "<div id='panelTitleBar'>"
       if (hasBackArrow) {
-        html += "<a class='panelTitleButton' href='' onclick='sideNav.popPanel(); return false;' title='Back'><i class='material-icons'>arrow_back</i></a>"
+        html += "<a class='sideNavHeaderButton' href='' onclick='sideNav.popPanel(); return false;' title='Back'><i class='material-icons'>arrow_back</i></a>"
       }
       html += `<div id='panelTitle'>${title}</div>`
-
-      if (this.getTopPanel() == this.advancedSearchPanel_) {
-        html += `
-        <a class='panelTitleButton' href='' onclick='sideNav.resetAdvancedSearch(); return false;' title="Reset Options">
-          <i class='material-icons'>restart_alt</i>
-        </a>
-        <a class='panelTitleButton' href='' onclick='sideNav.showAdvancedSearchResults(); return false;' title="Search">
-          <i class='material-icons'>search</i>
-        </a>
-          `
-      }
-      html += "</div>"
     }
-    document.getElementById("sideNavTitle").innerHTML = html
+    document.getElementById("sideNavHeader").innerHTML = html
   }
 
   showSetList() {
@@ -108,14 +95,21 @@ class SideNav {
     this.getTopPanel().showPanel()
   }
 
+  addSearchOption(optionId) {
+    this.advancedSearchPanel_.addSearchOption(optionId)
+  }
+
   resetAdvancedSearch() {
-    this.advancedSearchPanel_ = new AdvancedSearchPanel()
+    this.advancedSearchPanel_.resetOptions()
   }
 
   showAdvancedSearchResults() {
-    this.unitListPanel_.showAdvancedSearchResults()
-    this.unitListPanel_.title = "Search Results"
-    this.pushPanel(this.unitListPanel_)
+    var query = this.advancedSearchPanel_.getQuery()
+    if (!jQuery.isEmptyObject(query)) {
+      this.unitListPanel_.showAdvancedSearchResults(query)
+      this.unitListPanel_.title = "Search Results"
+      this.pushPanel(this.unitListPanel_)
+    }
   }
 
   showQuickSearchResults() {

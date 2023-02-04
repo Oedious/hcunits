@@ -61,9 +61,8 @@ class UnitListPanel extends ListPanel {
       });
   }
 
-  showAdvancedSearchResults() {
+  showAdvancedSearchResults(query) {
     this.drawSetTitles_ = true;
-    var query = AdvancedSearchPanel.getQuery()
     var unitListPanel = this;
     this.dataSource_.advancedSearch(query,
       function(unitList) {
@@ -126,7 +125,10 @@ class UnitListPanel extends ListPanel {
     }
     document.getElementById(this.panelName()).innerHTML = html;
     super.currentIndex = 0;
-    this.activateCurrentItem();
+    this.activateCurrentItem();0
+
+    this.title = "Search Results (" + unitList.length + " items)"
+    sideNav.updateTitle()
   }
 
   setUnitList_(unitList) {

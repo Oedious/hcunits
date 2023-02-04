@@ -22,9 +22,9 @@ function onKeyDown(event) {
     event.preventDefault();
   }
 }
-
+/*
 // Initialize Materialize select inputs.
 $(document).ready(function(){
   $('select').formSelect();
 });
-
+*/

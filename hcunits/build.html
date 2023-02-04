@@ -88,7 +88,15 @@
         </nav>
         <div id="teamBodyContainer">
             <div id="sideNav" style="left:0px">
-                <div id="sideNavTitle"></div>
+                <div id="sideNavHeader"></div>
+                <div id="sideNavFooter" style="visibility:hidden;">
+                    <a class='sideNavFooterButton' href='#' onclick='sideNav.resetAdvancedSearch(); return false;' title="Reset Options">
+                      <i class='material-icons'>restart_alt</i>
+                    </a>
+                    <a class='sideNavFooterButton' href='#' onclick='sideNav.showAdvancedSearchResults(); return false;' title="Search">
+                      <i class='material-icons'>search</i>
+                    </a>
+                </div>
                 <div id="setListPanel" class="navPanel"></div>
                 <div id="favoritesPanel" class="navPanel" style="visibility:hidden;"></div>
                 <div id="advancedSearchPanel" class="navPanel" style="visibility:hidden;">
@@ -119,6 +127,20 @@
     <script type="text/javascript" src="js/constants/team_ability_list.js"></script>
     <script type="text/javascript" src="js/constants/type_list.js"></script>
     <script type="text/javascript" src="js/constants/universe_list.js"></script>
+
+    <script type="text/javascript" src="js/search_options/search_option.js"></script>
+    <script type="text/javascript" src="js/search_options/search_by_combat_symbol.js"></script>
+    <script type="text/javascript" src="js/search_options/search_by_combat_value.js"></script>
+    <script type="text/javascript" src="js/search_options/search_by_improved_movement.js"></script>
+    <script type="text/javascript" src="js/search_options/search_by_improved_targeting.js"></script>
+    <script type="text/javascript" src="js/search_options/search_by_keyword.js"></script>
+    <script type="text/javascript" src="js/search_options/search_by_name.js"></script>
+    <script type="text/javascript" src="js/search_options/search_by_point_value.js"></script>
+    <script type="text/javascript" src="js/search_options/search_by_power.js"></script>
+    <script type="text/javascript" src="js/search_options/search_by_real_name.js"></script>
+    <script type="text/javascript" src="js/search_options/search_by_set.js"></script>
+    <script type="text/javascript" src="js/search_options/search_by_team_ability.js"></script>
+    <script type="text/javascript" src="js/search_options/search_by_type.js"></script>
 
     <script type="text/javascript" src="js/panels/nav_panel.js"></script>
     <script type="text/javascript" src="js/panels/list_panel.js"></script>
