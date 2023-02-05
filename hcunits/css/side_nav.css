@@ -18,7 +18,7 @@
   position: relative;
   width: 300px;
   height: 60px;
-  background-color: #90a4ae;
+  background-color: #6ca4ed;
   color: white;
 
   display: flex;
@@ -53,7 +53,7 @@
 
 .sideNavHeaderButton:hover,
 .sideNavFooterButton:hover {
-  background-color: #78909c;
+  background-color: #4180f6;
 }
 
 #panelTitle {
@@ -132,21 +132,21 @@
 #sideNavToggle {
   position: absolute;
 	top: 10px;
-	left: 300px;
+	left: 298px;
 	border-radius: 0px 30px 30px 0px;
-	background-color: #212121;
+	background-color: white;
 	line-height: 35px;
-	width: 25px;
+	width: 30px;
 	transition: 0.5s;
-	border-right: 1px solid white;
+	border: 2px solid #6ca4ed;
 }
 
 #sideNavToggleIcon {
 	font-size: 1.8rem;
 	text-align: center;
-	color: white;
+	color: #6ca4ed;
 	line-height: 35px;
-	width: 32px;
+	width: 35px;
 	left: -5px;
 	display: block;
 	position: relative;

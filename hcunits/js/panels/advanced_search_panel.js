@@ -1,4 +1,11 @@
 // Nulls in the list are where dividers where appear
+// TODO:
+// - Allow search by wildcard team abilities
+// - Allow search by special type (prime, unique, etc)
+// - Allow search by age (modern, etc)
+// - Allow search by rarity
+// - Allow search for special power type (rally, costed traits, etc)
+// - Allow search by object type or object keyphrase
 const SEARCH_OPTIONS = [
   SearchByName,
   SearchByRealName,
@@ -20,8 +27,6 @@ const SEARCH_OPTIONS = [
   SearchByImprovedTargeting,
   SearchByTeamAbility,
 ]
-
-// TODO: Allow search by wildcard team abilities
 
 class AdvancedSearchPanel extends NavPanel {
   constructor(dataSource) {

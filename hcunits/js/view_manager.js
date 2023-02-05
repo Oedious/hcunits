@@ -11,7 +11,7 @@ class ViewManager {
     			viewMgr.showUnit_(unitJson);
     		},
     		function(xhr, desc, err) {
-    			alert("Error in showUnit(" + unitId + "): " + desc) + " err=" + err;
+    			alert("Error in showUnit(" + unitId + "): " + desc + " err=" + err);
     		});
     }
     

@@ -1,6 +1,14 @@
-html,body {
-  width: 100%;
-  height: 100%;
+/* Override Materialize colors */
+.nav-wrapper {
+  background-color: #f0f0f0;
+}
+
+.nav-wrapper ul li a {
+  color: black;
+}
+
+.brand-logo.left {
+  color: black;
 }
 
 #siteHeader {
@@ -8,14 +16,9 @@ html,body {
   z-index: 1;
 }
 
-/* Need to use a separate div instead of just body directly because of Wordpress */
-#buildContainer {
-  position: fixed;
-  background-color: #F0F0F0;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 100%;
+#siteHeaderLinks {
+  position: absolute;
+  left: 120px;
 }
 
 /* Change the style of the scrollbars to look nice */
@@ -32,68 +35,6 @@ html,body {
 
 ::-webkit-scrollbar-track {
 	background: #00000000;
-}
-
-/* Team Header styles */
-#teamHeaderContainer {
-  background: linear-gradient(135deg, rgb(169, 184, 195) 100%, rgb(238, 238, 238) 0%);
-  padding: 30px, 0px;
-}
-
-#teamHeader {
-  max-width: 50%;
-  margin: auto;
-  padding: 10px;
-}
-
-#teamHeader * {
-  margin: 8px 0 0 0;
-}
-
-/* Team Body styles */
-#teamBodyContainer {
-  display: flex;
-  background-color: transparent;
-  flex: 1 1 auto;
-}
-
-.searchNavButton a:hover {
-  background-color: #9e9e9e;
-}
-
-.searchNavButton a:active {
-  background-color: #757575;
-}
-
-#quickSearchBox {
-  width:300px;
-  height:63px;
-  color:white;
-}
-
-#quickSearchBox:focus-within label i,
-#quickSearchBox:focus-within #quickSearch {
-  color: black !important;
-}
-
-#quickSearch {
-  color: white;
-}
-
-/* Hack to keep the colors the same when using autofill. */
-#quickSearch:-webkit-autofill,
-#quickSearch:-webkit-autofill:focus,
-#quickSearch:-webkit-autofill:active{
-  -webkit-box-shadow: 0 0 0px 1000px white inset !important;
-}
-
-/* Unit area styles */
-#unitContainer {
-  flex: 0 0 auto;
-  position: relative;
-  left: 0px;
-  width: 400px;
-  transition: 0.5s;
 }
 
 .tooltip {
@@ -122,11 +63,4 @@ html,body {
 
 .tooltip:hover .tooltiptext {
   visibility: visible;
-}
-
-#teamContainer {
-  flex: 1 1 auto;
-  min-width: 600px;
-  position: relative;
-  transition: 0.5s;
 }

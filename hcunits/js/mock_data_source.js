@@ -260,7 +260,7 @@ class MockDataSource {
     }
   }
   
-  quickSearch = function(query, onSuccess, onError) {
+  quickSearch(query, onSuccess, onError) {
     query = query.toLowerCase()
     var unitList = []
     if (this.units_) {
@@ -274,5 +274,21 @@ class MockDataSource {
     }
     onSuccess(unitList);
     return;
+  }
+  
+  getNewestTeams(onSuccess, onError) {
+    var teamList = []
+    const NUM_TEAMS = 12
+
+    for (var i = 0; i < NUM_TEAMS; ++i) {
+      var team = {
+        "team_id": i,
+        "name": "Mock Team " + i,
+        "team_type": "300 Modern"
+      }
+      teamList.push(team)
+    }
+    onSuccess(teamList)
+    return
   }
 }

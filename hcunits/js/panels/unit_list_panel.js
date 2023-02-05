@@ -125,7 +125,6 @@ class UnitListPanel extends ListPanel {
     }
     document.getElementById(this.panelName()).innerHTML = html;
     super.currentIndex = 0;
-    this.activateCurrentItem();0
 
     this.title = "Search Results (" + unitList.length + " items)"
     sideNav.updateTitle()

@@ -23,7 +23,17 @@ function onKeyDown(event) {
   }
 }
 
+drawSiteHeader("Build")
+
 // Initialize Materialize select inputs.
 $(document).ready(function(){
   $('select').formSelect();
+});
+
+$(document).ready(function(){
+  $('.tabs').tabs();
+});
+
+$(document).ready(function(){
+  $('.fixed-action-btn').floatingActionButton();
 });
