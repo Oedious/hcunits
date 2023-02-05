@@ -1,20 +1,5 @@
-# Apache directories
-/var/www/html/hcunits  -> hcunits.net
-/var/www/html/hcunits_api  -> api.hcunits.net
-
-# Apache configuration
-/etc/apache2/sites-available/
- -> hcunits-le-ssl.conf
- -> hcunits-api-le-ssl.conf
- 
-# Apache log files
-/var/log/apache2/
-
-# Virtual Environment
-~/.virtualenvs/env
-
 # Commands to connect to the wordpress MySQL database
-mysql wordpress -u root -p --local-infile=1
+mysql hcunits -u root -p --local-infile=1
 
 # Delete the 'team_abilities' table
 DROP TABLE units;

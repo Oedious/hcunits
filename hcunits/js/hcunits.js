@@ -1,13 +1,13 @@
 const BUTTONS = [
   {
     "name": "Build",
-    "link": "build/"
+    "link": "build"
   }, {
     "name": "Explore",
-    "link": "explore/"
+    "link": "explore"
   }, {
     "name": "Help",
-    "link": "help/"
+    "link": "help"
   }
 ]
 function drawHeaderAndFooter(activeButtonName) {

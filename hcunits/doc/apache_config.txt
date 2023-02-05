@@ -1,0 +1,14 @@
+# Apache directories
+/var/www/html/hcunits  -> hcunits.net
+/var/www/html/hcunits_api  -> api.hcunits.net
+
+# Apache configuration
+/etc/apache2/sites-available/
+ -> hcunits-le-ssl.conf
+ -> hcunits-api-le-ssl.conf
+ 
+# Apache log files
+/var/log/apache2/
+
+# Virtual Environment
+~/.virtualenvs/env
