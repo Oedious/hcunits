@@ -7,7 +7,13 @@ body {
   background-color: #F0F0F0;
 }
 
-#titleContainer {
+#heroContainer {
+  width: 100%;
+  height: 170px;
+}
+
+#hero {
+  position: absolute;
   width: 100%;
   height: 300px;
   background-image: linear-gradient(#155cff, #6ca4ed);
@@ -17,15 +23,12 @@ body {
 }
 
 #latestBuildsContainer {
-  position: absolute;
-  top: 220px;
-  left: 50px;
-  right: 50px;
+  position: relative;
   color: white;
   font-family: "Inter var",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
   letter-spacing: 3px;
 }
 
-#teamList {
+#teamListContainer {
   margin-top: 30px;
 }

@@ -4,4 +4,4 @@ var dataSource = new MockDataSource();
 
 var teamListView = new TeamListView(dataSource)
 
-drawSiteHeader("")
+drawHeaderAndFooter("")

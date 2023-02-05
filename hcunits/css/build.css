@@ -4,12 +4,11 @@ html,body {
 }
 
 #buildContainer {
-  position: fixed;
   background-color: #F0F0F0;
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100%;
+  height: calc(100% - 60px);
 }
 
 /* Team Header styles */

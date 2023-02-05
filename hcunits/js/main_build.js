@@ -23,7 +23,7 @@ function onKeyDown(event) {
   }
 }
 
-drawSiteHeader("Build")
+drawHeaderAndFooter("Build")
 
 // Initialize Materialize select inputs.
 $(document).ready(function(){

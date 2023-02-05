@@ -283,7 +283,7 @@ class MockDataSource {
     for (var i = 0; i < NUM_TEAMS; ++i) {
       var team = {
         "team_id": i,
-        "name": "Mock Team " + i,
+        "name": "Coming Soon!",
         "team_type": "300 Modern"
       }
       teamList.push(team)
