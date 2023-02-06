@@ -14,7 +14,7 @@ function drawHeaderAndFooter(activeButtonName) {
   var headerHtml = `
     <nav>
       <div class="nav-wrapper">
-        <a href="index.html" class="brand-logo left">
+        <a href="/" class="brand-logo left">
           <img src="images/logo_2x1_med.png" alt='' style='padding-top: 2px;'/>
         </a>
         <ul id="headerLinks" class="left">`
