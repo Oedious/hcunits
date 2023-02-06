@@ -1,7 +1,7 @@
 /* Nav Panel styles */
 #sideNav {
   position: relative;
-  width: 300px;
+  min-width: 300px;
 
   display: flex;
   flex-direction: column;
@@ -10,7 +10,6 @@
   flex: 0 0 auto;
 
   z-index: 1;
-  transition: 0.5s;
 }
 
 #sideNavHeader,
@@ -31,7 +30,7 @@
 
 #sideNavFooter {
   position: absolute;
-  bottom: 60px;
+  bottom: 0px;
 }
 
 .sideNavHeaderButton,
@@ -62,6 +61,7 @@
 }
 
 .navPanel {
+  height: calc(100% - 60px);
   background-color: white;
 }
 
@@ -127,30 +127,6 @@
 .listPanelMinorInfo {
   left: 40px;
   font-size: 10px !important;
-}
-
-#sideNavToggle {
-  position: absolute;
-	top: 10px;
-	left: 298px;
-	border-radius: 0px 30px 30px 0px;
-	background-color: white;
-	line-height: 35px;
-	width: 30px;
-	transition: 0.5s;
-	border: 2px solid #6ca4ed;
-}
-
-#sideNavToggleIcon {
-	font-size: 1.8rem;
-	text-align: center;
-	color: #6ca4ed;
-	line-height: 35px;
-	width: 35px;
-	left: -5px;
-	display: block;
-	position: relative;
-	transition: 0.6s;
 }
 
 #addSearchOptionButton {

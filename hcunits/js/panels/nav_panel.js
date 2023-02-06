@@ -25,15 +25,15 @@ class NavPanel {
 
   showPanel() {
     var panel = document.getElementById(this.panelName());
-    if (panel.style.visibility != "visible") {
-      panel.style.visibility = "visible"
+    if (panel.style.display != "unset") {
+      panel.style.display = "unset"
     }
   }
   
   hidePanel() {
     var panel = document.getElementById(this.panelName());
-    if (panel.style.visibility != "hidden") {
-      panel.style.visibility = "hidden"
+    if (panel.style.display != "none") {
+      panel.style.display = "none"
     }
   }
 }

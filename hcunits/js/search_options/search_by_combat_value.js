@@ -24,13 +24,17 @@ class SearchByCombatValue extends SearchOption {
         <label>${combatValue} Value</label>
       </div>
       <div class="input-field col s12 m3">
-        <input id="searchOptions${combatValue}1" type="number" min="0" max="99">
+        <form onsubmit="sideNav.showAdvancedSearchResults(); return false;">
+          <input id="searchOptions${combatValue}1" type="number" min="0" max="99">
+        </form>
       </div>
       <div class="valign-wrapper col s12 m1" style="height: 70px">
         <h6 id="searchOptions${combatValue}2Label" style="display:none;">to</h6>
       </div>
       <div class="input-field col s12 m3">
-        <input id="searchOptions${combatValue}2" type="number" min="0" max="99" style="display:none;">
+        <form onsubmit="sideNav.showAdvancedSearchResults(); return false;">
+          <input id="searchOptions${combatValue}2" type="number" min="0" max="99" style="display:none;">
+        </form>
       </div>
     `;
     return html;

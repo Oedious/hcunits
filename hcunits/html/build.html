@@ -16,94 +16,92 @@
 </head>
 
 <body>
-  <header id="header"></header>
-  <main id="buildContainer">
-    <div id="teamHeaderContainer">
-      <div id="teamHeader" class="row">
-        <H4>Team Owner</H4>
-        <div class="input-field col s12">
-          <input id="teamName" type="text" class="validate" placeholder="Change Team Name">
-          <label for="teamName"></label>
-        </div>
-        <div class="input-field col s12">
-          <input id="teamDescription" type="text" placeholder="Change Team Description">
-        </div>
-        <div class="input-field col s12 m3">
-          <input id="teamPointLimit" class="teamInput" type="number" min="0" max="9999" value="300">
-          <label for="teamPointLimit">Points</label>
-        </div>
-        <div class="input-field col s12 m5">
-          <select>
-            <option value="modern">Modern</option>
-            <option value="golden">Golden</option>
-          </select>
-          <label>Age</label>
-        </div>
-        <div class="input-field col s12 m4">
-          <select>
-            <option value="unlisted">Unlisted</option>
-            <option value="public">Public</option>
-          </select>
-          <label>Visibility</label>
+  <div id="pageContainer">
+    <header id="header"></header>
+    <main id="main">
+      <div id="teamHeaderContainer">
+        <div id="teamHeader" class="row">
+          <H4>Team Owner</H4>
+          <div class="input-field col s12">
+            <input id="teamName" type="text" class="validate" placeholder="Change Team Name">
+            <label for="teamName"></label>
+          </div>
+          <div class="input-field col s12">
+            <input id="teamDescription" type="text" placeholder="Change Team Description">
+          </div>
+          <div class="input-field col s12 m3">
+            <input id="teamPointLimit" class="teamInput" type="number" min="0" max="9999" value="300">
+            <label for="teamPointLimit">Points</label>
+          </div>
+          <div class="input-field col s12 m5">
+            <select>
+              <option value="modern">Modern</option>
+              <option value="golden">Golden</option>
+            </select>
+            <label>Age</label>
+          </div>
+          <div class="input-field col s12 m4">
+            <select>
+              <option value="unlisted">Unlisted</option>
+              <option value="public">Public</option>
+            </select>
+            <label>Visibility</label>
+          </div>
         </div>
       </div>
-    </div>
-    <div id="exploreTabBar">
-      <ul id="exploreTabList" class="tabs">
-        <li class="tab">
-          <a class="active" href="" onclick='sideNav.showSetList(); return false;' title="Browse by Set">
-            <i class="material-icons">library_books</i>
-          </a>
-        </li>
-        <li class="tab">
-          <a href="" onclick='sideNav.showFavorites(); return false;' title="Favorites">
-            <i class="material-icons">star</i>
-          </a>
-        </li>
-        <li class="tab">
-          <a href="" onclick='sideNav.showAdvancedSearch(); return false;' title="Advanced Search">
-            <i class="material-icons">manage_search</i>
-          </a>
-        </li>
-      </ul>
-      <form onsubmit="sideNav.showQuickSearchResults(); return false;">
-        <div id="quickSearchBox">
-          <div id="quickSearchButton" class="fixed-action-btn">
-            <a class="btn-floating btn-medium waves-effect-waves-light blue" onclick="sideNav.showQuickSearchResults(); return false;">
-              <i class="material-icons" style="color:white;">search</i>
+      <div id="exploreTabBar">
+        <ul id="exploreTabList" class="tabs">
+          <li class="tab">
+            <a class="active" href="" onclick='sideNav.showSetList(); return false;' title="Browse by Set">
+              <i class="material-icons">library_books</i>
+            </a>
+          </li>
+          <li class="tab">
+            <a href="" onclick='sideNav.showFavorites(); return false;' title="Favorites">
+              <i class="material-icons">star</i>
+            </a>
+          </li>
+          <li class="tab">
+            <a href="" onclick='sideNav.showAdvancedSearch(); return false;' title="Advanced Search">
+              <i class="material-icons">manage_search</i>
+            </a>
+          </li>
+        </ul>
+        <form onsubmit="sideNav.showQuickSearchResults(); return false;">
+          <div id="quickSearchBox">
+            <div id="quickSearchButton" class="fixed-action-btn">
+              <a class="btn-floating btn-medium waves-effect-waves-light blue" onclick="sideNav.showQuickSearchResults(); return false;">
+                <i class="material-icons" style="color:white;">search</i>
+              </a>
+            </div>
+            <input id="quickSearch" type="text" required placeholder="Search for Units">
+          </div>
+        </form>
+      </div>
+      <div id="teamBodyContainer">
+        <div id="sideNav" style="left:0px">
+          <div id="sideNavHeader"></div>
+          <div id="sideNavFooter" style="visibility:hidden;">
+            <a class='sideNavFooterButton' href='#' onclick='sideNav.resetAdvancedSearch(); return false;' title="Reset Options">
+              <i class='material-icons'>restart_alt</i>
+            </a>
+            <a class='sideNavFooterButton' href='#' onclick='sideNav.showAdvancedSearchResults(); return false;' title="Search">
+              <i class='material-icons'>search</i>
             </a>
           </div>
-          <input id="quickSearch" type="text" required placeholder="Search for Units">
+          <div id="setListPanel" class="navPanel"></div>
+          <div id="favoritesPanel" class="navPanel" style="display:none;"></div>
+          <div id="advancedSearchPanel" class="navPanel" style="display:none;"></div>
+          <div id="unitListPanel" class="navPanel" style="display:none;"></div>
         </div>
-      </form>
-    </div>
-    <div id="teamBodyContainer">
-      <div id="sideNav" style="left:0px">
-        <div id="sideNavHeader"></div>
-        <div id="sideNavFooter" style="visibility:hidden;">
-          <a class='sideNavFooterButton' href='#' onclick='sideNav.resetAdvancedSearch(); return false;' title="Reset Options">
-            <i class='material-icons'>restart_alt</i>
-          </a>
-          <a class='sideNavFooterButton' href='#' onclick='sideNav.showAdvancedSearchResults(); return false;' title="Search">
-            <i class='material-icons'>search</i>
-          </a>
-        </div>
-        <div id="setListPanel" class="navPanel"></div>
-        <div id="favoritesPanel" class="navPanel" style="visibility:hidden;"></div>
-        <div id="advancedSearchPanel" class="navPanel" style="visibility:hidden;">
-        </div>
-        <div id="unitListPanel" class="navPanel" style="visibility:hidden;"></div>
-        <div id="sideNavToggle">
-          <a href="#" onclick="sideNav.toggleVisibility(); return false;"><i id="sideNavToggleIcon" class="material-icons">chevron_left</i></a>
+        <div id="unitContainer"></div>
+        <div id="teamContainer">
+          Team details go here
         </div>
       </div>
-      <div id="unitContainer"></div>
-      <div id="teamContainer">
-        Team details go here
-      </div>
-    </div>
-  </main>
-  <footer id="footer"></footer>
+    </main>
+    <footer id="footer"></footer>
+  </div>
 
   <!-- Javascript at end of body for optimized loading. -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
@@ -154,6 +152,7 @@
   <script type="text/javascript" src="js/hcunits.js"></script>
 
   <!-- Include this last, as it runs the code -->
+  
   <script type="text/javascript" src="js/main_build.js"></script>
 </body>
 

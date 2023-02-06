@@ -1,10 +1,8 @@
 #objectCard {
-  position: absolute;
-  top: 20px;
-  left: 20px;
+  position: relative;
   /* Object cards are 2.25" x 2.75" in real life */
   width: 338px;
-  height: 412px;
+  min-height: 412px;
 }
 
 #objectCardBorders {

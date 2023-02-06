@@ -23,7 +23,9 @@ class SearchByName extends SearchOption {
         <label>${SearchByName.title()}</label>
       </div>
       <div class='input-field col s12 m8'>
-        <input id='searchOptionsName' type='text' placeholder='${SearchByName.title()}' class='validate'>
+        <form onsubmit="sideNav.showAdvancedSearchResults(); return false;">
+          <input id='searchOptionsName' type='text' placeholder='${SearchByName.title()}' class='validate'>
+        </form>
       </div>
     `
   }

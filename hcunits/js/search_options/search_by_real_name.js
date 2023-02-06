@@ -23,7 +23,9 @@ class SearchByRealName extends SearchOption {
         <label>${SearchByRealName.title()}</label>
       </div>
       <div class='input-field col s12 m8'>
-        <input id='searchOptionsRealName' type='text' placeholder='${SearchByRealName.title()}' class='validate'>
+        <form onsubmit="sideNav.showAdvancedSearchResults(); return false;">
+          <input id='searchOptionsRealName' type='text' placeholder='${SearchByRealName.title()}' class='validate'>
+        </form>
       </div>
     `
   }

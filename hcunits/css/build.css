@@ -1,14 +1,11 @@
-html,body {
-  width: 100%;
-  height: 100%;
-}
-
-#buildContainer {
+main {
   background-color: #F0F0F0;
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: calc(100% - 60px);
+  /* The min height is the size of the screen, plus a bit more to always push
+   * the footer to below the bottom of the screen. */
+  min-height: calc(100vh + 136px);
 }
 
 /* Team Header styles */
@@ -134,15 +131,11 @@ html,body {
 /* Unit area styles */
 #unitContainer {
   flex: 0 0 auto;
-  position: relative;
-  left: 0px;
-  width: 400px;
-  transition: 0.5s;
+  padding: 10px;
+  min-width: 375px;
 }
 
 #teamContainer {
   flex: 1 1 auto;
-  min-width: 600px;
   position: relative;
-  transition: 0.5s;
 }

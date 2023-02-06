@@ -1,22 +1,28 @@
-/* Override Materialize colors */
-.nav-wrapper {
-  background-color: #f0f0f0;
+html,body {
+  width: 100%;
+  height: 100%;
 }
 
-.nav-wrapper ul li a {
-  color: black;
-}
-
-.brand-logo.left {
-  color: black;
-}
-
-#siteHeaderLinks {
+#headerLinks {
   position: absolute;
   left: 120px;
 }
 
+#pageContainer {
+  position: relative;
+  min-height: 100vh;
+}
+
+main {
+  /* Pad the bottom to match the footer size. */
+  padding-bottom: 200px;
+}
+
 #footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 200px;
   background-color: #ced4da;
   padding: 10px;
 }
@@ -64,3 +70,17 @@
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
+
+/* Override Materialize colors */
+.nav-wrapper {
+  background-color: #f0f0f0;
+}
+
+.nav-wrapper ul li a {
+  color: black;
+}
+
+.brand-logo.left {
+  color: black;
+}
+

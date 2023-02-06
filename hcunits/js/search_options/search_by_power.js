@@ -75,7 +75,7 @@ class SearchByPower extends SearchOption {
     }
     
     if (document.getElementById('searchOptionsOnStartingLineOnly').checked) {
-      query['starting_lines_only'] = true
+      query['starting_line_only'] = true
     }
  }
 }

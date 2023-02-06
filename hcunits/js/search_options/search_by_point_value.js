@@ -22,15 +22,20 @@ class SearchByPointValue extends SearchOption {
         </select>
         <label>${SearchByPointValue.title()}</label>
       </div>
-      <div class="input-field col s12 m3">
-        <input id="searchOptionsPointValue1" type="number" min="0" max="9999">
-      </div>
-      <div class="valign-wrapper col s12 m1" style="height: 70px">
-        <h6 id="searchOptionsPointValue2Label" style="display:none;">to</h6>
-      </div>
-      <div class="input-field col s12 m3">
-        <input id="searchOptionsPointValue2" type="number" min="0" max="9999" style="display:none;">
-      </div>`;
+        <div class="input-field col s12 m3">
+          <form onsubmit="sideNav.showAdvancedSearchResults(); return false;">
+            <input id="searchOptionsPointValue1" type="number" min="0" max="9999" required>
+          </form>
+        </div>
+        <div class="valign-wrapper col s12 m1" style="height: 70px">
+          <h6 id="searchOptionsPointValue2Label" style="display:none;">to</h6>
+        </div>
+        <div class="input-field col s12 m3">
+          <form onsubmit="sideNav.showAdvancedSearchResults(); return false;">
+            <input id="searchOptionsPointValue2" type="number" min="0" max="9999" style="display:none;">
+          </form>
+        </div>
+      `;
   }
   
   initElement() {

@@ -23,9 +23,6 @@ class SideNav {
 
   // Reset the stack so that it's only this panel.
   setPanel(navPanel) {
-    if (!this.isVisible()) {
-      this.toggleVisibility()
-    }
     if (navPanel) {
       while (this.panelStack_.length > 0) {
         this.getTopPanel().hidePanel();
@@ -38,9 +35,6 @@ class SideNav {
   }
 
   pushPanel(navPanel) {
-    if (!this.isVisible()) {
-      this.toggleVisibility()
-    }
     if (navPanel && this.getTopPanel() != navPanel) {
       this.getTopPanel().hidePanel();
       this.panelStack_.push(navPanel)
@@ -127,25 +121,5 @@ class SideNav {
   setUnit(unitId) {
     this.unitListPanel_.setCurrentIndexByUnit(unitId)
     mgr.showUnit(unitId)
-  }
-
-  isVisible() {
-    return document.getElementById("sideNav").style.left == "0px"
-  }
-
-  toggleVisibility() {
-    var sideNav = document.getElementById("sideNav")
-    var unitContainer = document.getElementById("unitContainer")
-    var icon = document.getElementById("sideNavToggleIcon")
-    if (!sideNav.style.left || sideNav.style.left == "0px") {
-      sideNav.style.left = "-300px";
-      icon.style.transform = "rotate(180deg)"
-      unitContainer.style.left = "-300px"
-    }
-    else {
-      sideNav.style.left = "0px";
-      icon.style.transform = "rotate(0deg)"
-      unitContainer.style.left = "0px"
-    }
   }
 }

@@ -1,12 +1,10 @@
 #characterCard {
-  position: absolute;
-  top: 20px;
-  left: 20px;
+  position: relative;
   /* Character cards are 2.5" x 3.5" in real life */
   width: 375px;
-  /* The height is set dynamically based on the size of the text
+  /* The height may grow dynamically based on the size of the text
        of the special powers. */
-  /* height: 525px;*/
+  min-height: 525px;
 }
 
 #characterCardBorders {

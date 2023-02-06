@@ -17,7 +17,7 @@ function drawHeaderAndFooter(activeButtonName) {
         <a href="index.html" class="brand-logo left">
           <img src="images/logo_2x1_med.png" alt='' style='padding-top: 2px;'/>
         </a>
-        <ul id="siteHeaderLinks" class="left">`
+        <ul id="headerLinks" class="left">`
   for (const button of BUTTONS) {
     var name;
     if (button.name == activeButtonName) {
