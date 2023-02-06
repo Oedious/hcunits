@@ -62,7 +62,7 @@ class SideNav {
       }
       html += `<div id='panelTitle'>${title}</div>`
     }
-    document.getElementById("sideNavHeader").innerHTML = html
+    $("#sideNavHeader").html(html)
   }
 
   showSetList() {

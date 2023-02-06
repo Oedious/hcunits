@@ -64,8 +64,8 @@ class AdvancedSearchPanel extends NavPanel {
 
   resetOptions() {
     this.searchOptions_ = []
-    document.getElementById("searchOptions").innerHTML = "";
-    document.getElementById("addSearchOptionDropdown").innerHTML = this.drawOptionsDropdown_()
+    $("#searchOptions").html("");
+    $("#addSearchOptionDropdown").html(this.drawOptionsDropdown_())
   }  
   
   getQuery() {
@@ -104,7 +104,8 @@ class AdvancedSearchPanel extends NavPanel {
       </ul>
       <ul id='searchOptions' class='collection'></ul>
     `
-    document.getElementById(this.panelName()).innerHTML = html;
+    const panelName = "#" + this.panelName()
+    $(panelName).html(html);
 
     $('#addSearchOptionButton').dropdown();
   }

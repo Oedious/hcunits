@@ -18,6 +18,13 @@ class UnitListPanel extends ListPanel {
     }
     return 0;
   }
+  
+  resetList() {
+    this.unitList_ = null;
+    super.currentIndex = 0;
+    const panelName = "#" + this.panelName()
+    $(panelName).html("");
+  }
 
   activateCurrentItem() {
     if (this.unitList_ && super.currentIndex < this.unitList_.length) {
@@ -37,6 +44,7 @@ class UnitListPanel extends ListPanel {
   }
 
   showSet(setId) {
+    this.resetList()
     this.drawSetTitles_ = false;
     var unitListPanel = this;
     this.dataSource_.searchBySetId(setId,
@@ -49,6 +57,7 @@ class UnitListPanel extends ListPanel {
   }
 
   showQuickSearchResults() {
+    this.resetList()
     this.drawSetTitles_ = true;
     var query = document.getElementById("quickSearch").value
     var unitListPanel = this;
@@ -62,6 +71,7 @@ class UnitListPanel extends ListPanel {
   }
 
   showAdvancedSearchResults(query) {
+    this.resetList()
     this.drawSetTitles_ = true;
     var unitListPanel = this;
     this.dataSource_.advancedSearch(query,
@@ -123,7 +133,8 @@ class UnitListPanel extends ListPanel {
       }
       html += "</ul>";
     }
-    document.getElementById(this.panelName()).innerHTML = html;
+    const panelName = "#" + this.panelName()
+    $(panelName).html(html);
     super.currentIndex = 0;
 
     this.title = "Search Results (" + unitList.length + " items)"

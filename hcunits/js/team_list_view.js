@@ -40,7 +40,7 @@ class TeamListView {
       ++col;
     }
     html += "</div>"
-    element.innerHTML = html
+    $('#teamList').html(html)
   }
   
   showNewestTeams() {

@@ -3,14 +3,18 @@ html,body {
   height: 100%;
 }
 
-#headerLinks {
-  position: absolute;
-  left: 120px;
-}
-
 #pageContainer {
   position: relative;
   min-height: 100vh;
+}
+
+header {
+  min-height: 64px;
+}
+
+#headerLinks {
+  position: absolute;
+  left: 120px;
 }
 
 main {
@@ -18,7 +22,7 @@ main {
   padding-bottom: 200px;
 }
 
-#footer {
+footer {
   position: absolute;
   bottom: 0;
   width: 100%;

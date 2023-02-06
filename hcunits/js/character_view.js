@@ -49,7 +49,7 @@ class CharacterView extends UnitView {
         </div>
       </div>`;
 
-  	document.getElementById('unitContainer').innerHTML = html;
+  	$('#unitContainer').html(html);
   }
   
   isTeamUp_() {

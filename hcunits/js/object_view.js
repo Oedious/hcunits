@@ -104,7 +104,7 @@ class ObjectView extends UnitView {
         ${this.drawSpecialPowers_()}
         ${super.drawPointValues_()}
       </div>`;
-  	document.getElementById('unitContainer').innerHTML = html;
+  	$('#unitContainer').html(html);
   }
   
   isCardType_() {
