@@ -1,0 +1,35 @@
+html,body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #F0F0F0;
+}
+
+#heroContainer {
+  width: 100%;
+  height: 170px;
+}
+
+#hero {
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  background-image: linear-gradient(#155cff, #6ca4ed);
+  color: white;
+  font-family: "Inter var",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  letter-spacing: 1px;
+}
+
+#latestBuildsContainer {
+  position: relative;
+  color: white;
+  font-family: "Inter var",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  letter-spacing: 3px;
+  margin: 0 50px 0 50px;
+}
+
+.teamList {
+  margin-top: 30px;
+}

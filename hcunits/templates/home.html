@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block link_tags %}
+  {{ block.super }}
+  <link type="text/css" rel="stylesheet" href="{% static 'css/home.css' %}" media="screen,projection">
+  <link type="text/css" rel="stylesheet" href="{% static 'css/team_list.css' %}" media="screen,projection">
+{% endblock %}
+
+{% block main %}
+<div id="heroContainer" class="row">
+  <div id="hero" class="row">
+    <br>
+    <br>
+    <br>
+    <h4 class="center-align">Build and share HeroClix teams</h4>
+  </div>
+</div>
+<div id="latestBuildsContainer">
+  <h5 class="center-align">NEWEST TEAM BUILDS</h5>
+  <br>
+  <div class="teamList">
+    {% for team in team_list %}
+    <a class='teamCard' href='/teams'>
+      <div class='teamCardBorders'></div>
+      <div class='teamCardHeader'>
+        <div class='teamCardName'>{{team.name}}</div>
+      </div>
+      <div class='teamCardTokenCircle'></div>
+      <div class='teamCardFormat'>{{team.format}}</div>
+    </a>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}

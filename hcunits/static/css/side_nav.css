@@ -1,0 +1,188 @@
+/* Nav Panel styles */
+#sideNav {
+  position: relative;
+  min-width: 300px;
+
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+
+  flex: 0 0 auto;
+
+  z-index: 1;
+}
+
+#sideNavHeader,
+#sideNavFooter {
+  position: relative;
+  width: 300px;
+  height: 60px;
+  background-color: #6ca4ed;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  box-shadow: 0 2px 2px 0 rgb(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+#sideNavFooter {
+  position: absolute;
+  bottom: 0px;
+}
+
+.sideNavHeaderButton,
+.sideNavFooterButton {
+  position: relative;
+  height: 60px;
+  color: white;
+  text-align: center;
+  line-height: 75px;
+}
+
+.sideNavHeaderButton {
+  width: 54px;
+}
+
+.sideNavFooterButton {
+  width: 150px;
+}
+
+.sideNavHeaderButton:hover,
+.sideNavFooterButton:hover {
+  background-color: #4180f6;
+}
+
+#panelTitle {
+  position: absolute;
+  left: 60px;
+}
+
+.navPanel {
+  height: calc(100% - 60px);
+  min-height: calc(100vh - 108px);
+  background-color: white;
+}
+
+.navPanel .collection,
+#searchOptions {
+  position: absolute;
+  margin: 0px !important;
+  width: 300px;
+  overflow-y: auto;
+}
+
+.navPanel .collection {
+  height: calc(100% - 60px);
+}
+
+#searchOptions {
+  height: calc(100% - 120px);
+}
+
+.navPanel .collection .collection-header {
+  min-height: 63px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.navPanel .collection .collection-item {
+  min-height: 0px !important;
+  padding: 0px !important;
+}
+
+.navPanel .collection .collection-item a {
+  padding: 10px 20px !important;
+  display: block;
+}
+
+.navPanel .collection .collection-item a:hover {
+  background-color: #f5f5f5;
+}
+
+.navPanel .collection .collection-item a:focus {
+  background-color: #e5e5e5;
+  outline: none;
+}
+
+.navPanel .collection .collection-item a:active {
+  background-color: #d8d8d8;
+}
+
+.listPanelImageDiv {
+  position: absolute;
+  left: 15px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+}
+
+.listPanelInfo {
+  padding-left: 40px !important;
+  color: black;
+}
+
+.listPanelMinorInfo {
+  left: 40px;
+  font-size: 10px !important;
+}
+
+#addSearchOptionButton {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  z-index: 3;
+}
+
+#addSearchOptionDropdown {
+  width: 200px !important;
+}
+
+#searchOptions {
+  background-color: white;
+}
+
+#searchOptions .collection-item {
+  padding: 0;
+}
+
+#searchOptions .collection-item .row .input-field {
+  margin: 13px 0 3px 0;
+}
+
+#searchOptions .collection-item .row .input-field .col label {
+  top: -20px;
+}
+
+#searchOptions .collection-item .row .input-field div ul {
+  max-height: 400px;
+  
+  /* Hack to allow the dialog to be drawn outside of a parent using overflow-y. */
+  position: fixed;
+}
+
+#searchOptions .row {
+  border-bottom: 1px solid lightgrey;
+  margin-bottom: 0px;
+}
+
+#searchOptionsTeamAbilities .input-field {
+  margin-bottom: 10px;  
+}
+
+#searchOptionsKeywordsLabel {
+  position: absolute;
+  top: -20px;
+  font-size: .8rem;
+}
+
+.searchOptionsLabel {
+  margin: 0 0 5px 10px;
+}
+
+#searchOptionKeywords .autocomplete-content {
+  width: 300px !important;
+}

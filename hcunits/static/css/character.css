@@ -1,0 +1,203 @@
+#characterCard {
+  position: relative;
+  /* Character cards are 2.5" x 3.5" in real life */
+  width: 375px;
+  /* The height may grow dynamically based on the size of the text
+       of the special powers. */
+  min-height: 525px;
+}
+
+#characterCardBorders {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  border-top: 75px solid black;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.8) 0 0 10px;
+}
+
+#characterHeader {
+  position: absolute;
+  left: 3px;
+  top: 2px;
+  width: 225px;
+  color: white;
+  text-align: center;
+  line-height: normal;
+}
+
+#characterName {
+  font-family: arial black, sans-serif;
+  font-size: 16px;
+  font-style: italic;
+  line-height: 1em;
+}
+
+#characterKeywords {
+  font-size: 10px;
+  line-height: 1em;
+}
+
+.characterKeyword {
+  color: white;
+}
+
+#characterRealName {
+  position: absolute;
+  left: 7px;
+  top: 63px;
+  width: 225px;
+  color: white;
+  font-family: arial, sans-serif;
+  font-size: 8px;
+  text-align: left;
+}
+
+#characterTeamUp {
+  font-size: 9px;
+  font-weight: bold;
+}
+
+#characterCollectorNumber {
+  position: absolute;
+  right: 10px;
+  font-size: 11px;
+  color: white;
+}
+
+#characterTokenCircle {
+  position: absolute;
+  left: 215px;
+  top: 15px;
+  width: 150px;
+  height: 150px;
+  border: 7px solid black;
+  background-color: white;
+  border-radius: 75px;
+}
+
+#characterTokenImg {
+  position: absolute;
+  left: -7px;
+  top: -7px;
+  width: 150px;
+  height: 150px;
+}
+
+#characterSpecialPowersTable0 {
+  position: absolute;
+  width: 49%;
+  left: 5px;
+  top: 80px;
+}
+
+#characterSpecialPowersTable1 {
+  position: absolute;
+  width: 49%;
+  right: 3px;
+  top: 168px;
+}
+
+.characterDial {
+  position: absolute;
+  height: 130px;
+  border: 5px solid black;
+  border-radius: 0px 15px 15px 0px;
+}
+
+.characterRange {
+  position: absolute;
+  right: 20px;
+  top: 4px;
+  color: white;
+  font-size: 11px;
+  font-family: 'Gill Sans', sans-serif;
+  font-weight: 300;
+}
+
+.characterBolt {
+  position: absolute;
+  top: 6px;
+}
+
+.characterCombatSymbolImg {
+  position: absolute;
+  right: 7px;
+  top: 2px;
+}
+
+.characterDialTable {
+  position: absolute;
+  left: 30px;
+  top: -2px;
+  table-layout: fixed;
+  border-collapse: separate;
+  border-spacing: 3px !important;
+}
+
+.characterDialHeader {
+  color: red;
+  padding: 0px 0px !important;
+  width: 8.3%;
+  font-size: 10px;
+  font-family: 'Gill Sans', sans-serif;
+  font-weight: 300;
+  text-align: center;
+}
+
+.characterDialRow {
+  height: 21px;
+  border-bottom: none !important;
+  line-height: normal;
+}
+
+.characterDialStartingLine {
+  position: absolute;
+  width: 2px;
+  height: 100px;
+  top: 20px;  
+}
+
+#characterTeamAbilities {
+  position: absolute;
+  right: 0px;
+  bottom: 70px;
+  width: 45px;
+  height: 130px;
+  background-color: black;
+  border-radius: 12px 0px 0px 12px;
+}
+
+#characterTeamAbility0 {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+#characterTeamAbility1 {
+  position: absolute;
+  left: 10px;
+  top: 55px;
+}
+
+#characterTeamAbility2 {
+  position: absolute;
+  left: 10px;
+  top: 100px;
+}
+
+#characterHeroClixLogoClip {
+  position: absolute;
+  width: 132px;
+  height: 25px;
+  bottom: 10px;
+  overflow: hidden;
+}
+
+#characterHeroClixLogo {
+  position: absolute;
+  left: -5px;
+}

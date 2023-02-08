@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  {% block link_tags %}
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link type="text/css" rel="stylesheet" href="{% static 'css/hcunits.css' %}" media="screen,projection">
+  {% endblock %}
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="creator" content="Clay Wood">
+  <title>HCUnits - Build and share HeroClix teams!</title>
+  <link rel="icon" type="image/x-icon" href="{% static 'images/favicon.ico' %}">
+</head>
+
+<body>
+  <div id="pageContainer">
+    <header id="header">
+      <nav>
+        <div class="nav-wrapper">
+          <a href="/" class="brand-logo left">
+            <img src="{% static 'images/logo_2x1_med.png' %}" alt='' style='padding-top: 2px;'/>
+          </a>
+          <ul id="headerLinks" class="left">
+            <li class='navButton'>
+              <a href="/build">{% block build_label %}Build{% endblock %}</a>
+            </li>
+            <li class='navButton'>
+              <a href="/explore">{% block explore_label %}Explore{% endblock %}</a>
+            </li>
+            <li class='navButton'>
+              <a href="/help">{% block help_label %}Help{% endblock %}</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      {% block main %}
+      {% endblock %}
+    </main>
+    <footer id="footer">
+      <div class="container">
+        <p>WizKids, HeroClix, and their logos are trademarks of WIZKIDS/NECA, LLC in the United States and other countries. &copy; 2023 WIZKIDS/NECA, LLC. All rights reserved.</p>
+        <p>HCUnits is not affiliated with, endorsed, sponsored, or specifically approved by WIZKIDS/NECA, LLC. HeroClix, WizKids and Combat Dial are trademarks of WIZKIDS/NECA, LLC. For more information about NECA/WizKids or any trademarks or other intellectual property, please visit their website at <a href="https://wizkids.com/">WizKids.com</a>.</p>
+        <p>&copy; 2023 HCUnits &middot; <a href="/help/tos">Terms of Service</a> &middot; <a href="/help/privacy">Privacy Policy</a> &middot; <span>Version 2023.02.05.1</span></p>
+      </div>
+    </footer>
+  </div>
+
+  {% block script_tags %}
+  <!-- Javascript at end of body for optimized loading. -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+  {% endblock %}
+</body>
+</html>

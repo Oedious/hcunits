@@ -1,0 +1,77 @@
+.teamList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 390px);
+  grid-auto-rows: 200px;
+  grid-gap: 40px;
+  justify-content: space-evenly;
+}
+
+.teamCard {
+  position: relative;
+  width: 340px;
+  height: 200px;
+  border: 2px solid transparent;
+  border-radius: 15px;
+  letter-spacing: 0px;
+  display: block;
+  justify-self: center;
+}
+
+.teamCard:hover {
+  border: 2px solid red;
+}
+
+.teamCardBorders {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  border-top: 60px solid black;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.8) 0 0 10px;
+}
+
+.teamCardHeader {
+  position: absolute;
+  left: 3px;
+  top: 2px;
+  width: 215px;
+  color: white;
+  text-align: center;
+  line-height: normal;
+}
+
+.teamCardName {
+  font-family: arial black, sans-serif;
+  font-size: 16px;
+  font-style: italic;
+  line-height: 1em;
+}
+
+.teamCardTokenCircle {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 120px;
+  height: 120px;
+  border: 5px solid black;
+  background-color: white;
+  border-radius: 75px;
+}
+
+.teamCardFormat {
+  position: absolute;
+  left: 0px;
+  bottom: 15px;
+  width: 182px;
+  height: 24px;
+  color: white;
+  background-color: black;
+  border-radius: 0px 12px 12px 0px;
+  font-size: 14px;
+  font-family: arial, sans-serif;
+  text-align: center;
+  line-height: 1.75em;
+}
