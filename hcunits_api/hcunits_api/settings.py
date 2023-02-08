@@ -85,10 +85,10 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME':  'hcunits',
-        'USER': 'root',
+        'USER': get_secret('database_user'),
         'PASSWORD': get_secret('database_password'),
-        'HOST': 'localhost',
-        'PORT': '',
+        'HOST': '127.0.0.1',
+        'PORT': '3306',
     }
 }
 

@@ -36,9 +36,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = get_secret('secret_key')
 
-ALLOWED_HOSTS = ['b790820ab15b4acf8bc5653c5dda9df9.vfs.cloud9.us-east-2.amazonaws.com']
-
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -88,10 +85,10 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME':  'hcunits',
-        'USER': 'root',
+        'USER': get_secret('database_user'),
         'PASSWORD': get_secret('database_password'),
-        'HOST': 'localhost',
-        'PORT': '',
+        'HOST': '127.0.0.1',
+        'PORT': '3306',
     }
 }
 
