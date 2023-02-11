@@ -1,0 +1,104 @@
+body {
+  background-color: #F0F0F0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#loginCard {
+  width: 450px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  color: #202124;
+  font-family: "Google Sans", arial, sans-serif;
+  font-weight: 400;
+  text-align: center;
+  border: 1px solid #dadce0;
+  border-radius: 8px;
+  background-color: white;
+}
+
+#loginCard .container .row {
+  display: flex;
+  justify-content: center;
+}
+
+#loginCardLogo {
+  margin: 40px 0 10px 0;
+}
+
+#loginCardTitle {
+  font-size: 24px;
+  margin: 10px;
+}
+
+#loginCardText {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 10px;
+}
+
+#loginButtons {
+  margin-top: 80px;
+}
+
+
+.loginButton {
+  width: 185px;
+  height: 40px;
+  box-shadow: 0 1px 1px 0 #41454954, 0 1px 3px 1px #41454926;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.loginButton:hover {
+  border: 3px solid #d4e0f6 !important;
+}
+
+.loginButton:active {
+  filter: brightness(0.9);
+}
+
+#loginButtonGoogle {
+  background-color: white;
+  border: 3px solid white;
+}
+
+#loginButtonFacebook {
+  background-color: #1877f2;
+  border: 3px solid #1877f2;
+}
+
+.loginButtonLogo {
+  margin-right: 10px;
+}
+
+.loginButtonText {
+  text-align: center;
+}
+
+#loginButtonTextGoogle {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: rgba(0, 0, 0, .54);
+}
+
+#loginButtonTextFacebook {
+  font-family: Helvetica, Arial, sans-serif;
+  color: white;
+  font-weight: bold;
+  font-size: 13px;
+  letter-spacing: .25px;
+}
+
+#registrationForm p {
+  text-align: left;
+}
+
+#registrationForm p input {
+  height: 2rem;
+}

@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div class="container">
+  <div class="row s12">
+    <h3>User Profile</h3>
+      {% if user.is_authenticated %}
+      Logged in - welcome back {{ user.username }}.
+      {% else %}
+      User is not authenticated - please <a href="/accounts/login/">Login</a>.
+      {% endif %}
+  </div>
+</div>
+{% endblock %}

@@ -2,7 +2,7 @@ from django.http import HttpResponse
 from django.shortcuts import render
 from django.template import loader
 
-def index(request):
+def home(request):
   template = loader.get_template('home.html')
   team_list = []
   for i in range(12):
@@ -44,5 +44,10 @@ def privacy(request):
   
 def tos(request):
   template = loader.get_template('tos.html')
+  context = {}
+  return HttpResponse(template.render(context, request))
+
+def profile(request):
+  template = loader.get_template('profile.html')
   context = {}
   return HttpResponse(template.render(context, request))
