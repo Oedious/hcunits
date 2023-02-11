@@ -1,0 +1,33 @@
+{% load account socialaccount %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link type="text/css" rel="stylesheet" href="/static/css/hcunits.css" media="screen,projection">
+    <link type="text/css" rel="stylesheet" href="/static/css/accounts.css" media="screen,projection">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="creator" content="Clay Wood">
+    <link rel="icon" type="image/x-icon" href="/static/images/favicon.ico">
+    <title>{% block head_title %}{% endblock %}</title>
+    {% block extra_head %}
+    {% endblock %}
+  </head>
+  <body>
+    {% block body %}
+    <div id="accountCard">
+      <div class="container">
+        <img id="accountCardLogo" src="/static/images/logo_2x1_med.png">
+
+    {% block content %}
+    {% endblock %}
+
+      </div>
+    </div>
+    {% endblock %}
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    {% block extra_body %}
+    {% endblock %}
+  </body>
+</html>

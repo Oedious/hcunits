@@ -132,6 +132,8 @@ ACCOUNT_EMAIL_REQUIRED = False
 SOCIALACCOUNT_AUTO_SIGNUP = False
 ACCOUNT_USERNAME_MIN_LENGTH = 6
 ACCOUNT_USER_MODEL_EMAIL_FIELD = None
+ACCOUNT_DEFAULT_HTTP_PROTOCOL = 'https'
+
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/

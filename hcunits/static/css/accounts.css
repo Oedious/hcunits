@@ -5,7 +5,7 @@ body {
   align-items: center;
 }
 
-#loginCard {
+#accountCard {
   width: 450px;
   height: 500px;
   display: flex;
@@ -19,32 +19,32 @@ body {
   background-color: white;
 }
 
-#loginCard .container .row {
+#accountCard .container .row {
   display: flex;
   justify-content: center;
 }
 
-#loginCardLogo {
+#accountCardLogo {
   margin: 40px 0 10px 0;
 }
 
-#loginCardTitle {
+#accountCardTitle {
   font-size: 24px;
   margin: 10px;
 }
 
-#loginCardText {
+#accountCardText {
   font-size: 16px;
   line-height: 1.5;
   margin: 10px;
 }
 
-#loginButtons {
+#accountButtons {
   margin-top: 80px;
 }
 
 
-.loginButton {
+.accountButton {
   width: 185px;
   height: 40px;
   box-shadow: 0 1px 1px 0 #41454954, 0 1px 3px 1px #41454926;
@@ -54,40 +54,40 @@ body {
   margin: 10px;
 }
 
-.loginButton:hover {
+.accountButton:hover {
   border: 3px solid #d4e0f6 !important;
 }
 
-.loginButton:active {
+.accountButton:active {
   filter: brightness(0.9);
 }
 
-#loginButtonGoogle {
+#accountButtonGoogle {
   background-color: white;
   border: 3px solid white;
 }
 
-#loginButtonFacebook {
+#accountButtonFacebook {
   background-color: #1877f2;
   border: 3px solid #1877f2;
 }
 
-.loginButtonLogo {
+.accountButtonLogo {
   margin-right: 10px;
 }
 
-.loginButtonText {
+.accountButtonText {
   text-align: center;
 }
 
-#loginButtonTextGoogle {
+#accountButtonTextGoogle {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 14px;
   color: rgba(0, 0, 0, .54);
 }
 
-#loginButtonTextFacebook {
+#accountButtonTextFacebook {
   font-family: Helvetica, Arial, sans-serif;
   color: white;
   font-weight: bold;

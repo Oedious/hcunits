@@ -26,10 +26,11 @@ urlpatterns = [
   path('', include('hcunits.urls')),
   path('accounts/login/', login, name="account_login"),
   path('accounts/logout/', logout, name="account_logout"),
-  path('accounts/signup/', signup, name="account_signup"),
+  path('accounts/signup/', socialaccount_signup, name="account_signup"),
   path('accounts/social/signup/', socialaccount_signup, name="socialaccount_signup"),
   path('accounts/', include('allauth.socialaccount.providers.facebook.urls')),
   path('accounts/', include('allauth.socialaccount.providers.google.urls')),
+  #path('accounts/', include('allauth.urls'), name='socialaccount_signup')
 ]
 
 if settings.admin_enabled():

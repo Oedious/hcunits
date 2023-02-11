@@ -1,46 +1,35 @@
+{% extends "account/base.html" %}
 {% load account socialaccount %}
 
-<!DOCTYPE html>
-<html>
-  <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="/static/css/hcunits.css" media="screen,projection">
-    <link type="text/css" rel="stylesheet" href="/static/css/accounts.css" media="screen,projection">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="creator" content="Clay Wood">
-    <title>Sign In - HCUnits</title>
-    <link rel="icon" type="image/x-icon" href="/static/images/favicon.ico">
-  </head>
-  <body>
-    <div id="loginCard">
-      <div class="container">
-        <img id="loginCardLogo" src="/static/images/logo_2x1_med.png">
-        <div id="loginCardTitle" class="row">Sign in</div>
-        <div id="loginCardText" class="row">Use one of the third-parties listed below:</div>
-        <div id="loginButtons">
-          <div class="row">
-            <form action="{% provider_login_url "google" %}" method="post">
-              {% csrf_token %}
-              <button id="loginButtonGoogle" class="loginButton" type="submit">
-                <img class="loginButtonLogo" src="/static/images/accounts/google_logo.svg">
-                <div id="loginButtonTextGoogle" class="loginButtonText">Sign in with Google</div>
-              </button>
-            </form>
-          </div>
-          <div class="row">
-            <form action="{% provider_login_url "facebook" %}" method="post">
-              {% csrf_token %}
-              <button id="loginButtonFacebook" class="loginButton" type="submit">
-                <img class="loginButtonLogo" src="/static/images/accounts/facebook_logo.png">
-                <div  id="loginButtonTextFacebook" class="loginButtonText">Login with Facebook</div>
-              </button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </body>
-</html>
+{% block head_title %}Sign In - HCUnits{% endblock %}
+{% block extra_head %}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+<div id="accountCardTitle" class="row">Sign in</div>
+<div id="accountCardText" class="row">Use one of the third-parties listed below:</div>
+<div id="accountButtons">
+  <div class="row">
+    <form action="{% provider_login_url "google" %}" method="post">
+      {% csrf_token %}
+      <button id="accountButtonGoogle" class="accountButton" type="submit">
+        <img class="accountButtonLogo" src="/static/images/accounts/google_logo.svg">
+        <div id="accountButtonTextGoogle" class="accountButtonText">Sign in with Google</div>
+      </button>
+    </form>
+  </div>
+  <div class="row">
+    <form action="{% provider_login_url "facebook" %}" method="post">
+      {% csrf_token %}
+      <button id="accountButtonFacebook" class="accountButton" type="submit">
+        <img class="accountButtonLogo" src="/static/images/accounts/facebook_logo.png">
+        <div  id="accountButtonTextFacebook" class="accountButtonText">Login with Facebook</div>
+      </button>
+    </form>
+  </div>
+</div>
+{% endblock %}
 
