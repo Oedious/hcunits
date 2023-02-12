@@ -1,35 +1,37 @@
+import json
+
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib import messages
 from django.contrib.auth import logout
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseNotFound, QueryDict
 from django.shortcuts import redirect, render
 from django.template import Context, loader
 from django.urls import reverse
 from django.views.generic import View
 
 from .forms import AccountDeleteForm
+from .models import Team
 
 def home(request):
-  template = loader.get_template('home.html')
-  team_list = []
-  for i in range(12):
-    team = {
-      "name": "Coming Soon!",
-      "format": "300 Modern"
-    }
-    team_list.append(team)
+  if request.user.is_authenticated:
+    team_list = Team.objects.filter(user=request.user)
+  else:
+    team_list = []
+    for i in range(12):
+      team = {
+        "name": "Coming Soon!",
+        "points": 300,
+        "age": "Modern"
+      }
+      team_list.append(team)
 
   context = {
     "team_list": team_list
   }
+  template = loader.get_template('home.html')
   return HttpResponse(template.render(context, request))
   
-def build(request):
-  template = loader.get_template('build.html')
-  context = {}
-  return HttpResponse(template.render(context, request))
-  
-def teams(request):
+def list_public_teams(request):
   template = loader.get_template('teams.html')
   context = {}
   return HttpResponse(template.render(context, request))
@@ -92,24 +94,69 @@ def profile(request):
   return HttpResponse(template.render(context, request))
 
 class AccountDeleteView(LoginRequiredMixin, View):
-    """
-    Deletes the currently signed-in user and all associated data.
-    """
-    def get(self, request, *args, **kwargs):
-        form = AccountDeleteForm()
-        return render(request, 'account_delete.html', {'form': form})
+  """
+  Deletes the currently signed-in user and all associated data.
+  """
+  def get(self, request, *args, **kwargs):
+    form = AccountDeleteForm()
+    return render(request, 'account_delete.html', {'form': form})
 
-    def post(self, request, *args, **kwargs):
-        form = AccountDeleteForm(request.POST)
-        # Form will be valid if checkbox is checked.
-        if form.is_valid():
-            user = request.user
-            # Logout before we delete. This will make request.user
-            # unavailable (or actually, it points to AnonymousUser).
-            logout(request)
-            # Delete user (and any associated ForeignKeys, according to
-            # on_delete parameters).
-            user.delete()
-            messages.success(request, 'Account successfully deleted')
-            return redirect(reverse('home'))
-        return render(request, 'account_delete.html', {'form': form})
+  def post(self, request, *args, **kwargs):
+    form = AccountDeleteForm(request.POST)
+    # Form will be valid if checkbox is checked.
+    if form.is_valid():
+      user = request.user
+      # Logout before we delete. This will make request.user
+      # unavailable (or actually, it points to AnonymousUser).
+      logout(request)
+      # Delete user (and any associated ForeignKeys, according to
+      # on_delete parameters).
+      user.delete()
+      messages.success(request, 'Account successfully deleted')
+      return redirect(reverse('home'))
+    return render(request, 'account_delete.html', {'form': form})
+
+
+class CreateTeamView(LoginRequiredMixin, View):
+  def post(self, request, *args, **kwargs):
+    team = Team.objects.create(user=request.user)
+    team.save()
+    return redirect('get_team', team.team_id)
+    
+class TeamView(View):
+  def get(self, request, *args, **kwargs):
+    team_id = kwargs["team_id"]
+    try:
+      team = Team.objects.get(team_id=team_id)
+    except Team.DoesNotExist:
+      return HttpResponseNotFound("Could not find team '%s'" % team_id)
+
+    client_safe_team = team.safe_for_client()
+    if request.user.is_authenticated and request.user == team.user:
+      return render(request, 'build.html', {'team': client_safe_team})
+    elif team.visibility == "public":
+      # TODO: return a read-only view of the page.
+      return render(request, 'build.html', {'team': client_safe_team})
+    else:
+      return HttpResponse("Unauthorized", status=401)
+      
+  def put(self, request, *args, **kwargs):
+    team_id = kwargs["team_id"]
+    try:
+      team = Team.objects.get(team_id=team_id)
+    except Team.DoesNotExist:
+      return HttpResponseNotFound("Could not find team '%s'" % team_id)
+    if not request.user.is_authenticated or request.user != team.user:
+      return HttpResponse("Unauthorized", status=401)
+
+    print(request.body)
+    change_list = json.loads(request.body)
+    for field in ["name", "description", "point_limit", "age", "visibility"]:
+      value = change_list.get(field, None)
+      if value:
+        setattr(team, field, value)
+
+    team.save()
+    return HttpResponse(status=200)
+    
+

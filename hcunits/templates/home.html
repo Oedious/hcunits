@@ -21,13 +21,13 @@
   <br>
   <div class="teamList">
     {% for team in team_list %}
-    <a class='teamCard' href='/teams'>
+    <a class='teamCard' href='/teams/{{team.team_id}}'>
       <div class='teamCardBorders'></div>
       <div class='teamCardHeader'>
         <div class='teamCardName'>{{team.name}}</div>
       </div>
       <div class='teamCardTokenCircle'></div>
-      <div class='teamCardFormat'>{{team.format}}</div>
+      <div class='teamCardFormat'>{{team.age}} - {{team.point_limit}}</div>
     </a>
     {% endfor %}
   </div>

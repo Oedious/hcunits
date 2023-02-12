@@ -13,29 +13,29 @@
 {% block main %}
 <div id="teamHeaderContainer">
   <div id="teamHeader" class="row">
-    <H4>Team Owner</H4>
+    <H4>{{ user.username }}</H4>
     <div class="input-field col s12">
-      <input id="teamName" type="text" class="validate" placeholder="Change Team Name">
+      <input id="teamName" type="text" class="validate" placeholder="Change Team Name"{% if team.name %} value="{{team.name}}"{% endif %}>
       <label for="teamName"></label>
     </div>
     <div class="input-field col s12">
-      <input id="teamDescription" type="text" placeholder="Change Team Description">
+      <input id="teamDescription" type="text" placeholder="Change Team Description"{% if team.description %} value="{{team.description}}"{% endif %}>
     </div>
     <div class="input-field col s12 m3">
-      <input id="teamPointLimit" class="teamInput" type="number" min="0" max="9999" value="300">
+      <input id="teamPointLimit" class="teamInput" type="number" min="0" max="9999"{% if team.point_limit %} value="{{team.point_limit}}"{% endif %}>
       <label for="teamPointLimit">Points</label>
     </div>
     <div class="input-field col s12 m5">
-      <select>
-        <option value="modern">Modern</option>
-        <option value="golden">Golden</option>
+      <select id="teamAge">
+        <option value="modern"{% if team.age == "modern" %} selected{% endif %}>Modern</option>
+        <option value="golden"{% if team.age == "golden" %} selected{% endif %}>Golden</option>
       </select>
       <label>Age</label>
     </div>
     <div class="input-field col s12 m4">
-      <select>
-        <option value="unlisted">Unlisted</option>
-        <option value="public">Public</option>
+      <select id="teamVisibility">
+        <option value="unlisted"{% if team.visibility == "unlisted" %} selected{% endif %}>Unlisted</option>
+        <option value="public"{% if team.visibility == "public" %} selected{% endif %}>Public</option>
       </select>
       <label>Visibility</label>
     </div>
@@ -127,15 +127,34 @@
   <script type="text/javascript" src="/static/js/panels/favorites_panel.js"></script>
   <script type="text/javascript" src="/static/js/panels/advanced_search_panel.js"></script>
 
+  <script type="text/javascript" src="/static/js/data_source.js"></script>
+  <script type="text/javascript" src="/static/js/unit_manager.js"></script>
+  <script type="text/javascript" src="/static/js/team_manager.js"></script>
+
   <script type="text/javascript" src="/static/js/unit_view.js"></script>
   <script type="text/javascript" src="/static/js/character_view.js"></script>
   <script type="text/javascript" src="/static/js/object_view.js"></script>
   <script type="text/javascript" src="/static/js/side_nav.js"></script>
 
-  <script type="text/javascript" src="/static/js/data_source.js"></script>
-  <script type="text/javascript" src="/static/js/view_manager.js"></script>
-
-  <!-- Include this last, as it runs the code -->
-  
-  <script type="text/javascript" src="/static/js/main_build.js"></script>
+  {{ team|json_script:'teamObject' }}
+  <script type="text/javascript">
+    var dataSource = new DataSource();
+    //var dataSource = new MockDataSource();
+    var unitManager = new UnitManager(dataSource);
+    var teamManager = new TeamManager(document.getElementById('teamObject').textContent, "{{csrf_token}}")
+    var sideNav = new SideNav(dataSource, unitManager);
+    
+    // Initialize Materialize select inputs.
+    $(document).ready(function(){
+      $('select').formSelect();
+    });
+    
+    $(document).ready(function(){
+      $('.tabs').tabs();
+    });
+    
+    $(document).ready(function(){
+      $('.fixed-action-btn').floatingActionButton();
+    });
+</script>
 {% endblock %}

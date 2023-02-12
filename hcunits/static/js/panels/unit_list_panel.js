@@ -1,7 +1,8 @@
 class UnitListPanel extends ListPanel {
-  constructor(dataSource) {
+  constructor(dataSource, unitManager) {
     super();
     this.dataSource_ = dataSource;
+    this.unitManager_ = unitManager;
     // A unit list should always be in the form of an JSON array of units from
     // the database.
     this.unitList_ = null;
@@ -28,7 +29,7 @@ class UnitListPanel extends ListPanel {
 
   activateCurrentItem() {
     if (this.unitList_ && super.currentIndex < this.unitList_.length) {
-      mgr.showUnit(this.unitList_[super.currentIndex].unit_id);
+      this.unitManager_.showUnit(this.unitList_[super.currentIndex].unit_id);
       document.getElementById("unitListItem_" + super.currentIndex).focus();
     }
   }

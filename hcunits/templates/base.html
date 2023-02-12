@@ -24,7 +24,10 @@
           </a>
           <ul id="headerLinks" class="left">
             <li class='navButton'>
-              <a href="/build/">{% block build_label %}Build{% endblock %}</a>
+              <form id="createTeamForm" method="post" action="{% url 'create_team' %}">
+                {% csrf_token %}
+                <a href="#" onclick="document.getElementById('createTeamForm').submit()">{% block build_label %}Build{% endblock %}</a>
+              </form>
             </li>
             <li class='navButton'>
               <a href="/explore/">{% block explore_label %}Explore{% endblock %}</a>

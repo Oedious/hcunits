@@ -1,17 +1,17 @@
-class ViewManager {
+class UnitManager {
     constructor(dataSource) {
       this.dataSource_ = dataSource;
       this.unitView_ = null;
     }
 
     showUnit(unitId) {
-      var viewMgr = this;
+      var unitMgr = this;
     	this.dataSource_.searchByUnitId(unitId,
     		function(unitJson) {
-    			viewMgr.showUnit_(unitJson);
+    			unitMgr.showUnit_(unitJson);
     		},
     		function(xhr, desc, err) {
-    			alert("Error in showUnit(" + unitId + "): " + desc + " err=" + err);
+    			console.log("Error in showUnit(" + unitId + "): " + desc + " err=" + err);
     		});
     }
     
