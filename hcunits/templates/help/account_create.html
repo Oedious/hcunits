@@ -1,0 +1,22 @@
+{% extends "help/base.html" %}
+
+{% block content %}
+<h3>Account Creation</h3>
+<h6><b>Do I need to use Third-Parties for Account Creation?</b></h6>
+<p>
+  Yes - we require a Google or Facebook login to create an HCUnits account.
+  This may seem like an unconventional choice, but the reality is that effective
+  account management is a lot of hard work - password recovery, two-factor
+  auth, etc.  In the end, we want to focus our energy on making a great
+  HeroClix team-building site instead.
+</p>
+  
+<h6><b>What info do you give to or take from Third-Parties (ie Google or Facebook)?</b></h6>
+<p>
+  Almost nothing - just a credential that tells us you're the same user that
+  logged in last time. The username you provide to us when you finalize your
+  account is stored by us to help give you credit for the Teams you share. The
+  (optional) email address helps us contact you only if really necessary, such
+  as in the event of account recovery.
+</p>
+{% endblock %}

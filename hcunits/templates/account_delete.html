@@ -1,0 +1,30 @@
+{% extends "account/base.html" %}
+{% load account socialaccount %}
+
+{% block head_title %}Delete Account - HCUnits{% endblock %}
+
+{% block content %}
+<div id="accountCardTitle" class="row">Account Deletion</div>
+<div id="accountCardText" class="row">
+  <p>Warning!  This will delete your account and all associated data, including teams you've build. Are you sure you want to proceed?
+  </p>
+</div>
+<div id="accountDeletetionForm">
+  <form class="account_delete" id="account_delete_form" method="post" action="/accounts/delete/">
+    {% csrf_token %}
+    {% for field in form %}
+    <p>
+      <label>
+        {{field}}
+        <span>{{field.label}}</span>
+      </label>
+    </p>
+    {% endfor %}
+
+    <div id="accountDeletionButtons" class="row">
+      <button class="btn waves-effect waves-light red" name="action" onclick="location.href='/'; return false;">Cancel</button>
+      <button class="btn waves-effect waves-light light-blue" type="submit" name="action">Delete</button>
+    </div>
+  </form>
+</div>
+{% endblock %}

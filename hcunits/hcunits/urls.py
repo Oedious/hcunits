@@ -7,7 +7,11 @@ urlpatterns = [
   path('explore/', views.explore, name='explore'),
   path('teams/', views.teams, name='teams'),
   path('help/', views.help, name='help'),
+  path('help/shortcuts/', views.help_shortcuts, name='help_shortcuts'),
+  path('help/account_create/', views.help_account_create, name='help_account_create'),
+  path('help/account_delete/', views.help_account_delete, name='help_account_delete'),
   path('help/privacy/', views.privacy, name='privacy'),
   path('help/tos/', views.tos, name='tos'),
   path('accounts/profile/', views.profile, name='profile'),
+  path('accounts/delete/', views.AccountDeleteView.as_view(), name="account_delete"),
 ]

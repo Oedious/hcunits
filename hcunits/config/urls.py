@@ -30,7 +30,6 @@ urlpatterns = [
   path('accounts/social/signup/', socialaccount_signup, name="socialaccount_signup"),
   path('accounts/', include('allauth.socialaccount.providers.facebook.urls')),
   path('accounts/', include('allauth.socialaccount.providers.google.urls')),
-  #path('accounts/', include('allauth.urls'), name='socialaccount_signup')
 ]
 
 if settings.admin_enabled():

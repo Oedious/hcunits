@@ -1,0 +1,50 @@
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+}
+
+main .container {
+  width: 100% !important;
+}
+
+main .container .row {
+  display: flex;
+  min-height: 100vh;
+}
+
+#sideNav {
+  border-right: 1px solid rgba(0, 0, 0, .14);
+  max-width: 200px;
+}
+
+#sideNav h5 {
+  margin-top: 100px;
+}
+
+#helpTopics li {
+  padding: 3px 0 3px 15px;
+}
+
+#helpTopics li:hover {
+  text-decoration: underline;
+}
+
+#helpTopics .active {
+  border-radius: 8px;
+  background-color: #d3e3fd;
+}
+
+#helpTopics li a {
+  color: black;
+}
+
+.shortcutItem {
+  max-width: 400px;
+  margin: 5px 20px 0 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, .14);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

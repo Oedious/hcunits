@@ -1,14 +1,13 @@
 {% extends "base.html" %}
-{% load static %}
 
 {% block link_tags %}
   {{ block.super }}
   <link href="https://fonts.cdnfonts.com/css/gill-sans" rel="stylesheet">
-  <link type="text/css" rel="stylesheet" href="{% static 'css/build.css' %}" media="screen,projection">
-  <link type="text/css" rel="stylesheet" href="{% static 'css/character.css' %}" media="screen,projection">
-  <link type="text/css" rel="stylesheet" href="{% static 'css/object.css' %}" media="screen,projection">
-  <link type="text/css" rel="stylesheet" href="{% static 'css/side_nav.css' %}" media="screen,projection">
-  <link type="text/css" rel="stylesheet" href="{% static 'css/unit.css' %}" media="screen,projection">
+  <link type="text/css" rel="stylesheet" href="/static/css/build.css" media="screen,projection">
+  <link type="text/css" rel="stylesheet" href="/static/css/character.css" media="screen,projection">
+  <link type="text/css" rel="stylesheet" href="/static/css/object.css" media="screen,projection">
+  <link type="text/css" rel="stylesheet" href="/static/css/side_nav.css" media="screen,projection">
+  <link type="text/css" rel="stylesheet" href="/static/css/unit.css" media="screen,projection">
 {% endblock %}
 
 {% block main %}
@@ -97,46 +96,46 @@
 {% block script_tags %}
   {{ block.super }}
   <!-- Site-specific JS includes -->
-  <script type="text/javascript" src="{% static 'js/constants/constants.js' %}"></script>
-  <script type="text/javascript" src="{% static 'js/constants/combat_symbol_list.js' %}"></script>
-  <script type="text/javascript" src="{% static 'js/constants/improved_ability_list.js' %}"></script>
-  <script type="text/javascript" src="{% static 'js/constants/keyword_list.js' %}"></script>
-  <script type="text/javascript" src="{% static 'js/constants/power_list.js' %}"></script>
-  <script type="text/javascript" src="{% static 'js/constants/set_list.js' %}"></script>
-  <script type="text/javascript" src="{% static 'js/constants/team_ability_list.js' %}"></script>
-  <script type="text/javascript" src="{% static 'js/constants/type_list.js' %}"></script>
-  <script type="text/javascript" src="{% static 'js/constants/universe_list.js' %}"></script>
+  <script type="text/javascript" src="/static/js/constants/constants.js"></script>
+  <script type="text/javascript" src="/static/js/constants/combat_symbol_list.js"></script>
+  <script type="text/javascript" src="/static/js/constants/improved_ability_list.js"></script>
+  <script type="text/javascript" src="/static/js/constants/keyword_list.js"></script>
+  <script type="text/javascript" src="/static/js/constants/power_list.js"></script>
+  <script type="text/javascript" src="/static/js/constants/set_list.js"></script>
+  <script type="text/javascript" src="/static/js/constants/team_ability_list.js"></script>
+  <script type="text/javascript" src="/static/js/constants/type_list.js"></script>
+  <script type="text/javascript" src="/static/js/constants/universe_list.js"></script>
 
-  <script type="text/javascript" src="{% static 'js/search_options/search_option.js' %}"></script>
-  <script type="text/javascript" src="{% static 'js/search_options/search_by_combat_symbol.js' %}"></script>
-  <script type="text/javascript" src="{% static 'js/search_options/search_by_combat_value.js' %}"></script>
-  <script type="text/javascript" src="{% static 'js/search_options/search_by_improved_movement.js' %}"></script>
-  <script type="text/javascript" src="{% static 'js/search_options/search_by_improved_targeting.js' %}"></script>
-  <script type="text/javascript" src="{% static 'js/search_options/search_by_keyword.js' %}"></script>
-  <script type="text/javascript" src="{% static 'js/search_options/search_by_name.js' %}"></script>
-  <script type="text/javascript" src="{% static 'js/search_options/search_by_point_value.js' %}"></script>
-  <script type="text/javascript" src="{% static 'js/search_options/search_by_power.js' %}"></script>
-  <script type="text/javascript" src="{% static 'js/search_options/search_by_real_name.js' %}"></script>
-  <script type="text/javascript" src="{% static 'js/search_options/search_by_set.js' %}"></script>
-  <script type="text/javascript" src="{% static 'js/search_options/search_by_team_ability.js' %}"></script>
-  <script type="text/javascript" src="{% static 'js/search_options/search_by_type.js' %}"></script>
+  <script type="text/javascript" src="/static/js/search_options/search_option.js"></script>
+  <script type="text/javascript" src="/static/js/search_options/search_by_combat_symbol.js"></script>
+  <script type="text/javascript" src="/static/js/search_options/search_by_combat_value.js"></script>
+  <script type="text/javascript" src="/static/js/search_options/search_by_improved_movement.js"></script>
+  <script type="text/javascript" src="/static/js/search_options/search_by_improved_targeting.js"></script>
+  <script type="text/javascript" src="/static/js/search_options/search_by_keyword.js"></script>
+  <script type="text/javascript" src="/static/js/search_options/search_by_name.js"></script>
+  <script type="text/javascript" src="/static/js/search_options/search_by_point_value.js"></script>
+  <script type="text/javascript" src="/static/js/search_options/search_by_power.js"></script>
+  <script type="text/javascript" src="/static/js/search_options/search_by_real_name.js"></script>
+  <script type="text/javascript" src="/static/js/search_options/search_by_set.js"></script>
+  <script type="text/javascript" src="/static/js/search_options/search_by_team_ability.js"></script>
+  <script type="text/javascript" src="/static/js/search_options/search_by_type.js"></script>
 
-  <script type="text/javascript" src="{% static 'js/panels/nav_panel.js' %}"></script>
-  <script type="text/javascript" src="{% static 'js/panels/list_panel.js' %}"></script>
-  <script type="text/javascript" src="{% static 'js/panels/set_list_panel.js' %}"></script>
-  <script type="text/javascript" src="{% static 'js/panels/unit_list_panel.js' %}"></script>
-  <script type="text/javascript" src="{% static 'js/panels/favorites_panel.js' %}"></script>
-  <script type="text/javascript" src="{% static 'js/panels/advanced_search_panel.js' %}"></script>
+  <script type="text/javascript" src="/static/js/panels/nav_panel.js"></script>
+  <script type="text/javascript" src="/static/js/panels/list_panel.js"></script>
+  <script type="text/javascript" src="/static/js/panels/set_list_panel.js"></script>
+  <script type="text/javascript" src="/static/js/panels/unit_list_panel.js"></script>
+  <script type="text/javascript" src="/static/js/panels/favorites_panel.js"></script>
+  <script type="text/javascript" src="/static/js/panels/advanced_search_panel.js"></script>
 
-  <script type="text/javascript" src="{% static 'js/unit_view.js' %}"></script>
-  <script type="text/javascript" src="{% static 'js/character_view.js' %}"></script>
-  <script type="text/javascript" src="{% static 'js/object_view.js' %}"></script>
-  <script type="text/javascript" src="{% static 'js/side_nav.js' %}"></script>
+  <script type="text/javascript" src="/static/js/unit_view.js"></script>
+  <script type="text/javascript" src="/static/js/character_view.js"></script>
+  <script type="text/javascript" src="/static/js/object_view.js"></script>
+  <script type="text/javascript" src="/static/js/side_nav.js"></script>
 
-  <script type="text/javascript" src="{% static 'js/data_source.js' %}"></script>
-  <script type="text/javascript" src="{% static 'js/view_manager.js' %}"></script>
+  <script type="text/javascript" src="/static/js/data_source.js"></script>
+  <script type="text/javascript" src="/static/js/view_manager.j"></script>
 
   <!-- Include this last, as it runs the code -->
   
-  <script type="text/javascript" src="{% static 'js/main_build.js' %}"></script>
+  <script type="text/javascript" src="/static/js/main_build.js"></script>
 {% endblock %}
