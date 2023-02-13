@@ -20,7 +20,7 @@ class Team(models.Model):
   visibility = models.CharField(max_length=16, choices=Visibility.choices, default=Visibility.UNLISTED)
   #theme_team_keyword = ""
 
-  #main_force = []
+  starting_force = models.JSONField(default=dict)
   #sideline = []
   #objects = []
   #maps = []

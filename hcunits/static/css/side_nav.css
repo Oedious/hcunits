@@ -10,6 +10,8 @@
   flex: 0 0 auto;
 
   z-index: 1;
+
+  border-right: 1px solid #e0e0e0;
 }
 
 #sideNavHeader,
@@ -62,7 +64,6 @@
 
 .navPanel {
   height: calc(100% - 60px);
-  min-height: calc(100vh - 108px);
   background-color: white;
 }
 
@@ -72,6 +73,7 @@
   margin: 0px !important;
   width: 300px;
   overflow-y: auto;
+  border: 0px solid transparent;
 }
 
 .navPanel .collection {

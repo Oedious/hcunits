@@ -86,9 +86,38 @@
     <div id="advancedSearchPanel" class="navPanel" style="display:none;"></div>
     <div id="unitListPanel" class="navPanel" style="display:none;"></div>
   </div>
-  <div id="unitContainer"></div>
-  <div id="teamContainer">
-    Team details go here
+  <div class="container">
+    <div class="column">
+      <div class="row">
+        <div id="teamContainer">
+          <div class="column">
+            <h6><b>Starting Force</b></h6>
+            <ul>
+              <li class="teamItem">
+                <i class="material-icons">arrow_drop_down</i>
+                <div class="teamItemText">
+                  <div class="teamItemName">Example Unit (set001)</div>
+                  <div class="teamItemPoints">00</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="column">
+            <h6><b>Sideline</b></h6>
+            <ul>
+              <li class="teamItem">
+                <i class="material-icons">arrow_drop_down</i>
+                <div class="teamItemText">
+                  <div class="teamItemName">Example Unit (set001)</div>
+                  <div class="teamItemPoints">00</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div id="unitContainer"></div>
+      </div>
+    </div>
   </div>
 </div>
 {% endblock %}

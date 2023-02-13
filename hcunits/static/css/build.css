@@ -1,5 +1,5 @@
 main {
-  background-color: #F0F0F0;
+  background-color: white;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -57,6 +57,7 @@ main {
   height: 48px;
   background-color: white;
   z-index: 1;
+  box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);
 }
 
 #exploreTabBar .tabs {
@@ -129,14 +130,36 @@ main {
   -webkit-background-clip: text;
 }
 
-/* Unit area styles */
-#unitContainer {
-  flex: 0 0 auto;
-  padding: 10px;
-  min-width: 375px;
+#teamContainer {
+  margin-top: 10px;
+  min-height: 400px;
+  border-bottom: 1px solid #e0e0e0;
+  display: flex;
 }
 
-#teamContainer {
-  flex: 1 1 auto;
-  position: relative;
+#teamContainer .column {
+  padding: 10px;
+}
+
+.teamItem {
+  width: 375px;
+  margin-top: 5px;
+  border-bottom: 1px solid rgba(0, 0, 0, .14);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.teamItemText {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Unit area styles */
+#unitContainer {
+  padding: 10px;
+  margin-top: 10px;
+  min-width: 375px;
+  min-height: 550px;
 }

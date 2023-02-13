@@ -27,7 +27,16 @@
         <div class='teamCardName'>{{team.name}}</div>
       </div>
       <div class='teamCardTokenCircle'></div>
-      <div class='teamCardFormat'>{{team.age}} - {{team.point_limit}}</div>
+      <div class='teamCardFormat'>
+        {% if team.age == "modern" %}
+        Modern
+        {% elif team.age == "golden" %}
+        Golden
+        {% else %}
+        Unknown Age
+        {% endif %}
+         - {{team.point_limit}}
+      </div>
     </a>
     {% endfor %}
   </div>
