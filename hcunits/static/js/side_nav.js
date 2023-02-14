@@ -7,7 +7,7 @@ class SideNav {
     this.unitManager_ = unitManager;
     this.unitListPanel_ = new UnitListPanel(dataSource, unitManager);
     this.panelStack_ = [this.setListPanel_];
-    this.updateTitle();
+    this.updateTitle(false);
     this.setupHotkeys_();
   }
 
@@ -51,7 +51,7 @@ class SideNav {
       }
       this.panelStack_ = [navPanel];
       this.getTopPanel().showPanel();
-      this.updateTitle();
+      this.updateTitle(false);
     }
   }
 
@@ -60,7 +60,7 @@ class SideNav {
       this.getTopPanel().hidePanel();
       this.panelStack_.push(navPanel);
       this.getTopPanel().showPanel();
-      this.updateTitle();
+      this.updateTitle(false);
     }
   }
 
@@ -69,14 +69,18 @@ class SideNav {
       this.getTopPanel().hidePanel();
       this.panelStack_.pop();
       this.getTopPanel().showPanel();
-      this.updateTitle();
+      this.updateTitle(false);
     }
   }
 
-  updateTitle() {
+  updateTitle(showNumItems) {
     var html = "";
     var title = this.getTopPanel().title;
     if (title) {
+      if (showNumItems && this.getTopPanel() == this.unitListPanel_) {
+        const numItems = this.unitListPanel_.numItems();
+        title +=  " (" + numItems + " items)";
+      }
       var hasBackArrow = this.panelStack_.length > 1;
       if (hasBackArrow) {
         html += "<a class='sideNavHeaderButton' href='' onclick='sideNav.popPanel(); return false;' title='Back'><i class='material-icons'>arrow_back</i></a>";

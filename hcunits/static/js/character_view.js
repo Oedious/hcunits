@@ -46,6 +46,7 @@ class CharacterView extends UnitView {
           <div id='characterRealName'>REAL NAME: ${escapeHtml(this.unit_.real_name).toUpperCase()}</div>
           ${this.drawCollectorNumber_()}
           ${this.drawToken_()}
+          ${this.drawImprovedAbilities_()}
           ${specialPowersHtml.length >= 1 ? specialPowersHtml[0] : ""}
           ${specialPowersHtml.length >= 2 ? specialPowersHtml[1] : ""}
           ${this.drawDial_()}
@@ -128,6 +129,42 @@ class CharacterView extends UnitView {
       html += `<img id='characterTokenImg' src='/static/images/${this.unit_.set_id}/${this.unit_.unit_id}.png' alt='' onerror='this.style.display=\"none\"'/>`
     }
     html += "</div>"
+    return html;
+  }
+
+  drawImprovedAbilities_() {
+    if (this.unit_.improved_movement.length == 0 &&
+        this.unit_.improved_targeting.length == 0) {
+      return "";
+    }
+    var html = "<div id='characterImprovedAbilities'>";
+    // First iterate through each array and collect a list of all the symbols
+    // that need to be drawn.
+    var img_urls = [];
+    if (this.unit_.improved_movement.length > 0) {
+      img_urls.push("/static/images/imp_movement.png")
+    }
+    for (const im of this.unit_.improved_movement) {
+      img_urls.push(`/static/images/imp_${im}.png`)
+    }
+    if (this.unit_.improved_targeting.length > 0) {
+      img_urls.push("/static/images/imp_targeting.png")
+    }
+    for (const it of this.unit_.improved_targeting) {
+      img_urls.push(`/static/images/imp_${it}.png`)
+    }
+
+    // Now go around the unit circle, drawing each element.
+    const INCREMENT = 2 * Math.PI / 16;
+    const RADIUS = 70;
+    const IMG_OFFSET = 9;
+    for (var i = 0; i < img_urls.length; ++i) {
+      const img_url = img_urls[i];
+      const left = Math.cos(INCREMENT * i) * -RADIUS - IMG_OFFSET;
+      const top = Math.sin(INCREMENT * i) * RADIUS - IMG_OFFSET;
+      html += `<img class='characterImprovedAbilityIcon' src='${img_url}' style='left:${left}px;top:${top}px;'>`
+    }
+    html += "</div>";
     return html;
   }
   

@@ -134,12 +134,10 @@ class UnitListPanel extends ListPanel {
       }
       html += "</ul>";
     }
-    const panelName = "#" + this.panelName()
+    const panelName = "#" + this.panelName();
     $(panelName).html(html);
     super.currentIndex = 0;
-
-    this.title = "Search Results (" + unitList.length + " items)"
-    sideNav.updateTitle()
+    sideNav.updateTitle(true);
   }
 
   setUnitList_(unitList) {

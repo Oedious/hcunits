@@ -10,7 +10,7 @@ CREATE TABLE units (
   unit_id VARCHAR(32) NOT NULL PRIMARY KEY,
 
   -- The set to which this unit belongs. See set_list.js.
-  set_id VARCHAR(16) NOT NULL,
+  set_id VARCHAR(16) NOT NULL INDEX,
   
   -- The collector's number of the unit within a set (may contain letters).
   collector_number VARCHAR(16) NOT NULL,
