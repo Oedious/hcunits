@@ -21,7 +21,7 @@ const OBJECT_TYPE_RULES = {
     "name": "Tarot Card",
     "title": "TAROT CARD",
   }
-}
+};
 
 const OBJECT_KEYPHRASE_RULES = {
   "indestructible": {
@@ -48,7 +48,7 @@ const OBJECT_KEYPHRASE_RULES = {
     "name": "SWORD EQUIPMENT",
     "description": "Applies to the 'SWORD BEARER' trait."
   }
-}
+};
 
 const OBJECT_TYPE_TO_INFO = {
   "light": {
@@ -82,66 +82,48 @@ class ObjectView extends UnitView {
            type == "construct" ||
            type == "id_card" ||
            type == "mystery_card" ||
-           type == "tarot_card"
+           type == "tarot_card";
   }
 
   constructor(unitJson) {
-    super(unitJson)
+    super(unitJson);
     this.extraLines_ = 0;
   }
-  
+
   draw() {
+    const specialPowersHtml = this.drawSpecialPowers_();
     var html = `
-      <div id='objectCard' style='height:${this.getCardHeight_()}px;'>
-        <div id='objectCardBorders'></div>
-        <div id='objectHeader'>
-          <div id='objectName'>${escapeHtml(this.unit_.name).toUpperCase()}</div>
-          ${this.drawObjectType_()}
+      <div class='column'>
+        <div id='objectCard'>
+          <div id='objectCardBorders' style='border-top: 70px solid black;'></div>
+          <div id='objectHeader'>
+            <div id='objectName'>${escapeHtml(this.unit_.name).toUpperCase()}</div>
+            ${this.drawObjectType_()}
+          </div>
+          ${this.drawObjectKeyphrases_()}
+          <div id='objectCollectorNumber'>${this.unit_.collector_number}</div>
+          ${this.drawToken_()}
+          ${specialPowersHtml.length >= 1 ? specialPowersHtml[0] : ""}
+          ${super.drawPointValues_(30)}
         </div>
-        ${this.drawObjectKeyphrases_()}
-        <div id='objectCollectorNumber'>${this.unit_.collector_number}</div>
-        ${this.drawToken_()}
-        ${this.drawSpecialPowers_()}
-        ${super.drawPointValues_()}
       </div>`;
+
+    if (specialPowersHtml.length > 1) {
+      html += `
+        <div class='column'>
+          <div id='objectCard'>
+            <div id='objectCardBorders' style='border-top: 25px solid black;'></div>
+            ${specialPowersHtml.length >= 2 ? specialPowersHtml[1] : ""}
+          </div>
+        </div>`;
+    }
   	$('#unitContainer').html(html);
   }
   
   isCardType_() {
     return this.unit_.type == "mystery_card" ||
         this.unit_.type == "id_card" ||
-        this.unit_.type == "tarot_card"
-  }
-  
-  getCardHeight_() {
-    const MIN_CARD_HEIGHT = 412;
-    const PIXELS_PER_LINE = 14;
-    const CHARS_PER_NAME_LINE = 40;
-    const CHARS_PER_DESC_LINE = 50;
-    // The minimum number of lines varies on whether we show the "Point Value"
-    // bar or not.
-    var minLines = 16;
-    var hasToken = !this.isCardType_()
-    if (hasToken) {
-      minLines -= 8;
-    }
-    var hasPointValue = this.unit_.point_values.length > 0
-    if (hasPointValue) {
-      minLines -= 3;
-    }
-    var numLines = 0;
-    if (this.unit_.special_powers) {
-      for (var specialPower of this.unit_.special_powers) {
-        if (specialPower.name) {
-          numLines += Math.ceil(specialPower.name.length / CHARS_PER_NAME_LINE)
-        }
-        numLines += Math.ceil(specialPower.description.length / CHARS_PER_DESC_LINE) + 1;
-      }
-      // Don't need an extra line at the end.
-      --numLines;
-    }
-    var extraLines = Math.max(0, numLines - minLines);
-    return MIN_CARD_HEIGHT + PIXELS_PER_LINE * extraLines;
+        this.unit_.type == "tarot_card";
   }
   
   drawObjectType_() {
@@ -170,7 +152,7 @@ class ObjectView extends UnitView {
   }
   
   drawObjectKeyphrases_() {
-    if (this.unit_.object_keyphrases.length == 0) {
+    if (this.unit_.object_keyphrases.length == 0 && this.unit_.keywords.length == 0) {
       return "";
     }
     var html = "<div id='objectKeyphrases'>";
@@ -227,8 +209,11 @@ class ObjectView extends UnitView {
       <div id='objectToken'>
         <div id='objectTokenClip'>
           <div id='objectTokenCircle'>
-            <div id='objectBystanderBackground'>
-              <img id='objectTokenImg' src='/static/images/${this.unit_.set_id}/${this.unit_.unit_id}.png' alt='' onerror='this.style.display=\"none\"'/>
+            <div id='objectBystanderBackground'>`;
+    if (this.unit_.has_image) {
+      html += `<img id='objectTokenImg' src='/static/images/${this.unit_.set_id}/${this.unit_.unit_id}.png' alt='' onerror='this.style.display=\"none\"' style="left:-35px;top:-45px;"/>`
+    }
+    html += `
             </div>
           </div>
           <div id='objectDialBackground'></div>
@@ -274,8 +259,7 @@ class ObjectView extends UnitView {
   
   drawDial_() {
     if (this.unit_.dial.length != 1) {
-      console.log(`Object '$(this.unit_.unit_id}' expected to have dial size of 1, but found ${this.unit_.dial.length}`);
-      return "";
+      throw new Error(`Object '$(this.unit_.unit_id}' expected to have dial size of 1, but found ${this.unit_.dial.length}`);
     }
     var html = "";
     for (var row = 0; row < 4; ++row) {
@@ -310,20 +294,33 @@ class ObjectView extends UnitView {
 
   drawSpecialPowers_() {
     if (!this.unit_.special_powers) {
-      return '';
+      return [];
     }
-    var html = "";
-    if (this.unit_.type == "mystery_card") {
-      html += "<div id='objectCardKeywords'>"
-      html += this.drawKeywords_();
-      html += "</div>"
+    const CHARS_PER_NAME_LINE_WITH_ICON = 40;
+    const CHARS_PER_NAME_LINE_WITHOUT_ICON = 60;
+    const CHARS_PER_DESC_LINE_WITH_ICON = 60;
+    const CHARS_PER_DESC_LINE_WITHOUT_ICON = 70;
+    // The minimum number of lines varies on the whether we show the the token
+    // and the "Point Value" bar.
+    var card0Lines = 4;
+    var hasPointValue = this.unit_.point_values.length > 0
+    if (!hasPointValue) {
+      card0Lines += 2;
     }
+    var hasToken = !this.isCardType_()
+    if (!hasToken) {
+      card0Lines += 11;
+    }
+    const LINES_PER_CARD = [card0Lines, 23];
+    var currentLineCount = 0;
+    var currentCard = 0;
+
+    var htmlColumns = [];
     var top = this.isCardType_() ? 100 : 288;
-    html += `<table id='objectSpecialPowersTable' class='unitSpecialPowersTable' style='top:${top}px;'>`;
+    var html = `<table id='objectSpecialPowersTable0' class='unitSpecialPowersTable' style='top:${top}px;'>`;
     for (var i = 0; i < this.unit_.special_powers.length; ++i) {
       var power = this.unit_.special_powers[i];
       var type = power.type;
-
       var iconHtml = "";
       if (type == "costed_trait") {
         iconHtml = `
@@ -352,6 +349,27 @@ class ObjectView extends UnitView {
             <img class='unitSpecialPowerIcon' src='/static/images/sp_${combatSymbolType}.png' alt=''/>
           </td>`;
       }
+
+      const CHARS_PER_NAME_LINE = iconHtml.length == 0 ? CHARS_PER_NAME_LINE_WITHOUT_ICON : CHARS_PER_NAME_LINE_WITH_ICON;
+      const CHARS_PER_DESC_LINE = iconHtml.length == 0 ? CHARS_PER_DESC_LINE_WITHOUT_ICON : CHARS_PER_DESC_LINE_WITH_ICON;
+      const headerLines = power.name ? Math.ceil(power.name.length / CHARS_PER_NAME_LINE) : 0;
+      const descLines = power.description ? Math.ceil(power.description.length / CHARS_PER_DESC_LINE) : 0;
+      const lines = headerLines + descLines;
+
+      // If the line count surpasses the max in the current card, move to the
+      // next card.
+      while (currentLineCount + lines > LINES_PER_CARD[currentCard]) {
+        if (currentCard >= 1) {
+          throw new Error(`Cannot draw special powers for unit ${this.unit_.unit_id}: text won't fit on 2 cards`);
+        }
+        html += "</table>";
+        htmlColumns.push(html);
+        ++currentCard;
+        currentLineCount = 0;
+        html = `<table id='objectSpecialPowersTable${currentCard}' class='unitSpecialPowersTable'>`;
+      }
+      currentLineCount += lines;
+
       var nameHtml = ""
       if (power.name) {
         nameHtml = `<b>${escapeHtml(power.name.toUpperCase())}</b><br>`
@@ -362,6 +380,8 @@ class ObjectView extends UnitView {
           <td class='unitSpecialPower'>${nameHtml}${escapeHtml(power.description)}</td>
         </tr>`;
     }
-    return html;
+    html += "</table>"
+    htmlColumns.push(html)
+    return htmlColumns;
   }
 }

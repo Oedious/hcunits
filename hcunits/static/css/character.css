@@ -1,19 +1,17 @@
-#characterCard {
+.characterCard {
   position: relative;
   /* Character cards are 2.5" x 3.5" in real life */
   width: 375px;
-  /* The height may grow dynamically based on the size of the text
-       of the special powers. */
-  min-height: 525px;
+  height: 525px;
+  margin-top: 5px;
 }
 
-#characterCardBorders {
+.characterCardBorders {
   position: absolute;
   left: 0px;
   top: 0px;
   width: 100%;
   height: 100%;
-  border-top: 75px solid black;
   border-radius: 15px;
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.8) 0 0 10px;
@@ -101,6 +99,20 @@
   top: 168px;
 }
 
+#characterSpecialPowersTable2 {
+  position: absolute;
+  width: 49%;
+  left: 5px;
+  top: 25px;
+}
+
+#characterSpecialPowersTable3 {
+  position: absolute;
+  width: 49%;
+  right: 3px;
+  top: 25px;
+}
+
 .characterDial {
   position: absolute;
   height: 130px;
@@ -171,25 +183,12 @@
   border-radius: 12px 0px 0px 12px;
 }
 
-#characterTeamAbility0 {
+.characterTeamAbility {
   position: absolute;
   left: 10px;
-  top: 10px;
 }
 
-#characterTeamAbility1 {
-  position: absolute;
-  left: 10px;
-  top: 55px;
-}
-
-#characterTeamAbility2 {
-  position: absolute;
-  left: 10px;
-  top: 100px;
-}
-
-#characterHeroClixLogoClip {
+.characterHeroClixLogoClip {
   position: absolute;
   width: 132px;
   height: 25px;
@@ -197,7 +196,7 @@
   overflow: hidden;
 }
 
-#characterHeroClixLogo {
+.characterHeroClixLogo {
   position: absolute;
   left: -5px;
 }

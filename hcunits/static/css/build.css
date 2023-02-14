@@ -158,8 +158,10 @@ main {
 
 /* Unit area styles */
 #unitContainer {
-  padding: 10px;
-  margin-top: 10px;
-  min-width: 375px;
   min-height: 550px;
+  display: flex;
+}
+
+#unitContainer .column {
+  padding: 10px;
 }

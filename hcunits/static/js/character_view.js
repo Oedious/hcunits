@@ -8,7 +8,7 @@ const RALLY_TYPE_TO_STYLE = {
   "friendly": STYLE_BLUE,
   "opposing": STYLE_RED,
   "all": STYLE_GREEN
-}
+};
 
 class CharacterView extends UnitView {
 
@@ -18,36 +18,59 @@ class CharacterView extends UnitView {
 
   constructor(unitJson) {
     super(unitJson)
-    this.extraLines_ = 0;
     if (this.unit_.type != "character") {
-      throw new Error("Mismatched unit type: CharacterViews require type=character")
+      throw new Error("Mismatched unit type: CharacterViews require type=character");
+    }
+    if (this.unit_.dial_size <= 12) {
+      this.numDialTables_ = 1;
+    } else if (this.unit_.dial_size <= 26) {
+      this.numDialTables_ = 2;
+    } else {
+      throw new Error(`Cannot draw dial for unit ${this.unit_.unit_id}: too many clicks (${this.unit_.dial_size})`);
     }
   }
   
   draw() {
-    // Compute the special powers HTML first because it may need to resize the
-    // entire card to fit the text.
-    var specialPowersHtml = this.drawSpecialPowers_();
-    var cardHeight = this.getCardHeight_();
-    var borderColor = this.isTeamUp_() ? COLOR_BLUE : COLOR_BLACK;
+    // Compute the special powers HTML first because it will determine how many
+    // cards we need to fully display everything.
+    const specialPowersHtml = this.drawSpecialPowers_();
+    const borderColor = this.isTeamUp_() ? COLOR_BLUE : COLOR_BLACK;
     var html = `
-      <div id='characterCard' style='height:${cardHeight}px;'>
-        <div id='characterCardBorders' style='border-color:${borderColor};'></div>
-        <div id='characterHeader'>
-          <div id='characterName'>${escapeHtml(this.unit_.name).toUpperCase()}</div>
-          <div id='characterKeywords'>${this.drawKeywords_()}</div>
-        </div>
-        <div id='characterRealName'>REAL NAME: ${escapeHtml(this.unit_.real_name).toUpperCase()}</div>
-        ${this.drawCollectorNumber_()}
-        ${this.drawToken_()}
-        ${specialPowersHtml}
-        ${this.drawDial_()}
-        ${this.drawTeamAbilities_()}
-        ${super.drawPointValues_()}
-        <div id='characterHeroClixLogoClip'>
-          <img id='characterHeroClixLogo' src='/static/images/heroclix_logo_small.png' alt=''/>
+      <div class='column'>
+        <div class='characterCard'>
+          <div class='characterCardBorders' style='border-top: 75px solid ${borderColor}'></div>
+          <div id='characterHeader'>
+            <div id='characterName'>${escapeHtml(this.unit_.name).toUpperCase()}</div>
+            <div id='characterKeywords'>${this.drawKeywords_()}</div>
+          </div>
+          <div id='characterRealName'>REAL NAME: ${escapeHtml(this.unit_.real_name).toUpperCase()}</div>
+          ${this.drawCollectorNumber_()}
+          ${this.drawToken_()}
+          ${specialPowersHtml.length >= 1 ? specialPowersHtml[0] : ""}
+          ${specialPowersHtml.length >= 2 ? specialPowersHtml[1] : ""}
+          ${this.drawDial_()}
+          ${this.drawTeamAbilities_()}
+          ${super.drawPointValues_(40)}
+          <div class='characterHeroClixLogoClip'>
+            <img class='characterHeroClixLogo' src='/static/images/heroclix_logo_small.png' alt=''/>
+          </div>
         </div>
       </div>`;
+
+    // Draw a second card to hold the additional special powers.
+    if (specialPowersHtml.length > 2) {
+      html += `
+        <div class='column'>
+          <div class='characterCard'>
+            <div class='characterCardBorders' style='border-top: 20px solid ${borderColor}'></div>
+            ${specialPowersHtml.length >= 3 ? specialPowersHtml[2] : ""}
+            ${specialPowersHtml.length >= 4 ? specialPowersHtml[3] : ""}
+            <div class='characterHeroClixLogoClip'>
+              <img class='characterHeroClixLogo' src='/static/images/heroclix_logo_small.png' alt=''/>
+            </div>
+          </div>
+        </div>`;
+    }
 
   	$('#unitContainer').html(html);
   }
@@ -55,16 +78,6 @@ class CharacterView extends UnitView {
   isTeamUp_() {
     return this.unit_.special_powers.length > 0 &&
         this.unit_.special_powers[0].name.startsWith("TEAM UP:");
-  }
-  
-  getCardHeight_() {
-    const MIN_CARD_HEIGHT = 525;
-    const PIXELS_PER_LINE = 14;
-    var cardHeight = MIN_CARD_HEIGHT + PIXELS_PER_LINE * this.extraLines_;
-    if (this.unit_.dial_size > 12) {
-      cardHeight += 135
-    }
-    return cardHeight;
   }
 
   drawKeywords_() {
@@ -110,9 +123,11 @@ class CharacterView extends UnitView {
       color = COLOR_BLUE;
     }
     var html =
-      `<div id='characterTokenCircle' style='border: 7px solid ${color};'>
-        <img id='characterTokenImg' src='/static/images/${this.unit_.set_id}/${this.unit_.unit_id}.png' alt='' onerror='this.style.display=\"none\"'/>
-      </div>`
+      `<div id='characterTokenCircle' style='border: 7px solid ${color};'>`
+    if (this.unit_.has_image) {
+      html += `<img id='characterTokenImg' src='/static/images/${this.unit_.set_id}/${this.unit_.unit_id}.png' alt='' onerror='this.style.display=\"none\"'/>`
+    }
+    html += "</div>"
     return html;
   }
   
@@ -128,9 +143,11 @@ class CharacterView extends UnitView {
     for (var i = 0; i < this.unit_.team_abilities.length; ++i) {
       var teamAbility = TEAM_ABILITY_LIST[this.unit_.team_abilities[i]];
       html += `
-        <div id='characterTeamAbility${i}' class='tooltip'>
-          <img src='/static/images/ta_${this.unit_.team_abilities[i]}.png' alt=''/>
-          <span class='tooltiptext'>${escapeHtml(teamAbility.description)}</span>
+        <div class='characterTeamAbility' style='top: ${10 + 45 * i}px'>
+          <div class='tooltip'>
+            <img src='/static/images/ta_${this.unit_.team_abilities[i]}.png' alt=''/>
+            <span class='tooltiptext'>${escapeHtml(teamAbility.description)}</span>
+          </div>
         </div>
         `;
     }
@@ -140,114 +157,92 @@ class CharacterView extends UnitView {
   
   drawSpecialPowers_() {
     if (!this.unit_.special_powers) {
-      return '';
+      return [];
     }
-    var layoutSuccessful = false;
-    // Start out with a minimum lines per each column and try to fit into that.
-    // If it's not enough, slowly increase the size of the card until it all fits.
-    this.extraLines_ = 0;
-    const LINES_PER_COL = [16, 9, 0];
+    const LINES_PER_COLUMN = [16, 9, 30, 30];
     const CHARS_PER_NAME_LINE = 23;
     const CHARS_PER_DESC_LINE = 30;
-    while (!layoutSuccessful) {
-      var html = "<table id='characterSpecialPowersTable0' class='unitSpecialPowersTable'>";
-      var linesPerCol = [0, 0];
-      var currentColumn = 0;
-      var currentPower = 0;
-      for (var i = 0; i < this.unit_.special_powers.length && currentColumn < 2; ++i) {
-        var power = this.unit_.special_powers[i];
-        var type = power.type;
+    var currentLineCount = 0;
+    var currentColumn = 0;
+    var currentPower = 0;
+    var htmlColumns = [];
+    var html = "<table id='characterSpecialPowersTable0' class='unitSpecialPowersTable'>";
+    for (var i = 0; i < this.unit_.special_powers.length; ++i) {
+      const power = this.unit_.special_powers[i];
+      var type = power.type;
   
-        // Handling for special trait types
-        if (type == "speed" || type == "attack" || type == "defense" || type == "damage") {
-          type = this.unit_[type + "_type"];
-        }
+      // Handling for special trait types
+      if (type == "speed" || type == "attack" || type == "defense" || type == "damage") {
+        type = this.unit_[type + "_type"];
+      }
         
-        var headerLines = Math.ceil(power.name.length / CHARS_PER_NAME_LINE);
-        var descLines = Math.ceil(power.description.length / CHARS_PER_DESC_LINE);
-        var lines = headerLines + descLines;
-        // console.log(`Estimated headerLines=${headerLines} descLines=${descLines} for power #${currentPower}`)
-  
-        // If the line count surpasses the max in the first column, move to the
-        // 2nd column. If it's already there, then increase the size and redo the
-        // layout.
-        if (currentColumn == 0) {
-          if (linesPerCol[currentColumn] + lines > LINES_PER_COL[currentColumn] + this.extraLines_) {
-            // Try to move to the 2nd column.
-            ++currentColumn;
-            html += `
-              </table>
-              <table id='characterSpecialPowersTable1' class='unitSpecialPowersTable'>`;
-          }
+      const headerLines = Math.ceil(power.name.length / CHARS_PER_NAME_LINE);
+      const descLines = Math.ceil(power.description.length / CHARS_PER_DESC_LINE);
+      const lines = headerLines + descLines;
+      // If the line count surpasses the max in the current column, move to the
+      // next column.
+      while (currentLineCount + lines > LINES_PER_COLUMN[currentColumn]) {
+        if (currentColumn >= 3) {
+          throw new Error(`Cannot draw special powers for unit ${this.unit_.unit_id}: text won't fit on 2 cards`);
         }
-        if (currentColumn == 1) {
-          if (linesPerCol[currentColumn] + lines > LINES_PER_COL[currentColumn] + this.extraLines_) {
-            // Couldn't fit into 2 columns - add a line and redo the layout.
-            ++currentColumn;
-          }
-        }
-        if (currentColumn < 2) {
-          linesPerCol[currentColumn] += lines + 1;
-          var iconHtml = "";
-          if (type == "costed_trait") {
-            iconHtml = `
-              <img class='unitSpecialPowerIcon' src='/static/images/sp_${type}.png' alt=''/>
-              <div class='unitSpecialPowerPointValue'>+${power.point_value} POINTS</div>`;
-          } else if (type == "rally_trait") {
-            iconHtml = `
-              <div class='unitSpecialPowerRally' style='${RALLY_TYPE_TO_STYLE[power.rally_type]}'>
-                <img class='unitSpecialPowerIcon' src='/static/images/sp_trait.png' alt=''/>
-                <img class='unitSpecialPowerRallyDie' src='/static/images/d6_${power.rally_die}.png' alt='${power.rally_die}'/>
-              </div>`;
-          } else if (type == "plus_plot_points" || type == "minus_plot_points") {
-            var textColor = type == "plus_plot_points" ? "white" : "black";
-            var plotPoints = power.plot_points == "X" ? "X" : Math.abs(power.plot_points);
-            iconHtml = `
-              <div style='position: relative;'>
-                <img class='unitSpecialPowerIcon' src='/static/images/sp_${type}.png' alt=''/>
-                <div class='unitSpecialPowerPlotPoints' style='color:${textColor};'>${plotPoints}</div>
-              </div>`;
-          } else {
-            iconHtml = `<img class='unitSpecialPowerIcon' src='/static/images/sp_${type}.png' alt=''/>`;
-          }
-          html += `
-            <tr class='unitSpecialPowerRow'>
-              <td class='unitSpecialPowerImg'>${iconHtml}</td>
-              <td class='unitSpecialPower'><b>${escapeHtml(power.name.toUpperCase())}</b><br>${escapeHtml(power.description)}</td>
-            </tr>`;
-        }
-        ++currentPower;
+        html += "</table>";
+        htmlColumns.push(html);
+        ++currentColumn;
+        currentLineCount = 0;
+        html = `<table id='characterSpecialPowersTable${currentColumn}' class='unitSpecialPowersTable'>`;
       }
-      if (currentColumn < 2) {
-        layoutSuccessful = true;
+
+      currentLineCount += lines + 1;
+      var iconHtml = "";
+      if (type == "costed_trait") {
+        iconHtml = `
+          <img class='unitSpecialPowerIcon' src='/static/images/sp_${type}.png' alt=''/>
+          <div class='unitSpecialPowerPointValue'>+${power.point_value} POINTS</div>`;
+      } else if (type == "rally_trait") {
+        iconHtml = `
+          <div class='unitSpecialPowerRally' style='${RALLY_TYPE_TO_STYLE[power.rally_type]}'>
+            <img class='unitSpecialPowerIcon' src='/static/images/sp_trait.png' alt=''/>
+            <img class='unitSpecialPowerRallyDie' src='/static/images/d6_${power.rally_die}.png' alt='${power.rally_die}'/>
+          </div>`;
+      } else if (type == "plus_plot_points" || type == "minus_plot_points") {
+        var textColor = type == "plus_plot_points" ? "white" : "black";
+        var plotPoints = power.plot_points == "X" ? "X" : Math.abs(power.plot_points);
+        iconHtml = `
+          <div style='position: relative;'>
+            <img class='unitSpecialPowerIcon' src='/static/images/sp_${type}.png' alt=''/>
+            <div class='unitSpecialPowerPlotPoints' style='color:${textColor};'>${plotPoints}</div>
+          </div>`;
       } else {
-        ++this.extraLines_;
+        iconHtml = `<img class='unitSpecialPowerIcon' src='/static/images/sp_${type}.png' alt=''/>`;
       }
+      html += `
+        <tr class='unitSpecialPowerRow'>
+          <td class='unitSpecialPowerImg'>${iconHtml}</td>
+          <td class='unitSpecialPower'><b>${escapeHtml(power.name.toUpperCase())}</b><br>${escapeHtml(power.description)}</td>
+        </tr>`;
     }
     html += "</table>"
-    return html;
+    htmlColumns.push(html)
+    return htmlColumns;
   }
   
   drawDial_() {
-    if (this.unit_.dial_size <= 12) {
-       var numTables = 1;
-       var tableCols = [{"start": 0, "end": this.unit_.dial_size}];
-       var bottom = [70];
-    } else if (this.unit_.dial_size <= 26) {
-      var numTables = 2;
-      var tableCols = [
+    // Contains information on how to layout the dial tables, depending on
+    // whether there's one dial table or two.
+    const TABLE_COLS = [
+      [
+        {"start": 0, "end": this.unit_.dial_size}
+      ], [
         {"start": 0, "end": 12},
         {"start": 12, "end": this.unit_.dial_size}
-      ];
-      var bottom = [205, 70];
-    } else {
-      console.log(`Cannot draw dial for unit ${this.unit_.unit_id}: too many clicks (${this.unit_.dial_size})`)
-      return "";
-    }
+      ],
+    ];
+    const tableCols = TABLE_COLS[this.numDialTables_];
+
     var html = "";
     var tableDialStart = 0;
-    for (var t = 0; t < numTables; ++t) {
-      var bottom = 70 + 135 * (numTables - t - 1);
+    for (var t = 0; t < this.numDialTables_; ++t) {
+      var bottom = 70 + 135 * (this.numDialTables_ - t - 1);
       var borderWidth = 49 + 23 * (tableCols[t].end - tableCols[t].start);
       var tableWidth = 4 + 23 * (tableCols[t].end - tableCols[t].start);
       html += `
