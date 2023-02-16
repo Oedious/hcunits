@@ -92,7 +92,7 @@ class Team(models.Model):
             point_value = 0
           unit["equipment"] = {
             "unit_id": equipment_id,
-            "name": equipment.name,
+            "name": equipment["name"],
             "point_value": point_value,
           }
       main_force.append(unit)

@@ -68,7 +68,10 @@
     var dataSource = new DataSource();
     //var dataSource = new MockDataSource();
     var unitManager = new UnitManager(dataSource);
-    var teamManager = new TeamManager(document.getElementById('teamObject').textContent, "{{csrf_token}}")
+    var teamManager = new TeamManager(
+        unitManager,
+        document.getElementById('teamObject').textContent,
+        "{{csrf_token}}")
 
     // Initialize Materialize select inputs.
     $(document).ready(function(){

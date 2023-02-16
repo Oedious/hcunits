@@ -2,7 +2,8 @@ const MESSAGE_DELAY_MS = 500;
 const MAX_RETRIES = 3;
 
 class TeamManager {
-  constructor(jsonTeam, csrfToken) {
+  constructor(unitManager, jsonTeam, csrfToken) {
+    this.unitManager_ = unitManager;
     this.team_ = JSON.parse(jsonTeam);
     this.serverTeam_ = JSON.parse(jsonTeam);
     this.csrfToken_ = csrfToken;
@@ -16,32 +17,37 @@ class TeamManager {
         teamManager.team_.name = $(this).val();
         teamManager.updateTeam();
       })
-  
+
       $("#teamDescription").keyup(function() {
         teamManager.team_.description = $(this).val();
         teamManager.updateTeam();
       })
-  
+
       $("#teamPointLimit").bind('keyup mouseup', function() {
         teamManager.team_.point_limit = $(this).val();
         teamManager.updateTeam();
       })
-  
+
       $("#teamAge").on('change', function() {
         teamManager.team_.age = $(this).find(":selected").val();
         teamManager.updateTeam();
       })
-  
+
       $("#teamVisibility").on('change', function() {
         teamManager.team_.visibility = $(this).find(":selected").val();
         teamManager.updateTeam();
+      })
+
+      var teamManager = this;
+      this.unitManager_.setOnShowUnitCallback(function() {
+        teamManager.updateAddUnitButton_();
       })
     }
 
     // Update the UI to reflect the provided team.
     this.draw();
   }
-  
+
   draw() {
     const html = `
       <div id="teamMainForce" class="column">
@@ -55,7 +61,7 @@ class TeamManager {
       </div>`;
     $("#teamContainer").html(html);
   }
-  
+
   drawMainForce_() {
     // Always show the "Main Force" label, even if it has no units.
     var html = "<h6><b>Main Force</b></h6><ul>";
@@ -76,11 +82,30 @@ class TeamManager {
             <div class="teamItemPoints">${unit.point_value}</div>
           </div>
         </li>`;
+      if (unit.equipment) {
+        const equipment = unit.equipment;
+        html += "<li class='teamItem'>";
+        if (!READ_ONLY) {
+          html += `
+            <a class="teamItemRemoveButton" href="#" onclick="teamManager.removeUnit('equipment', ${i}); return false;">
+              <i class="material-icons">cancel</i>
+            </a>`;
+        }
+        html += `
+            <i class="material-icons" title="Equipped With">subdirectory_arrow_right</i>
+            <div class="teamItemText">
+              <a href="#" class="teamItemUnitLink" onclick="unitManager.showUnit('${equipment.unit_id}'); return false;">
+                ${equipment.name} (${equipment.unit_id})
+              </a>
+              <div class="teamItemPoints">${equipment.point_value}</div>
+            </div>
+          </li>`;
+      }
     }
     html += "</ul>";
     return html;
   }
-  
+
   drawSideline_() {
     if (this.team_.sideline.length <= 0) {
       return "";
@@ -130,7 +155,7 @@ class TeamManager {
   }
 
   addUnit(pointValue) {
-    const unit = unitManager.getUnit();
+    const unit = this.unitManager_.getUnit();
     if (pointValue && !unit.point_values.includes(pointValue)) {
       throw new Error(`Error in TeamManager.addUnit '${unit.unit_id}' - does not have a point value of ${pointValue}`);
     }
@@ -164,7 +189,7 @@ class TeamManager {
   }
 
   addUnitToSideline() {
-    const unit = unitManager.getUnit();
+    const unit = this.unitManager_.getUnit();
     if (unit.type != "character" && unit.type != "mystery_card") {
       throw new Error(`Error in TeamManager.addUnitToSideline '${unit.unit_id}' - unsupported type '${unit.type}'`);
     }
@@ -173,15 +198,124 @@ class TeamManager {
       'name': unit.name,
       'type': unit.type,
     };
-    this.team_['sideline'].push(team_unit);
+    this.team_.sideline.push(team_unit);
     $('#teamSideline').html(this.drawSideline_());
     this.updateTeam();
   }
-  
-  removeUnit(group, position) {
-    switch (group) {
+
+  addEquipment(mainForceIndex) {
+    const unit = this.unitManager_.getUnit();
+    if (unit.type != "equipment") {
+      throw new Error(`Error in TeamManager.addEquipment '${unit.unit_id}' - type '${unit.type}'' is not equipment`);
+    }
+    if (mainForceIndex >= this.team_.main_force.length) {
+      throw new Error(`Error in TeamManager.addEquipment '${unit.unit_id}' - index '${mainForceIndex}' is invalid`);
+    }
+    const pointValue = unit.point_values.length > 0 ? unit.point_values[0] : 0;
+    const equipment = {
+      'unit_id': unit.unit_id,
+      'name': unit.name,
+      'point_value': pointValue,
+      'type': unit.type,
+    };
+    this.team_.main_force[mainForceIndex].equipment = equipment;
+    $('#teamMainForce').html(this.drawMainForce_());
+    this.updateTeam();
+  }
+
+  updateAddUnitButton_() {
+    // First, determine how many options there are. If there are more than one
+    // then use a dropdown. Otherwise, have the button directly add the unit.
+    var options = [];
+    const unit = this.unitManager_.getUnit();
+    if (unit.type == "character" || unit.type == "mystery_card") {
+      if (unit.point_values.length > 0) {
+        for (const pointValue of unit.point_values) {
+          options.push({
+            "text": `Add to Main Force (${pointValue} points)`,
+            "onclick": `teamManager.addUnit(${pointValue});`
+          })
+        }
+      }
+      options.push({
+        "text": "Add to Sideline",
+        "onclick": `teamManager.addUnitToSideline();`
+      })
+    }
+    else if (unit.type == "object" ||
+      unit.type == "map" ||
+      unit.type == "tarot_card") {
+      if (unit.point_values.length > 0) {
+        for (const pointValue of unit.point_values) {
+          options.push({
+            "text": `Add to Team (${pointValue} points)`,
+            "onclick": `teamManager.addUnit(${pointValue});`
+          })
+        }
+      }
+      else {
+        options.push({
+          "text": "Add to Team",
+          "onclick": `teamManager.addUnit(0);`
+        })
+      }
+    }
+    else if (unit.type == "equipment") {
+      for (var i = 0; i < this.team_.main_force.length; ++i) {
+        const unit = this.team_.main_force[i];
+        if (!unit.equipment) {
+          options.push({
+            "text": `Equip to ${unit.name}`,
+            "onclick": `teamManager.addEquipment(${i});`
+          })
+        }
+      }
+    }
+
+    if (options.length == 0) {
+      // Remove the button since this unit can't be added to a team.
+      $('#addUnitButtonContainer').html("")
+    }
+    else {
+      if (options.length == 1) {
+        // If there's only a single option, just make the button directly do
+        // the onclick action.
+        var buttonOptions = `onclick='${options[0].onclick} return false;' title='${options[0].text}'`;
+        var dropdown = "";
+      }
+      else {
+        var buttonOptions = "data-target='addUnitButtonDropdown'";
+        var dropdown = "<ul id='addUnitButtonDropdown' class='dropdown-content'>"
+        for (const option of options) {
+          dropdown += `
+                <li><a href='#' onclick='${option.onclick} return false;'>
+                  ${option.text}
+                </a></li>`;
+        }
+        dropdown += "</ul>"
+      }
+      var left = $("#card0").width() - 18;
+      var top = -12;
+      var html = `
+            <a href='#' id='addUnitButton' class='dropdown-trigger btn-floating btn-large waves-effect waves-light red' ${buttonOptions}'>
+              <i class='material-icons'>add</i>
+            </a>
+            ${dropdown}`;
+      $('#addUnitButtonContainer').html(html).attr('style', `left:${left}px; top:${top}px;`);
+      if (dropdown) {
+        $('#addUnitButton').dropdown();
+      }
+    }
+  }
+
+  removeUnit(type, position) {
+    switch (type) {
       case "main_force":
         this.team_.main_force.splice(position, 1);
+        $('#teamMainForce').html(this.drawMainForce_());
+        break;
+      case "equipment":
+        delete this.team_.main_force[position].equipment;
         $('#teamMainForce').html(this.drawMainForce_());
         break;
       case "sideline":
@@ -239,12 +373,11 @@ class TeamManager {
     this.checkArrayFieldUpdate_("objects", update);
     this.checkArrayFieldUpdate_("maps", update);
     this.checkArrayFieldUpdate_("tarot_cards", update);
-    
+
     // Handle main_force separately, since it's a bit more complex due to
     // equipment being attached to units.
     if (!(JSON.stringify(this.team_.main_force) === JSON.stringify(this.serverTeam_.main_force))) {
       // Only send necessary fields.
-      console.log("main_force=" + JSON.stringify(this.team_.main_force));
       var main_force = []
       for (const unit of this.team_.main_force) {
         var updated_unit = {
@@ -259,8 +392,6 @@ class TeamManager {
       update["main_force"] = main_force;
     }
 
-    console.log(`Update = ${JSON.stringify(update)}`);
-
     if (!$.isEmptyObject(update)) {
       var teamManager = this;
       $.ajax({
@@ -273,12 +404,12 @@ class TeamManager {
         success: function(response) {
           // Update the local copy of the server team object, knowing that it
           // was successfully updated on the server.
-          for (const key in update ) {
+          for (const key in update) {
             teamManager.serverTeam_[key] = update[key];
           }
           // Reset the retry count upon success.
           teamManager.retryCount_ = 0;
-       },
+        },
         error: function(xhr, desc, err) {
           // The server failed to update, so keep don't update the serverTeam_,
           // but instead just try again.
@@ -287,17 +418,17 @@ class TeamManager {
             ++teamManager.retryCount_;
             teamManager.updateTeam_()
           }
-    		}
+        }
       });
     }
   }
-  
+
   checkFieldUpdate_(field, update) {
     if (!(this.team_[field] === this.serverTeam_[field])) {
       update[field] = this.team_[field];
     }
   }
-  
+
   checkArrayFieldUpdate_(field, update) {
     if (!(JSON.stringify(this.team_[field]) === JSON.stringify(this.serverTeam_[field]))) {
       // Only send necessary fields.
@@ -325,7 +456,7 @@ class TeamManager {
       },
       error: function(xhr, desc, err) {
         alert("Failed to delete this team: " + desc + "; " + err);
-  		}
+      }
     });
   }
 }
