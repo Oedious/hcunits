@@ -26,24 +26,24 @@ const SEARCH_OPTIONS = [
   SearchByImprovedMovement,
   SearchByImprovedTargeting,
   SearchByTeamAbility,
-]
+];
 
 class AdvancedSearchPanel extends NavPanel {
   constructor(dataSource) {
-    super(dataSource)
-    super.title = "Advanced Search"
-    this.searchOptionsMap_ = {}
+    super(dataSource);
+    super.title = "Advanced Search";
+    this.searchOptionsMap_ = {};
     for (const option of SEARCH_OPTIONS) {
       if (option) {
-        this.searchOptionsMap_[option.id()] = option
+        this.searchOptionsMap_[option.id()] = option;
       }
     }
-    this.searchOptions_ = []
+    this.searchOptions_ = [];
     this.draw_();
   }
   
   panelName() {
-    return "advancedSearchPanel"
+    return "advancedSearchPanel";
   }
   
   nextItem() {
@@ -53,7 +53,7 @@ class AdvancedSearchPanel extends NavPanel {
   }
   
   showPanel() {
-    super.showPanel()
+    super.showPanel();
     document.getElementById("sideNavFooter").style.visibility = "visible";
   }
   
@@ -63,35 +63,34 @@ class AdvancedSearchPanel extends NavPanel {
   }
 
   resetOptions() {
-    this.searchOptions_ = []
+    this.searchOptions_ = [];
     $("#searchOptions").html("");
-    $("#addSearchOptionDropdown").html(this.drawOptionsDropdown_())
+    $("#addSearchOptionDropdown").html(this.drawOptionsDropdown_());
   }  
   
   getQuery() {
-    var query = {}
+    var query = {};
     for (var option of this.searchOptions_) {
-      option.addOptionToQuery(query)
+      option.addOptionToQuery(query);
     }
     return query;
   }
 
   addSearchOption(optionId) {
-    var searchOption = new this.searchOptionsMap_[optionId]()
-    this.searchOptions_.push(searchOption)
+    var searchOption = new this.searchOptionsMap_[optionId]();
+    this.searchOptions_.push(searchOption);
 
     var html = `
       <li class='collection-item'>
         <div class='row'>
           ${searchOption.draw()}
         </div>
-      </li>
-    `
-    $("#searchOptions").append(html)
-    searchOption.initElement()
+      </li>`;
+    $("#searchOptions").append(html);
+    searchOption.initElement();
 
     // Hide the option from the selection drop-down.
-    document.getElementById(`addSearchOption${optionId}`).remove()
+    document.getElementById(`addSearchOption${optionId}`).remove();
   }
 
   draw_() {
@@ -102,42 +101,27 @@ class AdvancedSearchPanel extends NavPanel {
       <ul id='addSearchOptionDropdown' class='dropdown-content'>
         ${this.drawOptionsDropdown_()}
       </ul>
-      <ul id='searchOptions' class='collection'></ul>
-    `
-    const panelName = "#" + this.panelName()
+      <ul id='searchOptions' class='collection'></ul>`;
+
+    const panelName = "#" + this.panelName();
     $(panelName).html(html);
 
     $('#addSearchOptionButton').dropdown();
   }
   
   drawOptionsDropdown_() {
-    var html = ""
+    var html = "";
     var i = 0;
     for (const option of SEARCH_OPTIONS) {
       if (option) {
         html += `
           <li id='addSearchOption${option.id()}'>
             <a href='#' onclick='sideNav.addSearchOption("${option.id()}"); return false;'>${option.title()}</a>
-          </li>`
+          </li>`;
       } else {
-        html += "<li class='divider'></li>"
+        html += "<li class='divider'></li>";
       }
     }
-    return html
-  }
-
-  drawImprovedTargetingSelectHtml_() {
-    var html = `
-      <div class='input-field col s12'>
-        <select id='searchOptionsImprovedTargetingSelect' multiple>`
-    for (var abilityId in IMPROVED_TARGETING_LIST) {
-      var abilityItem = IMPROVED_TARGETING_LIST[abilityId];
-      html += `<option value='${abilityId}'>${abilityItem.name}</option>`
-    }
-    html += `
-        </select>
-      <label>Improved Targeting</label>
-    </div>`
     return html;
   }
 }

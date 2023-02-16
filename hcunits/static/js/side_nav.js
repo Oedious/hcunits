@@ -79,7 +79,7 @@ class SideNav {
     if (title) {
       if (showNumItems && this.getTopPanel() == this.unitListPanel_) {
         const numItems = this.unitListPanel_.numItems();
-        title +=  " (" + numItems + " items)";
+        title +=  " (" + numItems + " units)";
       }
       var hasBackArrow = this.panelStack_.length > 1;
       if (hasBackArrow) {

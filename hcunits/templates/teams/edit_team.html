@@ -1,0 +1,128 @@
+{% extends "teams/base.html" %}
+
+{% block link_tags %}
+  {{ block.super }}
+  <link type="text/css" rel="stylesheet" href="/static/css/side_nav.css" media="screen,projection">
+{% endblock %}
+
+{% block team_header %}
+<div id="teamHeader" class="row">
+  <H4>{{ user.username }}</H4>
+  <div class="input-field col s12">
+    <input id="teamName" type="text" class="validate" placeholder="Change Team Name"{% if team.name %} value="{{team.name}}"{% endif %}>
+    <label for="teamName"></label>
+  </div>
+  <div class="input-field col s12">
+    <input id="teamDescription" type="text" placeholder="Change Team Description"{% if team.description %} value="{{team.description}}"{% endif %}>
+  </div>
+  <div class="input-field col s12 m3">
+    <input id="teamPointLimit" class="teamInput" type="number" min="0" max="9999"{% if team.point_limit %} value="{{team.point_limit}}"{% endif %}>
+    <label for="teamPointLimit">Points</label>
+  </div>
+  <div class="input-field col s12 m5">
+    <select id="teamAge">
+      <option value="modern"{% if team.age == "modern" %} selected{% endif %}>Modern</option>
+      <option value="golden"{% if team.age == "golden" %} selected{% endif %}>Golden</option>
+    </select>
+    <label>Age</label>
+  </div>
+  <div class="input-field col s12 m4">
+    <select id="teamVisibility">
+      <option value="private"{% if team.visibility == "private" %} selected{% endif %}>Private</option>
+      <option value="unlisted"{% if team.visibility == "unlisted" %} selected{% endif %}>Unlisted</option>
+      <option value="public"{% if team.visibility == "public" %} selected{% endif %}>Public</option>
+    </select>
+    <label>Visibility</label>
+  </div>
+</div>
+<div id="deleteTeamButton">
+  <a class="btn-floating btn-large waves-effect waves-light red" onclick="teamManager.deleteTeam(); return false;">
+    <i class="material-symbols-outlined">delete</i>
+   </a>
+</div>
+{% endblock %}
+
+{% block explore_tab_bar %}
+<div id="exploreTabBar">
+  <ul id="exploreTabList" class="tabs">
+    <li class="tab">
+      <a class="active" href="" onclick='sideNav.showSetList(); return false;' title="Browse by Set">
+        <i class="material-icons">library_books</i>
+      </a>
+    </li>
+    <li class="tab">
+      <a href="" onclick='sideNav.showFavorites(); return false;' title="Favorites">
+        <i class="material-icons">star</i>
+      </a>
+    </li>
+    <li class="tab">
+      <a href="" onclick='sideNav.showAdvancedSearch(); return false;' title="Advanced Search">
+        <i class="material-icons">manage_search</i>
+      </a>
+    </li>
+  </ul>
+  <form onsubmit="sideNav.showQuickSearchResults(); return false;">
+    <div id="quickSearchBox">
+      <div id="quickSearchButton" class="fixed-action-btn">
+        <a class="btn-floating btn-medium waves-effect-waves-light blue" onclick="sideNav.showQuickSearchResults(); return false;">
+          <i class="material-icons" style="color:white;">search</i>
+        </a>
+      </div>
+      <input id="quickSearch" type="text" required placeholder="Search for Units">
+    </div>
+  </form>
+</div>
+{% endblock %}
+
+{% block side_nav %}
+<div id="sideNav" style="left:0px">
+  <div id="sideNavHeader"></div>
+  <div id="sideNavFooter" style="visibility:hidden;">
+    <a class='sideNavFooterButton' href='#' onclick='sideNav.resetAdvancedSearch(); return false;' title="Reset Options">
+      <i class='material-icons'>restart_alt</i>
+    </a>
+    <a class='sideNavFooterButton' href='#' onclick='sideNav.showAdvancedSearchResults(); return false;' title="Search">
+      <i class='material-icons'>search</i>
+    </a>
+  </div>
+  <div id="setListPanel" class="navPanel"></div>
+  <div id="favoritesPanel" class="navPanel" style="display:none;"></div>
+  <div id="advancedSearchPanel" class="navPanel" style="display:none;"></div>
+  <div id="unitListPanel" class="navPanel" style="display:none;"></div>
+</div>
+{% endblock %}
+
+{% block side_nav_scripts %}
+<script type="text/javascript" src="/static/js/search_options/search_option.js"></script>
+<script type="text/javascript" src="/static/js/search_options/search_by_combat_symbol.js"></script>
+<script type="text/javascript" src="/static/js/search_options/search_by_combat_value.js"></script>
+<script type="text/javascript" src="/static/js/search_options/search_by_improved_movement.js"></script>
+<script type="text/javascript" src="/static/js/search_options/search_by_improved_targeting.js"></script>
+<script type="text/javascript" src="/static/js/search_options/search_by_keyword.js"></script>
+<script type="text/javascript" src="/static/js/search_options/search_by_name.js"></script>
+<script type="text/javascript" src="/static/js/search_options/search_by_point_value.js"></script>
+<script type="text/javascript" src="/static/js/search_options/search_by_power.js"></script>
+<script type="text/javascript" src="/static/js/search_options/search_by_real_name.js"></script>
+<script type="text/javascript" src="/static/js/search_options/search_by_set.js"></script>
+<script type="text/javascript" src="/static/js/search_options/search_by_team_ability.js"></script>
+<script type="text/javascript" src="/static/js/search_options/search_by_type.js"></script>
+
+<script type="text/javascript" src="/static/js/panels/nav_panel.js"></script>
+<script type="text/javascript" src="/static/js/panels/list_panel.js"></script>
+<script type="text/javascript" src="/static/js/panels/set_list_panel.js"></script>
+<script type="text/javascript" src="/static/js/panels/unit_list_panel.js"></script>
+<script type="text/javascript" src="/static/js/panels/favorites_panel.js"></script>
+<script type="text/javascript" src="/static/js/panels/advanced_search_panel.js"></script>
+<script type="text/javascript" src="/static/js/side_nav.js"></script>
+{% endblock %}
+
+{% block read_only %}
+<script type="text/javascript">const READ_ONLY = false;</script>
+{% endblock %}
+
+{% block scripts %}
+{{ block.super }}
+<script type="text/javascript">
+  var sideNav = new SideNav(dataSource, unitManager);
+</script>
+{% endblock %}

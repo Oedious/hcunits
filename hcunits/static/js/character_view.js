@@ -37,7 +37,7 @@ class CharacterView extends UnitView {
     const borderColor = this.isTeamUp_() ? COLOR_BLUE : COLOR_BLACK;
     var html = `
       <div class='column'>
-        <div class='characterCard'>
+        <div id='card0' class='characterCard'>
           <div class='characterCardBorders' style='border-top: 75px solid ${borderColor}'></div>
           <div id='characterHeader'>
             <div id='characterName'>${escapeHtml(this.unit_.name).toUpperCase()}</div>
@@ -73,7 +73,7 @@ class CharacterView extends UnitView {
         </div>`;
     }
 
-  	$('#unitContainer').html(html);
+  	$('#unitCardsContainer').html(html);
   }
   
   isTeamUp_() {

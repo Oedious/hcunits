@@ -1,0 +1,26 @@
+{% extends "teams/base.html" %}
+
+{% block team_header %}
+<div id="teamHeader" class="row">
+  <H4>{{ user.username }}</H4>
+  <div class="col s12">
+    {% if team.name %}{{team.name}}{% endif %}
+  </div>
+  <div class="col s12">
+    {% if team.description %}{{team.description}}{% endif %}
+  </div>
+  <div class="col s12 m3">
+    <label>Points</label>
+    <div>{{team.point_limit}}</div>
+  </div>
+  <div class="col s12 m5">
+    <label>Age</label>
+    {% if team.age == "modern" %}<div>Modern</div>{% endif %}
+    {% if team.age == "golden" %}<div>Golden</div>{% endif %}
+  </div>
+</div>
+{% endblock %}
+
+{% block read_only %}
+<script type="text/javascript">const READ_ONLY = true;</script>
+{% endblock %}

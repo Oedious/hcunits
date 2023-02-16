@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+
+{% block link_tags %}
+  {{ block.super }}
+  <link href="https://fonts.cdnfonts.com/css/gill-sans" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="/static/css/team.css" media="screen,projection">
+  <link type="text/css" rel="stylesheet" href="/static/css/character.css" media="screen,projection">
+  <link type="text/css" rel="stylesheet" href="/static/css/object.css" media="screen,projection">
+  <link type="text/css" rel="stylesheet" href="/static/css/unit.css" media="screen,projection">
+{% endblock %}
+
+{% block main %}
+<div id="teamHeaderContainer">
+  {% block team_header %}
+  {% endblock %}
+</div>
+
+{% block explore_tab_bar %}
+{% endblock %}
+
+<div id="teamBodyContainer">
+  {% block side_nav %}
+  {% endblock %}
+  <div class="container">
+    <div class="column">
+      <div class="row">
+        <div id="teamContainer"></div>
+        <div id="unitContainer">
+          <div id="unitCardsContainer"></div>
+          <div id="addUnitButtonContainer"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block script_tags %}
+  {{ block.super }}
+  <script type="text/javascript" src="/static/js/constants/constants.js"></script>
+  <script type="text/javascript" src="/static/js/constants/combat_symbol_list.js"></script>
+  <script type="text/javascript" src="/static/js/constants/improved_ability_list.js"></script>
+  <script type="text/javascript" src="/static/js/constants/keyword_list.js"></script>
+  <script type="text/javascript" src="/static/js/constants/power_list.js"></script>
+  <script type="text/javascript" src="/static/js/constants/set_list.js"></script>
+  <script type="text/javascript" src="/static/js/constants/team_ability_list.js"></script>
+  <script type="text/javascript" src="/static/js/constants/type_list.js"></script>
+  <script type="text/javascript" src="/static/js/constants/universe_list.js"></script>
+
+  {% block side_nav_scripts %}
+  {% endblock %}
+
+  <script type="text/javascript" src="/static/js/data_source.js"></script>
+  <script type="text/javascript" src="/static/js/unit_manager.js"></script>
+  <script type="text/javascript" src="/static/js/team_manager.js"></script>
+
+  <script type="text/javascript" src="/static/js/unit_view.js"></script>
+  <script type="text/javascript" src="/static/js/character_view.js"></script>
+  <script type="text/javascript" src="/static/js/object_view.js"></script>
+
+  {% block read_only %}
+  <script type="text/javascript">const READ_ONLY = true;</script>
+  {% endblock %}
+
+  {% block scripts %}
+  {{ team|json_script:'teamObject' }}
+  <script type="text/javascript">
+    var dataSource = new DataSource();
+    //var dataSource = new MockDataSource();
+    var unitManager = new UnitManager(dataSource);
+    var teamManager = new TeamManager(document.getElementById('teamObject').textContent, "{{csrf_token}}")
+
+    // Initialize Materialize select inputs.
+    $(document).ready(function(){
+      $('select').formSelect();
+    });
+    
+    $(document).ready(function(){
+      $('.tabs').tabs();
+    });
+    
+    $(document).ready(function(){
+      $('.fixed-action-btn').floatingActionButton();
+    });
+  </script>
+  {% endblock %}
+{% endblock %}

@@ -3,14 +3,15 @@ import json
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib import messages
 from django.contrib.auth import logout
-from django.http import HttpResponse, HttpResponseNotFound, QueryDict
+from django.db.models import Q
+from django.http import HttpResponse, HttpResponseBadRequest, HttpResponseNotFound, QueryDict
 from django.shortcuts import redirect, render
 from django.template import Context, loader
 from django.urls import reverse
 from django.views.generic import View
 
 from .forms import AccountDeleteForm
-from .models import Team
+from .models import Team, Unit
 
 def home(request):
   if request.user.is_authenticated:
@@ -32,7 +33,7 @@ def home(request):
   return HttpResponse(template.render(context, request))
   
 def list_public_teams(request):
-  template = loader.get_template('teams.html')
+  template = loader.get_template('teams/list_public_teams.html')
   context = {}
   return HttpResponse(template.render(context, request))
   
@@ -131,15 +132,19 @@ class TeamView(View):
     except Team.DoesNotExist:
       return HttpResponseNotFound("Could not find team '%s'" % team_id)
 
-    client_safe_team = team.safe_for_client()
+    wire_format_team = team.get_wire_format()
+
     if request.user.is_authenticated and request.user == team.user:
-      return render(request, 'build.html', {'team': client_safe_team})
-    elif team.visibility == "public":
+      return render(request, 'teams/edit_team.html', {'team': wire_format_team})
+    elif team.visibility == "public" or team.visibility == "unlisted":
       # TODO: return a read-only view of the page.
-      return render(request, 'build.html', {'team': client_safe_team})
+      return render(request, 'teams/view_team.html', {'team': wire_format_team})
     else:
       return HttpResponse("Unauthorized", status=401)
-      
+
+
+  # Updates the team specified by the "team_id" argument with the changes
+  # specified in the 
   def put(self, request, *args, **kwargs):
     team_id = kwargs["team_id"]
     try:
@@ -149,14 +154,27 @@ class TeamView(View):
     if not request.user.is_authenticated or request.user != team.user:
       return HttpResponse("Unauthorized", status=401)
 
-    print(request.body)
     change_list = json.loads(request.body)
-    for field in ["name", "description", "point_limit", "age", "visibility"]:
-      value = change_list.get(field, None)
-      if value:
-        setattr(team, field, value)
+    try:
+      team.update_from_wire_format(change_list)
+    except Exception as err:
+      print("Error: " + str(err))
+      return HttpResponseBadRequest("Invalid team update: " + str(err))
 
+    # Everything looks good, so commit the change.
     team.save()
     return HttpResponse(status=200)
-    
 
+
+  # Delete the team specified by the "team_id" parameter. Must be owned by
+  # the authenticated user.
+  def delete(self, request, *args, **kwargs):
+    team_id = kwargs["team_id"]
+    try:
+      team = Team.objects.get(team_id=team_id)
+    except Team.DoesNotExist:
+      return HttpResponseNotFound("Could not find team '%s'" % team_id)
+    if not request.user.is_authenticated or request.user != team.user:
+      return HttpResponse("Unauthorized", status=401)
+    team.delete()
+    return HttpResponse(status=200)

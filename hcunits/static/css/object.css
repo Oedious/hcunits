@@ -1,11 +1,11 @@
-#objectCard {
+.objectCard {
   position: relative;
   /* Object cards are 2.25" x 2.75" in real life */
   width: 338px;
   height: 412px;
 }
 
-#objectCardBorders {
+.objectCardBorders {
   position: absolute;
   left: 0px;
   top: 0px;
@@ -45,7 +45,8 @@
 
 #objectCollectorNumber {
   position: absolute;
-  right: 15px;
+  right: 5px;
+  top: 50px;
   font-size: 11px;
   color: white;
 }

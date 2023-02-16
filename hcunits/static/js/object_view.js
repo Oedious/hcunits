@@ -94,8 +94,8 @@ class ObjectView extends UnitView {
     const specialPowersHtml = this.drawSpecialPowers_();
     var html = `
       <div class='column'>
-        <div id='objectCard'>
-          <div id='objectCardBorders' style='border-top: 70px solid black;'></div>
+        <div id='card0' class='objectCard'>
+          <div class='objectCardBorders' style='border-top: 70px solid black;'></div>
           <div id='objectHeader'>
             <div id='objectName'>${escapeHtml(this.unit_.name).toUpperCase()}</div>
             ${this.drawObjectType_()}
@@ -111,13 +111,13 @@ class ObjectView extends UnitView {
     if (specialPowersHtml.length > 1) {
       html += `
         <div class='column'>
-          <div id='objectCard'>
-            <div id='objectCardBorders' style='border-top: 25px solid black;'></div>
+          <div class='objectCard'>
+            <div class='objectCardBorders' style='border-top: 25px solid black;'></div>
             ${specialPowersHtml.length >= 2 ? specialPowersHtml[1] : ""}
           </div>
         </div>`;
     }
-  	$('#unitContainer').html(html);
+  	$('#unitCardsContainer').html(html);
   }
   
   isCardType_() {
@@ -251,9 +251,11 @@ class ObjectView extends UnitView {
       
     var html =
       `<div id='objectToken'>
-        <div id='objectTokenCircle' style='background-color: lightgray; ${objectStyle}'></div>
-        <img id='objectTokenImg' src='/static/images/${this.unit_.set_id}/${this.unit_.unit_id}.png' alt='' onerror='this.style.display=\"none\"'/>
-      </div>`;
+        <div id='objectTokenCircle' style='background-color: lightgray; ${objectStyle}'></div>`;
+    if (this.unit_.has_image) {
+      html += `<img id='objectTokenImg' src='/static/images/${this.unit_.set_id}/${this.unit_.unit_id}.png' alt='' onerror='this.style.display=\"none\"'/>`
+    }
+    html += "</div>";
     return html;
   }
   
