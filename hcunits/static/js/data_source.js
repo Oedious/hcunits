@@ -1,11 +1,10 @@
 class DataSource {
   constructor() {
-    this.HOST_NAME = "https://api.hcunits.net";
   }
 
   searchBySetId(setId, onSuccess, onError) {
     jQuery.get({
-      url: `${this.HOST_NAME}/sets/${setId}/`,
+      url: `/api/v1/sets/${setId}/`,
       dataType: 'text',
       success: function(searchResults) {
         onSuccess(JSON.parse(searchResults));
@@ -16,7 +15,7 @@ class DataSource {
 
   searchByUnitId(unitId, onSuccess, onError) {
     jQuery.get({
-      url: `${this.HOST_NAME}/units/${unitId}/`,
+      url: `/api/v1/units/${unitId}/`,
       dataType: 'text',
       success: function(searchResults) {
         onSuccess(JSON.parse(searchResults));
@@ -27,7 +26,7 @@ class DataSource {
 
   quickSearch(query, onSuccess, onError) {
     jQuery.get({
-      url: `${this.HOST_NAME}/units/?search=${encodeURIComponent(query)}`,
+      url: `/api/v1/units/?search=${encodeURIComponent(query)}`,
       dataType: 'text',
       success: function(searchResults) {
         onSuccess(JSON.parse(searchResults));
@@ -38,7 +37,7 @@ class DataSource {
 
   advancedSearch(query, onSuccess, onError) {
     jQuery.post({
-      url: `${this.HOST_NAME}/search/`,
+      url: `/api/v1/search/`,
       data: JSON.stringify(query),
       dataType: 'text',
       contentType: 'application/json',

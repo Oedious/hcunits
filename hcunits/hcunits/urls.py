@@ -1,9 +1,8 @@
 from django.urls import path
-from . import views
+from hcunits import views
 
 urlpatterns = [
   path('', views.home, name='home'),
-  #path('build/', views.BuildView.as_view(), name='build'),
   path('explore/', views.explore, name='explore'),
   path('teams/', views.CreateTeamView.as_view(), name='create_team'),
   path('teams/<uuid:team_id>/', views.TeamView.as_view(), name='get_team'),

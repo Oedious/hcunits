@@ -52,6 +52,8 @@ INSTALLED_APPS = [
     'allauth.socialaccount.providers.facebook',
     'allauth.socialaccount.providers.google',
     'hcunits',
+    'hcunits_api',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [

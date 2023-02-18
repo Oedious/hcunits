@@ -20,10 +20,11 @@ import django
 from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import include, path
-from . import settings
+from config import settings
 
 urlpatterns = [
   path('', include('hcunits.urls')),
+  path('api/', include('hcunits_api.urls')),
   path('accounts/login/', login, name="account_login"),
   path('accounts/logout/', logout, name="account_logout"),
   path('accounts/signup/', socialaccount_signup, name="account_signup"),

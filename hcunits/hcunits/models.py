@@ -1,6 +1,7 @@
 import uuid
 from django.contrib.auth.models import User
 from django.db import models
+from hcunits_api.models import Unit
 
 class Team(models.Model):
   class Age(models.TextChoices):
@@ -31,12 +32,38 @@ class Team(models.Model):
   # }
   main_force = models.JSONField(default=list)
 
-  # A JSON array of strings, each containing a unit ID.
+  # Each of the four fields below are JSON arrays of objects in the form:
+  # {
+  #   "unit_id": string - contains a unit ID.
+  #   "point_value": (Optional) number - the point value of the unit.
+  # }
   sideline = models.JSONField(default=list)
   object_list = models.JSONField(default=list)
   maps = models.JSONField(default=list)
   tarot_cards = models.JSONField(default=list)
-  #alternative_team_ability = ""
+
+  UNIT_FIELD_LIST = {
+    "main_force": {
+      "types": ["character"],
+      "field_name": "main_force",
+    },
+    "sideline": {
+      "types": ["character", "mystery_card"],
+      "field_name": "sideline",
+    },
+    "objects": {
+      "types": ["object"],
+      "field_name": "object_list",
+    },
+    "maps": {
+      "types": ["map"],
+      "field_name": "maps",
+    },
+    "tarot_cards": {
+      "types": ["tarot_card"],
+      "field_name": "tarot_cards"
+    }
+  }
 
   class Meta:
     app_label = 'hcunits'
@@ -57,32 +84,9 @@ class Team(models.Model):
       "update_time": self.update_time,
     }
 
-    field_list = {
-      "main_force": {
-        "types": ["character"],
-        "field_name": "main_force",
-      },
-      "sideline": {
-        "types": ["character", "mystery_card"],
-        "field_name": "sideline",
-      },
-      "objects": {
-        "types": ["object"],
-        "field_name": "object_list",
-      },
-      "maps": {
-        "types": ["map"],
-        "field_name": "maps",
-      },
-      "tarot_cards": {
-        "types": ["tarot_card"],
-        "field_name": "tarot_cards"
-      }
-    }
-
     unit_id_list = []
-    for field in field_list.keys():
-      for unit in getattr(self, field_list[field]["field_name"]):
+    for field in Team.UNIT_FIELD_LIST.keys():
+      for unit in getattr(self, Team.UNIT_FIELD_LIST[field]["field_name"]):
         unit_id_list.append(unit["unit_id"])
         equipment_id = unit.get("equipment", None)
         if equipment_id != None:
@@ -97,9 +101,9 @@ class Team(models.Model):
       unit_map[unit["unit_id"]] = unit
 
     # For each of the referenced items, add an item containing the unit id and name.
-    for field in field_list.keys():
+    for field in Team.UNIT_FIELD_LIST.keys():
       unit_list = []
-      for unit in getattr(self, field_list[field]["field_name"]):
+      for unit in getattr(self, Team.UNIT_FIELD_LIST[field]["field_name"]):
         unit_entry = unit_map.get(unit["unit_id"], None)
         unit["name"] = unit_entry["name"]
         # The unit will already contain its own unit_id and point_value fields, so
@@ -134,35 +138,10 @@ class Team(models.Model):
       if value != None:
         setattr(self, field, value)
 
-    # Validate the items by checking that items actually exist and that point
-    # values and types are valid.
-    field_list = {
-      "main_force": {
-        "types": ["character"],
-        "field_name": "main_force",
-      },
-      "sideline": {
-        "types": ["character", "mystery_card"],
-        "field_name": "sideline",
-      },
-      "objects": {
-        "types": ["object"],
-        "field_name": "object_list",
-      },
-      "maps": {
-        "types": ["map"],
-        "field_name": "maps",
-      },
-      "tarot_cards": {
-        "types": ["tarot_card"],
-        "field_name": "tarot_cards"
-      }
-    }
-
     # Create a list of all the units in the force and query the database for
     # information to compare against.
     unit_id_list = []
-    for field in field_list.keys():
+    for field in Team.UNIT_FIELD_LIST.keys():
       unit_list = change_list.get(field, None)
       if unit_list != None:
         if not isinstance(unit_list, list):
@@ -192,7 +171,8 @@ class Team(models.Model):
     for unit in unit_list:
       unit_map[unit["unit_id"]] = unit
 
-    for field in field_list.keys():
+    for field in Team.UNIT_FIELD_LIST.keys():
+      field_properties = Team.UNIT_FIELD_LIST[field]
       unit_list = change_list.get(field, None)
       if unit_list != None:
         field_update = []
@@ -203,8 +183,8 @@ class Team(models.Model):
           if unit_db_entry == None:
             raise Exception("%s[%d].unit_id ('%s') was invalid" % (field, i, unit_id))
           type = unit_db_entry["type"]
-          if not type in field_list[field]["types"]:
-            raise Exception("%s[%d].unit_id ('%s') expected type '%s', but found ('%s')" % (field, i, unit_id, str(field_list[field]["types"]), type))
+          if not type in field_properties["types"]:
+            raise Exception("%s[%d].unit_id ('%s') expected type '%s', but found ('%s')" % (field, i, unit_id, str(field_properties["types"]), type))
           unit_update = {
             "unit_id": unit_id,
           }
@@ -234,40 +214,5 @@ class Team(models.Model):
           i += 1
   
         # Field update is valid - update the Model field.
-        setattr(self, field_list[field]["field_name"], field_update)
+        setattr(self, field_properties["field_name"], field_update)
     return True
-
-# The Unit model is copied from the API and needs to stay in sync.
-# TODO: include the other python file rather than copying it in.
-class Unit(models.Model):
-    unit_id = models.CharField(primary_key=True, max_length=32)
-    set_id = models.CharField(max_length=16)
-    collector_number = models.CharField(max_length=16)
-    name = models.TextField()
-    type = models.CharField(max_length=21)
-    point_values = models.JSONField()
-    rarity = models.CharField(max_length=15, blank=True, null=True)
-    real_name = models.TextField(blank=True, null=True)
-    properties = models.JSONField()
-    dimensions = models.CharField(max_length=3, blank=True, null=True)
-    team_abilities = models.JSONField()
-    keywords = models.JSONField()
-    special_powers = models.JSONField()
-    improved_movement = models.JSONField()
-    improved_targeting = models.JSONField()
-    object_type = models.CharField(max_length=11, blank=True, null=True)
-    object_keyphrases = models.JSONField()
-    map_url = models.TextField(blank=True, null=True)
-    unit_range = models.IntegerField(blank=True, null=True)
-    targets = models.IntegerField(blank=True, null=True)
-    speed_type = models.CharField(max_length=17, blank=True, null=True)
-    attack_type = models.CharField(max_length=12, blank=True, null=True)
-    defense_type = models.CharField(max_length=11, blank=True, null=True)
-    damage_type = models.CharField(max_length=9, blank=True, null=True)
-    dial_size = models.IntegerField(blank=True, null=True)
-    dial = models.JSONField()
-
-    class Meta:
-        app_label = 'hcunits'
-        managed = False
-        db_table = 'units'
