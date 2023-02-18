@@ -50,14 +50,26 @@ class TeamManager {
 
   draw() {
     const html = `
-      <div id="teamMainForce" class="column">
-        ${this.drawMainForce_()}
+      <div id="teamColumn0" class="column">
+        <div id="teamMainForce">
+          ${this.drawMainForce_()}
+        </div>
       </div>
-      <div id="teamSideline" class="column">
-        ${this.drawSideline_()}
+      <div id="teamColumn1" class="column">
+        <div id="teamSideline">
+          ${this.drawSideline_()}
+        </div>
+        <div id="teamMaps">
+          ${this.drawMaps_()}
+        </div>
       </div>
-      <div id="teamTarotCards" class="column">
-        ${this.drawTarotCards_()}
+      <div id="teamColumn2" class="column">
+        <div id="teamTarotCards">
+          ${this.drawTarotCards_()}
+        </div>
+        <div id="teamObjects">
+          ${this.drawObjects_()}
+        </div>
       </div>`;
     $("#teamContainer").html(html);
   }
@@ -130,6 +142,30 @@ class TeamManager {
     return html;
   }
 
+  drawMaps_() {
+    if (this.team_.maps.length <= 0) {
+      return "";
+    }
+    var html = "<div class='row'><h6><b>Maps</b></h6><ul>";
+    for (var i = 0; i < this.team_.maps.length; ++i) {
+      const unit = this.team_.maps[i];
+      html += "<li class='teamItem'>";
+      if (!READ_ONLY) {
+        html += `
+          <a class="teamItemRemoveButton" href="#" onclick="teamManager.removeUnit('maps', ${i}); return false;">
+            <i class="material-icons">cancel</i>
+          </a>`;
+      }
+      html += `
+          <a href="#" class="teamItemUnitLink" onclick="unitManager.showUnit('${unit.unit_id}'); return false;">
+            ${unit.name} (${unit.unit_id})
+          </a>
+        </li>`;
+    }
+    html += "</ul></div>";
+    return html;
+  }
+
   drawTarotCards_() {
     if (this.team_.tarot_cards.length <= 0) {
       return "";
@@ -141,6 +177,30 @@ class TeamManager {
       if (!READ_ONLY) {
         html += `
           <a class="teamItemRemoveButton" href="#" onclick="teamManager.removeUnit('tarot_cards', ${i}); return false;">
+            <i class="material-icons">cancel</i>
+          </a>`;
+      }
+      html += `
+          <a href="#" class="teamItemUnitLink" onclick="unitManager.showUnit('${unit.unit_id}'); return false;">
+            ${unit.name} (${unit.unit_id})
+          </a>
+        </li>`;
+    }
+    html += "</ul></div>";
+    return html;
+  }
+
+  drawObjects_() {
+    if (this.team_.objects.length <= 0) {
+      return "";
+    }
+    var html = "<div class='row'><h6><b>Objects</b></h6><ul>";
+    for (var i = 0; i < this.team_.objects.length; ++i) {
+      const unit = this.team_.objects[i];
+      html += "<li class='teamItem'>";
+      if (!READ_ONLY) {
+        html += `
+          <a class="teamItemRemoveButton" href="#" onclick="teamManager.removeUnit('objects', ${i}); return false;">
             <i class="material-icons">cancel</i>
           </a>`;
       }
@@ -322,15 +382,15 @@ class TeamManager {
         this.team_.sideline.splice(position, 1);
         $('#teamSideline').html(this.drawSideline_());
         break;
-      case "object":
+      case "objects":
         this.team_.objects.splice(position, 1);
         $('#teamObjects').html(this.drawObjects_());
         break;
-      case "map":
+      case "maps":
         this.team_.maps.splice(position, 1);
         $('#teamMaps').html(this.drawMaps_());
         break;
-      case "tarot_card":
+      case "tarot_cards":
         this.team_.tarot_cards.splice(position, 1);
         $('#teamTarotCards').html(this.drawTarotCards_());
         break;
@@ -369,28 +429,11 @@ class TeamManager {
     this.checkFieldUpdate_("point_limit", update);
     this.checkFieldUpdate_("age", update);
     this.checkFieldUpdate_("visibility", update);
+    this.checkArrayFieldUpdate_("main_force", update);
     this.checkArrayFieldUpdate_("sideline", update);
     this.checkArrayFieldUpdate_("objects", update);
     this.checkArrayFieldUpdate_("maps", update);
     this.checkArrayFieldUpdate_("tarot_cards", update);
-
-    // Handle main_force separately, since it's a bit more complex due to
-    // equipment being attached to units.
-    if (!(JSON.stringify(this.team_.main_force) === JSON.stringify(this.serverTeam_.main_force))) {
-      // Only send necessary fields.
-      var main_force = []
-      for (const unit of this.team_.main_force) {
-        var updated_unit = {
-          "unit_id": unit.unit_id,
-          "point_value": unit.point_value,
-        };
-        if (unit.equipment) {
-          updated_unit.equipment = unit.equipment.unit_id;
-        }
-        main_force.push(updated_unit);
-      }
-      update["main_force"] = main_force;
-    }
 
     if (!$.isEmptyObject(update)) {
       var teamManager = this;
@@ -430,12 +473,23 @@ class TeamManager {
   }
 
   checkArrayFieldUpdate_(field, update) {
+    // Only send an update for the field if some part of it changed.
     if (!(JSON.stringify(this.team_[field]) === JSON.stringify(this.serverTeam_[field]))) {
-      // Only send necessary fields.
-      update[field] = []
+      var field_update = [];
       for (const unit of this.team_[field]) {
-        update[field].push(unit.unit_id);
+        var updated_unit = {
+          "unit_id": unit.unit_id,
+        };
+        if (unit.point_value) {
+          updated_unit.point_value = unit.point_value;
+        }
+        // Main force pieces can have equipment attached to them.
+        if (field == "main_force" && unit.equipment) {
+          updated_unit.equipment = unit.equipment.unit_id
+        }
+        field_update.push(updated_unit);
       }
+      update[field] = field_update;
     }
   }
 

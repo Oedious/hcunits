@@ -878,7 +878,8 @@ class Unit:
           for (k, v) in value[i].items():
             self.dial[i][k] = v
       elif (key == "defense_type" or
-            key == "object_type"):
+            key == "object_type" or
+            key == "point_values"):
         setattr(self, key, value)
       else:
         raise RuntimeError("The update type '%s' for '%s' is currently not supported" % (key, self.unit_id))

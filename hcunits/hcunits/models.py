@@ -57,13 +57,36 @@ class Team(models.Model):
       "update_time": self.update_time,
     }
 
+    field_list = {
+      "main_force": {
+        "types": ["character"],
+        "field_name": "main_force",
+      },
+      "sideline": {
+        "types": ["character", "mystery_card"],
+        "field_name": "sideline",
+      },
+      "objects": {
+        "types": ["object"],
+        "field_name": "object_list",
+      },
+      "maps": {
+        "types": ["map"],
+        "field_name": "maps",
+      },
+      "tarot_cards": {
+        "types": ["tarot_card"],
+        "field_name": "tarot_cards"
+      }
+    }
+
     unit_id_list = []
-    for unit in self.main_force:
-      unit_id_list.append(unit["unit_id"])
-      equipment_id = unit.get("equipment", None)
-      if equipment_id:
-        unit_id_list.append(equipment_id)
-    unit_id_list += self.sideline + self.object_list + self.maps + self.tarot_cards
+    for field in field_list.keys():
+      for unit in getattr(self, field_list[field]["field_name"]):
+        unit_id_list.append(unit["unit_id"])
+        equipment_id = unit.get("equipment", None)
+        if equipment_id != None:
+          unit_id_list.append(equipment_id)
 
     # Get the Units that are referenced by the Team.
     unit_list = Unit.objects.filter(unit_id__in=unit_id_list).values('unit_id', 'name', 'point_values')
@@ -72,78 +95,35 @@ class Team(models.Model):
     unit_map = {}
     for unit in unit_list:
       unit_map[unit["unit_id"]] = unit
-    
+
     # For each of the referenced items, add an item containing the unit id and name.
-    main_force = []
-    for unit in self.main_force:
-      unit_entry = unit_map.get(unit["unit_id"], None)
-      unit["name"] = unit_entry["name"]
-      # The unit will already contain its own unit_id and point_value fields, so
-      # no need to copy them.
-      equipment_id = unit.get("equipment", None)
-      if equipment_id:
-        equipment = unit_map.get(equipment_id, None)
-        if not equipment:
-          del unit["equipment"]
-        else:
-          point_values = equipment["point_values"]
-          if len(point_values) > 0:
-            point_value = point_values[0]
-          else:
-            point_value = 0
-          unit["equipment"] = {
-            "unit_id": equipment_id,
-            "name": equipment["name"],
-            "point_value": point_value,
-          }
-      main_force.append(unit)
-    wire_team["main_force"] = main_force
+    for field in field_list.keys():
+      unit_list = []
+      for unit in getattr(self, field_list[field]["field_name"]):
+        unit_entry = unit_map.get(unit["unit_id"], None)
+        unit["name"] = unit_entry["name"]
+        # The unit will already contain its own unit_id and point_value fields, so
+        # no need to copy them.
+        if field == "main_force":
+          equipment_id = unit.get("equipment", None)
+          if equipment_id != None:
+            equipment = unit_map.get(equipment_id, None)
+            if equipment == None:
+              del unit["equipment"]
+            else:
+              point_values = equipment["point_values"]
+              if len(point_values) > 0:
+                point_value = point_values[0]
+              else:
+                point_value = 0
+              unit["equipment"] = {
+                "unit_id": equipment_id,
+                "name": equipment["name"],
+                "point_value": point_value,
+              }
+        unit_list.append(unit)
+      wire_team[field] = unit_list
 
-    sideline = []
-    for unit_id in self.sideline:
-      unit = unit_map.get(unit_id, None)
-      if unit:
-        sideline.append({
-          "unit_id": unit_id,
-          "name": unit["name"],
-        })
-    wire_team["sideline"] = sideline
-
-    objects = []
-    for unit_id in self.object_list:
-      unit = unit_map.get(unit_id, None)
-      if unit:
-        point_values = unit["point_values"]
-        if len(point_values) > 0:
-          point_value = point_values[0]
-        else:
-          point_value = 0
-        objects.append({
-          "unit_id": unit_id,
-          "name": unit["name"],
-          "point_value": point_value,
-        })
-    wire_team["objects"] = objects
-
-    maps = []
-    for unit_id in self.maps:
-      unit = unit_map.get(unit_id, None)
-      if unit:
-        maps.append({
-          "unit_id": unit_id,
-          "name": unit["name"],
-        })
-    wire_team["maps"] = maps
-
-    tarot_cards = []
-    for unit_id in self.tarot_cards:
-      unit = unit_map.get(unit_id, None)
-      if unit:
-        tarot_cards.append({
-          "unit_id": unit_id,
-          "name": unit["name"],
-        })
-    wire_team["tarot_cards"] = tarot_cards
     return wire_team
 
   # Update the model object based on updates provided in the change_list dict.
@@ -151,77 +131,59 @@ class Team(models.Model):
   def update_from_wire_format(self, change_list):
     for field in ["name", "description", "point_limit", "age", "visibility"]:
       value = change_list.get(field, None)
-      if value:
+      if value != None:
         setattr(self, field, value)
 
     # Validate the items by checking that items actually exist and that point
     # values and types are valid.
-    main_force = change_list.get("main_force", None)
-    sideline = change_list.get("sideline", None)
-    objects = change_list.get("objects", None)
-    maps = change_list.get("maps", None)
-    tarot_cards = change_list.get("tarot_cards", None)
+    field_list = {
+      "main_force": {
+        "types": ["character"],
+        "field_name": "main_force",
+      },
+      "sideline": {
+        "types": ["character", "mystery_card"],
+        "field_name": "sideline",
+      },
+      "objects": {
+        "types": ["object"],
+        "field_name": "object_list",
+      },
+      "maps": {
+        "types": ["map"],
+        "field_name": "maps",
+      },
+      "tarot_cards": {
+        "types": ["tarot_card"],
+        "field_name": "tarot_cards"
+      }
+    }
 
     # Create a list of all the units in the force and query the database for
     # information to compare against.
     unit_id_list = []
-    if main_force:
-      if not isinstance(main_force, list):
-        raise Exception("main_force was not of type 'list'")
-      i = 0
-      for unit in main_force:
-        unit_id = unit.get("unit_id", None)
-        if not unit_id:
-          raise Exception("main_force[%d] didn't have 'unit_id'" % i)
-        if not isinstance(unit_id, str):
-          raise Exception("main_force[%d].unit_id was not a string" % i)
-        unit_id_list.append(unit_id)
-        equipment_id = unit.get("equipment", None)
-        if equipment_id:
-          if not isinstance(equipment_id, str):
-            raise Exception("main_force[%d].equipment was not a string" % i)
-          unit_id_list.append(equipment_id)
-        i += 1
-
-    if sideline:
-      if not isinstance(sideline, list):
-        raise Exception("sideline was not of type 'list'")
-      i = 0
-      for unit_id in sideline:
-        if not isinstance(unit_id, str):
-          raise Exception("sideline[%d] was not a string" % i)
-        unit_id_list.append(unit_id)
-        i += 1
-
-    if objects:
-      if not isinstance(objects, list):
-        raise Exception("objects was not of type 'list'")
-      i = 0
-      for unit_id in objects:
-        if not isinstance(unit_id, str):
-          raise Exception("objects[%d] was not a string" % i)
-        unit_id_list.append(unit_id)
-        i += 1
-
-    if maps:
-      if not isinstance(maps, list):
-        raise Exception("maps was not of type 'list'")
-      i = 0
-      for unit_id in maps:
-        if not isinstance(unit_id, str):
-          raise Exception("maps[%d] was not a string" % i)
-        unit_id_list.append(unit_id)
-        i += 1
-
-    if tarot_cards:
-      if not isinstance(tarot_cards, list):
-        raise Exception("tarot_cards was not of type 'list'")
-      i = 0
-      for unit_id in tarot_cards:
-        if not isinstance(unit_id, str):
-          raise Exception("tarot_cards[%d] was not a string" % i)
-        unit_id_list.append(unit_id)
-        i += 1
+    for field in field_list.keys():
+      unit_list = change_list.get(field, None)
+      if unit_list != None:
+        if not isinstance(unit_list, list):
+          raise Exception("%s was not of type 'list'" % field)
+        i = 0
+        for unit in unit_list:
+          if not isinstance(unit, object):
+            raise Exception("%s[%d] was not of type 'object'" % (field, i))
+          unit_id = unit.get("unit_id", None)
+          if unit_id == None:
+            raise Exception("%s[%d] didn't have 'unit_id'" % (field, i))
+          if not isinstance(unit_id, str):
+            raise Exception("%s[%d].unit_id was not a string" % (field, i))
+          unit_id_list.append(unit_id)
+          if field == "main_force":
+            equipment_id = unit.get("equipment", None)
+            if equipment_id != None:
+              if not isinstance(equipment_id, str):
+                raise Exception("%s[%d].equipment was not a string" % (field, i))
+              unit_id_list.append(equipment_id)
+          i += 1
 
     # Get the Units that are referenced by the Team.
     unit_list = Unit.objects.filter(unit_id__in=unit_id_list).values('unit_id', 'type', 'point_values')
@@ -230,103 +192,49 @@ class Team(models.Model):
     for unit in unit_list:
       unit_map[unit["unit_id"]] = unit
 
-    if main_force:
-      main_force_update = []
-      i = 0
-      for unit in main_force:
-        unit_id = unit["unit_id"]
-        unit_db_entry = unit_map.get(unit_id, None)
-        if not unit_db_entry:
-          raise Exception("main_force[%d].unit_id ('%s') was invalid" % (i, unit_id))
-        type = unit_db_entry["type"]
-        if type != "character":
-          raise Exception("main_force[%d].unit_id ('%s') expected type 'character', but found ('%s')" % (i, unit_id, type))
-        point_value = unit.get("point_value", None)
-        if not point_value:
-          raise Exception("main_force[%d] didn't have 'point_value'" % i)
-        if not unit["point_value"] in unit_db_entry["point_values"]:
-          raise Exception("main_force[%d].point_value ('%d') was not a valid option in (%s)" % (i, point_value, str(unit_db_entry["point_values"])))
-        unit_update = {
-          "unit_id": unit_id,
-          "point_value": point_value,
-        }
-        # Validate any equipment attached to the unit.
-        equipment_id = unit.get("equipment", None)
-        if equipment_id:
-          unit_db_entry = unit_map.get(equipment_id, None)
-          if not unit_db_entry:
-            raise Exception("main_force[%d].equipment ('%s') was invalid" % (i, equipment_id))
+    for field in field_list.keys():
+      unit_list = change_list.get(field, None)
+      if unit_list != None:
+        field_update = []
+        i = 0
+        for unit in unit_list:
+          unit_id = unit["unit_id"]
+          unit_db_entry = unit_map.get(unit_id, None)
+          if unit_db_entry == None:
+            raise Exception("%s[%d].unit_id ('%s') was invalid" % (field, i, unit_id))
           type = unit_db_entry["type"]
-          if type != "equipment":
-            raise Exception("main_force[%d].equipment ('%s') expected type 'equipment', but found ('%s')" % (i, equipment_id, type))
-          unit_update["equipment"] = equipment_id
-        # Unit is valid - add it to the main force update.
-        main_force_update.append(unit_update)
-        i += 1
+          if not type in field_list[field]["types"]:
+            raise Exception("%s[%d].unit_id ('%s') expected type '%s', but found ('%s')" % (field, i, unit_id, str(field_list[field]["types"]), type))
+          unit_update = {
+            "unit_id": unit_id,
+          }
 
-      # Main force is valid - update the Model field.
-      self.main_force = main_force_update
+          point_value = unit.get("point_value", None)
+          # Point value is required for main force, but optional for the others.
+          if field == "main_force" and point_value == None:
+            raise Exception("%s[%d] didn't have 'point_value'" % (field, i))
+          if point_value:
+            if not unit["point_value"] in unit_db_entry["point_values"]:
+              raise Exception("main_force[%d].point_value ('%d') was not a valid option in (%s)" % (i, point_value, str(unit_db_entry["point_values"])))
+            unit_update["point_value"] = point_value
 
-    # Validate and commit sideline update.
-    if sideline:
-      sideline_update = []
-      i = 0
-      for unit_id in sideline:
-        unit_db_entry = unit_map.get(unit_id, None)
-        if not unit_db_entry:
-          raise Exception("sideline[%d] ('%s') was invalid" % (i, unit_id))
-        type = unit_db_entry["type"]
-        if type != "character" and type != "mystery_card":
-          raise Exception("sideline[%d] ('%s') expected type 'character' or 'mystery_card', but found ('%s')" % (i, unit_id, type))
-        sideline_update.append(unit_id)
-        i += 1
-      self.sideline = sideline_update
-
-    # Validate and commit objects update.
-    if objects:
-      objects_update = []
-      i = 0
-      for unit_id in objects:
-        unit_db_entry = unit_map.get(unit_id, None)
-        if not unit_db_entry:
-          raise Exception("objects[%d] ('%s') was invalid" % (i, unit_id))
-        type = unit_db_entry["type"]
-        if type != "object":
-          raise Exception("objects[%d] ('%s') expected type 'object', but found ('%s')" % (i, unit_id, type))
-        objects_update.append(unit_id)
-        i += 1
-      self.object_list = objects_update
-
-    # Validate and commit maps update.
-    if maps:
-      maps_update = []
-      i = 0
-      for unit_id in maps:
-        unit_db_entry = unit_map.get(unit_id, None)
-        if not unit_db_entry:
-          raise Exception("maps[%d] ('%s') was invalid" % (i, unit_id))
-        type = unit_db_entry["type"]
-        if type != "map":
-          raise Exception("maps[%d] ('%s') expected type 'map', but found ('%s')" % (i, unit_id, type))
-        maps_update.append(unit_id)
-        i += 1
-      self.map_list = maps_update
-
-    # Validate and commit tarot_cards update.
-    if tarot_cards:
-      tarot_cards_update = []
-      i = 0
-      for unit_id in tarot_cards:
-        unit_db_entry = unit_map.get(unit_id, None)
-        if not unit_db_entry:
-          raise Exception("tarot_cards[%d] ('%s') was invalid" % (i, unit_id))
-        type = unit_db_entry["type"]
-        if type != "tarot_card":
-          raise Exception("tarot_cards[%d] ('%s') expected type 'tarot_card', but found ('%s')" % (i, unit_id, type))
-        tarot_cards_update.append(unit_id)
-        i += 1
-      self.tarot_cards = tarot_cards_update
-
+          # Validate any equipment attached to the unit in the main force.
+          if field == "main_force":
+            equipment_id = unit.get("equipment", None)
+            if equipment_id != None:
+              unit_db_entry = unit_map.get(equipment_id, None)
+              if unit_db_entry == None:
+                raise Exception("%s[%d].equipment ('%s') was invalid" % (field, i, equipment_id))
+              type = unit_db_entry["type"]
+              if type != "equipment":
+                raise Exception("%s[%d].equipment ('%s') expected type 'equipment', but found ('%s')" % (field, i, equipment_id, type))
+              unit_update["equipment"] = equipment_id
+          # Unit is valid - add it to the main force update.
+          field_update.append(unit_update)
+          i += 1
+  
+        # Field update is valid - update the Model field.
+        setattr(self, field_list[field]["field_name"], field_update)
     return True
 
 # The Unit model is copied from the API and needs to stay in sync.

@@ -11,3 +11,8 @@ $ source ~/.virtualenvs/env/bin/activate
 $ deactivate
 or
 $ source deactivate
+
+
+# Database migrations
+$ python manage.py makemigrations
+$ python manage.py migrate                                                                                         

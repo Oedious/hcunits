@@ -207,7 +207,7 @@ class CharacterView extends UnitView {
     if (!this.unit_.special_powers) {
       return [];
     }
-    const LINES_PER_COLUMN = [16, 9, 30, 30];
+    const LINES_PER_COLUMN = (this.numDialTables_ == 1) ? [16, 9, 30, 30] : [7, 1, 30, 30];
     const CHARS_PER_NAME_LINE = 23;
     const CHARS_PER_DESC_LINE = 30;
     var currentLineCount = 0;
@@ -285,10 +285,11 @@ class CharacterView extends UnitView {
         {"start": 12, "end": this.unit_.dial_size}
       ],
     ];
-    const tableCols = TABLE_COLS[this.numDialTables_];
+    const tableCols = TABLE_COLS[this.numDialTables_ - 1];
 
     var html = "";
     var tableDialStart = 0;
+    var currentStartingLine = 0;
     for (var t = 0; t < this.numDialTables_; ++t) {
       var bottom = 70 + 135 * (this.numDialTables_ - t - 1);
       var borderWidth = 49 + 23 * (tableCols[t].end - tableCols[t].start);
@@ -361,11 +362,10 @@ class CharacterView extends UnitView {
 
       // The end of the dial is indicated by the last click processed.
       var tableDialEnd = currentClick;
-      var currentLine = 0;
       for (var click = tableDialStart; click < tableDialEnd; ++click) {
         if (this.unit_.dial[click].starting_line) {
-          var left = 31 + 23 * (this.unit_.dial[click].click_number - 1);
-          var color = STARTING_LINE_COLORS[this.unit_.point_values.length][currentLine++];
+          var left = 31 + 23 * (this.unit_.dial[click].click_number - tableDialStart - 1);
+          var color = STARTING_LINE_COLORS[this.unit_.point_values.length][currentStartingLine++];
           html += `<div class='characterDialStartingLine' style='left: ${left}px; background-color: ${color}'></div>`
         }
       }
