@@ -1,6 +1,6 @@
 class UnitView {
-  constructor(unitJson) {
-    this.unit_ = unitJson;
+  constructor(unit) {
+    this.unit_ = unit;
     // Only "xmxs" set has images.
     if (this.unit_.set_id == "xmxs") {
       this.unit_.has_image = true;

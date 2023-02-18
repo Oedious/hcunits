@@ -118,7 +118,7 @@ const SET_LIST = {
     "name": "Fast Forces: Fantastic Four",
     "release_date": "2020-07-22",
     "universe": "marvel"
-  }/*,
+  },/*,
   "wkm21": {
     "name": "WizKids Marvel 2021",
     "release_date": "2021-01-01",
@@ -128,5 +128,10 @@ const SET_LIST = {
     name: "WizKids DC 2021",
     "release_date": "2021-01-01",
     "universe": "dc"
-  }*/ 
+  }*/
+  "wk": {
+    "name": "WizKids Standard Game Pieces",
+    "release_date": "2002-05-01",
+    "universe": "universal"
+  },
 };

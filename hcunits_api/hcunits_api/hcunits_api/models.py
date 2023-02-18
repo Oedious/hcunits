@@ -17,10 +17,9 @@ class Unit(models.Model):
     name = models.TextField()
     type = models.CharField(max_length=21)
     point_values = models.JSONField()
-    age = models.CharField(max_length=6)
     rarity = models.CharField(max_length=15, blank=True, null=True)
     real_name = models.TextField(blank=True, null=True)
-    special_type = models.CharField(max_length=15, blank=True, null=True)
+    properties = models.JSONField()
     dimensions = models.CharField(max_length=3, blank=True, null=True)
     team_abilities = models.JSONField()
     keywords = models.JSONField()
@@ -29,6 +28,7 @@ class Unit(models.Model):
     improved_targeting = models.JSONField()
     object_type = models.CharField(max_length=11, blank=True, null=True)
     object_keyphrases = models.JSONField()
+    map_url = models.TextField(blank=True, null=True)
     unit_range = models.IntegerField(blank=True, null=True)
     targets = models.IntegerField(blank=True, null=True)
     speed_type = models.CharField(max_length=17, blank=True, null=True)
@@ -39,6 +39,6 @@ class Unit(models.Model):
     dial = models.JSONField()
 
     class Meta:
-        app_label = 'hcunits_api'
+        app_label = 'hcunits'
         managed = False
         db_table = 'units'

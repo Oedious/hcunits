@@ -19,24 +19,42 @@ class UnitManager {
   showUnit(unitId) {
     var unitMgr = this;
     this.dataSource_.searchByUnitId(unitId,
-      function(unitJson) {
-        unitMgr.showUnit_(unitJson);
+      function(unit) {
+        unitMgr.showUnit_(unit);
       },
       function(xhr, desc, err) {
         console.log("Error in showUnit(" + unitId + "): " + desc + " err=" + err);
       });
   }
 
-  showUnit_(unitJson) {
-    if (CharacterView.isType(unitJson.type)) {
-      this.unitView_ = new CharacterView(unitJson);
-    }
-    else if (ObjectView.isType(unitJson.type)) {
-      this.unitView_ = new ObjectView(unitJson);
-    }
-    else {
+  showUnit_(unit) {
+    if (CharacterView.isType(unit.type)) {
+      this.unitView_ = new CharacterView(unit);
+    } else if (ObjectView.isType(unit.type)) {
+      this.unitView_ = new ObjectView(unit);
+    } else if (MapView.isType(unit.type)) {
+      // Need to make a second RPC call to fetch the map layout file.
+      var unitMgr = this;
+      var unitCopy = unit;
+      this.dataSource_.loadMap(unit.map_url,
+        function(map) {
+          unitMgr.showMap_(unitCopy, map);
+        },
+        function(xhr, desc, err) {
+          console.log("Error loading map_url (" + unitCopy.map_url + "): " + desc + " err=" + err);
+        });
+      return;
+    } else {
       throw new Error(`ViewManager doesn't know how to handle unit type ${unitJson.type}`);
     }
+    this.unitView_.draw();
+    if (this.onShowUnitCallback_) {
+      this.onShowUnitCallback_();
+    }
+  }
+  
+  showMap_(unit, map) {
+    this.unitView_ = new MapView(unit, map);    
     this.unitView_.draw();
     if (this.onShowUnitCallback_) {
       this.onShowUnitCallback_();

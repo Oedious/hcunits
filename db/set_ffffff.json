@@ -5,13 +5,13 @@
     "collector_number": "001", 
     "name": "Mr. Fantastic", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "fast_forces", 
     "real_name": "Reed Richards", 
     "dimensions": "1x1", 
     "point_values": [
       50
     ], 
+    "properties": "[]", 
     "team_abilities": [
       "fantastic_four"
     ], 
@@ -29,7 +29,10 @@
       {
         "type": "trait", 
         "name": "ARM LASSO", 
-        "description": "Plasticity, Giant Reach: 3."
+        "description": "Plasticity, Giant Reach: 3.", 
+        "powers": [
+          "plasticity"
+        ]
       }
     ], 
     "improved_movement": [
@@ -46,7 +49,7 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
+        "click_number": 1, 
         "starting_line": true, 
         "speed_power": "sidestep", 
         "speed_value": 10, 
@@ -57,7 +60,7 @@
         "damage_value": 2
       }, 
       {
-        "click_number": 1, 
+        "click_number": 2, 
         "speed_power": "sidestep", 
         "speed_value": 10, 
         "attack_value": 10, 
@@ -65,17 +68,6 @@
         "defense_value": 18, 
         "damage_power": "outwit", 
         "damage_value": 2
-      }, 
-      {
-        "click_number": 2, 
-        "speed_power": "charge", 
-        "speed_value": 10, 
-        "attack_power": "quake", 
-        "attack_value": 11, 
-        "defense_power": "super_senses", 
-        "defense_value": 17, 
-        "damage_power": "close_combat_expert", 
-        "damage_value": 3
       }, 
       {
         "click_number": 3, 
@@ -101,6 +93,17 @@
       }, 
       {
         "click_number": 5, 
+        "speed_power": "charge", 
+        "speed_value": 10, 
+        "attack_power": "quake", 
+        "attack_value": 11, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 6, 
         "speed_power": "sidestep", 
         "speed_value": 10, 
         "attack_value": 10, 
@@ -117,13 +120,13 @@
     "collector_number": "002", 
     "name": "Invisible Woman", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "fast_forces", 
     "real_name": "Susan Richards", 
     "dimensions": "1x1", 
     "point_values": [
       50
     ], 
+    "properties": "[]", 
     "team_abilities": [
       "fantastic_four"
     ], 
@@ -140,7 +143,10 @@
       {
         "type": "trait", 
         "name": "LIKE I'M NOT EVEN THERE", 
-        "description": "Stealth."
+        "description": "Stealth.", 
+        "powers": [
+          "stealth"
+        ]
       }
     ], 
     "improved_movement": [], 
@@ -155,7 +161,7 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
+        "click_number": 1, 
         "starting_line": true, 
         "speed_power": "sidestep", 
         "speed_value": 8, 
@@ -164,16 +170,6 @@
         "defense_power": "energy_shield_deflection", 
         "defense_value": 18, 
         "damage_value": 3
-      }, 
-      {
-        "click_number": 1, 
-        "speed_power": "sidestep", 
-        "speed_value": 8, 
-        "attack_power": "energy_explosion", 
-        "attack_value": 9, 
-        "defense_power": "defend", 
-        "defense_value": 19, 
-        "damage_value": 2
       }, 
       {
         "click_number": 2, 
@@ -188,6 +184,16 @@
       {
         "click_number": 3, 
         "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 9, 
+        "defense_power": "defend", 
+        "defense_value": 19, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "sidestep", 
         "speed_value": 7, 
         "attack_power": "energy_explosion", 
         "attack_value": 10, 
@@ -196,7 +202,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 4, 
+        "click_number": 5, 
         "speed_power": "sidestep", 
         "speed_value": 7, 
         "attack_power": "energy_explosion", 
@@ -206,7 +212,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 5, 
+        "click_number": 6, 
         "speed_power": "sidestep", 
         "speed_value": 7, 
         "attack_value": 9, 
@@ -222,13 +228,13 @@
     "collector_number": "003", 
     "name": "The Thing", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "fast_forces", 
     "real_name": "Ben Grimm", 
     "dimensions": "1x1", 
     "point_values": [
       50
     ], 
+    "properties": "[]", 
     "team_abilities": [
       "fantastic_four"
     ], 
@@ -245,7 +251,10 @@
       {
         "type": "trait", 
         "name": "IT'S CLOBBERIN' TIME", 
-        "description": "Close Combat Expert."
+        "description": "Close Combat Expert.", 
+        "powers": [
+          "close_combat_expert"
+        ]
       }
     ], 
     "improved_movement": [
@@ -263,7 +272,7 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
+        "click_number": 1, 
         "starting_line": true, 
         "speed_power": "charge", 
         "speed_value": 11, 
@@ -274,23 +283,13 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 1, 
+        "click_number": 2, 
         "speed_power": "charge", 
         "speed_value": 10, 
         "attack_power": "super_strength", 
         "attack_value": 10, 
         "defense_power": "toughness", 
         "defense_value": 18, 
-        "damage_value": 3
-      }, 
-      {
-        "click_number": 2, 
-        "speed_power": "flurry", 
-        "speed_value": 9, 
-        "attack_power": "super_strength", 
-        "attack_value": 10, 
-        "defense_power": "toughness", 
-        "defense_value": 17, 
         "damage_value": 3
       }, 
       {
@@ -306,7 +305,7 @@
       {
         "click_number": 4, 
         "speed_power": "flurry", 
-        "speed_value": 8, 
+        "speed_value": 9, 
         "attack_power": "super_strength", 
         "attack_value": 10, 
         "defense_power": "toughness", 
@@ -315,6 +314,16 @@
       }, 
       {
         "click_number": 5, 
+        "speed_power": "flurry", 
+        "speed_value": 8, 
+        "attack_power": "super_strength", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 6, 
         "speed_power": "flurry", 
         "speed_value": 8, 
         "attack_value": 11, 
@@ -330,13 +339,13 @@
     "collector_number": "004", 
     "name": "Human Torch", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "fast_forces", 
     "real_name": "Johnny Storm", 
     "dimensions": "1x1", 
     "point_values": [
       50
     ], 
+    "properties": "[]", 
     "team_abilities": [
       "fantastic_four"
     ], 
@@ -353,7 +362,10 @@
       {
         "type": "trait", 
         "name": "SPONTANEOUS COMBUSTION", 
-        "description": "Poison."
+        "description": "Poison.", 
+        "powers": [
+          "poison"
+        ]
       }
     ], 
     "improved_movement": [
@@ -370,7 +382,7 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
+        "click_number": 1, 
         "starting_line": true, 
         "speed_power": "running_shot", 
         "speed_value": 8, 
@@ -380,7 +392,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 1, 
+        "click_number": 2, 
         "speed_power": "running_shot", 
         "speed_value": 9, 
         "attack_power": "pulse_wave", 
@@ -389,7 +401,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 2, 
+        "click_number": 3, 
         "speed_power": "running_shot", 
         "speed_value": 9, 
         "attack_power": "pulse_wave", 
@@ -398,7 +410,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 3, 
+        "click_number": 4, 
         "speed_power": "sidestep", 
         "speed_value": 9, 
         "attack_power": "smoke_cloud", 
@@ -407,7 +419,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 4, 
+        "click_number": 5, 
         "speed_power": "sidestep", 
         "speed_value": 8, 
         "attack_power": "smoke_cloud", 
@@ -416,7 +428,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 5, 
+        "click_number": 6, 
         "speed_power": "sidestep", 
         "speed_value": 8, 
         "attack_power": "pulse_wave", 
@@ -433,13 +445,13 @@
     "collector_number": "005", 
     "name": "Spider-Man", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "fast_forces", 
     "real_name": "Peter Parker", 
     "dimensions": "1x1", 
     "point_values": [
       50
     ], 
+    "properties": "[]", 
     "team_abilities": [
       "fantastic_four"
     ], 
@@ -457,7 +469,10 @@
       {
         "type": "trait", 
         "name": "WEB SHOOTERS", 
-        "description": "Incapacitate."
+        "description": "Incapacitate.", 
+        "powers": [
+          "incapacitate"
+        ]
       }
     ], 
     "improved_movement": [
@@ -474,7 +489,7 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
+        "click_number": 1, 
         "starting_line": true, 
         "speed_power": "charge", 
         "speed_value": 11, 
@@ -485,7 +500,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 1, 
+        "click_number": 2, 
         "speed_power": "charge", 
         "speed_value": 11, 
         "attack_value": 11, 
@@ -493,16 +508,6 @@
         "defense_value": 18, 
         "damage_power": "probability_control", 
         "damage_value": 3
-      }, 
-      {
-        "click_number": 2, 
-        "speed_power": "hypersonic_speed", 
-        "speed_value": 10, 
-        "attack_power": "precision_strike", 
-        "attack_value": 10, 
-        "defense_power": "super_senses", 
-        "defense_value": 17, 
-        "damage_value": 2
       }, 
       {
         "click_number": 3, 
@@ -517,7 +522,7 @@
       {
         "click_number": 4, 
         "speed_power": "hypersonic_speed", 
-        "speed_value": 9, 
+        "speed_value": 10, 
         "attack_power": "precision_strike", 
         "attack_value": 10, 
         "defense_power": "super_senses", 
@@ -526,6 +531,16 @@
       }, 
       {
         "click_number": 5, 
+        "speed_power": "hypersonic_speed", 
+        "speed_value": 9, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
         "speed_power": "sidestep", 
         "speed_value": 9, 
         "attack_value": 11, 
@@ -541,7 +556,6 @@
     "collector_number": "006", 
     "name": "Dr. Doom", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "fast_forces", 
     "real_name": "Victor Von Doom", 
     "dimensions": "1x1", 
@@ -549,6 +563,7 @@
       100, 
       50
     ], 
+    "properties": "[]", 
     "team_abilities": [
       "fantastic_four", 
       "minions_of_doom"
@@ -579,7 +594,7 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
+        "click_number": 1, 
         "starting_line": true, 
         "speed_power": "running_shot", 
         "speed_value": 8, 
@@ -590,23 +605,13 @@
         "damage_value": 4
       }, 
       {
-        "click_number": 1, 
+        "click_number": 2, 
         "speed_power": "running_shot", 
         "speed_value": 8, 
         "attack_power": "penetrating_psychic_blast", 
         "attack_value": 11, 
         "defense_power": "energy_shield_deflection", 
         "defense_value": 18, 
-        "damage_value": 3
-      }, 
-      {
-        "click_number": 2, 
-        "speed_power": "running_shot", 
-        "speed_value": 7, 
-        "attack_power": "penetrating_psychic_blast", 
-        "attack_value": 10, 
-        "defense_power": "toughness", 
-        "defense_value": 17, 
         "damage_value": 3
       }, 
       {
@@ -621,6 +626,16 @@
       }, 
       {
         "click_number": 4, 
+        "speed_power": "running_shot", 
+        "speed_value": 7, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
         "speed_power": "sidestep", 
         "speed_value": 7, 
         "attack_power": "energy_explosion", 
@@ -632,7 +647,7 @@
         "starting_line": true
       }, 
       {
-        "click_number": 5, 
+        "click_number": 6, 
         "speed_power": "sidestep", 
         "speed_value": 7, 
         "attack_power": "energy_explosion", 
@@ -643,7 +658,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 6, 
+        "click_number": 7, 
         "speed_power": "sidestep", 
         "speed_value": 7, 
         "attack_power": "energy_explosion", 
@@ -654,7 +669,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 7, 
+        "click_number": 8, 
         "speed_power": "sidestep", 
         "speed_value": 7, 
         "attack_power": "energy_explosion", 

@@ -1,0 +1,141 @@
+{
+  "updates": {
+    "f4011": {
+      "special_powers": [{
+        "powers": ["stealth"]
+      }]
+    },
+    "f4016": {
+      "special_powers": [{
+        "powers": ["shape_change"]
+      }]
+    },
+    "f4026": {
+      "special_powers": [{
+      }, {
+        "powers": ["stealth"]
+      }]
+    },
+    "f4027": {
+      "special_powers": [{
+        "powers": ["blades_claws_fangs", "energy_explosion", "pulse_wave", "quake", "super_strength", "incapacitate", "penetrating_psychic_blast", "smoke_cloud", "precision_strike", "poison", "steal_energy", "telekinesis"]
+      }, {
+        "powers": ["perplex"]
+      }]
+    },
+    "f4029": {
+      "special_powers": [{
+        "powers": ["energy_shield_deflection"]
+      }]
+    },
+    "f4033": {
+      "special_powers": [{
+      }, {
+        "powers": ["leadership"]
+      }, {
+        "powers": ["outwit"]
+      }]
+    },
+    "f4035": {
+      "special_powers": [{
+        "powers": ["enhancement"]
+      }],
+      "dial": [{
+      }, {
+      }, {
+        "starting_line": true
+      }]
+    },
+    "f4036": {
+      "special_powers": [{
+      }, {
+        "powers": ["empower"]
+      }]
+    },
+    "f4039": {
+      "special_powers": [{
+      }, {
+      }, {
+        "powers": [ "flurry", "leap_climb", "phasing_teleport", "earthbound_neutralized", "charge", "mind_control", "plasticity", "force_blast", "sidestep", "hypersonic_speed", "stealth", "running_shot", "blades_claws_fangs", "energy_explosion", "pulse_wave", "quake", "super_strength", "incapacitate", "penetrating_psychic_blast", "smoke_cloud", "precision_strike", "poison", "steal_energy", "telekinesis", "super_senses", "toughness", "defend", "combat_reflexes", "energy_shield_deflection", "barrier", "mastermind", "willpower", "invincible", "impervious", "regeneration", "invulnerability", "ranged_combat_expert", "battle_fury", "support", "exploit_weakness", "enhancement", "probability_control", "shape_change", "close_combat_expert", "empower", "perplex", "outwit", "leadership"]
+      }]
+    },
+    "f4042": {
+      "special_powers": [{
+      }, {
+        "powers": ["regeneration", "ranged_combat_expert"]
+      }]
+    },
+    "f4050": {
+      "special_powers": [{
+        "powers": ["shape_change", "perplex", "plasticity"]
+      }, {
+        "powers": ["sidestep", "hypersonic_speed"]
+      }]
+    },
+    "f4051": {
+      "special_powers": [{
+        "powers": ["stealth"]
+      }]
+    },
+    "f4056": {
+      "special_powers": [{
+        "powers": ["stealth"]
+      }]
+    },
+    "f4058": {
+      "special_powers": [{
+        "powers": ["sidestep", "stealth", "barrier", "charge", "impervious", "close_combat_expert", "plasticity", "super_senses", "running_shot", "energy_explosion"]
+      }]
+    },
+    "f4061": {
+      "special_powers": [{
+      }, {
+        "powers": ["leadership", "perplex"]
+      }]
+    },
+    "f4064": {
+      "special_powers": [{
+      }, {
+      }, {
+        "powers": ["stop", "impervious"]
+      }]
+    },
+    "f4066": {
+      "special_powers": [{
+      }, {
+      }, {
+        "powers": ["outwit", "perplex"]
+      }]
+    }
+  },
+  "deletions": [
+    "f4035e"
+  ],
+  "additions": [{
+    "unit_id": "f4M001",
+    "set_id": "f4",
+    "collector_number": "M001",
+    "name": "Aunt Petunia's House",
+    "type": "map",
+    "special_powers": [{
+      "type": "costed_trait",
+      "name": "AUNT PETUNIA'S HOUSE",
+      "description": "At the beginning of the game, choose a friendly character. That character's minimum range value when using Outwit, Perplex, or Probability Control is 8. If that character's name includes \"Franklin\" or \"Valeria\", the 8 becomes 10. CONSOLATION: Opposing character's maximum range value when using Outwit, Perplex, or Probability Control is 6.",
+      "point_value": 5
+    }],
+    "map_url": "https://hcmaps.net/maps/f4/aunt_petunias_house.json"
+  }, {
+    "unit_id": "f4M002",
+    "set_id": "f4",
+    "collector_number": "M002",
+    "name": "Latverian Village",
+    "type": "map",
+    "special_powers": [{
+      "type": "costed_trait",
+      "name": "LATVERIAN VILLAGE",
+      "description": "At the beginning of the game, choose a friendly character. This game, that character has: 'Mastermind, but only to choose a friendly Latverian Peasant bystander.' // At the beginning of the game, generate 3 Latverian Peasant bystanders in different orange squares. If the chosen character is named Dr. Doom, generate 6 instead. CONSOLATION: At the beginning of the game, generate a Latverian Peasant bystander in your starting area.",
+      "point_value": 5
+    }],
+    "map_url": "https://hcmaps.net/maps/f4/latverian_village.json"
+  }]
+}

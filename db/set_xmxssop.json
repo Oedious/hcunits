@@ -5,7 +5,6 @@
     "collector_number": "001", 
     "name": "Cable", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "common", 
     "real_name": "Nathaniel Summers", 
     "dimensions": "1x1", 
@@ -13,6 +12,7 @@
       75, 
       45
     ], 
+    "properties": "[]", 
     "team_abilities": [
       "x_men"
     ], 
@@ -33,7 +33,10 @@
       {
         "type": "attack", 
         "name": "IT'S FROM THE FUTURE", 
-        "description": "Penetrating/Psychic Blast, Improved Targeting: Destroys Blocking."
+        "description": "Penetrating/Psychic Blast, Improved Targeting: Destroys Blocking.", 
+        "powers": [
+          "penetrating_psychic_blast"
+        ]
       }
     ], 
     "improved_movement": [], 
@@ -48,7 +51,7 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
+        "click_number": 1, 
         "starting_line": true, 
         "speed_power": "running_shot", 
         "speed_value": 8, 
@@ -59,7 +62,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 1, 
+        "click_number": 2, 
         "speed_power": "running_shot", 
         "speed_value": 8, 
         "attack_power": "special", 
@@ -67,16 +70,6 @@
         "defense_power": "energy_shield_deflection", 
         "defense_value": 18, 
         "damage_value": 3
-      }, 
-      {
-        "click_number": 2, 
-        "speed_power": "charge", 
-        "speed_value": 8, 
-        "attack_power": "precision_strike", 
-        "attack_value": 10, 
-        "defense_power": "toughness", 
-        "defense_value": 18, 
-        "damage_value": 2
       }, 
       {
         "click_number": 3, 
@@ -95,9 +88,8 @@
         "attack_power": "precision_strike", 
         "attack_value": 10, 
         "defense_power": "toughness", 
-        "defense_value": 17, 
-        "damage_value": 3, 
-        "starting_line": true
+        "defense_value": 18, 
+        "damage_value": 2
       }, 
       {
         "click_number": 5, 
@@ -107,10 +99,21 @@
         "attack_value": 10, 
         "defense_power": "toughness", 
         "defense_value": 17, 
-        "damage_value": 3
+        "damage_value": 3, 
+        "starting_line": true
       }, 
       {
         "click_number": 6, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 7, 
         "speed_power": "running_shot", 
         "speed_value": 6, 
         "attack_power": "special", 
@@ -120,7 +123,7 @@
         "damage_value": 2
       }, 
       {
-        "click_number": 7, 
+        "click_number": 8, 
         "speed_power": "running_shot", 
         "speed_value": 6, 
         "attack_power": "special", 
@@ -137,7 +140,6 @@
     "collector_number": "002", 
     "name": "Dazzler", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "common", 
     "real_name": "Alison Blaire", 
     "dimensions": "1x1", 
@@ -145,6 +147,7 @@
       75, 
       35
     ], 
+    "properties": "[]", 
     "team_abilities": [
       "team_player"
     ], 
@@ -160,7 +163,10 @@
       {
         "type": "attack", 
         "name": "HIT 'EM WITH THE OLD RAZZLE DAZZLE", 
-        "description": "Pulse Wave. When Dazzler uses it, after resolutions give each hit opposing character an action token."
+        "description": "Pulse Wave. When Dazzler uses it, after resolutions give each hit opposing character an action token.", 
+        "powers": [
+          "pulse_wave"
+        ]
       }
     ], 
     "improved_movement": [], 
@@ -175,7 +181,7 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
+        "click_number": 1, 
         "starting_line": true, 
         "speed_power": "running_shot", 
         "speed_value": 8, 
@@ -187,7 +193,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 1, 
+        "click_number": 2, 
         "speed_power": "running_shot", 
         "speed_value": 8, 
         "attack_power": "special", 
@@ -198,7 +204,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 2, 
+        "click_number": 3, 
         "speed_power": "running_shot", 
         "speed_value": 8, 
         "attack_power": "pulse_wave", 
@@ -209,7 +215,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 3, 
+        "click_number": 4, 
         "speed_power": "running_shot", 
         "speed_value": 6, 
         "attack_power": "special", 
@@ -221,7 +227,7 @@
         "starting_line": true
       }, 
       {
-        "click_number": 4, 
+        "click_number": 5, 
         "speed_power": "running_shot", 
         "speed_value": 6, 
         "attack_power": "special", 
@@ -232,7 +238,7 @@
         "damage_value": 2
       }, 
       {
-        "click_number": 5, 
+        "click_number": 6, 
         "speed_power": "running_shot", 
         "speed_value": 6, 
         "attack_power": "pulse_wave", 
@@ -250,7 +256,6 @@
     "collector_number": "003", 
     "name": "Jubilee", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "common", 
     "real_name": "Jubilation Lee", 
     "dimensions": "1x1", 
@@ -258,6 +263,7 @@
       60, 
       30
     ], 
+    "properties": "[]", 
     "team_abilities": [
       "x_men"
     ], 
@@ -278,7 +284,11 @@
       {
         "type": "attack", 
         "name": "HERE COME THE FIREWORKS!", 
-        "description": "Energy Explosion, Precision Strike."
+        "description": "Energy Explosion, Precision Strike.", 
+        "powers": [
+          "energy_explosion", 
+          "precision_strike"
+        ]
       }
     ], 
     "improved_movement": [], 
@@ -293,22 +303,12 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
+        "click_number": 1, 
         "starting_line": true, 
         "speed_power": "running_shot", 
         "speed_value": 8, 
         "attack_power": "special", 
         "attack_value": 11, 
-        "defense_power": "energy_shield_deflection", 
-        "defense_value": 17, 
-        "damage_value": 3
-      }, 
-      {
-        "click_number": 1, 
-        "speed_power": "running_shot", 
-        "speed_value": 8, 
-        "attack_power": "special", 
-        "attack_value": 10, 
         "defense_power": "energy_shield_deflection", 
         "defense_value": 17, 
         "damage_value": 3
@@ -326,6 +326,16 @@
       {
         "click_number": 3, 
         "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "running_shot", 
         "speed_value": 6, 
         "attack_power": "special", 
         "attack_value": 10, 
@@ -335,7 +345,7 @@
         "starting_line": true
       }, 
       {
-        "click_number": 4, 
+        "click_number": 5, 
         "speed_power": "stealth", 
         "speed_value": 6, 
         "attack_power": "energy_explosion", 
@@ -345,7 +355,7 @@
         "damage_value": 2
       }, 
       {
-        "click_number": 5, 
+        "click_number": 6, 
         "speed_power": "stealth", 
         "speed_value": 6, 
         "attack_power": "energy_explosion", 
@@ -362,13 +372,13 @@
     "collector_number": "004", 
     "name": "The Fury", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "common", 
     "real_name": "N/A", 
     "dimensions": "1x1", 
     "point_values": [
       75
     ], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [
       "Robot"
@@ -392,18 +402,8 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
-        "starting_line": true, 
-        "speed_power": "charge", 
-        "speed_value": 10, 
-        "attack_value": 11, 
-        "defense_power": "willpower", 
-        "defense_value": 17, 
-        "damage_power": "exploit_weakness", 
-        "damage_value": 3
-      }, 
-      {
         "click_number": 1, 
+        "starting_line": true, 
         "speed_power": "charge", 
         "speed_value": 10, 
         "attack_value": 11, 
@@ -435,8 +435,8 @@
       {
         "click_number": 4, 
         "speed_power": "charge", 
-        "speed_value": 8, 
-        "attack_value": 10, 
+        "speed_value": 10, 
+        "attack_value": 11, 
         "defense_power": "willpower", 
         "defense_value": 17, 
         "damage_power": "exploit_weakness", 
@@ -471,6 +471,16 @@
         "defense_value": 17, 
         "damage_power": "exploit_weakness", 
         "damage_value": 3
+      }, 
+      {
+        "click_number": 8, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "willpower", 
+        "defense_value": 17, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 3
       }
     ]
   }, 
@@ -480,13 +490,13 @@
     "collector_number": "005", 
     "name": "Sevalithi Vampire", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "common", 
     "real_name": "Various", 
     "dimensions": "1x1", 
     "point_values": [
       40
     ], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [
       "Monster"
@@ -504,18 +514,8 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
-        "starting_line": true, 
-        "speed_power": "charge", 
-        "speed_value": 10, 
-        "attack_power": "blades_claws_fangs", 
-        "attack_value": 10, 
-        "defense_value": 17, 
-        "damage_power": "exploit_weakness", 
-        "damage_value": 2
-      }, 
-      {
         "click_number": 1, 
+        "starting_line": true, 
         "speed_power": "charge", 
         "speed_value": 10, 
         "attack_power": "blades_claws_fangs", 
@@ -527,7 +527,7 @@
       {
         "click_number": 2, 
         "speed_power": "charge", 
-        "speed_value": 8, 
+        "speed_value": 10, 
         "attack_power": "blades_claws_fangs", 
         "attack_value": 10, 
         "defense_value": 17, 
@@ -536,6 +536,16 @@
       }, 
       {
         "click_number": 3, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_value": 17, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
         "speed_power": "plasticity", 
         "speed_value": 8, 
         "attack_power": "blades_claws_fangs", 
@@ -545,7 +555,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 4, 
+        "click_number": 5, 
         "speed_power": "plasticity", 
         "speed_value": 8, 
         "attack_power": "blades_claws_fangs", 
@@ -562,13 +572,13 @@
     "collector_number": "006", 
     "name": "White Priestess", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "common", 
     "real_name": "Various", 
     "dimensions": "1x1", 
     "point_values": [
       40
     ], 
+    "properties": "[]", 
     "team_abilities": [
       "mystics"
     ], 
@@ -594,7 +604,7 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
+        "click_number": 1, 
         "starting_line": true, 
         "speed_power": "running_shot", 
         "speed_value": 8, 
@@ -605,7 +615,7 @@
         "damage_value": 2
       }, 
       {
-        "click_number": 1, 
+        "click_number": 2, 
         "speed_power": "running_shot", 
         "speed_value": 8, 
         "attack_power": "incapacitate", 
@@ -613,16 +623,6 @@
         "defense_power": "energy_shield_deflection", 
         "defense_value": 17, 
         "damage_value": 2
-      }, 
-      {
-        "click_number": 2, 
-        "speed_value": 8, 
-        "attack_power": "incapacitate", 
-        "attack_value": 10, 
-        "defense_power": "energy_shield_deflection", 
-        "defense_value": 17, 
-        "damage_power": "probability_control", 
-        "damage_value": 1
       }, 
       {
         "click_number": 3, 
@@ -636,6 +636,16 @@
       }, 
       {
         "click_number": 4, 
+        "speed_value": 8, 
+        "attack_power": "incapacitate", 
+        "attack_value": 10, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 17, 
+        "damage_power": "probability_control", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 5, 
         "speed_value": 8, 
         "attack_power": "incapacitate", 
         "attack_value": 9, 
@@ -652,13 +662,13 @@
     "collector_number": "007", 
     "name": "Green Priestess", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "common", 
     "real_name": "Various", 
     "dimensions": "1x1", 
     "point_values": [
       40
     ], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [
       "Mystical"
@@ -682,18 +692,8 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
-        "starting_line": true, 
-        "speed_power": "stealth", 
-        "speed_value": 8, 
-        "attack_power": "penetrating_psychic_blast", 
-        "attack_value": 11, 
-        "defense_power": "super_senses", 
-        "defense_value": 17, 
-        "damage_value": 3
-      }, 
-      {
         "click_number": 1, 
+        "starting_line": true, 
         "speed_power": "stealth", 
         "speed_value": 8, 
         "attack_power": "penetrating_psychic_blast", 
@@ -716,6 +716,16 @@
         "click_number": 3, 
         "speed_power": "stealth", 
         "speed_value": 8, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 11, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "stealth", 
+        "speed_value": 8, 
         "attack_value": 10, 
         "defense_power": "super_senses", 
         "defense_value": 17, 
@@ -723,7 +733,7 @@
         "damage_value": 2
       }, 
       {
-        "click_number": 4, 
+        "click_number": 5, 
         "speed_power": "stealth", 
         "speed_value": 8, 
         "attack_value": 10, 
@@ -740,7 +750,6 @@
     "collector_number": "008", 
     "name": "Empath", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "common", 
     "real_name": "Manuel de la Rocha", 
     "dimensions": "1x1", 
@@ -748,6 +757,7 @@
       75, 
       40
     ], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [
       "Hellions", 
@@ -757,7 +767,10 @@
       {
         "type": "speed", 
         "name": "NUDGE IN THE RIGHT DIRECTION", 
-        "description": "Mind Control. When Empath uses it, after resolutions give a hit character a Thrall token if they don't already have one. // When Empath uses Mastermind, he can instead choose an adjacent opposing character with a Thrall token regardless of keywords or point value. // When a character with a Thrall token takes damage from an attack, remove their Thrall token."
+        "description": "Mind Control. When Empath uses it, after resolutions give a hit character a Thrall token if they don't already have one. // When Empath uses Mastermind, he can instead choose an adjacent opposing character with a Thrall token regardless of keywords or point value. // When a character with a Thrall token takes damage from an attack, remove their Thrall token.", 
+        "powers": [
+          "mind_control"
+        ]
       }
     ], 
     "improved_movement": [], 
@@ -772,18 +785,8 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
-        "starting_line": true, 
-        "speed_power": "special", 
-        "speed_value": 6, 
-        "attack_power": "precision_strike", 
-        "attack_value": 11, 
-        "defense_power": "mastermind", 
-        "defense_value": 17, 
-        "damage_value": 1
-      }, 
-      {
         "click_number": 1, 
+        "starting_line": true, 
         "speed_power": "special", 
         "speed_value": 6, 
         "attack_power": "precision_strike", 
@@ -807,6 +810,16 @@
         "speed_power": "special", 
         "speed_value": 6, 
         "attack_power": "precision_strike", 
+        "attack_value": 11, 
+        "defense_power": "mastermind", 
+        "defense_value": 17, 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "special", 
+        "speed_value": 6, 
+        "attack_power": "precision_strike", 
         "attack_value": 10, 
         "defense_power": "mastermind", 
         "defense_value": 16, 
@@ -814,7 +827,7 @@
         "starting_line": true
       }, 
       {
-        "click_number": 4, 
+        "click_number": 5, 
         "speed_power": "plasticity", 
         "speed_value": 6, 
         "attack_power": "incapacitate", 
@@ -824,7 +837,7 @@
         "damage_value": 1
       }, 
       {
-        "click_number": 5, 
+        "click_number": 6, 
         "speed_power": "plasticity", 
         "speed_value": 6, 
         "attack_power": "incapacitate", 
@@ -834,7 +847,7 @@
         "damage_value": 1
       }, 
       {
-        "click_number": 6, 
+        "click_number": 7, 
         "speed_power": "plasticity", 
         "speed_value": 6, 
         "attack_power": "incapacitate", 
@@ -851,7 +864,6 @@
     "collector_number": "009", 
     "name": "Greycrow", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "common", 
     "real_name": "John Greycrow", 
     "dimensions": "1x1", 
@@ -859,6 +871,7 @@
       80, 
       40
     ], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [
       "Assassin", 
@@ -886,19 +899,8 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
-        "starting_line": true, 
-        "speed_power": "running_shot", 
-        "speed_value": 8, 
-        "attack_power": "penetrating_psychic_blast", 
-        "attack_value": 11, 
-        "defense_power": "energy_shield_deflection", 
-        "defense_value": 17, 
-        "damage_power": "special", 
-        "damage_value": 3
-      }, 
-      {
         "click_number": 1, 
+        "starting_line": true, 
         "speed_power": "running_shot", 
         "speed_value": 8, 
         "attack_power": "penetrating_psychic_blast", 
@@ -913,8 +915,8 @@
         "speed_power": "running_shot", 
         "speed_value": 8, 
         "attack_power": "penetrating_psychic_blast", 
-        "attack_value": 10, 
-        "defense_power": "toughness", 
+        "attack_value": 11, 
+        "defense_power": "energy_shield_deflection", 
         "defense_value": 17, 
         "damage_power": "special", 
         "damage_value": 3
@@ -928,10 +930,21 @@
         "defense_power": "toughness", 
         "defense_value": 17, 
         "damage_power": "special", 
-        "damage_value": 2
+        "damage_value": 3
       }, 
       {
         "click_number": 4, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
         "speed_power": "leap_climb", 
         "speed_value": 7, 
         "attack_power": "penetrating_psychic_blast", 
@@ -943,7 +956,7 @@
         "starting_line": true
       }, 
       {
-        "click_number": 5, 
+        "click_number": 6, 
         "speed_power": "leap_climb", 
         "speed_value": 7, 
         "attack_power": "penetrating_psychic_blast", 
@@ -954,7 +967,7 @@
         "damage_value": 2
       }, 
       {
-        "click_number": 6, 
+        "click_number": 7, 
         "speed_power": "leap_climb", 
         "speed_value": 6, 
         "attack_power": "penetrating_psychic_blast", 
@@ -965,7 +978,7 @@
         "damage_value": 2
       }, 
       {
-        "click_number": 7, 
+        "click_number": 8, 
         "speed_power": "leap_climb", 
         "speed_value": 6, 
         "attack_power": "penetrating_psychic_blast", 
@@ -983,13 +996,13 @@
     "collector_number": "010", 
     "name": "Rogue", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "common", 
     "real_name": "Anna Marie LeBeau", 
     "dimensions": "1x1", 
     "point_values": [
       100
     ], 
+    "properties": "[]", 
     "team_abilities": [
       "brotherhood_of_mutants", 
       "x_men"
@@ -1020,21 +1033,11 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
+        "click_number": 1, 
         "starting_line": true, 
         "speed_power": "charge", 
         "speed_value": 10, 
         "attack_value": 12, 
-        "defense_power": "invulnerability", 
-        "defense_value": 18, 
-        "damage_power": "close_combat_expert", 
-        "damage_value": 3
-      }, 
-      {
-        "click_number": 1, 
-        "speed_power": "charge", 
-        "speed_value": 10, 
-        "attack_value": 11, 
         "defense_power": "invulnerability", 
         "defense_value": 18, 
         "damage_power": "close_combat_expert", 
@@ -1063,10 +1066,10 @@
       {
         "click_number": 4, 
         "speed_power": "charge", 
-        "speed_value": 8, 
-        "attack_value": 10, 
+        "speed_value": 10, 
+        "attack_value": 11, 
         "defense_power": "invulnerability", 
-        "defense_value": 17, 
+        "defense_value": 18, 
         "damage_power": "close_combat_expert", 
         "damage_value": 3
       }, 
@@ -1078,7 +1081,7 @@
         "defense_power": "invulnerability", 
         "defense_value": 17, 
         "damage_power": "close_combat_expert", 
-        "damage_value": 2
+        "damage_value": 3
       }, 
       {
         "click_number": 6, 
@@ -1104,6 +1107,16 @@
         "click_number": 8, 
         "speed_power": "charge", 
         "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 9, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
         "attack_value": 9, 
         "defense_power": "invulnerability", 
         "defense_value": 16, 
@@ -1118,7 +1131,6 @@
     "collector_number": "011", 
     "name": "Wild Child", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "common", 
     "real_name": "Kyle Gibney", 
     "dimensions": "1x1", 
@@ -1126,6 +1138,7 @@
       60, 
       30
     ], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [
       "Animal", 
@@ -1136,12 +1149,20 @@
       {
         "type": "trait", 
         "name": "SEEKING AN ALPHA", 
-        "description": "Willpower, but only if Wild Child is adjacent to a friendly character that has a higher point value than him."
+        "description": "Willpower, but only if Wild Child is adjacent to a friendly character that has a higher point value than him.", 
+        "powers": [
+          "willpower"
+        ]
       }, 
       {
         "type": "defense", 
         "name": "UNPREDICTABLE AND DANGEROUS", 
-        "description": "Combat Reflexes, Super Senses, Toughness."
+        "description": "Combat Reflexes, Super Senses, Toughness.", 
+        "powers": [
+          "combat_reflexes", 
+          "super_senses", 
+          "toughness"
+        ]
       }
     ], 
     "improved_movement": [], 
@@ -1156,7 +1177,7 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
+        "click_number": 1, 
         "starting_line": true, 
         "speed_power": "charge", 
         "speed_value": 10, 
@@ -1168,7 +1189,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 1, 
+        "click_number": 2, 
         "speed_power": "charge", 
         "speed_value": 10, 
         "attack_power": "blades_claws_fangs", 
@@ -1179,7 +1200,7 @@
         "damage_value": 2
       }, 
       {
-        "click_number": 2, 
+        "click_number": 3, 
         "speed_power": "flurry", 
         "speed_value": 8, 
         "attack_power": "blades_claws_fangs", 
@@ -1190,7 +1211,7 @@
         "damage_value": 2
       }, 
       {
-        "click_number": 3, 
+        "click_number": 4, 
         "speed_power": "charge", 
         "speed_value": 8, 
         "attack_power": "blades_claws_fangs", 
@@ -1202,7 +1223,7 @@
         "starting_line": true
       }, 
       {
-        "click_number": 4, 
+        "click_number": 5, 
         "speed_power": "charge", 
         "speed_value": 8, 
         "attack_power": "blades_claws_fangs", 
@@ -1213,7 +1234,7 @@
         "damage_value": 2
       }, 
       {
-        "click_number": 5, 
+        "click_number": 6, 
         "speed_power": "flurry", 
         "speed_value": 6, 
         "attack_power": "blades_claws_fangs", 
@@ -1231,13 +1252,13 @@
     "collector_number": "012", 
     "name": "Stepford Cuckoo", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "common", 
     "real_name": "Various", 
     "dimensions": "1x1", 
     "point_values": [
       15
     ], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [
       "Hellfire Club", 
@@ -1267,7 +1288,7 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
+        "click_number": 1, 
         "starting_line": true, 
         "speed_power": "mind_control", 
         "speed_value": 8, 
@@ -1276,7 +1297,7 @@
         "damage_value": 2
       }, 
       {
-        "click_number": 2, 
+        "click_number": 3, 
         "speed_value": 8, 
         "attack_power": "penetrating_psychic_blast", 
         "attack_value": 10, 
@@ -1284,7 +1305,7 @@
         "damage_value": 2
       }, 
       {
-        "click_number": 4, 
+        "click_number": 5, 
         "speed_value": 8, 
         "attack_value": 10, 
         "defense_value": 17, 
@@ -1292,7 +1313,7 @@
         "damage_value": 2
       }, 
       {
-        "click_number": 6, 
+        "click_number": 7, 
         "speed_value": 8, 
         "attack_value": 10, 
         "defense_value": 17, 
@@ -1300,7 +1321,7 @@
         "damage_value": 2
       }, 
       {
-        "click_number": 8, 
+        "click_number": 9, 
         "speed_value": 8, 
         "attack_value": 10, 
         "defense_value": 17, 
@@ -1315,7 +1336,6 @@
     "collector_number": "013", 
     "name": "Storm", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "uncommon", 
     "real_name": "Ororo Munroe", 
     "dimensions": "1x1", 
@@ -1323,6 +1343,7 @@
       70, 
       45
     ], 
+    "properties": "[]", 
     "team_abilities": [
       "x_men"
     ], 
@@ -1345,12 +1366,18 @@
         "name": "RALLY", 
         "description": "Stealth. // FREE: Remove one of Storm's RALLY dice. If you do, this turn when Storm makes an attack, opposing characters can't positively modify their defense value.", 
         "rally_type": "opposing", 
-        "rally_die": 5
+        "rally_die": 5, 
+        "powers": [
+          "stealth"
+        ]
       }, 
       {
         "type": "attack", 
         "name": "LIGHTNING STRIKE", 
-        "description": "Giant Reach: 3, Quake."
+        "description": "Giant Reach: 3, Quake.", 
+        "powers": [
+          "quake"
+        ]
       }
     ], 
     "improved_movement": [], 
@@ -1365,21 +1392,10 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
+        "click_number": 1, 
         "starting_line": true, 
         "speed_power": "charge", 
         "speed_value": 12, 
-        "attack_power": "special", 
-        "attack_value": 11, 
-        "defense_power": "super_senses", 
-        "defense_value": 18, 
-        "damage_power": "exploit_weakness", 
-        "damage_value": 3
-      }, 
-      {
-        "click_number": 1, 
-        "speed_power": "charge", 
-        "speed_value": 10, 
         "attack_power": "special", 
         "attack_value": 11, 
         "defense_power": "super_senses", 
@@ -1404,6 +1420,17 @@
         "speed_value": 10, 
         "attack_power": "special", 
         "attack_value": 11, 
+        "defense_power": "super_senses", 
+        "defense_value": 18, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "charge", 
+        "speed_value": 10, 
+        "attack_power": "special", 
+        "attack_value": 11, 
         "defense_power": "combat_reflexes", 
         "defense_value": 17, 
         "damage_power": "exploit_weakness", 
@@ -1411,7 +1438,7 @@
         "starting_line": true
       }, 
       {
-        "click_number": 4, 
+        "click_number": 5, 
         "speed_power": "charge", 
         "speed_value": 8, 
         "attack_power": "precision_strike", 
@@ -1422,7 +1449,7 @@
         "damage_value": 2
       }, 
       {
-        "click_number": 5, 
+        "click_number": 6, 
         "speed_power": "charge", 
         "speed_value": 8, 
         "attack_power": "precision_strike", 
@@ -1433,7 +1460,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 6, 
+        "click_number": 7, 
         "speed_power": "charge", 
         "speed_value": 8, 
         "attack_power": "precision_strike", 
@@ -1451,7 +1478,6 @@
     "collector_number": "014", 
     "name": "Havok", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "uncommon", 
     "real_name": "Alex Summers", 
     "dimensions": "1x1", 
@@ -1459,6 +1485,7 @@
       100, 
       50
     ], 
+    "properties": "[]", 
     "team_abilities": [
       "brotherhood_of_mutants", 
       "x_men"
@@ -1482,12 +1509,21 @@
       {
         "type": "attack", 
         "name": "PLASMA DISCHARGE", 
-        "description": "Energy Explosion, Penetrating/Psychic Blast."
+        "description": "Energy Explosion, Penetrating/Psychic Blast.", 
+        "powers": [
+          "energy_explosion", 
+          "penetrating_psychic_blast"
+        ]
       }, 
       {
         "type": "defense", 
         "name": "CONTAINMENT SUIT", 
-        "description": "Energy Shield/Deflection, Toughness, Willpower."
+        "description": "Energy Shield/Deflection, Toughness, Willpower.", 
+        "powers": [
+          "energy_shield_deflection", 
+          "toughness", 
+          "willpower"
+        ]
       }
     ], 
     "improved_movement": [], 
@@ -1502,23 +1538,12 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
+        "click_number": 1, 
         "starting_line": true, 
         "speed_power": "running_shot", 
         "speed_value": 10, 
         "attack_power": "special", 
         "attack_value": 12, 
-        "defense_power": "special", 
-        "defense_value": 18, 
-        "damage_power": "leadership", 
-        "damage_value": 3
-      }, 
-      {
-        "click_number": 1, 
-        "speed_power": "running_shot", 
-        "speed_value": 10, 
-        "attack_power": "special", 
-        "attack_value": 11, 
         "defense_power": "special", 
         "defense_value": 18, 
         "damage_power": "leadership", 
@@ -1531,14 +1556,14 @@
         "attack_power": "special", 
         "attack_value": 11, 
         "defense_power": "special", 
-        "defense_value": 17, 
+        "defense_value": 18, 
         "damage_power": "leadership", 
         "damage_value": 3
       }, 
       {
         "click_number": 3, 
         "speed_power": "running_shot", 
-        "speed_value": 8, 
+        "speed_value": 10, 
         "attack_power": "special", 
         "attack_value": 11, 
         "defense_power": "special", 
@@ -1555,19 +1580,19 @@
         "defense_power": "special", 
         "defense_value": 17, 
         "damage_power": "leadership", 
-        "damage_value": 3, 
-        "starting_line": true
+        "damage_value": 3
       }, 
       {
         "click_number": 5, 
         "speed_power": "running_shot", 
         "speed_value": 8, 
-        "attack_power": "energy_explosion", 
-        "attack_value": 10, 
-        "defense_power": "toughness", 
+        "attack_power": "special", 
+        "attack_value": 11, 
+        "defense_power": "special", 
         "defense_value": 17, 
         "damage_power": "leadership", 
-        "damage_value": 3
+        "damage_value": 3, 
+        "starting_line": true
       }, 
       {
         "click_number": 6, 
@@ -1590,6 +1615,17 @@
         "defense_value": 17, 
         "damage_power": "leadership", 
         "damage_value": 3
+      }, 
+      {
+        "click_number": 8, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "leadership", 
+        "damage_value": 3
       }
     ]
   }, 
@@ -1599,7 +1635,6 @@
     "collector_number": "015", 
     "name": "Rockslide", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "uncommon", 
     "real_name": "Santo Vaccarro", 
     "dimensions": "1x1", 
@@ -1607,6 +1642,7 @@
       80, 
       50
     ], 
+    "properties": "[]", 
     "team_abilities": [
       "x_men"
     ], 
@@ -1623,7 +1659,10 @@
       {
         "type": "defense", 
         "name": "REFORMING", 
-        "description": "STOP. Regeneration, Toughness."
+        "description": "STOP. Regeneration, Toughness.", 
+        "powers": [
+          "energy_explosion"
+        ]
       }
     ], 
     "improved_movement": [
@@ -1640,7 +1679,7 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
+        "click_number": 1, 
         "starting_line": true, 
         "speed_power": "charge", 
         "speed_value": 10, 
@@ -1651,7 +1690,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 1, 
+        "click_number": 2, 
         "speed_power": "charge", 
         "speed_value": 10, 
         "attack_power": "special", 
@@ -1661,7 +1700,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 2, 
+        "click_number": 3, 
         "speed_power": "flurry", 
         "speed_value": 10, 
         "attack_power": "special", 
@@ -1671,7 +1710,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 3, 
+        "click_number": 4, 
         "speed_power": "charge", 
         "speed_value": 8, 
         "attack_power": "quake", 
@@ -1682,7 +1721,7 @@
         "starting_line": true
       }, 
       {
-        "click_number": 4, 
+        "click_number": 5, 
         "speed_power": "charge", 
         "speed_value": 8, 
         "attack_power": "quake", 
@@ -1692,7 +1731,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 5, 
+        "click_number": 6, 
         "speed_power": "flurry", 
         "speed_value": 8, 
         "attack_power": "special", 
@@ -1702,7 +1741,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 6, 
+        "click_number": 7, 
         "speed_power": "flurry", 
         "speed_value": 8, 
         "attack_power": "special", 
@@ -1719,7 +1758,6 @@
     "collector_number": "016", 
     "name": "Cypher", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "uncommon", 
     "real_name": "Douglas Ramsey", 
     "dimensions": "1x1", 
@@ -1727,6 +1765,7 @@
       45, 
       25
     ], 
+    "properties": "[]", 
     "team_abilities": [
       "team_player"
     ], 
@@ -1755,7 +1794,11 @@
       {
         "type": "damage", 
         "name": "MASTER DECODER", 
-        "description": "Outwit, Perplex."
+        "description": "Outwit, Perplex.", 
+        "powers": [
+          "outwit", 
+          "perplex"
+        ]
       }
     ], 
     "improved_movement": [], 
@@ -1770,18 +1813,8 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
-        "starting_line": true, 
-        "speed_power": "charge", 
-        "speed_value": 8, 
-        "attack_value": 10, 
-        "defense_power": "combat_reflexes", 
-        "defense_value": 17, 
-        "damage_power": "special", 
-        "damage_value": 2
-      }, 
-      {
         "click_number": 1, 
+        "starting_line": true, 
         "speed_power": "charge", 
         "speed_value": 8, 
         "attack_value": 10, 
@@ -1803,6 +1836,16 @@
       {
         "click_number": 3, 
         "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "charge", 
         "speed_value": 6, 
         "attack_value": 9, 
         "defense_power": "combat_reflexes", 
@@ -1812,7 +1855,7 @@
         "starting_line": true
       }, 
       {
-        "click_number": 4, 
+        "click_number": 5, 
         "speed_power": "charge", 
         "speed_value": 6, 
         "attack_value": 9, 
@@ -1829,14 +1872,13 @@
     "collector_number": "017", 
     "name": "Pogg Ur-Pogg", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "uncommon", 
     "real_name": "Pogg Ur-Pogg", 
-    "special_type": "unique", 
     "dimensions": "1x1", 
     "point_values": [
       60
     ], 
+    "properties": "[\"unique\"]", 
     "team_abilities": [], 
     "keywords": [
       "Animal", 
@@ -1870,18 +1912,8 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
-        "starting_line": true, 
-        "speed_power": "stealth", 
-        "speed_value": 6, 
-        "attack_value": 10, 
-        "defense_power": "super_senses", 
-        "defense_value": 17, 
-        "damage_power": "outwit", 
-        "damage_value": 2
-      }, 
-      {
         "click_number": 1, 
+        "starting_line": true, 
         "speed_power": "stealth", 
         "speed_value": 6, 
         "attack_value": 10, 
@@ -1904,10 +1936,10 @@
         "click_number": 3, 
         "speed_power": "stealth", 
         "speed_value": 6, 
-        "attack_value": 9, 
+        "attack_value": 10, 
         "defense_power": "super_senses", 
-        "defense_value": 16, 
-        "damage_power": "shape_change", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
         "damage_value": 2
       }, 
       {
@@ -1929,6 +1961,16 @@
         "defense_value": 16, 
         "damage_power": "shape_change", 
         "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "stealth", 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "super_senses", 
+        "defense_value": 16, 
+        "damage_power": "shape_change", 
+        "damage_value": 2
       }
     ]
   }, 
@@ -1938,17 +1980,17 @@
     "collector_number": "017bt", 
     "name": "Armored Pogg Ur-Pogg", 
     "type": "bystander", 
-    "age": "modern", 
     "rarity": "uncommon", 
     "dimensions": "1x1", 
     "point_values": [], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [], 
     "special_powers": [
       {
         "type": "trait", 
         "name": "I PRAY YOU WAIT JUST A MOMENT", 
-        "description": "Armored Pogg Ur-Pogg can't be chosen for Mastermind. // After the resolution of any action, if no friendly character named Pogg Ur-Pogg is on the map, KO Armored Pogg Ur-Pogg. // When Armored Pogg Ur-Pogg would take damage, you may instead roll a d6."
+        "description": "Armored Pogg Ur-Pogg can't be chosen for Mastermind. // After the resolution of any action, if no friendly character named Pogg Ur-Pogg is on the map, KO Armored Pogg Ur-Pogg. // When Armored Pogg Ur-Pogg would take damage, you may instead roll a d6. *1-3: Deal Pogg Ur-Pogg 1 unavoidable damage. *4-6: Deal Pogg Ur-Pogg 2 unavoidable damage. Protected: Pulse Wave."
       }
     ], 
     "improved_movement": [], 
@@ -1963,7 +2005,7 @@
     "dial_size": "1", 
     "dial": [
       {
-        "click_number": 0, 
+        "click_number": 1, 
         "starting_line": true, 
         "speed_power": "charge", 
         "speed_value": 10, 
@@ -1982,13 +2024,13 @@
     "collector_number": "018", 
     "name": "Solem", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "uncommon", 
     "real_name": "Unknown", 
     "dimensions": "1x1", 
     "point_values": [
       70
     ], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [
       "Arakko", 
@@ -2006,7 +2048,10 @@
       {
         "type": "defense", 
         "name": "ADAMANTIUM SKIN", 
-        "description": "Invincible. When Solem uses it to reduce damage from an equipped opposing character's attack, he reduces the damage by 3 instead. Protected: Outwit."
+        "description": "Invincible. When Solem uses it to reduce damage from an equipped opposing character's attack, he reduces the damage by 3 instead. Protected: Outwit.", 
+        "powers": [
+          "invincible"
+        ]
       }
     ], 
     "improved_movement": [], 
@@ -2021,18 +2066,8 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
-        "starting_line": true, 
-        "speed_power": "charge", 
-        "speed_value": 8, 
-        "attack_value": 11, 
-        "defense_power": "special", 
-        "defense_value": 18, 
-        "damage_power": "exploit_weakness", 
-        "damage_value": 3
-      }, 
-      {
         "click_number": 1, 
+        "starting_line": true, 
         "speed_power": "charge", 
         "speed_value": 8, 
         "attack_value": 11, 
@@ -2045,7 +2080,7 @@
         "click_number": 2, 
         "speed_power": "charge", 
         "speed_value": 8, 
-        "attack_value": 10, 
+        "attack_value": 11, 
         "defense_power": "special", 
         "defense_value": 18, 
         "damage_power": "exploit_weakness", 
@@ -2063,6 +2098,16 @@
       }, 
       {
         "click_number": 4, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 18, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
         "speed_power": "flurry", 
         "speed_value": 8, 
         "attack_value": 10, 
@@ -2072,7 +2117,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 5, 
+        "click_number": 6, 
         "speed_power": "flurry", 
         "speed_value": 7, 
         "attack_value": 9, 
@@ -2082,7 +2127,7 @@
         "damage_value": 2
       }, 
       {
-        "click_number": 6, 
+        "click_number": 7, 
         "speed_power": "flurry", 
         "speed_value": 7, 
         "attack_value": 9, 
@@ -2099,7 +2144,6 @@
     "collector_number": "019", 
     "name": "Rachel Summers", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "uncommon", 
     "real_name": "Rachel Grey", 
     "dimensions": "1x1", 
@@ -2107,6 +2151,7 @@
       125, 
       50
     ], 
+    "properties": "[]", 
     "team_abilities": [
       "x_men"
     ], 
@@ -2128,7 +2173,11 @@
       {
         "type": "defense", 
         "name": "ENHANCED PSIONIC SHIELDING", 
-        "description": "Invulnerability, Super Senses. Protected: Outwit."
+        "description": "Invulnerability, Super Senses. Protected: Outwit.", 
+        "powers": [
+          "invulnerability", 
+          "super_senses"
+        ]
       }
     ], 
     "improved_movement": [], 
@@ -2143,7 +2192,7 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
+        "click_number": 1, 
         "starting_line": true, 
         "speed_power": "running_shot", 
         "speed_value": 10, 
@@ -2152,16 +2201,6 @@
         "defense_power": "special", 
         "defense_value": 18, 
         "damage_value": 4
-      }, 
-      {
-        "click_number": 1, 
-        "speed_power": "running_shot", 
-        "speed_value": 10, 
-        "attack_power": "penetrating_psychic_blast", 
-        "attack_value": 11, 
-        "defense_power": "special", 
-        "defense_value": 18, 
-        "damage_value": 3
       }, 
       {
         "click_number": 2, 
@@ -2176,7 +2215,7 @@
       {
         "click_number": 3, 
         "speed_power": "running_shot", 
-        "speed_value": 8, 
+        "speed_value": 10, 
         "attack_power": "penetrating_psychic_blast", 
         "attack_value": 11, 
         "defense_power": "special", 
@@ -2190,7 +2229,7 @@
         "attack_power": "penetrating_psychic_blast", 
         "attack_value": 11, 
         "defense_power": "special", 
-        "defense_value": 17, 
+        "defense_value": 18, 
         "damage_value": 3
       }, 
       {
@@ -2201,19 +2240,18 @@
         "attack_value": 11, 
         "defense_power": "special", 
         "defense_value": 17, 
-        "damage_value": 3, 
-        "starting_line": true
+        "damage_value": 3
       }, 
       {
         "click_number": 6, 
-        "speed_power": "phasing_teleport", 
+        "speed_power": "running_shot", 
         "speed_value": 8, 
-        "attack_power": "telekinesis", 
-        "attack_value": 10, 
-        "defense_power": "super_senses", 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 11, 
+        "defense_power": "special", 
         "defense_value": 17, 
-        "damage_power": "ranged_combat_expert", 
-        "damage_value": 2
+        "damage_value": 3, 
+        "starting_line": true
       }, 
       {
         "click_number": 7, 
@@ -2233,6 +2271,17 @@
         "attack_power": "telekinesis", 
         "attack_value": 10, 
         "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 9, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 8, 
+        "attack_power": "telekinesis", 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
         "defense_value": 16, 
         "damage_power": "ranged_combat_expert", 
         "damage_value": 2
@@ -2245,7 +2294,6 @@
     "collector_number": "020", 
     "name": "Orphan-Maker", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "uncommon", 
     "real_name": "Peter", 
     "dimensions": "1x1", 
@@ -2253,6 +2301,7 @@
       75, 
       40
     ], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [
       "Armor", 
@@ -2264,12 +2313,19 @@
       {
         "type": "trait", 
         "name": "ARMORED BATTLESUIT", 
-        "description": "Energy Shield/Deflection. // When Orphan-Maker is dealt penetrating damage, after resolutions deal 1 penetrating damage to an adjacent opposing character."
+        "description": "Energy Shield/Deflection. // When Orphan-Maker is dealt penetrating damage, after resolutions deal 1 penetrating damage to an adjacent opposing character.", 
+        "powers": [
+          "energy_shield_deflection"
+        ]
       }, 
       {
         "type": "defense", 
         "name": "RESURRECTION IN ARAKKO", 
-        "description": "STOP. Invulnerability. When this click is first revealed, for the rest of the game Orphan-Maker modifies his combat values +1."
+        "description": "STOP. Invulnerability. When this click is first revealed, for the rest of the game Orphan-Maker modifies his combat values +1.", 
+        "powers": [
+          "stop", 
+          "invulnerability"
+        ]
       }
     ], 
     "improved_movement": [], 
@@ -2286,19 +2342,8 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
-        "starting_line": true, 
-        "speed_power": "running_shot", 
-        "speed_value": 10, 
-        "attack_power": "penetrating_psychic_blast", 
-        "attack_value": 11, 
-        "defense_power": "invulnerability", 
-        "defense_value": 18, 
-        "damage_power": "perplex", 
-        "damage_value": 3
-      }, 
-      {
         "click_number": 1, 
+        "starting_line": true, 
         "speed_power": "running_shot", 
         "speed_value": 10, 
         "attack_power": "penetrating_psychic_blast", 
@@ -2313,13 +2358,24 @@
         "speed_power": "running_shot", 
         "speed_value": 10, 
         "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 11, 
+        "defense_power": "invulnerability", 
+        "defense_value": 18, 
+        "damage_power": "perplex", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "running_shot", 
+        "speed_value": 10, 
+        "attack_power": "penetrating_psychic_blast", 
         "attack_value": 10, 
         "defense_power": "invulnerability", 
         "defense_value": 18, 
         "damage_value": 3
       }, 
       {
-        "click_number": 3, 
+        "click_number": 4, 
         "speed_power": "charge", 
         "speed_value": 10, 
         "attack_power": "super_strength", 
@@ -2329,16 +2385,6 @@
         "damage_power": "perplex", 
         "damage_value": 3, 
         "starting_line": true
-      }, 
-      {
-        "click_number": 4, 
-        "speed_power": "charge", 
-        "speed_value": 8, 
-        "attack_power": "super_strength", 
-        "attack_value": 10, 
-        "defense_power": "toughness", 
-        "defense_value": 17, 
-        "damage_value": 3
       }, 
       {
         "click_number": 5, 
@@ -2352,6 +2398,16 @@
       }, 
       {
         "click_number": 6, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "super_strength", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 7, 
         "speed_power": "running_shot", 
         "speed_value": 8, 
         "attack_power": "precision_strike", 
@@ -2369,7 +2425,6 @@
     "collector_number": "021", 
     "name": "Summoner", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "uncommon", 
     "real_name": "None", 
     "dimensions": "1x1", 
@@ -2377,6 +2432,7 @@
       85, 
       45
     ], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [
       "Animal", 
@@ -2394,7 +2450,10 @@
       {
         "type": "trait", 
         "name": "CONTROL THE BEASTS OF ARAKKO", 
-        "description": "Mind Control. When Summoner uses it and targets an opposing character with a shared keyword, he modifies attack +2. // FREE: Choose a target opposing character within 6 squares and line of fire. Until your next turn, that character can't use SAFEGUARD: Mind Control."
+        "description": "Mind Control. When Summoner uses it and targets an opposing character with a shared keyword, he modifies attack +2. // FREE: Choose a target opposing character within 6 squares and line of fire. Until your next turn, that character can't use SAFEGUARD: Mind Control.", 
+        "powers": [
+          "mind_control"
+        ]
       }
     ], 
     "improved_movement": [], 
@@ -2409,19 +2468,8 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
-        "starting_line": true, 
-        "speed_power": "charge", 
-        "speed_value": 10, 
-        "attack_power": "precision_strike", 
-        "attack_value": 11, 
-        "defense_power": "invincible", 
-        "defense_value": 18, 
-        "damage_power": "shape_change", 
-        "damage_value": 4
-      }, 
-      {
         "click_number": 1, 
+        "starting_line": true, 
         "speed_power": "charge", 
         "speed_value": 10, 
         "attack_power": "precision_strike", 
@@ -2455,15 +2503,14 @@
       }, 
       {
         "click_number": 4, 
-        "speed_power": "phasing_teleport", 
-        "speed_value": 8, 
+        "speed_power": "charge", 
+        "speed_value": 10, 
         "attack_power": "precision_strike", 
-        "attack_value": 10, 
-        "defense_power": "invulnerability", 
-        "defense_value": 17, 
-        "damage_power": "outwit", 
-        "damage_value": 3, 
-        "starting_line": true
+        "attack_value": 11, 
+        "defense_power": "invincible", 
+        "defense_value": 18, 
+        "damage_power": "shape_change", 
+        "damage_value": 4
       }, 
       {
         "click_number": 5, 
@@ -2474,7 +2521,8 @@
         "defense_power": "invulnerability", 
         "defense_value": 17, 
         "damage_power": "outwit", 
-        "damage_value": 3
+        "damage_value": 3, 
+        "starting_line": true
       }, 
       {
         "click_number": 6, 
@@ -2497,6 +2545,17 @@
         "defense_value": 17, 
         "damage_power": "outwit", 
         "damage_value": 3
+      }, 
+      {
+        "click_number": 8, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 8, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 3
       }
     ]
   }, 
@@ -2506,13 +2565,13 @@
     "collector_number": "022", 
     "name": "Risque", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "uncommon", 
     "real_name": "Gloria Dolores Munoz", 
     "dimensions": "1x1", 
     "point_values": [
       45
     ], 
+    "properties": "[]", 
     "team_abilities": [
       "shield"
     ], 
@@ -2524,12 +2583,19 @@
       {
         "type": "attack", 
         "name": "INORGANIC IMPLOSION", 
-        "description": "Telekinesis. // POWER: Choose an unheld object within range and line of fire. Deal 2 damage to all opposing characters within 2 squares of that object, then remove it from the game."
+        "description": "Telekinesis. // POWER: Choose an unheld object within range and line of fire. Deal 2 damage to all opposing characters within 2 squares of that object, then remove it from the game.", 
+        "powers": [
+          "telekinesis"
+        ]
       }, 
       {
         "type": "defense", 
         "name": "NATURALLY AGILE", 
-        "description": "Super Senses, Willpower."
+        "description": "Super Senses, Willpower.", 
+        "powers": [
+          "super_senses", 
+          "willpower"
+        ]
       }
     ], 
     "improved_movement": [], 
@@ -2544,7 +2610,7 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
+        "click_number": 1, 
         "starting_line": true, 
         "speed_power": "stealth", 
         "speed_value": 7, 
@@ -2553,16 +2619,6 @@
         "defense_power": "special", 
         "defense_value": 17, 
         "damage_value": 3
-      }, 
-      {
-        "click_number": 1, 
-        "speed_power": "stealth", 
-        "speed_value": 7, 
-        "attack_power": "special", 
-        "attack_value": 10, 
-        "defense_power": "special", 
-        "defense_value": 17, 
-        "damage_value": 2
       }, 
       {
         "click_number": 2, 
@@ -2576,11 +2632,11 @@
       }, 
       {
         "click_number": 3, 
-        "speed_power": "force_blast", 
+        "speed_power": "stealth", 
         "speed_value": 7, 
         "attack_power": "special", 
         "attack_value": 10, 
-        "defense_power": "combat_reflexes", 
+        "defense_power": "special", 
         "defense_value": 17, 
         "damage_value": 2
       }, 
@@ -2603,6 +2659,16 @@
         "defense_power": "combat_reflexes", 
         "defense_value": 17, 
         "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "force_blast", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_value": 2
       }
     ]
   }, 
@@ -2612,7 +2678,6 @@
     "collector_number": "023", 
     "name": "Isca the Unbeaten", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "rare", 
     "real_name": "Isca", 
     "dimensions": "1x1", 
@@ -2620,6 +2685,7 @@
       85, 
       55
     ], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [
       "Arakko", 
@@ -2642,7 +2708,10 @@
       {
         "type": "trait", 
         "name": "YOU WILL WITNESS MY POWER", 
-        "description": "Perplex. When Isca the Unbeaten uses it to target an opposing character, until your next turn she may replace her printed combat value with the target's printed combat value of the same combat type chosen to be modified (Speed, Attack, Defense, or Range)."
+        "description": "Perplex. When Isca the Unbeaten uses it to target an opposing character, until your next turn she may replace her printed combat value with the target's printed combat value of the same combat type chosen to be modified (Speed, Attack, Defense, or Range).", 
+        "powers": [
+          "perplex"
+        ]
       }
     ], 
     "improved_movement": [], 
@@ -2657,18 +2726,8 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
-        "starting_line": true, 
-        "speed_power": "charge", 
-        "speed_value": 10, 
-        "attack_value": 11, 
-        "defense_power": "invulnerability", 
-        "defense_value": 17, 
-        "damage_power": "close_combat_expert", 
-        "damage_value": 3
-      }, 
-      {
         "click_number": 1, 
+        "starting_line": true, 
         "speed_power": "charge", 
         "speed_value": 10, 
         "attack_value": 11, 
@@ -2695,18 +2754,18 @@
         "defense_power": "invulnerability", 
         "defense_value": 17, 
         "damage_power": "close_combat_expert", 
-        "damage_value": 3, 
-        "starting_line": true
+        "damage_value": 3
       }, 
       {
         "click_number": 4, 
-        "speed_power": "flurry", 
+        "speed_power": "charge", 
         "speed_value": 10, 
-        "attack_power": "steal_energy", 
-        "attack_value": 10, 
-        "defense_power": "super_senses", 
+        "attack_value": 11, 
+        "defense_power": "invulnerability", 
         "defense_value": 17, 
-        "damage_value": 3
+        "damage_power": "close_combat_expert", 
+        "damage_value": 3, 
+        "starting_line": true
       }, 
       {
         "click_number": 5, 
@@ -2737,6 +2796,16 @@
         "defense_power": "super_senses", 
         "defense_value": 17, 
         "damage_value": 3
+      }, 
+      {
+        "click_number": 8, 
+        "speed_power": "flurry", 
+        "speed_value": 10, 
+        "attack_power": "steal_energy", 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_value": 3
       }
     ]
   }, 
@@ -2746,7 +2815,6 @@
     "collector_number": "024", 
     "name": "Wolverine", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "rare", 
     "real_name": "James Howlett", 
     "dimensions": "1x1", 
@@ -2755,6 +2823,7 @@
       95, 
       55
     ], 
+    "properties": "[]", 
     "team_abilities": [
       "x_men"
     ], 
@@ -2774,12 +2843,19 @@
       {
         "type": "trait", 
         "name": "I SEEM TO ALWAYS BE RETURNING FROM HELL", 
-        "description": "Willpower. // Whenever Wolverine rolls a 5 or 6 for a single d6 roll, after resolutions you may remove an action token from him and may heal him 1 click."
+        "description": "Willpower. // Whenever Wolverine rolls a 5 or 6 for a single d6 roll, after resolutions you may remove an action token from him and may heal him 1 click.", 
+        "powers": [
+          "willpower"
+        ]
       }, 
       {
         "type": "defense", 
         "name": "FIGHTING OFF A THOUSAND UNDEAD NINJAS", 
-        "description": "Impervious, Super Senses. Protected: Outwit."
+        "description": "Impervious, Super Senses. Protected: Outwit.", 
+        "powers": [
+          "impervious", 
+          "super_senses"
+        ]
       }
     ], 
     "improved_movement": [
@@ -2796,7 +2872,7 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
+        "click_number": 1, 
         "starting_line": true, 
         "speed_power": "charge", 
         "speed_value": 12, 
@@ -2807,7 +2883,7 @@
         "damage_value": 4
       }, 
       {
-        "click_number": 1, 
+        "click_number": 2, 
         "speed_power": "charge", 
         "speed_value": 10, 
         "attack_value": 12, 
@@ -2817,7 +2893,7 @@
         "damage_value": 4
       }, 
       {
-        "click_number": 2, 
+        "click_number": 3, 
         "speed_power": "flurry", 
         "speed_value": 10, 
         "attack_value": 12, 
@@ -2825,30 +2901,30 @@
         "defense_value": 18, 
         "damage_power": "close_combat_expert", 
         "damage_value": 4
-      }, 
-      {
-        "click_number": 3, 
-        "speed_power": "charge", 
-        "speed_value": 10, 
-        "attack_value": 11, 
-        "defense_power": "special", 
-        "defense_value": 18, 
-        "damage_power": "leadership", 
-        "damage_value": 3, 
-        "starting_line": true
       }, 
       {
         "click_number": 4, 
         "speed_power": "charge", 
         "speed_value": 10, 
         "attack_value": 11, 
+        "defense_power": "special", 
+        "defense_value": 18, 
+        "damage_power": "leadership", 
+        "damage_value": 3, 
+        "starting_line": true
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "charge", 
+        "speed_value": 10, 
+        "attack_value": 11, 
         "defense_power": "super_senses", 
         "defense_value": 18, 
         "damage_power": "exploit_weakness", 
         "damage_value": 3
       }, 
       {
-        "click_number": 5, 
+        "click_number": 6, 
         "speed_power": "flurry", 
         "speed_value": 8, 
         "attack_value": 11, 
@@ -2858,7 +2934,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 6, 
+        "click_number": 7, 
         "speed_power": "charge", 
         "speed_value": 8, 
         "attack_value": 10, 
@@ -2869,7 +2945,7 @@
         "starting_line": true
       }, 
       {
-        "click_number": 7, 
+        "click_number": 8, 
         "speed_power": "charge", 
         "speed_value": 8, 
         "attack_value": 10, 
@@ -2879,7 +2955,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 8, 
+        "click_number": 9, 
         "speed_power": "flurry", 
         "speed_value": 8, 
         "attack_value": 10, 
@@ -2889,7 +2965,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 9, 
+        "click_number": 10, 
         "speed_power": "charge", 
         "speed_value": 6, 
         "attack_value": 9, 
@@ -2899,7 +2975,7 @@
         "damage_value": 2
       }, 
       {
-        "click_number": 10, 
+        "click_number": 11, 
         "speed_power": "charge", 
         "speed_value": 6, 
         "attack_value": 9, 
@@ -2916,7 +2992,6 @@
     "collector_number": "025", 
     "name": "War", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "rare", 
     "real_name": "Unknown", 
     "dimensions": "1x1", 
@@ -2924,6 +2999,7 @@
       70, 
       45
     ], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [
       "Arakko", 
@@ -2940,12 +3016,19 @@
       {
         "type": "trait", 
         "name": "THE FIRST CHILDREN", 
-        "description": "At the beginning of the game, if your starting force has two or more characters with the Horsemen keyword, this game War has: \"Steal Energy, but with close or range attacks.\" // If a friendly character named Apocalypse, Annihilation, or Genesis is on your force, modify War's attack and defense +1."
+        "description": "At the beginning of the game, if your starting force has two or more characters with the Horsemen keyword, this game War has: \"Steal Energy, but with close or range attacks.\" // If a friendly character named Apocalypse, Annihilation, or Genesis is on your force, modify War's attack and defense +1.", 
+        "powers": [
+          "steal_energy"
+        ]
       }, 
       {
         "type": "defense", 
         "name": "HORSEMEN OF WAR", 
-        "description": "Energy Shield/Deflection, Willpower."
+        "description": "Energy Shield/Deflection, Willpower.", 
+        "powers": [
+          "energy_shield_deflection", 
+          "willpower"
+        ]
       }
     ], 
     "improved_movement": [], 
@@ -2960,7 +3043,7 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
+        "click_number": 1, 
         "starting_line": true, 
         "speed_power": "running_shot", 
         "speed_value": 10, 
@@ -2972,7 +3055,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 1, 
+        "click_number": 2, 
         "speed_power": "running_shot", 
         "speed_value": 10, 
         "attack_power": "penetrating_psychic_blast", 
@@ -2983,7 +3066,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 2, 
+        "click_number": 3, 
         "speed_power": "running_shot", 
         "speed_value": 8, 
         "attack_power": "penetrating_psychic_blast", 
@@ -2995,7 +3078,7 @@
         "starting_line": true
       }, 
       {
-        "click_number": 3, 
+        "click_number": 4, 
         "speed_power": "running_shot", 
         "speed_value": 8, 
         "attack_power": "penetrating_psychic_blast", 
@@ -3006,7 +3089,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 4, 
+        "click_number": 5, 
         "speed_power": "charge", 
         "speed_value": 8, 
         "attack_value": 9, 
@@ -3016,7 +3099,7 @@
         "damage_value": 2
       }, 
       {
-        "click_number": 5, 
+        "click_number": 6, 
         "speed_power": "charge", 
         "speed_value": 6, 
         "attack_value": 9, 
@@ -3026,7 +3109,7 @@
         "damage_value": 2
       }, 
       {
-        "click_number": 6, 
+        "click_number": 7, 
         "speed_power": "charge", 
         "speed_value": 6, 
         "attack_value": 9, 
@@ -3043,7 +3126,6 @@
     "collector_number": "026", 
     "name": "Death", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "rare", 
     "real_name": "Unknown", 
     "dimensions": "1x1", 
@@ -3051,6 +3133,7 @@
       70, 
       45
     ], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [
       "Animal", 
@@ -3067,23 +3150,33 @@
       {
         "type": "trait", 
         "name": "THE FIRST CHILDREN", 
-        "description": "At the beginning of the game, if your starting force has two or more characters with the Horsemen keyword, this game Death has: \"Steal Energy, but with close or range attacks.\" // If a friendly character named Apocalypse, Annihilation, or Genesis is on your force, modify Death's attack and defense +1."
+        "description": "At the beginning of the game, if your starting force has two or more characters with the Horsemen keyword, this game Death has: \"Steal Energy, but with close or range attacks.\" // If a friendly character named Apocalypse, Annihilation, or Genesis is on your force, modify Death's attack and defense +1.", 
+        "powers": [
+          "steal_energy"
+        ]
       }, 
       {
         "type": "attack", 
         "name": "EYE OF DEATH", 
-        "description": "Smoke Cloud. Smoke Cloud as FREE. // When Death makes a close attack, he may target opposing characters occupying his Smoke Cloud markers, regardless of adjacency."
+        "description": "Smoke Cloud. Smoke Cloud as FREE. // When Death makes a close attack, he may target opposing characters occupying his Smoke Cloud markers, regardless of adjacency.", 
+        "powers": [
+          "smoke_cloud"
+        ]
       }, 
       {
         "type": "defense", 
         "name": "HORSEMEN OF DEATH", 
-        "description": "Super Senses, Willpower."
+        "description": "Super Senses, Willpower.", 
+        "powers": [
+          "super_senses", 
+          "willpower"
+        ]
       }
     ], 
-    "improved_movement": [], 
-    "improved_targeting": [
+    "improved_movement": [
       "hindering"
     ], 
+    "improved_targeting": [], 
     "object_keyphrases": [], 
     "unit_range": "4", 
     "targets": "2", 
@@ -3094,7 +3187,7 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
+        "click_number": 1, 
         "starting_line": true, 
         "speed_power": "phasing_teleport", 
         "speed_value": 10, 
@@ -3106,7 +3199,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 1, 
+        "click_number": 2, 
         "speed_power": "phasing_teleport", 
         "speed_value": 10, 
         "attack_power": "special", 
@@ -3117,7 +3210,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 2, 
+        "click_number": 3, 
         "speed_power": "phasing_teleport", 
         "speed_value": 8, 
         "attack_power": "special", 
@@ -3129,7 +3222,7 @@
         "starting_line": true
       }, 
       {
-        "click_number": 3, 
+        "click_number": 4, 
         "speed_power": "phasing_teleport", 
         "speed_value": 8, 
         "attack_power": "special", 
@@ -3140,7 +3233,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 4, 
+        "click_number": 5, 
         "speed_power": "charge", 
         "speed_value": 8, 
         "attack_value": 9, 
@@ -3150,7 +3243,7 @@
         "damage_value": 2
       }, 
       {
-        "click_number": 5, 
+        "click_number": 6, 
         "speed_power": "charge", 
         "speed_value": 6, 
         "attack_value": 9, 
@@ -3160,7 +3253,7 @@
         "damage_value": 2
       }, 
       {
-        "click_number": 6, 
+        "click_number": 7, 
         "speed_power": "charge", 
         "speed_value": 6, 
         "attack_value": 9, 
@@ -3177,7 +3270,6 @@
     "collector_number": "027", 
     "name": "Manifold", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "rare", 
     "real_name": "Eden Fesi", 
     "dimensions": "1x1", 
@@ -3185,6 +3277,7 @@
       75, 
       30
     ], 
+    "properties": "[]", 
     "team_abilities": [
       "shield", 
       "team_player"
@@ -3200,12 +3293,20 @@
       {
         "type": "trait", 
         "name": "FOLDING SPACE AROUND YOU", 
-        "description": "Passenger: 2, Phasing/Teleport, Stealth. When Manifold uses Phasing/Teleport, after resolutions you may choose a character whose square he moved through. That character can't use improved abilities until your next turn."
+        "description": "Passenger: 2, Phasing/Teleport, Stealth. When Manifold uses Phasing/Teleport, after resolutions you may choose a character whose square he moved through. That character can't use improved abilities until your next turn.", 
+        "powers": [
+          "phasing_teleport", 
+          "stealth"
+        ]
       }, 
       {
         "type": "defense", 
         "name": "POSITIONAL AWARENESS", 
-        "description": "Combat Reflexes, Willpower. // Adjacent friendly characters can use Combat Reflexes."
+        "description": "Combat Reflexes, Willpower. // Adjacent friendly characters can use Combat Reflexes.", 
+        "powers": [
+          "combat_reflexes", 
+          "willpower"
+        ]
       }
     ], 
     "improved_movement": [], 
@@ -3220,21 +3321,10 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
+        "click_number": 1, 
         "starting_line": true, 
         "speed_power": "charge", 
         "speed_value": 12, 
-        "attack_power": "blades_claws_fangs", 
-        "attack_value": 11, 
-        "defense_power": "special", 
-        "defense_value": 18, 
-        "damage_power": "probability_control", 
-        "damage_value": 3
-      }, 
-      {
-        "click_number": 1, 
-        "speed_power": "charge", 
-        "speed_value": 10, 
         "attack_power": "blades_claws_fangs", 
         "attack_value": 11, 
         "defense_power": "special", 
@@ -3258,6 +3348,17 @@
         "speed_power": "charge", 
         "speed_value": 10, 
         "attack_power": "blades_claws_fangs", 
+        "attack_value": 11, 
+        "defense_power": "special", 
+        "defense_value": 18, 
+        "damage_power": "probability_control", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "charge", 
+        "speed_value": 10, 
+        "attack_power": "blades_claws_fangs", 
         "attack_value": 10, 
         "defense_power": "special", 
         "defense_value": 17, 
@@ -3266,7 +3367,7 @@
         "starting_line": true
       }, 
       {
-        "click_number": 4, 
+        "click_number": 5, 
         "speed_power": "flurry", 
         "speed_value": 8, 
         "attack_value": 10, 
@@ -3276,7 +3377,7 @@
         "damage_value": 2
       }, 
       {
-        "click_number": 5, 
+        "click_number": 6, 
         "speed_power": "flurry", 
         "speed_value": 8, 
         "attack_value": 9, 
@@ -3286,7 +3387,7 @@
         "damage_value": 2
       }, 
       {
-        "click_number": 6, 
+        "click_number": 7, 
         "speed_power": "flurry", 
         "speed_value": 8, 
         "attack_value": 9, 
@@ -3303,13 +3404,13 @@
     "collector_number": "028", 
     "name": "Nanny", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "rare", 
     "real_name": "Eleanor Murch", 
     "dimensions": "1x1", 
     "point_values": [
       60
     ], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [
       "Hellions", 
@@ -3320,7 +3421,11 @@
       {
         "type": "speed", 
         "name": "NANNY WILL TAKE CARE OF YOU", 
-        "description": "Mind Control, Stealth. When Nanny uses Mind Control, targeted characters less than 100 points modify defense -2."
+        "description": "Mind Control, Stealth. When Nanny uses Mind Control, targeted characters less than 100 points modify defense -2.", 
+        "powers": [
+          "mind_control", 
+          "stealth"
+        ]
       }
     ], 
     "improved_movement": [], 
@@ -3335,18 +3440,8 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
-        "starting_line": true, 
-        "speed_power": "special", 
-        "speed_value": 6, 
-        "attack_power": "precision_strike", 
-        "attack_value": 11, 
-        "defense_power": "invulnerability", 
-        "defense_value": 18, 
-        "damage_value": 3
-      }, 
-      {
         "click_number": 1, 
+        "starting_line": true, 
         "speed_power": "special", 
         "speed_value": 6, 
         "attack_power": "precision_strike", 
@@ -3360,13 +3455,23 @@
         "speed_power": "special", 
         "speed_value": 6, 
         "attack_power": "precision_strike", 
+        "attack_value": 11, 
+        "defense_power": "invulnerability", 
+        "defense_value": 18, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "special", 
+        "speed_value": 6, 
+        "attack_power": "precision_strike", 
         "attack_value": 10, 
         "defense_power": "invulnerability", 
         "defense_value": 17, 
         "damage_value": 3
       }, 
       {
-        "click_number": 3, 
+        "click_number": 4, 
         "speed_power": "special", 
         "speed_value": 6, 
         "attack_power": "blades_claws_fangs", 
@@ -3376,7 +3481,7 @@
         "damage_value": 2
       }, 
       {
-        "click_number": 4, 
+        "click_number": 5, 
         "speed_power": "special", 
         "speed_value": 6, 
         "attack_power": "blades_claws_fangs", 
@@ -3386,7 +3491,7 @@
         "damage_value": 2
       }, 
       {
-        "click_number": 5, 
+        "click_number": 6, 
         "speed_power": "special", 
         "speed_value": 6, 
         "attack_power": "blades_claws_fangs", 
@@ -3403,7 +3508,6 @@
     "collector_number": "029", 
     "name": "Gorgon", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "rare", 
     "real_name": "Tomi Shishido", 
     "dimensions": "1x1", 
@@ -3411,6 +3515,7 @@
       80, 
       45
     ], 
+    "properties": "[]", 
     "team_abilities": [
       "team_player", 
       "x_men"
@@ -3430,7 +3535,10 @@
       {
         "type": "damage", 
         "name": "GAZE OF THE GORGON", 
-        "description": "Exploit Weakness. // FREE: Choose an adjacent opposing character and roll a d6. 4-6: Give that character an action token."
+        "description": "Exploit Weakness. // FREE: Choose an adjacent opposing character and roll a d6. 4-6: Give that character an action token.", 
+        "powers": [
+          "exploit_weakness"
+        ]
       }
     ], 
     "improved_movement": [], 
@@ -3445,21 +3553,11 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
+        "click_number": 1, 
         "starting_line": true, 
         "speed_power": "charge", 
         "speed_value": 10, 
         "attack_value": 12, 
-        "defense_power": "combat_reflexes", 
-        "defense_value": 18, 
-        "damage_power": "special", 
-        "damage_value": 3
-      }, 
-      {
-        "click_number": 1, 
-        "speed_power": "charge", 
-        "speed_value": 10, 
-        "attack_value": 11, 
         "defense_power": "combat_reflexes", 
         "defense_value": 18, 
         "damage_power": "special", 
@@ -3471,12 +3569,22 @@
         "speed_value": 10, 
         "attack_value": 11, 
         "defense_power": "combat_reflexes", 
-        "defense_value": 17, 
+        "defense_value": 18, 
         "damage_power": "special", 
         "damage_value": 3
       }, 
       {
         "click_number": 3, 
+        "speed_power": "charge", 
+        "speed_value": 10, 
+        "attack_value": 11, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
         "speed_power": "charge", 
         "speed_value": 8, 
         "attack_value": 11, 
@@ -3486,7 +3594,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 4, 
+        "click_number": 5, 
         "speed_power": "charge", 
         "speed_value": 8, 
         "attack_value": 10, 
@@ -3497,23 +3605,13 @@
         "starting_line": true
       }, 
       {
-        "click_number": 5, 
+        "click_number": 6, 
         "speed_power": "charge", 
         "speed_value": 8, 
         "attack_value": 10, 
         "defense_power": "super_senses", 
         "defense_value": 17, 
         "damage_power": "special", 
-        "damage_value": 3
-      }, 
-      {
-        "click_number": 6, 
-        "speed_power": "flurry", 
-        "speed_value": 8, 
-        "attack_value": 10, 
-        "defense_power": "combat_reflexes", 
-        "defense_value": 18, 
-        "damage_power": "probability_control", 
         "damage_value": 3
       }, 
       {
@@ -3530,6 +3628,16 @@
         "click_number": 8, 
         "speed_power": "flurry", 
         "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 18, 
+        "damage_power": "probability_control", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 9, 
+        "speed_power": "flurry", 
+        "speed_value": 8, 
         "attack_value": 9, 
         "defense_power": "combat_reflexes", 
         "defense_value": 18, 
@@ -3544,7 +3652,6 @@
     "collector_number": "030", 
     "name": "Mister Sinister", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "rare", 
     "real_name": "Nathaniel Essex", 
     "dimensions": "1x1", 
@@ -3552,6 +3659,7 @@
       80, 
       45
     ], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [
       "Hellions", 
@@ -3566,12 +3674,20 @@
         "name": "RALLY", 
         "description": "Plasticity. // Once per turn, you may remove one of Mister Sinister's RALLY dice to replace a die in an opposing attack roll with it.", 
         "rally_type": "friendly", 
-        "rally_die": 1
+        "rally_die": 1, 
+        "powers": [
+          "plasticity"
+        ]
       }, 
       {
         "type": "damage", 
         "name": "MAKE NO MISTAKE, I AM IN CHARGE", 
-        "description": "Leadership, Outwit, Shape Change. When Mister Sinister uses Shape Change and succeeds, he can't be attacked this turn."
+        "description": "Leadership, Outwit, Shape Change. When Mister Sinister uses Shape Change and succeeds, he can't be attacked this turn.", 
+        "powers": [
+          "leadership", 
+          "outwit", 
+          "shape_change"
+        ]
       }
     ], 
     "improved_movement": [], 
@@ -3586,19 +3702,8 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
-        "starting_line": true, 
-        "speed_power": "running_shot", 
-        "speed_value": 8, 
-        "attack_power": "penetrating_psychic_blast", 
-        "attack_value": 11, 
-        "defense_power": "toughness", 
-        "defense_value": 18, 
-        "damage_power": "special", 
-        "damage_value": 3
-      }, 
-      {
         "click_number": 1, 
+        "starting_line": true, 
         "speed_power": "running_shot", 
         "speed_value": 8, 
         "attack_power": "penetrating_psychic_blast", 
@@ -3615,12 +3720,23 @@
         "attack_power": "penetrating_psychic_blast", 
         "attack_value": 11, 
         "defense_power": "toughness", 
-        "defense_value": 17, 
+        "defense_value": 18, 
         "damage_power": "special", 
         "damage_value": 3
       }, 
       {
         "click_number": 3, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 11, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
         "speed_power": "running_shot", 
         "speed_value": 8, 
         "attack_power": "penetrating_psychic_blast", 
@@ -3630,17 +3746,6 @@
         "damage_power": "special", 
         "damage_value": 3, 
         "starting_line": true
-      }, 
-      {
-        "click_number": 4, 
-        "speed_power": "mind_control", 
-        "speed_value": 7, 
-        "attack_power": "poison", 
-        "attack_value": 10, 
-        "defense_power": "combat_reflexes", 
-        "defense_value": 17, 
-        "damage_power": "outwit", 
-        "damage_value": 3
       }, 
       {
         "click_number": 5, 
@@ -3655,6 +3760,17 @@
       }, 
       {
         "click_number": 6, 
+        "speed_power": "mind_control", 
+        "speed_value": 7, 
+        "attack_power": "poison", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 7, 
         "speed_power": "mind_control", 
         "speed_value": 7, 
         "attack_power": "poison", 
@@ -3672,7 +3788,6 @@
     "collector_number": "031", 
     "name": "Captain Britain", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "super_rare", 
     "real_name": "Elizabeth Braddock", 
     "dimensions": "1x1", 
@@ -3680,6 +3795,7 @@
       95, 
       55
     ], 
+    "properties": "[]", 
     "team_abilities": [
       "mystics", 
       "x_men"
@@ -3704,7 +3820,10 @@
       {
         "type": "trait", 
         "name": "TENACITY, ALWAYS", 
-        "description": "Leadership, but succeeds on 4-6. When Captain Britain uses it and succeeds, in addition to normal effects, she may remove an action token from a friendly character within range."
+        "description": "Leadership, but succeeds on 4-6. When Captain Britain uses it and succeeds, in addition to normal effects, she may remove an action token from a friendly character within range.", 
+        "powers": [
+          "leadership"
+        ]
       }
     ], 
     "improved_movement": [], 
@@ -3719,7 +3838,7 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
+        "click_number": 1, 
         "starting_line": true, 
         "speed_power": "charge", 
         "speed_value": 10, 
@@ -3731,7 +3850,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 1, 
+        "click_number": 2, 
         "speed_power": "charge", 
         "speed_value": 10, 
         "attack_power": "precision_strike", 
@@ -3739,16 +3858,6 @@
         "defense_power": "combat_reflexes", 
         "defense_value": 18, 
         "damage_power": "close_combat_expert", 
-        "damage_value": 3
-      }, 
-      {
-        "click_number": 2, 
-        "speed_power": "plasticity", 
-        "speed_value": 10, 
-        "attack_value": 11, 
-        "defense_power": "toughness", 
-        "defense_value": 18, 
-        "damage_power": "outwit", 
         "damage_value": 3
       }, 
       {
@@ -3763,6 +3872,16 @@
       }, 
       {
         "click_number": 4, 
+        "speed_power": "plasticity", 
+        "speed_value": 10, 
+        "attack_value": 11, 
+        "defense_power": "toughness", 
+        "defense_value": 18, 
+        "damage_power": "outwit", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
         "speed_power": "charge", 
         "speed_value": 8, 
         "attack_power": "precision_strike", 
@@ -3774,7 +3893,7 @@
         "starting_line": true
       }, 
       {
-        "click_number": 5, 
+        "click_number": 6, 
         "speed_power": "charge", 
         "speed_value": 8, 
         "attack_power": "precision_strike", 
@@ -3785,7 +3904,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 6, 
+        "click_number": 7, 
         "speed_power": "charge", 
         "speed_value": 8, 
         "attack_power": "precision_strike", 
@@ -3796,7 +3915,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 7, 
+        "click_number": 8, 
         "speed_power": "plasticity", 
         "speed_value": 8, 
         "attack_value": 10, 
@@ -3806,7 +3925,7 @@
         "damage_value": 2
       }, 
       {
-        "click_number": 8, 
+        "click_number": 9, 
         "speed_power": "plasticity", 
         "speed_value": 8, 
         "attack_value": 10, 
@@ -3823,7 +3942,6 @@
     "collector_number": "032", 
     "name": "Bei the Blood Moon", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "super_rare", 
     "real_name": "Bei", 
     "dimensions": "1x1", 
@@ -3831,6 +3949,7 @@
       95, 
       45
     ], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [
       "Arakko", 
@@ -3852,7 +3971,11 @@
       {
         "type": "defense", 
         "name": "BEACON OF OUR BETTER SELVES", 
-        "description": "Defend, Impervious."
+        "description": "Defend, Impervious.", 
+        "powers": [
+          "defend", 
+          "impervious"
+        ]
       }
     ], 
     "improved_movement": [], 
@@ -3867,18 +3990,8 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
-        "starting_line": true, 
-        "speed_power": "charge", 
-        "speed_value": 10, 
-        "attack_value": 11, 
-        "defense_power": "special", 
-        "defense_value": 19, 
-        "damage_power": "perplex", 
-        "damage_value": 3
-      }, 
-      {
         "click_number": 1, 
+        "starting_line": true, 
         "speed_power": "charge", 
         "speed_value": 10, 
         "attack_value": 11, 
@@ -3893,7 +4006,7 @@
         "speed_value": 10, 
         "attack_value": 11, 
         "defense_power": "special", 
-        "defense_value": 18, 
+        "defense_value": 19, 
         "damage_power": "perplex", 
         "damage_value": 3
       }, 
@@ -3910,6 +4023,16 @@
       {
         "click_number": 4, 
         "speed_power": "charge", 
+        "speed_value": 10, 
+        "attack_value": 11, 
+        "defense_power": "special", 
+        "defense_value": 18, 
+        "damage_power": "perplex", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "charge", 
         "speed_value": 8, 
         "attack_value": 10, 
         "defense_power": "special", 
@@ -3919,7 +4042,7 @@
         "starting_line": true
       }, 
       {
-        "click_number": 5, 
+        "click_number": 6, 
         "speed_power": "flurry", 
         "speed_value": 8, 
         "attack_value": 10, 
@@ -3929,7 +4052,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 6, 
+        "click_number": 7, 
         "speed_power": "flurry", 
         "speed_value": 8, 
         "attack_value": 10, 
@@ -3939,7 +4062,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 7, 
+        "click_number": 8, 
         "speed_power": "flurry", 
         "speed_value": 8, 
         "attack_value": 10, 
@@ -3956,7 +4079,6 @@
     "collector_number": "033", 
     "name": "Tarn the Uncaring", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "super_rare", 
     "real_name": "Tarn", 
     "dimensions": "1x1", 
@@ -3964,6 +4086,7 @@
       125, 
       75
     ], 
+    "properties": "[]", 
     "team_abilities": [
       "cosmic_energy", 
       "mystics"
@@ -3984,12 +4107,20 @@
       {
         "type": "trait", 
         "name": "TO ME, MY LOCUS VILE!", 
-        "description": "Leadership. When Tarn the Uncaring uses it and succeeds, choose one:"
+        "description": "Leadership. When Tarn the Uncaring uses it and succeeds, choose one: *Generate a Locus Vile. *Place all of Tarn the Uncaring's Locus Vile bystanders on the map adjacent to him.", 
+        "powers": [
+          "leadership"
+        ]
       }, 
       {
         "type": "defense", 
         "name": "MEMBER OF THE GREAT RING OF ARAKKO", 
-        "description": "STOP. Invincible, Mastermind. When this click is first revealed, generate a Locus Vile bystander. If Tarn the Uncaring is 125 points, you may generate 2 Locus Vile bystanders instead."
+        "description": "STOP. Invincible, Mastermind. When this click is first revealed, generate a Locus Vile bystander. If Tarn the Uncaring is 125 points, you may generate 2 Locus Vile bystanders instead.", 
+        "powers": [
+          "stop", 
+          "invincible", 
+          "mastermind"
+        ]
       }
     ], 
     "improved_movement": [], 
@@ -4004,18 +4135,8 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
-        "starting_line": true, 
-        "speed_power": "mind_control", 
-        "speed_value": 10, 
-        "attack_value": 11, 
-        "defense_power": "invincible", 
-        "defense_value": 19, 
-        "damage_power": "outwit", 
-        "damage_value": 3
-      }, 
-      {
         "click_number": 1, 
+        "starting_line": true, 
         "speed_power": "mind_control", 
         "speed_value": 10, 
         "attack_value": 11, 
@@ -4027,10 +4148,10 @@
       {
         "click_number": 2, 
         "speed_power": "mind_control", 
-        "speed_value": 8, 
+        "speed_value": 10, 
         "attack_value": 11, 
         "defense_power": "invincible", 
-        "defense_value": 18, 
+        "defense_value": 19, 
         "damage_power": "outwit", 
         "damage_value": 3
       }, 
@@ -4046,15 +4167,13 @@
       }, 
       {
         "click_number": 4, 
-        "speed_power": "phasing_teleport", 
+        "speed_power": "mind_control", 
         "speed_value": 8, 
-        "attack_power": "penetrating_psychic_blast", 
-        "attack_value": 10, 
-        "defense_power": "mastermind", 
-        "defense_value": 17, 
-        "damage_power": "perplex", 
-        "damage_value": 3, 
-        "starting_line": true
+        "attack_value": 11, 
+        "defense_power": "invincible", 
+        "defense_value": 18, 
+        "damage_power": "outwit", 
+        "damage_value": 3
       }, 
       {
         "click_number": 5, 
@@ -4065,7 +4184,8 @@
         "defense_power": "mastermind", 
         "defense_value": 17, 
         "damage_power": "perplex", 
-        "damage_value": 3
+        "damage_value": 3, 
+        "starting_line": true
       }, 
       {
         "click_number": 6, 
@@ -4091,6 +4211,17 @@
       }, 
       {
         "click_number": 8, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 8, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 10, 
+        "defense_power": "mastermind", 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 9, 
         "speed_power": "mind_control", 
         "speed_value": 8, 
         "attack_value": 10, 
@@ -4107,10 +4238,10 @@
     "collector_number": "033bta", 
     "name": "Amino Fetus", 
     "type": "bystander", 
-    "age": "modern", 
     "rarity": "super_rare", 
     "dimensions": "1x1", 
     "point_values": [], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [], 
     "special_powers": [], 
@@ -4126,7 +4257,7 @@
     "dial_size": "1", 
     "dial": [
       {
-        "click_number": 0, 
+        "click_number": 1, 
         "starting_line": true, 
         "speed_power": "plasticity", 
         "speed_value": 6, 
@@ -4143,10 +4274,10 @@
     "collector_number": "033btb", 
     "name": "Hex Butcher", 
     "type": "bystander", 
-    "age": "modern", 
     "rarity": "super_rare", 
     "dimensions": "1x1", 
     "point_values": [], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [], 
     "special_powers": [], 
@@ -4162,7 +4293,7 @@
     "dial_size": "1", 
     "dial": [
       {
-        "click_number": 0, 
+        "click_number": 1, 
         "starting_line": true, 
         "speed_power": "charge", 
         "speed_value": 7, 
@@ -4179,10 +4310,10 @@
     "collector_number": "033btc", 
     "name": "Mother Rapture", 
     "type": "bystander", 
-    "age": "modern", 
     "rarity": "super_rare", 
     "dimensions": "1x1", 
     "point_values": [], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [], 
     "special_powers": [], 
@@ -4198,7 +4329,7 @@
     "dial_size": "1", 
     "dial": [
       {
-        "click_number": 0, 
+        "click_number": 1, 
         "starting_line": true, 
         "speed_value": 8, 
         "attack_power": "poison", 
@@ -4215,10 +4346,10 @@
     "collector_number": "033btd", 
     "name": "Mudgear", 
     "type": "bystander", 
-    "age": "modern", 
     "rarity": "super_rare", 
     "dimensions": "1x1", 
     "point_values": [], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [], 
     "special_powers": [], 
@@ -4234,7 +4365,7 @@
     "dial_size": "1", 
     "dial": [
       {
-        "click_number": 0, 
+        "click_number": 1, 
         "starting_line": true, 
         "speed_value": 6, 
         "attack_power": "penetrating_psychic_blast", 
@@ -4251,10 +4382,10 @@
     "collector_number": "033bte", 
     "name": "Sick Bird", 
     "type": "bystander", 
-    "age": "modern", 
     "rarity": "super_rare", 
     "dimensions": "1x1", 
     "point_values": [], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [], 
     "special_powers": [], 
@@ -4270,7 +4401,7 @@
     "dial_size": "1", 
     "dial": [
       {
-        "click_number": 0, 
+        "click_number": 1, 
         "starting_line": true, 
         "speed_power": "hypersonic_speed", 
         "speed_value": 7, 
@@ -4287,7 +4418,6 @@
     "collector_number": "034", 
     "name": "Genesis", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "super_rare", 
     "real_name": "Genesis", 
     "dimensions": "1x1", 
@@ -4295,6 +4425,7 @@
       120, 
       70
     ], 
+    "properties": "[]", 
     "team_abilities": [
       "cosmic_energy"
     ], 
@@ -4314,12 +4445,20 @@
       {
         "type": "trait", 
         "name": "YOU ARE NOT FIT TO LEAD", 
-        "description": "Leadership. When Genesis uses it, if an opposing character within range can use Leadership or Willpower, increase the result of the roll by +2. When she uses it and succeeds, until your next turn when an opposing character within range uses Leadership or Willpower decrease their result by -1."
+        "description": "Leadership. When Genesis uses it, if an opposing character within range can use Leadership or Willpower, increase the result of the roll by +2. When she uses it and succeeds, until your next turn when an opposing character within range uses Leadership or Willpower decrease their result by -1.", 
+        "powers": [
+          "leadership"
+        ]
       }, 
       {
         "type": "defense", 
         "name": "IMMORTAL RULER OF ARAKKO", 
-        "description": "Combat Reflexes, Invincible, Super Senses."
+        "description": "Combat Reflexes, Invincible, Super Senses.", 
+        "powers": [
+          "combat_reflexes", 
+          "invincible", 
+          "super_senses"
+        ]
       }
     ], 
     "improved_movement": [], 
@@ -4334,23 +4473,12 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
+        "click_number": 1, 
         "starting_line": true, 
         "speed_power": "charge", 
         "speed_value": 10, 
         "attack_power": "precision_strike", 
         "attack_value": 12, 
-        "defense_power": "special", 
-        "defense_value": 18, 
-        "damage_power": "probability_control", 
-        "damage_value": 4
-      }, 
-      {
-        "click_number": 1, 
-        "speed_power": "charge", 
-        "speed_value": 10, 
-        "attack_power": "precision_strike", 
-        "attack_value": 11, 
         "defense_power": "special", 
         "defense_value": 18, 
         "damage_power": "probability_control", 
@@ -4374,21 +4502,21 @@
         "attack_power": "precision_strike", 
         "attack_value": 11, 
         "defense_power": "special", 
+        "defense_value": 18, 
+        "damage_power": "probability_control", 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "charge", 
+        "speed_value": 10, 
+        "attack_power": "precision_strike", 
+        "attack_value": 11, 
+        "defense_power": "special", 
         "defense_value": 17, 
         "damage_power": "probability_control", 
         "damage_value": 3, 
         "starting_line": true
-      }, 
-      {
-        "click_number": 4, 
-        "speed_power": "flurry", 
-        "speed_value": 8, 
-        "attack_power": "steal_energy", 
-        "attack_value": 11, 
-        "defense_power": "invulnerability", 
-        "defense_value": 17, 
-        "damage_power": "exploit_weakness", 
-        "damage_value": 3
       }, 
       {
         "click_number": 5, 
@@ -4408,12 +4536,23 @@
         "attack_power": "steal_energy", 
         "attack_value": 11, 
         "defense_power": "invulnerability", 
-        "defense_value": 18, 
+        "defense_value": 17, 
         "damage_power": "exploit_weakness", 
         "damage_value": 3
       }, 
       {
         "click_number": 7, 
+        "speed_power": "flurry", 
+        "speed_value": 8, 
+        "attack_power": "steal_energy", 
+        "attack_value": 11, 
+        "defense_power": "invulnerability", 
+        "defense_value": 18, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 8, 
         "speed_power": "flurry", 
         "speed_value": 8, 
         "attack_power": "steal_energy", 
@@ -4431,13 +4570,13 @@
     "collector_number": "035", 
     "name": "Magik", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "super_rare", 
     "real_name": "Illyana Rasputin", 
     "dimensions": "1x1", 
     "point_values": [
       45
     ], 
+    "properties": "[]", 
     "team_abilities": [
       "mystics", 
       "x_men"
@@ -4457,7 +4596,11 @@
       {
         "type": "speed", 
         "name": "I'LL KICK THE DOOR OPEN", 
-        "description": "Charge, Phasing/Teleport. When Magik moves, after resolutions generate a Stepping Disc marker in the square she began her movement in. // Friendly characters within 2 squares of the Stepping Disc marker can use \"FREE: Place this character into an unoccupied square with that Stepping Disc marker.\" //?At the beginning of your turn, remove all Stepping Disc markers."
+        "description": "Charge, Phasing/Teleport. When Magik moves, after resolutions generate a Stepping Disc marker in the square she began her movement in. // Friendly characters within 2 squares of the Stepping Disc marker can use \"FREE: Place this character into an unoccupied square with that Stepping Disc marker.\" //?At the beginning of your turn, remove all Stepping Disc markers.", 
+        "powers": [
+          "charge", 
+          "phasing_teleport"
+        ]
       }, 
       {
         "type": "attack", 
@@ -4467,7 +4610,12 @@
       {
         "type": "defense", 
         "name": "WHEN THE FIGHTING STARTS, STAY CLOSE TO ME", 
-        "description": "Combat Reflexes, Defend, Toughness."
+        "description": "Combat Reflexes, Defend, Toughness.", 
+        "powers": [
+          "combat_reflexes", 
+          "defend", 
+          "toughness"
+        ]
       }
     ], 
     "improved_movement": [], 
@@ -4482,19 +4630,8 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
-        "starting_line": true, 
-        "speed_power": "special", 
-        "speed_value": 10, 
-        "attack_power": "special", 
-        "attack_value": 11, 
-        "defense_power": "special", 
-        "defense_value": 18, 
-        "damage_power": "leadership", 
-        "damage_value": 2
-      }, 
-      {
         "click_number": 1, 
+        "starting_line": true, 
         "speed_power": "special", 
         "speed_value": 10, 
         "attack_power": "special", 
@@ -4517,6 +4654,17 @@
       }, 
       {
         "click_number": 3, 
+        "speed_power": "special", 
+        "speed_value": 10, 
+        "attack_power": "special", 
+        "attack_value": 11, 
+        "defense_power": "special", 
+        "defense_value": 18, 
+        "damage_power": "leadership", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
         "speed_power": "charge", 
         "speed_value": 8, 
         "attack_power": "special", 
@@ -4527,7 +4675,7 @@
         "damage_value": 2
       }, 
       {
-        "click_number": 4, 
+        "click_number": 5, 
         "speed_power": "charge", 
         "speed_value": 8, 
         "attack_power": "special", 
@@ -4545,7 +4693,6 @@
     "collector_number": "036", 
     "name": "Captain Avalon", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "super_rare", 
     "real_name": "Brian Braddock", 
     "dimensions": "1x1", 
@@ -4553,6 +4700,7 @@
       70, 
       45
     ], 
+    "properties": "[]", 
     "team_abilities": [
       "x_men"
     ], 
@@ -4578,7 +4726,10 @@
       {
         "type": "trait", 
         "name": "TENACITY, ALWAYS", 
-        "description": "Combat Reflexes. // When an opposing character moves adjacent to Captain Avalon when using Charge or Hypersonic Speed, after resolutions deal them 1 damage."
+        "description": "Combat Reflexes. // When an opposing character moves adjacent to Captain Avalon when using Charge or Hypersonic Speed, after resolutions deal them 1 damage.", 
+        "powers": [
+          "combat_reflexes"
+        ]
       }
     ], 
     "improved_movement": [], 
@@ -4593,21 +4744,10 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
+        "click_number": 1, 
         "starting_line": true, 
         "speed_power": "charge", 
         "speed_value": 12, 
-        "attack_power": "precision_strike", 
-        "attack_value": 11, 
-        "defense_power": "invincible", 
-        "defense_value": 18, 
-        "damage_power": "close_combat_expert", 
-        "damage_value": 3
-      }, 
-      {
-        "click_number": 1, 
-        "speed_power": "charge", 
-        "speed_value": 10, 
         "attack_power": "precision_strike", 
         "attack_value": 11, 
         "defense_power": "invincible", 
@@ -4622,21 +4762,21 @@
         "attack_power": "precision_strike", 
         "attack_value": 11, 
         "defense_power": "invincible", 
-        "defense_value": 17, 
-        "damage_power": "leadership", 
-        "damage_value": 3, 
-        "starting_line": true
+        "defense_value": 18, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 3
       }, 
       {
         "click_number": 3, 
         "speed_power": "charge", 
         "speed_value": 10, 
-        "attack_power": "quake", 
+        "attack_power": "precision_strike", 
         "attack_value": 11, 
-        "defense_power": "energy_shield_deflection", 
+        "defense_power": "invincible", 
         "defense_value": 17, 
         "damage_power": "leadership", 
-        "damage_value": 3
+        "damage_value": 3, 
+        "starting_line": true
       }, 
       {
         "click_number": 4, 
@@ -4656,12 +4796,23 @@
         "attack_power": "quake", 
         "attack_value": 11, 
         "defense_power": "energy_shield_deflection", 
+        "defense_value": 17, 
+        "damage_power": "leadership", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "charge", 
+        "speed_value": 10, 
+        "attack_power": "quake", 
+        "attack_value": 11, 
+        "defense_power": "energy_shield_deflection", 
         "defense_value": 18, 
         "damage_power": "close_combat_expert", 
         "damage_value": 3
       }, 
       {
-        "click_number": 6, 
+        "click_number": 7, 
         "speed_power": "charge", 
         "speed_value": 8, 
         "attack_power": "quake", 
@@ -4679,13 +4830,13 @@
     "collector_number": "037", 
     "name": "Armor", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "super_rare", 
     "real_name": "Hisako Ichiki", 
     "dimensions": "1x1", 
     "point_values": [
       75
     ], 
+    "properties": "[]", 
     "team_abilities": [
       "x_men"
     ], 
@@ -4706,12 +4857,22 @@
       {
         "type": "attack", 
         "name": "EXPANDABLE ARMOR", 
-        "description": "Blades/Claws/Fangs, Super Strength, Quake."
+        "description": "Blades/Claws/Fangs, Super Strength, Quake.", 
+        "powers": [
+          "blades_claws_fangs", 
+          "super_strength", 
+          "quake"
+        ]
       }, 
       {
         "type": "defense", 
         "name": "PSIONIC EXOSKELETON-ARMOR", 
-        "description": "Defend, Energy Shield/Deflection, Invulnerability. // Adjacent friendly character can use Toughness."
+        "description": "Defend, Energy Shield/Deflection, Invulnerability. // Adjacent friendly character can use Toughness.", 
+        "powers": [
+          "defend", 
+          "energy_shield_deflection", 
+          "invulnerability"
+        ]
       }, 
       {
         "type": "damage", 
@@ -4731,19 +4892,8 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
-        "starting_line": true, 
-        "speed_power": "force_blast", 
-        "speed_value": 8, 
-        "attack_power": "blades_claws_fangs", 
-        "attack_value": 10, 
-        "defense_power": "invulnerability", 
-        "defense_value": 17, 
-        "damage_power": "support", 
-        "damage_value": 2
-      }, 
-      {
         "click_number": 1, 
+        "starting_line": true, 
         "speed_power": "force_blast", 
         "speed_value": 8, 
         "attack_power": "blades_claws_fangs", 
@@ -4760,19 +4910,19 @@
         "attack_power": "blades_claws_fangs", 
         "attack_value": 10, 
         "defense_power": "invulnerability", 
-        "defense_value": 18, 
+        "defense_value": 17, 
         "damage_power": "support", 
-        "damage_value": 3
+        "damage_value": 2
       }, 
       {
         "click_number": 3, 
-        "speed_power": "charge", 
+        "speed_power": "force_blast", 
         "speed_value": 8, 
-        "attack_power": "special", 
-        "attack_value": 11, 
-        "defense_power": "special", 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
         "defense_value": 18, 
-        "damage_power": "special", 
+        "damage_power": "support", 
         "damage_value": 3
       }, 
       {
@@ -4793,12 +4943,23 @@
         "attack_power": "special", 
         "attack_value": 11, 
         "defense_power": "special", 
+        "defense_value": 18, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 11, 
+        "defense_power": "special", 
         "defense_value": 19, 
         "damage_power": "special", 
         "damage_value": 4
       }, 
       {
-        "click_number": 6, 
+        "click_number": 7, 
         "speed_power": "charge", 
         "speed_value": 8, 
         "attack_power": "special", 
@@ -4816,7 +4977,6 @@
     "collector_number": "038", 
     "name": "Apocalypse", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "super_rare", 
     "real_name": "En Sabah Nur", 
     "dimensions": "1x1", 
@@ -4824,6 +4984,7 @@
       145, 
       70
     ], 
+    "properties": "[]", 
     "team_abilities": [
       "cosmic_energy", 
       "x_men"
@@ -4846,7 +5007,11 @@
       {
         "type": "trait", 
         "name": "QUIET COUNCIL PRIVILEGE", 
-        "description": "Leadership, Invincible."
+        "description": "Leadership, Invincible.", 
+        "powers": [
+          "leadership", 
+          "invincible"
+        ]
       }, 
       {
         "type": "trait", 
@@ -4856,7 +5021,11 @@
       {
         "type": "damage", 
         "name": "THE SCIENCE OF MAGIC", 
-        "description": "Probability Control, Shape Change."
+        "description": "Probability Control, Shape Change.", 
+        "powers": [
+          "probability_control", 
+          "shape_change"
+        ]
       }
     ], 
     "improved_movement": [], 
@@ -4871,7 +5040,7 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
+        "click_number": 1, 
         "starting_line": true, 
         "speed_power": "running_shot", 
         "speed_value": 10, 
@@ -4883,7 +5052,7 @@
         "damage_value": 4
       }, 
       {
-        "click_number": 1, 
+        "click_number": 2, 
         "speed_power": "running_shot", 
         "speed_value": 10, 
         "attack_power": "penetrating_psychic_blast", 
@@ -4894,7 +5063,7 @@
         "damage_value": 4
       }, 
       {
-        "click_number": 2, 
+        "click_number": 3, 
         "speed_power": "running_shot", 
         "speed_value": 10, 
         "attack_power": "penetrating_psychic_blast", 
@@ -4905,7 +5074,7 @@
         "damage_value": 4
       }, 
       {
-        "click_number": 3, 
+        "click_number": 4, 
         "speed_power": "running_shot", 
         "speed_value": 8, 
         "attack_power": "penetrating_psychic_blast", 
@@ -4915,17 +5084,6 @@
         "damage_power": "special", 
         "damage_value": 3, 
         "starting_line": true
-      }, 
-      {
-        "click_number": 4, 
-        "speed_power": "charge", 
-        "speed_value": 8, 
-        "attack_power": "steal_energy", 
-        "attack_value": 11, 
-        "defense_power": "combat_reflexes", 
-        "defense_value": 18, 
-        "damage_power": "close_combat_expert", 
-        "damage_value": 3
       }, 
       {
         "click_number": 5, 
@@ -4943,6 +5101,17 @@
         "speed_power": "charge", 
         "speed_value": 8, 
         "attack_power": "steal_energy", 
+        "attack_value": 11, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 18, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "steal_energy", 
         "attack_value": 10, 
         "defense_power": "combat_reflexes", 
         "defense_value": 17, 
@@ -4950,7 +5119,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 7, 
+        "click_number": 8, 
         "speed_power": "charge", 
         "speed_value": 8, 
         "attack_power": "steal_energy", 
@@ -4968,7 +5137,6 @@
     "collector_number": "039", 
     "name": "Redroot the Forest", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "super_rare", 
     "real_name": "Unknown", 
     "dimensions": "1x1", 
@@ -4976,6 +5144,7 @@
       70, 
       40
     ], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [
       "Arakko", 
@@ -4992,17 +5161,27 @@
       {
         "type": "trait", 
         "name": "FIELD OF DECAY", 
-        "description": "Poison. // FREE: Choose a terrain marker generated by Redroot the Forest. If you do, destroy all blocking terrain adjacent to that marker and deal 1 penetrating damage to an opposing character adjacent to the chosen marker."
+        "description": "Poison. // FREE: Choose a terrain marker generated by Redroot the Forest. If you do, destroy all blocking terrain adjacent to that marker and deal 1 penetrating damage to an opposing character adjacent to the chosen marker.", 
+        "powers": [
+          "poison"
+        ]
       }, 
       {
         "type": "attack", 
         "name": "THE NATURAL CYCLE OF GROWTH AND DECAY", 
-        "description": "Incapacitate, Smoke Cloud. // When Redroot the Forest hits, after resolutions she may use Smoke Cloud as FREE, but only to generate 3 markers."
+        "description": "Incapacitate, Smoke Cloud. // When Redroot the Forest hits, after resolutions she may use Smoke Cloud as FREE, but only to generate 3 markers.", 
+        "powers": [
+          "incapacitate", 
+          "smoke_cloud"
+        ]
       }, 
       {
         "type": "damage", 
         "name": "BOTANOPATHY", 
-        "description": "Probability Control. When Redroot the Forest uses it, she may target a character occupying a terrain marker generated by her regardless of line of fire."
+        "description": "Probability Control. When Redroot the Forest uses it, she may target a character occupying a terrain marker generated by her regardless of line of fire.", 
+        "powers": [
+          "probability_control"
+        ]
       }
     ], 
     "improved_movement": [], 
@@ -5017,7 +5196,7 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
+        "click_number": 1, 
         "starting_line": true, 
         "speed_power": "stealth", 
         "speed_value": 6, 
@@ -5027,17 +5206,6 @@
         "defense_value": 18, 
         "damage_power": "special", 
         "damage_value": 3
-      }, 
-      {
-        "click_number": 1, 
-        "speed_power": "stealth", 
-        "speed_value": 6, 
-        "attack_power": "special", 
-        "attack_value": 10, 
-        "defense_power": "defend", 
-        "defense_value": 18, 
-        "damage_power": "perplex", 
-        "damage_value": 2
       }, 
       {
         "click_number": 2, 
@@ -5058,20 +5226,20 @@
         "attack_value": 10, 
         "defense_power": "defend", 
         "defense_value": 18, 
-        "damage_power": "special", 
-        "damage_value": 3, 
-        "starting_line": true
+        "damage_power": "perplex", 
+        "damage_value": 2
       }, 
       {
         "click_number": 4, 
-        "speed_power": "flurry", 
+        "speed_power": "stealth", 
         "speed_value": 6, 
         "attack_power": "special", 
-        "attack_value": 11, 
-        "defense_power": "super_senses", 
-        "defense_value": 17, 
-        "damage_power": "perplex", 
-        "damage_value": 2
+        "attack_value": 10, 
+        "defense_power": "defend", 
+        "defense_value": 18, 
+        "damage_power": "special", 
+        "damage_value": 3, 
+        "starting_line": true
       }, 
       {
         "click_number": 5, 
@@ -5086,6 +5254,17 @@
       }, 
       {
         "click_number": 6, 
+        "speed_power": "flurry", 
+        "speed_value": 6, 
+        "attack_power": "special", 
+        "attack_value": 11, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 7, 
         "speed_power": "flurry", 
         "speed_value": 6, 
         "attack_power": "special", 
@@ -5103,7 +5282,6 @@
     "collector_number": "040", 
     "name": "The White Sword", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "super_rare", 
     "real_name": "Unknown", 
     "dimensions": "1x1", 
@@ -5111,6 +5289,7 @@
       95, 
       45
     ], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [
       "Arakko", 
@@ -5127,12 +5306,20 @@
       {
         "type": "attack", 
         "name": "THE IMMORTAL WHITE SWORD OF THE IVORY SPIRE", 
-        "description": "Steal Energy. // Once per turn, when The White Sword rolls a single d6, after resolutions you may heal him equal to half the result."
+        "description": "Steal Energy. // Once per turn, when The White Sword rolls a single d6, after resolutions you may heal him equal to half the result.", 
+        "powers": [
+          "steal_energy"
+        ]
       }, 
       {
         "type": "defense", 
         "name": "FIGHTING FOR GENERATIONS", 
-        "description": "Combat Reflexes, Invulnerability, Super Senses."
+        "description": "Combat Reflexes, Invulnerability, Super Senses.", 
+        "powers": [
+          "combat_reflexes", 
+          "invulnerability", 
+          "super_senses"
+        ]
       }
     ], 
     "improved_movement": [], 
@@ -5147,7 +5334,7 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
+        "click_number": 1, 
         "starting_line": true, 
         "speed_power": "charge", 
         "speed_value": 8, 
@@ -5158,7 +5345,7 @@
         "damage_value": 4
       }, 
       {
-        "click_number": 1, 
+        "click_number": 2, 
         "speed_power": "charge", 
         "speed_value": 8, 
         "attack_power": "special", 
@@ -5169,7 +5356,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 2, 
+        "click_number": 3, 
         "speed_power": "charge", 
         "speed_value": 8, 
         "attack_power": "special", 
@@ -5180,7 +5367,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 3, 
+        "click_number": 4, 
         "speed_power": "charge", 
         "speed_value": 8, 
         "attack_power": "special", 
@@ -5192,7 +5379,7 @@
         "starting_line": true
       }, 
       {
-        "click_number": 4, 
+        "click_number": 5, 
         "speed_power": "flurry", 
         "speed_value": 8, 
         "attack_power": "special", 
@@ -5203,7 +5390,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 5, 
+        "click_number": 6, 
         "speed_power": "flurry", 
         "speed_value": 8, 
         "attack_power": "special", 
@@ -5214,7 +5401,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 6, 
+        "click_number": 7, 
         "speed_power": "flurry", 
         "speed_value": 8, 
         "attack_power": "special", 
@@ -5232,7 +5419,6 @@
     "collector_number": "041", 
     "name": "Famine", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "super_rare", 
     "real_name": "Unknown", 
     "dimensions": "1x1", 
@@ -5240,6 +5426,7 @@
       75, 
       50
     ], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [
       "Arakko", 
@@ -5250,17 +5437,26 @@
       {
         "type": "trait", 
         "name": "THE FIRST CHILDREN", 
-        "description": "At the beginning of the game, if your starting force has two or more characters with the Horsemen keyword, this game Famine has: \"Steal Energy, but with close or range attacks.\" // If a friendly character named Apocalypse, Annihilation, or Genesis is on your force, modify Famine's attack and defense +1."
+        "description": "At the beginning of the game, if your starting force has two or more characters with the Horsemen keyword, this game Famine has: \"Steal Energy, but with close or range attacks.\" // If a friendly character named Apocalypse, Annihilation, or Genesis is on your force, modify Famine's attack and defense +1.", 
+        "powers": [
+          "steal_energy"
+        ]
       }, 
       {
         "type": "attack", 
         "name": "SURVIVAL OF THE FITTEST", 
-        "description": "Incapacitate. // UNIQUE MODIFIER - Opposing characters within range and line of fire modify their combat values -1 if they have one or more action tokens."
+        "description": "Incapacitate. // UNIQUE MODIFIER - Opposing characters within range and line of fire modify their combat values -1 if they have one or more action tokens.", 
+        "powers": [
+          "incapacitate"
+        ]
       }, 
       {
         "type": "damage", 
         "name": "THE FIRST OF HIS NAME", 
-        "description": "Exploit Weakness. // At the end of your turn, give an adjacent opposing character an action token. If you can't, deal them 1 penetrating damage instead."
+        "description": "Exploit Weakness. // At the end of your turn, give an adjacent opposing character an action token. If you can't, deal them 1 penetrating damage instead.", 
+        "powers": [
+          "exploit_weakness"
+        ]
       }
     ], 
     "improved_movement": [], 
@@ -5275,7 +5471,7 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
+        "click_number": 1, 
         "starting_line": true, 
         "speed_power": "charge", 
         "speed_value": 10, 
@@ -5287,7 +5483,7 @@
         "damage_value": 4
       }, 
       {
-        "click_number": 1, 
+        "click_number": 2, 
         "speed_power": "charge", 
         "speed_value": 10, 
         "attack_power": "special", 
@@ -5298,7 +5494,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 2, 
+        "click_number": 3, 
         "speed_power": "charge", 
         "speed_value": 8, 
         "attack_power": "special", 
@@ -5310,7 +5506,7 @@
         "starting_line": true
       }, 
       {
-        "click_number": 3, 
+        "click_number": 4, 
         "speed_power": "charge", 
         "speed_value": 8, 
         "attack_power": "special", 
@@ -5321,7 +5517,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 4, 
+        "click_number": 5, 
         "speed_power": "leap_climb", 
         "speed_value": 8, 
         "attack_power": "incapacitate", 
@@ -5331,7 +5527,7 @@
         "damage_value": 2
       }, 
       {
-        "click_number": 5, 
+        "click_number": 6, 
         "speed_power": "leap_climb", 
         "speed_value": 7, 
         "attack_power": "incapacitate", 
@@ -5341,7 +5537,7 @@
         "damage_value": 2
       }, 
       {
-        "click_number": 6, 
+        "click_number": 7, 
         "speed_power": "leap_climb", 
         "speed_value": 7, 
         "attack_power": "incapacitate", 
@@ -5358,7 +5554,6 @@
     "collector_number": "042", 
     "name": "Pestilence", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "super_rare", 
     "real_name": "Unknown", 
     "dimensions": "1x1", 
@@ -5366,6 +5561,7 @@
       75, 
       50
     ], 
+    "properties": "[]", 
     "team_abilities": [
       "mystics"
     ], 
@@ -5378,12 +5574,18 @@
       {
         "type": "attack", 
         "name": "DISEASE VECTOR", 
-        "description": "Poison. When Pestilence uses it, he deals penetrating damage. // Pestilence has SAFEGUARD: Poison."
+        "description": "Poison. When Pestilence uses it, he deals penetrating damage. // Pestilence has SAFEGUARD: Poison.", 
+        "powers": [
+          "poison"
+        ]
       }, 
       {
         "type": "trait", 
         "name": "THE FIRST CHILDREN", 
-        "description": "At the beginning of the game, if your starting force has two or more characters with the Horsemen keyword, this game Pestilence has: \"Steal Energy, but with close or range attacks.\" // If a friendly character named Apocalypse, Annihilation, or Genesis is on your force, modify Pestilence's attack and defense +1."
+        "description": "At the beginning of the game, if your starting force has two or more characters with the Horsemen keyword, this game Pestilence has: \"Steal Energy, but with close or range attacks.\" // If a friendly character named Apocalypse, Annihilation, or Genesis is on your force, modify Pestilence's attack and defense +1.", 
+        "powers": [
+          "steal_energy"
+        ]
       }
     ], 
     "improved_movement": [], 
@@ -5398,7 +5600,7 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
+        "click_number": 1, 
         "starting_line": true, 
         "speed_power": "hypersonic_speed", 
         "speed_value": 8, 
@@ -5410,7 +5612,7 @@
         "damage_value": 4
       }, 
       {
-        "click_number": 1, 
+        "click_number": 2, 
         "speed_power": "hypersonic_speed", 
         "speed_value": 8, 
         "attack_power": "special", 
@@ -5421,7 +5623,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 2, 
+        "click_number": 3, 
         "speed_power": "running_shot", 
         "speed_value": 8, 
         "attack_power": "special", 
@@ -5433,7 +5635,7 @@
         "starting_line": true
       }, 
       {
-        "click_number": 3, 
+        "click_number": 4, 
         "speed_power": "running_shot", 
         "speed_value": 8, 
         "attack_power": "special", 
@@ -5444,7 +5646,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 4, 
+        "click_number": 5, 
         "speed_power": "leap_climb", 
         "speed_value": 8, 
         "attack_power": "poison", 
@@ -5454,7 +5656,7 @@
         "damage_value": 2
       }, 
       {
-        "click_number": 5, 
+        "click_number": 6, 
         "speed_power": "leap_climb", 
         "speed_value": 7, 
         "attack_power": "poison", 
@@ -5464,7 +5666,7 @@
         "damage_value": 2
       }, 
       {
-        "click_number": 6, 
+        "click_number": 7, 
         "speed_power": "leap_climb", 
         "speed_value": 7, 
         "attack_power": "poison", 
@@ -5481,13 +5683,13 @@
     "collector_number": "201", 
     "name": "Captain Avalon", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "limited_edition", 
     "real_name": "Brian Braddock", 
     "dimensions": "1x1", 
     "point_values": [
       75
     ], 
+    "properties": "[]", 
     "team_abilities": [
       "team_player"
     ], 
@@ -5508,12 +5710,18 @@
       {
         "type": "trait", 
         "name": "I NO LONGER HAVE THE TEMPERAMENT TO BE CAPTAIN BRITAIN", 
-        "description": "Leadership. // When Captain Avalon takes damage from an attack, roll a d6 and Captain Avalon can use the listed power until the end of your next turn."
+        "description": "Leadership. // When Captain Avalon takes damage from an attack, roll a d6 and Captain Avalon can use the listed power until the end of your next turn. *1-3: Battle Fury. *4-6: Willpower.", 
+        "powers": [
+          "leadership"
+        ]
       }, 
       {
         "type": "attack", 
         "name": "I DRAW THE SWORD OF MIGHT IN DEFENSE OF AVALON", 
-        "description": "Steal Energy. When Captain Avalon uses it, if he occupies a square closer to his starting area than your opponent's, heal 2 clicks instead."
+        "description": "Steal Energy. When Captain Avalon uses it, if he occupies a square closer to his starting area than your opponent's, heal 2 clicks instead.", 
+        "powers": [
+          "steal_energy"
+        ]
       }
     ], 
     "improved_movement": [], 
@@ -5528,21 +5736,10 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
+        "click_number": 1, 
         "starting_line": true, 
         "speed_power": "charge", 
         "speed_value": 10, 
-        "attack_value": 11, 
-        "defense_power": "invulnerability", 
-        "defense_value": 18, 
-        "damage_power": "exploit_weakness", 
-        "damage_value": 4
-      }, 
-      {
-        "click_number": 1, 
-        "speed_power": "charge", 
-        "speed_value": 10, 
-        "attack_power": "special", 
         "attack_value": 11, 
         "defense_power": "invulnerability", 
         "defense_value": 18, 
@@ -5556,16 +5753,16 @@
         "attack_power": "special", 
         "attack_value": 11, 
         "defense_power": "invulnerability", 
-        "defense_value": 17, 
+        "defense_value": 18, 
         "damage_power": "exploit_weakness", 
-        "damage_value": 3
+        "damage_value": 4
       }, 
       {
         "click_number": 3, 
         "speed_power": "charge", 
         "speed_value": 10, 
         "attack_power": "special", 
-        "attack_value": 10, 
+        "attack_value": 11, 
         "defense_power": "invulnerability", 
         "defense_value": 17, 
         "damage_power": "exploit_weakness", 
@@ -5573,13 +5770,13 @@
       }, 
       {
         "click_number": 4, 
-        "speed_power": "flurry", 
-        "speed_value": 9, 
+        "speed_power": "charge", 
+        "speed_value": 10, 
         "attack_power": "special", 
         "attack_value": 10, 
-        "defense_power": "toughness", 
+        "defense_power": "invulnerability", 
         "defense_value": 17, 
-        "damage_power": "close_combat_expert", 
+        "damage_power": "exploit_weakness", 
         "damage_value": 3
       }, 
       {
@@ -5596,7 +5793,7 @@
       {
         "click_number": 6, 
         "speed_power": "flurry", 
-        "speed_value": 8, 
+        "speed_value": 9, 
         "attack_power": "special", 
         "attack_value": 10, 
         "defense_power": "toughness", 
@@ -5606,6 +5803,17 @@
       }, 
       {
         "click_number": 7, 
+        "speed_power": "flurry", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 8, 
         "speed_power": "flurry", 
         "speed_value": 8, 
         "attack_power": "special", 
@@ -5623,7 +5831,6 @@
     "collector_number": "202", 
     "name": "Pestilence", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "limited_edition", 
     "real_name": "Unknown", 
     "dimensions": "1x1", 
@@ -5631,6 +5838,7 @@
       75, 
       50
     ], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [
       "Arakko", 
@@ -5641,17 +5849,27 @@
       {
         "type": "trait", 
         "name": "THE FIRST CHILDREN", 
-        "description": "At the beginning of the game, if your starting force has two or more characters with the Horsemen keyword, this game Pestilence has: \"Steal Energy, but with close or range attacks.\" // If a friendly character named Apocalypse, Annihilation, or Genesis is on your force, modify Pestilence's attack and defense +1."
+        "description": "At the beginning of the game, if your starting force has two or more characters with the Horsemen keyword, this game Pestilence has: \"Steal Energy, but with close or range attacks.\" // If a friendly character named Apocalypse, Annihilation, or Genesis is on your force, modify Pestilence's attack and defense +1.", 
+        "powers": [
+          "steal_energy"
+        ]
       }, 
       {
         "type": "attack", 
         "name": "POISON ARROWS", 
-        "description": "Poison. // When Pestilence hits with a range attack, give each hit character a Disease token. // FREE: Deal 1 damage to a character within range with a Disease token."
+        "description": "Poison. // When Pestilence hits with a range attack, give each hit character a Disease token. // FREE: Deal 1 damage to a character within range with a Disease token.", 
+        "powers": [
+          "poison"
+        ]
       }, 
       {
         "type": "defense", 
         "name": "ADVANCED LONGEVITY", 
-        "description": "Invulnerability, Willpower."
+        "description": "Invulnerability, Willpower.", 
+        "powers": [
+          "invulnerability", 
+          "willpower"
+        ]
       }
     ], 
     "improved_movement": [], 
@@ -5669,7 +5887,7 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
+        "click_number": 1, 
         "starting_line": true, 
         "speed_power": "running_shot", 
         "speed_value": 10, 
@@ -5680,7 +5898,7 @@
         "damage_value": 4
       }, 
       {
-        "click_number": 1, 
+        "click_number": 2, 
         "speed_power": "running_shot", 
         "speed_value": 10, 
         "attack_power": "special", 
@@ -5691,7 +5909,7 @@
         "damage_value": 4
       }, 
       {
-        "click_number": 2, 
+        "click_number": 3, 
         "speed_power": "running_shot", 
         "speed_value": 8, 
         "attack_power": "special", 
@@ -5702,23 +5920,12 @@
         "starting_line": true
       }, 
       {
-        "click_number": 3, 
+        "click_number": 4, 
         "speed_power": "running_shot", 
         "speed_value": 8, 
         "attack_power": "special", 
         "attack_value": 10, 
         "defense_power": "special", 
-        "defense_value": 17, 
-        "damage_power": "ranged_combat_expert", 
-        "damage_value": 3
-      }, 
-      {
-        "click_number": 4, 
-        "speed_power": "phasing_teleport", 
-        "speed_value": 8, 
-        "attack_power": "poison", 
-        "attack_value": 10, 
-        "defense_power": "combat_reflexes", 
         "defense_value": 17, 
         "damage_power": "ranged_combat_expert", 
         "damage_value": 3
@@ -5732,10 +5939,21 @@
         "defense_power": "combat_reflexes", 
         "defense_value": 17, 
         "damage_power": "ranged_combat_expert", 
-        "damage_value": 2
+        "damage_value": 3
       }, 
       {
         "click_number": 6, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 8, 
+        "attack_power": "poison", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 7, 
         "speed_power": "phasing_teleport", 
         "speed_value": 8, 
         "attack_power": "poison", 
@@ -5753,13 +5971,13 @@
     "collector_number": "203", 
     "name": "Sheriff Gia Whitechapel", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "limited_edition", 
     "real_name": "Gia Whitechapel", 
     "dimensions": "1x1", 
     "point_values": [
       75
     ], 
+    "properties": "[]", 
     "team_abilities": [
       "police"
     ], 
@@ -5782,7 +6000,11 @@
       {
         "type": "defense", 
         "name": "YA'LL KEEP YOUR HEADS DOWN", 
-        "description": "Defend, Super Senses."
+        "description": "Defend, Super Senses.", 
+        "powers": [
+          "defend", 
+          "super_senses"
+        ]
       }
     ], 
     "improved_movement": [], 
@@ -5797,19 +6019,8 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
-        "starting_line": true, 
-        "speed_power": "running_shot", 
-        "speed_value": 8, 
-        "attack_power": "precision_strike", 
-        "attack_value": 11, 
-        "defense_power": "special", 
-        "defense_value": 18, 
-        "damage_power": "leadership", 
-        "damage_value": 3
-      }, 
-      {
         "click_number": 1, 
+        "starting_line": true, 
         "speed_power": "running_shot", 
         "speed_value": 8, 
         "attack_power": "precision_strike", 
@@ -5836,13 +6047,24 @@
         "speed_value": 8, 
         "attack_power": "precision_strike", 
         "attack_value": 11, 
+        "defense_power": "special", 
+        "defense_value": 18, 
+        "damage_power": "leadership", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_power": "precision_strike", 
+        "attack_value": 11, 
         "defense_power": "super_senses", 
         "defense_value": 18, 
         "damage_power": "ranged_combat_expert", 
         "damage_value": 3
       }, 
       {
-        "click_number": 4, 
+        "click_number": 5, 
         "speed_power": "running_shot", 
         "speed_value": 8, 
         "attack_power": "precision_strike", 
@@ -5853,7 +6075,7 @@
         "damage_value": 2
       }, 
       {
-        "click_number": 5, 
+        "click_number": 6, 
         "speed_power": "running_shot", 
         "speed_value": 8, 
         "attack_power": "precision_strike", 
@@ -5871,10 +6093,10 @@
     "collector_number": "203bt", 
     "name": "Blightspoke Posse", 
     "type": "bystander", 
-    "age": "modern", 
     "rarity": "limited_edition", 
     "dimensions": "1x1", 
     "point_values": [], 
+    "properties": "[]", 
     "team_abilities": [
       "police"
     ], 
@@ -5892,7 +6114,7 @@
     "dial_size": "1", 
     "dial": [
       {
-        "click_number": 0, 
+        "click_number": 1, 
         "starting_line": true, 
         "speed_power": "leap_climb", 
         "speed_value": 7, 
@@ -5911,7 +6133,6 @@
     "collector_number": "204", 
     "name": "Famine", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "limited_edition", 
     "real_name": "Unknown", 
     "dimensions": "1x1", 
@@ -5919,6 +6140,7 @@
       75, 
       50
     ], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [
       "Arakko", 
@@ -5929,17 +6151,27 @@
       {
         "type": "trait", 
         "name": "THE FIRST CHILDREN", 
-        "description": "At the beginning of the game, if your starting force has two or more characters with the Horsemen keyword, this game Famine has: \"Steal Energy, but with close or range attacks.\" // If a friendly character named Apocalypse, Annihilation, or Genesis is on your force, modify Famine's attack and defense +1."
+        "description": "At the beginning of the game, if your starting force has two or more characters with the Horsemen keyword, this game Famine has: \"Steal Energy, but with close or range attacks.\" // If a friendly character named Apocalypse, Annihilation, or Genesis is on your force, modify Famine's attack and defense +1.", 
+        "powers": [
+          "steal_energy"
+        ]
       }, 
       {
         "type": "attack", 
         "name": "FEEL YOUR HUNGER", 
-        "description": "Incapacitate. When Famine uses it, after resolutions choose one:"
+        "description": "Incapacitate. When Famine uses it, after resolutions choose one: *Hit characters given an action token unequip any equipment. *Hit unequipped characters given an action token are dealt 1 penetrating damage.", 
+        "powers": [
+          "incapacitate"
+        ]
       }, 
       {
         "type": "defense", 
         "name": "GREATEST OF HIS NAME", 
-        "description": "Combat Reflexes, Willpower. // Opposing characters within range may only remove action tokens when they clear (not by any other effect)."
+        "description": "Combat Reflexes, Willpower. // Opposing characters within range may only remove action tokens when they clear (not by any other effect).", 
+        "powers": [
+          "combat_reflexes", 
+          "willpower"
+        ]
       }
     ], 
     "improved_movement": [], 
@@ -5954,7 +6186,7 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
+        "click_number": 1, 
         "starting_line": true, 
         "speed_power": "phasing_teleport", 
         "speed_value": 10, 
@@ -5966,7 +6198,7 @@
         "damage_value": 4
       }, 
       {
-        "click_number": 1, 
+        "click_number": 2, 
         "speed_power": "phasing_teleport", 
         "speed_value": 9, 
         "attack_power": "special", 
@@ -5977,7 +6209,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 2, 
+        "click_number": 3, 
         "speed_power": "phasing_teleport", 
         "speed_value": 9, 
         "attack_power": "special", 
@@ -5989,23 +6221,12 @@
         "starting_line": true
       }, 
       {
-        "click_number": 3, 
+        "click_number": 4, 
         "speed_power": "phasing_teleport", 
         "speed_value": 8, 
         "attack_power": "special", 
         "attack_value": 10, 
         "defense_power": "special", 
-        "defense_value": 17, 
-        "damage_power": "exploit_weakness", 
-        "damage_value": 3
-      }, 
-      {
-        "click_number": 4, 
-        "speed_power": "charge", 
-        "speed_value": 8, 
-        "attack_power": "incapacitate", 
-        "attack_value": 10, 
-        "defense_power": "toughness", 
         "defense_value": 17, 
         "damage_power": "exploit_weakness", 
         "damage_value": 3
@@ -6018,10 +6239,21 @@
         "attack_value": 10, 
         "defense_power": "toughness", 
         "defense_value": 17, 
+        "damage_power": "exploit_weakness", 
         "damage_value": 3
       }, 
       {
         "click_number": 6, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "incapacitate", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 7, 
         "speed_power": "charge", 
         "speed_value": 8, 
         "attack_power": "incapacitate", 
@@ -6038,14 +6270,13 @@
     "collector_number": "205", 
     "name": "Nimrod the Greater", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "limited_edition", 
     "real_name": "N/A", 
-    "special_type": "unique", 
     "dimensions": "1x1", 
     "point_values": [
       25
     ], 
+    "properties": "[\"unique\"]", 
     "team_abilities": [], 
     "keywords": [
       "Future", 
@@ -6061,7 +6292,10 @@
       {
         "type": "trait", 
         "name": "A LIVING DATABASE", 
-        "description": "Outwit. // When Nimrod the Greater starts the game, you may choose a friendly character with the Sentinel keyword. When Nimrod the Greater uses Outwit, he may count range and draw line of fire from the square of the chosen character."
+        "description": "Outwit. // When Nimrod the Greater starts the game, you may choose a friendly character with the Sentinel keyword. When Nimrod the Greater uses Outwit, he may count range and draw line of fire from the square of the chosen character.", 
+        "powers": [
+          "outwit"
+        ]
       }
     ], 
     "improved_movement": [], 
@@ -6076,16 +6310,8 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
-        "starting_line": true, 
-        "speed_value": 6, 
-        "attack_value": 9, 
-        "defense_power": "invincible", 
-        "defense_value": 17, 
-        "damage_value": 1
-      }, 
-      {
         "click_number": 1, 
+        "starting_line": true, 
         "speed_value": 6, 
         "attack_value": 9, 
         "defense_power": "invincible", 
@@ -6096,12 +6322,20 @@
         "click_number": 2, 
         "speed_value": 6, 
         "attack_value": 9, 
-        "defense_power": "toughness", 
+        "defense_power": "invincible", 
         "defense_value": 17, 
         "damage_value": 1
       }, 
       {
         "click_number": 3, 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 4, 
         "speed_value": 6, 
         "attack_value": 9, 
         "defense_power": "toughness", 
@@ -6116,7 +6350,6 @@
     "collector_number": "206", 
     "name": "Mojo", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "limited_edition", 
     "real_name": "Mojo", 
     "dimensions": "2x2", 
@@ -6125,6 +6358,7 @@
       125, 
       60
     ], 
+    "properties": "[]", 
     "team_abilities": [
       "team_player"
     ], 
@@ -6146,12 +6380,19 @@
       {
         "type": "trait", 
         "name": "AFTER THE PACIFIST WOLVERINE!!!", 
-        "description": "Mastermind. Leadership, but succeeds on a 4-6. When Mojo uses Leadership, after resolutions you may generate a bystander matching the result."
+        "description": "Mastermind. Leadership, but succeeds on a 4-6. When Mojo uses Leadership, after resolutions you may generate a bystander matching the result. 4: Feral Wolverine 5: M.O.D.O.K. Wolverine 6: Archangel Wolverine", 
+        "powers": [
+          "mastermind", 
+          "leadership"
+        ]
       }, 
       {
         "type": "speed", 
         "name": "THE CHAIR MOVES FOR ME", 
-        "description": "Stealth. // FREE: Roll a d6 and move up to half the result."
+        "description": "Stealth. // FREE: Roll a d6 and move up to half the result.", 
+        "powers": [
+          "stealth"
+        ]
       }
     ], 
     "improved_movement": [], 
@@ -6166,23 +6407,12 @@
     "dial_size": "26", 
     "dial": [
       {
-        "click_number": 0, 
+        "click_number": 1, 
         "starting_line": true, 
         "speed_power": "special", 
         "speed_value": 6, 
         "attack_power": "precision_strike", 
         "attack_value": 12, 
-        "defense_power": "invulnerability", 
-        "defense_value": 18, 
-        "damage_power": "outwit", 
-        "damage_value": 4
-      }, 
-      {
-        "click_number": 1, 
-        "speed_power": "special", 
-        "speed_value": 6, 
-        "attack_power": "precision_strike", 
-        "attack_value": 11, 
         "defense_power": "invulnerability", 
         "defense_value": 18, 
         "damage_power": "outwit", 
@@ -6201,14 +6431,14 @@
       }, 
       {
         "click_number": 3, 
-        "speed_power": "phasing_teleport", 
+        "speed_power": "special", 
         "speed_value": 6, 
-        "attack_power": "steal_energy", 
+        "attack_power": "precision_strike", 
         "attack_value": 11, 
-        "defense_power": "energy_shield_deflection", 
+        "defense_power": "invulnerability", 
         "defense_value": 18, 
-        "damage_power": "perplex", 
-        "damage_value": 3
+        "damage_power": "outwit", 
+        "damage_value": 4
       }, 
       {
         "click_number": 4, 
@@ -6223,6 +6453,17 @@
       }, 
       {
         "click_number": 5, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 6, 
+        "attack_power": "steal_energy", 
+        "attack_value": 11, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 18, 
+        "damage_power": "perplex", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 6, 
         "speed_power": "special", 
         "speed_value": 6, 
         "attack_power": "precision_strike", 
@@ -6234,7 +6475,7 @@
         "starting_line": true
       }, 
       {
-        "click_number": 6, 
+        "click_number": 7, 
         "speed_power": "special", 
         "speed_value": 6, 
         "attack_power": "precision_strike", 
@@ -6242,17 +6483,6 @@
         "defense_power": "invulnerability", 
         "defense_value": 17, 
         "damage_power": "outwit", 
-        "damage_value": 3
-      }, 
-      {
-        "click_number": 7, 
-        "speed_power": "phasing_teleport", 
-        "speed_value": 6, 
-        "attack_power": "steal_energy", 
-        "attack_value": 11, 
-        "defense_power": "energy_shield_deflection", 
-        "defense_value": 17, 
-        "damage_power": "perplex", 
         "damage_value": 3
       }, 
       {
@@ -6268,15 +6498,14 @@
       }, 
       {
         "click_number": 9, 
-        "speed_power": "special", 
-        "speed_value": 4, 
-        "attack_power": "precision_strike", 
-        "attack_value": 10, 
-        "defense_power": "invulnerability", 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 6, 
+        "attack_power": "steal_energy", 
+        "attack_value": 11, 
+        "defense_power": "energy_shield_deflection", 
         "defense_value": 17, 
-        "damage_power": "outwit", 
-        "damage_value": 3, 
-        "starting_line": true
+        "damage_power": "perplex", 
+        "damage_value": 3
       }, 
       {
         "click_number": 10, 
@@ -6287,7 +6516,8 @@
         "defense_power": "invulnerability", 
         "defense_value": 17, 
         "damage_power": "outwit", 
-        "damage_value": 3
+        "damage_value": 3, 
+        "starting_line": true
       }, 
       {
         "click_number": 11, 
@@ -6302,13 +6532,13 @@
       }, 
       {
         "click_number": 12, 
-        "speed_power": "phasing_teleport", 
-        "speed_value": 6, 
-        "attack_power": "steal_energy", 
-        "attack_value": 9, 
-        "defense_power": "energy_shield_deflection", 
+        "speed_power": "special", 
+        "speed_value": 4, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
         "defense_value": 17, 
-        "damage_power": "perplex", 
+        "damage_power": "outwit", 
         "damage_value": 3
       }, 
       {
@@ -6329,6 +6559,17 @@
         "attack_power": "steal_energy", 
         "attack_value": 9, 
         "defense_power": "energy_shield_deflection", 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 15, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 6, 
+        "attack_power": "steal_energy", 
+        "attack_value": 9, 
+        "defense_power": "energy_shield_deflection", 
         "defense_value": 16, 
         "damage_power": "perplex", 
         "damage_value": 3
@@ -6341,10 +6582,10 @@
     "collector_number": "206bta", 
     "name": "Archangel Wolverine", 
     "type": "bystander", 
-    "age": "modern", 
     "rarity": "limited_edition", 
     "dimensions": "1x1", 
     "point_values": [], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [], 
     "special_powers": [], 
@@ -6360,7 +6601,7 @@
     "dial_size": "1", 
     "dial": [
       {
-        "click_number": 0, 
+        "click_number": 1, 
         "starting_line": true, 
         "speed_power": "hypersonic_speed", 
         "speed_value": 6, 
@@ -6378,10 +6619,10 @@
     "collector_number": "206btb", 
     "name": "Feral Wolverine", 
     "type": "bystander", 
-    "age": "modern", 
     "rarity": "limited_edition", 
     "dimensions": "1x1", 
     "point_values": [], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [], 
     "special_powers": [], 
@@ -6397,7 +6638,7 @@
     "dial_size": "1", 
     "dial": [
       {
-        "click_number": 0, 
+        "click_number": 1, 
         "starting_line": true, 
         "speed_power": "flurry", 
         "speed_value": 6, 
@@ -6415,10 +6656,10 @@
     "collector_number": "206btc", 
     "name": "M.O.D.O.K. Wolverine", 
     "type": "bystander", 
-    "age": "modern", 
     "rarity": "limited_edition", 
     "dimensions": "1x1", 
     "point_values": [], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [], 
     "special_powers": [], 
@@ -6434,7 +6675,7 @@
     "dial_size": "1", 
     "dial": [
       {
-        "click_number": 0, 
+        "click_number": 1, 
         "starting_line": true, 
         "speed_power": "running_shot", 
         "speed_value": 6, 
@@ -6452,13 +6693,13 @@
     "collector_number": "207", 
     "name": "Saturnyne", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "limited_edition", 
     "real_name": "Opal Luna Saturnyne", 
     "dimensions": "1x1", 
     "point_values": [
       35
     ], 
+    "properties": "[]", 
     "team_abilities": [
       "cosmic_energy", 
       "mystics"
@@ -6477,7 +6718,10 @@
       {
         "type": "attack", 
         "name": "OUR NEXT CONTEST", 
-        "description": "Telekinesis. When Saturnyne use it to place a character adjacent to an opposing character, after resolutions remove an action token from the placed character."
+        "description": "Telekinesis. When Saturnyne use it to place a character adjacent to an opposing character, after resolutions remove an action token from the placed character.", 
+        "powers": [
+          "telekinesis"
+        ]
       }, 
       {
         "type": "damage", 
@@ -6497,7 +6741,7 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
+        "click_number": 1, 
         "starting_line": true, 
         "speed_power": "phasing_teleport", 
         "speed_value": 10, 
@@ -6509,7 +6753,7 @@
         "damage_value": 1
       }, 
       {
-        "click_number": 1, 
+        "click_number": 2, 
         "speed_power": "phasing_teleport", 
         "speed_value": 10, 
         "attack_power": "incapacitate", 
@@ -6520,7 +6764,7 @@
         "damage_value": 1
       }, 
       {
-        "click_number": 2, 
+        "click_number": 3, 
         "speed_power": "phasing_teleport", 
         "speed_value": 8, 
         "attack_power": "incapacitate", 
@@ -6531,7 +6775,7 @@
         "damage_value": 1
       }, 
       {
-        "click_number": 3, 
+        "click_number": 4, 
         "speed_power": "phasing_teleport", 
         "speed_value": 8, 
         "attack_power": "special", 
@@ -6549,7 +6793,6 @@
     "collector_number": "208", 
     "name": "Pogg Ur-Pogg", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "limited_edition", 
     "real_name": "Pogg Ur-Pogg", 
     "dimensions": "2x2", 
@@ -6558,6 +6801,7 @@
       170, 
       70
     ], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [
       "Animal", 
@@ -6579,12 +6823,20 @@
       {
         "type": "speed", 
         "name": "AN ENTIRE WORLD, SAYS YOU?", 
-        "description": "Charge, Flurry."
+        "description": "Charge, Flurry.", 
+        "powers": [
+          "charge", 
+          "flurry"
+        ]
       }, 
       {
         "type": "defense", 
         "name": "NOW I KNOW YOU'RE MY OPPONENT...", 
-        "description": "STOP. Toughness."
+        "description": "STOP. Toughness.", 
+        "powers": [
+          "stop", 
+          "toughness"
+        ]
       }
     ], 
     "improved_movement": [], 
@@ -6599,21 +6851,10 @@
     "dial_size": "26", 
     "dial": [
       {
-        "click_number": 0, 
+        "click_number": 1, 
         "starting_line": true, 
         "speed_power": "special", 
         "speed_value": 14, 
-        "attack_power": "precision_strike", 
-        "attack_value": 12, 
-        "defense_power": "invincible", 
-        "defense_value": 19, 
-        "damage_power": "exploit_weakness", 
-        "damage_value": 5
-      }, 
-      {
-        "click_number": 1, 
-        "speed_power": "special", 
-        "speed_value": 12, 
         "attack_power": "precision_strike", 
         "attack_value": 12, 
         "defense_power": "invincible", 
@@ -6636,6 +6877,17 @@
         "click_number": 3, 
         "speed_power": "special", 
         "speed_value": 12, 
+        "attack_power": "precision_strike", 
+        "attack_value": 12, 
+        "defense_power": "invincible", 
+        "defense_value": 19, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 5
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "special", 
+        "speed_value": 12, 
         "attack_power": "super_strength", 
         "attack_value": 12, 
         "defense_power": "invulnerability", 
@@ -6643,17 +6895,6 @@
         "damage_power": "exploit_weakness", 
         "damage_value": 4, 
         "starting_line": true
-      }, 
-      {
-        "click_number": 4, 
-        "speed_power": "special", 
-        "speed_value": 10, 
-        "attack_power": "super_strength", 
-        "attack_value": 11, 
-        "defense_power": "invulnerability", 
-        "defense_value": 18, 
-        "damage_power": "perplex", 
-        "damage_value": 4
       }, 
       {
         "click_number": 5, 
@@ -6668,7 +6909,7 @@
       }, 
       {
         "click_number": 6, 
-        "speed_power": "charge", 
+        "speed_power": "special", 
         "speed_value": 10, 
         "attack_power": "super_strength", 
         "attack_value": 11, 
@@ -6690,6 +6931,17 @@
       }, 
       {
         "click_number": 8, 
+        "speed_power": "charge", 
+        "speed_value": 10, 
+        "attack_power": "super_strength", 
+        "attack_value": 11, 
+        "defense_power": "invulnerability", 
+        "defense_value": 18, 
+        "damage_power": "perplex", 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 9, 
         "speed_power": "special", 
         "speed_value": 10, 
         "attack_power": "precision_strike", 
@@ -6701,7 +6953,7 @@
         "starting_line": true
       }, 
       {
-        "click_number": 9, 
+        "click_number": 10, 
         "speed_power": "special", 
         "speed_value": 8, 
         "attack_power": "precision_strike", 
@@ -6712,7 +6964,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 10, 
+        "click_number": 11, 
         "speed_power": "special", 
         "speed_value": 8, 
         "attack_power": "steal_energy", 
@@ -6723,7 +6975,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 11, 
+        "click_number": 12, 
         "speed_power": "flurry", 
         "speed_value": 8, 
         "attack_power": "steal_energy", 
@@ -6734,7 +6986,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 12, 
+        "click_number": 13, 
         "speed_power": "flurry", 
         "speed_value": 8, 
         "attack_power": "steal_energy", 
@@ -6745,7 +6997,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 13, 
+        "click_number": 14, 
         "speed_power": "flurry", 
         "speed_value": 8, 
         "attack_power": "steal_energy", 
@@ -6756,7 +7008,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 14, 
+        "click_number": 15, 
         "speed_power": "flurry", 
         "speed_value": 8, 
         "attack_power": "steal_energy", 
@@ -6774,7 +7026,6 @@
     "collector_number": "209", 
     "name": "Apocalypse", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "limited_edition", 
     "real_name": "En Sabah Nur", 
     "dimensions": "1x1", 
@@ -6783,6 +7034,7 @@
       145, 
       35
     ], 
+    "properties": "[]", 
     "team_abilities": [
       "cosmic_energy", 
       "mystics"
@@ -6810,12 +7062,21 @@
       {
         "type": "speed", 
         "name": "THE EXTERNAL GATE", 
-        "description": "Flurry, Phasing/Teleport. When Apocalypse uses Phasing/Teleport, after resolutions he may make a close attack."
+        "description": "Flurry, Phasing/Teleport. When Apocalypse uses Phasing/Teleport, after resolutions he may make a close attack.", 
+        "powers": [
+          "flurry", 
+          "phasing_teleport"
+        ]
       }, 
       {
         "type": "defense", 
         "name": "DESTRUCTIVE PARRY", 
-        "description": "STOP. Invincible, Super Senses. Each time this click is revealed due to taking damage from an attack, KO an object equipped to the attacker. If the attacker was not equipped, deal them 1 penetrating damage."
+        "description": "STOP. Invincible, Super Senses. Each time this click is revealed due to taking damage from an attack, KO an object equipped to the attacker. If the attacker was not equipped, deal them 1 penetrating damage.", 
+        "powers": [
+          "stop", 
+          "invincible", 
+          "super_senses"
+        ]
       }
     ], 
     "improved_movement": [], 
@@ -6830,7 +7091,7 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
+        "click_number": 1, 
         "starting_line": true, 
         "speed_power": "special", 
         "speed_value": 12, 
@@ -6842,7 +7103,7 @@
         "damage_value": 6
       }, 
       {
-        "click_number": 1, 
+        "click_number": 2, 
         "speed_power": "special", 
         "speed_value": 12, 
         "attack_power": "steal_energy", 
@@ -6853,7 +7114,7 @@
         "damage_value": 5
       }, 
       {
-        "click_number": 2, 
+        "click_number": 3, 
         "speed_power": "charge", 
         "speed_value": 12, 
         "attack_power": "steal_energy", 
@@ -6864,7 +7125,7 @@
         "damage_value": 5
       }, 
       {
-        "click_number": 3, 
+        "click_number": 4, 
         "speed_power": "special", 
         "speed_value": 10, 
         "attack_power": "penetrating_psychic_blast", 
@@ -6876,7 +7137,7 @@
         "starting_line": true
       }, 
       {
-        "click_number": 4, 
+        "click_number": 5, 
         "speed_power": "special", 
         "speed_value": 10, 
         "attack_power": "steal_energy", 
@@ -6887,22 +7148,11 @@
         "damage_value": 4
       }, 
       {
-        "click_number": 5, 
-        "speed_power": "charge", 
-        "speed_value": 10, 
-        "attack_power": "steal_energy", 
-        "attack_value": 12, 
-        "defense_power": "invulnerability", 
-        "defense_value": 18, 
-        "damage_power": "probability_control", 
-        "damage_value": 4
-      }, 
-      {
         "click_number": 6, 
         "speed_power": "charge", 
         "speed_value": 10, 
         "attack_power": "steal_energy", 
-        "attack_value": 11, 
+        "attack_value": 12, 
         "defense_power": "invulnerability", 
         "defense_value": 18, 
         "damage_power": "probability_control", 
@@ -6914,13 +7164,24 @@
         "speed_value": 10, 
         "attack_power": "steal_energy", 
         "attack_value": 11, 
-        "defense_power": "special", 
+        "defense_power": "invulnerability", 
         "defense_value": 18, 
         "damage_power": "probability_control", 
         "damage_value": 4
       }, 
       {
         "click_number": 8, 
+        "speed_power": "charge", 
+        "speed_value": 10, 
+        "attack_power": "steal_energy", 
+        "attack_value": 11, 
+        "defense_power": "special", 
+        "defense_value": 18, 
+        "damage_power": "probability_control", 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 9, 
         "speed_power": "special", 
         "speed_value": 8, 
         "attack_power": "penetrating_psychic_blast", 
@@ -6932,7 +7193,7 @@
         "starting_line": true
       }, 
       {
-        "click_number": 9, 
+        "click_number": 10, 
         "speed_power": "charge", 
         "speed_value": 8, 
         "attack_power": "steal_energy", 
@@ -6943,7 +7204,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 10, 
+        "click_number": 11, 
         "speed_power": "special", 
         "speed_value": 8, 
         "attack_power": "steal_energy", 
@@ -6961,7 +7222,6 @@
     "collector_number": "210", 
     "name": "Genesis", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "limited_edition", 
     "real_name": "Genesis", 
     "dimensions": "1x1", 
@@ -6970,6 +7230,7 @@
       145, 
       35
     ], 
+    "properties": "[]", 
     "team_abilities": [
       "cosmic_energy", 
       "mystics"
@@ -6996,12 +7257,21 @@
       {
         "type": "speed", 
         "name": "MARCH ACROSS OTHERWORLD", 
-        "description": "Charge, Flurry. Passenger: 4, but only to carry characters with the Arakko keyword."
+        "description": "Charge, Flurry. Passenger: 4, but only to carry characters with the Arakko keyword.", 
+        "powers": [
+          "charge", 
+          "flurry"
+        ]
       }, 
       {
         "type": "defense", 
         "name": "DESTRUCTIVE PARRY", 
-        "description": "STOP. Invincible, Super Senses. Each time this click is revealed due to taking damage from an attack, KO an object equipped to the attacker. If the attacker was not equipped, deal them 1 penetrating damage."
+        "description": "STOP. Invincible, Super Senses. Each time this click is revealed due to taking damage from an attack, KO an object equipped to the attacker. If the attacker was not equipped, deal them 1 penetrating damage.", 
+        "powers": [
+          "stop", 
+          "invincible", 
+          "super_senses"
+        ]
       }
     ], 
     "improved_movement": [], 
@@ -7016,7 +7286,7 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
+        "click_number": 1, 
         "starting_line": true, 
         "speed_power": "special", 
         "speed_value": 12, 
@@ -7028,7 +7298,7 @@
         "damage_value": 6
       }, 
       {
-        "click_number": 1, 
+        "click_number": 2, 
         "speed_power": "special", 
         "speed_value": 12, 
         "attack_power": "steal_energy", 
@@ -7039,7 +7309,7 @@
         "damage_value": 5
       }, 
       {
-        "click_number": 2, 
+        "click_number": 3, 
         "speed_power": "flurry", 
         "speed_value": 12, 
         "attack_power": "steal_energy", 
@@ -7050,7 +7320,7 @@
         "damage_value": 5
       }, 
       {
-        "click_number": 3, 
+        "click_number": 4, 
         "speed_power": "special", 
         "speed_value": 10, 
         "attack_power": "precision_strike", 
@@ -7062,7 +7332,7 @@
         "starting_line": true
       }, 
       {
-        "click_number": 4, 
+        "click_number": 5, 
         "speed_power": "special", 
         "speed_value": 10, 
         "attack_power": "steal_energy", 
@@ -7073,22 +7343,11 @@
         "damage_value": 4
       }, 
       {
-        "click_number": 5, 
-        "speed_power": "flurry", 
-        "speed_value": 10, 
-        "attack_power": "steal_energy", 
-        "attack_value": 12, 
-        "defense_power": "invulnerability", 
-        "defense_value": 18, 
-        "damage_power": "probability_control", 
-        "damage_value": 4
-      }, 
-      {
         "click_number": 6, 
         "speed_power": "flurry", 
         "speed_value": 10, 
         "attack_power": "steal_energy", 
-        "attack_value": 11, 
+        "attack_value": 12, 
         "defense_power": "invulnerability", 
         "defense_value": 18, 
         "damage_power": "probability_control", 
@@ -7100,13 +7359,24 @@
         "speed_value": 10, 
         "attack_power": "steal_energy", 
         "attack_value": 11, 
-        "defense_power": "special", 
+        "defense_power": "invulnerability", 
         "defense_value": 18, 
         "damage_power": "probability_control", 
         "damage_value": 4
       }, 
       {
         "click_number": 8, 
+        "speed_power": "flurry", 
+        "speed_value": 10, 
+        "attack_power": "steal_energy", 
+        "attack_value": 11, 
+        "defense_power": "special", 
+        "defense_value": 18, 
+        "damage_power": "probability_control", 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 9, 
         "speed_power": "special", 
         "speed_value": 8, 
         "attack_power": "precision_strike", 
@@ -7118,7 +7388,7 @@
         "starting_line": true
       }, 
       {
-        "click_number": 9, 
+        "click_number": 10, 
         "speed_power": "flurry", 
         "speed_value": 8, 
         "attack_power": "steal_energy", 
@@ -7129,7 +7399,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 10, 
+        "click_number": 11, 
         "speed_power": "special", 
         "speed_value": 8, 
         "attack_power": "steal_energy", 
@@ -7147,9 +7417,9 @@
     "collector_number": "TA001", 
     "name": "The Magician", 
     "type": "tarot_card", 
-    "age": "modern", 
     "rarity": "limited_edition", 
     "point_values": [], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [], 
     "special_powers": [
@@ -7169,9 +7439,9 @@
     "collector_number": "TA003", 
     "name": "The Empress", 
     "type": "tarot_card", 
-    "age": "modern", 
     "rarity": "limited_edition", 
     "point_values": [], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [], 
     "special_powers": [
@@ -7191,9 +7461,9 @@
     "collector_number": "TA004", 
     "name": "The Emperor", 
     "type": "tarot_card", 
-    "age": "modern", 
     "rarity": "limited_edition", 
     "point_values": [], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [], 
     "special_powers": [
@@ -7213,9 +7483,9 @@
     "collector_number": "TA005", 
     "name": "The Hierophant", 
     "type": "tarot_card", 
-    "age": "modern", 
     "rarity": "limited_edition", 
     "point_values": [], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [], 
     "special_powers": [
@@ -7235,9 +7505,9 @@
     "collector_number": "TA006", 
     "name": "The Lovers", 
     "type": "tarot_card", 
-    "age": "modern", 
     "rarity": "limited_edition", 
     "point_values": [], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [], 
     "special_powers": [
@@ -7257,9 +7527,9 @@
     "collector_number": "TA007", 
     "name": "The Chariot", 
     "type": "tarot_card", 
-    "age": "modern", 
     "rarity": "limited_edition", 
     "point_values": [], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [], 
     "special_powers": [
@@ -7279,9 +7549,9 @@
     "collector_number": "TA009", 
     "name": "The Hermit", 
     "type": "tarot_card", 
-    "age": "modern", 
     "rarity": "limited_edition", 
     "point_values": [], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [], 
     "special_powers": [
@@ -7301,9 +7571,9 @@
     "collector_number": "TA011", 
     "name": "Justice", 
     "type": "tarot_card", 
-    "age": "modern", 
     "rarity": "limited_edition", 
     "point_values": [], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [], 
     "special_powers": [
@@ -7323,9 +7593,9 @@
     "collector_number": "TA012", 
     "name": "The Hanged Man", 
     "type": "tarot_card", 
-    "age": "modern", 
     "rarity": "limited_edition", 
     "point_values": [], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [], 
     "special_powers": [
@@ -7345,9 +7615,9 @@
     "collector_number": "TA013", 
     "name": "Death", 
     "type": "tarot_card", 
-    "age": "modern", 
     "rarity": "limited_edition", 
     "point_values": [], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [], 
     "special_powers": [
@@ -7367,9 +7637,9 @@
     "collector_number": "TA016", 
     "name": "The Tower", 
     "type": "tarot_card", 
-    "age": "modern", 
     "rarity": "limited_edition", 
     "point_values": [], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [], 
     "special_powers": [
@@ -7389,9 +7659,9 @@
     "collector_number": "TA017", 
     "name": "The Star", 
     "type": "tarot_card", 
-    "age": "modern", 
     "rarity": "limited_edition", 
     "point_values": [], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [], 
     "special_powers": [
@@ -7411,9 +7681,9 @@
     "collector_number": "TA019", 
     "name": "The Sun", 
     "type": "tarot_card", 
-    "age": "modern", 
     "rarity": "limited_edition", 
     "point_values": [], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [], 
     "special_powers": [
@@ -7433,9 +7703,9 @@
     "collector_number": "TA020", 
     "name": "Judgment", 
     "type": "tarot_card", 
-    "age": "modern", 
     "rarity": "limited_edition", 
     "point_values": [], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [], 
     "special_powers": [
@@ -7455,9 +7725,9 @@
     "collector_number": "TA021", 
     "name": "The World", 
     "type": "tarot_card", 
-    "age": "modern", 
     "rarity": "limited_edition", 
     "point_values": [], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [], 
     "special_powers": [
@@ -7477,9 +7747,9 @@
     "collector_number": "TC002", 
     "name": "Two of Cups", 
     "type": "tarot_card", 
-    "age": "modern", 
     "rarity": "limited_edition", 
     "point_values": [], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [], 
     "special_powers": [
@@ -7499,9 +7769,9 @@
     "collector_number": "TC003", 
     "name": "Three of Cups", 
     "type": "tarot_card", 
-    "age": "modern", 
     "rarity": "limited_edition", 
     "point_values": [], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [], 
     "special_powers": [
@@ -7521,9 +7791,9 @@
     "collector_number": "TC004", 
     "name": "Four of Cups", 
     "type": "tarot_card", 
-    "age": "modern", 
     "rarity": "limited_edition", 
     "point_values": [], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [], 
     "special_powers": [
@@ -7543,9 +7813,9 @@
     "collector_number": "TC008", 
     "name": "Eight of Cups", 
     "type": "tarot_card", 
-    "age": "modern", 
     "rarity": "limited_edition", 
     "point_values": [], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [], 
     "special_powers": [
@@ -7565,9 +7835,9 @@
     "collector_number": "TC009", 
     "name": "Nine of Cups", 
     "type": "tarot_card", 
-    "age": "modern", 
     "rarity": "limited_edition", 
     "point_values": [], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [], 
     "special_powers": [
@@ -7587,9 +7857,9 @@
     "collector_number": "TC010", 
     "name": "Ten of Cups", 
     "type": "tarot_card", 
-    "age": "modern", 
     "rarity": "limited_edition", 
     "point_values": [], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [], 
     "special_powers": [
@@ -7609,9 +7879,9 @@
     "collector_number": "TC014", 
     "name": "King of Cups", 
     "type": "tarot_card", 
-    "age": "modern", 
     "rarity": "limited_edition", 
     "point_values": [], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [], 
     "special_powers": [
@@ -7631,9 +7901,9 @@
     "collector_number": "TP002", 
     "name": "Two of Pentacles", 
     "type": "tarot_card", 
-    "age": "modern", 
     "rarity": "limited_edition", 
     "point_values": [], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [], 
     "special_powers": [
@@ -7653,9 +7923,9 @@
     "collector_number": "TP003", 
     "name": "Three of Pentacles", 
     "type": "tarot_card", 
-    "age": "modern", 
     "rarity": "limited_edition", 
     "point_values": [], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [], 
     "special_powers": [
@@ -7675,9 +7945,9 @@
     "collector_number": "TP004", 
     "name": "Four of Pentacles", 
     "type": "tarot_card", 
-    "age": "modern", 
     "rarity": "limited_edition", 
     "point_values": [], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [], 
     "special_powers": [
@@ -7697,9 +7967,9 @@
     "collector_number": "TP011", 
     "name": "Page of Pentacles", 
     "type": "tarot_card", 
-    "age": "modern", 
     "rarity": "limited_edition", 
     "point_values": [], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [], 
     "special_powers": [
@@ -7719,9 +7989,9 @@
     "collector_number": "TP012", 
     "name": "Knight of Pentacles", 
     "type": "tarot_card", 
-    "age": "modern", 
     "rarity": "limited_edition", 
     "point_values": [], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [], 
     "special_powers": [
@@ -7741,9 +8011,9 @@
     "collector_number": "TP013", 
     "name": "Queen of Pentacles", 
     "type": "tarot_card", 
-    "age": "modern", 
     "rarity": "limited_edition", 
     "point_values": [], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [], 
     "special_powers": [
@@ -7763,9 +8033,9 @@
     "collector_number": "TP014", 
     "name": "King of Pentacles", 
     "type": "tarot_card", 
-    "age": "modern", 
     "rarity": "limited_edition", 
     "point_values": [], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [], 
     "special_powers": [
@@ -7785,9 +8055,9 @@
     "collector_number": "TS001", 
     "name": "Ace of Swords", 
     "type": "tarot_card", 
-    "age": "modern", 
     "rarity": "limited_edition", 
     "point_values": [], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [], 
     "special_powers": [
@@ -7807,9 +8077,9 @@
     "collector_number": "TS002", 
     "name": "Two of Swords", 
     "type": "tarot_card", 
-    "age": "modern", 
     "rarity": "limited_edition", 
     "point_values": [], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [], 
     "special_powers": [
@@ -7829,9 +8099,9 @@
     "collector_number": "TS003", 
     "name": "Three of Swords", 
     "type": "tarot_card", 
-    "age": "modern", 
     "rarity": "limited_edition", 
     "point_values": [], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [], 
     "special_powers": [
@@ -7851,9 +8121,9 @@
     "collector_number": "TS004", 
     "name": "Four of Swords", 
     "type": "tarot_card", 
-    "age": "modern", 
     "rarity": "limited_edition", 
     "point_values": [], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [], 
     "special_powers": [
@@ -7873,9 +8143,9 @@
     "collector_number": "TS007", 
     "name": "Seven of Swords", 
     "type": "tarot_card", 
-    "age": "modern", 
     "rarity": "limited_edition", 
     "point_values": [], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [], 
     "special_powers": [
@@ -7895,9 +8165,9 @@
     "collector_number": "TS008", 
     "name": "Eight of Swords", 
     "type": "tarot_card", 
-    "age": "modern", 
     "rarity": "limited_edition", 
     "point_values": [], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [], 
     "special_powers": [
@@ -7917,9 +8187,9 @@
     "collector_number": "TS010", 
     "name": "Ten of Swords", 
     "type": "tarot_card", 
-    "age": "modern", 
     "rarity": "limited_edition", 
     "point_values": [], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [], 
     "special_powers": [
@@ -7939,9 +8209,9 @@
     "collector_number": "TW001", 
     "name": "Ace of Wands", 
     "type": "tarot_card", 
-    "age": "modern", 
     "rarity": "limited_edition", 
     "point_values": [], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [], 
     "special_powers": [
@@ -7961,9 +8231,9 @@
     "collector_number": "TW003", 
     "name": "Three of Wands", 
     "type": "tarot_card", 
-    "age": "modern", 
     "rarity": "limited_edition", 
     "point_values": [], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [], 
     "special_powers": [
@@ -7983,9 +8253,9 @@
     "collector_number": "TW005", 
     "name": "Five of Wands", 
     "type": "tarot_card", 
-    "age": "modern", 
     "rarity": "limited_edition", 
     "point_values": [], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [], 
     "special_powers": [
@@ -8005,9 +8275,9 @@
     "collector_number": "TW006", 
     "name": "Six of Wands", 
     "type": "tarot_card", 
-    "age": "modern", 
     "rarity": "limited_edition", 
     "point_values": [], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [], 
     "special_powers": [
@@ -8027,9 +8297,9 @@
     "collector_number": "TW007", 
     "name": "Seven of Wands", 
     "type": "tarot_card", 
-    "age": "modern", 
     "rarity": "limited_edition", 
     "point_values": [], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [], 
     "special_powers": [
@@ -8049,9 +8319,9 @@
     "collector_number": "TW008", 
     "name": "Eight of Wands", 
     "type": "tarot_card", 
-    "age": "modern", 
     "rarity": "limited_edition", 
     "point_values": [], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [], 
     "special_powers": [
@@ -8071,18 +8341,21 @@
     "collector_number": "s012", 
     "name": "Sword of Might", 
     "type": "equipment", 
-    "age": "modern", 
     "rarity": "rare", 
     "point_values": [
       10
     ], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [], 
     "special_powers": [
       {
         "type": "equipment", 
         "name": "EFFECT", 
-        "description": "Blades/Claws/Fangs. When this character uses it, the minimum result is instead the character's printed damage value +1."
+        "description": "Blades/Claws/Fangs. When this character uses it, the minimum result is instead the character's printed damage value +1.", 
+        "powers": [
+          "blades_claws_fangs"
+        ]
       }
     ], 
     "improved_movement": [], 
@@ -8102,18 +8375,21 @@
     "collector_number": "s013", 
     "name": "Pogg Ur-Pogg", 
     "type": "equipment", 
-    "age": "modern", 
     "rarity": "rare", 
     "point_values": [
       10
     ], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [], 
     "special_powers": [
       {
         "type": "equipment", 
         "name": "EFFECT", 
-        "description": "Blades/Claws/Fangs. Giant Reach: 3. If this character already has Giant Reach: X, increase the X by 1."
+        "description": "Blades/Claws/Fangs. Giant Reach: 3. If this character already has Giant Reach: X, increase the X by 1.", 
+        "powers": [
+          "blades_claws_fangs"
+        ]
       }
     ], 
     "improved_movement": [], 
@@ -8133,18 +8409,21 @@
     "collector_number": "s014", 
     "name": "Skybreaker", 
     "type": "equipment", 
-    "age": "modern", 
     "rarity": "rare", 
     "point_values": [
       10
     ], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [], 
     "special_powers": [
       {
         "type": "equipment", 
         "name": "EFFECT", 
-        "description": "Blades/Claws/Fangs. Once per turn when this character uses it, after resolutions they may make a range attack using Improved Targeting: Adjacent but only to target a hit character."
+        "description": "Blades/Claws/Fangs. Once per turn when this character uses it, after resolutions they may make a range attack using Improved Targeting: Adjacent but only to target a hit character.", 
+        "powers": [
+          "blades_claws_fangs"
+        ]
       }
     ], 
     "improved_movement": [], 
@@ -8164,18 +8443,23 @@
     "collector_number": "s015", 
     "name": "Warlock", 
     "type": "equipment", 
-    "age": "modern", 
     "rarity": "rare", 
     "point_values": [
       10
     ], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [], 
     "special_powers": [
       {
         "type": "equipment", 
         "name": "EFFECT", 
-        "description": "Blades/Claws/Fangs, Plasticity, Shape Change."
+        "description": "Blades/Claws/Fangs, Plasticity, Shape Change.", 
+        "powers": [
+          "blades_claws_fangs", 
+          "plasticity", 
+          "shape_change"
+        ]
       }
     ], 
     "improved_movement": [], 
@@ -8195,18 +8479,21 @@
     "collector_number": "s016", 
     "name": "Muramasa Blade", 
     "type": "equipment", 
-    "age": "modern", 
     "rarity": "rare", 
     "point_values": [
       10
     ], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [], 
     "special_powers": [
       {
         "type": "equipment", 
         "name": "EFFECT", 
-        "description": "Blades/Claws/Fangs. When this character uses it, give the hit character a Curse token if they don't already have one. // This game when a character with a Curse token would heal, they instead remove a Curse token."
+        "description": "Blades/Claws/Fangs. When this character uses it, give the hit character a Curse token if they don't already have one. // This game when a character with a Curse token would heal, they instead remove a Curse token.", 
+        "powers": [
+          "blades_claws_fangs"
+        ]
       }
     ], 
     "improved_movement": [], 
@@ -8226,18 +8513,21 @@
     "collector_number": "s017", 
     "name": "Grasscutter", 
     "type": "equipment", 
-    "age": "modern", 
     "rarity": "rare", 
     "point_values": [
       10
     ], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [], 
     "special_powers": [
       {
         "type": "equipment", 
         "name": "EFFECT", 
-        "description": "Blades/Claws/Fangs. When this character uses it, you may instead use one of the dice in the attack rolls as your d6 result."
+        "description": "Blades/Claws/Fangs. When this character uses it, you may instead use one of the dice in the attack rolls as your d6 result.", 
+        "powers": [
+          "blades_claws_fangs"
+        ]
       }
     ], 
     "improved_movement": [], 
@@ -8257,18 +8547,21 @@
     "collector_number": "s018", 
     "name": "Godkiller", 
     "type": "equipment", 
-    "age": "modern", 
     "rarity": "rare", 
     "point_values": [
       10
     ], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [], 
     "special_powers": [
       {
         "type": "equipment", 
         "name": "EFFECT", 
-        "description": "Blades/Claws/Fangs. When this character uses it, hit characters can't use Team Abilities until your next turn."
+        "description": "Blades/Claws/Fangs. When this character uses it, hit characters can't use Team Abilities until your next turn.", 
+        "powers": [
+          "blades_claws_fangs"
+        ]
       }
     ], 
     "improved_movement": [], 
@@ -8288,18 +8581,21 @@
     "collector_number": "s019", 
     "name": "Soulsword", 
     "type": "equipment", 
-    "age": "modern", 
     "rarity": "rare", 
     "point_values": [
       10
     ], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [], 
     "special_powers": [
       {
         "type": "equipment", 
         "name": "EFFECT", 
-        "description": "Blades/Claws/Fangs, Mystics team ability. // If this character already has Mystics team ability, once per turn when they deal damage from that team ability choose one: deal 2 penetrating damage instead -or- also heal 1 click."
+        "description": "Blades/Claws/Fangs, Mystics team ability. // If this character already has Mystics team ability, once per turn when they deal damage from that team ability choose one: deal 2 penetrating damage instead -or- also heal 1 click.", 
+        "powers": [
+          "blades_claws_fangs"
+        ]
       }
     ], 
     "improved_movement": [], 
@@ -8319,18 +8615,21 @@
     "collector_number": "s020", 
     "name": "Light of Galador", 
     "type": "equipment", 
-    "age": "modern", 
     "rarity": "rare", 
     "point_values": [
       10
     ], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [], 
     "special_powers": [
       {
         "type": "equipment", 
         "name": "EFFECT", 
-        "description": "Blades/Claws/Fangs. When this character uses it, after resolutions heal 1 click on this character and all adjacent friendly characters."
+        "description": "Blades/Claws/Fangs. When this character uses it, after resolutions heal 1 click on this character and all adjacent friendly characters.", 
+        "powers": [
+          "blades_claws_fangs"
+        ]
       }
     ], 
     "improved_movement": [], 
@@ -8350,18 +8649,21 @@
     "collector_number": "s021", 
     "name": "Mercy", 
     "type": "equipment", 
-    "age": "modern", 
     "rarity": "rare", 
     "point_values": [
       10
     ], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [], 
     "special_powers": [
       {
         "type": "equipment", 
         "name": "EFFECT", 
-        "description": "Blades/Claws/Fangs. // Once per attack when this character attacks, you may reroll the attack."
+        "description": "Blades/Claws/Fangs. // Once per attack when this character attacks, you may reroll the attack.", 
+        "powers": [
+          "blades_claws_fangs"
+        ]
       }
     ], 
     "improved_movement": [], 
@@ -8373,6 +8675,57 @@
       "unequip_drop", 
       "sword_equipment"
     ], 
+    "dial": []
+  }, 
+  {
+    "unit_id": "xmxssopM001", 
+    "set_id": "xmxssop", 
+    "collector_number": "M001", 
+    "name": "Eternal Caldera", 
+    "type": "map", 
+    "point_values": [], 
+    "properties": "[]", 
+    "team_abilities": [], 
+    "keywords": [], 
+    "special_powers": [], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "map_url": "https://hcmaps.net/maps/xmxssop/eternal_caldera.json", 
+    "dial": []
+  }, 
+  {
+    "unit_id": "xmxssopM002", 
+    "set_id": "xmxssop", 
+    "collector_number": "M002", 
+    "name": "Fae Dungeons", 
+    "type": "map", 
+    "point_values": [], 
+    "properties": "[]", 
+    "team_abilities": [], 
+    "keywords": [], 
+    "special_powers": [], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "map_url": "https://hcmaps.net/maps/xmxssop/fae_dungeons.json", 
+    "dial": []
+  }, 
+  {
+    "unit_id": "xmxssopM003", 
+    "set_id": "xmxssop", 
+    "collector_number": "M003", 
+    "name": "Fiefdom of Amenth", 
+    "type": "map", 
+    "point_values": [], 
+    "properties": "[]", 
+    "team_abilities": [], 
+    "keywords": [], 
+    "special_powers": [], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "map_url": "https://hcmaps.net/maps/xmxssop/fiefdom_of_amenth.json", 
     "dial": []
   }
 ]

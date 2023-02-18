@@ -48,4 +48,15 @@ class DataSource {
       error: onError
     });
   }
+
+  loadMap(map_url, onSuccess, onError) {
+    jQuery.get({
+      url: map_url,
+      dataType: 'text',
+      success: function(searchResults) {
+        onSuccess(JSON.parse(searchResults));
+      },
+      error: onError
+    });
+  }
 }

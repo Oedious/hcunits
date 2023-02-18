@@ -85,8 +85,8 @@ class ObjectView extends UnitView {
            type == "tarot_card";
   }
 
-  constructor(unitJson) {
-    super(unitJson);
+  constructor(unit) {
+    super(unit);
     this.extraLines_ = 0;
   }
 

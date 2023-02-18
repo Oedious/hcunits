@@ -5,7 +5,6 @@
     "collector_number": "001", 
     "name": "Mr. Fantastic", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "common", 
     "real_name": "Reed Richards", 
     "dimensions": "1x1", 
@@ -13,6 +12,7 @@
       75, 
       20
     ], 
+    "properties": "[]", 
     "team_abilities": [
       "fantastic_four"
     ], 
@@ -30,7 +30,11 @@
       {
         "type": "defense", 
         "name": "THIS IS OUR LAST CHANCE...", 
-        "description": "STOP. Super Senses."
+        "description": "STOP. Super Senses.", 
+        "powers": [
+          "stop", 
+          "super_senses"
+        ]
       }
     ], 
     "improved_movement": [], 
@@ -45,7 +49,7 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
+        "click_number": 1, 
         "starting_line": true, 
         "speed_power": "leap_climb", 
         "speed_value": 11, 
@@ -56,7 +60,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 1, 
+        "click_number": 2, 
         "speed_power": "leap_climb", 
         "speed_value": 11, 
         "attack_value": 10, 
@@ -66,7 +70,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 2, 
+        "click_number": 3, 
         "speed_power": "leap_climb", 
         "speed_value": 10, 
         "attack_value": 10, 
@@ -76,19 +80,9 @@
         "damage_value": 2
       }, 
       {
-        "click_number": 3, 
-        "speed_power": "force_blast", 
-        "speed_value": 10, 
-        "attack_value": 10, 
-        "defense_power": "super_senses", 
-        "defense_value": 17, 
-        "damage_power": "outwit", 
-        "damage_value": 2
-      }, 
-      {
         "click_number": 4, 
         "speed_power": "force_blast", 
-        "speed_value": 9, 
+        "speed_value": 10, 
         "attack_value": 10, 
         "defense_power": "super_senses", 
         "defense_value": 17, 
@@ -99,7 +93,7 @@
         "click_number": 5, 
         "speed_power": "force_blast", 
         "speed_value": 9, 
-        "attack_value": 9, 
+        "attack_value": 10, 
         "defense_power": "super_senses", 
         "defense_value": 17, 
         "damage_power": "outwit", 
@@ -107,6 +101,16 @@
       }, 
       {
         "click_number": 6, 
+        "speed_power": "force_blast", 
+        "speed_value": 9, 
+        "attack_value": 9, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 7, 
         "speed_power": "leap_climb", 
         "speed_value": 10, 
         "attack_value": 9, 
@@ -117,7 +121,7 @@
         "starting_line": true
       }, 
       {
-        "click_number": 7, 
+        "click_number": 8, 
         "speed_power": "force_blast", 
         "speed_value": 9, 
         "attack_value": 11, 
@@ -134,7 +138,6 @@
     "collector_number": "002", 
     "name": "Invisible Woman", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "common", 
     "real_name": "Susan Storm", 
     "dimensions": "1x1", 
@@ -142,6 +145,7 @@
       75, 
       20
     ], 
+    "properties": "[]", 
     "team_abilities": [
       "fantastic_four"
     ], 
@@ -158,7 +162,11 @@
       {
         "type": "defense", 
         "name": "I GUESS IT'S UP TO ME NOW...", 
-        "description": "STOP. Defend."
+        "description": "STOP. Defend.", 
+        "powers": [
+          "stop", 
+          "defend"
+        ]
       }
     ], 
     "improved_movement": [], 
@@ -173,22 +181,12 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
+        "click_number": 1, 
         "starting_line": true, 
         "speed_power": "stealth", 
         "speed_value": 8, 
         "attack_power": "quake", 
         "attack_value": 11, 
-        "defense_power": "barrier", 
-        "defense_value": 19, 
-        "damage_value": 3
-      }, 
-      {
-        "click_number": 1, 
-        "speed_power": "stealth", 
-        "speed_value": 8, 
-        "attack_power": "quake", 
-        "attack_value": 10, 
         "defense_power": "barrier", 
         "defense_value": 19, 
         "damage_value": 3
@@ -200,15 +198,15 @@
         "attack_power": "quake", 
         "attack_value": 10, 
         "defense_power": "barrier", 
-        "defense_value": 18, 
-        "damage_value": 2
+        "defense_value": 19, 
+        "damage_value": 3
       }, 
       {
         "click_number": 3, 
-        "speed_power": "sidestep", 
-        "speed_value": 7, 
-        "attack_power": "incapacitate", 
-        "attack_value": 11, 
+        "speed_power": "stealth", 
+        "speed_value": 8, 
+        "attack_power": "quake", 
+        "attack_value": 10, 
         "defense_power": "barrier", 
         "defense_value": 18, 
         "damage_value": 2
@@ -218,13 +216,23 @@
         "speed_power": "sidestep", 
         "speed_value": 7, 
         "attack_power": "incapacitate", 
+        "attack_value": 11, 
+        "defense_power": "barrier", 
+        "defense_value": 18, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_power": "incapacitate", 
         "attack_value": 10, 
         "defense_power": "defend", 
         "defense_value": 19, 
         "damage_value": 2
       }, 
       {
-        "click_number": 5, 
+        "click_number": 6, 
         "speed_power": "stealth", 
         "speed_value": 6, 
         "attack_power": "incapacitate", 
@@ -235,7 +243,7 @@
         "starting_line": true
       }, 
       {
-        "click_number": 6, 
+        "click_number": 7, 
         "speed_power": "sidestep", 
         "speed_value": 6, 
         "attack_power": "incapacitate", 
@@ -252,7 +260,6 @@
     "collector_number": "003", 
     "name": "The Thing", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "common", 
     "real_name": "Ben Grimm", 
     "dimensions": "1x1", 
@@ -260,6 +267,7 @@
       75, 
       20
     ], 
+    "properties": "[]", 
     "team_abilities": [
       "fantastic_four"
     ], 
@@ -276,7 +284,11 @@
       {
         "type": "defense", 
         "name": "I AIN'T FINISHED YET...", 
-        "description": "STOP. Invulnerability."
+        "description": "STOP. Invulnerability.", 
+        "powers": [
+          "stop", 
+          "invulnerability"
+        ]
       }
     ], 
     "improved_movement": [], 
@@ -291,7 +303,7 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
+        "click_number": 1, 
         "starting_line": true, 
         "speed_power": "charge", 
         "speed_value": 11, 
@@ -302,7 +314,7 @@
         "damage_value": 4
       }, 
       {
-        "click_number": 1, 
+        "click_number": 2, 
         "speed_power": "charge", 
         "speed_value": 11, 
         "attack_value": 11, 
@@ -312,7 +324,7 @@
         "damage_value": 4
       }, 
       {
-        "click_number": 2, 
+        "click_number": 3, 
         "speed_power": "charge", 
         "speed_value": 10, 
         "attack_value": 11, 
@@ -322,22 +334,12 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 3, 
+        "click_number": 4, 
         "speed_power": "charge", 
         "speed_value": 10, 
         "attack_value": 11, 
         "defense_power": "invulnerability", 
         "defense_value": 18, 
-        "damage_power": "close_combat_expert", 
-        "damage_value": 3
-      }, 
-      {
-        "click_number": 4, 
-        "speed_power": "sidestep", 
-        "speed_value": 9, 
-        "attack_value": 10, 
-        "defense_power": "toughness", 
-        "defense_value": 17, 
         "damage_power": "close_combat_expert", 
         "damage_value": 3
       }, 
@@ -354,6 +356,16 @@
       {
         "click_number": 6, 
         "speed_power": "sidestep", 
+        "speed_value": 9, 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "sidestep", 
         "speed_value": 8, 
         "attack_value": 10, 
         "defense_power": "toughness", 
@@ -363,7 +375,7 @@
         "starting_line": true
       }, 
       {
-        "click_number": 7, 
+        "click_number": 8, 
         "speed_power": "sidestep", 
         "speed_value": 8, 
         "attack_value": 10, 
@@ -380,7 +392,6 @@
     "collector_number": "004", 
     "name": "Human Torch", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "common", 
     "real_name": "Johnny Storm", 
     "dimensions": "1x1", 
@@ -388,6 +399,7 @@
       75, 
       20
     ], 
+    "properties": "[]", 
     "team_abilities": [
       "fantastic_four"
     ], 
@@ -404,7 +416,11 @@
       {
         "type": "defense", 
         "name": "MY TIME TO SHINE...", 
-        "description": "STOP. Energy Shield/Deflection."
+        "description": "STOP. Energy Shield/Deflection.", 
+        "powers": [
+          "stop", 
+          "energy_shield_deflection"
+        ]
       }
     ], 
     "improved_movement": [], 
@@ -419,7 +435,7 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
+        "click_number": 1, 
         "starting_line": true, 
         "speed_power": "running_shot", 
         "speed_value": 10, 
@@ -430,7 +446,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 1, 
+        "click_number": 2, 
         "speed_power": "running_shot", 
         "speed_value": 10, 
         "attack_value": 11, 
@@ -440,7 +456,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 2, 
+        "click_number": 3, 
         "speed_power": "running_shot", 
         "speed_value": 10, 
         "attack_value": 12, 
@@ -450,7 +466,7 @@
         "damage_value": 4
       }, 
       {
-        "click_number": 3, 
+        "click_number": 4, 
         "speed_power": "sidestep", 
         "speed_value": 9, 
         "attack_value": 11, 
@@ -460,7 +476,7 @@
         "damage_value": 4
       }, 
       {
-        "click_number": 4, 
+        "click_number": 5, 
         "speed_power": "sidestep", 
         "speed_value": 9, 
         "attack_value": 10, 
@@ -470,7 +486,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 5, 
+        "click_number": 6, 
         "speed_power": "running_shot", 
         "speed_value": 8, 
         "attack_value": 10, 
@@ -481,7 +497,7 @@
         "starting_line": true
       }, 
       {
-        "click_number": 6, 
+        "click_number": 7, 
         "speed_power": "sidestep", 
         "speed_value": 7, 
         "attack_value": 11, 
@@ -498,7 +514,6 @@
     "collector_number": "005", 
     "name": "Dr. Doom", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "common", 
     "real_name": "Victor Von Doom", 
     "dimensions": "1x1", 
@@ -507,6 +522,7 @@
       75, 
       40
     ], 
+    "properties": "[]", 
     "team_abilities": [
       "minions_of_doom"
     ], 
@@ -523,12 +539,18 @@
       {
         "type": "trait", 
         "name": "BELOVED RULER OF LATVERIA", 
-        "description": "Leadership."
+        "description": "Leadership.", 
+        "powers": [
+          "leadership"
+        ]
       }, 
       {
         "type": "attack", 
         "name": "PHOTON SHOT", 
-        "description": "Energy Explosion. When Dr. Doom uses it, after resolutions each hit character is knocked back 2 squares in a direction of your choosing."
+        "description": "Energy Explosion. When Dr. Doom uses it, after resolutions each hit character is knocked back 2 squares in a direction of your choosing.", 
+        "powers": [
+          "energy_explosion"
+        ]
       }
     ], 
     "improved_movement": [], 
@@ -543,19 +565,8 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
-        "starting_line": true, 
-        "speed_power": "running_shot", 
-        "speed_value": 10, 
-        "attack_power": "special", 
-        "attack_value": 11, 
-        "defense_power": "energy_shield_deflection", 
-        "defense_value": 18, 
-        "damage_power": "outwit", 
-        "damage_value": 4
-      }, 
-      {
         "click_number": 1, 
+        "starting_line": true, 
         "speed_power": "running_shot", 
         "speed_value": 10, 
         "attack_power": "special", 
@@ -568,6 +579,17 @@
       {
         "click_number": 2, 
         "speed_power": "running_shot", 
+        "speed_value": 10, 
+        "attack_power": "special", 
+        "attack_value": 11, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 18, 
+        "damage_power": "outwit", 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "running_shot", 
         "speed_value": 9, 
         "attack_power": "special", 
         "attack_value": 11, 
@@ -577,7 +599,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 3, 
+        "click_number": 4, 
         "speed_power": "sidestep", 
         "speed_value": 9, 
         "attack_power": "special", 
@@ -589,7 +611,7 @@
         "starting_line": true
       }, 
       {
-        "click_number": 4, 
+        "click_number": 5, 
         "speed_power": "sidestep", 
         "speed_value": 8, 
         "attack_power": "special", 
@@ -600,7 +622,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 5, 
+        "click_number": 6, 
         "speed_power": "sidestep", 
         "speed_value": 8, 
         "attack_power": "special", 
@@ -612,7 +634,7 @@
         "starting_line": true
       }, 
       {
-        "click_number": 6, 
+        "click_number": 7, 
         "speed_power": "force_blast", 
         "speed_value": 7, 
         "attack_power": "pulse_wave", 
@@ -623,7 +645,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 7, 
+        "click_number": 8, 
         "speed_power": "force_blast", 
         "speed_value": 6, 
         "attack_power": "pulse_wave", 
@@ -641,7 +663,6 @@
     "collector_number": "006", 
     "name": "Silver Surfer", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "common", 
     "real_name": "Norrin Radd", 
     "dimensions": "1x1", 
@@ -650,6 +671,7 @@
       90, 
       50
     ], 
+    "properties": "[]", 
     "team_abilities": [
       "cosmic_energy"
     ], 
@@ -662,7 +684,10 @@
       {
         "type": "speed", 
         "name": "THE SILVER STREAK", 
-        "description": "Hypersonic Speed. When Silver Surfer uses it, after resolutions knock back each character 1 square that he moved through during the action in a direction of your choosing (may choose a different direction for each character)."
+        "description": "Hypersonic Speed. When Silver Surfer uses it, after resolutions knock back each character 1 square that he moved through during the action in a direction of your choosing (may choose a different direction for each character).", 
+        "powers": [
+          "hypersonic_speed"
+        ]
       }
     ], 
     "improved_movement": [], 
@@ -677,20 +702,11 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
+        "click_number": 1, 
         "starting_line": true, 
         "speed_power": "special", 
         "speed_value": 14, 
         "attack_value": 12, 
-        "defense_power": "invulnerability", 
-        "defense_value": 18, 
-        "damage_value": 4
-      }, 
-      {
-        "click_number": 1, 
-        "speed_power": "special", 
-        "speed_value": 13, 
-        "attack_value": 11, 
         "defense_power": "invulnerability", 
         "defense_value": 18, 
         "damage_value": 4
@@ -707,12 +723,11 @@
       {
         "click_number": 3, 
         "speed_power": "special", 
-        "speed_value": 12, 
+        "speed_value": 13, 
         "attack_value": 11, 
         "defense_power": "invulnerability", 
         "defense_value": 18, 
-        "damage_value": 4, 
-        "starting_line": true
+        "damage_value": 4
       }, 
       {
         "click_number": 4, 
@@ -721,12 +736,13 @@
         "attack_value": 11, 
         "defense_power": "invulnerability", 
         "defense_value": 18, 
-        "damage_value": 3
+        "damage_value": 4, 
+        "starting_line": true
       }, 
       {
         "click_number": 5, 
         "speed_power": "special", 
-        "speed_value": 11, 
+        "speed_value": 12, 
         "attack_value": 11, 
         "defense_power": "invulnerability", 
         "defense_value": 18, 
@@ -739,11 +755,20 @@
         "attack_value": 11, 
         "defense_power": "invulnerability", 
         "defense_value": 18, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "special", 
+        "speed_value": 11, 
+        "attack_value": 11, 
+        "defense_power": "invulnerability", 
+        "defense_value": 18, 
         "damage_value": 3, 
         "starting_line": true
       }, 
       {
-        "click_number": 7, 
+        "click_number": 8, 
         "speed_power": "special", 
         "speed_value": 11, 
         "attack_value": 10, 
@@ -752,7 +777,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 8, 
+        "click_number": 9, 
         "speed_power": "special", 
         "speed_value": 10, 
         "attack_value": 10, 
@@ -761,7 +786,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 9, 
+        "click_number": 10, 
         "speed_power": "earthbound_neutralized", 
         "speed_value": 6, 
         "attack_value": 10, 

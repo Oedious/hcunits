@@ -5,7 +5,6 @@
     "collector_number": "001", 
     "name": "Jean Grey", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "limited_edition", 
     "real_name": "Jean Grey", 
     "dimensions": "1x1", 
@@ -13,6 +12,7 @@
       100, 
       40
     ], 
+    "properties": "[]", 
     "team_abilities": [
       "x_men"
     ], 
@@ -35,12 +35,19 @@
       {
         "type": "speed", 
         "name": "IMPLANTED IDEAS", 
-        "description": "Mind Control. When Jean Grey uses it, after resolutions deal a hit character damage equal to its printed damage value."
+        "description": "Mind Control. When Jean Grey uses it, after resolutions deal a hit character damage equal to its printed damage value.", 
+        "powers": [
+          "mind_control"
+        ]
       }, 
       {
         "type": "defense", 
         "name": "TELEPATHIC WARNING", 
-        "description": "Energy Shield/Deflection, Super Senses."
+        "description": "Energy Shield/Deflection, Super Senses.", 
+        "powers": [
+          "energy_shield_deflection", 
+          "super_senses"
+        ]
       }
     ], 
     "improved_movement": [], 
@@ -55,7 +62,7 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
+        "click_number": 1, 
         "starting_line": true, 
         "speed_power": "special", 
         "speed_value": 8, 
@@ -67,22 +74,11 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 1, 
-        "speed_power": "special", 
-        "speed_value": 8, 
-        "attack_power": "precision_strike", 
-        "attack_value": 12, 
-        "defense_power": "special", 
-        "defense_value": 18, 
-        "damage_power": "enhancement", 
-        "damage_value": 2
-      }, 
-      {
         "click_number": 2, 
         "speed_power": "special", 
         "speed_value": 8, 
         "attack_power": "precision_strike", 
-        "attack_value": 11, 
+        "attack_value": 12, 
         "defense_power": "special", 
         "defense_value": 18, 
         "damage_power": "enhancement", 
@@ -106,12 +102,23 @@
         "attack_power": "precision_strike", 
         "attack_value": 11, 
         "defense_power": "special", 
-        "defense_value": 17, 
+        "defense_value": 18, 
         "damage_power": "enhancement", 
         "damage_value": 2
       }, 
       {
         "click_number": 5, 
+        "speed_power": "special", 
+        "speed_value": 8, 
+        "attack_power": "precision_strike", 
+        "attack_value": 11, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_power": "enhancement", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
         "speed_power": "special", 
         "speed_value": 7, 
         "attack_power": "precision_strike", 
@@ -123,7 +130,7 @@
         "starting_line": true
       }, 
       {
-        "click_number": 6, 
+        "click_number": 7, 
         "speed_power": "special", 
         "speed_value": 7, 
         "attack_power": "precision_strike", 
@@ -134,7 +141,7 @@
         "damage_value": 2
       }, 
       {
-        "click_number": 7, 
+        "click_number": 8, 
         "speed_power": "special", 
         "speed_value": 7, 
         "attack_value": 10, 
@@ -144,7 +151,7 @@
         "damage_value": 2
       }, 
       {
-        "click_number": 8, 
+        "click_number": 9, 
         "speed_power": "special", 
         "speed_value": 6, 
         "attack_value": 10, 
@@ -154,7 +161,7 @@
         "damage_value": 1
       }, 
       {
-        "click_number": 9, 
+        "click_number": 10, 
         "speed_power": "special", 
         "speed_value": 6, 
         "attack_value": 9, 
@@ -171,7 +178,6 @@
     "collector_number": "002", 
     "name": "Cyclops", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "limited_edition", 
     "real_name": "Scott Summers", 
     "dimensions": "1x1", 
@@ -179,6 +185,7 @@
       100, 
       45
     ], 
+    "properties": "[]", 
     "team_abilities": [
       "x_men"
     ], 
@@ -201,7 +208,10 @@
       {
         "type": "defense", 
         "name": "INTERCEPTING BLASTS", 
-        "description": "Energy Shield/Deflection. // When a friendly character with the X-Men keyword within range is targeted by a range attack, modify their defense +1."
+        "description": "Energy Shield/Deflection. // When a friendly character with the X-Men keyword within range is targeted by a range attack, modify their defense +1.", 
+        "powers": [
+          "energy_shield_deflection"
+        ]
       }
     ], 
     "improved_movement": [], 
@@ -218,19 +228,8 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
-        "starting_line": true, 
-        "speed_power": "running_shot", 
-        "speed_value": 10, 
-        "attack_power": "penetrating_psychic_blast", 
-        "attack_value": 11, 
-        "defense_power": "special", 
-        "defense_value": 18, 
-        "damage_power": "leadership", 
-        "damage_value": 4
-      }, 
-      {
         "click_number": 1, 
+        "starting_line": true, 
         "speed_power": "running_shot", 
         "speed_value": 10, 
         "attack_power": "penetrating_psychic_blast", 
@@ -249,12 +248,12 @@
         "defense_power": "special", 
         "defense_value": 18, 
         "damage_power": "leadership", 
-        "damage_value": 3
+        "damage_value": 4
       }, 
       {
         "click_number": 3, 
         "speed_power": "running_shot", 
-        "speed_value": 8, 
+        "speed_value": 10, 
         "attack_power": "penetrating_psychic_blast", 
         "attack_value": 11, 
         "defense_power": "special", 
@@ -267,6 +266,17 @@
         "speed_power": "running_shot", 
         "speed_value": 8, 
         "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 11, 
+        "defense_power": "special", 
+        "defense_value": 18, 
+        "damage_power": "leadership", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_power": "penetrating_psychic_blast", 
         "attack_value": 10, 
         "defense_power": "special", 
         "defense_value": 17, 
@@ -275,23 +285,13 @@
         "starting_line": true
       }, 
       {
-        "click_number": 5, 
+        "click_number": 6, 
         "speed_power": "running_shot", 
         "speed_value": 8, 
         "attack_power": "penetrating_psychic_blast", 
         "attack_value": 11, 
         "defense_power": "special", 
         "defense_value": 17, 
-        "damage_power": "leadership", 
-        "damage_value": 3
-      }, 
-      {
-        "click_number": 6, 
-        "speed_power": "running_shot", 
-        "speed_value": 8, 
-        "attack_value": 11, 
-        "defense_power": "special", 
-        "defense_value": 16, 
         "damage_power": "leadership", 
         "damage_value": 3
       }, 
@@ -308,6 +308,16 @@
       {
         "click_number": 8, 
         "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_value": 11, 
+        "defense_power": "special", 
+        "defense_value": 16, 
+        "damage_power": "leadership", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 9, 
+        "speed_power": "running_shot", 
         "speed_value": 6, 
         "attack_value": 12, 
         "defense_power": "special", 
@@ -323,7 +333,6 @@
     "collector_number": "003", 
     "name": "Rogue", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "limited_edition", 
     "real_name": "Anne-Marie", 
     "dimensions": "1x1", 
@@ -331,6 +340,7 @@
       100, 
       45
     ], 
+    "properties": "[]", 
     "team_abilities": [
       "x_men"
     ], 
@@ -353,7 +363,10 @@
       {
         "type": "defense", 
         "name": "GET BEHIND ME, SUGAH", 
-        "description": "Invincible. // Friendly characters with the X-Men keyword within 6 squares and line of fire can use Toughness."
+        "description": "Invincible. // Friendly characters with the X-Men keyword within 6 squares and line of fire can use Toughness.", 
+        "powers": [
+          "invincible"
+        ]
       }
     ], 
     "improved_movement": [], 
@@ -368,7 +381,7 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
+        "click_number": 1, 
         "starting_line": true, 
         "speed_power": "charge", 
         "speed_value": 12, 
@@ -378,17 +391,6 @@
         "defense_value": 18, 
         "damage_power": "close_combat_expert", 
         "damage_value": 4
-      }, 
-      {
-        "click_number": 1, 
-        "speed_power": "charge", 
-        "speed_value": 10, 
-        "attack_power": "super_strength", 
-        "attack_value": 12, 
-        "defense_power": "special", 
-        "defense_value": 18, 
-        "damage_power": "close_combat_expert", 
-        "damage_value": 3
       }, 
       {
         "click_number": 2, 
@@ -406,9 +408,9 @@
         "speed_power": "charge", 
         "speed_value": 10, 
         "attack_power": "super_strength", 
-        "attack_value": 11, 
+        "attack_value": 12, 
         "defense_power": "special", 
-        "defense_value": 17, 
+        "defense_value": 18, 
         "damage_power": "close_combat_expert", 
         "damage_value": 3
       }, 
@@ -421,11 +423,22 @@
         "defense_power": "special", 
         "defense_value": 17, 
         "damage_power": "close_combat_expert", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "charge", 
+        "speed_value": 10, 
+        "attack_power": "super_strength", 
+        "attack_value": 11, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
         "damage_value": 3, 
         "starting_line": true
       }, 
       {
-        "click_number": 5, 
+        "click_number": 6, 
         "speed_power": "charge", 
         "speed_value": 8, 
         "attack_power": "super_strength", 
@@ -436,7 +449,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 6, 
+        "click_number": 7, 
         "speed_power": "plasticity", 
         "speed_value": 8, 
         "attack_power": "steal_energy", 
@@ -447,7 +460,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 7, 
+        "click_number": 8, 
         "speed_power": "plasticity", 
         "speed_value": 7, 
         "attack_power": "steal_energy", 
@@ -457,7 +470,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 8, 
+        "click_number": 9, 
         "speed_power": "plasticity", 
         "speed_value": 7, 
         "attack_power": "steal_energy", 
@@ -474,7 +487,6 @@
     "collector_number": "004", 
     "name": "Wolverine", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "limited_edition", 
     "real_name": "Laura Kinney", 
     "dimensions": "1x1", 
@@ -482,6 +494,7 @@
       100, 
       45
     ], 
+    "properties": "[]", 
     "team_abilities": [
       "x_men"
     ], 
@@ -504,7 +517,10 @@
       {
         "type": "attack", 
         "name": "YOU MADE ME RIP MY DRESS!", 
-        "description": "Blades/Claws/Fangs, but may use it when targeting more than one character, and she must roll a d6 for each hit target. // When Wolverine hits, after resolutions heal her 1 click for each opposing character that took damage from that attack."
+        "description": "Blades/Claws/Fangs, but may use it when targeting more than one character, and she must roll a d6 for each hit target. // When Wolverine hits, after resolutions heal her 1 click for each opposing character that took damage from that attack.", 
+        "powers": [
+          "blades_claws_fangs"
+        ]
       }
     ], 
     "improved_movement": [], 
@@ -519,7 +535,7 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
+        "click_number": 1, 
         "starting_line": true, 
         "speed_power": "hypersonic_speed", 
         "speed_value": 7, 
@@ -529,17 +545,6 @@
         "defense_value": 18, 
         "damage_power": "exploit_weakness", 
         "damage_value": 4
-      }, 
-      {
-        "click_number": 1, 
-        "speed_power": "hypersonic_speed", 
-        "speed_value": 7, 
-        "attack_power": "special", 
-        "attack_value": 11, 
-        "defense_power": "combat_reflexes", 
-        "defense_value": 17, 
-        "damage_power": "exploit_weakness", 
-        "damage_value": 3
       }, 
       {
         "click_number": 2, 
@@ -555,7 +560,7 @@
       {
         "click_number": 3, 
         "speed_power": "hypersonic_speed", 
-        "speed_value": 6, 
+        "speed_value": 7, 
         "attack_power": "special", 
         "attack_value": 11, 
         "defense_power": "combat_reflexes", 
@@ -572,8 +577,7 @@
         "defense_power": "combat_reflexes", 
         "defense_value": 17, 
         "damage_power": "exploit_weakness", 
-        "damage_value": 3, 
-        "starting_line": true
+        "damage_value": 3
       }, 
       {
         "click_number": 5, 
@@ -584,16 +588,18 @@
         "defense_power": "combat_reflexes", 
         "defense_value": 17, 
         "damage_power": "exploit_weakness", 
-        "damage_value": 2
+        "damage_value": 3, 
+        "starting_line": true
       }, 
       {
         "click_number": 6, 
         "speed_power": "hypersonic_speed", 
         "speed_value": 6, 
         "attack_power": "special", 
-        "attack_value": 10, 
-        "defense_power": "regeneration", 
+        "attack_value": 11, 
+        "defense_power": "combat_reflexes", 
         "defense_value": 17, 
+        "damage_power": "exploit_weakness", 
         "damage_value": 2
       }, 
       {
@@ -608,6 +614,16 @@
       }, 
       {
         "click_number": 8, 
+        "speed_power": "hypersonic_speed", 
+        "speed_value": 6, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "regeneration", 
+        "defense_value": 17, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 9, 
         "speed_power": "hypersonic_speed", 
         "speed_value": 5, 
         "attack_power": "special", 
@@ -624,7 +640,6 @@
     "collector_number": "005", 
     "name": "Polaris", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "limited_edition", 
     "real_name": "Lorna Dane", 
     "dimensions": "1x1", 
@@ -632,6 +647,7 @@
       75, 
       40
     ], 
+    "properties": "[]", 
     "team_abilities": [
       "x_men"
     ], 
@@ -654,7 +670,10 @@
       {
         "type": "attack", 
         "name": "MAGNETIZED", 
-        "description": "Telekinesis, Telekinesis as FREE. When Polaris uses it, she may instead target an opposing character she hit this turn."
+        "description": "Telekinesis, Telekinesis as FREE. When Polaris uses it, she may instead target an opposing character she hit this turn.", 
+        "powers": [
+          "telekinesis"
+        ]
       }
     ], 
     "improved_movement": [], 
@@ -669,19 +688,8 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
-        "starting_line": true, 
-        "speed_power": "force_blast", 
-        "speed_value": 9, 
-        "attack_power": "special", 
-        "attack_value": 11, 
-        "defense_power": "energy_shield_deflection", 
-        "defense_value": 17, 
-        "damage_power": "outwit", 
-        "damage_value": 3
-      }, 
-      {
         "click_number": 1, 
+        "starting_line": true, 
         "speed_power": "force_blast", 
         "speed_value": 9, 
         "attack_power": "special", 
@@ -700,12 +708,12 @@
         "defense_power": "energy_shield_deflection", 
         "defense_value": 17, 
         "damage_power": "outwit", 
-        "damage_value": 2
+        "damage_value": 3
       }, 
       {
         "click_number": 3, 
         "speed_power": "force_blast", 
-        "speed_value": 8, 
+        "speed_value": 9, 
         "attack_power": "special", 
         "attack_value": 11, 
         "defense_power": "energy_shield_deflection", 
@@ -718,6 +726,17 @@
         "speed_power": "force_blast", 
         "speed_value": 8, 
         "attack_power": "special", 
+        "attack_value": 11, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "force_blast", 
+        "speed_value": 8, 
+        "attack_power": "special", 
         "attack_value": 10, 
         "defense_power": "energy_shield_deflection", 
         "defense_value": 17, 
@@ -726,7 +745,7 @@
         "starting_line": true
       }, 
       {
-        "click_number": 5, 
+        "click_number": 6, 
         "speed_power": "force_blast", 
         "speed_value": 8, 
         "attack_power": "special", 
@@ -737,7 +756,7 @@
         "damage_value": 2
       }, 
       {
-        "click_number": 6, 
+        "click_number": 7, 
         "speed_value": 7, 
         "attack_power": "special", 
         "attack_value": 10, 
@@ -747,7 +766,7 @@
         "damage_value": 2
       }, 
       {
-        "click_number": 7, 
+        "click_number": 8, 
         "speed_value": 7, 
         "attack_power": "special", 
         "attack_value": 10, 
@@ -763,7 +782,6 @@
     "collector_number": "006", 
     "name": "Sunfire", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "limited_edition", 
     "real_name": "Shiro Yoshida", 
     "dimensions": "1x1", 
@@ -771,6 +789,7 @@
       100, 
       45
     ], 
+    "properties": "[]", 
     "team_abilities": [
       "x_men"
     ], 
@@ -793,7 +812,11 @@
       {
         "type": "attack", 
         "name": "SOLAR FIRE", 
-        "description": "Energy Explosion. // Sunfire and adjacent friendly characters with the X-Men keyword can use Poison."
+        "description": "Energy Explosion. // Sunfire and adjacent friendly characters with the X-Men keyword can use Poison.", 
+        "powers": [
+          "energy_explosion", 
+          "poison"
+        ]
       }
     ], 
     "improved_movement": [], 
@@ -808,19 +831,8 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
-        "starting_line": true, 
-        "speed_power": "running_shot", 
-        "speed_value": 10, 
-        "attack_power": "special", 
-        "attack_value": 11, 
-        "defense_power": "energy_shield_deflection", 
-        "defense_value": 18, 
-        "damage_power": "ranged_combat_expert", 
-        "damage_value": 3
-      }, 
-      {
         "click_number": 1, 
+        "starting_line": true, 
         "speed_power": "running_shot", 
         "speed_value": 10, 
         "attack_power": "special", 
@@ -837,12 +849,23 @@
         "attack_power": "special", 
         "attack_value": 11, 
         "defense_power": "energy_shield_deflection", 
-        "defense_value": 17, 
+        "defense_value": 18, 
         "damage_power": "ranged_combat_expert", 
         "damage_value": 3
       }, 
       {
         "click_number": 3, 
+        "speed_power": "running_shot", 
+        "speed_value": 10, 
+        "attack_power": "special", 
+        "attack_value": 11, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 17, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
         "speed_power": "running_shot", 
         "speed_value": 10, 
         "attack_power": "special", 
@@ -853,7 +876,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 4, 
+        "click_number": 5, 
         "speed_power": "running_shot", 
         "speed_value": 8, 
         "attack_power": "special", 
@@ -864,7 +887,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 5, 
+        "click_number": 6, 
         "speed_power": "running_shot", 
         "speed_value": 8, 
         "attack_power": "special", 
@@ -876,7 +899,7 @@
         "starting_line": true
       }, 
       {
-        "click_number": 6, 
+        "click_number": 7, 
         "speed_power": "running_shot", 
         "speed_value": 8, 
         "attack_power": "pulse_wave", 
@@ -887,7 +910,7 @@
         "damage_value": 2
       }, 
       {
-        "click_number": 7, 
+        "click_number": 8, 
         "speed_power": "running_shot", 
         "speed_value": 8, 
         "attack_power": "pulse_wave", 
@@ -897,7 +920,7 @@
         "damage_value": 2
       }, 
       {
-        "click_number": 8, 
+        "click_number": 9, 
         "speed_power": "running_shot", 
         "speed_value": 6, 
         "attack_power": "pulse_wave", 
@@ -907,7 +930,7 @@
         "damage_value": 2
       }, 
       {
-        "click_number": 9, 
+        "click_number": 10, 
         "speed_power": "running_shot", 
         "speed_value": 6, 
         "attack_power": "pulse_wave", 
@@ -924,15 +947,14 @@
     "collector_number": "007", 
     "name": "Synch", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "limited_edition", 
     "real_name": "Everett Thomas", 
-    "special_type": "unique", 
     "dimensions": "1x1", 
     "point_values": [
       75, 
       40
     ], 
+    "properties": "[\"unique\"]", 
     "team_abilities": [
       "x_men"
     ], 
@@ -955,7 +977,10 @@
       {
         "type": "damage", 
         "name": "COORDINATING OUTFITS AND POWERS", 
-        "description": "Perplex. When Synch uses it to target a friendly character, if that character has a High Fashion trait, the next time that character hits this turn they can use their High Fashion trait regardless of the attack result."
+        "description": "Perplex. When Synch uses it to target a friendly character, if that character has a High Fashion trait, the next time that character hits this turn they can use their High Fashion trait regardless of the attack result.", 
+        "powers": [
+          "perplex"
+        ]
       }
     ], 
     "improved_movement": [], 
@@ -970,19 +995,8 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
-        "starting_line": true, 
-        "speed_power": "sidestep", 
-        "speed_value": 8, 
-        "attack_power": "incapacitate", 
-        "attack_value": 11, 
-        "defense_power": "willpower", 
-        "defense_value": 17, 
-        "damage_power": "special", 
-        "damage_value": 3
-      }, 
-      {
         "click_number": 1, 
+        "starting_line": true, 
         "speed_power": "sidestep", 
         "speed_value": 8, 
         "attack_power": "incapacitate", 
@@ -995,7 +1009,7 @@
       {
         "click_number": 2, 
         "speed_power": "sidestep", 
-        "speed_value": 7, 
+        "speed_value": 8, 
         "attack_power": "incapacitate", 
         "attack_value": 11, 
         "defense_power": "willpower", 
@@ -1016,6 +1030,17 @@
       }, 
       {
         "click_number": 4, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_power": "incapacitate", 
+        "attack_value": 11, 
+        "defense_power": "willpower", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
         "speed_power": "stealth", 
         "speed_value": 7, 
         "attack_power": "incapacitate", 
@@ -1027,7 +1052,7 @@
         "starting_line": true
       }, 
       {
-        "click_number": 5, 
+        "click_number": 6, 
         "speed_power": "stealth", 
         "speed_value": 7, 
         "attack_value": 10, 
@@ -1037,7 +1062,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 6, 
+        "click_number": 7, 
         "speed_power": "stealth", 
         "speed_value": 6, 
         "attack_value": 10, 
@@ -1047,7 +1072,7 @@
         "damage_value": 2
       }, 
       {
-        "click_number": 7, 
+        "click_number": 8, 
         "speed_power": "stealth", 
         "speed_value": 6, 
         "attack_value": 10, 
@@ -1064,7 +1089,6 @@
     "collector_number": "008", 
     "name": "Emma Frost", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "limited_edition", 
     "real_name": "Emma Frost", 
     "dimensions": "1x1", 
@@ -1072,6 +1096,7 @@
       100, 
       45
     ], 
+    "properties": "[]", 
     "team_abilities": [
       "x_men"
     ], 
@@ -1094,7 +1119,11 @@
       {
         "type": "damage", 
         "name": "YOU AREN'T ON THE GUEST LIST, MY DEAR", 
-        "description": "Probability Control, Shape Change. // Attack rolls of 5-5 made by friendly characters with the X-Men keyword can't be rerolled or have their dice replaced."
+        "description": "Probability Control, Shape Change. // Attack rolls of 5-5 made by friendly characters with the X-Men keyword can't be rerolled or have their dice replaced.", 
+        "powers": [
+          "probability_control", 
+          "shape_change"
+        ]
       }
     ], 
     "improved_movement": [], 
@@ -1109,21 +1138,10 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
+        "click_number": 1, 
         "starting_line": true, 
         "speed_power": "sidestep", 
         "speed_value": 8, 
-        "attack_power": "pulse_wave", 
-        "attack_value": 11, 
-        "defense_power": "invincible", 
-        "defense_value": 18, 
-        "damage_power": "special", 
-        "damage_value": 3
-      }, 
-      {
-        "click_number": 1, 
-        "speed_power": "sidestep", 
-        "speed_value": 7, 
         "attack_power": "pulse_wave", 
         "attack_value": 11, 
         "defense_power": "invincible", 
@@ -1160,7 +1178,7 @@
         "attack_power": "pulse_wave", 
         "attack_value": 11, 
         "defense_power": "invincible", 
-        "defense_value": 17, 
+        "defense_value": 18, 
         "damage_power": "special", 
         "damage_value": 3
       }, 
@@ -1173,11 +1191,22 @@
         "defense_power": "invincible", 
         "defense_value": 17, 
         "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_power": "pulse_wave", 
+        "attack_value": 11, 
+        "defense_power": "invincible", 
+        "defense_value": 17, 
+        "damage_power": "special", 
         "damage_value": 3, 
         "starting_line": true
       }, 
       {
-        "click_number": 6, 
+        "click_number": 7, 
         "speed_power": "sidestep", 
         "speed_value": 6, 
         "attack_power": "pulse_wave", 
@@ -1188,7 +1217,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 7, 
+        "click_number": 8, 
         "speed_value": 6, 
         "attack_power": "pulse_wave", 
         "attack_value": 10, 
@@ -1198,7 +1227,7 @@
         "damage_value": 2
       }, 
       {
-        "click_number": 8, 
+        "click_number": 9, 
         "speed_value": 5, 
         "attack_power": "pulse_wave", 
         "attack_value": 10, 
@@ -1208,7 +1237,7 @@
         "damage_value": 2
       }, 
       {
-        "click_number": 9, 
+        "click_number": 10, 
         "speed_value": 5, 
         "attack_power": "pulse_wave", 
         "attack_value": 9, 

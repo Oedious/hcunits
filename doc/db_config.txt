@@ -10,7 +10,7 @@ CREATE TABLE units (
   unit_id VARCHAR(32) NOT NULL PRIMARY KEY,
 
   -- The set to which this unit belongs. See set_list.js.
-  set_id VARCHAR(16) NOT NULL INDEX,
+  set_id VARCHAR(16) NOT NULL,
   
   -- The collector's number of the unit within a set (may contain letters).
   collector_number VARCHAR(16) NOT NULL,
@@ -24,17 +24,16 @@ CREATE TABLE units (
   -- A JSON array of numbers containing point values of different starting lines.
   point_values JSON,
 
-  -- Whether the unit is legal for modern tournament play.
-  age ENUM('modern', 'golden') NOT NULL,
-
   -- The rarity of the unit.
   rarity ENUM('common', 'uncommon', 'rare', 'super_rare', 'chase', 'ultra_chase', 'limited_edition', 'fast_forces'),
 
   -- The “real name” of the unit.
   real_name TEXT(128),
 
-  -- Additional special type traits that have restrictions on team construction
-  special_type ENUM('unique', 'prime', 'title_character'),
+  -- A JSON array of strings that denote additional properties or specializations,
+  -- some of which may indicate restrictions on team construction. Values include:
+  -- "prime", "unique", "title", "team_up", "legacy", "captain", "sidekick", "ally"
+  properties JSON,
   
   -- The dimensions of the unit base.
   dimensions ENUM('1x1', '1x2', '2x2', '2x4', '3x6'),
@@ -72,6 +71,9 @@ CREATE TABLE units (
   -- Should be in the form of an array of strings, with values from:
   -- "indestructible", "equip_any", "equip_friendly", "unequip_ko", "unequip_drop"
   object_keyphrases JSON,
+
+  -- For 'map' types, the path to the URL containing the map layout.
+  map_url TEXT(256),
   
   -- The range value of the unit.
   unit_range TINYINT,
@@ -100,6 +102,8 @@ CREATE TABLE units (
   -- }
   dial JSON
 );
+
+CREATE INDEX idx_unit_id ON units(unit_id);
 
 LOAD XML LOCAL INFILE 'set_av4e.xml'
   REPLACE
@@ -217,6 +221,11 @@ LOAD XML LOCAL INFILE 'set_f4.xml'
   ROWS IDENTIFIED BY '<row>';
 
 LOAD XML LOCAL INFILE 'set_fff4.xml'
+  REPLACE
+  INTO TABLE units
+  ROWS IDENTIFIED BY '<row>';
+
+LOAD XML LOCAL INFILE 'set_wk.xml'
   REPLACE
   INTO TABLE units
   ROWS IDENTIFIED BY '<row>';

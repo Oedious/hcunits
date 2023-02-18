@@ -5,13 +5,13 @@
     "collector_number": "101a", 
     "name": "Captain America", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "limited_edition", 
     "real_name": "Steve Rogers", 
     "dimensions": "1x1", 
     "point_values": [
       25
     ], 
+    "properties": "[]", 
     "team_abilities": [
       "avengers"
     ], 
@@ -35,7 +35,7 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
+        "click_number": 1, 
         "starting_line": true, 
         "speed_value": 8, 
         "attack_value": 11, 
@@ -45,7 +45,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 1, 
+        "click_number": 2, 
         "speed_value": 8, 
         "attack_value": 11, 
         "defense_power": "energy_shield_deflection", 
@@ -54,7 +54,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 2, 
+        "click_number": 3, 
         "speed_value": 8, 
         "attack_value": 10, 
         "defense_power": "combat_reflexes", 
@@ -63,7 +63,7 @@
         "damage_value": 2
       }, 
       {
-        "click_number": 3, 
+        "click_number": 4, 
         "speed_value": 7, 
         "attack_value": 10, 
         "defense_power": "combat_reflexes", 
@@ -72,7 +72,7 @@
         "damage_value": 2
       }, 
       {
-        "click_number": 4, 
+        "click_number": 5, 
         "speed_value": 7, 
         "attack_value": 10, 
         "defense_power": "combat_reflexes", 
@@ -88,13 +88,13 @@
     "collector_number": "101b", 
     "name": "Captain America", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "limited_edition", 
     "real_name": "Steve Rogers", 
     "dimensions": "1x1", 
     "point_values": [
       50
     ], 
+    "properties": "[]", 
     "team_abilities": [
       "avengers"
     ], 
@@ -108,7 +108,11 @@
       {
         "type": "defense", 
         "name": "THE SHIELD", 
-        "description": "Energy Shield/Deflection, Toughness. UNIQUE MODIFIER: Adjacent friendly characters modify defense +1."
+        "description": "Energy Shield/Deflection, Toughness. UNIQUE MODIFIER: Adjacent friendly characters modify defense +1.", 
+        "powers": [
+          "energy_shield_deflection", 
+          "toughness"
+        ]
       }
     ], 
     "improved_movement": [], 
@@ -123,7 +127,7 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
+        "click_number": 1, 
         "starting_line": true, 
         "speed_power": "running_shot", 
         "speed_value": 8, 
@@ -135,7 +139,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 1, 
+        "click_number": 2, 
         "speed_power": "running_shot", 
         "speed_value": 8, 
         "attack_power": "precision_strike", 
@@ -144,16 +148,6 @@
         "defense_value": 17, 
         "damage_power": "leadership", 
         "damage_value": 3
-      }, 
-      {
-        "click_number": 2, 
-        "speed_power": "sidestep", 
-        "speed_value": 8, 
-        "attack_value": 10, 
-        "defense_power": "combat_reflexes", 
-        "defense_value": 17, 
-        "damage_power": "close_combat_expert", 
-        "damage_value": 2
       }, 
       {
         "click_number": 3, 
@@ -167,6 +161,16 @@
       }, 
       {
         "click_number": 4, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
         "speed_power": "sidestep", 
         "speed_value": 8, 
         "attack_value": 10, 
@@ -183,13 +187,13 @@
     "collector_number": "102a", 
     "name": "Iron Man", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "limited_edition", 
     "real_name": "Tony Stark", 
     "dimensions": "1x1", 
     "point_values": [
       50
     ], 
+    "properties": "[]", 
     "team_abilities": [
       "avengers"
     ], 
@@ -212,7 +216,7 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
+        "click_number": 1, 
         "starting_line": true, 
         "speed_power": "sidestep", 
         "speed_value": 9, 
@@ -222,7 +226,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 1, 
+        "click_number": 2, 
         "speed_power": "sidestep", 
         "speed_value": 9, 
         "attack_value": 11, 
@@ -231,7 +235,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 2, 
+        "click_number": 3, 
         "speed_value": 8, 
         "attack_value": 10, 
         "defense_power": "energy_shield_deflection", 
@@ -240,7 +244,7 @@
         "damage_value": 2
       }, 
       {
-        "click_number": 3, 
+        "click_number": 4, 
         "speed_value": 8, 
         "attack_value": 9, 
         "defense_power": "energy_shield_deflection", 
@@ -249,7 +253,7 @@
         "damage_value": 2
       }, 
       {
-        "click_number": 4, 
+        "click_number": 5, 
         "speed_value": 8, 
         "attack_value": 9, 
         "defense_power": "energy_shield_deflection", 
@@ -265,13 +269,13 @@
     "collector_number": "102b", 
     "name": "Iron Man", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "limited_edition", 
     "real_name": "Tony Stark", 
     "dimensions": "1x1", 
     "point_values": [
       75
     ], 
+    "properties": "[]", 
     "team_abilities": [
       "avengers"
     ], 
@@ -285,7 +289,11 @@
       {
         "type": "speed", 
         "name": "GOTTA MAKE THIS ONE COUNT", 
-        "description": "Force Blast, Running Shot."
+        "description": "Force Blast, Running Shot.", 
+        "powers": [
+          "force_blast", 
+          "running_shot"
+        ]
       }
     ], 
     "improved_movement": [], 
@@ -300,7 +308,7 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
+        "click_number": 1, 
         "starting_line": true, 
         "speed_power": "special", 
         "speed_value": 9, 
@@ -312,7 +320,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 1, 
+        "click_number": 2, 
         "speed_power": "special", 
         "speed_value": 9, 
         "attack_power": "penetrating_psychic_blast", 
@@ -323,7 +331,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 2, 
+        "click_number": 3, 
         "speed_power": "sidestep", 
         "speed_value": 8, 
         "attack_value": 10, 
@@ -333,7 +341,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 3, 
+        "click_number": 4, 
         "speed_power": "sidestep", 
         "speed_value": 8, 
         "attack_value": 10, 
@@ -343,7 +351,7 @@
         "damage_value": 2
       }, 
       {
-        "click_number": 4, 
+        "click_number": 5, 
         "speed_power": "sidestep", 
         "speed_value": 8, 
         "attack_power": "precision_strike", 
@@ -361,13 +369,13 @@
     "collector_number": "103a", 
     "name": "Black Widow", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "limited_edition", 
     "real_name": "Natalia Romanova", 
     "dimensions": "1x1", 
     "point_values": [
       25
     ], 
+    "properties": "[]", 
     "team_abilities": [
       "avengers"
     ], 
@@ -390,7 +398,7 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
+        "click_number": 1, 
         "starting_line": true, 
         "speed_value": 7, 
         "attack_value": 11, 
@@ -400,7 +408,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 1, 
+        "click_number": 2, 
         "speed_value": 7, 
         "attack_value": 10, 
         "defense_power": "super_senses", 
@@ -409,7 +417,7 @@
         "damage_value": 2
       }, 
       {
-        "click_number": 2, 
+        "click_number": 3, 
         "speed_value": 8, 
         "attack_power": "precision_strike", 
         "attack_value": 10, 
@@ -418,7 +426,7 @@
         "damage_value": 2
       }, 
       {
-        "click_number": 3, 
+        "click_number": 4, 
         "speed_value": 8, 
         "attack_power": "precision_strike", 
         "attack_value": 9, 
@@ -434,13 +442,13 @@
     "collector_number": "103b", 
     "name": "Black Widow", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "limited_edition", 
     "real_name": "Natalia Romanova", 
     "dimensions": "1x1", 
     "point_values": [
       50
     ], 
+    "properties": "[]", 
     "team_abilities": [
       "avengers"
     ], 
@@ -454,12 +462,20 @@
       {
         "type": "speed", 
         "name": "THE ITSY-BITSY SPIDER", 
-        "description": "Sidestep, Stealth."
+        "description": "Sidestep, Stealth.", 
+        "powers": [
+          "sidestep", 
+          "stealth"
+        ]
       }, 
       {
         "type": "damage", 
         "name": "SUPER SPYCRAFT", 
-        "description": "Close Combat Expert, Shape Change."
+        "description": "Close Combat Expert, Shape Change.", 
+        "powers": [
+          "close_combat_expert", 
+          "shape_change"
+        ]
       }
     ], 
     "improved_movement": [], 
@@ -474,7 +490,7 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
+        "click_number": 1, 
         "starting_line": true, 
         "speed_power": "special", 
         "speed_value": 7, 
@@ -486,7 +502,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 1, 
+        "click_number": 2, 
         "speed_power": "special", 
         "speed_value": 7, 
         "attack_power": "incapacitate", 
@@ -497,7 +513,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 2, 
+        "click_number": 3, 
         "speed_power": "leap_climb", 
         "speed_value": 8, 
         "attack_value": 10, 
@@ -507,7 +523,7 @@
         "damage_value": 2
       }, 
       {
-        "click_number": 3, 
+        "click_number": 4, 
         "speed_power": "leap_climb", 
         "speed_value": 8, 
         "attack_value": 10, 
@@ -517,7 +533,7 @@
         "damage_value": 2
       }, 
       {
-        "click_number": 4, 
+        "click_number": 5, 
         "speed_power": "leap_climb", 
         "speed_value": 8, 
         "attack_value": 10, 
@@ -534,13 +550,13 @@
     "collector_number": "104a", 
     "name": "Hulk", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "limited_edition", 
     "real_name": "Bruce Banner", 
     "dimensions": "1x1", 
     "point_values": [
       50
     ], 
+    "properties": "[]", 
     "team_abilities": [
       "avengers"
     ], 
@@ -562,7 +578,7 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
+        "click_number": 1, 
         "starting_line": true, 
         "speed_value": 8, 
         "attack_power": "super_strength", 
@@ -572,7 +588,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 1, 
+        "click_number": 2, 
         "speed_value": 8, 
         "attack_power": "super_strength", 
         "attack_value": 11, 
@@ -581,7 +597,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 2, 
+        "click_number": 3, 
         "speed_value": 7, 
         "attack_power": "super_strength", 
         "attack_value": 11, 
@@ -590,7 +606,7 @@
         "damage_value": 4
       }, 
       {
-        "click_number": 3, 
+        "click_number": 4, 
         "speed_value": 7, 
         "attack_power": "super_strength", 
         "attack_value": 12, 
@@ -606,13 +622,13 @@
     "collector_number": "104b", 
     "name": "Hulk", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "limited_edition", 
     "real_name": "Bruce Banner", 
     "dimensions": "1x1", 
     "point_values": [
       75
     ], 
+    "properties": "[]", 
     "team_abilities": [
       "avengers"
     ], 
@@ -625,7 +641,10 @@
       {
         "type": "attack", 
         "name": "STRONGEST ONE THERE IS", 
-        "description": "Super Strength. When Hulk makes a close object attack, modify damage by an additional +1."
+        "description": "Super Strength. When Hulk makes a close object attack, modify damage by an additional +1.", 
+        "powers": [
+          "super_strength"
+        ]
       }
     ], 
     "improved_movement": [], 
@@ -640,7 +659,7 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
+        "click_number": 1, 
         "starting_line": true, 
         "speed_power": "charge", 
         "speed_value": 8, 
@@ -651,7 +670,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 1, 
+        "click_number": 2, 
         "speed_power": "charge", 
         "speed_value": 8, 
         "attack_power": "special", 
@@ -661,7 +680,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 2, 
+        "click_number": 3, 
         "speed_power": "flurry", 
         "speed_value": 7, 
         "attack_power": "special", 
@@ -672,7 +691,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 3, 
+        "click_number": 4, 
         "speed_power": "flurry", 
         "speed_value": 7, 
         "attack_power": "super_strength", 
@@ -683,7 +702,7 @@
         "damage_value": 4
       }, 
       {
-        "click_number": 4, 
+        "click_number": 5, 
         "speed_power": "flurry", 
         "speed_value": 7, 
         "attack_power": "super_strength", 
@@ -701,13 +720,13 @@
     "collector_number": "105a", 
     "name": "Winter Soldier", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "limited_edition", 
     "real_name": "James Buchanan Barnes", 
     "dimensions": "1x1", 
     "point_values": [
       50
     ], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [
       "Assassin", 
@@ -729,7 +748,7 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
+        "click_number": 1, 
         "starting_line": true, 
         "speed_power": "stealth", 
         "speed_value": 8, 
@@ -739,22 +758,13 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 1, 
+        "click_number": 2, 
         "speed_power": "stealth", 
         "speed_value": 8, 
         "attack_value": 11, 
         "defense_value": 17, 
         "damage_power": "ranged_combat_expert", 
         "damage_value": 3
-      }, 
-      {
-        "click_number": 2, 
-        "speed_power": "plasticity", 
-        "speed_value": 8, 
-        "attack_value": 10, 
-        "defense_value": 17, 
-        "damage_power": "close_combat_expert", 
-        "damage_value": 2
       }, 
       {
         "click_number": 3, 
@@ -767,6 +777,15 @@
       }, 
       {
         "click_number": 4, 
+        "speed_power": "plasticity", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
         "speed_power": "plasticity", 
         "speed_value": 8, 
         "attack_value": 10, 
@@ -782,13 +801,13 @@
     "collector_number": "105b", 
     "name": "Winter Soldier", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "limited_edition", 
     "real_name": "James Buchanan Barnes", 
     "dimensions": "1x1", 
     "point_values": [
       75
     ], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [
       "Assassin", 
@@ -801,7 +820,12 @@
       {
         "type": "speed", 
         "name": "WHO IS BUCKY?", 
-        "description": "Plasticity, Sidestep, Stealth."
+        "description": "Plasticity, Sidestep, Stealth.", 
+        "powers": [
+          "plasticity", 
+          "sidestep", 
+          "stealth"
+        ]
       }
     ], 
     "improved_movement": [], 
@@ -816,7 +840,7 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
+        "click_number": 1, 
         "starting_line": true, 
         "speed_power": "special", 
         "speed_value": 8, 
@@ -828,7 +852,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 1, 
+        "click_number": 2, 
         "speed_power": "special", 
         "speed_value": 8, 
         "attack_power": "precision_strike", 
@@ -839,7 +863,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 2, 
+        "click_number": 3, 
         "speed_power": "special", 
         "speed_value": 8, 
         "attack_power": "precision_strike", 
@@ -850,7 +874,7 @@
         "damage_value": 2
       }, 
       {
-        "click_number": 3, 
+        "click_number": 4, 
         "speed_power": "running_shot", 
         "speed_value": 8, 
         "attack_power": "precision_strike", 
@@ -860,7 +884,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 4, 
+        "click_number": 5, 
         "speed_power": "running_shot", 
         "speed_value": 8, 
         "attack_power": "precision_strike", 
@@ -877,13 +901,13 @@
     "collector_number": "106a", 
     "name": "Red Skull", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "limited_edition", 
     "real_name": "Johann Schmidt", 
     "dimensions": "1x1", 
     "point_values": [
       50
     ], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [
       "Hydra", 
@@ -903,7 +927,7 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
+        "click_number": 1, 
         "starting_line": true, 
         "speed_value": 8, 
         "attack_power": "poison", 
@@ -913,7 +937,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 1, 
+        "click_number": 2, 
         "speed_value": 8, 
         "attack_power": "poison", 
         "attack_value": 10, 
@@ -922,7 +946,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 2, 
+        "click_number": 3, 
         "speed_value": 7, 
         "attack_power": "poison", 
         "attack_value": 10, 
@@ -931,7 +955,7 @@
         "damage_value": 2
       }, 
       {
-        "click_number": 3, 
+        "click_number": 4, 
         "speed_value": 7, 
         "attack_power": "poison", 
         "attack_value": 10, 
@@ -940,7 +964,7 @@
         "damage_value": 2
       }, 
       {
-        "click_number": 4, 
+        "click_number": 5, 
         "speed_value": 7, 
         "attack_power": "poison", 
         "attack_value": 10, 
@@ -956,13 +980,13 @@
     "collector_number": "106b", 
     "name": "Red Skull", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "limited_edition", 
     "real_name": "Johann Schmidt", 
     "dimensions": "1x1", 
     "point_values": [
       75
     ], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [
       "Hydra", 
@@ -973,12 +997,18 @@
       {
         "type": "attack", 
         "name": "DUST OF DEATH", 
-        "description": "Poison, but damage dealt is penetrating."
+        "description": "Poison, but damage dealt is penetrating.", 
+        "powers": [
+          "poison"
+        ]
       }, 
       {
         "type": "defense", 
         "name": "YOU CANNOT DEFEAT ME", 
-        "description": "STOP. The first time each game Red Skull would be KO'd, instead roll a d6 and heal him equal to half the result. Protected: Pulse Wave."
+        "description": "STOP. The first time each game Red Skull would be KO'd, instead roll a d6 and heal him equal to half the result. Protected: Pulse Wave.", 
+        "powers": [
+          "stop"
+        ]
       }
     ], 
     "improved_movement": [], 
@@ -993,7 +1023,7 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
+        "click_number": 1, 
         "starting_line": true, 
         "speed_power": "sidestep", 
         "speed_value": 8, 
@@ -1005,7 +1035,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 1, 
+        "click_number": 2, 
         "speed_power": "sidestep", 
         "speed_value": 8, 
         "attack_power": "special", 
@@ -1014,17 +1044,6 @@
         "defense_value": 18, 
         "damage_power": "outwit", 
         "damage_value": 3
-      }, 
-      {
-        "click_number": 2, 
-        "speed_power": "charge", 
-        "speed_value": 7, 
-        "attack_power": "special", 
-        "attack_value": 10, 
-        "defense_power": "toughness", 
-        "defense_value": 17, 
-        "damage_power": "exploit_weakness", 
-        "damage_value": 2
       }, 
       {
         "click_number": 3, 
@@ -1039,6 +1058,17 @@
       }, 
       {
         "click_number": 4, 
+        "speed_power": "charge", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
         "speed_power": "charge", 
         "speed_value": 7, 
         "attack_value": 10, 
@@ -1055,13 +1085,13 @@
     "collector_number": "107a", 
     "name": "Baron Zemo", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "limited_edition", 
     "real_name": "Helmut Zemo", 
     "dimensions": "1x1", 
     "point_values": [
       25
     ], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [
       "Martial Artist", 
@@ -1082,7 +1112,7 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
+        "click_number": 1, 
         "starting_line": true, 
         "speed_value": 8, 
         "attack_value": 11, 
@@ -1092,7 +1122,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 1, 
+        "click_number": 2, 
         "speed_value": 8, 
         "attack_value": 10, 
         "defense_power": "toughness", 
@@ -1101,7 +1131,7 @@
         "damage_value": 2
       }, 
       {
-        "click_number": 2, 
+        "click_number": 3, 
         "speed_value": 7, 
         "attack_value": 10, 
         "defense_power": "toughness", 
@@ -1110,7 +1140,7 @@
         "damage_value": 2
       }, 
       {
-        "click_number": 3, 
+        "click_number": 4, 
         "speed_value": 7, 
         "attack_value": 10, 
         "defense_power": "toughness", 
@@ -1126,13 +1156,13 @@
     "collector_number": "107b", 
     "name": "Baron Zemo", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "limited_edition", 
     "real_name": "Helmut Zemo", 
     "dimensions": "1x1", 
     "point_values": [
       50
     ], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [
       "Martial Artist", 
@@ -1144,7 +1174,11 @@
       {
         "type": "damage", 
         "name": "A BETTER PLAN", 
-        "description": "Leadership, Perplex."
+        "description": "Leadership, Perplex.", 
+        "powers": [
+          "leadership", 
+          "perplex"
+        ]
       }
     ], 
     "improved_movement": [], 
@@ -1159,7 +1193,7 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
+        "click_number": 1, 
         "starting_line": true, 
         "speed_power": "sidestep", 
         "speed_value": 8, 
@@ -1171,20 +1205,9 @@
         "damage_value": 2
       }, 
       {
-        "click_number": 1, 
+        "click_number": 2, 
         "speed_power": "sidestep", 
         "speed_value": 8, 
-        "attack_power": "blades_claws_fangs", 
-        "attack_value": 10, 
-        "defense_power": "combat_reflexes", 
-        "defense_value": 17, 
-        "damage_power": "special", 
-        "damage_value": 2
-      }, 
-      {
-        "click_number": 2, 
-        "speed_power": "flurry", 
-        "speed_value": 7, 
         "attack_power": "blades_claws_fangs", 
         "attack_value": 10, 
         "defense_power": "combat_reflexes", 
@@ -1198,13 +1221,24 @@
         "speed_value": 7, 
         "attack_power": "blades_claws_fangs", 
         "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "flurry", 
+        "speed_value": 7, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
         "defense_power": "toughness", 
         "defense_value": 17, 
         "damage_power": "perplex", 
         "damage_value": 2
       }, 
       {
-        "click_number": 4, 
+        "click_number": 5, 
         "speed_power": "sidestep", 
         "speed_value": 7, 
         "attack_power": "blades_claws_fangs", 
@@ -1222,13 +1256,13 @@
     "collector_number": "108a", 
     "name": "Mach-X", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "limited_edition", 
     "real_name": "Abner Jenkins", 
     "dimensions": "1x1", 
     "point_values": [
       25
     ], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [
       "Armor", 
@@ -1249,7 +1283,7 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
+        "click_number": 1, 
         "starting_line": true, 
         "speed_value": 9, 
         "attack_value": 10, 
@@ -1259,7 +1293,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 1, 
+        "click_number": 2, 
         "speed_power": "running_shot", 
         "speed_value": 9, 
         "attack_value": 11, 
@@ -1268,7 +1302,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 2, 
+        "click_number": 3, 
         "speed_power": "running_shot", 
         "speed_value": 9, 
         "attack_value": 10, 
@@ -1277,7 +1311,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 3, 
+        "click_number": 4, 
         "speed_value": 8, 
         "attack_value": 10, 
         "defense_power": "energy_shield_deflection", 
@@ -1293,13 +1327,13 @@
     "collector_number": "108b", 
     "name": "Mach-X", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "limited_edition", 
     "real_name": "Abner Jenkins", 
     "dimensions": "1x1", 
     "point_values": [
       75
     ], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [
       "Armor", 
@@ -1311,7 +1345,11 @@
       {
         "type": "damage", 
         "name": "BEETLE ARMOR UPGRADE", 
-        "description": "Enhancement. Perplex, but only to target opposing characters."
+        "description": "Enhancement. Perplex, but only to target opposing characters.", 
+        "powers": [
+          "enhancement", 
+          "perplex"
+        ]
       }
     ], 
     "improved_movement": [], 
@@ -1326,7 +1364,7 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
+        "click_number": 1, 
         "starting_line": true, 
         "speed_power": "running_shot", 
         "speed_value": 9, 
@@ -1338,7 +1376,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 1, 
+        "click_number": 2, 
         "speed_power": "running_shot", 
         "speed_value": 9, 
         "attack_power": "energy_explosion", 
@@ -1349,7 +1387,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 2, 
+        "click_number": 3, 
         "speed_power": "sidestep", 
         "speed_value": 9, 
         "attack_power": "energy_explosion", 
@@ -1360,7 +1398,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 3, 
+        "click_number": 4, 
         "speed_power": "sidestep", 
         "speed_value": 8, 
         "attack_power": "energy_explosion", 
@@ -1371,7 +1409,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 4, 
+        "click_number": 5, 
         "speed_power": "running_shot", 
         "speed_value": 7, 
         "attack_value": 10, 
@@ -1381,7 +1419,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 5, 
+        "click_number": 6, 
         "speed_power": "running_shot", 
         "speed_value": 7, 
         "attack_value": 10, 
@@ -1398,13 +1436,13 @@
     "collector_number": "109a", 
     "name": "Captain Marvel", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "limited_edition", 
     "real_name": "Carol Danvers", 
     "dimensions": "1x1", 
     "point_values": [
       50
     ], 
+    "properties": "[]", 
     "team_abilities": [
       "avengers"
     ], 
@@ -1426,7 +1464,7 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
+        "click_number": 1, 
         "starting_line": true, 
         "speed_power": "charge", 
         "speed_value": 12, 
@@ -1436,7 +1474,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 1, 
+        "click_number": 2, 
         "speed_power": "charge", 
         "speed_value": 12, 
         "attack_value": 11, 
@@ -1445,7 +1483,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 2, 
+        "click_number": 3, 
         "speed_power": "running_shot", 
         "speed_value": 11, 
         "attack_value": 11, 
@@ -1454,7 +1492,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 3, 
+        "click_number": 4, 
         "speed_power": "running_shot", 
         "speed_value": 11, 
         "attack_value": 10, 
@@ -1470,13 +1508,13 @@
     "collector_number": "109b", 
     "name": "Captain Marvel", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "limited_edition", 
     "real_name": "Carol Danvers", 
     "dimensions": "1x1", 
     "point_values": [
       75
     ], 
+    "properties": "[]", 
     "team_abilities": [
       "avengers"
     ], 
@@ -1489,7 +1527,10 @@
       {
         "type": "speed", 
         "name": "HIGHER, FURTHER, FASTER!", 
-        "description": "Hypersonic Speed. When Captain Marvel uses it and hits, after resolutions she may use Charge at no cost."
+        "description": "Hypersonic Speed. When Captain Marvel uses it and hits, after resolutions she may use Charge at no cost.", 
+        "powers": [
+          "hypersonic_speed"
+        ]
       }
     ], 
     "improved_movement": [], 
@@ -1504,7 +1545,7 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
+        "click_number": 1, 
         "starting_line": true, 
         "speed_power": "special", 
         "speed_value": 12, 
@@ -1515,23 +1556,13 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 1, 
+        "click_number": 2, 
         "speed_power": "special", 
         "speed_value": 11, 
         "attack_value": 11, 
         "defense_power": "invulnerability", 
         "defense_value": 18, 
         "damage_power": "empower", 
-        "damage_value": 3
-      }, 
-      {
-        "click_number": 2, 
-        "speed_power": "running_shot", 
-        "speed_value": 10, 
-        "attack_power": "pulse_wave", 
-        "attack_value": 10, 
-        "defense_power": "toughness", 
-        "defense_value": 17, 
         "damage_value": 3
       }, 
       {
@@ -1547,6 +1578,16 @@
       {
         "click_number": 4, 
         "speed_power": "running_shot", 
+        "speed_value": 10, 
+        "attack_power": "pulse_wave", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "running_shot", 
         "speed_value": 9, 
         "attack_value": 10, 
         "defense_power": "toughness", 
@@ -1561,13 +1602,13 @@
     "collector_number": "110a", 
     "name": "Ultron", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "limited_edition", 
     "real_name": "Ultron", 
     "dimensions": "1x1", 
     "point_values": [
       50
     ], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [
       "Future", 
@@ -1589,7 +1630,7 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
+        "click_number": 1, 
         "starting_line": true, 
         "speed_power": "sidestep", 
         "speed_value": 10, 
@@ -1599,7 +1640,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 1, 
+        "click_number": 2, 
         "speed_power": "sidestep", 
         "speed_value": 10, 
         "attack_value": 11, 
@@ -1608,7 +1649,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 2, 
+        "click_number": 3, 
         "speed_value": 10, 
         "attack_value": 10, 
         "defense_power": "invulnerability", 
@@ -1617,7 +1658,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 3, 
+        "click_number": 4, 
         "speed_value": 10, 
         "attack_value": 10, 
         "defense_power": "invulnerability", 
@@ -1633,13 +1674,13 @@
     "collector_number": "110b", 
     "name": "Ultron", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "limited_edition", 
     "real_name": "Ultron", 
     "dimensions": "1x1", 
     "point_values": [
       100
     ], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [
       "Future", 
@@ -1652,7 +1693,10 @@
       {
         "type": "speed", 
         "name": "AGE OF ULTRON", 
-        "description": "Phasing/Teleport. // FREE: Roll a d6. Phasing/Teleport at no cost, but only to move up to the result."
+        "description": "Phasing/Teleport. // FREE: Roll a d6. Phasing/Teleport at no cost, but only to move up to the result.", 
+        "powers": [
+          "phasing_teleport"
+        ]
       }
     ], 
     "improved_movement": [], 
@@ -1667,7 +1711,7 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
+        "click_number": 1, 
         "starting_line": true, 
         "speed_power": "special", 
         "speed_value": 10, 
@@ -1679,7 +1723,7 @@
         "damage_value": 4
       }, 
       {
-        "click_number": 1, 
+        "click_number": 2, 
         "speed_power": "special", 
         "speed_value": 10, 
         "attack_power": "penetrating_psychic_blast", 
@@ -1690,7 +1734,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 2, 
+        "click_number": 3, 
         "speed_power": "special", 
         "speed_value": 10, 
         "attack_power": "penetrating_psychic_blast", 
@@ -1701,18 +1745,8 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 3, 
-        "speed_power": "special", 
-        "speed_value": 10, 
-        "attack_power": "precision_strike", 
-        "attack_value": 10, 
-        "defense_power": "invulnerability", 
-        "defense_value": 17, 
-        "damage_value": 3
-      }, 
-      {
         "click_number": 4, 
-        "speed_power": "phasing_teleport", 
+        "speed_power": "special", 
         "speed_value": 10, 
         "attack_power": "precision_strike", 
         "attack_value": 10, 
@@ -1723,6 +1757,16 @@
       {
         "click_number": 5, 
         "speed_power": "phasing_teleport", 
+        "speed_value": 10, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "phasing_teleport", 
         "speed_value": 9, 
         "attack_power": "precision_strike", 
         "attack_value": 10, 
@@ -1731,5 +1775,73 @@
         "damage_value": 3
       }
     ]
+  }, 
+  {
+    "unit_id": "bgameM001", 
+    "set_id": "bgame", 
+    "collector_number": "M001", 
+    "name": "Castle Hideout", 
+    "type": "map", 
+    "point_values": [], 
+    "properties": "[]", 
+    "team_abilities": [], 
+    "keywords": [], 
+    "special_powers": [], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "map_url": "https://hcmaps.net/maps/bgame/castle_hideout.json", 
+    "dial": []
+  }, 
+  {
+    "unit_id": "bgameM002", 
+    "set_id": "bgame", 
+    "collector_number": "M002", 
+    "name": "Iron Man's Workshop", 
+    "type": "map", 
+    "point_values": [], 
+    "properties": "[]", 
+    "team_abilities": [], 
+    "keywords": [], 
+    "special_powers": [], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "map_url": "https://hcmaps.net/maps/bgame/iron_mans_workshop.json", 
+    "dial": []
+  }, 
+  {
+    "unit_id": "bgameM003", 
+    "set_id": "bgame", 
+    "collector_number": "M003", 
+    "name": "Ultron's Lair", 
+    "type": "map", 
+    "point_values": [], 
+    "properties": "[]", 
+    "team_abilities": [], 
+    "keywords": [], 
+    "special_powers": [], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "map_url": "https://hcmaps.net/maps/bgame/ultrons_lair.json", 
+    "dial": []
+  }, 
+  {
+    "unit_id": "bgameM004", 
+    "set_id": "bgame", 
+    "collector_number": "M004", 
+    "name": "Helicarrier Interior", 
+    "type": "map", 
+    "point_values": [], 
+    "properties": "[]", 
+    "team_abilities": [], 
+    "keywords": [], 
+    "special_powers": [], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "map_url": "https://hcmaps.net/maps/bgame/helicarrier_interior.json", 
+    "dial": []
   }
 ]

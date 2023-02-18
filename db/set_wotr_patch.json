@@ -1,0 +1,86 @@
+{
+  "updates": {
+    "wotr017": {
+      "special_powers": [{
+        "powers": ["energy_explosion"]
+      }]
+    },
+    "wotr033": {
+      "special_powers": [{
+        "powers": ["blades_claws_fangs", "combat_reflexes", "energy_shield_deflection"]
+      }]
+    },
+    "wotr035": {
+      "special_powers": [{
+        "description": "Invulnerability. // Kurse takes a maximum of 1 damage from range attacks or attacks from equipped characters. Protected: Outwit.",
+        "powers": ["invulnerability"]
+      }]
+    },
+    "wotr049": {
+      "special_powers": [{
+        "powers": ["quake", "blades_claws_fangs", "steal_energy", "outwit", "probability_control", "close_combat_expert"]
+      }]
+    },
+    "wotr051": {
+      "special_powers": [{
+        "powers": ["close_combat_expert", "energy_shield_deflection"]
+      }]
+    },
+    "wotr054": {
+      "special_powers": [{
+        "powers": ["mind_control", "probability_control"]
+      }]
+    },
+    "wotr063": {
+      "special_powers": [{
+        "powers": ["telekinesis"]
+      }]
+    },
+    "wotrL057": {
+      "special_powers": [{
+      }, {
+      }, {
+      }, {
+        "powers": ["super_senses", "barrier"]
+      }]
+    },
+    "wotrL061": {
+      "special_powers": [{
+        "powers": ["sidestep"]
+      }]
+    },
+    "wotrLG002": {
+      "special_powers": [{
+      }, {
+      }, {
+        "powers": ["incapacitate"]
+      }],
+      "dial": [{
+      }, {
+      }, {
+      }, {
+      }, {
+      }, {
+        "starting_line": true
+      }]
+    }
+  },
+  "deletions": [
+    "wotrLG002e"
+  ],
+  "additions": [{
+    "unit_id": "wotrM001",
+    "set_id": "wotr",
+    "collector_number": "M001",
+    "name": "Fountain of Asgard",
+    "type": "map",
+    "map_url": "https://hcmaps.net/maps/wotr/fountain_of_asgard.json"
+  }, {
+    "unit_id": "wotrM002",
+    "set_id": "wotr",
+    "collector_number": "M002",
+    "name": "Fallen Asgard",
+    "type": "map",
+    "map_url": "https://hcmaps.net/maps/wotr/fallen_asgard.json"
+  }]
+}

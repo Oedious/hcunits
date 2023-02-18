@@ -5,11 +5,11 @@
     <collector_number>001</collector_number>
     <name>Mr. Fantastic</name>
     <type>character</type>
-    <age>modern</age>
     <rarity>common</rarity>
     <real_name>Reed Richards</real_name>
     <dimensions>1x1</dimensions>
     <point_values>[40]</point_values>
+    <properties>[]</properties>
     <team_abilities>["fantastic_four"]</team_abilities>
     <keywords>["Celebrity", "Fantastic Four", "Scientist"]</keywords>
     <special_powers>[
@@ -21,7 +21,11 @@
   {
     "type": "defense", 
     "name": "TOGETHER WE STAND", 
-    "description": "Super Senses. STOP, but only if there is another friendly character with the Fantastic Four keyword within 4 squares."
+    "description": "Super Senses. STOP, but only if there is another friendly character with the Fantastic Four keyword within 4 squares.", 
+    "powers": [
+      "super_senses", 
+      "stop"
+    ]
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
@@ -36,7 +40,7 @@
     <dial_size>12</dial_size>
     <dial>[
   {
-    "click_number": 0, 
+    "click_number": 1, 
     "starting_line": true, 
     "speed_power": "plasticity", 
     "speed_value": 9, 
@@ -47,7 +51,7 @@
     "damage_value": 2
   }, 
   {
-    "click_number": 1, 
+    "click_number": 2, 
     "speed_power": "plasticity", 
     "speed_value": 9, 
     "attack_power": "incapacitate", 
@@ -58,7 +62,7 @@
     "damage_value": 2
   }, 
   {
-    "click_number": 2, 
+    "click_number": 3, 
     "speed_power": "leap_climb", 
     "speed_value": 8, 
     "attack_power": "incapacitate", 
@@ -69,7 +73,7 @@
     "damage_value": 2
   }, 
   {
-    "click_number": 3, 
+    "click_number": 4, 
     "speed_power": "leap_climb", 
     "speed_value": 8, 
     "attack_value": 10, 
@@ -86,11 +90,11 @@
     <collector_number>002</collector_number>
     <name>Invisible Woman</name>
     <type>character</type>
-    <age>modern</age>
     <rarity>common</rarity>
     <real_name>Susan Storm</real_name>
     <dimensions>1x1</dimensions>
     <point_values>[40]</point_values>
+    <properties>[]</properties>
     <team_abilities>["fantastic_four"]</team_abilities>
     <keywords>["Celebrity", "Fantastic Four", "Lady Liberators"]</keywords>
     <special_powers>[
@@ -107,7 +111,11 @@
   {
     "type": "defense", 
     "name": "TOGETHER WE STAND", 
-    "description": "Defend. STOP, but only if there is another friendly character with the Fantastic Four keyword within 4 squares."
+    "description": "Defend. STOP, but only if there is another friendly character with the Fantastic Four keyword within 4 squares.", 
+    "powers": [
+      "defend", 
+      "stop"
+    ]
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
@@ -122,7 +130,7 @@
     <dial_size>12</dial_size>
     <dial>[
   {
-    "click_number": 0, 
+    "click_number": 1, 
     "starting_line": true, 
     "speed_power": "stealth", 
     "speed_value": 8, 
@@ -134,7 +142,7 @@
     "damage_value": 2
   }, 
   {
-    "click_number": 1, 
+    "click_number": 2, 
     "speed_power": "stealth", 
     "speed_value": 8, 
     "attack_value": 10, 
@@ -144,7 +152,7 @@
     "damage_value": 2
   }, 
   {
-    "click_number": 2, 
+    "click_number": 3, 
     "speed_power": "sidestep", 
     "speed_value": 7, 
     "attack_value": 10, 
@@ -153,7 +161,7 @@
     "damage_value": 2
   }, 
   {
-    "click_number": 3, 
+    "click_number": 4, 
     "speed_power": "sidestep", 
     "speed_value": 7, 
     "attack_power": "telekinesis", 
@@ -170,11 +178,11 @@
     <collector_number>003</collector_number>
     <name>Human Torch</name>
     <type>character</type>
-    <age>modern</age>
     <rarity>common</rarity>
     <real_name>Johnny Storm</real_name>
     <dimensions>1x1</dimensions>
     <point_values>[40]</point_values>
+    <properties>[]</properties>
     <team_abilities>["fantastic_four", "spider_man"]</team_abilities>
     <keywords>["Celebrity", "Fantastic Four", "Spider-Man Family"]</keywords>
     <special_powers>[
@@ -186,7 +194,11 @@
   {
     "type": "defense", 
     "name": "TOGETHER WE STAND", 
-    "description": "Energy Shield/Deflection. STOP, but only if there is another friendly character with the Fantastic Four keyword within four squares."
+    "description": "Energy Shield/Deflection. STOP, but only if there is another friendly character with the Fantastic Four keyword within four squares.", 
+    "powers": [
+      "energy_shield_deflection", 
+      "stop"
+    ]
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
@@ -201,7 +213,7 @@
     <dial_size>12</dial_size>
     <dial>[
   {
-    "click_number": 0, 
+    "click_number": 1, 
     "starting_line": true, 
     "speed_power": "running_shot", 
     "speed_value": 8, 
@@ -210,16 +222,6 @@
     "defense_power": "energy_shield_deflection", 
     "defense_value": 17, 
     "damage_value": 3
-  }, 
-  {
-    "click_number": 1, 
-    "speed_power": "sidestep", 
-    "speed_value": 7, 
-    "attack_value": 10, 
-    "defense_power": "energy_shield_deflection", 
-    "defense_value": 17, 
-    "damage_power": "ranged_combat_expert", 
-    "damage_value": 2
   }, 
   {
     "click_number": 2, 
@@ -233,6 +235,16 @@
   }, 
   {
     "click_number": 3, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_value": 10, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 17, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
     "speed_power": "running_shot", 
     "speed_value": 8, 
     "attack_power": "penetrating_psychic_blast", 
@@ -249,11 +261,11 @@
     <collector_number>004</collector_number>
     <name>The Thing</name>
     <type>character</type>
-    <age>modern</age>
     <rarity>common</rarity>
     <real_name>Ben Grimm</real_name>
     <dimensions>1x1</dimensions>
     <point_values>[40]</point_values>
+    <properties>[]</properties>
     <team_abilities>["fantastic_four"]</team_abilities>
     <keywords>["Celebrity", "Fantastic Four", "Monster", "Soldier"]</keywords>
     <special_powers>[
@@ -265,7 +277,11 @@
   {
     "type": "defense", 
     "name": "TOGETHER WE STAND", 
-    "description": "Impervious. STOP, but only if there is another friendly character with the Fantastic Four keyword within four squares."
+    "description": "Impervious. STOP, but only if there is another friendly character with the Fantastic Four keyword within four squares.", 
+    "powers": [
+      "impervious", 
+      "stop"
+    ]
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
@@ -280,7 +296,7 @@
     <dial_size>12</dial_size>
     <dial>[
   {
-    "click_number": 0, 
+    "click_number": 1, 
     "starting_line": true, 
     "speed_power": "charge", 
     "speed_value": 7, 
@@ -292,7 +308,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 1, 
+    "click_number": 2, 
     "speed_power": "sidestep", 
     "speed_value": 7, 
     "attack_power": "super_strength", 
@@ -302,7 +318,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 2, 
+    "click_number": 3, 
     "speed_power": "sidestep", 
     "speed_value": 6, 
     "attack_power": "super_strength", 
@@ -312,7 +328,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 3, 
+    "click_number": 4, 
     "speed_power": "charge", 
     "speed_value": 6, 
     "attack_power": "super_strength", 
@@ -329,11 +345,11 @@
     <collector_number>005</collector_number>
     <name>Doombot</name>
     <type>character</type>
-    <age>modern</age>
     <rarity>common</rarity>
     <real_name>N/A</real_name>
     <dimensions>1x1</dimensions>
     <point_values>[15]</point_values>
+    <properties>[]</properties>
     <team_abilities>["minions_of_doom"]</team_abilities>
     <keywords>["Armor", "Latveria", "Robot"]</keywords>
     <special_powers>[
@@ -355,7 +371,7 @@
     <dial_size>12</dial_size>
     <dial>[
   {
-    "click_number": 0, 
+    "click_number": 1, 
     "starting_line": true, 
     "speed_power": "running_shot", 
     "speed_value": 8, 
@@ -367,7 +383,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 1, 
+    "click_number": 2, 
     "speed_power": "sidestep", 
     "speed_value": 8, 
     "attack_power": "energy_explosion", 
@@ -385,18 +401,21 @@
     <collector_number>006</collector_number>
     <name>Nova</name>
     <type>character</type>
-    <age>modern</age>
     <rarity>common</rarity>
     <real_name>Frankie Raye</real_name>
     <dimensions>1x1</dimensions>
     <point_values>[50]</point_values>
+    <properties>[]</properties>
     <team_abilities>["fantastic_four"]</team_abilities>
     <keywords>["Fantastic Four", "Politician"]</keywords>
     <special_powers>[
   {
     "type": "trait", 
     "name": "TOO HOT TO TOUCH", 
-    "description": "Poison."
+    "description": "Poison.", 
+    "powers": [
+      "poison"
+    ]
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
@@ -411,18 +430,8 @@
     <dial_size>12</dial_size>
     <dial>[
   {
-    "click_number": 0, 
-    "starting_line": true, 
-    "speed_power": "running_shot", 
-    "speed_value": 10, 
-    "attack_power": "energy_explosion", 
-    "attack_value": 10, 
-    "defense_power": "super_senses", 
-    "defense_value": 17, 
-    "damage_value": 3
-  }, 
-  {
     "click_number": 1, 
+    "starting_line": true, 
     "speed_power": "running_shot", 
     "speed_value": 10, 
     "attack_power": "energy_explosion", 
@@ -434,6 +443,16 @@
   {
     "click_number": 2, 
     "speed_power": "running_shot", 
+    "speed_value": 10, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "running_shot", 
     "speed_value": 9, 
     "attack_power": "energy_explosion", 
     "attack_value": 9, 
@@ -442,7 +461,7 @@
     "damage_value": 2
   }, 
   {
-    "click_number": 3, 
+    "click_number": 4, 
     "speed_power": "sidestep", 
     "speed_value": 9, 
     "attack_power": "pulse_wave", 
@@ -452,7 +471,7 @@
     "damage_value": 2
   }, 
   {
-    "click_number": 4, 
+    "click_number": 5, 
     "speed_power": "sidestep", 
     "speed_value": 9, 
     "attack_power": "pulse_wave", 
@@ -469,11 +488,11 @@
     <collector_number>007</collector_number>
     <name>Skrull Infiltrator</name>
     <type>character</type>
-    <age>modern</age>
     <rarity>common</rarity>
     <real_name>Various</real_name>
     <dimensions>1x1</dimensions>
     <point_values>[20]</point_values>
+    <properties>[]</properties>
     <team_abilities>["skrulls"]</team_abilities>
     <keywords>["Skrulls", "Spy"]</keywords>
     <special_powers>[
@@ -495,7 +514,7 @@
     <dial_size>12</dial_size>
     <dial>[
   {
-    "click_number": 0, 
+    "click_number": 1, 
     "starting_line": true, 
     "speed_power": "stealth", 
     "speed_value": 9, 
@@ -507,7 +526,7 @@
     "damage_value": 2
   }, 
   {
-    "click_number": 1, 
+    "click_number": 2, 
     "speed_power": "stealth", 
     "speed_value": 9, 
     "attack_power": "precision_strike", 
@@ -518,7 +537,7 @@
     "damage_value": 2
   }, 
   {
-    "click_number": 2, 
+    "click_number": 3, 
     "speed_power": "sidestep", 
     "speed_value": 8, 
     "attack_value": 9, 
@@ -535,18 +554,23 @@
     <collector_number>008</collector_number>
     <name>Moloid</name>
     <type>character</type>
-    <age>modern</age>
     <rarity>common</rarity>
     <real_name>Various</real_name>
     <dimensions>1x1</dimensions>
     <point_values>[10]</point_values>
+    <properties>[]</properties>
     <team_abilities>["underworld"]</team_abilities>
     <keywords>["Monster"]</keywords>
     <special_powers>[
   {
     "type": "speed", 
     "name": "DESTROY THE SURFACE DWELLER'S CITIES", 
-    "description": "Plasticity, Sidestep, Stealth. // POWER: If Moloid and another friendly character named Moloid are adjacent to the same piece of blocking terrain, destroy it, then remove an action token from both of them."
+    "description": "Plasticity, Sidestep, Stealth. // POWER: If Moloid and another friendly character named Moloid are adjacent to the same piece of blocking terrain, destroy it, then remove an action token from both of them.", 
+    "powers": [
+      "plasticity", 
+      "sidestep", 
+      "stealth"
+    ]
   }
 ]</special_powers>
     <improved_movement>["hindering"]</improved_movement>
@@ -561,7 +585,7 @@
     <dial_size>12</dial_size>
     <dial>[
   {
-    "click_number": 0, 
+    "click_number": 1, 
     "starting_line": true, 
     "speed_power": "special", 
     "speed_value": 7, 
@@ -572,7 +596,7 @@
     "damage_value": 1
   }, 
   {
-    "click_number": 1, 
+    "click_number": 2, 
     "speed_power": "special", 
     "speed_value": 6, 
     "attack_value": 8, 
@@ -588,11 +612,11 @@
     <collector_number>009</collector_number>
     <name>Spider-Man</name>
     <type>character</type>
-    <age>modern</age>
     <rarity>common</rarity>
     <real_name>Peter Parker</real_name>
     <dimensions>1x1</dimensions>
     <point_values>[75]</point_values>
+    <properties>[]</properties>
     <team_abilities>["fantastic_four", "spider_man"]</team_abilities>
     <keywords>["Fantastic Four", "Reporter", "Scientist", "Spider-Man Family"]</keywords>
     <special_powers>[
@@ -619,7 +643,7 @@
     <dial_size>12</dial_size>
     <dial>[
   {
-    "click_number": 0, 
+    "click_number": 1, 
     "starting_line": true, 
     "speed_power": "running_shot", 
     "speed_value": 9, 
@@ -630,7 +654,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 1, 
+    "click_number": 2, 
     "speed_power": "running_shot", 
     "speed_value": 8, 
     "attack_power": "incapacitate", 
@@ -640,7 +664,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 2, 
+    "click_number": 3, 
     "speed_power": "sidestep", 
     "speed_value": 8, 
     "attack_power": "incapacitate", 
@@ -651,7 +675,7 @@
     "damage_value": 2
   }, 
   {
-    "click_number": 3, 
+    "click_number": 4, 
     "speed_power": "plasticity", 
     "speed_value": 8, 
     "attack_value": 10, 
@@ -661,7 +685,7 @@
     "damage_value": 2
   }, 
   {
-    "click_number": 4, 
+    "click_number": 5, 
     "speed_power": "plasticity", 
     "speed_value": 8, 
     "attack_value": 9, 
@@ -671,7 +695,7 @@
     "damage_value": 2
   }, 
   {
-    "click_number": 5, 
+    "click_number": 6, 
     "speed_power": "sidestep", 
     "speed_value": 8, 
     "attack_value": 10, 
@@ -687,11 +711,11 @@
     <collector_number>010</collector_number>
     <name>Red Hulk</name>
     <type>character</type>
-    <age>modern</age>
     <rarity>common</rarity>
     <real_name>Thaddeus Ross</real_name>
     <dimensions>1x1</dimensions>
     <point_values>[75, 50]</point_values>
+    <properties>[]</properties>
     <team_abilities>["team_player"]</team_abilities>
     <keywords>["Avengers", "Codex", "Fantastic Four", "Intelligencia", "Soldier"]</keywords>
     <special_powers>[
@@ -718,7 +742,7 @@
     <dial_size>12</dial_size>
     <dial>[
   {
-    "click_number": 0, 
+    "click_number": 1, 
     "starting_line": true, 
     "speed_power": "charge", 
     "speed_value": 10, 
@@ -730,7 +754,7 @@
     "damage_value": 4
   }, 
   {
-    "click_number": 1, 
+    "click_number": 2, 
     "speed_power": "leap_climb", 
     "speed_value": 9, 
     "attack_power": "poison", 
@@ -741,7 +765,7 @@
     "damage_value": 4
   }, 
   {
-    "click_number": 2, 
+    "click_number": 3, 
     "speed_power": "charge", 
     "speed_value": 9, 
     "attack_power": "poison", 
@@ -753,7 +777,7 @@
     "starting_line": true
   }, 
   {
-    "click_number": 3, 
+    "click_number": 4, 
     "speed_power": "leap_climb", 
     "speed_value": 9, 
     "attack_power": "poison", 
@@ -764,7 +788,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 4, 
+    "click_number": 5, 
     "speed_power": "plasticity", 
     "speed_value": 8, 
     "attack_power": "poison", 
@@ -775,7 +799,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 5, 
+    "click_number": 6, 
     "speed_power": "plasticity", 
     "speed_value": 8, 
     "attack_power": "poison", 
@@ -793,18 +817,21 @@
     <collector_number>011</collector_number>
     <name>Wolverine</name>
     <type>character</type>
-    <age>modern</age>
     <rarity>common</rarity>
     <real_name>Laura Kinney</real_name>
     <dimensions>1x1</dimensions>
     <point_values>[40]</point_values>
+    <properties>[]</properties>
     <team_abilities>["fantastic_four", "x_men"]</team_abilities>
     <keywords>["Fantastic Four", "S.H.I.E.L.D.", "Weapon X", "X-Force", "X-Men"]</keywords>
     <special_powers>[
   {
     "type": "trait", 
     "name": "FOUR S.H.I.E.L.D. BEAST HUNTERS", 
-    "description": "When Wolverine is given a MOVE action, after resolutions remove an action token from her and she can use Stealth until your next turn."
+    "description": "When Wolverine is given a MOVE action, after resolutions remove an action token from her and she can use Stealth until your next turn.", 
+    "powers": [
+      "stealth"
+    ]
   }
 ]</special_powers>
     <improved_movement>["hindering"]</improved_movement>
@@ -819,7 +846,7 @@
     <dial_size>12</dial_size>
     <dial>[
   {
-    "click_number": 0, 
+    "click_number": 1, 
     "starting_line": true, 
     "speed_power": "charge", 
     "speed_value": 10, 
@@ -828,17 +855,6 @@
     "defense_power": "combat_reflexes", 
     "defense_value": 17, 
     "damage_value": 3
-  }, 
-  {
-    "click_number": 1, 
-    "speed_power": "charge", 
-    "speed_value": 9, 
-    "attack_power": "blades_claws_fangs", 
-    "attack_value": 10, 
-    "defense_power": "toughness", 
-    "defense_value": 17, 
-    "damage_power": "exploit_weakness", 
-    "damage_value": 2
   }, 
   {
     "click_number": 2, 
@@ -856,6 +872,17 @@
     "speed_power": "charge", 
     "speed_value": 9, 
     "attack_power": "blades_claws_fangs", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "charge", 
+    "speed_value": 9, 
+    "attack_power": "blades_claws_fangs", 
     "attack_value": 9, 
     "defense_power": "regeneration", 
     "defense_value": 16, 
@@ -869,11 +896,11 @@
     <collector_number>012</collector_number>
     <name>She-Thing</name>
     <type>character</type>
-    <age>modern</age>
     <rarity>common</rarity>
     <real_name>Sharon Ventura</real_name>
     <dimensions>1x1</dimensions>
     <point_values>[40]</point_values>
+    <properties>[]</properties>
     <team_abilities>["fantastic_four"]</team_abilities>
     <keywords>["Fantastic Four", "Monster"]</keywords>
     <special_powers>[
@@ -895,7 +922,7 @@
     <dial_size>12</dial_size>
     <dial>[
   {
-    "click_number": 0, 
+    "click_number": 1, 
     "starting_line": true, 
     "speed_power": "charge", 
     "speed_value": 10, 
@@ -906,7 +933,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 1, 
+    "click_number": 2, 
     "speed_power": "charge", 
     "speed_value": 10, 
     "attack_power": "super_strength", 
@@ -916,7 +943,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 2, 
+    "click_number": 3, 
     "speed_power": "charge", 
     "speed_value": 9, 
     "attack_power": "quake", 
@@ -926,7 +953,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 3, 
+    "click_number": 4, 
     "speed_power": "plasticity", 
     "speed_value": 9, 
     "attack_power": "quake", 
@@ -936,7 +963,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 4, 
+    "click_number": 5, 
     "speed_power": "plasticity", 
     "speed_value": 9, 
     "attack_power": "quake", 
@@ -953,23 +980,30 @@
     <collector_number>013a</collector_number>
     <name>Black Panther</name>
     <type>character</type>
-    <age>modern</age>
     <rarity>common</rarity>
     <real_name>T'Challa</real_name>
     <dimensions>1x1</dimensions>
     <point_values>[60]</point_values>
+    <properties>[]</properties>
     <team_abilities>["fantastic_four"]</team_abilities>
     <keywords>["Fantastic Four", "Ruler", "Wakanda", "Warrior"]</keywords>
     <special_powers>[
   {
     "type": "trait", 
     "name": "PANTHER IN THE SHADOWS", 
-    "description": "Stealth. If Black Panther occupies hindering terrain, modify attack +1."
+    "description": "Stealth. If Black Panther occupies hindering terrain, modify attack +1.", 
+    "powers": [
+      "stealth"
+    ]
   }, 
   {
     "type": "damage", 
     "name": "NEW LEADER OF THE FANTASTIC FOUR", 
-    "description": "Leadership, Outwit."
+    "description": "Leadership, Outwit.", 
+    "powers": [
+      "leadership", 
+      "outwit"
+    ]
   }
 ]</special_powers>
     <improved_movement>["hindering"]</improved_movement>
@@ -984,7 +1018,7 @@
     <dial_size>12</dial_size>
     <dial>[
   {
-    "click_number": 0, 
+    "click_number": 1, 
     "starting_line": true, 
     "speed_power": "charge", 
     "speed_value": 8, 
@@ -996,7 +1030,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 1, 
+    "click_number": 2, 
     "speed_power": "charge", 
     "speed_value": 7, 
     "attack_power": "precision_strike", 
@@ -1007,7 +1041,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 2, 
+    "click_number": 3, 
     "speed_power": "leap_climb", 
     "speed_value": 7, 
     "attack_power": "blades_claws_fangs", 
@@ -1018,7 +1052,7 @@
     "damage_value": 2
   }, 
   {
-    "click_number": 3, 
+    "click_number": 4, 
     "speed_power": "leap_climb", 
     "speed_value": 7, 
     "attack_power": "blades_claws_fangs", 
@@ -1029,7 +1063,7 @@
     "damage_value": 2
   }, 
   {
-    "click_number": 4, 
+    "click_number": 5, 
     "speed_power": "leap_climb", 
     "speed_value": 8, 
     "attack_power": "blades_claws_fangs", 
@@ -1040,7 +1074,7 @@
     "damage_value": 2
   }, 
   {
-    "click_number": 5, 
+    "click_number": 6, 
     "speed_power": "leap_climb", 
     "speed_value": 7, 
     "attack_value": 10, 
@@ -1057,12 +1091,11 @@
     <collector_number>013b</collector_number>
     <name>Black Leopard</name>
     <type>character</type>
-    <age>modern</age>
     <rarity>common</rarity>
     <real_name>T'Challa</real_name>
-    <special_type>prime</special_type>
     <dimensions>1x1</dimensions>
     <point_values>[50]</point_values>
+    <properties>["prime"]</properties>
     <team_abilities>[]</team_abilities>
     <keywords>["Avengers", "Fantastic Four", "Ruler", "Wakanda", "Warrior"]</keywords>
     <special_powers>[
@@ -1074,7 +1107,11 @@
   {
     "type": "damage", 
     "name": "REMINDERS OF HOW THEY VIEW EVEN A KING", 
-    "description": "Leadership, Perplex.  When Black Leopard uses Perplex to target himself, modify the chosen value by +2 instead if an opposing character within 6 squares and line of fire has a higher printed value for the chosen value than Black Leopard's printed value."
+    "description": "Leadership, Perplex.  When Black Leopard uses Perplex to target himself, modify the chosen value by +2 instead if an opposing character within 6 squares and line of fire has a higher printed value for the chosen value than Black Leopard's printed value.", 
+    "powers": [
+      "leadership", 
+      "perplex"
+    ]
   }
 ]</special_powers>
     <improved_movement>["hindering"]</improved_movement>
@@ -1089,7 +1126,7 @@
     <dial_size>12</dial_size>
     <dial>[
   {
-    "click_number": 0, 
+    "click_number": 1, 
     "starting_line": true, 
     "speed_power": "charge", 
     "speed_value": 10, 
@@ -1101,21 +1138,10 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 1, 
+    "click_number": 2, 
     "speed_power": "charge", 
     "speed_value": 10, 
     "attack_power": "blades_claws_fangs", 
-    "attack_value": 10, 
-    "defense_power": "combat_reflexes", 
-    "defense_value": 17, 
-    "damage_power": "special", 
-    "damage_value": 3
-  }, 
-  {
-    "click_number": 2, 
-    "speed_power": "flurry", 
-    "speed_value": 9, 
-    "attack_power": "precision_strike", 
     "attack_value": 10, 
     "defense_power": "combat_reflexes", 
     "defense_value": 17, 
@@ -1127,6 +1153,17 @@
     "speed_power": "flurry", 
     "speed_value": 9, 
     "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "flurry", 
+    "speed_value": 9, 
+    "attack_power": "precision_strike", 
     "attack_value": 9, 
     "defense_power": "super_senses", 
     "defense_value": 17, 
@@ -1134,7 +1171,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 4, 
+    "click_number": 5, 
     "speed_power": "stealth", 
     "speed_value": 8, 
     "attack_value": 9, 
@@ -1144,7 +1181,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 5, 
+    "click_number": 6, 
     "speed_power": "stealth", 
     "speed_value": 8, 
     "attack_value": 9, 
@@ -1161,11 +1198,11 @@
     <collector_number>014</collector_number>
     <name>Thundra</name>
     <type>character</type>
-    <age>modern</age>
     <rarity>common</rarity>
     <real_name>Thundra</real_name>
     <dimensions>1x1</dimensions>
     <point_values>[75]</point_values>
+    <properties>[]</properties>
     <team_abilities>[]</team_abilities>
     <keywords>["Femizons", "Frightful Four", "Future", "Lady Liberators", "Warrior"]</keywords>
     <special_powers>[
@@ -1192,7 +1229,7 @@
     <dial_size>12</dial_size>
     <dial>[
   {
-    "click_number": 0, 
+    "click_number": 1, 
     "starting_line": true, 
     "speed_power": "charge", 
     "speed_value": 9, 
@@ -1204,7 +1241,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 1, 
+    "click_number": 2, 
     "speed_power": "charge", 
     "speed_value": 8, 
     "attack_power": "super_strength", 
@@ -1215,7 +1252,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 2, 
+    "click_number": 3, 
     "speed_power": "charge", 
     "speed_value": 8, 
     "attack_power": "quake", 
@@ -1226,7 +1263,7 @@
     "damage_value": 4
   }, 
   {
-    "click_number": 3, 
+    "click_number": 4, 
     "speed_power": "flurry", 
     "speed_value": 7, 
     "attack_power": "quake", 
@@ -1237,7 +1274,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 4, 
+    "click_number": 5, 
     "speed_power": "flurry", 
     "speed_value": 7, 
     "attack_power": "blades_claws_fangs", 
@@ -1247,7 +1284,7 @@
     "damage_value": 2
   }, 
   {
-    "click_number": 5, 
+    "click_number": 6, 
     "speed_power": "flurry", 
     "speed_value": 7, 
     "attack_power": "blades_claws_fangs", 
@@ -1264,11 +1301,11 @@
     <collector_number>015</collector_number>
     <name>Trapster</name>
     <type>character</type>
-    <age>modern</age>
     <rarity>common</rarity>
     <real_name>Peter Petruski</real_name>
     <dimensions>1x1</dimensions>
     <point_values>[75]</point_values>
+    <properties>[]</properties>
     <team_abilities>["minions_of_doom"]</team_abilities>
     <keywords>["Frightful Four", "Intelligencia", "Maggia", "Scientist", "Sinister Syndicate"]</keywords>
     <special_powers>[
@@ -1280,12 +1317,18 @@
   {
     "type": "trait", 
     "name": "NOPE, I'VE ALWAYS BEEN TRAPSTER", 
-    "description": "Plasticity."
+    "description": "Plasticity.", 
+    "powers": [
+      "plasticity"
+    ]
   }, 
   {
     "type": "attack", 
     "name": "THINGS ARE ABOUT TO GET REAL MESSY", 
-    "description": "Incapacitate. When Trapster uses it, you may generate a Paste marker in each hit target's square. // Characters occupying Paste markers must break away as if they were adjacent to Trapster. When no character occupies a Paste marker, remove it."
+    "description": "Incapacitate. When Trapster uses it, you may generate a Paste marker in each hit target's square. // Characters occupying Paste markers must break away as if they were adjacent to Trapster. When no character occupies a Paste marker, remove it.", 
+    "powers": [
+      "incapacitate"
+    ]
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
@@ -1300,7 +1343,7 @@
     <dial_size>12</dial_size>
     <dial>[
   {
-    "click_number": 0, 
+    "click_number": 1, 
     "starting_line": true, 
     "speed_power": "running_shot", 
     "speed_value": 9, 
@@ -1311,7 +1354,7 @@
     "damage_value": 2
   }, 
   {
-    "click_number": 1, 
+    "click_number": 2, 
     "speed_power": "running_shot", 
     "speed_value": 8, 
     "attack_power": "special", 
@@ -1321,22 +1364,11 @@
     "damage_value": 2
   }, 
   {
-    "click_number": 2, 
+    "click_number": 3, 
     "speed_power": "running_shot", 
     "speed_value": 8, 
     "attack_power": "special", 
     "attack_value": 11, 
-    "defense_power": "barrier", 
-    "defense_value": 17, 
-    "damage_power": "perplex", 
-    "damage_value": 2
-  }, 
-  {
-    "click_number": 3, 
-    "speed_power": "sidestep", 
-    "speed_value": 7, 
-    "attack_power": "special", 
-    "attack_value": 10, 
     "defense_power": "barrier", 
     "defense_value": 17, 
     "damage_power": "perplex", 
@@ -1349,12 +1381,23 @@
     "attack_power": "special", 
     "attack_value": 10, 
     "defense_power": "barrier", 
+    "defense_value": 17, 
+    "damage_power": "perplex", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "barrier", 
     "defense_value": 16, 
     "damage_power": "perplex", 
     "damage_value": 1
   }, 
   {
-    "click_number": 5, 
+    "click_number": 6, 
     "speed_power": "sidestep", 
     "speed_value": 7, 
     "attack_power": "special", 
@@ -1372,23 +1415,29 @@
     <collector_number>016</collector_number>
     <name>Medusa</name>
     <type>character</type>
-    <age>modern</age>
     <rarity>common</rarity>
     <real_name>Medusalith Amaquelin</real_name>
     <dimensions>1x1</dimensions>
     <point_values>[75]</point_values>
+    <properties>[]</properties>
     <team_abilities>["minions_of_doom"]</team_abilities>
     <keywords>["Frightful Four", "Inhumans"]</keywords>
     <special_powers>[
   {
     "type": "trait", 
     "name": "FRIGHTFUL FOUR: IMPENETRABLE DISGUISES", 
-    "description": "Friendly characters with the Frightful Four keyword can use Shape Change."
+    "description": "Friendly characters with the Frightful Four keyword can use Shape Change.", 
+    "powers": [
+      "shape_change"
+    ]
   }, 
   {
     "type": "trait", 
     "name": "THE MALEVONENT MANE OF MADAME MEDUSA", 
-    "description": "Plasticity, Giant Reach: 4. Opposing characters within 4 squares and line of fire consider Medusa adjacent for the purpose of breaking away."
+    "description": "Plasticity, Giant Reach: 4. Opposing characters within 4 squares and line of fire consider Medusa adjacent for the purpose of breaking away.", 
+    "powers": [
+      "plasticity"
+    ]
   }
 ]</special_powers>
     <improved_movement>["elevated", "hindering"]</improved_movement>
@@ -1403,7 +1452,7 @@
     <dial_size>12</dial_size>
     <dial>[
   {
-    "click_number": 0, 
+    "click_number": 1, 
     "starting_line": true, 
     "speed_power": "stealth", 
     "speed_value": 8, 
@@ -1415,7 +1464,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 1, 
+    "click_number": 2, 
     "speed_power": "stealth", 
     "speed_value": 8, 
     "attack_power": "telekinesis", 
@@ -1426,7 +1475,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 2, 
+    "click_number": 3, 
     "speed_power": "charge", 
     "speed_value": 8, 
     "attack_power": "quake", 
@@ -1437,7 +1486,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 3, 
+    "click_number": 4, 
     "speed_power": "charge", 
     "speed_value": 8, 
     "attack_power": "quake", 
@@ -1448,7 +1497,7 @@
     "damage_value": 2
   }, 
   {
-    "click_number": 4, 
+    "click_number": 5, 
     "speed_power": "sidestep", 
     "speed_value": 7, 
     "attack_power": "blades_claws_fangs", 
@@ -1459,7 +1508,7 @@
     "damage_value": 2
   }, 
   {
-    "click_number": 5, 
+    "click_number": 6, 
     "speed_power": "sidestep", 
     "speed_value": 7, 
     "attack_power": "blades_claws_fangs", 
@@ -1477,11 +1526,11 @@
     <collector_number>017</collector_number>
     <name>Mr. Fantastic</name>
     <type>character</type>
-    <age>modern</age>
     <rarity>uncommon</rarity>
     <real_name>Reed Richards</real_name>
     <dimensions>1x1</dimensions>
     <point_values>[50]</point_values>
+    <properties>[]</properties>
     <team_abilities>["fantastic_four"]</team_abilities>
     <keywords>["Fantastic Four", "Illuminati", "Scientist"]</keywords>
     <special_powers>[
@@ -1493,7 +1542,10 @@
   {
     "type": "speed", 
     "name": "ELASTIC FINGER SQUEEZE", 
-    "description": "Plasticity. Giant Reach: 4. When Mr. Fantastic hits with a close attack and has not been moved or placed this turn, until your next turn a hit character modifies attack -1 and considers Mr. Fantastic adjacent for the purpose of breaking away."
+    "description": "Plasticity. Giant Reach: 4. When Mr. Fantastic hits with a close attack and has not been moved or placed this turn, until your next turn a hit character modifies attack -1 and considers Mr. Fantastic adjacent for the purpose of breaking away.", 
+    "powers": [
+      "plasticity"
+    ]
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
@@ -1508,7 +1560,7 @@
     <dial_size>12</dial_size>
     <dial>[
   {
-    "click_number": 0, 
+    "click_number": 1, 
     "starting_line": true, 
     "speed_power": "special", 
     "speed_value": 9, 
@@ -1519,7 +1571,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 1, 
+    "click_number": 2, 
     "speed_power": "special", 
     "speed_value": 8, 
     "attack_value": 10, 
@@ -1529,7 +1581,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 2, 
+    "click_number": 3, 
     "speed_power": "special", 
     "speed_value": 8, 
     "attack_value": 10, 
@@ -1539,7 +1591,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 3, 
+    "click_number": 4, 
     "speed_power": "sidestep", 
     "speed_value": 7, 
     "attack_value": 10, 
@@ -1549,7 +1601,7 @@
     "damage_value": 2
   }, 
   {
-    "click_number": 4, 
+    "click_number": 5, 
     "speed_power": "sidestep", 
     "speed_value": 7, 
     "attack_value": 9, 
@@ -1566,11 +1618,11 @@
     <collector_number>018</collector_number>
     <name>Invisible Woman</name>
     <type>character</type>
-    <age>modern</age>
     <rarity>uncommon</rarity>
     <real_name>Susan Richards</real_name>
     <dimensions>1x1</dimensions>
     <point_values>[50]</point_values>
+    <properties>[]</properties>
     <team_abilities>["fantastic_four"]</team_abilities>
     <keywords>["Celebrity", "Fantastic Four"]</keywords>
     <special_powers>[
@@ -1587,7 +1639,11 @@
   {
     "type": "defense", 
     "name": "PROTECTIVE INSTINCTS", 
-    "description": "Barrier, Super Senses. Barrier as FREE, but only to generate markers in squares adjacent to friendly characters with the Fantastic Four keyword that were attacked since your last turn. (Normal Barrier placement restrictions still apply)."
+    "description": "Barrier, Super Senses. Barrier as FREE, but only to generate markers in squares adjacent to friendly characters with the Fantastic Four keyword that were attacked since your last turn. (Normal Barrier placement restrictions still apply).", 
+    "powers": [
+      "barrier", 
+      "super_senses"
+    ]
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
@@ -1602,7 +1658,7 @@
     <dial_size>12</dial_size>
     <dial>[
   {
-    "click_number": 0, 
+    "click_number": 1, 
     "starting_line": true, 
     "speed_power": "stealth", 
     "speed_value": 8, 
@@ -1613,7 +1669,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 1, 
+    "click_number": 2, 
     "speed_power": "stealth", 
     "speed_value": 8, 
     "attack_power": "quake", 
@@ -1623,7 +1679,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 2, 
+    "click_number": 3, 
     "speed_power": "force_blast", 
     "speed_value": 7, 
     "attack_power": "quake", 
@@ -1634,7 +1690,7 @@
     "damage_value": 2
   }, 
   {
-    "click_number": 3, 
+    "click_number": 4, 
     "speed_power": "force_blast", 
     "speed_value": 7, 
     "attack_power": "pulse_wave", 
@@ -1645,7 +1701,7 @@
     "damage_value": 2
   }, 
   {
-    "click_number": 4, 
+    "click_number": 5, 
     "speed_power": "force_blast", 
     "speed_value": 7, 
     "attack_power": "pulse_wave", 
@@ -1663,11 +1719,11 @@
     <collector_number>019</collector_number>
     <name>Human Torch</name>
     <type>character</type>
-    <age>modern</age>
     <rarity>uncommon</rarity>
     <real_name>Johnny Storm</real_name>
     <dimensions>1x1</dimensions>
     <point_values>[50]</point_values>
+    <properties>[]</properties>
     <team_abilities>["fantastic_four"]</team_abilities>
     <keywords>["Celebrity", "Fantastic Four"]</keywords>
     <special_powers>[
@@ -1694,7 +1750,7 @@
     <dial_size>12</dial_size>
     <dial>[
   {
-    "click_number": 0, 
+    "click_number": 1, 
     "starting_line": true, 
     "speed_power": "hypersonic_speed", 
     "speed_value": 10, 
@@ -1704,7 +1760,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 1, 
+    "click_number": 2, 
     "speed_power": "running_shot", 
     "speed_value": 10, 
     "attack_power": "energy_explosion", 
@@ -1714,7 +1770,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 2, 
+    "click_number": 3, 
     "speed_power": "running_shot", 
     "speed_value": 9, 
     "attack_power": "energy_explosion", 
@@ -1724,7 +1780,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 3, 
+    "click_number": 4, 
     "speed_power": "sidestep", 
     "speed_value": 9, 
     "attack_power": "poison", 
@@ -1735,7 +1791,7 @@
     "damage_value": 2
   }, 
   {
-    "click_number": 4, 
+    "click_number": 5, 
     "speed_power": "sidestep", 
     "speed_value": 9, 
     "attack_power": "poison", 
@@ -1753,11 +1809,11 @@
     <collector_number>020</collector_number>
     <name>The Thing</name>
     <type>character</type>
-    <age>modern</age>
     <rarity>uncommon</rarity>
     <real_name>Ben Grimm</real_name>
     <dimensions>1x1</dimensions>
     <point_values>[50]</point_values>
+    <properties>[]</properties>
     <team_abilities>["fantastic_four"]</team_abilities>
     <keywords>["Celebrity", "Fantastic Four"]</keywords>
     <special_powers>[
@@ -1769,7 +1825,10 @@
   {
     "type": "defense", 
     "name": "OOOH... DID THAT HURT?", 
-    "description": "Impervious. When The Thing uses it and succeeds during a close attack, after resolutions deal the attacker 1 penetrating damage. // Once per turn when The Thing rolls a 4 for impervious, he may roll again."
+    "description": "Impervious. When The Thing uses it and succeeds during a close attack, after resolutions deal the attacker 1 penetrating damage. // Once per turn when The Thing rolls a 4 for impervious, he may roll again.", 
+    "powers": [
+      "impervious"
+    ]
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
@@ -1784,7 +1843,7 @@
     <dial_size>12</dial_size>
     <dial>[
   {
-    "click_number": 0, 
+    "click_number": 1, 
     "starting_line": true, 
     "speed_power": "charge", 
     "speed_value": 9, 
@@ -1795,18 +1854,8 @@
     "damage_value": 4
   }, 
   {
-    "click_number": 1, 
-    "speed_power": "charge", 
-    "speed_value": 8, 
-    "attack_power": "super_strength", 
-    "attack_value": 10, 
-    "defense_power": "special", 
-    "defense_value": 18, 
-    "damage_value": 3
-  }, 
-  {
     "click_number": 2, 
-    "speed_power": "sidestep", 
+    "speed_power": "charge", 
     "speed_value": 8, 
     "attack_power": "super_strength", 
     "attack_value": 10, 
@@ -1817,6 +1866,16 @@
   {
     "click_number": 3, 
     "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "super_strength", 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 18, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "sidestep", 
     "speed_value": 7, 
     "attack_value": 10, 
     "defense_power": "invulnerability", 
@@ -1825,7 +1884,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 4, 
+    "click_number": 5, 
     "speed_power": "sidestep", 
     "speed_value": 7, 
     "attack_value": 9, 
@@ -1842,12 +1901,11 @@
     <collector_number>021</collector_number>
     <name>Dr. Doom</name>
     <type>character</type>
-    <age>modern</age>
     <rarity>uncommon</rarity>
     <real_name>Victor Von Doom</real_name>
-    <special_type>unique</special_type>
     <dimensions>1x1</dimensions>
     <point_values>[95, 45]</point_values>
+    <properties>["unique"]</properties>
     <team_abilities>["minions_of_doom"]</team_abilities>
     <keywords>["Armor", "Cabal", "Latveria", "Mystical", "Politician", "Ruler", "Scientist"]</keywords>
     <special_powers>[
@@ -1860,7 +1918,11 @@
   {
     "type": "trait", 
     "name": "MY ROBOTS OFTEN CONFUSE MY FOES", 
-    "description": "Leadership, Mastermind. When Dr. Doom uses Leadership and succeeds, instead of the normal effect, you may generate a [F4] 005 Doombot."
+    "description": "Leadership, Mastermind. When Dr. Doom uses Leadership and succeeds, instead of the normal effect, you may generate a [F4] 005 Doombot.", 
+    "powers": [
+      "leadership", 
+      "mastermind"
+    ]
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
@@ -1875,7 +1937,7 @@
     <dial_size>12</dial_size>
     <dial>[
   {
-    "click_number": 0, 
+    "click_number": 1, 
     "starting_line": true, 
     "speed_power": "running_shot", 
     "speed_value": 9, 
@@ -1887,7 +1949,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 1, 
+    "click_number": 2, 
     "speed_power": "sidestep", 
     "speed_value": 9, 
     "attack_power": "energy_explosion", 
@@ -1898,7 +1960,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 2, 
+    "click_number": 3, 
     "speed_power": "sidestep", 
     "speed_value": 8, 
     "attack_power": "energy_explosion", 
@@ -1909,7 +1971,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 3, 
+    "click_number": 4, 
     "speed_power": "running_shot", 
     "speed_value": 8, 
     "attack_power": "energy_explosion", 
@@ -1921,7 +1983,7 @@
     "starting_line": true
   }, 
   {
-    "click_number": 4, 
+    "click_number": 5, 
     "speed_power": "sidestep", 
     "speed_value": 8, 
     "attack_power": "energy_explosion", 
@@ -1932,7 +1994,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 5, 
+    "click_number": 6, 
     "speed_power": "sidestep", 
     "speed_value": 7, 
     "attack_power": "energy_explosion", 
@@ -1943,7 +2005,7 @@
     "damage_value": 2
   }, 
   {
-    "click_number": 6, 
+    "click_number": 7, 
     "speed_power": "sidestep", 
     "speed_value": 7, 
     "attack_power": "energy_explosion", 
@@ -1961,11 +2023,11 @@
     <collector_number>022</collector_number>
     <name>Nova</name>
     <type>character</type>
-    <age>modern</age>
     <rarity>uncommon</rarity>
     <real_name>Frankie Raye</real_name>
     <dimensions>1x1</dimensions>
     <point_values>[125]</point_values>
+    <properties>[]</properties>
     <team_abilities>["power_cosmic"]</team_abilities>
     <keywords>["Cosmic", "Herald"]</keywords>
     <special_powers>[
@@ -1987,7 +2049,7 @@
     <dial_size>12</dial_size>
     <dial>[
   {
-    "click_number": 0, 
+    "click_number": 1, 
     "starting_line": true, 
     "speed_power": "hypersonic_speed", 
     "speed_value": 12, 
@@ -1998,7 +2060,7 @@
     "damage_value": 4
   }, 
   {
-    "click_number": 1, 
+    "click_number": 2, 
     "speed_power": "hypersonic_speed", 
     "speed_value": 12, 
     "attack_value": 10, 
@@ -2008,7 +2070,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 2, 
+    "click_number": 3, 
     "speed_power": "hypersonic_speed", 
     "speed_value": 11, 
     "attack_value": 10, 
@@ -2018,7 +2080,7 @@
     "damage_value": 4
   }, 
   {
-    "click_number": 3, 
+    "click_number": 4, 
     "speed_power": "hypersonic_speed", 
     "speed_value": 11, 
     "attack_value": 10, 
@@ -2028,7 +2090,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 4, 
+    "click_number": 5, 
     "speed_power": "running_shot", 
     "speed_value": 10, 
     "attack_power": "pulse_wave", 
@@ -2038,7 +2100,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 5, 
+    "click_number": 6, 
     "speed_power": "running_shot", 
     "speed_value": 10, 
     "attack_power": "pulse_wave", 
@@ -2055,18 +2117,21 @@
     <collector_number>023</collector_number>
     <name>Skrull Warrior</name>
     <type>character</type>
-    <age>modern</age>
     <rarity>uncommon</rarity>
     <real_name>Various</real_name>
     <dimensions>1x1</dimensions>
     <point_values>[30]</point_values>
+    <properties>[]</properties>
     <team_abilities>["skrulls"]</team_abilities>
     <keywords>["Skrulls", "Warrior"]</keywords>
     <special_powers>[
   {
     "type": "speed", 
     "name": "DROP DISGUISE FOR COMBAT", 
-    "description": "Running Shot. // FREE: Until your next turn, modify attack +2 and Skrull Warrior can't use Shape Change or the Skrulls team ability."
+    "description": "Running Shot. // FREE: Until your next turn, modify attack +2 and Skrull Warrior can't use Shape Change or the Skrulls team ability.", 
+    "powers": [
+      "running_shot"
+    ]
   }
 ]</special_powers>
     <improved_movement>["hindering"]</improved_movement>
@@ -2081,7 +2146,7 @@
     <dial_size>12</dial_size>
     <dial>[
   {
-    "click_number": 0, 
+    "click_number": 1, 
     "starting_line": true, 
     "speed_power": "special", 
     "speed_value": 8, 
@@ -2092,7 +2157,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 1, 
+    "click_number": 2, 
     "speed_power": "special", 
     "speed_value": 8, 
     "attack_value": 10, 
@@ -2102,7 +2167,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 2, 
+    "click_number": 3, 
     "speed_power": "charge", 
     "speed_value": 7, 
     "attack_value": 10, 
@@ -2112,7 +2177,7 @@
     "damage_value": 2
   }, 
   {
-    "click_number": 3, 
+    "click_number": 4, 
     "speed_power": "charge", 
     "speed_value": 7, 
     "attack_value": 9, 
@@ -2129,11 +2194,11 @@
     <collector_number>024</collector_number>
     <name>Hulk</name>
     <type>character</type>
-    <age>modern</age>
     <rarity>uncommon</rarity>
     <real_name>Bruce Banner</real_name>
     <dimensions>1x1</dimensions>
     <point_values>[75]</point_values>
+    <properties>[]</properties>
     <team_abilities>["fantastic_four"]</team_abilities>
     <keywords>["Fantastic Four", "Monster"]</keywords>
     <special_powers>[
@@ -2150,7 +2215,10 @@
   {
     "type": "speed", 
     "name": "GUESS I'LL SMASH...", 
-    "description": "Charge, but does not halve speed."
+    "description": "Charge, but does not halve speed.", 
+    "powers": [
+      "charge"
+    ]
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
@@ -2165,7 +2233,7 @@
     <dial_size>12</dial_size>
     <dial>[
   {
-    "click_number": 0, 
+    "click_number": 1, 
     "starting_line": true, 
     "speed_power": "special", 
     "speed_value": 7, 
@@ -2176,7 +2244,7 @@
     "damage_value": 4
   }, 
   {
-    "click_number": 1, 
+    "click_number": 2, 
     "speed_power": "charge", 
     "speed_value": 7, 
     "attack_power": "super_strength", 
@@ -2186,7 +2254,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 2, 
+    "click_number": 3, 
     "speed_power": "charge", 
     "speed_value": 7, 
     "attack_power": "super_strength", 
@@ -2196,7 +2264,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 3, 
+    "click_number": 4, 
     "speed_power": "charge", 
     "speed_value": 7, 
     "attack_power": "quake", 
@@ -2206,7 +2274,7 @@
     "damage_value": 4
   }, 
   {
-    "click_number": 4, 
+    "click_number": 5, 
     "speed_power": "sidestep", 
     "speed_value": 7, 
     "attack_power": "quake", 
@@ -2217,7 +2285,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 5, 
+    "click_number": 6, 
     "speed_power": "sidestep", 
     "speed_value": 7, 
     "attack_value": 10, 
@@ -2227,7 +2295,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 6, 
+    "click_number": 7, 
     "speed_power": "sidestep", 
     "speed_value": 6, 
     "attack_value": 9, 
@@ -2244,11 +2312,11 @@
     <collector_number>025</collector_number>
     <name>X-23</name>
     <type>character</type>
-    <age>modern</age>
     <rarity>uncommon</rarity>
     <real_name>Laura Kinney</real_name>
     <dimensions>1x1</dimensions>
     <point_values>[50]</point_values>
+    <properties>[]</properties>
     <team_abilities>["team_player"]</team_abilities>
     <keywords>["All-New X-Men", "Detective", "Fantastic Four", "Weapon X", "X-Force", "X-Men"]</keywords>
     <special_powers>[
@@ -2260,12 +2328,20 @@
   {
     "type": "trait", 
     "name": "HEALING FACTOR", 
-    "description": "Toughness. // At the beginning of your turn, if X-23 has 2 action tokens, heal her 1 click."
+    "description": "Toughness. // At the beginning of your turn, if X-23 has 2 action tokens, heal her 1 click.", 
+    "powers": [
+      "toughness"
+    ]
   }, 
   {
     "type": "speed", 
     "name": "HUNTER AND TRACKER", 
-    "description": "Flurry, Sidestep, Stealth."
+    "description": "Flurry, Sidestep, Stealth.", 
+    "powers": [
+      "flurry", 
+      "sidestep", 
+      "stealth"
+    ]
   }
 ]</special_powers>
     <improved_movement>["hindering"]</improved_movement>
@@ -2280,7 +2356,7 @@
     <dial_size>12</dial_size>
     <dial>[
   {
-    "click_number": 0, 
+    "click_number": 1, 
     "starting_line": true, 
     "speed_power": "charge", 
     "speed_value": 10, 
@@ -2289,17 +2365,6 @@
     "defense_power": "super_senses", 
     "defense_value": 17, 
     "damage_power": "exploit_weakness", 
-    "damage_value": 3
-  }, 
-  {
-    "click_number": 1, 
-    "speed_power": "special", 
-    "speed_value": 9, 
-    "attack_power": "precision_strike", 
-    "attack_value": 10, 
-    "defense_power": "combat_reflexes", 
-    "defense_value": 17, 
-    "damage_power": "empower", 
     "damage_value": 3
   }, 
   {
@@ -2315,6 +2380,17 @@
   }, 
   {
     "click_number": 3, 
+    "speed_power": "special", 
+    "speed_value": 9, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 17, 
+    "damage_power": "empower", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
     "speed_power": "charge", 
     "speed_value": 8, 
     "attack_power": "blades_claws_fangs", 
@@ -2325,7 +2401,7 @@
     "damage_value": 2
   }, 
   {
-    "click_number": 4, 
+    "click_number": 5, 
     "speed_power": "sidestep", 
     "speed_value": 7, 
     "attack_power": "blades_claws_fangs", 
@@ -2343,11 +2419,11 @@
     <collector_number>026</collector_number>
     <name>Ghost Rider</name>
     <type>character</type>
-    <age>modern</age>
     <rarity>uncommon</rarity>
     <real_name>Robbie Reyes</real_name>
     <dimensions>1x1</dimensions>
     <point_values>[80, 40]</point_values>
+    <properties>[]</properties>
     <team_abilities>["fantastic_four", "mystics"]</team_abilities>
     <keywords>["Fantastic Four", "Mystical", "S.H.I.E.L.D."]</keywords>
     <special_powers>[
@@ -2359,17 +2435,27 @@
   {
     "type": "trait", 
     "name": "FOUR S.H.I.E.L.D. BEAST HUNTERS", 
-    "description": "When Ghost Rider is given a MOVE action, after resolutions remove an action token from him and he can use Stealth until your next turn."
+    "description": "When Ghost Rider is given a MOVE action, after resolutions remove an action token from him and he can use Stealth until your next turn.", 
+    "powers": [
+      "stealth"
+    ]
   }, 
   {
     "type": "speed", 
     "name": "HELLFIRE PORTALS", 
-    "description": "Phasing/Teleport. When Ghost Rider uses it and moves 4 squares or less, after resolutions he may make a close attack."
+    "description": "Phasing/Teleport. When Ghost Rider uses it and moves 4 squares or less, after resolutions he may make a close attack.", 
+    "powers": [
+      "phasing_teleport"
+    ]
   }, 
   {
     "type": "attack", 
     "name": "PENANCE STARE", 
-    "description": "Energy Explosion, Pulse Wave. Once per turn, when Ghost Rider hits an opposing character that damaged a friendly character since your last turn, after resolutions deal that opposing character penetrating damage equal to their action tokens."
+    "description": "Energy Explosion, Pulse Wave. Once per turn, when Ghost Rider hits an opposing character that damaged a friendly character since your last turn, after resolutions deal that opposing character penetrating damage equal to their action tokens.", 
+    "powers": [
+      "energy_explosion", 
+      "pulse_wave"
+    ]
   }
 ]</special_powers>
     <improved_movement>["hindering"]</improved_movement>
@@ -2384,7 +2470,7 @@
     <dial_size>12</dial_size>
     <dial>[
   {
-    "click_number": 0, 
+    "click_number": 1, 
     "starting_line": true, 
     "speed_power": "charge", 
     "speed_value": 10, 
@@ -2395,7 +2481,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 1, 
+    "click_number": 2, 
     "speed_power": "charge", 
     "speed_value": 10, 
     "attack_power": "poison", 
@@ -2405,7 +2491,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 2, 
+    "click_number": 3, 
     "speed_power": "charge", 
     "speed_value": 9, 
     "attack_power": "poison", 
@@ -2415,7 +2501,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 3, 
+    "click_number": 4, 
     "speed_power": "special", 
     "speed_value": 9, 
     "attack_power": "special", 
@@ -2426,7 +2512,7 @@
     "starting_line": true
   }, 
   {
-    "click_number": 4, 
+    "click_number": 5, 
     "speed_power": "special", 
     "speed_value": 9, 
     "attack_power": "special", 
@@ -2436,7 +2522,7 @@
     "damage_value": 4
   }, 
   {
-    "click_number": 5, 
+    "click_number": 6, 
     "speed_power": "special", 
     "speed_value": 9, 
     "attack_power": "special", 
@@ -2446,7 +2532,7 @@
     "damage_value": 4
   }, 
   {
-    "click_number": 6, 
+    "click_number": 7, 
     "speed_power": "sidestep", 
     "speed_value": 9, 
     "attack_value": 10, 
@@ -2462,23 +2548,40 @@
     <collector_number>027</collector_number>
     <name>Valeria Richards</name>
     <type>character</type>
-    <age>modern</age>
     <rarity>uncommon</rarity>
     <real_name>Valeria Richards</real_name>
     <dimensions>1x1</dimensions>
     <point_values>[40]</point_values>
+    <properties>[]</properties>
     <team_abilities>["fantastic_four"]</team_abilities>
     <keywords>["Fantastic Four", "Latveria", "Scientist"]</keywords>
     <special_powers>[
   {
     "type": "attack", 
     "name": "LET'S SEE, WHAT CAN I MAKE WITH THIS?", 
-    "description": "FREE: Choose a standard attack power. Valeria Richards can use that power this turn."
+    "description": "FREE: Choose a standard attack power. Valeria Richards can use that power this turn.", 
+    "powers": [
+      "blades_claws_fangs", 
+      "energy_explosion", 
+      "pulse_wave", 
+      "quake", 
+      "super_strength", 
+      "incapacitate", 
+      "penetrating_psychic_blast", 
+      "smoke_cloud", 
+      "precision_strike", 
+      "poison", 
+      "steal_energy", 
+      "telekinesis"
+    ]
   }, 
   {
     "type": "damage", 
     "name": "HERE, UNCLE, I BUILT THIS FOR YOU", 
-    "description": "Perplex with a range of 8. UNIQUE MODIFIER - When Valeria Richards uses Perplex to target another character that shares a keyword, she may instead modify a value except damage by +2."
+    "description": "Perplex with a range of 8. UNIQUE MODIFIER - When Valeria Richards uses Perplex to target another character that shares a keyword, she may instead modify a value except damage by +2.", 
+    "powers": [
+      "perplex"
+    ]
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
@@ -2493,19 +2596,8 @@
     <dial_size>12</dial_size>
     <dial>[
   {
-    "click_number": 0, 
-    "starting_line": true, 
-    "speed_power": "sidestep", 
-    "speed_value": 8, 
-    "attack_power": "special", 
-    "attack_value": 10, 
-    "defense_power": "energy_shield_deflection", 
-    "defense_value": 17, 
-    "damage_power": "special", 
-    "damage_value": 2
-  }, 
-  {
     "click_number": 1, 
+    "starting_line": true, 
     "speed_power": "sidestep", 
     "speed_value": 8, 
     "attack_power": "special", 
@@ -2521,13 +2613,24 @@
     "speed_value": 8, 
     "attack_power": "special", 
     "attack_value": 10, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 10, 
     "defense_power": "mastermind", 
     "defense_value": 17, 
     "damage_power": "perplex", 
     "damage_value": 2
   }, 
   {
-    "click_number": 3, 
+    "click_number": 4, 
     "speed_power": "sidestep", 
     "speed_value": 7, 
     "attack_power": "special", 
@@ -2545,11 +2648,11 @@
     <collector_number>028</collector_number>
     <name>She-Thing</name>
     <type>character</type>
-    <age>modern</age>
     <rarity>uncommon</rarity>
     <real_name>Sharon Ventura</real_name>
     <dimensions>1x1</dimensions>
     <point_values>[75]</point_values>
+    <properties>[]</properties>
     <team_abilities>[]</team_abilities>
     <keywords>["Fantastic Four", "Frightful Four", "Monster"]</keywords>
     <special_powers>[
@@ -2561,7 +2664,10 @@
   {
     "type": "speed", 
     "name": "COMING AFTER THOSE THAT HURT ME", 
-    "description": "Leap/Climb. When She-Thing uses it, after resolutions she may make a close attack."
+    "description": "Leap/Climb. When She-Thing uses it, after resolutions she may make a close attack.", 
+    "powers": [
+      "leap_climb"
+    ]
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
@@ -2576,19 +2682,8 @@
     <dial_size>12</dial_size>
     <dial>[
   {
-    "click_number": 0, 
-    "starting_line": true, 
-    "speed_power": "special", 
-    "speed_value": 8, 
-    "attack_power": "super_strength", 
-    "attack_value": 11, 
-    "defense_power": "impervious", 
-    "defense_value": 17, 
-    "damage_power": "battle_fury", 
-    "damage_value": 4
-  }, 
-  {
     "click_number": 1, 
+    "starting_line": true, 
     "speed_power": "special", 
     "speed_value": 8, 
     "attack_power": "super_strength", 
@@ -2603,16 +2698,16 @@
     "speed_power": "special", 
     "speed_value": 8, 
     "attack_power": "super_strength", 
-    "attack_value": 10, 
-    "defense_power": "invincible", 
+    "attack_value": 11, 
+    "defense_power": "impervious", 
     "defense_value": 17, 
-    "damage_power": "close_combat_expert", 
-    "damage_value": 3
+    "damage_power": "battle_fury", 
+    "damage_value": 4
   }, 
   {
     "click_number": 3, 
-    "speed_power": "sidestep", 
-    "speed_value": 7, 
+    "speed_power": "special", 
+    "speed_value": 8, 
     "attack_power": "super_strength", 
     "attack_value": 10, 
     "defense_power": "invincible", 
@@ -2624,6 +2719,17 @@
     "click_number": 4, 
     "speed_power": "sidestep", 
     "speed_value": 7, 
+    "attack_power": "super_strength", 
+    "attack_value": 10, 
+    "defense_power": "invincible", 
+    "defense_value": 17, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
     "attack_power": "quake", 
     "attack_value": 10, 
     "defense_power": "invulnerability", 
@@ -2632,7 +2738,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 5, 
+    "click_number": 6, 
     "speed_power": "sidestep", 
     "speed_value": 7, 
     "attack_power": "quake", 
@@ -2650,18 +2756,21 @@
     <collector_number>029</collector_number>
     <name>Klaw</name>
     <type>character</type>
-    <age>modern</age>
     <rarity>uncommon</rarity>
     <real_name>Ulysses Klaue</real_name>
     <dimensions>1x1</dimensions>
     <point_values>[75]</point_values>
+    <properties>[]</properties>
     <team_abilities>["masters_of_evil"]</team_abilities>
     <keywords>["A.I.M.", "Frightful Four", "Masters of Evil", "Scientist"]</keywords>
     <special_powers>[
   {
     "type": "trait", 
     "name": "FRIGHTFUL FOUR: SONIC WAVE", 
-    "description": "Friendly characters with the Frightful Four keyword can use Energy Shield/Deflection."
+    "description": "Friendly characters with the Frightful Four keyword can use Energy Shield/Deflection.", 
+    "powers": [
+      "energy_shield_deflection"
+    ]
   }, 
   {
     "type": "trait", 
@@ -2671,7 +2780,11 @@
   {
     "type": "defense", 
     "name": "CAN'T TOUCH US!", 
-    "description": "Barrier, Invulnerability.  When Klaw uses Barrier, he may count range and draw line of fire from the square of a friendly character with the Frightful Four keyword."
+    "description": "Barrier, Invulnerability.  When Klaw uses Barrier, he may count range and draw line of fire from the square of a friendly character with the Frightful Four keyword.", 
+    "powers": [
+      "barrier", 
+      "invulnerability"
+    ]
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
@@ -2686,7 +2799,7 @@
     <dial_size>12</dial_size>
     <dial>[
   {
-    "click_number": 0, 
+    "click_number": 1, 
     "starting_line": true, 
     "speed_power": "phasing_teleport", 
     "speed_value": 10, 
@@ -2697,7 +2810,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 1, 
+    "click_number": 2, 
     "speed_power": "phasing_teleport", 
     "speed_value": 9, 
     "attack_value": 11, 
@@ -2707,7 +2820,7 @@
     "damage_value": 2
   }, 
   {
-    "click_number": 2, 
+    "click_number": 3, 
     "speed_power": "running_shot", 
     "speed_value": 9, 
     "attack_power": "pulse_wave", 
@@ -2717,7 +2830,7 @@
     "damage_value": 2
   }, 
   {
-    "click_number": 3, 
+    "click_number": 4, 
     "speed_power": "running_shot", 
     "speed_value": 9, 
     "attack_power": "pulse_wave", 
@@ -2727,7 +2840,7 @@
     "damage_value": 2
   }, 
   {
-    "click_number": 4, 
+    "click_number": 5, 
     "speed_power": "running_shot", 
     "speed_value": 8, 
     "attack_power": "pulse_wave", 
@@ -2737,7 +2850,7 @@
     "damage_value": 2
   }, 
   {
-    "click_number": 5, 
+    "click_number": 6, 
     "speed_power": "phasing_teleport", 
     "speed_value": 7, 
     "attack_value": 10, 
@@ -2753,18 +2866,22 @@
     <collector_number>030</collector_number>
     <name>Firelord</name>
     <type>character</type>
-    <age>modern</age>
     <rarity>uncommon</rarity>
     <real_name>Pyreus Kril</real_name>
     <dimensions>1x1</dimensions>
     <point_values>[150, 40]</point_values>
+    <properties>[]</properties>
     <team_abilities>["power_cosmic"]</team_abilities>
     <keywords>["Cosmic", "Herald", "Nova Corps"]</keywords>
     <special_powers>[
   {
     "type": "attack", 
     "name": "COSMIC HEAT BEYOND COMPARE", 
-    "description": "Energy Explosion, Poison. When Firelord uses Energy Explosion, after resolutions deal X damage to each hit character, where X is the number of other opposing characters adjacent to that character."
+    "description": "Energy Explosion, Poison. When Firelord uses Energy Explosion, after resolutions deal X damage to each hit character, where X is the number of other opposing characters adjacent to that character.", 
+    "powers": [
+      "energy_explosion", 
+      "poison"
+    ]
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
@@ -2779,23 +2896,13 @@
     <dial_size>12</dial_size>
     <dial>[
   {
-    "click_number": 0, 
+    "click_number": 1, 
     "starting_line": true, 
     "speed_power": "running_shot", 
     "speed_value": 10, 
     "attack_power": "special", 
     "attack_value": 12, 
     "defense_power": "invincible", 
-    "defense_value": 18, 
-    "damage_value": 4
-  }, 
-  {
-    "click_number": 1, 
-    "speed_power": "running_shot", 
-    "speed_value": 10, 
-    "attack_power": "special", 
-    "attack_value": 11, 
-    "defense_power": "impervious", 
     "defense_value": 18, 
     "damage_value": 4
   }, 
@@ -2811,11 +2918,11 @@
   }, 
   {
     "click_number": 3, 
-    "speed_power": "sidestep", 
+    "speed_power": "running_shot", 
     "speed_value": 10, 
-    "attack_power": "pulse_wave", 
+    "attack_power": "special", 
     "attack_value": 11, 
-    "defense_power": "invulnerability", 
+    "defense_power": "impervious", 
     "defense_value": 18, 
     "damage_value": 4
   }, 
@@ -2827,10 +2934,20 @@
     "attack_value": 11, 
     "defense_power": "invulnerability", 
     "defense_value": 18, 
-    "damage_value": 3
+    "damage_value": 4
   }, 
   {
     "click_number": 5, 
+    "speed_power": "sidestep", 
+    "speed_value": 10, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 11, 
+    "defense_power": "invulnerability", 
+    "defense_value": 18, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 6, 
     "speed_power": "hypersonic_speed", 
     "speed_value": 10, 
     "attack_value": 11, 
@@ -2840,7 +2957,7 @@
     "starting_line": true
   }, 
   {
-    "click_number": 6, 
+    "click_number": 7, 
     "speed_power": "hypersonic_speed", 
     "speed_value": 9, 
     "attack_power": "precision_strike", 
@@ -2850,7 +2967,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 7, 
+    "click_number": 8, 
     "speed_power": "hypersonic_speed", 
     "speed_value": 8, 
     "attack_power": "precision_strike", 
@@ -2867,18 +2984,21 @@
     <collector_number>031a</collector_number>
     <name>Punisher</name>
     <type>character</type>
-    <age>modern</age>
     <rarity>uncommon</rarity>
     <real_name>N/A</real_name>
     <dimensions>1x1</dimensions>
     <point_values>[30]</point_values>
+    <properties>[]</properties>
     <team_abilities>["power_cosmic"]</team_abilities>
     <keywords>["Cosmic", "Herald", "Robot"]</keywords>
     <special_powers>[
   {
     "type": "speed", 
     "name": "UNRELENTING FLURRY OF PUNCHES", 
-    "description": "Flurry. When Punisher uses it, if each attack hits a different target, he may make an additional close attack."
+    "description": "Flurry. When Punisher uses it, if each attack hits a different target, he may make an additional close attack.", 
+    "powers": [
+      "flurry"
+    ]
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
@@ -2893,18 +3013,8 @@
     <dial_size>12</dial_size>
     <dial>[
   {
-    "click_number": 0, 
-    "starting_line": true, 
-    "speed_power": "special", 
-    "speed_value": 8, 
-    "attack_value": 10, 
-    "defense_power": "toughness", 
-    "defense_value": 17, 
-    "damage_power": "battle_fury", 
-    "damage_value": 3
-  }, 
-  {
     "click_number": 1, 
+    "starting_line": true, 
     "speed_power": "special", 
     "speed_value": 8, 
     "attack_value": 10, 
@@ -2925,6 +3035,16 @@
   }, 
   {
     "click_number": 3, 
+    "speed_power": "special", 
+    "speed_value": 8, 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "battle_fury", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
     "speed_power": "special", 
     "speed_value": 8, 
     "attack_value": 10, 
@@ -2941,12 +3061,11 @@
     <collector_number>031b</collector_number>
     <name>Punisher</name>
     <type>character</type>
-    <age>modern</age>
     <rarity>uncommon</rarity>
     <real_name>N/A</real_name>
-    <special_type>prime</special_type>
     <dimensions>1x1</dimensions>
     <point_values>[125, 75]</point_values>
+    <properties>["prime"]</properties>
     <team_abilities>["power_cosmic"]</team_abilities>
     <keywords>["Cosmic", "Frightful Four", "Herald", "Robot"]</keywords>
     <special_powers>[
@@ -2958,12 +3077,19 @@
   {
     "type": "trait", 
     "name": "MERCILESS, HARD-CORE MASS OF MAYHEM!", 
-    "description": "Close Combat Expert, Colossal Stamina, Giant Reach: 2."
+    "description": "Close Combat Expert, Colossal Stamina, Giant Reach: 2.", 
+    "powers": [
+      "close_combat_expert"
+    ]
   }, 
   {
     "type": "speed", 
     "name": "HE'S UNSTOPPABLE!", 
-    "description": "Charge, Flurry."
+    "description": "Charge, Flurry.", 
+    "powers": [
+      "charge", 
+      "flurry"
+    ]
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
@@ -2978,7 +3104,7 @@
     <dial_size>12</dial_size>
     <dial>[
   {
-    "click_number": 0, 
+    "click_number": 1, 
     "starting_line": true, 
     "speed_power": "special", 
     "speed_value": 10, 
@@ -2988,7 +3114,7 @@
     "damage_value": 4
   }, 
   {
-    "click_number": 1, 
+    "click_number": 2, 
     "speed_power": "charge", 
     "speed_value": 10, 
     "attack_power": "quake", 
@@ -2998,7 +3124,7 @@
     "damage_value": 4
   }, 
   {
-    "click_number": 2, 
+    "click_number": 3, 
     "speed_power": "charge", 
     "speed_value": 9, 
     "attack_power": "quake", 
@@ -3008,7 +3134,7 @@
     "damage_value": 4
   }, 
   {
-    "click_number": 3, 
+    "click_number": 4, 
     "speed_power": "hypersonic_speed", 
     "speed_value": 9, 
     "attack_value": 11, 
@@ -3018,7 +3144,7 @@
     "starting_line": true
   }, 
   {
-    "click_number": 4, 
+    "click_number": 5, 
     "speed_power": "charge", 
     "speed_value": 8, 
     "attack_power": "quake", 
@@ -3028,7 +3154,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 5, 
+    "click_number": 6, 
     "speed_power": "sidestep", 
     "speed_value": 8, 
     "attack_power": "quake", 
@@ -3039,7 +3165,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 6, 
+    "click_number": 7, 
     "speed_power": "sidestep", 
     "speed_value": 8, 
     "attack_power": "steal_energy", 
@@ -3050,7 +3176,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 7, 
+    "click_number": 8, 
     "speed_power": "special", 
     "speed_value": 7, 
     "attack_power": "steal_energy", 
@@ -3061,7 +3187,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 8, 
+    "click_number": 9, 
     "speed_power": "special", 
     "speed_value": 7, 
     "attack_power": "steal_energy", 
@@ -3079,11 +3205,11 @@
     <collector_number>032</collector_number>
     <name>Triton</name>
     <type>character</type>
-    <age>modern</age>
     <rarity>uncommon</rarity>
     <real_name>Triton Mander-Azur</real_name>
     <dimensions>1x1</dimensions>
     <point_values>[40]</point_values>
+    <properties>[]</properties>
     <team_abilities>[]</team_abilities>
     <keywords>["Inhumans", "Soldier"]</keywords>
     <special_powers>[
@@ -3095,7 +3221,11 @@
   {
     "type": "speed", 
     "name": "ATTACK FROM THE DEPTHS", 
-    "description": "Charge. Hypersonic Speed, but only if Triton occupies water terrain when activating it."
+    "description": "Charge. Hypersonic Speed, but only if Triton occupies water terrain when activating it.", 
+    "powers": [
+      "charge", 
+      "hypersonic_speed"
+    ]
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
@@ -3110,7 +3240,7 @@
     <dial_size>12</dial_size>
     <dial>[
   {
-    "click_number": 0, 
+    "click_number": 1, 
     "starting_line": true, 
     "speed_power": "special", 
     "speed_value": 8, 
@@ -3122,7 +3252,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 1, 
+    "click_number": 2, 
     "speed_power": "special", 
     "speed_value": 8, 
     "attack_power": "precision_strike", 
@@ -3133,7 +3263,7 @@
     "damage_value": 2
   }, 
   {
-    "click_number": 2, 
+    "click_number": 3, 
     "speed_power": "special", 
     "speed_value": 8, 
     "attack_power": "precision_strike", 
@@ -3143,7 +3273,7 @@
     "damage_value": 2
   }, 
   {
-    "click_number": 3, 
+    "click_number": 4, 
     "speed_power": "flurry", 
     "speed_value": 7, 
     "attack_power": "blades_claws_fangs", 
@@ -3153,7 +3283,7 @@
     "damage_value": 2
   }, 
   {
-    "click_number": 4, 
+    "click_number": 5, 
     "speed_power": "flurry", 
     "speed_value": 7, 
     "attack_power": "blades_claws_fangs", 
@@ -3171,11 +3301,11 @@
     <collector_number>033</collector_number>
     <name>Mr. Fantastic</name>
     <type>character</type>
-    <age>modern</age>
     <rarity>rare</rarity>
     <real_name>Reed Richards</real_name>
     <dimensions>1x1</dimensions>
     <point_values>[75, 60]</point_values>
+    <properties>[]</properties>
     <team_abilities>["fantastic_four"]</team_abilities>
     <keywords>["Avengers", "Fantastic Four", "Illuminati", "Scientist"]</keywords>
     <special_powers>[
@@ -3187,12 +3317,18 @@
   {
     "type": "trait", 
     "name": "RETURN OF THE FANTASTIC FOUR", 
-    "description": "Friendly characters with the Fantastic Four keyword within 4 squares can use Leadership."
+    "description": "Friendly characters with the Fantastic Four keyword within 4 squares can use Leadership.", 
+    "powers": [
+      "leadership"
+    ]
   }, 
   {
     "type": "damage", 
     "name": "LONG-RANGE PLANNING", 
-    "description": "Outwit with a range of 10. Protected: Outwit."
+    "description": "Outwit with a range of 10. Protected: Outwit.", 
+    "powers": [
+      "outwit"
+    ]
   }
 ]</special_powers>
     <improved_movement>["elevated"]</improved_movement>
@@ -3207,19 +3343,8 @@
     <dial_size>12</dial_size>
     <dial>[
   {
-    "click_number": 0, 
-    "starting_line": true, 
-    "speed_power": "plasticity", 
-    "speed_value": 8, 
-    "attack_power": "quake", 
-    "attack_value": 11, 
-    "defense_power": "combat_reflexes", 
-    "defense_value": 18, 
-    "damage_power": "special", 
-    "damage_value": 3
-  }, 
-  {
     "click_number": 1, 
+    "starting_line": true, 
     "speed_power": "plasticity", 
     "speed_value": 8, 
     "attack_power": "quake", 
@@ -3232,6 +3357,17 @@
   {
     "click_number": 2, 
     "speed_power": "plasticity", 
+    "speed_value": 8, 
+    "attack_power": "quake", 
+    "attack_value": 11, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 18, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "plasticity", 
     "speed_value": 7, 
     "attack_power": "quake", 
     "attack_value": 10, 
@@ -3242,20 +3378,9 @@
     "starting_line": true
   }, 
   {
-    "click_number": 3, 
-    "speed_power": "plasticity", 
-    "speed_value": 7, 
-    "attack_power": "steal_energy", 
-    "attack_value": 10, 
-    "defense_power": "toughness", 
-    "defense_value": 17, 
-    "damage_power": "close_combat_expert", 
-    "damage_value": 2
-  }, 
-  {
     "click_number": 4, 
     "speed_power": "plasticity", 
-    "speed_value": 6, 
+    "speed_value": 7, 
     "attack_power": "steal_energy", 
     "attack_value": 10, 
     "defense_power": "toughness", 
@@ -3268,7 +3393,7 @@
     "speed_power": "plasticity", 
     "speed_value": 6, 
     "attack_power": "steal_energy", 
-    "attack_value": 9, 
+    "attack_value": 10, 
     "defense_power": "toughness", 
     "defense_value": 17, 
     "damage_power": "close_combat_expert", 
@@ -3276,6 +3401,17 @@
   }, 
   {
     "click_number": 6, 
+    "speed_power": "plasticity", 
+    "speed_value": 6, 
+    "attack_power": "steal_energy", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 7, 
     "speed_power": "plasticity", 
     "speed_value": 6, 
     "attack_power": "steal_energy", 
@@ -3293,18 +3429,21 @@
     <collector_number>034</collector_number>
     <name>Invisible Woman</name>
     <type>character</type>
-    <age>modern</age>
     <rarity>rare</rarity>
     <real_name>Susan Richards</real_name>
     <dimensions>1x1</dimensions>
     <point_values>[75, 60]</point_values>
+    <properties>[]</properties>
     <team_abilities>["fantastic_four", "shield"]</team_abilities>
     <keywords>["Avengers", "Celebrity", "Fantastic Four", "Lady Liberators", "S.H.I.E.L.D.", "Spy"]</keywords>
     <special_powers>[
   {
     "type": "trait", 
     "name": "YEAH, MY POWER SET IS REALLY GOOD FOR ESPIONAGE", 
-    "description": "Stealth, [Improved Targeting: Hindering]. Adjacent friendly characters that share a keyword (with her) can use Stealth and [Improved Targeting: Hindering]."
+    "description": "Stealth, [Improved Targeting: Hindering]. Adjacent friendly characters that share a keyword (with her) can use Stealth and [Improved Targeting: Hindering].", 
+    "powers": [
+      "stealth"
+    ]
   }, 
   {
     "type": "trait", 
@@ -3314,7 +3453,10 @@
   {
     "type": "attack", 
     "name": "I WON'T KILL ANYONE", 
-    "description": "Incapacitate. When Invisible Woman uses it, after resolutions hit characters modify attack -1 until your next turn."
+    "description": "Incapacitate. When Invisible Woman uses it, after resolutions hit characters modify attack -1 until your next turn.", 
+    "powers": [
+      "incapacitate"
+    ]
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
@@ -3329,7 +3471,7 @@
     <dial_size>12</dial_size>
     <dial>[
   {
-    "click_number": 0, 
+    "click_number": 1, 
     "starting_line": true, 
     "speed_power": "running_shot", 
     "speed_value": 9, 
@@ -3341,7 +3483,7 @@
     "damage_value": 2
   }, 
   {
-    "click_number": 1, 
+    "click_number": 2, 
     "speed_power": "running_shot", 
     "speed_value": 9, 
     "attack_power": "special", 
@@ -3352,7 +3494,7 @@
     "damage_value": 2
   }, 
   {
-    "click_number": 2, 
+    "click_number": 3, 
     "speed_power": "running_shot", 
     "speed_value": 9, 
     "attack_power": "special", 
@@ -3364,7 +3506,7 @@
     "starting_line": true
   }, 
   {
-    "click_number": 3, 
+    "click_number": 4, 
     "speed_power": "force_blast", 
     "speed_value": 8, 
     "attack_power": "precision_strike", 
@@ -3375,7 +3517,7 @@
     "damage_value": 1
   }, 
   {
-    "click_number": 4, 
+    "click_number": 5, 
     "speed_power": "force_blast", 
     "speed_value": 8, 
     "attack_power": "precision_strike", 
@@ -3385,7 +3527,7 @@
     "damage_value": 1
   }, 
   {
-    "click_number": 5, 
+    "click_number": 6, 
     "speed_power": "force_blast", 
     "speed_value": 7, 
     "attack_power": "precision_strike", 
@@ -3395,7 +3537,7 @@
     "damage_value": 1
   }, 
   {
-    "click_number": 6, 
+    "click_number": 7, 
     "speed_power": "force_blast", 
     "speed_value": 7, 
     "attack_power": "precision_strike", 
@@ -3412,23 +3554,29 @@
     <collector_number>035</collector_number>
     <name>Human Torch</name>
     <type>character</type>
-    <age>modern</age>
     <rarity>rare</rarity>
     <real_name>Johnny Storm</real_name>
     <dimensions>1x1</dimensions>
     <point_values>[75]</point_values>
+    <properties>[]</properties>
     <team_abilities>["fantastic_four"]</team_abilities>
     <keywords>["Avengers", "Celebrity", "Fantastic Four", "Inhumans", "Negative Zone"]</keywords>
     <special_powers>[
   {
     "type": "trait", 
     "name": "RETURN OF THE FANTASTIC FOUR", 
-    "description": "Friendly characters with the Fantastic Four keyword within 4 squares can use Enhancement."
+    "description": "Friendly characters with the Fantastic Four keyword within 4 squares can use Enhancement.", 
+    "powers": [
+      "enhancement"
+    ]
   }, 
   {
     "type": "attack", 
     "name": "TASTE NOVA BLAST, GALACTUS", 
-    "description": "Pulse Wave. When Human Torch uses it, after resolutions, you may choose an opposing character that can use PROTECTED: Pulse Wave or Protected: Pulse Wave within half his range and line of fire and deal that character 1 penetraring damage (This includes STOP clicks.)"
+    "description": "Pulse Wave. When Human Torch uses it, after resolutions, you may choose an opposing character that can use PROTECTED: Pulse Wave or Protected: Pulse Wave within half his range and line of fire and deal that character 1 penetraring damage (This includes STOP clicks.)", 
+    "powers": [
+      "pulse_wave"
+    ]
   }, 
   {
     "type": "damage", 
@@ -3448,7 +3596,7 @@
     <dial_size>12</dial_size>
     <dial>[
   {
-    "click_number": 0, 
+    "click_number": 1, 
     "starting_line": true, 
     "speed_power": "running_shot", 
     "speed_value": 11, 
@@ -3460,7 +3608,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 1, 
+    "click_number": 2, 
     "speed_power": "running_shot", 
     "speed_value": 10, 
     "attack_power": "special", 
@@ -3471,7 +3619,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 2, 
+    "click_number": 3, 
     "speed_power": "running_shot", 
     "speed_value": 10, 
     "attack_power": "special", 
@@ -3479,24 +3627,15 @@
     "defense_power": "energy_shield_deflection", 
     "defense_value": 17, 
     "damage_power": "special", 
-    "damage_value": 3
-  }, 
-  {
-    "click_number": 3, 
-    "speed_power": "hypersonic_speed", 
-    "speed_value": 10, 
-    "attack_value": 10, 
-    "defense_power": "energy_shield_deflection", 
-    "defense_value": 17, 
-    "damage_power": "special", 
-    "damage_value": 3
+    "damage_value": 3, 
+    "starting_line": true
   }, 
   {
     "click_number": 4, 
     "speed_power": "hypersonic_speed", 
     "speed_value": 10, 
     "attack_value": 10, 
-    "defense_power": "super_senses", 
+    "defense_power": "energy_shield_deflection", 
     "defense_value": 17, 
     "damage_power": "special", 
     "damage_value": 3
@@ -3504,110 +3643,25 @@
   {
     "click_number": 5, 
     "speed_power": "hypersonic_speed", 
-    "speed_value": 9, 
+    "speed_value": 10, 
     "attack_value": 10, 
     "defense_power": "super_senses", 
-    "defense_value": 16, 
-    "damage_power": "ranged_combat_expert", 
+    "defense_value": 17, 
+    "damage_power": "special", 
     "damage_value": 3
   }, 
   {
     "click_number": 6, 
     "speed_power": "hypersonic_speed", 
     "speed_value": 9, 
-    "attack_value": 9, 
-    "defense_power": "super_senses", 
-    "defense_value": 16, 
-    "damage_power": "ranged_combat_expert", 
-    "damage_value": 3
-  }
-]</dial>
-  </row>
-  <row>
-    <unit_id>f4035e</unit_id>
-    <set_id>f4</set_id>
-    <collector_number>035e</collector_number>
-    <name>Human Torch</name>
-    <type>character</type>
-    <age>modern</age>
-    <rarity>rare</rarity>
-    <real_name>Johnny Storm</real_name>
-    <dimensions>1x1</dimensions>
-    <point_values>[60]</point_values>
-    <team_abilities>["fantastic_four"]</team_abilities>
-    <keywords>["Avengers", "Celebrity", "Fantastic Four", "Inhumans", "Negative Zone"]</keywords>
-    <special_powers>[
-  {
-    "type": "trait", 
-    "name": "RETURN OF THE FANTASTIC FOUR", 
-    "description": "Friendly characters with the Fantastic Four keyword within 4 squares can use Enhancement."
-  }, 
-  {
-    "type": "attack", 
-    "name": "TASTE NOVA BLAST, GALACTUS", 
-    "description": "Pulse Wave. When Human Torch uses it, after resolutions, you may choose an opposing character that can use PROTECTED: Pulse Wave or Protected: Pulse Wave within half his range and line of fire and deal that character 1 penetraring damage (This includes STOP clicks.)"
-  }, 
-  {
-    "type": "damage", 
-    "name": "ABSORB FLAME", 
-    "description": "Human Torch and adjacent friendly characters take no damage from Energy Explosion or Poison."
-  }
-]</special_powers>
-    <improved_movement>[]</improved_movement>
-    <improved_targeting>[]</improved_targeting>
-    <object_keyphrases>[]</object_keyphrases>
-    <unit_range>6</unit_range>
-    <targets>1</targets>
-    <speed_type>wing</speed_type>
-    <attack_type>fist</attack_type>
-    <defense_type>shield</defense_type>
-    <damage_type>starburst</damage_type>
-    <dial_size>12</dial_size>
-    <dial>[
-  {
-    "click_number": 0, 
-    "starting_line": true, 
-    "speed_power": "running_shot", 
-    "speed_value": 10, 
-    "attack_power": "special", 
     "attack_value": 10, 
-    "defense_power": "energy_shield_deflection", 
-    "defense_value": 17, 
-    "damage_power": "special", 
-    "damage_value": 3
-  }, 
-  {
-    "click_number": 1, 
-    "speed_power": "hypersonic_speed", 
-    "speed_value": 10, 
-    "attack_value": 10, 
-    "defense_power": "energy_shield_deflection", 
-    "defense_value": 17, 
-    "damage_power": "special", 
-    "damage_value": 3
-  }, 
-  {
-    "click_number": 2, 
-    "speed_power": "hypersonic_speed", 
-    "speed_value": 10, 
-    "attack_value": 10, 
-    "defense_power": "super_senses", 
-    "defense_value": 17, 
-    "damage_power": "special", 
-    "damage_value": 3
-  }, 
-  {
-    "click_number": 3, 
-    "speed_power": "hypersonic_speed", 
-    "speed_value": 9, 
-    "attack_value": 9, 
     "defense_power": "super_senses", 
     "defense_value": 16, 
     "damage_power": "ranged_combat_expert", 
     "damage_value": 3
   }, 
   {
-    "click_number": 4, 
+    "click_number": 7, 
     "speed_power": "hypersonic_speed", 
     "speed_value": 9, 
     "attack_value": 9, 
@@ -3624,11 +3678,11 @@
     <collector_number>036</collector_number>
     <name>The Thing</name>
     <type>character</type>
-    <age>modern</age>
     <rarity>rare</rarity>
     <real_name>Ben Grimm</real_name>
     <dimensions>1x1</dimensions>
     <point_values>[75, 60]</point_values>
+    <properties>[]</properties>
     <team_abilities>["fantastic_four"]</team_abilities>
     <keywords>["Avengers", "Celebrity", "Fantastic Four", "Guardians of the Galaxy"]</keywords>
     <special_powers>[
@@ -3640,7 +3694,10 @@
   {
     "type": "trait", 
     "name": "RETURN OF THE FANTASTIC FOUR", 
-    "description": "Friendly characters with the Fantastic Four keyword within 4 squares can use Empower."
+    "description": "Friendly characters with the Fantastic Four keyword within 4 squares can use Empower.", 
+    "powers": [
+      "empower"
+    ]
   }, 
   {
     "type": "attack", 
@@ -3660,18 +3717,8 @@
     <dial_size>12</dial_size>
     <dial>[
   {
-    "click_number": 0, 
-    "starting_line": true, 
-    "speed_power": "charge", 
-    "speed_value": 8, 
-    "attack_power": "super_strength", 
-    "attack_value": 11, 
-    "defense_power": "invincible", 
-    "defense_value": 18, 
-    "damage_value": 3
-  }, 
-  {
     "click_number": 1, 
+    "starting_line": true, 
     "speed_power": "charge", 
     "speed_value": 8, 
     "attack_power": "super_strength", 
@@ -3685,6 +3732,16 @@
     "speed_power": "charge", 
     "speed_value": 8, 
     "attack_power": "super_strength", 
+    "attack_value": 11, 
+    "defense_power": "invincible", 
+    "defense_value": 18, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "charge", 
+    "speed_value": 8, 
+    "attack_power": "super_strength", 
     "attack_value": 10, 
     "defense_power": "impervious", 
     "defense_value": 18, 
@@ -3692,22 +3749,12 @@
     "starting_line": true
   }, 
   {
-    "click_number": 3, 
+    "click_number": 4, 
     "speed_power": "sidestep", 
     "speed_value": 8, 
     "attack_power": "super_strength", 
     "attack_value": 10, 
     "defense_power": "impervious", 
-    "defense_value": 17, 
-    "damage_value": 3
-  }, 
-  {
-    "click_number": 4, 
-    "speed_power": "sidestep", 
-    "speed_value": 7, 
-    "attack_power": "special", 
-    "attack_value": 10, 
-    "defense_power": "invulnerability", 
     "defense_value": 17, 
     "damage_value": 3
   }, 
@@ -3723,6 +3770,16 @@
   }, 
   {
     "click_number": 6, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 7, 
     "speed_power": "sidestep", 
     "speed_value": 6, 
     "attack_power": "special", 
@@ -3740,10 +3797,10 @@
     <collector_number>036bt</collector_number>
     <name>Alicia Grimm</name>
     <type>bystander</type>
-    <age>modern</age>
     <rarity>rare</rarity>
     <dimensions>1x1</dimensions>
     <point_values>[]</point_values>
+    <properties>[]</properties>
     <team_abilities>[]</team_abilities>
     <keywords>[]</keywords>
     <special_powers>[
@@ -3764,7 +3821,7 @@
     <dial_size>1</dial_size>
     <dial>[
   {
-    "click_number": 0, 
+    "click_number": 1, 
     "starting_line": true, 
     "speed_power": "sidestep", 
     "speed_value": 5, 
@@ -3782,11 +3839,11 @@
     <collector_number>037</collector_number>
     <name>Dr. Fantastic</name>
     <type>character</type>
-    <age>modern</age>
     <rarity>rare</rarity>
     <real_name>Reed Richards</real_name>
     <dimensions>1x1</dimensions>
     <point_values>[100]</point_values>
+    <properties>[]</properties>
     <team_abilities>["minions_of_doom"]</team_abilities>
     <keywords>["Earth X", "Fantastic Four", "Latveria", "Ruler", "Scientist"]</keywords>
     <special_powers>[
@@ -3804,7 +3861,11 @@
   {
     "type": "damage", 
     "name": "STRETCH MY OWN BRAIN TO THE LIMIT", 
-    "description": "Outwit, Perplex. // FREE: Choose Outwit or Perplex. Dr. Fantastic can use the chosen power an additional time this turn."
+    "description": "Outwit, Perplex. // FREE: Choose Outwit or Perplex. Dr. Fantastic can use the chosen power an additional time this turn.", 
+    "powers": [
+      "outwit", 
+      "perplex"
+    ]
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
@@ -3819,7 +3880,7 @@
     <dial_size>12</dial_size>
     <dial>[
   {
-    "click_number": 0, 
+    "click_number": 1, 
     "starting_line": true, 
     "speed_power": "stealth", 
     "speed_value": 8, 
@@ -3831,21 +3892,10 @@
     "damage_value": 2
   }, 
   {
-    "click_number": 1, 
+    "click_number": 2, 
     "speed_power": "stealth", 
     "speed_value": 7, 
     "attack_power": "energy_explosion", 
-    "attack_value": 10, 
-    "defense_power": "impervious", 
-    "defense_value": 18, 
-    "damage_power": "special", 
-    "damage_value": 2
-  }, 
-  {
-    "click_number": 2, 
-    "speed_power": "plasticity", 
-    "speed_value": 7, 
-    "attack_power": "penetrating_psychic_blast", 
     "attack_value": 10, 
     "defense_power": "impervious", 
     "defense_value": 18, 
@@ -3859,12 +3909,23 @@
     "attack_power": "penetrating_psychic_blast", 
     "attack_value": 10, 
     "defense_power": "impervious", 
-    "defense_value": 17, 
+    "defense_value": 18, 
     "damage_power": "special", 
     "damage_value": 2
   }, 
   {
     "click_number": 4, 
+    "speed_power": "plasticity", 
+    "speed_value": 7, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 10, 
+    "defense_power": "impervious", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
     "speed_power": "sidestep", 
     "speed_value": 6, 
     "attack_value": 10, 
@@ -3874,7 +3935,7 @@
     "damage_value": 2
   }, 
   {
-    "click_number": 5, 
+    "click_number": 6, 
     "speed_power": "sidestep", 
     "speed_value": 6, 
     "attack_power": "special", 
@@ -3885,7 +3946,7 @@
     "damage_value": 2
   }, 
   {
-    "click_number": 6, 
+    "click_number": 7, 
     "speed_power": "sidestep", 
     "speed_value": 6, 
     "attack_power": "special", 
@@ -3903,10 +3964,10 @@
     <collector_number>037bt</collector_number>
     <name>Franklin Galactus</name>
     <type>bystander</type>
-    <age>modern</age>
     <rarity>rare</rarity>
     <dimensions>1x1</dimensions>
     <point_values>[]</point_values>
+    <properties>[]</properties>
     <team_abilities>["power_cosmic"]</team_abilities>
     <keywords>[]</keywords>
     <special_powers>[
@@ -3928,7 +3989,7 @@
     <dial_size>1</dial_size>
     <dial>[
   {
-    "click_number": 0, 
+    "click_number": 1, 
     "starting_line": true, 
     "speed_value": 0, 
     "attack_power": "pulse_wave", 
@@ -3945,18 +4006,21 @@
     <collector_number>038</collector_number>
     <name>Human Torch</name>
     <type>character</type>
-    <age>modern</age>
     <rarity>rare</rarity>
     <real_name>Susan Storm</real_name>
     <dimensions>1x1</dimensions>
     <point_values>[40]</point_values>
+    <properties>[]</properties>
     <team_abilities>["fantastic_four"]</team_abilities>
     <keywords>["Fantastic Four"]</keywords>
     <special_powers>[
   {
     "type": "trait", 
     "name": "FLARE UP, I'M NOT SURE HOW TO CONTROL IT", 
-    "description": "Poison, but if she's adjacent to an opposing character she also damages adjacent friendly characters."
+    "description": "Poison, but if she's adjacent to an opposing character she also damages adjacent friendly characters.", 
+    "powers": [
+      "poison"
+    ]
   }, 
   {
     "type": "trait", 
@@ -3976,7 +4040,7 @@
     <dial_size>12</dial_size>
     <dial>[
   {
-    "click_number": 0, 
+    "click_number": 1, 
     "starting_line": true, 
     "speed_power": "running_shot", 
     "speed_value": 10, 
@@ -3987,7 +4051,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 1, 
+    "click_number": 2, 
     "speed_power": "sidestep", 
     "speed_value": 10, 
     "attack_power": "pulse_wave", 
@@ -3997,7 +4061,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 2, 
+    "click_number": 3, 
     "speed_power": "hypersonic_speed", 
     "speed_value": 10, 
     "attack_power": "precision_strike", 
@@ -4007,7 +4071,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 3, 
+    "click_number": 4, 
     "speed_power": "sidestep", 
     "speed_value": 10, 
     "attack_value": 10, 
@@ -4017,7 +4081,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 4, 
+    "click_number": 5, 
     "speed_power": "running_shot", 
     "speed_value": 10, 
     "attack_power": "penetrating_psychic_blast", 
@@ -4034,12 +4098,11 @@
     <collector_number>039</collector_number>
     <name>Franklin Richards</name>
     <type>character</type>
-    <age>modern</age>
     <rarity>rare</rarity>
     <real_name>Franklin Richards</real_name>
-    <special_type>unique</special_type>
     <dimensions>1x1</dimensions>
     <point_values>[65]</point_values>
+    <properties>["unique"]</properties>
     <team_abilities>["fantastic_four"]</team_abilities>
     <keywords>["Cosmic", "Fantastic Four"]</keywords>
     <special_powers>[
@@ -4056,7 +4119,57 @@
   {
     "type": "attack", 
     "name": "EVERYTIME I USE MY POWERS, I GET CLOSER TO LOSING THEM", 
-    "description": "FREE: Choose 3 standard powers. Franklin Richards can use the chosen powers until your next turn. // At the end of your turn, if Franklin Richards activated this power or made an attack, roll a d6. Deal him unavoidable damage equal to half the result."
+    "description": "FREE: Choose 3 standard powers. Franklin Richards can use the chosen powers until your next turn. // At the end of your turn, if Franklin Richards activated this power or made an attack, roll a d6. Deal him unavoidable damage equal to half the result.", 
+    "powers": [
+      "flurry", 
+      "leap_climb", 
+      "phasing_teleport", 
+      "earthbound_neutralized", 
+      "charge", 
+      "mind_control", 
+      "plasticity", 
+      "force_blast", 
+      "sidestep", 
+      "hypersonic_speed", 
+      "stealth", 
+      "running_shot", 
+      "blades_claws_fangs", 
+      "energy_explosion", 
+      "pulse_wave", 
+      "quake", 
+      "super_strength", 
+      "incapacitate", 
+      "penetrating_psychic_blast", 
+      "smoke_cloud", 
+      "precision_strike", 
+      "poison", 
+      "steal_energy", 
+      "telekinesis", 
+      "super_senses", 
+      "toughness", 
+      "defend", 
+      "combat_reflexes", 
+      "energy_shield_deflection", 
+      "barrier", 
+      "mastermind", 
+      "willpower", 
+      "invincible", 
+      "impervious", 
+      "regeneration", 
+      "invulnerability", 
+      "ranged_combat_expert", 
+      "battle_fury", 
+      "support", 
+      "exploit_weakness", 
+      "enhancement", 
+      "probability_control", 
+      "shape_change", 
+      "close_combat_expert", 
+      "empower", 
+      "perplex", 
+      "outwit", 
+      "leadership"
+    ]
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
@@ -4071,7 +4184,7 @@
     <dial_size>12</dial_size>
     <dial>[
   {
-    "click_number": 0, 
+    "click_number": 1, 
     "starting_line": true, 
     "speed_value": 9, 
     "attack_power": "special", 
@@ -4080,7 +4193,7 @@
     "damage_value": 4
   }, 
   {
-    "click_number": 1, 
+    "click_number": 2, 
     "speed_value": 9, 
     "attack_power": "special", 
     "attack_value": 11, 
@@ -4088,20 +4201,12 @@
     "damage_value": 4
   }, 
   {
-    "click_number": 2, 
+    "click_number": 3, 
     "speed_value": 9, 
     "attack_power": "special", 
     "attack_value": 10, 
     "defense_value": 17, 
     "damage_value": 4
-  }, 
-  {
-    "click_number": 3, 
-    "speed_value": 8, 
-    "attack_power": "special", 
-    "attack_value": 10, 
-    "defense_value": 17, 
-    "damage_value": 3
   }, 
   {
     "click_number": 4, 
@@ -4121,7 +4226,7 @@
   }, 
   {
     "click_number": 6, 
-    "speed_value": 7, 
+    "speed_value": 8, 
     "attack_power": "special", 
     "attack_value": 10, 
     "defense_value": 17, 
@@ -4132,16 +4237,16 @@
     "speed_value": 7, 
     "attack_power": "special", 
     "attack_value": 10, 
-    "defense_value": 16, 
+    "defense_value": 17, 
     "damage_value": 3
   }, 
   {
     "click_number": 8, 
     "speed_value": 7, 
     "attack_power": "special", 
-    "attack_value": 9, 
+    "attack_value": 10, 
     "defense_value": 16, 
-    "damage_value": 2
+    "damage_value": 3
   }, 
   {
     "click_number": 9, 
@@ -4153,6 +4258,14 @@
   }, 
   {
     "click_number": 10, 
+    "speed_value": 7, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_value": 16, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 11, 
     "speed_value": 6, 
     "attack_value": 8, 
     "defense_value": 15, 
@@ -4167,11 +4280,11 @@
     <collector_number>040</collector_number>
     <name>Skrull General</name>
     <type>character</type>
-    <age>modern</age>
     <rarity>rare</rarity>
     <real_name>Various</real_name>
     <dimensions>1x1</dimensions>
     <point_values>[30]</point_values>
+    <properties>[]</properties>
     <team_abilities>["skrulls"]</team_abilities>
     <keywords>["Skrulls", "Soldier"]</keywords>
     <special_powers>[
@@ -4183,7 +4296,10 @@
   {
     "type": "damage", 
     "name": "DEPLOYING INFILTRATION PODS TO KEY LOCATIONS", 
-    "description": "Leadership. // Friendly characters with the Skrulls keyword have Underworld Team Ability."
+    "description": "Leadership. // Friendly characters with the Skrulls keyword have Underworld Team Ability.", 
+    "powers": [
+      "leadership"
+    ]
   }
 ]</special_powers>
     <improved_movement>["hindering"]</improved_movement>
@@ -4198,18 +4314,8 @@
     <dial_size>12</dial_size>
     <dial>[
   {
-    "click_number": 0, 
-    "starting_line": true, 
-    "speed_power": "stealth", 
-    "speed_value": 9, 
-    "attack_value": 10, 
-    "defense_power": "willpower", 
-    "defense_value": 17, 
-    "damage_power": "special", 
-    "damage_value": 3
-  }, 
-  {
     "click_number": 1, 
+    "starting_line": true, 
     "speed_power": "stealth", 
     "speed_value": 9, 
     "attack_value": 10, 
@@ -4221,6 +4327,16 @@
   {
     "click_number": 2, 
     "speed_power": "stealth", 
+    "speed_value": 9, 
+    "attack_value": 10, 
+    "defense_power": "willpower", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "stealth", 
     "speed_value": 8, 
     "attack_value": 9, 
     "defense_power": "willpower", 
@@ -4229,7 +4345,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 3, 
+    "click_number": 4, 
     "speed_power": "sidestep", 
     "speed_value": 7, 
     "attack_power": "energy_explosion", 
@@ -4240,7 +4356,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 4, 
+    "click_number": 5, 
     "speed_power": "sidestep", 
     "speed_value": 7, 
     "attack_power": "energy_explosion", 
@@ -4258,23 +4374,30 @@
     <collector_number>041</collector_number>
     <name>Mole Man</name>
     <type>character</type>
-    <age>modern</age>
     <rarity>rare</rarity>
     <real_name>Harvey Elder</real_name>
     <dimensions>1x1</dimensions>
     <point_values>[60]</point_values>
+    <properties>[]</properties>
     <team_abilities>["underworld"]</team_abilities>
     <keywords>["Infinity Watch", "Monster", "Ruler", "Scientist"]</keywords>
     <special_powers>[
   {
     "type": "trait", 
     "name": "BOSS MONSTER OF SUBTERRANEA", 
-    "description": "Leadership, Mastermind. When Mole Man uses Leadership and succeeds, instead of the normal effect, you may generate two [F4] #008 Moloids in any squares within range."
+    "description": "Leadership, Mastermind. When Mole Man uses Leadership and succeeds, instead of the normal effect, you may generate two [F4] #008 Moloids in any squares within range.", 
+    "powers": [
+      "leadership", 
+      "mastermind"
+    ]
   }, 
   {
     "type": "damage", 
     "name": "DENIZENS OF THE UNDERWORLD, HEED MY COMMANDS!", 
-    "description": "Perplex. When Mole Man would use it to target a friendly character with the Monster keyword, he does not need range or line of fire."
+    "description": "Perplex. When Mole Man would use it to target a friendly character with the Monster keyword, he does not need range or line of fire.", 
+    "powers": [
+      "perplex"
+    ]
   }
 ]</special_powers>
     <improved_movement>["hindering"]</improved_movement>
@@ -4289,23 +4412,12 @@
     <dial_size>12</dial_size>
     <dial>[
   {
-    "click_number": 0, 
+    "click_number": 1, 
     "starting_line": true, 
     "speed_power": "stealth", 
     "speed_value": 8, 
     "attack_power": "energy_explosion", 
     "attack_value": 11, 
-    "defense_power": "super_senses", 
-    "defense_value": 17, 
-    "damage_power": "special", 
-    "damage_value": 3
-  }, 
-  {
-    "click_number": 1, 
-    "speed_power": "stealth", 
-    "speed_value": 8, 
-    "attack_power": "energy_explosion", 
-    "attack_value": 10, 
     "defense_power": "super_senses", 
     "defense_value": 17, 
     "damage_power": "special", 
@@ -4319,11 +4431,22 @@
     "attack_value": 10, 
     "defense_power": "super_senses", 
     "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "stealth", 
+    "speed_value": 8, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
     "damage_power": "outwit", 
     "damage_value": 2
   }, 
   {
-    "click_number": 3, 
+    "click_number": 4, 
     "speed_power": "sidestep", 
     "speed_value": 7, 
     "attack_power": "quake", 
@@ -4334,7 +4457,7 @@
     "damage_value": 2
   }, 
   {
-    "click_number": 4, 
+    "click_number": 5, 
     "speed_power": "sidestep", 
     "speed_value": 7, 
     "attack_power": "quake", 
@@ -4352,11 +4475,11 @@
     <collector_number>042</collector_number>
     <name>Living Laser</name>
     <type>character</type>
-    <age>modern</age>
     <rarity>rare</rarity>
     <real_name>Arthur Parks</real_name>
     <dimensions>1x1</dimensions>
     <point_values>[75]</point_values>
+    <properties>[]</properties>
     <team_abilities>[]</team_abilities>
     <keywords>["Batroc's Brigade", "Frightful Four", "Lethal Legion", "M.O.D.O.K.'s 11", "Masters of Evil", "Scientist"]</keywords>
     <special_powers>[
@@ -4368,7 +4491,11 @@
   {
     "type": "trait", 
     "name": "ABSORPTION OR AMPLIFICATION", 
-    "description": "When Living Laser is missed by an attack, give him an Absorption token. // FREE: Remove an Absorption token to choose one: Regeneration as FREE -or- make a range attack using Ranged Combat Expert."
+    "description": "When Living Laser is missed by an attack, give him an Absorption token. // FREE: Remove an Absorption token to choose one: Regeneration as FREE -or- make a range attack using Ranged Combat Expert.", 
+    "powers": [
+      "regeneration", 
+      "ranged_combat_expert"
+    ]
   }
 ]</special_powers>
     <improved_movement>["hindering"]</improved_movement>
@@ -4383,7 +4510,7 @@
     <dial_size>12</dial_size>
     <dial>[
   {
-    "click_number": 0, 
+    "click_number": 1, 
     "starting_line": true, 
     "speed_power": "hypersonic_speed", 
     "speed_value": 10, 
@@ -4392,17 +4519,6 @@
     "defense_power": "energy_shield_deflection", 
     "defense_value": 18, 
     "damage_power": "shape_change", 
-    "damage_value": 3
-  }, 
-  {
-    "click_number": 1, 
-    "speed_power": "running_shot", 
-    "speed_value": 9, 
-    "attack_power": "penetrating_psychic_blast", 
-    "attack_value": 10, 
-    "defense_power": "energy_shield_deflection", 
-    "defense_value": 17, 
-    "damage_power": "enhancement", 
     "damage_value": 3
   }, 
   {
@@ -4418,6 +4534,17 @@
   }, 
   {
     "click_number": 3, 
+    "speed_power": "running_shot", 
+    "speed_value": 9, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 10, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 17, 
+    "damage_power": "enhancement", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
     "speed_power": "phasing_teleport", 
     "speed_value": 10, 
     "attack_power": "pulse_wave", 
@@ -4428,7 +4555,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 4, 
+    "click_number": 5, 
     "speed_power": "phasing_teleport", 
     "speed_value": 10, 
     "attack_power": "pulse_wave", 
@@ -4439,7 +4566,7 @@
     "damage_value": 2
   }, 
   {
-    "click_number": 5, 
+    "click_number": 6, 
     "speed_power": "hypersonic_speed", 
     "speed_value": 10, 
     "attack_power": "precision_strike", 
@@ -4457,11 +4584,11 @@
     <collector_number>043</collector_number>
     <name>Hydro-Man</name>
     <type>character</type>
-    <age>modern</age>
     <rarity>rare</rarity>
     <real_name>Morris Bench</real_name>
     <dimensions>1x1</dimensions>
     <point_values>[75]</point_values>
+    <properties>[]</properties>
     <team_abilities>[]</team_abilities>
     <keywords>["Frightful Four", "Masters of Evil", "Sinister Syndicate"]</keywords>
     <special_powers>[
@@ -4473,7 +4600,11 @@
   {
     "type": "attack", 
     "name": "DROWN ON DRY LAND", 
-    "description": "Poison, Smoke Cloud. When Hydro-Man uses Smoke Cloud, he generates water markers instead and after resolutions he can use Poison at no cost and considers opposing characters occupying his water markers adjacent for Poison."
+    "description": "Poison, Smoke Cloud. When Hydro-Man uses Smoke Cloud, he generates water markers instead and after resolutions he can use Poison at no cost and considers opposing characters occupying his water markers adjacent for Poison.", 
+    "powers": [
+      "poison", 
+      "smoke_cloud"
+    ]
   }
 ]</special_powers>
     <improved_movement>["hindering"]</improved_movement>
@@ -4488,7 +4619,7 @@
     <dial_size>12</dial_size>
     <dial>[
   {
-    "click_number": 0, 
+    "click_number": 1, 
     "starting_line": true, 
     "speed_power": "charge", 
     "speed_value": 10, 
@@ -4500,20 +4631,9 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 1, 
+    "click_number": 2, 
     "speed_power": "charge", 
     "speed_value": 9, 
-    "attack_power": "special", 
-    "attack_value": 10, 
-    "defense_power": "invulnerability", 
-    "defense_value": 17, 
-    "damage_power": "shape_change", 
-    "damage_value": 3
-  }, 
-  {
-    "click_number": 2, 
-    "speed_power": "sidestep", 
-    "speed_value": 8, 
     "attack_power": "special", 
     "attack_value": 10, 
     "defense_power": "invulnerability", 
@@ -4527,13 +4647,24 @@
     "speed_value": 8, 
     "attack_power": "special", 
     "attack_value": 10, 
-    "defense_power": "toughness", 
+    "defense_power": "invulnerability", 
     "defense_value": 17, 
     "damage_power": "shape_change", 
     "damage_value": 3
   }, 
   {
     "click_number": 4, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "shape_change", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
     "speed_power": "plasticity", 
     "speed_value": 7, 
     "attack_power": "pulse_wave", 
@@ -4544,7 +4675,7 @@
     "damage_value": 2
   }, 
   {
-    "click_number": 5, 
+    "click_number": 6, 
     "speed_power": "plasticity", 
     "speed_value": 7, 
     "attack_power": "pulse_wave", 
@@ -4562,11 +4693,11 @@
     <collector_number>044</collector_number>
     <name>Sandman</name>
     <type>character</type>
-    <age>modern</age>
     <rarity>rare</rarity>
     <real_name>William Baker</real_name>
     <dimensions>1x1</dimensions>
     <point_values>[75]</point_values>
+    <properties>[]</properties>
     <team_abilities>["minions_of_doom"]</team_abilities>
     <keywords>["Frightful Four", "Sinister Syndicate"]</keywords>
     <special_powers>[
@@ -4578,7 +4709,11 @@
   {
     "type": "attack", 
     "name": "SAND BLAST", 
-    "description": "Quake, Smoke Cloud. When Sandman uses Smoke Cloud, after resolutions he can use Quake at no cost but may also target any opposing characters occupying or adjacent to his hindering markers, regardless of adjacency."
+    "description": "Quake, Smoke Cloud. When Sandman uses Smoke Cloud, after resolutions he can use Quake at no cost but may also target any opposing characters occupying or adjacent to his hindering markers, regardless of adjacency.", 
+    "powers": [
+      "quake", 
+      "smoke_cloud"
+    ]
   }
 ]</special_powers>
     <improved_movement>["hindering"]</improved_movement>
@@ -4593,7 +4728,7 @@
     <dial_size>12</dial_size>
     <dial>[
   {
-    "click_number": 0, 
+    "click_number": 1, 
     "starting_line": true, 
     "speed_power": "charge", 
     "speed_value": 10, 
@@ -4605,20 +4740,9 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 1, 
+    "click_number": 2, 
     "speed_power": "charge", 
     "speed_value": 9, 
-    "attack_power": "special", 
-    "attack_value": 10, 
-    "defense_power": "invulnerability", 
-    "defense_value": 17, 
-    "damage_power": "shape_change", 
-    "damage_value": 3
-  }, 
-  {
-    "click_number": 2, 
-    "speed_power": "sidestep", 
-    "speed_value": 8, 
     "attack_power": "special", 
     "attack_value": 10, 
     "defense_power": "invulnerability", 
@@ -4632,13 +4756,24 @@
     "speed_value": 8, 
     "attack_power": "special", 
     "attack_value": 10, 
-    "defense_power": "toughness", 
+    "defense_power": "invulnerability", 
     "defense_value": 17, 
     "damage_power": "shape_change", 
     "damage_value": 3
   }, 
   {
     "click_number": 4, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "shape_change", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
     "speed_power": "plasticity", 
     "speed_value": 7, 
     "attack_power": "pulse_wave", 
@@ -4649,7 +4784,7 @@
     "damage_value": 2
   }, 
   {
-    "click_number": 5, 
+    "click_number": 6, 
     "speed_power": "plasticity", 
     "speed_value": 7, 
     "attack_power": "pulse_wave", 
@@ -4667,11 +4802,11 @@
     <collector_number>045</collector_number>
     <name>Wizard</name>
     <type>character</type>
-    <age>modern</age>
     <rarity>rare</rarity>
     <real_name>Bentley Wittman</real_name>
     <dimensions>1x1</dimensions>
     <point_values>[75]</point_values>
+    <properties>[]</properties>
     <team_abilities>["minions_of_doom"]</team_abilities>
     <keywords>["Frightful Four", "Intelligencia", "Scientist"]</keywords>
     <special_powers>[
@@ -4688,7 +4823,12 @@
   {
     "type": "damage", 
     "name": "INTELLECT TO SPARE", 
-    "description": "Leadership, Outwit, Perplex. When he uses Leadership, on a result of 4 choose Outwit -or- Perplex. This turn, Wizard can use the chosen power twice."
+    "description": "Leadership, Outwit, Perplex. When he uses Leadership, on a result of 4 choose Outwit -or- Perplex. This turn, Wizard can use the chosen power twice.", 
+    "powers": [
+      "leadership", 
+      "outwit", 
+      "perplex"
+    ]
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
@@ -4703,7 +4843,7 @@
     <dial_size>12</dial_size>
     <dial>[
   {
-    "click_number": 0, 
+    "click_number": 1, 
     "starting_line": true, 
     "speed_power": "running_shot", 
     "speed_value": 11, 
@@ -4715,7 +4855,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 1, 
+    "click_number": 2, 
     "speed_power": "running_shot", 
     "speed_value": 11, 
     "attack_power": "precision_strike", 
@@ -4726,7 +4866,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 2, 
+    "click_number": 3, 
     "speed_power": "sidestep", 
     "speed_value": 10, 
     "attack_power": "telekinesis", 
@@ -4737,7 +4877,7 @@
     "damage_value": 2
   }, 
   {
-    "click_number": 3, 
+    "click_number": 4, 
     "speed_power": "sidestep", 
     "speed_value": 10, 
     "attack_power": "telekinesis", 
@@ -4748,7 +4888,7 @@
     "damage_value": 2
   }, 
   {
-    "click_number": 4, 
+    "click_number": 5, 
     "speed_power": "mind_control", 
     "speed_value": 9, 
     "attack_power": "telekinesis", 
@@ -4759,7 +4899,7 @@
     "damage_value": 2
   }, 
   {
-    "click_number": 5, 
+    "click_number": 6, 
     "speed_power": "mind_control", 
     "speed_value": 9, 
     "attack_power": "telekinesis", 
@@ -4777,18 +4917,21 @@
     <collector_number>046</collector_number>
     <name>Gorgon</name>
     <type>character</type>
-    <age>modern</age>
     <rarity>rare</rarity>
     <real_name>Gorgon Petragon</real_name>
     <dimensions>1x1</dimensions>
     <point_values>[45]</point_values>
+    <properties>[]</properties>
     <team_abilities>[]</team_abilities>
     <keywords>["Inhumans", "Soldier"]</keywords>
     <special_powers>[
   {
     "type": "trait", 
     "name": "SEISMIC STOMP", 
-    "description": "Quake, but Gorgon may use it as if he occupied a square within 3 squares and line of fire."
+    "description": "Quake, but Gorgon may use it as if he occupied a square within 3 squares and line of fire.", 
+    "powers": [
+      "quake"
+    ]
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
@@ -4803,7 +4946,7 @@
     <dial_size>12</dial_size>
     <dial>[
   {
-    "click_number": 0, 
+    "click_number": 1, 
     "starting_line": true, 
     "speed_power": "charge", 
     "speed_value": 7, 
@@ -4813,7 +4956,7 @@
     "damage_value": 4
   }, 
   {
-    "click_number": 1, 
+    "click_number": 2, 
     "speed_power": "charge", 
     "speed_value": 7, 
     "attack_value": 11, 
@@ -4822,7 +4965,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 2, 
+    "click_number": 3, 
     "speed_power": "charge", 
     "speed_value": 7, 
     "attack_value": 10, 
@@ -4831,7 +4974,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 3, 
+    "click_number": 4, 
     "speed_power": "sidestep", 
     "speed_value": 6, 
     "attack_value": 10, 
@@ -4840,7 +4983,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 4, 
+    "click_number": 5, 
     "speed_power": "sidestep", 
     "speed_value": 6, 
     "attack_value": 10, 
@@ -4856,11 +4999,11 @@
     <collector_number>047a</collector_number>
     <name>Silver Surfer</name>
     <type>character</type>
-    <age>modern</age>
     <rarity>rare</rarity>
     <real_name>Norrin Radd</real_name>
     <dimensions>1x1</dimensions>
     <point_values>[150, 75]</point_values>
+    <properties>[]</properties>
     <team_abilities>["power_cosmic"]</team_abilities>
     <keywords>["Annihilators", "Codex", "Cosmic", "Defenders", "Fantastic Four", "Herald"]</keywords>
     <special_powers>[
@@ -4872,7 +5015,10 @@
   {
     "type": "speed", 
     "name": "ANYWHERE AND EVERYWHERE", 
-    "description": "Hypersonic Speed.  When Silver Surfer uses it, after resolutions you may choose a character he hit or moved through.  The chosen character gains Immobile until your next turn."
+    "description": "Hypersonic Speed.  When Silver Surfer uses it, after resolutions you may choose a character he hit or moved through.  The chosen character gains Immobile until your next turn.", 
+    "powers": [
+      "hypersonic_speed"
+    ]
   }, 
   {
     "type": "attack", 
@@ -4892,7 +5038,7 @@
     <dial_size>12</dial_size>
     <dial>[
   {
-    "click_number": 0, 
+    "click_number": 1, 
     "starting_line": true, 
     "speed_power": "special", 
     "speed_value": 12, 
@@ -4904,7 +5050,7 @@
     "damage_value": 4
   }, 
   {
-    "click_number": 1, 
+    "click_number": 2, 
     "speed_power": "special", 
     "speed_value": 12, 
     "attack_power": "special", 
@@ -4915,7 +5061,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 2, 
+    "click_number": 3, 
     "speed_power": "special", 
     "speed_value": 11, 
     "attack_power": "special", 
@@ -4926,7 +5072,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 3, 
+    "click_number": 4, 
     "speed_power": "special", 
     "speed_value": 11, 
     "attack_power": "special", 
@@ -4937,7 +5083,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 4, 
+    "click_number": 5, 
     "speed_power": "special", 
     "speed_value": 11, 
     "attack_power": "special", 
@@ -4949,7 +5095,7 @@
     "starting_line": true
   }, 
   {
-    "click_number": 5, 
+    "click_number": 6, 
     "speed_power": "hypersonic_speed", 
     "speed_value": 11, 
     "attack_power": "special", 
@@ -4957,16 +5103,6 @@
     "defense_power": "invulnerability", 
     "defense_value": 17, 
     "damage_power": "shape_change", 
-    "damage_value": 3
-  }, 
-  {
-    "click_number": 6, 
-    "speed_power": "hypersonic_speed", 
-    "speed_value": 10, 
-    "attack_value": 10, 
-    "defense_power": "toughness", 
-    "defense_value": 17, 
-    "damage_power": "support", 
     "damage_value": 3
   }, 
   {
@@ -4984,6 +5120,16 @@
     "speed_power": "hypersonic_speed", 
     "speed_value": 10, 
     "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "support", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 9, 
+    "speed_power": "hypersonic_speed", 
+    "speed_value": 10, 
+    "attack_value": 10, 
     "defense_power": "regeneration", 
     "defense_value": 17, 
     "damage_value": 3
@@ -4996,10 +5142,10 @@
     <collector_number>047abt</collector_number>
     <name>Dawn Greenwood</name>
     <type>bystander</type>
-    <age>modern</age>
     <rarity>rare</rarity>
     <dimensions>1x1</dimensions>
     <point_values>[]</point_values>
+    <properties>[]</properties>
     <team_abilities>[]</team_abilities>
     <keywords>[]</keywords>
     <special_powers>[
@@ -5016,7 +5162,11 @@
   {
     "type": "damage", 
     "name": "I DON'T KNOW HOW TO FEEL ABOUT YOU, NORRIN", 
-    "description": "Enhancement.  Perplex, but only to target a character named Silver Surfer."
+    "description": "Enhancement.  Perplex, but only to target a character named Silver Surfer.", 
+    "powers": [
+      "enhancement", 
+      "perplex"
+    ]
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
@@ -5031,7 +5181,7 @@
     <dial_size>1</dial_size>
     <dial>[
   {
-    "click_number": 0, 
+    "click_number": 1, 
     "starting_line": true, 
     "speed_power": "sidestep", 
     "speed_value": 6, 
@@ -5049,12 +5199,11 @@
     <collector_number>047b</collector_number>
     <name>Silver Surfer</name>
     <type>character</type>
-    <age>modern</age>
     <rarity>rare</rarity>
     <real_name>Bartak</real_name>
-    <special_type>prime</special_type>
     <dimensions>1x1</dimensions>
     <point_values>[70]</point_values>
+    <properties>["prime"]</properties>
     <team_abilities>["power_cosmic", "skrulls"]</team_abilities>
     <keywords>["Cosmic", "Skrulls", "Spy"]</keywords>
     <special_powers>[
@@ -5066,12 +5215,21 @@
   {
     "type": "speed", 
     "name": "SKRULL SPY WITH A FRACTION OF THE SURFER'S MIGHT", 
-    "description": "Hypersonic Speed, Stealth."
+    "description": "Hypersonic Speed, Stealth.", 
+    "powers": [
+      "hypersonic_speed", 
+      "stealth"
+    ]
   }, 
   {
     "type": "attack", 
     "name": "SIPHON OFF THE TRUE SURFER", 
-    "description": "Incapacitate, Precision Strike. Steal Energy, but with close or range attacks."
+    "description": "Incapacitate, Precision Strike. Steal Energy, but with close or range attacks.", 
+    "powers": [
+      "incapacitate", 
+      "precision_strike", 
+      "steal_energy"
+    ]
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
@@ -5086,7 +5244,7 @@
     <dial_size>12</dial_size>
     <dial>[
   {
-    "click_number": 0, 
+    "click_number": 1, 
     "starting_line": true, 
     "speed_power": "special", 
     "speed_value": 11, 
@@ -5098,7 +5256,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 1, 
+    "click_number": 2, 
     "speed_power": "special", 
     "speed_value": 11, 
     "attack_power": "special", 
@@ -5108,7 +5266,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 2, 
+    "click_number": 3, 
     "speed_power": "special", 
     "speed_value": 10, 
     "attack_power": "special", 
@@ -5118,7 +5276,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 3, 
+    "click_number": 4, 
     "speed_power": "stealth", 
     "speed_value": 10, 
     "attack_power": "special", 
@@ -5128,7 +5286,7 @@
     "damage_value": 4
   }, 
   {
-    "click_number": 4, 
+    "click_number": 5, 
     "speed_power": "stealth", 
     "speed_value": 9, 
     "attack_power": "special", 
@@ -5145,18 +5303,22 @@
     <collector_number>048</collector_number>
     <name>Karnak</name>
     <type>character</type>
-    <age>modern</age>
     <rarity>rare</rarity>
     <real_name>Karnak Mander-Azur</real_name>
     <dimensions>1x1</dimensions>
     <point_values>[40]</point_values>
+    <properties>[]</properties>
     <team_abilities>[]</team_abilities>
     <keywords>["Inhumans", "Martial Artist"]</keywords>
     <special_powers>[
   {
     "type": "damage", 
     "name": "IN EVERYTHING, A WEAKNESS", 
-    "description": "Close Combat Expert, Outwit. When Karnak has no action tokens and uses Outwit, adjacent opposing characters can't use Protected: Outwit or PROTECTED: Outwit until your next turn."
+    "description": "Close Combat Expert, Outwit. When Karnak has no action tokens and uses Outwit, adjacent opposing characters can't use Protected: Outwit or PROTECTED: Outwit until your next turn.", 
+    "powers": [
+      "close_combat_expert", 
+      "outwit"
+    ]
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
@@ -5171,19 +5333,8 @@
     <dial_size>12</dial_size>
     <dial>[
   {
-    "click_number": 0, 
-    "starting_line": true, 
-    "speed_power": "sidestep", 
-    "speed_value": 8, 
-    "attack_power": "precision_strike", 
-    "attack_value": 11, 
-    "defense_power": "super_senses", 
-    "defense_value": 17, 
-    "damage_power": "special", 
-    "damage_value": 2
-  }, 
-  {
     "click_number": 1, 
+    "starting_line": true, 
     "speed_power": "sidestep", 
     "speed_value": 8, 
     "attack_power": "precision_strike", 
@@ -5198,7 +5349,7 @@
     "speed_power": "sidestep", 
     "speed_value": 8, 
     "attack_power": "precision_strike", 
-    "attack_value": 10, 
+    "attack_value": 11, 
     "defense_power": "super_senses", 
     "defense_value": 17, 
     "damage_power": "special", 
@@ -5206,6 +5357,17 @@
   }, 
   {
     "click_number": 3, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
     "speed_power": "plasticity", 
     "speed_value": 8, 
     "attack_power": "precision_strike", 
@@ -5216,7 +5378,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 4, 
+    "click_number": 5, 
     "speed_power": "plasticity", 
     "speed_value": 8, 
     "attack_power": "precision_strike", 
@@ -5234,12 +5396,11 @@
     <collector_number>049</collector_number>
     <name>The Thing</name>
     <type>character</type>
-    <age>modern</age>
     <rarity>super_rare</rarity>
     <real_name>Ben Grimm</real_name>
-    <special_type>unique</special_type>
     <dimensions>1x1</dimensions>
     <point_values>[50]</point_values>
+    <properties>["unique"]</properties>
     <team_abilities>["fantastic_four"]</team_abilities>
     <keywords>["Earth X", "Fantastic Four"]</keywords>
     <special_powers>[
@@ -5251,12 +5412,19 @@
   {
     "type": "trait", 
     "name": "CLOBBER YOU? WHAT KINDA UNSOPHISTICATED SLOB DO YA THINK I AM?", 
-    "description": "Perplex. When The Thing uses it, he may modify attack values by -2 instead of -1."
+    "description": "Perplex. When The Thing uses it, he may modify attack values by -2 instead of -1.", 
+    "powers": [
+      "perplex"
+    ]
   }, 
   {
     "type": "defense", 
     "name": "SETTLED DOWN WITH ALICIA TO RAISE A FAMILY", 
-    "description": "Defend, Invincible."
+    "description": "Defend, Invincible.", 
+    "powers": [
+      "defend", 
+      "invincible"
+    ]
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
@@ -5271,7 +5439,7 @@
     <dial_size>12</dial_size>
     <dial>[
   {
-    "click_number": 0, 
+    "click_number": 1, 
     "starting_line": true, 
     "speed_power": "sidestep", 
     "speed_value": 7, 
@@ -5283,7 +5451,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 1, 
+    "click_number": 2, 
     "speed_power": "sidestep", 
     "speed_value": 7, 
     "attack_power": "super_strength", 
@@ -5294,7 +5462,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 2, 
+    "click_number": 3, 
     "speed_power": "sidestep", 
     "speed_value": 6, 
     "attack_power": "quake", 
@@ -5305,7 +5473,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 3, 
+    "click_number": 4, 
     "speed_power": "sidestep", 
     "speed_value": 6, 
     "attack_power": "quake", 
@@ -5323,10 +5491,10 @@
     <collector_number>049bta</collector_number>
     <name>Buzz</name>
     <type>bystander</type>
-    <age>modern</age>
     <rarity>super_rare</rarity>
     <dimensions>1x1</dimensions>
     <point_values>[]</point_values>
+    <properties>[]</properties>
     <team_abilities>["fantastic_four"]</team_abilities>
     <keywords>[]</keywords>
     <special_powers>[]</special_powers>
@@ -5342,7 +5510,7 @@
     <dial_size>1</dial_size>
     <dial>[
   {
-    "click_number": 0, 
+    "click_number": 1, 
     "starting_line": true, 
     "speed_power": "charge", 
     "speed_value": 6, 
@@ -5361,10 +5529,10 @@
     <collector_number>049btb</collector_number>
     <name>Chuck</name>
     <type>bystander</type>
-    <age>modern</age>
     <rarity>super_rare</rarity>
     <dimensions>1x1</dimensions>
     <point_values>[]</point_values>
+    <properties>[]</properties>
     <team_abilities>["fantastic_four"]</team_abilities>
     <keywords>[]</keywords>
     <special_powers>[]</special_powers>
@@ -5380,7 +5548,7 @@
     <dial_size>1</dial_size>
     <dial>[
   {
-    "click_number": 0, 
+    "click_number": 1, 
     "starting_line": true, 
     "speed_power": "sidestep", 
     "speed_value": 6, 
@@ -5399,23 +5567,32 @@
     <collector_number>050</collector_number>
     <name>Ms. Marvel</name>
     <type>character</type>
-    <age>modern</age>
     <rarity>super_rare</rarity>
     <real_name>Kamala Khan</real_name>
     <dimensions>1x1</dimensions>
     <point_values>[60]</point_values>
+    <properties>[]</properties>
     <team_abilities>["team_player"]</team_abilities>
     <keywords>["Agents of Atlas", "Avengers", "Celebrity", "Champions", "Inhumans"]</keywords>
     <special_powers>[
   {
     "type": "trait", 
     "name": "QUICK-THINKING POLYMORPH", 
-    "description": "Shape Change. // FREE: Choose one to last until your next turn: \"giant symbol\" and modify combat values +1 -or- Perplex, Plasticity."
+    "description": "Shape Change. // FREE: Choose one to last until your next turn: \"giant symbol\" and modify combat values +1 -or- Perplex, Plasticity.", 
+    "powers": [
+      "shape_change", 
+      "perplex", 
+      "plasticity"
+    ]
   }, 
   {
     "type": "speed", 
     "name": "WAITING FOR THE RIGHT TIME TO BE A HERO!", 
-    "description": "Sidestep, \"tiny symbol\". Hypersonic Speed, but only once per game."
+    "description": "Sidestep, \"tiny symbol\". Hypersonic Speed, but only once per game.", 
+    "powers": [
+      "sidestep", 
+      "hypersonic_speed"
+    ]
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
@@ -5430,7 +5607,7 @@
     <dial_size>12</dial_size>
     <dial>[
   {
-    "click_number": 0, 
+    "click_number": 1, 
     "starting_line": true, 
     "speed_power": "special", 
     "speed_value": 10, 
@@ -5440,7 +5617,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 1, 
+    "click_number": 2, 
     "speed_power": "charge", 
     "speed_value": 10, 
     "attack_value": 10, 
@@ -5449,7 +5626,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 2, 
+    "click_number": 3, 
     "speed_power": "charge", 
     "speed_value": 9, 
     "attack_value": 10, 
@@ -5458,7 +5635,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 3, 
+    "click_number": 4, 
     "speed_power": "sidestep", 
     "speed_value": 9, 
     "attack_value": 10, 
@@ -5468,7 +5645,7 @@
     "damage_value": 2
   }, 
   {
-    "click_number": 4, 
+    "click_number": 5, 
     "speed_power": "sidestep", 
     "speed_value": 8, 
     "attack_value": 10, 
@@ -5485,23 +5662,29 @@
     <collector_number>051</collector_number>
     <name>Silk</name>
     <type>character</type>
-    <age>modern</age>
     <rarity>super_rare</rarity>
     <real_name>Cindy Moon</real_name>
     <dimensions>1x1</dimensions>
     <point_values>[75, 30]</point_values>
+    <properties>[]</properties>
     <team_abilities>["fantastic_four", "spider_man"]</team_abilities>
     <keywords>["Agents of Atlas", "Fantastic Four", "Reporter", "S.H.I.E.L.D.", "Spider-Man Family"]</keywords>
     <special_powers>[
   {
     "type": "trait", 
     "name": "FOUR S.H.I.E.L.D. BEAST HUNTERS", 
-    "description": "When Silk is given a MOVE action, after resolutions remove an action token from her and she can use Stealth until your next turn."
+    "description": "When Silk is given a MOVE action, after resolutions remove an action token from her and she can use Stealth until your next turn.", 
+    "powers": [
+      "stealth"
+    ]
   }, 
   {
     "type": "trait", 
     "name": "SILK SENSE", 
-    "description": "Super Senses, but succeeds on a 4-6. Protected: Outwit."
+    "description": "Super Senses, but succeeds on a 4-6. Protected: Outwit.", 
+    "powers": [
+      "super_senses"
+    ]
   }
 ]</special_powers>
     <improved_movement>["elevated", "hindering"]</improved_movement>
@@ -5516,7 +5699,7 @@
     <dial_size>12</dial_size>
     <dial>[
   {
-    "click_number": 0, 
+    "click_number": 1, 
     "starting_line": true, 
     "speed_power": "charge", 
     "speed_value": 10, 
@@ -5527,20 +5710,10 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 1, 
-    "speed_power": "sidestep", 
-    "speed_value": 10, 
-    "attack_power": "incapacitate", 
-    "attack_value": 10, 
-    "defense_power": "willpower", 
-    "defense_value": 17, 
-    "damage_value": 3
-  }, 
-  {
     "click_number": 2, 
     "speed_power": "sidestep", 
     "speed_value": 10, 
-    "attack_power": "precision_strike", 
+    "attack_power": "incapacitate", 
     "attack_value": 10, 
     "defense_power": "willpower", 
     "defense_value": 17, 
@@ -5550,6 +5723,16 @@
     "click_number": 3, 
     "speed_power": "sidestep", 
     "speed_value": 10, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "willpower", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "sidestep", 
+    "speed_value": 10, 
     "attack_power": "incapacitate", 
     "attack_value": 10, 
     "defense_power": "toughness", 
@@ -5557,7 +5740,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 4, 
+    "click_number": 5, 
     "speed_power": "sidestep", 
     "speed_value": 9, 
     "attack_power": "precision_strike", 
@@ -5568,7 +5751,7 @@
     "starting_line": true
   }, 
   {
-    "click_number": 5, 
+    "click_number": 6, 
     "speed_power": "plasticity", 
     "speed_value": 9, 
     "attack_power": "blades_claws_fangs", 
@@ -5578,7 +5761,7 @@
     "damage_value": 2
   }, 
   {
-    "click_number": 6, 
+    "click_number": 7, 
     "speed_power": "plasticity", 
     "speed_value": 9, 
     "attack_power": "blades_claws_fangs", 
@@ -5595,11 +5778,11 @@
     <collector_number>052</collector_number>
     <name>Dragon Man</name>
     <type>character</type>
-    <age>modern</age>
     <rarity>super_rare</rarity>
     <real_name>N/A</real_name>
     <dimensions>1x1</dimensions>
     <point_values>[120, 75]</point_values>
+    <properties>[]</properties>
     <team_abilities>[]</team_abilities>
     <keywords>["Circus of Crime", "Enforcers", "Frightful Four", "Monster", "Mystical", "Negative Zone", "Robot"]</keywords>
     <special_powers>[
@@ -5611,12 +5794,20 @@
   {
     "type": "attack", 
     "name": "MYSTICAL BREATH AND MORE", 
-    "description": "Energy Explosion, Penetrating/Psychic Blast, Super Strength."
+    "description": "Energy Explosion, Penetrating/Psychic Blast, Super Strength.", 
+    "powers": [
+      "energy_explosion", 
+      "penetrating_psychic_blast", 
+      "super_strength"
+    ]
   }, 
   {
     "type": "defense", 
     "name": "RECHARGE THE BATTERIES", 
-    "description": "Invulnerability. FREE: Heal Dragon Man equal to the number of adjacent squares of printed blocking terrain, then destroy that terrain."
+    "description": "Invulnerability. FREE: Heal Dragon Man equal to the number of adjacent squares of printed blocking terrain, then destroy that terrain.", 
+    "powers": [
+      "invulnerability"
+    ]
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
@@ -5631,7 +5822,7 @@
     <dial_size>12</dial_size>
     <dial>[
   {
-    "click_number": 0, 
+    "click_number": 1, 
     "starting_line": true, 
     "speed_power": "running_shot", 
     "speed_value": 10, 
@@ -5642,7 +5833,7 @@
     "damage_value": 4
   }, 
   {
-    "click_number": 1, 
+    "click_number": 2, 
     "speed_power": "running_shot", 
     "speed_value": 10, 
     "attack_power": "special", 
@@ -5652,7 +5843,7 @@
     "damage_value": 4
   }, 
   {
-    "click_number": 2, 
+    "click_number": 3, 
     "speed_power": "charge", 
     "speed_value": 10, 
     "attack_power": "quake", 
@@ -5664,7 +5855,7 @@
     "starting_line": true
   }, 
   {
-    "click_number": 3, 
+    "click_number": 4, 
     "speed_power": "charge", 
     "speed_value": 9, 
     "attack_power": "quake", 
@@ -5675,7 +5866,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 4, 
+    "click_number": 5, 
     "speed_power": "sidestep", 
     "speed_value": 8, 
     "attack_power": "special", 
@@ -5686,7 +5877,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 5, 
+    "click_number": 6, 
     "speed_power": "sidestep", 
     "speed_value": 8, 
     "attack_power": "special", 
@@ -5697,7 +5888,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 6, 
+    "click_number": 7, 
     "speed_power": "flurry", 
     "speed_value": 7, 
     "attack_power": "blades_claws_fangs", 
@@ -5707,7 +5898,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 7, 
+    "click_number": 8, 
     "speed_power": "flurry", 
     "speed_value": 7, 
     "attack_power": "blades_claws_fangs", 
@@ -5724,11 +5915,11 @@
     <collector_number>053a</collector_number>
     <name>Ghost Rider</name>
     <type>character</type>
-    <age>modern</age>
     <rarity>super_rare</rarity>
     <real_name>Alejandra Jones</real_name>
     <dimensions>1x1</dimensions>
     <point_values>[50]</point_values>
+    <properties>[]</properties>
     <team_abilities>[]</team_abilities>
     <keywords>["Codex", "Fantastic Four", "Monster", "Mystical"]</keywords>
     <special_powers>[
@@ -5740,7 +5931,13 @@
   {
     "type": "defense", 
     "name": "THE GUARDIAN PHANTASMA", 
-    "description": "Defend, Energy Shield/Deflection, Toughness, Willpower. // Adjacent friendly characters of equal or lower points or that share a keyword with Ghost Rider can use Energy Shield/Deflection."
+    "description": "Defend, Energy Shield/Deflection, Toughness, Willpower. // Adjacent friendly characters of equal or lower points or that share a keyword with Ghost Rider can use Energy Shield/Deflection.", 
+    "powers": [
+      "defend", 
+      "energy_shield_deflection", 
+      "toughness", 
+      "willpower"
+    ]
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
@@ -5755,7 +5952,7 @@
     <dial_size>12</dial_size>
     <dial>[
   {
-    "click_number": 0, 
+    "click_number": 1, 
     "starting_line": true, 
     "speed_power": "charge", 
     "speed_value": 9, 
@@ -5766,7 +5963,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 1, 
+    "click_number": 2, 
     "speed_power": "running_shot", 
     "speed_value": 8, 
     "attack_power": "penetrating_psychic_blast", 
@@ -5776,7 +5973,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 2, 
+    "click_number": 3, 
     "speed_power": "charge", 
     "speed_value": 8, 
     "attack_power": "precision_strike", 
@@ -5786,7 +5983,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 3, 
+    "click_number": 4, 
     "speed_power": "sidestep", 
     "speed_value": 7, 
     "attack_power": "blades_claws_fangs", 
@@ -5797,7 +5994,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 4, 
+    "click_number": 5, 
     "speed_power": "flurry", 
     "speed_value": 7, 
     "attack_power": "steal_energy", 
@@ -5814,12 +6011,11 @@
     <collector_number>053b</collector_number>
     <name>Ghost Rider</name>
     <type>character</type>
-    <age>modern</age>
     <rarity>super_rare</rarity>
     <real_name>Alejandra Jones</real_name>
-    <special_type>prime</special_type>
     <dimensions>1x2</dimensions>
     <point_values>[100, 40]</point_values>
+    <properties>["prime"]</properties>
     <team_abilities>["mystics"]</team_abilities>
     <keywords>["Fantastic Four", "Mystical"]</keywords>
     <special_powers>[
@@ -5836,12 +6032,20 @@
   {
     "type": "attack", 
     "name": "SIN MANIPULATION", 
-    "description": "Poison, Steal Energy."
+    "description": "Poison, Steal Energy.", 
+    "powers": [
+      "poison", 
+      "steal_energy"
+    ]
   }, 
   {
     "type": "defense", 
     "name": "SAVED BY THE SPIRIT", 
-    "description": "STOP. Invincible."
+    "description": "STOP. Invincible.", 
+    "powers": [
+      "stop", 
+      "invincible"
+    ]
   }
 ]</special_powers>
     <improved_movement>["elevated", "hindering"]</improved_movement>
@@ -5856,7 +6060,7 @@
     <dial_size>12</dial_size>
     <dial>[
   {
-    "click_number": 0, 
+    "click_number": 1, 
     "starting_line": true, 
     "speed_power": "hypersonic_speed", 
     "speed_value": 11, 
@@ -5868,7 +6072,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 1, 
+    "click_number": 2, 
     "speed_power": "hypersonic_speed", 
     "speed_value": 10, 
     "attack_power": "special", 
@@ -5879,7 +6083,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 2, 
+    "click_number": 3, 
     "speed_power": "charge", 
     "speed_value": 9, 
     "attack_power": "special", 
@@ -5890,7 +6094,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 3, 
+    "click_number": 4, 
     "speed_power": "hypersonic_speed", 
     "speed_value": 8, 
     "attack_power": "precision_strike", 
@@ -5902,7 +6106,7 @@
     "starting_line": true
   }, 
   {
-    "click_number": 4, 
+    "click_number": 5, 
     "speed_power": "charge", 
     "speed_value": 7, 
     "attack_power": "special", 
@@ -5913,7 +6117,7 @@
     "damage_value": 2
   }, 
   {
-    "click_number": 5, 
+    "click_number": 6, 
     "speed_power": "charge", 
     "speed_value": 6, 
     "attack_power": "special", 
@@ -5931,12 +6135,11 @@
     <collector_number>054</collector_number>
     <name>Wolverine</name>
     <type>character</type>
-    <age>modern</age>
     <rarity>super_rare</rarity>
     <real_name>James Howlett</real_name>
-    <special_type>unique</special_type>
     <dimensions>1x1</dimensions>
     <point_values>[75]</point_values>
+    <properties>["unique"]</properties>
     <team_abilities>[]</team_abilities>
     <keywords>["Fantastic Four", "Weapon X", "X-Men"]</keywords>
     <special_powers>[
@@ -5958,7 +6161,12 @@
   {
     "type": "speed", 
     "name": "BLOODTHIRSTY BARRAGE", 
-    "description": "Charge, Flurry, Sidestep. // When Wolverine KO's an opposing character, after resolutions remove an action token from him."
+    "description": "Charge, Flurry, Sidestep. // When Wolverine KO's an opposing character, after resolutions remove an action token from him.", 
+    "powers": [
+      "charge", 
+      "flurry", 
+      "sidestep"
+    ]
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
@@ -5973,18 +6181,8 @@
     <dial_size>12</dial_size>
     <dial>[
   {
-    "click_number": 0, 
-    "starting_line": true, 
-    "speed_power": "special", 
-    "speed_value": 7, 
-    "attack_power": "blades_claws_fangs", 
-    "attack_value": 11, 
-    "defense_power": "toughness", 
-    "defense_value": 18, 
-    "damage_value": 2
-  }, 
-  {
     "click_number": 1, 
+    "starting_line": true, 
     "speed_power": "special", 
     "speed_value": 7, 
     "attack_power": "blades_claws_fangs", 
@@ -5998,14 +6196,14 @@
     "speed_power": "special", 
     "speed_value": 7, 
     "attack_power": "blades_claws_fangs", 
-    "attack_value": 10, 
-    "defense_power": "combat_reflexes", 
-    "defense_value": 17, 
-    "damage_value": 3
+    "attack_value": 11, 
+    "defense_power": "toughness", 
+    "defense_value": 18, 
+    "damage_value": 2
   }, 
   {
     "click_number": 3, 
-    "speed_power": "flurry", 
+    "speed_power": "special", 
     "speed_value": 7, 
     "attack_power": "blades_claws_fangs", 
     "attack_value": 10, 
@@ -6016,6 +6214,16 @@
   {
     "click_number": 4, 
     "speed_power": "flurry", 
+    "speed_value": 7, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "flurry", 
     "speed_value": 6, 
     "attack_power": "blades_claws_fangs", 
     "attack_value": 11, 
@@ -6024,7 +6232,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 5, 
+    "click_number": 6, 
     "speed_power": "flurry", 
     "speed_value": 6, 
     "attack_power": "blades_claws_fangs", 
@@ -6035,7 +6243,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 6, 
+    "click_number": 7, 
     "speed_power": "flurry", 
     "speed_value": 6, 
     "attack_power": "blades_claws_fangs", 
@@ -6053,11 +6261,11 @@
     <collector_number>055</collector_number>
     <name>Agent Venom</name>
     <type>character</type>
-    <age>modern</age>
     <rarity>super_rare</rarity>
     <real_name>Flash Thompson</real_name>
     <dimensions>1x1</dimensions>
     <point_values>[75, 50]</point_values>
+    <properties>[]</properties>
     <team_abilities>["team_player"]</team_abilities>
     <keywords>["Codex", "Fantastic Four", "Monster", "S.H.I.E.L.D.", "Soldier", "Spider-Man Family", "Thunderbolts"]</keywords>
     <special_powers>[
@@ -6074,7 +6282,11 @@
   {
     "type": "trait", 
     "name": "SYMBIOTE", 
-    "description": "Plasticity, Shape Change."
+    "description": "Plasticity, Shape Change.", 
+    "powers": [
+      "plasticity", 
+      "shape_change"
+    ]
   }, 
   {
     "type": "damage", 
@@ -6094,7 +6306,7 @@
     <dial_size>12</dial_size>
     <dial>[
   {
-    "click_number": 0, 
+    "click_number": 1, 
     "starting_line": true, 
     "speed_power": "running_shot", 
     "speed_value": 10, 
@@ -6106,7 +6318,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 1, 
+    "click_number": 2, 
     "speed_power": "running_shot", 
     "speed_value": 10, 
     "attack_power": "energy_explosion", 
@@ -6117,7 +6329,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 2, 
+    "click_number": 3, 
     "speed_power": "sidestep", 
     "speed_value": 9, 
     "attack_power": "blades_claws_fangs", 
@@ -6129,7 +6341,7 @@
     "starting_line": true
   }, 
   {
-    "click_number": 3, 
+    "click_number": 4, 
     "speed_power": "running_shot", 
     "speed_value": 8, 
     "attack_power": "energy_explosion", 
@@ -6140,7 +6352,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 4, 
+    "click_number": 5, 
     "speed_power": "sidestep", 
     "speed_value": 7, 
     "attack_power": "blades_claws_fangs", 
@@ -6151,7 +6363,7 @@
     "damage_value": 2
   }, 
   {
-    "click_number": 5, 
+    "click_number": 6, 
     "speed_power": "sidestep", 
     "speed_value": 7, 
     "attack_power": "blades_claws_fangs", 
@@ -6169,33 +6381,47 @@
     <collector_number>056</collector_number>
     <name>Hulk</name>
     <type>character</type>
-    <age>modern</age>
     <rarity>super_rare</rarity>
     <real_name>Amadeus Cho</real_name>
     <dimensions>1x1</dimensions>
     <point_values>[150, 40]</point_values>
+    <properties>[]</properties>
     <team_abilities>[]</team_abilities>
     <keywords>["Agents of Atlas", "Avengers", "Champions", "Fantastic Four", "Illuminati", "Monster", "S.H.I.E.L.D.", "Scientist"]</keywords>
     <special_powers>[
   {
     "type": "trait", 
     "name": "FOUR S.H.I.E.L.D. BEAST HUNTERS", 
-    "description": "When Hulk is given a MOVE action, after resolutions remove an action token from him and he can use Stealth until your next turn."
+    "description": "When Hulk is given a MOVE action, after resolutions remove an action token from him and he can use Stealth until your next turn.", 
+    "powers": [
+      "stealth"
+    ]
   }, 
   {
     "type": "trait", 
     "name": "THE TOTALLY AWESOME HULK", 
-    "description": "Leap/Climb, Super Strength"
+    "description": "Leap/Climb, Super Strength", 
+    "powers": [
+      "leap_climb", 
+      "super_strength"
+    ]
   }, 
   {
     "type": "defense", 
     "name": "KEEP FIGHTING THE MONSTERS", 
-    "description": "STOP. Invulnerability."
+    "description": "STOP. Invulnerability.", 
+    "powers": [
+      "stop", 
+      "invulnerability"
+    ]
   }, 
   {
     "type": "damage", 
     "name": "NINTH SMARTEST NOW", 
-    "description": "Outwit, but Hulk may use it X times per turn, where X is 1 plus the number of opposing characters he's damaged this turn."
+    "description": "Outwit, but Hulk may use it X times per turn, where X is 1 plus the number of opposing characters he's damaged this turn.", 
+    "powers": [
+      "outwit"
+    ]
   }
 ]</special_powers>
     <improved_movement>["hindering", "blocking"]</improved_movement>
@@ -6210,7 +6436,7 @@
     <dial_size>12</dial_size>
     <dial>[
   {
-    "click_number": 0, 
+    "click_number": 1, 
     "starting_line": true, 
     "speed_power": "charge", 
     "speed_value": 11, 
@@ -6222,7 +6448,7 @@
     "damage_value": 4
   }, 
   {
-    "click_number": 1, 
+    "click_number": 2, 
     "speed_power": "charge", 
     "speed_value": 10, 
     "attack_power": "quake", 
@@ -6233,7 +6459,7 @@
     "damage_value": 4
   }, 
   {
-    "click_number": 2, 
+    "click_number": 3, 
     "speed_power": "charge", 
     "speed_value": 10, 
     "attack_power": "quake", 
@@ -6244,7 +6470,7 @@
     "damage_value": 4
   }, 
   {
-    "click_number": 3, 
+    "click_number": 4, 
     "speed_power": "flurry", 
     "speed_value": 10, 
     "attack_value": 11, 
@@ -6254,7 +6480,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 4, 
+    "click_number": 5, 
     "speed_power": "flurry", 
     "speed_value": 10, 
     "attack_value": 12, 
@@ -6263,7 +6489,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 5, 
+    "click_number": 6, 
     "speed_power": "charge", 
     "speed_value": 10, 
     "attack_power": "quake", 
@@ -6275,7 +6501,7 @@
     "starting_line": true
   }, 
   {
-    "click_number": 6, 
+    "click_number": 7, 
     "speed_power": "charge", 
     "speed_value": 10, 
     "attack_value": 10, 
@@ -6284,7 +6510,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 7, 
+    "click_number": 8, 
     "speed_power": "flurry", 
     "speed_value": 9, 
     "attack_value": 10, 
@@ -6300,28 +6526,34 @@
     <collector_number>057</collector_number>
     <name>Annihilus</name>
     <type>character</type>
-    <age>modern</age>
     <rarity>super_rare</rarity>
     <real_name>Annihilus</real_name>
     <dimensions>1x1</dimensions>
     <point_values>[175, 125]</point_values>
+    <properties>[]</properties>
     <team_abilities>["power_cosmic"]</team_abilities>
     <keywords>["Armor", "Cosmic", "Monster", "Negative Zone", "Ruler"]</keywords>
     <special_powers>[
   {
     "type": "trait", 
-    "name": "ENDLESS RESURRECTION\u2026", 
+    "name": "ENDLESS RESURRECTION...", 
     "description": "POWER: Heal Annihilus equal to to his number of Negative Energy tokens."
   }, 
   {
     "type": "defense", 
-    "name": "\u2026CAN'T\u2026STOP\u2026LIVING\u2026", 
-    "description": "Invincible. When this click is first revealed, give Annihilus a Negative Energy token."
+    "name": "...CAN'T...STOP...LIVING...", 
+    "description": "Invincible. When this click is first revealed, give Annihilus a Negative Energy token.", 
+    "powers": [
+      "invincible"
+    ]
   }, 
   {
     "type": "damage", 
     "name": "ANTI-PARTICLES", 
-    "description": "Outwit. // When Annihilus is attacked, any positive modifiers of the attacker's attack value become negative. When Annihilus attacks a single character, any positive modifiers of the target's defense value become negative."
+    "description": "Outwit. // When Annihilus is attacked, any positive modifiers of the attacker's attack value become negative. When Annihilus attacks a single character, any positive modifiers of the target's defense value become negative.", 
+    "powers": [
+      "outwit"
+    ]
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
@@ -6336,7 +6568,7 @@
     <dial_size>12</dial_size>
     <dial>[
   {
-    "click_number": 0, 
+    "click_number": 1, 
     "starting_line": true, 
     "speed_power": "running_shot", 
     "speed_value": 11, 
@@ -6348,7 +6580,7 @@
     "damage_value": 4
   }, 
   {
-    "click_number": 1, 
+    "click_number": 2, 
     "speed_power": "running_shot", 
     "speed_value": 10, 
     "attack_power": "penetrating_psychic_blast", 
@@ -6359,7 +6591,7 @@
     "damage_value": 4
   }, 
   {
-    "click_number": 2, 
+    "click_number": 3, 
     "speed_power": "running_shot", 
     "speed_value": 10, 
     "attack_power": "energy_explosion", 
@@ -6371,7 +6603,7 @@
     "starting_line": true
   }, 
   {
-    "click_number": 3, 
+    "click_number": 4, 
     "speed_power": "running_shot", 
     "speed_value": 10, 
     "attack_power": "energy_explosion", 
@@ -6382,7 +6614,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 4, 
+    "click_number": 5, 
     "speed_power": "sidestep", 
     "speed_value": 8, 
     "attack_power": "precision_strike", 
@@ -6393,7 +6625,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 5, 
+    "click_number": 6, 
     "speed_power": "sidestep", 
     "speed_value": 8, 
     "attack_power": "precision_strike", 
@@ -6404,7 +6636,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 6, 
+    "click_number": 7, 
     "speed_power": "phasing_teleport", 
     "speed_value": 10, 
     "attack_power": "pulse_wave", 
@@ -6415,7 +6647,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 7, 
+    "click_number": 8, 
     "speed_power": "phasing_teleport", 
     "speed_value": 10, 
     "attack_power": "pulse_wave", 
@@ -6433,18 +6665,30 @@
     <collector_number>058</collector_number>
     <name>Super Skrull</name>
     <type>character</type>
-    <age>modern</age>
     <rarity>super_rare</rarity>
     <real_name>Kl'rt</real_name>
     <dimensions>1x1</dimensions>
     <point_values>[100, 75, 50]</point_values>
+    <properties>[]</properties>
     <team_abilities>["skrulls"]</team_abilities>
     <keywords>["Cosmic", "Frightful Four", "Skrulls", "Soldier", "Warrior"]</keywords>
     <special_powers>[
   {
     "type": "trait", 
     "name": "THE POWERS OF THE FANTASTIC FOUR", 
-    "description": "At the beginning of your turn, choose two. Super Skrull has the listed effects until your next turn.  INVISIBLE WOMAN: Sidestep, Stealth, Barrier as FREE but only to generate one marker.  THE THING: Charge, Impervious, Close Combat Expert.  MR. FANTASTIC: Plasticity, Super Senses, Giant Reach: 4.  HUMAN TORCH: Running Shot, Energy Explosion, range of 6."
+    "description": "At the beginning of your turn, choose two. Super Skrull has the listed effects until your next turn.  INVISIBLE WOMAN: Sidestep, Stealth, Barrier as FREE but only to generate one marker.  THE THING: Charge, Impervious, Close Combat Expert.  MR. FANTASTIC: Plasticity, Super Senses, Giant Reach: 4.  HUMAN TORCH: Running Shot, Energy Explosion, range of 6.", 
+    "powers": [
+      "sidestep", 
+      "stealth", 
+      "barrier", 
+      "charge", 
+      "impervious", 
+      "close_combat_expert", 
+      "plasticity", 
+      "super_senses", 
+      "running_shot", 
+      "energy_explosion"
+    ]
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
@@ -6459,7 +6703,7 @@
     <dial_size>12</dial_size>
     <dial>[
   {
-    "click_number": 0, 
+    "click_number": 1, 
     "starting_line": true, 
     "speed_value": 9, 
     "attack_value": 11, 
@@ -6469,7 +6713,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 1, 
+    "click_number": 2, 
     "speed_value": 9, 
     "attack_value": 10, 
     "defense_power": "toughness", 
@@ -6477,7 +6721,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 2, 
+    "click_number": 3, 
     "speed_value": 9, 
     "attack_value": 11, 
     "defense_power": "toughness", 
@@ -6485,18 +6729,18 @@
     "damage_power": "shape_change", 
     "damage_value": 3, 
     "starting_line": true
-  }, 
-  {
-    "click_number": 3, 
-    "speed_value": 8, 
-    "attack_value": 10, 
-    "defense_power": "toughness", 
-    "defense_value": 17, 
-    "damage_value": 3
   }, 
   {
     "click_number": 4, 
     "speed_value": 8, 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
+    "speed_value": 8, 
     "attack_value": 11, 
     "defense_power": "toughness", 
     "defense_value": 17, 
@@ -6505,16 +6749,7 @@
     "starting_line": true
   }, 
   {
-    "click_number": 5, 
-    "speed_value": 7, 
-    "attack_value": 10, 
-    "defense_power": "toughness", 
-    "defense_value": 17, 
-    "damage_value": 2
-  }, 
-  {
     "click_number": 6, 
-    "speed_power": "mind_control", 
     "speed_value": 7, 
     "attack_value": 10, 
     "defense_power": "toughness", 
@@ -6523,6 +6758,15 @@
   }, 
   {
     "click_number": 7, 
+    "speed_power": "mind_control", 
+    "speed_value": 7, 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 8, 
     "speed_power": "mind_control", 
     "speed_value": 7, 
     "attack_value": 11, 
@@ -6538,33 +6782,47 @@
     <collector_number>059</collector_number>
     <name>Blastaar</name>
     <type>character</type>
-    <age>modern</age>
     <rarity>super_rare</rarity>
     <real_name>Blastaar</real_name>
     <dimensions>1x1</dimensions>
     <point_values>[150, 75]</point_values>
+    <properties>[]</properties>
     <team_abilities>["power_cosmic"]</team_abilities>
     <keywords>["Cosmic", "Frightful Four", "Negative Zone", "Ruler", "Warrior"]</keywords>
     <special_powers>[
   {
     "type": "trait", 
     "name": "THE FORCEFUL RULER OF BALUUR", 
-    "description": "Force Blast, Super Strength."
+    "description": "Force Blast, Super Strength.", 
+    "powers": [
+      "force_blast", 
+      "super_strength"
+    ]
   }, 
   {
     "type": "attack", 
     "name": "CONCUSSIVE BLAST", 
-    "description": "Energy Explosion.  When he uses it, the character(s) Blastaar originally targeted are dealt penetrating damage."
+    "description": "Energy Explosion.  When he uses it, the character(s) Blastaar originally targeted are dealt penetrating damage.", 
+    "powers": [
+      "energy_explosion"
+    ]
   }, 
   {
     "type": "speed", 
     "name": "CONCUSSIVE BLAST FIGHT", 
-    "description": "Charge, Running Shot. FREE: Make a close attack."
+    "description": "Charge, Running Shot. FREE: Make a close attack.", 
+    "powers": [
+      "charge", 
+      "running_shot"
+    ]
   }, 
   {
     "type": "attack", 
     "name": "THE LIVING BOMB BURST", 
-    "description": "Energy Explosion.  When he uses it, the character(s) Blastaar originally targeted are dealt penetrating damage."
+    "description": "Energy Explosion.  When he uses it, the character(s) Blastaar originally targeted are dealt penetrating damage.", 
+    "powers": [
+      "energy_explosion"
+    ]
   }
 ]</special_powers>
     <improved_movement>["adjacent"]</improved_movement>
@@ -6579,7 +6837,7 @@
     <dial_size>12</dial_size>
     <dial>[
   {
-    "click_number": 0, 
+    "click_number": 1, 
     "starting_line": true, 
     "speed_power": "special", 
     "speed_value": 10, 
@@ -6591,7 +6849,7 @@
     "damage_value": 4
   }, 
   {
-    "click_number": 1, 
+    "click_number": 2, 
     "speed_power": "special", 
     "speed_value": 9, 
     "attack_power": "special", 
@@ -6602,7 +6860,7 @@
     "damage_value": 4
   }, 
   {
-    "click_number": 2, 
+    "click_number": 3, 
     "speed_power": "special", 
     "speed_value": 9, 
     "attack_power": "pulse_wave", 
@@ -6613,7 +6871,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 3, 
+    "click_number": 4, 
     "speed_power": "running_shot", 
     "speed_value": 9, 
     "attack_power": "special", 
@@ -6624,7 +6882,7 @@
     "starting_line": true
   }, 
   {
-    "click_number": 4, 
+    "click_number": 5, 
     "speed_power": "running_shot", 
     "speed_value": 9, 
     "attack_power": "special", 
@@ -6634,7 +6892,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 5, 
+    "click_number": 6, 
     "speed_power": "running_shot", 
     "speed_value": 8, 
     "attack_power": "pulse_wave", 
@@ -6644,7 +6902,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 6, 
+    "click_number": 7, 
     "speed_power": "special", 
     "speed_value": 8, 
     "attack_power": "pulse_wave", 
@@ -6654,7 +6912,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 7, 
+    "click_number": 8, 
     "speed_power": "special", 
     "speed_value": 8, 
     "attack_power": "pulse_wave", 
@@ -6671,12 +6929,11 @@
     <collector_number>060</collector_number>
     <name>Doom 2099, Revolutionary</name>
     <type>character</type>
-    <age>modern</age>
     <rarity>super_rare</rarity>
     <real_name>Victor Von Doom</real_name>
-    <special_type>title_character</special_type>
     <dimensions>1x1</dimensions>
     <point_values>[125]</point_values>
+    <properties>["title"]</properties>
     <team_abilities>["minions_of_doom", "team_player"]</team_abilities>
     <keywords>["Armor", "Future", "Latveria", "Mystical", "Politician", "Ruler", "S.H.I.E.L.D.", "Scientist"]</keywords>
     <special_powers>[
@@ -6721,7 +6978,7 @@
     <dial_size>12</dial_size>
     <dial>[
   {
-    "click_number": 0, 
+    "click_number": 1, 
     "starting_line": true, 
     "speed_power": "running_shot", 
     "speed_value": 8, 
@@ -6733,7 +6990,7 @@
     "damage_value": 4
   }, 
   {
-    "click_number": 1, 
+    "click_number": 2, 
     "speed_power": "running_shot", 
     "speed_value": 8, 
     "attack_power": "energy_explosion", 
@@ -6744,7 +7001,7 @@
     "damage_value": 4
   }, 
   {
-    "click_number": 2, 
+    "click_number": 3, 
     "speed_power": "running_shot", 
     "speed_value": 10, 
     "attack_power": "energy_explosion", 
@@ -6755,7 +7012,7 @@
     "damage_value": 4
   }, 
   {
-    "click_number": 3, 
+    "click_number": 4, 
     "speed_power": "running_shot", 
     "speed_value": 8, 
     "attack_power": "penetrating_psychic_blast", 
@@ -6763,17 +7020,6 @@
     "defense_power": "toughness", 
     "defense_value": 18, 
     "damage_power": "outwit", 
-    "damage_value": 3
-  }, 
-  {
-    "click_number": 4, 
-    "speed_power": "phasing_teleport", 
-    "speed_value": 7, 
-    "attack_power": "penetrating_psychic_blast", 
-    "attack_value": 10, 
-    "defense_power": "toughness", 
-    "defense_value": 17, 
-    "damage_power": "probability_control", 
     "damage_value": 3
   }, 
   {
@@ -6793,12 +7039,23 @@
     "speed_value": 7, 
     "attack_power": "penetrating_psychic_blast", 
     "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "probability_control", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 7, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 10, 
     "defense_power": "regeneration", 
     "defense_value": 16, 
     "damage_value": 4
   }, 
   {
-    "click_number": 7, 
+    "click_number": 8, 
     "speed_power": "phasing_teleport", 
     "speed_value": 7, 
     "attack_value": 11, 
@@ -6815,12 +7072,11 @@
     <collector_number>061</collector_number>
     <name>God Emperor Doom</name>
     <type>character</type>
-    <age>modern</age>
     <rarity>chase</rarity>
     <real_name>Victor Von Doom</real_name>
-    <special_type>unique</special_type>
     <dimensions>1x1</dimensions>
     <point_values>[300, 200, 100]</point_values>
+    <properties>["unique"]</properties>
     <team_abilities>["minions_of_doom", "power_cosmic"]</team_abilities>
     <keywords>["Armor", "Cosmic", "Deity", "Latveria", "Mystical", "Ruler", "Scientist"]</keywords>
     <special_powers>[
@@ -6832,7 +7088,11 @@
   {
     "type": "trait", 
     "name": "GOD OF BATTLEWORLD", 
-    "description": "When establishing themed teams, God Emperor Doom gains all Battleworld keywords. // Leadership, Perplex, Colossal Stamina. When God Emperor Doom uses Perplex to target another character with a Battleworld keyword, you may instead modify a combat value except damage by +2 or -2."
+    "description": "When establishing themed teams, God Emperor Doom gains all Battleworld keywords. // Leadership, Perplex, Colossal Stamina. When God Emperor Doom uses Perplex to target another character with a Battleworld keyword, you may instead modify a combat value except damage by +2 or -2.", 
+    "powers": [
+      "leadership", 
+      "perplex"
+    ]
   }, 
   {
     "type": "attack", 
@@ -6842,7 +7102,12 @@
   {
     "type": "damage", 
     "name": "YOU HAD TO MEDDLE, DIDN'T YOU?", 
-    "description": "STOP. Battle Fury, Exploit Weakness. When this click is first revealed, remove all action tokens from God Emperor Doom."
+    "description": "STOP. Battle Fury, Exploit Weakness. When this click is first revealed, remove all action tokens from God Emperor Doom.", 
+    "powers": [
+      "stop", 
+      "battle_fury", 
+      "exploit_weakness"
+    ]
   }
 ]</special_powers>
     <improved_movement>["adjacent", "hindering"]</improved_movement>
@@ -6857,7 +7122,7 @@
     <dial_size>12</dial_size>
     <dial>[
   {
-    "click_number": 0, 
+    "click_number": 1, 
     "starting_line": true, 
     "speed_power": "running_shot", 
     "speed_value": 12, 
@@ -6869,7 +7134,7 @@
     "damage_value": 5
   }, 
   {
-    "click_number": 1, 
+    "click_number": 2, 
     "speed_power": "running_shot", 
     "speed_value": 11, 
     "attack_power": "pulse_wave", 
@@ -6880,7 +7145,7 @@
     "damage_value": 5
   }, 
   {
-    "click_number": 2, 
+    "click_number": 3, 
     "speed_power": "charge", 
     "speed_value": 11, 
     "attack_power": "special", 
@@ -6891,7 +7156,7 @@
     "damage_value": 5
   }, 
   {
-    "click_number": 3, 
+    "click_number": 4, 
     "speed_power": "running_shot", 
     "speed_value": 10, 
     "attack_power": "penetrating_psychic_blast", 
@@ -6903,7 +7168,7 @@
     "starting_line": true
   }, 
   {
-    "click_number": 4, 
+    "click_number": 5, 
     "speed_power": "charge", 
     "speed_value": 10, 
     "attack_power": "special", 
@@ -6914,7 +7179,7 @@
     "damage_value": 4
   }, 
   {
-    "click_number": 5, 
+    "click_number": 6, 
     "speed_power": "running_shot", 
     "speed_value": 9, 
     "attack_power": "pulse_wave", 
@@ -6925,7 +7190,7 @@
     "damage_value": 4
   }, 
   {
-    "click_number": 6, 
+    "click_number": 7, 
     "speed_power": "charge", 
     "speed_value": 10, 
     "attack_power": "special", 
@@ -6936,7 +7201,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 7, 
+    "click_number": 8, 
     "speed_power": "running_shot", 
     "speed_value": 10, 
     "attack_power": "pulse_wave", 
@@ -6948,7 +7213,7 @@
     "starting_line": true
   }, 
   {
-    "click_number": 8, 
+    "click_number": 9, 
     "speed_power": "charge", 
     "speed_value": 11, 
     "attack_power": "special", 
@@ -6959,7 +7224,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 9, 
+    "click_number": 10, 
     "speed_power": "charge", 
     "speed_value": 12, 
     "attack_power": "steal_energy", 
@@ -6970,7 +7235,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 10, 
+    "click_number": 11, 
     "speed_power": "charge", 
     "speed_value": 13, 
     "attack_power": "steal_energy", 
@@ -6988,11 +7253,11 @@
     <collector_number>062</collector_number>
     <name>Sue Storm</name>
     <type>character</type>
-    <age>modern</age>
     <rarity>chase</rarity>
     <real_name>Susan Storm</real_name>
     <dimensions>1x1</dimensions>
     <point_values>[100]</point_values>
+    <properties>[]</properties>
     <team_abilities>["fantastic_four", "minions_of_doom"]</team_abilities>
     <keywords>["Battleworld: Other", "Fantastic Four", "Latveria", "Ruler"]</keywords>
     <special_powers>[
@@ -7004,12 +7269,19 @@
   {
     "type": "trait", 
     "name": "MERCY AT THE LEFT HAND OF DOOM", 
-    "description": "Barrier. Barrier as FREE, but only to generate 2 markers. // Sue Storm may use her displayed attack and damage powers as if she occupied a square of her Barrier markers."
+    "description": "Barrier. Barrier as FREE, but only to generate 2 markers. // Sue Storm may use her displayed attack and damage powers as if she occupied a square of her Barrier markers.", 
+    "powers": [
+      "barrier"
+    ]
   }, 
   {
     "type": "trait", 
     "name": "QUEEN OF BATTLEWORLD", 
-    "description": "Leadership, Perplex. When Sue Storm uses Perplex to target another character with a Battleworld keyword, you may instead modify a combat value except damage by +2 or -2."
+    "description": "Leadership, Perplex. When Sue Storm uses Perplex to target another character with a Battleworld keyword, you may instead modify a combat value except damage by +2 or -2.", 
+    "powers": [
+      "leadership", 
+      "perplex"
+    ]
   }
 ]</special_powers>
     <improved_movement>["hindering"]</improved_movement>
@@ -7024,7 +7296,7 @@
     <dial_size>12</dial_size>
     <dial>[
   {
-    "click_number": 0, 
+    "click_number": 1, 
     "starting_line": true, 
     "speed_power": "stealth", 
     "speed_value": 10, 
@@ -7036,7 +7308,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 1, 
+    "click_number": 2, 
     "speed_power": "stealth", 
     "speed_value": 10, 
     "attack_power": "telekinesis", 
@@ -7044,17 +7316,6 @@
     "defense_power": "super_senses", 
     "defense_value": 18, 
     "damage_power": "outwit", 
-    "damage_value": 3
-  }, 
-  {
-    "click_number": 2, 
-    "speed_power": "force_blast", 
-    "speed_value": 9, 
-    "attack_power": "quake", 
-    "attack_value": 11, 
-    "defense_power": "energy_shield_deflection", 
-    "defense_value": 18, 
-    "damage_power": "probability_control", 
     "damage_value": 3
   }, 
   {
@@ -7081,6 +7342,17 @@
   }, 
   {
     "click_number": 5, 
+    "speed_power": "force_blast", 
+    "speed_value": 9, 
+    "attack_power": "quake", 
+    "attack_value": 11, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 18, 
+    "damage_power": "probability_control", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 6, 
     "speed_power": "stealth", 
     "speed_value": 8, 
     "attack_power": "incapacitate", 
@@ -7091,7 +7363,7 @@
     "damage_value": 2
   }, 
   {
-    "click_number": 6, 
+    "click_number": 7, 
     "speed_power": "stealth", 
     "speed_value": 8, 
     "attack_power": "incapacitate", 
@@ -7109,19 +7381,18 @@
     <collector_number>063</collector_number>
     <name>Valeria Von Doom</name>
     <type>character</type>
-    <age>modern</age>
     <rarity>chase</rarity>
     <real_name>Valeria Richards</real_name>
-    <special_type>unique</special_type>
     <dimensions>1x1</dimensions>
     <point_values>[30]</point_values>
+    <properties>["unique"]</properties>
     <team_abilities>["minions_of_doom"]</team_abilities>
     <keywords>["Battleworld: Other", "Fantastic Four", "Latveria", "Runaways", "Scientist"]</keywords>
     <special_powers>[
   {
     "type": "trait", 
     "name": "HUNTING ANOMALIES FROM OTHER WORLDS", 
-    "description": "FREE: Roll a d6 and place Valeria Von Doom up to that many squares away. // During your opponent\u010f\u017c\u02dds turn, when an opposing character is placed within 4 squares and line of fire, after resolutions deal them 1 penetrating damage."
+    "description": "FREE: Roll a d6 and place Valeria Von Doom up to that many squares away. // During your opponent's turn, when an opposing character is placed within 4 squares and line of fire, after resolutions deal them 1 penetrating damage."
   }, 
   {
     "type": "trait", 
@@ -7131,7 +7402,11 @@
   {
     "type": "damage", 
     "name": "HEAD OF THE INSTITUTE FOR GIFTED YOUTHS", 
-    "description": "Leadership, Perplex. When Valeria Von Doom uses Leadership and succeeds, choose a friendly character within 4 squares and line of fire. That character can use Outwit until your next turn."
+    "description": "Leadership, Perplex. When Valeria Von Doom uses Leadership and succeeds, choose a friendly character within 4 squares and line of fire. That character can use Outwit until your next turn.", 
+    "powers": [
+      "leadership", 
+      "perplex"
+    ]
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
@@ -7146,23 +7421,13 @@
     <dial_size>12</dial_size>
     <dial>[
   {
-    "click_number": 0, 
+    "click_number": 1, 
     "starting_line": true, 
     "speed_power": "sidestep", 
     "speed_value": 8, 
     "attack_value": 10, 
     "defense_power": "energy_shield_deflection", 
     "defense_value": 18, 
-    "damage_power": "special", 
-    "damage_value": 2
-  }, 
-  {
-    "click_number": 1, 
-    "speed_power": "sidestep", 
-    "speed_value": 8, 
-    "attack_value": 10, 
-    "defense_power": "energy_shield_deflection", 
-    "defense_value": 17, 
     "damage_power": "special", 
     "damage_value": 2
   }, 
@@ -7178,6 +7443,16 @@
   }, 
   {
     "click_number": 3, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_value": 10, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
     "speed_power": "force_blast", 
     "speed_value": 8, 
     "attack_value": 9, 
@@ -7194,12 +7469,11 @@
     <collector_number>064</collector_number>
     <name>Franklin Von Doom</name>
     <type>character</type>
-    <age>modern</age>
     <rarity>chase</rarity>
     <real_name>Franklin Richards</real_name>
-    <special_type>unique</special_type>
     <dimensions>1x1</dimensions>
     <point_values>[70]</point_values>
+    <properties>["unique"]</properties>
     <team_abilities>["minions_of_doom"]</team_abilities>
     <keywords>["Battleworld: Other", "Cosmic", "Fantastic Four", "Latveria"]</keywords>
     <special_powers>[
@@ -7211,17 +7485,29 @@
   {
     "type": "attack", 
     "name": "MOLECULAR MANIPULATION", 
-    "description": "Incapacitate, Telekinesis."
+    "description": "Incapacitate, Telekinesis.", 
+    "powers": [
+      "incapacitate", 
+      "telekinesis"
+    ]
   }, 
   {
     "type": "defense", 
     "name": "WANT TO SAVE YOURSELF SOME TIME AND GIVE UP?", 
-    "description": "STOP. (Power Cosmic Team Ability), (Colossal Symbol), Impervious."
+    "description": "STOP. (Power Cosmic Team Ability), (Colossal Symbol), Impervious.", 
+    "powers": [
+      "stop", 
+      "impervious"
+    ]
   }, 
   {
     "type": "damage", 
     "name": "REALITY WARP", 
-    "description": "Probability Control. Outwit, but only when Franklin Von Doom occupies a terrain marker."
+    "description": "Probability Control. Outwit, but only when Franklin Von Doom occupies a terrain marker.", 
+    "powers": [
+      "probability_control", 
+      "outwit"
+    ]
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
@@ -7236,7 +7522,7 @@
     <dial_size>12</dial_size>
     <dial>[
   {
-    "click_number": 0, 
+    "click_number": 1, 
     "starting_line": true, 
     "speed_power": "phasing_teleport", 
     "speed_value": 11, 
@@ -7244,17 +7530,6 @@
     "attack_value": 11, 
     "defense_power": "energy_shield_deflection", 
     "defense_value": 18, 
-    "damage_power": "special", 
-    "damage_value": 1
-  }, 
-  {
-    "click_number": 1, 
-    "speed_power": "phasing_teleport", 
-    "speed_value": 10, 
-    "attack_power": "special", 
-    "attack_value": 10, 
-    "defense_power": "energy_shield_deflection", 
-    "defense_value": 17, 
     "damage_power": "special", 
     "damage_value": 1
   }, 
@@ -7271,6 +7546,17 @@
   }, 
   {
     "click_number": 3, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 10, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 4, 
     "speed_power": "sidestep", 
     "speed_value": 7, 
     "attack_power": "penetrating_psychic_blast", 
@@ -7280,7 +7566,7 @@
     "damage_value": 5
   }, 
   {
-    "click_number": 4, 
+    "click_number": 5, 
     "speed_power": "sidestep", 
     "speed_value": 7, 
     "attack_power": "penetrating_psychic_blast", 
@@ -7297,28 +7583,39 @@
     <collector_number>065</collector_number>
     <name>Maker</name>
     <type>character</type>
-    <age>modern</age>
     <rarity>chase</rarity>
     <real_name>Reed Richards (of Earth-1610)</real_name>
     <dimensions>1x1</dimensions>
     <point_values>[100]</point_values>
+    <properties>[]</properties>
     <team_abilities>[]</team_abilities>
     <keywords>["Cabal", "Revengers", "Scientist"]</keywords>
     <special_powers>[
   {
     "type": "trait", 
     "name": "ULTIMATE ELASTIC BODY", 
-    "description": "Plasticity, Super Senses, Giant Reach: 4. // When Maker attacks, characters he targets modify defense -1 for each team ability they can use."
+    "description": "Plasticity, Super Senses, Giant Reach: 4. // When Maker attacks, characters he targets modify defense -1 for each team ability they can use.", 
+    "powers": [
+      "plasticity", 
+      "super_senses"
+    ]
   }, 
   {
     "type": "trait", 
     "name": "I'VE BEEN MAKING SOME NEW TOOLS", 
-    "description": "Outwit, Perplex. // When Maker hits, after resolutions generate a token that is copy of an Equipment-Object that's equipped to a hit opposing character.  That object has [MAX 1] (for each object name) and isn't scored."
+    "description": "Outwit, Perplex. // When Maker hits, after resolutions generate a token that is copy of an Equipment-Object that's equipped to a hit opposing character.  That object has [MAX 1] (for each object name) and isn't scored.", 
+    "powers": [
+      "outwit", 
+      "perplex"
+    ]
   }, 
   {
     "type": "damage", 
     "name": "SPLITTING MYSELF APART", 
-    "description": "Shape Change. // POWER: Generate a Maker Two bystander [MAX 1]."
+    "description": "Shape Change. // POWER: Generate a Maker Two bystander [MAX 1].", 
+    "powers": [
+      "shape_change"
+    ]
   }
 ]</special_powers>
     <improved_movement>["hindering", "hindering"]</improved_movement>
@@ -7333,21 +7630,10 @@
     <dial_size>12</dial_size>
     <dial>[
   {
-    "click_number": 0, 
+    "click_number": 1, 
     "starting_line": true, 
     "speed_power": "phasing_teleport", 
     "speed_value": 8, 
-    "attack_power": "penetrating_psychic_blast", 
-    "attack_value": 11, 
-    "defense_power": "mastermind", 
-    "defense_value": 18, 
-    "damage_power": "special", 
-    "damage_value": 3
-  }, 
-  {
-    "click_number": 1, 
-    "speed_power": "phasing_teleport", 
-    "speed_value": 7, 
     "attack_power": "penetrating_psychic_blast", 
     "attack_value": 11, 
     "defense_power": "mastermind", 
@@ -7360,6 +7646,17 @@
     "speed_power": "phasing_teleport", 
     "speed_value": 7, 
     "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 11, 
+    "defense_power": "mastermind", 
+    "defense_value": 18, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 7, 
+    "attack_power": "penetrating_psychic_blast", 
     "attack_value": 10, 
     "defense_power": "mastermind", 
     "defense_value": 17, 
@@ -7367,7 +7664,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 3, 
+    "click_number": 4, 
     "speed_power": "flurry", 
     "speed_value": 8, 
     "attack_value": 10, 
@@ -7377,7 +7674,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 4, 
+    "click_number": 5, 
     "speed_power": "flurry", 
     "speed_value": 7, 
     "attack_value": 11, 
@@ -7387,7 +7684,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 5, 
+    "click_number": 6, 
     "speed_power": "flurry", 
     "speed_value": 7, 
     "attack_value": 11, 
@@ -7404,10 +7701,10 @@
     <collector_number>065bt</collector_number>
     <name>Maker Two</name>
     <type>bystander</type>
-    <age>modern</age>
     <rarity>chase</rarity>
     <dimensions>1x1</dimensions>
     <point_values>[]</point_values>
+    <properties>[]</properties>
     <team_abilities>[]</team_abilities>
     <keywords>[]</keywords>
     <special_powers>[
@@ -7429,7 +7726,7 @@
     <dial_size>1</dial_size>
     <dial>[
   {
-    "click_number": 0, 
+    "click_number": 1, 
     "starting_line": true, 
     "speed_power": "plasticity", 
     "speed_value": 8, 
@@ -7448,12 +7745,11 @@
     <collector_number>066</collector_number>
     <name>Reed Richards, Fixer Of Universes</name>
     <type>character</type>
-    <age>modern</age>
     <rarity>chase</rarity>
     <real_name>Reed Richards</real_name>
-    <special_type>title_character</special_type>
     <dimensions>1x1</dimensions>
     <point_values>[60]</point_values>
+    <properties>["title"]</properties>
     <team_abilities>["fantastic_four"]</team_abilities>
     <keywords>["Fantastic Four", "Illuminati", "Scientist"]</keywords>
     <special_powers>[
@@ -7471,7 +7767,11 @@
     "type": "plus_plot_points", 
     "name": "NO MORE SUPERHEROICS FOR A WHILE, JUST SCIENCE", 
     "description": "FREE: Outwit, Perplex until your next turn.  At the end of your turn, heal Reed Richards, Fixer Of Universes 1 click if he targeted 1+ opposing characters with Outwit or Perplex this turn.", 
-    "plot_points": 1
+    "plot_points": 1, 
+    "powers": [
+      "outwit", 
+      "perplex"
+    ]
   }, 
   {
     "type": "plus_plot_points", 
@@ -7498,18 +7798,8 @@
     <dial_size>12</dial_size>
     <dial>[
   {
-    "click_number": 0, 
-    "starting_line": true, 
-    "speed_power": "leap_climb", 
-    "speed_value": 11, 
-    "attack_value": 10, 
-    "defense_power": "toughness", 
-    "defense_value": 18, 
-    "damage_power": "leadership", 
-    "damage_value": 2
-  }, 
-  {
     "click_number": 1, 
+    "starting_line": true, 
     "speed_power": "leap_climb", 
     "speed_value": 11, 
     "attack_value": 10, 
@@ -7521,11 +7811,11 @@
   {
     "click_number": 2, 
     "speed_power": "leap_climb", 
-    "speed_value": 10, 
+    "speed_value": 11, 
     "attack_value": 10, 
-    "defense_power": "super_senses", 
-    "defense_value": 17, 
-    "damage_power": "probability_control", 
+    "defense_power": "toughness", 
+    "defense_value": 18, 
+    "damage_power": "leadership", 
     "damage_value": 2
   }, 
   {
@@ -7541,6 +7831,16 @@
   {
     "click_number": 4, 
     "speed_power": "leap_climb", 
+    "speed_value": 10, 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_power": "probability_control", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "leap_climb", 
     "speed_value": 9, 
     "attack_value": 10, 
     "defense_power": "super_senses", 
@@ -7549,7 +7849,7 @@
     "damage_value": 2
   }, 
   {
-    "click_number": 5, 
+    "click_number": 6, 
     "speed_power": "leap_climb", 
     "speed_value": 9, 
     "attack_value": 11, 
@@ -7559,7 +7859,7 @@
     "damage_value": 2
   }, 
   {
-    "click_number": 6, 
+    "click_number": 7, 
     "speed_power": "leap_climb", 
     "speed_value": 8, 
     "attack_value": 12, 
@@ -7575,10 +7875,10 @@
     <collector_number>066bt</collector_number>
     <name>Molecule Man</name>
     <type>bystander</type>
-    <age>modern</age>
     <rarity>chase</rarity>
     <dimensions>1x1</dimensions>
     <point_values>[]</point_values>
+    <properties>[]</properties>
     <team_abilities>[]</team_abilities>
     <keywords>[]</keywords>
     <special_powers>[
@@ -7600,7 +7900,7 @@
     <dial_size>1</dial_size>
     <dial>[
   {
-    "click_number": 0, 
+    "click_number": 1, 
     "starting_line": true, 
     "speed_power": "sidestep", 
     "speed_value": 0, 
@@ -7619,18 +7919,22 @@
     <collector_number>100</collector_number>
     <name>Mole Man</name>
     <type>character</type>
-    <age>modern</age>
     <rarity>limited_edition</rarity>
     <real_name>Harvey Elder</real_name>
     <dimensions>1x1</dimensions>
     <point_values>[50]</point_values>
+    <properties>[]</properties>
     <team_abilities>["underworld"]</team_abilities>
     <keywords>["Infinity Watch", "Monster", "Ruler", "Scientist"]</keywords>
     <special_powers>[
   {
     "type": "trait", 
     "name": "UNDERGROUND EMPIRE!", 
-    "description": "Stealth, Phasing/Teleport. When Mole Man uses Phasing/Teleport, generate a hindering terrain marker in the square he began and ended his movement in."
+    "description": "Stealth, Phasing/Teleport. When Mole Man uses Phasing/Teleport, generate a hindering terrain marker in the square he began and ended his movement in.", 
+    "powers": [
+      "stealth", 
+      "phasing_teleport"
+    ]
   }, 
   {
     "type": "trait", 
@@ -7640,7 +7944,10 @@
   {
     "type": "attack", 
     "name": "FIGMENTS OF A MAD NIGHTMARE", 
-    "description": "Incapacitate. Incapacitate as FREE, but only to target a character adjacent to 2+ characters."
+    "description": "Incapacitate. Incapacitate as FREE, but only to target a character adjacent to 2+ characters.", 
+    "powers": [
+      "incapacitate"
+    ]
   }
 ]</special_powers>
     <improved_movement>["hindering"]</improved_movement>
@@ -7655,7 +7962,7 @@
     <dial_size>12</dial_size>
     <dial>[
   {
-    "click_number": 0, 
+    "click_number": 1, 
     "starting_line": true, 
     "speed_power": "plasticity", 
     "speed_value": 9, 
@@ -7667,7 +7974,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 1, 
+    "click_number": 2, 
     "speed_power": "sidestep", 
     "speed_value": 9, 
     "attack_power": "special", 
@@ -7678,7 +7985,7 @@
     "damage_value": 3
   }, 
   {
-    "click_number": 2, 
+    "click_number": 3, 
     "speed_power": "sidestep", 
     "speed_value": 8, 
     "attack_power": "special", 
@@ -7689,7 +7996,7 @@
     "damage_value": 2
   }, 
   {
-    "click_number": 3, 
+    "click_number": 4, 
     "speed_power": "plasticity", 
     "speed_value": 8, 
     "attack_power": "steal_energy", 
@@ -7700,7 +8007,7 @@
     "damage_value": 2
   }, 
   {
-    "click_number": 4, 
+    "click_number": 5, 
     "speed_power": "plasticity", 
     "speed_value": 7, 
     "attack_power": "steal_energy", 
@@ -7718,10 +8025,10 @@
     <collector_number>LB-LVbt</collector_number>
     <name>Latverian Peasant</name>
     <type>bystander</type>
-    <age>modern</age>
     <rarity>limited_edition</rarity>
     <dimensions>1x1</dimensions>
     <point_values>[]</point_values>
+    <properties>["legacy"]</properties>
     <team_abilities>[]</team_abilities>
     <keywords>[]</keywords>
     <special_powers>[]</special_powers>
@@ -7737,7 +8044,7 @@
     <dial_size>1</dial_size>
     <dial>[
   {
-    "click_number": 0, 
+    "click_number": 1, 
     "starting_line": true, 
     "speed_value": 6, 
     "attack_value": 8, 
@@ -7745,5 +8052,53 @@
     "damage_value": 1
   }
 ]</dial>
+  </row>
+  <row>
+    <unit_id>f4M001</unit_id>
+    <set_id>f4</set_id>
+    <collector_number>M001</collector_number>
+    <name>Aunt Petunia's House</name>
+    <type>map</type>
+    <point_values>[]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[
+  {
+    "point_value": 5, 
+    "type": "costed_trait", 
+    "name": "AUNT PETUNIA'S HOUSE", 
+    "description": "At the beginning of the game, choose a friendly character. That character's minimum range value when using Outwit, Perplex, or Probability Control is 8. If that character's name includes \"Franklin\" or \"Valeria\", the 8 becomes 10. CONSOLATION: Opposing character's maximum range value when using Outwit, Perplex, or Probability Control is 6."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <map_url>https://hcmaps.net/maps/f4/aunt_petunias_house.json</map_url>
+    <dial>[]</dial>
+  </row>
+  <row>
+    <unit_id>f4M002</unit_id>
+    <set_id>f4</set_id>
+    <collector_number>M002</collector_number>
+    <name>Latverian Village</name>
+    <type>map</type>
+    <point_values>[]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[
+  {
+    "point_value": 5, 
+    "type": "costed_trait", 
+    "name": "LATVERIAN VILLAGE", 
+    "description": "At the beginning of the game, choose a friendly character. This game, that character has: 'Mastermind, but only to choose a friendly Latverian Peasant bystander.' // At the beginning of the game, generate 3 Latverian Peasant bystanders in different orange squares. If the chosen character is named Dr. Doom, generate 6 instead. CONSOLATION: At the beginning of the game, generate a Latverian Peasant bystander in your starting area."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <map_url>https://hcmaps.net/maps/f4/latverian_village.json</map_url>
+    <dial>[]</dial>
   </row>
 </resultset>

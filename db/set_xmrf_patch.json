@@ -1,0 +1,70 @@
+{
+  "updates": {
+    "xmrf006": {
+      "special_powers": [{
+      }, {
+        "powers": ["charge", "flurry"]
+      }]
+    },
+    "xmrf012": {
+      "special_powers": [{
+        "powers": ["charge", "flurry", "quake", "poison", "exploit_weakness", "empower"]
+      }]
+    },
+    "xmrf030": {
+      "special_powers": [{
+        "powers": ["outwit", "exploit_weakness"]
+      }]
+    },
+    "xmrf043bt": {
+      "special_powers": [{
+      }, {
+        "description": "Empower. // POWER: If Kotik is within 4 squares of an opposing character, place Omega Red adjacent to Kotik.",
+        "powers": ["empower"]
+      }]
+    },
+    "xmrf052": {
+      "special_powers": [{
+      }, {
+        "powers": ["blades_claws_fangs", "energy_explosion", "poison"]
+      }]
+    },
+    "xmrf055": {
+      "special_powers": [{
+      }, {
+        "powers": ["charge", "running_shot"]
+      }]
+    },
+    "xmrf059a": {
+      "special_powers": [{
+        "powers": ["steal_energy"]
+      }]
+    },
+    "xmrf064": {
+      "special_powers": [{
+        "powers": ["mind_control"]
+      }]
+    },
+    "xmrfL052": {
+      "special_powers": [{
+      }, {
+        "powers": ["sidestep"]
+      }]
+    }
+  },
+  "additions": [{
+    "unit_id": "xmrfM001",
+    "set_id": "xmrf",
+    "collector_number": "M001",
+    "name": "Starcore Space Station",
+    "type": "map",
+    "map_url": "https://hcmaps.net/maps/xmrf/starcore_space_station.json"
+  }, {
+    "unit_id": "xmrfM002",
+    "set_id": "xmrf",
+    "collector_number": "M002",
+    "name": "Abandoned Weapon X Facility",
+    "type": "map",
+    "map_url": "https://hcmaps.net/maps/xmrf/abandoned_weapon_x_facility.json"
+  }]
+}

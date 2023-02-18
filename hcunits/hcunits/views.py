@@ -157,7 +157,6 @@ class TeamView(View):
     try:
       team.update_from_wire_format(change_list)
     except Exception as err:
-      print("Error: " + str(err))
       return HttpResponseBadRequest("Invalid team update: " + str(err))
 
     # Everything looks good, so commit the change.

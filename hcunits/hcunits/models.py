@@ -19,9 +19,8 @@ class Team(models.Model):
   age = models.CharField(max_length=6, choices=Age.choices, default=Age.MODERN)
   point_limit = models.IntegerField(blank=True, null=True, default=300)
   visibility = models.CharField(max_length=16, choices=Visibility.choices, default=Visibility.PRIVATE)
-  # date/time created
-  # date/time modified
-
+  create_time = models.DateTimeField(auto_now_add=True)
+  update_time = models.DateTimeField(auto_now=True)
   #theme_team_keyword = ""
 
   # A JSON array of objects in the form:
@@ -53,7 +52,9 @@ class Team(models.Model):
       "description": self.description,
       "age": self.age,
       "point_limit": self.point_limit,
-      "visibility": self.visibility
+      "visibility": self.visibility,
+      "create_time": self.create_time,
+      "update_time": self.update_time,
     }
 
     unit_id_list = []
@@ -337,10 +338,9 @@ class Unit(models.Model):
     name = models.TextField()
     type = models.CharField(max_length=21)
     point_values = models.JSONField()
-    age = models.CharField(max_length=6)
     rarity = models.CharField(max_length=15, blank=True, null=True)
     real_name = models.TextField(blank=True, null=True)
-    special_type = models.CharField(max_length=15, blank=True, null=True)
+    properties = models.JSONField()
     dimensions = models.CharField(max_length=3, blank=True, null=True)
     team_abilities = models.JSONField()
     keywords = models.JSONField()
@@ -349,6 +349,7 @@ class Unit(models.Model):
     improved_targeting = models.JSONField()
     object_type = models.CharField(max_length=11, blank=True, null=True)
     object_keyphrases = models.JSONField()
+    map_url = models.TextField(blank=True, null=True)
     unit_range = models.IntegerField(blank=True, null=True)
     targets = models.IntegerField(blank=True, null=True)
     speed_type = models.CharField(max_length=17, blank=True, null=True)

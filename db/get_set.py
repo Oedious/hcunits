@@ -7,7 +7,7 @@ import os
 import os.path
 import re
 import traceback
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, Tag
 from collections import OrderedDict
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
@@ -38,6 +38,58 @@ SET_MAP = {
   "bgame": "Battlegrounds: Avengers vs. Masters of Evil",
   "f4": "Fantastic Four",
   "fff4": "Fast Forces: Fantastic Four",
+}
+
+POWERS = {
+  "Flurry": "flurry",
+  "Leap/Climb": "leap_climb",
+  "Phasing/Teleport": "phasing_teleport",
+  "Earthbound/Neutralized": "earthbound_neutralized",
+  "Charge": "charge",
+  "Mind Control": "mind_control",
+  "Plasticity": "plasticity",
+  "Force Blast": "force_blast",
+  "Sidestep": "sidestep",
+  "Hypersonic Speed": "hypersonic_speed",
+  "Stealth": "stealth",
+  "Running Shot": "running_shot",
+  "Blades/Claws/Fangs": "blades_claws_fangs",
+  "Energy Explosion": "energy_explosion",
+  "Pulse Wave": "pulse_wave",
+  "Quake": "quake",
+  "Super Strength": "super_strength",
+  "Incapacitate": "incapacitate",
+  "Penetrating/Psychic Blast": "penetrating_psychic_blast",
+  "Smoke Cloud": "smoke_cloud",
+  "Precision Strike": "precision_strike",
+  "Poison": "poison",
+  "Steal Energy": "steal_energy",
+  "Telekinesis": "telekinesis",
+  "Super Senses": "super_senses",
+  "Toughness": "toughness",
+  "Defend": "defend",
+  "Combat Reflexes": "combat_reflexes",
+  "Energy Shield/Deflection": "energy_shield_deflection",
+  "Barrier": "barrier",
+  "Mastermind": "mastermind",
+  "Willpower": "willpower",
+  "Invincible": "invincible",
+  "Impervious": "impervious",
+  "Regeneration": "regeneration",
+  "Invulnerability": "invulnerability",
+  "Ranged Combat Expert": "ranged_combat_expert",
+  "Battle Fury": "battle_fury",
+  "Support": "support",
+  "Exploit Weakness": "exploit_weakness",
+  "Enhancement": "enhancement",
+  "Probability Control": "probability_control",
+  "Shape Change": "shape_change",
+  "Close Combat Expert": "close_combat_expert",
+  "Empower": "empower",
+  "Perplex": "perplex",
+  "Outwit": "outwit",
+  "Leadership": "leadership",
+  "STOP": "stop",
 }
 
 IMPROVED_MOVEMENT_ABILITIES = {
@@ -91,7 +143,9 @@ def get_unit_cache_path(set_id, unit_id):
 def clean_string(str):
   # Convert some frequently used UTF-8 chars to ASCII.
   str = str.replace(u"\u2019", "'")
+  str = str.replace(u"\u2026", "...")
   str = str.replace(u"\u00e2\u0080\u0099", "'")
+  str = str.replace(u"\u010f\u017c\u02dd", "'")
   str = str.replace(u"\u00e2\u0080\u0093", "-")
   str = str.replace(u"\u00e2\u0080\u015a", "...")
   # Escape special XML characters.
@@ -119,30 +173,52 @@ def is_subdial(dial, subdial):
   return True;
 
 class Unit:
-  def __init__(self, set_id, dimensions):
-    self.set_id = set_id
-    self.dimensions = dimensions
-
-    # This must be set in order to be valid.
-    self.type = None
+  def __init__(self, **kwargs):
+    # These must be set in order to be valid.
+    self.unit_id = kwargs.get("unit_id", None)
+    self.set_id = kwargs.get("set_id", None)
+    self.collector_number = kwargs.get("collector_number", None)
+    self.name = kwargs.get("name", None)
+    self.type = kwargs.get("type", None)
+    # TODO: figure out how to determine the age.
+    # self.age = kwargs.get("age", "modern")
 
     # These fields are conditionally used depending on the unit type.
-    self.real_name = None
-    self.special_type = None
-    self.object_type = None
-
-    # TODO: figure out how to determine the age.
-    self.age = "modern"
+    self.rarity = kwargs.get("rarity", None)
+    self.real_name = kwargs.get("real_name", None)
+    self.dimensions = kwargs.get("dimensions", None)
+    self.object_type = kwargs.get("object_type", None)
+    self.map_url = kwargs.get("map_url", None)
+    self.unit_range = kwargs.get("unit_range", None)
+    self.targets = kwargs.get("targets", None)
+    self.speed_type = kwargs.get("speed_type", None)
+    self.attack_type = kwargs.get("attack_type", None)
+    self.defense_type = kwargs.get("defense_type", None)
+    self.damage_type = kwargs.get("damage_type", None)
+    self.dial_size = kwargs.get("dial_size", None)
 
     # These fields are stored as JSON and must always exist, even if empty.
-    self.point_values = []
-    self.team_abilities = []
-    self.keywords = []
-    self.special_powers = []
-    self.improved_movement = []
-    self.improved_targeting = []
-    self.object_keyphrases = []
-    self.dial = []
+    self.point_values = kwargs.get("point_values", [])
+    self.properties = kwargs.get("properties", [])
+    self.team_abilities = kwargs.get("team_abilities", [])
+    self.keywords = kwargs.get("keywords", [])
+    self.special_powers = kwargs.get("special_powers", [])
+    self.improved_movement = kwargs.get("improved_movement", [])
+    self.improved_targeting = kwargs.get("improved_targeting", [])
+    self.object_keyphrases = kwargs.get("object_keyphrases", [])
+    self.dial = kwargs.get("dial", [])
+
+  def __eq__(self, other):
+    return self.unit_id == other.unit_id
+
+  # Override less-than operator to get a particular sort order:
+  # Maps at the end, otherwise sort by unit_id
+  def __lt__(self, other):
+    if self.type == "map" and other.type != "map":
+      return False
+    if self.type != "map" and other.type == "map":
+      return True
+    return self.unit_id < other.unit_id
     
   def parse_unit_page(self, unit_page):
     soup = BeautifulSoup(unit_page, 'html.parser')
@@ -211,15 +287,18 @@ class Unit:
           self.type = "mystery_card"
         else:
           self.type = "tarot_card"
+      elif soup.find("td", class_="card_ata"):
+        if soup.find(text=re.compile(r'\s*Mystery Card\s*')):
+          self.type = "mystery_card"
       elif soup.find("td", class_="card_location_bonus"):
         print("Skipping location bonuses as they should be tied to a map, when they're supported.")
         return False
       else:
         self.type = "character"
         if figure_rank == "prime" or figure_rank == "unique":
-          self.special_type = figure_rank
+          self.properties.append(figure_rank)
         elif soup.find_all(text=re.compile(r'\s*STARTING PLOT POINTS:\s*')):
-          self.special_type = "title_character"
+          self.properties.append("title")
         has_dial = soup.find("table", class_="units_dial")
         if not has_dial:
           is_team_up = self.name.startswith("Team Up:")
@@ -320,6 +399,7 @@ class Unit:
             ("type", "object"),
             ("description", clean_string(description))
           ]))
+          self.special_powers[-1] = self.parse_powers_from_description(self.special_powers[-1])
 
     # Parse equipment special powers
     if self.type == "equipment":
@@ -389,9 +469,11 @@ class Unit:
                 ("name", sp_name),
                 ("description", clean_string(sp_description))
               ]))
+              self.special_powers[-1] = self.parse_powers_from_description(self.special_powers[-1])
             elif len(self.special_powers) > 0:
               # Append it to the end of the previous description.
               self.special_powers[-1]["description"] += clean_string(" " + attr)
+              self.special_powers[-1] = self.parse_powers_from_description(self.special_powers[-1])
             else:
               print("Skipping unknown object attribute '%s'" % attr)
 
@@ -400,6 +482,8 @@ class Unit:
       equip_tag = soup.find("td", class_="card_id_card")
       if not equip_tag:
         equip_tag = soup.find("td", class_="card_tarot_card")
+      if not equip_tag:
+        equip_tag = soup.find("td", class_="card_ata")
         
       tag_list = equip_tag.parent.next_sibling.next_sibling.find_all("div")
       if tag_list:
@@ -419,6 +503,7 @@ class Unit:
               ("name", clean_string(name_tag.strip())),
               ("description", clean_string(name_tag.parent.next_sibling.strip()[2:]))
             ]))
+            self.special_powers[-1] = self.parse_powers_from_description(self.special_powers[-1])
 
     # Parse tarot cards
     if self.type == "tarot_card":
@@ -454,7 +539,7 @@ class Unit:
             sp_type = "defense"
           elif sp_type_str.startswith("g-"):
             sp_type = "damage"
-          elif sp_type_str == "epic" and self.special_type == "title_character":
+          elif sp_type_str == "epic" and "title" in self.properties:
             sp_type = "title_trait"
           else:
             raise RuntimeError("The special power type '%s' for '%s' is currently not supported" % (sp_type_str, unit_id))
@@ -462,6 +547,9 @@ class Unit:
           if td_tags[1].strong:
             sp_name = td_tags[1].strong.string.strip().rstrip(':')
             sp_description = td_tags[1].contents[2].strip()
+            for contents in td_tags[1].contents[3:]:
+              if not isinstance(contents, Tag):
+                sp_description += " " + contents.strip()
           else:
             sp_name = None
             sp_description = td_tags[1].string.strip()
@@ -470,6 +558,20 @@ class Unit:
           if self.type == "construct" and sp_name == "CONSTRUCTS":
             continue
           
+          # Handle special powers that describe properties
+          if sp_type == "trait" and sp_name == "ROLE TAG":
+            tags = re.split("/|,", sp_description)
+            for tag in tags:
+              tag = fix_style(tag.strip())
+              if (tag == "sidekick" or
+                  tag == "captain" or
+                  tag == "ally" or 
+                  tag == "secret_identity"):
+                self.properties.append(tag)
+              else:
+                raise RuntimeError("Found unknown role tag '%s' for '%s'" % (tag, unit_id))
+            continue
+
           if sp_type == "improved":
             if sp_name == "MOVEMENT":
               # First try to parse when the abilities are listed as rules.
@@ -528,7 +630,7 @@ class Unit:
             # Handle special trait types, like costed, rally, or plot points.
             if sp_type == "trait" and sp_name:
               # Handle title character traits, like plus and minus plot points.
-              if self.special_type == "title_character":
+              if "title" in self.properties:
                 match_obj = re.search(r"^\(([-\+][X\d])\) (.*)", sp_name)
                 if match_obj:
                   if match_obj.group(1)[0] == "+":
@@ -546,7 +648,7 @@ class Unit:
               match_obj = re.search(r"^\(\+(\d*) POINTS\) (.+)", sp_name)
               # Try the alternative format. Note: this can conflict with the
               # style of title character plot points, so ignore it in that case.
-              if not match_obj and self.special_type != "title_character":
+              if not match_obj and not "title" in self.properties:
                 match_obj = re.search(r"^\(\+(\d*)\) (.+)", sp_name)
               if match_obj:
                 sp["type"] = "costed_trait"
@@ -575,6 +677,10 @@ class Unit:
                 sp["description"] = sp["description"].replace("RALLY: Once per roll for each die in a finalized attack roll and for all characters with a matching RALLY die and trait color printed under their trait star, after resolutions you may choose a friendly character to gain a matching RALLY die. RALLY trait colors specify which attack type they can gain RALLY dies from. BLUE = Friendly Attack Rolls. RED = Opposing Attack Rolls. GREEN = All Attack Rolls.", "")
                 sp["description"] = sp["description"].replace(" When a character gains a RALLY die, place a die with the matching result on their card.", "")
                 sp["description"] = sp["description"].replace(" ()", "")
+    
+            # Try to find a list of standard powers granted by the special power
+            # so that the list can be used for search.
+            sp = self.parse_powers_from_description(sp)
     
             # Avoid adding duplicates.
             dupe = [x for x in self.special_powers if x["name"] == sp["name"]]
@@ -606,7 +712,7 @@ class Unit:
         # If it has a title, it's a non-KO click, otherwise skip it.
         if tags[0].td.has_attr('title'):
           row_obj = OrderedDict()
-          row_obj["click_number"] = self.dial_size
+          row_obj["click_number"] = self.dial_size + 1
           if self.dial_size == 0:
             row_obj["starting_line"] = True
           types = ["speed", "attack", "defense", "damage"]
@@ -658,12 +764,41 @@ class Unit:
     else:
       self.dimensions = None
 
+    # If the collector number starts with "L", assume it's a legacy card
+    if self.collector_number.startswith("L"):
+      self.properties.append("legacy")
+
     return True
+
+  # Given a "special_powers" entry, tries to populate the "powers" field of the
+  # "description" field.
+  def parse_powers_from_description(self, sp):
+    # Try to find a list of standard powers granted by the special power
+    # so that the list can be used for search.
+    split_list = re.split("\.|,|//", sp["description"])
+    sp_powers = []
+    for power in split_list:
+      power = power.strip()
+      if (len(power) <= 0 or
+          power.lower() == "knockback" or
+          power.lower() == "[wing symbol]" or
+          power.lower().startswith("passenger") or
+          power.lower().startswith("giant reach")):
+        continue
+      if power in POWERS:
+        sp_powers.append(POWERS[power])
+      else:
+        # Stop trying on the first failure, otherwise we will probably
+        # pull in more than we should.
+        break
+    if len(sp_powers) > 0:
+      sp["powers"] = sp_powers
+    return sp
 
   # Tries to merge the 'src_unit' into this, as the dest. Returns True if done
   # successfully, otherwise False.
   def merge_point_values(self, src_unit):
-    fields = ["name", "age", "rarity", "real_name", "special_type", "dimensions", "team_abilities", "keywords"]
+    fields = ["name", "rarity", "real_name", "properties", "dimensions", "team_abilities", "keywords"]
     for field in fields:
       if getattr(self, field) != getattr(src_unit, field):
         print("Warning: merging '%s' and '%s' failed '%s' validation: %s vs %s" % (self.unit_id, src_unit.unit_id, field, getattr(self, field), getattr(src_unit, field)))
@@ -689,12 +824,12 @@ class Unit:
         starting_line -= 1
 
     if not is_match:
-    # Hack to get ffwotr dials to be merged.
+      # Hack to get ffwotr dials to be merged.
       if self.set_id == "ffwotr":
         starting_line = len(self.dial)
         click_num = 6
         for click in src_unit.dial:
-          click["click_number"] = click_num
+          click["click_number"] = click_num + 1
           self.dial.append(click)
           click_num += 1
       else:
@@ -732,35 +867,53 @@ class Unit:
     # Return true to indicate a successful merge.
     return True;
 
+  def apply_update(self, update):
+    for (key, value) in update.items():
+      if key == "special_powers":
+        for i in range(len(value)):
+          for (k, v) in value[i].items():
+            self.special_powers[i][k] = v
+      elif key == "dial":
+        for i in range(len(value)):
+          for (k, v) in value[i].items():
+            self.dial[i][k] = v
+      elif (key == "defense_type" or
+            key == "object_type"):
+        setattr(self, key, value)
+      else:
+        raise RuntimeError("The update type '%s' for '%s' is currently not supported" % (key, self.unit_id))
+
   def output_xml(self):
     xml = u"""
     <unit_id>{}</unit_id>
     <set_id>{}</set_id>
     <collector_number>{}</collector_number>
     <name>{}</name>
-    <type>{}</type>
-    <age>{}</age>""".format(self.unit_id, self.set_id, self.collector_number, clean_string(self.name), self.type, self.age)
+    <type>{}</type>""".format(self.unit_id, self.set_id, self.collector_number, clean_string(self.name), self.type)
+    #if self.age:
+    #  xml += "\n    <age>%s</age>" % self.age
     if self.rarity:
       xml += "\n    <rarity>%s</rarity>" % self.rarity
     if self.real_name:
       xml += "\n    <real_name>%s</real_name>" % clean_string(self.real_name)
-    if self.special_type:
-      xml += "\n    <special_type>%s</special_type>" % self.special_type
     if self.dimensions:
       xml += "\n    <dimensions>%s</dimensions>" % self.dimensions
     xml += """
     <point_values>{}</point_values>
+    <properties>{}</properties>
     <team_abilities>{}</team_abilities>
     <keywords>{}</keywords>
     <special_powers>{}</special_powers>
     <improved_movement>{}</improved_movement>
     <improved_targeting>{}</improved_targeting>""".format(
-      json.dumps(self.point_values), json.dumps(self.team_abilities),
+      json.dumps(self.point_values), json.dumps(self.properties), json.dumps(self.team_abilities),
       json.dumps(self.keywords), json.dumps(self.special_powers, indent=2),
       json.dumps(self.improved_movement), json.dumps(self.improved_targeting))
     if self.object_type:
       xml += "\n    <object_type>%s</object_type>" % self.object_type
     xml += "\n    <object_keyphrases>%s</object_keyphrases>" % json.dumps(self.object_keyphrases)
+    if self.map_url:
+      xml += "\n    <map_url>%s</map_url>" % self.map_url
     if len(self.dial) > 0:
       xml += """
     <unit_range>{}</unit_range>
@@ -897,6 +1050,15 @@ if __name__ == "__main__":
   if not os.path.exists(cache_path):
     os.mkdir(cache_path);
 
+  # Try to load an associated patch file.
+  patch = {}
+  patch_filename = "set_%s_patch.json" % args.set_id
+  if os.path.exists(patch_filename):
+    with open(patch_filename, "r") as f:
+      patch = json.loads(f.read())
+  deletions = patch.get("deletions", [])
+  updates = patch.get("updates", {})
+
   units = []
   fetcher = Fetcher(args.set_id, args.skip_cache)
   try:
@@ -906,14 +1068,18 @@ if __name__ == "__main__":
       unit_id = set["unit_id"]
       dimensions = set["dimensions"]
       if args.unit_id_stop and unit_id == args.unit_id_stop:
-        break;
+        break
+
+      # Skip the units in the "deletions" section of the patch.
+      if unit_id in deletions:
+        continue
 
       unit_page = fetcher.fetch_unit_page(unit_id);
-      unit = Unit(args.set_id, dimensions)
+      unit = Unit(set_id=args.set_id, dimensions=dimensions)
       if unit.parse_unit_page(unit_page):
         # If the unit ID ends in 'r', 'e', or 'v', check for other units with
         # similar same unit ID and if so, merge point values.
-        if unit.unit_id.endswith(('r', 'e', 'v', 'x')):
+        if unit.unit_id.endswith(('r', 'e', 'v', 'x', 'p')):
           main_unit = next((u for u in units if u.unit_id == unit.unit_id[:-1] and u.type == unit.type), None)
           if (main_unit):
             # Try to merge the units together and mark the current unit as invalid
@@ -937,19 +1103,33 @@ if __name__ == "__main__":
             unit.unit_id = unit_id
             unit.collector_number = collector_number
             unit.special_powers = special_powers + associated_unit.special_powers
+            unit.properties.append("team_up")
           else:
             print("Failed to find corresponding unit for team-up %s" % unit_id)
             unit = None
 
         if unit:
           units.append(unit)
+
+    if patch.get("additions", None):
+      for addition in patch["additions"]:
+        if len(units) < int(args.max_units):
+          unit = Unit(**addition)
+          units.append(unit)
+
   except Exception as e:
     print("An error has occurred: ", e, "\n", traceback.format_exc())
 
   fetcher.close()
 
-  # Sort the units by their unit ID.
-  units.sort(key=lambda u: u.unit_id)
+  # Apply any updates from the patches. Needs to be done outside of the loop
+  # in case there are any merges that occur.
+  for unit in units:
+    if unit.unit_id in updates:
+      unit.apply_update(updates[unit.unit_id])
+
+  # Sort the units so that maps are last, otherwise by their unit ID
+  units.sort()
 
   num_processed = 0
   output_xml = "<resultset>"

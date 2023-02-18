@@ -5,7 +5,6 @@
     "collector_number": "001", 
     "name": "Spider-Man", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "fast_forces", 
     "real_name": "Peter Parker", 
     "dimensions": "1x1", 
@@ -13,6 +12,7 @@
       75, 
       50
     ], 
+    "properties": "[]", 
     "team_abilities": [
       "spider_man"
     ], 
@@ -30,7 +30,10 @@
       {
         "type": "damage", 
         "name": "QUIPS AND THWIPS", 
-        "description": "Leadership, but succeeds on a 4-6."
+        "description": "Leadership, but succeeds on a 4-6.", 
+        "powers": [
+          "leadership"
+        ]
       }
     ], 
     "improved_movement": [
@@ -47,7 +50,7 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
+        "click_number": 1, 
         "starting_line": true, 
         "speed_power": "charge", 
         "speed_value": 11, 
@@ -59,7 +62,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 1, 
+        "click_number": 2, 
         "speed_power": "charge", 
         "speed_value": 10, 
         "attack_value": 11, 
@@ -69,7 +72,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 2, 
+        "click_number": 3, 
         "speed_power": "running_shot", 
         "speed_value": 11, 
         "attack_power": "incapacitate", 
@@ -81,7 +84,7 @@
         "starting_line": true
       }, 
       {
-        "click_number": 3, 
+        "click_number": 4, 
         "speed_power": "running_shot", 
         "speed_value": 10, 
         "attack_power": "incapacitate", 
@@ -92,7 +95,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 4, 
+        "click_number": 5, 
         "speed_power": "flurry", 
         "speed_value": 9, 
         "attack_value": 10, 
@@ -102,7 +105,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 5, 
+        "click_number": 6, 
         "speed_power": "flurry", 
         "speed_value": 8, 
         "attack_value": 11, 
@@ -119,7 +122,6 @@
     "collector_number": "002", 
     "name": "Venom", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "fast_forces", 
     "real_name": "Eddie Brock", 
     "dimensions": "1x1", 
@@ -127,6 +129,7 @@
       75, 
       50
     ], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [
       "Codex", 
@@ -138,7 +141,11 @@
       {
         "type": "trait", 
         "name": "SYMBIOTE", 
-        "description": "Plasticity, Shape Change."
+        "description": "Plasticity, Shape Change.", 
+        "powers": [
+          "plasticity", 
+          "shape_change"
+        ]
       }, 
       {
         "type": "trait", 
@@ -160,7 +167,7 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
+        "click_number": 1, 
         "starting_line": true, 
         "speed_power": "charge", 
         "speed_value": 9, 
@@ -172,7 +179,7 @@
         "damage_value": 2
       }, 
       {
-        "click_number": 1, 
+        "click_number": 2, 
         "speed_power": "charge", 
         "speed_value": 9, 
         "attack_power": "steal_energy", 
@@ -182,7 +189,7 @@
         "damage_value": 4
       }, 
       {
-        "click_number": 2, 
+        "click_number": 3, 
         "speed_power": "charge", 
         "speed_value": 9, 
         "attack_power": "blades_claws_fangs", 
@@ -194,7 +201,7 @@
         "starting_line": true
       }, 
       {
-        "click_number": 3, 
+        "click_number": 4, 
         "speed_power": "sidestep", 
         "speed_value": 8, 
         "attack_power": "steal_energy", 
@@ -204,7 +211,7 @@
         "damage_value": 4
       }, 
       {
-        "click_number": 4, 
+        "click_number": 5, 
         "speed_power": "sidestep", 
         "speed_value": 7, 
         "attack_power": "super_strength", 
@@ -215,7 +222,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 5, 
+        "click_number": 6, 
         "speed_power": "sidestep", 
         "speed_value": 7, 
         "attack_power": "super_strength", 
@@ -233,7 +240,6 @@
     "collector_number": "003", 
     "name": "Black Cat", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "fast_forces", 
     "real_name": "Felicia Hardy", 
     "dimensions": "1x1", 
@@ -241,6 +247,7 @@
       50, 
       25
     ], 
+    "properties": "[]", 
     "team_abilities": [
       "defenders"
     ], 
@@ -254,7 +261,10 @@
       {
         "type": "trait", 
         "name": "CAT BURGLAR", 
-        "description": "Stealth."
+        "description": "Stealth.", 
+        "powers": [
+          "stealth"
+        ]
       }, 
       {
         "type": "trait", 
@@ -277,7 +287,7 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
+        "click_number": 1, 
         "starting_line": true, 
         "speed_power": "leap_climb", 
         "speed_value": 10, 
@@ -289,7 +299,7 @@
         "damage_value": 2
       }, 
       {
-        "click_number": 1, 
+        "click_number": 2, 
         "speed_power": "sidestep", 
         "speed_value": 9, 
         "attack_power": "smoke_cloud", 
@@ -300,7 +310,7 @@
         "damage_value": 2
       }, 
       {
-        "click_number": 2, 
+        "click_number": 3, 
         "speed_power": "sidestep", 
         "speed_value": 9, 
         "attack_power": "precision_strike", 
@@ -310,7 +320,7 @@
         "damage_value": 2
       }, 
       {
-        "click_number": 3, 
+        "click_number": 4, 
         "speed_power": "leap_climb", 
         "speed_value": 9, 
         "attack_value": 10, 
@@ -321,7 +331,7 @@
         "starting_line": true
       }, 
       {
-        "click_number": 4, 
+        "click_number": 5, 
         "speed_power": "sidestep", 
         "speed_value": 8, 
         "attack_power": "smoke_cloud", 
@@ -332,7 +342,7 @@
         "damage_value": 1
       }, 
       {
-        "click_number": 5, 
+        "click_number": 6, 
         "speed_power": "sidestep", 
         "speed_value": 8, 
         "attack_power": "smoke_cloud", 
@@ -350,7 +360,6 @@
     "collector_number": "004", 
     "name": "Carnage", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "fast_forces", 
     "real_name": "Cletus Kasady", 
     "dimensions": "1x1", 
@@ -358,6 +367,7 @@
       75, 
       50
     ], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [
       "Codex", 
@@ -369,7 +379,11 @@
       {
         "type": "trait", 
         "name": "SYMBIOTE", 
-        "description": "Plasticity, Shape Change."
+        "description": "Plasticity, Shape Change.", 
+        "powers": [
+          "plasticity", 
+          "shape_change"
+        ]
       }, 
       {
         "type": "trait", 
@@ -391,7 +405,7 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
+        "click_number": 1, 
         "starting_line": true, 
         "speed_power": "charge", 
         "speed_value": 11, 
@@ -403,7 +417,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 1, 
+        "click_number": 2, 
         "speed_power": "charge", 
         "speed_value": 10, 
         "attack_power": "blades_claws_fangs", 
@@ -414,7 +428,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 2, 
+        "click_number": 3, 
         "speed_power": "charge", 
         "speed_value": 9, 
         "attack_power": "blades_claws_fangs", 
@@ -426,7 +440,7 @@
         "starting_line": true
       }, 
       {
-        "click_number": 3, 
+        "click_number": 4, 
         "speed_power": "flurry", 
         "speed_value": 9, 
         "attack_power": "steal_energy", 
@@ -437,7 +451,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 4, 
+        "click_number": 5, 
         "speed_power": "flurry", 
         "speed_value": 9, 
         "attack_power": "steal_energy", 
@@ -448,7 +462,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 5, 
+        "click_number": 6, 
         "speed_power": "sidestep", 
         "speed_value": 8, 
         "attack_power": "blades_claws_fangs", 
@@ -459,7 +473,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 6, 
+        "click_number": 7, 
         "speed_power": "sidestep", 
         "speed_value": 8, 
         "attack_power": "blades_claws_fangs", 
@@ -477,7 +491,6 @@
     "collector_number": "005", 
     "name": "Mysterio", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "fast_forces", 
     "real_name": "Quentin Beck/Daniel Berkhart", 
     "dimensions": "1x1", 
@@ -485,6 +498,7 @@
       75, 
       50
     ], 
+    "properties": "[]", 
     "team_abilities": [
       "sinister_syndicate"
     ], 
@@ -502,7 +516,12 @@
       {
         "type": "speed", 
         "name": "SETTING THE STAGE", 
-        "description": "Mind Control, Sidestep, Stealth."
+        "description": "Mind Control, Sidestep, Stealth.", 
+        "powers": [
+          "mind_control", 
+          "sidestep", 
+          "stealth"
+        ]
       }
     ], 
     "improved_movement": [
@@ -519,7 +538,7 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
+        "click_number": 1, 
         "starting_line": true, 
         "speed_power": "special", 
         "speed_value": 7, 
@@ -531,7 +550,7 @@
         "damage_value": 2
       }, 
       {
-        "click_number": 1, 
+        "click_number": 2, 
         "speed_power": "special", 
         "speed_value": 7, 
         "attack_power": "smoke_cloud", 
@@ -542,7 +561,7 @@
         "damage_value": 2
       }, 
       {
-        "click_number": 2, 
+        "click_number": 3, 
         "speed_power": "special", 
         "speed_value": 7, 
         "attack_power": "smoke_cloud", 
@@ -554,7 +573,7 @@
         "starting_line": true
       }, 
       {
-        "click_number": 3, 
+        "click_number": 4, 
         "speed_power": "phasing_teleport", 
         "speed_value": 6, 
         "attack_power": "smoke_cloud", 
@@ -565,7 +584,7 @@
         "damage_value": 2
       }, 
       {
-        "click_number": 4, 
+        "click_number": 5, 
         "speed_power": "phasing_teleport", 
         "speed_value": 6, 
         "attack_power": "smoke_cloud", 
@@ -576,7 +595,7 @@
         "damage_value": 1
       }, 
       {
-        "click_number": 5, 
+        "click_number": 6, 
         "speed_power": "special", 
         "speed_value": 6, 
         "attack_power": "smoke_cloud", 
@@ -594,10 +613,10 @@
     "collector_number": "005bt", 
     "name": "Robot Minion", 
     "type": "bystander", 
-    "age": "modern", 
     "rarity": "fast_forces", 
     "dimensions": "1x1", 
     "point_values": [], 
+    "properties": "[]", 
     "team_abilities": [], 
     "keywords": [], 
     "special_powers": [
@@ -619,7 +638,7 @@
     "dial_size": "1", 
     "dial": [
       {
-        "click_number": 0, 
+        "click_number": 1, 
         "starting_line": true, 
         "speed_power": "force_blast", 
         "speed_value": 6, 
@@ -638,7 +657,6 @@
     "collector_number": "006", 
     "name": "Ghost-Spider", 
     "type": "character", 
-    "age": "modern", 
     "rarity": "fast_forces", 
     "real_name": "Gwen Stacy", 
     "dimensions": "1x1", 
@@ -646,6 +664,7 @@
       75, 
       50
     ], 
+    "properties": "[]", 
     "team_abilities": [
       "spider_man"
     ], 
@@ -659,7 +678,11 @@
       {
         "type": "trait", 
         "name": "SYMBIOTE", 
-        "description": "Plasticity, Shape Change."
+        "description": "Plasticity, Shape Change.", 
+        "powers": [
+          "plasticity", 
+          "shape_change"
+        ]
       }
     ], 
     "improved_movement": [
@@ -676,7 +699,7 @@
     "dial_size": "12", 
     "dial": [
       {
-        "click_number": 0, 
+        "click_number": 1, 
         "starting_line": true, 
         "speed_power": "charge", 
         "speed_value": 11, 
@@ -688,7 +711,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 1, 
+        "click_number": 2, 
         "speed_power": "charge", 
         "speed_value": 10, 
         "attack_power": "super_strength", 
@@ -698,7 +721,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 2, 
+        "click_number": 3, 
         "speed_power": "charge", 
         "speed_value": 10, 
         "attack_power": "super_strength", 
@@ -709,7 +732,7 @@
         "starting_line": true
       }, 
       {
-        "click_number": 3, 
+        "click_number": 4, 
         "speed_power": "sidestep", 
         "speed_value": 9, 
         "attack_power": "incapacitate", 
@@ -720,7 +743,7 @@
         "damage_value": 3
       }, 
       {
-        "click_number": 4, 
+        "click_number": 5, 
         "speed_power": "sidestep", 
         "speed_value": 9, 
         "attack_power": "incapacitate", 
@@ -731,7 +754,7 @@
         "damage_value": 2
       }, 
       {
-        "click_number": 5, 
+        "click_number": 6, 
         "speed_power": "sidestep", 
         "speed_value": 8, 
         "attack_value": 9, 
