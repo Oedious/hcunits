@@ -71,7 +71,7 @@
   {% block scripts %}
   {{ team|json_script:'teamObject' }}
   <script type="text/javascript">
-    var dataSource = new DataSource();
+    var dataSource = new DataSource("{{csrf_token}}");
     //var dataSource = new MockDataSource();
     var unitManager = new UnitManager(dataSource);
     var teamManager = new TeamManager(

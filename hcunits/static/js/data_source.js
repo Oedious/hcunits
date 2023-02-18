@@ -1,5 +1,6 @@
 class DataSource {
-  constructor() {
+  constructor(csrfToken) {
+    this.csrfToken_ = csrfToken;
   }
 
   searchBySetId(setId, onSuccess, onError) {
@@ -37,7 +38,8 @@ class DataSource {
 
   advancedSearch(query, onSuccess, onError) {
     jQuery.post({
-      url: `/api/v1/search/`,
+      url: '/api/v1/search/',
+      headers: { "X-CSRFToken": this.csrfToken_ },
       data: JSON.stringify(query),
       dataType: 'text',
       contentType: 'application/json',

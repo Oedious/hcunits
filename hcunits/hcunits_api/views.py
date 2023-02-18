@@ -223,7 +223,7 @@ class Search(APIView):
         }}
       else:
         kwargs1 = {'dial__contains': {power_type + '_power': powers[0]}}
-      kwargs2 = {'special_powers__contains': powers[0]}
+      kwargs2 = {'special_powers__contains': {'powers': powers[0]}}
       queryset = queryset.filter(Q(**kwargs1) | Q(**kwargs2))
       is_valid = True
     elif len(powers) > 1:
@@ -241,7 +241,7 @@ class Search(APIView):
           for param in param_list:
             if param and len(param) > 0:
               kwargs1 = {'dial__%d__contains' % (i): {field + '_power': param}}
-              kwargs2 = {'special_powers__contains': param}
+              kwargs2 = {'special_powers__contains': {'powers': param}}
               click_query &= (Q(**kwargs1) | Q(**kwargs2))
         query |= click_query
       queryset = queryset.filter(query)
