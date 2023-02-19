@@ -46,11 +46,11 @@ CREATE TABLE units (
 
   -- A JSON array of objects containing special powers and traits, of the format:
   -- {
-  --   "type": string - contains "trait", "speed", "attack", "defense", "damage", "costed_trait", "rally_trait", "title_trait", "plus_plot_points", "minus_plot_points"
+  --   "type": string - contains "trait", "speed", "attack", "defense", "damage", "costed_trait", "rally_trait", "title_trait", "plus_plot_points", "minus_plot_points", "location", "consolation"
   --   "name": string - the name of the power.
   --   "description": string - the description of the power.
   --   "powers": (Optional) array of strings, containing names to standard powers granted.
-  --   "point_value": (Optional) the additional point value for a costed trait.
+  --   "point_value": (Optional) the additional point value for a costed trait or location bonus.
   --   "rally_type": (Optional) contains "friendly", "opposing" or "all".
   --   "rally_die": (Optional) the die value that triggers the rally effect.
   --   "plot_points": (Optional) the amount of plot points gained or lost on use.
@@ -105,12 +105,12 @@ CREATE TABLE units (
 
 CREATE INDEX idx_unit_id ON units(unit_id);
 
-LOAD XML LOCAL INFILE 'set_av4e.xml'
+LOAD XML LOCAL INFILE 'set_btu.xml'
   REPLACE
   INTO TABLE units
   ROWS IDENTIFIED BY '<row>';
 
-LOAD XML LOCAL INFILE 'set_btu.xml'
+LOAD XML LOCAL INFILE 'set_av4e.xml'
   REPLACE
   INTO TABLE units
   ROWS IDENTIFIED BY '<row>';

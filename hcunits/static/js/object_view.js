@@ -20,6 +20,10 @@ const OBJECT_TYPE_RULES = {
   "tarot_card": {
     "name": "Tarot Card",
     "title": "TAROT CARD",
+  },
+  "map": {
+    "name": "Map",
+    "title": "MAP",
   }
 };
 
@@ -105,6 +109,7 @@ class ObjectView extends UnitView {
           ${this.drawToken_()}
           ${specialPowersHtml.length >= 1 ? specialPowersHtml[0] : ""}
           ${super.drawPointValues_(30)}
+          ${this.drawFooter_()}
         </div>
       </div>`;
 
@@ -325,22 +330,34 @@ class ObjectView extends UnitView {
       var type = power.type;
       var iconHtml = "";
       if (type == "costed_trait") {
+        const description = escapeHtml(SPECIAL_POWER_TYPE_LIST[type].description);
         iconHtml = `
-          <td class='unitSpecialPower'>
-            <img class='unitSpecialPowerIcon' src='/static/images/sp_${type}.png' alt=''/>
-            <div class='unitSpecialPowerPointValue'>+${power.point_values} POINTS</div>
+          <td class='unitSpecialPowerImg'>
+            <img class='unitSpecialPowerIcon' src='/static/images/sp_${type}.png' alt='' title='${description}'/>
+            <div class='unitSpecialPowerPointValue'>+${power.point_value} POINTS</div>
+          </td>`;
+      } else if (type == "location") {
+        const description = escapeHtml(SPECIAL_POWER_TYPE_LIST[type].description);
+        iconHtml = `
+          <td class='unitSpecialPowerImg'>
+            <i class='material-icons' title='${description}'>add_home_work</i>
+            <div class='unitSpecialPowerPointValue'>+${power.point_value} POINTS</div>
           </td>`;
       } else if (type == "rally_trait") {
+        const description = escapeHtml(SPECIAL_POWER_TYPE_LIST[type].description);
         iconHtml = `
-          <td class='unitSpecialPower'>
-            <div class='unitSpecialPowerRally' style='${RALLY_TYPE_TO_STYLE[power.rally_type]}'>
+          <td class='unitSpecialPowerImg'>
+            <div class='unitSpecialPowerRally' style='${RALLY_TYPE_TO_STYLE[power.rally_type]}' title='${description}'>
               <img class='unitSpecialPowerIcon' src='/static/images/sp_trait.png' alt=''/>
               <img class='unitSpecialPowerRallyDie' src='/static/images/d6_${power.rally_die}.png' alt='${power.rally_die}'/>
             </div>
           </td>`;
+      } else if (type == "consolation") {
+        // Don't use an icon, but add a tag to preserve spacing.
+        iconHtml = "<td class='unitSpecialPowerImg'></td>";
       } else if (type == "object" || type == "equipment" || type == "mystery_card" || type == "tarot_card") {
-        // Don't use an icon.
-        iconHtml = ""
+        // Don't use an icon and use the full space of the card.
+        iconHtml = "";
       } else {
         var combatSymbolType = type;
         if (type != "trait") {
@@ -385,5 +402,10 @@ class ObjectView extends UnitView {
     html += "</table>"
     htmlColumns.push(html)
     return htmlColumns;
+  }
+
+  // Exists so that child classes (ie MapView) can override to add the footer.
+  drawFooter_() {
+    return ""
   }
 }

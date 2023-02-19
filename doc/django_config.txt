@@ -16,3 +16,10 @@ $ source deactivate
 # Database migrations
 $ python manage.py makemigrations
 $ python manage.py migrate                                                                                         
+
+
+
+# To run the local server:
+$ cd hcunits/
+$ sudo service mariadb restart
+$ python manage.py runserver 0.0.0.0:8080 

@@ -8066,9 +8066,14 @@
     <special_powers>[
   {
     "point_value": 5, 
-    "type": "costed_trait", 
-    "name": "AUNT PETUNIA'S HOUSE", 
-    "description": "At the beginning of the game, choose a friendly character. That character's minimum range value when using Outwit, Perplex, or Probability Control is 8. If that character's name includes \"Franklin\" or \"Valeria\", the 8 becomes 10. CONSOLATION: Opposing character's maximum range value when using Outwit, Perplex, or Probability Control is 6."
+    "type": "location", 
+    "name": "Aunt Petunia's House", 
+    "description": "At the beginning of the game, choose a friendly character. That character's minimum range value when using Outwit, Perplex, or Probability Control is 8. If that character's name includes \"Franklin\" or \"Valeria\", the 8 becomes 10."
+  }, 
+  {
+    "type": "consolation", 
+    "name": "Consolation", 
+    "description": "Opposing character's maximum range value when using Outwit, Perplex, or Probability Control is 6."
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
@@ -8090,9 +8095,14 @@
     <special_powers>[
   {
     "point_value": 5, 
-    "type": "costed_trait", 
-    "name": "LATVERIAN VILLAGE", 
-    "description": "At the beginning of the game, choose a friendly character. This game, that character has: 'Mastermind, but only to choose a friendly Latverian Peasant bystander.' // At the beginning of the game, generate 3 Latverian Peasant bystanders in different orange squares. If the chosen character is named Dr. Doom, generate 6 instead. CONSOLATION: At the beginning of the game, generate a Latverian Peasant bystander in your starting area."
+    "type": "location", 
+    "name": "Latverian Village", 
+    "description": "At the beginning of the game, choose a friendly character. This game, that character has: 'Mastermind, but only to choose a friendly Latverian Peasant bystander.' // At the beginning of the game, generate 3 Latverian Peasant bystanders in different orange squares. If the chosen character is named Dr. Doom, generate 6 instead."
+  }, 
+  {
+    "type": "consolation", 
+    "name": "Consolation", 
+    "description": "At the beginning of the game, generate a Latverian Peasant bystander in your starting area."
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>

@@ -317,4 +317,48 @@ const POWER_TYPE_LIST = {
   "special": {
     "name": "Special"
   }
-}
+};
+
+const SPECIAL_POWER_TYPE_LIST = {
+  "trait": {
+    "name": "Trait"
+  },
+  "speed": {
+    "name": "Special Power (speed)"
+  },
+  "attack": {
+    "name": "Special Power (attack)"
+  },
+  "defense": {
+    "name": "Special Power (defense)"
+  },
+  "damage": {
+    "name": "Special Power (damage)"
+  },
+  "costed_trait": {
+    "name": "Costed Trait",
+    "title": "POINT VALUE TRAIT",
+    "description": "This trait can only be used when the game element is added to a starting force at a specific point value."
+  },
+  "rally_trait": {
+    "name": "Rally Trait",
+    "title": "RALLY",
+    "description": "Once per roll for each die in a finalized attack roll and for all characters with a matching RALLY die and trait color printed under their trait star, after resolutions you may choose a friendly character to gain a matching RALLY die. RALLY trait colors specify which attack type they can gain RALLY dies from. BLUE = Friendly Attack Rolls. RED = Opposing Attack Rolls. GREEN = All Attack Rolls. When a character gains a RALLY die, place a die with the matching result on their card."
+  },
+  "title_trait": {
+    "name": "Title",
+    "title": "TITLE CHARACTER ABILITIES",
+    "description": "Title characters start the game with and can accumulate tokens (called \"Plot Points\") on their card. They have special Plot abilities activated by FREE actions that can add or remove Plot Points: (Add Plot Points) and (Subtract Plot Points). You can only activate one Plot ability a turn. When you activate a Add Points Plot ability, give the Title Character that many Plot Points. You can't activate a Subtract Plot ability unless you are able to remove that many Plot Points. Title Characters also have Continuity trait abilities: Continuity abilities have \"Protected: Pulse Wave\". You may only have one title character on your starting force, and title characters can't replace or be replaced by other characters. At the end of your turn, if the title character activated a Plot ability but didn't make an attack, deal it 1 unavoidable damage."
+  },
+  "plus_plot_points": {
+    "name": "Add Plot Points"
+  },
+  "minus_plot_points": {
+    "name": "Subtract Plot Points"
+  },
+  "location": {
+    "name": "Location",
+    "title": "LOCATION",
+    "description": "LOCATION: You may add one Location to your starting force. You may add any number of the Location's different Bonuses to your staring force by paying their costs. If you are the player that chooses the map and you chose the Location, you can use the Bonus(es) you paid for. If you didn't choose the map and didn't win the roll for the first player, you instead can use the Consolation(s) associated with the Bonus(es) you paid for. (Otherwise, there are no effects.) SCORING: Your Location's Bonus(es) that you paid for are scored if you are defeated. (Whether you received the Bonus, the Consolation, or nothing.)"
+  }
+};
