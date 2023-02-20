@@ -145,7 +145,7 @@ main {
 }
 
 #teamContainer .column {
-  padding: 10px;
+  margin: 0 10px 0 10px;
 }
 
 #teamMainForce {
@@ -158,6 +158,32 @@ main {
 
 #teamTarotCards {
   width: 300px;  
+}
+
+.teamSection {
+  position: relative;
+}
+
+#teamSectionMapButton {
+  position: absolute;
+  top: -7px;
+  left: 55px;
+}
+
+#teamSectionObjectsButton {
+  position: absolute;
+  top: -7px;
+  left: 70px;
+}
+
+#teamSectionTarotCardButton {
+  position: absolute;
+  top: -7px;
+  left: 95px;
+}
+
+.teamSectionHeaderButton a:hover {
+  background-color: #6ca4edaf !important;
 }
 
 .teamItem {

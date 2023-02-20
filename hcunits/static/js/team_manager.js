@@ -51,165 +51,219 @@ class TeamManager {
   draw() {
     const html = `
       <div id="teamColumn0" class="column">
-        <div id="teamMainForce">
+        <div id="teamMainForce" class="teamSection">
           ${this.drawMainForce_()}
         </div>
       </div>
       <div id="teamColumn1" class="column">
-        <div id="teamSideline">
-          ${this.drawSideline_()}
-        </div>
-        <div id="teamMaps">
+        <div id="teamMaps" class="teamSection">
           ${this.drawMaps_()}
+        </div>
+        <div id="teamSideline" class="teamSection">
+          ${this.drawSideline_()}
         </div>
       </div>
       <div id="teamColumn2" class="column">
-        <div id="teamTarotCards">
-          ${this.drawTarotCards_()}
-        </div>
-        <div id="teamObjects">
+        <div id="teamObjects" class="teamSection">
           ${this.drawObjects_()}
+        </div>
+        <div id="teamTarotCards" class="teamSection">
+          ${this.drawTarotCards_()}
         </div>
       </div>`;
     $("#teamContainer").html(html);
+  
+    if (!READ_ONLY) {
+      $('.teamSectionHeaderButton').floatingActionButton();
+    }
   }
 
   drawMainForce_() {
     // Always show the "Main Force" label, even if it has no units.
-    var html = "<h6><b>Main Force</b></h6><ul>";
-    for (var i = 0; i < this.team_.main_force.length; ++i) {
-      const unit = this.team_.main_force[i];
-      html += "<li class='teamItem'>";
-      html += `
-          <div class="teamItemText">
-            <a href="#" class="teamItemUnitLink" onclick="unitManager.showUnit('${unit.unit_id}'); return false;">
-              ${unit.name} (${unit.unit_id})
-            </a>
-            <div class="teamItemPoints">${unit.point_value}</div>`;
-      if (!READ_ONLY) {
-        html += `
-          <a class="teamItemRemoveButton" href="#" onclick="teamManager.removeUnit('main_force', ${i}); return false;">
-            <i class="material-icons">cancel</i>
-          </a>`;
+    var html = "<div class='row'><h6><b>Main Force</b></h6><ul>";
+    if (this.team_.main_force.length <= 0) {
+      if (READ_ONLY) {
+        return "";
       }
-      html += "</div></li>";
-      if (unit.equipment) {
-        const equipment = unit.equipment;
+      html += "<i>Search for units to add to your Main Force...</i>";
+    } else {
+      for (var i = 0; i < this.team_.main_force.length; ++i) {
+        const unit = this.team_.main_force[i];
         html += "<li class='teamItem'>";
         html += `
-            <i class="material-icons" title="Equipped With">subdirectory_arrow_right</i>
             <div class="teamItemText">
-              <a href="#" class="teamItemUnitLink" onclick="unitManager.showUnit('${equipment.unit_id}'); return false;">
-                ${equipment.name} (${equipment.unit_id})
+              <a href="#" class="teamItemUnitLink" onclick="unitManager.showUnit('${unit.unit_id}'); return false;">
+                ${unit.name} (${unit.unit_id})
               </a>
-              <div class="teamItemPoints">${equipment.point_value}</div>`;
+              <div class="teamItemPoints">${unit.point_value}</div>`;
         if (!READ_ONLY) {
           html += `
-            <a class="teamItemRemoveButton" href="#" onclick="teamManager.removeUnit('equipment', ${i}); return false;">
+            <a class="teamItemRemoveButton" href="#" onclick="teamManager.removeUnit('main_force', ${i}); return false;">
+              <i class="material-icons">cancel</i>
+            </a>`;
+        }
+        html += "</div></li>";
+        if (unit.equipment) {
+          const equipment = unit.equipment;
+          html += "<li class='teamItem'>";
+          html += `
+              <i class="material-icons" title="Equipped With">subdirectory_arrow_right</i>
+              <div class="teamItemText">
+                <a href="#" class="teamItemUnitLink" onclick="unitManager.showUnit('${equipment.unit_id}'); return false;">
+                  ${equipment.name} (${equipment.unit_id})
+                </a>
+                <div class="teamItemPoints">${equipment.point_value}</div>`;
+          if (!READ_ONLY) {
+            html += `
+              <a class="teamItemRemoveButton" href="#" onclick="teamManager.removeUnit('equipment', ${i}); return false;">
+                <i class="material-icons">cancel</i>
+              </a>`;
+          }
+          html += "</div></li>";
+        }
+      }
+    }
+    html += "</ul></div>";
+    return html;
+  }
+
+  drawSideline_() {
+    var html = "<div class='row'><h6><b>Sideline</b></h6><ul>";
+    if (this.team_.sideline.length <= 0) {
+      if (READ_ONLY) {
+        return "";
+      }
+      html += "<i>Search for units to add to your Sideline...</i>";
+    } else {
+      for (var i = 0; i < this.team_.sideline.length; ++i) {
+        const unit = this.team_.sideline[i];
+        html += `
+          <li class='teamItem'>
+            <div class="teamItemText">
+              <a href="#" class="teamItemUnitLink" onclick="unitManager.showUnit('${unit.unit_id}'); return false;">
+                ${unit.name} (${unit.unit_id})
+              </a>`;
+        if (!READ_ONLY) {
+          html += `
+            <a class="teamItemRemoveButton" href="#" onclick="teamManager.removeUnit('sideline', ${i}); return false;">
               <i class="material-icons">cancel</i>
             </a>`;
         }
         html += "</div></li>";
       }
     }
-    html += "</ul>";
-    return html;
-  }
-
-  drawSideline_() {
-    if (this.team_.sideline.length <= 0) {
-      return "";
-    }
-    var html = "<div class='row'><h6><b>Sideline</b></h6><ul>";
-    for (var i = 0; i < this.team_.sideline.length; ++i) {
-      const unit = this.team_.sideline[i];
-      html += `
-        <li class='teamItem'>
-          <div class="teamItemText">
-            <a href="#" class="teamItemUnitLink" onclick="unitManager.showUnit('${unit.unit_id}'); return false;">
-              ${unit.name} (${unit.unit_id})
-            </a>`;
-      if (!READ_ONLY) {
-        html += `
-          <a class="teamItemRemoveButton" href="#" onclick="teamManager.removeUnit('sideline', ${i}); return false;">
-            <i class="material-icons">cancel</i>
-          </a>`;
-      }
-      html += "</div></li>";
-    }
     html += "</ul></div>";
     return html;
   }
 
   drawMaps_() {
-    if (this.team_.maps.length <= 0) {
+    if (READ_ONLY && this.team_.maps.length <= 0) {
       return "";
     }
-    var html = "<div class='row'><h6><b>Maps</b></h6><ul>";
-    for (var i = 0; i < this.team_.maps.length; ++i) {
-      const unit = this.team_.maps[i];
-      html += 
-        `<li class='teamItem'>
-          <div class="teamItemText">
-            <a href="#" class="teamItemUnitLink" onclick="unitManager.showUnit('${unit.unit_id}'); return false;">
-              ${unit.name} (${unit.unit_id})
+    var html = `
+      <div class='row'>
+        <h6><b>Maps</b></h6>
+        <div id="teamSectionMapButton" class="teamSectionHeaderButton" title="Search for Maps">
+          <a class="btn-floating btn-small waves-effect-waves-light blue" onclick="sideNav.showSearchByTypeResults('map'); return false;">
+            <i class="material-symbols-outlined" style="color:white;">map</i>
+          </a>
+        </div>
+        <ul>`;
+    if (this.team_.maps.length <= 0) {
+      html += "<i>Add up to 3 Maps...</i>";
+    } else {
+      for (var i = 0; i < this.team_.maps.length; ++i) {
+        const unit = this.team_.maps[i];
+        html += 
+          `<li class='teamItem'>
+            <div class="teamItemText">
+              <a href="#" class="teamItemUnitLink" onclick="unitManager.showUnit('${unit.unit_id}'); return false;">
+                ${unit.name} (${unit.unit_id})
+              </a>`;
+        if (!READ_ONLY) {
+          html += `
+            <a class="teamItemRemoveButton" href="#" onclick="teamManager.removeUnit('maps', ${i}); return false;">
+              <i class="material-icons">cancel</i>
             </a>`;
-      if (!READ_ONLY) {
-        html += `
-          <a class="teamItemRemoveButton" href="#" onclick="teamManager.removeUnit('maps', ${i}); return false;">
-            <i class="material-icons">cancel</i>
-          </a>`;
+        }
+        html += "</div></li>";
       }
-      html += "</div></li>";
     }
     html += "</ul></div>";
     return html;
   }
 
   drawTarotCards_() {
-    if (this.team_.tarot_cards.length <= 0) {
+    if (READ_ONLY && this.team_.tarot_cards.length <= 0) {
       return "";
     }
-    var html = "<div class='row'><h6><b>Tarot Deck</b></h6><ul>";
-    for (var i = 0; i < this.team_.tarot_cards.length; ++i) {
-      const unit = this.team_.tarot_cards[i];
-      html +=
-        `<li class='teamItem'>
-          <div class="teamItemText">
-            <a href="#" class="teamItemUnitLink" onclick="unitManager.showUnit('${unit.unit_id}'); return false;">
-              ${unit.name} (${unit.unit_id})
+    var html = `
+      <div class='row'>
+        <h6><b>Tarot Deck</b></h6>
+        <div id="teamSectionTarotCardButton" class="teamSectionHeaderButton" title="Search for Tarot Cards">
+          <a class="btn-floating btn-small waves-effect-waves-light blue" onclick="sideNav.showSearchByTypeResults('tarot_card'); return false;">
+            <i class="material-symbols-outlined" style="color:white;">content_copy</i>
+          </a>
+        </div>
+        <ul>`;
+    if (this.team_.tarot_cards.length <= 0) {
+      html += "<i>Add up to 10 Tarot Cards...</i>";
+    } else {
+      for (var i = 0; i < this.team_.tarot_cards.length; ++i) {
+        const unit = this.team_.tarot_cards[i];
+        html +=
+          `<li class='teamItem'>
+            <div class="teamItemText">
+              <a href="#" class="teamItemUnitLink" onclick="unitManager.showUnit('${unit.unit_id}'); return false;">
+                ${unit.name} (${unit.unit_id})
+              </a>`;
+        if (!READ_ONLY) {
+          html += `
+            <a class="teamItemRemoveButton" href="#" onclick="teamManager.removeUnit('tarot_cards', ${i}); return false;">
+              <i class="material-icons">cancel</i>
             </a>`;
-      if (!READ_ONLY) {
-        html += `
-          <a class="teamItemRemoveButton" href="#" onclick="teamManager.removeUnit('tarot_cards', ${i}); return false;">
-            <i class="material-icons">cancel</i>
-          </a>`;
+        }
+        html += "</div></li>";
       }
-      html += "</div></li>";
     }
     html += "</ul></div>";
     return html;
   }
 
   drawObjects_() {
-    if (this.team_.objects.length <= 0) {
+    if (READ_ONLY && this.team_.tarot_cards.length <= 0) {
       return "";
     }
-    var html = "<div class='row'><h6><b>Objects</b></h6><ul>";
-    for (var i = 0; i < this.team_.objects.length; ++i) {
-      const unit = this.team_.objects[i];
-      html += `
-          <div class="teamItemText">
-            <a href="#" class="teamItemUnitLink" onclick="unitManager.showUnit('${unit.unit_id}'); return false;">
-              ${unit.name} (${unit.unit_id})
-            </a>`;
-      if (!READ_ONLY) {
-        html += `
-          <a class="teamItemRemoveButton" href="#" onclick="teamManager.removeUnit('objects', ${i}); return false;">
-            <i class="material-icons">cancel</i>
-          </a>`;
+    var html = `
+      <div class='row'>
+        <h6><b>Objects</b></h6>
+        <div id="teamSectionObjectsButton" class="teamSectionHeaderButton" title="Search for Objects">
+          <a class="btn-floating btn-small waves-effect-waves-light blue" onclick="sideNav.showSearchByTypeResults('object'); return false;">
+            <i class="material-symbols-outlined" style="color:white;">cookie</i>
+          </a>
+        </div>
+        <ul>`;
+    if (this.team_.objects.length <= 0) {
+      if (READ_ONLY) {
+        return "";
       }
-      html += "</div></li>";
+      html += "<i>Add up to 3 Objects...</i>";
+    } else {
+      for (var i = 0; i < this.team_.objects.length; ++i) {
+        const unit = this.team_.objects[i];
+        html += `
+            <div class="teamItemText">
+              <a href="#" class="teamItemUnitLink" onclick="unitManager.showUnit('${unit.unit_id}'); return false;">
+                ${unit.name} (${unit.unit_id})
+              </a>`;
+        if (!READ_ONLY) {
+          html += `
+            <a class="teamItemRemoveButton" href="#" onclick="teamManager.removeUnit('objects', ${i}); return false;">
+              <i class="material-icons">cancel</i>
+            </a>`;
+        }
+        html += "</div></li>";
+      }
     }
     html += "</ul></div>";
     return html;

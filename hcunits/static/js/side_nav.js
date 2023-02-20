@@ -147,6 +147,14 @@ class SideNav {
     }
   }
   
+  showSearchByTypeResults(type) {
+    if (type != "") {
+      this.unitListPanel_.showSearchByTypeResults(type);
+      this.unitListPanel_.title = `'${TYPE_LIST[type].name}' Results`;
+      this.setPanel(this.unitListPanel_);
+    }
+  }
+  
   clearQuickSearch() {
     document.getElementById("quickSearch").value = "";
   }
