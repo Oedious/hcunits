@@ -79,9 +79,25 @@ class TeamManager {
   }
 
   drawMainForce_() {
+    if (READ_ONLY && this.team_.main_force.length <= 0) {
+      return "";
+    }
+
+    var points = 0;
+    for (const unit of this.team_.main_force) {
+      points += unit.point_value;
+      if (unit.equipment) {
+        points += unit.equipment.point_value;
+      }
+    }
+
     var html = `
       <div class='row'>
-        <h6><b>Main Force</b></h6>
+        <h6 class="teamSectionHeader"><div><b>Maps</b></div>`;
+    if (points) {
+      html += `<div class="teamSectionPointTotal"><b>${points}</b></div>`;
+    }
+    html += `</h6>
         <div id="teamSectionMainForceButton" class="teamSectionHeaderButton" title="Search for Main Force Units">
           <a class="btn-floating btn-small waves-effect-waves-light blue" onclick="sideNav.showSetList(); return false;">
             <i class="material-symbols-outlined" style="color:white;">group</i>
@@ -95,9 +111,6 @@ class TeamManager {
         <ul>`;
 
     if (this.team_.main_force.length <= 0) {
-      if (READ_ONLY) {
-        return "";
-      }
       html += "<i>Search for units to add to your Main Force...</i>";
     } else {
       for (var i = 0; i < this.team_.main_force.length; ++i) {
@@ -154,9 +167,6 @@ class TeamManager {
         </div>
         <ul>`;
     if (this.team_.sideline.length <= 0) {
-      if (READ_ONLY) {
-        return "";
-      }
       html += "<i>Search for units to add to your Sideline...</i>";
     } else {
       for (var i = 0; i < this.team_.sideline.length; ++i) {
@@ -184,9 +194,19 @@ class TeamManager {
     if (READ_ONLY && this.team_.maps.length <= 0) {
       return "";
     }
+
+    var points = 0;
+    for (const unit of this.team_.maps) {
+      points += unit.point_value;
+    }
+
     var html = `
       <div class='row'>
-        <h6><b>Maps</b></h6>
+        <h6 class="teamSectionHeader"><div><b>Maps</b></div>`;
+    if (points) {
+      html += `<div class="teamSectionPointTotal"><b>${points}</b></div>`;
+    }
+    html += `</h6>
         <div id="teamSectionMapButton" class="teamSectionHeaderButton" title="Search for Maps">
           <a class="btn-floating btn-small waves-effect-waves-light blue" onclick="sideNav.showSearchByTypeResults('map'); return false;">
             <i class="material-symbols-outlined" style="color:white;">map</i>
@@ -204,6 +224,9 @@ class TeamManager {
               <a href="#" class="teamItemUnitLink" onclick="unitManager.showUnit('${unit.unit_id}'); return false;">
                 ${unit.name} (${unit.unit_id})
               </a>`;
+        if (unit.point_value) {
+          html += `<div class="teamItemPoints">${unit.point_value}</div>`;
+        }
         if (!READ_ONLY) {
           html += `
             <a class="teamItemRemoveButton" href="#" onclick="teamManager.removeUnit('maps', ${i}); return false;">
@@ -255,12 +278,22 @@ class TeamManager {
   }
 
   drawObjects_() {
-    if (READ_ONLY && this.team_.tarot_cards.length <= 0) {
+    if (READ_ONLY && this.team_.objects.length <= 0) {
       return "";
     }
+
+    var points = 0;
+    for (const unit of this.team_.objects) {
+      points += unit.point_value;
+    }
+
     var html = `
       <div class='row'>
-        <h6><b>Objects</b></h6>
+        <h6 class="teamSectionHeader"><div><b>Objects</b></div>`;
+    if (points) {
+      html += `<div class="teamSectionPointTotal"><b>${points}</b></div>`;
+    }
+    html += `</h6>
         <div id="teamSectionObjectsButton" class="teamSectionHeaderButton" title="Search for Objects">
           <a class="btn-floating btn-small waves-effect-waves-light blue" onclick="sideNav.showSearchByTypeResults('object'); return false;">
             <i class="material-symbols-outlined" style="color:white;">cookie</i>
@@ -268,18 +301,19 @@ class TeamManager {
         </div>
         <ul>`;
     if (this.team_.objects.length <= 0) {
-      if (READ_ONLY) {
-        return "";
-      }
       html += "<i>Add up to 3 Objects...</i>";
     } else {
       for (var i = 0; i < this.team_.objects.length; ++i) {
         const unit = this.team_.objects[i];
-        html += `
+        html +=
+          `<li class='teamItem'>
             <div class="teamItemText">
               <a href="#" class="teamItemUnitLink" onclick="unitManager.showUnit('${unit.unit_id}'); return false;">
                 ${unit.name} (${unit.unit_id})
               </a>`;
+        if (unit.point_value) {
+          html += `<div class="teamItemPoints">${unit.point_value}</div>`;
+        }
         if (!READ_ONLY) {
           html += `
             <a class="teamItemRemoveButton" href="#" onclick="teamManager.removeUnit('objects', ${i}); return false;">

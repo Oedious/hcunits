@@ -148,16 +148,16 @@ main {
   margin: 0 10px 0 10px;
 }
 
-#teamMainForce {
-  width: 375px;
+#teamColumn0 {
+  width: 300px;
 }
 
-#teamSideline {
-  width: 300px;  
+#teamColumn1 {
+  max-width: 250px;  
 }
 
-#teamTarotCards {
-  width: 300px;  
+#teamColumn2 {
+  width: 250px;  
 }
 
 .teamSection {
@@ -200,17 +200,30 @@ main {
   left: 95px;
 }
 
+.teamSectionHeader {
+  display: flex;  
+  justify-content: space-between;
+}
+
+.teamSectionPointTotal {
+  border-bottom: 1px solid black;
+}
+
 .teamSectionHeaderButton a:hover {
   background-color: #6ca4edaf !important;
 }
 
 .teamItem {
-  height: 25px;
   margin-top: 5px;
+  min-height: 25px;
   border-bottom: 1px solid rgba(0, 0, 0, .14);
   display: flex;
   align-items: bottom;
   justify-content: flex-start;
+}
+
+.teamItem:hover {
+  border-bottom: 1px solid black;
 }
 
 .teamItem:hover .teamItemPoints {
@@ -222,6 +235,8 @@ main {
 }
 
 .teamItemRemoveButton {
+  height: 24px;
+  width: 24px;
   display: flex;
   align-items: center;
   border-radius: 12px;
@@ -247,10 +262,6 @@ main {
 
 .teamItemUnitLink {
   color: black;
-}
-
-.teamItemUnitLink:hover {
-  border-bottom: 1px solid black;
 }
 
 /* Unit area styles */
