@@ -1,32 +1,34 @@
-class MapView extends ObjectView {
+class MapView extends SmallUnitView {
 
   static isType(type) {
     return type  == "map";
   }
 
   constructor(unit, map) {
-    super(unit)
-    if (this.unit_.type != "map") {
-      throw new Error("Mismatched unit type: MapView require type=map");
+    super(unit);
+    if (!MapView.isType(this.unit_.type)) {
+      throw new Error("Mismatched unit type: MapView require type='map'");
     }
     this.map_ = new Map(map);
   }
-  
-  isCardType_() {
-    return true;
-  }
-  
+
+  getTypeInfo() {
+    return {
+      "name": "Map"
+    };
+  }  
+
   draw() {
     super.draw();
     const html = `
       <div class='column'>
-        <div class='characterCard'>
+        <div class='largeCard'>
           <canvas id='mapCanvas'></canvas>
         </div>
       </div>`;
   	$('#unitCardsContainer').append(html);
 
-    const card = $(".characterCard");
+    const card = $(".largeCard");
     var width = card.width();
     var height = card.height();
     const card_aspect_ratio = width / height;
@@ -49,16 +51,13 @@ class MapView extends ObjectView {
     canvas.width = Math.max(scale * this.map_.width * TILE_SIZE, 1);
     canvas.height = Math.max(scale * this.map_.height * TILE_SIZE, 1);
     ctx.scale(scale, scale);
-    //canvas.width = this.map_.width * TILE_SIZE;
-    //canvas.height = this.map_.height * TILE_SIZE;
-    console.log(`width=${width} height=${height} canvaswidth=${canvas.width} canvas.height=${canvas.height}`)
     this.map_.draw(ctx);
     ctx.restore();
   }
 
   drawFooter_() {
     var html = `
-      <div class='objectFooter'>
+      <div class='smallCardFooter'>
         <a href='https://hcmaps.net/index.html?m=${this.unit_.unit_id}' target="_blank">
           View in HCMaps.net (external)
         </a>

@@ -4,7 +4,7 @@ const RALLY_TYPE_TO_STYLE = {
   "all": STYLE_GREEN
 };
 
-class CharacterView extends UnitView {
+class CharacterView extends BaseUnitView {
 
   static isType(type) {
     return type  == "character";
@@ -12,8 +12,8 @@ class CharacterView extends UnitView {
 
   constructor(unit) {
     super(unit)
-    if (this.unit_.type != "character") {
-      throw new Error("Mismatched unit type: CharacterViews require type=character");
+    if (!CharacterView.isType(this.unit_.type)) {
+      throw new Error("Mismatched unit type: CharacterView require type='character'");
     }
     if (this.unit_.dial_size <= 12) {
       this.numDialTables_ = 1;
@@ -31,13 +31,13 @@ class CharacterView extends UnitView {
     const borderColor = this.unit_.properties.includes("team_up") ? COLOR_BLUE : COLOR_BLACK;
     var html = `
       <div class='column'>
-        <div id='card0' class='characterCard'>
-          <div class='characterCardBorders' style='border-top: 75px solid ${borderColor}'></div>
-          <div id='characterHeader'>
-            <div id='characterName'>${escapeHtml(this.unit_.name).toUpperCase()}</div>
-            <div id='characterKeywords'>${this.drawKeywords_()}</div>
+        <div id='unitCard0' class='largeCard'>
+          <div class='largeCardBorders' style='border-top: 75px solid ${borderColor}'></div>
+          <div id='largeCardHeader'>
+            <div id='largeCardName'>${escapeHtml(this.unit_.name).toUpperCase()}</div>
+            <div id='largeCardKeywords'>${this.drawKeywords_()}</div>
           </div>
-          <div id='characterRealName'>REAL NAME: ${escapeHtml(this.unit_.real_name).toUpperCase()}</div>
+          ${this.drawRealName_()}
           ${this.drawCollectorNumber_()}
           ${this.drawToken_()}
           ${this.drawImprovedAbilities_()}
@@ -46,8 +46,8 @@ class CharacterView extends UnitView {
           ${this.drawDial_()}
           ${this.drawTeamAbilities_()}
           ${super.drawPointValues_(40)}
-          <div class='characterHeroClixLogoClip'>
-            <img class='characterHeroClixLogo' src='/static/images/heroclix_logo_small.png' alt=''/>
+          <div class='largeCardHeroClixLogoClip'>
+            <img class='largeCardHeroClixLogo' src='/static/images/heroclix_logo_small.png' alt=''/>
           </div>
         </div>
       </div>`;
@@ -56,12 +56,12 @@ class CharacterView extends UnitView {
     if (specialPowersHtml.length > 2) {
       html += `
         <div class='column'>
-          <div class='characterCard'>
-            <div class='characterCardBorders' style='border-top: 20px solid ${borderColor}'></div>
+          <div class='largeCard'>
+            <div class='largeCardBorders' style='border-top: 20px solid ${borderColor}'></div>
             ${specialPowersHtml.length >= 3 ? specialPowersHtml[2] : ""}
             ${specialPowersHtml.length >= 4 ? specialPowersHtml[3] : ""}
-            <div class='characterHeroClixLogoClip'>
-              <img class='characterHeroClixLogo' src='/static/images/heroclix_logo_small.png' alt=''/>
+            <div class='largeCardHeroClixLogoClip'>
+              <img class='largeCardHeroClixLogo' src='/static/images/heroclix_logo_small.png' alt=''/>
             </div>
           </div>
         </div>`;
@@ -74,7 +74,7 @@ class CharacterView extends UnitView {
   	if (!this.unit_.keywords) {
   	  return '';
   	}
-  	var html = "<span class='characterKeyword'>";
+  	var html = "<span class='largeCardKeyword'>";
   	var first = true;
   	for (var keyword of this.unit_.keywords) {
   		if (first) {
@@ -83,7 +83,7 @@ class CharacterView extends UnitView {
   			html += ', ';
   		}
   		var escapedKeyword = escapeHtml(keyword);
-  		var atag = `<a href='' class='characterKeyword' onclick='mgr.searchByKeyword("${escapedKeyword}"); return false;'>${escapedKeyword}</a>`;;
+  		var atag = `<a href='' class='largeCardKeyword' onclick='sideNav.searchByKeyword("${escapedKeyword}"); return false;'>${escapedKeyword}</a>`;;
   		var isGeneric = (KEYWORD_LIST[keyword] == "generic");
   		if (isGeneric) {
   		  html += `<em>${atag}</em>`;
@@ -94,7 +94,17 @@ class CharacterView extends UnitView {
   	html += "</span>";
     return html;
   }
-  
+
+  drawRealName_() {
+    if (!this.real_name) {
+      return ""
+    }
+    return `
+      <div id='largeCardRealName'>
+        REAL NAME: ${escapeHtml(this.unit_.real_name).toUpperCase()}
+      </div>`;
+  }  
+
   drawCollectorNumber_() {
     const PROPERTY_NAMES = {
       "team_up": "TEAM_UP",
@@ -118,11 +128,11 @@ class CharacterView extends UnitView {
     }
     var text;
     if (properties != "") {
-      text = `<span id='characterTeamUp'>${properties}</span>&nbsp;&nbsp;&nbsp;${this.unit_.collector_number}`;
+      text = `<span id='largeCardTeamUp'>${properties}</span>&nbsp;&nbsp;&nbsp;${this.unit_.collector_number}`;
     } else {
       text = this.unit_.collector_number;
     }
-    return `<div id='characterCollectorNumber'>${text}</div>`;
+    return `<div id='largeCardCollectorNumber'>${text}</div>`;
   }
   
   drawToken_() {
@@ -135,9 +145,9 @@ class CharacterView extends UnitView {
       color = COLOR_BLUE;
     }
     var html =
-      `<div id='characterTokenCircle' style='border: 7px solid ${color};'>`
+      `<div id='largeCardTokenCircle' style='border: 7px solid ${color};'>`
     if (this.unit_.has_image) {
-      html += `<img id='characterTokenImg' src='/static/images/${this.unit_.set_id}/${this.unit_.unit_id}.png' alt='' onerror='this.style.display=\"none\"'/>`
+      html += `<img id='largeCardTokenImg' src='/static/images/${this.unit_.set_id}/${this.unit_.unit_id}.png' alt='' onerror='this.style.display=\"none\"'/>`
     }
     html += "</div>"
     return html;
@@ -148,7 +158,7 @@ class CharacterView extends UnitView {
         this.unit_.improved_targeting.length == 0) {
       return "";
     }
-    var html = "<div id='characterImprovedAbilities'>";
+    var html = "<div id='largeCardImprovedAbilities'>";
     // First iterate through each array and collect a list of all the symbols
     // that need to be drawn.
     var img_urls = [];
@@ -173,7 +183,7 @@ class CharacterView extends UnitView {
       const img_url = img_urls[i];
       const left = Math.cos(INCREMENT * i) * -RADIUS - IMG_OFFSET;
       const top = Math.sin(INCREMENT * i) * RADIUS - IMG_OFFSET;
-      html += `<img class='characterImprovedAbilityIcon' src='${img_url}' style='left:${left}px;top:${top}px;'>`
+      html += `<img class='largeCardImprovedAbilityIcon' src='${img_url}' style='left:${left}px;top:${top}px;'>`
     }
     html += "</div>";
     return html;
@@ -187,11 +197,11 @@ class CharacterView extends UnitView {
     if (this.unit_.dial_size > 12) {
       bottom += 135
     }
-    var html = `<div id='characterTeamAbilities' style='bottom:${bottom}px'>`
+    var html = `<div id='largeCardTeamAbilities' style='bottom:${bottom}px'>`
     for (var i = 0; i < this.unit_.team_abilities.length; ++i) {
       var teamAbility = TEAM_ABILITY_LIST[this.unit_.team_abilities[i]];
       html += `
-        <div class='characterTeamAbility' style='top: ${10 + 45 * i}px'>
+        <div class='largeCardTeamAbility' style='top: ${10 + 45 * i}px'>
           <div class='tooltip'>
             <img src='/static/images/ta_${this.unit_.team_abilities[i]}.png' alt=''/>
             <span class='tooltiptext'>${escapeHtml(teamAbility.description)}</span>
@@ -214,7 +224,7 @@ class CharacterView extends UnitView {
     var currentColumn = 0;
     var currentPower = 0;
     var htmlColumns = [];
-    var html = "<table id='characterSpecialPowersTable0' class='unitSpecialPowersTable'>";
+    var html = "<table id='largeCardSpecialPowersTable0' class='specialPowersTable'>";
     for (var i = 0; i < this.unit_.special_powers.length; ++i) {
       const power = this.unit_.special_powers[i];
       var type = power.type;
@@ -237,36 +247,36 @@ class CharacterView extends UnitView {
         htmlColumns.push(html);
         ++currentColumn;
         currentLineCount = 0;
-        html = `<table id='characterSpecialPowersTable${currentColumn}' class='unitSpecialPowersTable'>`;
+        html = `<table id='largeCardSpecialPowersTable${currentColumn}' class='specialPowersTable'>`;
       }
 
       currentLineCount += lines + 1;
       var iconHtml = "";
       if (type == "costed_trait") {
         iconHtml = `
-          <img class='unitSpecialPowerIcon' src='/static/images/sp_${type}.png' alt=''/>
-          <div class='unitSpecialPowerPointValue'>+${power.point_value} POINTS</div>`;
+          <img class='specialPowerIcon' src='/static/images/sp_${type}.png' alt=''/>
+          <div class='specialPowerPointValue'>+${power.point_value} POINTS</div>`;
       } else if (type == "rally_trait") {
         iconHtml = `
-          <div class='unitSpecialPowerRally' style='${RALLY_TYPE_TO_STYLE[power.rally_type]}'>
-            <img class='unitSpecialPowerIcon' src='/static/images/sp_trait.png' alt=''/>
-            <img class='unitSpecialPowerRallyDie' src='/static/images/d6_${power.rally_die}.png' alt='${power.rally_die}'/>
+          <div class='specialPowerRally' style='${RALLY_TYPE_TO_STYLE[power.rally_type]}'>
+            <img class='specialPowerIcon' src='/static/images/sp_trait.png' alt=''/>
+            <img class='specialPowerRallyDie' src='/static/images/d6_${power.rally_die}.png' alt='${power.rally_die}'/>
           </div>`;
       } else if (type == "plus_plot_points" || type == "minus_plot_points") {
         var textColor = type == "plus_plot_points" ? "white" : "black";
         var plotPoints = power.plot_points == "X" ? "X" : Math.abs(power.plot_points);
         iconHtml = `
           <div style='position: relative;'>
-            <img class='unitSpecialPowerIcon' src='/static/images/sp_${type}.png' alt=''/>
-            <div class='unitSpecialPowerPlotPoints' style='color:${textColor};'>${plotPoints}</div>
+            <img class='specialPowerIcon' src='/static/images/sp_${type}.png' alt=''/>
+            <div class='specialPowerPlotPoints' style='color:${textColor};'>${plotPoints}</div>
           </div>`;
       } else {
-        iconHtml = `<img class='unitSpecialPowerIcon' src='/static/images/sp_${type}.png' alt=''/>`;
+        iconHtml = `<img class='specialPowerIcon' src='/static/images/sp_${type}.png' alt=''/>`;
       }
       html += `
-        <tr class='unitSpecialPowerRow'>
-          <td class='unitSpecialPowerImg'>${iconHtml}</td>
-          <td class='unitSpecialPower'><b>${escapeHtml(power.name.toUpperCase())}</b><br>${escapeHtml(power.description)}</td>
+        <tr class='specialPowerRow'>
+          <td class='specialPowerImg'>${iconHtml}</td>
+          <td class='specialPower'><b>${escapeHtml(power.name.toUpperCase())}</b><br>${escapeHtml(power.description)}</td>
         </tr>`;
     }
     html += "</table>"
@@ -295,37 +305,37 @@ class CharacterView extends UnitView {
       var borderWidth = 49 + 23 * (tableCols[t].end - tableCols[t].start);
       var tableWidth = 4 + 23 * (tableCols[t].end - tableCols[t].start);
       html += `
-        <div class='characterDial' style='bottom:${bottom}px;width:${borderWidth}px;'>
+        <div class='largeCardDial' style='bottom:${bottom}px;width:${borderWidth}px;'>
         <div class='combatSymbol'>
-          <div class='characterRange'>${this.unit_.unit_range}</div>`;
+          <div class='largeCardRange'>${this.unit_.unit_range}</div>`;
       for (var i = 0; i < this.unit_.targets; ++i) {
-        html += `<img class='characterBolt' src='/static/images/cs_bolt.png' alt='' height='12' width='6' style='left: ${10 + i * 4}px;'\>`;
+        html += `<img class='largeCardBolt' src='/static/images/cs_bolt.png' alt='' height='12' width='6' style='left: ${10 + i * 4}px;'\>`;
       }
       html += `
         </div>
         <div class='combatSymbol' style='position:absolute;top:24px;'>
-          <img class='characterCombatSymbolImg' src='/static/images/cs_${this.unit_.speed_type}.png'/>
+          <img class='largeCardCombatSymbolImg' src='/static/images/cs_${this.unit_.speed_type}.png'/>
         </div>
         <div class='combatSymbol' style='position:absolute;top:48px;'>
-          <img class='characterCombatSymbolImg' src='/static/images/cs_${this.unit_.attack_type}.png'/>
+          <img class='largeCardCombatSymbolImg' src='/static/images/cs_${this.unit_.attack_type}.png'/>
         </div>
         <div class='combatSymbol' style='position:absolute;top:72px;'>
-          <img class='characterCombatSymbolImg' src='/static/images/cs_${this.unit_.defense_type}.png'/>
+          <img class='largeCardCombatSymbolImg' src='/static/images/cs_${this.unit_.defense_type}.png'/>
         </div>
         <div class='combatSymbol' style='position:absolute;top:96px;'>
-          <img class='characterCombatSymbolImg' src='/static/images/cs_${this.unit_.damage_type}.png'/>
+          <img class='largeCardCombatSymbolImg' src='/static/images/cs_${this.unit_.damage_type}.png'/>
         </div>
-        <table class='characterDialTable' style='width:${tableWidth}px'>`;
+        <table class='largeCardDialTable' style='width:${tableWidth}px'>`;
     
-      html += "<tr class='characterDialRow'>";
+      html += "<tr class='largeCardDialRow'>";
       for (var col = tableCols[t].start; col < tableCols[t].end; ++col) {
-        html += `<th class='characterDialHeader'>${col + 1}</th>`;
+        html += `<th class='largeCardDialHeader'>${col + 1}</th>`;
       }
       html += "</tr>";
       var currentClick;
       for (var row = 0; row < 4; ++row) {
         var rowType = ['speed', 'attack', 'defense', 'damage'][row];
-        html += "<tr class='characterDialRow'>";
+        html += "<tr class='largeCardDialRow'>";
         currentClick = tableDialStart;
         for (var col = tableCols[t].start; col < tableCols[t].end; ++col) {
           if (currentClick < this.unit_.dial.length &&
@@ -342,18 +352,18 @@ class CharacterView extends UnitView {
                 }
               }
               html += `
-                <td class='unitDialEntry' style='${powerObj.style}'>
+                <td class='dialEntry' style='${powerObj.style}'>
                   <div class='tooltip'>
                     <div>${value}</div>
                     <span class='tooltiptext'><b>${powerObj.name}</b>: ${escapeHtml(powerObj.description)}</span>
                   </div>
                 </td>`;
             } else {
-              html += `<td class='unitDialEntry'>${value}</td>`;
+              html += `<td class='dialEntry'>${value}</td>`;
             }
             ++currentClick;
           } else {
-            html += "<td class='unitDialEntryKO'>KO</td>";
+            html += "<td class='dialEntryKO'>KO</td>";
           }
         }
         html += "</tr>";
@@ -366,7 +376,7 @@ class CharacterView extends UnitView {
         if (this.unit_.dial[click].starting_line) {
           var left = 31 + 23 * (this.unit_.dial[click].click_number - tableDialStart - 1);
           var color = STARTING_LINE_COLORS[this.unit_.point_values.length][currentStartingLine++];
-          html += `<div class='characterDialStartingLine' style='left: ${left}px; background-color: ${color}'></div>`
+          html += `<div class='largeCardDialStartingLine' style='left: ${left}px; background-color: ${color}'></div>`
         }
       }
       // Update the starting click for the next table.

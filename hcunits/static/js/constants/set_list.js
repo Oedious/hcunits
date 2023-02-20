@@ -94,6 +94,16 @@ const SET_LIST = {
     "release_date": "2021-01-06",
     "universe": "marvel"
   },
+  "wkm21": {
+    "name": "WizKids Marvel 2021",
+    "release_date": "2021-01-01",
+    "universe": "marvel"
+  },
+  "wkd21": {
+    name: "WizKids DC 2021",
+    "release_date": "2021-01-01",
+    "universe": "dc"
+  },
   "svc": {
     "name": "Spider-Man and Venom: Absolute Carnage",
     "release_date": "2020-09-09",
@@ -118,17 +128,17 @@ const SET_LIST = {
     "name": "Fast Forces: Fantastic Four",
     "release_date": "2020-07-22",
     "universe": "marvel"
-  },/*,
-  "wkm21": {
-    "name": "WizKids Marvel 2021",
-    "release_date": "2021-01-01",
+  },
+  "wkm20": {
+    "name": "WizKids Marvel 2020",
+    "release_date": "2020-01-01",
     "universe": "marvel"
   },
-  "wkd21": {
-    name: "WizKids DC 2021",
-    "release_date": "2021-01-01",
+  "wkd20": {
+    "name": "WizKids DC 2020",
+    "release_date": "2020-01-01",
     "universe": "dc"
-  }*/
+  },
   "wk": {
     "name": "WizKids Standard Game Pieces",
     "release_date": "2002-05-01",

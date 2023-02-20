@@ -32,6 +32,10 @@ class UnitManager {
       this.unitView_ = new CharacterView(unit);
     } else if (ObjectView.isType(unit.type)) {
       this.unitView_ = new ObjectView(unit);
+    } else if (BystanderView.isType(unit.type)) {
+      this.unitView_ = new BystanderView(unit);
+    } else if (CardView.isType(unit.type)) {
+      this.unitView_ = new CardView(unit);
     } else if (MapView.isType(unit.type)) {
       // Need to make a second RPC call to fetch the map layout file.
       var unitMgr = this;

@@ -1,6 +1,7 @@
-class MockDataSource {
+class MockDataSource extends DataSource {
 
   constructor() {
+    super("");
     /*
       this.units_ = [{
           "unit_id": "set001",
@@ -238,7 +239,7 @@ class MockDataSource {
     this.units_ = []
     var dataSource = this;
     jQuery.ajax({
-      url: `db/set_${setId}.json`,
+      url: `/static/db/set_${setId}.json`,
       type: 'get',
       success: function(response) {
         dataSource.units_ = response
@@ -273,6 +274,11 @@ class MockDataSource {
       }
     }
     onSuccess(unitList);
+    return;
+  }
+  
+  advancedSearch(query, onSuccess, onError) {
+    onError(null, "advancedSearch isn't supported in the MockDataSource", "")
     return;
   }
 }

@@ -4,8 +4,6 @@
   {{ block.super }}
   <link href="https://fonts.cdnfonts.com/css/gill-sans" rel="stylesheet">
   <link type="text/css" rel="stylesheet" href="/static/css/team.css" media="screen,projection">
-  <link type="text/css" rel="stylesheet" href="/static/css/character.css" media="screen,projection">
-  <link type="text/css" rel="stylesheet" href="/static/css/object.css" media="screen,projection">
   <link type="text/css" rel="stylesheet" href="/static/css/unit.css" media="screen,projection">
 {% endblock %}
 
@@ -51,13 +49,17 @@
   {% endblock %}
 
   <script type="text/javascript" src="/static/js/data_source.js"></script>
+  <!--<script type="text/javascript" src="/static/js/mock_data_source.js"></script>-->
   <script type="text/javascript" src="/static/js/unit_manager.js"></script>
   <script type="text/javascript" src="/static/js/team_manager.js"></script>
 
-  <script type="text/javascript" src="/static/js/unit_view.js"></script>
-  <script type="text/javascript" src="/static/js/character_view.js"></script>
-  <script type="text/javascript" src="/static/js/object_view.js"></script>
-  <script type="text/javascript" src="/static/js/map_view.js"></script>
+  <script type="text/javascript" src="/static/js/unit_view/base_unit_view.js"></script>
+  <script type="text/javascript" src="/static/js/unit_view/small_unit_view.js"></script>
+  <script type="text/javascript" src="/static/js/unit_view/character_view.js"></script>
+  <script type="text/javascript" src="/static/js/unit_view/bystander_view.js"></script>
+  <script type="text/javascript" src="/static/js/unit_view/card_view.js"></script>
+  <script type="text/javascript" src="/static/js/unit_view/object_view.js"></script>
+  <script type="text/javascript" src="/static/js/unit_view/map_view.js"></script>
 
   <script type="text/javascript" src="https://hcmaps.net/js/edge.js"></script>
   <script type="text/javascript" src="https://hcmaps.net/js/tile.js"></script>

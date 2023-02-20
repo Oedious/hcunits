@@ -223,7 +223,6 @@ class TeamManager {
       'unit_id': unit.unit_id,
       'name': unit.name,
       'point_value': pointValue,
-      'type': unit.type,
     };
     switch (unit.type) {
       case "character":
@@ -256,7 +255,6 @@ class TeamManager {
     const team_unit = {
       'unit_id': unit.unit_id,
       'name': unit.name,
-      'type': unit.type,
     };
     this.team_.sideline.push(team_unit);
     $('#teamSideline').html(this.drawSideline_());
@@ -265,8 +263,8 @@ class TeamManager {
 
   addEquipment(mainForceIndex) {
     const unit = this.unitManager_.getUnit();
-    if (unit.type != "equipment") {
-      throw new Error(`Error in TeamManager.addEquipment '${unit.unit_id}' - type '${unit.type}'' is not equipment`);
+    if (unit.type != "object" || unit.object_type != "equipment") {
+      throw new Error(`Error in TeamManager.addEquipment '${unit.unit_id}' - type '${unit.type}/${unit.object_type}'' is not object/equipment`);
     }
     if (mainForceIndex >= this.team_.main_force.length) {
       throw new Error(`Error in TeamManager.addEquipment '${unit.unit_id}' - index '${mainForceIndex}' is invalid`);
@@ -276,7 +274,6 @@ class TeamManager {
       'unit_id': unit.unit_id,
       'name': unit.name,
       'point_value': pointValue,
-      'type': unit.type,
     };
     this.team_.main_force[mainForceIndex].equipment = equipment;
     $('#teamMainForce').html(this.drawMainForce_());
@@ -301,10 +298,9 @@ class TeamManager {
         "text": "Add to Sideline",
         "onclick": `teamManager.addUnitToSideline();`
       })
-    }
-    else if (unit.type == "object" ||
-      unit.type == "map" ||
-      unit.type == "tarot_card") {
+    } else if ((unit.type == "object" && unit.object_type != "equipment") ||
+               unit.type == "map" ||
+               unit.type == "tarot_card") {
       if (unit.point_values.length > 0) {
         for (const pointValue of unit.point_values) {
           options.push({
@@ -312,15 +308,13 @@ class TeamManager {
             "onclick": `teamManager.addUnit(${pointValue});`
           })
         }
-      }
-      else {
+      } else {
         options.push({
           "text": "Add to Team",
           "onclick": `teamManager.addUnit(0);`
         })
       }
-    }
-    else if (unit.type == "equipment") {
+    } else if (unit.type == "object" && unit.object_type == "equipment") {
       for (var i = 0; i < this.team_.main_force.length; ++i) {
         const unit = this.team_.main_force[i];
         if (!unit.equipment) {
@@ -335,8 +329,7 @@ class TeamManager {
     if (options.length == 0) {
       // Remove the button since this unit can't be added to a team.
       $('#addUnitButtonContainer').html("")
-    }
-    else {
+    } else {
       if (options.length == 1) {
         // If there's only a single option, just make the button directly do
         // the onclick action.
@@ -354,7 +347,7 @@ class TeamManager {
         }
         dropdown += "</ul>"
       }
-      var left = $("#card0").width() - 18;
+      var left = $("#unitCard0").width() - 18;
       var top = -12;
       var html = `
             <a href='#' id='addUnitButton' class='dropdown-trigger btn-floating btn-large waves-effect waves-light red' ${buttonOptions}'>

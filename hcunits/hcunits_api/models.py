@@ -12,10 +12,10 @@ from django.db import models
 
 class Unit(models.Model):
     unit_id = models.CharField(primary_key=True, max_length=32)
-    set_id = models.CharField(max_length=16)
-    collector_number = models.CharField(max_length=16)
+    set_id = models.CharField(max_length=8)
+    collector_number = models.CharField(max_length=24)
     name = models.TextField()
-    type = models.CharField(max_length=21)
+    type = models.CharField(max_length=12)
     point_values = models.JSONField()
     rarity = models.CharField(max_length=15, blank=True, null=True)
     real_name = models.TextField(blank=True, null=True)
@@ -27,7 +27,9 @@ class Unit(models.Model):
     improved_movement = models.JSONField()
     improved_targeting = models.JSONField()
     object_type = models.CharField(max_length=11, blank=True, null=True)
+    object_size = models.CharField(max_length=11, blank=True, null=True)
     object_keyphrases = models.JSONField()
+    bystander_type = models.CharField(max_length=9, blank=True, null=True)
     map_url = models.TextField(blank=True, null=True)
     unit_range = models.IntegerField(blank=True, null=True)
     targets = models.IntegerField(blank=True, null=True)

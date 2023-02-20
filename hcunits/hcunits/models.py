@@ -165,7 +165,7 @@ class Team(models.Model):
           i += 1
 
     # Get the Units that are referenced by the Team.
-    unit_list = Unit.objects.filter(unit_id__in=unit_id_list).values('unit_id', 'type', 'point_values')
+    unit_list = Unit.objects.filter(unit_id__in=unit_id_list).values('unit_id', 'type', 'point_values', 'object_type')
     # Create a dict for easy lookup.
     unit_map = {}
     for unit in unit_list:
@@ -185,6 +185,10 @@ class Team(models.Model):
           type = unit_db_entry["type"]
           if not type in field_properties["types"]:
             raise Exception("%s[%d].unit_id ('%s') expected type '%s', but found ('%s')" % (field, i, unit_id, str(field_properties["types"]), type))
+          if field == "objects":
+            object_type = unit_db_entry.get("object_type", None)
+            if not object_type or object_type == "equipment":
+              raise Exception("%s[%d].unit_id ('%s') expected object_type != 'equipment', but found '%s'" % (field, i, unit_id, object_type))
           unit_update = {
             "unit_id": unit_id,
           }
@@ -206,8 +210,11 @@ class Team(models.Model):
               if unit_db_entry == None:
                 raise Exception("%s[%d].equipment ('%s') was invalid" % (field, i, equipment_id))
               type = unit_db_entry["type"]
-              if type != "equipment":
-                raise Exception("%s[%d].equipment ('%s') expected type 'equipment', but found ('%s')" % (field, i, equipment_id, type))
+              object_type = unit_db_entry.get("object_type", None)
+              if type != "object":
+                raise Exception("%s[%d].equipment ('%s') expected type 'object', but found ('%s')" % (field, i, equipment_id, type))
+              if not object_type or object_type != "equipment":
+                raise Exception("%s[%d].equipment ('%s') expected object_type 'equipment', but found ('%s')" % (field, i, equipment_id, object_type))
               unit_update["equipment"] = equipment_id
           # Unit is valid - add it to the main force update.
           field_update.append(unit_update)

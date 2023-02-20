@@ -1,3 +1,448 @@
+.largeCard {
+  position: relative;
+  /* Character cards are 2.5" x 3.5" in real life */
+  width: 375px;
+  height: 525px;
+  margin-top: 5px;
+}
+
+.largeCardBorders {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.8) 0 0 10px;
+}
+
+#largeCardHeader {
+  position: absolute;
+  left: 3px;
+  top: 2px;
+  width: 225px;
+  color: white;
+  text-align: center;
+  line-height: normal;
+}
+
+#largeCardName {
+  font-family: arial black, sans-serif;
+  font-size: 16px;
+  font-style: italic;
+  line-height: 1em;
+}
+
+#largeCardKeywords {
+  font-size: 10px;
+  line-height: 1em;
+}
+
+.largeCardKeyword {
+  color: white;
+}
+
+#largeCardRealName {
+  position: absolute;
+  left: 7px;
+  top: 63px;
+  width: 225px;
+  color: white;
+  font-family: arial, sans-serif;
+  font-size: 8px;
+  text-align: left;
+}
+
+#largeCardTeamUp {
+  font-size: 9px;
+  font-weight: bold;
+}
+
+#largeCardCollectorNumber {
+  position: absolute;
+  right: 30px;
+  font-size: 11px;
+  color: white;
+}
+
+#largeCardTokenCircle {
+  position: absolute;
+  left: 215px;
+  top: 15px;
+  width: 150px;
+  height: 150px;
+  border: 7px solid black;
+  background-color: white;
+  border-radius: 75px;
+}
+
+#largeCardTokenImg {
+  position: absolute;
+  left: -7px;
+  top: -7px;
+  width: 150px;
+  height: 150px;
+}
+
+#largeCardImprovedAbilities {
+  position: absolute;
+  left: 290px;
+  top: 90px;
+}
+
+.largeCardImprovedAbilityIcon {
+  position: absolute;
+}
+
+#largeCardSpecialPowersTable0 {
+  position: absolute;
+  width: 49%;
+  left: 5px;
+  top: 80px;
+}
+
+#largeCardSpecialPowersTable1 {
+  position: absolute;
+  width: 49%;
+  right: 3px;
+  top: 168px;
+}
+
+#largeCardSpecialPowersTable2 {
+  position: absolute;
+  width: 49%;
+  left: 5px;
+  top: 25px;
+}
+
+#largeCardSpecialPowersTable3 {
+  position: absolute;
+  width: 49%;
+  right: 3px;
+  top: 25px;
+}
+
+.largeCardDial {
+  position: absolute;
+  height: 130px;
+  border: 5px solid black;
+  border-radius: 0px 15px 15px 0px;
+}
+
+.largeCardRange {
+  position: absolute;
+  right: 20px;
+  top: 4px;
+  color: white;
+  font-size: 11px;
+  font-family: 'Gill Sans', sans-serif;
+  font-weight: 300;
+}
+
+.largeCardBolt {
+  position: absolute;
+  top: 6px;
+}
+
+.largeCardCombatSymbolImg {
+  position: absolute;
+  right: 7px;
+  top: 2px;
+}
+
+.largeCardDialTable {
+  position: absolute;
+  left: 30px;
+  top: -2px;
+  table-layout: fixed;
+  border-collapse: separate;
+  border-spacing: 3px !important;
+}
+
+.largeCardDialHeader {
+  color: red;
+  padding: 0px 0px !important;
+  width: 8.3%;
+  font-size: 10px;
+  font-family: 'Gill Sans', sans-serif;
+  font-weight: 300;
+  text-align: center;
+}
+
+.largeCardDialRow {
+  height: 21px;
+  border-bottom: none !important;
+  line-height: normal;
+}
+
+.largeCardDialStartingLine {
+  position: absolute;
+  width: 2px;
+  height: 100px;
+  top: 20px;  
+}
+
+#largeCardTeamAbilities {
+  position: absolute;
+  right: 0px;
+  bottom: 70px;
+  width: 45px;
+  height: 130px;
+  background-color: black;
+  border-radius: 12px 0px 0px 12px;
+}
+
+.largeCardTeamAbility {
+  position: absolute;
+  left: 10px;
+}
+
+.largeCardHeroClixLogoClip {
+  position: absolute;
+  width: 132px;
+  height: 25px;
+  bottom: 10px;
+  overflow: hidden;
+}
+
+.largeCardHeroClixLogo {
+  position: absolute;
+  left: -5px;
+}
+
+.smallCard {
+  position: relative;
+  /* Object cards are 2.25" x 2.75" in real life */
+  width: 338px;
+  height: 412px;
+}
+
+.smallCardBorders {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  border-bottom: 25px solid black;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.8) 0 0 10px;
+}
+
+#smallCardHeader {
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  width: 280px;
+  color: white;
+  text-align: center;
+  line-height: normal;
+
+  line-height: 1.2em;
+  color: white;
+}
+
+#smallCardName {
+  font-family: arial black, sans-serif;
+  font-size: 19px;
+  font-style: italic;
+}
+
+#smallCardType {
+  position: absolute;
+  top: 40px;
+  width: 100%;
+  font-size: 12px;
+}
+
+#smallCardCollectorNumber {
+  position: absolute;
+  right: 5px;
+  top: 50px;
+  font-size: 11px;
+  color: white;
+}
+
+#smallCardKeyphrases {
+  position: absolute;
+  left: 5px;
+  top: 75px;
+  font-size: 9px;
+  font-style: bold;
+}
+
+#smallCardToken {
+  position: absolute;
+  left: 71px;
+  top: 90px;
+  width: 195px;
+  height: 195px;
+  border-radius: 100px;
+  box-shadow: rgba(0, 0, 0, 0.8) 0 0 10px;
+}
+
+#smallCardTokenClip {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
+  overflow: hidden;
+}
+
+#smallCardTokenCircle {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  border: 7px solid black;
+  background-color: black;
+  border-radius: 100px;
+  overflow: hidden;
+}
+
+#smallCardBystanderBackground {
+  position: absolute;
+  left: 30px;
+  top: 40px;
+  right: 0px;
+  bottom: 16px;
+  background-color: lightgray;
+  overflow: hidden;
+}
+
+#smallCardTokenImg {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 195px;
+  height: 195px;
+}
+
+#smallCardBystanderName {
+  position: absolute;
+  left: 23%;
+  top: 15px;
+  width: 54%;
+  color: white;
+  text-align: center;
+  line-height: 1em;
+}
+
+#smallCardDialBackground {
+  position: absolute;
+  left: 23px;
+  top: 47px;
+  width: 72px;
+  height: 125px;
+  background-color: white;
+  border-top: 5px solid black;
+  border-right: 5px solid black;
+  border-bottom: 5px solid black;
+  border-radius: 0px 15px 20px 0px;
+  transform: skew(15deg);
+}
+
+#smallCardCombatSymbols {
+  position: absolute;
+  left: 7px;
+  top: 47px;
+}
+
+#smallCardCombatSymbolRange {
+  position: absolute;
+  top: 0px;
+  width: 73px;
+}
+
+#smallCardRange {
+  position: absolute;
+  right: 53px;
+  top: 4px;
+  color: white;
+  font-size: 11px;
+  font-family: 'Gill Sans', sans-serif;
+  font-weight: 300;
+}
+
+.smallCardBolt {
+  position: absolute;
+  top: 6px;
+}
+
+#smallCardCombatSymbolSpeed {
+  position: absolute;
+  width: 35px;
+  top: 24px;
+}
+
+#smallCardCombatSymbolAttack {
+  position: absolute;
+  width: 43px;
+  top: 48px;
+}
+
+#smallCardCombatSymbolDefense {
+  position: absolute;
+  width: 51px;
+  top: 72px;
+}
+
+#smallCardCombatSymbolDamage {
+  position: absolute;
+  width: 59px;
+  top: 96px;
+}
+
+.smallCardCombatSymbolImg {
+  position: absolute;
+  right: 7px;
+  top: 2px;
+}
+
+#smallCardDial {
+  position: absolute;
+  left: 48px;
+  top: 72px;
+}
+
+#smallCardCardKeywords {
+  position: absolute;
+  left: 10px;
+  top: 80px;
+  width: 318px;
+  font-family: Tahoma;
+  font-size: 10px;
+}
+
+#smallCardSpecialPowersTable0 {
+  position: absolute;
+  left: 10px;
+  width: 318px;
+}
+
+#smallCardSpecialPowersTable1 {
+  position: absolute;
+  left: 10px;
+  width: 318px;
+  top: 30px;
+}
+
+.smallCardFooter {
+  position: absolute;
+  width: 100%;
+  bottom: 2px;
+  display: flex;
+  justify-content: center;
+}
+
+.smallCardFooter a {
+  color: white;
+}
+
 .combatSymbol {
   position: absolute;
   width: 28px;
@@ -8,7 +453,7 @@
   background-color: black;
 }
 
-.unitDialEntry {
+.dialEntry {
   text-align: center;
   font-family: 'Gill Sans', sans-serif;
   font-weight: 300;
@@ -25,7 +470,7 @@
   height: 19px;
 }
 
-.unitDialEntryKO {
+.dialEntryKO {
   padding: 0px 0px !important;
   text-align: center;
   font-family: comic sans ms;
@@ -34,57 +479,57 @@
   font-size: 14px;
 }
 
-.unitSpecialPowersTable {
+.specialPowersTable {
   font-family: Tahoma;
   font-size: 10px;
   table-layout: auto;
   line-height: 1.5em;
 }
 
-.unitSpecialPowerRow {
+.specialPowerRow {
   border-bottom: none !important;
 }
 
-.unitSpecialPowerImg {
+.specialPowerImg {
   vertical-align: top;
   padding: 0px 3px 5px 0px !important;
   width: 28px;
 }
 
-.unitSpecialPower {
+.specialPower {
   vertical-align: top;
   padding: 0px 3px 2px 0px !important;
 }
 
-.unitSpecialPowerIcon {
+.specialPowerIcon {
   padding: 2px 2px;
   min-width: 28px;
   min-height: 28px;
 }
 
-.unitSpecialPowerRallyDie {
+.specialPowerRallyDie {
   padding: 0px 4px;
 }
 
-.unitSpecialPowerPointValue {
+.specialPowerPointValue {
   font-size: 8px;
 }
 
-.unitSpecialPowerRally {
+.specialPowerRally {
   width: 28px;
   height: 60px;
   border-radius: 14px;
   box-shadow: 0 2px 2px rgb(0, 0, 0, 50%);
 }
 
-.unitSpecialPowerPlotPoints {
+.specialPowerPlotPoints {
   position: absolute;
   left: 17px;
   top: 7px;
   font-size: 8px;
 }
 
-.unitPointValues {
+.cardPointValues {
   position: absolute;
   left: 0px;
   width: 182px;
