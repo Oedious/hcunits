@@ -226,6 +226,7 @@ class TeamManager {
     };
     switch (unit.type) {
       case "character":
+      case "bystander":
         this.team_.main_force.push(team_unit);
         $('#teamMainForce').html(this.drawMainForce_());
         break;
