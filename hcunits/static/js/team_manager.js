@@ -79,8 +79,21 @@ class TeamManager {
   }
 
   drawMainForce_() {
-    // Always show the "Main Force" label, even if it has no units.
-    var html = "<div class='row'><h6><b>Main Force</b></h6><ul>";
+    var html = `
+      <div class='row'>
+        <h6><b>Main Force</b></h6>
+        <div id="teamSectionMainForceButton" class="teamSectionHeaderButton" title="Search for Main Force Units">
+          <a class="btn-floating btn-small waves-effect-waves-light blue" onclick="sideNav.showSetList(); return false;">
+            <i class="material-symbols-outlined" style="color:white;">group</i>
+          </a>
+        </div>
+        <div id="teamSectionEquipmentButton" class="teamSectionHeaderButton" title="Search for Equipment">
+          <a class="btn-floating btn-small waves-effect-waves-light blue" onclick="sideNav.showSearchByTypeResults('equipment'); return false;">
+            <i class="material-symbols-outlined" style="color:white;">swords</i>
+          </a>
+        </div>
+        <ul>`;
+
     if (this.team_.main_force.length <= 0) {
       if (READ_ONLY) {
         return "";
@@ -128,7 +141,18 @@ class TeamManager {
   }
 
   drawSideline_() {
-    var html = "<div class='row'><h6><b>Sideline</b></h6><ul>";
+    if (READ_ONLY && this.team_.sideline.length <= 0) {
+      return "";
+    }
+    var html = `
+      <div class='row'>
+        <h6><b>Sideline</b></h6>
+        <div id="teamSectionSidelineButton" class="teamSectionHeaderButton" title="Search for Sideline Units">
+          <a class="btn-floating btn-small waves-effect-waves-light blue" onclick="sideNav.showSetList(); return false;">
+            <i class="material-symbols-outlined" style="color:white;">sync_alt</i>
+          </a>
+        </div>
+        <ul>`;
     if (this.team_.sideline.length <= 0) {
       if (READ_ONLY) {
         return "";
@@ -307,7 +331,7 @@ class TeamManager {
     const unit = this.unitManager_.getUnit();
     if (!(unit.type == "character" ||
          (unit.type == "bystander" && unit.point_values.length > 0) ||
-         (unit.type == "object" && unit.object_type == "equipment") ||
+         unit.type == "equipment" ||
          unit.type == "mystery_card")) {
       throw new Error(`Error in TeamManager.addUnitToSideline '${unit.unit_id}' - unsupported type '${unit.type}'`);
     }
@@ -322,8 +346,8 @@ class TeamManager {
 
   addEquipment(mainForceIndex) {
     const unit = this.unitManager_.getUnit();
-    if (unit.type != "object" || unit.object_type != "equipment") {
-      throw new Error(`Error in TeamManager.addEquipment '${unit.unit_id}' - type '${unit.type}/${unit.object_type}'' is not object/equipment`);
+    if (unit.type != "equipment") {
+      throw new Error(`Error in TeamManager.addEquipment '${unit.unit_id}' - type '${unit.type} is not equipment`);
     }
     if (mainForceIndex >= this.team_.main_force.length) {
       throw new Error(`Error in TeamManager.addEquipment '${unit.unit_id}' - index '${mainForceIndex}' is invalid`);
@@ -359,7 +383,7 @@ class TeamManager {
         "text": "Add to Sideline",
         "onclick": `teamManager.addUnitToSideline();`
       })
-    } else if (unit.type == "object" && unit.object_type == "equipment") {
+    } else if (unit.type == "equipment") {
       for (var i = 0; i < this.team_.main_force.length; ++i) {
         const unit = this.team_.main_force[i];
         if (!unit.equipment) {

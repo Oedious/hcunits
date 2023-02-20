@@ -71,13 +71,13 @@ const OBJECT_KEYPHRASE_INFO = {
 class ObjectView extends SmallUnitView {
   
   static isType(type) {
-    return type == "object";
+    return type == "object" || type == "equipment";
   }
 
   constructor(unit) {
     super(unit);
     if (!ObjectView.isType(this.unit_.type)) {
-      throw new Error("Mismatched unit type: ObjectView require type='object'");
+      throw new Error("Mismatched unit type: ObjectView require type='object' or 'equipment'");
     }
   }
 

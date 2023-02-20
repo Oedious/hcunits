@@ -1,7 +1,7 @@
 # Commands to connect to the wordpress MySQL database
 mysql hcunits -u root -p --local-infile=1
 
-# Delete the 'team_abilities' table
+# Delete the 'units' table
 DROP TABLE units;
 
 # Create the units table
@@ -20,7 +20,7 @@ CREATE TABLE units (
 
   -- The type of the unit.
   -- TODO: Add types for 'battlefield_condition', 'event_dial', 'resource', 'terrain'
-  type ENUM('character', 'object', 'map', 'bystander', 'tarot_card', 'mystery_card', 'id_card') NOT NULL,
+  type ENUM('character', 'object', 'equipment', 'map', 'bystander', 'tarot_card', 'mystery_card', 'id_card') NOT NULL,
 
   -- A JSON array of numbers containing point values of different starting lines.
   point_values JSON,
@@ -67,10 +67,12 @@ CREATE TABLE units (
   improved_targeting JSON,
 
   -- The type or specialization of an object.
+  -- Note: equipment is technically a special type of object, but is a top-level
+  -- type due to differences in how they are used in team-building.
   object_type ENUM('standard', 'special', 'equipment', 'plastic_man', 'relic'),
   
   -- The size of an object.
-  object_size ENUM('light', 'heavy', 'ultra_light', 'ultra_heavy'),
+  object_size ENUM('light', 'heavy', 'ultra_light', 'ultra_heavy', 'immobile'),
   
   -- Should be in the form of an array of strings, with values from:
   -- "indestructible", "equip_any", "equip_friendly", "unequip_ko", "unequip_drop"

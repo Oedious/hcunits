@@ -2,27 +2,24 @@ const TYPE_LIST = {
   "character": {
     "name": "Character"
   },
-  "bystander": {
-    "name": "Bystander"
-  },
   "object": {
     "name": "Object"
+  },
+  "equipment": {
+    "name": "Equipment"
   },
   "map": {
     "name": "Map"
   },
-  "equipment": {
-    "name": "Equipment"
+  "bystander": {
+    "name": "Bystander"
   },
   "mystery_card": {
     "name": "Mystery Card"
   },
   "tarot_card": {
     "name": "Tarot Card"
-  },
-  "construct": {
-    "name": "Construct"
-  },
+  },/*
   "terrain": {
     "name": "Terrain"
   },
@@ -37,5 +34,5 @@ const TYPE_LIST = {
   },
   "event_dial": {
     "name": "Event Dial"
-  }
+  },*/
 }
