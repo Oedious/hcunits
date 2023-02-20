@@ -83,6 +83,19 @@ class UnitListPanel extends ListPanel {
         alert("Error in showAdvancedSearchResults(" + query + "): " + desc) + " err=" + err;
       });
   }
+  
+  showSearchByKeywordResults(keyword) {
+    this.resetList()
+    this.drawSetTitles_ = true;
+    var unitListPanel = this;
+    this.dataSource_.advancedSearch({"keyword": [keyword]},
+      function(unitList) {
+        unitListPanel.handleSearchResults_(unitList);
+      },
+      function(xhr, desc, err) {
+        alert("Error in showSearchByKeywordResults(" + query + "): " + desc) + " err=" + err;
+      });
+  }
 
   handleSearchResults_(unitList) {
     this.setUnitList_(unitList);

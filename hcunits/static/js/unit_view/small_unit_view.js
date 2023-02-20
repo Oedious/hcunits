@@ -81,7 +81,7 @@ class SmallUnitView extends BaseUnitView {
   		if (READ_ONLY) {
   		  html += escapedKeyword;
   		} else {
-  		  html += `<a href='' style='color:black;' onclick='sideNav.searchByKeyword("${escapedKeyword}"); return false;'>${escapedKeyword.toUpperCase()}</a>`;
+  		  html += `<a href='' style='color:black;' onclick='sideNav.showSearchByKeywordResults("${escapedKeyword}"); return false;'>${escapedKeyword.toUpperCase()}</a>`;
   		}
     }
     html += "</b></div>"

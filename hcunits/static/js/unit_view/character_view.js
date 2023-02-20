@@ -86,7 +86,7 @@ class CharacterView extends BaseUnitView {
   		if (READ_ONLY) {
   		  var keywordHtml = escapedKeyword;
   		} else {
-  		  var keywordHtml = `<a href='' class='largeCardKeyword' ${onclick}>${escapedKeyword}</a>`;
+  		  var keywordHtml = `<a href='' class='largeCardKeyword' onclick='sideNav.showSearchByKeywordResults("${escapedKeyword}"); return false;'>${escapedKeyword}</a>`;
   		}
   		var isGeneric = (KEYWORD_LIST[keyword] == "generic");
   		if (isGeneric) {
