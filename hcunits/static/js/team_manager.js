@@ -249,7 +249,10 @@ class TeamManager {
 
   addUnitToSideline() {
     const unit = this.unitManager_.getUnit();
-    if (unit.type != "character" && unit.type != "mystery_card") {
+    if (!(unit.type == "character" ||
+         (unit.type == "bystander" && unit.point_values.length > 0) ||
+         (unit.type == "object" && unit.object_type == "equipment") ||
+         unit.type == "mystery_card")) {
       throw new Error(`Error in TeamManager.addUnitToSideline '${unit.unit_id}' - unsupported type '${unit.type}'`);
     }
     const team_unit = {
@@ -285,7 +288,9 @@ class TeamManager {
     // then use a dropdown. Otherwise, have the button directly add the unit.
     var options = [];
     const unit = this.unitManager_.getUnit();
-    if (unit.type == "character" || unit.type == "mystery_card") {
+    if ((unit.type == "character" ||
+         (unit.type == "bystander" && unit.point_values.length > 0) ||
+         unit.type == "mystery_card")) {
       if (unit.point_values.length > 0) {
         for (const pointValue of unit.point_values) {
           options.push({
@@ -298,22 +303,6 @@ class TeamManager {
         "text": "Add to Sideline",
         "onclick": `teamManager.addUnitToSideline();`
       })
-    } else if ((unit.type == "object" && unit.object_type != "equipment") ||
-               unit.type == "map" ||
-               unit.type == "tarot_card") {
-      if (unit.point_values.length > 0) {
-        for (const pointValue of unit.point_values) {
-          options.push({
-            "text": `Add to Team (${pointValue} points)`,
-            "onclick": `teamManager.addUnit(${pointValue});`
-          })
-        }
-      } else {
-        options.push({
-          "text": "Add to Team",
-          "onclick": `teamManager.addUnit(0);`
-        })
-      }
     } else if (unit.type == "object" && unit.object_type == "equipment") {
       for (var i = 0; i < this.team_.main_force.length; ++i) {
         const unit = this.team_.main_force[i];
@@ -321,6 +310,32 @@ class TeamManager {
           options.push({
             "text": `Equip to ${unit.name}`,
             "onclick": `teamManager.addEquipment(${i});`
+          })
+        }
+      }
+      options.push({
+        "text": "Add to Sideline",
+        "onclick": `teamManager.addUnitToSideline();`
+      })
+    } else {
+      const UNIT_TYPE_TO_SECTION = {
+        "object": "Objects",
+        "map": "Maps",
+        "tarot_card": "Tarot Cards",
+      };
+      const section = UNIT_TYPE_TO_SECTION[unit.type];
+      if (section) {
+        if (unit.point_values.length > 0) {
+          for (const pointValue of unit.point_values) {
+            options.push({
+              "text": `Add to ${section} (${pointValue} points)`,
+              "onclick": `teamManager.addUnit(${pointValue});`
+            })
+          }
+        } else {
+          options.push({
+            "text": "Add to ${section}",
+            "onclick": `teamManager.addUnit(0);`
           })
         }
       }

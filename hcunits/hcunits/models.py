@@ -44,11 +44,11 @@ class Team(models.Model):
 
   UNIT_FIELD_LIST = {
     "main_force": {
-      "types": ["character"],
+      "types": ["character", "bystander"],
       "field_name": "main_force",
     },
     "sideline": {
-      "types": ["character", "mystery_card"],
+      "types": ["character", "mystery_card", "object", "bystander"],
       "field_name": "sideline",
     },
     "objects": {
@@ -185,6 +185,10 @@ class Team(models.Model):
           type = unit_db_entry["type"]
           if not type in field_properties["types"]:
             raise Exception("%s[%d].unit_id ('%s') expected type '%s', but found ('%s')" % (field, i, unit_id, str(field_properties["types"]), type))
+          if field == "sideline" and type == "object":
+            object_type = unit_db_entry.get("object_type", None)
+            if not object_type or object_type != "equipment":
+              raise Exception("%s[%d].unit_id ('%s') expected object_type == 'equipment', but found '%s'" % (field, i, unit_id, object_type))
           if field == "objects":
             object_type = unit_db_entry.get("object_type", None)
             if not object_type or object_type == "equipment":
