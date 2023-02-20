@@ -4054,6 +4054,7 @@
     "improved_movement": [], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
+    "bystander_type": "standard", 
     "unit_range": "0", 
     "targets": "1", 
     "speed_type": "wing", 
@@ -5022,6 +5023,7 @@
     "improved_movement": [], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
+    "bystander_type": "standard", 
     "unit_range": "4", 
     "targets": "1", 
     "speed_type": "boot", 
@@ -5059,6 +5061,7 @@
     "improved_movement": [], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
+    "bystander_type": "standard", 
     "unit_range": "6", 
     "targets": "1", 
     "speed_type": "boot", 
@@ -5096,6 +5099,7 @@
     "improved_movement": [], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
+    "bystander_type": "standard", 
     "unit_range": "0", 
     "targets": "1", 
     "speed_type": "boot", 
@@ -6026,10 +6030,10 @@
         ]
       }
     ], 
-    "improved_movement": [
+    "improved_movement": [], 
+    "improved_targeting": [
       "hindering"
     ], 
-    "improved_targeting": [], 
     "object_keyphrases": [], 
     "unit_range": "6", 
     "targets": "1", 
@@ -9786,7 +9790,7 @@
     "set_id": "ffff", 
     "collector_number": "s001", 
     "name": "Alchemical Potion", 
-    "type": "equipment", 
+    "type": "object", 
     "rarity": "rare", 
     "point_values": [
       10
@@ -9817,7 +9821,8 @@
     ], 
     "improved_movement": [], 
     "improved_targeting": [], 
-    "object_type": "light", 
+    "object_type": "equipment", 
+    "object_size": "light", 
     "object_keyphrases": [
       "equip_any", 
       "unequip_drop"
@@ -9829,7 +9834,7 @@
     "set_id": "ffff", 
     "collector_number": "s002", 
     "name": "Alchemical Fire", 
-    "type": "equipment", 
+    "type": "object", 
     "rarity": "rare", 
     "point_values": [
       10
@@ -9861,7 +9866,8 @@
     ], 
     "improved_movement": [], 
     "improved_targeting": [], 
-    "object_type": "light", 
+    "object_type": "equipment", 
+    "object_size": "light", 
     "object_keyphrases": [
       "equip_any.", 
       "unequip_drop."
@@ -9873,7 +9879,7 @@
     "set_id": "ffff", 
     "collector_number": "s003", 
     "name": "Stones of Merlin", 
-    "type": "equipment", 
+    "type": "object", 
     "rarity": "super_rare", 
     "point_values": [
       10
@@ -9893,7 +9899,8 @@
     ], 
     "improved_movement": [], 
     "improved_targeting": [], 
-    "object_type": "heavy", 
+    "object_type": "equipment", 
+    "object_size": "heavy", 
     "object_keyphrases": [
       "equip_any", 
       "unequip_drop"
@@ -9905,7 +9912,7 @@
     "set_id": "ffff", 
     "collector_number": "s004", 
     "name": "Silver Surfboard", 
-    "type": "equipment", 
+    "type": "object", 
     "rarity": "super_rare", 
     "point_values": [
       10
@@ -9925,7 +9932,8 @@
     ], 
     "improved_movement": [], 
     "improved_targeting": [], 
-    "object_type": "heavy", 
+    "object_type": "equipment", 
+    "object_size": "heavy", 
     "object_keyphrases": [
       "equip_any", 
       "unequip_drop"
@@ -9937,7 +9945,7 @@
     "set_id": "ffff", 
     "collector_number": "s005", 
     "name": "Ultimate Nullifier", 
-    "type": "equipment", 
+    "type": "object", 
     "rarity": "super_rare", 
     "point_values": [
       10
@@ -9954,7 +9962,8 @@
     ], 
     "improved_movement": [], 
     "improved_targeting": [], 
-    "object_type": "light", 
+    "object_type": "equipment", 
+    "object_size": "light", 
     "object_keyphrases": [
       "equip_any", 
       "unequip_drop"
@@ -9966,7 +9975,7 @@
     "set_id": "ffff", 
     "collector_number": "s006", 
     "name": "Emotional Modifier", 
-    "type": "equipment", 
+    "type": "object", 
     "rarity": "super_rare", 
     "point_values": [
       10
@@ -9986,7 +9995,8 @@
     ], 
     "improved_movement": [], 
     "improved_targeting": [], 
-    "object_type": "light", 
+    "object_type": "equipment", 
+    "object_size": "light", 
     "object_keyphrases": [
       "equip_any", 
       "unequip_drop"
@@ -9998,7 +10008,7 @@
     "set_id": "ffff", 
     "collector_number": "s007", 
     "name": "Radioactive Clay", 
-    "type": "equipment", 
+    "type": "object", 
     "rarity": "super_rare", 
     "point_values": [
       5
@@ -10018,7 +10028,8 @@
     ], 
     "improved_movement": [], 
     "improved_targeting": [], 
-    "object_type": "light", 
+    "object_type": "equipment", 
+    "object_size": "light", 
     "object_keyphrases": [
       "equip_any", 
       "unequip_drop"
@@ -10046,7 +10057,8 @@
     ], 
     "improved_movement": [], 
     "improved_targeting": [], 
-    "object_type": "light", 
+    "object_type": "special", 
+    "object_size": "light", 
     "object_keyphrases": [], 
     "dial": []
   }, 
@@ -10055,7 +10067,7 @@
     "set_id": "ffff", 
     "collector_number": "s009", 
     "name": "Isotope A", 
-    "type": "equipment", 
+    "type": "object", 
     "rarity": "super_rare", 
     "point_values": [
       10
@@ -10075,7 +10087,8 @@
     ], 
     "improved_movement": [], 
     "improved_targeting": [], 
-    "object_type": "light", 
+    "object_type": "equipment", 
+    "object_size": "light", 
     "object_keyphrases": [
       "equip_any", 
       "unequip_drop"
@@ -10087,7 +10100,7 @@
     "set_id": "ffff", 
     "collector_number": "s010", 
     "name": "Time Platform", 
-    "type": "equipment", 
+    "type": "object", 
     "rarity": "chase", 
     "point_values": [
       10
@@ -10104,7 +10117,8 @@
     ], 
     "improved_movement": [], 
     "improved_targeting": [], 
-    "object_type": "heavy", 
+    "object_type": "equipment", 
+    "object_size": "heavy", 
     "object_keyphrases": [
       "equip_any", 
       "unequip_drop"

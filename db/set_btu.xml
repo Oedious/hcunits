@@ -1195,8 +1195,8 @@
     "description": "When an opposing character within range and line of fire uses Probability Control, after resolutions you may heal a friendly character with the Mystery Inc. keyword 1 click."
   }
 ]</special_powers>
-    <improved_movement>["hindering"]</improved_movement>
-    <improved_targeting>[]</improved_targeting>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>["hindering"]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>8</unit_range>
     <targets>1</targets>
@@ -1392,6 +1392,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>standard</bystander_type>
     <unit_range>0</unit_range>
     <targets>1</targets>
     <speed_type>boot</speed_type>
@@ -4456,6 +4457,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>standard</bystander_type>
     <unit_range>0</unit_range>
     <targets>1</targets>
     <speed_type>wing</speed_type>
@@ -6417,6 +6419,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>standard</bystander_type>
     <unit_range>0</unit_range>
     <targets>1</targets>
     <speed_type>dolphin</speed_type>
@@ -7918,8 +7921,8 @@
     ]
   }
 ]</special_powers>
-    <improved_movement>["hindering"]</improved_movement>
-    <improved_targeting>[]</improved_targeting>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>["hindering"]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>6</unit_range>
     <targets>1</targets>
@@ -11604,8 +11607,8 @@
     ]
   }
 ]</special_powers>
-    <improved_movement>["hindering"]</improved_movement>
-    <improved_targeting>[]</improved_targeting>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>["hindering"]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>6</unit_range>
     <targets>1</targets>
@@ -12605,8 +12608,8 @@
     ]
   }
 ]</special_powers>
-    <improved_movement>["hindering"]</improved_movement>
-    <improved_targeting>[]</improved_targeting>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>["hindering"]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>6</unit_range>
     <targets>2</targets>
@@ -13889,7 +13892,7 @@
     <set_id>btu</set_id>
     <collector_number>s001</collector_number>
     <name>Utility Belt</name>
-    <type>equipment</type>
+    <type>object</type>
     <rarity>super_rare</rarity>
     <point_values>[10]</point_values>
     <properties>[]</properties>
@@ -13955,6 +13958,8 @@
 ]</special_powers>
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
+    <object_type>equipment</object_type>
+    <object_size>light</object_size>
     <object_keyphrases>["indestructible", "equip_any", "unequip_drop"]</object_keyphrases>
     <dial>[]</dial>
   </row>
@@ -13963,7 +13968,7 @@
     <set_id>btu</set_id>
     <collector_number>s002</collector_number>
     <name>Green Lantern Ring</name>
-    <type>equipment</type>
+    <type>object</type>
     <rarity>super_rare</rarity>
     <point_values>[10]</point_values>
     <properties>[]</properties>
@@ -13981,7 +13986,8 @@
 ]</special_powers>
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
-    <object_type>light</object_type>
+    <object_type>equipment</object_type>
+    <object_size>light</object_size>
     <object_keyphrases>["indestructible", "equip_any", "unequip_drop"]</object_keyphrases>
     <dial>[]</dial>
   </row>
@@ -13990,7 +13996,7 @@
     <set_id>btu</set_id>
     <collector_number>s003</collector_number>
     <name>Sinestro Corps Ring</name>
-    <type>equipment</type>
+    <type>object</type>
     <rarity>super_rare</rarity>
     <point_values>[10]</point_values>
     <properties>[]</properties>
@@ -14008,7 +14014,8 @@
 ]</special_powers>
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
-    <object_type>light</object_type>
+    <object_type>equipment</object_type>
+    <object_size>light</object_size>
     <object_keyphrases>["indestructible", "equip_any", "unequip_drop"]</object_keyphrases>
     <dial>[]</dial>
   </row>
@@ -14017,7 +14024,7 @@
     <set_id>btu</set_id>
     <collector_number>s004</collector_number>
     <name>Blue Lantern Ring</name>
-    <type>equipment</type>
+    <type>object</type>
     <rarity>super_rare</rarity>
     <point_values>[10]</point_values>
     <properties>[]</properties>
@@ -14035,7 +14042,8 @@
 ]</special_powers>
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
-    <object_type>light</object_type>
+    <object_type>equipment</object_type>
+    <object_size>light</object_size>
     <object_keyphrases>["indestructible", "equip_any", "unequip_drop"]</object_keyphrases>
     <dial>[]</dial>
   </row>
@@ -14044,7 +14052,7 @@
     <set_id>btu</set_id>
     <collector_number>s005</collector_number>
     <name>Orange Lantern Ring</name>
-    <type>equipment</type>
+    <type>object</type>
     <rarity>super_rare</rarity>
     <point_values>[10]</point_values>
     <properties>[]</properties>
@@ -14062,7 +14070,8 @@
 ]</special_powers>
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
-    <object_type>light</object_type>
+    <object_type>equipment</object_type>
+    <object_size>light</object_size>
     <object_keyphrases>["indestructible", "equip_any", "unequip_drop"]</object_keyphrases>
     <dial>[]</dial>
   </row>
@@ -14071,7 +14080,7 @@
     <set_id>btu</set_id>
     <collector_number>s006</collector_number>
     <name>Red Lantern Ring</name>
-    <type>equipment</type>
+    <type>object</type>
     <rarity>super_rare</rarity>
     <point_values>[10]</point_values>
     <properties>[]</properties>
@@ -14089,7 +14098,8 @@
 ]</special_powers>
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
-    <object_type>light</object_type>
+    <object_type>equipment</object_type>
+    <object_size>light</object_size>
     <object_keyphrases>["indestructible", "equip_any", "unequip_drop"]</object_keyphrases>
     <dial>[]</dial>
   </row>
@@ -14098,7 +14108,7 @@
     <set_id>btu</set_id>
     <collector_number>s007</collector_number>
     <name>Indigo Tribe Ring</name>
-    <type>equipment</type>
+    <type>object</type>
     <rarity>super_rare</rarity>
     <point_values>[10]</point_values>
     <properties>[]</properties>
@@ -14116,7 +14126,8 @@
 ]</special_powers>
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
-    <object_type>light</object_type>
+    <object_type>equipment</object_type>
+    <object_size>light</object_size>
     <object_keyphrases>["indestructible", "equip_any", "unequip_drop"]</object_keyphrases>
     <dial>[]</dial>
   </row>
@@ -14125,7 +14136,7 @@
     <set_id>btu</set_id>
     <collector_number>s008</collector_number>
     <name>Star Sapphire Ring</name>
-    <type>equipment</type>
+    <type>object</type>
     <rarity>super_rare</rarity>
     <point_values>[10]</point_values>
     <properties>[]</properties>
@@ -14140,7 +14151,8 @@
 ]</special_powers>
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
-    <object_type>light</object_type>
+    <object_type>equipment</object_type>
+    <object_size>light</object_size>
     <object_keyphrases>["indestructible", "equip_any", "unequip_drop"]</object_keyphrases>
     <dial>[]</dial>
   </row>
@@ -14149,7 +14161,7 @@
     <set_id>btu</set_id>
     <collector_number>s009</collector_number>
     <name>Catcher's Mitt (Green)</name>
-    <type>construct</type>
+    <type>bystander</type>
     <rarity>super_rare</rarity>
     <dimensions>1x1</dimensions>
     <point_values>[]</point_values>
@@ -14166,6 +14178,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>construct</bystander_type>
     <unit_range>0</unit_range>
     <targets>1</targets>
     <speed_type>boot</speed_type>
@@ -14191,7 +14204,7 @@
     <set_id>btu</set_id>
     <collector_number>s010</collector_number>
     <name>Stop Sign (Green)</name>
-    <type>construct</type>
+    <type>bystander</type>
     <rarity>super_rare</rarity>
     <dimensions>1x1</dimensions>
     <point_values>[]</point_values>
@@ -14208,6 +14221,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>construct</bystander_type>
     <unit_range>0</unit_range>
     <targets>1</targets>
     <speed_type>boot</speed_type>
@@ -14232,7 +14246,7 @@
     <set_id>btu</set_id>
     <collector_number>s011</collector_number>
     <name>Fire Hydrant (Green)</name>
-    <type>construct</type>
+    <type>bystander</type>
     <rarity>super_rare</rarity>
     <dimensions>1x1</dimensions>
     <point_values>[]</point_values>
@@ -14249,6 +14263,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>construct</bystander_type>
     <unit_range>6</unit_range>
     <targets>1</targets>
     <speed_type>boot</speed_type>
@@ -14273,7 +14288,7 @@
     <set_id>btu</set_id>
     <collector_number>s012</collector_number>
     <name>Chainsaw (Green)</name>
-    <type>construct</type>
+    <type>bystander</type>
     <rarity>super_rare</rarity>
     <dimensions>1x1</dimensions>
     <point_values>[]</point_values>
@@ -14284,6 +14299,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>construct</bystander_type>
     <unit_range>0</unit_range>
     <targets>1</targets>
     <speed_type>boot</speed_type>
@@ -14309,7 +14325,7 @@
     <set_id>btu</set_id>
     <collector_number>s013</collector_number>
     <name>Cowboy Boot (Green)</name>
-    <type>construct</type>
+    <type>bystander</type>
     <rarity>super_rare</rarity>
     <dimensions>1x1</dimensions>
     <point_values>[]</point_values>
@@ -14326,6 +14342,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>construct</bystander_type>
     <unit_range>0</unit_range>
     <targets>1</targets>
     <speed_type>boot</speed_type>
@@ -14351,7 +14368,7 @@
     <set_id>btu</set_id>
     <collector_number>s014</collector_number>
     <name>Spotlight (Green)</name>
-    <type>construct</type>
+    <type>bystander</type>
     <rarity>super_rare</rarity>
     <dimensions>1x1</dimensions>
     <point_values>[]</point_values>
@@ -14368,6 +14385,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>construct</bystander_type>
     <unit_range>0</unit_range>
     <targets>1</targets>
     <speed_type>boot</speed_type>
@@ -14393,7 +14411,7 @@
     <set_id>btu</set_id>
     <collector_number>s015</collector_number>
     <name>Lasso (Green)</name>
-    <type>construct</type>
+    <type>bystander</type>
     <rarity>super_rare</rarity>
     <dimensions>1x1</dimensions>
     <point_values>[]</point_values>
@@ -14413,6 +14431,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>construct</bystander_type>
     <unit_range>4</unit_range>
     <targets>1</targets>
     <speed_type>boot</speed_type>
@@ -14438,7 +14457,7 @@
     <set_id>btu</set_id>
     <collector_number>s016</collector_number>
     <name>Catcher's Mitt (Yellow)</name>
-    <type>construct</type>
+    <type>bystander</type>
     <rarity>super_rare</rarity>
     <dimensions>1x1</dimensions>
     <point_values>[]</point_values>
@@ -14455,6 +14474,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>construct</bystander_type>
     <unit_range>0</unit_range>
     <targets>1</targets>
     <speed_type>boot</speed_type>
@@ -14480,7 +14500,7 @@
     <set_id>btu</set_id>
     <collector_number>s017</collector_number>
     <name>Stop Sign (Yellow)</name>
-    <type>construct</type>
+    <type>bystander</type>
     <rarity>super_rare</rarity>
     <dimensions>1x1</dimensions>
     <point_values>[]</point_values>
@@ -14497,6 +14517,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>construct</bystander_type>
     <unit_range>0</unit_range>
     <targets>1</targets>
     <speed_type>boot</speed_type>
@@ -14521,7 +14542,7 @@
     <set_id>btu</set_id>
     <collector_number>s018</collector_number>
     <name>Fire Hydrant (Yellow)</name>
-    <type>construct</type>
+    <type>bystander</type>
     <rarity>super_rare</rarity>
     <dimensions>1x1</dimensions>
     <point_values>[]</point_values>
@@ -14538,6 +14559,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>construct</bystander_type>
     <unit_range>6</unit_range>
     <targets>1</targets>
     <speed_type>boot</speed_type>
@@ -14562,7 +14584,7 @@
     <set_id>btu</set_id>
     <collector_number>s019</collector_number>
     <name>Chainsaw (Yellow)</name>
-    <type>construct</type>
+    <type>bystander</type>
     <rarity>super_rare</rarity>
     <dimensions>1x1</dimensions>
     <point_values>[]</point_values>
@@ -14573,6 +14595,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>construct</bystander_type>
     <unit_range>0</unit_range>
     <targets>1</targets>
     <speed_type>boot</speed_type>
@@ -14598,7 +14621,7 @@
     <set_id>btu</set_id>
     <collector_number>s020</collector_number>
     <name>Cowboy Boot (Yellow)</name>
-    <type>construct</type>
+    <type>bystander</type>
     <rarity>super_rare</rarity>
     <dimensions>1x1</dimensions>
     <point_values>[]</point_values>
@@ -14615,6 +14638,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>construct</bystander_type>
     <unit_range>0</unit_range>
     <targets>1</targets>
     <speed_type>boot</speed_type>
@@ -14640,7 +14664,7 @@
     <set_id>btu</set_id>
     <collector_number>s021</collector_number>
     <name>Spotlight (Yellow)</name>
-    <type>construct</type>
+    <type>bystander</type>
     <rarity>super_rare</rarity>
     <dimensions>1x1</dimensions>
     <point_values>[]</point_values>
@@ -14657,6 +14681,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>construct</bystander_type>
     <unit_range>0</unit_range>
     <targets>1</targets>
     <speed_type>boot</speed_type>
@@ -14682,7 +14707,7 @@
     <set_id>btu</set_id>
     <collector_number>s022</collector_number>
     <name>Lasso (Yellow)</name>
-    <type>construct</type>
+    <type>bystander</type>
     <rarity>super_rare</rarity>
     <dimensions>1x1</dimensions>
     <point_values>[]</point_values>
@@ -14702,6 +14727,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>construct</bystander_type>
     <unit_range>4</unit_range>
     <targets>1</targets>
     <speed_type>boot</speed_type>
@@ -14727,7 +14753,7 @@
     <set_id>btu</set_id>
     <collector_number>s023</collector_number>
     <name>Catcher's Mitt (Red)</name>
-    <type>construct</type>
+    <type>bystander</type>
     <rarity>super_rare</rarity>
     <dimensions>1x1</dimensions>
     <point_values>[]</point_values>
@@ -14744,6 +14770,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>construct</bystander_type>
     <unit_range>0</unit_range>
     <targets>1</targets>
     <speed_type>boot</speed_type>
@@ -14769,7 +14796,7 @@
     <set_id>btu</set_id>
     <collector_number>s024</collector_number>
     <name>Stop Sign (Red)</name>
-    <type>construct</type>
+    <type>bystander</type>
     <rarity>super_rare</rarity>
     <dimensions>1x1</dimensions>
     <point_values>[]</point_values>
@@ -14786,6 +14813,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>construct</bystander_type>
     <unit_range>0</unit_range>
     <targets>1</targets>
     <speed_type>boot</speed_type>
@@ -14810,7 +14838,7 @@
     <set_id>btu</set_id>
     <collector_number>s025</collector_number>
     <name>Fire Hydrant (Red)</name>
-    <type>construct</type>
+    <type>bystander</type>
     <rarity>super_rare</rarity>
     <dimensions>1x1</dimensions>
     <point_values>[]</point_values>
@@ -14827,6 +14855,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>construct</bystander_type>
     <unit_range>6</unit_range>
     <targets>1</targets>
     <speed_type>boot</speed_type>
@@ -14851,7 +14880,7 @@
     <set_id>btu</set_id>
     <collector_number>s026</collector_number>
     <name>Chainsaw (Red)</name>
-    <type>construct</type>
+    <type>bystander</type>
     <rarity>super_rare</rarity>
     <dimensions>1x1</dimensions>
     <point_values>[]</point_values>
@@ -14862,6 +14891,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>construct</bystander_type>
     <unit_range>0</unit_range>
     <targets>1</targets>
     <speed_type>boot</speed_type>
@@ -14887,7 +14917,7 @@
     <set_id>btu</set_id>
     <collector_number>s027</collector_number>
     <name>Cowboy Boot (Red)</name>
-    <type>construct</type>
+    <type>bystander</type>
     <rarity>super_rare</rarity>
     <dimensions>1x1</dimensions>
     <point_values>[]</point_values>
@@ -14904,6 +14934,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>construct</bystander_type>
     <unit_range>0</unit_range>
     <targets>1</targets>
     <speed_type>boot</speed_type>
@@ -14929,7 +14960,7 @@
     <set_id>btu</set_id>
     <collector_number>s028</collector_number>
     <name>Spotlight (Red)</name>
-    <type>construct</type>
+    <type>bystander</type>
     <rarity>super_rare</rarity>
     <dimensions>1x1</dimensions>
     <point_values>[]</point_values>
@@ -14946,6 +14977,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>construct</bystander_type>
     <unit_range>0</unit_range>
     <targets>1</targets>
     <speed_type>boot</speed_type>
@@ -14971,7 +15003,7 @@
     <set_id>btu</set_id>
     <collector_number>s029</collector_number>
     <name>Lasso (Red)</name>
-    <type>construct</type>
+    <type>bystander</type>
     <rarity>super_rare</rarity>
     <dimensions>1x1</dimensions>
     <point_values>[]</point_values>
@@ -14991,6 +15023,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>construct</bystander_type>
     <unit_range>4</unit_range>
     <targets>1</targets>
     <speed_type>boot</speed_type>
@@ -15016,7 +15049,7 @@
     <set_id>btu</set_id>
     <collector_number>s030</collector_number>
     <name>Catcher's Mitt (Orange)</name>
-    <type>construct</type>
+    <type>bystander</type>
     <rarity>super_rare</rarity>
     <dimensions>1x1</dimensions>
     <point_values>[]</point_values>
@@ -15033,6 +15066,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>construct</bystander_type>
     <unit_range>0</unit_range>
     <targets>1</targets>
     <speed_type>boot</speed_type>
@@ -15058,7 +15092,7 @@
     <set_id>btu</set_id>
     <collector_number>s031</collector_number>
     <name>Stop Sign (Orange)</name>
-    <type>construct</type>
+    <type>bystander</type>
     <rarity>super_rare</rarity>
     <dimensions>1x1</dimensions>
     <point_values>[]</point_values>
@@ -15075,6 +15109,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>construct</bystander_type>
     <unit_range>0</unit_range>
     <targets>1</targets>
     <speed_type>boot</speed_type>
@@ -15099,7 +15134,7 @@
     <set_id>btu</set_id>
     <collector_number>s032</collector_number>
     <name>Fire Hydrant (Orange)</name>
-    <type>construct</type>
+    <type>bystander</type>
     <rarity>super_rare</rarity>
     <dimensions>1x1</dimensions>
     <point_values>[]</point_values>
@@ -15116,6 +15151,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>construct</bystander_type>
     <unit_range>6</unit_range>
     <targets>1</targets>
     <speed_type>boot</speed_type>
@@ -15140,7 +15176,7 @@
     <set_id>btu</set_id>
     <collector_number>s033</collector_number>
     <name>Chainsaw (Orange)</name>
-    <type>construct</type>
+    <type>bystander</type>
     <rarity>super_rare</rarity>
     <dimensions>1x1</dimensions>
     <point_values>[]</point_values>
@@ -15151,6 +15187,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>construct</bystander_type>
     <unit_range>0</unit_range>
     <targets>1</targets>
     <speed_type>boot</speed_type>
@@ -15176,7 +15213,7 @@
     <set_id>btu</set_id>
     <collector_number>s034</collector_number>
     <name>Cowboy Boot (Orange)</name>
-    <type>construct</type>
+    <type>bystander</type>
     <rarity>super_rare</rarity>
     <dimensions>1x1</dimensions>
     <point_values>[]</point_values>
@@ -15193,6 +15230,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>construct</bystander_type>
     <unit_range>0</unit_range>
     <targets>1</targets>
     <speed_type>boot</speed_type>
@@ -15218,7 +15256,7 @@
     <set_id>btu</set_id>
     <collector_number>s035</collector_number>
     <name>Spotlight (Orange)</name>
-    <type>construct</type>
+    <type>bystander</type>
     <rarity>super_rare</rarity>
     <dimensions>1x1</dimensions>
     <point_values>[]</point_values>
@@ -15235,6 +15273,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>construct</bystander_type>
     <unit_range>0</unit_range>
     <targets>1</targets>
     <speed_type>boot</speed_type>
@@ -15260,7 +15299,7 @@
     <set_id>btu</set_id>
     <collector_number>s036</collector_number>
     <name>Lasso (Orange)</name>
-    <type>construct</type>
+    <type>bystander</type>
     <rarity>super_rare</rarity>
     <dimensions>1x1</dimensions>
     <point_values>[]</point_values>
@@ -15280,6 +15319,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>construct</bystander_type>
     <unit_range>4</unit_range>
     <targets>1</targets>
     <speed_type>boot</speed_type>
@@ -15305,7 +15345,7 @@
     <set_id>btu</set_id>
     <collector_number>s037</collector_number>
     <name>Catcher's Mitt (Blue)</name>
-    <type>construct</type>
+    <type>bystander</type>
     <rarity>super_rare</rarity>
     <dimensions>1x1</dimensions>
     <point_values>[]</point_values>
@@ -15322,6 +15362,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>construct</bystander_type>
     <unit_range>0</unit_range>
     <targets>1</targets>
     <speed_type>boot</speed_type>
@@ -15347,7 +15388,7 @@
     <set_id>btu</set_id>
     <collector_number>s038</collector_number>
     <name>Stop Sign (Blue)</name>
-    <type>construct</type>
+    <type>bystander</type>
     <rarity>super_rare</rarity>
     <dimensions>1x1</dimensions>
     <point_values>[]</point_values>
@@ -15364,6 +15405,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>construct</bystander_type>
     <unit_range>0</unit_range>
     <targets>1</targets>
     <speed_type>boot</speed_type>
@@ -15388,7 +15430,7 @@
     <set_id>btu</set_id>
     <collector_number>s039</collector_number>
     <name>Fire Hydrant (Blue)</name>
-    <type>construct</type>
+    <type>bystander</type>
     <rarity>super_rare</rarity>
     <dimensions>1x1</dimensions>
     <point_values>[]</point_values>
@@ -15405,6 +15447,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>construct</bystander_type>
     <unit_range>6</unit_range>
     <targets>1</targets>
     <speed_type>boot</speed_type>
@@ -15429,7 +15472,7 @@
     <set_id>btu</set_id>
     <collector_number>s040</collector_number>
     <name>Chainsaw (Blue)</name>
-    <type>construct</type>
+    <type>bystander</type>
     <rarity>super_rare</rarity>
     <dimensions>1x1</dimensions>
     <point_values>[]</point_values>
@@ -15440,6 +15483,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>construct</bystander_type>
     <unit_range>0</unit_range>
     <targets>1</targets>
     <speed_type>boot</speed_type>
@@ -15465,7 +15509,7 @@
     <set_id>btu</set_id>
     <collector_number>s041</collector_number>
     <name>Cowboy Boot (Blue)</name>
-    <type>construct</type>
+    <type>bystander</type>
     <rarity>super_rare</rarity>
     <dimensions>1x1</dimensions>
     <point_values>[]</point_values>
@@ -15482,6 +15526,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>construct</bystander_type>
     <unit_range>0</unit_range>
     <targets>1</targets>
     <speed_type>boot</speed_type>
@@ -15507,7 +15552,7 @@
     <set_id>btu</set_id>
     <collector_number>s042</collector_number>
     <name>Spotlight (Blue)</name>
-    <type>construct</type>
+    <type>bystander</type>
     <rarity>super_rare</rarity>
     <dimensions>1x1</dimensions>
     <point_values>[]</point_values>
@@ -15524,6 +15569,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>construct</bystander_type>
     <unit_range>0</unit_range>
     <targets>1</targets>
     <speed_type>boot</speed_type>
@@ -15549,7 +15595,7 @@
     <set_id>btu</set_id>
     <collector_number>s043</collector_number>
     <name>Lasso (Blue)</name>
-    <type>construct</type>
+    <type>bystander</type>
     <rarity>super_rare</rarity>
     <dimensions>1x1</dimensions>
     <point_values>[]</point_values>
@@ -15569,6 +15615,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>construct</bystander_type>
     <unit_range>4</unit_range>
     <targets>1</targets>
     <speed_type>boot</speed_type>
@@ -15594,7 +15641,7 @@
     <set_id>btu</set_id>
     <collector_number>s044</collector_number>
     <name>Catcher's Mitt (Violet)</name>
-    <type>construct</type>
+    <type>bystander</type>
     <rarity>super_rare</rarity>
     <dimensions>1x1</dimensions>
     <point_values>[]</point_values>
@@ -15611,6 +15658,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>construct</bystander_type>
     <unit_range>0</unit_range>
     <targets>1</targets>
     <speed_type>boot</speed_type>
@@ -15636,7 +15684,7 @@
     <set_id>btu</set_id>
     <collector_number>s045</collector_number>
     <name>Stop Sign (Violet)</name>
-    <type>construct</type>
+    <type>bystander</type>
     <rarity>super_rare</rarity>
     <dimensions>1x1</dimensions>
     <point_values>[]</point_values>
@@ -15653,6 +15701,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>construct</bystander_type>
     <unit_range>0</unit_range>
     <targets>1</targets>
     <speed_type>boot</speed_type>
@@ -15677,7 +15726,7 @@
     <set_id>btu</set_id>
     <collector_number>s046</collector_number>
     <name>Fire Hydrant (Violet)</name>
-    <type>construct</type>
+    <type>bystander</type>
     <rarity>super_rare</rarity>
     <dimensions>1x1</dimensions>
     <point_values>[]</point_values>
@@ -15694,6 +15743,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>construct</bystander_type>
     <unit_range>6</unit_range>
     <targets>1</targets>
     <speed_type>boot</speed_type>
@@ -15718,7 +15768,7 @@
     <set_id>btu</set_id>
     <collector_number>s047</collector_number>
     <name>Chainsaw (Violet)</name>
-    <type>construct</type>
+    <type>bystander</type>
     <rarity>super_rare</rarity>
     <dimensions>1x1</dimensions>
     <point_values>[]</point_values>
@@ -15729,6 +15779,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>construct</bystander_type>
     <unit_range>0</unit_range>
     <targets>1</targets>
     <speed_type>boot</speed_type>
@@ -15754,7 +15805,7 @@
     <set_id>btu</set_id>
     <collector_number>s048</collector_number>
     <name>Cowboy Boot (Violet)</name>
-    <type>construct</type>
+    <type>bystander</type>
     <rarity>super_rare</rarity>
     <dimensions>1x1</dimensions>
     <point_values>[]</point_values>
@@ -15771,6 +15822,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>construct</bystander_type>
     <unit_range>0</unit_range>
     <targets>1</targets>
     <speed_type>boot</speed_type>
@@ -15796,7 +15848,7 @@
     <set_id>btu</set_id>
     <collector_number>s049</collector_number>
     <name>Spotlight (Violet)</name>
-    <type>construct</type>
+    <type>bystander</type>
     <rarity>super_rare</rarity>
     <dimensions>1x1</dimensions>
     <point_values>[]</point_values>
@@ -15813,6 +15865,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>construct</bystander_type>
     <unit_range>0</unit_range>
     <targets>1</targets>
     <speed_type>boot</speed_type>
@@ -15838,7 +15891,7 @@
     <set_id>btu</set_id>
     <collector_number>s050</collector_number>
     <name>Lasso (Violet)</name>
-    <type>construct</type>
+    <type>bystander</type>
     <rarity>super_rare</rarity>
     <dimensions>1x1</dimensions>
     <point_values>[]</point_values>
@@ -15858,6 +15911,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>construct</bystander_type>
     <unit_range>4</unit_range>
     <targets>1</targets>
     <speed_type>boot</speed_type>
@@ -15883,7 +15937,7 @@
     <set_id>btu</set_id>
     <collector_number>s051</collector_number>
     <name>Catcher's Mitt (Indigo)</name>
-    <type>construct</type>
+    <type>bystander</type>
     <rarity>super_rare</rarity>
     <dimensions>1x1</dimensions>
     <point_values>[]</point_values>
@@ -15900,6 +15954,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>construct</bystander_type>
     <unit_range>0</unit_range>
     <targets>1</targets>
     <speed_type>boot</speed_type>
@@ -15925,7 +15980,7 @@
     <set_id>btu</set_id>
     <collector_number>s052</collector_number>
     <name>Stop Sign (Indigo)</name>
-    <type>construct</type>
+    <type>bystander</type>
     <rarity>super_rare</rarity>
     <dimensions>1x1</dimensions>
     <point_values>[]</point_values>
@@ -15942,6 +15997,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>construct</bystander_type>
     <unit_range>0</unit_range>
     <targets>1</targets>
     <speed_type>boot</speed_type>
@@ -15966,7 +16022,7 @@
     <set_id>btu</set_id>
     <collector_number>s053</collector_number>
     <name>Fire Hydrant (Indigo)</name>
-    <type>construct</type>
+    <type>bystander</type>
     <rarity>super_rare</rarity>
     <dimensions>1x1</dimensions>
     <point_values>[]</point_values>
@@ -15983,6 +16039,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>construct</bystander_type>
     <unit_range>6</unit_range>
     <targets>1</targets>
     <speed_type>boot</speed_type>
@@ -16007,7 +16064,7 @@
     <set_id>btu</set_id>
     <collector_number>s054</collector_number>
     <name>Chainsaw (Indigo)</name>
-    <type>construct</type>
+    <type>bystander</type>
     <rarity>super_rare</rarity>
     <dimensions>1x1</dimensions>
     <point_values>[]</point_values>
@@ -16018,6 +16075,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>construct</bystander_type>
     <unit_range>0</unit_range>
     <targets>1</targets>
     <speed_type>boot</speed_type>
@@ -16043,7 +16101,7 @@
     <set_id>btu</set_id>
     <collector_number>s055</collector_number>
     <name>Cowboy Boot (Indigo)</name>
-    <type>construct</type>
+    <type>bystander</type>
     <rarity>super_rare</rarity>
     <dimensions>1x1</dimensions>
     <point_values>[]</point_values>
@@ -16060,6 +16118,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>construct</bystander_type>
     <unit_range>0</unit_range>
     <targets>1</targets>
     <speed_type>boot</speed_type>
@@ -16085,7 +16144,7 @@
     <set_id>btu</set_id>
     <collector_number>s056</collector_number>
     <name>Spotlight (Indigo)</name>
-    <type>construct</type>
+    <type>bystander</type>
     <rarity>super_rare</rarity>
     <dimensions>1x1</dimensions>
     <point_values>[]</point_values>
@@ -16102,6 +16161,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>construct</bystander_type>
     <unit_range>0</unit_range>
     <targets>1</targets>
     <speed_type>boot</speed_type>
@@ -16127,7 +16187,7 @@
     <set_id>btu</set_id>
     <collector_number>s057</collector_number>
     <name>Lasso (Indigo)</name>
-    <type>construct</type>
+    <type>bystander</type>
     <rarity>super_rare</rarity>
     <dimensions>1x1</dimensions>
     <point_values>[]</point_values>
@@ -16147,6 +16207,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>construct</bystander_type>
     <unit_range>4</unit_range>
     <targets>1</targets>
     <speed_type>boot</speed_type>

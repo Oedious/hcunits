@@ -159,10 +159,10 @@
         "description": "When Iron Man hits with a range attack, after resolutions each hit target is knocked back 4 squares."
       }
     ], 
-    "improved_movement": [
+    "improved_movement": [], 
+    "improved_targeting": [
       "hindering"
     ], 
-    "improved_targeting": [], 
     "object_keyphrases": [], 
     "unit_range": "6", 
     "targets": "2", 
@@ -1728,6 +1728,7 @@
     "improved_movement": [], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
+    "bystander_type": "standard", 
     "unit_range": "2", 
     "targets": "1", 
     "speed_type": "boot", 
@@ -3749,10 +3750,11 @@
     ], 
     "improved_movement": [
       "elevated", 
-      "hindering", 
+      "hindering"
+    ], 
+    "improved_targeting": [
       "adjacent"
     ], 
-    "improved_targeting": [], 
     "object_keyphrases": [], 
     "unit_range": "6", 
     "targets": "1", 
@@ -4688,10 +4690,10 @@
         ]
       }
     ], 
-    "improved_movement": [
+    "improved_movement": [], 
+    "improved_targeting": [
       "hindering"
     ], 
-    "improved_targeting": [], 
     "object_keyphrases": [], 
     "unit_range": "7", 
     "targets": "1", 
@@ -5333,6 +5335,7 @@
     "improved_movement": [], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
+    "bystander_type": "standard", 
     "unit_range": "0", 
     "targets": "1", 
     "speed_type": "boot", 
@@ -7141,6 +7144,7 @@
     "improved_movement": [], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
+    "bystander_type": "standard", 
     "unit_range": "0", 
     "targets": "1", 
     "speed_type": "boot", 
@@ -7490,10 +7494,10 @@
         ]
       }
     ], 
-    "improved_movement": [
+    "improved_movement": [], 
+    "improved_targeting": [
       "adjacent"
     ], 
-    "improved_targeting": [], 
     "object_keyphrases": [], 
     "unit_range": "7", 
     "targets": "1", 
@@ -8037,10 +8041,11 @@
     ], 
     "improved_movement": [
       "elevated", 
-      "hindering", 
+      "hindering"
+    ], 
+    "improved_targeting": [
       "adjacent"
     ], 
-    "improved_targeting": [], 
     "object_keyphrases": [], 
     "unit_range": "5", 
     "targets": "2", 
@@ -8798,7 +8803,7 @@
       {
         "type": "trait", 
         "name": "THE GENERAL THAT FOUNDED A NATION", 
-        "description": "Leadership, Super Senses. // When Spider-Man 1776 hits, until your next turn opposing forces have Action Total -1 (minimum 2). // Opposing characters within 6 squares can\u010f\u017c\u02ddt use Leadership or Autonomous.", 
+        "description": "Leadership, Super Senses. // When Spider-Man 1776 hits, until your next turn opposing forces have Action Total -1 (minimum 2). // Opposing characters within 6 squares can't use Leadership or Autonomous.", 
         "powers": [
           "leadership", 
           "super_senses"
@@ -9295,7 +9300,7 @@
     "set_id": "svc", 
     "collector_number": "s001", 
     "name": "Pumpkin Bombs", 
-    "type": "equipment", 
+    "type": "object", 
     "rarity": "rare", 
     "point_values": [
       5
@@ -9315,7 +9320,8 @@
     ], 
     "improved_movement": [], 
     "improved_targeting": [], 
-    "object_type": "light", 
+    "object_type": "equipment", 
+    "object_size": "light", 
     "object_keyphrases": [
       "equip_any", 
       "unequip_ko"
@@ -9327,7 +9333,7 @@
     "set_id": "svc", 
     "collector_number": "s002", 
     "name": "Illusion Generator", 
-    "type": "equipment", 
+    "type": "object", 
     "rarity": "rare", 
     "point_values": [
       10
@@ -9347,7 +9353,8 @@
     ], 
     "improved_movement": [], 
     "improved_targeting": [], 
-    "object_type": "heavy", 
+    "object_type": "equipment", 
+    "object_size": "heavy", 
     "object_keyphrases": [
       "equip_any", 
       "unequip_drop"
@@ -9370,6 +9377,7 @@
     "improved_movement": [], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
+    "bystander_type": "standard", 
     "unit_range": "0", 
     "targets": "1", 
     "speed_type": "boot", 
@@ -9395,7 +9403,7 @@
     "set_id": "svc", 
     "collector_number": "s003", 
     "name": "Dimensional Watch", 
-    "type": "equipment", 
+    "type": "object", 
     "rarity": "rare", 
     "point_values": [
       5
@@ -9415,7 +9423,8 @@
     ], 
     "improved_movement": [], 
     "improved_targeting": [], 
-    "object_type": "light", 
+    "object_type": "equipment", 
+    "object_size": "light", 
     "object_keyphrases": [
       "equip_any", 
       "unequip_drop"
@@ -9427,7 +9436,7 @@
     "set_id": "svc", 
     "collector_number": "s004", 
     "name": "Carnage Symbiote", 
-    "type": "equipment", 
+    "type": "object", 
     "rarity": "super_rare", 
     "point_values": [
       10
@@ -9448,7 +9457,8 @@
     ], 
     "improved_movement": [], 
     "improved_targeting": [], 
-    "object_type": "light", 
+    "object_type": "equipment", 
+    "object_size": "light", 
     "object_keyphrases": [
       "equip_any", 
       "unequip_ko"
@@ -9460,7 +9470,7 @@
     "set_id": "svc", 
     "collector_number": "s005", 
     "name": "All-Black the Necrosword", 
-    "type": "equipment", 
+    "type": "object", 
     "rarity": "super_rare", 
     "point_values": [
       15
@@ -9477,7 +9487,8 @@
     ], 
     "improved_movement": [], 
     "improved_targeting": [], 
-    "object_type": "heavy", 
+    "object_type": "equipment", 
+    "object_size": "heavy", 
     "object_keyphrases": [
       "indestructible", 
       "equip_any", 
@@ -9506,7 +9517,8 @@
     ], 
     "improved_movement": [], 
     "improved_targeting": [], 
-    "object_type": "light", 
+    "object_type": "special", 
+    "object_size": "light", 
     "object_keyphrases": [], 
     "dial": []
   }, 
@@ -9515,7 +9527,7 @@
     "set_id": "svc", 
     "collector_number": "s007", 
     "name": "Waldo Arms", 
-    "type": "equipment", 
+    "type": "object", 
     "rarity": "super_rare", 
     "point_values": [
       10
@@ -9535,7 +9547,8 @@
     ], 
     "improved_movement": [], 
     "improved_targeting": [], 
-    "object_type": "heavy", 
+    "object_type": "equipment", 
+    "object_size": "heavy", 
     "object_keyphrases": [
       "equip_any", 
       "unequip_drop"

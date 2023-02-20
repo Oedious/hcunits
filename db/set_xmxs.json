@@ -1968,6 +1968,7 @@
     "improved_movement": [], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
+    "bystander_type": "standard", 
     "unit_range": "0", 
     "targets": "1", 
     "speed_type": "boot", 
@@ -4291,6 +4292,7 @@
     "improved_movement": [], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
+    "bystander_type": "standard", 
     "unit_range": "0", 
     "targets": "1", 
     "speed_type": "boot", 
@@ -4430,6 +4432,7 @@
     "improved_movement": [], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
+    "bystander_type": "standard", 
     "unit_range": "0", 
     "targets": "1", 
     "speed_type": "boot", 
@@ -4595,6 +4598,7 @@
     "improved_movement": [], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
+    "bystander_type": "standard", 
     "unit_range": "6", 
     "targets": "1", 
     "speed_type": "boot", 
@@ -4630,6 +4634,7 @@
     "improved_movement": [], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
+    "bystander_type": "standard", 
     "unit_range": "6", 
     "targets": "1", 
     "speed_type": "boot", 
@@ -4665,6 +4670,7 @@
     "improved_movement": [], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
+    "bystander_type": "standard", 
     "unit_range": "6", 
     "targets": "1", 
     "speed_type": "boot", 
@@ -4700,6 +4706,7 @@
     "improved_movement": [], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
+    "bystander_type": "standard", 
     "unit_range": "6", 
     "targets": "1", 
     "speed_type": "boot", 
@@ -4735,6 +4742,7 @@
     "improved_movement": [], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
+    "bystander_type": "standard", 
     "unit_range": "6", 
     "targets": "1", 
     "speed_type": "boot", 
@@ -5634,6 +5642,7 @@
     "improved_movement": [], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
+    "bystander_type": "standard", 
     "unit_range": "6", 
     "targets": "1", 
     "speed_type": "wing", 
@@ -6498,6 +6507,7 @@
     "improved_movement": [], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
+    "bystander_type": "standard", 
     "unit_range": "4", 
     "targets": "1", 
     "speed_type": "boot", 
@@ -6947,6 +6957,7 @@
     "improved_movement": [], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
+    "bystander_type": "standard", 
     "unit_range": "0", 
     "targets": "1", 
     "speed_type": "boot", 
@@ -6984,6 +6995,7 @@
     "improved_movement": [], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
+    "bystander_type": "standard", 
     "unit_range": "0", 
     "targets": "1", 
     "speed_type": "boot", 
@@ -7022,6 +7034,7 @@
     "improved_movement": [], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
+    "bystander_type": "standard", 
     "unit_range": "0", 
     "targets": "3", 
     "speed_type": "boot", 
@@ -7186,6 +7199,7 @@
     "improved_movement": [], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
+    "bystander_type": "standard", 
     "unit_range": "0", 
     "targets": "1", 
     "speed_type": "boot", 
@@ -7658,6 +7672,7 @@
     "improved_movement": [], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
+    "bystander_type": "standard", 
     "unit_range": "0", 
     "targets": "1", 
     "speed_type": "boot", 
@@ -7962,6 +7977,7 @@
     "improved_movement": [], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
+    "bystander_type": "standard", 
     "unit_range": "0", 
     "targets": "1", 
     "speed_type": "wing", 
@@ -12198,6 +12214,7 @@
     "improved_movement": [], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
+    "bystander_type": "standard", 
     "unit_range": "5", 
     "targets": "1", 
     "speed_type": "wing", 
@@ -12236,6 +12253,7 @@
     "improved_movement": [], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
+    "bystander_type": "standard", 
     "unit_range": "4", 
     "targets": "3", 
     "speed_type": "wing", 
@@ -12274,6 +12292,7 @@
     "improved_movement": [], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
+    "bystander_type": "standard", 
     "unit_range": "3", 
     "targets": "1", 
     "speed_type": "wing", 
@@ -12312,6 +12331,7 @@
     "improved_movement": [], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
+    "bystander_type": "standard", 
     "unit_range": "6", 
     "targets": "1", 
     "speed_type": "wing", 
@@ -13131,7 +13151,7 @@
     "set_id": "xmxs", 
     "collector_number": "s001", 
     "name": "Mercy", 
-    "type": "equipment", 
+    "type": "object", 
     "rarity": "rare", 
     "point_values": [
       10
@@ -13151,7 +13171,8 @@
     ], 
     "improved_movement": [], 
     "improved_targeting": [], 
-    "object_type": "light", 
+    "object_type": "equipment", 
+    "object_size": "light", 
     "object_keyphrases": [
       "indestructible", 
       "equip_any", 
@@ -13165,7 +13186,7 @@
     "set_id": "xmxs", 
     "collector_number": "s002", 
     "name": "Muramasa Blade", 
-    "type": "equipment", 
+    "type": "object", 
     "rarity": "rare", 
     "point_values": [
       10
@@ -13185,7 +13206,8 @@
     ], 
     "improved_movement": [], 
     "improved_targeting": [], 
-    "object_type": "light", 
+    "object_type": "equipment", 
+    "object_size": "light", 
     "object_keyphrases": [
       "indestructible", 
       "equip_any", 
@@ -13199,7 +13221,7 @@
     "set_id": "xmxs", 
     "collector_number": "s003", 
     "name": "Vermilion", 
-    "type": "equipment", 
+    "type": "object", 
     "rarity": "rare", 
     "point_values": [
       10
@@ -13219,7 +13241,8 @@
     ], 
     "improved_movement": [], 
     "improved_targeting": [], 
-    "object_type": "light", 
+    "object_type": "equipment", 
+    "object_size": "light", 
     "object_keyphrases": [
       "indestructible", 
       "equip_any", 
@@ -13233,7 +13256,7 @@
     "set_id": "xmxs", 
     "collector_number": "s004", 
     "name": "Black Bone of Amduat", 
-    "type": "equipment", 
+    "type": "object", 
     "rarity": "rare", 
     "point_values": [
       10
@@ -13253,7 +13276,8 @@
     ], 
     "improved_movement": [], 
     "improved_targeting": [], 
-    "object_type": "light", 
+    "object_type": "equipment", 
+    "object_size": "light", 
     "object_keyphrases": [
       "indestructible", 
       "equip_any", 
@@ -13267,7 +13291,7 @@
     "set_id": "xmxs", 
     "collector_number": "s005", 
     "name": "Starlight Sword", 
-    "type": "equipment", 
+    "type": "object", 
     "rarity": "super_rare", 
     "point_values": [
       10
@@ -13287,7 +13311,8 @@
     ], 
     "improved_movement": [], 
     "improved_targeting": [], 
-    "object_type": "light", 
+    "object_type": "equipment", 
+    "object_size": "light", 
     "object_keyphrases": [
       "indestructible", 
       "equip_any", 
@@ -13301,7 +13326,7 @@
     "set_id": "xmxs", 
     "collector_number": "s006", 
     "name": "Seducer", 
-    "type": "equipment", 
+    "type": "object", 
     "rarity": "super_rare", 
     "point_values": [
       10
@@ -13322,7 +13347,8 @@
     ], 
     "improved_movement": [], 
     "improved_targeting": [], 
-    "object_type": "light", 
+    "object_type": "equipment", 
+    "object_size": "light", 
     "object_keyphrases": [
       "indestructible", 
       "equip_any", 
@@ -13336,7 +13362,7 @@
     "set_id": "xmxs", 
     "collector_number": "s007", 
     "name": "Colony", 
-    "type": "equipment", 
+    "type": "object", 
     "rarity": "super_rare", 
     "point_values": [
       10
@@ -13357,7 +13383,8 @@
     ], 
     "improved_movement": [], 
     "improved_targeting": [], 
-    "object_type": "light", 
+    "object_type": "equipment", 
+    "object_size": "light", 
     "object_keyphrases": [
       "indestructible", 
       "equip_any", 
@@ -13371,7 +13398,7 @@
     "set_id": "xmxs", 
     "collector_number": "s008", 
     "name": "Alluvium", 
-    "type": "equipment", 
+    "type": "object", 
     "rarity": "super_rare", 
     "point_values": [
       10
@@ -13392,7 +13419,8 @@
     ], 
     "improved_movement": [], 
     "improved_targeting": [], 
-    "object_type": "light", 
+    "object_type": "equipment", 
+    "object_size": "light", 
     "object_keyphrases": [
       "indestructible", 
       "equip_any", 
@@ -13406,7 +13434,7 @@
     "set_id": "xmxs", 
     "collector_number": "s009", 
     "name": "Scarab", 
-    "type": "equipment", 
+    "type": "object", 
     "rarity": "chase", 
     "point_values": [
       10
@@ -13426,7 +13454,8 @@
     ], 
     "improved_movement": [], 
     "improved_targeting": [], 
-    "object_type": "light", 
+    "object_type": "equipment", 
+    "object_size": "light", 
     "object_keyphrases": [
       "indestructible", 
       "equip_any", 
@@ -13440,7 +13469,7 @@
     "set_id": "xmxs", 
     "collector_number": "s010", 
     "name": "Purity", 
-    "type": "equipment", 
+    "type": "object", 
     "rarity": "chase", 
     "point_values": [
       10
@@ -13460,7 +13489,8 @@
     ], 
     "improved_movement": [], 
     "improved_targeting": [], 
-    "object_type": "light", 
+    "object_type": "equipment", 
+    "object_size": "light", 
     "object_keyphrases": [
       "indestructible", 
       "equip_any", 
@@ -13484,6 +13514,7 @@
     "improved_movement": [], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
+    "bystander_type": "standard", 
     "unit_range": "0", 
     "targets": "1", 
     "speed_type": "boot", 
@@ -13508,7 +13539,7 @@
     "set_id": "xmxs", 
     "collector_number": "s011", 
     "name": "Twilight Sword", 
-    "type": "equipment", 
+    "type": "object", 
     "rarity": "chase", 
     "point_values": [
       10
@@ -13528,7 +13559,8 @@
     ], 
     "improved_movement": [], 
     "improved_targeting": [], 
-    "object_type": "light", 
+    "object_type": "equipment", 
+    "object_size": "light", 
     "object_keyphrases": [
       "indestructible", 
       "equip_any", 

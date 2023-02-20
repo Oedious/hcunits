@@ -1,0 +1,491 @@
+<resultset>
+  <row>
+    <unit_id>wkd21DP21-001</unit_id>
+    <set_id>wkd21</set_id>
+    <collector_number>DP21-001</collector_number>
+    <name>Batman and Catwoman</name>
+    <type>character</type>
+    <rarity>limited_edition</rarity>
+    <real_name>Bruce Wayne and Selena Kyle</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[75, 35]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["batman_ally", "batman_enemy"]</team_abilities>
+    <keywords>["Batman Family", "Detective", "Gotham City", "Gotham City Underworld", "Martial Artist"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "A WEDDING PARTY OF TWO...", 
+    "description": "Sidestep, Combat Reflexes. // Opposing characters within 6 squares and line of fire can't use Sidestep.", 
+    "powers": [
+      "sidestep", 
+      "combat_reflexes"
+    ]
+  }, 
+  {
+    "type": "trait", 
+    "name": "...ON A ROOFTOP IN SOUTHERN GOTHAM", 
+    "description": "Batman and Catwoman can't be targeted by opposing characters occupying a square on a lower elevation."
+  }, 
+  {
+    "type": "damage", 
+    "name": "BAT AND CAT", 
+    "description": "Outwit, Probability Control. // FREE: If Batman and Catwoman occupy hindering terrain, they may use Outwit and Probability Control an additional time this turn.", 
+    "powers": [
+      "outwit", 
+      "probability_control"
+    ]
+  }
+]</special_powers>
+    <improved_movement>["elevated", "characters"]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>3</unit_range>
+    <targets>2</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "charge", 
+    "speed_value": 12, 
+    "attack_power": "quake", 
+    "attack_value": 12, 
+    "defense_power": "super_senses", 
+    "defense_value": 18, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "flurry", 
+    "speed_value": 9, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 11, 
+    "defense_power": "super_senses", 
+    "defense_value": 18, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "charge", 
+    "speed_value": 10, 
+    "attack_power": "quake", 
+    "attack_value": 11, 
+    "defense_power": "super_senses", 
+    "defense_value": 18, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "flurry", 
+    "speed_value": 9, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 11, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "charge", 
+    "speed_value": 10, 
+    "attack_power": "quake", 
+    "attack_value": 10, 
+    "defense_power": "willpower", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 3, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "flurry", 
+    "speed_value": 9, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 10, 
+    "defense_power": "willpower", 
+    "defense_value": 17, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "charge", 
+    "speed_value": 10, 
+    "attack_power": "quake", 
+    "attack_value": 9, 
+    "defense_power": "willpower", 
+    "defense_value": 17, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 3
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>wkd21DP21-002</unit_id>
+    <set_id>wkd21</set_id>
+    <collector_number>DP21-002</collector_number>
+    <name>Punchline</name>
+    <type>character</type>
+    <rarity>limited_edition</rarity>
+    <real_name>Alexis Kaye</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[45]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["batman_enemy", "underworld"]</team_abilities>
+    <keywords>["Celebrity", "Gotham City Underworld", "Scientist"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "I'M THE PUNCHLINE...I'M WHERE YOU END.", 
+    "description": "Flurry. When Punchline uses it and targets a character she already damaged this turn, the targeted character can't use Super Senses.", 
+    "powers": [
+      "flurry"
+    ]
+  }, 
+  {
+    "type": "trait", 
+    "name": "I'M NOT A FAN, I'M HIS PARTNER.", 
+    "description": "Leadership. When Punchline uses it and succeeds, instead of the normal effect, she may remove an action token from a friendly character with \"Joker\" in their name anywhere on the map.", 
+    "powers": [
+      "leadership"
+    ]
+  }, 
+  {
+    "type": "attack", 
+    "name": "DISARMING DAGGERS", 
+    "description": "Blades/Claws/Fangs, Poison.", 
+    "powers": [
+      "blades_claws_fangs", 
+      "poison"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>5</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "charge", 
+    "speed_value": 10, 
+    "attack_power": "special", 
+    "attack_value": 11, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 17, 
+    "damage_power": "outwit", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "charge", 
+    "speed_value": 10, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 17, 
+    "damage_power": "outwit", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "charge", 
+    "speed_value": 10, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 17, 
+    "damage_power": "outwit", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "willpower", 
+    "defense_value": 18, 
+    "damage_power": "empower", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 11, 
+    "defense_power": "willpower", 
+    "defense_value": 18, 
+    "damage_power": "empower", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>wkd21DP21-004</unit_id>
+    <set_id>wkd21</set_id>
+    <collector_number>DP21-004</collector_number>
+    <name>Harley Quinn</name>
+    <type>character</type>
+    <rarity>limited_edition</rarity>
+    <real_name>Harleen Quinzel</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[45]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["team_player"]</team_abilities>
+    <keywords>["Arkham Asylum", "Gotham City", "Gotham City Underworld", "Scientist", "Secret Six", "Suicide Squad"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "MISSED THE SOUND OF MY MALLET SMACKIN' SKULLS", 
+    "description": "Quake. Flurry, but only if adjacent to two or more opposing characters.", 
+    "powers": [
+      "quake", 
+      "flurry"
+    ]
+  }, 
+  {
+    "type": "trait", 
+    "name": "THIS MOUTH DON'T SHUT EASY", 
+    "description": "The first time Harley Quinn would be KO'd, you may instead turn her to click #5 and place her adjacent to a friendly character within range. Protected: Pulse Wave."
+  }, 
+  {
+    "type": "attack", 
+    "name": "BIG #$@&amp;IN' BLASTER", 
+    "description": "Penetrating/Psychic Blast, KNOCKBACK. // When Harley Quinn makes a range attack, after resolutions she may knock back a missed target 2 squares in any direction.", 
+    "powers": [
+      "penetrating_psychic_blast"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>["adjacent"]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>6</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "charge", 
+    "speed_value": 10, 
+    "attack_power": "incapacitate", 
+    "attack_value": 11, 
+    "defense_power": "super_senses", 
+    "defense_value": 18, 
+    "damage_power": "probability_control", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "charge", 
+    "speed_value": 10, 
+    "attack_power": "incapacitate", 
+    "attack_value": 11, 
+    "defense_power": "super_senses", 
+    "defense_value": 18, 
+    "damage_power": "probability_control", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "sidestep", 
+    "speed_value": 9, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "willpower", 
+    "defense_value": 18, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "sidestep", 
+    "speed_value": 9, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "willpower", 
+    "defense_value": 17, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "sidestep", 
+    "speed_value": 9, 
+    "attack_power": "special", 
+    "attack_value": 11, 
+    "defense_power": "willpower", 
+    "defense_value": 17, 
+    "damage_power": "probability_control", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>wkd21DP21-005</unit_id>
+    <set_id>wkd21</set_id>
+    <collector_number>DP21-005</collector_number>
+    <name>Wonder Woman</name>
+    <type>character</type>
+    <rarity>limited_edition</rarity>
+    <real_name>Diana</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[125, 50]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["mystics", "wonder_woman_ally"]</team_abilities>
+    <keywords>["Amazon", "Dark Knights", "Justice League", "Mystical", "Police", "Ruler", "Warrior"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "AMAZONS, ATTACK!", 
+    "description": "When establishing themed teams, characters on your starting force with the Dark Knights or Justice League keyword gain the Amazon keyword."
+  }, 
+  {
+    "type": "trait", 
+    "name": "QUEEN OF THE UNDERWORLD", 
+    "description": "Once per game for all friendly characters with this trait, when a friendly standard character would be KO'd (including Wonder Woman), you may instead turn that figure to their last non-KO click, then roll a d6 and heal them equal to half the result. Protected: Pulse Wave."
+  }, 
+  {
+    "type": "attack", 
+    "name": "THE CHAINSAW OF TRUTH", 
+    "description": "Blades/Claws/Fangs. When Wonder Woman uses it, she deal penetrating damage. // When Wonder Woman KO's a character, after resolutions heal her 1 click. If that character had the Monster keyword, heal her 2 clicks instead.", 
+    "powers": [
+      "blades_claws_fangs"
+    ]
+  }, 
+  {
+    "type": "defense", 
+    "name": "TAKE THIS ONE MOMENT TO REST", 
+    "description": "STOP. Defend, Super Senses. // When an opposing character misses with an attack that targeted Wonder Woman and/or friendly characters adjacent to her, after resolutions deal the attacker 1 penetrating damage.", 
+    "powers": [
+      "stop", 
+      "defend", 
+      "super_senses"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>2</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "charge", 
+    "speed_value": 12, 
+    "attack_power": "special", 
+    "attack_value": 12, 
+    "defense_power": "impervious", 
+    "defense_value": 19, 
+    "damage_power": "leadership", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "charge", 
+    "speed_value": 12, 
+    "attack_power": "special", 
+    "attack_value": 12, 
+    "defense_power": "impervious", 
+    "defense_value": 18, 
+    "damage_power": "leadership", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "charge", 
+    "speed_value": 10, 
+    "attack_power": "special", 
+    "attack_value": 12, 
+    "defense_power": "impervious", 
+    "defense_value": 18, 
+    "damage_power": "leadership", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "charge", 
+    "speed_value": 10, 
+    "attack_power": "special", 
+    "attack_value": 11, 
+    "defense_power": "special", 
+    "defense_value": 17, 
+    "damage_power": "leadership", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "charge", 
+    "speed_value": 10, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 11, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_power": "leadership", 
+    "damage_value": 3, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "flurry", 
+    "speed_value": 8, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 11, 
+    "defense_power": "super_senses", 
+    "defense_value": 18, 
+    "damage_power": "probability_control", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "flurry", 
+    "speed_value": 8, 
+    "attack_power": "steal_energy", 
+    "attack_value": 11, 
+    "defense_power": "super_senses", 
+    "defense_value": 18, 
+    "damage_power": "probability_control", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 8, 
+    "speed_power": "flurry", 
+    "speed_value": 8, 
+    "attack_power": "steal_energy", 
+    "attack_value": 12, 
+    "defense_power": "special", 
+    "defense_value": 19, 
+    "damage_power": "probability_control", 
+    "damage_value": 4
+  }
+]</dial>
+  </row>
+</resultset>

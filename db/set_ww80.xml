@@ -1472,8 +1472,8 @@
     ]
   }
 ]</special_powers>
-    <improved_movement>["hindering"]</improved_movement>
-    <improved_targeting>[]</improved_targeting>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>["hindering"]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>6</unit_range>
     <targets>1</targets>
@@ -3176,8 +3176,8 @@
     ]
   }
 ]</special_powers>
-    <improved_movement>["hindering"]</improved_movement>
-    <improved_targeting>[]</improved_targeting>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>["hindering"]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>6</unit_range>
     <targets>1</targets>
@@ -3621,8 +3621,8 @@
     ]
   }
 ]</special_powers>
-    <improved_movement>["hindering"]</improved_movement>
-    <improved_targeting>[]</improved_targeting>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>["hindering"]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>7</unit_range>
     <targets>3</targets>
@@ -4940,8 +4940,8 @@
     ]
   }
 ]</special_powers>
-    <improved_movement>["hindering"]</improved_movement>
-    <improved_targeting>[]</improved_targeting>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>["hindering"]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>8</unit_range>
     <targets>3</targets>
@@ -5593,6 +5593,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>standard</bystander_type>
     <unit_range>5</unit_range>
     <targets>1</targets>
     <speed_type>boot</speed_type>
@@ -5629,6 +5630,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>standard</bystander_type>
     <unit_range>6</unit_range>
     <targets>1</targets>
     <speed_type>boot</speed_type>
@@ -5886,6 +5888,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>standard</bystander_type>
     <unit_range>0</unit_range>
     <targets>1</targets>
     <speed_type>wing</speed_type>
@@ -5923,6 +5926,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>standard</bystander_type>
     <unit_range>7</unit_range>
     <targets>1</targets>
     <speed_type>wing</speed_type>
@@ -6336,6 +6340,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>standard</bystander_type>
     <unit_range>0</unit_range>
     <targets>1</targets>
     <speed_type>boot</speed_type>
@@ -7633,8 +7638,8 @@
     "description": "POWER: Choose an adjacent friendly character that shares a keyword with The Commissioner. The chosen character can make an attack using its printed combat values. After resolutions, if they missed all targets give them an action token."
   }
 ]</special_powers>
-    <improved_movement>["hindering"]</improved_movement>
-    <improved_targeting>[]</improved_targeting>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>["hindering"]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>6</unit_range>
     <targets>1</targets>
@@ -7739,6 +7744,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>standard</bystander_type>
     <unit_range>7</unit_range>
     <targets>2</targets>
     <speed_type>boot</speed_type>
@@ -8641,6 +8647,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>standard</bystander_type>
     <unit_range>0</unit_range>
     <targets>1</targets>
     <speed_type>wing</speed_type>
@@ -11328,7 +11335,7 @@
     <set_id>ww80</set_id>
     <collector_number>s001</collector_number>
     <name>The Angler</name>
-    <type>equipment</type>
+    <type>object</type>
     <rarity>rare</rarity>
     <point_values>[10]</point_values>
     <properties>[]</properties>
@@ -11346,7 +11353,8 @@
 ]</special_powers>
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
-    <object_type>light</object_type>
+    <object_type>equipment</object_type>
+    <object_size>light</object_size>
     <object_keyphrases>["equip_any", "unequip_drop"]</object_keyphrases>
     <dial>[]</dial>
   </row>
@@ -11355,7 +11363,7 @@
     <set_id>ww80</set_id>
     <collector_number>s002</collector_number>
     <name>Lasso of Truth</name>
-    <type>equipment</type>
+    <type>object</type>
     <rarity>rare</rarity>
     <point_values>[10]</point_values>
     <properties>[]</properties>
@@ -11373,7 +11381,8 @@
 ]</special_powers>
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
-    <object_type>light</object_type>
+    <object_type>equipment</object_type>
+    <object_size>light</object_size>
     <object_keyphrases>["equip_any", "unequip_ko"]</object_keyphrases>
     <dial>[]</dial>
   </row>
@@ -11382,7 +11391,7 @@
     <set_id>ww80</set_id>
     <collector_number>s003</collector_number>
     <name>Catcher's Mitt (Green)</name>
-    <type>construct</type>
+    <type>bystander</type>
     <rarity>super_rare</rarity>
     <dimensions>1x1</dimensions>
     <point_values>[]</point_values>
@@ -11399,6 +11408,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>construct</bystander_type>
     <unit_range>0</unit_range>
     <targets>1</targets>
     <speed_type>boot</speed_type>
@@ -11424,7 +11434,7 @@
     <set_id>ww80</set_id>
     <collector_number>s004</collector_number>
     <name>Sword of Athena</name>
-    <type>equipment</type>
+    <type>object</type>
     <rarity>super_rare</rarity>
     <point_values>[10]</point_values>
     <properties>[]</properties>
@@ -11442,7 +11452,8 @@
 ]</special_powers>
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
-    <object_type>light</object_type>
+    <object_type>equipment</object_type>
+    <object_size>light</object_size>
     <object_keyphrases>["indestructible", "equip_any", "unequip_ko"]</object_keyphrases>
     <dial>[]</dial>
   </row>
@@ -11451,7 +11462,7 @@
     <set_id>ww80</set_id>
     <collector_number>s005</collector_number>
     <name>Wonder Woman's Bracelets</name>
-    <type>equipment</type>
+    <type>object</type>
     <rarity>super_rare</rarity>
     <point_values>[10]</point_values>
     <properties>[]</properties>
@@ -11466,7 +11477,8 @@
 ]</special_powers>
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
-    <object_type>light</object_type>
+    <object_type>equipment</object_type>
+    <object_size>light</object_size>
     <object_keyphrases>["equip_any", "unequip_drop"]</object_keyphrases>
     <dial>[]</dial>
   </row>
@@ -11475,7 +11487,7 @@
     <set_id>ww80</set_id>
     <collector_number>s006</collector_number>
     <name>Golden Armor</name>
-    <type>equipment</type>
+    <type>object</type>
     <rarity>super_rare</rarity>
     <point_values>[10]</point_values>
     <properties>[]</properties>
@@ -11493,7 +11505,8 @@
 ]</special_powers>
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
-    <object_type>light</object_type>
+    <object_type>equipment</object_type>
+    <object_size>light</object_size>
     <object_keyphrases>["equip_any", "unequip_ko"]</object_keyphrases>
     <dial>[]</dial>
   </row>
@@ -11502,7 +11515,7 @@
     <set_id>ww80</set_id>
     <collector_number>s007</collector_number>
     <name>Stop Sign (Indigo)</name>
-    <type>construct</type>
+    <type>bystander</type>
     <rarity>chase</rarity>
     <dimensions>1x1</dimensions>
     <point_values>[]</point_values>
@@ -11519,6 +11532,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>construct</bystander_type>
     <unit_range>0</unit_range>
     <targets>1</targets>
     <speed_type>boot</speed_type>
@@ -11543,7 +11557,7 @@
     <set_id>ww80</set_id>
     <collector_number>s008</collector_number>
     <name>Fire Hydrant (Blue)</name>
-    <type>construct</type>
+    <type>bystander</type>
     <rarity>chase</rarity>
     <dimensions>1x1</dimensions>
     <point_values>[]</point_values>
@@ -11560,6 +11574,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>construct</bystander_type>
     <unit_range>6</unit_range>
     <targets>1</targets>
     <speed_type>boot</speed_type>
@@ -11584,7 +11599,7 @@
     <set_id>ww80</set_id>
     <collector_number>s009</collector_number>
     <name>Chainsaw (Red)</name>
-    <type>construct</type>
+    <type>bystander</type>
     <rarity>chase</rarity>
     <dimensions>1x1</dimensions>
     <point_values>[]</point_values>
@@ -11595,6 +11610,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>construct</bystander_type>
     <unit_range>0</unit_range>
     <targets>1</targets>
     <speed_type>boot</speed_type>
@@ -11620,7 +11636,7 @@
     <set_id>ww80</set_id>
     <collector_number>s010</collector_number>
     <name>Cowboy Boot (Yellow)</name>
-    <type>construct</type>
+    <type>bystander</type>
     <rarity>chase</rarity>
     <dimensions>1x1</dimensions>
     <point_values>[]</point_values>
@@ -11637,6 +11653,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>construct</bystander_type>
     <unit_range>0</unit_range>
     <targets>1</targets>
     <speed_type>boot</speed_type>
@@ -11662,7 +11679,7 @@
     <set_id>ww80</set_id>
     <collector_number>s011</collector_number>
     <name>Spotlight (Green)</name>
-    <type>construct</type>
+    <type>bystander</type>
     <rarity>chase</rarity>
     <dimensions>1x1</dimensions>
     <point_values>[]</point_values>
@@ -11679,6 +11696,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>construct</bystander_type>
     <unit_range>6</unit_range>
     <targets>1</targets>
     <speed_type>boot</speed_type>
@@ -11704,7 +11722,7 @@
     <set_id>ww80</set_id>
     <collector_number>s012</collector_number>
     <name>Lasso (Violet)</name>
-    <type>construct</type>
+    <type>bystander</type>
     <rarity>chase</rarity>
     <dimensions>1x1</dimensions>
     <point_values>[]</point_values>
@@ -11724,6 +11742,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>construct</bystander_type>
     <unit_range>4</unit_range>
     <targets>1</targets>
     <speed_type>boot</speed_type>

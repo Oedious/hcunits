@@ -747,6 +747,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>standard</bystander_type>
     <unit_range>6</unit_range>
     <targets>1</targets>
     <speed_type>boot</speed_type>
@@ -897,7 +898,7 @@
   {
     "type": "trait", 
     "name": "TEAM UP: X-FORCE THEMED TEAM", 
-    "description": "[After establishing themed teams, if Wolverine is part of a listed theme team, you may use the following effect:] If 3+ friendly characters with the X-Force keyword are on the map, friendly characters modify attack +1 when targeting opposing characters that can use [Improved Targeting: Hindering]. (After revealing forces, you may replace character cards with their alternates. You can\u010f\u017c\u02ddt choose a Team Up if your starting characters share a name)."
+    "description": "[After establishing themed teams, if Wolverine is part of a listed theme team, you may use the following effect:] If 3+ friendly characters with the X-Force keyword are on the map, friendly characters modify attack +1 when targeting opposing characters that can use [Improved Targeting: Hindering]. (After revealing forces, you may replace character cards with their alternates. You can't choose a Team Up if your starting characters share a name)."
   }, 
   {
     "type": "trait", 
@@ -1771,7 +1772,7 @@
   {
     "type": "trait", 
     "name": "TEAM UP: X-FORCE THEMED TEAM", 
-    "description": "[After establishing themed teams, if Cypher is part of a listed theme team, you may use the following effect:] When Cypher targets an opposing character that can use Perplex, that character can\u010f\u017c\u02ddt heal until your next turn. (After revealing forces, you may replace character cards with their alternates. You can\u010f\u017c\u02ddt choose a Team Up if your starting characters share a name)."
+    "description": "[After establishing themed teams, if Cypher is part of a listed theme team, you may use the following effect:] When Cypher targets an opposing character that can use Perplex, that character can't heal until your next turn. (After revealing forces, you may replace character cards with their alternates. You can't choose a Team Up if your starting characters share a name)."
   }, 
   {
     "type": "defense", 
@@ -3254,8 +3255,8 @@
     ]
   }
 ]</special_powers>
-    <improved_movement>["hindering"]</improved_movement>
-    <improved_targeting>[]</improved_targeting>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>["hindering"]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>6</unit_range>
     <targets>1</targets>
@@ -3363,8 +3364,8 @@
     ]
   }
 ]</special_powers>
-    <improved_movement>["hindering"]</improved_movement>
-    <improved_targeting>[]</improved_targeting>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>["hindering"]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>6</unit_range>
     <targets>1</targets>
@@ -3472,8 +3473,8 @@
     ]
   }
 ]</special_powers>
-    <improved_movement>["hindering"]</improved_movement>
-    <improved_targeting>[]</improved_targeting>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>["hindering"]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>6</unit_range>
     <targets>1</targets>
@@ -3584,8 +3585,8 @@
     ]
   }
 ]</special_powers>
-    <improved_movement>["adjacent"]</improved_movement>
-    <improved_targeting>[]</improved_targeting>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>["adjacent"]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>7</unit_range>
     <targets>1</targets>
@@ -3702,8 +3703,8 @@
     ]
   }
 ]</special_powers>
-    <improved_movement>["adjacent"]</improved_movement>
-    <improved_targeting>[]</improved_targeting>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>["adjacent"]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>7</unit_range>
     <targets>1</targets>
@@ -3816,8 +3817,8 @@
     ]
   }
 ]</special_powers>
-    <improved_movement>["adjacent"]</improved_movement>
-    <improved_targeting>[]</improved_targeting>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>["adjacent"]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>7</unit_range>
     <targets>1</targets>
@@ -3930,8 +3931,8 @@
     ]
   }
 ]</special_powers>
-    <improved_movement>["adjacent"]</improved_movement>
-    <improved_targeting>[]</improved_targeting>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>["adjacent"]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>7</unit_range>
     <targets>1</targets>
@@ -4044,8 +4045,8 @@
     ]
   }
 ]</special_powers>
-    <improved_movement>["adjacent"]</improved_movement>
-    <improved_targeting>[]</improved_targeting>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>["adjacent"]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>7</unit_range>
     <targets>1</targets>
@@ -4158,8 +4159,8 @@
     ]
   }
 ]</special_powers>
-    <improved_movement>["adjacent"]</improved_movement>
-    <improved_targeting>[]</improved_targeting>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>["adjacent"]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>7</unit_range>
     <targets>1</targets>
@@ -4272,8 +4273,8 @@
     ]
   }
 ]</special_powers>
-    <improved_movement>["adjacent"]</improved_movement>
-    <improved_targeting>[]</improved_targeting>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>["adjacent"]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>7</unit_range>
     <targets>1</targets>
@@ -4769,7 +4770,7 @@
   {
     "type": "trait", 
     "name": "TEAM UP: X-MEN THEMED TEAM", 
-    "description": "[After establishing themed teams, if Marvel Girl is part of a listed theme team, you may use the following effect:] When Marvel Girl attacks only characters that can use Mind Control, she modifies attack and damage +2. (After revealing forces, you may replace character cards with their alternates. You can\u010f\u017c\u02ddt choose a Team Up if your starting characters share a name)."
+    "description": "[After establishing themed teams, if Marvel Girl is part of a listed theme team, you may use the following effect:] When Marvel Girl attacks only characters that can use Mind Control, she modifies attack and damage +2. (After revealing forces, you may replace character cards with their alternates. You can't choose a Team Up if your starting characters share a name)."
   }, 
   {
     "type": "damage", 
@@ -5182,7 +5183,7 @@
   {
     "type": "trait", 
     "name": "TEAM UP: HORSEMEN THEMED TEAM", 
-    "description": "[After establishing themed teams, if Wolverine is part of a listed theme team, you may use the following effect:] When a friendly character with the Horsemen keyword KO\u010f\u017c\u02dds a standard opposing character, after resolutions heal 1 click on a friendly character with the Horseman keyword. (After revealing forces, you may replace character cards with their alternates. You can\u010f\u017c\u02ddt choose a Team Up if your starting characters share a name)."
+    "description": "[After establishing themed teams, if Wolverine is part of a listed theme team, you may use the following effect:] When a friendly character with the Horsemen keyword KO's a standard opposing character, after resolutions heal 1 click on a friendly character with the Horseman keyword. (After revealing forces, you may replace character cards with their alternates. You can't choose a Team Up if your starting characters share a name)."
   }, 
   {
     "type": "trait", 
@@ -5744,7 +5745,7 @@
   {
     "type": "trait", 
     "name": "TEAM UP: ROBOT THEMED TEAM", 
-    "description": "[After establishing themed teams, if Douglock is part of a listed theme team, you may use the following effect:] When Douglock attacks only characters that can use Perplex, each target modifies defense -2. (After revealing forces, you may replace character cards with their alternates. You can\u010f\u017c\u02ddt choose a Team Up if your starting characters share a name)."
+    "description": "[After establishing themed teams, if Douglock is part of a listed theme team, you may use the following effect:] When Douglock attacks only characters that can use Perplex, each target modifies defense -2. (After revealing forces, you may replace character cards with their alternates. You can't choose a Team Up if your starting characters share a name)."
   }, 
   {
     "type": "trait", 
@@ -5859,7 +5860,7 @@
   {
     "type": "trait", 
     "name": "TEAM UP: EXCALIBUR THEMED TEAM", 
-    "description": "[After establishing themed teams, if Douglock is part of a listed theme team, you may use the following effect:] When an opposing character with the Monster or Hellfire Club keyword attacks Douglock and misses, after resolutions give them an action token. (After revealing forces, you may replace character cards with their alternates. You can\u010f\u017c\u02ddt choose a Team Up if your starting characters share a name)."
+    "description": "[After establishing themed teams, if Douglock is part of a listed theme team, you may use the following effect:] When an opposing character with the Monster or Hellfire Club keyword attacks Douglock and misses, after resolutions give them an action token. (After revealing forces, you may replace character cards with their alternates. You can't choose a Team Up if your starting characters share a name)."
   }, 
   {
     "type": "trait", 
@@ -6193,7 +6194,7 @@
   {
     "type": "trait", 
     "name": "TEAM UP: NEW MUTANTS THEMED TEAM", 
-    "description": "[After establishing themed teams, if Sunspot is part of a listed theme team, you may use the following effect:] Once per turn, when a standard friendly character with the New Mutants keyword is attacked, they may use Mastermind. (After revealing forces, you may replace character cards with their alternates. You can\u010f\u017c\u02ddt choose a Team Up if your starting characters share a name)."
+    "description": "[After establishing themed teams, if Sunspot is part of a listed theme team, you may use the following effect:] Once per turn, when a standard friendly character with the New Mutants keyword is attacked, they may use Mastermind. (After revealing forces, you may replace character cards with their alternates. You can't choose a Team Up if your starting characters share a name)."
   }, 
   {
     "type": "trait", 
@@ -6311,8 +6312,8 @@
     ]
   }
 ]</special_powers>
-    <improved_movement>["hindering"]</improved_movement>
-    <improved_targeting>[]</improved_targeting>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>["hindering"]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>5</unit_range>
     <targets>1</targets>
@@ -6498,7 +6499,7 @@
   {
     "type": "trait", 
     "name": "TEAM UP: HELLFIRE CLUB THEMED TEAM", 
-    "description": "[After establishing themed teams, if Emma Frost is part of a listed theme team, you may use the following effect:] At the beginning of the game, friendly characters gain the X-Men keyword. (After revealing forces, you may replace character cards with their alternates. You can\u010f\u017c\u02ddt choose a Team Up if your starting characters share a name)."
+    "description": "[After establishing themed teams, if Emma Frost is part of a listed theme team, you may use the following effect:] At the beginning of the game, friendly characters gain the X-Men keyword. (After revealing forces, you may replace character cards with their alternates. You can't choose a Team Up if your starting characters share a name)."
   }, 
   {
     "type": "trait", 
@@ -7224,7 +7225,7 @@
   {
     "type": "trait", 
     "name": "TEAM UP: EXODUS, MYSTIQUE", 
-    "description": "If 1+ listed friendly characters are on the map, Mr. Sinister and the listed friendly characters can use Shape Change. If they all are on the map, opposing characters within 3 squares and line of fire can\u010f\u017c\u02ddt use Plasticity, Penetrating/Psychic Blast, Mastermind, and Shape Change. (After revealing forces, you may replace character cards with their alternates. You can't choose a Team Up if your starting characters share a name.)", 
+    "description": "If 1+ listed friendly characters are on the map, Mr. Sinister and the listed friendly characters can use Shape Change. If they all are on the map, opposing characters within 3 squares and line of fire can't use Plasticity, Penetrating/Psychic Blast, Mastermind, and Shape Change. (After revealing forces, you may replace character cards with their alternates. You can't choose a Team Up if your starting characters share a name.)", 
     "powers": [
       "shape_change"
     ]
@@ -7351,7 +7352,7 @@
   {
     "type": "trait", 
     "name": "TEAM UP: MARAUDERS THEMED TEAM", 
-    "description": "[After establishing themed teams, if Mister Sinister is part of a listed theme team, you may use the following effect:] Friendly characters with the Marauders keyword can use [Improved Movement: Hindering] and [Improved Targeting: Hindering]. (After revealing forces, you may replace character cards with their alternates. You can\u010f\u017c\u02ddt choose a Team Up if your starting characters share a name)."
+    "description": "[After establishing themed teams, if Mister Sinister is part of a listed theme team, you may use the following effect:] Friendly characters with the Marauders keyword can use [Improved Movement: Hindering] and [Improved Targeting: Hindering]. (After revealing forces, you may replace character cards with their alternates. You can't choose a Team Up if your starting characters share a name)."
   }, 
   {
     "type": "trait", 
@@ -7475,7 +7476,7 @@
   {
     "type": "trait", 
     "name": "TEAM UP: MARAUDERS THEMED TEAM", 
-    "description": "[After establishing themed teams, if Mister Sinister is part of a listed theme team, you may use the following effect:] When an opposing character with the Morlocks or X-Men keyword is KO\u010f\u017c\u02ddd, after resolutions you may KO an opposing bystander. (After revealing forces, you may replace character cards with their alternates. You can\u010f\u017c\u02ddt choose a Team Up if your starting characters share a name)."
+    "description": "[After establishing themed teams, if Mister Sinister is part of a listed theme team, you may use the following effect:] When an opposing character with the Morlocks or X-Men keyword is KO'd, after resolutions you may KO an opposing bystander. (After revealing forces, you may replace character cards with their alternates. You can't choose a Team Up if your starting characters share a name)."
   }, 
   {
     "type": "trait", 
@@ -7599,7 +7600,7 @@
   {
     "type": "trait", 
     "name": "TEAM UP: MARAUDERS THEMED TEAM", 
-    "description": "[After establishing themed teams, if Mister Sinister is part of a listed theme team, you may use the following effect:] When Mister Sinister attacks only characters with [Mystics TA] , after resolutions heal him 1 click and deal 1 penetrating damage to each hit character. (After revealing forces, you may replace character cards with their alternates. You can\u010f\u017c\u02ddt choose a Team Up if your starting characters share a name)."
+    "description": "[After establishing themed teams, if Mister Sinister is part of a listed theme team, you may use the following effect:] When Mister Sinister attacks only characters with [Mystics TA] , after resolutions heal him 1 click and deal 1 penetrating damage to each hit character. (After revealing forces, you may replace character cards with their alternates. You can't choose a Team Up if your starting characters share a name)."
   }, 
   {
     "type": "trait", 
@@ -7821,8 +7822,8 @@
     ]
   }
 ]</special_powers>
-    <improved_movement>["adjacent"]</improved_movement>
-    <improved_targeting>[]</improved_targeting>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>["adjacent"]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>5</unit_range>
     <targets>2</targets>
@@ -9317,7 +9318,7 @@
   {
     "type": "trait", 
     "name": "TEAM UP: X-MEN THEMED TEAM", 
-    "description": "[After establishing themed teams, if Storm is part of a listed theme team, you may use the following effect:] When Storm is attacked by a character occupying outdoor terrain, Storm can use Energy/ Shield Deflection. (After revealing forces, you may replace character cards with their alternates. You can\u010f\u017c\u02ddt choose a Team Up if your starting characters share a name).", 
+    "description": "[After establishing themed teams, if Storm is part of a listed theme team, you may use the following effect:] When Storm is attacked by a character occupying outdoor terrain, Storm can use Energy/ Shield Deflection. (After revealing forces, you may replace character cards with their alternates. You can't choose a Team Up if your starting characters share a name).", 
     "powers": [
       "energy_shield_deflection"
     ]
@@ -10875,7 +10876,7 @@
   {
     "type": "trait", 
     "name": "TEAM UP: X-MEN OR BROTHERHOOD THEMED TEAMS", 
-    "description": "[After establishing themed teams, if Magneto is part of a listed theme team, you may use the following effect:] When Magneto attacks only characters with the Ruler keyword or that can use Leadership, after resolutions remove an action token from him and give each hit character an action token. (After revealing forces, you may replace character cards with their alternates. You can\u010f\u017c\u02ddt choose a Team Up if your starting characters share a name)."
+    "description": "[After establishing themed teams, if Magneto is part of a listed theme team, you may use the following effect:] When Magneto attacks only characters with the Ruler keyword or that can use Leadership, after resolutions remove an action token from him and give each hit character an action token. (After revealing forces, you may replace character cards with their alternates. You can't choose a Team Up if your starting characters share a name)."
   }, 
   {
     "type": "trait", 
@@ -11527,7 +11528,7 @@
   {
     "type": "trait", 
     "name": "TEAM UP: MARAUDERS THEMED TEAM", 
-    "description": "[After establishing themed teams, if Karima is part of a listed theme team, you may use the following effect:] Has the Marauders keyword. If 3+ friendly characters with the Marauders keyword are on the map, Karima and listed friendly characters can use Poison, but only to deal damage to characters with the X-Men keyword. (After revealing forces, you may replace character cards with their alternates. You can\u010f\u017c\u02ddt choose a Team Up if your starting characters share a name).", 
+    "description": "[After establishing themed teams, if Karima is part of a listed theme team, you may use the following effect:] Has the Marauders keyword. If 3+ friendly characters with the Marauders keyword are on the map, Karima and listed friendly characters can use Poison, but only to deal damage to characters with the X-Men keyword. (After revealing forces, you may replace character cards with their alternates. You can't choose a Team Up if your starting characters share a name).", 
     "powers": [
       "poison"
     ]
@@ -11823,7 +11824,7 @@
   {
     "type": "trait", 
     "name": "TEAM UP: X-MEN THEMED TEAM", 
-    "description": "[After establishing themed teams, if Hope Summers is part of a listed theme team, you may use the following effect:] When Hope Summers attacks only characters with the Robot or Sentinel keywords, she modifies attack and damage +1 and deals penetrating damage. (After revealing forces, you may replace character cards with their alternates. You can\u010f\u017c\u02ddt choose a Team Up if your starting characters share a name)."
+    "description": "[After establishing themed teams, if Hope Summers is part of a listed theme team, you may use the following effect:] When Hope Summers attacks only characters with the Robot or Sentinel keywords, she modifies attack and damage +1 and deals penetrating damage. (After revealing forces, you may replace character cards with their alternates. You can't choose a Team Up if your starting characters share a name)."
   }, 
   {
     "type": "trait", 
@@ -12030,8 +12031,8 @@
     "description": "When Ch'od starts the game, generate a Cr'reee bystander that gains the Starjammers keyword."
   }
 ]</special_powers>
-    <improved_movement>["blocking"]</improved_movement>
-    <improved_targeting>[]</improved_targeting>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>["blocking"]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>7</unit_range>
     <targets>1</targets>
@@ -12123,6 +12124,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>standard</bystander_type>
     <unit_range>0</unit_range>
     <targets>1</targets>
     <speed_type>boot</speed_type>
@@ -12360,6 +12362,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>standard</bystander_type>
     <unit_range>0</unit_range>
     <targets>1</targets>
     <speed_type>boot</speed_type>
@@ -12403,6 +12406,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>standard</bystander_type>
     <unit_range>0</unit_range>
     <targets>1</targets>
     <speed_type>boot</speed_type>
@@ -12462,8 +12466,8 @@
     ]
   }
 ]</special_powers>
-    <improved_movement>["hindering", "hindering"]</improved_movement>
-    <improved_targeting>[]</improved_targeting>
+    <improved_movement>["hindering"]</improved_movement>
+    <improved_targeting>["hindering"]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>7</unit_range>
     <targets>3</targets>
@@ -12969,6 +12973,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>standard</bystander_type>
     <unit_range>4</unit_range>
     <targets>1</targets>
     <speed_type>wing</speed_type>
@@ -14520,6 +14525,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>standard</bystander_type>
     <unit_range>0</unit_range>
     <targets>1</targets>
     <speed_type>wing</speed_type>
@@ -14879,7 +14885,7 @@
   }, 
   {
     "type": "trait", 
-    "name": "TAKE THE TRINKET, I BEG THEE\u2026PLEASE", 
+    "name": "TAKE THE TRINKET, I BEG THEE...PLEASE", 
     "description": "When Dark Britain is KO'd, choose a friendly character. For the rest of the game that character can use [Wing symbol], Toughness, Willpower, and Super Strength."
   }, 
   {
@@ -15517,6 +15523,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>standard</bystander_type>
     <unit_range>6</unit_range>
     <targets>1</targets>
     <speed_type>boot</speed_type>
@@ -15555,6 +15562,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>standard</bystander_type>
     <unit_range>4</unit_range>
     <targets>3</targets>
     <speed_type>boot</speed_type>
@@ -15593,6 +15601,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>standard</bystander_type>
     <unit_range>6</unit_range>
     <targets>1</targets>
     <speed_type>boot</speed_type>
@@ -15631,6 +15640,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>standard</bystander_type>
     <unit_range>0</unit_range>
     <targets>1</targets>
     <speed_type>boot</speed_type>
@@ -15669,6 +15679,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>standard</bystander_type>
     <unit_range>6</unit_range>
     <targets>2</targets>
     <speed_type>boot</speed_type>
@@ -15707,6 +15718,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>standard</bystander_type>
     <unit_range>0</unit_range>
     <targets>1</targets>
     <speed_type>boot</speed_type>

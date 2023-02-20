@@ -3717,6 +3717,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>standard</bystander_type>
     <unit_range>0</unit_range>
     <targets>1</targets>
     <speed_type>wing</speed_type>
@@ -4614,6 +4615,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>standard</bystander_type>
     <unit_range>4</unit_range>
     <targets>1</targets>
     <speed_type>boot</speed_type>
@@ -4651,6 +4653,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>standard</bystander_type>
     <unit_range>6</unit_range>
     <targets>1</targets>
     <speed_type>boot</speed_type>
@@ -4688,6 +4691,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>standard</bystander_type>
     <unit_range>0</unit_range>
     <targets>1</targets>
     <speed_type>boot</speed_type>
@@ -5545,8 +5549,8 @@
     ]
   }
 ]</special_powers>
-    <improved_movement>["hindering"]</improved_movement>
-    <improved_targeting>[]</improved_targeting>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>["hindering"]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>6</unit_range>
     <targets>1</targets>
@@ -9058,7 +9062,7 @@
     <set_id>ffff</set_id>
     <collector_number>s001</collector_number>
     <name>Alchemical Potion</name>
-    <type>equipment</type>
+    <type>object</type>
     <rarity>rare</rarity>
     <point_values>[10]</point_values>
     <properties>[]</properties>
@@ -9087,7 +9091,8 @@
 ]</special_powers>
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
-    <object_type>light</object_type>
+    <object_type>equipment</object_type>
+    <object_size>light</object_size>
     <object_keyphrases>["equip_any", "unequip_drop"]</object_keyphrases>
     <dial>[]</dial>
   </row>
@@ -9096,7 +9101,7 @@
     <set_id>ffff</set_id>
     <collector_number>s002</collector_number>
     <name>Alchemical Fire</name>
-    <type>equipment</type>
+    <type>object</type>
     <rarity>rare</rarity>
     <point_values>[10]</point_values>
     <properties>[]</properties>
@@ -9126,7 +9131,8 @@
 ]</special_powers>
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
-    <object_type>light</object_type>
+    <object_type>equipment</object_type>
+    <object_size>light</object_size>
     <object_keyphrases>["equip_any.", "unequip_drop."]</object_keyphrases>
     <dial>[]</dial>
   </row>
@@ -9135,7 +9141,7 @@
     <set_id>ffff</set_id>
     <collector_number>s003</collector_number>
     <name>Stones of Merlin</name>
-    <type>equipment</type>
+    <type>object</type>
     <rarity>super_rare</rarity>
     <point_values>[10]</point_values>
     <properties>[]</properties>
@@ -9153,7 +9159,8 @@
 ]</special_powers>
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
-    <object_type>heavy</object_type>
+    <object_type>equipment</object_type>
+    <object_size>heavy</object_size>
     <object_keyphrases>["equip_any", "unequip_drop"]</object_keyphrases>
     <dial>[]</dial>
   </row>
@@ -9162,7 +9169,7 @@
     <set_id>ffff</set_id>
     <collector_number>s004</collector_number>
     <name>Silver Surfboard</name>
-    <type>equipment</type>
+    <type>object</type>
     <rarity>super_rare</rarity>
     <point_values>[10]</point_values>
     <properties>[]</properties>
@@ -9180,7 +9187,8 @@
 ]</special_powers>
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
-    <object_type>heavy</object_type>
+    <object_type>equipment</object_type>
+    <object_size>heavy</object_size>
     <object_keyphrases>["equip_any", "unequip_drop"]</object_keyphrases>
     <dial>[]</dial>
   </row>
@@ -9189,7 +9197,7 @@
     <set_id>ffff</set_id>
     <collector_number>s005</collector_number>
     <name>Ultimate Nullifier</name>
-    <type>equipment</type>
+    <type>object</type>
     <rarity>super_rare</rarity>
     <point_values>[10]</point_values>
     <properties>[]</properties>
@@ -9204,7 +9212,8 @@
 ]</special_powers>
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
-    <object_type>light</object_type>
+    <object_type>equipment</object_type>
+    <object_size>light</object_size>
     <object_keyphrases>["equip_any", "unequip_drop"]</object_keyphrases>
     <dial>[]</dial>
   </row>
@@ -9213,7 +9222,7 @@
     <set_id>ffff</set_id>
     <collector_number>s006</collector_number>
     <name>Emotional Modifier</name>
-    <type>equipment</type>
+    <type>object</type>
     <rarity>super_rare</rarity>
     <point_values>[10]</point_values>
     <properties>[]</properties>
@@ -9231,7 +9240,8 @@
 ]</special_powers>
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
-    <object_type>light</object_type>
+    <object_type>equipment</object_type>
+    <object_size>light</object_size>
     <object_keyphrases>["equip_any", "unequip_drop"]</object_keyphrases>
     <dial>[]</dial>
   </row>
@@ -9240,7 +9250,7 @@
     <set_id>ffff</set_id>
     <collector_number>s007</collector_number>
     <name>Radioactive Clay</name>
-    <type>equipment</type>
+    <type>object</type>
     <rarity>super_rare</rarity>
     <point_values>[5]</point_values>
     <properties>[]</properties>
@@ -9258,7 +9268,8 @@
 ]</special_powers>
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
-    <object_type>light</object_type>
+    <object_type>equipment</object_type>
+    <object_size>light</object_size>
     <object_keyphrases>["equip_any", "unequip_drop"]</object_keyphrases>
     <dial>[]</dial>
   </row>
@@ -9281,7 +9292,8 @@
 ]</special_powers>
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
-    <object_type>light</object_type>
+    <object_type>special</object_type>
+    <object_size>light</object_size>
     <object_keyphrases>[]</object_keyphrases>
     <dial>[]</dial>
   </row>
@@ -9290,7 +9302,7 @@
     <set_id>ffff</set_id>
     <collector_number>s009</collector_number>
     <name>Isotope A</name>
-    <type>equipment</type>
+    <type>object</type>
     <rarity>super_rare</rarity>
     <point_values>[10]</point_values>
     <properties>[]</properties>
@@ -9308,7 +9320,8 @@
 ]</special_powers>
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
-    <object_type>light</object_type>
+    <object_type>equipment</object_type>
+    <object_size>light</object_size>
     <object_keyphrases>["equip_any", "unequip_drop"]</object_keyphrases>
     <dial>[]</dial>
   </row>
@@ -9317,7 +9330,7 @@
     <set_id>ffff</set_id>
     <collector_number>s010</collector_number>
     <name>Time Platform</name>
-    <type>equipment</type>
+    <type>object</type>
     <rarity>chase</rarity>
     <point_values>[10]</point_values>
     <properties>[]</properties>
@@ -9332,7 +9345,8 @@
 ]</special_powers>
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
-    <object_type>heavy</object_type>
+    <object_type>equipment</object_type>
+    <object_size>heavy</object_size>
     <object_keyphrases>["equip_any", "unequip_drop"]</object_keyphrases>
     <dial>[]</dial>
   </row>

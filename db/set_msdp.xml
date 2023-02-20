@@ -1631,8 +1631,8 @@
     ]
   }
 ]</special_powers>
-    <improved_movement>["hindering"]</improved_movement>
-    <improved_targeting>[]</improved_targeting>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>["hindering"]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>8</unit_range>
     <targets>2</targets>
@@ -4654,8 +4654,8 @@
     "description": "FREE: Generate a Senor Scratchy bystander [MAX 1]."
   }
 ]</special_powers>
-    <improved_movement>["hindering"]</improved_movement>
-    <improved_targeting>[]</improved_targeting>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>["hindering"]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>6</unit_range>
     <targets>2</targets>
@@ -4764,6 +4764,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>standard</bystander_type>
     <unit_range>0</unit_range>
     <targets>1</targets>
     <speed_type>boot</speed_type>
@@ -5490,8 +5491,8 @@
     ]
   }
 ]</special_powers>
-    <improved_movement>["hindering"]</improved_movement>
-    <improved_targeting>[]</improved_targeting>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>["hindering"]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>7</unit_range>
     <targets>2</targets>
@@ -7024,6 +7025,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>standard</bystander_type>
     <unit_range>0</unit_range>
     <targets>1</targets>
     <speed_type>boot</speed_type>
@@ -7059,6 +7061,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>standard</bystander_type>
     <unit_range>0</unit_range>
     <targets>1</targets>
     <speed_type>boot</speed_type>
@@ -7100,6 +7103,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>standard</bystander_type>
     <unit_range>6</unit_range>
     <targets>1</targets>
     <speed_type>boot</speed_type>
@@ -8701,7 +8705,7 @@
     <set_id>msdp</set_id>
     <collector_number>s001</collector_number>
     <name>Super-Soldier Serum</name>
-    <type>equipment</type>
+    <type>object</type>
     <rarity>rare</rarity>
     <point_values>[5]</point_values>
     <properties>[]</properties>
@@ -8719,7 +8723,8 @@
 ]</special_powers>
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
-    <object_type>light</object_type>
+    <object_type>equipment</object_type>
+    <object_size>light</object_size>
     <object_keyphrases>["indestructible", "equip_any", "unequip_drop"]</object_keyphrases>
     <dial>[]</dial>
   </row>
@@ -8728,7 +8733,7 @@
     <set_id>msdp</set_id>
     <collector_number>s002</collector_number>
     <name>Captain America's Shield</name>
-    <type>equipment</type>
+    <type>object</type>
     <rarity>rare</rarity>
     <point_values>[5]</point_values>
     <properties>[]</properties>
@@ -8746,7 +8751,8 @@
 ]</special_powers>
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
-    <object_type>light</object_type>
+    <object_type>equipment</object_type>
+    <object_size>light</object_size>
     <object_keyphrases>["indestructible", "equip_any", "unequip_drop"]</object_keyphrases>
     <dial>[]</dial>
   </row>
@@ -8755,7 +8761,7 @@
     <set_id>msdp</set_id>
     <collector_number>s003</collector_number>
     <name>U.S. Agent's Shield</name>
-    <type>equipment</type>
+    <type>object</type>
     <rarity>rare</rarity>
     <point_values>[5]</point_values>
     <properties>[]</properties>
@@ -8773,7 +8779,8 @@
 ]</special_powers>
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
-    <object_type>light</object_type>
+    <object_type>equipment</object_type>
+    <object_size>light</object_size>
     <object_keyphrases>["indestructible", "equip_any", "unequip_drop"]</object_keyphrases>
     <dial>[]</dial>
   </row>
@@ -8782,7 +8789,7 @@
     <set_id>msdp</set_id>
     <collector_number>s004</collector_number>
     <name>Cloak of Levitation</name>
-    <type>equipment</type>
+    <type>object</type>
     <rarity>super_rare</rarity>
     <point_values>[5]</point_values>
     <properties>[]</properties>
@@ -8792,12 +8799,17 @@
   {
     "type": "equipment", 
     "name": "EFFECT", 
-    "description": "[Wing symbol], Plasticity, Sidestep."
+    "description": "[Wing symbol], Plasticity, Sidestep.", 
+    "powers": [
+      "plasticity", 
+      "sidestep"
+    ]
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
-    <object_type>light</object_type>
+    <object_type>equipment</object_type>
+    <object_size>light</object_size>
     <object_keyphrases>["indestructible", "equip_any", "unequip_drop"]</object_keyphrases>
     <dial>[]</dial>
   </row>
@@ -8806,7 +8818,7 @@
     <set_id>msdp</set_id>
     <collector_number>s005</collector_number>
     <name>Captain Carter's Shield</name>
-    <type>equipment</type>
+    <type>object</type>
     <rarity>super_rare</rarity>
     <point_values>[5]</point_values>
     <properties>[]</properties>
@@ -8824,7 +8836,8 @@
 ]</special_powers>
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
-    <object_type>light</object_type>
+    <object_type>equipment</object_type>
+    <object_size>light</object_size>
     <object_keyphrases>["indestructible", "equip_any", "unequip_drop"]</object_keyphrases>
     <dial>[]</dial>
   </row>
@@ -8833,7 +8846,7 @@
     <set_id>msdp</set_id>
     <collector_number>s006</collector_number>
     <name>The Tesseract</name>
-    <type>equipment</type>
+    <type>object</type>
     <rarity>super_rare</rarity>
     <point_values>[5]</point_values>
     <properties>[]</properties>
@@ -8852,7 +8865,8 @@
 ]</special_powers>
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
-    <object_type>light</object_type>
+    <object_type>equipment</object_type>
+    <object_size>light</object_size>
     <object_keyphrases>["indestructible", "equip_any", "unequip_drop"]</object_keyphrases>
     <dial>[]</dial>
   </row>
@@ -8861,7 +8875,7 @@
     <set_id>msdp</set_id>
     <collector_number>s007</collector_number>
     <name>Redwing</name>
-    <type>equipment</type>
+    <type>object</type>
     <rarity>super_rare</rarity>
     <point_values>[10]</point_values>
     <properties>[]</properties>
@@ -8876,7 +8890,8 @@
 ]</special_powers>
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
-    <object_type>light</object_type>
+    <object_type>equipment</object_type>
+    <object_size>light</object_size>
     <object_keyphrases>["indestructible", "equip_any", "unequip_drop"]</object_keyphrases>
     <dial>[]</dial>
   </row>
@@ -8902,6 +8917,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>standard</bystander_type>
     <unit_range>4</unit_range>
     <targets>1</targets>
     <speed_type>wing</speed_type>
@@ -8929,7 +8945,7 @@
     <set_id>msdp</set_id>
     <collector_number>s008</collector_number>
     <name>Darkhold</name>
-    <type>equipment</type>
+    <type>object</type>
     <rarity>chase</rarity>
     <point_values>[10]</point_values>
     <properties>[]</properties>
@@ -8949,7 +8965,8 @@
 ]</special_powers>
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
-    <object_type>light</object_type>
+    <object_type>equipment</object_type>
+    <object_size>light</object_size>
     <object_keyphrases>["indestructible", "equip_any", "unequip_drop"]</object_keyphrases>
     <dial>[]</dial>
   </row>

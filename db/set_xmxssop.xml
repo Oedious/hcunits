@@ -1851,6 +1851,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>standard</bystander_type>
     <unit_range>0</unit_range>
     <targets>1</targets>
     <speed_type>dolphin</speed_type>
@@ -2950,8 +2951,8 @@
     ]
   }
 ]</special_powers>
-    <improved_movement>["hindering"]</improved_movement>
-    <improved_targeting>[]</improved_targeting>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>["hindering"]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>4</unit_range>
     <targets>2</targets>
@@ -3957,6 +3958,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>standard</bystander_type>
     <unit_range>0</unit_range>
     <targets>1</targets>
     <speed_type>boot</speed_type>
@@ -3993,6 +3995,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>standard</bystander_type>
     <unit_range>0</unit_range>
     <targets>1</targets>
     <speed_type>boot</speed_type>
@@ -4029,6 +4032,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>standard</bystander_type>
     <unit_range>0</unit_range>
     <targets>1</targets>
     <speed_type>wing</speed_type>
@@ -4065,6 +4069,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>standard</bystander_type>
     <unit_range>4</unit_range>
     <targets>1</targets>
     <speed_type>boot</speed_type>
@@ -4101,6 +4106,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>standard</bystander_type>
     <unit_range>0</unit_range>
     <targets>2</targets>
     <speed_type>boot</speed_type>
@@ -5702,6 +5708,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>standard</bystander_type>
     <unit_range>4</unit_range>
     <targets>1</targets>
     <speed_type>boot</speed_type>
@@ -6162,6 +6169,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>standard</bystander_type>
     <unit_range>3</unit_range>
     <targets>1</targets>
     <speed_type>wing</speed_type>
@@ -6199,6 +6207,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>standard</bystander_type>
     <unit_range>0</unit_range>
     <targets>1</targets>
     <speed_type>boot</speed_type>
@@ -6236,6 +6245,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>standard</bystander_type>
     <unit_range>4</unit_range>
     <targets>1</targets>
     <speed_type>wing</speed_type>
@@ -7865,7 +7875,7 @@
     <set_id>xmxssop</set_id>
     <collector_number>s012</collector_number>
     <name>Sword of Might</name>
-    <type>equipment</type>
+    <type>object</type>
     <rarity>rare</rarity>
     <point_values>[10]</point_values>
     <properties>[]</properties>
@@ -7883,7 +7893,8 @@
 ]</special_powers>
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
-    <object_type>light</object_type>
+    <object_type>equipment</object_type>
+    <object_size>light</object_size>
     <object_keyphrases>["indestructible", "equip_any", "unequip_drop", "sword_equipment"]</object_keyphrases>
     <dial>[]</dial>
   </row>
@@ -7892,7 +7903,7 @@
     <set_id>xmxssop</set_id>
     <collector_number>s013</collector_number>
     <name>Pogg Ur-Pogg</name>
-    <type>equipment</type>
+    <type>object</type>
     <rarity>rare</rarity>
     <point_values>[10]</point_values>
     <properties>[]</properties>
@@ -7910,7 +7921,8 @@
 ]</special_powers>
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
-    <object_type>light</object_type>
+    <object_type>equipment</object_type>
+    <object_size>light</object_size>
     <object_keyphrases>["indestructible", "equip_any", "unequip_drop", "sword_equipment"]</object_keyphrases>
     <dial>[]</dial>
   </row>
@@ -7919,7 +7931,7 @@
     <set_id>xmxssop</set_id>
     <collector_number>s014</collector_number>
     <name>Skybreaker</name>
-    <type>equipment</type>
+    <type>object</type>
     <rarity>rare</rarity>
     <point_values>[10]</point_values>
     <properties>[]</properties>
@@ -7937,7 +7949,8 @@
 ]</special_powers>
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
-    <object_type>light</object_type>
+    <object_type>equipment</object_type>
+    <object_size>light</object_size>
     <object_keyphrases>["indestructible", "equip_any", "unequip_drop", "sword_equipment"]</object_keyphrases>
     <dial>[]</dial>
   </row>
@@ -7946,7 +7959,7 @@
     <set_id>xmxssop</set_id>
     <collector_number>s015</collector_number>
     <name>Warlock</name>
-    <type>equipment</type>
+    <type>object</type>
     <rarity>rare</rarity>
     <point_values>[10]</point_values>
     <properties>[]</properties>
@@ -7966,7 +7979,8 @@
 ]</special_powers>
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
-    <object_type>light</object_type>
+    <object_type>equipment</object_type>
+    <object_size>light</object_size>
     <object_keyphrases>["indestructible", "equip_any", "unequip_drop", "sword_equipment"]</object_keyphrases>
     <dial>[]</dial>
   </row>
@@ -7975,7 +7989,7 @@
     <set_id>xmxssop</set_id>
     <collector_number>s016</collector_number>
     <name>Muramasa Blade</name>
-    <type>equipment</type>
+    <type>object</type>
     <rarity>rare</rarity>
     <point_values>[10]</point_values>
     <properties>[]</properties>
@@ -7993,7 +8007,8 @@
 ]</special_powers>
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
-    <object_type>light</object_type>
+    <object_type>equipment</object_type>
+    <object_size>light</object_size>
     <object_keyphrases>["indestructible", "equip_any", "unequip_drop", "sword_equipment"]</object_keyphrases>
     <dial>[]</dial>
   </row>
@@ -8002,7 +8017,7 @@
     <set_id>xmxssop</set_id>
     <collector_number>s017</collector_number>
     <name>Grasscutter</name>
-    <type>equipment</type>
+    <type>object</type>
     <rarity>rare</rarity>
     <point_values>[10]</point_values>
     <properties>[]</properties>
@@ -8020,7 +8035,8 @@
 ]</special_powers>
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
-    <object_type>light</object_type>
+    <object_type>equipment</object_type>
+    <object_size>light</object_size>
     <object_keyphrases>["indestructible", "equip_any", "unequip_drop", "sword_equipment"]</object_keyphrases>
     <dial>[]</dial>
   </row>
@@ -8029,7 +8045,7 @@
     <set_id>xmxssop</set_id>
     <collector_number>s018</collector_number>
     <name>Godkiller</name>
-    <type>equipment</type>
+    <type>object</type>
     <rarity>rare</rarity>
     <point_values>[10]</point_values>
     <properties>[]</properties>
@@ -8047,7 +8063,8 @@
 ]</special_powers>
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
-    <object_type>light</object_type>
+    <object_type>equipment</object_type>
+    <object_size>light</object_size>
     <object_keyphrases>["indestructible", "equip_any", "unequip_drop", "sword_equipment"]</object_keyphrases>
     <dial>[]</dial>
   </row>
@@ -8056,7 +8073,7 @@
     <set_id>xmxssop</set_id>
     <collector_number>s019</collector_number>
     <name>Soulsword</name>
-    <type>equipment</type>
+    <type>object</type>
     <rarity>rare</rarity>
     <point_values>[10]</point_values>
     <properties>[]</properties>
@@ -8074,7 +8091,8 @@
 ]</special_powers>
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
-    <object_type>light</object_type>
+    <object_type>equipment</object_type>
+    <object_size>light</object_size>
     <object_keyphrases>["indestructible", "equip_any", "unequip_drop", "sword_equipment"]</object_keyphrases>
     <dial>[]</dial>
   </row>
@@ -8083,7 +8101,7 @@
     <set_id>xmxssop</set_id>
     <collector_number>s020</collector_number>
     <name>Light of Galador</name>
-    <type>equipment</type>
+    <type>object</type>
     <rarity>rare</rarity>
     <point_values>[10]</point_values>
     <properties>[]</properties>
@@ -8101,7 +8119,8 @@
 ]</special_powers>
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
-    <object_type>light</object_type>
+    <object_type>equipment</object_type>
+    <object_size>light</object_size>
     <object_keyphrases>["indestructible", "equip_any", "unequip_drop", "sword_equipment"]</object_keyphrases>
     <dial>[]</dial>
   </row>
@@ -8110,7 +8129,7 @@
     <set_id>xmxssop</set_id>
     <collector_number>s021</collector_number>
     <name>Mercy</name>
-    <type>equipment</type>
+    <type>object</type>
     <rarity>rare</rarity>
     <point_values>[10]</point_values>
     <properties>[]</properties>
@@ -8128,7 +8147,8 @@
 ]</special_powers>
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
-    <object_type>light</object_type>
+    <object_type>equipment</object_type>
+    <object_size>light</object_size>
     <object_keyphrases>["indestructible", "equip_any", "unequip_drop", "sword_equipment"]</object_keyphrases>
     <dial>[]</dial>
   </row>

@@ -1639,10 +1639,10 @@
         ]
       }
     ], 
-    "improved_movement": [
+    "improved_movement": [], 
+    "improved_targeting": [
       "hindering"
     ], 
-    "improved_targeting": [], 
     "object_keyphrases": [], 
     "unit_range": "6", 
     "targets": "1", 
@@ -3494,10 +3494,10 @@
         ]
       }
     ], 
-    "improved_movement": [
+    "improved_movement": [], 
+    "improved_targeting": [
       "hindering"
     ], 
-    "improved_targeting": [], 
     "object_keyphrases": [], 
     "unit_range": "6", 
     "targets": "1", 
@@ -3976,10 +3976,10 @@
         ]
       }
     ], 
-    "improved_movement": [
+    "improved_movement": [], 
+    "improved_targeting": [
       "hindering"
     ], 
-    "improved_targeting": [], 
     "object_keyphrases": [], 
     "unit_range": "7", 
     "targets": "3", 
@@ -5415,10 +5415,10 @@
         ]
       }
     ], 
-    "improved_movement": [
+    "improved_movement": [], 
+    "improved_targeting": [
       "hindering"
     ], 
-    "improved_targeting": [], 
     "object_keyphrases": [], 
     "unit_range": "8", 
     "targets": "3", 
@@ -6122,6 +6122,7 @@
     "improved_movement": [], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
+    "bystander_type": "standard", 
     "unit_range": "5", 
     "targets": "1", 
     "speed_type": "boot", 
@@ -6158,6 +6159,7 @@
     "improved_movement": [], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
+    "bystander_type": "standard", 
     "unit_range": "6", 
     "targets": "1", 
     "speed_type": "boot", 
@@ -6440,6 +6442,7 @@
     "improved_movement": [], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
+    "bystander_type": "standard", 
     "unit_range": "0", 
     "targets": "1", 
     "speed_type": "wing", 
@@ -6477,6 +6480,7 @@
     "improved_movement": [], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
+    "bystander_type": "standard", 
     "unit_range": "7", 
     "targets": "1", 
     "speed_type": "wing", 
@@ -6918,6 +6922,7 @@
     "improved_movement": [], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
+    "bystander_type": "standard", 
     "unit_range": "0", 
     "targets": "1", 
     "speed_type": "boot", 
@@ -8334,10 +8339,10 @@
         "description": "POWER: Choose an adjacent friendly character that shares a keyword with The Commissioner. The chosen character can make an attack using its printed combat values. After resolutions, if they missed all targets give them an action token."
       }
     ], 
-    "improved_movement": [
+    "improved_movement": [], 
+    "improved_targeting": [
       "hindering"
     ], 
-    "improved_targeting": [], 
     "object_keyphrases": [], 
     "unit_range": "6", 
     "targets": "1", 
@@ -8445,6 +8450,7 @@
     "improved_movement": [], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
+    "bystander_type": "standard", 
     "unit_range": "7", 
     "targets": "2", 
     "speed_type": "boot", 
@@ -9410,6 +9416,7 @@
     "improved_movement": [], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
+    "bystander_type": "standard", 
     "unit_range": "0", 
     "targets": "1", 
     "speed_type": "wing", 
@@ -12324,7 +12331,7 @@
     "set_id": "ww80", 
     "collector_number": "s001", 
     "name": "The Angler", 
-    "type": "equipment", 
+    "type": "object", 
     "rarity": "rare", 
     "point_values": [
       10
@@ -12344,7 +12351,8 @@
     ], 
     "improved_movement": [], 
     "improved_targeting": [], 
-    "object_type": "light", 
+    "object_type": "equipment", 
+    "object_size": "light", 
     "object_keyphrases": [
       "equip_any", 
       "unequip_drop"
@@ -12356,7 +12364,7 @@
     "set_id": "ww80", 
     "collector_number": "s002", 
     "name": "Lasso of Truth", 
-    "type": "equipment", 
+    "type": "object", 
     "rarity": "rare", 
     "point_values": [
       10
@@ -12376,7 +12384,8 @@
     ], 
     "improved_movement": [], 
     "improved_targeting": [], 
-    "object_type": "light", 
+    "object_type": "equipment", 
+    "object_size": "light", 
     "object_keyphrases": [
       "equip_any", 
       "unequip_ko"
@@ -12388,7 +12397,7 @@
     "set_id": "ww80", 
     "collector_number": "s003", 
     "name": "Catcher's Mitt (Green)", 
-    "type": "construct", 
+    "type": "bystander", 
     "rarity": "super_rare", 
     "dimensions": "1x1", 
     "point_values": [], 
@@ -12405,6 +12414,7 @@
     "improved_movement": [], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
+    "bystander_type": "construct", 
     "unit_range": "0", 
     "targets": "1", 
     "speed_type": "boot", 
@@ -12430,7 +12440,7 @@
     "set_id": "ww80", 
     "collector_number": "s004", 
     "name": "Sword of Athena", 
-    "type": "equipment", 
+    "type": "object", 
     "rarity": "super_rare", 
     "point_values": [
       10
@@ -12450,7 +12460,8 @@
     ], 
     "improved_movement": [], 
     "improved_targeting": [], 
-    "object_type": "light", 
+    "object_type": "equipment", 
+    "object_size": "light", 
     "object_keyphrases": [
       "indestructible", 
       "equip_any", 
@@ -12463,7 +12474,7 @@
     "set_id": "ww80", 
     "collector_number": "s005", 
     "name": "Wonder Woman's Bracelets", 
-    "type": "equipment", 
+    "type": "object", 
     "rarity": "super_rare", 
     "point_values": [
       10
@@ -12480,7 +12491,8 @@
     ], 
     "improved_movement": [], 
     "improved_targeting": [], 
-    "object_type": "light", 
+    "object_type": "equipment", 
+    "object_size": "light", 
     "object_keyphrases": [
       "equip_any", 
       "unequip_drop"
@@ -12492,7 +12504,7 @@
     "set_id": "ww80", 
     "collector_number": "s006", 
     "name": "Golden Armor", 
-    "type": "equipment", 
+    "type": "object", 
     "rarity": "super_rare", 
     "point_values": [
       10
@@ -12512,7 +12524,8 @@
     ], 
     "improved_movement": [], 
     "improved_targeting": [], 
-    "object_type": "light", 
+    "object_type": "equipment", 
+    "object_size": "light", 
     "object_keyphrases": [
       "equip_any", 
       "unequip_ko"
@@ -12524,7 +12537,7 @@
     "set_id": "ww80", 
     "collector_number": "s007", 
     "name": "Stop Sign (Indigo)", 
-    "type": "construct", 
+    "type": "bystander", 
     "rarity": "chase", 
     "dimensions": "1x1", 
     "point_values": [], 
@@ -12541,6 +12554,7 @@
     "improved_movement": [], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
+    "bystander_type": "construct", 
     "unit_range": "0", 
     "targets": "1", 
     "speed_type": "boot", 
@@ -12565,7 +12579,7 @@
     "set_id": "ww80", 
     "collector_number": "s008", 
     "name": "Fire Hydrant (Blue)", 
-    "type": "construct", 
+    "type": "bystander", 
     "rarity": "chase", 
     "dimensions": "1x1", 
     "point_values": [], 
@@ -12582,6 +12596,7 @@
     "improved_movement": [], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
+    "bystander_type": "construct", 
     "unit_range": "6", 
     "targets": "1", 
     "speed_type": "boot", 
@@ -12606,7 +12621,7 @@
     "set_id": "ww80", 
     "collector_number": "s009", 
     "name": "Chainsaw (Red)", 
-    "type": "construct", 
+    "type": "bystander", 
     "rarity": "chase", 
     "dimensions": "1x1", 
     "point_values": [], 
@@ -12617,6 +12632,7 @@
     "improved_movement": [], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
+    "bystander_type": "construct", 
     "unit_range": "0", 
     "targets": "1", 
     "speed_type": "boot", 
@@ -12642,7 +12658,7 @@
     "set_id": "ww80", 
     "collector_number": "s010", 
     "name": "Cowboy Boot (Yellow)", 
-    "type": "construct", 
+    "type": "bystander", 
     "rarity": "chase", 
     "dimensions": "1x1", 
     "point_values": [], 
@@ -12659,6 +12675,7 @@
     "improved_movement": [], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
+    "bystander_type": "construct", 
     "unit_range": "0", 
     "targets": "1", 
     "speed_type": "boot", 
@@ -12684,7 +12701,7 @@
     "set_id": "ww80", 
     "collector_number": "s011", 
     "name": "Spotlight (Green)", 
-    "type": "construct", 
+    "type": "bystander", 
     "rarity": "chase", 
     "dimensions": "1x1", 
     "point_values": [], 
@@ -12701,6 +12718,7 @@
     "improved_movement": [], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
+    "bystander_type": "construct", 
     "unit_range": "6", 
     "targets": "1", 
     "speed_type": "boot", 
@@ -12726,7 +12744,7 @@
     "set_id": "ww80", 
     "collector_number": "s012", 
     "name": "Lasso (Violet)", 
-    "type": "construct", 
+    "type": "bystander", 
     "rarity": "chase", 
     "dimensions": "1x1", 
     "point_values": [], 
@@ -12746,6 +12764,7 @@
     "improved_movement": [], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
+    "bystander_type": "construct", 
     "unit_range": "4", 
     "targets": "1", 
     "speed_type": "boot", 

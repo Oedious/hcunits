@@ -5,16 +5,15 @@
     "collector_number": "s001", 
     "name": "Standard Light Object", 
     "type": "object", 
-    "point_values": [
-      0
-    ], 
+    "point_values": [], 
     "properties": "[]", 
     "team_abilities": [], 
     "keywords": [], 
     "special_powers": [], 
     "improved_movement": [], 
     "improved_targeting": [], 
-    "object_type": "light", 
+    "object_type": "standard", 
+    "object_size": "light", 
     "object_keyphrases": [], 
     "dial": []
   }, 
@@ -24,17 +23,54 @@
     "collector_number": "s002", 
     "name": "Standard Heavy Object", 
     "type": "object", 
-    "point_values": [
-      0
-    ], 
+    "point_values": [], 
     "properties": "[]", 
     "team_abilities": [], 
     "keywords": [], 
     "special_powers": [], 
     "improved_movement": [], 
     "improved_targeting": [], 
-    "object_type": "heavy", 
+    "object_type": "standard", 
+    "object_size": "heavy", 
     "object_keyphrases": [], 
     "dial": []
+  }, 
+  {
+    "unit_id": "wks003", 
+    "set_id": "wk", 
+    "collector_number": "s003", 
+    "name": "Standard Ultra Heavy Object", 
+    "type": "object", 
+    "point_values": [], 
+    "properties": "[]", 
+    "team_abilities": [], 
+    "keywords": [], 
+    "special_powers": [], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_type": "standard", 
+    "object_size": "ultra_heavy", 
+    "object_keyphrases": [], 
+    "dial": [], 
+    "row": [
+      {
+        "unit_id": "wks004", 
+        "set_id": "wk", 
+        "collector_number": "s004", 
+        "name": "Standard Ultra Light Object", 
+        "type": "object", 
+        "point_values": "[]", 
+        "properties": "[]", 
+        "team_abilities": "[]", 
+        "keywords": "[]", 
+        "special_powers": "[]", 
+        "improved_movement": "[]", 
+        "improved_targeting": "[]", 
+        "object_type": "standard", 
+        "object_size": "ultra_light", 
+        "object_keyphrases": "[]", 
+        "dial": "[]"
+      }
+    ]
   }
 ]

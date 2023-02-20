@@ -1996,6 +1996,7 @@
     "improved_movement": [], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
+    "bystander_type": "standard", 
     "unit_range": "0", 
     "targets": "1", 
     "speed_type": "dolphin", 
@@ -3173,10 +3174,10 @@
         ]
       }
     ], 
-    "improved_movement": [
+    "improved_movement": [], 
+    "improved_targeting": [
       "hindering"
     ], 
-    "improved_targeting": [], 
     "object_keyphrases": [], 
     "unit_range": "4", 
     "targets": "2", 
@@ -4248,6 +4249,7 @@
     "improved_movement": [], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
+    "bystander_type": "standard", 
     "unit_range": "0", 
     "targets": "1", 
     "speed_type": "boot", 
@@ -4284,6 +4286,7 @@
     "improved_movement": [], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
+    "bystander_type": "standard", 
     "unit_range": "0", 
     "targets": "1", 
     "speed_type": "boot", 
@@ -4320,6 +4323,7 @@
     "improved_movement": [], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
+    "bystander_type": "standard", 
     "unit_range": "0", 
     "targets": "1", 
     "speed_type": "wing", 
@@ -4356,6 +4360,7 @@
     "improved_movement": [], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
+    "bystander_type": "standard", 
     "unit_range": "4", 
     "targets": "1", 
     "speed_type": "boot", 
@@ -4392,6 +4397,7 @@
     "improved_movement": [], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
+    "bystander_type": "standard", 
     "unit_range": "0", 
     "targets": "2", 
     "speed_type": "boot", 
@@ -6105,6 +6111,7 @@
     "improved_movement": [], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
+    "bystander_type": "standard", 
     "unit_range": "4", 
     "targets": "1", 
     "speed_type": "boot", 
@@ -6592,6 +6599,7 @@
     "improved_movement": [], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
+    "bystander_type": "standard", 
     "unit_range": "3", 
     "targets": "1", 
     "speed_type": "wing", 
@@ -6629,6 +6637,7 @@
     "improved_movement": [], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
+    "bystander_type": "standard", 
     "unit_range": "0", 
     "targets": "1", 
     "speed_type": "boot", 
@@ -6666,6 +6675,7 @@
     "improved_movement": [], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
+    "bystander_type": "standard", 
     "unit_range": "4", 
     "targets": "1", 
     "speed_type": "wing", 
@@ -8340,7 +8350,7 @@
     "set_id": "xmxssop", 
     "collector_number": "s012", 
     "name": "Sword of Might", 
-    "type": "equipment", 
+    "type": "object", 
     "rarity": "rare", 
     "point_values": [
       10
@@ -8360,7 +8370,8 @@
     ], 
     "improved_movement": [], 
     "improved_targeting": [], 
-    "object_type": "light", 
+    "object_type": "equipment", 
+    "object_size": "light", 
     "object_keyphrases": [
       "indestructible", 
       "equip_any", 
@@ -8374,7 +8385,7 @@
     "set_id": "xmxssop", 
     "collector_number": "s013", 
     "name": "Pogg Ur-Pogg", 
-    "type": "equipment", 
+    "type": "object", 
     "rarity": "rare", 
     "point_values": [
       10
@@ -8394,7 +8405,8 @@
     ], 
     "improved_movement": [], 
     "improved_targeting": [], 
-    "object_type": "light", 
+    "object_type": "equipment", 
+    "object_size": "light", 
     "object_keyphrases": [
       "indestructible", 
       "equip_any", 
@@ -8408,7 +8420,7 @@
     "set_id": "xmxssop", 
     "collector_number": "s014", 
     "name": "Skybreaker", 
-    "type": "equipment", 
+    "type": "object", 
     "rarity": "rare", 
     "point_values": [
       10
@@ -8428,7 +8440,8 @@
     ], 
     "improved_movement": [], 
     "improved_targeting": [], 
-    "object_type": "light", 
+    "object_type": "equipment", 
+    "object_size": "light", 
     "object_keyphrases": [
       "indestructible", 
       "equip_any", 
@@ -8442,7 +8455,7 @@
     "set_id": "xmxssop", 
     "collector_number": "s015", 
     "name": "Warlock", 
-    "type": "equipment", 
+    "type": "object", 
     "rarity": "rare", 
     "point_values": [
       10
@@ -8464,7 +8477,8 @@
     ], 
     "improved_movement": [], 
     "improved_targeting": [], 
-    "object_type": "light", 
+    "object_type": "equipment", 
+    "object_size": "light", 
     "object_keyphrases": [
       "indestructible", 
       "equip_any", 
@@ -8478,7 +8492,7 @@
     "set_id": "xmxssop", 
     "collector_number": "s016", 
     "name": "Muramasa Blade", 
-    "type": "equipment", 
+    "type": "object", 
     "rarity": "rare", 
     "point_values": [
       10
@@ -8498,7 +8512,8 @@
     ], 
     "improved_movement": [], 
     "improved_targeting": [], 
-    "object_type": "light", 
+    "object_type": "equipment", 
+    "object_size": "light", 
     "object_keyphrases": [
       "indestructible", 
       "equip_any", 
@@ -8512,7 +8527,7 @@
     "set_id": "xmxssop", 
     "collector_number": "s017", 
     "name": "Grasscutter", 
-    "type": "equipment", 
+    "type": "object", 
     "rarity": "rare", 
     "point_values": [
       10
@@ -8532,7 +8547,8 @@
     ], 
     "improved_movement": [], 
     "improved_targeting": [], 
-    "object_type": "light", 
+    "object_type": "equipment", 
+    "object_size": "light", 
     "object_keyphrases": [
       "indestructible", 
       "equip_any", 
@@ -8546,7 +8562,7 @@
     "set_id": "xmxssop", 
     "collector_number": "s018", 
     "name": "Godkiller", 
-    "type": "equipment", 
+    "type": "object", 
     "rarity": "rare", 
     "point_values": [
       10
@@ -8566,7 +8582,8 @@
     ], 
     "improved_movement": [], 
     "improved_targeting": [], 
-    "object_type": "light", 
+    "object_type": "equipment", 
+    "object_size": "light", 
     "object_keyphrases": [
       "indestructible", 
       "equip_any", 
@@ -8580,7 +8597,7 @@
     "set_id": "xmxssop", 
     "collector_number": "s019", 
     "name": "Soulsword", 
-    "type": "equipment", 
+    "type": "object", 
     "rarity": "rare", 
     "point_values": [
       10
@@ -8600,7 +8617,8 @@
     ], 
     "improved_movement": [], 
     "improved_targeting": [], 
-    "object_type": "light", 
+    "object_type": "equipment", 
+    "object_size": "light", 
     "object_keyphrases": [
       "indestructible", 
       "equip_any", 
@@ -8614,7 +8632,7 @@
     "set_id": "xmxssop", 
     "collector_number": "s020", 
     "name": "Light of Galador", 
-    "type": "equipment", 
+    "type": "object", 
     "rarity": "rare", 
     "point_values": [
       10
@@ -8634,7 +8652,8 @@
     ], 
     "improved_movement": [], 
     "improved_targeting": [], 
-    "object_type": "light", 
+    "object_type": "equipment", 
+    "object_size": "light", 
     "object_keyphrases": [
       "indestructible", 
       "equip_any", 
@@ -8648,7 +8667,7 @@
     "set_id": "xmxssop", 
     "collector_number": "s021", 
     "name": "Mercy", 
-    "type": "equipment", 
+    "type": "object", 
     "rarity": "rare", 
     "point_values": [
       10
@@ -8668,7 +8687,8 @@
     ], 
     "improved_movement": [], 
     "improved_targeting": [], 
-    "object_type": "light", 
+    "object_type": "equipment", 
+    "object_size": "light", 
     "object_keyphrases": [
       "indestructible", 
       "equip_any", 

@@ -14,30 +14,106 @@ from selenium.webdriver.chrome.options import Options
 from xml.sax.saxutils import escape
 
 SET_MAP = {
-  "btu": "Batman Team-Up",
-  "av4e": "Avengers Forever",
-  "hgpc": "Hellfire Gala Premium Collection",
-  "xmxssop": "X-Men: X of Swords Storyline Organized Play",
-  "xmxs": "X-Men: X of Swords",
-  "msdp": "Marvel Studios Disney Plus",
-  "wotr": "Avengers: War of the Realms",
-  "ffwotr": "Fast Forces: Avengers: War of the Realms",
-  "ff2021": "Fantastic Four 2021 Storyline",
-  "affe": "Avengers Fantastic Four: Empyre",
-  "em": "Eternals Movie",
-  "xmrf": "X-Men: Rise and Fall",
-  "ffxmrf": "Fast Forces: X-Men: Rise and Fall",
-  "ww80": "Wonder Woman 80th Anniversary",
-  "ffff": "Fantastic Four: Future Foundation",
-  "ffffff": "Fast Forces: Fantastic Four: Future Foundation",
-  "dcff": "Deep Cuts: Fantastic Four",
-  "hx": "House of X",
-  "ffhx": "Fast Forces: House of X",
-  "svc": "Spider-Man and Venom: Absolute Carnage",
-  "ffsvc": "Fast Forces: Spider-Man and Venom: Absolute Carnage",
-  "bgame": "Battlegrounds: Avengers vs. Masters of Evil",
-  "f4": "Fantastic Four",
-  "fff4": "Fast Forces: Fantastic Four",
+  "btu": {
+    "name": "Batman Team-Up",
+  },
+  "av4e": {
+    "name": "Avengers Forever",
+  },
+  "hgpc": {
+    "name": "Hellfire Gala Premium Collection",
+  },
+  "xmxssop": {
+    "name": "X-Men: X of Swords Storyline Organized Play",
+  },
+  "xmxs": {
+    "name": "X-Men: X of Swords",
+  },
+  "msdp": {
+    "name": "Marvel Studios Disney Plus",
+  },
+  "wotr": {
+    "name": "Avengers: War of the Realms",
+  },
+  "ffwotr": {
+    "name": "Fast Forces: Avengers: War of the Realms",
+  },
+  "ff2021": {
+    "name": "Fantastic Four 2021 Storyline",
+  },
+  "affe": {
+    "name": "Avengers Fantastic Four: Empyre",
+  },
+  "em": {
+    "name": "Eternals Movie",
+  },
+  "xmrf": {
+    "name": "X-Men: Rise and Fall",
+  },
+  "ffxmrf": {
+    "name": "Fast Forces: X-Men: Rise and Fall",
+  },
+  "ww80": {
+    "name": "Wonder Woman 80th Anniversary",
+  },
+  "ffff": {
+    "name": "Fantastic Four: Future Foundation",
+  },
+  "ffffff": {
+    "name": "Fast Forces: Fantastic Four: Future Foundation",
+  },
+  "dcff": {
+    "name": "Deep Cuts: Fantastic Four",
+  },
+  "hx": {
+    "name": "House of X",
+  },
+  "ffhx": {
+    "name": "Fast Forces: House of X",
+  },
+  "svc": {
+    "name": "Spider-Man and Venom: Absolute Carnage",
+  },
+  "ffsvc": {
+    "name": "Fast Forces: Spider-Man and Venom: Absolute Carnage",
+  },
+  "bgame": {
+    "name": "Battlegrounds: Avengers vs. Masters of Evil",
+  },
+  "f4": {
+    "name": "Fantastic Four",
+  },
+  "fff4": {
+    "name": "Fast Forces: Fantastic Four",
+  },
+  "wkm20": {
+    "name": "WizKids Marvel",
+    "ranges": [
+      ("wkM-G001a", "wkM-G001b-100"),
+      # The Elemental Converter is missing, so it's added in the patch.
+      # Skip the Herald dial until we can correctly handle that dial type.
+      ("wkMP20-001a", "wkMP20-B002"),
+    ]
+  },
+  "wkm21": {
+    "name": "WizKids Marvel",
+    "ranges": [
+      ("wkF21-001", "wkF21-001"),
+      ("wkMP21-001", "wkMP21-008v"),
+    ]
+  },
+  "wkd20": {
+    "name": "WizKids DC",
+    "ranges": [
+      ("wkDP20-001", "wkDP20-s005b"),
+    ]
+  },
+  "wkd21": {
+    "name": "WizKids DC",
+    "ranges": [
+      ("wkDP21-001", "wkDP21-005v"),
+    ]
+  },
 }
 
 POWERS = {
@@ -92,38 +168,44 @@ POWERS = {
   "STOP": "stop",
 }
 
-IMPROVED_MOVEMENT_ABILITIES = {
-  "Elevated": "elevated",
-  "Hindering": "hindering",
-  "Ignores Hindering": "hindering",
-  "Blocking": "blocking",
-  "Ignores Blocking and destroys blocking terrain as the character moves through it": "blocking",
-  "Ignores Blocking and destroys blocking terrain as the character moves through it.": "blocking",
-  "Outdoor Blocking": "outdoor_blocking",
-  "Destroy Blocking": "destroy_blocking",
-  "Characters": "characters",
-  "Move Through": "move_through",
+IMPROVED_ABILITIES = {
+  "MOVEMENT": {
+    "attr_name": "improved_movement",
+    "rules": {
+      "Hindering": "hindering",
+      "This character can move through Blocking terrain. Immediately after movement resolves, destroy all Blocking terrain moved through": "blocking",
+    },
+    "types": {
+      "Elevated": "elevated",
+      "Hindering": "hindering",
+      "Ignores Hindering": "hindering",
+      "Blocking": "blocking",
+      "Ignores Blocking and destroys blocking terrain as the character moves through it": "blocking",
+      "Ignores Blocking and destroys blocking terrain as the character moves through it.": "blocking",
+      "Outdoor Blocking": "outdoor_blocking",
+      "Destroy Blocking": "destroy_blocking",
+      "Characters": "characters",
+      "Move Through": "move_through",
+    },
+  },
+  "TARGETING": {
+    "attr_name": "improved_targeting",
+    "rules": {
+      "Hindering": "hindering",
+      "Once per range attack, this character can draw a line of fire through one piece of Blocking terrain. Immediately after the attack resolves, destroy that piece of Blocking terrain": "blocking",
+      "This character can make range attacks while adjacent to opposing characters. (May target adjacent or non-adjacent opposing characters.)": "adjacent",
+    },
+    "types": {
+      "Elevated": "elevated",
+      "Hindering": "hindering",
+      "Blocking": "blocking",
+      "Destroy Blocking": "destroy_blocking",
+      "Characters": "characters",
+      "Adjacent": "adjacent",
+    },
+  }
 }
 
-IMPROVED_MOVEMENT_RULES = {
-  "Hindering": "hindering",
-  "This character can move through Blocking terrain. Immediately after movement resolves, destroy all Blocking terrain moved through": "blocking",
-}
-
-IMPROVED_TARGETING_ABILITIES = {
-  "Elevated": "elevated",
-  "Hindering": "hindering",
-  "Blocking": "blocking",
-  "Destroy Blocking": "destroy_blocking",
-  "Characters": "characters",
-  "Adjacent": "adjacent",
-}
-
-IMPROVED_TARGETING_RULES = {
-  "Hindering": "hindering",
-  "Once per range attack, this character can draw a line of fire through one piece of Blocking terrain. Immediately after the attack resolves, destroy that piece of Blocking terrain": "blocking",
-  "This character can make range attacks while adjacent to opposing characters. (May target adjacent or non-adjacent opposing characters.)": "adjacent",
-}
 CACHE_DIR = ".cache"
 
 def fix_style(str):
@@ -147,6 +229,7 @@ def clean_string(str):
   str = str.replace(u"\u00e2\u0080\u0099", "'")
   str = str.replace(u"\u010f\u017c\u02dd", "'")
   str = str.replace(u"\u00e2\u0080\u0093", "-")
+  str = str.replace(u"\u00e2\u0080\u0094", "-")
   str = str.replace(u"\u00e2\u0080\u015a", "...")
   # Escape special XML characters.
   return escape(str)
@@ -188,6 +271,8 @@ class Unit:
     self.real_name = kwargs.get("real_name", None)
     self.dimensions = kwargs.get("dimensions", None)
     self.object_type = kwargs.get("object_type", None)
+    self.object_size = kwargs.get("object_size", None)
+    self.bystander_type = kwargs.get("bystander_type", None)
     self.map_url = kwargs.get("map_url", None)
     self.unit_range = kwargs.get("unit_range", None)
     self.targets = kwargs.get("targets", None)
@@ -227,12 +312,19 @@ class Unit:
     unit_id_and_name = soup.find("td", class_="tcat").strong.string.strip().split(' ')
     self.unit_id = unit_id_and_name[0]
     self.name = " ".join(unit_id_and_name[1:])
-    self.collector_number = self.unit_id[len(self.set_id):]
+    
+    for prefix in [self.set_id, "wkM-", "wk"]:
+      if self.unit_id.startswith(prefix):
+        self.collector_number = self.unit_id[len(prefix):]
+    if not self.collector_number:
+      raise Error("Could not find a collector number for '%s'" % self.unit_id)
 
     # Determine the rarity and special type
     figure_rank_tag = soup.select_one("td[class^=figure_rank_]")
     rarity = figure_rank_tag.strong.string.strip()
-    if rarity == "Rarity: Starter Set" or rarity == "Rarity: Limited Edition":
+    if (rarity == "Rarity: Starter Set" or
+        rarity == "Rarity: Free Comic Book Day Exclusive" or
+        rarity == "Rarity: Limited Edition"):
       self.rarity = "limited_edition"
     elif rarity == "Rarity: Common":
       self.rarity = "common"
@@ -269,14 +361,16 @@ class Unit:
       if len(tag_list) > 0:
         is_construct = tag_list[0].parent.parent.parent.parent.tbody.select('tr')[0].select('td')[1].strong.string.strip() == "CONSTRUCTS:"
       if is_construct:
-          self.type = "construct"
+        self.type = "bystander"
+        self.bystander_type = "construct"
       elif soup.find("td", class_="card_special_object"):
+        self.type = "object"
         if ((soup.find(text=re.compile(r'.*EFFECT: .*')) or
              soup.find(text=re.compile(r'.*Effect: .*'))) and
              not soup.find(text=re.compile(r".*is not equipment.*"))):
-          self.type = "equipment"
+          self.object_type = "equipment"
         else:
-          self.type = "object"
+          self.object_type = "standard"
       elif soup.find("td", class_="card_id_card"):
         if soup.find(text=re.compile(r'\s*Mystery Card\s*')):
           self.type = "mystery_card"
@@ -314,14 +408,15 @@ class Unit:
               print("Skipping unknown unit type %s" % self.unit_id)
             return False
     elif figure_rank == "bystander":
-      self.type = figure_rank
+      self.type = "bystander"
+      self.bystander_type = "standard"
 
     if not self.type:
       raise RuntimeError("The unit type (%s) for '%s' is currently not supported" % (figure_rank, self.unit_id))
 
-    if self.type == "character" or self.type == "bystander" or self.type == "construct":
+    if self.type == "character" or self.type == "bystander":
       point_value_tag = soup.find("div", {"style": "float:right;padding-top:3px;"})
-    elif self.type == "object" or self.type == "equipment" or self.type == "id_card" or self.type == "mystery_card":
+    elif self.type == "object" or self.type == "id_card" or self.type == "mystery_card":
       point_value_tag = soup.find("td", class_="tfoot")
     elif self.type == "team_up" or self.type == "tarot_card":
       point_value_tag = None
@@ -339,10 +434,14 @@ class Unit:
     # The set ID is the first non-numeric parts of the unit_id
     if self.type == "character":
       # Parse the real_name field.
-      self.real_name = soup.select_one("span[onclick^=showRealName]").string.strip()
+      real_name = soup.select_one("span[onclick^=showRealName]")
+      if real_name:
+        self.real_name = real_name.string.strip()
+      else:
+        print("Warning: could not find a real name for %s" % self.unit_id)
   
     # Parse team abilities
-    if self.type == "character" or self.type == "bystander" or self.type == "construct":
+    if self.type == "character" or self.type == "bystander":
       tag_list = soup.select("span[onclick^=showQuickSearch]")
       for tag in tag_list:
         match_obj = re.search(r"showQuickSearch\('(.*)','team_ability'\)", tag['onclick'])
@@ -358,7 +457,7 @@ class Unit:
     # Parse keywords
     if (self.type == "character" or
         self.type == "bystander" or
-        self.type == "equipment" or
+        (self.type == "object" and self.object_type == "equipment") or
         self.type == "id_card" or
         self.type == "mystery_card"):
       tag_list = soup.select("span[onclick^=showByKeywordId]")
@@ -367,117 +466,125 @@ class Unit:
 
     # Parse object special powers
     if self.type == "object":
-      equip_tag = soup.find("td", class_="card_special_object").parent
-      tag_list = equip_tag.next_sibling.next_sibling.find_all("div")
-      for tag in tag_list:
-        # The attribute list is formed by a single string that needs to be
-        # split apart.
-        parts = tag.string.strip().split(".")
-        description = None
-        for part in parts:
-          part = part.strip()
-          if part == "":
-            continue
-
-          if part == "Light Object":
-            self.object_type = "light"
-          elif part == "Heavy Object":
-            self.object_type = "heavy"
-          elif part == "Ultra Light Object":
-            self.object_type = "ultra_light"
-          elif part == "Ultra Heavy Object":
-            self.object_type = "ultra_heavy"
-          elif part == "Special Object":
-            self.object_type = "special"
-          elif not description:
-            description = part + "."
+      if self.object_type != "equipment":
+        equip_tag = soup.find("td", class_="card_special_object").parent
+        tag_list = equip_tag.next_sibling.next_sibling.find_all("div")
+        for tag in tag_list:
+          if tag.string:
+            # The attribute list is formed by a single string that needs to be
+            # split apart.
+            parts = tag.string.strip().split(".")
           else:
-            description += " " + part + "."
-
-        if description:
-          self.special_powers.append(OrderedDict([
-            ("type", "object"),
-            ("description", clean_string(description))
-          ]))
-          self.special_powers[-1] = self.parse_powers_from_description(self.special_powers[-1])
-
-    # Parse equipment special powers
-    if self.type == "equipment":
-      equip_tag = soup.find("td", class_="card_special_object").parent
-      tag_list = equip_tag.next_sibling.next_sibling.find_all("div")
-      if tag_list:
-        tag = tag_list[0]
-        # Skip the first item in the list if it's the keyword list.
-        if tag.strong:
-          tag = tag_list[1]
-
-        children = list(tag.children)
-        attr_list = []
-        if len(children) == 1:
-          # The attribute list is formed by a single string that needs to be
-          # split apart.
-          parts = children[0].string.strip().split(".")
+            parts = []
+            for subtag in tag.children:
+              if subtag.string:
+                parts.append(subtag.string.strip())
+          description = None
           for part in parts:
             part = part.strip()
             if part == "":
               continue
-
-            if (part.upper() == "INDESTRUCTIBLE" or
-                part.startswith("EQUIP: ") or
-                part.startswith("UNEQUIP: ") or
-                part.endswith("Object")):
-              attr_list.append(part)
-            elif part.startswith("EFFECT: "):
-              attr_list.append(part + ".")
-            elif len(attr_list) > 0 and attr_list[-1].startswith("EFFECT: "):
-              attr_list[-1] += " " + part + "."
+  
+            if part == "Light Object":
+              self.object_size = "light"
+            elif part == "Heavy Object":
+              self.object_size = "heavy"
+            elif part == "Ultra Light Object":
+              self.object_size = "ultra_light"
+            elif part == "Ultra Heavy Object":
+              self.object_size = "ultra_heavy"
+            elif part == "Special Object":
+              self.object_type = "special"
+            elif part == "Disguised Plastic Man Special Object":
+              self.object_type = "plastic_man"
+            elif not description:
+              description = part + "."
             else:
-              print("Skipping unknown object attribute part '%s'" % part)
-        else:
-          for attr in children:
-            # Ignore non-strings.
-            if attr.string:
-              attr_list.append(attr.strip())
-
-        for attr in attr_list:
-          if len(attr) <= 0:
-            continue;
-
-          if (attr.upper() == "INDESTRUCTIBLE" or
-              attr.startswith("EQUIP: ") or
-              attr.startswith("UNEQUIP: ") or
-              attr == "Sword Equipment"):
-            self.object_keyphrases.append(fix_style(attr))
-          elif attr.startswith("Light Object"):
-            self.object_type = "light"
-          elif attr == "Heavy Object":
-            self.object_type = "heavy"
-          elif attr == "Ultra Light Object":
-            self.object_type = "ultra_light"
-          elif attr == "Ultra Heavy Object":
-            self.object_type = "ultra_heavy"
-          elif attr == "Special Object":
-            self.object_type = "special"
+              description += " " + part + "."
+  
+          if description:
+            if self.object_type == "standard":
+              self.object_type = "special"
+            self.special_powers.append(OrderedDict([
+              ("type", "object"),
+              ("description", clean_string(description))
+            ]))
+            self.special_powers[-1] = self.parse_powers_from_description(self.special_powers[-1])
+      # Parse equipment special powers
+      else:
+        equip_tag = soup.find("td", class_="card_special_object").parent
+        tag_list = equip_tag.next_sibling.next_sibling.find_all("div")
+        if tag_list:
+          tag = tag_list[0]
+          # Skip the first item in the list if it's the keyword list.
+          if tag.strong:
+            tag = tag_list[1]
+  
+          children = list(tag.children)
+          attr_list = []
+          if len(children) == 1:
+            # The attribute list is formed by a single string that needs to be
+            # split apart.
+            parts = children[0].string.strip().split(".")
+            for part in parts:
+              part = part.strip()
+              if part == "":
+                continue
+  
+              if (part.upper() == "INDESTRUCTIBLE" or
+                  part.startswith("EQUIP: ") or
+                  part.startswith("UNEQUIP: ") or
+                  part.endswith("Object")):
+                attr_list.append(part)
+              elif part.startswith("EFFECT: "):
+                attr_list.append(part + ".")
+              elif len(attr_list) > 0 and attr_list[-1].startswith("EFFECT: "):
+                attr_list[-1] += " " + part + "."
+              else:
+                print("Skipping unknown object attribute part '%s'" % part)
           else:
-            # Handle equipment special powers, including "EFFECT"
-            sp = attr.split(':', 1)
-            if len(sp) >= 2:
-              sp_name = sp[0]
-              sp_description = sp[1].strip()
-              self.special_powers.append(OrderedDict([
-                ("type", "equipment"),
-                ("name", sp_name),
-                ("description", clean_string(sp_description))
-              ]))
-              self.special_powers[-1] = self.parse_powers_from_description(self.special_powers[-1])
-            elif len(self.special_powers) > 0:
-              # Append it to the end of the previous description.
-              self.special_powers[-1]["description"] += clean_string(" " + attr)
-              self.special_powers[-1] = self.parse_powers_from_description(self.special_powers[-1])
+            for attr in children:
+              # Ignore non-strings.
+              if attr.string:
+                attr_list.append(attr.strip())
+  
+          for attr in attr_list:
+            if len(attr) <= 0:
+              continue;
+  
+            if (attr.upper() == "INDESTRUCTIBLE" or
+                attr.startswith("EQUIP: ") or
+                attr.startswith("UNEQUIP: ") or
+                attr == "Sword Equipment"):
+              self.object_keyphrases.append(fix_style(attr))
+            elif attr.startswith("Light Object"):
+              self.object_size = "light"
+            elif attr == "Heavy Object":
+              self.object_size = "heavy"
+            elif attr == "Ultra Light Object":
+              self.object_size = "ultra_light"
+            elif attr == "Ultra Heavy Object":
+              self.object_size = "ultra_heavy"
             else:
-              print("Skipping unknown object attribute '%s'" % attr)
+              # Handle equipment special powers, including "EFFECT"
+              sp = attr.split(':', 1)
+              if len(sp) >= 2:
+                sp_name = sp[0]
+                sp_description = sp[1].strip()
+                self.special_powers.append(OrderedDict([
+                  ("type", "equipment"),
+                  ("name", sp_name),
+                  ("description", clean_string(sp_description))
+                ]))
+                self.special_powers[-1] = self.parse_powers_from_description(self.special_powers[-1])
+              elif len(self.special_powers) > 0:
+                # Append it to the end of the previous description.
+                self.special_powers[-1]["description"] += clean_string(" " + attr)
+                self.special_powers[-1] = self.parse_powers_from_description(self.special_powers[-1])
+              else:
+                print("Skipping unknown object attribute '%s'" % attr)
 
-    # Parse equipment
+    # Parse ID and mystery cards
     if self.type == "id_card" or self.type == "mystery_card":
       equip_tag = soup.find("td", class_="card_id_card")
       if not equip_tag:
@@ -518,8 +625,7 @@ class Unit:
     if (self.type == "character" or
         self.type == "team_up" or
         self.type == "bystander" or
-        self.type == "equipment" or
-        self.type == "construct"):
+        self.type == "object"):
       tag_list = soup.find_all(text=re.compile(r'\s*Special Powers\s*'))
       if len(tag_list) > 0:
         sp_tag = tag_list[0]
@@ -555,7 +661,7 @@ class Unit:
             sp_description = td_tags[1].string.strip()
 
           # Skip the special power that describes a construct
-          if self.type == "construct" and sp_name == "CONSTRUCTS":
+          if self.type == "bystander" and self.bystander_type == "construct" and sp_name == "CONSTRUCTS":
             continue
           
           # Handle special powers that describe properties
@@ -573,54 +679,38 @@ class Unit:
             continue
 
           if sp_type == "improved":
-            if sp_name == "MOVEMENT":
+            improved_ability_info = IMPROVED_ABILITIES[sp_name]
+            if improved_ability_info:
               # First try to parse when the abilities are listed as rules.
+              attr_name = improved_ability_info["attr_name"]
+              types = improved_ability_info["types"]
+              rules = improved_ability_info["rules"]
               parts = sp_description.split(".")
               while len(parts) > 0:
                 tail = parts.pop()
                 if len(tail) > 0:
-                  if tail.strip() in IMPROVED_MOVEMENT_RULES:
+                  if tail.strip() in rules:
                     # If a match was found, append the ID and clear out sp_description
                     # to indicate that it's a rules list.
-                    self.improved_movement.append(IMPROVED_MOVEMENT_RULES[tail.strip()])
+                    attr = getattr(self, attr_name)
+                    attr.append(rules[tail.strip()])
+                    setattr(self, attr_name, attr)
                     sp_description = None
                   elif len(parts) > 0:
                     # Couldn't find a match, so combine the last two strings and try again.
                     parts[-1] = parts[-1] + "." + tail
                   elif not sp_description:
-                    print("Skipping unknown improvement movement ability rule: '%s'" % tail)
+                    print("Skipping unknown %s ability rule: '%s'" % (attr_name, tail))
 
               if sp_description:
                 for value in sp_description.split(", "):
                   value = value.strip()
-                  if value in IMPROVED_MOVEMENT_ABILITIES:
-                    self.improved_movement.append(IMPROVED_MOVEMENT_ABILITIES[value])
+                  if value in types:
+                    attr = getattr(self, attr_name)
+                    attr.append(types[value])
+                    setattr(self, attr_name, attr)
                   else:
-                    print("Skipping unknown improvement movement ability: '%s'" % value)
-            elif sp_name == "TARGETING":
-              # First try to parse when the abilities are listed as rules.
-              parts = sp_description.split(".")
-              while len(parts) > 0:
-                tail = parts.pop()
-                if len(tail) > 0:
-                  if tail.strip() in IMPROVED_TARGETING_RULES:
-                    # If a match was found, append the ID and clear out sp_description
-                    # to indicate that it's a rules list.
-                    self.improved_movement.append(IMPROVED_TARGETING_RULES[tail.strip()])
-                    sp_description = None
-                  elif len(parts) > 0:
-                    # Couldn't find a match, so combine the last two strings and try again.
-                    parts[-1] = parts[-1] + "." + tail
-                  elif not sp_description:
-                    print("Skipping unknown improvement targeting ability rule: '%s'" % tail)
-
-              if sp_description:
-                for value in sp_description.split(", "):
-                  value = value.strip()
-                  if value in IMPROVED_TARGETING_ABILITIES:
-                    self.improved_targeting.append(IMPROVED_TARGETING_ABILITIES[value])
-                  else:
-                    print("Skipping unknown improvement targeting ability: '%s'" % value)
+                    print("Skipping unknown %s ability: '%s' -- description='%s'" % (attr_name, value, sp_description))
           else:
             sp = OrderedDict([("type", sp_type)])
             if sp_name:
@@ -673,7 +763,7 @@ class Unit:
                   sp["description"] = clean_string(match_obj.group(2))
                   sp["rally_type"] = match_obj.group(1).lower()
                 sp["rally_die"] = rally_die
-                # Clean description string to remove rally rules
+                # Clean description string to remove rally rules.
                 sp["description"] = sp["description"].replace("RALLY: Once per roll for each die in a finalized attack roll and for all characters with a matching RALLY die and trait color printed under their trait star, after resolutions you may choose a friendly character to gain a matching RALLY die. RALLY trait colors specify which attack type they can gain RALLY dies from. BLUE = Friendly Attack Rolls. RED = Opposing Attack Rolls. GREEN = All Attack Rolls.", "")
                 sp["description"] = sp["description"].replace(" When a character gains a RALLY die, place a die with the matching result on their card.", "")
                 sp["description"] = sp["description"].replace(" ()", "")
@@ -689,7 +779,7 @@ class Unit:
             else:
               self.special_powers.append(sp)
   
-    if self.type == "character" or self.type == "bystander" or self.type == "construct":
+    if self.type == "character" or self.type == "bystander":
       # Parse range and number of targets
       tag = soup.find("div", {"style": "float:left;padding-top:3px;"})
       self.unit_range = int(tag.contents[0].string.strip())
@@ -697,17 +787,25 @@ class Unit:
   
       # Parse the combat symbols
       combat_symbols = soup.find("table", class_="icons").tbody.select('tr')
-      self.speed_type = re.search(r"/images/units-m-(.+)\.[a-z]{3}", combat_symbols[0].td.img['src']).group(1)
-      self.attack_type = re.search(r"/images/units-a-(.+)\.[a-z]{3}", combat_symbols[1].td.img['src']).group(1)
-      self.defense_type = re.search(r"/images/units-d-(.+)\.[a-z]{3}", combat_symbols[2].td.img['src']).group(1)
-      self.damage_type = re.search(r"/images/units-g-(.+)\.[a-z]{3}", combat_symbols[3].td.img['src']).group(1)
+      # Hack for Galactus, which is missing symbols.
+      if unit_id in ["wkM-G001b", "wkM-G001b-100"]:
+        self.speed_type = "boot"
+        self.attack_type = "fist"
+        self.defense_type = "shield"
+        self.damage_type = "colossal"
+      else:
+        self.speed_type = re.search(r"/images/units-m-(.+)\.[a-z]{3}", combat_symbols[0].td.img['src']).group(1)
+        self.attack_type = re.search(r"/images/units-a-(.+)\.[a-z]{3}", combat_symbols[1].td.img['src']).group(1)
+        self.defense_type = re.search(r"/images/units-d-(.+)\.[a-z]{3}", combat_symbols[2].td.img['src']).group(1)
+        self.damage_type = re.search(r"/images/units-g-(.+)\.[a-z]{3}", combat_symbols[3].td.img['src']).group(1)
       # Disambiguate between the attack and damage "fist" symbols by making damage 'colossal'
       if self.damage_type == "fist":
         self.damage_type = "colossal"
   
       # Parse the dial
       self.dial_size = 0
-      for col in soup.find_all("table", class_="power"):
+      dials = soup.find_all("table", class_="units_dial")
+      for col in dials[0].find_all("table", class_="power"):
         tags = col.find_all("tr")
         # If it has a title, it's a non-KO click, otherwise skip it.
         if tags[0].td.has_attr('title'):
@@ -731,11 +829,14 @@ class Unit:
             row_obj[types[i] + "_value"] = int(tag.td.string.strip())
           self.dial.append(row_obj)
         self.dial_size += 1
-          
-        # Constructs and bystanders only have a single click
-        if self.type == "bystander" or self.type == "construct":
+        
+        # Bystanders only have a single click
+        if self.type == "bystander":
           break
-      
+
+      if len(dials) > 1:
+        print("Skipping extra dials (%d total) for unit %s" % (len(dials), self.unit_id))
+
     # Sanity-check the dimensions.
     if self.type == "character":
       if self.dimensions == "1x1" or self.dimensions == "1x2":
@@ -752,7 +853,7 @@ class Unit:
       if len(self.dial) > exptected_dial_size:
         print("Warning: for unit '%s', expected a max dial size of %s, but got %d" % (self.unit_id, exptected_dial_size, len(self.dial)))
         self.dial = self.dial[:self.dial_size]
-    elif self.type == "bystander" or self.type == "construct":
+    elif self.type == "bystander":
       if self.dimensions != "1x1":
         print("Warning: for unit '%s', expected 1x1 dimensions, but found '%s'" % (self.unit_id, self.dimensions))
       if self.dial_size != 1:
@@ -868,29 +969,55 @@ class Unit:
     return True;
 
   def apply_update(self, update):
+    update_mode = update.get("__update_mode__", "insert_value")
     for (key, value) in update.items():
-      if key == "special_powers":
-        for i in range(len(value)):
-          for (k, v) in value[i].items():
-            self.special_powers[i][k] = v
+      if key == "__update_mode__":
+        continue
+      elif key == "special_powers":
+        if update_mode == "insert_value":
+          for i in range(len(value)):
+            for (k, v) in value[i].items():
+              self.special_powers[i][k] = v
+        elif update_mode == "insert_list_item":
+          for i in range(len(value)):
+            self.special_powers.insert(i, value[i])
+        else:
+          raise RuntimeError("Don't know how to handle update_mode %s" % update_mode)
       elif key == "dial":
         for i in range(len(value)):
           for (k, v) in value[i].items():
             self.dial[i][k] = v
       elif (key == "defense_type" or
-            key == "object_type" or
+            key == "object_size" or
             key == "point_values"):
         setattr(self, key, value)
       else:
         raise RuntimeError("The update type '%s' for '%s' is currently not supported" % (key, self.unit_id))
 
+  def validate(self):
+    # TODO: Add more sanity checks here.
+    # Sanity-check object types.
+    if self.type == "object":
+      if not self.object_type:
+        print("Warning: for unit '%s' with type 'object' - missing object_type" % self.unit_id)
+      if not self.object_size:
+        print("Warning: for unit '%s' with type 'object' - missing object_size" % self.unit_id)
+
+    # Sanity-check bystander types.
+    if self.type == "bystander":
+      if not self.bystander_type:
+        print("Warning: for unit '%s' with type 'bystander' - missing bystander_type" % self.unit_id)
+
   def output_xml(self):
+    # Convert the unit ID into the value we prefer - (set_id + collector_number)
+    # which may be different than HCRealms.
+    unit_id = self.set_id + self.collector_number
     xml = u"""
     <unit_id>{}</unit_id>
     <set_id>{}</set_id>
     <collector_number>{}</collector_number>
     <name>{}</name>
-    <type>{}</type>""".format(self.unit_id, self.set_id, self.collector_number, clean_string(self.name), self.type)
+    <type>{}</type>""".format(unit_id, self.set_id, self.collector_number, clean_string(self.name), self.type)
     #if self.age:
     #  xml += "\n    <age>%s</age>" % self.age
     if self.rarity:
@@ -912,7 +1039,11 @@ class Unit:
       json.dumps(self.improved_movement), json.dumps(self.improved_targeting))
     if self.object_type:
       xml += "\n    <object_type>%s</object_type>" % self.object_type
+    if self.object_size:
+      xml += "\n    <object_size>%s</object_size>" % self.object_size
     xml += "\n    <object_keyphrases>%s</object_keyphrases>" % json.dumps(self.object_keyphrases)
+    if self.bystander_type:
+      xml += "\n    <bystander_type>%s</bystander_type>" % self.bystander_type
     if self.map_url:
       xml += "\n    <map_url>%s</map_url>" % self.map_url
     if len(self.dial) > 0:
@@ -956,7 +1087,7 @@ class Fetcher:
       set_list_page = f.read()
       f.close()
     else:
-      set_name = SET_MAP[self.set_id];
+      set_name = SET_MAP[self.set_id]["name"];
       self.init_driver()
       self.driver.get('https://www.hcrealms.com/forum/units/units_quicksets.php?q=' + set_name)
       soup = BeautifulSoup(self.driver.page_source, 'html.parser')
@@ -975,10 +1106,19 @@ class Fetcher:
     units_links = soup.find_all("span", {"class": "units_link"})
     set_list = []
     
+    ranges = SET_MAP[self.set_id].get("ranges", None);
+    range_index = 0
+    in_range = False
     unit_count = 0
     for units_link in units_links:
       link = units_link['onclick']
       unit_id = re.search(r"showFigure\('(.+)'\)", link).group(1)
+      # Skip the units that fall outside of the range, if there was one.
+      if ranges and not in_range:
+        if unit_id == ranges[range_index][0]:
+          in_range = True
+        else:
+          continue
       if unit_id_start and unit_id_start != unit_id:
         continue
       unit_id_start = None
@@ -1006,7 +1146,14 @@ class Fetcher:
       unit_count += 1
       if unit_count >= max_units:
         break
-  
+
+      if ranges and in_range:
+        if unit_id == ranges[range_index][1]:
+          in_range = False
+          range_index += 1
+          if range_index >= len(ranges):
+            break
+
     return set_list
         
   def fetch_unit_page(self, unit_id):
@@ -1070,7 +1217,7 @@ if __name__ == "__main__":
       dimensions = set["dimensions"]
       if args.unit_id_stop and unit_id == args.unit_id_stop:
         break
-
+      
       # Skip the units in the "deletions" section of the patch.
       if unit_id in deletions:
         continue
@@ -1080,13 +1227,21 @@ if __name__ == "__main__":
       if unit.parse_unit_page(unit_page):
         # If the unit ID ends in 'r', 'e', or 'v', check for other units with
         # similar same unit ID and if so, merge point values.
+        main_unit = None
         if unit.unit_id.endswith(('r', 'e', 'v', 'x', 'p')):
           main_unit = next((u for u in units if u.unit_id == unit.unit_id[:-1] and u.type == unit.type), None)
-          if (main_unit):
-            # Try to merge the units together and mark the current unit as invalid
-            # so that it's not appending to the list below.
-            if main_unit.merge_point_values(unit):
-              unit = None
+        # If the unit ID ends in with its point value, check for other units with
+        # similar same unit ID and if so, merge point values.
+        else:
+          match_obj = re.search(r"(.*)-\d{2,3}$", unit.unit_id)
+          if match_obj:
+            main_unit = next((u for u in units if u.unit_id == match_obj.group(1) and u.type == unit.type), None)
+
+        if main_unit:
+          # Try to merge the units together and mark the current unit as invalid
+          # so that it's not appending to the list below.
+          if main_unit.merge_point_values(unit):
+            unit = None
 
         elif unit.type == "team_up":
           # Find the associated unit and create a new unit from that by copying
@@ -1135,6 +1290,7 @@ if __name__ == "__main__":
   num_processed = 0
   output_xml = "<resultset>"
   for unit in units:
+    unit.validate()
     unit_xml = unit.output_xml()
     if unit_xml:
       output_xml += "\n  <row>"

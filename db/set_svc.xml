@@ -140,8 +140,8 @@
     "description": "When Iron Man hits with a range attack, after resolutions each hit target is knocked back 4 squares."
   }
 ]</special_powers>
-    <improved_movement>["hindering"]</improved_movement>
-    <improved_targeting>[]</improved_targeting>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>["hindering"]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>6</unit_range>
     <targets>2</targets>
@@ -1582,6 +1582,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>standard</bystander_type>
     <unit_range>2</unit_range>
     <targets>1</targets>
     <speed_type>boot</speed_type>
@@ -3429,8 +3430,8 @@
     ]
   }
 ]</special_powers>
-    <improved_movement>["elevated", "hindering", "adjacent"]</improved_movement>
-    <improved_targeting>[]</improved_targeting>
+    <improved_movement>["elevated", "hindering"]</improved_movement>
+    <improved_targeting>["adjacent"]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>6</unit_range>
     <targets>1</targets>
@@ -4306,8 +4307,8 @@
     ]
   }
 ]</special_powers>
-    <improved_movement>["hindering"]</improved_movement>
-    <improved_targeting>[]</improved_targeting>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>["hindering"]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>7</unit_range>
     <targets>1</targets>
@@ -4916,6 +4917,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>standard</bystander_type>
     <unit_range>0</unit_range>
     <targets>1</targets>
     <speed_type>boot</speed_type>
@@ -6607,6 +6609,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>standard</bystander_type>
     <unit_range>0</unit_range>
     <targets>1</targets>
     <speed_type>boot</speed_type>
@@ -6920,8 +6923,8 @@
     ]
   }
 ]</special_powers>
-    <improved_movement>["adjacent"]</improved_movement>
-    <improved_targeting>[]</improved_targeting>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>["adjacent"]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>7</unit_range>
     <targets>1</targets>
@@ -7426,8 +7429,8 @@
     ]
   }
 ]</special_powers>
-    <improved_movement>["elevated", "hindering", "adjacent"]</improved_movement>
-    <improved_targeting>[]</improved_targeting>
+    <improved_movement>["elevated", "hindering"]</improved_movement>
+    <improved_targeting>["adjacent"]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>5</unit_range>
     <targets>2</targets>
@@ -8115,7 +8118,7 @@
   {
     "type": "trait", 
     "name": "THE GENERAL THAT FOUNDED A NATION", 
-    "description": "Leadership, Super Senses. // When Spider-Man 1776 hits, until your next turn opposing forces have Action Total -1 (minimum 2). // Opposing characters within 6 squares can\u010f\u017c\u02ddt use Leadership or Autonomous.", 
+    "description": "Leadership, Super Senses. // When Spider-Man 1776 hits, until your next turn opposing forces have Action Total -1 (minimum 2). // Opposing characters within 6 squares can't use Leadership or Autonomous.", 
     "powers": [
       "leadership", 
       "super_senses"
@@ -8575,7 +8578,7 @@
     <set_id>svc</set_id>
     <collector_number>s001</collector_number>
     <name>Pumpkin Bombs</name>
-    <type>equipment</type>
+    <type>object</type>
     <rarity>rare</rarity>
     <point_values>[5]</point_values>
     <properties>[]</properties>
@@ -8593,7 +8596,8 @@
 ]</special_powers>
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
-    <object_type>light</object_type>
+    <object_type>equipment</object_type>
+    <object_size>light</object_size>
     <object_keyphrases>["equip_any", "unequip_ko"]</object_keyphrases>
     <dial>[]</dial>
   </row>
@@ -8602,7 +8606,7 @@
     <set_id>svc</set_id>
     <collector_number>s002</collector_number>
     <name>Illusion Generator</name>
-    <type>equipment</type>
+    <type>object</type>
     <rarity>rare</rarity>
     <point_values>[10]</point_values>
     <properties>[]</properties>
@@ -8620,7 +8624,8 @@
 ]</special_powers>
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
-    <object_type>heavy</object_type>
+    <object_type>equipment</object_type>
+    <object_size>heavy</object_size>
     <object_keyphrases>["equip_any", "unequip_drop"]</object_keyphrases>
     <dial>[]</dial>
   </row>
@@ -8640,6 +8645,7 @@
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>standard</bystander_type>
     <unit_range>0</unit_range>
     <targets>1</targets>
     <speed_type>boot</speed_type>
@@ -8665,7 +8671,7 @@
     <set_id>svc</set_id>
     <collector_number>s003</collector_number>
     <name>Dimensional Watch</name>
-    <type>equipment</type>
+    <type>object</type>
     <rarity>rare</rarity>
     <point_values>[5]</point_values>
     <properties>[]</properties>
@@ -8683,7 +8689,8 @@
 ]</special_powers>
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
-    <object_type>light</object_type>
+    <object_type>equipment</object_type>
+    <object_size>light</object_size>
     <object_keyphrases>["equip_any", "unequip_drop"]</object_keyphrases>
     <dial>[]</dial>
   </row>
@@ -8692,7 +8699,7 @@
     <set_id>svc</set_id>
     <collector_number>s004</collector_number>
     <name>Carnage Symbiote</name>
-    <type>equipment</type>
+    <type>object</type>
     <rarity>super_rare</rarity>
     <point_values>[10]</point_values>
     <properties>[]</properties>
@@ -8711,7 +8718,8 @@
 ]</special_powers>
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
-    <object_type>light</object_type>
+    <object_type>equipment</object_type>
+    <object_size>light</object_size>
     <object_keyphrases>["equip_any", "unequip_ko"]</object_keyphrases>
     <dial>[]</dial>
   </row>
@@ -8720,7 +8728,7 @@
     <set_id>svc</set_id>
     <collector_number>s005</collector_number>
     <name>All-Black the Necrosword</name>
-    <type>equipment</type>
+    <type>object</type>
     <rarity>super_rare</rarity>
     <point_values>[15]</point_values>
     <properties>[]</properties>
@@ -8735,7 +8743,8 @@
 ]</special_powers>
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
-    <object_type>heavy</object_type>
+    <object_type>equipment</object_type>
+    <object_size>heavy</object_size>
     <object_keyphrases>["indestructible", "equip_any", "unequip_drop"]</object_keyphrases>
     <dial>[]</dial>
   </row>
@@ -8758,7 +8767,8 @@
 ]</special_powers>
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
-    <object_type>light</object_type>
+    <object_type>special</object_type>
+    <object_size>light</object_size>
     <object_keyphrases>[]</object_keyphrases>
     <dial>[]</dial>
   </row>
@@ -8767,7 +8777,7 @@
     <set_id>svc</set_id>
     <collector_number>s007</collector_number>
     <name>Waldo Arms</name>
-    <type>equipment</type>
+    <type>object</type>
     <rarity>super_rare</rarity>
     <point_values>[10]</point_values>
     <properties>[]</properties>
@@ -8785,7 +8795,8 @@
 ]</special_powers>
     <improved_movement>[]</improved_movement>
     <improved_targeting>[]</improved_targeting>
-    <object_type>heavy</object_type>
+    <object_type>equipment</object_type>
+    <object_size>heavy</object_size>
     <object_keyphrases>["equip_any", "unequip_drop"]</object_keyphrases>
     <dial>[]</dial>
   </row>
