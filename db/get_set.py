@@ -364,12 +364,13 @@ class Unit:
         self.type = "bystander"
         self.bystander_type = "construct"
       elif soup.find("td", class_="card_special_object"):
-        self.type = "object"
         if ((soup.find(text=re.compile(r'.*EFFECT: .*')) or
              soup.find(text=re.compile(r'.*Effect: .*'))) and
              not soup.find(text=re.compile(r".*is not equipment.*"))):
+          self.type = "equipment"
           self.object_type = "equipment"
         else:
+          self.type = "object"
           self.object_type = "standard"
       elif soup.find("td", class_="card_id_card"):
         if soup.find(text=re.compile(r'\s*Mystery Card\s*')):
@@ -416,7 +417,7 @@ class Unit:
 
     if self.type == "character" or self.type == "bystander":
       point_value_tag = soup.find("div", {"style": "float:right;padding-top:3px;"})
-    elif self.type == "object" or self.type == "id_card" or self.type == "mystery_card":
+    elif self.type == "object" or self.type == "equipment" or self.type == "id_card" or self.type == "mystery_card":
       point_value_tag = soup.find("td", class_="tfoot")
     elif self.type == "team_up" or self.type == "tarot_card":
       point_value_tag = None
@@ -457,7 +458,7 @@ class Unit:
     # Parse keywords
     if (self.type == "character" or
         self.type == "bystander" or
-        (self.type == "object" and self.object_type == "equipment") or
+        self.type == "equipment" or
         self.type == "id_card" or
         self.type == "mystery_card"):
       tag_list = soup.select("span[onclick^=showByKeywordId]")
@@ -466,123 +467,123 @@ class Unit:
 
     # Parse object special powers
     if self.type == "object":
-      if self.object_type != "equipment":
-        equip_tag = soup.find("td", class_="card_special_object").parent
-        tag_list = equip_tag.next_sibling.next_sibling.find_all("div")
-        for tag in tag_list:
-          if tag.string:
-            # The attribute list is formed by a single string that needs to be
-            # split apart.
-            parts = tag.string.strip().split(".")
+      equip_tag = soup.find("td", class_="card_special_object").parent
+      tag_list = equip_tag.next_sibling.next_sibling.find_all("div")
+      for tag in tag_list:
+        if tag.string:
+          # The attribute list is formed by a single string that needs to be
+          # split apart.
+          parts = tag.string.strip().split(".")
+        else:
+          parts = []
+          for subtag in tag.children:
+            if subtag.string:
+              parts.append(subtag.string.strip())
+        description = None
+        for part in parts:
+          part = part.strip()
+          if part == "":
+            continue
+
+          if part == "Light Object":
+            self.object_size = "light"
+          elif part == "Heavy Object":
+            self.object_size = "heavy"
+          elif part == "Ultra Light Object":
+            self.object_size = "ultra_light"
+          elif part == "Ultra Heavy Object":
+            self.object_size = "ultra_heavy"
+          elif part == "Special Object":
+            self.object_type = "special"
+          elif part == "Disguised Plastic Man Special Object":
+            self.object_type = "plastic_man"
+          elif not description:
+            description = part + "."
           else:
-            parts = []
-            for subtag in tag.children:
-              if subtag.string:
-                parts.append(subtag.string.strip())
-          description = None
+            description += " " + part + "."
+
+        if description:
+          if self.object_type == "standard":
+            self.object_type = "special"
+          self.special_powers.append(OrderedDict([
+            ("type", "object"),
+            ("description", clean_string(description))
+          ]))
+          self.special_powers[-1] = self.parse_powers_from_description(self.special_powers[-1])
+    # Parse equipment special powers
+    elif self.type == "equipment":
+
+      equip_tag = soup.find("td", class_="card_special_object").parent
+      tag_list = equip_tag.next_sibling.next_sibling.find_all("div")
+      if tag_list:
+        tag = tag_list[0]
+        # Skip the first item in the list if it's the keyword list.
+        if tag.strong:
+          tag = tag_list[1]
+
+        children = list(tag.children)
+        attr_list = []
+        if len(children) == 1:
+          # The attribute list is formed by a single string that needs to be
+          # split apart.
+          parts = children[0].string.strip().split(".")
           for part in parts:
             part = part.strip()
             if part == "":
               continue
-  
-            if part == "Light Object":
-              self.object_size = "light"
-            elif part == "Heavy Object":
-              self.object_size = "heavy"
-            elif part == "Ultra Light Object":
-              self.object_size = "ultra_light"
-            elif part == "Ultra Heavy Object":
-              self.object_size = "ultra_heavy"
-            elif part == "Special Object":
-              self.object_type = "special"
-            elif part == "Disguised Plastic Man Special Object":
-              self.object_type = "plastic_man"
-            elif not description:
-              description = part + "."
+
+            if (part.upper() == "INDESTRUCTIBLE" or
+                part.startswith("EQUIP: ") or
+                part.startswith("UNEQUIP: ") or
+                part.endswith("Object")):
+              attr_list.append(part)
+            elif part.startswith("EFFECT: "):
+              attr_list.append(part + ".")
+            elif len(attr_list) > 0 and attr_list[-1].startswith("EFFECT: "):
+              attr_list[-1] += " " + part + "."
             else:
-              description += " " + part + "."
-  
-          if description:
-            if self.object_type == "standard":
-              self.object_type = "special"
-            self.special_powers.append(OrderedDict([
-              ("type", "object"),
-              ("description", clean_string(description))
-            ]))
-            self.special_powers[-1] = self.parse_powers_from_description(self.special_powers[-1])
-      # Parse equipment special powers
-      else:
-        equip_tag = soup.find("td", class_="card_special_object").parent
-        tag_list = equip_tag.next_sibling.next_sibling.find_all("div")
-        if tag_list:
-          tag = tag_list[0]
-          # Skip the first item in the list if it's the keyword list.
-          if tag.strong:
-            tag = tag_list[1]
-  
-          children = list(tag.children)
-          attr_list = []
-          if len(children) == 1:
-            # The attribute list is formed by a single string that needs to be
-            # split apart.
-            parts = children[0].string.strip().split(".")
-            for part in parts:
-              part = part.strip()
-              if part == "":
-                continue
-  
-              if (part.upper() == "INDESTRUCTIBLE" or
-                  part.startswith("EQUIP: ") or
-                  part.startswith("UNEQUIP: ") or
-                  part.endswith("Object")):
-                attr_list.append(part)
-              elif part.startswith("EFFECT: "):
-                attr_list.append(part + ".")
-              elif len(attr_list) > 0 and attr_list[-1].startswith("EFFECT: "):
-                attr_list[-1] += " " + part + "."
-              else:
-                print("Skipping unknown object attribute part '%s'" % part)
+              print("Skipping unknown object attribute part '%s'" % part)
+        else:
+          for attr in children:
+            # Ignore non-strings.
+            if attr.string:
+              attr_list.append(attr.strip())
+
+        for attr in attr_list:
+          if len(attr) <= 0:
+            continue;
+
+          if (attr.upper() == "INDESTRUCTIBLE" or
+              attr.startswith("EQUIP: ") or
+              attr.startswith("UNEQUIP: ") or
+              attr == "Sword Equipment"):
+            self.object_keyphrases.append(fix_style(attr))
+          elif attr.startswith("Light Object"):
+            self.object_size = "light"
+          elif attr == "Heavy Object":
+            self.object_size = "heavy"
+          elif attr == "Ultra Light Object":
+            self.object_size = "ultra_light"
+          elif attr == "Ultra Heavy Object":
+            self.object_size = "ultra_heavy"
           else:
-            for attr in children:
-              # Ignore non-strings.
-              if attr.string:
-                attr_list.append(attr.strip())
-  
-          for attr in attr_list:
-            if len(attr) <= 0:
-              continue;
-  
-            if (attr.upper() == "INDESTRUCTIBLE" or
-                attr.startswith("EQUIP: ") or
-                attr.startswith("UNEQUIP: ") or
-                attr == "Sword Equipment"):
-              self.object_keyphrases.append(fix_style(attr))
-            elif attr.startswith("Light Object"):
-              self.object_size = "light"
-            elif attr == "Heavy Object":
-              self.object_size = "heavy"
-            elif attr == "Ultra Light Object":
-              self.object_size = "ultra_light"
-            elif attr == "Ultra Heavy Object":
-              self.object_size = "ultra_heavy"
+            # Handle equipment special powers, including "EFFECT"
+            sp = attr.split(':', 1)
+            if len(sp) >= 2:
+              sp_name = sp[0]
+              sp_description = sp[1].strip()
+              self.special_powers.append(OrderedDict([
+                ("type", "equipment"),
+                ("name", sp_name),
+                ("description", clean_string(sp_description))
+              ]))
+              self.special_powers[-1] = self.parse_powers_from_description(self.special_powers[-1])
+            elif len(self.special_powers) > 0:
+              # Append it to the end of the previous description.
+              self.special_powers[-1]["description"] += clean_string(" " + attr)
+              self.special_powers[-1] = self.parse_powers_from_description(self.special_powers[-1])
             else:
-              # Handle equipment special powers, including "EFFECT"
-              sp = attr.split(':', 1)
-              if len(sp) >= 2:
-                sp_name = sp[0]
-                sp_description = sp[1].strip()
-                self.special_powers.append(OrderedDict([
-                  ("type", "equipment"),
-                  ("name", sp_name),
-                  ("description", clean_string(sp_description))
-                ]))
-                self.special_powers[-1] = self.parse_powers_from_description(self.special_powers[-1])
-              elif len(self.special_powers) > 0:
-                # Append it to the end of the previous description.
-                self.special_powers[-1]["description"] += clean_string(" " + attr)
-                self.special_powers[-1] = self.parse_powers_from_description(self.special_powers[-1])
-              else:
-                print("Skipping unknown object attribute '%s'" % attr)
+              print("Skipping unknown object attribute '%s'" % attr)
 
     # Parse ID and mystery cards
     if self.type == "id_card" or self.type == "mystery_card":
@@ -625,7 +626,8 @@ class Unit:
     if (self.type == "character" or
         self.type == "team_up" or
         self.type == "bystander" or
-        self.type == "object"):
+        self.type == "object" or
+        self.type == "equipment"):
       tag_list = soup.find_all(text=re.compile(r'\s*Special Powers\s*'))
       if len(tag_list) > 0:
         sp_tag = tag_list[0]
@@ -997,7 +999,7 @@ class Unit:
   def validate(self):
     # TODO: Add more sanity checks here.
     # Sanity-check object types.
-    if self.type == "object":
+    if self.type == "object" or self.type == "equipment":
       if not self.object_type:
         print("Warning: for unit '%s' with type 'object' - missing object_type" % self.unit_id)
       if not self.object_size:
