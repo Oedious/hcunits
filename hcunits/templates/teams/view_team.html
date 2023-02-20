@@ -2,21 +2,33 @@
 
 {% block team_header %}
 <div id="teamHeader" class="row">
-  <H4>{{ user.username }}</H4>
-  <div class="col s12">
-    {% if team.name %}{{team.name}}{% endif %}
-  </div>
-  <div class="col s12">
-    {% if team.description %}{{team.description}}{% endif %}
-  </div>
-  <div class="col s12 m3">
-    <label>Points</label>
-    <div>{{team.point_limit}}</div>
-  </div>
-  <div class="col s12 m5">
-    <label>Age</label>
-    {% if team.age == "modern" %}<div>Modern</div>{% endif %}
-    {% if team.age == "golden" %}<div>Golden</div>{% endif %}
+  <div class="col">
+    <H4>{{ owner }}</H4>
+    <div class="row">
+      {% if team.name %}
+        <div id="teamName">
+          {{team.name}}
+        </div>
+      {% endif %}
+    </div>
+    <div class="row">
+      {% if team.description %}
+        <div id="teamDescription">
+          {{team.description}}
+        </div>
+      {% endif %}
+    </div>
+    <div id="teamHeaderFormat" class="row">
+      <div class="col s12 m3">
+        <label>Points</label>
+        <div>{{team.point_limit}}</div>
+      </div>
+      <div class="col s12 m5">
+        <label>Age</label>
+        {% if team.age == "modern" %}<div>Modern</div>{% endif %}
+        {% if team.age == "golden" %}<div>Golden</div>{% endif %}
+      </div>
+    </div>
   </div>
 </div>
 {% endblock %}

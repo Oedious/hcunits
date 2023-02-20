@@ -137,7 +137,7 @@ class TeamView(View):
     if request.user.is_authenticated and request.user == team.user:
       return render(request, 'teams/edit_team.html', {'team': wire_format_team})
     elif team.visibility == "public" or team.visibility == "unlisted":
-      return render(request, 'teams/view_team.html', {'team': wire_format_team})
+      return render(request, 'teams/view_team.html', {'team': wire_format_team, 'owner': team.user.username})
     else:
       return HttpResponse("Unauthorized", status=401)
 

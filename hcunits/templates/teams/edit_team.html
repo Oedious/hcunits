@@ -7,32 +7,36 @@
 
 {% block team_header %}
 <div id="teamHeader" class="row">
-  <H4>{{ user.username }}</H4>
-  <div class="input-field col s12">
-    <input id="teamName" type="text" class="validate" placeholder="Change Team Name"{% if team.name %} value="{{team.name}}"{% endif %}>
-    <label for="teamName"></label>
-  </div>
-  <div class="input-field col s12">
-    <input id="teamDescription" type="text" placeholder="Change Team Description"{% if team.description %} value="{{team.description}}"{% endif %}>
-  </div>
-  <div class="input-field col s12 m3">
-    <input id="teamPointLimit" class="teamInput" type="number" min="0" max="9999"{% if team.point_limit %} value="{{team.point_limit}}"{% endif %}>
-    <label for="teamPointLimit">Points</label>
-  </div>
-  <div class="input-field col s12 m5">
-    <select id="teamAge">
-      <option value="modern"{% if team.age == "modern" %} selected{% endif %}>Modern</option>
-      <option value="golden"{% if team.age == "golden" %} selected{% endif %}>Golden</option>
-    </select>
-    <label>Age</label>
-  </div>
-  <div class="input-field col s12 m4">
-    <select id="teamVisibility">
-      <option value="private"{% if team.visibility == "private" %} selected{% endif %}>Private</option>
-      <option value="unlisted"{% if team.visibility == "unlisted" %} selected{% endif %}>Unlisted</option>
-      <option value="public"{% if team.visibility == "public" %} selected{% endif %}>Public</option>
-    </select>
-    <label>Visibility</label>
+  <div class="col">
+    <H4>{{ user.username }}</H4>
+    <div class="input-field row">
+      <input id="teamName" type="text" class="validate" placeholder="Change Team Name"{% if team.name %} value="{{team.name}}"{% endif %}>
+      <label for="teamName"></label>
+    </div>
+    <div class="input-field row">
+      <input id="teamDescription" type="text" placeholder="Change Team Description"{% if team.description %} value="{{team.description}}"{% endif %}>
+    </div>
+    <div class="row">
+      <div class="input-field col s12 m3">
+        <input id="teamPointLimit" class="teamInput" type="number" min="0" max="9999"{% if team.point_limit %} value="{{team.point_limit}}"{% endif %}>
+        <label for="teamPointLimit">Points</label>
+      </div>
+      <div class="input-field col s12 m5">
+        <select id="teamAge">
+          <option value="modern"{% if team.age == "modern" %} selected{% endif %}>Modern</option>
+          <option value="golden"{% if team.age == "golden" %} selected{% endif %}>Golden</option>
+        </select>
+        <label>Age</label>
+      </div>
+      <div class="input-field col s12 m4">
+        <select id="teamVisibility">
+          <option value="private"{% if team.visibility == "private" %} selected{% endif %}>Private</option>
+          <option value="unlisted"{% if team.visibility == "unlisted" %} selected{% endif %}>Unlisted</option>
+          <option value="public"{% if team.visibility == "public" %} selected{% endif %}>Public</option>
+        </select>
+        <label>Visibility</label>
+      </div>
+    </div>
   </div>
 </div>
 <div id="deleteTeamButton">

@@ -91,13 +91,14 @@ class TeamManager {
       }
     }
 
-    var html = `
-      <div class='row'>
-        <h6 class="teamSectionHeader"><div><b>Maps</b></div>`;
+    var html = "<div class='row'><h6 class='teamSectionHeader'><div><b>Main Force</b></div>";
     if (points) {
       html += `<div class="teamSectionPointTotal"><b>${points}</b></div>`;
     }
-    html += `</h6>
+    html += "</h6>";
+    
+    if (!READ_ONLY) {
+      html += `
         <div id="teamSectionMainForceButton" class="teamSectionHeaderButton" title="Search for Main Force Units">
           <a class="btn-floating btn-small waves-effect-waves-light blue" onclick="sideNav.showSetList(); return false;">
             <i class="material-symbols-outlined" style="color:white;">group</i>
@@ -107,8 +108,9 @@ class TeamManager {
           <a class="btn-floating btn-small waves-effect-waves-light blue" onclick="sideNav.showSearchByTypeResults('equipment'); return false;">
             <i class="material-symbols-outlined" style="color:white;">swords</i>
           </a>
-        </div>
-        <ul>`;
+        </div>`;
+    }
+    html += "<ul>";
 
     if (this.team_.main_force.length <= 0) {
       html += "<i>Search for units to add to your Main Force...</i>";
@@ -157,15 +159,17 @@ class TeamManager {
     if (READ_ONLY && this.team_.sideline.length <= 0) {
       return "";
     }
-    var html = `
-      <div class='row'>
-        <h6><b>Sideline</b></h6>
+    var html = "<div class='row'><h6><b>Sideline</b></h6>";
+    
+    if (!READ_ONLY) {
+      html += `
         <div id="teamSectionSidelineButton" class="teamSectionHeaderButton" title="Search for Sideline Units">
           <a class="btn-floating btn-small waves-effect-waves-light blue" onclick="sideNav.showSetList(); return false;">
             <i class="material-symbols-outlined" style="color:white;">sync_alt</i>
           </a>
-        </div>
-        <ul>`;
+        </div>`;
+    }
+    html += "<ul>";
     if (this.team_.sideline.length <= 0) {
       html += "<i>Search for units to add to your Sideline...</i>";
     } else {
@@ -206,13 +210,16 @@ class TeamManager {
     if (points) {
       html += `<div class="teamSectionPointTotal"><b>${points}</b></div>`;
     }
-    html += `</h6>
+    html += "</h6>"
+    if (!READ_ONLY) {
+      html += `
         <div id="teamSectionMapButton" class="teamSectionHeaderButton" title="Search for Maps">
           <a class="btn-floating btn-small waves-effect-waves-light blue" onclick="sideNav.showSearchByTypeResults('map'); return false;">
             <i class="material-symbols-outlined" style="color:white;">map</i>
           </a>
-        </div>
-        <ul>`;
+        </div>`;
+    }
+    html += "<ul>";
     if (this.team_.maps.length <= 0) {
       html += "<i>Add up to 3 Maps...</i>";
     } else {
@@ -244,15 +251,16 @@ class TeamManager {
     if (READ_ONLY && this.team_.tarot_cards.length <= 0) {
       return "";
     }
-    var html = `
-      <div class='row'>
-        <h6><b>Tarot Deck</b></h6>
+    var html = "<div class='row'><h6><b>Tarot Deck</b></h6>";
+    if (!READ_ONLY) {
+      html += `
         <div id="teamSectionTarotCardButton" class="teamSectionHeaderButton" title="Search for Tarot Cards">
           <a class="btn-floating btn-small waves-effect-waves-light blue" onclick="sideNav.showSearchByTypeResults('tarot_card'); return false;">
             <i class="material-symbols-outlined" style="color:white;">content_copy</i>
           </a>
-        </div>
-        <ul>`;
+        </div>`;
+    }
+    html += "<ul>";
     if (this.team_.tarot_cards.length <= 0) {
       html += "<i>Add up to 10 Tarot Cards...</i>";
     } else {
@@ -287,19 +295,20 @@ class TeamManager {
       points += unit.point_value;
     }
 
-    var html = `
-      <div class='row'>
-        <h6 class="teamSectionHeader"><div><b>Objects</b></div>`;
+    var html = "<div class='row'><h6 class='teamSectionHeader'><div><b>Objects</b></div>";
     if (points) {
       html += `<div class="teamSectionPointTotal"><b>${points}</b></div>`;
     }
-    html += `</h6>
+    html += "</h6>";
+    if (!READ_ONLY) {
+      html += `
         <div id="teamSectionObjectsButton" class="teamSectionHeaderButton" title="Search for Objects">
           <a class="btn-floating btn-small waves-effect-waves-light blue" onclick="sideNav.showSearchByTypeResults('object'); return false;">
             <i class="material-symbols-outlined" style="color:white;">cookie</i>
           </a>
-        </div>
-        <ul>`;
+        </div>`;
+    }
+    html += "<ul>";
     if (this.team_.objects.length <= 0) {
       html += "<i>Add up to 3 Objects...</i>";
     } else {

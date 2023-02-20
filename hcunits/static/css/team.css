@@ -23,7 +23,7 @@ main {
 }
 
 #teamHeader * {
-  margin: 8px 0 0 0;
+  margin: 2px 0 0 0;
 }
 
 #teamHeader div input,
@@ -44,6 +44,35 @@ main {
 #teamHeader .input-field div input[type=text]:focus {
   color: white;
   background-color: transparent;
+  height: 1.5rem !important;
+}
+
+#teamName {
+  font-size: 58px;
+  padding-bottom: 15px;
+}
+
+input#teamName {
+  height: 48px;
+  line-height: 0px !important;
+}
+
+div#teamName {
+  line-height: 1 !important;
+  margin-bottom: 10px;
+}
+
+#teamDescription {
+  height: 20px;
+  line-height: 0px !important;
+}
+
+input#teamDescription {
+  margin-bottom: 20px;
+}
+
+#teamHeaderFormat {
+  margin-bottom: 10px;
 }
 
 #deleteTeamButton {
