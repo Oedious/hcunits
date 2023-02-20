@@ -119,4 +119,11 @@ class ObjectView extends SmallUnitView {
     html += "</div>";
     return html;
   }
+  
+  drawFooter_() {
+    if (this.unit_.object_type == "standard") {
+      return "";
+    }
+    return "<img class='specialObjectIcon' src='/static/images/gear.png' alt=''/>";
+  }
 }
