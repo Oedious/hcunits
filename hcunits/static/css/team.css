@@ -161,11 +161,20 @@ main {
 }
 
 .teamItem {
+  height: 25px;
   margin-top: 5px;
   border-bottom: 1px solid rgba(0, 0, 0, .14);
   display: flex;
-  align-items: center;
+  align-items: bottom;
   justify-content: flex-start;
+}
+
+.teamItem:hover .teamItemPoints {
+  display: none;
+}
+
+.teamItem:hover .teamItemRemoveButton {
+  display: unset;
 }
 
 .teamItemRemoveButton {
@@ -174,7 +183,7 @@ main {
   border-radius: 12px;
   background-color: transparent;
   transition: background-color .3s;
-  margin-right: 3px;
+  display: none;
 }
 
 .teamItemRemoveButton:hover {

@@ -80,38 +80,36 @@ class TeamManager {
     for (var i = 0; i < this.team_.main_force.length; ++i) {
       const unit = this.team_.main_force[i];
       html += "<li class='teamItem'>";
+      html += `
+          <div class="teamItemText">
+            <a href="#" class="teamItemUnitLink" onclick="unitManager.showUnit('${unit.unit_id}'); return false;">
+              ${unit.name} (${unit.unit_id})
+            </a>
+            <div class="teamItemPoints">${unit.point_value}</div>`;
       if (!READ_ONLY) {
         html += `
           <a class="teamItemRemoveButton" href="#" onclick="teamManager.removeUnit('main_force', ${i}); return false;">
             <i class="material-icons">cancel</i>
           </a>`;
       }
-      html += `
-          <div class="teamItemText">
-            <a href="#" class="teamItemUnitLink" onclick="unitManager.showUnit('${unit.unit_id}'); return false;">
-              ${unit.name} (${unit.unit_id})
-            </a>
-            <div class="teamItemPoints">${unit.point_value}</div>
-          </div>
-        </li>`;
+      html += "</div></li>";
       if (unit.equipment) {
         const equipment = unit.equipment;
         html += "<li class='teamItem'>";
-        if (!READ_ONLY) {
-          html += `
-            <a class="teamItemRemoveButton" href="#" onclick="teamManager.removeUnit('equipment', ${i}); return false;">
-              <i class="material-icons">cancel</i>
-            </a>`;
-        }
         html += `
             <i class="material-icons" title="Equipped With">subdirectory_arrow_right</i>
             <div class="teamItemText">
               <a href="#" class="teamItemUnitLink" onclick="unitManager.showUnit('${equipment.unit_id}'); return false;">
                 ${equipment.name} (${equipment.unit_id})
               </a>
-              <div class="teamItemPoints">${equipment.point_value}</div>
-            </div>
-          </li>`;
+              <div class="teamItemPoints">${equipment.point_value}</div>`;
+        if (!READ_ONLY) {
+          html += `
+            <a class="teamItemRemoveButton" href="#" onclick="teamManager.removeUnit('equipment', ${i}); return false;">
+              <i class="material-icons">cancel</i>
+            </a>`;
+        }
+        html += "</div></li>";
       }
     }
     html += "</ul>";
@@ -125,18 +123,19 @@ class TeamManager {
     var html = "<div class='row'><h6><b>Sideline</b></h6><ul>";
     for (var i = 0; i < this.team_.sideline.length; ++i) {
       const unit = this.team_.sideline[i];
-      html += "<li class='teamItem'>";
+      html += `
+        <li class='teamItem'>
+          <div class="teamItemText">
+            <a href="#" class="teamItemUnitLink" onclick="unitManager.showUnit('${unit.unit_id}'); return false;">
+              ${unit.name} (${unit.unit_id})
+            </a>`;
       if (!READ_ONLY) {
         html += `
           <a class="teamItemRemoveButton" href="#" onclick="teamManager.removeUnit('sideline', ${i}); return false;">
             <i class="material-icons">cancel</i>
           </a>`;
       }
-      html += `
-          <a href="#" class="teamItemUnitLink" onclick="unitManager.showUnit('${unit.unit_id}'); return false;">
-            ${unit.name} (${unit.unit_id})
-          </a>
-        </li>`;
+      html += "</div></li>";
     }
     html += "</ul></div>";
     return html;
@@ -149,18 +148,19 @@ class TeamManager {
     var html = "<div class='row'><h6><b>Maps</b></h6><ul>";
     for (var i = 0; i < this.team_.maps.length; ++i) {
       const unit = this.team_.maps[i];
-      html += "<li class='teamItem'>";
+      html += 
+        `<li class='teamItem'>
+          <div class="teamItemText">
+            <a href="#" class="teamItemUnitLink" onclick="unitManager.showUnit('${unit.unit_id}'); return false;">
+              ${unit.name} (${unit.unit_id})
+            </a>`;
       if (!READ_ONLY) {
         html += `
           <a class="teamItemRemoveButton" href="#" onclick="teamManager.removeUnit('maps', ${i}); return false;">
             <i class="material-icons">cancel</i>
           </a>`;
       }
-      html += `
-          <a href="#" class="teamItemUnitLink" onclick="unitManager.showUnit('${unit.unit_id}'); return false;">
-            ${unit.name} (${unit.unit_id})
-          </a>
-        </li>`;
+      html += "</div></li>";
     }
     html += "</ul></div>";
     return html;
@@ -173,18 +173,19 @@ class TeamManager {
     var html = "<div class='row'><h6><b>Tarot Deck</b></h6><ul>";
     for (var i = 0; i < this.team_.tarot_cards.length; ++i) {
       const unit = this.team_.tarot_cards[i];
-      html += "<li class='teamItem'>";
+      html +=
+        `<li class='teamItem'>
+          <div class="teamItemText">
+            <a href="#" class="teamItemUnitLink" onclick="unitManager.showUnit('${unit.unit_id}'); return false;">
+              ${unit.name} (${unit.unit_id})
+            </a>`;
       if (!READ_ONLY) {
         html += `
           <a class="teamItemRemoveButton" href="#" onclick="teamManager.removeUnit('tarot_cards', ${i}); return false;">
             <i class="material-icons">cancel</i>
           </a>`;
       }
-      html += `
-          <a href="#" class="teamItemUnitLink" onclick="unitManager.showUnit('${unit.unit_id}'); return false;">
-            ${unit.name} (${unit.unit_id})
-          </a>
-        </li>`;
+      html += "</div></li>";
     }
     html += "</ul></div>";
     return html;
@@ -197,18 +198,18 @@ class TeamManager {
     var html = "<div class='row'><h6><b>Objects</b></h6><ul>";
     for (var i = 0; i < this.team_.objects.length; ++i) {
       const unit = this.team_.objects[i];
-      html += "<li class='teamItem'>";
+      html += `
+          <div class="teamItemText">
+            <a href="#" class="teamItemUnitLink" onclick="unitManager.showUnit('${unit.unit_id}'); return false;">
+              ${unit.name} (${unit.unit_id})
+            </a>`;
       if (!READ_ONLY) {
         html += `
           <a class="teamItemRemoveButton" href="#" onclick="teamManager.removeUnit('objects', ${i}); return false;">
             <i class="material-icons">cancel</i>
           </a>`;
       }
-      html += `
-          <a href="#" class="teamItemUnitLink" onclick="unitManager.showUnit('${unit.unit_id}'); return false;">
-            ${unit.name} (${unit.unit_id})
-          </a>
-        </li>`;
+      html += "</div></li>";
     }
     html += "</ul></div>";
     return html;
