@@ -161,29 +161,50 @@ class CharacterView extends BaseUnitView {
     var html = "<div id='largeCardImprovedAbilities'>";
     // First iterate through each array and collect a list of all the symbols
     // that need to be drawn.
-    var img_urls = [];
+    var imp_info = [];
     if (this.unit_.improved_movement.length > 0) {
-      img_urls.push("/static/images/imp_movement.png")
+      imp_info.push({
+        "url": "/static/images/imp_movement.png",
+      });
     }
     for (const im of this.unit_.improved_movement) {
-      img_urls.push(`/static/images/imp_${im}.png`)
+      const info = IMPROVED_MOVEMENT_LIST[im];
+      imp_info.push({
+        "tooltip": `<b>${escapeHtml(info.name)}</b>: ${escapeHtml(info.description)}`,
+        "url": `/static/images/imp_${im}.png`
+      });
     }
     if (this.unit_.improved_targeting.length > 0) {
-      img_urls.push("/static/images/imp_targeting.png")
+      imp_info.push({
+        "url": "/static/images/imp_targeting.png",
+      });
     }
     for (const it of this.unit_.improved_targeting) {
-      img_urls.push(`/static/images/imp_${it}.png`)
+      const info = IMPROVED_TARGETING_LIST[it];
+      imp_info.push({
+        "tooltip": `<b>${escapeHtml(info.name)}</b>: ${escapeHtml(info.description)}`,
+        "url": `/static/images/imp_${it}.png`
+      });
     }
 
     // Now go around the unit circle, drawing each element.
     const INCREMENT = 2 * Math.PI / 16;
     const RADIUS = 70;
     const IMG_OFFSET = 9;
-    for (var i = 0; i < img_urls.length; ++i) {
-      const img_url = img_urls[i];
+    for (var i = 0; i < imp_info.length; ++i) {
+      const img_url = imp_info[i].url;
+      const tooltip = imp_info[i].tooltip;
       const left = Math.cos(INCREMENT * i) * -RADIUS - IMG_OFFSET;
       const top = Math.sin(INCREMENT * i) * RADIUS - IMG_OFFSET;
-      html += `<img class='largeCardImprovedAbilityIcon' src='${img_url}' style='left:${left}px;top:${top}px;'>`
+      if (tooltip) {
+        html += `
+          <div class='tooltip' style='position:absolute;left:${left}px;top:${top}px;'>
+            <img class='largeCardImprovedAbilityIcon' src='${img_url}'>
+            <span class='tooltiptext'>${tooltip}</span>
+          </div>`;
+      } else {
+        html += `<img class='largeCardImprovedAbilityIcon' src='${img_url}' style='left:${left}px;top:${top}px;'>`
+      }
     }
     html += "</div>";
     return html;

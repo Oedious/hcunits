@@ -7,5 +7,12 @@
  -> hcunits-le-ssl.conf
  -> hcunits-api-le-ssl.conf
  
+# Enable a configuration
+/usr/sbin/a2ensite <name>
+
+# Diable a configuration
+/usr/sbin/a2dissite <name>
+
 # Apache log files
 /var/log/apache2/
+
