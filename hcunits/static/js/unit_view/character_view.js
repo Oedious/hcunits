@@ -83,12 +83,16 @@ class CharacterView extends BaseUnitView {
   			html += ', ';
   		}
   		var escapedKeyword = escapeHtml(keyword);
-  		var atag = `<a href='' class='largeCardKeyword' onclick='sideNav.searchByKeyword("${escapedKeyword}"); return false;'>${escapedKeyword}</a>`;;
+  		if (READ_ONLY) {
+  		  var keywordHtml = escapedKeyword;
+  		} else {
+  		  var keywordHtml = `<a href='' class='largeCardKeyword' ${onclick}>${escapedKeyword}</a>`;
+  		}
   		var isGeneric = (KEYWORD_LIST[keyword] == "generic");
   		if (isGeneric) {
-  		  html += `<em>${atag}</em>`;
+  		  html += `<em>${keywordHtml}</em>`;
   		} else {
-  		  html += atag;
+  		  html += keywordHtml;
   		}
   	}
   	html += "</span>";

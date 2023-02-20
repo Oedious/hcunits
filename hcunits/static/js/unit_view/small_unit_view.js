@@ -78,7 +78,11 @@ class SmallUnitView extends BaseUnitView {
         html += ", "
       }
   		var escapedKeyword = escapeHtml(this.unit_.keywords[i]);
-  		html += `<a href='' style='color:black;' onclick='sideNav.searchByKeyword("${escapedKeyword}"); return false;'>${escapedKeyword.toUpperCase()}</a>`;
+  		if (READ_ONLY) {
+  		  html += escapedKeyword;
+  		} else {
+  		  html += `<a href='' style='color:black;' onclick='sideNav.searchByKeyword("${escapedKeyword}"); return false;'>${escapedKeyword.toUpperCase()}</a>`;
+  		}
     }
     html += "</b></div>"
     return html;
