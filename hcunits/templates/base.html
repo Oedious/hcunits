@@ -49,8 +49,8 @@
       <form id="createTeamForm" method="post" action="{% url 'create_team' %}">
         {% csrf_token %}
         <ul id="buildDropdown" class="dropdown-content">
-          <li><a href="/users/"><i class="material-icons left">construction</i>Existing</a></li>
           <li><a href="#" onclick="document.getElementById('createTeamForm').submit()"><i class="material-icons left">add_circle</i>New Team</a></li>
+          <li><a href="/users/"><i class="material-icons left">construction</i>Existing</a></li>
         </ul>
       </form>
 
