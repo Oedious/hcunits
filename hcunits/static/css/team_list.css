@@ -1,3 +1,18 @@
+.teamListContainer {
+  position: relative;
+  color: white;
+  font-family: "Inter var",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  margin: 0 50px 60px 50px;
+}
+
+.teamListHeader {
+  letter-spacing: 3px;
+}
+
+.teamList {
+  margin-top: 30px;
+}
+
 .teamList {
   display: grid;
   grid-template-columns: repeat(auto-fill, 390px);

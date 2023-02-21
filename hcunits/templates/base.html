@@ -24,13 +24,10 @@
           </a>
           <ul id="headerLinks" class="left">
             <li class='navButton'>
-              <form id="createTeamForm" method="post" action="{% url 'create_team' %}">
-                {% csrf_token %}
-                <a href="#" onclick="document.getElementById('createTeamForm').submit()">{% block build_label %}Build{% endblock %}</a>
-              </form>
+              <a class="dropdown-trigger" href="#" data-target="buildDropdown">{% block build_label %}Build{% endblock %}</a>
             </li>
             <li class='navButton'>
-              <a href="/explore/">{% block explore_label %}Explore{% endblock %}</a>
+              <a class="dropdown-trigger" href="#" data-target="exploreDropdown">{% block explore_label %}Explore{% endblock %}</a>
             </li>
             <li class='navButton'>
               <a href="/help/">{% block help_label %}Help{% endblock %}</a>
@@ -41,7 +38,7 @@
           <ul class="right">
             <li class='navButton'>
             {% if user.is_authenticated %}
-              <a class="dropdown-trigger" href="#!" data-target="accountActionsDropdown">{{ user.username }}<i class="material-icons right">arrow_drop_down</i></a>
+              <a class="dropdown-trigger" href="#" data-target="accountActionsDropdown">{{ user.username }}<i class="material-icons right">arrow_drop_down</i></a>
             {% else %}
               <a href="/accounts/login/"><i class="material-icons left">login</i>Login</a>
             {% endif %}
@@ -49,14 +46,24 @@
           </ul>
         </div>
       </nav>
+      <form id="createTeamForm" method="post" action="{% url 'create_team' %}">
+        {% csrf_token %}
+        <ul id="buildDropdown" class="dropdown-content">
+          <li><a href="/users/"><i class="material-icons left">construction</i>Existing</a></li>
+          <li><a href="#" onclick="document.getElementById('createTeamForm').submit()"><i class="material-icons left">add_circle</i>New Team</a></li>
+        </ul>
+      </form>
+
+      <ul id="exploreDropdown" class="dropdown-content">
+        <li><a href="/explore/units/"><i class="material-icons left">person</i>Units</a></li>
+        <li><a href="/explore/teams/"><i class="material-icons left">group</i>Teams</a></li>
+      </ul>
       {% if user.is_authenticated %}
       <form id="logoutForm" method="post" action="{% url 'account_logout' %}">
         {% csrf_token %}
         <ul id="accountActionsDropdown" class="dropdown-content">
-          <li><a href="/accounts/profile/"><i class="material-icons left">account_box</i>Profile</a></li>
-          <li>
-              <a href="#" onclick="document.getElementById('logoutForm').submit()"><i class="material-icons left">logout</i>Logout</a>
-          </li>
+          <li><a href="/users/{{ user.username }}/"><i class="material-icons left">account_box</i>Profile</a></li>
+          <li><a href="#" onclick="document.getElementById('logoutForm').submit()"><i class="material-icons left">logout</i>Logout</a></li>
         </ul>
       </form>
       {% endif %}

@@ -637,7 +637,7 @@ class TeamManager {
       headers: { "X-CSRFToken": this.csrfToken_ },
       success: function(response) {
         // Navigate back to the home page.
-        window.location.href = "/accounts/profile/";
+        window.location.href = "/";
       },
       error: function(xhr, desc, err) {
         alert("Failed to delete this team: " + desc + "; " + err);

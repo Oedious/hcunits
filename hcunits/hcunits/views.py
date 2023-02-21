@@ -20,7 +20,8 @@ def home(request):
   else:
     user_teams = []
 
-  results = Team.objects.filter(~Q(name="")&~Q(user=request.user)).order_by('update_time')[:6]
+  q = Q(visibility="public") & ~Q(name="") & ~Q(user__username=request.user.username)
+  results = Team.objects.filter(q).order_by('update_time')[:6]
   recent_teams = [t.get_wire_format(True) for t in results]
 
   context = {
@@ -35,9 +36,22 @@ def list_public_teams(request):
   context = {}
   return HttpResponse(template.render(context, request))
   
-def explore(request):
-  template = loader.get_template('explore.html')
+def explore_units(request):
+  template = loader.get_template('explore/units.html')
   context = {}
+  return HttpResponse(template.render(context, request))
+
+# TODO: support pagination
+def explore_teams(request):
+  q = Q(visibility="public") & ~Q(name="");
+  if request.user.is_authenticated:
+    q &= ~Q(user__username=request.user.username)
+  results = Team.objects.filter(q).order_by('update_time')[:12]
+  team_list = [t.get_wire_format(True) for t in results]
+  context = {
+    "team_list": team_list,
+  }
+  template = loader.get_template('explore/teams.html')
   return HttpResponse(template.render(context, request))
 
 def get_help_context(topic_id):
@@ -87,10 +101,30 @@ def tos(request):
   context = {}
   return HttpResponse(template.render(context, request))
 
-def profile(request):
-  template = loader.get_template('profile.html')
-  context = {}
-  return HttpResponse(template.render(context, request))
+# TODO: Add pagination
+class UserView(View):
+  def get(self, request, *args, **kwargs):
+    username = kwargs.get("username", None)
+    if not username:
+      if request.user.is_authenticated:
+        username = request.user.username
+      else:
+        return redirect(reverse('account_login'))
+
+    if request.user.is_authenticated and request.user.username == username:
+      results = Team.objects.filter(user=request.user).order_by('update_time')
+    else:
+      q = Q(visibility="public") & ~Q(name="") & Q(user__username=username)
+      results = Team.objects.filter(q).order_by('update_time')[:12]
+
+    team_list = [t.get_wire_format(True) for t in results]
+    context = {
+      "owner": username,
+      "team_list": team_list,
+    }
+    template = loader.get_template('user.html')
+    return HttpResponse(template.render(context, request))
+
 
 class AccountDeleteView(LoginRequiredMixin, View):
   """

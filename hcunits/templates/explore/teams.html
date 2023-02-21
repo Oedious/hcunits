@@ -1,35 +1,33 @@
 {% extends "base.html" %}
 
+{% block explore_label %}<b>Explore</b>{% endblock %}
+
 {% block link_tags %}
   {{ block.super }}
-  <link type="text/css" rel="stylesheet" href="/static/css/home.css" media="screen,projection">
   <link type="text/css" rel="stylesheet" href="/static/css/team_list.css" media="screen,projection">
+  <link type="text/css" rel="stylesheet" href="/static/css/user.css" media="screen,projection">
 {% endblock %}
 
 {% block main %}
-<div id="heroContainer" class="row">
-  <div id="hero" class="row">
+<div id="userContainer" class="row">
+  <div id="userHeader" class="row">
     <br>
-    <br>
-    <br>
-    <h4 class="center-align">Build and share HeroClix teams</h4>
+    <h3 class="center-align">Explore Teams</h3>
   </div>
 </div>
-{% if user.is_authenticated %}
-<div id="userTeamList" class="teamListContainer"></div>
-{% endif %}
 <div id="recentTeamList" class="teamListContainer"></div>
 {% endblock %}
+
 
 {% block script_tags %}
   <script type="text/javascript" src="/static/js/team_list_manager.js"></script>
 
   {{ block.super }}
-  {{ user_teams|json_script:'userTeams' }}
-  {{ recent_teams|json_script:'recentTeams' }}
+  {{ team_list|json_script:'recentTeams' }}
+
   <script type="text/javascript">
     var teamListManager = new TeamListManager(
-        document.getElementById('userTeams').textContent,
+        null,
         document.getElementById('recentTeams').textContent);
   </script>
 {% endblock %}

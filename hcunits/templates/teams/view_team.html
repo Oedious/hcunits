@@ -1,5 +1,10 @@
 {% extends "teams/base.html" %}
 
+{% block explore_label %}<b>Explore</b>{% endblock %}
+
+{% block side_nav_css %}
+{% endblock %}
+
 {% block team_header %}
 <div id="teamHeader" class="row">
   <div class="col">
@@ -33,6 +38,14 @@
 </div>
 {% endblock %}
 
-{% block read_only %}
-<script type="text/javascript">const READ_ONLY = true;</script>
+{% block explore_tab_bar %}
+{% endblock %}
+
+{% block side_nav %}
+{% endblock %}
+
+{% block side_nav_includes %}
+{% endblock %}
+
+{% block side_nav_scripts %}
 {% endblock %}

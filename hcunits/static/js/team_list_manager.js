@@ -1,7 +1,13 @@
 class TeamListManager {
   constructor(jsonUserTeamList, jsonRecentTeamList) {
-    this.userTeamList_ = JSON.parse(jsonUserTeamList);
-    this.recentTeamList_ = JSON.parse(jsonRecentTeamList);
+    this.userTeamList_ = []
+    if (jsonUserTeamList && jsonUserTeamList.length > 0) {
+      this.userTeamList_ = JSON.parse(jsonUserTeamList);
+    }
+    this.recentTeamList_ = [];
+    if (jsonRecentTeamList && jsonRecentTeamList.length > 0) {
+      this.recentTeamList_ = JSON.parse(jsonRecentTeamList);
+    }
     this.draw();
   }
   
