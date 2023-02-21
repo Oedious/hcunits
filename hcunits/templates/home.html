@@ -16,29 +16,21 @@
     <h4 class="center-align">Build and share HeroClix teams</h4>
   </div>
 </div>
-<div id="latestBuildsContainer">
-  <h5 class="center-align">NEWEST TEAM BUILDS</h5>
-  <br>
-  <div class="teamList">
-    {% for team in team_list %}
-    <a class='teamCard' href='/teams/{{team.team_id}}'>
-      <div class='teamCardBorders'></div>
-      <div class='teamCardHeader'>
-        <div class='teamCardName'>{{team.name}}</div>
-      </div>
-      <div class='teamCardTokenCircle'></div>
-      <div class='teamCardFormat'>
-        {% if team.age == "modern" %}
-        Modern
-        {% elif team.age == "golden" %}
-        Golden
-        {% else %}
-        Unknown Age
-        {% endif %}
-         - {{team.point_limit}}
-      </div>
-    </a>
-    {% endfor %}
-  </div>
-</div>
+{% if user.is_authenticated %}
+<div id="userTeamList" class="teamListContainer"></div>
+{% endif %}
+<div id="recentTeamList" class="teamListContainer"></div>
+{% endblock %}
+
+{% block script_tags %}
+  <script type="text/javascript" src="/static/js/team_list_manager.js"></script>
+
+  {{ block.super }}
+  {{ user_teams|json_script:'userTeams' }}
+  {{ recent_teams|json_script:'recentTeams' }}
+  <script type="text/javascript">
+    var teamListManager = new TeamListManager(
+        document.getElementById('userTeams').textContent,
+        document.getElementById('recentTeams').textContent);
+  </script>
 {% endblock %}

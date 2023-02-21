@@ -15,19 +15,17 @@ from .models import Team, Unit
 
 def home(request):
   if request.user.is_authenticated:
-    team_list = Team.objects.filter(user=request.user)
+    results = Team.objects.filter(user=request.user).order_by('update_time')[:6]
+    user_teams = [t.get_wire_format(True) for t in results]
   else:
-    team_list = []
-    for i in range(12):
-      team = {
-        "name": "Coming Soon!",
-        "points": 300,
-        "age": "Modern"
-      }
-      team_list.append(team)
+    user_teams = []
+
+  results = Team.objects.filter(~Q(name="")&~Q(user=request.user)).order_by('update_time')[:6]
+  recent_teams = [t.get_wire_format(True) for t in results]
 
   context = {
-    "team_list": team_list
+    "user_teams": user_teams,
+    "recent_teams": recent_teams,
   }
   template = loader.get_template('home.html')
   return HttpResponse(template.render(context, request))
@@ -132,12 +130,12 @@ class TeamView(View):
     except Team.DoesNotExist:
       return HttpResponseNotFound("Could not find team '%s'" % team_id)
 
-    wire_format_team = team.get_wire_format()
+    wire_format_team = team.get_wire_format(False)
 
     if request.user.is_authenticated and request.user == team.user:
       return render(request, 'teams/edit_team.html', {'team': wire_format_team})
     elif team.visibility == "public" or team.visibility == "unlisted":
-      return render(request, 'teams/view_team.html', {'team': wire_format_team, 'owner': team.user.username})
+      return render(request, 'teams/view_team.html', {'team': wire_format_team})
     else:
       return HttpResponse("Unauthorized", status=401)
 

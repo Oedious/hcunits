@@ -1,3 +1,4 @@
+import datetime
 import uuid
 from django.contrib.auth.models import User
 from django.db import models
@@ -72,8 +73,21 @@ class Team(models.Model):
 
   # Returns a python dict containing the fields which can be used in the
   # team builder page.
-  def get_wire_format(self):
+  def get_wire_format(self, header_only):
+    SECONDS_PER_HOUR = 60 * 60
+    SECONDS_PER_MINUTE = 60
+    now = datetime.datetime.utcnow().replace(tzinfo=datetime.timezone.utc)
+    time_diff = now - self.update_time
+    if time_diff.days > 0:
+      displayable_update_time = "%d days ago" % int(time_diff.days)
+    elif time_diff.seconds / SECONDS_PER_HOUR > 1:
+      displayable_update_time = "%d hours ago" % int(time_diff.seconds / SECONDS_PER_HOUR)
+    elif time_diff.seconds / SECONDS_PER_MINUTE > 1:
+      displayable_update_time = "%d minutes ago" % int(time_diff.seconds / SECONDS_PER_MINUTE)
+    else:
+      displayable_update_time = "%d seconds ago" % int(time_diff.seconds)
     wire_team = {
+      "owner": self.user.username,
       "team_id": self.team_id,
       "name": self.name,
       "description": self.description,
@@ -82,7 +96,10 @@ class Team(models.Model):
       "visibility": self.visibility,
       "create_time": self.create_time,
       "update_time": self.update_time,
+      "displayable_update_time": displayable_update_time,
     }
+    if header_only:
+      return wire_team
 
     unit_id_list = []
     for field in Team.UNIT_FIELD_LIST.keys():
