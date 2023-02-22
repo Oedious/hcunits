@@ -1,4 +1,4 @@
-const RARITY_COMMON_COLOR = "white";
+const RARITY_COMMON_COLOR = "black";
 const RARITY_UNCOMMON_COLOR = "#6ebd45";
 const RARITY_RARE_COLOR = "#a7bdc8";
 const RARITY_SUPER_RARE_COLOR = "#ffd503";

@@ -1,3 +1,13 @@
+TYPE_TO_ICON = {
+  "character": "accessibility_new",
+  "object": "cookie",
+  "equipment": "swords",
+  "map": "map",
+  "bystander": "pets",
+  "tarot_card": "content_copy",
+  "mystery_card": "psychology_alt",
+};
+
 class UnitListPanel extends ListPanel {
   constructor(dataSource, unitManager) {
     super();
@@ -133,27 +143,43 @@ class UnitListPanel extends ListPanel {
         }
 
         var color = RARITY_TO_COLOR[unit.rarity];
-        var pointValues = "";
-        if (unit.point_values.length == 0) {
-          pointValues = "0";
+        var minorInfo = "";
+        var icon = TYPE_TO_ICON[unit.type];
+        if (unit.type != "character") {
+          // If the point is zero, just show the type.
+          if (unit.type == "object") {
+            minorInfo = OBJECT_TYPE_INFO[unit.object_type].name;
+          } else if (unit.type == "bystander") {
+            const typeInfo = BYSTANDER_TYPE_INFO[unit.bystander_type];
+            minorInfo = typeInfo.name;
+            if (typeInfo.icon) {
+              icon = typeInfo.icon
+            }
+          } else {
+            minorInfo = TYPE_LIST[unit.type].name;
+          }
+          if (unit.point_values.length > 0) {
+            minorInfo += " - ";
+          }
         }
-        else {
+        if (unit.point_values.length > 0) {
           for (var j = 0; j < unit.point_values.length; ++j) {
             if (j != 0) {
-              pointValues += "/";
+              minorInfo += "/";
             }
-            pointValues += unit.point_values[j];
+            minorInfo += unit.point_values[j];
           }
+          minorInfo += " points";
         }
         html += `
             <li class='collection-item avatar'>
               <a id='unitListItem_${i}' class='unitListItem' href='' onclick='sideNav.setUnit("${unit.unit_id}"); return false;'>
                 <div class='listPanelImageDiv'>
-                  <i class='material-icons circle' style='font-size: 36px; color:${color}; left:-5px;'>account_circle</i>
+                  <i class='material-symbols-outlined' style='color:${color}'>${icon}</i>
                 </div>
                 <div class='listPanelInfo'>
                   <span class='title'>${unit.collector_number} - ${unit.name}</span>
-                  <p class='listPanelMinorInfo'>${pointValues} points</p>
+                  <p class='listPanelMinorInfo'>${minorInfo}</p>
                 </div>
               </a>
             </li>`;

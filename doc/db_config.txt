@@ -19,8 +19,8 @@ CREATE TABLE units (
   name TEXT(128) NOT NULL,
 
   -- The type of the unit.
-  -- TODO: Add types for 'battlefield_condition', 'event_dial', 'resource', 'terrain'
-  type ENUM('character', 'object', 'equipment', 'map', 'bystander', 'tarot_card', 'mystery_card', 'id_card') NOT NULL,
+  -- TODO: Add types for 'battlefield_condition', 'event_dial', 'resource', 'terrain', 'id_card'
+  type ENUM('character', 'object', 'equipment', 'map', 'bystander', 'tarot_card', 'mystery_card') NOT NULL,
 
   -- A JSON array of numbers containing point values of different starting lines.
   point_values JSON,
@@ -150,6 +150,11 @@ LOAD XML LOCAL INFILE 'set_wotr.xml'
   ROWS IDENTIFIED BY '<row>';
 
 LOAD XML LOCAL INFILE 'set_ffwotr.xml'
+  REPLACE
+  INTO TABLE units
+  ROWS IDENTIFIED BY '<row>';
+
+LOAD XML LOCAL INFILE 'set_roc22.xml'
   REPLACE
   INTO TABLE units
   ROWS IDENTIFIED BY '<row>';
