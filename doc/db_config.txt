@@ -219,6 +219,11 @@ LOAD XML LOCAL INFILE 'set_wkd21.xml'
   INTO TABLE units
   ROWS IDENTIFIED BY '<row>';
 
+LOAD XML LOCAL INFILE 'set_roc21.xml'
+  REPLACE
+  INTO TABLE units
+  ROWS IDENTIFIED BY '<row>';
+
 LOAD XML LOCAL INFILE 'set_svc.xml'
   REPLACE
   INTO TABLE units
@@ -250,6 +255,11 @@ LOAD XML LOCAL INFILE 'set_wkm20.xml'
   ROWS IDENTIFIED BY '<row>';
 
 LOAD XML LOCAL INFILE 'set_wkd20.xml'
+  REPLACE
+  INTO TABLE units
+  ROWS IDENTIFIED BY '<row>';
+
+LOAD XML LOCAL INFILE 'set_roc20.xml'
   REPLACE
   INTO TABLE units
   ROWS IDENTIFIED BY '<row>';

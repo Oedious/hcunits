@@ -29,18 +29,30 @@ class Team(models.Model):
   # {
   #   "unit_id": string - contains a unit ID.
   #   "point_value": number - the point value of the unit.
-  #   "equipment": (Optional): string - a unit ID of equipment attached to the unit.
+  #.  "costed_trait_index": (Optional): number - the special power index of the associated costed trait.
+  #   "equipment_id": (Optional): string - a unit ID of equipment attached to the unit.
   # }
   main_force = models.JSONField(default=list)
 
-  # Each of the four fields below are JSON arrays of objects in the form:
+  # A JSON array of objects in the form:
   # {
   #   "unit_id": string - contains a unit ID.
-  #   "point_value": (Optional) number - the point value of the unit.
+  #   "point_value": number - the point value of the unit.
+  # }
+  object_list = models.JSONField(default=list)
+
+  # A JSON array of objects in the form:
+  # {
+  #   "unit_id": string - contains a unit ID.
+  #   "location_index": (Optional) number - the special power index of the associated location.
+  # }
+  maps = models.JSONField(default=list)
+
+  # Each of the two fields below are JSON arrays of objects in the form:
+  # {
+  #   "unit_id": string - contains a unit ID.
   # }
   sideline = models.JSONField(default=list)
-  object_list = models.JSONField(default=list)
-  maps = models.JSONField(default=list)
   tarot_cards = models.JSONField(default=list)
 
   UNIT_FIELD_LIST = {
@@ -105,12 +117,12 @@ class Team(models.Model):
     for field in Team.UNIT_FIELD_LIST.keys():
       for unit in getattr(self, Team.UNIT_FIELD_LIST[field]["field_name"]):
         unit_id_list.append(unit["unit_id"])
-        equipment_id = unit.get("equipment", None)
+        equipment_id = unit.get("equipment_id", None)
         if equipment_id != None:
           unit_id_list.append(equipment_id)
 
     # Get the Units that are referenced by the Team.
-    unit_list = Unit.objects.filter(unit_id__in=unit_id_list).values('unit_id', 'name', 'point_values')
+    unit_list = Unit.objects.filter(unit_id__in=unit_id_list).values('unit_id', 'name', 'point_values', 'special_powers')
 
     # Create a dict for easy lookup.
     unit_map = {}
@@ -122,11 +134,23 @@ class Team(models.Model):
       unit_list = []
       for unit in getattr(self, Team.UNIT_FIELD_LIST[field]["field_name"]):
         unit_entry = unit_map.get(unit["unit_id"], None)
-        unit["name"] = unit_entry["name"]
-        # The unit will already contain its own unit_id and point_value fields, so
+        # The unit will already contain its own unit_id field, so
         # no need to copy them.
+        unit["name"] = unit_entry["name"]
+        # Special handling for costed traits and equipment attached to a main
+        # force unit.
         if field == "main_force":
-          equipment_id = unit.get("equipment", None)
+          costed_trait_index = unit.get("costed_trait_index", -1)
+          if costed_trait_index >= 0:
+            if costed_trait_index < len(unit_entry["special_powers"]):
+              sp = unit_entry["special_powers"][costed_trait_index]
+              if sp["type"] == "costed_trait":
+                unit["costed_trait"] = {
+                  "name": sp["name"],
+                  "point_value": sp["point_value"],
+                  "special_power_index": costed_trait_index,
+                }
+          equipment_id = unit.get("equipment_id", None)
           if equipment_id != None:
             equipment = unit_map.get(equipment_id, None)
             if equipment == None:
@@ -142,6 +166,18 @@ class Team(models.Model):
                 "name": equipment["name"],
                 "point_value": point_value,
               }
+        # Special handling for location associated with a map.
+        if field == "maps":
+          location_index = unit.get("location_index", -1)
+          if location_index >= 0:
+            if location_index < len(unit_entry["special_powers"]):
+              sp = unit_entry["special_powers"][location_index]
+              if sp["type"] == "location":
+                unit["location"] = {
+                  "name": sp["name"],
+                  "point_value": sp["point_value"],
+                  "special_power_index": location_index,
+                }
         unit_list.append(unit)
       wire_team[field] = unit_list
 
@@ -174,7 +210,7 @@ class Team(models.Model):
             raise Exception("%s[%d].unit_id was not a string" % (field, i))
           unit_id_list.append(unit_id)
           if field == "main_force":
-            equipment_id = unit.get("equipment", None)
+            equipment_id = unit.get("equipment_id", None)
             if equipment_id != None:
               if not isinstance(equipment_id, str):
                 raise Exception("%s[%d].equipment was not a string" % (field, i))
@@ -182,7 +218,7 @@ class Team(models.Model):
           i += 1
 
     # Get the Units that are referenced by the Team.
-    unit_list = Unit.objects.filter(unit_id__in=unit_id_list).values('unit_id', 'type', 'point_values')
+    unit_list = Unit.objects.filter(unit_id__in=unit_id_list).values('unit_id', 'type', 'point_values', 'special_powers')
     # Create a dict for easy lookup.
     unit_map = {}
     for unit in unit_list:
@@ -210,22 +246,56 @@ class Team(models.Model):
           # Point value is required for main force, but optional for the others.
           if field == "main_force" and point_value == None:
             raise Exception("%s[%d] didn't have 'point_value'" % (field, i))
+          # For the others, we don't store it - just validate it.
           if point_value:
             if not unit["point_value"] in unit_db_entry["point_values"]:
-              raise Exception("main_force[%d].point_value ('%d') was not a valid option in (%s)" % (i, point_value, str(unit_db_entry["point_values"])))
-            unit_update["point_value"] = point_value
+              raise Exception("%s[%d].point_value ('%d') was not a valid option in (%s)" % (field, i, point_value, str(unit_db_entry["point_values"])))
+            if field == "main_force" or field == "objects":
+              unit_update["point_value"] = point_value
 
-          # Validate any equipment attached to the unit in the main force.
+          # Validate any costed traits or equipment attached to the unit in the
+          # main force.
           if field == "main_force":
-            equipment_id = unit.get("equipment", None)
+            costed_trait_index = unit.get("costed_trait_index", -1)
+            if costed_trait_index >= 0:
+              special_powers = unit_db_entry.get("special_powers", [])
+              if costed_trait_index >= len(special_powers):
+                raise Exception("%s[%d].costed_trait_index ('%d') was not a valid special power index" % (field, i, costed_trait_index))
+              sp = special_powers[costed_trait_index]
+              sp_type = sp.get("type", "")
+              if sp_type != "costed_trait":
+                raise Exception("%s[%d].costed_trait_index ('%d') was the wrong type ('%s')" % (field, i, costed_trait_index, sp_type))
+              sp_point_value = sp.get("point_value", 0)
+              if sp_point_value <= 0:
+                raise Exception("%s[%d].costed_trait_index ('%d') did not have a point value" % (field, i, costed_trait_index))
+              unit_update["costed_trait_index"] = costed_trait_index
+
+            equipment_id = unit.get("equipment_id", None)
             if equipment_id != None:
               unit_db_entry = unit_map.get(equipment_id, None)
               if unit_db_entry == None:
-                raise Exception("%s[%d].equipment ('%s') was invalid" % (field, i, equipment_id))
+                raise Exception("%s[%d].equipment_id ('%s') was invalid" % (field, i, equipment_id))
               type = unit_db_entry["type"]
               if type != "equipment":
-                raise Exception("%s[%d].equipment ('%s') expected type 'equipment', but found ('%s')" % (field, i, equipment_id, type))
-              unit_update["equipment"] = equipment_id
+                raise Exception("%s[%d].equipment_id ('%s') expected type 'equipment', but found ('%s')" % (field, i, equipment_id, type))
+              unit_update["equipment_id"] = equipment_id
+
+          # Validate any location attached to the map unit.
+          if field == "maps":
+            location_index = unit.get("location_index", -1)
+            if location_index >= 0:
+              special_powers = unit_db_entry.get("special_powers", [])
+              if location_index >= len(special_powers):
+                raise Exception("%s[%d].location_index ('%d') was not a valid special power index" % (field, i, location_index))
+              sp = special_powers[location_index]
+              sp_type = sp.get("type", "")
+              if sp_type != "location":
+                raise Exception("%s[%d].location_index ('%d') was the wrong type ('%s')" % (field, i, location_index, sp_type))
+              sp_point_value = sp.get("point_value", 0)
+              if sp_point_value <= 0:
+                raise Exception("%s[%d].location_index ('%d') did not have a point value" % (field, i, location_index))
+              unit_update["location_index"] = location_index
+
           # Unit is valid - add it to the main force update.
           field_update.append(unit_update)
           i += 1

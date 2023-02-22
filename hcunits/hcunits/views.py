@@ -15,13 +15,13 @@ from .models import Team, Unit
 
 def home(request):
   if request.user.is_authenticated:
-    results = Team.objects.filter(user=request.user).order_by('update_time')[:6]
+    results = Team.objects.filter(user=request.user).order_by('-update_time')[:6]
     user_teams = [t.get_wire_format(True) for t in results]
   else:
     user_teams = []
 
   q = Q(visibility="public") & ~Q(name="") & ~Q(user__username=request.user.username)
-  results = Team.objects.filter(q).order_by('update_time')[:6]
+  results = Team.objects.filter(q).order_by('-update_time')[:6]
   recent_teams = [t.get_wire_format(True) for t in results]
 
   context = {
@@ -46,7 +46,7 @@ def explore_teams(request):
   q = Q(visibility="public") & ~Q(name="");
   if request.user.is_authenticated:
     q &= ~Q(user__username=request.user.username)
-  results = Team.objects.filter(q).order_by('update_time')[:12]
+  results = Team.objects.filter(q).order_by('-update_time')[:12]
   team_list = [t.get_wire_format(True) for t in results]
   context = {
     "team_list": team_list,
@@ -112,10 +112,10 @@ class UserView(View):
         return redirect(reverse('account_login'))
 
     if request.user.is_authenticated and request.user.username == username:
-      results = Team.objects.filter(user=request.user).order_by('update_time')
+      results = Team.objects.filter(user=request.user).order_by('-update_time')
     else:
       q = Q(visibility="public") & ~Q(name="") & Q(user__username=username)
-      results = Team.objects.filter(q).order_by('update_time')[:12]
+      results = Team.objects.filter(q).order_by('-update_time')[:12]
 
     team_list = [t.get_wire_format(True) for t in results]
     context = {

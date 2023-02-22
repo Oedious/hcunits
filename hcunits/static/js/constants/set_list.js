@@ -39,6 +39,11 @@ const SET_LIST = {
     "release_date": "2022-02-16",
     "universe": "marvel"
   },
+  "roc22": {
+    name: "ROC 2022",
+    "release_date": "2022-01-01",
+    "universe": "universal"
+  },
   "ff2021": {
     "name": "Fantastic Four 2021 Storyline",
     "release_date": "2021-12-15",
@@ -104,6 +109,11 @@ const SET_LIST = {
     "release_date": "2021-01-01",
     "universe": "dc"
   },
+  "roc21": {
+    name: "ROC 2021",
+    "release_date": "2021-01-01",
+    "universe": "universal"
+  },
   "svc": {
     "name": "Spider-Man and Venom: Absolute Carnage",
     "release_date": "2020-09-09",
@@ -138,6 +148,11 @@ const SET_LIST = {
     "name": "WizKids DC 2020",
     "release_date": "2020-01-01",
     "universe": "dc"
+  },
+  "roc20": {
+    "name": "ROC 2020",
+    "release_date": "2020-01-01",
+    "universe": "universal"
   },
   "wk": {
     "name": "WizKids Standard Game Pieces",

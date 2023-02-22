@@ -263,6 +263,29 @@ input#teamDescription {
   display: unset;
 }
 
+.teamItemIcon, .teamItemIconCostedTrait {
+  width: 20px;
+  min-width: 20px;
+  height: 20px;
+  margin-right: 2px;
+}
+
+.teamItemIcon i {
+  font-size: 20px !important;
+}
+
+.teamItemIconCostedTrait {
+  border-radius: 10px;
+  color: white;
+  background-color: black;
+}
+
+.teamItemIconCostedTrait i {
+  margin-top: 3px;
+  margin-left: 3px;
+  font-size: 14px !important;
+}
+
 .teamItemRemoveButton {
   height: 24px;
   width: 24px;

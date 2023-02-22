@@ -86,6 +86,9 @@ class TeamManager {
     var points = 0;
     for (const unit of this.team_.main_force) {
       points += unit.point_value;
+      if (unit.costed_trait) {
+        points += unit.costed_trait.point_value;
+      }
       if (unit.equipment) {
         points += unit.equipment.point_value;
       }
@@ -131,11 +134,28 @@ class TeamManager {
             </a>`;
         }
         html += "</div></li>";
+        if (unit.costed_trait) {
+          const costed_trait = unit.costed_trait;
+          html += `
+            <li class='teamItem'>
+              <div class='teamItemIconCostedTrait'>
+                <i class="material-icons" title="Optional Trait">star</i>
+              </div>
+              <div class="teamItemText">
+                <a href="#" class="teamItemUnitLink" onclick="unitManager.showUnit('${unit.unit_id}'); return false;">
+                  ${costed_trait.name}
+                </a>
+              <div>${costed_trait.point_value}</div>
+            </div>
+          </li>`;
+        }
         if (unit.equipment) {
           const equipment = unit.equipment;
-          html += "<li class='teamItem'>";
           html += `
-              <i class="material-icons" title="Equipped With">subdirectory_arrow_right</i>
+            <li class='teamItem'>
+              <div class='teamItemIcon'>
+                <i class="material-symbols-outlined" title="Equipped With">swords</i>
+              </div>
               <div class="teamItemText">
                 <a href="#" class="teamItemUnitLink" onclick="unitManager.showUnit('${equipment.unit_id}'); return false;">
                   ${equipment.name} (${equipment.unit_id})
@@ -201,7 +221,9 @@ class TeamManager {
 
     var points = 0;
     for (const unit of this.team_.maps) {
-      points += unit.point_value;
+      if (unit.location) {
+        points += parseInt(unit.location.point_value);
+      }
     }
 
     var html = `
@@ -241,6 +263,21 @@ class TeamManager {
             </a>`;
         }
         html += "</div></li>";
+        if (unit.location) {
+          const location = unit.location;
+          html += `
+            <li class='teamItem'>
+              <div class='teamItemIcon'>
+                <i class="material-symbols-outlined" title="Location">home_work</i>
+              </div>
+              <div class="teamItemText">
+                <a href="#" class="teamItemUnitLink" onclick="unitManager.showUnit('${unit.unit_id}'); return false;">
+                  ${location.name}
+                </a>
+              <div>${location.point_value}</div>
+            </div>
+          </li>`;
+        }
       }
     }
     html += "</ul></div>";
@@ -292,7 +329,9 @@ class TeamManager {
 
     var points = 0;
     for (const unit of this.team_.objects) {
-      points += unit.point_value;
+      if (unit.point_value) {
+        points += unit.point_value;
+      }
     }
 
     var html = "<div class='row'><h6 class='teamSectionHeader'><div><b>Objects</b></div>";
@@ -336,10 +375,18 @@ class TeamManager {
     return html;
   }
 
-  addUnit(pointValue) {
+  addUnit(pointValue, specialPowerIndex) {
     const unit = this.unitManager_.getUnit();
     if (pointValue && !unit.point_values.includes(pointValue)) {
       throw new Error(`Error in TeamManager.addUnit '${unit.unit_id}' - does not have a point value of ${pointValue}`);
+    }
+    var specialPower = null;
+    if (specialPowerIndex >= 0) {
+      if (specialPowerIndex < unit.special_powers.length) {
+        specialPower = unit.special_powers[specialPowerIndex];
+      } else {
+        throw new Error(`Error in TeamManager.addUnit '${unit.unit_id}' - does not have a special power at index ${specialPowerIndex}`);
+      }
     }
     const team_unit = {
       'unit_id': unit.unit_id,
@@ -348,6 +395,15 @@ class TeamManager {
     };
     switch (unit.type) {
       case "character":
+        // A point value indicates that the unit has an optional costed trait.
+        if (specialPower) {
+          team_unit.costed_trait = {
+            'name': specialPower.name,
+            'point_value': specialPower.point_value,
+            'special_power_index': specialPowerIndex,
+          }
+        }
+      // .. Fall through intended ..
       case "bystander":
         this.team_.main_force.push(team_unit);
         $('#teamMainForce').html(this.drawMainForce_());
@@ -357,6 +413,14 @@ class TeamManager {
         $('#teamObjects').html(this.drawObjects_());
         break;
       case "map":
+        // A point value indicates that map is added with a location bonus.
+        if (specialPower) {
+          team_unit.location = {
+            'name': specialPower.name,
+            'point_value': specialPower.point_value,
+            'special_power_index': specialPowerIndex,
+          }
+        }
         this.team_.maps.push(team_unit)
         $('#teamMaps').html(this.drawMaps_());
         break;
@@ -414,12 +478,20 @@ class TeamManager {
     if ((unit.type == "character" ||
          (unit.type == "bystander" && unit.point_values.length > 0) ||
          unit.type == "mystery_card")) {
-      if (unit.point_values.length > 0) {
-        for (const pointValue of unit.point_values) {
-          options.push({
-            "text": `Add to Main Force (${pointValue} points)`,
-            "onclick": `teamManager.addUnit(${pointValue});`
-          })
+      for (const pointValue of unit.point_values) {
+        options.push({
+          "text": `Add to Main Force (${pointValue} points)`,
+          "onclick": `teamManager.addUnit(${pointValue}, -1);`
+        })
+        // See if there are any costed traits that should be presented as options.
+        for (var i = 0; i < unit.special_powers.length; ++i) {
+          const sp = unit.special_powers[i];
+          if (sp.point_value) {
+            options.push({
+              "text": `Add to Main Force (${pointValue} points) with ${sp.name} (${sp.point_value})`,
+              "onclick": `teamManager.addUnit(${pointValue}, ${i});`
+            })
+          }
         }
       }
       options.push({
@@ -440,10 +512,23 @@ class TeamManager {
         "text": "Add to Sideline",
         "onclick": `teamManager.addUnitToSideline();`
       })
+    } else if (unit.type == "map") {
+      options.push({
+        "text": "Add to Maps",
+        "onclick": `teamManager.addUnit(0, -1);`
+      })
+      for (var i = 0; i < unit.special_powers.length; ++i) {
+        const sp = unit.special_powers[i];
+        if (sp.point_value && sp.point_value > 0) {
+          options.push({
+            "text": `Add Location "${sp.name}" (${sp.point_value} points)`,
+            "onclick": `teamManager.addUnit(0, ${i});`
+          })
+        }
+      }
     } else {
       const UNIT_TYPE_TO_SECTION = {
         "object": "Objects",
-        "map": "Maps",
         "tarot_card": "Tarot Cards",
       };
       const section = UNIT_TYPE_TO_SECTION[unit.type];
@@ -452,13 +537,13 @@ class TeamManager {
           for (const pointValue of unit.point_values) {
             options.push({
               "text": `Add to ${section} (${pointValue} points)`,
-              "onclick": `teamManager.addUnit(${pointValue});`
+              "onclick": `teamManager.addUnit(${pointValue}, -1);`
             })
           }
         } else {
           options.push({
             "text": "Add to ${section}",
-            "onclick": `teamManager.addUnit(0);`
+            "onclick": `teamManager.addUnit(0, -1);`
           })
         }
       }
@@ -615,8 +700,17 @@ class TeamManager {
           updated_unit.point_value = unit.point_value;
         }
         // Main force pieces can have equipment attached to them.
-        if (field == "main_force" && unit.equipment) {
-          updated_unit.equipment = unit.equipment.unit_id
+        if (field == "main_force") {
+          if (unit.costed_trait) {
+            updated_unit.costed_trait_index = unit.costed_trait.special_power_index
+          }
+          if (unit.equipment) {
+            updated_unit.equipment_id = unit.equipment.unit_id
+          }
+        }
+        // Map units can have locations attached to them.
+        if (field == "maps" && unit.location) {
+          updated_unit.location_index = unit.location.special_power_index
         }
         field_update.push(updated_unit);
       }
