@@ -16,3 +16,17 @@
 
 {% block team_manager_scripts %}
 {% endblock %}
+
+{% block scripts %}
+  {{ block.super }}
+  <script type="text/javascript">
+    const setId = getQueryParam("set");
+    const unitId = getQueryParam("unit");
+    if (setId) {
+      sideNav.showUnitList(setId);
+    }
+    if (unitId) {
+      unitManager.showUnit(unitId);
+    }
+  </script>
+{% endblock %}

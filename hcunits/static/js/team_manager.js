@@ -120,8 +120,8 @@ class TeamManager {
     } else {
       for (var i = 0; i < this.team_.main_force.length; ++i) {
         const unit = this.team_.main_force[i];
-        html += "<li class='teamItem'>";
         html += `
+          <li class='teamItem'>
             <div class="teamItemText">
               <a href="#" class="teamItemUnitLink" onclick="unitManager.showUnit('${unit.unit_id}'); return false;">
                 ${unit.name} (${unit.unit_id})
@@ -392,6 +392,7 @@ class TeamManager {
       'unit_id': unit.unit_id,
       'name': unit.name,
       'point_value': pointValue,
+      'properties': unit.properties,
     };
     switch (unit.type) {
       case "character":
@@ -445,6 +446,7 @@ class TeamManager {
     const team_unit = {
       'unit_id': unit.unit_id,
       'name': unit.name,
+      'properties': unit.properties,
     };
     this.team_.sideline.push(team_unit);
     $('#teamSideline').html(this.drawSideline_());

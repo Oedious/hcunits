@@ -46,16 +46,6 @@ const STYLE_BLACK = "color:white; background-color:" + COLOR_BLACK + ";";
 const STYLE_GRAY = "color:white; background-color: " + COLOR_GRAY + ";";
 const STYLE_WHITE = "color:black; background-color: " + COLOR_WHITE + "; border: 2px solid black;";
 
-function escapeHtml(unsafe) {
-    return unsafe
-         .replace(/&/g, "&amp;")
-         .replace(/</g, "&lt;")
-         .replace(/>/g, "&gt;")
-         .replace(/"/g, "&quot;")
-         .replace(/'/g, "&#039;")
-         .replace(/’/g, "&#039;");
-}
-
 // This constant is first indexed by the number of point values,
 // then the order of colors corresponds to the color of each point value.
 const POINT_VALUE_COLORS = [
@@ -75,3 +65,39 @@ const STARTING_LINE_COLORS = [
   [COLOR_RED, COLOR_BLUE, COLOR_YELLOW],
   [COLOR_RED, COLOR_BLUE, COLOR_YELLOW, COLOR_PURPLE],
 ];
+
+
+function escapeHtml(unsafe) {
+    return unsafe
+         .replace(/&/g, "&amp;")
+         .replace(/</g, "&lt;")
+         .replace(/>/g, "&gt;")
+         .replace(/"/g, "&quot;")
+         .replace(/'/g, "&#039;")
+         .replace(/’/g, "&#039;");
+}
+
+function getQueryParam(name) {
+  const url = window.location.href;
+  name = name.replace(/[\[\]]/g, "\\$&");
+  var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)");
+  var results = regex.exec(url);
+  if (!results) return null;
+  if (!results[2]) return '';
+  return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+
+function updateQueryParams(queryParamList) {
+  var queryString = "";
+  if (queryParamList.length > 0) {
+    for (const queryParam of queryParamList) {
+      if (queryString.length == 0) {
+        queryString = "?";
+      } else {
+        queryString += "&";
+      }
+      queryString += queryParam;
+    }
+  }
+  window.history.replaceState(null, null, queryString);
+}

@@ -99,6 +99,9 @@ class SideNav {
     this.unitListPanel_.showSet(setId);
     this.unitListPanel_.title = SET_LIST[setId].name;
     this.pushPanel(this.unitListPanel_);
+    if (READ_ONLY) {
+      updateQueryParams(["set=" + setId]);
+    }
   }
 
   showFavorites() {

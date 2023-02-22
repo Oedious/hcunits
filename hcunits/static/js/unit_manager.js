@@ -55,6 +55,9 @@ class UnitManager {
     if (this.onShowUnitCallback_) {
       this.onShowUnitCallback_();
     }
+    if (READ_ONLY) {
+      updateQueryParams([`set=${unit.set_id}`, `unit=${unit.unit_id}`]);
+    }
   }
   
   showMap_(unit, map) {

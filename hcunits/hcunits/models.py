@@ -4,6 +4,13 @@ from django.contrib.auth.models import User
 from django.db import models
 from hcunits_api.models import Unit
 
+class UserProfile(models.Model):
+  user = models.OneToOneField(User, on_delete=models.CASCADE)
+
+  # A one-to-many relationship with Units.
+  favorites = models.ForeignKey(Unit, on_delete=models.CASCADE)
+
+
 class Team(models.Model):
   class Age(models.TextChoices):
     MODERN = 'modern'
@@ -122,7 +129,8 @@ class Team(models.Model):
           unit_id_list.append(equipment_id)
 
     # Get the Units that are referenced by the Team.
-    unit_list = Unit.objects.filter(unit_id__in=unit_id_list).values('unit_id', 'name', 'point_values', 'special_powers')
+    unit_list = Unit.objects.filter(unit_id__in=unit_id_list).values(
+        'unit_id', 'name', 'point_values', 'special_powers', 'properties')
 
     # Create a dict for easy lookup.
     unit_map = {}
@@ -137,6 +145,7 @@ class Team(models.Model):
         # The unit will already contain its own unit_id field, so
         # no need to copy them.
         unit["name"] = unit_entry["name"]
+        unit["properties"] = unit_entry["properties"]
         # Special handling for costed traits and equipment attached to a main
         # force unit.
         if field == "main_force":
