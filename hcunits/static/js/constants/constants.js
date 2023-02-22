@@ -4,13 +4,18 @@ const RARITY_RARE_COLOR = "#a7bdc8";
 const RARITY_SUPER_RARE_COLOR = "#ffd503";
 const RARITY_CHASE_COLOR = "#ef8322";
 const RARITY_ULTRA_CHASE_COLOR = "#00a1df";
+const RARITY_LIMITED_EDITION_COLOR = "#00a1df";
+const RARITY_FAST_FORCES_COLOR = RARITY_COMMON_COLOR;
+
 const RARITY_TO_COLOR = {
   "common": RARITY_COMMON_COLOR,
   "uncommon": RARITY_UNCOMMON_COLOR,
   "rare": RARITY_RARE_COLOR,
   "super_rare": RARITY_SUPER_RARE_COLOR,
   "chase": RARITY_CHASE_COLOR,
-  "ultra_chase": RARITY_ULTRA_CHASE_COLOR
+  "ultra_chase": RARITY_ULTRA_CHASE_COLOR,
+  "limited_edition": RARITY_CHASE_COLOR,
+  "fast_forces": RARITY_FAST_FORCES_COLOR
 };
 
 const COLOR_RED = "#fe0000";
