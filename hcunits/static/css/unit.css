@@ -548,3 +548,28 @@
   text-align: center;
   line-height: 1.75em;
 }
+
+#addUnitButtonContainer {
+  position: absolute;
+}
+
+#favoriteButtonContainer {
+  position: absolute;
+  top: -15px;
+}
+
+#addFavoriteButton {
+ background-color: white;
+}
+
+#addFavoriteButtonIcon {
+  color:#6ca4ed;
+}
+
+#removeFavoriteButton {
+ background-color: #e2edfb;
+}
+
+#removeFavoriteButtonIcon {
+  color: #6ca4ed;
+}

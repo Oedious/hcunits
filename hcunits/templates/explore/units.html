@@ -30,3 +30,17 @@
     }
   </script>
 {% endblock %}
+
+{% block favorites_tab %}
+{% endblock %}
+
+{% block favorites_panel %}
+{% endblock %}
+
+{% block favorites_object %}
+<script id="favoritesObject" type="applications/json">[]</script>
+{% endblock %}
+
+{% block side_nav_scripts %}
+const sideNav = new SideNav(dataSource, unitManager, null);
+{% endblock %}

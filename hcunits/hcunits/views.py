@@ -11,7 +11,7 @@ from django.urls import reverse
 from django.views.generic import View
 
 from .forms import AccountDeleteForm
-from .models import Team, Unit
+from .models import Team, Unit, UserProfile
 
 def home(request):
   if request.user.is_authenticated:
@@ -158,18 +158,43 @@ class CreateTeamView(LoginRequiredMixin, View):
     
 class TeamView(View):
   def get(self, request, *args, **kwargs):
-    team_id = kwargs["team_id"]
+    team_id = kwargs.get("team_id", None)
+    if not team_id or team_id == "":
+      return HttpResponseBadRequest("Failure getting team: Invalid team ID: '%s'" % team_id);
     try:
       team = Team.objects.get(team_id=team_id)
     except Team.DoesNotExist:
       return HttpResponseNotFound("Could not find team '%s'" % team_id)
 
     wire_format_team = team.get_wire_format(False)
-
+    context = {
+      'team': wire_format_team,
+    }
     if request.user.is_authenticated and request.user == team.user:
-      return render(request, 'teams/edit_team.html', {'team': wire_format_team})
+      try:
+        profile = UserProfile.objects.get(user=request.user)
+        favorites = []
+        print("getting favorites")
+        # TODO: Use the UnitListSerializer from API instead.
+        for f in profile.favorites.all():
+          print("found favorite %s" % f.unit_id)
+          favorites.append({
+            "unit_id": f.unit_id,
+            "set_id": f.set_id,
+            "name": f.name,
+            "type": f.type,
+            "collector_number": f.collector_number,
+            "point_values": f.point_values,
+            "rarity": f.rarity,
+            "object_type": f.object_type,
+            "bystander_type": f.bystander_type,
+          })
+        context["favorites"] = favorites
+      except UserProfile.DoesNotExist:
+        context["favorites"] = []
+      return render(request, 'teams/edit_team.html', context)
     elif team.visibility == "public" or team.visibility == "unlisted":
-      return render(request, 'teams/view_team.html', {'team': wire_format_team})
+      return render(request, 'teams/view_team.html', context)
     else:
       return HttpResponse("Unauthorized", status=401)
 
@@ -177,7 +202,9 @@ class TeamView(View):
   # Updates the team specified by the "team_id" argument with the changes
   # specified in the 
   def put(self, request, *args, **kwargs):
-    team_id = kwargs["team_id"]
+    team_id = kwargs.get("team_id", None)
+    if not team_id or team_id == "":
+      return HttpResponseBadRequest("Failure updating team: Invalid team ID: '%s'" % team_id);
     try:
       team = Team.objects.get(team_id=team_id)
     except Team.DoesNotExist:
@@ -199,7 +226,9 @@ class TeamView(View):
   # Delete the team specified by the "team_id" parameter. Must be owned by
   # the authenticated user.
   def delete(self, request, *args, **kwargs):
-    team_id = kwargs["team_id"]
+    team_id = kwargs.get("team_id", None)
+    if not team_id or team_id == "":
+      return HttpResponseBadRequest("Failure deleting team: Invalid team ID: '%s'" % team_id);
     try:
       team = Team.objects.get(team_id=team_id)
     except Team.DoesNotExist:
@@ -207,4 +236,41 @@ class TeamView(View):
     if not request.user.is_authenticated or request.user != team.user:
       return HttpResponse("Unauthorized", status=401)
     team.delete()
+    return HttpResponse(status=200)
+    
+    
+class FavoritesView(LoginRequiredMixin, View):
+  # Updates the UserProfile by adding a favorite.
+  def put(self, request, *args, **kwargs):
+    unit_id = kwargs.get("unit_id", None)
+    if not unit_id or unit_id == "":
+      return HttpResponseBadRequest("Failure adding favorite: Invalid unit ID: '%s'" % unit_id);
+    try:
+      unit = Unit.objects.get(unit_id=unit_id)
+    except Unit.DoesNotExist:
+      return HttpResponseNotFound("Could not find unit '%s'" % unit_id)
+    
+    profile, created = UserProfile.objects.get_or_create(user=request.user)
+    profile.favorites.add(unit)
+    return HttpResponse(status=200)
+
+  # Delete the favorite specified by the "unit_id" parameter. Must be owned by
+  # the authenticated user.
+  def delete(self, request, *args, **kwargs):
+    unit_id = kwargs.get("unit_id", None)
+    if not unit_id or unit_id == "":
+      return HttpResponseBadRequest("Failure adding favorite: Invalid unit ID: '%s'" % unit_id);
+
+    # Get the unit associated with the unit ID.
+    try:
+      unit = Unit.objects.get(unit_id=unit_id)
+    except Unit.DoesNotExist:
+      return HttpResponseNotFound("Could not find unit '%s'" % unit_id)
+
+    # Get the user profile of the authenticated user.
+    try:
+      profile = UserProfile.objects.get(user=request.user)
+    except UserProfile.DoesNotExist:
+      return HttpResponseNotFound("Could not find user '%s'" % request.user.username)
+    profile.favorites.remove(unit)
     return HttpResponse(status=200)

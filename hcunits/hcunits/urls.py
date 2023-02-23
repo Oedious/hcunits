@@ -16,5 +16,6 @@ urlpatterns = [
   path('help/tos/', views.tos, name='tos'),
   path('users/', views.UserView.as_view(), name='get_user'),
   path('users/<username>/', views.UserView.as_view(), name='get_user'),
-  path('accounts/delete/', views.AccountDeleteView.as_view(), name="account_delete"),
+  path('accounts/delete/', views.AccountDeleteView.as_view(), name='account_delete'),
+  path('favorites/<unit_id>/', views.FavoritesView.as_view(), name='favorites'),
 ]

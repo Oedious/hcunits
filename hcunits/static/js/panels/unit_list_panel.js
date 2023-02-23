@@ -9,9 +9,8 @@ TYPE_TO_ICON = {
 };
 
 class UnitListPanel extends ListPanel {
-  constructor(dataSource, unitManager) {
+  constructor(unitManager) {
     super();
-    this.dataSource_ = dataSource;
     this.unitManager_ = unitManager;
     // A unit list should always be in the form of an JSON array of units from
     // the database.
@@ -37,6 +36,10 @@ class UnitListPanel extends ListPanel {
     $(panelName).html("");
   }
 
+  set drawSetTitles(drawSetTitles) {
+    this.drawSetTitles_ = drawSetTitles;
+  }
+
   activateCurrentItem() {
     if (this.unitList_ && super.currentIndex < this.unitList_.length) {
       this.unitManager_.showUnit(this.unitList_[super.currentIndex].unit_id);
@@ -54,74 +57,39 @@ class UnitListPanel extends ListPanel {
     }
   }
 
-  showSet(setId) {
-    this.resetList()
-    this.drawSetTitles_ = false;
-    var unitListPanel = this;
-    this.dataSource_.searchBySetId(setId,
-      function(unitList) {
-        unitListPanel.handleSearchResults_(unitList);
-      },
-      function(xhr, desc, err) {
-        alert("Error in searchBySetId(" + setId + "): " + desc) + " err=" + err;
-      });
+  setUnitList(unitList) {
+    // Sort the list descending by set release date, then collector number.
+    if (unitList) {
+      unitList.sort((u1, u2) => {
+        var s1 = SET_LIST[u1.set_id];
+        var s2 = SET_LIST[u2.set_id]
+        // First prioritize set release date.
+        if (s1.release_date < s2.release_date) {
+          return 1;
+        }
+        if (s1.release_date > s2.release_date) {
+          return -1
+        }
+        // Then prioritize set name length (so that Fast Forces are below main sets)
+        if (s1.name.length > s2.name.length) {
+          return 1;
+        }
+        if (s1.name.length < s2.name.length) {
+          return -1;
+        }
+        if (u1.collector_number > u2.collector_number) {
+          return 1;
+        }
+        if (u1.collector_number < u2.collector_number) {
+          return -1
+        }
+        return 0;
+      })
+    }
+    this.unitList_ = unitList
   }
 
-  showQuickSearchResults() {
-    this.resetList()
-    this.drawSetTitles_ = true;
-    var query = document.getElementById("quickSearch").value
-    var unitListPanel = this;
-    this.dataSource_.quickSearch(query,
-      function(unitList) {
-        unitListPanel.handleSearchResults_(unitList);
-      },
-      function(xhr, desc, err) {
-        alert("Error in showQuickSearchResults(" + query + "): " + desc) + " err=" + err;
-      });
-  }
-
-  showAdvancedSearchResults(query) {
-    this.resetList()
-    this.drawSetTitles_ = true;
-    var unitListPanel = this;
-    this.dataSource_.advancedSearch(query,
-      function(unitList) {
-        unitListPanel.handleSearchResults_(unitList);
-      },
-      function(xhr, desc, err) {
-        alert("Error in showAdvancedSearchResults(" + query + "): " + desc) + " err=" + err;
-      });
-  }
-  
-  showSearchByKeywordResults(keyword) {
-    this.resetList()
-    this.drawSetTitles_ = true;
-    var unitListPanel = this;
-    this.dataSource_.advancedSearch({"keyword": [keyword]},
-      function(unitList) {
-        unitListPanel.handleSearchResults_(unitList);
-      },
-      function(xhr, desc, err) {
-        alert("Error in showSearchByKeywordResults(" + query + "): " + desc) + " err=" + err;
-      });
-  }
-
-  showSearchByTypeResults(type) {
-    this.resetList()
-    this.drawSetTitles_ = true;
-    var unitListPanel = this;
-    this.dataSource_.advancedSearch({"type": type},
-      function(unitList) {
-        unitListPanel.handleSearchResults_(unitList);
-      },
-      function(xhr, desc, err) {
-        alert("Error in showSearchByTypeResults(" + query + "): " + desc) + " err=" + err;
-      });
-  }
-
-  handleSearchResults_(unitList) {
-    this.setUnitList_(unitList);
+  draw() {
     var currentSetId = null
     var html = ""
     if (this.unitList_ && this.unitList_.length > 0) {
@@ -194,37 +162,5 @@ class UnitListPanel extends ListPanel {
     $(panelName).html(html);
     super.currentIndex = 0;
     sideNav.updateTitle(true);
-  }
-
-  setUnitList_(unitList) {
-    // Sort the list descending by set release date, then collector number.
-    if (unitList) {
-      unitList.sort((u1, u2) => {
-        var s1 = SET_LIST[u1.set_id];
-        var s2 = SET_LIST[u2.set_id]
-        // First prioritize set release date.
-        if (s1.release_date < s2.release_date) {
-          return 1;
-        }
-        if (s1.release_date > s2.release_date) {
-          return -1
-        }
-        // Then prioritize set name length (so that Fast Forces are below main sets)
-        if (s1.name.length > s2.name.length) {
-          return 1;
-        }
-        if (s1.name.length < s2.name.length) {
-          return -1;
-        }
-        if (u1.collector_number > u2.collector_number) {
-          return 1;
-        }
-        if (u1.collector_number < u2.collector_number) {
-          return -1
-        }
-        return 0;
-      })
-    }
-    this.unitList_ = unitList
   }
 }

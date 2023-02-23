@@ -1,11 +1,12 @@
 class SideNav {
 
-  constructor(dataSource, unitManager) {
+  constructor(dataSource, unitManager, favoritesPanel) {
+    this.dataSource_ = dataSource;
     this.setListPanel_ = new SetListPanel();
-    this.favoritesPanel_ = null;
+    this.favoritesPanel_ = favoritesPanel;
     this.advancedSearchPanel_ = new AdvancedSearchPanel();
     this.unitManager_ = unitManager;
-    this.unitListPanel_ = new UnitListPanel(dataSource, unitManager);
+    this.unitListPanel_ = new UnitListPanel(unitManager);
     this.panelStack_ = [this.setListPanel_];
     this.updateTitle(false);
     this.setupHotkeys_();
@@ -96,17 +97,27 @@ class SideNav {
   }
 
   showUnitList(setId) {
-    this.unitListPanel_.showSet(setId);
-    this.unitListPanel_.title = SET_LIST[setId].name;
-    this.pushPanel(this.unitListPanel_);
+    var unitListPanel = this.unitListPanel_;
+    unitListPanel.resetList();
+    unitListPanel.drawSetTitles = false;
+    unitListPanel.title = SET_LIST[setId].name;
+    this.pushPanel(unitListPanel);
     if (READ_ONLY) {
       updateQueryParams(["set=" + setId]);
     }
+    this.dataSource_.searchBySetId(setId,
+      function(unitList) {
+        unitListPanel.setUnitList(unitList);
+        unitListPanel.draw();
+      },
+      function(xhr, desc, err) {
+        alert("Error in showUnitList(" + setId + "): " + desc) + " err=" + err;
+      });
   }
 
   showFavorites() {
     if (!this.favoritesPanel_) {
-      this.favoritesPanel_ = new FavoritesPanel();
+      return;
     }
     this.setPanel(this.favoritesPanel_);
     this.getTopPanel().showPanel()
@@ -127,35 +138,65 @@ class SideNav {
 
   showAdvancedSearchResults() {
     var query = this.advancedSearchPanel_.getQuery();
-    if (!jQuery.isEmptyObject(query)) {
-      this.unitListPanel_.showAdvancedSearchResults(query);
-      this.unitListPanel_.title = "Search Results";
-      this.pushPanel(this.unitListPanel_);
+    if (jQuery.isEmptyObject(query)) {
+      return;
     }
+    this.showSearchResults_(query, "Search Results", true)
   }
 
-  showQuickSearchResults() {
-    if (document.getElementById("quickSearch").value != "") {
-      this.unitListPanel_.showQuickSearchResults();
-      this.unitListPanel_.title = "Quick Search Results";
-      this.setPanel(this.unitListPanel_);
-    }
-  }
-  
   showSearchByKeywordResults(keyword) {
-    if (keyword != "") {
-      this.unitListPanel_.showSearchByKeywordResults(keyword);
-      this.unitListPanel_.title = `'${keyword}' Results`;
-      this.setPanel(this.unitListPanel_);
+    if (keyword == "") {
+      return;
     }
+    const query = {"keyword": [keyword]};
+    const title = `'${keyword}' Results`;
+    this.showSearchResults_(query, title);
   }
   
   showSearchByTypeResults(type) {
-    if (type != "") {
-      this.unitListPanel_.showSearchByTypeResults(type);
-      this.unitListPanel_.title = `'${TYPE_LIST[type].name}' Results`;
-      this.setPanel(this.unitListPanel_);
+    if (type == "") {
+      return;
     }
+    const query = {"type": type};
+    const title = `'${TYPE_LIST[type].name}' Results`;
+    this.showSearchResults_(query, title);
+  }
+  
+  showSearchResults_(query, title) {
+    var unitListPanel = this.unitListPanel_;
+    unitListPanel.resetList();
+    unitListPanel.drawSetTitles = true;
+    unitListPanel.title = title;
+    this.pushPanel(unitListPanel);
+    this.dataSource_.advancedSearch(query,
+      function(unitList) {
+        unitListPanel.setUnitList(unitList);
+        unitListPanel.draw();
+      },
+      function(xhr, desc, err) {
+        alert("Error in showSearchResults_(" + query + "): " + desc) + " err=" + err;
+      });
+  }
+
+  showQuickSearchResults() {
+    if (document.getElementById("quickSearch").value == "") {
+      return;
+    }
+    var unitListPanel = this.unitListPanel_;
+    unitListPanel.resetList();
+    unitListPanel.drawSetTitles = true;
+    unitListPanel.title = "Quick Search Results";
+    this.setPanel(this.unitListPanel_);
+
+    var query = document.getElementById("quickSearch").value;
+    this.dataSource_.quickSearch(query,
+      function(unitList) {
+        unitListPanel.setUnitList(unitList);
+        unitListPanel.draw();
+      },
+      function(xhr, desc, err) {
+        alert("Error in showQuickSearchResults(" + query + "): " + desc) + " err=" + err;
+      });
   }
   
   clearQuickSearch() {

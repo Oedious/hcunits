@@ -2,11 +2,11 @@ class UnitManager {
   constructor(dataSource) {
     this.dataSource_ = dataSource;
     this.unitView_ = null;
-    this.onShowUnitCallback_ = null
+    this.onShowUnitCallbacks_ = []
   }
 
-  setOnShowUnitCallback(callback) {
-    this.onShowUnitCallback_ = callback;    
+  addOnShowUnitCallback(callback) {
+    this.onShowUnitCallbacks_.push(callback);
   }
 
   getUnit() {
@@ -51,20 +51,22 @@ class UnitManager {
     } else {
       throw new Error(`ViewManager doesn't know how to handle unit type ${unitJson.type}`);
     }
+    this.draw();
+  }
+  
+  draw() {
     this.unitView_.draw();
-    if (this.onShowUnitCallback_) {
-      this.onShowUnitCallback_();
+    for (const callback of this.onShowUnitCallbacks_) {
+      callback();
     }
     if (READ_ONLY) {
+      const unit = this.unitView_.unit_
       updateQueryParams([`set=${unit.set_id}`, `unit=${unit.unit_id}`]);
     }
   }
   
   showMap_(unit, map) {
-    this.unitView_ = new MapView(unit, map);    
-    this.unitView_.draw();
-    if (this.onShowUnitCallback_) {
-      this.onShowUnitCallback_();
-    }
+    this.unitView_ = new MapView(unit, map);
+    this.draw();
   }
 }

@@ -24,11 +24,13 @@
         <i class="material-icons">library_books</i>
       </a>
     </li>
+    {% block favorites_tab %}
     <li class="tab">
       <a href="" onclick='sideNav.showFavorites(); return false;' title="Favorites">
         <i class="material-icons">star</i>
       </a>
     </li>
+    {% endblock %}
     <li class="tab">
       <a href="" onclick='sideNav.showAdvancedSearch(); return false;' title="Advanced Search">
         <i class="material-icons">manage_search</i>
@@ -61,7 +63,9 @@
       </a>
     </div>
     <div id="setListPanel" class="navPanel"></div>
+    {% block favorites_panel %}
     <div id="favoritesPanel" class="navPanel" style="display:none;"></div>
+    {% endblock %}
     <div id="advancedSearchPanel" class="navPanel" style="display:none;"></div>
     <div id="unitListPanel" class="navPanel" style="display:none;"></div>
   </div>
@@ -75,6 +79,7 @@
         <div id="unitContainer">
           <div id="unitCardsContainer"></div>
           <div id="addUnitButtonContainer"></div>
+          <div id="favoriteButtonContainer"></div>
         </div>
       </div>
     </div>
@@ -147,18 +152,24 @@
   {% block team_object %}
   {{ team|json_script:'teamObject' }}
   {% endblock %}
+  {% block favorites_object %}
+  {{ favorites|json_script:'favoritesObject' }}
+  {% endblock %}
   <script type="text/javascript">
-    var dataSource = new DataSource("{{csrf_token}}");
-    //var dataSource = new MockDataSource();
-    var unitManager = new UnitManager(dataSource);
+    const csrfToken = "{{csrf_token}}";
+    const dataSource = new DataSource(csrfToken);
+    //const dataSource = new MockDataSource();
+    const unitManager = new UnitManager(dataSource);
     {% block team_manager_scripts %}
-    var teamManager = new TeamManager(
+    const teamManager = new TeamManager(
         unitManager,
         document.getElementById('teamObject').textContent,
-        "{{csrf_token}}");
+        csrfToken);
     {% endblock %}
     {% block side_nav_scripts %}
-    var sideNav = new SideNav(dataSource, unitManager);
+    const favorites = document.getElementById('favoritesObject').textContent;
+    const favoritesPanel = new FavoritesPanel(unitManager, favorites, csrfToken);
+    const sideNav = new SideNav(dataSource, unitManager, favoritesPanel);
     {% endblock %}
 
     // Initialize Materialize select inputs.

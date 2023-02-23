@@ -39,9 +39,9 @@ class TeamManager {
       })
 
       var teamManager = this;
-      this.unitManager_.setOnShowUnitCallback(function() {
+      this.unitManager_.addOnShowUnitCallback(function() {
         teamManager.updateAddUnitButton_();
-      })
+      });
     }
 
     // Update the UI to reflect the provided team.
