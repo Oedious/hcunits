@@ -90,7 +90,9 @@ class TeamManager {
         points += unit.costed_trait.point_value;
       }
       if (unit.equipment) {
-        points += unit.equipment.point_value;
+        for (const equipment of unit.equipment) {
+          points += equipment.point_value;
+        }
       }
     }
 
@@ -150,24 +152,26 @@ class TeamManager {
           </li>`;
         }
         if (unit.equipment) {
-          const equipment = unit.equipment;
-          html += `
-            <li class='teamItem'>
-              <div class='teamItemIcon'>
-                <i class="material-symbols-outlined" title="Equipped With">swords</i>
-              </div>
-              <div class="teamItemText">
-                <a href="#" class="teamItemUnitLink" onclick="unitManager.showUnit('${equipment.unit_id}'); return false;">
-                  ${equipment.name} (${equipment.unit_id})
-                </a>
-                <div class="teamItemPoints">${equipment.point_value}</div>`;
-          if (!READ_ONLY) {
+          for (var j = 0; j < unit.equipment.length; ++j) {
+            const equipment = unit.equipment[j];
             html += `
-              <a class="teamItemRemoveButton" href="#" onclick="teamManager.removeUnit('equipment', ${i}); return false;">
-                <i class="material-icons">cancel</i>
-              </a>`;
+              <li class='teamItem'>
+                <div class='teamItemIcon'>
+                  <i class="material-symbols-outlined" title="Equipped With">swords</i>
+                </div>
+                <div class="teamItemText">
+                  <a href="#" class="teamItemUnitLink" onclick="unitManager.showUnit('${equipment.unit_id}'); return false;">
+                    ${equipment.name} (${equipment.unit_id})
+                  </a>
+                  <div class="teamItemPoints">${equipment.point_value}</div>`;
+            if (!READ_ONLY) {
+              html += `
+                <a class="teamItemRemoveButton" href="#" onclick="teamManager.removeEquipment(${i}, ${j}); return false;">
+                  <i class="material-icons">cancel</i>
+                </a>`;
+            }
+            html += "</div></li>";
           }
-          html += "</div></li>";
         }
       }
     }
@@ -475,12 +479,15 @@ class TeamManager {
     } else {
       pointValue = 0;
     }
-    this.team_.main_force[mainForceIndex].equipment = {
+    if (!this.team_.main_force[mainForceIndex].equipment) {
+      this.team_.main_force[mainForceIndex].equipment = [];
+    }
+    this.team_.main_force[mainForceIndex].equipment.push({
       'unit_id': equipment.unit_id,
       'name': equipment.name,
       'point_value': pointValue,
       'keywords': equipment.keywords,
-    };
+    });
     $('#teamMainForce').html(this.drawMainForce_());
     this.updateTeam();
   }
@@ -516,12 +523,10 @@ class TeamManager {
     } else if (unit.type == "equipment") {
       for (var i = 0; i < this.team_.main_force.length; ++i) {
         const unit = this.team_.main_force[i];
-        if (!unit.equipment) {
-          options.push({
-            "text": `Equip to ${unit.name}`,
-            "onclick": `teamManager.addEquipment(${i});`
-          })
-        }
+        options.push({
+          "text": `Equip to ${unit.name}`,
+          "onclick": `teamManager.addEquipment(${i});`
+        })
       }
       options.push({
         "text": "Add to Sideline",
@@ -605,10 +610,6 @@ class TeamManager {
         this.team_.main_force.splice(position, 1);
         $('#teamMainForce').html(this.drawMainForce_());
         break;
-      case "equipment":
-        delete this.team_.main_force[position].equipment;
-        $('#teamMainForce').html(this.drawMainForce_());
-        break;
       case "sideline":
         this.team_.sideline.splice(position, 1);
         $('#teamSideline').html(this.drawSideline_());
@@ -627,6 +628,12 @@ class TeamManager {
         break;
       default:
     }
+    this.updateTeam();
+  }
+  
+  removeEquipment(unitIndex, equipmentIndex) {
+    this.team_.main_force[unitIndex].equipment.splice(equipmentIndex, 1);
+    $('#teamMainForce').html(this.drawMainForce_());
     this.updateTeam();
   }
 
@@ -720,7 +727,10 @@ class TeamManager {
             updated_unit.costed_trait_index = unit.costed_trait.special_power_index
           }
           if (unit.equipment) {
-            updated_unit.equipment_id = unit.equipment.unit_id
+            updated_unit.equipment_ids = [];
+            for (const equipment of unit.equipment) {
+              updated_unit.equipment_ids.push(equipment.unit_id);
+            }
           }
         }
         // Map units can have locations attached to them.

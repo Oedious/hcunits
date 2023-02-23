@@ -35,7 +35,7 @@ class Team(models.Model):
   #   "unit_id": string - contains a unit ID.
   #   "point_value": number - the point value of the unit.
   #.  "costed_trait_index": (Optional): number - the special power index of the associated costed trait.
-  #   "equipment_id": (Optional): string - a unit ID of equipment attached to the unit.
+  #   "equipment_ids": (Optional): list of strings, each with a unit ID of equipment attached to the unit.
   # }
   main_force = models.JSONField(default=list)
 
@@ -122,9 +122,9 @@ class Team(models.Model):
     for field in Team.UNIT_FIELD_LIST.keys():
       for unit in getattr(self, Team.UNIT_FIELD_LIST[field]["field_name"]):
         unit_id_list.append(unit["unit_id"])
-        equipment_id = unit.get("equipment_id", None)
-        if equipment_id != None:
-          unit_id_list.append(equipment_id)
+        equipment_ids = unit.get("equipment_ids", None)
+        if equipment_ids != None:
+          unit_id_list += equipment_ids
 
     # Get the Units that are referenced by the Team.
     unit_list = Unit.objects.filter(unit_id__in=unit_id_list).values(
@@ -158,27 +158,27 @@ class Team(models.Model):
                   "point_value": sp["point_value"],
                   "special_power_index": costed_trait_index,
                 }
-          equipment_id = unit.get("equipment_id", None)
-          if equipment_id != None:
-            equipment = unit_map.get(equipment_id, None)
-            if equipment == None:
-              del unit["equipment"]
-            else:
-              point_values = equipment["point_values"]
-              if len(point_values) > 0:
-                # If the equipment shares a keyword with the unit it is
-                # equipped to, the point cost is 0.
-                if not set(unit["keywords"]).isdisjoint(equipment["keywords"]):
-                  point_value = 0
+          equipment_ids = unit.get("equipment_ids", None)
+          if equipment_ids != None:
+            unit["equipment"] = []
+            for equipment_id in equipment_ids:
+              equipment = unit_map.get(equipment_id, None)
+              if equipment != None:
+                point_values = equipment["point_values"]
+                if len(point_values) > 0:
+                  # If the equipment shares a keyword with the unit it is
+                  # equipped to, the point cost is 0.
+                  if not set(unit["keywords"]).isdisjoint(equipment["keywords"]):
+                    point_value = 0
+                  else:
+                    point_value = point_values[0]
                 else:
-                  point_value = point_values[0]
-              else:
-                point_value = 0
-              unit["equipment"] = {
-                "unit_id": equipment_id,
-                "name": equipment["name"],
-                "point_value": point_value,
-              }
+                  point_value = 0
+                unit["equipment"].append({
+                  "unit_id": equipment_id,
+                  "name": equipment["name"],
+                  "point_value": point_value,
+                })
         # Special handling for location associated with a map.
         if field == "maps":
           location_index = unit.get("location_index", -1)
@@ -223,11 +223,16 @@ class Team(models.Model):
             raise Exception("%s[%d].unit_id was not a string" % (field, i))
           unit_id_list.append(unit_id)
           if field == "main_force":
-            equipment_id = unit.get("equipment_id", None)
-            if equipment_id != None:
-              if not isinstance(equipment_id, str):
+            equipment_ids = unit.get("equipment_ids", None)
+            if equipment_ids != None:
+              if not isinstance(equipment_ids, list):
                 raise Exception("%s[%d].equipment was not a string" % (field, i))
-              unit_id_list.append(equipment_id)
+              j = 0
+              for equipment_id in equipment_ids:
+                if not isinstance(equipment_id, str):
+                  raise Exception("%s[%d].equipment_ids[%d] was not a string" % (field, i, j))
+                unit_id_list.append(equipment_id)
+                j += 1
           i += 1
 
     # Get the Units that are referenced by the Team.
@@ -284,15 +289,20 @@ class Team(models.Model):
                 raise Exception("%s[%d].costed_trait_index ('%d') did not have a point value" % (field, i, costed_trait_index))
               unit_update["costed_trait_index"] = costed_trait_index
 
-            equipment_id = unit.get("equipment_id", None)
-            if equipment_id != None:
-              unit_db_entry = unit_map.get(equipment_id, None)
-              if unit_db_entry == None:
-                raise Exception("%s[%d].equipment_id ('%s') was invalid" % (field, i, equipment_id))
-              type = unit_db_entry["type"]
-              if type != "equipment":
-                raise Exception("%s[%d].equipment_id ('%s') expected type 'equipment', but found ('%s')" % (field, i, equipment_id, type))
-              unit_update["equipment_id"] = equipment_id
+            equipment_ids = unit.get("equipment_ids", None)
+            if equipment_ids != None and len(equipment_ids) > 0:
+              j = 0
+              unit_update["equipment_ids"] = []
+              for equipment_id in equipment_ids:
+                if equipment_id != None:
+                  unit_db_entry = unit_map.get(equipment_id, None)
+                  if unit_db_entry == None:
+                    raise Exception("%s[%d].equipment_ids[%d] ('%s') was invalid" % (field, i, j, equipment_id))
+                  type = unit_db_entry["type"]
+                  if type != "equipment":
+                    raise Exception("%s[%d].equipment_ids[%d] ('%s') expected type 'equipment', but found ('%s')" % (field, i, j, equipment_id, type))
+                  unit_update["equipment_ids"].append(equipment_id)
+                j += 1
 
           # Validate any location attached to the map unit.
           if field == "maps":
