@@ -9,9 +9,6 @@ class UserProfile(models.Model):
   user = models.OneToOneField(User, on_delete=models.CASCADE, primary_key=True)
   favorites = models.ManyToManyField(Unit)
   
-  def get_favorites(self):
-    return list(self.favorites.all())
-
 class Team(models.Model):
   class Age(models.TextChoices):
     MODERN = 'modern'
@@ -22,7 +19,7 @@ class Team(models.Model):
     UNLISTED = 'unlisted'
     PUBLIC = 'public'
   
-  team_id = models.UUIDField(db_index=True, editable=False, default=uuid.uuid4(), unique=True)
+  team_id = models.UUIDField(db_index=True, editable=False, default=None, unique=True)
   user = models.ForeignKey(User, on_delete=models.CASCADE)
   name = models.CharField(max_length=50, blank=True, null=True)
   description = models.CharField(max_length=100, blank=True, null=True)

@@ -1,4 +1,5 @@
 import json
+import uuid
 
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib import messages
@@ -152,7 +153,12 @@ class AccountDeleteView(LoginRequiredMixin, View):
 
 class CreateTeamView(LoginRequiredMixin, View):
   def post(self, request, *args, **kwargs):
-    team = Team.objects.create(user=request.user)
+    # Keep trying to create a new team until we don't get a collision for the ID.
+    team_id = uuid.uuid4()
+    while Team.objects.filter(team_id=team_id):
+      team_id = uuid.uuid4()
+      
+    team = Team.objects.create(user=request.user, team_id=team_id)
     team.save()
     return redirect('get_team', team.team_id)
     
