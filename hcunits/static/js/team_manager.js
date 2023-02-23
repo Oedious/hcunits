@@ -393,6 +393,7 @@ class TeamManager {
       'name': unit.name,
       'point_value': pointValue,
       'properties': unit.properties,
+      'keywords': unit.keywords,
     };
     switch (unit.type) {
       case "character":
@@ -454,20 +455,32 @@ class TeamManager {
   }
 
   addEquipment(mainForceIndex) {
-    const unit = this.unitManager_.getUnit();
-    if (unit.type != "equipment") {
-      throw new Error(`Error in TeamManager.addEquipment '${unit.unit_id}' - type '${unit.type} is not equipment`);
+    const equipment = this.unitManager_.getUnit();
+    if (equipment.type != "equipment") {
+      throw new Error(`Error in TeamManager.addEquipment '${equipment.unit_id}' - type '${equipment.type} is not equipment`);
     }
     if (mainForceIndex >= this.team_.main_force.length) {
-      throw new Error(`Error in TeamManager.addEquipment '${unit.unit_id}' - index '${mainForceIndex}' is invalid`);
+      throw new Error(`Error in TeamManager.addEquipment '${equipment.unit_id}' - index '${mainForceIndex}' is invalid`);
     }
-    const pointValue = unit.point_values.length > 0 ? unit.point_values[0] : 0;
-    const equipment = {
-      'unit_id': unit.unit_id,
-      'name': unit.name,
+    const unit = this.team_.main_force[mainForceIndex];
+    var pointValue;
+    if (equipment.point_values.length > 0) {
+      // If the equipment shares a keyword with the unit it is attached to,
+      // the point cost is 0.
+      if (equipment.keywords.some(r=> unit.keywords.includes(r))) {
+        pointValue = 0;
+      } else {
+        pointValue = equipment.point_values[0]; 
+      }
+    } else {
+      pointValue = 0;
+    }
+    this.team_.main_force[mainForceIndex].equipment = {
+      'unit_id': equipment.unit_id,
+      'name': equipment.name,
       'point_value': pointValue,
+      'keywords': equipment.keywords,
     };
-    this.team_.main_force[mainForceIndex].equipment = equipment;
     $('#teamMainForce').html(this.drawMainForce_());
     this.updateTeam();
   }

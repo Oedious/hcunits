@@ -128,7 +128,7 @@ class Team(models.Model):
 
     # Get the Units that are referenced by the Team.
     unit_list = Unit.objects.filter(unit_id__in=unit_id_list).values(
-        'unit_id', 'name', 'point_values', 'special_powers', 'properties')
+        'unit_id', 'name', 'point_values', 'special_powers', 'properties', 'keywords')
 
     # Create a dict for easy lookup.
     unit_map = {}
@@ -144,6 +144,7 @@ class Team(models.Model):
         # no need to copy them.
         unit["name"] = unit_entry["name"]
         unit["properties"] = unit_entry["properties"]
+        unit["keywords"] = unit_entry["keywords"]
         # Special handling for costed traits and equipment attached to a main
         # force unit.
         if field == "main_force":
@@ -165,7 +166,12 @@ class Team(models.Model):
             else:
               point_values = equipment["point_values"]
               if len(point_values) > 0:
-                point_value = point_values[0]
+                # If the equipment shares a keyword with the unit it is
+                # equipped to, the point cost is 0.
+                if not set(unit["keywords"]).isdisjoint(equipment["keywords"]):
+                  point_value = 0
+                else:
+                  point_value = point_values[0]
               else:
                 point_value = 0
               unit["equipment"] = {
@@ -225,7 +231,8 @@ class Team(models.Model):
           i += 1
 
     # Get the Units that are referenced by the Team.
-    unit_list = Unit.objects.filter(unit_id__in=unit_id_list).values('unit_id', 'type', 'point_values', 'special_powers')
+    unit_list = Unit.objects.filter(unit_id__in=unit_id_list).values(
+        'unit_id', 'type', 'point_values', 'special_powers')
     # Create a dict for easy lookup.
     unit_map = {}
     for unit in unit_list:
