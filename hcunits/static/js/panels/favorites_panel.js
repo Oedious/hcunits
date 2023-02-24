@@ -42,6 +42,7 @@ class FavoritesPanel extends UnitListPanel {
       headers: { "X-CSRFToken": this.csrfToken_ },
       success: function(response) {
         favoritesPanel.unitList_.push(unit);
+        favoritesPanel.draw();
         favoritesPanel.updateFavoriteButton_();
       },
       error: function(xhr, desc, err) {
@@ -69,6 +70,7 @@ class FavoritesPanel extends UnitListPanel {
       headers: { "X-CSRFToken": this.csrfToken_ },
       success: function(response) {
         favoritesPanel.unitList_.splice(index, 1);
+        favoritesPanel.draw();
         favoritesPanel.updateFavoriteButton_();
       },
       error: function(xhr, desc, err) {
@@ -101,7 +103,6 @@ class FavoritesPanel extends UnitListPanel {
         </a>`;
     }
     $('#favoriteButtonContainer').html(html);
-    this.draw();
   }
   
   findFavorite(unitId) {

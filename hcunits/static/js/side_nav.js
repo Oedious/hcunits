@@ -14,6 +14,11 @@ class SideNav {
   setupHotkeys_() {
     var sideNav = this;
     document.onkeydown = function onKeyDown(event) {
+      // Only handle events when the focus is somewhere in the sideNav container.
+      if (sideNav.getTopPanel() == sideNav.advancedSearchPanel_ ||
+          $("#sideNav").find(":focus").length == 0) {
+        return;
+      }
       var KEY_LEFT = '37';
       var KEY_UP = '38';
       var KEY_RIGHT = '39';
@@ -44,6 +49,10 @@ class SideNav {
 
   // Reset the stack so that it's only this panel.
   setPanel(navPanel) {
+    // If there's no change to the panel stack, just return early.
+    if (this.panelStack_.length == 1 && this.getTopPanel() == navPanel) {
+      return;
+    }
     if (navPanel) {
       while (this.panelStack_.length > 0) {
         this.getTopPanel().hidePanel();
@@ -95,13 +104,11 @@ class SideNav {
 
   showSetList() {
     this.setPanel(this.setListPanel_);
-    this.getTopPanel().showPanel();
   }
 
   showUnitList(setId) {
     var unitListPanel = this.unitListPanel_;
     unitListPanel.resetList();
-    unitListPanel.setSortOrder("unit_id")
     unitListPanel.hideSetTitles = true;
     unitListPanel.title = SET_LIST[setId].name;
     this.pushPanel(unitListPanel);
@@ -123,12 +130,10 @@ class SideNav {
       return;
     }
     this.setPanel(this.favoritesPanel_);
-    this.getTopPanel().showPanel()
   }
 
   showAdvancedSearch() {
     this.setPanel(this.advancedSearchPanel_);
-    this.getTopPanel().showPanel();
   }
 
   addSearchOption(optionId) {
@@ -145,7 +150,7 @@ class SideNav {
       return;
     }
     this.pushPanel(this.unitListPanel_);
-    this.showSearchResults_(query, "Search Results")
+    this.showSearchResults_(query, "Search Results", this.unitListPanel_)
   }
 
   showSearchByKeywordResults(keyword) {
@@ -155,7 +160,7 @@ class SideNav {
     const query = {"keyword": [keyword]};
     const title = `'${keyword}' Results`;
     this.setPanel(this.unitListPanel_);
-    this.showSearchResults_(query, title);
+    this.showSearchResults_(query, title, this.unitListPanel_);
   }
   
   showSearchByTypeResults(type) {
@@ -213,7 +218,7 @@ class SideNav {
   }
 
   setUnit(unitId) {
-    this.unitListPanel_.setCurrentIndexByUnit(unitId);
+    this.getTopPanel().setCurrentIndexByUnit(unitId);
     this.unitManager_.showUnit(unitId);
   }
   
