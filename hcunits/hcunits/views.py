@@ -180,10 +180,8 @@ class TeamView(View):
       try:
         profile = UserProfile.objects.get(user=request.user)
         favorites = []
-        print("getting favorites")
         # TODO: Use the UnitListSerializer from API instead.
         for f in profile.favorites.all():
-          print("found favorite %s" % f.unit_id)
           favorites.append({
             "unit_id": f.unit_id,
             "set_id": f.set_id,

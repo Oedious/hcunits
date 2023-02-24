@@ -53,7 +53,18 @@
 <div id="teamBodyContainer">
   {% block side_nav %}
   <div id="sideNav" style="left:0px">
-    <div id="sideNavHeader"></div>
+    <div id="sideNavHeader">
+      <a id="sideNavBackButton" class="sideNavHeaderButton" href="" onclick="sideNav.popPanel(); return false;" title="Back" style="visibility:hidden;">
+        <i class="material-icons">arrow_back</i>
+      </a>
+      <div id="sideNavPanelTitle"></div>
+      <div id="sideNavSortOrderButton" class="sideNavHeaderButton" title="Sort Order" style="visibility:hidden;">
+        <a href="#" class="dropdown-trigger" data-target="sideNavSortOrderDropdown">
+          <i class="material-icons">sort</i>
+        </a>
+        <ul id='sideNavSortOrderDropdown' class='dropdown-content'></ul>
+      </div>
+    </div>
     <div id="sideNavFooter" style="visibility:hidden;">
       <a class='sideNavFooterButton' href='#' onclick='sideNav.resetAdvancedSearch(); return false;' title="Reset Options">
         <i class='material-icons'>restart_alt</i>
@@ -70,7 +81,7 @@
     <div id="unitListPanel" class="navPanel" style="display:none;"></div>
   </div>
   {% endblock %}
-  <div class="container">
+  <div id="teamAndUnitContainer" class="container">
     <div class="column">
       <div class="row">
         {% block team_container %}

@@ -1,12 +1,11 @@
 class SideNav {
-
   constructor(dataSource, unitManager, favoritesPanel) {
     this.dataSource_ = dataSource;
     this.setListPanel_ = new SetListPanel();
     this.favoritesPanel_ = favoritesPanel;
     this.advancedSearchPanel_ = new AdvancedSearchPanel();
     this.unitManager_ = unitManager;
-    this.unitListPanel_ = new UnitListPanel(unitManager);
+    this.unitListPanel_ = new UnitListPanel(unitManager, null);
     this.panelStack_ = [this.setListPanel_];
     this.updateTitle(false);
     this.setupHotkeys_();
@@ -82,13 +81,16 @@ class SideNav {
         const numItems = this.unitListPanel_.numItems();
         title +=  " (" + numItems + " units)";
       }
-      var hasBackArrow = this.panelStack_.length > 1;
-      if (hasBackArrow) {
-        html += "<a class='sideNavHeaderButton' href='' onclick='sideNav.popPanel(); return false;' title='Back'><i class='material-icons'>arrow_back</i></a>";
-      }
-      html += `<div id='panelTitle'>${title}</div>`;
     }
-    $("#sideNavHeader").html(html);
+    $("#sideNavPanelTitle").html(title);
+    const backButtonVisibility =
+        this.panelStack_.length > 1 ? "visible" : "hidden";
+    $("#sideNavBackButton").css("visibility", backButtonVisibility);
+    
+    const sortOrderButtonVisibility =
+        this.getTopPanel() == this.unitListPanel_ ||
+        this.getTopPanel() == this.favoritesPanel_ ? "visible" : "hidden";
+    $("#sideNavSortOrderButton").css("visibility", sortOrderButtonVisibility);
   }
 
   showSetList() {
@@ -99,7 +101,8 @@ class SideNav {
   showUnitList(setId) {
     var unitListPanel = this.unitListPanel_;
     unitListPanel.resetList();
-    unitListPanel.drawSetTitles = false;
+    unitListPanel.setSortOrder("unit_id")
+    unitListPanel.hideSetTitles = true;
     unitListPanel.title = SET_LIST[setId].name;
     this.pushPanel(unitListPanel);
     if (READ_ONLY) {
@@ -141,7 +144,8 @@ class SideNav {
     if (jQuery.isEmptyObject(query)) {
       return;
     }
-    this.showSearchResults_(query, "Search Results", true)
+    this.pushPanel(this.unitListPanel_);
+    this.showSearchResults_(query, "Search Results")
   }
 
   showSearchByKeywordResults(keyword) {
@@ -150,6 +154,7 @@ class SideNav {
     }
     const query = {"keyword": [keyword]};
     const title = `'${keyword}' Results`;
+    this.setPanel(this.unitListPanel_);
     this.showSearchResults_(query, title);
   }
   
@@ -159,15 +164,19 @@ class SideNav {
     }
     const query = {"type": type};
     const title = `'${TYPE_LIST[type].name}' Results`;
-    this.showSearchResults_(query, title);
+    var unitListPanel = this.unitListPanel_;
+    if (type == "tarot_card") {
+      // Create a temporary panel so that it has its own sort settings.
+      unitListPanel = new UnitListPanel(this.unitManager_, "tarot_cards");
+    }
+    this.setPanel(unitListPanel);
+    this.showSearchResults_(query, title, unitListPanel);
   }
   
-  showSearchResults_(query, title) {
-    var unitListPanel = this.unitListPanel_;
+  showSearchResults_(query, title, unitListPanel) {
     unitListPanel.resetList();
-    unitListPanel.drawSetTitles = true;
     unitListPanel.title = title;
-    this.pushPanel(unitListPanel);
+    unitListPanel.hideSetTitles = false;
     this.dataSource_.advancedSearch(query,
       function(unitList) {
         unitListPanel.setUnitList(unitList);
@@ -184,8 +193,8 @@ class SideNav {
     }
     var unitListPanel = this.unitListPanel_;
     unitListPanel.resetList();
-    unitListPanel.drawSetTitles = true;
     unitListPanel.title = "Quick Search Results";
+    unitListPanel.hideSetTitles = false;
     this.setPanel(this.unitListPanel_);
 
     var query = document.getElementById("quickSearch").value;
@@ -206,5 +215,9 @@ class SideNav {
   setUnit(unitId) {
     this.unitListPanel_.setCurrentIndexByUnit(unitId);
     this.unitManager_.showUnit(unitId);
+  }
+  
+  setSortOrder(sortType) {
+    this.getTopPanel().setSortOrder(sortType);
   }
 }

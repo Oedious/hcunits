@@ -2,6 +2,7 @@ class FavoritesPanel extends UnitListPanel {
   constructor(unitManager, jsonFavorites, csrfToken) {
     super(unitManager)
     this.title = "Favorites"
+    this.sortType_ = "unit_id";
     this.setUnitList(JSON.parse(jsonFavorites));
     this.csrfToken_ = csrfToken;
     if (!READ_ONLY) {

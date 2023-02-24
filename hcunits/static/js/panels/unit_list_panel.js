@@ -1,4 +1,4 @@
-TYPE_TO_ICON = {
+const TYPE_TO_ICON = {
   "character": "accessibility_new",
   "object": "cookie",
   "equipment": "swords",
@@ -8,14 +8,141 @@ TYPE_TO_ICON = {
   "mystery_card": "psychology_alt",
 };
 
+const SORT_ORDERS = {
+  "set_id": {
+    "name": "Sort by Set",
+    "showSortOption": true,
+    "showSetTitles": true,
+    "sortFunction": function(u1, u2) {
+      const s1 = SET_LIST[u1.set_id];
+      const s2 = SET_LIST[u2.set_id];
+      // First prioritize set release date.
+      if (s1.release_date < s2.release_date) {
+        return 1;
+      }
+      if (s1.release_date > s2.release_date) {
+        return -1
+      }
+      // Then prioritize set name length (so that Fast Forces are below main sets)
+      if (s1.name.length > s2.name.length) {
+        return 1;
+      }
+      if (s1.name.length < s2.name.length) {
+        return -1;
+      }
+      if (u1.collector_number > u2.collector_number) {
+        return 1;
+      }
+      if (u1.collector_number < u2.collector_number) {
+        return -1
+      }
+      return 0;
+    },
+  },
+  "unit_id": {
+    "name": "Sort by Unit ID",
+    "showSortOption": true,
+    "showSetTitles": true,
+    "sortFunction": function(u1, u2) {
+      if (u1.unit_id > u2.unit_id) {
+        return 1;
+      }
+      if (u1.unit_id < u2.unit_id) {
+        return -1;
+      }
+      return 0;
+    },
+  },
+  "unit_name": {
+    "name": "Sort by Name",
+    "showSetTitles": false,
+    "showSortOption": true,
+    "sortFunction": function(u1, u2) {
+      if (u1.name > u2.name) {
+        return 1;
+      }
+      if (u1.name < u2.name) {
+        return -1;
+      }
+      return 0;
+    },
+  },
+  "unit_type": {
+    "name": "Sort by Type",
+    "showSetTitles": false,
+    "showSortOption": true,
+    "sortFunction": function(u1, u2) {
+      if (u1.type > u2.type) {
+        return 1;
+      }
+      if (u1.type < u2.type) {
+        return -1;
+      }
+      return 0;
+    },
+  },
+  "point_value_high": {
+    "name": "Sort by Points (High)",
+    "showSetTitles": false,
+    "showSortOption": true,
+    "sortFunction": function(u1, u2) {
+      const pv1 = u1.point_values.length > 0 ? u1.point_values[0] : 0;
+      const pv2 = u2.point_values.length > 0 ? u2.point_values[0] : 0;
+      if (pv1 > pv2) {
+        return 1;
+      }
+      if (pv1 < pv2) {
+        return -1;
+      }
+      return 0;
+    },
+  },
+  "point_value_low": {
+    "name": "Sort by Points (Low)",
+    "showSetTitles": false,
+    "showSortOption": true,
+    "sortFunction": function(u1, u2) {
+      const pv1 = u1.point_values.length > 0 ? u1.point_values[u1.point_values.length - 1] : 0;
+      const pv2 = u2.point_values.length > 0 ? u2.point_values[u2.point_values.length - 1] : 0;
+      if (pv1 > pv2) {
+        return 1;
+      }
+      if (pv1 < pv2) {
+        return -1;
+      }
+      return 0;
+    },
+  },
+  "tarot_cards": {
+    "name": "Tarot Card Type",
+    "showSetTitles": false,
+    "showSortOption": false,
+    "sortFunction": function(u1, u2) {
+      if (u1.collector_number > u2.collector_number) {
+        return 1;
+      }
+      if (u1.collector_number < u2.collector_number) {
+        return -1
+      }
+    },
+  }
+}
+
 class UnitListPanel extends ListPanel {
-  constructor(unitManager) {
+  constructor(unitManager, sortType) {
     super();
     this.unitManager_ = unitManager;
     // A unit list should always be in the form of an JSON array of units from
     // the database.
     this.unitList_ = null;
-    this.drawSetTitles_ = false;
+    this.sortAscending_ = true;
+    this.hideSetTitles_ = false;
+    if (sortType) {
+      this.sortType_ = sortType;
+    } else {
+      this.sortType_ = Object.keys(SORT_ORDERS)[0];
+      this.updateSortOrderDropdown_();
+    }
   }
 
   panelName() {
@@ -29,15 +156,17 @@ class UnitListPanel extends ListPanel {
     return 0;
   }
   
+  // If true, set titles will always be hidden. Otherwise, whether they
+  // are shown depends on the sort type (see SORT_ORDERS above).
+  set hideSetTitles(hideSetTitles) {
+    this.hideSetTitles_ = hideSetTitles;
+  }
+
   resetList() {
     this.unitList_ = null;
     super.currentIndex = 0;
     const panelName = "#" + this.panelName()
     $(panelName).html("");
-  }
-
-  set drawSetTitles(drawSetTitles) {
-    this.drawSetTitles_ = drawSetTitles;
   }
 
   activateCurrentItem() {
@@ -58,56 +187,59 @@ class UnitListPanel extends ListPanel {
   }
 
   setUnitList(unitList) {
-    // Sort the list descending by set release date, then collector number.
-    if (unitList) {
-      unitList.sort((u1, u2) => {
-        var s1 = SET_LIST[u1.set_id];
-        var s2 = SET_LIST[u2.set_id]
-        // First prioritize set release date.
-        if (s1.release_date < s2.release_date) {
-          return 1;
-        }
-        if (s1.release_date > s2.release_date) {
-          return -1
-        }
-        // Then prioritize set name length (so that Fast Forces are below main sets)
-        if (s1.name.length > s2.name.length) {
-          return 1;
-        }
-        if (s1.name.length < s2.name.length) {
-          return -1;
-        }
-        if (u1.collector_number > u2.collector_number) {
-          return 1;
-        }
-        if (u1.collector_number < u2.collector_number) {
-          return -1
-        }
-        return 0;
-      })
+    this.unitList_ = unitList;
+    this.sortUnitList_();
+  }
+
+  setSortOrder(sortType) {
+    if (this.sortType_ == sortType) {
+      this.sortAscending_ = !this.sortAscending_;
+    } else {
+      this.sortType_ = sortType;
     }
-    this.unitList_ = unitList
+    this.sortUnitList_();
+    this.updateSortOrderDropdown_();
+    this.draw();
+  }
+
+  sortUnitList_() {
+    // Sort the list descending by set release date, then collector number.
+    if (!this.unitList_) {
+      return;
+    }
+
+    const sortFunction = SORT_ORDERS[this.sortType_].sortFunction;
+    if (sortFunction) {
+      if (this.sortAscending_) {
+        this.unitList_.sort(sortFunction);
+      } else {
+        // Reverse the sort function.
+        this.unitList_.sort(function(u1, u2) {
+          return sortFunction(u2, u1);
+        });
+      }
+    }
   }
 
   draw() {
-    var currentSetId = null
-    var html = ""
+    var currentSetId = null;
+    var html = "";
     if (this.unitList_ && this.unitList_.length > 0) {
       var setName = SET_LIST[this.unitList_[0].set_id].name;
       html = "<ul class='collection with-header'>";
       for (var i = 0; i < this.unitList_.length; ++i) {
         var unit = this.unitList_[i];
-        if (currentSetId != unit.set_id && this.drawSetTitles_) {
-          var setId = unit.set_id
-          var setItem = SET_LIST[setId]
+        if (currentSetId != unit.set_id && this.showSetTitles_) {
+          var setId = unit.set_id;
+          var setItem = SET_LIST[setId];
           html += `
             <li class='collection-header blue-grey lighten-4'>
               <div class='listPanelImageDiv'>
                 <img class='listPanelImage' src='/static/images/set_${setId}.png' alt='${setId}' title='${setItem.name}'>
               </div>
               <div class='listPanelInfo'>${setItem.name}</div>
-            </li>`
-          currentSetId = setId
+            </li>`;
+          currentSetId = setId;
         }
 
         if (unit.rarity) {
@@ -125,7 +257,7 @@ class UnitListPanel extends ListPanel {
             const typeInfo = BYSTANDER_TYPE_INFO[unit.bystander_type];
             minorInfo = typeInfo.name;
             if (typeInfo.icon) {
-              icon = typeInfo.icon
+              icon = typeInfo.icon;
             }
           } else {
             minorInfo = TYPE_LIST[unit.type].name;
@@ -162,5 +294,32 @@ class UnitListPanel extends ListPanel {
     $(panelName).html(html);
     super.currentIndex = 0;
     sideNav.updateTitle(true);
+  }
+
+  updateSortOrderDropdown_() {
+    // Initialize the sort order dropdown list.
+    var html = "";
+    for (const sortType in SORT_ORDERS) {
+      if (!SORT_ORDERS[sortType].showSortOption) {
+        continue;
+      }
+      const sortTypeName = SORT_ORDERS[sortType].name;
+      var icon = "";
+      if (sortType == this.sortType_) {
+        if (this.sortAscending_) {
+          icon = "<i class='material-icons'>arrow_downward</i>";
+        } else {
+          icon = "<i class='material-icons'>arrow_upward</i>";
+        }
+      }
+      html += `
+        <li>
+          <a href='#' onclick='sideNav.setSortOrder("${sortType}"); return false;'>
+            ${sortTypeName}
+            ${icon}
+          </a>
+        </li>`;
+    }
+    $("#sideNavSortOrderDropdown").html(html);
   }
 }
