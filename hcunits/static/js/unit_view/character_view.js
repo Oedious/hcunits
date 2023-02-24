@@ -148,13 +148,16 @@ class CharacterView extends BaseUnitView {
     } else if (this.unit_.properties.includes("team_up")) {
       color = COLOR_BLUE;
     }
-    var html =
-      `<div id='largeCardTokenCircle' style='border: 7px solid ${color};'>`
+    var html = "<div id='largeCardToken'>";
     const imgUrl = this.unit_.img_url;
+    var borderSize = 8;
     if (imgUrl && imgUrl.length > 0) {
       html += `<img id='largeCardTokenImg' src='${imgUrl}' alt='' onerror='this.style.display=\"none\"'/>`
+      borderSize = 11;
     }
-    html += "</div>"
+    html += `
+        <div id='largeCardTokenCircle' style='border: ${borderSize}px solid ${color};'></div>
+      </div>`;
     return html;
   }
 

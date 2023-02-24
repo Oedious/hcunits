@@ -66,23 +66,33 @@
   color: white;
 }
 
-#largeCardTokenCircle {
+#largeCardToken {
   position: absolute;
   left: 215px;
   top: 15px;
   width: 150px;
   height: 150px;
-  border: 7px solid black;
   background-color: white;
   border-radius: 75px;
 }
 
 #largeCardTokenImg {
   position: absolute;
-  left: -7px;
-  top: -7px;
+  left: 0px;
+  top: 0px;
   width: 150px;
   height: 150px;
+  border-radius: 75px;
+}
+
+#largeCardTokenCircle {
+  position: absolute;
+  left: -1px;
+  top: -1px;
+  width: 152px;
+  height: 152px;
+  background-color: transparent;
+  border-radius: 75px;
 }
 
 #largeCardImprovedAbilities {
