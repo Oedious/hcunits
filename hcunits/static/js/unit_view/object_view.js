@@ -43,8 +43,9 @@ class ObjectView extends SmallUnitView {
     var html =
       `<div id='smallCardToken'>
         <div id='smallCardTokenCircle' style='background-color: lightgray; ${objectStyle}'></div>`;
-    if (this.unit_.has_image) {
-      html += `<img id='smallCardTokenImg' src='/static/images/${this.unit_.set_id}/${this.unit_.unit_id}.png' alt='' onerror='this.style.display=\"none\"'/>`
+    const imgUrl = this.unit_.img_url;
+    if (imgUrl && imgUrl.length > 0) {
+      html += `<img id='smallCardTokenImg' src='${imgUrl}' alt='' onerror='this.style.display=\"none\"'/>`
     }
     html += "</div>";
     return html;
@@ -54,6 +55,6 @@ class ObjectView extends SmallUnitView {
     if (this.unit_.object_type == "standard") {
       return "";
     }
-    return "<img class='specialObjectIcon' src='/static/images/gear.png' alt=''/>";
+    return "<img class='specialObjectIcon' src='/static/images/misc/gear.png' alt=''/>";
   }
 }

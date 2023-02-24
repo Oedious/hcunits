@@ -122,10 +122,16 @@ class TeamManager {
     } else {
       for (var i = 0; i < this.team_.main_force.length; ++i) {
         const unit = this.team_.main_force[i];
+        var style = "";
+        if (unit.properties.includes("prime")) {
+          style = `style='color:white; background-color:${COLOR_GREEN}; border-radius:8px; padding:0 3px 0 3px;'`;
+        } else if (unit.properties.includes("unique")) {
+          style = `style='color:white; background-color:silver; border-radius:8px; padding:0 3px 0 3px;'`;
+        }
         html += `
           <li class='teamItem'>
             <div class="teamItemText">
-              <a href="#" class="teamItemUnitLink" onclick="unitManager.showUnit('${unit.unit_id}'); return false;">
+              <a href="#" class="teamItemUnitLink" onclick="unitManager.showUnit('${unit.unit_id}'); return false;" ${style}>
                 ${unit.name} (${unit.unit_id})
               </a>
               <div class="teamItemPoints">${unit.point_value}</div>`;

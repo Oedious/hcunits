@@ -24,8 +24,9 @@ class BystanderView extends SmallUnitView {
         <div id='smallCardTokenClip'>
           <div id='smallCardTokenCircle'>
             <div id='smallCardBystanderBackground'>`;
-    if (this.unit_.has_image) {
-      html += `<img id='smallCardTokenImg' src='/static/images/${this.unit_.set_id}/${this.unit_.unit_id}.png' alt='' onerror='this.style.display=\"none\"' style="left:-35px;top:-45px;"/>`
+    const imgUrl = this.unit_.img_url;
+    if (imgUrl && imgUrl.length > 0) {
+      html += `<img id='smallCardTokenImg' src='${imgUrl}' alt='' onerror='this.style.display=\"none\"' style="left:-35px;top:-45px;"/>`
     }
     html += `
             </div>
@@ -35,21 +36,21 @@ class BystanderView extends SmallUnitView {
             <div id='smallCardCombatSymbolRange' class='combatSymbol'>
               <div id='smallCardRange'>${this.unit_.unit_range}</div>`;
     for (var i = 0; i < this.unit_.targets; ++i) {
-      html += `<img class='smallCardBolt' src='/static/images/cs_bolt.png' alt='' height='12' width='6' style='left: ${28 + i * 4}px;'\>`;
+      html += `<img class='smallCardBolt' src='/static/images/cs/bolt.png' alt='' height='12' width='6' style='left: ${28 + i * 4}px;'\>`;
     }
     html += `
             </div>
             <div id='smallCardCombatSymbolSpeed' class='combatSymbol'>
-              <img class='smallCardCombatSymbolImg' src='/static/images/cs_${this.unit_.speed_type}.png'/>
+              <img class='smallCardCombatSymbolImg' src='/static/images/cs/${this.unit_.speed_type}.png'/>
             </div>
             <div id='smallCardCombatSymbolAttack' class='combatSymbol'>
-              <img class='smallCardCombatSymbolImg' src='/static/images/cs_${this.unit_.attack_type}.png'/>
+              <img class='smallCardCombatSymbolImg' src='/static/images/cs/${this.unit_.attack_type}.png'/>
             </div>
             <div id='smallCardCombatSymbolDefense' class='combatSymbol'>
-              <img class='smallCardCombatSymbolImg' src='/static/images/cs_${this.unit_.defense_type}.png'/>
+              <img class='smallCardCombatSymbolImg' src='/static/images/cs/${this.unit_.defense_type}.png'/>
             </div>
             <div id='smallCardCombatSymbolDamage' class='combatSymbol'>
-              <img class='smallCardCombatSymbolImg' src='/static/images/cs_${this.unit_.damage_type}.png'/>
+              <img class='smallCardCombatSymbolImg' src='/static/images/cs/${this.unit_.damage_type}.png'/>
             </div>
           </div>
         </div>

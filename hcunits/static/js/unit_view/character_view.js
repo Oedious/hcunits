@@ -47,7 +47,7 @@ class CharacterView extends BaseUnitView {
           ${this.drawTeamAbilities_()}
           ${super.drawPointValues_(40)}
           <div class='largeCardHeroClixLogoClip'>
-            <img class='largeCardHeroClixLogo' src='/static/images/heroclix_logo_small.png' alt=''/>
+            <img class='largeCardHeroClixLogo' src='/static/images/logo/heroclix_logo_small.png' alt=''/>
           </div>
         </div>
       </div>`;
@@ -61,7 +61,7 @@ class CharacterView extends BaseUnitView {
             ${specialPowersHtml.length >= 3 ? specialPowersHtml[2] : ""}
             ${specialPowersHtml.length >= 4 ? specialPowersHtml[3] : ""}
             <div class='largeCardHeroClixLogoClip'>
-              <img class='largeCardHeroClixLogo' src='/static/images/heroclix_logo_small.png' alt=''/>
+              <img class='largeCardHeroClixLogo' src='/static/images/logo/heroclix_logo_small.png' alt=''/>
             </div>
           </div>
         </div>`;
@@ -150,8 +150,9 @@ class CharacterView extends BaseUnitView {
     }
     var html =
       `<div id='largeCardTokenCircle' style='border: 7px solid ${color};'>`
-    if (this.unit_.has_image) {
-      html += `<img id='largeCardTokenImg' src='/static/images/${this.unit_.set_id}/${this.unit_.unit_id}.png' alt='' onerror='this.style.display=\"none\"'/>`
+    const imgUrl = this.unit_.img_url;
+    if (imgUrl && imgUrl.length > 0) {
+      html += `<img id='largeCardTokenImg' src='${imgUrl}' alt='' onerror='this.style.display=\"none\"'/>`
     }
     html += "</div>"
     return html;
@@ -168,26 +169,26 @@ class CharacterView extends BaseUnitView {
     var imp_info = [];
     if (this.unit_.improved_movement.length > 0) {
       imp_info.push({
-        "url": "/static/images/imp_movement.png",
+        "url": "/static/images/imp/movement.png",
       });
     }
     for (const im of this.unit_.improved_movement) {
       const info = IMPROVED_MOVEMENT_LIST[im];
       imp_info.push({
         "tooltip": `<b>${escapeHtml(info.name)}</b>: ${escapeHtml(info.description)}`,
-        "url": `/static/images/imp_${im}.png`
+        "url": `/static/images/imp/${im}.png`
       });
     }
     if (this.unit_.improved_targeting.length > 0) {
       imp_info.push({
-        "url": "/static/images/imp_targeting.png",
+        "url": "/static/images/imp/targeting.png",
       });
     }
     for (const it of this.unit_.improved_targeting) {
       const info = IMPROVED_TARGETING_LIST[it];
       imp_info.push({
         "tooltip": `<b>${escapeHtml(info.name)}</b>: ${escapeHtml(info.description)}`,
-        "url": `/static/images/imp_${it}.png`
+        "url": `/static/images/imp/${it}.png`
       });
     }
 
@@ -228,7 +229,7 @@ class CharacterView extends BaseUnitView {
       html += `
         <div class='largeCardTeamAbility' style='top: ${10 + 45 * i}px'>
           <div class='tooltip'>
-            <img src='/static/images/ta_${this.unit_.team_abilities[i]}.png' alt=''/>
+            <img src='/static/images/ta/${this.unit_.team_abilities[i]}.png' alt=''/>
             <span class='tooltiptext'>${escapeHtml(teamAbility.description)}</span>
           </div>
         </div>
@@ -279,24 +280,24 @@ class CharacterView extends BaseUnitView {
       var iconHtml = "";
       if (type == "costed_trait") {
         iconHtml = `
-          <img class='specialPowerIcon' src='/static/images/sp_${type}.png' alt=''/>
+          <img class='specialPowerIcon' src='/static/images/sp/${type}.png' alt=''/>
           <div class='specialPowerPointValue'>+${power.point_value} POINTS</div>`;
       } else if (type == "rally_trait") {
         iconHtml = `
           <div class='specialPowerRally' style='${RALLY_TYPE_TO_STYLE[power.rally_type]}'>
-            <img class='specialPowerIcon' src='/static/images/sp_trait.png' alt=''/>
-            <img class='specialPowerRallyDie' src='/static/images/d6_${power.rally_die}.png' alt='${power.rally_die}'/>
+            <img class='specialPowerIcon' src='/static/images/sp/trait.png' alt=''/>
+            <img class='specialPowerRallyDie' src='/static/images/misc/d6_${power.rally_die}.png' alt='${power.rally_die}'/>
           </div>`;
       } else if (type == "plus_plot_points" || type == "minus_plot_points") {
         var textColor = type == "plus_plot_points" ? "white" : "black";
         var plotPoints = power.plot_points == "X" ? "X" : Math.abs(power.plot_points);
         iconHtml = `
           <div style='position: relative;'>
-            <img class='specialPowerIcon' src='/static/images/sp_${type}.png' alt=''/>
+            <img class='specialPowerIcon' src='/static/images/sp/${type}.png' alt=''/>
             <div class='specialPowerPlotPoints' style='color:${textColor};'>${plotPoints}</div>
           </div>`;
       } else {
-        iconHtml = `<img class='specialPowerIcon' src='/static/images/sp_${type}.png' alt=''/>`;
+        iconHtml = `<img class='specialPowerIcon' src='/static/images/sp/${type}.png' alt=''/>`;
       }
       html += `
         <tr class='specialPowerRow'>
@@ -334,21 +335,21 @@ class CharacterView extends BaseUnitView {
         <div class='combatSymbol'>
           <div class='largeCardRange'>${this.unit_.unit_range}</div>`;
       for (var i = 0; i < this.unit_.targets; ++i) {
-        html += `<img class='largeCardBolt' src='/static/images/cs_bolt.png' alt='' height='12' width='6' style='left: ${10 + i * 4}px;'\>`;
+        html += `<img class='largeCardBolt' src='/static/images/cs/bolt.png' alt='' height='12' width='6' style='left: ${10 + i * 4}px;'\>`;
       }
       html += `
         </div>
         <div class='combatSymbol' style='position:absolute;top:24px;'>
-          <img class='largeCardCombatSymbolImg' src='/static/images/cs_${this.unit_.speed_type}.png'/>
+          <img class='largeCardCombatSymbolImg' src='/static/images/cs/${this.unit_.speed_type}.png'/>
         </div>
         <div class='combatSymbol' style='position:absolute;top:48px;'>
-          <img class='largeCardCombatSymbolImg' src='/static/images/cs_${this.unit_.attack_type}.png'/>
+          <img class='largeCardCombatSymbolImg' src='/static/images/cs/${this.unit_.attack_type}.png'/>
         </div>
         <div class='combatSymbol' style='position:absolute;top:72px;'>
-          <img class='largeCardCombatSymbolImg' src='/static/images/cs_${this.unit_.defense_type}.png'/>
+          <img class='largeCardCombatSymbolImg' src='/static/images/cs/${this.unit_.defense_type}.png'/>
         </div>
         <div class='combatSymbol' style='position:absolute;top:96px;'>
-          <img class='largeCardCombatSymbolImg' src='/static/images/cs_${this.unit_.damage_type}.png'/>
+          <img class='largeCardCombatSymbolImg' src='/static/images/cs/${this.unit_.damage_type}.png'/>
         </div>
         <table class='largeCardDialTable' style='width:${tableWidth}px'>`;
     

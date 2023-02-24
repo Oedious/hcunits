@@ -125,7 +125,7 @@ class SmallUnitView extends BaseUnitView {
         const description = escapeHtml(SPECIAL_POWER_TYPE_LIST[type].description);
         iconHtml = `
           <td class='specialPowerImg'>
-            <img class='specialPowerIcon' src='/static/images/sp_${type}.png' alt='' title='${description}'/>
+            <img class='specialPowerIcon' src='/static/images/sp/${type}.png' alt='' title='${description}'/>
             <div class='specialPowerPointValue'>+${power.point_value} POINTS</div>
           </td>`;
       } else if (type == "location") {
@@ -140,8 +140,8 @@ class SmallUnitView extends BaseUnitView {
         iconHtml = `
           <td class='specialPowerImg'>
             <div class='specialPowerRally' style='${RALLY_TYPE_TO_STYLE[power.rally_type]}' title='${description}'>
-              <img class='specialPowerIcon' src='/static/images/sp_trait.png' alt=''/>
-              <img class='specialPowerRallyDie' src='/static/images/d6_${power.rally_die}.png' alt='${power.rally_die}'/>
+              <img class='specialPowerIcon' src='/static/images/sp/trait.png' alt=''/>
+              <img class='specialPowerRallyDie' src='/static/images/misc/d6_${power.rally_die}.png' alt='${power.rally_die}'/>
             </div>
           </td>`;
       } else if (type == "consolation") {
@@ -157,7 +157,7 @@ class SmallUnitView extends BaseUnitView {
         }
         iconHtml = `
           <td class='specialPowerImg'>
-            <img class='specialPowerIcon' src='/static/images/sp_${combatSymbolType}.png' alt=''/>
+            <img class='specialPowerIcon' src='/static/images/sp/${combatSymbolType}.png' alt=''/>
           </td>`;
       }
 
