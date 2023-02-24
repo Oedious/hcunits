@@ -20,7 +20,7 @@ class UnitDetailSerializer(NonNullModelSerializer):
     path = "static/images/set/%s/%s.png" % (unit.set_id, unit.collector_number)
     if os.path.exists(path):
       return "/" + path
-    return ""
+    return None
   
   class Meta:
     model = Unit
