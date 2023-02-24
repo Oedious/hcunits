@@ -22,11 +22,11 @@ class BystanderView extends SmallUnitView {
     var html = `
       <div id='smallCardToken'>
         <div id='smallCardTokenClip'>
-          <div id='smallCardTokenCircle'>
+          <div id='smallCardBystanderTokenCircle'>
             <div id='smallCardBystanderBackground'>`;
     const imgUrl = this.unit_.img_url;
     if (imgUrl && imgUrl.length > 0) {
-      html += `<img id='smallCardTokenImg' src='${imgUrl}' alt='' onerror='this.style.display=\"none\"' style="left:-35px;top:-45px;"/>`
+      html += `<img id='smallCardBystanderTokenImg' src='${imgUrl}' alt='' onerror='this.style.display=\"none\"' style="left:-35px;top:-45px;"/>`
     }
     html += `
             </div>

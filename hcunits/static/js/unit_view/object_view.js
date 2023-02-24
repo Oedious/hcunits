@@ -39,15 +39,17 @@ class ObjectView extends SmallUnitView {
   }
   
   drawToken_() {
-    const objectStyle = OBJECT_SIZE_INFO[this.unit_.object_size].style;
-    var html =
-      `<div id='smallCardToken'>
-        <div id='smallCardTokenCircle' style='background-color: lightgray; ${objectStyle}'></div>`;
+    const color = OBJECT_SIZE_INFO[this.unit_.object_size].color;
+    var html = "<div id='smallCardToken'>";
     const imgUrl = this.unit_.img_url;
+    var borderSize = 8;
     if (imgUrl && imgUrl.length > 0) {
       html += `<img id='smallCardTokenImg' src='${imgUrl}' alt='' onerror='this.style.display=\"none\"'/>`
+      borderSize = 11;
     }
-    html += "</div>";
+    html += `
+        <div id='smallCardTokenCircle' style='border: ${borderSize}px solid ${color};''></div>
+      </div>`;
     return html;
   }
   

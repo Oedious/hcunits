@@ -60,23 +60,23 @@ const OBJECT_TYPE_INFO = {
 const OBJECT_SIZE_INFO = {
   "light": {
     "name": "Light Object",
-    "style": "border: 7px solid " + COLOR_YELLOW + ";"
+    "color": COLOR_YELLOW,
   },
   "heavy": {
     "name": "Heavy Object",
-    "style": "border: 7px solid " + COLOR_RED + ";"
+    "color": COLOR_RED,
   },
   "ultra_light": {
     "name": "Ultra Light Object",
-    "style": "border: 7px solid " + COLOR_WHITE + ";"
+    "color": COLOR_WHITE,
   },
   "ultra_heavy": {
     "name": "Ultra Heavy Object",
-    "style": "border: 7px solid " + COLOR_PURPLE + ";"
+    "color": COLOR_PURPLE,
   },
   "immobile": {
     "name": "Immobile Object",
-    "style": "border: 7px solid " + COLOR_BLUE + ";"
+    "color": COLOR_BLUE,
   }
 };
 
