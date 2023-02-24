@@ -60,6 +60,15 @@ class TeamListManager {
           break;
       }
       
+      var descriptionHtml = "";
+      if (team.description) {
+        descriptionHtml = `
+          <div class='teamCardDescriptionContainer'>
+            <img class='teamCardDescriptionIcon' src='/static/images/sp/trait.png' alt=''>
+            <div class='teamCardDescription'>${team.description}</div>
+          </div>
+          `;
+      }
       html += `
         <div class='teamContainer'>
           <a class='teamCard' href='/teams/${team.team_id}'>
@@ -67,8 +76,15 @@ class TeamListManager {
             <div class='teamCardHeader'>
               <div class='teamCardName'>${name}</div>
             </div>
-            <div class='teamCardTokenCircle'></div>
-            <div class='teamCardDescription'></div>
+            <div class='teamCardToken'>`;
+      if (team.img_url) {
+        html += `<img class='teamCardTokenImg' src='${team.img_url}' alt='' onerror="this.style.display='none'">`;
+      } else {
+        html += "<div class='teamCardTokenCircle'></div>";
+      }
+      html += `
+            </div>
+            ${descriptionHtml}
             <div class='teamCardFormat'>${team.point_limit} - ${age}</div>
           </a>`;
       if (isOwner) {

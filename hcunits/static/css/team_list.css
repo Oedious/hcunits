@@ -64,15 +64,51 @@
   line-height: 1em;
 }
 
-.teamCardTokenCircle {
+.teamCardToken {
   position: absolute;
   right: 10px;
   top: 10px;
   width: 120px;
   height: 120px;
+  background-color: white;
+  border-radius: 60px;
+}
+
+.teamCardTokenCircle {
+  position: absolute;
+  width: 120px;
+  height: 120px;
   border: 5px solid black;
   background-color: white;
-  border-radius: 75px;
+  border-radius: 60px;
+}
+
+.teamCardTokenImg {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+}
+
+.teamCardDescriptionContainer {
+  position: absolute;
+  left: 5px;
+  top: 60px;
+}
+
+.teamCardDescriptionIcon {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 5px;
+}
+
+.teamCardDescription {
+  position: absolute;
+  width: 170px;
+  height: 95px;
+  left: 27px;
+  top: 5px;
+  color: black;
 }
 
 .teamCardFormat {

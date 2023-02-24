@@ -1,4 +1,5 @@
 import datetime
+import os
 import uuid
 from django.contrib.auth.models import User
 from django.db import models
@@ -116,6 +117,33 @@ class Team(models.Model):
       "displayable_update_time": displayable_update_time,
     }
     if header_only:
+      unit_id_list = []
+      for unit in self.main_force:
+        unit_id_list.append(unit["unit_id"])
+
+      # Get the Units that are referenced by the Team main force.
+      queryset = Unit.objects.filter(unit_id__in=unit_id_list).values(
+          'set_id', 'collector_number', 'point_values')
+
+      unit_list = []
+      for unit in queryset:
+        point_values = unit.get("point_values", None)
+        point_value = 0
+        if point_values and len(point_values) > 0:
+          point_value = point_values[0]
+        unit_list.append({
+          "path": "static/images/set/%s/%s.png" % (unit["set_id"], unit["collector_number"]),
+          "point_value": point_value,
+        })
+
+      # Find a a nice "cover image" for the team based on the most expensive
+      # unit.
+      unit_list.sort(key=lambda x: -x["point_value"])
+      for unit in unit_list:
+        if os.path.exists(unit["path"]):
+          wire_team["img_url"] = "/" + unit["path"]
+          break
+
       return wire_team
 
     unit_id_list = []
@@ -140,8 +168,8 @@ class Team(models.Model):
       unit_list = []
       for unit in getattr(self, Team.UNIT_FIELD_LIST[field]["field_name"]):
         unit_entry = unit_map.get(unit["unit_id"], None)
-        # The unit will already contain its own unit_id field, so
-        # no need to copy them.
+        # The unit will already contain its own unit_id and point_values fields,
+        # so no need to copy them.
         unit["name"] = unit_entry["name"]
         unit["properties"] = unit_entry["properties"]
         unit["keywords"] = unit_entry["keywords"]
