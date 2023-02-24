@@ -4,7 +4,7 @@
 
 {% block team_header %}
 <div id="teamHeader" class="row">
-  <div class="col">
+  <div id="teamHeaderCol" class="col">
     <H4>{{ team.owner }}</H4>
     <div class="input-field row">
       <input id="teamName" type="text" class="validate" placeholder="Change Team Name"{% if team.name %} value="{{team.name}}"{% endif %}>
@@ -13,7 +13,7 @@
     <div class="input-field row">
       <input id="teamDescription" type="text" placeholder="Change Team Description"{% if team.description %} value="{{team.description}}"{% endif %}>
     </div>
-    <div class="row">
+    <div id="teamHeaderFormat" class="row">
       <div class="input-field col s12 m3">
         <input id="teamPointLimit" class="teamInput" type="number" min="0" max="9999"{% if team.point_limit %} value="{{team.point_limit}}"{% endif %}>
         <label for="teamPointLimit">Points</label>
