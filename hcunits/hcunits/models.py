@@ -1,5 +1,6 @@
 import datetime
 import os
+import re
 import uuid
 from django.contrib.auth.models import User
 from django.db import models
@@ -117,32 +118,24 @@ class Team(models.Model):
       "displayable_update_time": displayable_update_time,
     }
     if header_only:
-      unit_id_list = []
-      for unit in self.main_force:
-        unit_id_list.append(unit["unit_id"])
-
-      # Get the Units that are referenced by the Team main force.
-      queryset = Unit.objects.filter(unit_id__in=unit_id_list).values(
-          'set_id', 'collector_number', 'point_values')
-
       unit_list = []
-      for unit in queryset:
-        point_values = unit.get("point_values", None)
-        point_value = 0
-        if point_values and len(point_values) > 0:
-          point_value = point_values[0]
+      for unit in self.main_force:
         unit_list.append({
-          "path": "static/images/set/%s/%s.png" % (unit["set_id"], unit["collector_number"]),
-          "point_value": point_value,
+          "unit_id": unit["unit_id"],
+          "point_value": unit["point_value"],
         })
 
       # Find a a nice "cover image" for the team based on the most expensive
       # unit.
       unit_list.sort(key=lambda x: -x["point_value"])
       for unit in unit_list:
-        if os.path.exists(unit["path"]):
-          wire_team["img_url"] = "/" + unit["path"]
-          break
+        # Note: this doesn't work on Con LE names.
+        match_obj = re.match(r"([a-z\d]*)([A-Z]?\d\d\d.*)", unit["unit_id"])
+        if match_obj and len(match_obj.groups()) > 1:
+          path = "static/images/set/%s/%s.png" % (match_obj.group(1), match_obj.group(2))
+          if os.path.exists(path):
+            wire_team["img_url"] = "/" + path
+            break
 
       return wire_team
 
