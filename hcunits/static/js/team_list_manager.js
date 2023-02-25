@@ -69,6 +69,10 @@ class TeamListManager {
           </div>
           `;
       }
+      var imgUrl = team.img_url;
+      if (!imgUrl) {
+        imgUrl = "/static/images/misc/unknown.png";
+      }
       html += `
         <div class='teamContainer'>
           <a class='teamCard' href='/teams/${team.team_id}'>
@@ -76,13 +80,8 @@ class TeamListManager {
             <div class='teamCardHeader'>
               <div class='teamCardName'>${name}</div>
             </div>
-            <div class='teamCardToken'>`;
-      if (team.img_url) {
-        html += `<img class='teamCardTokenImg' src='${team.img_url}' alt='' onerror="this.style.display='none'">`;
-      } else {
-        html += "<div class='teamCardTokenCircle'></div>";
-      }
-      html += `
+            <div class='teamCardToken'>
+              <img class='teamCardTokenImg' src='${imgUrl}' alt='' onerror="this.style.display='none'">
             </div>
             ${descriptionHtml}
             <div class='teamCardFormat'>${team.point_limit} - ${age}</div>
