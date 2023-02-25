@@ -6,11 +6,10 @@ from django.contrib.auth.models import User
 from django.db import models
 from hcunits_api.models import Unit
 
-
 class UserProfile(models.Model):
   user = models.OneToOneField(User, on_delete=models.CASCADE, primary_key=True)
   favorites = models.ManyToManyField(Unit)
-  
+
 class Team(models.Model):
   class Age(models.TextChoices):
     MODERN = 'modern'

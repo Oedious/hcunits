@@ -1,6 +1,18 @@
 # Commands to connect to the wordpress MySQL database
 mysql hcunits -u root -p --local-infile=1
 
+CREATE database hcunits character set utf8mb4 collate utf8mb4_unicode_ci;
+
+ALTER DATABASE
+    hcunits
+    CHARACTER SET = utf8mb4
+    COLLATE = utf8mb4_unicode_ci;
+    
+ALTER TABLE
+    units
+    CONVERT TO CHARACTER SET utf8mb4
+    COLLATE utf8mb4_unicode_ci;
+
 # Delete the 'units' table
 DROP TABLE units;
 

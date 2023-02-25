@@ -206,6 +206,10 @@ IMPROVED_ABILITIES = {
   }
 }
 
+OBJECT_KEYPHRASES = [
+  "indestructible", "equip_any", "equip_friendly", "unequip_ko", "unequip_drop"
+]
+
 CACHE_DIR = ".cache"
 
 def fix_style(str):
@@ -557,7 +561,11 @@ class Unit:
               attr.startswith("EQUIP: ") or
               attr.startswith("UNEQUIP: ") or
               attr == "Sword Equipment"):
-            self.object_keyphrases.append(fix_style(attr))
+            keyphrase = fix_style(attr).replace('.', '')
+            if keyphrase in OBJECT_KEYPHRASES:
+              self.object_keyphrases.append(keyphrase)
+            else:
+              print("Skipping unknown object keyphrase '%s'" % keyphrase)
           elif attr.startswith("Light Object"):
             self.object_size = "light"
           elif attr == "Heavy Object":
@@ -991,7 +999,8 @@ class Unit:
             self.dial[i][k] = v
       elif (key == "defense_type" or
             key == "object_size" or
-            key == "point_values"):
+            key == "point_values" or
+            key == "improved_movement"):
         setattr(self, key, value)
       else:
         raise RuntimeError("The update type '%s' for '%s' is currently not supported" % (key, self.unit_id))
@@ -1028,7 +1037,7 @@ class Unit:
       xml += "\n    <real_name>%s</real_name>" % clean_string(self.real_name)
     if self.dimensions:
       xml += "\n    <dimensions>%s</dimensions>" % self.dimensions
-    xml += """
+    xml += u"""
     <point_values>{}</point_values>
     <properties>{}</properties>
     <team_abilities>{}</team_abilities>

@@ -237,7 +237,7 @@ class UnitListPanel extends ListPanel {
           html += `
             <li class='collection-header blue-grey lighten-4'>
               <div class='listPanelImageDiv'>
-                <img class='listPanelImage' src='/static/images/set_${setId}.png' alt='${setId}' title='${setItem.name}'>
+                <img class='listPanelImage' src='/static/images/set/${setId}/icon.png' alt='${setId}' title='${setItem.name}'>
               </div>
               <div class='listPanelInfo'>${setItem.name}</div>
             </li>`;
