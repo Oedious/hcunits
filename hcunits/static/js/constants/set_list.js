@@ -184,6 +184,11 @@ const SET_LIST = {
     "release_date": "2019-11-27",
     "universe": "marvel"
   },
+  "orvl": {
+    "name": "The Orville Starter",
+    "release_date": "2019-10-23",
+    "universe": "indy"
+  },
   "wk": {
     "name": "WizKids Standard Game Pieces",
     "release_date": "2002-05-01",

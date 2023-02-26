@@ -133,6 +133,9 @@ SET_MAP = {
   "dcxm": {
     "name": "Deep Cuts: X-Men Primed",
   },
+  "orvl": {
+    "name": "The Orville Starter",
+  },
 }
 
 POWERS = {

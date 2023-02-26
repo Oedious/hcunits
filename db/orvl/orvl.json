@@ -1,0 +1,805 @@
+[
+  {
+    "unit_id": "orvl001", 
+    "set_id": "orvl", 
+    "collector_number": "001", 
+    "name": "Captain Ed Mercer", 
+    "type": "character", 
+    "rarity": "limited_edition", 
+    "dimensions": "1x1", 
+    "point_values": [
+      60
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Planetary Union", 
+      "Soldier"
+    ], 
+    "special_powers": [
+      {
+        "type": "attack", 
+        "name": "SET TO STUN", 
+        "description": "Incapacitate. Friendly characters that are adjacent or have the Planetary Union keyword can use Incapacitate.", 
+        "powers": [
+          "incapacitate"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "5", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 11, 
+        "defense_power": "defend", 
+        "defense_value": 18, 
+        "damage_power": "leadership", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "defend", 
+        "defense_value": 18, 
+        "damage_power": "leadership", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "running_shot", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "enhancement", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "enhancement", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "sidestep", 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "super_senses", 
+        "defense_value": 16, 
+        "damage_power": "shape_change", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "sidestep", 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "super_senses", 
+        "defense_value": 16, 
+        "damage_power": "shape_change", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "orvl002", 
+    "set_id": "orvl", 
+    "collector_number": "002", 
+    "name": "Commander Kelly Grayson", 
+    "type": "character", 
+    "rarity": "limited_edition", 
+    "dimensions": "1x1", 
+    "point_values": [
+      40
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Deity", 
+      "Planetary Union", 
+      "Soldier"
+    ], 
+    "special_powers": [
+      {
+        "type": "damage", 
+        "name": "DEFT LEADERSHIP", 
+        "description": "Enhancement. Once per turn, when a friendly character that's adjacent or has the Planetary Union keyword rolls for Leadership, Shape Change, or Super Senses, you may reroll that roll.", 
+        "powers": [
+          "enhancement"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "5", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "running_shot", 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_power": "willpower", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "running_shot", 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_power": "willpower", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "sidestep", 
+        "speed_value": 6, 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "sidestep", 
+        "speed_value": 6, 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "sidestep", 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "orvl003", 
+    "set_id": "orvl", 
+    "collector_number": "003", 
+    "name": "Dr. Claire Finn", 
+    "type": "character", 
+    "rarity": "limited_edition", 
+    "dimensions": "1x1", 
+    "point_values": [
+      25
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Planetary Union", 
+      "Scientist"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "SICK BAY REGULAR", 
+        "description": "At the beginning of the game, generate a Lt. Yaphit bystander."
+      }, 
+      {
+        "type": "damage", 
+        "name": "I HAVE EXCEPTIONAL CREDENTIALS...AND I CHOSE TO BE HERE", 
+        "description": "Support. Support as FREE, but modify attack -2.", 
+        "powers": [
+          "support"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "5", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "sidestep", 
+        "speed_value": 5, 
+        "attack_value": 10, 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "force_blast", 
+        "speed_value": 5, 
+        "attack_value": 10, 
+        "defense_value": 15, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "force_blast", 
+        "speed_value": 5, 
+        "attack_value": 9, 
+        "defense_value": 15, 
+        "damage_power": "support", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "orvl003bt", 
+    "set_id": "orvl", 
+    "collector_number": "003bt", 
+    "name": "Lt. Yaphit", 
+    "type": "bystander", 
+    "rarity": "limited_edition", 
+    "dimensions": "1x1", 
+    "point_values": [], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [], 
+    "special_powers": [
+      {
+        "type": "speed", 
+        "name": "YAPHIT, THE GREATEST IN ENGENDERING", 
+        "description": "Sidestep. Adjacent friendly characters can use Sidestep if they can't already.", 
+        "powers": [
+          "sidestep"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "bystander_type": "standard", 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "dolphin", 
+    "attack_type": "autonomous", 
+    "defense_type": "indomitable", 
+    "damage_type": "tiny", 
+    "dial_size": "1", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 4, 
+        "attack_power": "poison", 
+        "attack_value": 0, 
+        "defense_power": "super_senses", 
+        "defense_value": 16, 
+        "damage_power": "shape_change", 
+        "damage_value": 0
+      }
+    ]
+  }, 
+  {
+    "unit_id": "orvl004", 
+    "set_id": "orvl", 
+    "collector_number": "004", 
+    "name": "Lt. Commander Bortus", 
+    "type": "character", 
+    "rarity": "limited_edition", 
+    "dimensions": "1x1", 
+    "point_values": [
+      50
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Planetary Union", 
+      "Warrior"
+    ], 
+    "special_powers": [
+      {
+        "type": "speed", 
+        "name": "BATTLING BACK THE KRILL", 
+        "description": "Charge, Force Blast. Friendly characters that are adjacent or have the Planetary Union keyword can use Force Blast.", 
+        "powers": [
+          "charge", 
+          "force_blast"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "5", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "empower", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "special", 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "empower", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "special", 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "empower", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "plasticity", 
+        "speed_value": 6, 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "leadership", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "plasticity", 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "leadership", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "orvl005", 
+    "set_id": "orvl", 
+    "collector_number": "005", 
+    "name": "Isaac", 
+    "type": "character", 
+    "rarity": "limited_edition", 
+    "dimensions": "1x1", 
+    "point_values": [
+      75
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Planetary Union", 
+      "Robot", 
+      "Scientist"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "BIOLOGICAL FORMS ARE JUST INFERIOR", 
+        "description": "Regeneration as FREE.", 
+        "powers": [
+          "regeneration"
+        ]
+      }, 
+      {
+        "type": "attack", 
+        "name": "I HAVE STUDIED HUMAN BEHAVIOR AND BELIEVE MY KNOWLEDGE TO BE MOST USEFUL", 
+        "description": "UNIQUE MODIFIER - Friendly characters that are adjacent or have the Planetary Union keyword modify attack +1."
+      }, 
+      {
+        "type": "damage", 
+        "name": "SCIENCE OFFICER", 
+        "description": "Outwit, Ranged Combat Expert.", 
+        "powers": [
+          "outwit", 
+          "ranged_combat_expert"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "6", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "sidestep", 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "orvl006", 
+    "set_id": "orvl", 
+    "collector_number": "006", 
+    "name": "Lt. Gordon Malloy", 
+    "type": "character", 
+    "rarity": "limited_edition", 
+    "dimensions": "1x1", 
+    "point_values": [
+      40
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Planetary Union", 
+      "Soldier"
+    ], 
+    "special_powers": [
+      {
+        "type": "defense", 
+        "name": "HUGGING THE DONKEY", 
+        "description": "Energy Shield/Deflection. UNIQUE MODIFIER - Friendly characters that are adjacent or have the Planetary Union keyword modify defense +1.", 
+        "powers": [
+          "energy_shield_deflection"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "5", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_power": "probability_control", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "running_shot", 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_power": "probability_control", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "special", 
+        "defense_value": 16, 
+        "damage_power": "probability_control", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "stealth", 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_power": "shape_change", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "stealth", 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_power": "shape_change", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "orvl007", 
+    "set_id": "orvl", 
+    "collector_number": "007", 
+    "name": "Lt. Alara Kitan", 
+    "type": "character", 
+    "rarity": "limited_edition", 
+    "dimensions": "1x1", 
+    "point_values": [
+      60
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Planetary Union", 
+      "Police"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "CAN YOU OPEN THIS JAR OF PICKLES", 
+        "description": "FREE: Destroy one adjacent piece of blocking terrain. Friendly characters that are adjacent or have the Planetary Union keyword can use Improved Movement: Hindering this turn."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "5", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "leap_climb", 
+        "speed_value": 9, 
+        "attack_value": 11, 
+        "defense_power": "invincible", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "leap_climb", 
+        "speed_value": 8, 
+        "attack_power": "super_strength", 
+        "attack_value": 10, 
+        "defense_power": "invincible", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "super_strength", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "charge", 
+        "speed_value": 7, 
+        "attack_power": "super_strength", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "leap_climb", 
+        "speed_value": 7, 
+        "attack_power": "super_strength", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "orvl008", 
+    "set_id": "orvl", 
+    "collector_number": "008", 
+    "name": "Lt. Commander John Lamarr", 
+    "type": "character", 
+    "rarity": "limited_edition", 
+    "dimensions": "1x1", 
+    "point_values": [
+      45
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Planetary Union", 
+      "Scientist"
+    ], 
+    "special_powers": [
+      {
+        "type": "attack", 
+        "name": "BOOM, THAT'S WHAT I'M TALKING ABOUT", 
+        "description": "Precision Strike. Friendly characters that are adjacent or have the Planetary Union keyword can use Precision Strike when targeting a character that Lt. Commander John Lamarr has damaged this turn.", 
+        "powers": [
+          "precision_strike"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "5", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "running_shot", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "willpower", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "running_shot", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "willpower", 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "running_shot", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "sidestep", 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_value": 16, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "sidestep", 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_value": 16, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "orvlM001", 
+    "set_id": "orvl", 
+    "collector_number": "M001", 
+    "name": "Orville Bridge", 
+    "type": "map", 
+    "point_values": [], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [], 
+    "special_powers": [], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "map_url": "https://hcmaps.net/maps/orvl/orville_bridge.json", 
+    "dial": []
+  }
+]
