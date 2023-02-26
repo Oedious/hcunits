@@ -205,9 +205,19 @@ const SET_LIST = {
     "universe": "marvel"
   },
   "trekrf": {
-    "name": "Star Trek: Resistance is Futile",
+    "name": "Star Trek: The Next Generation: Resistance is Futile",
     "release_date": "2019-07-24",
     "universe": "star_trek"
+  },
+  "fftng": {
+    "name": "Fast Forces: Star Trek: The Next Generation: Resistance is Futile",
+    "release_date": "2019-07-24",
+    "universe": "star_trek"
+  },
+  "wcr": {
+    "name": "Wolverine vs Cyclops: X-Men Regenesis",
+    "release_date": "2019-06-02",
+    "universe": "marvel"
   },
   "wk": {
     "name": "WizKids Standard Game Pieces",

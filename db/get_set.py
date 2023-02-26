@@ -148,6 +148,12 @@ SET_MAP = {
   "trekrf": {
     "name": "Star Trek HeroClix Away Team: Resistance is Futile",
   },
+  "fftng": {
+    "name": "Fast Forces: Star Trek HeroClix Away Team: Resistance is Futile",
+  },
+  "wcr": {
+    "name": "Wolverine v Cyclops: Xmen Regenesis",
+  },
 }
 
 POWERS = {
@@ -285,6 +291,7 @@ IMPROVED_ABILITIES = {
       "blocking": "blocking",
       "ignores blocking and destroys blocking terrain as the character moves through it": "blocking",
       "ignores blocking and destroys blocking terrain as the character moves through it.": "blocking",
+      "ignores blocking terrain and destroys blocking terrain as the character moves through it.": "blocking",
       "improved movement: ignores blocking terrain and destroys blocking terrain as the character moves through it.": "blocking",
       "this character can move through blocking terrain. immediately after movement resolves, destroy all blocking terrain moved through": "blocking",
       "this character can move through blocking terrain. immediately after movement resolves, destroy all blocking terrain moved through.": "blocking",
@@ -857,6 +864,8 @@ class Unit:
             continue
 
           if sp_type == "improved":
+            if sp_name.lower().startswith("improved "):
+              sp_name = sp_name.split(" ", 1)[1]
             improved_ability_info = IMPROVED_ABILITIES.get(sp_name.lower(), None)
             if not improved_ability_info:
               raise RuntimeError("Error: unit '%s' has invalid improved ability type '%s'" % (self.unit_id, sp_name))
