@@ -145,6 +145,9 @@ SET_MAP = {
   "ffxdps": {
     "name": "Fast Forces: X-Men the Animated Series: The Dark Phoenix Saga",
   },
+  "trekrf": {
+    "name": "Star Trek HeroClix Away Team: Resistance is Futile",
+  },
 }
 
 POWERS = {
@@ -358,6 +361,7 @@ TEAM_ABILITY_CORRECTIONS = {
   "Romulan Star Empire (Aw": "romulan_star_empire",
   "Klingon Empire (Away Team)": "klingon_empire",
   "United Federation of Planets": "united_federation",
+  "Borg (Away Team)": "borg",
 }
 
 CACHE_DIR = ".cache"
@@ -1183,6 +1187,7 @@ class Unit:
           for (k, v) in value[i].items():
             self.dial[i][k] = v
       elif (key == "real_name" or
+            key == "keywords" or
             key == "defense_type" or
             key == "object_size" or
             key == "point_values" or

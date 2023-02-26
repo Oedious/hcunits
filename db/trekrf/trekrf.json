@@ -1,0 +1,3927 @@
+[
+  {
+    "unit_id": "trekrf001", 
+    "set_id": "trekrf", 
+    "collector_number": "001", 
+    "name": "Klingon Crewman", 
+    "type": "character", 
+    "rarity": "common", 
+    "real_name": "various", 
+    "dimensions": "1x1", 
+    "point_values": [
+      30
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "klingon_empire"
+    ], 
+    "keywords": [
+      "Klingon", 
+      "Warrior"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "WE ARE KLINGONS!", 
+        "description": "When Klingon Crewman is KO'd, choose a friendly character that's adjacent or has the Klingon keyword. After resolutions, heal that character 1 click."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "6", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "sidestep", 
+        "speed_value": 6, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "trekrf002a", 
+    "set_id": "trekrf", 
+    "collector_number": "002a", 
+    "name": "Borg Drone", 
+    "type": "character", 
+    "rarity": "common", 
+    "real_name": "N/A", 
+    "dimensions": "1x1", 
+    "point_values": [
+      30
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "borg"
+    ], 
+    "keywords": [
+      "Borg", 
+      "Robot"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "WE ARE BORG", 
+        "description": "When another friendly character with the Borg keyword is damaged by an opponent's attack, after resolutions heal Borg Drone 1 click"
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "4", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "sidestep", 
+        "speed_value": 6, 
+        "attack_power": "incapacitate", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "empower", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "plasticity", 
+        "speed_value": 6, 
+        "attack_power": "steal_energy", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "plasticity", 
+        "speed_value": 5, 
+        "attack_power": "steal_energy", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 4, 
+        "attack_power": "steal_energy", 
+        "attack_value": 9, 
+        "defense_power": "regeneration", 
+        "defense_value": 16, 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "trekrf002b", 
+    "set_id": "trekrf", 
+    "collector_number": "002b", 
+    "name": "Hugh", 
+    "type": "character", 
+    "rarity": "common", 
+    "real_name": "Hugh", 
+    "dimensions": "1x1", 
+    "point_values": [
+      45
+    ], 
+    "properties": [
+      "prime"
+    ], 
+    "team_abilities": [
+      "borg", 
+      "united_federation"
+    ], 
+    "keywords": [
+      "Borg", 
+      "Robot", 
+      "Starfleet"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "I WILL TRY TO REMEMBER YOU", 
+        "description": "Friendly characters that are adjacent or have the Starfleet keyword modify defense +1 when attacked by a character with the Borg keyword. // Friendly characters that are adjacent or have the Borg keyword modify defense +1 when attacked by a character with the Starfleet keyword."
+      }, 
+      {
+        "type": "damage", 
+        "name": "CHOOSE... WHAT I WANT", 
+        "description": "FREE: Choose Ranged Combat Expert or Enhancement. Hugh can use the chosen power this turn.", 
+        "powers": [
+          "ranged_combat_expert", 
+          "enhancement"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "4", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_power": "precision_strike", 
+        "attack_value": 9, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 7, 
+        "attack_power": "steal_energy", 
+        "attack_value": 9, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 7, 
+        "attack_power": "steal_energy", 
+        "attack_value": 9, 
+        "defense_power": "regeneration", 
+        "defense_value": 16, 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "trekrf003", 
+    "set_id": "trekrf", 
+    "collector_number": "003", 
+    "name": "Captain Jean-Luc Picard", 
+    "type": "character", 
+    "rarity": "common", 
+    "real_name": "Jean-Luc Picard", 
+    "dimensions": "1x1", 
+    "point_values": [
+      50
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "united_federation"
+    ], 
+    "keywords": [
+      "Politician", 
+      "Starfleet"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "I DON'T FEEL COMFORTABLE AROUND CHILDREN", 
+        "description": "When Captain Jean-Luc Picard is attacked by an opposing character with the Tiny Damage Symbol, modify defense -1."
+      }, 
+      {
+        "type": "defense", 
+        "name": "DO AS YOU MUST, BUT DON'T HARM MY CREW", 
+        "description": "Defend, Energy Shield/Deflection.", 
+        "powers": [
+          "defend", 
+          "energy_shield_deflection"
+        ]
+      }, 
+      {
+        "type": "damage", 
+        "name": "CAPTAIN OF THE U.S.S. ENTERPRISE", 
+        "description": "Leadership. When Captain Jean-Luc Picard uses it and the result is a [6], you may instead remove an action token from all friendly characters with the Starfleet keyword within 6 squares (including himself).", 
+        "powers": [
+          "leadership"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "6", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 18, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 18, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_power": "telekinesis", 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 18, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 7, 
+        "attack_power": "telekinesis", 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 17, 
+        "damage_power": "leadership", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 7, 
+        "attack_power": "telekinesis", 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 17, 
+        "damage_power": "leadership", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "trekrf004", 
+    "set_id": "trekrf", 
+    "collector_number": "004", 
+    "name": "Starfleet Ensign", 
+    "type": "character", 
+    "rarity": "common", 
+    "real_name": "various", 
+    "dimensions": "1x1", 
+    "point_values": [
+      20, 
+      15
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "united_federation"
+    ], 
+    "keywords": [
+      "Starfleet"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "REPORTING FOR DUTY, SIR", 
+        "description": "During force construction, if using the 15 point value, you may not include more than 4 of Starfleet Ensign at that cost and when placing characters an opponent chooses a distinct starting line for each one included at that cost."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "4", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_value": 8, 
+        "attack_value": 9, 
+        "defense_value": 16, 
+        "damage_power": "perplex", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 2, 
+        "speed_value": 7, 
+        "attack_value": 8, 
+        "defense_value": 16, 
+        "damage_power": "perplex", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 8, 
+        "attack_power": "telekinesis", 
+        "attack_value": 9, 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 7, 
+        "attack_power": "telekinesis", 
+        "attack_value": 8, 
+        "defense_value": 15, 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 8, 
+        "speed_power": "sidestep", 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_value": 16, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 10, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_power": "incapacitate", 
+        "attack_value": 11, 
+        "defense_value": 16, 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 11, 
+        "speed_value": 6, 
+        "attack_power": "incapacitate", 
+        "attack_value": 10, 
+        "defense_value": 16, 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "trekrf005", 
+    "set_id": "trekrf", 
+    "collector_number": "005", 
+    "name": "Lt. Commander Data", 
+    "type": "character", 
+    "rarity": "common", 
+    "real_name": "Data", 
+    "dimensions": "1x1", 
+    "point_values": [
+      50
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "united_federation"
+    ], 
+    "keywords": [
+      "Robot", 
+      "Scientist", 
+      "Starfleet"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "SHIFTING FOCUS: DATA", 
+        "description": "FREE: If Lt. Commander Data began your turn on the map, replace him with another character with this trait on the same click number."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "5", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 18, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 18, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 18, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "flurry", 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "flurry", 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }
+    ]
+  }, 
+  {
+    "unit_id": "trekrf006", 
+    "set_id": "trekrf", 
+    "collector_number": "006", 
+    "name": "Lt. Worf", 
+    "type": "character", 
+    "rarity": "common", 
+    "real_name": "Worf", 
+    "dimensions": "1x1", 
+    "point_values": [
+      60
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "united_federation"
+    ], 
+    "keywords": [
+      "Klingon", 
+      "Starfleet", 
+      "Warrior"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "SHIFTING FOCUS: WORF", 
+        "description": "FREE: If Lt. Worf began your turn on the map, replace him with another character with this trait on the same click number."
+      }, 
+      {
+        "type": "damage", 
+        "name": "YOU'RE WITH ME, LIEUTENANT", 
+        "description": "Empower. Adjacent friendly characters modify defense +1 against range attacks.", 
+        "powers": [
+          "empower"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "4", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_value": 11, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "sidestep", 
+        "speed_value": 6, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "plasticity", 
+        "speed_value": 6, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "plasticity", 
+        "speed_value": 5, 
+        "attack_power": "precision_strike", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "plasticity", 
+        "speed_value": 5, 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "trekrf007", 
+    "set_id": "trekrf", 
+    "collector_number": "007", 
+    "name": "Dr. Beverly Crusher", 
+    "type": "character", 
+    "rarity": "common", 
+    "real_name": "Beverly Crusher", 
+    "dimensions": "1x1", 
+    "point_values": [
+      30
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "united_federation"
+    ], 
+    "keywords": [
+      "Scientist", 
+      "Starfleet"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "REMOVING THE BORG IMPLANTS", 
+        "description": "FREE: Choose an adjacent opposing character with the Borg or Robot keyword. Deal that character 1 penetrating damage and that character loses the Borg and Robot keywords (for the rest of the game)."
+      }, 
+      {
+        "type": "damage", 
+        "name": "HEAL ANY BEING IN NEED, REGARDLESS OF THE PRIME DIRECTIVE", 
+        "description": "Support. FREE: If Dr. Beverly Crusher is adjacent to at least one opposing character, heal all adjacent characters 1 click. Opposing characters healed in this way can't attack Dr. Beverly Crusher until your next turn.", 
+        "powers": [
+          "support"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_value": 6, 
+        "attack_power": "precision_strike", 
+        "attack_value": 11, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 2, 
+        "speed_value": 6, 
+        "attack_power": "precision_strike", 
+        "attack_value": 11, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 3, 
+        "speed_value": 5, 
+        "attack_value": 10, 
+        "defense_value": 15, 
+        "damage_power": "special", 
+        "damage_value": 0
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 5, 
+        "attack_value": 10, 
+        "defense_value": 15, 
+        "damage_power": "special", 
+        "damage_value": 0
+      }
+    ]
+  }, 
+  {
+    "unit_id": "trekrf008", 
+    "set_id": "trekrf", 
+    "collector_number": "008", 
+    "name": "Counselor Troi", 
+    "type": "character", 
+    "rarity": "common", 
+    "real_name": "Deanna Troi", 
+    "dimensions": "1x1", 
+    "point_values": [
+      50
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "united_federation"
+    ], 
+    "keywords": [
+      "Starfleet"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "CAPTAIN, I AM SENSING DEEP HOSTILITY TOWARDS US", 
+        "description": "When a friendly character that's adjacent or has the Starfleet keyword would take 4 or more damage, roll a D6. [4-6]: That character takes 3 damage instead."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "defend", 
+        "defense_value": 18, 
+        "damage_power": "probability_control", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 2, 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "defend", 
+        "defense_value": 18, 
+        "damage_power": "probability_control", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "probability_control", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "mind_control", 
+        "speed_value": 7, 
+        "attack_value": 8, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "empower", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "mind_control", 
+        "speed_value": 7, 
+        "attack_value": 8, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "empower", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "trekrf009", 
+    "set_id": "trekrf", 
+    "collector_number": "009", 
+    "name": "Klingon Warrior", 
+    "type": "character", 
+    "rarity": "common", 
+    "real_name": "various", 
+    "dimensions": "1x1", 
+    "point_values": [
+      40
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "klingon_empire"
+    ], 
+    "keywords": [
+      "Klingon", 
+      "Warrior"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "THE BLOOD WILL TELL", 
+        "description": "FREE: If a friendly character that's adjacent or has the Klingon keyword was attacked since your last turn, modify attack +1 this turn."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "5", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "plasticity", 
+        "speed_value": 8, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 11, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "plasticity", 
+        "speed_value": 8, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 11, 
+        "defense_power": "super_senses", 
+        "defense_value": 16, 
+        "damage_power": "battle_fury", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "plasticity", 
+        "speed_value": 7, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 16, 
+        "damage_power": "battle_fury", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 7, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 15, 
+        "damage_power": "battle_fury", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "trekrf010", 
+    "set_id": "trekrf", 
+    "collector_number": "010", 
+    "name": "Gowron", 
+    "type": "character", 
+    "rarity": "uncommon", 
+    "real_name": "Gowron", 
+    "dimensions": "1x1", 
+    "point_values": [
+      100
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "klingon_empire"
+    ], 
+    "keywords": [
+      "Klingon", 
+      "Politician", 
+      "Ruler", 
+      "Warrior"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "YOUR BLOOD WILL PAINT THE WAY TO THE FUTURE!", 
+        "description": "Once per turn, when a friendly character that's adjacent or has the Klingon keyword is damaged by an opponent's attack, after resolutions remove an action token from a friendly character that's adjacent or has the Klingon keyword"
+      }, 
+      {
+        "type": "damage", 
+        "name": "HE ACTS UNDER MY AUTHORITY AS CHANCELLOR OF THE KLINGON HIGH COUNCIL", 
+        "description": "Leadership. When Gowron uses it and succeeds, choose a friendly character that's adjacent or has the Klingon keyword. That character has Autonomous this turn.", 
+        "powers": [
+          "leadership"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "6", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "running_shot", 
+        "speed_value": 9, 
+        "attack_power": "precision_strike", 
+        "attack_value": 11, 
+        "defense_power": "mastermind", 
+        "defense_value": 18, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "mastermind", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "charge", 
+        "speed_value": 7, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "battle_fury", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "flurry", 
+        "speed_value": 7, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "battle_fury", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "flurry", 
+        "speed_value": 6, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 11, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "battle_fury", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "trekrf011", 
+    "set_id": "trekrf", 
+    "collector_number": "011", 
+    "name": "Borg Search Party", 
+    "type": "character", 
+    "rarity": "uncommon", 
+    "real_name": "N/A", 
+    "dimensions": "1x1", 
+    "point_values": [
+      45
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "borg"
+    ], 
+    "keywords": [
+      "Borg", 
+      "Robot"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "YOU WILL BE ASSIMILATED.... RESISTANCE IS FUTILE", 
+        "description": "When Borg Search Party KO's an opposing character, after resolutions roll a d6. [5-6]: You may generate a TREK:RF #002a Borg Drone on click #4 in that character's square. That generated character has Autonomous this turn."
+      }, 
+      {
+        "type": "attack", 
+        "name": "SEEKER PROGRAMMING", 
+        "description": "Penetrating/Psychic Blast. FREE: Choose a friendly character that's adjacent or has the Borg keyword. This turn, that character modifies range +2 and can use Improved Targeting: Hindering.", 
+        "powers": [
+          "penetrating_psychic_blast"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "4", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "enhancement", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 17, 
+        "damage_power": "enhancement", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_power": "steal_energy", 
+        "attack_value": 9, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 6, 
+        "attack_power": "steal_energy", 
+        "attack_value": 9, 
+        "defense_power": "regeneration", 
+        "defense_value": 16, 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "trekrf012", 
+    "set_id": "trekrf", 
+    "collector_number": "012", 
+    "name": "Reginald Barclay", 
+    "type": "character", 
+    "rarity": "uncommon", 
+    "real_name": "Reginald Barclay", 
+    "dimensions": "1x1", 
+    "point_values": [
+      50, 
+      20
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "united_federation"
+    ], 
+    "keywords": [
+      "Holodeck", 
+      "Scientist", 
+      "Starfleet"
+    ], 
+    "special_powers": [
+      {
+        "type": "attack", 
+        "name": "I CAN CONTROL ALL SYSTEMS FROM THE HOLODECK", 
+        "description": "POWER: Choose an opposing character that's adjacent to elevated or blocking terrain. Make a close attack targeting that character regardless of adjacency."
+      }, 
+      {
+        "type": "defense", 
+        "name": "WHA.. WHAT IS HAPPENING TO ME?!?", 
+        "description": "STOP. When this click is revealed, if you paid 50 points for Reginald Barclay, turn him to click #5 or click #9.", 
+        "powers": [
+          "stop"
+        ]
+      }, 
+      {
+        "type": "damage", 
+        "name": "I SEE EVERYTHING", 
+        "description": "Outwit, but with minimum range 10 instead. When Reginald Barclay uses it, he can use Improved Targeting: Hindering, Elevated, Blocking.", 
+        "powers": [
+          "outwit"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_value": 8, 
+        "defense_value": 17, 
+        "damage_power": "enhancement", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_value": 8, 
+        "defense_value": 16, 
+        "damage_power": "enhancement", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 3, 
+        "speed_value": 6, 
+        "attack_power": "steal_energy", 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 0, 
+        "attack_power": "special", 
+        "attack_value": 11, 
+        "defense_power": "invulnerability", 
+        "defense_value": 18, 
+        "damage_power": "special", 
+        "damage_value": 3, 
+        "starting_line": true
+      }, 
+      {
+        "click_number": 6, 
+        "speed_value": 0, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 7, 
+        "speed_value": 0, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 9, 
+        "speed_power": "plasticity", 
+        "speed_value": 9, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 11, 
+        "defense_power": "super_senses", 
+        "defense_value": 18, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 10, 
+        "speed_power": "plasticity", 
+        "speed_value": 9, 
+        "attack_power": "steal_energy", 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 11, 
+        "speed_power": "plasticity", 
+        "speed_value": 8, 
+        "attack_power": "steal_energy", 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "trekrf013", 
+    "set_id": "trekrf", 
+    "collector_number": "013", 
+    "name": "Thomas Riker", 
+    "type": "character", 
+    "rarity": "uncommon", 
+    "real_name": "William T. Riker", 
+    "dimensions": "1x1", 
+    "point_values": [
+      40
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "united_federation"
+    ], 
+    "keywords": [
+      "Soldier", 
+      "Starfleet"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "UP UNTIL THAT TRANSPORTER ACCIDENT, THEY WERE THE SAME PERSON", 
+        "description": "SIDELINE ACTIVE: When a friendly character with the name \"Commander William T. Riker\" is placed with Telekinesis, after resolutions place TREK:RF #013 Thomas Riker from your Sideline adjacent to that character on click #1, 2, or 3. This game, Thomas Riker can't: be carried, be equipped, be given DOUBLE POWER actions, replace, or be replaced. This game, Thomas Riker returns to your Sideline: at the beginning of your next turn, immediately if no square he occupies is within 5 squares of the friendly Commander William T. Riker, or he is removed fromthe map by another effect."
+      }
+    ], 
+    "improved_movement": [
+      "hindering"
+    ], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "5", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "enhancement", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "charge", 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "empower", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "probability_control", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "sidestep", 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "trekrf014", 
+    "set_id": "trekrf", 
+    "collector_number": "014", 
+    "name": "Ensign Crusher", 
+    "type": "character", 
+    "rarity": "uncommon", 
+    "real_name": "Wesley Crusher", 
+    "dimensions": "1x1", 
+    "point_values": [
+      50, 
+      25
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "united_federation"
+    ], 
+    "keywords": [
+      "Scientist", 
+      "Starfleet"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "JOURNEY'S END", 
+        "description": "If Ensign Crusher is 50 points, he has the Cosmic keyword. If he is 25 points, he's KO'd when his dial clicks past the red KO line. Protected: Pulse Wave."
+      }, 
+      {
+        "type": "attack", 
+        "name": "I GOT IT, CAPTAIN!", 
+        "description": "Once per turn, when a friendly character that's adjacent or has the Starfleet keyword rolls for Leadership, Shape Change, Super Senses, or Impevious they may re-roll that roll."
+      }, 
+      {
+        "type": "defense", 
+        "name": "ASCEND WITH THE TRAVELER", 
+        "description": "STOP. Willpower. Ensign Crusher has PROTECTED: Outwit and can't be healed.", 
+        "powers": [
+          "stop", 
+          "willpower"
+        ]
+      }, 
+      {
+        "type": "damage", 
+        "name": "SEE THE POSSIBILITIES", 
+        "description": "Probability Control, Outwit", 
+        "powers": [
+          "probability_control", 
+          "outwit"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_value": 16, 
+        "damage_power": "perplex", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 2, 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 8, 
+        "defense_value": 15, 
+        "damage_power": "enhancement", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 3, 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 8, 
+        "defense_value": 15, 
+        "damage_power": "enhancement", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 12, 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 18, 
+        "damage_power": "special", 
+        "damage_value": 3, 
+        "starting_line": true
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 12, 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 18, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }
+    ]
+  }, 
+  {
+    "unit_id": "trekrf015", 
+    "set_id": "trekrf", 
+    "collector_number": "015", 
+    "name": "Lt. Worf", 
+    "type": "character", 
+    "rarity": "uncommon", 
+    "real_name": "Worf", 
+    "dimensions": "1x1", 
+    "point_values": [
+      60
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "united_federation"
+    ], 
+    "keywords": [
+      "Klingon", 
+      "Starfleet", 
+      "Warrior"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "SHIFTING FOCUS: WORF", 
+        "description": "FREE: If Lt. Worf began your turn on the map, replace him with another character with this trait on the same click number."
+      }, 
+      {
+        "type": "damage", 
+        "name": "WORF, GIVE US SOME COVER FIRE", 
+        "description": "Enhancement. Adjacent friendly characters modify defense +1 against range attacks.", 
+        "powers": [
+          "enhancement"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "6", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 9, 
+        "attack_power": "precision_strike", 
+        "attack_value": 11, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 8, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 8, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "force_blast", 
+        "speed_value": 8, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 10, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "force_blast", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 16, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "force_blast", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 16, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "trekrf016", 
+    "set_id": "trekrf", 
+    "collector_number": "016", 
+    "name": "Nurse Ogawa", 
+    "type": "character", 
+    "rarity": "uncommon", 
+    "real_name": "Alyssa Ogawa", 
+    "dimensions": "1x1", 
+    "point_values": [
+      15
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Scientist", 
+      "Starfleet"
+    ], 
+    "special_powers": [
+      {
+        "type": "damage", 
+        "name": "SICKBAY, STANDING BY", 
+        "description": "Support. Once per turn, when an adjacent friendly character uses Support, you may reroll that 2d6 roll.", 
+        "powers": [
+          "support"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_value": 8, 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 3, 
+        "speed_value": 6, 
+        "attack_value": 8, 
+        "defense_value": 15, 
+        "damage_power": "support", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "trekrf017", 
+    "set_id": "trekrf", 
+    "collector_number": "017", 
+    "name": "Commander Shelby", 
+    "type": "character", 
+    "rarity": "uncommon", 
+    "real_name": "Elizabeth Paula Shelby", 
+    "dimensions": "1x1", 
+    "point_values": [
+      60
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "united_federation"
+    ], 
+    "keywords": [
+      "Scientist", 
+      "Soldier", 
+      "Starfleet"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "I'M THE BEST YOU GOT", 
+        "description": "At the beginning of the game, choose a keyword. // Friendly characters that are are adjacent or have the Starfleet keyword modify attack +1 when attacking only opposing characters with the chosen keyword. If the chosen keyword is Robot or Borg, modify attack +2 instead."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "5", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 10, 
+        "defense_power": "willpower", 
+        "defense_value": 17, 
+        "damage_power": "leadership", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "running_shot", 
+        "speed_value": 7, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "leadership", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "sidestep", 
+        "speed_value": 6, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "leadership", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 15, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "trekrf018", 
+    "set_id": "trekrf", 
+    "collector_number": "018", 
+    "name": "B'Etor", 
+    "type": "character", 
+    "rarity": "uncommon", 
+    "real_name": "B'Etor", 
+    "dimensions": "1x1", 
+    "point_values": [
+      90, 
+      50
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "klingon_empire"
+    ], 
+    "keywords": [
+      "Klingon", 
+      "Warrior"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "KLINGON CLOAKING DEVICE", 
+        "description": "Friendly characters with 0 or 1 action tokens that are adjacent or have the Klingon keyword can use Stealth."
+      }, 
+      {
+        "type": "defense", 
+        "name": "THIS IS NOT A THREAT, CAPTAIN, JUST AN UNFORTUNATE TRUTH", 
+        "description": "Combat Reflexes, Toughness", 
+        "powers": [
+          "combat_reflexes", 
+          "toughness"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "4", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 11, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_power": "empower", 
+        "damage_value": 2, 
+        "starting_line": true
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "charge", 
+        "speed_value": 7, 
+        "attack_power": "poison", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "empower", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "charge", 
+        "speed_value": 7, 
+        "attack_power": "poison", 
+        "attack_value": 11, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "empower", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_power": "poison", 
+        "attack_value": 9, 
+        "defense_power": "special", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "trekrf019", 
+    "set_id": "trekrf", 
+    "collector_number": "019", 
+    "name": "K'mpec", 
+    "type": "character", 
+    "rarity": "rare", 
+    "real_name": "K'mpec", 
+    "dimensions": "1x1", 
+    "point_values": [
+      60
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "klingon_empire"
+    ], 
+    "keywords": [
+      "Klingon", 
+      "Ruler", 
+      "Warrior"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "I ASKED YOU TO LET THIS CHALLENGE GO UNANSWERE, BUT NOW IT'S COME TO THIS", 
+        "description": "When a friendly character that's adjacent or has the Klingon keyword is damaged by an opponent's attack, give that character a Dishonor token. // When a friendly character makes an attack with a single target, you may remove any number of their Dishonor tokens. If you do and the attack hits, increase the damage dealt by the number of Dishonor tokens removed."
+      }, 
+      {
+        "type": "attack", 
+        "name": "THE KLINGON WHO KILLS WITHOUT SHOWING HIS FACE HAS NO HONOR", 
+        "description": "Friendly characters that are adjacent or have the Klingon keyword can use Improved Targeting: Hindering."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "6", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "sidestep", 
+        "speed_value": 6, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "probability_control", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "sidestep", 
+        "speed_value": 6, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "probability_control", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "sidestep", 
+        "speed_value": 6, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 6, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 5, 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "trekrf020", 
+    "set_id": "trekrf", 
+    "collector_number": "020", 
+    "name": "Borg Boarding Party", 
+    "type": "character", 
+    "rarity": "rare", 
+    "real_name": "N/A", 
+    "dimensions": "1x1", 
+    "point_values": [
+      50
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "borg"
+    ], 
+    "keywords": [
+      "Borg", 
+      "Robot"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "YOU WILL BE ASSIMILATED.... RESISTANCE IS FUTILE", 
+        "description": "When Borg Boarding Party KO's an opposing character, after resolutions roll a d6. [5-6]: You may generate a TREK:RF #002a Borg Drone on click #4 in that character's square. That generated character has Autonomous this turn."
+      }, 
+      {
+        "type": "trait", 
+        "name": "ADAPTATION", 
+        "description": "When an opposing character is given an action to activate a standard power and that power targets or damages a character that's adjacent or has the Borg keyword, after resolutions opposng characters can't use that power this turn. Protected: Pulse Wave."
+      }, 
+      {
+        "type": "speed", 
+        "name": "THEY ARE ABOARD!", 
+        "description": "Phasing/Teleport. Passenger: 2, but only to carry characters with the Borg keyword.", 
+        "powers": [
+          "phasing_teleport"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "4", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 9, 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 18, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 17, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_power": "steal_energy", 
+        "attack_value": 9, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 7, 
+        "attack_power": "steal_energy", 
+        "attack_value": 9, 
+        "defense_power": "regeneration", 
+        "defense_value": 16, 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "trekrf021", 
+    "set_id": "trekrf", 
+    "collector_number": "021", 
+    "name": "Wesley Crusher", 
+    "type": "character", 
+    "rarity": "rare", 
+    "real_name": "Wesley Crusher", 
+    "dimensions": "1x1", 
+    "point_values": [
+      15
+    ], 
+    "properties": [
+      "unique"
+    ], 
+    "team_abilities": [
+      "united_federation"
+    ], 
+    "keywords": [
+      "Scientist", 
+      "Starfleet"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "CHILDREN DO NOT BELONG ON THE BRIDGE", 
+        "description": "Wesley Crusher can't be carried."
+      }, 
+      {
+        "type": "damage", 
+        "name": "SHUT UP, WESLEY!", 
+        "description": "Perplex, but only to target friendly characters. When Wesley Crusher uses Perplex, after resolutions roll a d6. [1-2]: Deal Wesley Crusher 1 unavoidable damage; [6]: Remove an action token from the target of his Perplex.", 
+        "powers": [
+          "perplex"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_value": 8, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 2, 
+        "speed_value": 7, 
+        "attack_value": 7, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 3, 
+        "speed_value": 6, 
+        "attack_value": 7, 
+        "defense_value": 15, 
+        "damage_power": "perplex", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "trekrf022", 
+    "set_id": "trekrf", 
+    "collector_number": "022", 
+    "name": "Commander William T. Riker", 
+    "type": "character", 
+    "rarity": "rare", 
+    "real_name": "William T. Riker", 
+    "dimensions": "1x1", 
+    "point_values": [
+      125, 
+      100
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "q_continuum"
+    ], 
+    "keywords": [
+      "Cosmic", 
+      "Starfleet"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "I SHOULD NEVER HAVE MADE YOU THAT PROMISE", 
+        "description": "When a friendly character without a Promise token that's adjacent or has the Starfleet keyword would be KO'd by an opponent's attack, you may instead turn them to their last non-KO click and give them a Promise token. If you do, after resolutions deal Commander William T. Riker 2 unavoidable damage. If the character is 50 points or less, deal him 1 unavoidable damage instead."
+      }, 
+      {
+        "type": "attack", 
+        "name": "USE YOUR POWERS TO SAVE THEM", 
+        "description": "Telekinesis as FREE, but only to target a friendly character that's adjacent to an opposing character and to place them adjacent to Commander William T. Riker.", 
+        "powers": [
+          "telekinesis"
+        ]
+      }, 
+      {
+        "type": "defense", 
+        "name": "WITH JUST A SNAP OF THE FINGERS...", 
+        "description": "Energy Shield/Deflection, Super Senses", 
+        "powers": [
+          "energy_shield_deflection", 
+          "super_senses"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "7", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 10, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 18, 
+        "damage_power": "probability_control", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 10, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 18, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 9, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_power": "probability_control", 
+        "damage_value": 3, 
+        "starting_line": true
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 9, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 9, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 11, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "probability_control", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 8, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 11, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 8, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 12, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "probability_control", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "trekrf023", 
+    "set_id": "trekrf", 
+    "collector_number": "023", 
+    "name": "Lore", 
+    "type": "character", 
+    "rarity": "rare", 
+    "real_name": "Lore", 
+    "dimensions": "1x1", 
+    "point_values": [
+      60
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Borg", 
+      "Robot"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "DATA, IS THAT YOU?", 
+        "description": "Toughness, Shape Change. When Lore uses Shape Change, if the attacker has the Starfleet keyword, he succeeds on a [3-6]", 
+        "powers": [
+          "toughness", 
+          "shape_change"
+        ]
+      }, 
+      {
+        "type": "damage", 
+        "name": "I WILL BRING ORDER TO CHAOS", 
+        "description": "At the beginning of your turn, choose one to use this turn: Leadership but succeeds on a [4-6] -or- Probability Control, but may target a friendly character regardless of line of fire.", 
+        "powers": [
+          "leadership", 
+          "probability_control"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "5", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_power": "precision_strike", 
+        "attack_value": 11, 
+        "defense_power": "mastermind", 
+        "defense_value": 18, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "mastermind", 
+        "defense_value": 18, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "running_shot", 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "running_shot", 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "regeneration", 
+        "defense_value": 16, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "trekrf024", 
+    "set_id": "trekrf", 
+    "collector_number": "024", 
+    "name": "Tasha Yar", 
+    "type": "character", 
+    "rarity": "rare", 
+    "real_name": "Tasha Yar", 
+    "dimensions": "1x1", 
+    "point_values": [
+      50
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "united_federation"
+    ], 
+    "keywords": [
+      "Martial Artist", 
+      "Soldier", 
+      "Starfleet"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "MR. DATA, YOU JEWEL!", 
+        "description": "When Tasha Yar is adjacent to a friendly character named Lt. Commander Data, she reduces damage by 1 in addition to any other effects."
+      }, 
+      {
+        "type": "defense", 
+        "name": "INTERSTELLAR AIKIDO", 
+        "description": "Combat Reflexes, Toughness. If an opposing character misses Tasha Yar with a close attack, after resolutions you may place that character adjacent to Tasha Yar.", 
+        "powers": [
+          "combat_reflexes", 
+          "toughness"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "6", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 9, 
+        "attack_power": "precision_strike", 
+        "attack_value": 11, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "charge", 
+        "speed_value": 9, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 16, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "trekrf025", 
+    "set_id": "trekrf", 
+    "collector_number": "025", 
+    "name": "Ensign Ro Laren", 
+    "type": "character", 
+    "rarity": "rare", 
+    "real_name": "Ro Laren", 
+    "dimensions": "1x1", 
+    "point_values": [
+      40
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "united_federation"
+    ], 
+    "keywords": [
+      "Bajoran", 
+      "Soldier", 
+      "Spy", 
+      "Starfleet"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "UNCERTAIN LOYALTIES", 
+        "description": "Once per force, when Ensign Ro Laren is KO'd, do not remove her from the game. Instead, after resolutions, place her in the square she last occupied on click #1. She is now friendly to your opponent's force. // If she is not on her starting force, friendly characters can't use Probability Control."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "5", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "sidestep", 
+        "speed_value": 9, 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "force_blast", 
+        "speed_value": 8, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "force_blast", 
+        "speed_value": 7, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "trekrf026", 
+    "set_id": "trekrf", 
+    "collector_number": "026", 
+    "name": "Lt. Commander Geordi La Forge", 
+    "type": "character", 
+    "rarity": "rare", 
+    "real_name": "Geordi La Forge", 
+    "dimensions": "1x1", 
+    "point_values": [
+      40
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "united_federation"
+    ], 
+    "keywords": [
+      "Scientist", 
+      "Starfleet"
+    ], 
+    "special_powers": [
+      {
+        "type": "attack", 
+        "name": "WE ARE GOING TO HAVE TO TIME THIS JUST RIGHT...", 
+        "description": "FREE: Choose a friendly character that's adjacent or has the Starfleet keyword and roll a d6. When the chosen character attacks this turn, modify it's damage +1 for each die in its attack roll that's the resulting number."
+      }, 
+      {
+        "type": "damage", 
+        "name": "WAIT A SECOND... THERE WE GO, CAPTAIN, TRY IT NOW", 
+        "description": "Probability Control. When he uses it to reroll the attach roll of an adjacent friendly character, you may choose to reroll only one die.", 
+        "powers": [
+          "probability_control"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [
+      "hindering"
+    ], 
+    "object_keyphrases": [], 
+    "unit_range": "5", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "trekrf027", 
+    "set_id": "trekrf", 
+    "collector_number": "027", 
+    "name": "Lursa", 
+    "type": "character", 
+    "rarity": "rare", 
+    "real_name": "Lursa", 
+    "dimensions": "1x1", 
+    "point_values": [
+      85, 
+      45
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "klingon_empire"
+    ], 
+    "keywords": [
+      "Klingon", 
+      "Warrior"
+    ], 
+    "special_powers": [
+      {
+        "type": "costed_trait", 
+        "name": "THE DURAS SISTERS", 
+        "description": "If your force has exactly one TREK:RF 018 B'Etor, Lursa and B'Etor have PROTECTED: Outwit.", 
+        "point_value": 5
+      }, 
+      {
+        "type": "trait", 
+        "name": "EXPOSED ALLIANCE WITH THE ROMULANS", 
+        "description": "When a friendly character that's adjacent or has the Klingon keyword is damaged by a close attack, after resolutions deal the attacker 1 penetrating damage."
+      }, 
+      {
+        "type": "defense", 
+        "name": "DECEITFIL AND SHADY", 
+        "description": "Energy Shield/Deflection, Toughness.", 
+        "powers": [
+          "energy_shield_deflection", 
+          "toughness"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "6", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 11, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 9, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_power": "enhancement", 
+        "damage_value": 2, 
+        "starting_line": true
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "running_shot", 
+        "speed_value": 7, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "enhancement", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "running_shot", 
+        "speed_value": 7, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 11, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "enhancement", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "trekrf028", 
+    "set_id": "trekrf", 
+    "collector_number": "028", 
+    "name": "Q", 
+    "type": "character", 
+    "rarity": "super_rare", 
+    "real_name": "Q", 
+    "dimensions": "1x1", 
+    "point_values": [
+      300, 
+      225, 
+      125, 
+      50
+    ], 
+    "properties": [
+      "unique"
+    ], 
+    "team_abilities": [
+      "q_continuum"
+    ], 
+    "keywords": [
+      "Cosmic", 
+      "Deity", 
+      "Past"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "A GAME TO TEST IF YOU ARE WORTHY OF THE GREATEST GIFT THE Q CAN OFFER", 
+        "description": "At the beginning of the game, generate a number of Alien Soldier bystanders corresponding to Q's point value: 300 points: 4"
+      }, 
+      {
+        "type": "trait", 
+        "name": "THIS GAME SHALL, IN FACT, BE COMPLETELY UNFAIR", 
+        "description": "Q isn't a standard character (can't be equipped or a pilot). // At the beginning of your turn, if there is no d6 on this card, roll a d6 and place it on this card. // When a character within range rolls an attack roll or rolls for Super Senses, you may remove the d6 from this card and replace a die in the roll with it."
+      }, 
+      {
+        "type": "defense", 
+        "name": "TO USE A 20TH CENTURY TERM, SHE'S IN A PENALTY BOX. WHERE SHE WILL BE UNHARMED, UNLESS...", 
+        "description": "Mastermind, Super Senses. Once per turn. when an opposing character attacks Q, after resolutions you may place a Penalty Box marker in their square. At the end of their turn, remove the Penalty Box marker. // Characters occupying a Penalty Box marker have Immobile. // When an attack targeting Q misses, deal a character occupying a Penalty Box marker 1 penetrating damage.", 
+        "powers": [
+          "mastermind", 
+          "super_senses"
+        ]
+      }, 
+      {
+        "type": "damage", 
+        "name": "FAIRNESS IS SUCH A HUMAN CONCEPT. THINK IMAGINATIVELY!", 
+        "description": "Probability Control, Shape Change.", 
+        "powers": [
+          "probability_control", 
+          "shape_change"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "8", 
+    "targets": "3", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 12, 
+        "attack_power": "incapacitate", 
+        "attack_value": 12, 
+        "defense_power": "special", 
+        "defense_value": 19, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 12, 
+        "attack_value": 12, 
+        "defense_power": "special", 
+        "defense_value": 19, 
+        "damage_power": "special", 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 11, 
+        "attack_value": 11, 
+        "defense_power": "special", 
+        "defense_value": 19, 
+        "damage_power": "special", 
+        "damage_value": 5
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 11, 
+        "attack_power": "incapacitate", 
+        "attack_value": 11, 
+        "defense_power": "special", 
+        "defense_value": 18, 
+        "damage_power": "special", 
+        "damage_value": 3, 
+        "starting_line": true
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 10, 
+        "attack_value": 11, 
+        "defense_power": "special", 
+        "defense_value": 18, 
+        "damage_power": "special", 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 10, 
+        "attack_value": 11, 
+        "defense_power": "special", 
+        "defense_value": 18, 
+        "damage_power": "special", 
+        "damage_value": 5
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 10, 
+        "attack_power": "incapacitate", 
+        "attack_value": 11, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 3, 
+        "starting_line": true
+      }, 
+      {
+        "click_number": 8, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 10, 
+        "attack_value": 11, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 9, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 10, 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 5
+      }, 
+      {
+        "click_number": 10, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 10, 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 11, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 10, 
+        "attack_power": "incapacitate", 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 3, 
+        "starting_line": true
+      }
+    ]
+  }, 
+  {
+    "unit_id": "trekrf028bt", 
+    "set_id": "trekrf", 
+    "collector_number": "028bt", 
+    "name": "Alien Soldier", 
+    "type": "bystander", 
+    "rarity": "super_rare", 
+    "dimensions": "1x1", 
+    "point_values": [], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "TRAIT", 
+        "description": "Alien Soldier can't be given an action if they have 1 action token."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "bystander_type": "standard", 
+    "unit_range": "4", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "autonomous", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "1", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_value": 6, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 16, 
+        "damage_value": 3
+      }
+    ]
+  }, 
+  {
+    "unit_id": "trekrf029a", 
+    "set_id": "trekrf", 
+    "collector_number": "029a", 
+    "name": "Captain Jean-Luc Picard", 
+    "type": "character", 
+    "rarity": "super_rare", 
+    "real_name": "Jean-Luc Picard", 
+    "dimensions": "1x1", 
+    "point_values": [
+      125
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "united_federation"
+    ], 
+    "keywords": [
+      "Politician", 
+      "Starfleet"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "DARMOK AND JALAD AT TANAGRA", 
+        "description": "Leadership. When Captain Jean-Luc Picard uses it and removes an action token from a friendly character, choose a keyword that character has. Captain Jean-Luc Picard gains that keyword.", 
+        "powers": [
+          "leadership"
+        ]
+      }, 
+      {
+        "type": "speed", 
+        "name": "THE PICARD MANEUVER", 
+        "description": "Phasing/Teleport as POWER. When Captain Jean-Luc Picard uses it, after resolutions he may make a range attack with a range value of 2 and modifying damage +1.", 
+        "powers": [
+          "phasing_teleport"
+        ]
+      }, 
+      {
+        "type": "damage", 
+        "name": "DIPLOMACY", 
+        "description": "Perplex. If Captain Jean-Luc Picard uses it to positively modify an opposing character's defense, give that character a Pact toke. // Characters with Pact tokens modify their attack -1 and defense +1. // When a character with a Pact token makes an attack, after resolutions deal that character 1 penetrating damage and remove all Pact tokens from them.", 
+        "powers": [
+          "perplex"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "6", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_power": "precision_strike", 
+        "attack_value": 11, 
+        "defense_power": "invincible", 
+        "defense_value": 18, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_power": "precision_strike", 
+        "attack_value": 11, 
+        "defense_power": "invincible", 
+        "defense_value": 18, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_power": "precision_strike", 
+        "attack_value": 11, 
+        "defense_power": "invincible", 
+        "defense_value": 18, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "special", 
+        "speed_value": 10, 
+        "attack_power": "pulse_wave", 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "special", 
+        "speed_value": 10, 
+        "attack_power": "pulse_wave", 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "special", 
+        "speed_value": 10, 
+        "attack_power": "pulse_wave", 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "special", 
+        "speed_value": 10, 
+        "attack_power": "pulse_wave", 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 3
+      }
+    ]
+  }, 
+  {
+    "unit_id": "trekrf029b", 
+    "set_id": "trekrf", 
+    "collector_number": "029b", 
+    "name": "Q", 
+    "type": "character", 
+    "rarity": "super_rare", 
+    "real_name": "Q", 
+    "dimensions": "1x1", 
+    "point_values": [
+      175, 
+      30
+    ], 
+    "properties": [
+      "prime"
+    ], 
+    "team_abilities": [
+      "q_continuum"
+    ], 
+    "keywords": [
+      "Cosmic", 
+      "Deity"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "LET'S PLAY A LITTLE GAME", 
+        "description": "Q isn't a standard character (can't be equipped or a pilot). // At the beginning of your turn, if there is no d6 on this card, roll a d6 and place it on this card. // When a character within range rolls an attack roll or rolls for Super Senses, you may remove the d6 from this card and replace a die in the roll with it."
+      }, 
+      {
+        "type": "attack", 
+        "name": "CAPTAIN, YOU MAY FIND YOU ARE NOT NEARLY CLEVER ENOUGH TO DEAL WITH WHAT LIES AHEAD FOR YOU.", 
+        "description": "When Q attacks, roll a d6. If the attack is not a critical miss and either die in the attack roll is that resulting number, all targets become hit and damage dealt is penetrating."
+      }, 
+      {
+        "type": "defense", 
+        "name": "TEMPER, TEMPER, MON CAPITAINE. I'M MERELY TRYING TO ASSIST A PITIFUL SPECIES", 
+        "description": "Super Senses. When Q is attacked, roll a d6. If the attack is not a critical hit and either die in the attack roll is that resulting number, Q becomes missed by the attack.", 
+        "powers": [
+          "super_senses"
+        ]
+      }, 
+      {
+        "type": "damage", 
+        "name": "THE Q BECAME INTERESTED IN YOU", 
+        "description": "Probability Control. FREE: Choose an opposing character that attacked Q or damaged a friendly character since your last turn. Place Q such that he is within 6 squares and line of fire of that character.", 
+        "powers": [
+          "probability_control"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "8", 
+    "targets": "3", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 12, 
+        "attack_power": "special", 
+        "attack_value": 11, 
+        "defense_power": "special", 
+        "defense_value": 18, 
+        "damage_power": "probability_control", 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 12, 
+        "attack_power": "special", 
+        "attack_value": 11, 
+        "defense_power": "special", 
+        "defense_value": 18, 
+        "damage_power": "probability_control", 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 11, 
+        "attack_power": "special", 
+        "attack_value": 11, 
+        "defense_power": "special", 
+        "defense_value": 18, 
+        "damage_power": "probability_control", 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 11, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_power": "probability_control", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 10, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_power": "probability_control", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 10, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_power": "probability_control", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 10, 
+        "attack_value": 0, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 0, 
+        "starting_line": true
+      }
+    ]
+  }, 
+  {
+    "unit_id": "trekrf030", 
+    "set_id": "trekrf", 
+    "collector_number": "030", 
+    "name": "Locutus of Borg", 
+    "type": "character", 
+    "rarity": "super_rare", 
+    "real_name": "Jean-Luc Picard/Locutus", 
+    "dimensions": "1x1", 
+    "point_values": [
+      75
+    ], 
+    "properties": [
+      "unique"
+    ], 
+    "team_abilities": [
+      "borg"
+    ], 
+    "keywords": [
+      "Borg", 
+      "Robot", 
+      "Soldier"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "I AM LOCUTUS OF BORG. FROM THIS TIME FORWARD, YOU WILL SERVICE US", 
+        "description": "Friendly characters that are adjacent or have the Borg keyword can use Steal Energy. If they can already use Steal Energy, when they use it and heal, they heal an additional click.", 
+        "powers": [
+          "steal_energy"
+        ]
+      }, 
+      {
+        "type": "trait", 
+        "name": "ATTACKING THE ENTERPRISE", 
+        "description": "Friendly characters that are adjacent or have the Borg keyword modify attack +2 when attacking only characters with the Starfleet keyword."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "7", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "running_shot", 
+        "speed_value": 7, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 11, 
+        "defense_power": "toughness", 
+        "defense_value": 18, 
+        "damage_power": "outwit", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "running_shot", 
+        "speed_value": 7, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 11, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 17, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 17, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 7, 
+        "attack_power": "steal_energy", 
+        "attack_value": 9, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 16, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_value": 7, 
+        "attack_power": "steal_energy", 
+        "attack_value": 9, 
+        "defense_power": "regeneration", 
+        "defense_value": 16, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "trekrf031", 
+    "set_id": "trekrf", 
+    "collector_number": "031", 
+    "name": "Borg Queen, The One Who Is Many", 
+    "type": "character", 
+    "rarity": "super_rare", 
+    "real_name": "N/A", 
+    "dimensions": "1x1", 
+    "point_values": [
+      100
+    ], 
+    "properties": [
+      "title"
+    ], 
+    "team_abilities": [
+      "borg"
+    ], 
+    "keywords": [
+      "Borg", 
+      "Robot", 
+      "Ruler"
+    ], 
+    "special_powers": [
+      {
+        "type": "title_trait", 
+        "name": "STARTING PLOT POINTS", 
+        "description": "0"
+      }, 
+      {
+        "type": "title_trait", 
+        "name": "CONTINUITY", 
+        "description": "When Borg Queen, The One Who Is Many is KO'd, opposing characters can use Outwit on their next turn."
+      }, 
+      {
+        "type": "plus_plot_points", 
+        "name": "ISN'T THIS EASIER?", 
+        "description": "FREE: Choose one: MOVE -or- CLOSE -or- RANGE. Actions of the chocen type given to friendly characters that are adjacent or have the Borg keyword don't count against your action total this turn.", 
+        "plot_points": 1
+      }, 
+      {
+        "type": "minus_plot_points", 
+        "name": "TRANSPORTER", 
+        "description": "FREE: Choose a character on your sideline with the Borg keyword and a starting line for that character. You may pay 1PP plus 1PP per 10 full points of the character's cost to place that character on the starting line in an unossupied square within 6 squares and line of fire. A force may only have one character placed by this effect on the map at a time. (Example: You would pay 5PP for a 40-49 point character.)", 
+        "plot_points": "X"
+      }, 
+      {
+        "type": "minus_plot_points", 
+        "name": "ASSIMILATION", 
+        "description": "FREE: Choose a character from an opponent's KO area. You may pay 1PP plus 1PP per 10 full points of that character's starting line played this game to place that character on that starting line in an unoccupied square within 6 squares and line of fire. A force may only have one character placed by this effect on the map at a time. (Example: You would pay 5PP for a 40-49 point character.)", 
+        "plot_points": "X"
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "8", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "sidestep", 
+        "speed_value": 6, 
+        "attack_value": 10, 
+        "defense_power": "invincible", 
+        "defense_value": 18, 
+        "damage_power": "outwit", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "sidestep", 
+        "speed_value": 6, 
+        "attack_value": 11, 
+        "defense_power": "invincible", 
+        "defense_value": 18, 
+        "damage_power": "outwit", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_power": "steal_energy", 
+        "attack_value": 10, 
+        "defense_power": "invincible", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "plasticity", 
+        "speed_value": 7, 
+        "attack_power": "steal_energy", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "plasticity", 
+        "speed_value": 6, 
+        "attack_power": "steal_energy", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "plasticity", 
+        "speed_value": 5, 
+        "attack_power": "steal_energy", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "plasticity", 
+        "speed_value": 5, 
+        "attack_power": "steal_energy", 
+        "attack_value": 10, 
+        "defense_power": "regeneration", 
+        "defense_value": 17, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 3
+      }
+    ]
+  }, 
+  {
+    "unit_id": "trekrf032", 
+    "set_id": "trekrf", 
+    "collector_number": "032", 
+    "name": "Lt. Commander Data", 
+    "type": "character", 
+    "rarity": "super_rare", 
+    "real_name": "Data", 
+    "dimensions": "1x1", 
+    "point_values": [
+      50
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "united_federation"
+    ], 
+    "keywords": [
+      "Detective", 
+      "Holodeck", 
+      "Robot", 
+      "Starfleet"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "SHIFTING FOCUS: DATA", 
+        "description": "FREE: If Lt. Commander Data began your turn on the map, replace him with another character with this trait on the same click number."
+      }, 
+      {
+        "type": "trait", 
+        "name": "OUR ADVERSARY IS NONE OTHER THAN PROFESSOR MORIARTY HIMSELF", 
+        "description": "When an opposing character within 6 squares would use Outwit, Perplex, or Probability Control, you and that opponent each roll 2d6, and you add Lt. Commander Data's Deduction tokens. If your result is higher, instead that opposing character can't use that power this turn and Lt. Commander Data gets a Deduction token."
+      }, 
+      {
+        "type": "speed", 
+        "name": "COME, WATSON... THE GAME IS AFOOT!", 
+        "description": "Sidestep, Stealth", 
+        "powers": [
+          "sidestep", 
+          "stealth"
+        ]
+      }, 
+      {
+        "type": "damage", 
+        "name": "ELEMENTARY, MY DEAR GEORDI", 
+        "description": "Probability Control. When Lt. Commander Data uses it, the result can't be further rerolled.", 
+        "powers": [
+          "probability_control"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 9, 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 18, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "special", 
+        "speed_value": 9, 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 18, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "special", 
+        "speed_value": 9, 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 18, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "stealth", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "stealth", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 3
+      }
+    ]
+  }, 
+  {
+    "unit_id": "trekrf033", 
+    "set_id": "trekrf", 
+    "collector_number": "033", 
+    "name": "Mirror Beverly Crusher", 
+    "type": "character", 
+    "rarity": "chase", 
+    "real_name": "Beverly Crusher", 
+    "dimensions": "1x1", 
+    "point_values": [
+      100, 
+      75
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "mirror_universe"
+    ], 
+    "keywords": [
+      "Mirror Universe", 
+      "Scientist"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "OPPORTUNISTIC MANEUVER", 
+        "description": "FREE: Once per turn, for all characters that can use this trait, choose a friendly character that took 2 or more damage from a single attack since your last turn. You may place Mirror Beverly Crusher within 6 squares and line of fire of the opposing character that made that attack. You may then replace Mirror Beverly Crusher with another character that can use the Opportunistic Maneuver trait from your sideline (on thesame click number)."
+      }, 
+      {
+        "type": "trait", 
+        "name": "ADVANCING THROUGH THE RANKS", 
+        "description": "When this character is placed by a character's use of the Opportunistic Maneuvers trait, until your next turn, this character has \"Opposing characters within 6 squares can't use Willpower or be healed.\""
+      }, 
+      {
+        "type": "trait", 
+        "name": "MIRROR, MIRROR", 
+        "description": "Shape Change. When Mirror Beverly Crusher uses Shape Change and succeeds, give her a Mirror token, and if she fails, remove all Mirror tokens. When she uses Shape Change, increase the result by +1 for each Mirror token (a roll of 1 always fails).", 
+        "powers": [
+          "shape_change"
+        ]
+      }, 
+      {
+        "type": "damage", 
+        "name": "USE MY SON'S GENIUS TO ADVANCE MY CAREER", 
+        "description": "Outwit, Perplex, Probability Control, Support", 
+        "powers": [
+          "outwit", 
+          "perplex", 
+          "probability_control", 
+          "support"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "6", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_power": "poison", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 18, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_power": "poison", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 18, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_power": "poison", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 2, 
+        "starting_line": true
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "stealth", 
+        "speed_value": 7, 
+        "attack_power": "incapacitate", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "support", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "stealth", 
+        "speed_value": 7, 
+        "attack_power": "incapacitate", 
+        "attack_value": 11, 
+        "defense_power": "defend", 
+        "defense_value": 16, 
+        "damage_power": "support", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "stealth", 
+        "speed_value": 7, 
+        "attack_power": "incapacitate", 
+        "attack_value": 11, 
+        "defense_power": "defend", 
+        "defense_value": 15, 
+        "damage_power": "support", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "trekrf034", 
+    "set_id": "trekrf", 
+    "collector_number": "034", 
+    "name": "Mirror William Riker", 
+    "type": "character", 
+    "rarity": "chase", 
+    "real_name": "William T. Riker", 
+    "dimensions": "1x1", 
+    "point_values": [
+      100, 
+      75
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "mirror_universe"
+    ], 
+    "keywords": [
+      "Mirror Universe", 
+      "Soldier", 
+      "Spy"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "OPPORTUNISTIC MANEUVER", 
+        "description": "FREE: Once per turn, for all characters that can use this trait, choose a friendly character that took 2 or more damage from a single attack since your last turn. You may place Mirror William Riker within 6 squares and line of fire of the opposing character that made that attack. You may then replace Mirror William Riker with another character that can use the Opportunistic Maneuver trait from your sideline (on the same click number)."
+      }, 
+      {
+        "type": "trait", 
+        "name": "ADVANCING THROUGH THE RANKS", 
+        "description": "When this character is placed by a character's use of the Opportunistic Maneuvers trait, until your next turn, this character has \"Opposing characters within 6 squares can't use team abilities.\""
+      }, 
+      {
+        "type": "trait", 
+        "name": "MIRROR, MIRROR", 
+        "description": "Shape Change. When Mirror William Riker uses Shape Change and succeeds, give him a Mirror token, and if he fails, remove all Mirror tokens. When he uses Shape Change, increase the result by +1 for each Mirror token (a roll of 1 always fails).", 
+        "powers": [
+          "shape_change"
+        ]
+      }, 
+      {
+        "type": "damage", 
+        "name": "BEAT RESPECT INTO YOU", 
+        "description": "When Mirror William Riker hits an opposing character with two action tokens, he deals penetrating damage. // When Mirror William Riker damages an opposing character with an attack, after resolutions give that character an action token."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "6", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 9, 
+        "attack_power": "quake", 
+        "attack_value": 11, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 18, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "quake", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_power": "quake", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 3, 
+        "starting_line": true
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_power": "precision_strike", 
+        "attack_value": 11, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }
+    ]
+  }
+]

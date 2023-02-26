@@ -197,11 +197,16 @@ const SET_LIST = {
   "xdps": {
     "name": "X-Men the Animated Series: The Dark Phoenix Saga",
     "release_date": "2019-09-25",
-    "universe": "star_trek"
+    "universe": "marvel"
   },
   "ffxdps": {
     "name": "Fast Forces: X-Men the Animated Series: The Dark Phoenix Saga",
     "release_date": "2019-09-25",
+    "universe": "marvel"
+  },
+  "trekrf": {
+    "name": "Star Trek: Resistance is Futile",
+    "release_date": "2019-07-24",
     "universe": "star_trek"
   },
   "wk": {
