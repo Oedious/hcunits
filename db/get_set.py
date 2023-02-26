@@ -154,6 +154,12 @@ SET_MAP = {
   "wcr": {
     "name": "Wolverine v Cyclops: Xmen Regenesis",
   },
+  "abpi": {
+    "name": "Avengers Black Panther and the Illuminati",
+  },
+  "ffabpi": {
+    "name": "Fast Forces: Avengers Black Panther and the Illuminati",
+  },
 }
 
 POWERS = {
@@ -273,7 +279,7 @@ PROPERTY_VALUES = [
 ]
 
 SPECIAL_POWER_TYPE_VALUES = [
-  "trait", "speed", "attack", "defense", "damage", "costed_trait", "rally_trait", "title_trait", "plus_plot_points", "minus_plot_points", "location", "consolation", "object",
+  "trait", "speed", "attack", "defense", "damage", "costed_trait", "rally_trait", "title_trait", "plus_plot_points", "minus_plot_points", "location", "consolation", "object", "equipment"
 ]
 
 RALLY_TYPE_VALUES = [
@@ -285,22 +291,27 @@ IMPROVED_ABILITIES = {
     "attr_name": "improved_movement",
     "types": {
       "elevated": "elevated",
+      "ignores elevated terrain": "elevated",
       "hindering": "hindering",
       "ignores hindering": "hindering",
       "ignores hindering terrain": "hindering",
       "blocking": "blocking",
       "ignores blocking and destroys blocking terrain as the character moves through it": "blocking",
-      "ignores blocking and destroys blocking terrain as the character moves through it.": "blocking",
-      "ignores blocking terrain and destroys blocking terrain as the character moves through it.": "blocking",
-      "improved movement: ignores blocking terrain and destroys blocking terrain as the character moves through it.": "blocking",
+      #"ignores blocking and destroys blocking terrain as the character moves through it.": "blocking",
+      "ignores blocking terrain and destroys blocking terrain as the character moves through it": "blocking",
+      #"ignores blocking terrain and destroys blocking terrain as the character moves through it.": "blocking",
+      "improved movement: ignores blocking terrain and destroys blocking terrain as the character moves through it": "blocking",
+      #"improved movement: ignores blocking terrain and destroys blocking terrain as the character moves through it.": "blocking",
       "this character can move through blocking terrain. immediately after movement resolves, destroy all blocking terrain moved through": "blocking",
-      "this character can move through blocking terrain. immediately after movement resolves, destroy all blocking terrain moved through.": "blocking",
+      #"this character can move through blocking terrain. immediately after movement resolves, destroy all blocking terrain moved through.": "blocking",
       "outdoor blocking": "outdoor_blocking",
+      "ignores blocking terrain (outdoor)": "outdoor_blocking",
       "destroy blocking": "destroy_blocking",
       "characters": "characters",
       "move through": "move_through",
       "this character can move through squares adjacent to or occupied by opposing characters without stopping, and automatically breaks away, even if adjacent to a character that can use plasticity.": "move_through",
-      "this character can move through squares adjacent to or occupied by opposing characters without stopping, and automatically breaks away, even if adjacent to a character than can use plasticity.": "move_through",
+      "this character can move through squares adjacent to or occupied by opposing characters without stopping, and automatically breaks away, even if adjacent to a character than can use plasticity": "move_through",
+      #"this character can move through squares adjacent to or occupied by opposing characters without stopping, and automatically breaks away, even if adjacent to a character than can use plasticity.": "move_through",
     },
   },
   "targeting": {
@@ -312,12 +323,15 @@ IMPROVED_ABILITIES = {
       "ignores hindering terrain": "hindering",
       "blocking": "blocking",
       "once per range attack, this character can draw a line of fire through one piece of blocking terrain. immediately after the attack resolves, destroy that piece of blocking terrain": "blocking",
-      "once per range attack, this character can draw a line through one piece of blocking terrain. immediately after the attack resolves, destroy that piece of blocking terrain.": "blocking",
+      "once per range attack, this character can draw a line through one piece of blocking terrain. immediately after the attack resolves, destroy that piece of blocking terrain": "blocking",
+      #"once per range attack, this character can draw a line through one piece of blocking terrain. immediately after the attack resolves, destroy that piece of blocking terrain.": "blocking",
       "destroy blocking": "destroy_blocking",
       "characters": "characters",
       "lines of fire drawn by this character are not blocked by characters": "characters",
       "adjacent": "adjacent",
       "this character can make range attacks while adjacent to opposing characters. (may target adjacent or non-adjacent opposing characters.)": "adjacent",
+      "this character can make range attacks while adjacent to opposing characters": "adjacent",
+      #"this character can make range attacks while adjacent to opposing characters.": "adjacent",
     },
   }
 }
@@ -698,23 +712,32 @@ class Unit:
         if len(children) == 1:
           # The attribute list is formed by a single string that needs to be
           # split apart.
-          parts = children[0].string.strip().split(".")
-          for part in parts:
-            part = part.strip()
-            if part == "":
-              continue
+          # First try to split by newlines
+          text = children[0].string.strip()
+          parts = text.split("\n")
+          if len(parts) > 0:
+            for part in parts:
+              attr_list.append(part.strip())
+          else:
+            # Fall back to splitting by periods.
+            parts = text.split(".")
+            for part in parts:
+              part = part.strip()
+              if part == "":
+                continue
 
-            if (part.upper() == "INDESTRUCTIBLE" or
-                part.startswith("EQUIP: ") or
-                part.startswith("UNEQUIP: ") or
-                part.endswith("Object")):
-              attr_list.append(part)
-            elif part.startswith("EFFECT: "):
-              attr_list.append(part + ".")
-            elif len(attr_list) > 0 and attr_list[-1].startswith("EFFECT: "):
-              attr_list[-1] += " " + part + "."
-            else:
-              print("Skipping unknown object attribute part '%s'" % part)
+              lower_part = part.lower()
+              if (lower_part == "indestructible" or
+                  lower_part.startswith("equip: ") or
+                  lower_part.startswith("unequip: ") or
+                  lower_part.endswith("object")):
+                attr_list.append(part)
+              elif part.startswith("EFFECT: "):
+                attr_list.append(part + ".")
+              elif len(attr_list) > 0 and attr_list[-1].startswith("EFFECT: "):
+                attr_list[-1] += " " + part + "."
+              else:
+                print("For unit '%s', skipping unknown object attribute part '%s'" % (self.unit_id, part))
         else:
           for attr in children:
             # Ignore non-strings.
@@ -725,22 +748,23 @@ class Unit:
           if len(attr) <= 0:
             continue;
 
-          if (attr.upper() == "INDESTRUCTIBLE" or
-              attr.startswith("EQUIP: ") or
-              attr.startswith("UNEQUIP: ") or
-              attr == "Sword Equipment"):
+          lower_attr = attr.lower()
+          if (lower_attr == "indestructible" or
+              lower_attr.startswith("equip: ") or
+              lower_attr.startswith("unequip: ") or
+              lower_attr == "sword equipment"):
             keyphrase = fix_style(attr).replace('.', '')
             if keyphrase in OBJECT_KEYPHRASE_VALUES:
               self.object_keyphrases.append(keyphrase)
             else:
               print("Skipping unknown object keyphrase '%s'" % keyphrase)
-          elif attr.startswith("Light Object"):
+          elif lower_attr.startswith("light object"):
             self.object_size = "light"
-          elif attr == "Heavy Object":
+          elif lower_attr == "heavy object":
             self.object_size = "heavy"
-          elif attr == "Ultra Light Object":
+          elif lower_attr == "ultra light object":
             self.object_size = "ultra_light"
-          elif attr == "Ultra Heavy Object":
+          elif lower_attr == "ultra heavy object":
             self.object_size = "ultra_heavy"
           else:
             # Handle equipment special powers, including "EFFECT"
@@ -873,6 +897,10 @@ class Unit:
               # First try to parse when the abilities are listed as rules.
               attr_name = improved_ability_info["attr_name"]
               types = improved_ability_info["types"]
+              
+              # Remove any trailing period.
+              if len(sp_description) > 0 and sp_description[-1] == ".":
+                sp_description = sp_description[:-1]
 
               # Try and split apart the description by different delimiters and
               # extract the values that have a match.
@@ -1193,6 +1221,9 @@ class Unit:
           raise RuntimeError("Don't know how to handle update_mode %s" % update_mode)
       elif key == "dial":
         for i in range(len(value)):
+          if i >= len(self.dial):
+            print("Warning: update for '%s' is adding click '%d'" % (self.unit_id, len(self.dial)))
+            self.dial.append(OrderedDict())
           for (k, v) in value[i].items():
             self.dial[i][k] = v
       elif (key == "real_name" or
@@ -1200,6 +1231,7 @@ class Unit:
             key == "defense_type" or
             key == "object_size" or
             key == "point_values" or
+            key == "team_abilities" or
             key == "improved_movement" or
             key == "improved_targeting"):
         setattr(self, key, value)
@@ -1315,7 +1347,9 @@ class Unit:
           print("Warning: unit '%s' has an invalid click number '%d'" % (self.unit_id, click_number))
         for field in ["speed", "attack", "defense", "damage"]:
           value = click.get(field + "_value", -1)
-          if value < 0 or value > 20:
+          if not isinstance(value, int):
+            print("Warning: unit '%s' click '%d' has an unexpected %s value '%s'" % (self.unit_id, click_number, field, str(value)))
+          elif value < 0 or value > 20:
             print("Warning: unit '%s' click '%d' has an unexpected %s value '%d'" % (self.unit_id, click_number, field, value))
           power = click.get(field + "_power", None)
           if power and power != "special":

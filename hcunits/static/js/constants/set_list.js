@@ -219,6 +219,16 @@ const SET_LIST = {
     "release_date": "2019-06-02",
     "universe": "marvel"
   },
+  "abpi": {
+    "name": "Avengers Black Panther and the Illuminati",
+    "release_date": "2019-06-01",
+    "universe": "marvel"
+  },
+  "ffabpi": {
+    "name": "Fast Forces: Avengers Black Panther and the Illuminati",
+    "release_date": "2019-06-01",
+    "universe": "marvel"
+  },
   "wk": {
     "name": "WizKids Standard Game Pieces",
     "release_date": "2002-05-01",

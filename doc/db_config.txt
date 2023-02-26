@@ -59,7 +59,7 @@ CREATE TABLE units (
 
   -- A JSON array of objects containing special powers and traits, of the format:
   -- {
-  --   "type": string - contains "trait", "speed", "attack", "defense", "damage", "costed_trait", "rally_trait", "title_trait", "plus_plot_points", "minus_plot_points", "location", "consolation", "object"
+  --   "type": string - contains "trait", "speed", "attack", "defense", "damage", "costed_trait", "rally_trait", "title_trait", "plus_plot_points", "minus_plot_points", "location", "consolation", "object", "equipment"
   --   "name": string - the name of the power.
   --   "description": string - the description of the power.
   --   "powers": (Optional) array of strings, containing names to standard powers granted.
@@ -113,13 +113,13 @@ CREATE TABLE units (
   --   "click_number": number corresponding to the element on the dial.
   --   "starting_line": (Optional) if True, indicates that this is a starting line.
   --   "speed_power": (Optional) power_name
-  --   "speed_value": number
+  --   "speed_value": number or string
   --   "attack_power": (Optional) power_name
-  --   "attack_value": number
+  --   "attack_value": number or string
   --   "defense_power": (Optional) power_name
-  --   "defense_value": number
+  --   "defense_value": number or string
   --   "damage_power": (Optional) power_name
-  --   "damage_value": number
+  --   "damage_value": number or string
   -- }
   dial JSON
 );
@@ -337,6 +337,26 @@ LOAD XML LOCAL INFILE 'ffxdps/ffxdps.xml'
   ROWS IDENTIFIED BY '<row>';
 
 LOAD XML LOCAL INFILE 'trekrf/trekrf.xml'
+  REPLACE
+  INTO TABLE units
+  ROWS IDENTIFIED BY '<row>';
+
+LOAD XML LOCAL INFILE 'fftng/fftng.xml'
+  REPLACE
+  INTO TABLE units
+  ROWS IDENTIFIED BY '<row>';
+
+LOAD XML LOCAL INFILE 'wcr/wcr.xml'
+  REPLACE
+  INTO TABLE units
+  ROWS IDENTIFIED BY '<row>';
+
+LOAD XML LOCAL INFILE 'abpi/abpi.xml'
+  REPLACE
+  INTO TABLE units
+  ROWS IDENTIFIED BY '<row>';
+
+LOAD XML LOCAL INFILE 'ffabpi/ffabpi.xml'
   REPLACE
   INTO TABLE units
   ROWS IDENTIFIED BY '<row>';
