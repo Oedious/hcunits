@@ -27,6 +27,27 @@ class UnitManager {
       });
   }
 
+  showCustomUnit() {
+    var errorMsg = null;
+    try {
+      const unitJson = $("#customUnitInput").val()
+      const unit = JSON.parse(unitJson);
+      this.showUnit_(unit);
+      console.log("after showUnit")
+    } catch(err) {
+      errorMsg = "Error: " + err.message;
+    }
+
+    if (errorMsg) {
+      this.unitView_ = null;
+      $("#unitCardsContainer").html("")
+      $("#customUnitErrorMsg").html(errorMsg);
+      $("#customUnitErrorContainer").css("display", "inline-block");
+    } else {
+      $("#customUnitErrorContainer").css("display", "none");
+    }
+  }
+
   showUnit_(unit) {
     if (CharacterView.isType(unit.type)) {
       this.unitView_ = new CharacterView(unit);
@@ -64,7 +85,7 @@ class UnitManager {
       updateQueryParams([`set=${unit.set_id}`, `unit=${unit.unit_id}`]);
     }
   }
-  
+
   showMap_(unit, map) {
     this.unitView_ = new MapView(unit, map);
     this.draw();

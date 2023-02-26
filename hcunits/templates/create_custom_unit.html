@@ -1,0 +1,69 @@
+{% extends "teams/base.html" %}
+
+{% block build_label %}<b>Build</b>{% endblock %}
+
+{% block team_header %}
+{% endblock %}
+
+{% block main %}
+<div class="container">
+  <div class="column">
+    <div class="row">
+      <h3>Custom Unit Editor</h3>
+      <h6>This area is extremely <b>experimental</b> - use at your own risk!</h6>
+      <p>
+        Please note: unlike Teams, the Custom Unit is not saved at HCUnits.
+        You'll have to copy/paste in the custom JSON every time you want it
+        rendered (at least for now).
+      </p>
+      <p>
+        Additionally, we're not doing a lot of validity checking on your input.
+        If it crashes your browser or fails to render, it's probably due to
+        bad Unit JSON on your part.
+      </p>
+      <p>
+        Examples of the JSON Unit format can be found in the
+        <a href="https://github.com/Oedious/hcunits/tree/main/db">HCUnits GitHub Repo</a>.
+      </p>
+    </div>
+    <div class="row">
+      <div class="input-field col s12">
+        <textarea id="customUnitInput" class="materialize-textarea"></textarea>
+        <label for="customUnitInput">Custom Unit JSON</label>
+      </div>
+      <a class="waves-effect waves-light btn" onclick="unitManager.showCustomUnit(); return false;">
+        <i class="material-icons left">person</i>Render Unit
+      </a>
+    </div>
+    <div id="customUnitErrorContainer" class="row" style="display: none;">
+      <h5>Error:</h5>
+      <br>
+      <div id="customUnitErrorMsg"></div>
+    </div>
+    <div class="row">
+      <div id="unitCardsContainer"></div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block team_manager_includes %}
+{% endblock %}
+
+{% block team_container %}
+{% endblock %}
+
+{% block team_object %}
+{% endblock %}
+
+{% block team_manager_scripts %}
+{% endblock %}
+
+{% block side_nav %}
+{% endblock %}
+
+{% block side_nav_includes %}
+{% endblock %}
+
+{% block side_nav_scripts %}
+{% endblock %}

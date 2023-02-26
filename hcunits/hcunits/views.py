@@ -55,6 +55,12 @@ def explore_teams(request):
   template = loader.get_template('explore/teams.html')
   return HttpResponse(template.render(context, request))
 
+def create_custom_unit(request):
+  template = loader.get_template('create_custom_unit.html')
+  context = {}
+  return HttpResponse(template.render(context, request))
+
+
 def get_help_context(topic_id):
   return {
     "topic_list": [
