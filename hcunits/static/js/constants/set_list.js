@@ -179,6 +179,11 @@ const SET_LIST = {
     "release_date": "2020-01-01",
     "universe": "universal"
   },
+  "dcxm": {
+    "name": "Deep Cuts: X-Men Primed",
+    "release_date": "2019-11-27",
+    "universe": "marvel"
+  },
   "wk": {
     "name": "WizKids Standard Game Pieces",
     "release_date": "2002-05-01",

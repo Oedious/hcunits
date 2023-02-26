@@ -130,6 +130,9 @@ SET_MAP = {
   "ffcaav": {
     "name": "Fast Forces: Captain America and the Avengers",
   },
+  "dcxm": {
+    "name": "Deep Cuts: X-Men Primed",
+  },
 }
 
 POWERS = {
