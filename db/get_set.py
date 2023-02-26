@@ -7,6 +7,7 @@ import os
 import os.path
 import re
 import traceback
+import xmltodict
 from bs4 import BeautifulSoup, Tag
 from collections import OrderedDict
 from selenium import webdriver
@@ -114,6 +115,21 @@ SET_MAP = {
       ("wkDP21-001", "wkDP21-005v"),
     ]
   },
+  "jlu": {
+    "name": "Justice League Unlimited",
+  },
+  "bwm": {
+    "name": "Black Widow Movie",
+  },
+  "ffcc": {
+    "name": "Fantastic Four: Cosmic Clash",
+  },
+  "caav": {
+    "name": "Captain America and the Avengers",
+  },
+  "ffcaav": {
+    "name": "Fast Forces: Captain America and the Avengers",
+  },
 }
 
 POWERS = {
@@ -168,46 +184,154 @@ POWERS = {
   "STOP": "stop",
 }
 
+POWER_VALUES = [
+  "flurry",
+  "leap_climb",
+  "phasing_teleport",
+  "earthbound_neutralized",
+  "charge",
+  "mind_control",
+  "plasticity",
+  "force_blast",
+  "sidestep",
+  "hypersonic_speed",
+  "stealth",
+  "running_shot",
+  "blades_claws_fangs",
+  "energy_explosion",
+  "pulse_wave",
+  "quake",
+  "super_strength",
+  "incapacitate",
+  "penetrating_psychic_blast",
+  "smoke_cloud",
+  "precision_strike",
+  "poison",
+  "steal_energy",
+  "telekinesis",
+  "super_senses",
+  "toughness",
+  "defend",
+  "combat_reflexes",
+  "energy_shield_deflection",
+  "barrier",
+  "mastermind",
+  "willpower",
+  "invincible",
+  "impervious",
+  "regeneration",
+  "invulnerability",
+  "ranged_combat_expert",
+  "battle_fury",
+  "support",
+  "exploit_weakness",
+  "enhancement",
+  "probability_control",
+  "shape_change",
+  "close_combat_expert",
+  "empower",
+  "perplex",
+  "outwit",
+  "leadership",
+  "stop",
+]
+
+TYPE_VALUES = [
+  'character', 'object', 'equipment', 'map', 'bystander', 'tarot_card', 'mystery_card'
+]
+
+RARITY_VALUES = [
+  'common', 'uncommon', 'rare', 'super_rare', 'chase', 'ultra_chase', 'limited_edition', 'fast_forces'
+]
+
+PROPERTY_VALUES = [
+  "prime", "unique", "title", "team_up", "legacy", "captain", "sidekick", "ally"
+]
+
+SPECIAL_POWER_TYPE_VALUES = [
+  "trait", "speed", "attack", "defense", "damage", "costed_trait", "rally_trait", "title_trait", "plus_plot_points", "minus_plot_points", "location", "consolation"
+]
+
+RALLY_TYPE_VALUES = [
+  "friendly", "opposing", "all"
+]
+
 IMPROVED_ABILITIES = {
-  "MOVEMENT": {
+  "movement": {
     "attr_name": "improved_movement",
-    "rules": {
-      "Hindering": "hindering",
-      "This character can move through Blocking terrain. Immediately after movement resolves, destroy all Blocking terrain moved through": "blocking",
-    },
     "types": {
-      "Elevated": "elevated",
-      "Hindering": "hindering",
-      "Ignores Hindering": "hindering",
-      "Blocking": "blocking",
-      "Ignores Blocking and destroys blocking terrain as the character moves through it": "blocking",
-      "Ignores Blocking and destroys blocking terrain as the character moves through it.": "blocking",
-      "Outdoor Blocking": "outdoor_blocking",
-      "Destroy Blocking": "destroy_blocking",
-      "Characters": "characters",
-      "Move Through": "move_through",
+      "elevated": "elevated",
+      "hindering": "hindering",
+      "ignores hindering": "hindering",
+      "ignores hindering terrain": "hindering",
+      "blocking": "blocking",
+      "ignores blocking and destroys blocking terrain as the character moves through it": "blocking",
+      "ignores blocking and destroys blocking terrain as the character moves through it.": "blocking",
+      # Unclear if we need this one - caav042 uses the next one.
+      #"this character can move through blocking terrain. immediately after movement resolves, destroy all blocking terrain moved through": "blocking",
+      "this character can move through blocking terrain. immediately after movement resolves, destroy all blocking terrain moved through.": "blocking",
+      "outdoor blocking": "outdoor_blocking",
+      "destroy blocking": "destroy_blocking",
+      "characters": "characters",
+      "move through": "move_through",
+      "this character can move through squares adjacent to or occupied by opposing characters without stopping, and automatically breaks away, even if adjacent to a character that can use plasticity.": "move_through",
     },
   },
-  "TARGETING": {
+  "targeting": {
     "attr_name": "improved_targeting",
-    "rules": {
-      "Hindering": "hindering",
-      "Once per range attack, this character can draw a line of fire through one piece of Blocking terrain. Immediately after the attack resolves, destroy that piece of Blocking terrain": "blocking",
-      "This character can make range attacks while adjacent to opposing characters. (May target adjacent or non-adjacent opposing characters.)": "adjacent",
-    },
     "types": {
-      "Elevated": "elevated",
-      "Hindering": "hindering",
-      "Blocking": "blocking",
-      "Destroy Blocking": "destroy_blocking",
-      "Characters": "characters",
-      "Adjacent": "adjacent",
+      "elevated": "elevated",
+      "hindering": "hindering",
+      "hindering": "hindering",
+      "ignores hindering terrain": "hindering",
+      "blocking": "blocking",
+      "once per range attack, this character can draw a line of fire through one piece of blocking terrain. immediately after the attack resolves, destroy that piece of blocking terrain": "blocking",
+      "destroy blocking": "destroy_blocking",
+      "characters": "characters",
+      "adjacent": "adjacent",
+      "this character can make range attacks while adjacent to opposing characters. (may target adjacent or non-adjacent opposing characters.)": "adjacent",
     },
   }
 }
 
-OBJECT_KEYPHRASES = [
+IMPROVED_MOVEMENT_VALUES = [
+  "elevated", "hindering", "blocking", "outdoor_blocking", "destroy_blocking", "characters", "move_through"
+]
+
+IMPROVED_TARGETING_VALUES = [
+  "elevated", "hindering", "blocking", "destroy_blocking", "characters", "adjacent"
+]
+
+OBJECT_TYPE_VALUES = [
+  'standard', 'special', 'equipment', 'plastic_man'
+]
+
+OBJECT_SIZE_VALUES = [
+  'light', 'heavy', 'ultra_light', 'ultra_heavy', 'immobile'
+]
+
+OBJECT_KEYPHRASE_VALUES = [
   "indestructible", "equip_any", "equip_friendly", "unequip_ko", "unequip_drop"
+]
+
+BYSTANDER_TYPE_VALUES = [
+  'standard', 'construct'
+]
+
+SPEED_TYPE_VALUES = [
+  'boot', 'wing', 'dolphin', 'transport_boot', 'transport_wing', 'transport_dolphin'
+]
+
+ATTACK_TYPE_VALUES = [
+  'fist', 'autonomous', 'sharpshooter', 'duo', 'team'
+]
+
+DEFENSE_TYPE_VALUES = [
+  'shield', 'indomitable', 'vehicle'
+]
+
+DAMAGE_TYPE_VALUES = [
+  'starburst', 'giant', 'colossal', 'tiny'
 ]
 
 CACHE_DIR = ".cache"
@@ -229,6 +353,7 @@ def get_unit_cache_path(set_id, unit_id):
 def clean_string(str):
   # Convert some frequently used UTF-8 chars to ASCII.
   str = str.replace(u"\u2019", "'")
+  str = str.replace(u"\ufffd", "'")
   str = str.replace(u"\u2026", "...")
   str = str.replace(u"\u00e2\u0080\u0099", "'")
   str = str.replace(u"\u010f\u017c\u02dd", "'")
@@ -278,8 +403,8 @@ class Unit:
     self.object_size = kwargs.get("object_size", None)
     self.bystander_type = kwargs.get("bystander_type", None)
     self.map_url = kwargs.get("map_url", None)
-    self.unit_range = kwargs.get("unit_range", None)
-    self.targets = kwargs.get("targets", None)
+    self.unit_range = kwargs.get("unit_range", -1)
+    self.targets = kwargs.get("targets", -1)
     self.speed_type = kwargs.get("speed_type", None)
     self.attack_type = kwargs.get("attack_type", None)
     self.defense_type = kwargs.get("defense_type", None)
@@ -321,7 +446,7 @@ class Unit:
       if self.unit_id.startswith(prefix):
         self.collector_number = self.unit_id[len(prefix):]
     if not self.collector_number:
-      raise Error("Could not find a collector number for '%s'" % self.unit_id)
+      raise RuntimeError("Could not find a collector number for '%s'" % self.unit_id)
 
     # Determine the rarity and special type
     figure_rank_tag = soup.select_one("td[class^=figure_rank_]")
@@ -390,7 +515,7 @@ class Unit:
         if soup.find(text=re.compile(r'\s*Mystery Card\s*')):
           self.type = "mystery_card"
       elif soup.find("td", class_="card_location_bonus"):
-        print("Skipping location bonuses as they should be tied to a map, when they're supported.")
+        print("Skipping location bonuses for '%s' - %s" % (self.unit_id, self.name))
         return False
       else:
         self.type = "character"
@@ -400,7 +525,10 @@ class Unit:
           self.properties.append("title")
         has_dial = soup.find("table", class_="units_dial")
         if not has_dial:
-          is_team_up = self.name.startswith("Team Up:")
+          is_team_up = (self.name.startswith("Team Up:") or
+                        self.name.startswith("Team-Up:") or
+                        self.name.startswith("Themed Team Up:") or
+                        self.name.startswith("Episode Team Up:"))
           if is_team_up:
             self.type = "team_up"
           else:
@@ -562,7 +690,7 @@ class Unit:
               attr.startswith("UNEQUIP: ") or
               attr == "Sword Equipment"):
             keyphrase = fix_style(attr).replace('.', '')
-            if keyphrase in OBJECT_KEYPHRASES:
+            if keyphrase in OBJECT_KEYPHRASE_VALUES:
               self.object_keyphrases.append(keyphrase)
             else:
               print("Skipping unknown object keyphrase '%s'" % keyphrase)
@@ -689,38 +817,41 @@ class Unit:
             continue
 
           if sp_type == "improved":
-            improved_ability_info = IMPROVED_ABILITIES[sp_name]
+            improved_ability_info = IMPROVED_ABILITIES[sp_name.lower()]
             if improved_ability_info:
               # First try to parse when the abilities are listed as rules.
               attr_name = improved_ability_info["attr_name"]
               types = improved_ability_info["types"]
-              rules = improved_ability_info["rules"]
-              parts = sp_description.split(".")
-              while len(parts) > 0:
-                tail = parts.pop()
-                if len(tail) > 0:
-                  if tail.strip() in rules:
-                    # If a match was found, append the ID and clear out sp_description
-                    # to indicate that it's a rules list.
+
+              # Try and split apart the description by different delimiters and
+              # extract the values that have a match.
+              for delimiter in [".", ","]:
+                parts = sp_description.split(delimiter)
+                sp_description = ""
+                while len(parts) > 0:
+                  tail = parts.pop()
+                  lower_tail = tail.strip().lower()
+                  if lower_tail in types:
+                    # If a match was found, add the improved ability and begin
+                    # searching for the next.
                     attr = getattr(self, attr_name)
-                    attr.append(rules[tail.strip()])
+                    attr.append(types[lower_tail])
                     setattr(self, attr_name, attr)
-                    sp_description = None
                   elif len(parts) > 0:
                     # Couldn't find a match, so combine the last two strings and try again.
-                    parts[-1] = parts[-1] + "." + tail
-                  elif not sp_description:
-                    print("Skipping unknown %s ability rule: '%s'" % (attr_name, tail))
-
-              if sp_description:
-                for value in sp_description.split(", "):
-                  value = value.strip()
-                  if value in types:
-                    attr = getattr(self, attr_name)
-                    attr.append(types[value])
-                    setattr(self, attr_name, attr)
+                    parts[-1] = parts[-1] + delimiter + tail
                   else:
-                    print("Skipping unknown %s ability: '%s' -- description='%s'" % (attr_name, value, sp_description))
+                    # Move the remaining segments back to the sp_description
+                    # field to try again (or fail out with an error)
+                    sp_description = tail
+
+              if sp_description and len(sp_description) > 0:
+                print("For %s, skipping unknown %s ability, description='%s'" % (self.unit_id, attr_name, sp_description))
+
+              # Reverse the list since we were previously working backwards
+              # from the end of the list.
+              getattr(self, attr_name).reverse()
+
           else:
             sp = OrderedDict([("type", sp_type)])
             if sp_name:
@@ -898,6 +1029,22 @@ class Unit:
         continue
       if power in POWERS:
         sp_powers.append(POWERS[power])
+      elif sp["type"] == "trait" and power.startswith("Improved Movement:"):
+        im_name = power.split(":", 1)[1].strip()
+        im_type = IMPROVED_ABILITIES["movement"]["types"].get(im_name.lower(), None)
+        if im_type:
+          if not im_type in self.improved_movement:
+            self.improved_movement.append(im_type)
+        else:
+          print("Warning: unit '%s' has unknown traited improved movement '%s'" % (self.unit_id, im_name))
+      elif sp["type"] == "trait" and power.startswith("Improved Targeting:"):
+        it_name = power.split(":", 1)[1].strip()
+        it_type = IMPROVED_ABILITIES["targeting"]["types"].get(it_name.lower(), None)
+        if it_type:
+          if not it_type in self.improved_targeting:
+            self.improved_targeting.append(it_type)
+        else:
+          print("Warning: unit '%s' has unknown traited improved targeting '%s'" % (self.unit_id, it_name))
       else:
         # Stop trying on the first failure, otherwise we will probably
         # pull in more than we should.
@@ -997,27 +1144,131 @@ class Unit:
         for i in range(len(value)):
           for (k, v) in value[i].items():
             self.dial[i][k] = v
-      elif (key == "defense_type" or
+      elif (key == "real_name" or
+            key == "defense_type" or
             key == "object_size" or
             key == "point_values" or
-            key == "improved_movement"):
+            key == "improved_movement" or
+            key == "improved_targeting"):
         setattr(self, key, value)
       else:
         raise RuntimeError("The update type '%s' for '%s' is currently not supported" % (key, self.unit_id))
 
   def validate(self):
-    # TODO: Add more sanity checks here.
+    if len(self.name) <= 0:
+      print("Warning: unit '%s' has an empty name" % (self.unit_id))
+    if not self.type in TYPE_VALUES:
+      print("Warning: unit '%s' has an unknown type '%s'" % (self.unit_id, self.type))
+    if self.rarity and not self.rarity in RARITY_VALUES:
+      print("Warning: unit '%s' has an unknown rarity '%s'" % (self.unit_id, self.rarity))
+
+    for property in self.properties:
+      if not property in PROPERTY_VALUES:
+        print("Warning: unit '%s' has an unknown property '%s'" % (self.unit_id, property))
+    
+    for sp in self.special_powers:
+      sp_type = sp.get("type", None)
+      if not sp_type:
+        print("Warning: unit '%s' does not have a special power type" % (self.unit_id))
+        continue
+      if not sp_type in SPECIAL_POWER_TYPE_VALUES:
+        print("Warning: unit '%s' has an unknown special power type '%s'" % (self.unit_id, sp_type))
+        continue
+      if not sp.get("name", None):
+        print("Warning: unit '%s' does not have a special power name" % (self.unit_id))
+      if not sp.get("description", None):
+        print("Warning: unit '%s' does not have a special power description" % (self.unit_id))
+      if sp_type == "costed_trait":
+        sp_point_value = sp.get("point_value", None)
+        if not sp_point_value:
+          print("Warning: unit '%s' has a costed trait without a point value" % (self.unit_id))
+      if sp_type == "rally":
+        sp_rally_type = sp.get("rally_type", None)
+        if not sp_rally_type:
+          print("Warning: unit '%s' has a rally trait without a rally type" % (self.unit_id))
+        if not sp_rally_type in RALLY_TYPE_VALUES:
+          print("Warning: unit '%s' has an unknown rally type '%s'" % (self.unit_id, sp_rally_type))
+        sp_rally_die = sp.get("rally_die", None)
+        if not sp_rally_die:
+          print("Warning: unit '%s' has a rally trait without a rally die" % (self.unit_id))
+        if sp_rally_die < 1 or sp_rally_die > 6:
+          print("Warning: unit '%s' has an invalid rally die '%d'" % (self.unit_id, sp_rally_die))
+      if sp_type == "plus_plot_points" or sp_type == "minus_plot_points":
+        plot_points = sp.get("plot_points", None)
+        if not plot_points:
+          print("Warning: unit '%s' has a title trait without a plot point value" % (self.unit_id))
+      if sp_type == "location":
+        sp_point_value = sp.get("point_value", None)
+        if not sp_point_value:
+          print("Warning: unit '%s' has a location without a point value" % (self.unit_id))
+      sp_powers = sp.get("powers", [])
+      for power in sp_powers:
+        if not power in POWER_VALUES:
+          print("Warning: unit '%s' has a special power with an invalid power '%s'" % (self.unit_id, power))
+
+    for im in self.improved_movement:
+      if not im in IMPROVED_MOVEMENT_VALUES:
+        print("Warning: unit '%s' has an unknown improved movement value '%s'" % (self.unit_id, im))
+
+    for it in self.improved_targeting:
+      if not it in IMPROVED_TARGETING_VALUES:
+        print("Warning: unit '%s' has an unknown improved targeting value '%s'" % (self.unit_id, it))
+
     # Sanity-check object types.
     if self.type == "object" or self.type == "equipment":
       if not self.object_type:
         print("Warning: for unit '%s' with type 'object' - missing object_type" % self.unit_id)
+      if not self.object_type in OBJECT_TYPE_VALUES:
+        print("Warning: for unit '%s' with type 'object' - invalid object_type '%s'" % (self.unit_id, self.object_type))
       if not self.object_size:
         print("Warning: for unit '%s' with type 'object' - missing object_size" % self.unit_id)
+      if not self.object_size in OBJECT_SIZE_VALUES:
+        print("Warning: for unit '%s' with type 'object' - invalid object_size '%s'" % (self.unit_id, self.object_size))
+      for ok in self.object_keyphrases:
+        if not ok in OBJECT_KEYPHRASE_VALUES:
+          print("Warning: for unit '%s' with type 'object' - invalid object_keyphrase '%s'" % (self.unit_id, ok))
 
     # Sanity-check bystander types.
     if self.type == "bystander":
       if not self.bystander_type:
         print("Warning: for unit '%s' with type 'bystander' - missing bystander_type" % self.unit_id)
+      if not self.bystander_type in BYSTANDER_TYPE_VALUES:
+        print("Warning: for unit '%s' with type 'bystander' - unknown bystander_type '%s'" % (self.unit_id, self.bystander_type))
+
+    if self.type == "character" or self.type == "bystander":
+      if self.unit_range < 0 or self.unit_range > 12:
+        print("Warning: unit '%s' has unexpected range '%d'" % (self.unit_id, self.unit_range))
+      if self.targets < 0 or self.targets > 3:
+        print("Warning: unit '%s' has unexpected targets '%d'" % (self.unit_id, self.targets))
+      if not self.speed_type:
+        print("Warning: unit '%s' has a missing speed_type" % (self.unit_id))
+      elif not self.speed_type in SPEED_TYPE_VALUES:
+        print("Warning: unit '%s' has an unknown type '%s'" % (self.unit_id, self.speed_type))
+      if not self.attack_type:
+        print("Warning: unit '%s' has a missing attack_type" % (self.unit_id))
+      elif not self.attack_type in ATTACK_TYPE_VALUES:
+        print("Warning: unit '%s' has an unknown type '%s'" % (self.unit_id, self.attack_type))
+      if not self.defense_type:
+        print("Warning: unit '%s' has a missing defense_type" % (self.unit_id))
+      elif not self.defense_type in DEFENSE_TYPE_VALUES:
+        print("Warning: unit '%s' has an unknown type '%s'" % (self.unit_id, self.defense_type))
+      if not self.damage_type:
+        print("Warning: unit '%s' has a missing damage_type" % (self.unit_id))
+      elif not self.damage_type in DAMAGE_TYPE_VALUES:
+        print("Warning: unit '%s' has an unknown type '%s'" % (self.unit_id, self.damage_type))
+
+      for click in self.dial:
+        click_number = click.get("click_number", 0)
+        if click_number <= 0 or click_number > 26:
+          print("Warning: unit '%s' has an invalid click number '%d'" % (self.unit_id, click_number))
+        for field in ["speed", "attack", "defense", "damage"]:
+          value = click.get(field + "_value", -1)
+          if value < 0 or value > 20:
+            print("Warning: unit '%s' click '%d' has an unexpected %s value '%d'" % (self.unit_id, click_number, field, value))
+          power = click.get(field + "_power", None)
+          if power and power != "special":
+            if not power in POWER_VALUES:
+              print("Warning: unit '%s' click '%d' has an invalid %s power '%s'" % (self.unit_id, click_number, field, power))
 
   def output_xml(self):
     # Convert the unit ID into the value we prefer - (set_id + collector_number)
@@ -1098,7 +1349,10 @@ class Fetcher:
       set_list_page = f.read()
       f.close()
     else:
-      set_name = SET_MAP[self.set_id]["name"];
+      set_info = SET_MAP.get(self.set_id, None)
+      if not set_info:
+        raise RuntimeError("Cannot find set '%s' in the SET_MAP" % self.set_id)
+      set_name = set_info["name"]
       self.init_driver()
       self.driver.get('https://www.hcrealms.com/forum/units/units_quicksets.php?q=' + set_name)
       soup = BeautifulSoup(self.driver.page_source, 'html.parser')
@@ -1170,7 +1424,7 @@ class Fetcher:
   def fetch_unit_page(self, unit_id):
     unit_path = get_unit_cache_path(self.set_id, unit_id);
     if not self.skip_cache and os.path.exists(unit_path):
-      print("Reading unit from cache at " + unit_path)
+      #print("Reading unit from cache at " + unit_path)
       f = open(unit_path, "r")
       unit_page = f.read()
       f.close()
@@ -1184,7 +1438,7 @@ class Fetcher:
       f = open(filename, "w")
       f.write(unit_page.encode('utf-8'))
       f.close()
-      print("Cached unit page to " + filename)
+      #print("Cached unit page to " + filename)
     return unit_page
   
 
@@ -1209,9 +1463,13 @@ if __name__ == "__main__":
   if not os.path.exists(cache_path):
     os.mkdir(cache_path);
 
+  # Make sure the set path exists.
+  if not os.path.exists(args.set_id):
+    os.mkdir(args.set_id);
+
   # Try to load an associated patch file.
   patch = {}
-  patch_filename = "set_%s_patch.json" % args.set_id
+  patch_filename = "%s/patch.json" % args.set_id
   if os.path.exists(patch_filename):
     with open(patch_filename, "r") as f:
       patch = json.loads(f.read())
@@ -1309,9 +1567,30 @@ if __name__ == "__main__":
       output_xml += "\n  </row>"
       num_processed += 1
   output_xml += "\n</resultset>"
-  filename = "set_%s.xml" % args.set_id
+  filename = "%s/%s.xml" % (args.set_id, args.set_id)
   f = open(filename, "w")
   f.write(output_xml.encode('utf-8'))
   f.close()
   print("Wrote %d units to %s" % (num_processed, filename))
 
+  # Also save the JSON file for debugging.
+  json_list = []
+  xml_list = xmltodict.parse(output_xml, force_list={"row"})
+  # Convert JSON fields into dicts
+  resultset = xml_list.get("resultset", None)
+  if resultset:
+    for unit in resultset["row"]:
+      for field in ["point_values",
+                    "properties",
+                    "team_abilities",
+                    "keywords",
+                    "special_powers",
+                    "improved_movement",
+                    "improved_targeting",
+                    "object_keyphrases",
+                    "dial"]:
+        unit[field] = json.loads(unit[field], object_pairs_hook=OrderedDict)
+      json_list.append(unit)
+  
+    with open("%s/%s.json" % (args.set_id, args.set_id), "w") as json_file:
+      json_file.write(json.dumps(json_list, indent=2))

@@ -239,7 +239,7 @@ class MockDataSource extends DataSource {
     this.units_ = []
     var dataSource = this;
     jQuery.ajax({
-      url: `/static/db/set_${setId}.json`,
+      url: `/static/db/${setId}/${setId}.json`,
       type: 'get',
       success: function(response) {
         dataSource.units_ = response

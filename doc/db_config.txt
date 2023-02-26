@@ -126,166 +126,190 @@ CREATE TABLE units (
 
 CREATE INDEX idx_unit_id ON units(unit_id);
 
-LOAD XML LOCAL INFILE 'set_btu.xml'
+LOAD XML LOCAL INFILE 'btu/btu.xml'
   REPLACE
   INTO TABLE units
   ROWS IDENTIFIED BY '<row>';
 
-LOAD XML LOCAL INFILE 'set_av4e.xml'
+LOAD XML LOCAL INFILE 'av4e/av4e.xml'
   REPLACE
   INTO TABLE units
   ROWS IDENTIFIED BY '<row>';
 
-LOAD XML LOCAL INFILE 'set_hgpc.xml'
+LOAD XML LOCAL INFILE 'hgpc/hgpc.xml'
   REPLACE
   INTO TABLE units
   ROWS IDENTIFIED BY '<row>';
 
-LOAD XML LOCAL INFILE 'set_xmxssop.xml'
+LOAD XML LOCAL INFILE 'xmxssop/xmxssop.xml'
   REPLACE
   INTO TABLE units
   ROWS IDENTIFIED BY '<row>';
 
-LOAD XML LOCAL INFILE 'set_xmxs.xml'
+LOAD XML LOCAL INFILE 'xmxs/xmxs.xml'
   REPLACE
   INTO TABLE units
   ROWS IDENTIFIED BY '<row>';
 
-LOAD XML LOCAL INFILE 'set_msdp.xml'
+LOAD XML LOCAL INFILE 'msdp/msdp.xml'
   REPLACE
   INTO TABLE units
   ROWS IDENTIFIED BY '<row>';
 
-LOAD XML LOCAL INFILE 'set_wotr.xml'
+LOAD XML LOCAL INFILE 'wotr/wotr.xml'
   REPLACE
   INTO TABLE units
   ROWS IDENTIFIED BY '<row>';
 
-LOAD XML LOCAL INFILE 'set_ffwotr.xml'
+LOAD XML LOCAL INFILE 'ffwotr/ffwotr.xml'
   REPLACE
   INTO TABLE units
   ROWS IDENTIFIED BY '<row>';
 
-LOAD XML LOCAL INFILE 'set_roc22.xml'
+LOAD XML LOCAL INFILE 'roc22/roc22.xml'
   REPLACE
   INTO TABLE units
   ROWS IDENTIFIED BY '<row>';
 
-LOAD XML LOCAL INFILE 'set_ff2021.xml'
+LOAD XML LOCAL INFILE 'ff2021/ff2021.xml'
   REPLACE
   INTO TABLE units
   ROWS IDENTIFIED BY '<row>';
 
-LOAD XML LOCAL INFILE 'set_affe.xml'
+LOAD XML LOCAL INFILE 'affe/affe.xml'
   REPLACE
   INTO TABLE units
   ROWS IDENTIFIED BY '<row>';
 
-LOAD XML LOCAL INFILE 'set_em.xml'
+LOAD XML LOCAL INFILE 'em/em.xml'
   REPLACE
   INTO TABLE units
   ROWS IDENTIFIED BY '<row>';
 
-LOAD XML LOCAL INFILE 'set_xmrf.xml'
+LOAD XML LOCAL INFILE 'xmrf/xmrf.xml'
   REPLACE
   INTO TABLE units
   ROWS IDENTIFIED BY '<row>';
 
-LOAD XML LOCAL INFILE 'set_ffxmrf.xml'
+LOAD XML LOCAL INFILE 'ffxmrf/ffxmrf.xml'
   REPLACE
   INTO TABLE units
   ROWS IDENTIFIED BY '<row>';
 
-LOAD XML LOCAL INFILE 'set_ww80.xml'
+LOAD XML LOCAL INFILE 'ww80/ww80.xml'
   REPLACE
   INTO TABLE units
   ROWS IDENTIFIED BY '<row>';
 
-LOAD XML LOCAL INFILE 'set_ffff.xml'
+LOAD XML LOCAL INFILE 'ffff/ffff.xml'
   REPLACE
   INTO TABLE units
   ROWS IDENTIFIED BY '<row>';
 
-LOAD XML LOCAL INFILE 'set_ffffff.xml'
+LOAD XML LOCAL INFILE 'ffffff/ffffff.xml'
   REPLACE
   INTO TABLE units
   ROWS IDENTIFIED BY '<row>';
 
-LOAD XML LOCAL INFILE 'set_dcff.xml'
+LOAD XML LOCAL INFILE 'dcff/dcff.xml'
   REPLACE
   INTO TABLE units
   ROWS IDENTIFIED BY '<row>';
 
-LOAD XML LOCAL INFILE 'set_hx.xml'
+LOAD XML LOCAL INFILE 'hx/hx.xml'
   REPLACE
   INTO TABLE units
   ROWS IDENTIFIED BY '<row>';
 
-LOAD XML LOCAL INFILE 'set_ffhx.xml'
+LOAD XML LOCAL INFILE 'ffhx/ffhx.xml'
   REPLACE
   INTO TABLE units
   ROWS IDENTIFIED BY '<row>';
 
-LOAD XML LOCAL INFILE 'set_wkm21.xml'
+LOAD XML LOCAL INFILE 'wkm21/wkm21.xml'
   REPLACE
   INTO TABLE units
   ROWS IDENTIFIED BY '<row>';
 
-LOAD XML LOCAL INFILE 'set_wkd21.xml'
+LOAD XML LOCAL INFILE 'wkd21/wkd21.xml'
   REPLACE
   INTO TABLE units
   ROWS IDENTIFIED BY '<row>';
 
-LOAD XML LOCAL INFILE 'set_roc21.xml'
+LOAD XML LOCAL INFILE 'roc21/roc21.xml'
   REPLACE
   INTO TABLE units
   ROWS IDENTIFIED BY '<row>';
 
-LOAD XML LOCAL INFILE 'set_svc.xml'
+LOAD XML LOCAL INFILE 'svc/svc.xml'
   REPLACE
   INTO TABLE units
   ROWS IDENTIFIED BY '<row>';
 
-LOAD XML LOCAL INFILE 'set_ffsvc.xml'
+LOAD XML LOCAL INFILE 'ffsvc/ffsvc.xml'
   REPLACE
   INTO TABLE units
   ROWS IDENTIFIED BY '<row>';
 
-LOAD XML LOCAL INFILE 'set_bgame.xml'
+LOAD XML LOCAL INFILE 'bgame/bgame.xml'
   REPLACE
   INTO TABLE units
   ROWS IDENTIFIED BY '<row>';
 
-LOAD XML LOCAL INFILE 'set_f4.xml'
+LOAD XML LOCAL INFILE 'f4/f4.xml'
   REPLACE
   INTO TABLE units
   ROWS IDENTIFIED BY '<row>';
 
-LOAD XML LOCAL INFILE 'set_fff4.xml'
+LOAD XML LOCAL INFILE 'fff4/fff4.xml'
   REPLACE
   INTO TABLE units
   ROWS IDENTIFIED BY '<row>';
 
-LOAD XML LOCAL INFILE 'set_wkm20.xml'
+LOAD XML LOCAL INFILE 'wkm20/wkm20.xml'
   REPLACE
   INTO TABLE units
   ROWS IDENTIFIED BY '<row>';
 
-LOAD XML LOCAL INFILE 'set_wkd20.xml'
+LOAD XML LOCAL INFILE 'wkd20/wkd20.xml'
   REPLACE
   INTO TABLE units
   ROWS IDENTIFIED BY '<row>';
 
-LOAD XML LOCAL INFILE 'set_roc20.xml'
+LOAD XML LOCAL INFILE 'roc20/roc20.xml'
   REPLACE
   INTO TABLE units
   ROWS IDENTIFIED BY '<row>';
 
-LOAD XML LOCAL INFILE 'set_wk.xml'
+LOAD XML LOCAL INFILE 'wk/wk.xml'
   REPLACE
   INTO TABLE units
   ROWS IDENTIFIED BY '<row>';
 
+LOAD XML LOCAL INFILE 'jlu/jlu.xml'
+  REPLACE
+  INTO TABLE units
+  ROWS IDENTIFIED BY '<row>';
+
+LOAD XML LOCAL INFILE 'bwm/bwm.xml'
+  REPLACE
+  INTO TABLE units
+  ROWS IDENTIFIED BY '<row>';
+
+LOAD XML LOCAL INFILE 'ffcc/ffcc.xml'
+  REPLACE
+  INTO TABLE units
+  ROWS IDENTIFIED BY '<row>';
+
+LOAD XML LOCAL INFILE 'caav/caav.xml'
+  REPLACE
+  INTO TABLE units
+  ROWS IDENTIFIED BY '<row>';
+
+LOAD XML LOCAL INFILE 'ffcaav/ffcaav.xml'
+  REPLACE
+  INTO TABLE units
+  ROWS IDENTIFIED BY '<row>';
 
 ALTER TABLE units
 MODIFY COLUMN rarity ENUM('common', 'uncommon', 'rare', 'super_rare', 'chase', 'ultra_chase', 'limited_edition');

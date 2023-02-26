@@ -138,10 +138,22 @@ SITE_ID = 1
 ACCOUNT_USERNAME_REQUIRED = True
 ACCOUNT_EMAIL_REQUIRED = False
 SOCIALACCOUNT_AUTO_SIGNUP = False
+SOCIALACCOUNT_QUERY_EMAIL = False
 ACCOUNT_USERNAME_MIN_LENGTH = 6
 ACCOUNT_USER_MODEL_EMAIL_FIELD = None
 ACCOUNT_DEFAULT_HTTP_PROTOCOL = 'https'
 
+SOCIALACCOUNT_PROVIDERS = {
+    'google': {
+        'SCOPE': [
+            'profile',
+        ],
+        'AUTH_PARAMS': {
+            'access_type': 'online',
+        },
+        'OAUTH_PKCE_ENABLED': True,        
+    }
+}
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/

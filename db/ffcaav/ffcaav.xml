@@ -1,0 +1,618 @@
+<resultset>
+  <row>
+    <unit_id>ffcaav001</unit_id>
+    <set_id>ffcaav</set_id>
+    <collector_number>001</collector_number>
+    <name>Isaiah Bradley</name>
+    <type>character</type>
+    <rarity>fast_forces</rarity>
+    <real_name>Isaiah Bradley</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[25]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Past", "Soldier"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "LIVING LEGEND", 
+    "description": "The first time each game Isaiah Bradley would be KO'd, instead turn him to his last non-KO click, then roll a d6 and heal him equal to half the result. Protected: Pulse Wave."
+  }, 
+  {
+    "type": "trait", 
+    "name": "EXPERIMENTAL AMERICAN SUPER SOLDIER", 
+    "description": "Colossal Stamina."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "charge", 
+    "speed_value": 9, 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "flurry", 
+    "speed_value": 9, 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "flurry", 
+    "speed_value": 8, 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_value": 8, 
+    "attack_value": 9, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ffcaav002</unit_id>
+    <set_id>ffcaav</set_id>
+    <collector_number>002</collector_number>
+    <name>Citizen V</name>
+    <type>character</type>
+    <rarity>fast_forces</rarity>
+    <real_name>John Watkins III</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[75]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Soldier", "V Battalion"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "LIVING LEGEND", 
+    "description": "The first time each game Citizen V would be KO'd, instead turn him to his last non-KO click, then roll a d6 and heal him equal to half the result. Protected: Pulse Wave."
+  }, 
+  {
+    "type": "speed", 
+    "name": "STEALTH SUIT AND V-WING", 
+    "description": "Charge, Sidestep, Stealth. [Wing symbol], Passenger: 0.", 
+    "powers": [
+      "charge", 
+      "sidestep", 
+      "stealth"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "special", 
+    "speed_value": 10, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 11, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 17, 
+    "damage_power": "shape_change", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "special", 
+    "speed_value": 10, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 17, 
+    "damage_power": "shape_change", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "special", 
+    "speed_value": 9, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 17, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "flurry", 
+    "speed_value": 9, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "flurry", 
+    "speed_value": 9, 
+    "attack_power": "precision_strike", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 18, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "flurry", 
+    "speed_value": 8, 
+    "attack_power": "precision_strike", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 18, 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ffcaav003</unit_id>
+    <set_id>ffcaav</set_id>
+    <collector_number>003</collector_number>
+    <name>Winter Soldier</name>
+    <type>character</type>
+    <rarity>fast_forces</rarity>
+    <real_name>James "Bucky" Barnes</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[75, 50]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Avengers", "Invaders", "S.H.I.E.L.D.", "Soldier", "Spy", "Thunderbolts"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "REPOSITION AFTER THE SHOT", 
+    "description": "When Winter Soldier makes a range attack, after resolutions move him up to 3 squares."
+  }, 
+  {
+    "type": "trait", 
+    "name": "ASSEMBLED AVENGERS", 
+    "description": "Once per turn when Winter Soldier hits, after resolutions you may roll a d6. 5-6: If your force has 3+ friendly characters with the Avengers keyword, remove an action token from Winter Soldier -or- give an action token to a hit target. If your force has 6+, do both."
+  }, 
+  {
+    "type": "speed", 
+    "name": "LOCATING THE TARGET", 
+    "description": "Running Shot, Sidestep, Stealth.", 
+    "powers": [
+      "running_shot", 
+      "sidestep", 
+      "stealth"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>8</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "special", 
+    "speed_value": 8, 
+    "attack_power": "precision_strike", 
+    "attack_value": 11, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "special", 
+    "speed_value": 7, 
+    "attack_power": "precision_strike", 
+    "attack_value": 11, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "running_shot", 
+    "speed_value": 7, 
+    "attack_power": "precision_strike", 
+    "attack_value": 11, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "perplex", 
+    "damage_value": 3, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "running_shot", 
+    "speed_value": 7, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "perplex", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "flurry", 
+    "speed_value": 7, 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 17, 
+    "damage_power": "battle_fury", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "flurry", 
+    "speed_value": 6, 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 17, 
+    "damage_power": "battle_fury", 
+    "damage_value": 3
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ffcaav004</unit_id>
+    <set_id>ffcaav</set_id>
+    <collector_number>004</collector_number>
+    <name>Captain America</name>
+    <type>character</type>
+    <rarity>fast_forces</rarity>
+    <real_name>Steve Rogers</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[75]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["avengers"]</team_abilities>
+    <keywords>["Avengers", "Invaders", "Past", "Soldier"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "LIVING LEGEND", 
+    "description": "The first time each game Captain America would be KO'd, instead turn him to his last non-KO click, then roll a d6 and heal him equal to half the result. Protected: Pulse Wave."
+  }, 
+  {
+    "type": "attack", 
+    "name": "FOLLOW UP", 
+    "description": "When Captain America hits with a range attack, after resolutions you may place Captain America adjacent to the hit character and then make a close attack."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>5</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "running_shot", 
+    "speed_value": 9, 
+    "attack_power": "special", 
+    "attack_value": 11, 
+    "defense_power": "toughness", 
+    "defense_value": 18, 
+    "damage_power": "leadership", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "running_shot", 
+    "speed_value": 9, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 18, 
+    "damage_power": "leadership", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "running_shot", 
+    "speed_value": 9, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "leadership", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "charge", 
+    "speed_value": 9, 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ffcaav005</unit_id>
+    <set_id>ffcaav</set_id>
+    <collector_number>005</collector_number>
+    <name>Iron Man</name>
+    <type>character</type>
+    <rarity>fast_forces</rarity>
+    <real_name>Tony Stark</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[75, 50]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["avengers"]</team_abilities>
+    <keywords>["Armor", "Avengers", "Scientist", "Stark Industries"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "ASSEMBLED AVENGERS", 
+    "description": "Once per turn when Iron Man hits, after resolutions you may roll a d6. 5-6: If your force has 3+ friendly characters with the Avengers keyword, remove an action token from Iron Man -or- give an action token to a hit target. If your force has 6+, do both."
+  }, 
+  {
+    "type": "defense", 
+    "name": "AVENGERS TEAM PLAYER", 
+    "description": "Defend, Invulnerability.", 
+    "powers": [
+      "defend", 
+      "invulnerability"
+    ]
+  }, 
+  {
+    "type": "damage", 
+    "name": "HERE TO HELP WITH EVERYTHING STARK INDUSTRIES HAS", 
+    "description": "Empower, Enhancement, Probability Control.", 
+    "powers": [
+      "empower", 
+      "enhancement", 
+      "probability_control"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>6</unit_range>
+    <targets>1</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "sidestep", 
+    "speed_value": 10, 
+    "attack_power": "telekinesis", 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 18, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "sidestep", 
+    "speed_value": 10, 
+    "attack_power": "telekinesis", 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 18, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "sidestep", 
+    "speed_value": 9, 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 3, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "force_blast", 
+    "speed_value": 9, 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "empower", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "force_blast", 
+    "speed_value": 9, 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "enhancement", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "earthbound_neutralized", 
+    "speed_value": 9, 
+    "attack_value": 9, 
+    "defense_power": "regeneration", 
+    "defense_value": 16, 
+    "damage_power": "probability_control", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ffcaav006</unit_id>
+    <set_id>ffcaav</set_id>
+    <collector_number>006</collector_number>
+    <name>Hawkeye</name>
+    <type>character</type>
+    <rarity>fast_forces</rarity>
+    <real_name>Clint Barton</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[75, 50]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["avengers"]</team_abilities>
+    <keywords>["Avengers", "Martial Artist", "Thunderbolts"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "ASSEMBLED AVENGERS", 
+    "description": "Once per turn when Hawkeye hits, after resolutions you may roll a d6. 5-6: If your force has 3+ friendly characters with the Avengers keyword, remove an action token from Hawkeye -or- give an action token to a hit target. If your force has 6+, do both."
+  }, 
+  {
+    "type": "attack", 
+    "name": "BECAUSE...BOOMERANG", 
+    "description": "Once per turn, when Hawkeye misses with a range attack targeting a single opposing character, after resolutions he may make a range attack against the same target modifying attack +1."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>["hindering"]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>7</unit_range>
+    <targets>2</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "running_shot", 
+    "speed_value": 9, 
+    "attack_power": "special", 
+    "attack_value": 12, 
+    "defense_power": "willpower", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "running_shot", 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 11, 
+    "defense_power": "willpower", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "running_shot", 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "willpower", 
+    "defense_value": 17, 
+    "damage_value": 3, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 11, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 11, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+</resultset>

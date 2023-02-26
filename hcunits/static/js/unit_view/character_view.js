@@ -100,7 +100,7 @@ class CharacterView extends BaseUnitView {
   }
 
   drawRealName_() {
-    if (!this.real_name) {
+    if (!this.unit_.real_name) {
       return ""
     }
     return `

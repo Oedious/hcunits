@@ -139,6 +139,31 @@ const SET_LIST = {
     "release_date": "2020-07-22",
     "universe": "marvel"
   },
+  "jlu": {
+    "name": "Justice League Unlimited",
+    "release_date": "2020-05-27",
+    "universe": "dc"
+  },
+  "bwm": {
+    "name": "Black Widow Movie",
+    "release_date": "2020-05-27",
+    "universe": "marvel"
+  },
+  "ffcc": {
+    "name": "Fantastic Four: Cosmic Clash",
+    "release_date": "2020-05-27",
+    "universe": "marvel"
+  },
+  "caav": {
+    "name": "Captain America and the Avengers",
+    "release_date": "2020-02-05",
+    "universe": "marvel"
+  },
+  "ffcaav": {
+    "name": "Fast Forces: Captain America and the Avengers",
+    "release_date": "2020-02-05",
+    "universe": "marvel"
+  },
   "wkm20": {
     "name": "WizKids Marvel 2020",
     "release_date": "2020-01-01",

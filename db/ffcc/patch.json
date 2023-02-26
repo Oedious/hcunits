@@ -1,0 +1,90 @@
+{
+  "updates": {
+    "ffcc001": {
+      "special_powers": [{
+      }, {
+        "powers": ["stop", "super_senses"]
+      }]
+    },
+    "ffcc002": {
+      "special_powers": [{
+      }, {
+      }, {
+        "powers": ["stop", "shape_change"]
+      }]
+    },
+    "ffcc003": {
+      "special_powers": [{
+      }, {
+      }, {
+        "powers": ["stop", "invulnerability"]
+      }]
+    },
+    "ffcc004": {
+      "special_powers": [{
+      }, {
+      }, {
+        "powers": ["stop", "energy_shield_deflection"]
+      }]
+    },
+    "ffcc006": {
+      "special_powers": [{
+        "powers": ["blades_claws_fangs", "energy_explosion", "pulse_wave", "quake", "super_strength", "incapacitate", "penetrating_psychic_blast", "smoke_cloud", "precision_strike", "poison", "steal_energy", "telekinesis"]
+      }]
+    },
+    "ffccB004": {
+      "special_powers": [{
+        "powers": ["perplex", "support"]
+      }]
+    }
+  },
+  "additions": [{
+    "unit_id": "ffccM001",
+    "set_id": "ffcc",
+    "collector_number": "M001",
+    "name": "Doom Castle",
+    "type": "map",
+    "special_powers": [{
+      "type": "location",
+      "name": "Reign of Terror",
+      "description": "At the beginning of the game, choose a friendly character. Once per turn, when that character rolls for Leadership you may reroll the result. If that character is named Dr. Doom, they increase their roll for Leadership by +1.",
+      "point_value": 5
+    }, {
+      "type": "consolation",
+      "name": "Consolation",
+      "description": "Once per game, when a friendly character would roll for Leadership, you may choose that they automatically succeed."
+    }],
+    "map_url": "https://hcmaps.net/maps/ffcc/doom_castle.json"
+  }, {
+    "unit_id": "ffccM002",
+    "set_id": "ffcc",
+    "collector_number": "M002",
+    "name": "Testing Grounds",
+    "type": "map",
+    "map_url": "https://hcmaps.net/maps/ffcc/testing_grounds.json"
+  }, {
+    "unit_id": "ffccM003",
+    "set_id": "ffcc",
+    "collector_number": "M003",
+    "name": "Reed's Lab",
+    "type": "map",
+    "special_powers": [{
+      "type": "location",
+      "name": "Unstable Molecules",
+      "description": "[This map has orange zones labeled 1-4.] When a friendly character in a numbered orange zone attacks or is attacked, modify their corresponding combat value +1. 1=Attack 2=Range 3=Defense 4=Damage. If that character is named Mr. Fantastic, you can choose which combat value (except Speed) to modify.",
+      "point_value": 5
+    }, {
+      "type": "consolation",
+      "name": "Consolation",
+      "description": "At the beginning of the game, generate 4 Past Experiment markers anywhere on the map not within 4 squares of a starting area. Friendly characters occupying those markers modify attack +1."
+    }],
+    "map_url": "https://hcmaps.net/maps/ffcc/reeds_lab.json"
+  }, {
+    "unit_id": "ffccM004",
+    "set_id": "ffcc",
+    "collector_number": "M004",
+    "name": "Yancy Street",
+    "type": "map",
+    "map_url": "https://hcmaps.net/maps/ffcc/yancy_street.json"
+  }]
+}

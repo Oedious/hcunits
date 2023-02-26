@@ -1,0 +1,1130 @@
+<resultset>
+  <row>
+    <unit_id>ffcc001</unit_id>
+    <set_id>ffcc</set_id>
+    <collector_number>001</collector_number>
+    <name>Mr. Fantastic</name>
+    <type>character</type>
+    <rarity>limited_edition</rarity>
+    <real_name>Reed Richards</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[100, 75]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["fantastic_four"]</team_abilities>
+    <keywords>["Celebrity", "Fantastic Four", "Illuminati", "Scientist"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "I'M PRETTY GOOD AT MULTI-TASKING", 
+    "description": "Plasticity, Shape Change. When Mr. Fantastic uses Shape Change, after resolutions place that D6 with that result on this card, replacing any here. Giant Reach: X, where X is 2 or the value of that die on this card, whichever is greater.", 
+    "powers": [
+      "plasticity", 
+      "shape_change"
+    ]
+  }, 
+  {
+    "type": "defense", 
+    "name": "WE'RE GOING TO BE FINE, SUE", 
+    "description": "STOP, but only if another friendly character with the Fantastic Four keyword is on the map. Super Senses.", 
+    "powers": [
+      "stop", 
+      "super_senses"
+    ]
+  }, 
+  {
+    "type": "damage", 
+    "name": "YOU'LL FIND MR. FANTASTIC MORE THAN A MATCH FOR YOU, EVERY TIME", 
+    "description": "Leadership, Outwit. FREE: Choose an opposing character of higher points within 4 squares and line of fire and a power (standard or special) they can use. The chosen character can't use that power until your next turn.", 
+    "powers": [
+      "leadership", 
+      "outwit"
+    ]
+  }
+]</special_powers>
+    <improved_movement>["elevated", "hindering"]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "quake", 
+    "attack_value": 11, 
+    "defense_power": "super_senses", 
+    "defense_value": 18, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 18, 
+    "damage_power": "perplex", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "force_blast", 
+    "speed_value": 8, 
+    "attack_power": "quake", 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 3, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "force_blast", 
+    "speed_value": 8, 
+    "attack_power": "quake", 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_power": "precision_strike", 
+    "attack_value": 9, 
+    "defense_power": "super_senses", 
+    "defense_value": 16, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "force_blast", 
+    "speed_value": 6, 
+    "attack_power": "precision_strike", 
+    "attack_value": 9, 
+    "defense_power": "special", 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ffcc002</unit_id>
+    <set_id>ffcc</set_id>
+    <collector_number>002</collector_number>
+    <name>Invisible Woman</name>
+    <type>character</type>
+    <rarity>limited_edition</rarity>
+    <real_name>Sue Storm</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[100, 75]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["fantastic_four"]</team_abilities>
+    <keywords>["Celebrity", "Fantastic Four", "Lady Liberators", "Scientist"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "HIDE AND SEEK", 
+    "description": "FREE: Choose one: Until your next turn, opposing characters can't target Invisible Woman unless they began their turn within 3 squares of her -or- Terrain markers are considered clear for line of fire this turn, if Invisible Women is within 4 squares of them."
+  }, 
+  {
+    "type": "defense", 
+    "name": "YOU'D BE SURPRISED WHAT LENGTHS I CAN GO WHEN PUSHED", 
+    "description": "Barrier, Toughness, Willpower. When Invisible Woman uses Barrier, after resolutions you may knock back 2 squares any number of opposing characters adjacent to these markers.", 
+    "powers": [
+      "barrier", 
+      "toughness", 
+      "willpower"
+    ]
+  }, 
+  {
+    "type": "damage", 
+    "name": "JOHNNY, STAY WITH ME!", 
+    "description": "STOP, but only if another friendly character with the Fantastic Four keyword is on the map. Shape Change.", 
+    "powers": [
+      "stop", 
+      "shape_change"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>["hindering"]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>5</unit_range>
+    <targets>2</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "sidestep", 
+    "speed_value": 9, 
+    "attack_power": "telekinesis", 
+    "attack_value": 11, 
+    "defense_power": "special", 
+    "defense_value": 19, 
+    "damage_power": "support", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "sidestep", 
+    "speed_value": 9, 
+    "attack_power": "telekinesis", 
+    "attack_value": 11, 
+    "defense_power": "defend", 
+    "defense_value": 19, 
+    "damage_power": "support", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "sidestep", 
+    "speed_value": 9, 
+    "attack_power": "telekinesis", 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 18, 
+    "damage_power": "support", 
+    "damage_value": 3, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "incapacitate", 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 18, 
+    "damage_power": "shape_change", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "force_blast", 
+    "speed_value": 8, 
+    "attack_power": "incapacitate", 
+    "attack_value": 10, 
+    "defense_power": "defend", 
+    "defense_value": 18, 
+    "damage_power": "shape_change", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "force_blast", 
+    "speed_value": 8, 
+    "attack_power": "incapacitate", 
+    "attack_value": 9, 
+    "defense_power": "defend", 
+    "defense_value": 18, 
+    "damage_power": "shape_change", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "force_blast", 
+    "speed_value": 7, 
+    "attack_power": "telekinesis", 
+    "attack_value": 9, 
+    "defense_power": "special", 
+    "defense_value": 19, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ffcc003</unit_id>
+    <set_id>ffcc</set_id>
+    <collector_number>003</collector_number>
+    <name>The Thing</name>
+    <type>character</type>
+    <rarity>limited_edition</rarity>
+    <real_name>Ben Grimm</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[100, 75]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["fantastic_four"]</team_abilities>
+    <keywords>["Celebrity", "Fantastic Four", "Guardians of the Galaxy"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "IT'S CLOBBERIN' TIME", 
+    "description": "POWER: If no other friendly character has been placed this turn, choose an opposing character that's within 4 squares of a friendly character with the Fantastic Four keyword that was attacked since your last turn. Place The Thing such that he can make a close attack targeting the chosen character, then do so. If he hits and his attack roll is 10+, after resolutions remove an action token from him."
+  }, 
+  {
+    "type": "speed", 
+    "name": "SOMETIMES YOU GOTTA BREAK STUFF", 
+    "description": "Charge, Improved Movement: This character can move through Blocking terrain. Immediately after movement resolves, destroy all Blocking terrain moved through.", 
+    "powers": [
+      "charge"
+    ]
+  }, 
+  {
+    "type": "defense", 
+    "name": "AIN'T FEELIN' SO GOOD, STRETCHO", 
+    "description": "STOP, but only if another friendly character with the Fantastic Four keyword is on the map. Invulnerability.", 
+    "powers": [
+      "stop", 
+      "invulnerability"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "special", 
+    "speed_value": 10, 
+    "attack_power": "super_strength", 
+    "attack_value": 12, 
+    "defense_power": "invincible", 
+    "defense_value": 18, 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "flurry", 
+    "speed_value": 10, 
+    "attack_power": "super_strength", 
+    "attack_value": 11, 
+    "defense_power": "impervious", 
+    "defense_value": 18, 
+    "damage_power": "empower", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "special", 
+    "speed_value": 9, 
+    "attack_power": "super_strength", 
+    "attack_value": 11, 
+    "defense_power": "invincible", 
+    "defense_value": 17, 
+    "damage_value": 3, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "special", 
+    "speed_value": 9, 
+    "attack_power": "super_strength", 
+    "attack_value": 10, 
+    "defense_power": "impervious", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "flurry", 
+    "speed_value": 9, 
+    "attack_power": "super_strength", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "empower", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "flurry", 
+    "speed_value": 8, 
+    "attack_power": "super_strength", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "empower", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "special", 
+    "speed_value": 8, 
+    "attack_power": "super_strength", 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ffcc004</unit_id>
+    <set_id>ffcc</set_id>
+    <collector_number>004</collector_number>
+    <name>Human Torch</name>
+    <type>character</type>
+    <rarity>limited_edition</rarity>
+    <real_name>Johnny Storm</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[100, 75]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["fantastic_four"]</team_abilities>
+    <keywords>["Celebrity", "Fantastic Four", "Herald", "Inhumans", "Spider-Man Family"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "FLAME TRAIL", 
+    "description": "Once per turn for all characters with this trait, when Human Torch moves, after resolutions choose a character he moved through or adjacent to and deal it 1 penetrating damage."
+  }, 
+  {
+    "type": "attack", 
+    "name": "FLAME ON", 
+    "description": "Poison, but may use it even if moved or placed this turn.", 
+    "powers": [
+      "poison"
+    ]
+  }, 
+  {
+    "type": "defense", 
+    "name": "BEN? WHERE ARE YOU?", 
+    "description": "STOP, but only if another friendly character with the Fantastic Four keyword is on the map. Energy Shield/Deflection.", 
+    "powers": [
+      "stop", 
+      "energy_shield_deflection"
+    ]
+  }
+]</special_powers>
+    <improved_movement>["characters"]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>7</unit_range>
+    <targets>2</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "running_shot", 
+    "speed_value": 11, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 12, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 17, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "hypersonic_speed", 
+    "speed_value": 10, 
+    "attack_power": "special", 
+    "attack_value": 11, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 17, 
+    "damage_power": "enhancement", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "running_shot", 
+    "speed_value": 10, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 11, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 17, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 3, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "hypersonic_speed", 
+    "speed_value": 9, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 17, 
+    "damage_power": "enhancement", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "running_shot", 
+    "speed_value": 10, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 10, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 16, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "hypersonic_speed", 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 11, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 16, 
+    "damage_power": "enhancement", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "running_shot", 
+    "speed_value": 9, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 11, 
+    "defense_power": "special", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ffcc005</unit_id>
+    <set_id>ffcc</set_id>
+    <collector_number>005</collector_number>
+    <name>Dr. Doom</name>
+    <type>character</type>
+    <rarity>limited_edition</rarity>
+    <real_name>Victor Von Doom</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[300, 200, 100]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["minions_of_doom"]</team_abilities>
+    <keywords>["Armor", "Cabal", "Cosmic", "Latveria", "Mystical", "Politician", "Ruler", "Scientist"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "ONLY DOOM IS FIT TO RULE", 
+    "description": "Leadership, but instead removes the action token from himself. When Dr. Doom uses it and succeeds, until your next turn he has Improved Targeting: Hindering and PROTECTED: Mind Control, Outwit. // Other powers and abilities can't remove action tokens from Dr. Doom.", 
+    "powers": [
+      "leadership"
+    ]
+  }, 
+  {
+    "type": "attack", 
+    "name": "PHOTON ARRAY", 
+    "description": "Energy Explosion. // When Dr. Doom hits with a ranged attack, after resolutions give each hit character an action token. If you can't, deal that character 1 penetrating damage.", 
+    "powers": [
+      "energy_explosion"
+    ]
+  }, 
+  {
+    "type": "defense", 
+    "name": "YOU HAVE ANGERED DOOM!", 
+    "description": "STOP. Toughness. When Dr. Doom is targeted by an attack, you may choose a standard defense power that you haven't chosen this turn. Dr. Doom can use that power for this attack.", 
+    "powers": [
+      "stop", 
+      "toughness"
+    ]
+  }, 
+  {
+    "type": "damage", 
+    "name": "FEW MEN ARE AS SUBTLE AS DR. DOOM", 
+    "description": "Outwit. FREE: Choose an opposing character of lower points within 4 squares and line of fire and a power (standard or special) they can use. The chosen character can't use that power until your next turn.", 
+    "powers": [
+      "outwit"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>7</unit_range>
+    <targets>3</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "running_shot", 
+    "speed_value": 12, 
+    "attack_power": "special", 
+    "attack_value": 12, 
+    "defense_power": "impervious", 
+    "defense_value": 18, 
+    "damage_power": "special", 
+    "damage_value": 5
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "running_shot", 
+    "speed_value": 11, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 11, 
+    "defense_power": "special", 
+    "defense_value": 19, 
+    "damage_power": "probability_control", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "running_shot", 
+    "speed_value": 11, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 11, 
+    "defense_power": "impervious", 
+    "defense_value": 18, 
+    "damage_power": "outwit", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "running_shot", 
+    "speed_value": 10, 
+    "attack_power": "special", 
+    "attack_value": 11, 
+    "defense_power": "invulnerability", 
+    "defense_value": 18, 
+    "damage_power": "special", 
+    "damage_value": 4, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "sidestep", 
+    "speed_value": 10, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 11, 
+    "defense_power": "special", 
+    "defense_value": 18, 
+    "damage_power": "probability_control", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "sidestep", 
+    "speed_value": 9, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 11, 
+    "defense_power": "invulnerability", 
+    "defense_value": 18, 
+    "damage_power": "outwit", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "running_shot", 
+    "speed_value": 9, 
+    "attack_power": "special", 
+    "attack_value": 11, 
+    "defense_power": "invulnerability", 
+    "defense_value": 18, 
+    "damage_power": "special", 
+    "damage_value": 3, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 8, 
+    "speed_power": "running_shot", 
+    "speed_value": 8, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 17, 
+    "damage_power": "probability_control", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 9, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "probability_control", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 10, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 7, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 9, 
+    "defense_power": "regeneration", 
+    "defense_value": 17, 
+    "damage_power": "probability_control", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 11, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 7, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 9, 
+    "defense_power": "regeneration", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ffcc006</unit_id>
+    <set_id>ffcc</set_id>
+    <collector_number>006</collector_number>
+    <name>Silver Surfer</name>
+    <type>character</type>
+    <rarity>limited_edition</rarity>
+    <real_name>Norrin Radd</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[300, 200, 100]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["defenders", "power_cosmic"]</team_abilities>
+    <keywords>["Annihilators", "Cosmic", "Defenders", "Herald"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "BEHOLD THE POWER COSMIC!", 
+    "description": "FREE: Choose a standard attack power. Until your next turn Silver Surfer can use the chosen power and characters he hits can't use the chosen power.", 
+    "powers": [
+      "blades_claws_fangs", 
+      "energy_explosion", 
+      "pulse_wave", 
+      "quake", 
+      "super_strength", 
+      "incapacitate", 
+      "penetrating_psychic_blast", 
+      "smoke_cloud", 
+      "precision_strike", 
+      "poison", 
+      "steal_energy", 
+      "telekinesis"
+    ]
+  }, 
+  {
+    "type": "speed", 
+    "name": "THE SURFER SOARS", 
+    "description": "Hypersonic Speed. When Silver Surfer uses it, he may be given a RANGE action at no cost instead of making an attack.", 
+    "powers": [
+      "hypersonic_speed"
+    ]
+  }, 
+  {
+    "type": "damage", 
+    "name": "TRACKING THE SUBATOMIC ACROSS SPACE", 
+    "description": "FREE: Choose an Improved Targeting ability except [Improved Targeting: Blocking] to use until your next turn. (He may choose [Improved Targeting: Once per range attack, this character can draw a line of fire through one piece of Blocking terrain. Immediately after the attack resolves, destroy that piece of Blocking terrain.])"
+  }
+]</special_powers>
+    <improved_movement>["characters"]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>8</unit_range>
+    <targets>1</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "special", 
+    "speed_value": 13, 
+    "attack_value": 12, 
+    "defense_power": "invincible", 
+    "defense_value": 19, 
+    "damage_power": "special", 
+    "damage_value": 5
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "running_shot", 
+    "speed_value": 13, 
+    "attack_value": 11, 
+    "defense_power": "invincible", 
+    "defense_value": 19, 
+    "damage_power": "probability_control", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "running_shot", 
+    "speed_value": 12, 
+    "attack_value": 11, 
+    "defense_power": "invincible", 
+    "defense_value": 18, 
+    "damage_power": "probability_control", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "special", 
+    "speed_value": 12, 
+    "attack_value": 11, 
+    "defense_power": "invincible", 
+    "defense_value": 19, 
+    "damage_power": "special", 
+    "damage_value": 4, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "running_shot", 
+    "speed_value": 11, 
+    "attack_value": 11, 
+    "defense_power": "impervious", 
+    "defense_value": 18, 
+    "damage_power": "probability_control", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "running_shot", 
+    "speed_value": 11, 
+    "attack_value": 11, 
+    "defense_power": "impervious", 
+    "defense_value": 18, 
+    "damage_power": "probability_control", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "special", 
+    "speed_value": 11, 
+    "attack_value": 11, 
+    "defense_power": "invincible", 
+    "defense_value": 18, 
+    "damage_power": "special", 
+    "damage_value": 3, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 8, 
+    "speed_power": "running_shot", 
+    "speed_value": 10, 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 18, 
+    "damage_power": "probability_control", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 9, 
+    "speed_power": "running_shot", 
+    "speed_value": 10, 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "probability_control", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 10, 
+    "speed_power": "running_shot", 
+    "speed_value": 10, 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "probability_control", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 11, 
+    "speed_power": "special", 
+    "speed_value": 9, 
+    "attack_value": 10, 
+    "defense_power": "regeneration", 
+    "defense_value": 18, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ffccB001</unit_id>
+    <set_id>ffcc</set_id>
+    <collector_number>B001</collector_number>
+    <name>Yancy Gang</name>
+    <type>bystander</type>
+    <rarity>limited_edition</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[15]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["underworld"]</team_abilities>
+    <keywords>["Brute"]</keywords>
+    <special_powers>[]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>standard</bystander_type>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>1</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "sidestep", 
+    "speed_value": 5, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_value": 16, 
+    "damage_power": "empower", 
+    "damage_value": 1
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ffccB002</unit_id>
+    <set_id>ffcc</set_id>
+    <collector_number>B002</collector_number>
+    <name>Yancy Pickpocket</name>
+    <type>bystander</type>
+    <rarity>limited_edition</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[20]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["underworld"]</team_abilities>
+    <keywords>["Brute"]</keywords>
+    <special_powers>[]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>standard</bystander_type>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>1</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_value": 6, 
+    "attack_value": 8, 
+    "defense_value": 16, 
+    "damage_power": "outwit", 
+    "damage_value": 1
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ffccB003</unit_id>
+    <set_id>ffcc</set_id>
+    <collector_number>B003</collector_number>
+    <name>Doombot</name>
+    <type>bystander</type>
+    <rarity>common</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[25]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["minions_of_doom"]</team_abilities>
+    <keywords>["Latveria", "Robot"]</keywords>
+    <special_powers>[]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>standard</bystander_type>
+    <unit_range>6</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>1</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "running_shot", 
+    "speed_value": 8, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 18, 
+    "damage_power": "shape_change", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ffccB004</unit_id>
+    <set_id>ffcc</set_id>
+    <collector_number>B004</collector_number>
+    <name>Latverian Engineer</name>
+    <type>bystander</type>
+    <rarity>limited_edition</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[20]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["minions_of_doom"]</team_abilities>
+    <keywords>["Latveria", "Scientist"]</keywords>
+    <special_powers>[
+  {
+    "type": "damage", 
+    "name": "LATVERIAN TECH", 
+    "description": "Perplex and Support, but both only to target characters with the Armor, Robot, or Latveria keywords.", 
+    "powers": [
+      "perplex", 
+      "support"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>standard</bystander_type>
+    <unit_range>6</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>1</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "sidestep", 
+    "speed_value": 4, 
+    "attack_value": 9, 
+    "defense_power": "defend", 
+    "defense_value": 15, 
+    "damage_power": "special", 
+    "damage_value": 0
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ffccM001</unit_id>
+    <set_id>ffcc</set_id>
+    <collector_number>M001</collector_number>
+    <name>Doom Castle</name>
+    <type>map</type>
+    <point_values>[]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[
+  {
+    "point_value": 5, 
+    "type": "location", 
+    "name": "Reign of Terror", 
+    "description": "At the beginning of the game, choose a friendly character. Once per turn, when that character rolls for Leadership you may reroll the result. If that character is named Dr. Doom, they increase their roll for Leadership by +1."
+  }, 
+  {
+    "type": "consolation", 
+    "name": "Consolation", 
+    "description": "Once per game, when a friendly character would roll for Leadership, you may choose that they automatically succeed."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <map_url>https://hcmaps.net/maps/ffcc/doom_castle.json</map_url>
+    <dial>[]</dial>
+  </row>
+  <row>
+    <unit_id>ffccM002</unit_id>
+    <set_id>ffcc</set_id>
+    <collector_number>M002</collector_number>
+    <name>Testing Grounds</name>
+    <type>map</type>
+    <point_values>[]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <map_url>https://hcmaps.net/maps/ffcc/testing_grounds.json</map_url>
+    <dial>[]</dial>
+  </row>
+  <row>
+    <unit_id>ffccM003</unit_id>
+    <set_id>ffcc</set_id>
+    <collector_number>M003</collector_number>
+    <name>Reed's Lab</name>
+    <type>map</type>
+    <point_values>[]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[
+  {
+    "point_value": 5, 
+    "type": "location", 
+    "name": "Unstable Molecules", 
+    "description": "[This map has orange zones labeled 1-4.] When a friendly character in a numbered orange zone attacks or is attacked, modify their corresponding combat value +1. 1=Attack 2=Range 3=Defense 4=Damage. If that character is named Mr. Fantastic, you can choose which combat value (except Speed) to modify."
+  }, 
+  {
+    "type": "consolation", 
+    "name": "Consolation", 
+    "description": "At the beginning of the game, generate 4 Past Experiment markers anywhere on the map not within 4 squares of a starting area. Friendly characters occupying those markers modify attack +1."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <map_url>https://hcmaps.net/maps/ffcc/reeds_lab.json</map_url>
+    <dial>[]</dial>
+  </row>
+  <row>
+    <unit_id>ffccM004</unit_id>
+    <set_id>ffcc</set_id>
+    <collector_number>M004</collector_number>
+    <name>Yancy Street</name>
+    <type>map</type>
+    <point_values>[]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <map_url>https://hcmaps.net/maps/ffcc/yancy_street.json</map_url>
+    <dial>[]</dial>
+  </row>
+</resultset>
