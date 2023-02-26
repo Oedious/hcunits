@@ -136,6 +136,9 @@ SET_MAP = {
   "orvl": {
     "name": "The Orville Starter",
   },
+  "trekbg": {
+    "name": "Star Trek HeroClix Away Team: To Boldly Go",
+  },
 }
 
 POWERS = {
@@ -339,6 +342,14 @@ DEFENSE_TYPE_VALUES = [
 DAMAGE_TYPE_VALUES = [
   'starburst', 'giant', 'colossal', 'tiny'
 ]
+
+TEAM_ABILITY_CORRECTIONS = {
+  "Wonder Woman": "wonder_woman_ally",
+  "Romulan Star Empire (Away Team)": "romulan_star_empire",
+  "Romulan Star Empire (Aw": "romulan_star_empire",
+  "Klingon Empire (Away Team)": "klingon_empire",
+  "United Federation of Planets": "united_federation",
+}
 
 CACHE_DIR = ".cache"
 
@@ -585,12 +596,13 @@ class Unit:
       for tag in tag_list:
         match_obj = re.search(r"showQuickSearch\('(.*)','team_ability'\)", tag['onclick'])
         if match_obj:
-          team_ability = match_obj.group(1);
+          team_ability = match_obj.group(1).strip();
           if team_ability == "No Affiliation":
             continue
           # Fix mis-named team abilities.
-          if team_ability == "Wonder Woman":
-            team_ability = "wonder_woman_ally"
+          corrected_ta = TEAM_ABILITY_CORRECTIONS.get(team_ability, None)
+          if corrected_ta:
+            team_ability = corrected_ta
           self.team_abilities.append(fix_style(team_ability).replace('.', ''))
     
     # Parse keywords
@@ -780,7 +792,10 @@ class Unit:
           if sp_type_str == "special":
             sp_type = "trait"
           elif sp_type_str == "improved":
-            sp_type = "improved"
+            if "title" in self.properties:
+              sp_type = "title_trait"
+            else:
+              sp_type = "improved"
           elif sp_type_str.startswith("m-"):
             sp_type = "speed"
           elif sp_type_str.startswith("a-") or sp_type_str.startswith("vehicle"):
@@ -823,8 +838,10 @@ class Unit:
             continue
 
           if sp_type == "improved":
-            improved_ability_info = IMPROVED_ABILITIES[sp_name.lower()]
-            if improved_ability_info:
+            improved_ability_info = IMPROVED_ABILITIES.get(sp_name.lower(), None)
+            if not improved_ability_info:
+              raise RuntimeError("Error: unit '%s' has invalid improved ability type '%s'" % (self.unit_id, sp_name))
+            else:
               # First try to parse when the abilities are listed as rules.
               attr_name = improved_ability_info["attr_name"]
               types = improved_ability_info["types"]

@@ -286,7 +286,7 @@ const TEAM_ABILITY_LIST = {
     "copyable": true,
     "wildcard": false
   },
-  "united_federation_of_planets": {
+  "united_federation": {
     "name": "United Federation of Planets",
     "universe": "star_trek",
     "description": "When this character is given a MOVE action, modify speed +1.",

@@ -189,6 +189,11 @@ const SET_LIST = {
     "release_date": "2019-10-23",
     "universe": "indy"
   },
+  "trekbg": {
+    "name": "Star Trek: The Next Generation: To Boldly Go",
+    "release_date": "2019-10-23",
+    "universe": "star_trek"
+  },
   "wk": {
     "name": "WizKids Standard Game Pieces",
     "release_date": "2002-05-01",
