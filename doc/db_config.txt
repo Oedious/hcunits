@@ -59,7 +59,7 @@ CREATE TABLE units (
 
   -- A JSON array of objects containing special powers and traits, of the format:
   -- {
-  --   "type": string - contains "trait", "speed", "attack", "defense", "damage", "costed_trait", "rally_trait", "title_trait", "plus_plot_points", "minus_plot_points", "location", "consolation"
+  --   "type": string - contains "trait", "speed", "attack", "defense", "damage", "costed_trait", "rally_trait", "title_trait", "plus_plot_points", "minus_plot_points", "location", "consolation", "object"
   --   "name": string - the name of the power.
   --   "description": string - the description of the power.
   --   "powers": (Optional) array of strings, containing names to standard powers granted.
@@ -326,6 +326,15 @@ LOAD XML LOCAL INFILE 'trekbg/trekbg.xml'
   INTO TABLE units
   ROWS IDENTIFIED BY '<row>';
 
+LOAD XML LOCAL INFILE 'xdps/xdps.xml'
+  REPLACE
+  INTO TABLE units
+  ROWS IDENTIFIED BY '<row>';
+
+LOAD XML LOCAL INFILE 'ffxdps/ffxdps.xml'
+  REPLACE
+  INTO TABLE units
+  ROWS IDENTIFIED BY '<row>';
 
 ALTER TABLE units
 MODIFY COLUMN rarity ENUM('common', 'uncommon', 'rare', 'super_rare', 'chase', 'ultra_chase', 'limited_edition');

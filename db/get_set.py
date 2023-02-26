@@ -139,6 +139,12 @@ SET_MAP = {
   "trekbg": {
     "name": "Star Trek HeroClix Away Team: To Boldly Go",
   },
+  "xdps": {
+    "name": "X-Men the Animated Series: The Dark Phoenix Saga",
+  },
+  "ffxdps": {
+    "name": "Fast Forces: X-Men the Animated Series: The Dark Phoenix Saga",
+  },
 }
 
 POWERS = {
@@ -258,7 +264,7 @@ PROPERTY_VALUES = [
 ]
 
 SPECIAL_POWER_TYPE_VALUES = [
-  "trait", "speed", "attack", "defense", "damage", "costed_trait", "rally_trait", "title_trait", "plus_plot_points", "minus_plot_points", "location", "consolation"
+  "trait", "speed", "attack", "defense", "damage", "costed_trait", "rally_trait", "title_trait", "plus_plot_points", "minus_plot_points", "location", "consolation", "object",
 ]
 
 RALLY_TYPE_VALUES = [
@@ -276,14 +282,15 @@ IMPROVED_ABILITIES = {
       "blocking": "blocking",
       "ignores blocking and destroys blocking terrain as the character moves through it": "blocking",
       "ignores blocking and destroys blocking terrain as the character moves through it.": "blocking",
-      # Unclear if we need this one - caav042 uses the next one.
-      #"this character can move through blocking terrain. immediately after movement resolves, destroy all blocking terrain moved through": "blocking",
+      "improved movement: ignores blocking terrain and destroys blocking terrain as the character moves through it.": "blocking",
+      "this character can move through blocking terrain. immediately after movement resolves, destroy all blocking terrain moved through": "blocking",
       "this character can move through blocking terrain. immediately after movement resolves, destroy all blocking terrain moved through.": "blocking",
       "outdoor blocking": "outdoor_blocking",
       "destroy blocking": "destroy_blocking",
       "characters": "characters",
       "move through": "move_through",
       "this character can move through squares adjacent to or occupied by opposing characters without stopping, and automatically breaks away, even if adjacent to a character that can use plasticity.": "move_through",
+      "this character can move through squares adjacent to or occupied by opposing characters without stopping, and automatically breaks away, even if adjacent to a character than can use plasticity.": "move_through",
     },
   },
   "targeting": {
@@ -295,8 +302,10 @@ IMPROVED_ABILITIES = {
       "ignores hindering terrain": "hindering",
       "blocking": "blocking",
       "once per range attack, this character can draw a line of fire through one piece of blocking terrain. immediately after the attack resolves, destroy that piece of blocking terrain": "blocking",
+      "once per range attack, this character can draw a line through one piece of blocking terrain. immediately after the attack resolves, destroy that piece of blocking terrain.": "blocking",
       "destroy blocking": "destroy_blocking",
       "characters": "characters",
+      "lines of fire drawn by this character are not blocked by characters": "characters",
       "adjacent": "adjacent",
       "this character can make range attacks while adjacent to opposing characters. (may target adjacent or non-adjacent opposing characters.)": "adjacent",
     },
@@ -647,6 +656,8 @@ class Unit:
             self.object_type = "special"
           elif part == "Disguised Plastic Man Special Object":
             self.object_type = "plastic_man"
+          elif part.upper == "INDESTRUCTIBLE":
+            self.object_keyphrases.append("indestructible")
           elif not description:
             description = part + "."
           else:
@@ -792,8 +803,12 @@ class Unit:
           if sp_type_str == "special":
             sp_type = "trait"
           elif sp_type_str == "improved":
-            if "title" in self.properties:
+            desc = td_tags[1].strong.string.strip()
+            if "title" in self.properties and desc.startswith("STARTING PLOT POINTS"):
               sp_type = "title_trait"
+            elif desc.startswith("LEADER OF THE NASTY BOYS"):
+              # Hack to fix xdps043a, who should have a trait instead of an improved ability
+              sp_type = "trait"
             else:
               sp_type = "improved"
           elif sp_type_str.startswith("m-"):
@@ -1217,8 +1232,8 @@ class Unit:
         if sp_rally_die < 1 or sp_rally_die > 6:
           print("Warning: unit '%s' has an invalid rally die '%d'" % (self.unit_id, sp_rally_die))
       if sp_type == "plus_plot_points" or sp_type == "minus_plot_points":
-        plot_points = sp.get("plot_points", None)
-        if not plot_points:
+        plot_points = sp.get("plot_points", 1000)
+        if plot_points == 1000:
           print("Warning: unit '%s' has a title trait without a plot point value" % (self.unit_id))
       if sp_type == "location":
         sp_point_value = sp.get("point_value", None)
@@ -1241,11 +1256,11 @@ class Unit:
     if self.type == "object" or self.type == "equipment":
       if not self.object_type:
         print("Warning: for unit '%s' with type 'object' - missing object_type" % self.unit_id)
-      if not self.object_type in OBJECT_TYPE_VALUES:
+      elif not self.object_type in OBJECT_TYPE_VALUES:
         print("Warning: for unit '%s' with type 'object' - invalid object_type '%s'" % (self.unit_id, self.object_type))
       if not self.object_size:
         print("Warning: for unit '%s' with type 'object' - missing object_size" % self.unit_id)
-      if not self.object_size in OBJECT_SIZE_VALUES:
+      elif not self.object_size in OBJECT_SIZE_VALUES:
         print("Warning: for unit '%s' with type 'object' - invalid object_size '%s'" % (self.unit_id, self.object_size))
       for ok in self.object_keyphrases:
         if not ok in OBJECT_KEYPHRASE_VALUES:

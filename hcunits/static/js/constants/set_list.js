@@ -194,6 +194,16 @@ const SET_LIST = {
     "release_date": "2019-10-23",
     "universe": "star_trek"
   },
+  "xdps": {
+    "name": "X-Men the Animated Series: The Dark Phoenix Saga",
+    "release_date": "2019-09-25",
+    "universe": "star_trek"
+  },
+  "ffxdps": {
+    "name": "Fast Forces: X-Men the Animated Series: The Dark Phoenix Saga",
+    "release_date": "2019-09-25",
+    "universe": "star_trek"
+  },
   "wk": {
     "name": "WizKids Standard Game Pieces",
     "release_date": "2002-05-01",

@@ -1,0 +1,619 @@
+<resultset>
+  <row>
+    <unit_id>ffxdps001</unit_id>
+    <set_id>ffxdps</set_id>
+    <collector_number>001</collector_number>
+    <name>Wolverine</name>
+    <type>character</type>
+    <rarity>fast_forces</rarity>
+    <real_name>Logan</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[70, 50]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["x_men"]</team_abilities>
+    <keywords>["Animal", "Weapon X", "X-Men"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "HUNTED AND ON THE RUN", 
+    "description": "Friendly characters that are adjacent or have the X-Men keyword can use Combat Reflexes when attacked by characters with [Giant symbol] or [Colossal symbol]."
+  }, 
+  {
+    "type": "speed", 
+    "name": "TELL CYCLOPS I MADE HIS CAR A CONVERTIBLE", 
+    "description": "Charge, Flurry.", 
+    "powers": [
+      "charge", 
+      "flurry"
+    ]
+  }
+]</special_powers>
+    <improved_movement>["hindering"]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "special", 
+    "speed_value": 9, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 11, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "special", 
+    "speed_value": 8, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "battle_fury", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "special", 
+    "speed_value": 8, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 11, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_value": 3, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "charge", 
+    "speed_value": 7, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "battle_fury", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "flurry", 
+    "speed_value": 7, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 10, 
+    "defense_power": "regeneration", 
+    "defense_value": 16, 
+    "damage_power": "battle_fury", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "flurry", 
+    "speed_value": 7, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 9, 
+    "defense_power": "regeneration", 
+    "defense_value": 16, 
+    "damage_power": "battle_fury", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ffxdps002</unit_id>
+    <set_id>ffxdps</set_id>
+    <collector_number>002</collector_number>
+    <name>Rogue</name>
+    <type>character</type>
+    <rarity>fast_forces</rarity>
+    <real_name>Anna Marie</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[70, 50]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["x_men"]</team_abilities>
+    <keywords>["Brotherhood of Mutants", "X-Men"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "HUNTED AND ON THE RUN", 
+    "description": "Friendly characters that are adjacent or have the X-Men keyword can use Toughness when attacked by characters with [Giant symbol] or [Colossal symbol]."
+  }, 
+  {
+    "type": "defense", 
+    "name": "SOUTHERN HOSPITALITY", 
+    "description": "Invulnerability, Willpower.", 
+    "powers": [
+      "invulnerability", 
+      "willpower"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "charge", 
+    "speed_value": 9, 
+    "attack_power": "super_strength", 
+    "attack_value": 11, 
+    "defense_power": "special", 
+    "defense_value": 18, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "steal_energy", 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 17, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "charge", 
+    "speed_value": 9, 
+    "attack_power": "super_strength", 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 17, 
+    "damage_value": 3, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "steal_energy", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "charge", 
+    "speed_value": 7, 
+    "attack_power": "steal_energy", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_power": "steal_energy", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ffxdps003</unit_id>
+    <set_id>ffxdps</set_id>
+    <collector_number>003</collector_number>
+    <name>Beast</name>
+    <type>character</type>
+    <rarity>fast_forces</rarity>
+    <real_name>Hank McCoy</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[70, 50]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["x_men"]</team_abilities>
+    <keywords>["Animal", "Scientist", "X-Men"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "HUNTED AND ON THE RUN", 
+    "description": "Friendly characters that are adjacent or have the X-Men keyword can use Super Senses when attacked by characters with [Giant symbol] or [Colossal symbol]."
+  }, 
+  {
+    "type": "defense", 
+    "name": "THEY ONLY FIGHT BECAUSE THEY FEAR US. BECAUSE THEY DON'T YET UNDERSTAND", 
+    "description": "Combat Reflexes, Defend.", 
+    "powers": [
+      "combat_reflexes", 
+      "defend"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "charge", 
+    "speed_value": 9, 
+    "attack_power": "quake", 
+    "attack_value": 11, 
+    "defense_power": "special", 
+    "defense_value": 18, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "leap_climb", 
+    "speed_value": 9, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 17, 
+    "damage_power": "perplex", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "charge", 
+    "speed_value": 8, 
+    "attack_power": "quake", 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 18, 
+    "damage_value": 3, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "charge", 
+    "speed_value": 8, 
+    "attack_power": "quake", 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "leap_climb", 
+    "speed_value": 8, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 10, 
+    "defense_power": "defend", 
+    "defense_value": 17, 
+    "damage_power": "perplex", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "leap_climb", 
+    "speed_value": 7, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 9, 
+    "defense_power": "defend", 
+    "defense_value": 18, 
+    "damage_power": "perplex", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ffxdps004</unit_id>
+    <set_id>ffxdps</set_id>
+    <collector_number>004</collector_number>
+    <name>Storm</name>
+    <type>character</type>
+    <rarity>fast_forces</rarity>
+    <real_name>Ororo Munroe</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[70, 50]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["x_men"]</team_abilities>
+    <keywords>["Deity", "Morlocks", "X-Men"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "HUNTED AND ON THE RUN", 
+    "description": "Friendly characters that are adjacent or have the X-Men keyword can use the Mystics team ability when attacked by characters with [Giant symbol] or [Colossal symbol]."
+  }, 
+  {
+    "type": "speed", 
+    "name": "I BELIEVE THAT PLEASURE IS MINE!", 
+    "description": "Running Shot, Sidestep.", 
+    "powers": [
+      "running_shot", 
+      "sidestep"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>7</unit_range>
+    <targets>2</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "special", 
+    "speed_value": 8, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 11, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 17, 
+    "damage_power": "leadership", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "special", 
+    "speed_value": 8, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 10, 
+    "defense_power": "willpower", 
+    "defense_value": 17, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "special", 
+    "speed_value": 8, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 10, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 17, 
+    "damage_power": "leadership", 
+    "damage_value": 3, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "running_shot", 
+    "speed_value": 8, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 10, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 17, 
+    "damage_power": "leadership", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_value": 9, 
+    "defense_power": "willpower", 
+    "defense_value": 16, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_value": 9, 
+    "defense_power": "willpower", 
+    "defense_value": 16, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ffxdps005</unit_id>
+    <set_id>ffxdps</set_id>
+    <collector_number>005</collector_number>
+    <name>Gambit</name>
+    <type>character</type>
+    <rarity>fast_forces</rarity>
+    <real_name>Remy LeBeau</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[70, 50]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["x_men"]</team_abilities>
+    <keywords>["Spy", "X-Men"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "HUNTED AND ON THE RUN", 
+    "description": "Friendly characters that are adjacent or have the X-Men keyword can use Probability Control when attacked by characters with [Giant symbol] or [Colossal symbol]."
+  }, 
+  {
+    "type": "speed", 
+    "name": "THE NAME IS GAMBIT! REMEMBER IT!", 
+    "description": "Force Blast, Running Shot, Stealth.", 
+    "powers": [
+      "force_blast", 
+      "running_shot", 
+      "stealth"
+    ]
+  }
+]</special_powers>
+    <improved_movement>["hindering"]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>6</unit_range>
+    <targets>2</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "special", 
+    "speed_value": 8, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 11, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 17, 
+    "damage_power": "enhancement", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "special", 
+    "speed_value": 8, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 17, 
+    "damage_power": "enhancement", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "special", 
+    "speed_value": 8, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "enhancement", 
+    "damage_value": 3, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "force_blast", 
+    "speed_value": 7, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 11, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "running_shot", 
+    "speed_value": 7, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "enhancement", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "force_blast", 
+    "speed_value": 7, 
+    "attack_power": "precision_strike", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ffxdps006</unit_id>
+    <set_id>ffxdps</set_id>
+    <collector_number>006</collector_number>
+    <name>Jubilee</name>
+    <type>character</type>
+    <rarity>fast_forces</rarity>
+    <real_name>Jubilation Lee</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[35, 20]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["x_men"]</team_abilities>
+    <keywords>["Generation X", "X-Men"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "HUNTED AND ON THE RUN", 
+    "description": "Friendly characters that are adjacent or have the X-Men keyword can use Shape Change when attacked by characters with [Giant symbol] or [Colossal symbol]."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>4</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 10, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 17, 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "stealth", 
+    "speed_value": 6, 
+    "attack_power": "incapacitate", 
+    "attack_value": 9, 
+    "defense_power": "willpower", 
+    "defense_value": 16, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "stealth", 
+    "speed_value": 6, 
+    "attack_power": "incapacitate", 
+    "attack_value": 9, 
+    "defense_power": "willpower", 
+    "defense_value": 17, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 1, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "sidestep", 
+    "speed_value": 6, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 9, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 16, 
+    "damage_value": 1
+  }
+]</dial>
+  </row>
+</resultset>
