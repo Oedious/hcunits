@@ -386,6 +386,21 @@ LOAD XML LOCAL INFILE 'ffeax/ffeax.xml'
   INTO TABLE units
   ROWS IDENTIFIED BY '<row>';
 
+LOAD XML LOCAL INFILE 'swb/swb.xml'
+  REPLACE
+  INTO TABLE units
+  ROWS IDENTIFIED BY '<row>';
+
+LOAD XML LOCAL INFILE 'ffswb/ffswb.xml'
+  REPLACE
+  INTO TABLE units
+  ROWS IDENTIFIED BY '<row>';
+
+LOAD XML LOCAL INFILE 'btas/btas.xml'
+  REPLACE
+  INTO TABLE units
+  ROWS IDENTIFIED BY '<row>';
+
 ALTER TABLE units
 MODIFY COLUMN rarity ENUM('common', 'uncommon', 'rare', 'super_rare', 'chase', 'ultra_chase', 'limited_edition');
 

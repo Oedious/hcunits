@@ -264,6 +264,11 @@ const SET_LIST = {
     "release_date": "2018-10-01",
     "universe": "marvel"
   },
+  "btas": {
+    "name": "Batman: The Animated Series",
+    "release_date": "2018-07-11",
+    "universe": "dc"
+  },
   "wk": {
     "name": "WizKids Standard Game Pieces",
     "release_date": "2002-05-01",

@@ -108,7 +108,7 @@ class SmallUnitView extends BaseUnitView {
       card0Lines += 2;
     }
     if (!hasToken) {
-      card0Lines += 11;
+      card0Lines += 12;
     }
     const LINES_PER_CARD = [card0Lines, 23];
     var currentLineCount = 0;

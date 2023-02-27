@@ -182,6 +182,9 @@ SET_MAP = {
   "ffswb": {
     "name": "Fast Forces: Secret Wars: Battleworld",
   },
+  "btas": {
+    "name": "Batman: The Animated Series",
+  },
 }
 
 POWERS = {
@@ -438,21 +441,6 @@ def clean_string(str):
   # Escape special XML characters.
   return escape(str)
 
-# Compares special powers to define an ordering
-def compare_special_powers(sp1, sp2):
-  idx1 = SPECIAL_POWER_TYPE_VALUES.index(sp1["type"])
-  if idx1 < 0:
-    idx1 = 1000
-  idx2 = SPECIAL_POWER_TYPE_VALUES.index(sp2["type"])
-  if idx2 < 0:
-    idx2 = 1000
-  if idx1 == idx2 and sp1["type"] == "title_trait":
-    if sp1["name"].startswith("STARTING"):
-      idx1 -= 1
-    if sp2["name"].startswith("STARTING"):
-      idx2 -= 1
-  return idx1 - idx2
-
 # Returns true if the subdial matches the start of the dial.
 def is_subdial(dial, subdial):
   if len(dial) < len(subdial):
@@ -535,6 +523,7 @@ class Unit:
     for prefix in [self.set_id, "wkM-", "wk"]:
       if self.unit_id.startswith(prefix):
         self.collector_number = self.unit_id[len(prefix):]
+
     if not self.collector_number:
       raise RuntimeError("Could not find a collector number for '%s'" % self.unit_id)
 
@@ -583,7 +572,8 @@ class Unit:
       if is_construct:
         self.type = "bystander"
         self.bystander_type = "construct"
-      elif soup.find("td", class_="card_special_object"):
+      elif (soup.find("td", class_="card_special_object") or
+            soup.find("td", class_="card_light_object")):
         if ((soup.find(text=re.compile(r'.*EFFECT: .*')) or
              # Yes - eaxs003 spelled this "EFECT"...
              soup.find(text=re.compile(r'.*EFECT: .*')) or
@@ -640,6 +630,12 @@ class Unit:
     if not self.type:
       raise RuntimeError("The unit type (%s) for '%s' is currently not supported" % (figure_rank, self.unit_id))
 
+    # Correct bad equipment unit names.
+    if self.type == "equipment":
+      if self.collector_number.startswith("S"):
+        self.collector_number = self.collector_number.replace("S", "s", 1)
+        self.unit_id = self.set_id + self.collector_number
+
     if self.type == "character" or self.type == "bystander":
       point_value_tag = soup.find("div", {"style": "float:right;padding-top:3px;"})
     elif self.type == "object" or self.type == "equipment" or self.type == "id_card" or self.type == "mystery_card":
@@ -693,8 +689,10 @@ class Unit:
 
     # Parse object special powers
     if self.type == "object":
-      equip_tag = soup.find("td", class_="card_special_object").parent
-      tag_list = equip_tag.next_sibling.next_sibling.find_all("div")
+      object_tag = soup.find("td", class_="card_special_object")
+      if not object_tag:
+        object_tag = soup.find("td", class_="card_light_object")
+      tag_list = object_tag.parent.next_sibling.next_sibling.find_all("div")
       for tag in tag_list:
         if tag.string:
           # The attribute list is formed by a single string that needs to be
@@ -740,9 +738,10 @@ class Unit:
           self.special_powers[-1] = self.parse_powers_from_description(self.special_powers[-1])
     # Parse equipment special powers
     elif self.type == "equipment":
-
-      equip_tag = soup.find("td", class_="card_special_object").parent
-      tag_list = equip_tag.next_sibling.next_sibling.find_all("div")
+      equip_tag = soup.find("td", class_="card_special_object")
+      if not equip_tag:
+        equip_tag = soup.find("td", class_="card_light_object")
+      tag_list = equip_tag.parent.next_sibling.next_sibling.find_all("div")
       if tag_list:
         tag = tag_list[0]
         # Skip the first item in the list if it's the keyword list.
@@ -1050,7 +1049,7 @@ class Unit:
             sp = self.parse_powers_from_description(sp)
     
             # Avoid adding duplicates.
-            dupe = [x for x in self.special_powers if x["name"] == sp["name"]]
+            dupe = [x for x in self.special_powers if x.get("name", "__x_name__") == sp.get("name", "__sp_name__")]
             if dupe:
               print("Skipping duplicate special power '%s' for '%s'" % (sp["name"], self.unit_id))
             else:
@@ -1261,9 +1260,6 @@ class Unit:
 
     # Return true to indicate a successful merge.
     return True;
-
-  def order_special_powers(self):
-    self.special_powers.sort(key=functools.cmp_to_key(compare_special_powers))
 
   def apply_update(self, update):
     update_mode = update.get("__update_mode__", "insert_value")
@@ -1699,9 +1695,6 @@ if __name__ == "__main__":
   fetcher.close()
 
   for unit in units:
-    # Fix the ordering of special powers.
-    unit.order_special_powers()
-
     # Apply any updates from the patches. Needs to be done outside of the loop
     # in case there are any merges that occur.
     if unit.unit_id in updates:
