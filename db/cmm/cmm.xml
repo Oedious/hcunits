@@ -1,2 +1,2194 @@
 <resultset>
+  <row>
+    <unit_id>cmm001</unit_id>
+    <set_id>cmm</set_id>
+    <collector_number>001</collector_number>
+    <name>Captain Marvel</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <real_name>Carol Danvers</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[100]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Kree", "S.H.I.E.L.D.", "Soldier"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "SHIFTING FOCUS: CAPTAIN MARVEL", 
+    "description": "FREE: If Captain Marvel began your turn on the map, replace her with another character with this trait."
+  }, 
+  {
+    "type": "attack", 
+    "name": "ALIEN STRENGTH PUNCHES", 
+    "description": "Quake. When Captain Marvel uses it, after resolutions any hit targets that didn't take damage from the attack are dealt 1 penetrating damage.", 
+    "powers": [
+      "quake"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "charge", 
+    "speed_value": 11, 
+    "attack_power": "special", 
+    "attack_value": 11, 
+    "defense_power": "invulnerability", 
+    "defense_value": 18, 
+    "damage_power": "probability_control", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "charge", 
+    "speed_value": 10, 
+    "attack_power": "special", 
+    "attack_value": 11, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "charge", 
+    "speed_value": 10, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "charge", 
+    "speed_value": 10, 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 18, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "hypersonic_speed", 
+    "speed_value": 10, 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "hypersonic_speed", 
+    "speed_value": 9, 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "hypersonic_speed", 
+    "speed_value": 9, 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_value": 3
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>cmm002</unit_id>
+    <set_id>cmm</set_id>
+    <collector_number>002</collector_number>
+    <name>Kree Soldier</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <real_name>Various</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[25]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Kree", "Soldier"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "KREE SUPREMACY: ELITE FORCES", 
+    "description": "Once per turn, when a friendly character that's adjacent or has the Kree keyword rolls for break away and the result is a [1], you may reroll that die. If that friendly character is both adjacent and has the Kree keyword, instead you may reroll a result of [1] or [2]."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>4</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "running_shot", 
+    "speed_value": 8, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 10, 
+    "defense_power": "willpower", 
+    "defense_value": 17, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_value": 7, 
+    "attack_value": 10, 
+    "defense_power": "willpower", 
+    "defense_value": 17, 
+    "damage_power": "enhancement", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_value": 7, 
+    "attack_value": 9, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 16, 
+    "damage_power": "enhancement", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>cmm003</unit_id>
+    <set_id>cmm</set_id>
+    <collector_number>003</collector_number>
+    <name>Skrull Warrior</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <real_name>Various</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[25]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["skrulls"]</team_abilities>
+    <keywords>["Skrulls", "Spy", "Warrior"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "SECRET INVASION: WHO DO YOU TRUST", 
+    "description": "If Skrull Warrior occupies hindering terrain, increase the result of his Shape Change rolls by +1. // Adjacent opposing characters can't use Leadership or be carried."
+  }, 
+  {
+    "type": "speed", 
+    "name": "HIDDEN, UNTIL THEY'RE NOT", 
+    "description": "Sidestep, Stealth.", 
+    "powers": [
+      "sidestep", 
+      "stealth"
+    ]
+  }
+]</special_powers>
+    <improved_movement>["hindering"]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>4</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "special", 
+    "speed_value": 8, 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "special", 
+    "speed_value": 7, 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "special", 
+    "speed_value": 7, 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 1
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>cmm004</unit_id>
+    <set_id>cmm</set_id>
+    <collector_number>004</collector_number>
+    <name>Nick Fury</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <real_name>Nick Fury</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[50]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["shield"]</team_abilities>
+    <keywords>["Past", "S.H.I.E.L.D.", "Spy"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "ESPIONAGE: SUPER SPY", 
+    "description": "Nick Fury starts the game with 3 Tradecraft tokens. FREE: Remove a Tradecraft token to choose [Improved Targeting: Hindering] or [Improved Movement: Hindering]. Nick Fury can use that ability until your next turn."
+  }, 
+  {
+    "type": "damage", 
+    "name": "WE ONLY GET ONE SHOT, PEOPLE", 
+    "description": "Leadership. When Nick Fury or an adjacent friendly character attacks (before the attack roll), you may remove a Tradecraft token. If you do, opposing effects can't reroll that attack roll.", 
+    "powers": [
+      "leadership"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>5</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "running_shot", 
+    "speed_value": 8, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 11, 
+    "defense_power": "willpower", 
+    "defense_value": 18, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "running_shot", 
+    "speed_value": 8, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 11, 
+    "defense_power": "willpower", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "stealth", 
+    "speed_value": 7, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "stealth", 
+    "speed_value": 7, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "stealth", 
+    "speed_value": 7, 
+    "attack_power": "precision_strike", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>cmm005</unit_id>
+    <set_id>cmm</set_id>
+    <collector_number>005</collector_number>
+    <name>Att Lass</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <real_name>Att-Lass</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[50]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Cosmic", "Kree", "Spy"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "KREE SUPREMACY: DEEP COVER", 
+    "description": "UNIQUE MODIFIER - Friendly characters that are adjacent or have the Kree keyword modify defense +1 against close attacks. If that character is both adjacent and has the Kree keyword, they also modify defense +1 against range attacks."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>5</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "sidestep", 
+    "speed_value": 9, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 17, 
+    "damage_power": "shape_change", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_power": "perplex", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "precision_strike", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "perplex", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "perplex", 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "perplex", 
+    "damage_value": 1
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>cmm006</unit_id>
+    <set_id>cmm</set_id>
+    <collector_number>006</collector_number>
+    <name>Yon Rogg</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <real_name>Yon-Rogg</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[50]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Armor", "Cosmic", "Kree", "Soldier"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "KREE SUPREMACY: FOR HALA!", 
+    "description": "Once per turn for all characters with this trait, when a friendly character that's adjacent or has the Kree keyword hits, Action Total +1. If that character is both adjacent and has the Kree keyword, Action Total +2 instead."
+  }, 
+  {
+    "type": "attack", 
+    "name": "MANDROID ARMOR", 
+    "description": "Incapacitate, Telekinesis.", 
+    "powers": [
+      "incapacitate", 
+      "telekinesis"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>5</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "running_shot", 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "leadership", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "running_shot", 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "leadership", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "stealth", 
+    "speed_value": 7, 
+    "attack_value": 9, 
+    "defense_power": "willpower", 
+    "defense_value": 17, 
+    "damage_power": "perplex", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "stealth", 
+    "speed_value": 7, 
+    "attack_value": 9, 
+    "defense_power": "willpower", 
+    "defense_value": 16, 
+    "damage_power": "perplex", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>cmm007</unit_id>
+    <set_id>cmm</set_id>
+    <collector_number>007</collector_number>
+    <name>Kree Combatant</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <real_name>Various</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[25]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Kree", "Soldier"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "KREE SUPREMACY: PEERLESS WARRIORS", 
+    "description": "Once per turn, for all characters with this trait, when an opposing character rolls to break away from friendly characters that are adjacent or have the Kree keyword and the result is a [6], you may reroll that die. If at least one of those friendly characters is both adjacent and has the Kree keyword, instead you may reroll a result of [5] or [6]."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "charge", 
+    "speed_value": 8, 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 17, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_value": 9, 
+    "defense_power": "willpower", 
+    "defense_value": 16, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 1
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>cmm008</unit_id>
+    <set_id>cmm</set_id>
+    <collector_number>008</collector_number>
+    <name>Skrull Technician</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <real_name>Various</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[50]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["skrulls"]</team_abilities>
+    <keywords>["Scientist", "Skrulls"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "SECRET INVASION: WE'VE LEARNED ALL ABOUT YOU", 
+    "description": "If Skrull Technician occupies hindering terrain, increase the result of his Shape Change rolls by +1. // Once per turn, when an opposing character within range would use Outwit, Perplex, or Probability Control, you may roll a d6. [5-6]: That character can't use that power until your next turn."
+  }
+]</special_powers>
+    <improved_movement>["hindering"]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>5</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "stealth", 
+    "speed_value": 8, 
+    "attack_power": "telekinesis", 
+    "attack_value": 9, 
+    "defense_power": "willpower", 
+    "defense_value": 17, 
+    "damage_power": "outwit", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "stealth", 
+    "speed_value": 8, 
+    "attack_power": "telekinesis", 
+    "attack_value": 10, 
+    "defense_power": "willpower", 
+    "defense_value": 17, 
+    "damage_power": "outwit", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "stealth", 
+    "speed_value": 7, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "stealth", 
+    "speed_value": 7, 
+    "attack_power": "precision_strike", 
+    "attack_value": 9, 
+    "defense_power": "super_senses", 
+    "defense_value": 16, 
+    "damage_value": 1
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>cmm009</unit_id>
+    <set_id>cmm</set_id>
+    <collector_number>009</collector_number>
+    <name>Phil Coulson</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <real_name>Phil Coulson</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[50]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["shield"]</team_abilities>
+    <keywords>["Past", "S.H.I.E.L.D.", "Soldier"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "ESPIONAGE: ALWAYS BEEN A COLLECTOR", 
+    "description": "Phil Coulson starts the game with 3 Tradecraft tokens. When an equipment-object would be dropped or KO'd, you may remove 2 Tradecraft tokens to instead equip that equipment to Phil Coulson or an adjacent friendly character."
+  }, 
+  {
+    "type": "attack", 
+    "name": "I LOVE THESE OLD SPY GIZMOS", 
+    "description": "Precision Strike. FREE: Remove a Tradecraft token and KO a standard object held by Phil Coulson or an adjacent friendly character. If you do, the character that was holding the object chooses a standard attack power to use this turn.", 
+    "powers": [
+      "precision_strike"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>5</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "stealth", 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "willpower", 
+    "defense_value": 17, 
+    "damage_power": "shape_change", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "stealth", 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "willpower", 
+    "defense_value": 17, 
+    "damage_power": "perplex", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "stealth", 
+    "speed_value": 7, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_power": "perplex", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "stealth", 
+    "speed_value": 7, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_power": "perplex", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>cmm010</unit_id>
+    <set_id>cmm</set_id>
+    <collector_number>010</collector_number>
+    <name>Captain Marvel</name>
+    <type>character</type>
+    <rarity>rare</rarity>
+    <real_name>Carol Danvers</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[100]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Kree", "S.H.I.E.L.D.", "Soldier"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "SHIFTING FOCUS: CAPTAIN MARVEL", 
+    "description": "FREE: If Captain Marvel began your turn on the map, replace her with another character with this trait."
+  }, 
+  {
+    "type": "attack", 
+    "name": "FULL-SPECTRUM", 
+    "description": "Penetrating/Psychic Blast with 3 [TARGETS]. When Captain Marvel uses it, after resolutions any hit targets that didn't take damage from the attack are dealt 1 penetrating damage."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>7</unit_range>
+    <targets>1</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "running_shot", 
+    "speed_value": 10, 
+    "attack_power": "special", 
+    "attack_value": 11, 
+    "defense_power": "invulnerability", 
+    "defense_value": 18, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "running_shot", 
+    "speed_value": 10, 
+    "attack_power": "special", 
+    "attack_value": 11, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "running_shot", 
+    "speed_value": 10, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "sidestep", 
+    "speed_value": 9, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "sidestep", 
+    "speed_value": 9, 
+    "attack_power": "precision_strike", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "sidestep", 
+    "speed_value": 9, 
+    "attack_power": "precision_strike", 
+    "attack_value": 9, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 16, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 11, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>cmm011</unit_id>
+    <set_id>cmm</set_id>
+    <collector_number>011</collector_number>
+    <name>Minn Erva</name>
+    <type>character</type>
+    <rarity>rare</rarity>
+    <real_name>Minn-Erva</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[75]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Cosmic", "Kree", "Scientist"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "KREE SUPREMACY: SUPERIOR TECHNOLOGY", 
+    "description": "Friendly characters that are adjacent or have the Kree keyword have Protected: Outwit on their speed powers. If that friendly character is both adjacent and has the Kree keyword, they also have Protected: Outwit on their attack powers."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>6</unit_range>
+    <targets>1</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "running_shot", 
+    "speed_value": 9, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 11, 
+    "defense_power": "invincible", 
+    "defense_value": 17, 
+    "damage_power": "probability_control", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "running_shot", 
+    "speed_value": 8, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "probability_control", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "running_shot", 
+    "speed_value": 8, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "probability_control", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_power": "precision_strike", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_value": 7, 
+    "attack_value": 9, 
+    "defense_power": "regeneration", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>cmm012</unit_id>
+    <set_id>cmm</set_id>
+    <collector_number>012</collector_number>
+    <name>Talos</name>
+    <type>character</type>
+    <rarity>rare</rarity>
+    <real_name>Talos</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[100]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["skrulls"]</team_abilities>
+    <keywords>["Skrulls", "Spy"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "SECRET INVASION: WE COULD BE ANYONE", 
+    "description": "If Talos occupies hindering terrain, increase the result of his Shape Change rolls by +1. // Adjacent opposing characters can't use team abilities."
+  }, 
+  {
+    "type": "speed", 
+    "name": "WITHIN MY GRASP", 
+    "description": "Charge, Plasticity, Stealth, Giant Reach: 2.", 
+    "powers": [
+      "charge", 
+      "plasticity", 
+      "stealth"
+    ]
+  }, 
+  {
+    "type": "defense", 
+    "name": "REFORMATIVE SHIFTING", 
+    "description": "Regeneration. When Talos uses it, he heals 1 additional click.", 
+    "powers": [
+      "regeneration"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>6</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "special", 
+    "speed_value": 9, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 11, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 18, 
+    "damage_power": "leadership", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "special", 
+    "speed_value": 9, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 11, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 17, 
+    "damage_power": "leadership", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "special", 
+    "speed_value": 8, 
+    "attack_power": "quake", 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 17, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "special", 
+    "speed_value": 8, 
+    "attack_power": "quake", 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "stealth", 
+    "speed_value": 7, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 17, 
+    "damage_power": "perplex", 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "stealth", 
+    "speed_value": 7, 
+    "attack_power": "precision_strike", 
+    "attack_value": 9, 
+    "defense_power": "special", 
+    "defense_value": 17, 
+    "damage_power": "perplex", 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "stealth", 
+    "speed_value": 7, 
+    "attack_power": "precision_strike", 
+    "attack_value": 9, 
+    "defense_power": "special", 
+    "defense_value": 16, 
+    "damage_power": "perplex", 
+    "damage_value": 1
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>cmm013</unit_id>
+    <set_id>cmm</set_id>
+    <collector_number>013</collector_number>
+    <name>Nick Fury</name>
+    <type>character</type>
+    <rarity>rare</rarity>
+    <real_name>Nick Fury</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[100]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["avengers_initiative", "shield"]</team_abilities>
+    <keywords>["Avengers", "S.H.I.E.L.D.", "Soldier", "Spy"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "ESPIONAGE: THE SPYMASTER", 
+    "description": "Leadership. Nick Fury starts the game with 5 Tradecraft tokens. FREE: Remove a Tradecraft token to choose an opposing character within line of fire. That character can't have their combat values positively modified until your next turn.", 
+    "powers": [
+      "leadership"
+    ]
+  }, 
+  {
+    "type": "speed", 
+    "name": "GOING DARK", 
+    "description": "Sidestep, Stealth. FREE: Remove a Tradecraft token to move Nick Fury or an adjacent friendly character up to half their speed value.", 
+    "powers": [
+      "sidestep", 
+      "stealth"
+    ]
+  }, 
+  {
+    "type": "defense", 
+    "name": "NO ONE EVER REALLY DIES...", 
+    "description": "STOP. When this power is first revealed, remove all Tradecraft tokens and heal Nick Fury that many clicks.", 
+    "powers": [
+      "stop"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>6</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "special", 
+    "speed_value": 8, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 11, 
+    "defense_power": "toughness", 
+    "defense_value": 18, 
+    "damage_power": "outwit", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "special", 
+    "speed_value": 7, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 11, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "outwit", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "special", 
+    "speed_value": 7, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "outwit", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "running_shot", 
+    "speed_value": 7, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 16, 
+    "damage_power": "perplex", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "running_shot", 
+    "speed_value": 6, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 16, 
+    "damage_power": "perplex", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "earthbound_neutralized", 
+    "speed_value": 0, 
+    "attack_value": 0, 
+    "defense_power": "special", 
+    "defense_value": 10, 
+    "damage_value": 0
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>cmm014</unit_id>
+    <set_id>cmm</set_id>
+    <collector_number>014</collector_number>
+    <name>Att Lass</name>
+    <type>character</type>
+    <rarity>rare</rarity>
+    <real_name>Att-Lass</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[75]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Cosmic", "Kree"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "KREE SUPREMACY: EMPOWERED BY SUPERIOR TECHNOLOGY", 
+    "description": "Friendly characters that are adjacent or have the Kree keyword have Protected: Outwit on their defense powers. If that friendly characters is both adjacent and has the Kree keyword, they also have Protected: Outwit on their damage powers."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>6</unit_range>
+    <targets>1</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "hypersonic_speed", 
+    "speed_value": 10, 
+    "attack_power": "super_strength", 
+    "attack_value": 11, 
+    "defense_power": "impervious", 
+    "defense_value": 17, 
+    "damage_power": "leadership", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "charge", 
+    "speed_value": 10, 
+    "attack_power": "super_strength", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "leadership", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "charge", 
+    "speed_value": 10, 
+    "attack_power": "super_strength", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "leadership", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "sidestep", 
+    "speed_value": 9, 
+    "attack_power": "quake", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "quake", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_value": 8, 
+    "attack_value": 9, 
+    "defense_power": "regeneration", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>cmm015</unit_id>
+    <set_id>cmm</set_id>
+    <collector_number>015</collector_number>
+    <name>Yon Rogg</name>
+    <type>character</type>
+    <rarity>rare</rarity>
+    <real_name>Yon-Rogg</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[75]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Cosmic", "Kree", "Soldier"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "KREE SUPREMACY: WE SHALL WIN THIS WAR", 
+    "description": "Friendly characters that are adjacent or have the Kree keyword modify attack +1 when targeting only characters that can use Shape Change or stealth. If that friendly character is both adjacent and has the Kree keyword, it can use Improved Targeting: Hindering and Improved Targeting: Characters."
+  }, 
+  {
+    "type": "damage", 
+    "name": "PSYCHE-MAGNITRON", 
+    "description": "Empower, Enhancement, Ranged Combat Expert.", 
+    "powers": [
+      "empower", 
+      "enhancement", 
+      "ranged_combat_expert"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>6</unit_range>
+    <targets>2</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 10, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 18, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 10, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 10, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "force_blast", 
+    "speed_value": 7, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "perplex", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "force_blast", 
+    "speed_value": 7, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "perplex", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "force_blast", 
+    "speed_value": 7, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 11, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "perplex", 
+    "damage_value": 3
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>cmm016</unit_id>
+    <set_id>cmm</set_id>
+    <collector_number>016</collector_number>
+    <name>Bron Char</name>
+    <type>character</type>
+    <rarity>rare</rarity>
+    <real_name>Bron-Char</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[75]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Brute", "Cosmic", "Kree"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "KREE SUPREMACY: LIVE KREE OR DIE!", 
+    "description": "Once per turn for all characters with this trait, when a friendly character that's adjacent or has the Kree keyword is KO'd, after resolutions you may deal 1 damage to each opposing character that was adjacent to the KO'd character. If that friendly character is both adjacent and has the Kree keyword, the damage dealt is penetrating."
+  }, 
+  {
+    "type": "speed", 
+    "name": "LUNATIC LEGION", 
+    "description": "Charge, Flurry, KNOCKBACK.", 
+    "powers": [
+      "charge", 
+      "flurry"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "special", 
+    "speed_value": 10, 
+    "attack_value": 11, 
+    "defense_power": "invulnerability", 
+    "defense_value": 18, 
+    "damage_power": "battle_fury", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "special", 
+    "speed_value": 10, 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "battle_fury", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "special", 
+    "speed_value": 8, 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "battle_fury", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "plasticity", 
+    "speed_value": 8, 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 17, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "plasticity", 
+    "speed_value": 8, 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "plasticity", 
+    "speed_value": 8, 
+    "attack_value": 9, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>cmm017</unit_id>
+    <set_id>cmm</set_id>
+    <collector_number>017</collector_number>
+    <name>Skrull Scientist</name>
+    <type>character</type>
+    <rarity>rare</rarity>
+    <real_name>Various</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[75]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["skrulls"]</team_abilities>
+    <keywords>["Scientist", "Skrulls"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "SECRET INVASION: WE ARE ALREADY HERE", 
+    "description": "If Skrull Scientist occupies hindering terrain, increase the result of his Shape Change rolls by +1. // When an opposing character is KO'd by an attack, after resolutions you may place Skrull Scientist in, or adjacent to, that character's square. If you do, he gains Immune until your next turn."
+  }, 
+  {
+    "type": "trait", 
+    "name": "HIDDEN IN PLAIN SIGHT", 
+    "description": "FREE: Place Skrull Scientist in, or adjacent to, the square of an unheld object within range, then KO that object."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>5</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "stealth", 
+    "speed_value": 8, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "willpower", 
+    "defense_value": 17, 
+    "damage_power": "perplex", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "stealth", 
+    "speed_value": 8, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "willpower", 
+    "defense_value": 17, 
+    "damage_power": "perplex", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 10, 
+    "defense_power": "mastermind", 
+    "defense_value": 17, 
+    "damage_power": "outwit", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 10, 
+    "defense_power": "mastermind", 
+    "defense_value": 16, 
+    "damage_power": "outwit", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "leap_climb", 
+    "speed_value": 9, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 11, 
+    "defense_power": "regeneration", 
+    "defense_value": 16, 
+    "damage_power": "support", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>cmm018</unit_id>
+    <set_id>cmm</set_id>
+    <collector_number>018</collector_number>
+    <name>Phil Coulson</name>
+    <type>character</type>
+    <rarity>rare</rarity>
+    <real_name>Phil Coulson</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[75]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["avengers_initiative", "shield"]</team_abilities>
+    <keywords>["Avengers", "S.H.I.E.L.D.", "Soldier"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "ESPIONAGE: MANKIND'S SHIELD", 
+    "description": "Phil Coulson starts the game with 5 Tradecraft tokens. FREE: Remove a Tradecraft token to choose a standard damage poiwer for Phil Coulson to use until your next turn."
+  }, 
+  {
+    "type": "trait", 
+    "name": "HARD LIGHT SHIELD BUILT INTO THE HAND", 
+    "description": "Energy Shield/Deflection. FREE: Remove a Tradecraft token to choose an adjacent character. Until your next turn, that character can use Energy Shield/Deflection if they are adjacent to Phil Coulson.", 
+    "powers": [
+      "energy_shield_deflection"
+    ]
+  }, 
+  {
+    "type": "speed", 
+    "name": "ZEPHYR ONE", 
+    "description": "Stealth, [Wing symbol], PASSENGER: 4. Phil Coulson does not modify his speed value from use of the Carry ability.", 
+    "powers": [
+      "stealth"
+    ]
+  }, 
+  {
+    "type": "defense", 
+    "name": "IT'S A MAGICAL PLACE", 
+    "description": "Stop. When this power is first revealed, remove all Tradecraft tokens and heal Phil Coulson that many clicks."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>6</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "special", 
+    "speed_value": 12, 
+    "attack_power": "incapacitate", 
+    "attack_value": 11, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "leadership", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "running_shot", 
+    "speed_value": 8, 
+    "attack_power": "incapacitate", 
+    "attack_value": 11, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "leadership", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "running_shot", 
+    "speed_value": 8, 
+    "attack_power": "incapacitate", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "leadership", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "willpower", 
+    "defense_value": 16, 
+    "damage_power": "perplex", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_power": "precision_strike", 
+    "attack_value": 9, 
+    "defense_power": "willpower", 
+    "defense_value": 16, 
+    "damage_power": "perplex", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "earthbound_neutralized", 
+    "speed_value": 0, 
+    "attack_value": 0, 
+    "defense_power": "special", 
+    "defense_value": 10, 
+    "damage_value": 0
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>cmm019</unit_id>
+    <set_id>cmm</set_id>
+    <collector_number>019</collector_number>
+    <name>Korath</name>
+    <type>character</type>
+    <rarity>rare</rarity>
+    <real_name>Korath</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[75]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Cosmic", "Kree", "Robot", "Scientist"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "KREE SUPREMACY: YOU SHALL NOT ESCAPE", 
+    "description": "When a friendly character that's adjacent or has the Kree keyword hits, after resolutions that character may move 1 square. If that friendly character is both adjacent and has the Kree keyword, instead all friendly characters with the Kree keyword may move 1 square."
+  }, 
+  {
+    "type": "attack", 
+    "name": "TARGET LOCATED", 
+    "description": "Precision Strike. When Korath uses it, friendly characters can use Precision Strike this turn, but only to target that hit character.", 
+    "powers": [
+      "precision_strike"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>["hindering"]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>6</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "running_shot", 
+    "speed_value": 11, 
+    "attack_power": "special", 
+    "attack_value": 11, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "enhancement", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "running_shot", 
+    "speed_value": 11, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "enhancement", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "sidestep", 
+    "speed_value": 10, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "sidestep", 
+    "speed_value": 10, 
+    "attack_power": "telekinesis", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "sidestep", 
+    "speed_value": 10, 
+    "attack_power": "telekinesis", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>cmm020</unit_id>
+    <set_id>cmm</set_id>
+    <collector_number>020</collector_number>
+    <name>Ronan</name>
+    <type>character</type>
+    <rarity>rare</rarity>
+    <real_name>Ronan</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[100]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Cosmic", "Kree", "Warrior"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "KREE SUPREMACY: YOU STAND ACCUSED", 
+    "description": "POWER: If no friendly character has been placed this turn, choose an opposing character that dealt damage to a friendly character that's adjacent or has the Kree keyword since your last turn. Place Ronan adjacent to that opposing character, then make a close attack that deals penetrating damage targeting that character."
+  }, 
+  {
+    "type": "damage", 
+    "name": "IF YOU STAND WITH THE GUILTY, YOU WILL SHARE THEIR FATE", 
+    "description": "Close Combat Expert. When Ronan uses it and hits, after resolutions he may use it again at no cost to target a character he hasn't hit this turn. (He may repeat this if he keeps hitting)", 
+    "powers": [
+      "close_combat_expert"
+    ]
+  }
+]</special_powers>
+    <improved_movement>["hindering"]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>7</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "sidestep", 
+    "speed_value": 10, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 11, 
+    "defense_power": "invincible", 
+    "defense_value": 18, 
+    "damage_power": "special", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "sidestep", 
+    "speed_value": 10, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 11, 
+    "defense_power": "invincible", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "sidestep", 
+    "speed_value": 9, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 18, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "flurry", 
+    "speed_value": 9, 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "flurry", 
+    "speed_value": 8, 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 18, 
+    "damage_power": "probability_control", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "flurry", 
+    "speed_value": 8, 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "probability_control", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "flurry", 
+    "speed_value": 7, 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "probability_control", 
+    "damage_value": 3
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>cmm021</unit_id>
+    <set_id>cmm</set_id>
+    <collector_number>021</collector_number>
+    <name>Captain Marvel</name>
+    <type>character</type>
+    <rarity>chase</rarity>
+    <real_name>Carol Danvers</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[150]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["avengers_initiative"]</team_abilities>
+    <keywords>["Avengers", "Cosmic", "Kree", "S.H.I.E.L.D.", "Soldier"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "ENERGY ABSORPTION", 
+    "description": "When Captain Marvel takes 2 or more damage from a single attack, after resolutions note her current click number and then turn her to click #11. (If she would be KO'd she can't turn to click #11.)"
+  }, 
+  {
+    "type": "trait", 
+    "name": "KREE SUPREMACY: COSMIC AWARENESS", 
+    "description": "Friendly characters that are adjacent or have the Kree keyword have PROTECTED: Opposing Probability Control. If a friendly character is both adjacent and has the Kree keyword, it can use Probability Control, but only to target itself."
+  }, 
+  {
+    "type": "speed", 
+    "name": "STRAFING RUN", 
+    "description": "[Improved Movement: Characters], Running Shot. When Captain Marvel uses it, after resolutions she may use Charge at no cost, but can't target the same character."
+  }, 
+  {
+    "type": "defense", 
+    "name": "SUPER-CHARGED", 
+    "description": "Impervious, Colossal Stamina. At the end of your turn or if Captain Marvel would be KO'd, return her to the most recently noted click number. Protected: Outwit, Pulse Wave.", 
+    "powers": [
+      "impervious"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>8</unit_range>
+    <targets>2</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "special", 
+    "speed_value": 12, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 11, 
+    "defense_power": "invincible", 
+    "defense_value": 18, 
+    "damage_power": "leadership", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "special", 
+    "speed_value": 11, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 10, 
+    "defense_power": "invincible", 
+    "defense_value": 18, 
+    "damage_power": "leadership", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "special", 
+    "speed_value": 11, 
+    "attack_power": "super_strength", 
+    "attack_value": 11, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "leadership", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "charge", 
+    "speed_value": 10, 
+    "attack_power": "super_strength", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "charge", 
+    "speed_value": 10, 
+    "attack_power": "super_strength", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "flurry", 
+    "speed_value": 10, 
+    "attack_value": 11, 
+    "defense_power": "impervious", 
+    "defense_value": 17, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "flurry", 
+    "speed_value": 9, 
+    "attack_value": 10, 
+    "defense_power": "impervious", 
+    "defense_value": 17, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 11, 
+    "speed_power": "hypersonic_speed", 
+    "speed_value": 12, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 12, 
+    "defense_power": "special", 
+    "defense_value": 20, 
+    "damage_value": 5
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>cmm022</unit_id>
+    <set_id>cmm</set_id>
+    <collector_number>022</collector_number>
+    <name>Carol Danvers, Fearless</name>
+    <type>character</type>
+    <rarity>chase</rarity>
+    <real_name>Carol Danvers</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[75]</point_values>
+    <properties>["title"]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Past", "S.H.I.E.L.D.", "Soldier"]</keywords>
+    <special_powers>[
+  {
+    "type": "title_trait", 
+    "name": "STARTING PLOT POINTS", 
+    "description": "0"
+  }, 
+  {
+    "type": "title_trait", 
+    "name": "CONTINUITY", 
+    "description": "When Carol Danvers, Fearless is KO'd, for the rest of the game, friendly characters can't use team abilities."
+  }, 
+  {
+    "type": "plus_plot_points", 
+    "name": "CALLING IN THE AIR STRIKE ", 
+    "description": "FREE: This turn, [Improved Targeting: Ignores Elevated, Destroys Blocking] and modify range +2.", 
+    "plot_points": 1
+  }, 
+  {
+    "type": "plus_plot_points", 
+    "name": "PROVIDE COVERING FIRE", 
+    "description": "FREE: This turn when an adjacent friendly character hits with a range attack, if Carol Danvers, Fearless has line of fire to the target, after resolutions you may give that hit character an action token.", 
+    "plot_points": 1
+  }, 
+  {
+    "type": "minus_plot_points", 
+    "name": "OR (-6) PSYCHE-MAGNITRON", 
+    "description": "FREE: Replace Carol Danvers, Fearless with CMM #001 Captain Marvel or CMM #010 Captain Marvel (on your Sideline). If you spend 6 plot points, you may replace her with CMM #021 Captain Marvel instead. (Title Characters can be replaced by their own effect.)", 
+    "plot_points": -4
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>6</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "running_shot", 
+    "speed_value": 8, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 11, 
+    "defense_power": "toughness", 
+    "defense_value": 18, 
+    "damage_power": "leadership", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "running_shot", 
+    "speed_value": 8, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "enhancement", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "running_shot", 
+    "speed_value": 8, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "enhancement", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 17, 
+    "damage_power": "enhancement", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 16, 
+    "damage_power": "enhancement", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_power": "precision_strike", 
+    "attack_value": 9, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 16, 
+    "damage_power": "enhancement", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
 </resultset>
