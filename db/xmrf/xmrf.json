@@ -1022,7 +1022,15 @@
       {
         "type": "trait", 
         "name": "EXOSPEX TECHNOLOGY", 
-        "description": "FREE: Choose a listed power to use this turn, then roll a d6. 5-6: You may choose an additional listed power to use this turn. *Charge *Flurry *Quake *Poison *Exploit Weakness *Empower"
+        "description": "FREE: Choose a listed power to use this turn, then roll a d6. 5-6: You may choose an additional listed power to use this turn. *Charge *Flurry *Quake *Poison *Exploit Weakness *Empower", 
+        "powers": [
+          "charge", 
+          "flurry", 
+          "quake", 
+          "poison", 
+          "exploit_weakness", 
+          "empower"
+        ]
       }
     ], 
     "improved_movement": [], 
@@ -2882,7 +2890,11 @@
       {
         "type": "trait", 
         "name": "GENIUS LEVEL INTELLECT VS BROOD NATURE", 
-        "description": "FREE: Choose one effect to use until your next turn: Outwit and modify defense +1 -or- Exploit Weakness and modify attack +1."
+        "description": "FREE: Choose one effect to use until your next turn: Outwit and modify defense +1 -or- Exploit Weakness and modify attack +1.", 
+        "powers": [
+          "outwit", 
+          "exploit_weakness"
+        ]
       }
     ], 
     "improved_movement": [], 
@@ -5720,7 +5732,12 @@
       {
         "type": "attack", 
         "name": "TALONS AND JAVELINS", 
-        "description": "FREE: Choose one effect for Deathbird to use until your next turn: Blades/Claws/Fangs, Giant Reach: 3; Energy Explosion; or Poison."
+        "description": "FREE: Choose one effect for Deathbird to use until your next turn: Blades/Claws/Fangs, Giant Reach: 3; Energy Explosion; or Poison.", 
+        "powers": [
+          "blades_claws_fangs", 
+          "energy_explosion", 
+          "poison"
+        ]
       }
     ], 
     "improved_movement": [], 
@@ -6102,7 +6119,11 @@
       {
         "type": "trait", 
         "name": "HEART OF DARKNESS", 
-        "description": "If a character has been KO'd since your last turn, Blackheart deals penetrating damage. // FREE: Once per turn for all characters with this trait, KO a friendly XMRF #006 Hellfire Club Guard. If you did, remove all action tokens from Blackheart, heal him 1 click, and after resolutions he can use either Charge or Running Shot as FREE."
+        "description": "If a character has been KO'd since your last turn, Blackheart deals penetrating damage. // FREE: Once per turn for all characters with this trait, KO a friendly XMRF #006 Hellfire Club Guard. If you did, remove all action tokens from Blackheart, heal him 1 click, and after resolutions he can use either Charge or Running Shot as FREE.", 
+        "powers": [
+          "charge", 
+          "running_shot"
+        ]
       }, 
       {
         "type": "defense", 
@@ -6607,7 +6628,10 @@
       {
         "type": "trait", 
         "name": "I GROW STRONGER AS YOU GET WEAKER", 
-        "description": "Gladiator starts the game on click #4. // Steal Energy, but with close or range attacks. When Gladiator uses Steal Energy, he may heal past his starting line."
+        "description": "Gladiator starts the game on click #4. // Steal Energy, but with close or range attacks. When Gladiator uses Steal Energy, he may heal past his starting line.", 
+        "powers": [
+          "steal_energy"
+        ]
       }, 
       {
         "type": "speed", 
@@ -7633,7 +7657,10 @@
       {
         "type": "trait", 
         "name": "DEEP WOUNDS FOR DEEPER SECRETS", 
-        "description": "When Diamond Patch hits a single opposing character with a close attack, after resolutions he can use Mind Control as FREE, but only to target the hit character."
+        "description": "When Diamond Patch hits a single opposing character with a close attack, after resolutions he can use Mind Control as FREE, but only to target the hit character.", 
+        "powers": [
+          "mind_control"
+        ]
       }, 
       {
         "type": "trait", 
@@ -9103,7 +9130,10 @@
       {
         "type": "trait", 
         "name": "KEEP IT MOVING, X-MEN", 
-        "description": "When Cyclops hits, until your next turn friendly characters with the X-Men keyword can use Sidestep."
+        "description": "When Cyclops hits, until your next turn friendly characters with the X-Men keyword can use Sidestep.", 
+        "powers": [
+          "sidestep"
+        ]
       }
     ], 
     "improved_movement": [], 
@@ -9850,5 +9880,39 @@
         "damage_value": 3
       }
     ]
+  }, 
+  {
+    "unit_id": "xmrfM001", 
+    "set_id": "xmrf", 
+    "collector_number": "M001", 
+    "name": "Starcore Space Station", 
+    "type": "map", 
+    "point_values": [], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [], 
+    "special_powers": [], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "map_url": "https://hcmaps.net/maps/xmrf/starcore_space_station.json", 
+    "dial": []
+  }, 
+  {
+    "unit_id": "xmrfM002", 
+    "set_id": "xmrf", 
+    "collector_number": "M002", 
+    "name": "Abandoned Weapon X Facility", 
+    "type": "map", 
+    "point_values": [], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [], 
+    "special_powers": [], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "map_url": "https://hcmaps.net/maps/xmrf/abandoned_weapon_x_facility.json", 
+    "dial": []
   }
 ]
