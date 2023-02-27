@@ -1270,9 +1270,14 @@ class Unit:
         if update_mode == "insert_value":
           for i in range(len(value)):
             for (k, v) in value[i].items():
-              # Hack for handling swb028, which has a slightly mis-spelled dupe
               if k == "__delete__":
+                # Hack for handling swb028, which has a slightly mis-spelled dupe
                 del self.special_powers[i]
+              elif k == "__reorder__":
+                # Hack for handling misordering of special powers (ie eax052)
+                sp = self.special_powers[i]
+                del self.special_powers[i]
+                self.special_powers.insert(v, sp)
               else:
                 self.special_powers[i][k] = v
         elif update_mode == "insert_list_item":
