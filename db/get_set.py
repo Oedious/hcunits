@@ -176,6 +176,12 @@ SET_MAP = {
   "ffeax": {
     "name": "Fast Forces: Earth X",
   },
+  "swb": {
+    "name": "Secret Wars: Battleworld",
+  },
+  "ffswb": {
+    "name": "Fast Forces: Secret Wars: Battleworld",
+  },
 }
 
 POWERS = {
@@ -313,6 +319,7 @@ IMPROVED_ABILITIES = {
       "ignores hindering": "hindering",
       "ignores hindering terrain": "hindering",
       "blocking": "blocking",
+      "ignores blocking terrain": "blocking",
       "outdoor blocking": "outdoor_blocking",
       "ignores blocking terrain (outdoor)": "outdoor_blocking",
       "destroy blocking": "destroy_blocking",
@@ -1153,6 +1160,7 @@ class Unit:
       if (len(power) <= 0 or
           power.lower() == "knockback" or
           power.lower() == "[wing symbol]" or
+          power.lower() == "[flight symbol]" or
           power.lower().startswith("passenger") or
           power.lower().startswith("giant reach")):
         continue
@@ -1266,7 +1274,11 @@ class Unit:
         if update_mode == "insert_value":
           for i in range(len(value)):
             for (k, v) in value[i].items():
-              self.special_powers[i][k] = v
+              # Hack for handling swb028, which has a slightly mis-spelled dupe
+              if k == "__delete__":
+                del self.special_powers[i]
+              else:
+                self.special_powers[i][k] = v
         elif update_mode == "insert_list_item":
           for i in range(len(value)):
             self.special_powers.insert(i, value[i])

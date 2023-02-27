@@ -254,6 +254,16 @@ const SET_LIST = {
     "release_date": "2019-02-06",
     "universe": "marvel"
   },
+  "swb": {
+    "name": "Secret Wars: Battleworld",
+    "release_date": "2018-10-01",
+    "universe": "marvel"
+  },
+  "ffswb": {
+    "name": "Fast Forces: Secret Wars: Battleworld",
+    "release_date": "2018-10-01",
+    "universe": "marvel"
+  },
   "wk": {
     "name": "WizKids Standard Game Pieces",
     "release_date": "2002-05-01",

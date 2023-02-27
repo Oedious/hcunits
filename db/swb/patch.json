@@ -1,0 +1,97 @@
+{
+  "updates": {
+    "swb001": {
+      "special_powers": [{
+      }, {
+        "powers": ["running_shot", "close_combat_expert"]
+      }]
+    },
+    "swb009": {
+      "special_powers": [{
+      }, {
+        "powers": ["charge", "running_shot", "willpower", "empower"]
+      }]
+    },
+    "swb015": {
+      "special_powers": [{
+      }, {
+      }, {
+        "description": "Super Strength, Improved Movement: Destroy Blocking"
+      }]
+    },
+    "swb023a": {
+      "special_powers": [{
+      }, {
+        "powers": ["energy_explosion"]
+      }]
+    },
+    "swb028": {
+      "special_powers": [{
+      }, {
+      }, {
+        "description": "Charge, Improved Movement: Destroy Blocking"
+      }, {
+      }, {
+        "__delete__": true
+      }]
+    },
+    "swb031": {
+      "special_powers": [{
+      }, {
+      }, {
+        "powers": ["outwit", "perplex", "probability_control"]
+      }]
+    },
+    "swb034": {
+      "special_powers": [{
+      }, {
+        "description": "Blades/Claws/Fangs, Steal Energy.",
+        "powers": ["blades_claws_fangs", "steal_energy"]
+      }]
+    },
+    "swb037a": {
+      "special_powers": [{
+      }, {
+        "description": "Energy Shield/Deflection, Super Senses. When Captain Marvel is hit by or evades a range attack, after resolutions heal her 2 clicks.",
+        "powers": ["energy_shield_deflection", "super_senses"]
+      }]
+    },
+    "swb055": {
+      "special_powers": [{
+      }, {
+        "powers": ["earthbound_neutralized"]
+      }]
+    },
+    "swb056": {
+      "special_powers": [{
+      }, {
+      }, {
+        "powers": ["flurry", "leap_climb", "phasing_teleport", "charge", "mind_control", "plasticity", "force_blast", "sidestep", "hypersonic_speed", "running_shot"]
+      }]
+    },
+    "swb061": {
+      "special_powers": [{
+      }, {
+      }, {
+      }, {
+        "description": "STOP. Combat Reflexes, Toughness. When this click is first revealed, after resolutions generate two Zombie Warrior bystanders. Black Panther can't be healed.", 
+        "powers": ["stop", "combat_reflexes", "toughness"]
+      }]
+    }
+  },
+  "additions": [{
+    "unit_id": "swbM001",
+    "set_id": "swb",
+    "collector_number": "M001",
+    "name": "Regency Laboratory",
+    "type": "map",
+    "map_url": "https://hcmaps.net/maps/swb/regency_laboratory.json"
+  }, {
+    "unit_id": "swbM002",
+    "set_id": "swb",
+    "collector_number": "M002",
+    "name": "Weird-World",
+    "type": "map",
+    "map_url": "https://hcmaps.net/maps/swb/weird_world.json"
+  }]
+}
