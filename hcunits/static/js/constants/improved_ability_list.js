@@ -26,7 +26,11 @@ const IMPROVED_MOVEMENT_LIST = {
   "move_through": {
     "name": "Move Through",
     "description": "This character can move through squares occupied by or adjacent to opposing characters without stopping (they still must break away)."
-  }
+  },
+  "water": {
+    "name": "Water",
+    "description": "N/A"
+  },
 }
 
 const IMPROVED_TARGETING_LIST = {
@@ -53,5 +57,9 @@ const IMPROVED_TARGETING_LIST = {
   "adjacent": {
     "name": "Adjacent",
     "description": "This character can make range attacks while adjacent to opposing characters."
-  }
+  },
+  "water": {
+    "name": "Water",
+    "description": "N/A"
+  },
 }

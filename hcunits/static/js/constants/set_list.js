@@ -229,6 +229,21 @@ const SET_LIST = {
     "release_date": "2019-06-01",
     "universe": "marvel"
   },
+  "re": {
+    "name": "Rebirth",
+    "release_date": "2019-03-20",
+    "universe": "dc"
+  },
+  "ffre": {
+    "name": "Fast Forces: Rebirth",
+    "release_date": "2019-03-20",
+    "universe": "dc"
+  },
+  "cmm": {
+    "name": "Captain Marvel Movie Gravity Feed",
+    "release_date": "2019-02-20",
+    "universe": "marvel"
+  },
   "wk": {
     "name": "WizKids Standard Game Pieces",
     "release_date": "2002-05-01",

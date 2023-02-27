@@ -1,0 +1,115 @@
+{
+  "updates": {
+    "re010": {
+      "special_powers": [{
+      }, {
+        "powers": ["leadership", "close_combat_expert", "ranged_combat_expert", "perplex", "outwit"]
+      }]
+    },
+    "re012": {
+      "special_powers": [{
+      }, {
+        "powers": ["energy_explosion"]
+      }]
+    },
+    "re018": {
+      "special_powers": [{
+      }, {
+      }, {
+        "powers": ["toughness", "willpower", "invincible"]
+      }],
+      "dial": [{
+      }, {
+      }, {
+      }, {
+      }, {
+        "attack_power": "precision_strike"
+      }, {
+        "attack_power": "precision_strike"
+      }]
+    },
+    "re021": {
+      "special_powers": [{
+      }, {
+      }, {
+        "powers": ["force_blast", "smoke_cloud", "telekinesis"]
+      }]
+    },
+    "re022": {
+      "special_powers": [{
+      }, {
+      }, {
+        "powers": ["outwit", "perplex"]
+      }]
+    },
+    "re023": {
+      "special_powers": [{
+      }, {
+        "powers": ["impervious", "invulnerability"]
+      }]
+    },
+    "re028": {
+      "special_powers": [{
+        "powers": ["smoke_cloud"]
+      }]
+    },
+    "re037a": {
+      "special_powers": [{
+        "description": "When Shazam starts the game, chose one: Outwit, Opposing Probability Control, Pulse Wave, Mind Control. This game, Shazam has PROTECTED: X where X is the chosen power."
+      }]
+    },
+    "re038": {
+      "special_powers": [{
+        "powers": ["precision_strike", "super_strength", "quake", "flurry", "plasticity", "blades_claws_fangs", "battle_fury"]
+      }]
+    },
+    "re039": {
+      "special_powers": [{
+      }, {
+        "powers": ["running_shot", "hypersonic_speed"]
+      }]
+    },
+    "re045": {
+      "special_powers": [{
+      }, {
+      }, {
+        "powers": ["mind_control"]
+      }]
+    },
+    "re052": {
+      "special_powers": [{
+      }, {
+      }, {
+      }, {
+      }, {
+        "powers": ["probability_control"]
+      }]
+    },
+    "re053": {
+      "special_powers": [{
+      }, {
+      }, {
+      }, {
+        "powers": ["shape_change", "close_combat_expert"]
+      }]
+    }
+  },
+  "deletions": [
+    "re018e"
+  ],
+  "additions": [{
+    "unit_id": "reM001",
+    "set_id": "re",
+    "collector_number": "M001",
+    "name": "Titan Tower",
+    "type": "map",
+    "map_url": "https://hcmaps.net/maps/re/titan_tower.json"
+  }, {
+    "unit_id": "reM002",
+    "set_id": "re",
+    "collector_number": "M002",
+    "name": "Metal Arena",
+    "type": "map",
+    "map_url": "https://hcmaps.net/maps/re/metal_arena.json"
+  }]
+}

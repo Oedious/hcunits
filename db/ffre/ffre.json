@@ -1,0 +1,714 @@
+[
+  {
+    "unit_id": "ffre001", 
+    "set_id": "ffre", 
+    "collector_number": "001", 
+    "name": "Aquaman", 
+    "type": "character", 
+    "rarity": "fast_forces", 
+    "real_name": "Arthur Curry", 
+    "dimensions": "1x1", 
+    "point_values": [
+      100, 
+      50
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "justice_league"
+    ], 
+    "keywords": [
+      "Atlantis", 
+      "Justice League", 
+      "Justice League International", 
+      "Ruler"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "ANCIENT WAYS OF WARFARE: AQUAMAN", 
+        "description": "If a friendly character named Wonder Woman used Close Combat Expert or Perplex this turn, modify attack +1."
+      }, 
+      {
+        "type": "trait", 
+        "name": "LORD OF ATLANTIS REBORN", 
+        "description": "Leadership. If Aquaman was carried and then placed in water terrain this turn, he has \"FREE: Make a close attack.\"", 
+        "powers": [
+          "leadership"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "dolphin", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 9, 
+        "attack_power": "super_strength", 
+        "attack_value": 11, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "sidestep", 
+        "speed_value": 9, 
+        "attack_power": "super_strength", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "charge", 
+        "speed_value": 9, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 11, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 2, 
+        "starting_line": true
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_power": "super_strength", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_power": "super_strength", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "ffre002", 
+    "set_id": "ffre", 
+    "collector_number": "002", 
+    "name": "Cyborg", 
+    "type": "character", 
+    "rarity": "fast_forces", 
+    "real_name": "Victor Stone", 
+    "dimensions": "1x1", 
+    "point_values": [
+      100, 
+      50
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "justice_league"
+    ], 
+    "keywords": [
+      "Justice League", 
+      "Justice League International", 
+      "Robot", 
+      "S.T.A.R. Labs"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "SONIC BOOM: CYBORG", 
+        "description": "Cyborg does not need line of fire to target opposing characters hit by a character named The Flash this turn."
+      }, 
+      {
+        "type": "speed", 
+        "name": "MOTHER BOX TECH", 
+        "description": "Force Blast, Phasing/Teleport, Sidestep.", 
+        "powers": [
+          "force_blast", 
+          "phasing_teleport", 
+          "sidestep"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "6", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 8, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 10, 
+        "defense_power": "impervious", 
+        "defense_value": 18, 
+        "damage_power": "outwit", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "special", 
+        "speed_value": 8, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 10, 
+        "defense_power": "impervious", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "special", 
+        "speed_value": 8, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "impervious", 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 3, 
+        "starting_line": true
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "special", 
+        "speed_value": 7, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "perplex", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "force_blast", 
+        "speed_value": 7, 
+        "attack_power": "precision_strike", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "force_blast", 
+        "speed_value": 7, 
+        "attack_power": "precision_strike", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "ffre003", 
+    "set_id": "ffre", 
+    "collector_number": "003", 
+    "name": "The Flash", 
+    "type": "character", 
+    "rarity": "fast_forces", 
+    "real_name": "Barry Allen", 
+    "dimensions": "1x1", 
+    "point_values": [
+      100, 
+      50
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "justice_league", 
+      "police"
+    ], 
+    "keywords": [
+      "Central City", 
+      "Justice League", 
+      "Justice League International", 
+      "Police", 
+      "Scientist"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "SONIC BOOM: THE FLASH", 
+        "description": "The Flash deals penetrating damage to opposing characters hit by a character named Cyborg this turn."
+      }, 
+      {
+        "type": "trait", 
+        "name": "I'M NOT GOING TO WAIT FOREVER", 
+        "description": "Whenever an opposing character moves, after resolutions you may move The Flash 1 square."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "hypersonic_speed", 
+        "speed_value": 12, 
+        "attack_power": "precision_strike", 
+        "attack_value": 11, 
+        "defense_power": "super_senses", 
+        "defense_value": 19, 
+        "damage_power": "shape_change", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "hypersonic_speed", 
+        "speed_value": 11, 
+        "attack_power": "precision_strike", 
+        "attack_value": 11, 
+        "defense_power": "super_senses", 
+        "defense_value": 18, 
+        "damage_power": "shape_change", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "hypersonic_speed", 
+        "speed_value": 11, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 18, 
+        "damage_power": "shape_change", 
+        "damage_value": 2, 
+        "starting_line": true
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "charge", 
+        "speed_value": 10, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "empower", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "charge", 
+        "speed_value": 10, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "empower", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "charge", 
+        "speed_value": 10, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "empower", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "ffre004", 
+    "set_id": "ffre", 
+    "collector_number": "004", 
+    "name": "Wonder Woman", 
+    "type": "character", 
+    "rarity": "fast_forces", 
+    "real_name": "Diana of Themyscira", 
+    "dimensions": "1x1", 
+    "point_values": [
+      100, 
+      50
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "justice_league"
+    ], 
+    "keywords": [
+      "Amazon", 
+      "Deity", 
+      "Justice League", 
+      "Justice League International"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "ANCIENT WAYS OF WARFARE: WONDER WOMAN", 
+        "description": "If a friendly character named Aquaman used Close Combat Expert or Perplex this turn, modify attack +1."
+      }, 
+      {
+        "type": "trait", 
+        "name": "BULLETS & BRACELETS", 
+        "description": "Wonder Woman takes a maximum of 1 damage from range attacks."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "wing", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 10, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 11, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "charge", 
+        "speed_value": 9, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "super_strength", 
+        "attack_value": 11, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 3, 
+        "starting_line": true
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "plasticity", 
+        "speed_value": 8, 
+        "attack_power": "super_strength", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "plasticity", 
+        "speed_value": 8, 
+        "attack_power": "steal_energy", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "plasticity", 
+        "speed_value": 8, 
+        "attack_power": "steal_energy", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "ffre005", 
+    "set_id": "ffre", 
+    "collector_number": "005", 
+    "name": "Super-Man", 
+    "type": "character", 
+    "rarity": "fast_forces", 
+    "real_name": "Kong Kenan", 
+    "dimensions": "1x1", 
+    "point_values": [
+      100, 
+      50
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "justice_league", 
+      "superman_ally"
+    ], 
+    "keywords": [
+      "Celebrity", 
+      "Justice League International", 
+      "Justice League of China", 
+      "Mystical"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "CHINA'S FINEST: SUPER-MAN", 
+        "description": "FREE: Choose a standard damage power that an adjacent friendly character named Bat-Man or Batman can use. Super-Man can use that power until your next turn."
+      }, 
+      {
+        "type": "trait", 
+        "name": "ALL-YANG OR ALL-YIN", 
+        "description": "If an opposing force has more characters than yours, modify attack and defense +1. If an opposing force has exactly 1 character, modify attack and defense -1."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "5", 
+    "targets": "1", 
+    "speed_type": "wing", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 12, 
+        "attack_power": "super_strength", 
+        "attack_value": 11, 
+        "defense_power": "impervious", 
+        "defense_value": 18, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "charge", 
+        "speed_value": 11, 
+        "attack_power": "super_strength", 
+        "attack_value": 11, 
+        "defense_power": "impervious", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "charge", 
+        "speed_value": 10, 
+        "attack_power": "quake", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_value": 3, 
+        "starting_line": true
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "charge", 
+        "speed_value": 10, 
+        "attack_power": "quake", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "force_blast", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "force_blast", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "ffre006", 
+    "set_id": "ffre", 
+    "collector_number": "006", 
+    "name": "Bat-Man", 
+    "type": "character", 
+    "rarity": "fast_forces", 
+    "real_name": "Wang Baixi", 
+    "dimensions": "1x1", 
+    "point_values": [
+      100, 
+      50
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "batman_ally", 
+      "justice_league"
+    ], 
+    "keywords": [
+      "Justice League International", 
+      "Justice League of China", 
+      "Martial Artist", 
+      "Scientist"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "CHINA'S FINEST: BAT-MAN", 
+        "description": "FREE: Choose a standard defense power that an adjacent friendly character named Super-Man or Superman can use. Bat-Man can use that power until your next turn."
+      }, 
+      {
+        "type": "trait", 
+        "name": "ALL-YANG OR ALL-YIN", 
+        "description": "If an opposing force has more characters than yours, modify attack and defense +1. If an opposing force has exactly 1 character, modify attack and defense -1."
+      }, 
+      {
+        "type": "attack", 
+        "name": "INFINITELY-CUSTOMIZABLE SIDEKICK", 
+        "description": "FREE: Choose Energy Explosion, Precision Strike, or Telekinesis. Bat-Man can use that power until your next turn.", 
+        "powers": [
+          "energy_explosion", 
+          "precision_strike", 
+          "telekinesis"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "6", 
+    "targets": "2", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 11, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "probability_control", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 2, 
+        "starting_line": true
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_power": "incapacitate", 
+        "attack_value": 11, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "flurry", 
+        "speed_value": 7, 
+        "attack_power": "incapacitate", 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 16, 
+        "damage_power": "probability_control", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "flurry", 
+        "speed_value": 7, 
+        "attack_power": "incapacitate", 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 16, 
+        "damage_power": "probability_control", 
+        "damage_value": 2
+      }
+    ]
+  }
+]

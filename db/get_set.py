@@ -160,6 +160,15 @@ SET_MAP = {
   "ffabpi": {
     "name": "Fast Forces: Avengers Black Panther and the Illuminati",
   },
+  "re": {
+    "name": "Rebirth",
+  },
+  "ffre": {
+    "name": "Fast Forces: Rebirth",
+  },
+  "cmm": {
+    "name": "Captain Marvel Movie Gravity Feed",
+  },
 }
 
 POWERS = {
@@ -296,22 +305,23 @@ IMPROVED_ABILITIES = {
       "ignores hindering": "hindering",
       "ignores hindering terrain": "hindering",
       "blocking": "blocking",
-      "ignores blocking and destroys blocking terrain as the character moves through it": "blocking",
-      #"ignores blocking and destroys blocking terrain as the character moves through it.": "blocking",
-      "ignores blocking terrain and destroys blocking terrain as the character moves through it": "blocking",
-      #"ignores blocking terrain and destroys blocking terrain as the character moves through it.": "blocking",
-      "improved movement: ignores blocking terrain and destroys blocking terrain as the character moves through it": "blocking",
-      #"improved movement: ignores blocking terrain and destroys blocking terrain as the character moves through it.": "blocking",
-      "this character can move through blocking terrain. immediately after movement resolves, destroy all blocking terrain moved through": "blocking",
-      #"this character can move through blocking terrain. immediately after movement resolves, destroy all blocking terrain moved through.": "blocking",
       "outdoor blocking": "outdoor_blocking",
       "ignores blocking terrain (outdoor)": "outdoor_blocking",
       "destroy blocking": "destroy_blocking",
+      "ignores blocking and destroys blocking terrain as the character moves through it": "destroy_blocking",
+      #"ignores blocking and destroys blocking terrain as the character moves through it.": "destroy_blocking",
+      "ignores blocking terrain and destroys blocking terrain as the character moves through it": "destroy_blocking",
+      #"ignores blocking terrain and destroys blocking terrain as the character moves through it.": "destroy_blocking",
+      "improved movement: ignores blocking terrain and destroys blocking terrain as the character moves through it": "destroy_blocking",
+      #"improved movement: ignores blocking terrain and destroys blocking terrain as the character moves through it.": "destroy_blocking",
+      "this character can move through blocking terrain. immediately after movement resolves, destroy all blocking terrain moved through": "destroy_blocking",
+      #"this character can move through blocking terrain. immediately after movement resolves, destroy all blocking terrain moved through.": "destroy_blocking",
       "characters": "characters",
       "move through": "move_through",
       "this character can move through squares adjacent to or occupied by opposing characters without stopping, and automatically breaks away, even if adjacent to a character that can use plasticity.": "move_through",
       "this character can move through squares adjacent to or occupied by opposing characters without stopping, and automatically breaks away, even if adjacent to a character than can use plasticity": "move_through",
       #"this character can move through squares adjacent to or occupied by opposing characters without stopping, and automatically breaks away, even if adjacent to a character than can use plasticity.": "move_through",
+      "water": "water",
     },
   },
   "targeting": {
@@ -322,26 +332,27 @@ IMPROVED_ABILITIES = {
       "hindering": "hindering",
       "ignores hindering terrain": "hindering",
       "blocking": "blocking",
-      "once per range attack, this character can draw a line of fire through one piece of blocking terrain. immediately after the attack resolves, destroy that piece of blocking terrain": "blocking",
-      "once per range attack, this character can draw a line through one piece of blocking terrain. immediately after the attack resolves, destroy that piece of blocking terrain": "blocking",
-      #"once per range attack, this character can draw a line through one piece of blocking terrain. immediately after the attack resolves, destroy that piece of blocking terrain.": "blocking",
       "destroy blocking": "destroy_blocking",
+      "once per range attack, this character can draw a line of fire through one piece of blocking terrain. immediately after the attack resolves, destroy that piece of blocking terrain": "destroy_blocking",
+      "once per range attack, this character can draw a line through one piece of blocking terrain. immediately after the attack resolves, destroy that piece of blocking terrain": "destroy_blocking",
+      #"once per range attack, this character can draw a line through one piece of blocking terrain. immediately after the attack resolves, destroy that piece of blocking terrain.": "destroy_blocking",
       "characters": "characters",
       "lines of fire drawn by this character are not blocked by characters": "characters",
       "adjacent": "adjacent",
       "this character can make range attacks while adjacent to opposing characters. (may target adjacent or non-adjacent opposing characters.)": "adjacent",
       "this character can make range attacks while adjacent to opposing characters": "adjacent",
       #"this character can make range attacks while adjacent to opposing characters.": "adjacent",
+      "water": "water",
     },
   }
 }
 
 IMPROVED_MOVEMENT_VALUES = [
-  "elevated", "hindering", "blocking", "outdoor_blocking", "destroy_blocking", "characters", "move_through"
+  "elevated", "hindering", "blocking", "outdoor_blocking", "destroy_blocking", "characters", "move_through", "water"
 ]
 
 IMPROVED_TARGETING_VALUES = [
-  "elevated", "hindering", "blocking", "destroy_blocking", "characters", "adjacent"
+  "elevated", "hindering", "blocking", "destroy_blocking", "characters", "adjacent", "water"
 ]
 
 OBJECT_TYPE_VALUES = [

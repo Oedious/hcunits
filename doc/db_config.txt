@@ -71,7 +71,7 @@ CREATE TABLE units (
   special_powers JSON,
 
   -- Should be in the form of an array of strings, with values from:
-  -- "elevated", "hindering", "blocking", "outdoor_blocking", "destroy_blocking", "characters", "move_through".
+  -- "elevated", "hindering", "blocking", "outdoor_blocking", "destroy_blocking", "characters", "move_through", "water".
   improved_movement JSON,
 
   -- Should be in the form of an array of strings, with values from:
@@ -357,6 +357,16 @@ LOAD XML LOCAL INFILE 'abpi/abpi.xml'
   ROWS IDENTIFIED BY '<row>';
 
 LOAD XML LOCAL INFILE 'ffabpi/ffabpi.xml'
+  REPLACE
+  INTO TABLE units
+  ROWS IDENTIFIED BY '<row>';
+
+LOAD XML LOCAL INFILE 're/re.xml'
+  REPLACE
+  INTO TABLE units
+  ROWS IDENTIFIED BY '<row>';
+
+LOAD XML LOCAL INFILE 'ffre/ffre.xml'
   REPLACE
   INTO TABLE units
   ROWS IDENTIFIED BY '<row>';
