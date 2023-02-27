@@ -244,6 +244,16 @@ const SET_LIST = {
     "release_date": "2019-02-20",
     "universe": "marvel"
   },
+  "eax": {
+    "name": "Earth X",
+    "release_date": "2019-02-06",
+    "universe": "marvel"
+  },
+  "ffeax": {
+    "name": "Fast Forces: Earth X",
+    "release_date": "2019-02-06",
+    "universe": "marvel"
+  },
   "wk": {
     "name": "WizKids Standard Game Pieces",
     "release_date": "2002-05-01",

@@ -1,0 +1,660 @@
+<resultset>
+  <row>
+    <unit_id>ffeax101</unit_id>
+    <set_id>ffeax</set_id>
+    <collector_number>101</collector_number>
+    <name>Spiders Man</name>
+    <type>character</type>
+    <rarity>fast_forces</rarity>
+    <real_name>Unknown</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[50]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Animal", "Earth X", "Monster"]</keywords>
+    <special_powers>[
+  {
+    "type": "speed", 
+    "name": "ILLUSION CASTING THROUGH WEBS", 
+    "description": "Plasticity, Sidestep, Stealth. UNIQUE MODIFIER - Adjacent opposing characters modify their combat values -1 for each token on them.", 
+    "powers": [
+      "plasticity", 
+      "sidestep", 
+      "stealth"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "special", 
+    "speed_value": 7, 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "shape_change", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "special", 
+    "speed_value": 7, 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "shape_change", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "special", 
+    "speed_value": 6, 
+    "attack_value": 9, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "special", 
+    "speed_value": 6, 
+    "attack_power": "precision_strike", 
+    "attack_value": 9, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "special", 
+    "speed_value": 6, 
+    "attack_power": "precision_strike", 
+    "attack_value": 8, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 1
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ffeax102</unit_id>
+    <set_id>ffeax</set_id>
+    <collector_number>102</collector_number>
+    <name>Black Panther</name>
+    <type>character</type>
+    <rarity>fast_forces</rarity>
+    <real_name>T'Challa</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[75, 50]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Animal", "Earth X", "Ruler", "Wakanda"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "WAKANDA IS A REFUGE", 
+    "description": "Leadership, Stealth. POWER: Generate an Ani-Men bystander [MAX 2]. If Black Panther started the game on his red starting line, the MAX for this effect is 3 instead.", 
+    "powers": [
+      "leadership", 
+      "stealth"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "flurry", 
+    "speed_value": 7, 
+    "attack_value": 11, 
+    "defense_power": "toughness", 
+    "defense_value": 18, 
+    "damage_power": "outwit", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "flurry", 
+    "speed_value": 7, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "outwit", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "leap_climb", 
+    "speed_value": 7, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_power": "perplex", 
+    "damage_value": 2, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "leap_climb", 
+    "speed_value": 6, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_power": "perplex", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "leap_climb", 
+    "speed_value": 6, 
+    "attack_value": 9, 
+    "defense_power": "super_senses", 
+    "defense_value": 18, 
+    "damage_power": "probability_control", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "leap_climb", 
+    "speed_value": 6, 
+    "attack_value": 9, 
+    "defense_power": "super_senses", 
+    "defense_value": 18, 
+    "damage_power": "probability_control", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ffeax102bt</unit_id>
+    <set_id>ffeax</set_id>
+    <collector_number>102bt</collector_number>
+    <name>Ani-Men</name>
+    <type>bystander</type>
+    <rarity>fast_forces</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>standard</bystander_type>
+    <unit_range>5</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>1</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "charge", 
+    "speed_value": 5, 
+    "attack_power": "quake", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 15, 
+    "damage_power": "empower", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ffeax103</unit_id>
+    <set_id>ffeax</set_id>
+    <collector_number>103</collector_number>
+    <name>Spider-Man</name>
+    <type>character</type>
+    <rarity>fast_forces</rarity>
+    <real_name>Peter Parker</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[50, 25]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["police"]</team_abilities>
+    <keywords>["Earth X", "Police", "Reporter", "Spider-Man Family"]</keywords>
+    <special_powers>[]</special_powers>
+    <improved_movement>["elevated", "hindering"]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>4</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "charge", 
+    "speed_value": 9, 
+    "attack_power": "super_strength", 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_power": "perplex", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "charge", 
+    "speed_value": 9, 
+    "attack_power": "super_strength", 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_power": "perplex", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "plasticity", 
+    "speed_value": 8, 
+    "attack_power": "quake", 
+    "attack_value": 9, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_power": "empower", 
+    "damage_value": 2, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "plasticity", 
+    "speed_value": 8, 
+    "attack_power": "quake", 
+    "attack_value": 9, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 17, 
+    "damage_power": "empower", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "flurry", 
+    "speed_value": 8, 
+    "attack_value": 9, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_power": "empower", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "flurry", 
+    "speed_value": 8, 
+    "attack_value": 9, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 15, 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ffeax104</unit_id>
+    <set_id>ffeax</set_id>
+    <collector_number>104</collector_number>
+    <name>President Osborn</name>
+    <type>character</type>
+    <rarity>fast_forces</rarity>
+    <real_name>Normon Osborn</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[50]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Earth X", "Hydra", "Politician", "Sinister Syndicate"]</keywords>
+    <special_powers>[
+  {
+    "type": "attack", 
+    "name": "I BIO-ENGINEERED THE HYDRA, AND I CAN DO THE SAME FOR YOU", 
+    "description": "Adjacent friendly characters that share a keyword (with President Osborn) can use Regeneration, but heal 1 less click."
+  }, 
+  {
+    "type": "damage", 
+    "name": "TWISTED LEADERSHIP", 
+    "description": "Exploit Weakness, Leadership. When President Osborn uses Leadership and succeeds, you may also give an action token to an opposing character within 6 squares and line of fire.", 
+    "powers": [
+      "exploit_weakness", 
+      "leadership"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>4</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "stealth", 
+    "speed_value": 7, 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "stealth", 
+    "speed_value": 7, 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "stealth", 
+    "speed_value": 6, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "mastermind", 
+    "defense_value": 16, 
+    "damage_power": "outwit", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "stealth", 
+    "speed_value": 6, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_power": "mastermind", 
+    "defense_value": 16, 
+    "damage_power": "outwit", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "stealth", 
+    "speed_value": 5, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_power": "mastermind", 
+    "defense_value": 16, 
+    "damage_power": "outwit", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ffeax105</unit_id>
+    <set_id>ffeax</set_id>
+    <collector_number>105</collector_number>
+    <name>The Skull</name>
+    <type>character</type>
+    <rarity>fast_forces</rarity>
+    <real_name>Benjamin Beckly</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[50]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Earth X", "Ruler"]</keywords>
+    <special_powers>[
+  {
+    "type": "defense", 
+    "name": "MY DRONES WOULD GIVE THEIR LIFE", 
+    "description": "Mastermind, Super Senses.", 
+    "powers": [
+      "mastermind", 
+      "super_senses"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>["characters"]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>8</unit_range>
+    <targets>3</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "mind_control", 
+    "speed_value": 6, 
+    "attack_value": 12, 
+    "defense_power": "special", 
+    "defense_value": 17, 
+    "damage_value": 0
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "mind_control", 
+    "speed_value": 6, 
+    "attack_value": 11, 
+    "defense_power": "super_senses", 
+    "defense_value": 18, 
+    "damage_value": 0
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "mind_control", 
+    "speed_value": 6, 
+    "attack_value": 11, 
+    "defense_power": "special", 
+    "defense_value": 17, 
+    "damage_value": 0
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "mind_control", 
+    "speed_value": 5, 
+    "attack_value": 11, 
+    "defense_power": "super_senses", 
+    "defense_value": 18, 
+    "damage_value": 0
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "mind_control", 
+    "speed_value": 5, 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 17, 
+    "damage_value": 0
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ffeax106</unit_id>
+    <set_id>ffeax</set_id>
+    <collector_number>106</collector_number>
+    <name>King Britain</name>
+    <type>character</type>
+    <rarity>fast_forces</rarity>
+    <real_name>Brian Braddock</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[50, 25]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Earth X", "Excalibur", "Mystical", "Ruler"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "FREE MY TEAMMATES FROM THEIR STONY PRISONS", 
+    "description": "If an opposing effect would cause a friendly character to be given an action token, roll a d6. 3-6: The friendly character does not get the action token."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "charge", 
+    "speed_value": 8, 
+    "attack_power": "super_strength", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 18, 
+    "damage_power": "leadership", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "charge", 
+    "speed_value": 7, 
+    "attack_power": "super_strength", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "leadership", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "charge", 
+    "speed_value": 7, 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "leadership", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_value": 9, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_value": 9, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ffeaxM001</unit_id>
+    <set_id>ffeax</set_id>
+    <collector_number>M001</collector_number>
+    <name>Stark Tower</name>
+    <type>map</type>
+    <point_values>[]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[
+  {
+    "point_value": 5, 
+    "type": "location", 
+    "name": "Iron Avengers, Assemble", 
+    "description": "The bystanders printed on this map are 'Iron Avengers'. At the beginning of the game, choose a friendly character of 50 points or more. That characer has 'POWER: Roll a d6. If the result is odd, generate the matching Iron Avengers in the square equal to the result if that Iron Avenger isn't already on the map. If EAX #056 Iron Man is on your starting force, he must be the chosen character. If so, he can't otherwise generate Iron Avengers. Instead, this Location bonus is a FREE action and he generates an Iron Avenger on any result (not just on odd number results). 1: Tank 2: Monolith 3: Crimson Sage 4: Steelbow 5: Bolt 6: Sting"
+  }, 
+  {
+    "type": "consolation", 
+    "name": "Consolation", 
+    "description": "At the beginning of the game, generate a Tank, Crimson Sage, or Bolt bystander in your starting area."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <map_url>https://hcmaps.net/maps/eax/stark_tower.json</map_url>
+    <dial>[]</dial>
+  </row>
+  <row>
+    <unit_id>ffeaxM002</unit_id>
+    <set_id>ffeax</set_id>
+    <collector_number>M002</collector_number>
+    <name>Wakanda Earth X</name>
+    <type>map</type>
+    <point_values>[]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[
+  {
+    "point_value": 5, 
+    "type": "location", 
+    "name": "The Living Spirits Will Guide Us", 
+    "description": "Once per turn, a friendly character occupying hindering, obscuring, or water terrain may reroll its d6 roll for either Blades/Claws/Fangs or Super Senses. If a character named Black Panther is on your force or your force is an Animal themed team, friendly character's Blades/Claws/Fangs and Super Senses have Protected: Outwit."
+  }, 
+  {
+    "type": "consolation", 
+    "name": "Consolation", 
+    "description": "Once per game, you may reroll a friendly character's roll for Blades/Claws/Fangs. Once per game, you may reroll a friendly character's roll for Super Senses."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <map_url>https://hcmaps.net/maps/eax/wakanda_earth_x.json</map_url>
+    <dial>[]</dial>
+  </row>
+</resultset>

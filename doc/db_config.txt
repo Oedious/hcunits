@@ -376,6 +376,16 @@ LOAD XML LOCAL INFILE 'cmm/cmm.xml'
   INTO TABLE units
   ROWS IDENTIFIED BY '<row>';
 
+LOAD XML LOCAL INFILE 'eax/eax.xml'
+  REPLACE
+  INTO TABLE units
+  ROWS IDENTIFIED BY '<row>';
+
+LOAD XML LOCAL INFILE 'ffeax/ffeax.xml'
+  REPLACE
+  INTO TABLE units
+  ROWS IDENTIFIED BY '<row>';
+
 ALTER TABLE units
 MODIFY COLUMN rarity ENUM('common', 'uncommon', 'rare', 'super_rare', 'chase', 'ultra_chase', 'limited_edition');
 

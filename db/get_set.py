@@ -2,6 +2,7 @@
 import argparse
 import bisect
 import copy
+import functools
 import json
 import os
 import os.path
@@ -169,6 +170,12 @@ SET_MAP = {
   "cmm": {
     "name": "Captain Marvel Movie Gravity Feed",
   },
+  "eax": {
+    "name": "Earth X",
+  },
+  "ffeax": {
+    "name": "Fast Forces: Earth X",
+  },
 }
 
 POWERS = {
@@ -288,7 +295,7 @@ PROPERTY_VALUES = [
 ]
 
 SPECIAL_POWER_TYPE_VALUES = [
-  "trait", "speed", "attack", "defense", "damage", "costed_trait", "rally_trait", "title_trait", "plus_plot_points", "minus_plot_points", "location", "consolation", "object", "equipment", "tarot_card", "mystery_card"
+  "trait", "costed_trait", "rally_trait", "title_trait", "plus_plot_points", "minus_plot_points", "speed", "attack", "defense", "damage", "location", "consolation", "object", "equipment", "tarot_card", "mystery_card"
 ]
 
 RALLY_TYPE_VALUES = [
@@ -302,17 +309,20 @@ IMPROVED_ABILITIES = {
       "elevated": "elevated",
       "ignores elevated terrain": "elevated",
       "hindering": "hindering",
+      "hindering terrain": "hindering",
       "ignores hindering": "hindering",
       "ignores hindering terrain": "hindering",
       "blocking": "blocking",
       "outdoor blocking": "outdoor_blocking",
       "ignores blocking terrain (outdoor)": "outdoor_blocking",
       "destroy blocking": "destroy_blocking",
+      "ignores and destroys blocking terrain": "destroy_blocking",
       "ignores blocking and destroys blocking terrain as the character moves through it": "destroy_blocking",
       "ignores blocking terrain and destroys blocking terrain as the character moves through it": "destroy_blocking",
       "improved movement: ignores blocking terrain and destroys blocking terrain as the character moves through it": "destroy_blocking",
       "this character can move through blocking terrain. immediately after movement resolves, destroy all blocking terrain moved through": "destroy_blocking",
       "characters": "characters",
+      "ignores characters": "characters",
       "move through": "move_through",
       "this character can move through squares adjacent to or occupied by opposing characters without stopping, and automatically breaks away, even if adjacent to a character than can use plasticity": "move_through",
       "this character can move through squares adjacent to or occupied by opposing characters without stopping, and automatically breaks away, even if adjacent to a character that can use plasticity": "move_through",
@@ -326,11 +336,14 @@ IMPROVED_ABILITIES = {
       "hindering": "hindering",
       "hindering": "hindering",
       "ignores hindering terrain": "hindering",
+      "improved targeting: ignores hindering terrain": "hindering",
+      "imrpoved targeting: ignores hindering terrain": "hindering",
       "blocking": "blocking",
       "destroy blocking": "destroy_blocking",
       "once per range attack, this character can draw a line of fire through one piece of blocking terrain. immediately after the attack resolves, destroy that piece of blocking terrain": "destroy_blocking",
       "once per range attack, this character can draw a line through one piece of blocking terrain. immediately after the attack resolves, destroy that piece of blocking terrain": "destroy_blocking",
       "characters": "characters",
+      "ignores characters": "characters",
       "lines of fire drawn by this character are not blocked by characters": "characters",
       "adjacent": "adjacent",
       "this character can make range attacks while adjacent to opposing characters. (may target adjacent or non-adjacent opposing characters.)": "adjacent",
@@ -417,6 +430,21 @@ def clean_string(str):
   str = str.replace(u"\u00e2\u0080\u015a", "...")
   # Escape special XML characters.
   return escape(str)
+
+# Compares special powers to define an ordering
+def compare_special_powers(sp1, sp2):
+  idx1 = SPECIAL_POWER_TYPE_VALUES.index(sp1["type"])
+  if idx1 < 0:
+    idx1 = 1000
+  idx2 = SPECIAL_POWER_TYPE_VALUES.index(sp2["type"])
+  if idx2 < 0:
+    idx2 = 1000
+  if idx1 == idx2 and sp1["type"] == "title_trait":
+    if sp1["name"].startswith("STARTING"):
+      idx1 -= 1
+    if sp2["name"].startswith("STARTING"):
+      idx2 -= 1
+  return idx1 - idx2
 
 # Returns true if the subdial matches the start of the dial.
 def is_subdial(dial, subdial):
@@ -508,7 +536,8 @@ class Unit:
     rarity = figure_rank_tag.strong.string.strip()
     if (rarity == "Rarity: Starter Set" or
         rarity == "Rarity: Free Comic Book Day Exclusive" or
-        rarity == "Rarity: Limited Edition"):
+        rarity == "Rarity: Limited Edition" or
+        rarity == "Rarity: Brick"):
       self.rarity = "limited_edition"
     elif rarity == "Rarity: Common":
       self.rarity = "common"
@@ -549,6 +578,8 @@ class Unit:
         self.bystander_type = "construct"
       elif soup.find("td", class_="card_special_object"):
         if ((soup.find(text=re.compile(r'.*EFFECT: .*')) or
+             # Yes - eaxs003 spelled this "EFECT"...
+             soup.find(text=re.compile(r'.*EFECT: .*')) or
              soup.find(text=re.compile(r'.*Effect: .*'))) and
              not soup.find(text=re.compile(r".*is not equipment.*"))):
           self.type = "equipment"
@@ -721,7 +752,9 @@ class Unit:
           parts = text.split("\n")
           if len(parts) > 1:
             for part in parts:
-              attr_list.append(part.strip())
+              part = part.strip()
+              if len(part) > 0:
+                attr_list.append(part)
           else:
             # Fall back to splitting by periods.
             parts = text.split(".")
@@ -858,8 +891,8 @@ class Unit:
             sp_type = "defense"
           elif sp_type_str.startswith("g-"):
             sp_type = "damage"
-          elif sp_type_str == "epic" and "title" in self.properties:
-            sp_type = "title_trait"
+          elif sp_type_str == "epic":
+            sp_type = "epic"
           else:
             raise RuntimeError("The special power type '%s' for '%s' is currently not supported" % (sp_type_str, unit_id))
 
@@ -872,6 +905,16 @@ class Unit:
           else:
             sp_name = None
             sp_description = td_tags[1].string.strip()
+
+          # Correct epic action types
+          if sp_type == "epic":
+            if "title" in self.properties:
+              sp_type = "title_trait"
+            elif sp_name.lower().startswith("improved"):
+              sp_type ="improved"
+            else:
+              raise RuntimeError("Unit '%s' has special power type 'epic', which is not currently supported" % (unit_id))
+              
 
           # Skip the special power that describes a construct
           if self.type == "bystander" and self.bystander_type == "construct" and sp_name == "CONSTRUCTS":
@@ -893,7 +936,10 @@ class Unit:
 
           if sp_type == "improved":
             if sp_name.lower().startswith("improved "):
-              sp_name = sp_name.split(" ", 1)[1]
+              sp_name = sp_name.split(" ", 1)[1].strip()
+            # Correct the spelling of 'targeting'.
+            if sp_name == 'TARGETTING':
+              sp_name = 'TARGETING'
             improved_ability_info = IMPROVED_ABILITIES.get(sp_name.lower(), None)
             if not improved_ability_info:
               raise RuntimeError("Error: unit '%s' has invalid improved ability type '%s'" % (self.unit_id, sp_name))
@@ -908,7 +954,7 @@ class Unit:
 
               # Try and split apart the description by different delimiters and
               # extract the values that have a match.
-              for delimiter in [".", ","]:
+              for delimiter in [", and", "and", ".", ","]:
                 parts = sp_description.split(delimiter)
                 sp_description = ""
                 while len(parts) > 0:
@@ -1207,6 +1253,9 @@ class Unit:
 
     # Return true to indicate a successful merge.
     return True;
+
+  def order_special_powers(self):
+    self.special_powers.sort(key=functools.cmp_to_key(compare_special_powers))
 
   def apply_update(self, update):
     update_mode = update.get("__update_mode__", "insert_value")
@@ -1637,9 +1686,12 @@ if __name__ == "__main__":
 
   fetcher.close()
 
-  # Apply any updates from the patches. Needs to be done outside of the loop
-  # in case there are any merges that occur.
   for unit in units:
+    # Fix the ordering of special powers.
+    unit.order_special_powers()
+
+    # Apply any updates from the patches. Needs to be done outside of the loop
+    # in case there are any merges that occur.
     if unit.unit_id in updates:
       unit.apply_update(updates[unit.unit_id])
 
