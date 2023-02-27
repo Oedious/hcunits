@@ -284,11 +284,11 @@ RARITY_VALUES = [
 ]
 
 PROPERTY_VALUES = [
-  "prime", "unique", "title", "team_up", "legacy", "captain", "sidekick", "ally"
+  "prime", "unique", "title", "team_up", "legacy", "captain", "sidekick", "ally", "secret_identity"
 ]
 
 SPECIAL_POWER_TYPE_VALUES = [
-  "trait", "speed", "attack", "defense", "damage", "costed_trait", "rally_trait", "title_trait", "plus_plot_points", "minus_plot_points", "location", "consolation", "object", "equipment"
+  "trait", "speed", "attack", "defense", "damage", "costed_trait", "rally_trait", "title_trait", "plus_plot_points", "minus_plot_points", "location", "consolation", "object", "equipment", "tarot_card", "mystery_card"
 ]
 
 RALLY_TYPE_VALUES = [
@@ -318,9 +318,10 @@ IMPROVED_ABILITIES = {
       #"this character can move through blocking terrain. immediately after movement resolves, destroy all blocking terrain moved through.": "destroy_blocking",
       "characters": "characters",
       "move through": "move_through",
-      "this character can move through squares adjacent to or occupied by opposing characters without stopping, and automatically breaks away, even if adjacent to a character that can use plasticity.": "move_through",
       "this character can move through squares adjacent to or occupied by opposing characters without stopping, and automatically breaks away, even if adjacent to a character than can use plasticity": "move_through",
       #"this character can move through squares adjacent to or occupied by opposing characters without stopping, and automatically breaks away, even if adjacent to a character than can use plasticity.": "move_through",
+      "this character can move through squares adjacent to or occupied by opposing characters without stopping, and automatically breaks away, even if adjacent to a character that can use plasticity": "move_through",
+      #"this character can move through squares adjacent to or occupied by opposing characters without stopping, and automatically breaks away, even if adjacent to a character that can use plasticity.": "move_through",
       "water": "water",
     },
   },
@@ -364,7 +365,7 @@ OBJECT_SIZE_VALUES = [
 ]
 
 OBJECT_KEYPHRASE_VALUES = [
-  "indestructible", "equip_any", "equip_friendly", "unequip_ko", "unequip_drop"
+  "indestructible", "equip_any", "equip_friendly", "unequip_ko", "unequip_drop", "sword_equipment", 
 ]
 
 BYSTANDER_TYPE_VALUES = [
@@ -726,7 +727,7 @@ class Unit:
           # First try to split by newlines
           text = children[0].string.strip()
           parts = text.split("\n")
-          if len(parts) > 0:
+          if len(parts) > 1:
             for part in parts:
               attr_list.append(part.strip())
           else:
@@ -768,7 +769,7 @@ class Unit:
             if keyphrase in OBJECT_KEYPHRASE_VALUES:
               self.object_keyphrases.append(keyphrase)
             else:
-              print("Skipping unknown object keyphrase '%s'" % keyphrase)
+              print("For unit '%s', skipping unknown object keyphrase '%s'" % (self.unit_id, keyphrase))
           elif lower_attr.startswith("light object"):
             self.object_size = "light"
           elif lower_attr == "heavy object":
@@ -1360,7 +1361,7 @@ class Unit:
           value = click.get(field + "_value", -1)
           if not isinstance(value, int):
             print("Warning: unit '%s' click '%d' has an unexpected %s value '%s'" % (self.unit_id, click_number, field, str(value)))
-          elif value < 0 or value > 20:
+          elif value < 0 or value > 21:
             print("Warning: unit '%s' click '%d' has an unexpected %s value '%d'" % (self.unit_id, click_number, field, value))
           power = click.get(field + "_power", None)
           if power and power != "special":

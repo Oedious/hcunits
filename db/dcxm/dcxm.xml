@@ -562,7 +562,7 @@
     ]
   }
 ]</special_powers>
-    <improved_movement>["blocking"]</improved_movement>
+    <improved_movement>["destroy_blocking"]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>0</unit_range>
@@ -1553,7 +1553,7 @@
     "description": "KNOCKBACK. When Colossus knocks back a character, he can choose the direction of knock back and this knock back path isn't stopped by walls. Immediately after resolutions, destroy any walls that knock back path passed through and deal the character 1 penetrating damage for each wall destroyed this way."
   }
 ]</special_powers>
-    <improved_movement>["hindering", "blocking"]</improved_movement>
+    <improved_movement>["hindering", "destroy_blocking"]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>0</unit_range>

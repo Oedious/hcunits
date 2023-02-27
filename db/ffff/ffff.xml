@@ -532,7 +532,7 @@
     "description": "Once per turn, you may reroll an attack roll that has a 4."
   }
 ]</special_powers>
-    <improved_movement>["blocking"]</improved_movement>
+    <improved_movement>["destroy_blocking"]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>0</unit_range>
@@ -1846,7 +1846,7 @@
     "description": "Friendly Sidekicks can use Toughness."
   }
 ]</special_powers>
-    <improved_movement>["blocking"]</improved_movement>
+    <improved_movement>["destroy_blocking"]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>0</unit_range>
@@ -5073,7 +5073,7 @@
     ]
   }
 ]</special_powers>
-    <improved_movement>["blocking"]</improved_movement>
+    <improved_movement>["destroy_blocking"]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>6</unit_range>
@@ -7049,7 +7049,7 @@
     ]
   }
 ]</special_powers>
-    <improved_movement>["blocking", "hindering"]</improved_movement>
+    <improved_movement>["hindering", "destroy_blocking"]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>0</unit_range>

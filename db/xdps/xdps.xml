@@ -7795,7 +7795,7 @@
     ]
   }
 ]</special_powers>
-    <improved_movement>["blocking", "move_through"]</improved_movement>
+    <improved_movement>["destroy_blocking", "move_through"]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>0</unit_range>
@@ -8860,7 +8860,7 @@
   }
 ]</special_powers>
     <improved_movement>[]</improved_movement>
-    <improved_targeting>["blocking"]</improved_targeting>
+    <improved_targeting>["destroy_blocking"]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>8</unit_range>
     <targets>1</targets>
@@ -10281,7 +10281,7 @@
     "description": "FREE: If no friendly character has been placed this turn, choose an opposing character that attacked Colossus or damaged a friendly character since your last turn. If that character is within the same row or column as Colossus, place Colossus adjacent to that character and make a close combat attack targeting all characters in the rows or columns between where Colossus began this action and his current square, regardless of adjacency. Hit characters are each dealt 2 penetrating damage instead of normal damage."
   }
 ]</special_powers>
-    <improved_movement>["blocking"]</improved_movement>
+    <improved_movement>["destroy_blocking"]</improved_movement>
     <improved_targeting>[]</improved_targeting>
     <object_keyphrases>[]</object_keyphrases>
     <unit_range>0</unit_range>
