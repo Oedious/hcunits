@@ -269,6 +269,16 @@ const SET_LIST = {
     "release_date": "2018-07-11",
     "universe": "dc"
   },
+  "tmnt4": {
+    "name": "Teenage Mutant Ninja Turtles: Unplugged",
+    "release_date": "2018-06-27",
+    "universe": "indy"
+  },
+  "fftmnt4": {
+    "name": "Fast Forces: Teenage Mutant Ninja Turtles: Unplugged",
+    "release_date": "2018-06-27",
+    "universe": "indy"
+  },
   "wk": {
     "name": "WizKids Standard Game Pieces",
     "release_date": "2002-05-01",

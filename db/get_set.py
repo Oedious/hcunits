@@ -185,6 +185,12 @@ SET_MAP = {
   "btas": {
     "name": "Batman: The Animated Series",
   },
+  "tmnt4": {
+    "name": "Teenage Mutant Ninja Turtles: Unplugged",
+  },
+  "fftmnt4": {
+    "name": "Fast Forces: Teenage Mutant Ninja Turtles: Unplugged",
+  },
 }
 
 POWERS = {
@@ -1268,11 +1274,15 @@ class Unit:
         continue
       elif key == "special_powers":
         if update_mode == "insert_value":
+          deletions = []
           for i in range(len(value)):
             for (k, v) in value[i].items():
               if k == "__delete__":
-                # Hack for handling swb028, which has a slightly mis-spelled dupe
-                del self.special_powers[i]
+                # Hack for handling swb028, which has a slightly mis-spelled
+                # dupe.
+                # Note: we insert these at the start so that deletions are
+                # processed in reverse order.
+                deletions.insert(0, i)
               elif k == "__reorder__":
                 # Hack for handling misordering of special powers (ie eax052)
                 sp = self.special_powers[i]
@@ -1280,6 +1290,8 @@ class Unit:
                 self.special_powers.insert(v, sp)
               else:
                 self.special_powers[i][k] = v
+          for deletion_idx in deletions:
+            del self.special_powers[deletion_idx]
         elif update_mode == "insert_list_item":
           for i in range(len(value)):
             self.special_powers.insert(i, value[i])
