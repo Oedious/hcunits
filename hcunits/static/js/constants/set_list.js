@@ -284,6 +284,11 @@ const SET_LIST = {
     "release_date": "2018-05-16",
     "universe": "marvel"
   },
+  "ffai": {
+    "name": "Fast Forces: Avengers Infinity",
+    "release_date": "2018-05-16",
+    "universe": "marvel"
+  },
   "wk": {
     "name": "WizKids Standard Game Pieces",
     "release_date": "2002-05-01",
