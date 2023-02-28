@@ -1,0 +1,461 @@
+{
+  "updates": {
+    "ai002": {
+      "special_powers": [{
+        "powers": ["stealth", "charge"]
+      }]
+    },
+    "ai005": {
+      "special_powers": [{
+      }, {
+        "powers": ["invincible", "shape_change", "super_senses"]
+      }]
+    },
+    "ai020": {
+      "special_powers": [{
+        "powers": ["probability_control"]
+      }]
+    },
+    "ai035": {
+      "special_powers": [{
+      }, {
+      }, {
+      }, {
+        "powers": ["barrier"]
+      }]
+    },
+    "ai037": {
+      "special_powers": [{
+      }, {
+        "powers": ["barrier"]
+      }]
+    },
+    "ai038": {
+      "special_powers": [{
+        "powers": ["steal_energy"]
+      }]
+    },
+    "ai042": {
+      "special_powers": [{
+      }, {
+      }, {
+        "powers": ["leadership", "outwit", "perplex"]
+      }]
+    },
+    "ai043": {
+      "special_powers": [{
+        "powers": ["phasing_teleport", "stealth", "smoke_cloud"]
+      }, {
+      }, {
+        "powers": ["super_senses"]
+      }]
+    },
+    "aiG002": {
+      "point_values": [100, 40, 5],
+      "special_powers": [{
+      }, {
+        "type": "terrain"
+      }],
+      "dial": [{
+      }, {
+      }, {
+      }, {
+      }, {
+      }, {
+      }, {
+      }, {
+      }, {
+      }, {
+      }, {
+      }, {
+        "click_number": 14,
+        "speed_value": "",
+        "attack_value": "",
+        "defense_value": "",
+        "damage_value": "",
+        "starting_line": true
+      }, {
+        "click_number": 15,
+        "speed_value": "",
+        "attack_value": "",
+        "defense_value": "",
+        "damage_value": ""
+      }, {
+        "click_number": 16,
+        "speed_value": "",
+        "attack_value": "5",
+        "defense_value": "",
+        "damage_value": "",
+        "damage_power": "special"
+      }, {
+        "click_number": 17,
+        "speed_value": "",
+        "attack_value": "4",
+        "defense_value": "",
+        "damage_value": "",
+        "damage_power": "special"
+      }, {
+        "click_number": 18,
+        "speed_value": "",
+        "attack_value": "3",
+        "defense_value": "",
+        "damage_value": "",
+        "damage_power": "special"
+      }]
+    },
+    "aiG003": {
+      "special_powers": [{
+        "powers": ["empower", "enhancement"]
+      }],
+      "dial": [{
+      }, {
+      }, {
+      }, {
+      }, {
+      }, {
+        "starting_line": true
+      }, {
+      }, {
+      }, {
+      }, {
+      }, {
+        "starting_line": true
+      }, {
+      }, {
+      }, {
+      }, {
+      }, {
+        "starting_line": true
+      }]
+    },
+    "aiG004": {
+      "special_powers": [{
+      }, {
+      }, {
+        "powers": ["super_strength", "quake"]
+      }]
+    },
+    "aiG005": {
+      "point_values": [30, 5],
+      "special_powers": [{
+        "type": "speed"
+      }, {
+      }, {
+        "type": "defense"
+      }, {
+        "type": "terrain"
+      }],
+      "dial": [{
+      }, {
+      }, {
+      }, {
+      }, {
+      }, {
+      }, {
+      }, {
+        "click_number": 14,
+        "speed_value": "",
+        "attack_value": "",
+        "defense_value": "",
+        "damage_value": "",
+        "damage_power": "special",
+        "starting_line": true
+      }, {
+        "click_number": 15,
+        "speed_value": "",
+        "attack_value": "",
+        "defense_value": "",
+        "damage_value": "",
+        "damage_power": "special"
+      }, {
+        "click_number": 16,
+        "speed_value": "",
+        "attack_value": "",
+        "defense_value": "",
+        "damage_value": "",
+        "damage_power": "special"
+      }, {
+        "click_number": 17,
+        "speed_value": "",
+        "attack_value": "",
+        "defense_value": "",
+        "damage_value": "",
+        "damage_power": "special"
+      }]
+    },
+    "aiG006": {
+      "point_values": [100, 75, 50],
+      "special_powers": [{
+      }, {
+        "powers": ["incapacitate"]
+      }],
+      "dial": [{
+      }, {
+      }, {
+        "starting_line": true
+      }, {
+      }, {
+        "starting_line": true
+      }, {
+      }, {
+      }, {
+      }, {
+        "alt_click_number": 1
+      }, {
+        "alt_click_number": 2
+      }, {
+        "alt_click_number": 3
+      }, {
+        "alt_click_number": 4
+      }, {
+        "alt_click_number": 5
+      }, {
+        "alt_click_number": 6
+      }, {
+        "alt_click_number": 7
+      }, {
+        "alt_click_number": 8
+      }]
+    },
+    "aiG007": {
+      "special_powers": [{
+        "powers": ["super_strength", "quake"]
+      }]
+    },
+    "aiG008": {
+      "point_values": [400, 300, 125],
+      "dial": [{
+      }, {
+      }, {
+      }, {
+      }, {
+      }, {
+      }, {
+      }, {
+      }, {
+      }, {
+        "starting_line": true
+      }]
+    },
+    "aiG009": {
+      "special_powers": [{
+      }, {
+        "powers": ["telekinesis"]
+      }]
+    },
+    "aiG011": {
+      "point_values": [300, 150, 50],
+      "special_powers": [{
+      }, {
+      }, {
+        "description": "FREE: Each time an opposing character is hit this turn, after resolutions modify that character's defense value by -1 this turn."
+      }, {
+        "description": "FREE: Choose an opposing character that attacked Wasp, Heart of the Avengers or damaged a friendly character since your last turn. Place Wasp, Heart of the Avengers such that she can make a close attack targeting the chosen character, then do so. If her target has Colossal symbol, modify her attack and damage +2."
+      }],
+      "dial": [{
+      }, {
+      }, {
+      }, {
+      }, {
+      }, {
+      }, {
+      }, {
+      }, {
+        "starting_line": true
+      }]
+    },
+    "aiG012": {
+      "special_powers": [{
+        "powers": ["shape_change"]
+      }, {
+      }, {
+      }, {
+      }, {
+        "type": "terrain",
+        "description": "Adjacent friendly characters can use Energy Shield/Deflection. // At the beginning of your turn, you may place this special terrain into an adjacent square. If you do, at the end of your turn roll a d6. If the result is equal to or less than the displayed number, KO this special terrain. If not, turn the special terrain dial to the blue click number equal to the result."
+      }],
+      "dial": [{
+      }, {
+      }, {
+      }, {
+      }, {
+      }, {
+      }, {
+      }, {
+      }, {
+      }, {
+      }, {
+        "speed_value": "1"
+      }, {
+        "speed_value": "2"
+      }, {
+        "speed_value": "3"
+      }, {
+        "speed_value": "4"
+      }, {
+        "speed_value": "5"
+      }, {
+        "speed_value": "6"
+      }]
+    },
+    "aiG013": {
+      "special_powers": [{
+      }, {
+      }, {
+        "powers": ["super_strength", "quake"]
+      }]
+    },
+    "aiG014": {
+      "special_powers": [{
+        "powers": ["super_strength", "quake"]
+      }]
+    },
+    "aiG015": {
+      "dial": [{
+      }, {
+      }, {
+      }, {
+      }, {
+      }, {
+      }, {
+      }, {
+      }, {
+      }, {
+      }, {
+        "attack_value": "5"
+      }, {
+        "attack_value": "4"
+      }, {
+        "attack_value": "3"
+      }]
+    },
+    "aiG017": {
+      "special_powers": [{
+        "powers": ["super_strength", "quake"]
+      }, {
+        "powers": ["energy_explosion"]
+      }]
+    },
+    "aiG018": {
+      "special_powers": [{
+        "__reorder__": 2
+      }]
+    },
+    "aiG019": {
+      "special_powers": [{
+        "description": "(100 points) Stranger can't use the Power Cosmic team ability."
+      }, {
+      }, {
+      }, {
+        "description": "At the beginning of your turn, choose two standard powers that an opponent's characters can use that you didn't choose last turn. Stranger can use those powers until your next turn."
+      }]
+    },
+    "aiG020": {
+      "special_powers": [{
+      }, {
+      }, {
+        "powers": ["super_strength", "quake"]
+      }]
+    },
+    "aiG021": {
+      "point_values": [575, 425, 225, 100],
+      "special_powers": [{
+      }, {
+      }, {
+        "powers": ["mind_control"]
+      }],
+      "dial": [{
+      }, {
+      }, {
+      }, {
+      }, {
+      }, {
+        "starting_line": true
+      }]
+    },
+    "aiG023": {
+      "point_values": [600, 250, 100],
+      "dial": [{
+      }, {
+      }, {
+      }, {
+      }, {
+      }, {
+      }, {
+      }, {
+      }, {
+      }, {
+      }, {
+        "starting_line": true,
+        "speed_power": "special"
+      }, {
+        "speed_power": "special"
+      }, {
+        "speed_power": ""
+      }, {
+        "speed_power": ""
+      }, {
+        "speed_power": "mind_control"
+      }, {
+        "speed_power": "mind_control"
+      }, {
+        "starting_line": true
+      }]
+    },
+    "aiG024": {
+      "point_values": [900, 450, 300, 150],
+      "dial": [{
+      }, {
+      }, {
+      }, {
+      }, {
+      }, {
+      }, {
+      }, {
+      }, {
+        "starting_line": true
+      }, {
+      }, {
+      }, {
+      }, {
+        "starting_line": true
+      }, {
+      }, {
+      }, {
+      }, {
+        "starting_line": true
+      }, {
+        "defense_power": "invincible"
+      }, {
+        "defense_power": "invincible"
+      }]
+    }
+  },
+  "deletions": [
+    "aiG006e",
+    "aiG006r",
+    "aiG008r",
+    "aiG011e",
+    "aiG021v",
+    "aiG023e",
+    "aiG023r",
+    "aiG024e",
+    "aiG024r",
+    "aiG024v"
+  ],
+  "additions": [{
+    "unit_id": "aiM001",
+    "set_id": "ai",
+    "collector_number": "M001",
+    "name": "Halfworld",
+    "type": "map",
+    "map_url": "https://hcmaps.net/maps/ai/halfworld.json"
+  }, {
+    "unit_id": "aiM002",
+    "set_id": "ai",
+    "collector_number": "M002",
+    "name": "Galador Promenade",
+    "type": "map",
+    "map_url": "https://hcmaps.net/maps/ai/galador_promenade.json"
+  }]
+}

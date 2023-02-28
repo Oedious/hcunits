@@ -497,11 +497,28 @@
   box-sizing: border-box;
   padding: 0px 0px !important;
   border-radius: 0px;
-  /*border: 2px solid red;*/
   margin: 2px;
   line-height: normal;
   font-size: 14px;
   
+  /* Added these while playing with bystander */
+  width: 18px;
+  height: 19px;
+}
+
+.dialEntryText {
+  text-align: center;
+  font-family: 'Gill Sans', sans-serif;
+  font-weight: 500;
+  box-sizing: border-box;
+  padding: 0px 0px !important;
+  border-radius: 0px;
+  margin: 2px;
+  line-height: normal;
+  font-size: 18px;
+  color: red;
+  font-weight:500;text-shadow:1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+
   /* Added these while playing with bystander */
   width: 18px;
   height: 19px;
@@ -573,11 +590,34 @@
   height: 24px;
   color: white;
   background-color: black;
-  border-radius: 0px 12px 12px 0px;
+  border-radius: 0px 9px 9px 0px;
   font-size: 14px;
   font-family: arial, sans-serif;
   text-align: center;
   line-height: 1.75em;
+}
+
+.cardPassengers {
+  position: absolute;
+  right: 0px;
+  bottom: 40px;
+  width: 60px;
+  height: 24px;
+  color: white;
+  background-color: black;
+  border-radius: 9px 0px 0px 9px;
+  font-size: 14px;
+  font-family: arial, sans-serif;
+  text-align: center;
+  line-height: 1.75em;
+  display: flex;
+  justify-content: center;
+}
+
+.cardPassengersIcon {
+  width: 18px;
+  height: 18px;
+  margin-top: 3px;
 }
 
 #addUnitButtonContainer {

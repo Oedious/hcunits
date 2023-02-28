@@ -96,12 +96,15 @@ CREATE TABLE units (
   -- For 'map' types, the path to the URL containing the map layout.
   map_url TEXT(256),
   
+  -- The number of passengers the unit (typically a vehicle) can carry.
+  passengers TINYINT,
+
   -- The range value of the unit.
   unit_range TINYINT,
 
   -- The number of targets (ie. lightning bolts) of the unit.
   targets TINYINT,
-
+  
   speed_type ENUM('boot', 'wing', 'dolphin', 'transport_boot', 'transport_wing', 'transport_dolphin'),
   attack_type ENUM('fist', 'autonomous', 'sharpshooter', 'duo', 'team'),
   defense_type ENUM('shield', 'indomitable', 'vehicle'),
@@ -410,6 +413,17 @@ LOAD XML LOCAL INFILE 'fftmnt4/fftmnt4.xml'
   REPLACE
   INTO TABLE units
   ROWS IDENTIFIED BY '<row>';
+
+LOAD XML LOCAL INFILE 'ai/ai.xml'
+  REPLACE
+  INTO TABLE units
+  ROWS IDENTIFIED BY '<row>';
+
+LOAD XML LOCAL INFILE 'ffai/ffai.xml'
+  REPLACE
+  INTO TABLE units
+  ROWS IDENTIFIED BY '<row>';
+
 
 ALTER TABLE units
 MODIFY COLUMN rarity ENUM('common', 'uncommon', 'rare', 'super_rare', 'chase', 'ultra_chase', 'limited_edition');

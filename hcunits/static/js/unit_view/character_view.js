@@ -28,6 +28,7 @@ class CharacterView extends BaseUnitView {
     // Compute the special powers HTML first because it will determine how many
     // cards we need to fully display everything.
     const specialPowersHtml = this.drawSpecialPowers_();
+    const numCards = Math.max(1, Math.ceil(specialPowersHtml.length / 2));
     const borderColor = this.unit_.properties.includes("team_up") ? COLOR_BLUE : COLOR_BLACK;
     var html = `
       <div class='column'>
@@ -46,20 +47,21 @@ class CharacterView extends BaseUnitView {
           ${this.drawDial_()}
           ${this.drawTeamAbilities_()}
           ${super.drawPointValues_(40)}
+          ${this.drawPassengers_()}
           <div class='largeCardHeroClixLogoClip'>
             <img class='largeCardHeroClixLogo' src='/static/images/logo/heroclix_logo_small.png' alt=''/>
           </div>
         </div>
       </div>`;
 
-    // Draw a second card to hold the additional special powers.
-    if (specialPowersHtml.length > 2) {
+    // Draw extra cards to hold the additional special powers.
+    for (var i = 1; i < numCards; ++i) {
       html += `
         <div class='column'>
           <div class='largeCard'>
             <div class='largeCardBorders' style='border-top: 20px solid ${borderColor}'></div>
-            ${specialPowersHtml.length >= 3 ? specialPowersHtml[2] : ""}
-            ${specialPowersHtml.length >= 4 ? specialPowersHtml[3] : ""}
+            ${(i * 2) < specialPowersHtml.length ? specialPowersHtml[i * 2] : ""}
+            ${(i * 2 + 1) < specialPowersHtml.length ? specialPowersHtml[i * 2 + 1] : ""}
             <div class='largeCardHeroClixLogoClip'>
               <img class='largeCardHeroClixLogo' src='/static/images/logo/heroclix_logo_small.png' alt=''/>
             </div>
@@ -239,12 +241,25 @@ class CharacterView extends BaseUnitView {
     html += "</div>"
     return html;
   }
+
+  drawPassengers_() {
+    if (!this.unit_.passengers) {
+      return "";
+    }
+    var html = `
+      <div class='cardPassengers'>
+        <img class='cardPassengersIcon' src='/static/images/misc/passenger.png' alt=''>
+        <span>${this.unit_.passengers}</span>
+      </div>
+    `;
+    return html;
+  }
   
   drawSpecialPowers_() {
     if (!this.unit_.special_powers) {
       return [];
     }
-    const LINES_PER_COLUMN = (this.numDialTables_ == 1) ? [16, 9, 30, 30] : [7, 1, 30, 30];
+    const LINES_PER_COLUMN = (this.numDialTables_ == 1) ? [16, 9, 30] : [7, 1, 30];
     const CHARS_PER_NAME_LINE = 23;
     const CHARS_PER_DESC_LINE = 30;
     var currentLineCount = 0;
@@ -264,12 +279,12 @@ class CharacterView extends BaseUnitView {
       const headerLines = Math.ceil(power.name.length / CHARS_PER_NAME_LINE);
       const descLines = Math.ceil(power.description.length / CHARS_PER_DESC_LINE);
       const lines = headerLines + descLines;
+      if (lines > LINES_PER_COLUMN[LINES_PER_COLUMN.length - 1]) {
+        throw new Error("Special power contains more than 30 lines in a single column.");
+      }
       // If the line count surpasses the max in the current column, move to the
       // next column.
-      while (currentLineCount + lines > LINES_PER_COLUMN[currentColumn]) {
-        if (currentColumn >= 3) {
-          throw new Error(`Cannot draw special powers for unit ${this.unit_.unit_id}: text won't fit on 2 cards`);
-        }
+      while (currentLineCount + lines > LINES_PER_COLUMN[Math.min(currentColumn, LINES_PER_COLUMN.length - 1)]) {
         html += "</table>";
         htmlColumns.push(html);
         ++currentColumn;
@@ -355,8 +370,19 @@ class CharacterView extends BaseUnitView {
         <table class='largeCardDialTable' style='width:${tableWidth}px'>`;
     
       html += "<tr class='largeCardDialRow'>";
+      var currentClick = tableDialStart;
       for (var col = tableCols[t].start; col < tableCols[t].end; ++col) {
-        html += `<th class='largeCardDialHeader'>${col + 1}</th>`;
+        var style = ""
+        var clickNum = col + 1;
+        if (currentClick < this.unit_.dial.length &&
+            clickNum == this.unit_.dial[currentClick].click_number) {
+          if (this.unit_.dial[currentClick].alt_click_number) {
+            style = "style='color:blue;'";
+            clickNum = this.unit_.dial[currentClick].alt_click_number;
+          }
+          ++currentClick;
+        }
+        html += `<th class='largeCardDialHeader' ${style}>${clickNum}</th>`;
       }
       html += "</tr>";
       var currentClick;
@@ -369,6 +395,10 @@ class CharacterView extends BaseUnitView {
               col == this.unit_.dial[currentClick].click_number - 1) {
             var power = this.unit_.dial[currentClick][rowType + '_power'];
             var value = this.unit_.dial[currentClick][rowType + '_value'];
+            var entryClass = "dialEntry";
+            if (!Number.isInteger(value) && value != "") {
+              entryClass = "dialEntryText";
+            }
             if (power) {
               var powerObj = POWER_LIST[power];
               if (!powerObj) {
@@ -379,14 +409,14 @@ class CharacterView extends BaseUnitView {
                 }
               }
               html += `
-                <td class='dialEntry' style='${powerObj.style}'>
+                <td class='${entryClass}' style='${powerObj.style}'>
                   <div class='tooltip'>
                     <div>${value}</div>
                     <span class='tooltiptext'><b>${powerObj.name}</b>: ${escapeHtml(powerObj.description)}</span>
                   </div>
                 </td>`;
             } else {
-              html += `<td class='dialEntry'>${value}</td>`;
+              html += `<td class='${entryClass}'>${value}</td>`;
             }
             ++currentClick;
           } else {
@@ -398,11 +428,14 @@ class CharacterView extends BaseUnitView {
       html += "</table>";
 
       // The end of the dial is indicated by the last click processed.
+      const pointValuesLength =
+          Math.min(this.unit_.point_values.length, POINT_VALUE_COLORS.length - 1);
       var tableDialEnd = currentClick;
       for (var click = tableDialStart; click < tableDialEnd; ++click) {
         if (this.unit_.dial[click].starting_line) {
-          var left = 31 + 23 * (this.unit_.dial[click].click_number - tableDialStart - 1);
-          var color = STARTING_LINE_COLORS[this.unit_.point_values.length][currentStartingLine++];
+          const left = 31 + 23 * (this.unit_.dial[click].click_number - tableCols[t].start - 1);
+          const colorIdx = Math.min(currentStartingLine++, STARTING_LINE_COLORS[pointValuesLength].length - 1);
+          const color = STARTING_LINE_COLORS[pointValuesLength][colorIdx];
           html += `<div class='largeCardDialStartingLine' style='left: ${left}px; background-color: ${color}'></div>`
         }
       }

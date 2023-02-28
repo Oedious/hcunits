@@ -13,18 +13,25 @@ class BaseUnitView {
     }
 
     var style = `bottom: ${bottomPosition}px;`
-    if (this.unit_.point_values.length > 2) {
-      style += ` width: ${182 + 30 * (this.unit_.point_values.length - 2)}px;`;
-    }
-    var html = `<div class='cardPointValues' style='${style}'>POINT VALUE: `;
-    const colors = POINT_VALUE_COLORS[this.unit_.point_values.length];
-    for (var i = 0; i < this.unit_.point_values.length; ++i) {
-      if (i != 0) {
-        html += "<span>/</span>"
+    var innerHtml = "";
+    if (this.unit_.point_values.length > 4) {
+      innerHtml = `<span>${this.unit_.point_values[0]} ... ${this.unit_.point_values[this.unit_.point_values.length - 1]}</span>`;
+    } else {
+      if (this.unit_.point_values.length > 2) {
+        style += ` width: ${182 + 30 * (this.unit_.point_values.length - 2)}px;`;
       }
-      html += `<span style='color: ${colors[i]}'>${this.unit_.point_values[i]}</span>`;
+      const colors = POINT_VALUE_COLORS[this.unit_.point_values.length];
+      for (var i = 0; i < this.unit_.point_values.length; ++i) {
+        if (i != 0) {
+          innerHtml += "<span>/</span>"
+        }
+        innerHtml += `<span style='color: ${colors[i]}'>${this.unit_.point_values[i]}</span>`;
+      }
     }
-    html += "</div>"
+    var html = `
+      <div class='cardPointValues' style='${style}'>POINT VALUE:
+        ${innerHtml}
+      </div>`;
     return html;
   }
 }

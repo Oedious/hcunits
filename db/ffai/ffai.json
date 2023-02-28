@@ -1,0 +1,808 @@
+[
+  {
+    "unit_id": "ffai001", 
+    "set_id": "ffai", 
+    "collector_number": "001", 
+    "name": "Iron Man", 
+    "type": "character", 
+    "rarity": "fast_forces", 
+    "real_name": "Tony Stark", 
+    "dimensions": "1x1", 
+    "point_values": [
+      150, 
+      50
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "avengers"
+    ], 
+    "keywords": [
+      "Armor", 
+      "Avengers", 
+      "Scientist", 
+      "Stark Industries"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "KEEP IT MOVING, AVENGERS", 
+        "description": "Once per turn, when a friendly character with the Avengers keyword hits an opposing character, after resolutions you may move Iron Man up to two squares."
+      }, 
+      {
+        "type": "damage", 
+        "name": "ROUTING THE POWER WHERE I NEED IT", 
+        "description": "Perplex, but only to target himself. When Iron Man uses Perplex, he may modify one combat value by +2 or two combat values by +1 instead. If he does, after resolutions deal him 1 unavoidable damage.", 
+        "powers": [
+          "perplex"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [
+      "hindering"
+    ], 
+    "object_keyphrases": [], 
+    "unit_range": "8", 
+    "targets": "1", 
+    "speed_type": "wing", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "running_shot", 
+        "speed_value": 10, 
+        "attack_value": 11, 
+        "defense_power": "impervious", 
+        "defense_value": 18, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "running_shot", 
+        "speed_value": 10, 
+        "attack_value": 11, 
+        "defense_power": "impervious", 
+        "defense_value": 18, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "running_shot", 
+        "speed_value": 9, 
+        "attack_value": 10, 
+        "defense_power": "impervious", 
+        "defense_value": 18, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "sidestep", 
+        "speed_value": 9, 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 3, 
+        "starting_line": true
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_value": 9, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_value": 9, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }
+    ]
+  }, 
+  {
+    "unit_id": "ffai002", 
+    "set_id": "ffai", 
+    "collector_number": "002", 
+    "name": "Black Panther", 
+    "type": "character", 
+    "rarity": "fast_forces", 
+    "real_name": "T'Challa", 
+    "dimensions": "1x1", 
+    "point_values": [
+      50
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "avengers"
+    ], 
+    "keywords": [
+      "Avengers", 
+      "Wakanda", 
+      "Warrior"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "KEEP IT MOVING, AVENGERS", 
+        "description": "Once per turn, when a friendly character with the Avengers keyword hits an opposing character, after resolutions you may move Black Panther up to two squares."
+      }, 
+      {
+        "type": "speed", 
+        "name": "KEEP THEM OFF BALANCE", 
+        "description": "Stealth, Sidestep.", 
+        "powers": [
+          "stealth", 
+          "sidestep"
+        ]
+      }
+    ], 
+    "improved_movement": [
+      "hindering"
+    ], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "4", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 9, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "special", 
+        "speed_value": 8, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "charge", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "special", 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "ffai003", 
+    "set_id": "ffai", 
+    "collector_number": "003", 
+    "name": "Black Widow", 
+    "type": "character", 
+    "rarity": "fast_forces", 
+    "real_name": "Natasha Romanoff", 
+    "dimensions": "1x1", 
+    "point_values": [
+      50
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "avengers"
+    ], 
+    "keywords": [
+      "Avengers", 
+      "Spy"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "KEEP IT MOVING, AVENGERS", 
+        "description": "Once per turn, when a friendly character with the Avengers keyword hits an opposing character, after resolutions you may move Black Widow up to two squares."
+      }, 
+      {
+        "type": "speed", 
+        "name": "KEEP THEM OFF BALANCE", 
+        "description": "Stealth, Sidestep.", 
+        "powers": [
+          "stealth", 
+          "sidestep"
+        ]
+      }
+    ], 
+    "improved_movement": [
+      "characters"
+    ], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "4", 
+    "targets": "2", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 9, 
+        "attack_power": "incapacitate", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "special", 
+        "speed_value": 8, 
+        "attack_power": "incapacitate", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "charge", 
+        "speed_value": 7, 
+        "attack_power": "precision_strike", 
+        "attack_value": 9, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "special", 
+        "speed_value": 6, 
+        "attack_power": "precision_strike", 
+        "attack_value": 9, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "ffai004", 
+    "set_id": "ffai", 
+    "collector_number": "004", 
+    "name": "Hawkeye", 
+    "type": "character", 
+    "rarity": "fast_forces", 
+    "real_name": "Clint Barton", 
+    "dimensions": "1x1", 
+    "point_values": [
+      50
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "avengers"
+    ], 
+    "keywords": [
+      "Avengers"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "KEEP IT MOVING, AVENGERS", 
+        "description": "Once per turn, when a friendly character with the Avengers keyword hits an opposing character, after resolutions you may move Hawkeye up to two squares."
+      }, 
+      {
+        "type": "attack", 
+        "name": "CURVED ARROW", 
+        "description": "POWER: Make a range attack. Hawkeye may draw the line of fire to the target from any square within his range and line of fire, but that target must still be within his range."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "9", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 11, 
+        "defense_power": "willpower", 
+        "defense_value": 17, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "willpower", 
+        "defense_value": 17, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "running_shot", 
+        "speed_value": 7, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 10, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 16, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "running_shot", 
+        "speed_value": 7, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 10, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 16, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "leap_climb", 
+        "speed_value": 6, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "ffai005", 
+    "set_id": "ffai", 
+    "collector_number": "005", 
+    "name": "Vision", 
+    "type": "character", 
+    "rarity": "fast_forces", 
+    "dimensions": "1x1", 
+    "point_values": [
+      125, 
+      50
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "avengers"
+    ], 
+    "keywords": [
+      "Avengers", 
+      "Robot"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "KEEP IT MOVING, AVENGERS", 
+        "description": "Once per turn, when a friendly character with the Avengers keyword hits an opposing character, after resolutions you may move Vision up to two squares."
+      }, 
+      {
+        "type": "trait", 
+        "name": "DENSITY SHIFT", 
+        "description": "Phasing/Teleport, Super Senses", 
+        "powers": [
+          "phasing_teleport", 
+          "super_senses"
+        ]
+      }, 
+      {
+        "type": "damage", 
+        "name": "PHASED HAND", 
+        "description": "Exploit Weakness. When Vision uses it, after resolutions give the hit target an action token.", 
+        "powers": [
+          "exploit_weakness"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "5", 
+    "targets": "1", 
+    "speed_type": "wing", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "running_shot", 
+        "speed_value": 9, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 3, 
+        "starting_line": true
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "sidestep", 
+        "speed_value": 6, 
+        "attack_value": 8, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 8, 
+        "speed_value": 6, 
+        "attack_value": 7, 
+        "defense_value": 16, 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "ffaiG001", 
+    "set_id": "ffai", 
+    "collector_number": "G001", 
+    "name": "Giant-Girl", 
+    "type": "character", 
+    "rarity": "fast_forces", 
+    "real_name": "Janet Van Dyne", 
+    "dimensions": "2x2", 
+    "point_values": [
+      300, 
+      150, 
+      50, 
+      10
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Avengers", 
+      "Celebrity"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "KEEP IT MOVING, AVENGERS", 
+        "description": "Once per turn, when a friendly character with the Avengers keyword hits an opposing character, after resolutions you may move Giant-Girl up to two squares."
+      }, 
+      {
+        "type": "trait", 
+        "name": "COLOSSAL RETALIATION: I'M MY OWN WOMAN", 
+        "description": "FREE: Choose an opposing character that attacked Giant-Girl or damaged a friendly character since your last turn. Place Giant-Girl such that she can make a close attack targeting the chosen character,then do so. (She may activate this in addition to any other Colossal Retaliation used this turn.)"
+      }, 
+      {
+        "type": "defense", 
+        "name": "COLOSSAL INDIFFERENCE", 
+        "description": "STOP. Toughness. If Giant-Girl began the game on the 10-point starting line, she can't attack smaller characters except via Colossal Retaliation.", 
+        "powers": [
+          "stop", 
+          "toughness"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "colossal", 
+    "dial_size": "26", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 11, 
+        "attack_power": "super_strength", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 18, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "charge", 
+        "speed_value": 11, 
+        "attack_power": "super_strength", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 18, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "charge", 
+        "speed_value": 11, 
+        "attack_power": "super_strength", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 18, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "willpower", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "willpower", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 8, 
+        "speed_power": "charge", 
+        "speed_value": 10, 
+        "attack_power": "super_strength", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 18, 
+        "damage_value": 3, 
+        "starting_line": true
+      }, 
+      {
+        "click_number": 9, 
+        "speed_power": "charge", 
+        "speed_value": 10, 
+        "attack_power": "super_strength", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 10, 
+        "speed_power": "charge", 
+        "speed_value": 9, 
+        "attack_power": "super_strength", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 11, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "willpower", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 12, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 13, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 14, 
+        "speed_power": "charge", 
+        "speed_value": 9, 
+        "attack_power": "super_strength", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 18, 
+        "damage_value": 3, 
+        "starting_line": true
+      }, 
+      {
+        "click_number": 15, 
+        "speed_power": "charge", 
+        "speed_value": 9, 
+        "attack_power": "super_strength", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 16, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 17, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 18, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 18, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2, 
+        "starting_line": true
+      }
+    ]
+  }
+]

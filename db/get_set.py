@@ -191,6 +191,12 @@ SET_MAP = {
   "fftmnt4": {
     "name": "Fast Forces: Teenage Mutant Ninja Turtles: Unplugged",
   },
+  "ai": {
+    "name": "Avengers Infinity",
+  },
+  "ffai": {
+    "name": "Fast Forces: Avengers Infinity",
+  },
 }
 
 POWERS = {
@@ -310,7 +316,7 @@ PROPERTY_VALUES = [
 ]
 
 SPECIAL_POWER_TYPE_VALUES = [
-  "trait", "costed_trait", "rally_trait", "title_trait", "plus_plot_points", "minus_plot_points", "speed", "attack", "defense", "damage", "location", "consolation", "object", "equipment", "tarot_card", "mystery_card"
+  "trait", "costed_trait", "rally_trait", "title_trait", "plus_plot_points", "minus_plot_points", "speed", "attack", "defense", "damage", "location", "consolation", "object", "equipment", "tarot_card", "mystery_card", "terrain"
 ]
 
 RALLY_TYPE_VALUES = [
@@ -349,8 +355,9 @@ IMPROVED_ABILITIES = {
     "attr_name": "improved_targeting",
     "types": {
       "elevated": "elevated",
+      "ignores elevated terrain": "elevated",
       "hindering": "hindering",
-      "hindering": "hindering",
+      "hindering terrain": "hindering",
       "ignores hindering terrain": "hindering",
       "improved targeting: ignores hindering terrain": "hindering",
       "imrpoved targeting: ignores hindering terrain": "hindering",
@@ -489,6 +496,7 @@ class Unit:
     self.map_url = kwargs.get("map_url", None)
     self.unit_range = kwargs.get("unit_range", -1)
     self.targets = kwargs.get("targets", -1)
+    self.passengers = kwargs.get("passengers", -1)
     self.speed_type = kwargs.get("speed_type", None)
     self.attack_type = kwargs.get("attack_type", None)
     self.defense_type = kwargs.get("defense_type", None)
@@ -924,12 +932,24 @@ class Unit:
               sp_type = "title_trait"
             elif sp_name.lower().startswith("improved"):
               sp_type ="improved"
+            elif self.unit_id.startswith("aiG024"):
+              # Hack to fix trait type for aiG024.
+              sp_type = "trait"
             else:
               raise RuntimeError("Unit '%s' has special power type 'epic', which is not currently supported" % (unit_id))
               
 
           # Skip the special power that describes a construct
           if self.type == "bystander" and self.bystander_type == "construct" and sp_name == "CONSTRUCTS":
+            continue
+          
+          # Skip the special power that describes Special Terrain rules.
+          if self.type == "character" and sp_name.upper().startswith("SPECIAL TERRAIN TRAIT"):
+            continue
+          
+          # Handle special power that describe the number of passengers.
+          if self.type == "character" and sp_name == "PASSENGER":
+            self.passengers = int(sp_description)
             continue
           
           # Handle special powers that describe properties
@@ -1003,7 +1023,7 @@ class Unit:
             if sp_type == "trait" and sp_name:
               # Handle title character traits, like plus and minus plot points.
               if "title" in self.properties:
-                match_obj = re.search(r"^\(([-\+][X\d])\) (.*)", sp_name)
+                match_obj = re.search(r"^\(([-\+][X\d]{1,2})\) (.*)", sp_name)
                 if match_obj:
                   if match_obj.group(1)[0] == "+":
                     prefix = "plus"
@@ -1093,6 +1113,10 @@ class Unit:
         if tags[0].td.has_attr('title'):
           row_obj = OrderedDict()
           row_obj["click_number"] = self.dial_size + 1
+          click_number = int(tags[4].td.string.strip())
+          if click_number != self.dial_size + 1:
+            row_obj["alt_click_number"] = click_number
+            #print("Warning: unit '%s' has alternative click number '%d' at normal num '%d'" % (self.unit_id, click_number, self.dial_size + 1))
           if self.dial_size == 0:
             row_obj["starting_line"] = True
           types = ["speed", "attack", "defense", "damage"]
@@ -1108,7 +1132,14 @@ class Unit:
               elif power == "Earthbound":
                 power = "Earthbound/Neutralized"
               row_obj[types[i] + "_power"] = fix_style(power)
-            row_obj[types[i] + "_value"] = int(tag.td.string.strip())
+            value = tag.td.string.strip()
+            if value != u"":
+              try:
+                value = int(value)
+              except ValueError:
+                value = tag.td.string.strip()
+                print("Warning: for unit '%s', click number %d has abnormal %s '%s'" % (self.unit_id, len(self.dial), types[i] + "_value", tag.td.string.strip()))
+            row_obj[types[i] + "_value"] = value
           self.dial.append(row_obj)
         self.dial_size += 1
         
@@ -1122,18 +1153,19 @@ class Unit:
     # Sanity-check the dimensions.
     if self.type == "character":
       if self.dimensions == "1x1" or self.dimensions == "1x2":
-        exptected_dial_size = 12
+        expected_dial_size = 12
       elif self.dimensions == "2x2":
-        exptected_dial_size = 26
+        expected_dial_size = 26
       elif self.dimensions == "2x4" or self.dimensions == "3x6":
-        exptected_dial_size = 20
+        expected_dial_size = 20
       else:
         raise RuntimeError("Unknown dimensions for '%s': found '%s'" % (self.unit_id, self.dimensions))
-      if self.dial_size != exptected_dial_size:
-        print("Warning: for unit '%s', expected a dial size of %d, but got %d" % (self.unit_id, exptected_dial_size, self.dial_size))
-        self.dial_size = exptected_dial_size
-      if len(self.dial) > exptected_dial_size:
-        print("Warning: for unit '%s', expected a max dial size of %s, but got %d" % (self.unit_id, exptected_dial_size, len(self.dial)))
+      if self.dial_size != expected_dial_size:
+        if not (self.dial_size == 20 and expected_dial_size == 26):
+          print("Warning: for unit '%s', expected a dial size of %d, but got %d" % (self.unit_id, expected_dial_size, self.dial_size))
+        self.dial_size = expected_dial_size
+      if len(self.dial) > expected_dial_size:
+        print("Warning: for unit '%s', expected a max dial size of %s, but got %d" % (self.unit_id, expected_dial_size, len(self.dial)))
         self.dial = self.dial[:self.dial_size]
     elif self.type == "bystander":
       if self.dimensions != "1x1":
@@ -1248,7 +1280,9 @@ class Unit:
     self.point_values.insert(pos, src_unit.point_values[0])
 
     if starting_line < len(self.dial):
-      self.dial[starting_line]["starting_line"] = True
+      # Hack to avoid writing 25 starting lines for aiG001 Giant-Girl.
+      if self.unit_id != "aiG001":
+        self.dial[starting_line]["starting_line"] = True
 
     # Add any missing special powers.
     for src_sp in src_unit.special_powers:
@@ -1303,7 +1337,10 @@ class Unit:
             print("Warning: update for '%s' is adding click '%d'" % (self.unit_id, len(self.dial)))
             self.dial.append(OrderedDict())
           for (k, v) in value[i].items():
-            self.dial[i][k] = v
+            if k.endswith("_power") and v == u"":
+              del self.dial[i][k]
+            else:
+              self.dial[i][k] = v
       elif (key == "real_name" or
             key == "keywords" or
             key == "defense_type" or
@@ -1398,10 +1435,12 @@ class Unit:
         print("Warning: for unit '%s' with type 'bystander' - unknown bystander_type '%s'" % (self.unit_id, self.bystander_type))
 
     if self.type == "character" or self.type == "bystander":
-      if self.unit_range < 0 or self.unit_range > 12:
+      if self.unit_range < 0 or self.unit_range > 13:
         print("Warning: unit '%s' has unexpected range '%d'" % (self.unit_id, self.unit_range))
       if self.targets < 0 or self.targets > 3:
         print("Warning: unit '%s' has unexpected targets '%d'" % (self.unit_id, self.targets))
+      if self.passengers < -1 or self.passengers > 8:
+        print("Warning: unit '%s' has unexpected passengers '%d'" % (self.unit_id, self.passengers))
       if not self.speed_type:
         print("Warning: unit '%s' has a missing speed_type" % (self.unit_id))
       elif not self.speed_type in SPEED_TYPE_VALUES:
@@ -1425,10 +1464,11 @@ class Unit:
           print("Warning: unit '%s' has an invalid click number '%d'" % (self.unit_id, click_number))
         for field in ["speed", "attack", "defense", "damage"]:
           value = click.get(field + "_value", -1)
-          if not isinstance(value, int):
+          if isinstance(value, unicode):
+            if len(value) > 1:
+              print("Warning: unit '%s' click '%d' has an %s value '%s'" % (self.unit_id, click_number, field, value))
+          elif isinstance(value, int) and value < 0 or value > 21:
             print("Warning: unit '%s' click '%d' has an unexpected %s value '%s'" % (self.unit_id, click_number, field, str(value)))
-          elif value < 0 or value > 21:
-            print("Warning: unit '%s' click '%d' has an unexpected %s value '%d'" % (self.unit_id, click_number, field, value))
           power = click.get(field + "_power", None)
           if power and power != "special":
             if not power in POWER_VALUES:
@@ -1472,6 +1512,8 @@ class Unit:
       xml += "\n    <bystander_type>%s</bystander_type>" % self.bystander_type
     if self.map_url:
       xml += "\n    <map_url>%s</map_url>" % self.map_url
+    if self.passengers >= 0:
+      xml += "\n    <passengers>%s</passengers>" % self.passengers
     if len(self.dial) > 0:
       xml += """
     <unit_range>{}</unit_range>
