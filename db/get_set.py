@@ -203,6 +203,15 @@ SET_MAP = {
   "ffxxs": {
     "name": "Fast Forces: X-Men Xavier's School",
   },
+  "trekos": {
+    "name": "Star Trek HeroClix Away Team: The Original Series",
+  },
+  "hq": {
+    "name": "Harley Quinn and the Gotham Girls",
+  },
+  "ffhq": {
+    "name": "Fast Forces: Harley Quinn and the Gotham Girls",
+  },
 }
 
 POWERS = {
@@ -334,6 +343,7 @@ IMPROVED_ABILITIES = {
     "attr_name": "improved_movement",
     "types": {
       "elevated": "elevated",
+      "elevated terrain": "elevated",
       "ignores elevated terrain": "elevated",
       "hindering": "hindering",
       "hindering terrain": "hindering",
@@ -943,6 +953,9 @@ class Unit:
             sp_type = "damage"
           elif sp_type_str == "epic":
             sp_type = "epic"
+          elif sp_type_str == "pilot":
+            # This will be handled down below when we extract passengers.
+            sp_type = "none"
           else:
             raise RuntimeError("The special power type '%s' for '%s' is currently not supported" % (sp_type_str, unit_id))
 
@@ -968,7 +981,6 @@ class Unit:
             else:
               raise RuntimeError("Unit '%s' has special power type 'epic', which is not currently supported" % (unit_id))
               
-
           # Skip the special power that describes a construct
           if self.type == "bystander" and self.bystander_type == "construct" and sp_name == "CONSTRUCTS":
             continue
@@ -978,7 +990,8 @@ class Unit:
             continue
           
           # Handle special power that describe the number of passengers.
-          if self.type == "character" and sp_name == "PASSENGER":
+          if ((self.type == "character" or self.type == "bystander") and
+              sp_name.startswith("PASSENGER")):
             self.passengers = int(sp_description)
             continue
           
@@ -1002,6 +1015,9 @@ class Unit:
             # Correct the spelling of 'targeting'.
             if sp_name == 'TARGETTING':
               sp_name = 'TARGETING'
+            elif sp_name == 'MOVEMENT; IMPROVED TARGETING':
+              print("Warning: unit '%s' has invalid improved ability type '%s'" % (self.unit_id, sp_name))
+              continue
             improved_ability_info = IMPROVED_ABILITIES.get(sp_name.lower(), None)
             if not improved_ability_info:
               raise RuntimeError("Error: unit '%s' has invalid improved ability type '%s'" % (self.unit_id, sp_name))

@@ -1,0 +1,724 @@
+[
+  {
+    "unit_id": "ffhq001", 
+    "set_id": "ffhq", 
+    "collector_number": "001", 
+    "name": "Batgirl", 
+    "type": "character", 
+    "rarity": "fast_forces", 
+    "real_name": "Barbara Gordon", 
+    "dimensions": "1x1", 
+    "point_values": [
+      100
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "batman_ally"
+    ], 
+    "keywords": [
+      "Batman Family", 
+      "Gotham City"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "VERY DYNAMIC DUO", 
+        "description": "UNIQUE MODIFIER - While Batgirl is adjacent to a friendly character named Batman or Robin, modify all of their attack values +1."
+      }, 
+      {
+        "type": "attack", 
+        "name": "SONIC FLARES", 
+        "description": "Incapacitate, Improved Targeting: Hindering Terrain.", 
+        "powers": [
+          "incapacitate"
+        ]
+      }, 
+      {
+        "type": "damage", 
+        "name": "WELL-PLACED CROSSBOW BOLTS", 
+        "description": "Ranged Combat Expert. When Batgirl uses it, hit characters can't make range attacks until your next turn.", 
+        "powers": [
+          "ranged_combat_expert"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "6", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "sidestep", 
+        "speed_value": 10, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 18, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "sidestep", 
+        "speed_value": 9, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 18, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "running_shot", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "running_shot", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 16, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "running_shot", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 16, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "ffhq002", 
+    "set_id": "ffhq", 
+    "collector_number": "002", 
+    "name": "Robin", 
+    "type": "character", 
+    "rarity": "fast_forces", 
+    "real_name": "Rickart Graustark", 
+    "dimensions": "1x1", 
+    "point_values": [
+      100
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "batman_ally"
+    ], 
+    "keywords": [
+      "Batman Family", 
+      "Gotham City"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "DYNAMITE DUO", 
+        "description": "Adjacent friendly characters named Batgirl or Batman have two targets instead of one."
+      }, 
+      {
+        "type": "defense", 
+        "name": "MAYBE YOU'D BETTER GET USED TO FASTER-MOVING TARGETS", 
+        "description": "Combat Reflexes. Super Senses, but only when targeted by a ranged attack.", 
+        "powers": [
+          "combat_reflexes", 
+          "super_senses"
+        ]
+      }, 
+      {
+        "type": "damage", 
+        "name": "OUT FOR REVENGE", 
+        "description": "Modify attack and damage +1 while attacking an opposing character that damaged a friendly character since your last turn."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "5", 
+    "targets": "2", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 10, 
+        "attack_power": "quake", 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "charge", 
+        "speed_value": 9, 
+        "attack_power": "quake", 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_power": "precision_strike", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "running_shot", 
+        "speed_value": 7, 
+        "attack_power": "precision_strike", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "charge", 
+        "speed_value": 7, 
+        "attack_power": "precision_strike", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "ffhq003", 
+    "set_id": "ffhq", 
+    "collector_number": "003", 
+    "name": "Batman", 
+    "type": "character", 
+    "rarity": "fast_forces", 
+    "real_name": "Bruce Wayne", 
+    "dimensions": "1x1", 
+    "point_values": [
+      100
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "batman_ally"
+    ], 
+    "keywords": [
+      "Batman Family", 
+      "Detective", 
+      "Gotham City", 
+      "Police"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "DYNAMICAL DUO", 
+        "description": "UNIQUE MODIFIER - While Batman is adjacent to a friendly character named Batgirl or Robin modify all of their defense values +1."
+      }, 
+      {
+        "type": "speed", 
+        "name": "NOT SO FAST, WE'VE GOT UNFINISHED BUSINESS", 
+        "description": "Charge, Plasticity.", 
+        "powers": [
+          "charge", 
+          "plasticity"
+        ]
+      }, 
+      {
+        "type": "damage", 
+        "name": "HIDING BEHIND THE MASK", 
+        "description": "Shape Change. When Batman uses it, on a result of 6, remove an action token from him.", 
+        "powers": [
+          "shape_change"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "6", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_power": "incapacitate", 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 18, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_power": "incapacitate", 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "special", 
+        "speed_value": 7, 
+        "attack_power": "incapacitate", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "special", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "special", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "special", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "ffhq004", 
+    "set_id": "ffhq", 
+    "collector_number": "004", 
+    "name": "The Joker", 
+    "type": "character", 
+    "rarity": "fast_forces", 
+    "real_name": "Bianca Steeplechase", 
+    "dimensions": "1x1", 
+    "point_values": [
+      100
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "underworld"
+    ], 
+    "keywords": [
+      "Celebrity", 
+      "Gotham City Underworld", 
+      "Politician"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "FINGERNAILS POLISHED WITH TOXIC LACQUER", 
+        "description": "Poison. When an opposing character is damaged by The Joker, give them a Toxin token. After resolutions of a costed action given to a character with a Toxin token, deal that character 1 damage. When a character with a Toxin token clears action tokens, remove a Toxin token from them.", 
+        "powers": [
+          "poison"
+        ]
+      }, 
+      {
+        "type": "damage", 
+        "name": "KISS OF DEATH", 
+        "description": "Exploit Weakness. When The Joker uses it and hits an opposing character, after resolutions give them an action token.", 
+        "powers": [
+          "exploit_weakness"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "willpower", 
+        "defense_value": 18, 
+        "damage_power": "shape_change", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "willpower", 
+        "defense_value": 17, 
+        "damage_power": "shape_change", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "charge", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_value": 11, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }
+    ]
+  }, 
+  {
+    "unit_id": "ffhq005", 
+    "set_id": "ffhq", 
+    "collector_number": "005", 
+    "name": "Harley Quinn", 
+    "type": "character", 
+    "rarity": "fast_forces", 
+    "real_name": "Hayley Fitzpatrick", 
+    "dimensions": "1x1", 
+    "point_values": [
+      60
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "underworld"
+    ], 
+    "keywords": [
+      "Gotham City Underworld"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "AMERICA'S BRIGHT FUTURE", 
+        "description": "If Harley Quinn has 0 action tokens: Stealth, Shape Change, she does not block friendly line of fire."
+      }, 
+      {
+        "type": "damage", 
+        "name": "PLAY NICE, OR PLAY DEAD", 
+        "description": "Close Combat Expert. She can use it as a CLOSE action, but only to target characters that made an attack since your last turn.", 
+        "powers": [
+          "close_combat_expert"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "5", 
+    "targets": "2", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "charge", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "running_shot", 
+        "speed_value": 7, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 10, 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "running_shot", 
+        "speed_value": 6, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 10, 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "ffhq006", 
+    "set_id": "ffhq", 
+    "collector_number": "006", 
+    "name": "Corrupt GCPD Cop", 
+    "type": "character", 
+    "rarity": "fast_forces", 
+    "real_name": "Various", 
+    "dimensions": "1x1", 
+    "point_values": [
+      40
+    ], 
+    "properties": [
+      "unique"
+    ], 
+    "team_abilities": [
+      "police", 
+      "underworld"
+    ], 
+    "keywords": [
+      "Gotham City Underworld", 
+      "Police"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "LOOK THE OTHER WAY", 
+        "description": "At the beginning of the game, choose one friendly character of 50 or more points to be the \"Boss\" for all characters with this trait."
+      }, 
+      {
+        "type": "trait", 
+        "name": "ALWAYS MORE CORRUPT COPS", 
+        "description": "When a countdown click is revealed, stop turning the dial and remove Corrupt GCPD Cop from the map. At the beginning of your turn, if Corrupt GCPD Cop is off the map on a countdown click, click her dial once. If a non-countdown click is revealed, place her in your starting area. When the \"Boss\" is KO'd, removed from the map, or if no \"Boss\" was chosen, all countdown clicks become KO clicks for the rest of the game."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "5", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_value": 7, 
+        "attack_value": 8, 
+        "defense_value": 16, 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": "", 
+        "attack_value": "3", 
+        "defense_value": "", 
+        "damage_value": ""
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": "", 
+        "attack_value": "2", 
+        "defense_value": "", 
+        "damage_value": ""
+      }, 
+      {
+        "click_number": 6, 
+        "speed_value": "", 
+        "attack_value": "1", 
+        "defense_value": "", 
+        "damage_value": ""
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "battle_fury", 
+        "damage_value": 2, 
+        "starting_line": true
+      }, 
+      {
+        "click_number": 8, 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "battle_fury", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 9, 
+        "speed_value": 7, 
+        "attack_value": 8, 
+        "defense_value": 16, 
+        "damage_power": "battle_fury", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 10, 
+        "speed_value": "", 
+        "attack_value": "3", 
+        "defense_value": "", 
+        "damage_value": ""
+      }, 
+      {
+        "click_number": 11, 
+        "speed_value": "", 
+        "attack_value": "2", 
+        "defense_value": "", 
+        "damage_value": ""
+      }, 
+      {
+        "click_number": 12, 
+        "speed_value": "", 
+        "attack_value": "1", 
+        "defense_value": "", 
+        "damage_value": ""
+      }
+    ]
+  }
+]
