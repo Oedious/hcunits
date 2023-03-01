@@ -212,6 +212,9 @@ SET_MAP = {
   "ffhq": {
     "name": "Fast Forces: Harley Quinn and the Gotham Girls",
   },
+  "trm": {
+    "name": "Thor: Ragnarok (Movie)",
+  },
 }
 
 POWERS = {

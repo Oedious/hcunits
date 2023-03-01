@@ -190,7 +190,7 @@ const SET_LIST = {
     "universe": "indy"
   },
   "trekbg": {
-    "name": "Star Trek: The Next Generation: To Boldly Go",
+    "name": "Star Trek Away Team: The Next Generation: To Boldly Go",
     "release_date": "2019-10-23",
     "universe": "star_trek"
   },
@@ -205,7 +205,7 @@ const SET_LIST = {
     "universe": "marvel"
   },
   "trekrf": {
-    "name": "Star Trek: The Next Generation: Resistance is Futile",
+    "name": "Star Trek Away Team: The Next Generation: Resistance is Futile",
     "release_date": "2019-07-24",
     "universe": "star_trek"
   },
@@ -297,6 +297,26 @@ const SET_LIST = {
   "ffxxs": {
     "name": "Fast Forces: X-Men Xavier's School",
     "release_date": "2018-02-14",
+    "universe": "marvel"
+  },
+  "trekos": {
+    "name": "Star Trek Away Team: The Original Series",
+    "release_date": "2017-12-06",
+    "universe": "star_trek"
+  },
+  "hq": {
+    "name": "Harley Quinn and the Gotham Girls",
+    "release_date": "2017-11-15",
+    "universe": "dc"
+  },
+  "ffhq": {
+    "name": "Fast Forces: Harley Quinn and the Gotham Girls",
+    "release_date": "2017-11-15",
+    "universe": "dc"
+  },
+  "trm": {
+    "name": "Thor: Ragnarok Movie",
+    "release_date": "2017-10-11",
     "universe": "marvel"
   },
   "wk": {
