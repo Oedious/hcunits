@@ -245,10 +245,11 @@ class UnitListPanel extends ListPanel {
           currentSetId = setId;
         }
 
+        var color;
         if (unit.rarity) {
-          var color = RARITY_TO_COLOR[unit.rarity];
+          color = RARITY_TO_COLOR[unit.rarity].color;
         } else {
-          var color = RARITY_COMMON_COLOR;
+          color = RARITY_COMMON_COLOR;
         }
         var minorInfo = "";
         var icon = TYPE_TO_ICON[unit.type];

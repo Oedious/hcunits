@@ -218,6 +218,9 @@ SET_MAP = {
   "tmt": {
     "name": "The Mighty Thor",
   },
+  "und": {
+    "name": "Undead",
+  },
 }
 
 POWERS = {
