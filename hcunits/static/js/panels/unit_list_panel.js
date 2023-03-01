@@ -6,6 +6,7 @@ const TYPE_TO_ICON = {
   "bystander": "pets",
   "tarot_card": "content_copy",
   "mystery_card": "psychology_alt",
+  "id_card": "badge",
 };
 
 const SORT_ORDERS = {
@@ -262,6 +263,9 @@ class UnitListPanel extends ListPanel {
               icon = typeInfo.icon;
             }
           } else {
+            if (!TYPE_LIST[unit.type].name) {
+              throw new Error(`Unit '{unit.unit_id}' has unknown type '${unit.type}'`)
+            }
             minorInfo = TYPE_LIST[unit.type].name;
           }
           if (unit.point_values.length > 0) {

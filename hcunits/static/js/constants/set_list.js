@@ -289,6 +289,16 @@ const SET_LIST = {
     "release_date": "2018-05-16",
     "universe": "marvel"
   },
+  "xxs": {
+    "name": "X-Men Xavier's School",
+    "release_date": "2018-02-14",
+    "universe": "marvel"
+  },
+  "ffxxs": {
+    "name": "Fast Forces: X-Men Xavier's School",
+    "release_date": "2018-02-14",
+    "universe": "marvel"
+  },
   "wk": {
     "name": "WizKids Standard Game Pieces",
     "release_date": "2002-05-01",

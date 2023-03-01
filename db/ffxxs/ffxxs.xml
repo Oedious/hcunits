@@ -1,0 +1,604 @@
+<resultset>
+  <row>
+    <unit_id>ffxxs001</unit_id>
+    <set_id>ffxxs</set_id>
+    <collector_number>001</collector_number>
+    <name>Beast</name>
+    <type>character</type>
+    <rarity>fast_forces</rarity>
+    <real_name>Hank McCoy</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[75, 50]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["x_men"]</team_abilities>
+    <keywords>["X-Factor", "X-Men"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "X-FACTOR", 
+    "description": "When this character hits with an attack, modify damage +1 for each 5 in the attack roll."
+  }, 
+  {
+    "type": "damage", 
+    "name": "SCIENTIST OF X-FACTOR", 
+    "description": "Outwit. Probability Control, but only to target Beast's attack roll without a 5.", 
+    "powers": [
+      "outwit", 
+      "probability_control"
+    ]
+  }
+]</special_powers>
+    <improved_movement>["elevated", "hindering"]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "charge", 
+    "speed_value": 8, 
+    "attack_value": 11, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "charge", 
+    "speed_value": 8, 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "charge", 
+    "speed_value": 7, 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 3, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "flurry", 
+    "speed_value": 7, 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 17, 
+    "damage_power": "perplex", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "flurry", 
+    "speed_value": 7, 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_power": "perplex", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "flurry", 
+    "speed_value": 7, 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_power": "perplex", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ffxxs002</unit_id>
+    <set_id>ffxxs</set_id>
+    <collector_number>002</collector_number>
+    <name>Cyclops</name>
+    <type>character</type>
+    <rarity>fast_forces</rarity>
+    <real_name>Scott Summers</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[75, 50]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["x_men"]</team_abilities>
+    <keywords>["X-Factor", "X-Men"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "X-FACTOR", 
+    "description": "When this character hits with an attack, modify damage +1 for each 5 in the attack roll."
+  }, 
+  {
+    "type": "damage", 
+    "name": "LEADER OF X-FACTOR", 
+    "description": "Ranged Combat Expert. Probability Control, but only to target Cyclops' attack roll without a 5.", 
+    "powers": [
+      "ranged_combat_expert", 
+      "probability_control"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>6</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "precision_strike", 
+    "attack_value": 11, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "precision_strike", 
+    "attack_value": 11, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 3, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "running_shot", 
+    "speed_value": 7, 
+    "attack_value": 10, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 16, 
+    "damage_power": "leadership", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "running_shot", 
+    "speed_value": 7, 
+    "attack_value": 10, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 17, 
+    "damage_power": "leadership", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "running_shot", 
+    "speed_value": 6, 
+    "attack_value": 10, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 16, 
+    "damage_power": "leadership", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ffxxs003</unit_id>
+    <set_id>ffxxs</set_id>
+    <collector_number>003</collector_number>
+    <name>Iceman</name>
+    <type>character</type>
+    <rarity>fast_forces</rarity>
+    <real_name>Bobby Drake</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[75, 50]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["x_men"]</team_abilities>
+    <keywords>["X-Factor", "X-Men"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "X-FACTOR", 
+    "description": "When this character hits with an attack, modify damage +1 for each 5 in the attack roll."
+  }, 
+  {
+    "type": "attack", 
+    "name": "\"COOL GUY\" OF X-FACTOR", 
+    "description": "Incapacitate. Probability Control, but only to target Iceman's attack roll without a 5.", 
+    "powers": [
+      "incapacitate", 
+      "probability_control"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>5</unit_range>
+    <targets>2</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "running_shot", 
+    "speed_value": 9, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 18, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "running_shot", 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "running_shot", 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_value": 3, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 10, 
+    "defense_power": "barrier", 
+    "defense_value": 17, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 10, 
+    "defense_power": "barrier", 
+    "defense_value": 17, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 9, 
+    "defense_power": "barrier", 
+    "defense_value": 17, 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ffxxs004</unit_id>
+    <set_id>ffxxs</set_id>
+    <collector_number>004</collector_number>
+    <name>Jean Grey</name>
+    <type>character</type>
+    <rarity>fast_forces</rarity>
+    <real_name>Jean Grey</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[75, 50]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["x_men"]</team_abilities>
+    <keywords>["X-Factor", "X-Men"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "X-FACTOR", 
+    "description": "When this character hits with an attack, modify damage +1 for each 5 in the attack roll."
+  }, 
+  {
+    "type": "attack", 
+    "name": "PSYCHIC OF X-FACTOR", 
+    "description": "Telekinesis. Probability Control, but only to target Jean Grey's attack roll without a 5.", 
+    "powers": [
+      "telekinesis", 
+      "probability_control"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>5</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_power": "special", 
+    "attack_value": 11, 
+    "defense_power": "willpower", 
+    "defense_value": 17, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "willpower", 
+    "defense_value": 17, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "willpower", 
+    "defense_value": 17, 
+    "damage_value": 2, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "mind_control", 
+    "speed_value": 7, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 11, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_power": "probability_control", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "mind_control", 
+    "speed_value": 7, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_power": "probability_control", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "mind_control", 
+    "speed_value": 7, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 9, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_power": "probability_control", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ffxxs005</unit_id>
+    <set_id>ffxxs</set_id>
+    <collector_number>005</collector_number>
+    <name>Rusty</name>
+    <type>character</type>
+    <rarity>fast_forces</rarity>
+    <real_name>Russell Collins</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[50, 25]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["x_men"]</team_abilities>
+    <keywords>["New Mutants", "X-Factor"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "X-FACTOR", 
+    "description": "When this character hits with an attack, modify damage +1 for each 5 in the attack roll."
+  }, 
+  {
+    "type": "attack", 
+    "name": "X-FACTOR TAUGHT ME TO USE MY POWER", 
+    "description": "Energy Explosion, Poison. Probability Control, but only to target Rusty's attack roll without a 5.", 
+    "powers": [
+      "energy_explosion", 
+      "poison", 
+      "probability_control"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>5</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_value": 7, 
+    "attack_power": "poison", 
+    "attack_value": 9, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "sidestep", 
+    "speed_value": 6, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_value": 2, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 5, 
+    "speed_value": 7, 
+    "attack_power": "poison", 
+    "attack_value": 9, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 15, 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ffxxs006</unit_id>
+    <set_id>ffxxs</set_id>
+    <collector_number>006</collector_number>
+    <name>Skids</name>
+    <type>character</type>
+    <rarity>fast_forces</rarity>
+    <real_name>Sally Blevins</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[50, 25]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["x_men"]</team_abilities>
+    <keywords>["New Mutants", "X-Factor"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "X-FACTOR", 
+    "description": "When this character hits with an attack, modify damage +1 for each 5 in the attack roll."
+  }, 
+  {
+    "type": "defense", 
+    "name": "YOU CAN'T BREAK THROUGH THIS!", 
+    "description": "Invulnerability. Probability Control, but only to target an opponent's attack roll with a 5 that's targeting her.", 
+    "powers": [
+      "invulnerability", 
+      "probability_control"
+    ]
+  }
+]</special_powers>
+    <improved_movement>["move_through"]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 18, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_value": 9, 
+    "defense_power": "special", 
+    "defense_value": 18, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_value": 7, 
+    "attack_value": 9, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_value": 9, 
+    "defense_power": "special", 
+    "defense_value": 18, 
+    "damage_value": 1, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 5, 
+    "speed_value": 6, 
+    "attack_value": 8, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_value": 1
+  }
+]</dial>
+  </row>
+</resultset>

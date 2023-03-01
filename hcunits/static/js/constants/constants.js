@@ -32,6 +32,21 @@ const COLOR_BLACK = "black";
 const COLOR_GRAY = "#7f7f7f";
 const COLOR_WHITE = "white";
 
+const COLOR_MAP = {
+  "red": COLOR_RED,
+  "orange": COLOR_ORANGE,
+  "yellow": COLOR_YELLOW,
+  "lightgreen": COLOR_LIGHT_GREEN,
+  "green": COLOR_GREEN,
+  "lightblue": COLOR_LIGHT_BLUE,
+  "blue": COLOR_BLUE,
+  "purple": COLOR_PURPLE,
+  "pink": COLOR_PINK,
+  "brown": COLOR_BROWN,
+  "black": COLOR_BLACK,
+  "gray": COLOR_GRAY,
+  "white": COLOR_WHITE,
+}
 const STYLE_RED = "color:black; background-color: " + COLOR_RED + ";";
 const STYLE_ORANGE = "color:black; background-color: " + COLOR_ORANGE + ";";
 const STYLE_YELLOW = "color:black; background-color: " + COLOR_YELLOW + ";";

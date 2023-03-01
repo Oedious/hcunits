@@ -432,10 +432,17 @@ class CharacterView extends BaseUnitView {
           Math.min(this.unit_.point_values.length, POINT_VALUE_COLORS.length - 1);
       var tableDialEnd = currentClick;
       for (var click = tableDialStart; click < tableDialEnd; ++click) {
-        if (this.unit_.dial[click].starting_line) {
+        const startingLine = this.unit_.dial[click].starting_line;
+        if (startingLine) {
+          // Try to interpret the value of starting_line as a particular color.
+          var color = COLOR_MAP[startingLine];
+          if (!color) {
+            // Otherwise fall back to having it correspond to the starting
+            // point color.
+            const colorIdx = Math.min(currentStartingLine++, STARTING_LINE_COLORS[pointValuesLength].length - 1);
+            color = STARTING_LINE_COLORS[pointValuesLength][colorIdx];
+          }
           const left = 31 + 23 * (this.unit_.dial[click].click_number - tableCols[t].start - 1);
-          const colorIdx = Math.min(currentStartingLine++, STARTING_LINE_COLORS[pointValuesLength].length - 1);
-          const color = STARTING_LINE_COLORS[pointValuesLength][colorIdx];
           html += `<div class='largeCardDialStartingLine' style='left: ${left}px; background-color: ${color}'></div>`
         }
       }

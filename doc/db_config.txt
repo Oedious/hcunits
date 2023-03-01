@@ -31,8 +31,8 @@ CREATE TABLE units (
   name TEXT(128) NOT NULL,
 
   -- The type of the unit.
-  -- TODO: Add types for 'battlefield_condition', 'event_dial', 'resource', 'terrain', 'id_card'
-  type ENUM('character', 'object', 'equipment', 'map', 'bystander', 'tarot_card', 'mystery_card') NOT NULL,
+  -- TODO: Add types for 'battlefield_condition', 'event_dial', 'resource', 'terrain'
+  type ENUM('character', 'object', 'equipment', 'map', 'bystander', 'tarot_card', 'mystery_card', 'id_card') NOT NULL,
 
   -- A JSON array of numbers containing point values of different starting lines.
   point_values JSON,
@@ -59,7 +59,7 @@ CREATE TABLE units (
 
   -- A JSON array of objects containing special powers and traits, of the format:
   -- {
-  --   "type": string - contains "trait", "speed", "attack", "defense", "damage", "costed_trait", "rally_trait", "title_trait", "plus_plot_points", "minus_plot_points", "location", "consolation", "object", "equipment", "tarot_card", "mystery_card"
+  --   "type": string - contains "trait", "speed", "attack", "defense", "damage", "costed_trait", "rally_trait", "title_trait", "plus_plot_points", "minus_plot_points", "location", "consolation", "object", "equipment", "tarot_card", "mystery_card", "other_id", "inspiration"
   --   "name": string - the name of the power.
   --   "description": string - the description of the power.
   --   "powers": (Optional) array of strings, containing names to standard powers granted.

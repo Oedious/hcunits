@@ -19,7 +19,11 @@ const TYPE_LIST = {
   },
   "tarot_card": {
     "name": "Tarot Card"
-  },/*
+  },
+  "id_card": {
+    "name": "ID Card"
+  },
+  /*
   "terrain": {
     "name": "Terrain"
   },

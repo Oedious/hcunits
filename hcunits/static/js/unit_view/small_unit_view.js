@@ -147,10 +147,7 @@ class SmallUnitView extends BaseUnitView {
       } else if (type == "consolation") {
         // Don't use an icon, but add a tag to preserve spacing.
         iconHtml = "<td class='specialPowerImg'></td>";
-      } else if (type == "object" || type == "equipment" || type == "mystery_card" || type == "tarot_card") {
-        // Don't use an icon and use the full space of the card.
-        iconHtml = "";
-      } else {
+      } else if (type == "speed" || type == "attack" || type == "defense" || type == "damage") {
         var combatSymbolType = type;
         if (type != "trait") {
           combatSymbolType = this.unit_[type + "_type"];
@@ -159,6 +156,9 @@ class SmallUnitView extends BaseUnitView {
           <td class='specialPowerImg'>
             <img class='specialPowerIcon' src='/static/images/sp/${combatSymbolType}.png' alt=''/>
           </td>`;
+      } else {
+        // Don't use an icon and use the full space of the card.
+        iconHtml = "";
       }
 
       const CHARS_PER_NAME_LINE = iconHtml.length == 0 ? CHARS_PER_NAME_LINE_WITHOUT_ICON : CHARS_PER_NAME_LINE_WITH_ICON;

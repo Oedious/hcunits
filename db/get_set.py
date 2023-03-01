@@ -197,6 +197,12 @@ SET_MAP = {
   "ffai": {
     "name": "Fast Forces: Avengers Infinity",
   },
+  "xxs": {
+    "name": "X-Men Xavier's School",
+  },
+  "ffxxs": {
+    "name": "Fast Forces: X-Men Xavier's School",
+  },
 }
 
 POWERS = {
@@ -304,7 +310,7 @@ POWER_VALUES = [
 ]
 
 TYPE_VALUES = [
-  'character', 'object', 'equipment', 'map', 'bystander', 'tarot_card', 'mystery_card'
+  'character', 'object', 'equipment', 'map', 'bystander', 'tarot_card', 'mystery_card', 'id_card'
 ]
 
 RARITY_VALUES = [
@@ -316,7 +322,7 @@ PROPERTY_VALUES = [
 ]
 
 SPECIAL_POWER_TYPE_VALUES = [
-  "trait", "costed_trait", "rally_trait", "title_trait", "plus_plot_points", "minus_plot_points", "speed", "attack", "defense", "damage", "location", "consolation", "object", "equipment", "tarot_card", "mystery_card", "terrain"
+  "trait", "costed_trait", "rally_trait", "title_trait", "plus_plot_points", "minus_plot_points", "speed", "attack", "defense", "damage", "location", "consolation", "object", "equipment", "tarot_card", "mystery_card", "terrain", "other_id", "inspiration"
 ]
 
 RALLY_TYPE_VALUES = [
@@ -334,6 +340,7 @@ IMPROVED_ABILITIES = {
       "ignores hindering": "hindering",
       "ignores hindering terrain": "hindering",
       "blocking": "blocking",
+      "blocking terrain": "blocking",
       "ignores blocking terrain": "blocking",
       "outdoor blocking": "outdoor_blocking",
       "ignores blocking terrain (outdoor)": "outdoor_blocking",
@@ -842,22 +849,22 @@ class Unit:
             else:
               print("Skipping unknown object attribute '%s'" % attr)
 
-    # Parse ID and mystery cards
-    if self.type == "id_card" or self.type == "mystery_card":
-      equip_tag = soup.find("td", class_="card_id_card")
-      if not equip_tag:
-        equip_tag = soup.find("td", class_="card_tarot_card")
-      if not equip_tag:
-        equip_tag = soup.find("td", class_="card_ata")
+    # Parse Mystery Cards
+    if self.type == "mystery_card":
+      card_tag = soup.find("td", class_="card_id_card")
+      if not card_tag:
+        card_tag = soup.find("td", class_="card_tarot_card")
+      if not card_tag:
+        card_tag = soup.find("td", class_="card_ata")
         
-      tag_list = equip_tag.parent.next_sibling.next_sibling.find_all("div")
+      tag_list = card_tag.parent.next_sibling.next_sibling.find_all("div")
       if tag_list:
         tag = tag_list[0]
         # Skip the first item in the list if it's the keyword list.
         if tag.strong:
           tag = tag_list[1]
 
-        for name in [r'\CLUE EFFECT: .*\s',
+        for name in [r'\sCLUE EFFECT: .*\s',
                      r'\sSUSPECT \(\d\)\s',
                      r'\sEVIDENCE \(\d\)\s',
                      r'\sCASE CLOSED \(\d\)\s']:
@@ -878,6 +885,29 @@ class Unit:
         ("type", "tarot_card"),
         ("description", clean_string(desc_tag.string.strip()))
       ]))
+
+    # Parse ID cards
+    if self.type == "id_card":
+      card_tag = soup.find("td", class_="card_id_card")
+      tag = card_tag.parent.next_sibling.next_sibling.td.div
+      for (regex, type) in [(r'\s(Other Identities): (.*)\s', 'other_id'),
+                            (r'\s(Inspiration): *\s', 'inspiration')]:
+        compiled_re = re.compile(regex)
+        sp_tag = tag.find(text=compiled_re)
+        if sp_tag:
+          match_obj = re.search(compiled_re, sp_tag)
+          if match_obj:
+            sp_name = match_obj.group(1)
+            if len(match_obj.groups()) >= 2:
+              sp_desc = match_obj.group(2)
+            else:
+              sp_desc = sp_tag.parent.next_sibling.strip()
+            self.special_powers.append(OrderedDict([
+              ("type", type),
+              ("name", clean_string(sp_name)),
+              ("description", clean_string(sp_desc))
+            ]))
+            self.special_powers[-1] = self.parse_powers_from_description(self.special_powers[-1])
 
     # Parse special powers
     if (self.type == "character" or
