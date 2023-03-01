@@ -215,6 +215,9 @@ SET_MAP = {
   "trm": {
     "name": "Thor: Ragnarok (Movie)",
   },
+  "tmt": {
+    "name": "The Mighty Thor",
+  },
 }
 
 POWERS = {
@@ -326,7 +329,7 @@ TYPE_VALUES = [
 ]
 
 RARITY_VALUES = [
-  'common', 'uncommon', 'rare', 'super_rare', 'chase', 'ultra_chase', 'limited_edition', 'fast_forces'
+  'common', 'uncommon', 'rare', 'super_rare', 'chase', 'ultra_chase', 'limited_edition', 'starter', 'super_booster'
 ]
 
 PROPERTY_VALUES = [
@@ -564,8 +567,7 @@ class Unit:
     # Determine the rarity and special type
     figure_rank_tag = soup.select_one("td[class^=figure_rank_]")
     rarity = figure_rank_tag.strong.string.strip()
-    if (rarity == "Rarity: Starter Set" or
-        rarity == "Rarity: Free Comic Book Day Exclusive" or
+    if (rarity == "Rarity: Free Comic Book Day Exclusive" or
         rarity == "Rarity: Limited Edition" or
         rarity == "Rarity: Brick"):
       self.rarity = "limited_edition"
@@ -581,8 +583,12 @@ class Unit:
       self.rarity = "chase"
     elif rarity == "Rarity: Ultra Chase":
       self.rarity = "ultra_chase"
+    elif rarity == "Rarity: Starter Set":
+      self.rarity = "starter"
     elif rarity == "Rarity: Fast Forces":
       self.rarity = "fast_forces"
+    elif rarity == "Rarity: Super Booster":
+      self.rarity = "super_booster"
     else:
       raise RuntimeError("The unit rarity '%s' for '%s' is currently not supported" % (rarity, self.unit_id))
 
@@ -819,7 +825,7 @@ class Unit:
           for attr in children:
             # Ignore non-strings.
             if attr.string:
-              attr_list.append(attr.strip())
+              attr_list.append(attr.string.strip())
 
         for attr in attr_list:
           if len(attr) <= 0:
@@ -1086,15 +1092,23 @@ class Unit:
                     sp["plot_points"] = int(match_obj.group(1))
 
               # Determine if it's a costed trait and if so, what it's point value is.
+              name_idx = 2
+              pv_idx = 1
               match_obj = re.search(r"^\(\+(\d*) POINTS\) (.+)", sp_name)
               # Try the alternative format. Note: this can conflict with the
               # style of title character plot points, so ignore it in that case.
               if not match_obj and not "title" in self.properties:
                 match_obj = re.search(r"^\(\+(\d*)\) (.+)", sp_name)
+                if not match_obj:
+                  # Try another alternative format with the poins at the end
+                  # instead of the start.
+                  match_obj = re.search(r"^(.+) \(\+(\d*) POINTS\)", sp_name)
+                  name_idx = 1
+                  pv_idx = 2
               if match_obj:
                 sp["type"] = "costed_trait"
-                sp["name"] = clean_string(match_obj.group(2))
-                sp["point_value"] = int(match_obj.group(1))
+                sp["name"] = clean_string(match_obj.group(name_idx))
+                sp["point_value"] = int(match_obj.group(pv_idx))
 
               # Check to see if it's a rally trait.
               match_obj = re.search(r"^RALLY \((\d+)\)", sp_name)

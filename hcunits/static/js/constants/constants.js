@@ -1,23 +1,3 @@
-const RARITY_COMMON_COLOR = "black";
-const RARITY_UNCOMMON_COLOR = "#6ebd45";
-const RARITY_RARE_COLOR = "#a7bdc8";
-const RARITY_SUPER_RARE_COLOR = "#ffd503";
-const RARITY_CHASE_COLOR = "#ef8322";
-const RARITY_ULTRA_CHASE_COLOR = "#00a1df";
-const RARITY_LIMITED_EDITION_COLOR = "#00a1df";
-const RARITY_FAST_FORCES_COLOR = RARITY_COMMON_COLOR;
-
-const RARITY_TO_COLOR = {
-  "common": RARITY_COMMON_COLOR,
-  "uncommon": RARITY_UNCOMMON_COLOR,
-  "rare": RARITY_RARE_COLOR,
-  "super_rare": RARITY_SUPER_RARE_COLOR,
-  "chase": RARITY_CHASE_COLOR,
-  "ultra_chase": RARITY_ULTRA_CHASE_COLOR,
-  "limited_edition": RARITY_CHASE_COLOR,
-  "fast_forces": RARITY_FAST_FORCES_COLOR
-};
-
 const COLOR_RED = "#fe0000";
 const COLOR_ORANGE = "#ffc000";
 const COLOR_YELLOW = "#ffff00";
@@ -64,21 +44,21 @@ const STYLE_WHITE = "color:black; background-color: " + COLOR_WHITE + "; border:
 // This constant is first indexed by the number of point values,
 // then the order of colors corresponds to the color of each point value.
 const POINT_VALUE_COLORS = [
-  [],
   [COLOR_WHITE],
   [COLOR_GREEN, COLOR_RED],
   [COLOR_RED, COLOR_BLUE, COLOR_YELLOW],
   [COLOR_RED, COLOR_BLUE, COLOR_YELLOW, COLOR_PURPLE],
+  [COLOR_WHITE, COLOR_RED, COLOR_BLUE, COLOR_YELLOW, COLOR_PURPLE],
 ];
 
 // This constant is first indexed by the number of starting lines,
 // then the order of colors corresponds to the color of each line.
 const STARTING_LINE_COLORS = [
-  [],
   [COLOR_GREEN],
   [COLOR_GREEN, COLOR_RED],
   [COLOR_RED, COLOR_BLUE, COLOR_YELLOW],
   [COLOR_RED, COLOR_BLUE, COLOR_YELLOW, COLOR_PURPLE],
+  [COLOR_GREEN, COLOR_RED, COLOR_BLUE, COLOR_YELLOW, COLOR_PURPLE],
 ];
 
 

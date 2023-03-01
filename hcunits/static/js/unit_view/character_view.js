@@ -429,7 +429,7 @@ class CharacterView extends BaseUnitView {
 
       // The end of the dial is indicated by the last click processed.
       const pointValuesLength =
-          Math.min(this.unit_.point_values.length, POINT_VALUE_COLORS.length - 1);
+          Math.min(this.unit_.point_values.length, POINT_VALUE_COLORS.length);
       var tableDialEnd = currentClick;
       for (var click = tableDialStart; click < tableDialEnd; ++click) {
         const startingLine = this.unit_.dial[click].starting_line;
@@ -439,8 +439,8 @@ class CharacterView extends BaseUnitView {
           if (!color) {
             // Otherwise fall back to having it correspond to the starting
             // point color.
-            const colorIdx = Math.min(currentStartingLine++, STARTING_LINE_COLORS[pointValuesLength].length - 1);
-            color = STARTING_LINE_COLORS[pointValuesLength][colorIdx];
+            const colorIdx = Math.min(currentStartingLine++, STARTING_LINE_COLORS[pointValuesLength - 1].length - 1);
+            color = STARTING_LINE_COLORS[pointValuesLength - 1][colorIdx];
           }
           const left = 31 + 23 * (this.unit_.dial[click].click_number - tableCols[t].start - 1);
           html += `<div class='largeCardDialStartingLine' style='left: ${left}px; background-color: ${color}'></div>`

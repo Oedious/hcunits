@@ -319,6 +319,11 @@ const SET_LIST = {
     "release_date": "2017-10-11",
     "universe": "marvel"
   },
+  "tmt": {
+    "name": "The Mighty Thor",
+    "release_date": "2017-08-30",
+    "universe": "marvel"
+  },
   "wk": {
     "name": "WizKids Standard Game Pieces",
     "release_date": "2002-05-01",
