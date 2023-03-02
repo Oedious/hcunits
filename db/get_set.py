@@ -221,6 +221,9 @@ SET_MAP = {
   "und": {
     "name": "Undead",
   },
+  "ew": {
+    "name": "15th Anniversary Elseworlds",
+  },
 }
 
 POWERS = {
@@ -397,6 +400,7 @@ IMPROVED_ABILITIES = {
       "adjacent": "adjacent",
       "this character can make range attacks while adjacent to opposing characters. (may target adjacent or non-adjacent opposing characters.)": "adjacent",
       "this character can make range attacks while adjacent to opposing characters": "adjacent",
+      "may make a ranged combat attack against any opposing character within range and line of fire, even if that character is in an adjacent square": "adjacent",
       "water": "water",
     },
   }
@@ -1256,7 +1260,9 @@ class Unit:
   def parse_powers_from_description(self, sp):
     # Try to find a list of standard powers granted by the special power
     # so that the list can be used for search.
-    split_list = re.split("\.|,|//", sp["description"])
+    sp_desc = sp["description"]
+    sp_desc = sp_desc.replace(" and", ",")
+    split_list = re.split("\.|,|//", sp_desc)
     sp_powers = []
     for power in split_list:
       power = power.strip()
@@ -1267,6 +1273,9 @@ class Unit:
           power.lower().startswith("passenger") or
           power.lower().startswith("giant reach")):
         continue
+      prefix = self.name + " can use "
+      if power.startswith(prefix):
+        power = power[len(prefix):]
       if power in POWERS:
         sp_powers.append(POWERS[power])
       elif sp["type"] == "trait" and power.startswith("Improved Movement:"):
@@ -1376,6 +1385,9 @@ class Unit:
         if update_mode == "insert_value":
           deletions = []
           for i in range(len(value)):
+            if i >= len(self.special_powers):
+              print("Warning: update for '%s' is adding special_power '%d'" % (self.unit_id, len(self.special_powers)))
+              self.special_powers.append(OrderedDict())
             for (k, v) in value[i].items():
               if k == "__delete__":
                 # Hack for handling swb028, which has a slightly mis-spelled

@@ -329,6 +329,11 @@ const SET_LIST = {
     "release_date": "2017-08-30",
     "universe": "marvel"
   },
+  "ew": {
+    "name": "15th Anniversary Elseworlds",
+    "release_date": "2017-07-19",
+    "universe": "dc"
+  },
   "wk": {
     "name": "WizKids Standard Game Pieces",
     "release_date": "2002-05-01",

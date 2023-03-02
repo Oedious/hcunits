@@ -1,0 +1,176 @@
+{
+  "updates": {
+    "ew025": {
+      "special_powers": [{
+        "powers": ["hypersonic_speed"]
+      }, {
+        "powers": ["outwit", "perplex"]
+      }]
+    },
+    "ew027": {
+      "special_powers": [{
+      }, {
+        "powers": ["shape_change", "stealth", "super_senses"]
+      }]
+    },
+    "ew029": {
+      "special_powers": [{
+      }, {
+        "description": "Green Lantern can use Giant Reach: 3. When he does, he can use Improved Targeting: Elevated, Characters."
+      }]
+    },
+    "ew031": {
+      "special_powers": [{
+      }, {
+        "powers": ["barrier"]
+      }]
+    },
+    "ew032": {
+      "special_powers": [{
+      }, {
+        "description": "Green Lantern of Krypton can use Charge and Improved Movement: Destroy Blocking."
+      }, {
+        "powers": ["probability_control"]
+      }]
+    },
+    "ew033": {
+      "point_values": [125, 25],
+      "special_powers": [{
+      }, {
+        "type": "damage",
+        "name": "JUSTICE SHINES BRIGHT",
+        "description": "Give The Ray a free action and choose an opposing character within 8 squares. Until your next turn, if The Ray has line of fire to that character, that character can't make attacks."
+      }],
+      "dial": [{
+      }, {
+      }, {
+      }, {
+      }, {
+      }, {
+      }, {
+        "click_number": 11,
+        "starting_line": true,
+        "speed_value": 0,
+        "attack_value": 0,
+        "defense_value": 18,
+        "defense_power": "energy_shield_deflection",
+        "damage_value": 0,
+        "damage_power": "special"
+      }]
+    },
+    "ew036": {
+      "special_powers": [{
+      }, {
+        "powers": ["outwit", "perplex"]
+      }]
+    },
+    "ew038": {
+      "special_powers": [{
+      }, {
+        "description": "Colonel Wayne can use Running Shot and Improved Movement: Hindering, Characters."
+      }]
+    },
+    "ew040": {
+      "special_powers": [{
+        "powers": ["flurry", "leap_climb", "phasing_teleport", "earthbound_neutralized", "charge", "mind_control", "plasticity", "force_blast", "sidestep", "hypersonic_speed", "stealth", "running_shot", "blades_claws_fangs", "energy_explosion", "pulse_wave", "quake", "super_strength", "incapacitate", "penetrating_psychic_blast", "smoke_cloud", "precision_strike", "poison", "steal_energy", "telekinesis", "super_senses", "toughness", "defend", "combat_reflexes", "energy_shield_deflection", "barrier", "mastermind", "willpower", "invincible", "impervious", "regeneration", "invulnerability", "ranged_combat_expert", "battle_fury", "support", "exploit_weakness", "enhancement", "probability_control", "shape_change", "close_combat_expert", "empower", "perplex", "outwit", "leadership"]
+      }]
+    },
+    "ew045": {
+      "point_values": [110, 20],
+      "special_powers": [{
+      }, {
+        "type": "damage",
+        "name": "I HAVE RESPONSIBILITIES YOU CANNOT EVEN DREAM OF",
+        "description": "At the beginning of your turn, you may place a water terrain marker in any square of clear terrain within 8 squares. Give King Aquaman a free action and choose an opposing character that occupies water terrain within 8 squares. Place that character into an adjacent square."
+      }],
+      "dial": [{
+      }, {
+      }, {
+      }, {
+      }, {
+      }, {
+      }, {
+        "click_number": 11,
+        "starting_line": true,
+        "speed_value": 0,
+        "attack_value": 0,
+        "defense_value": 18,
+        "defense_power": "invulnerability",
+        "damage_value": 0,
+        "damage_power": "special"
+      }]
+    },
+    "ew046": {
+      "special_powers": [{
+      }, {
+      }, {
+        "powers": ["outwit", "perplex"]
+      }]
+    },
+    "ew048": {
+      "special_powers": [{
+      }, {
+        "powers": ["shape_change", "perplex"]
+      }]
+    },
+    "ew049": {
+      "special_powers": [{
+        "powers": ["sidestep"]
+      }],
+      "dial": [{
+      }, {
+      }, {
+      }, {
+      }, {
+        "starting_line": true
+      }]
+    },
+    "ew050": {
+      "point_values": [230, 110]
+    },
+    "ew101": {
+      "special_powers": [{
+        "description": "Batman can use Improved Movement: Elevated, Hindering."
+      }]
+    },
+    "ew104": {
+      "special_powers": [{
+        "powers": ["penetrating_psychic_blast", "perplex", "telekinesis"]
+      }]
+    }
+  },
+  "deletions": [
+    "ew033r",
+    "ew045r",
+    "ew050e"
+  ],
+  "additions": [{
+    "unit_id": "ewM001",
+    "set_id": "ew",
+    "collector_number": "M001",
+    "name": "Junkyard",
+    "type": "map",
+    "map_url": "https://hcmaps.net/maps/ew/junkyard.json"
+  }, {
+    "unit_id": "ewM002",
+    "set_id": "ew",
+    "collector_number": "M002",
+    "name": "High Noon Saloon",
+    "type": "map",
+    "map_url": "https://hcmaps.net/maps/ew/high_noon_saloon.json"
+  }, {
+    "unit_id": "ewM003",
+    "set_id": "ew",
+    "collector_number": "M003",
+    "name": "Wonder Woman Barn",
+    "type": "map",
+    "map_url": "https://hcmaps.net/maps/ew/wonder_woman_barn.json"
+  }, {
+    "unit_id": "ewM004",
+    "set_id": "ew",
+    "collector_number": "M004",
+    "name": "High Noon Street",
+    "type": "map",
+    "map_url": "https://hcmaps.net/maps/ew/high_noon_street.json"
+  }]
+}

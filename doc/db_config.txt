@@ -458,9 +458,19 @@ LOAD XML LOCAL INFILE 'tmt/tmt.xml'
   REPLACE
   INTO TABLE units
   ROWS IDENTIFIED BY '<row>';
-  
+
+LOAD XML LOCAL INFILE 'und/und.xml'
+  REPLACE
+  INTO TABLE units
+  ROWS IDENTIFIED BY '<row>';
+
+LOAD XML LOCAL INFILE 'ew/ew.xml'
+  REPLACE
+  INTO TABLE units
+  ROWS IDENTIFIED BY '<row>';
+
 ALTER TABLE units
-MODIFY COLUMN rarity ENUM('common', 'uncommon', 'rare', 'super_rare', 'chase', 'ultra_chase', 'limited_edition');
+MODIFY COLUMN rarity ENUM('common', 'uncommon', 'rare', 'super_rare', 'chase', 'ultra_chase', 'limited_edition', 'fast_forces', 'starter', 'super_booster');
 
 ALTER TABLE units
 MODIFY COLUMN speed_type ENUM('boot', 'wing', 'dolphin', 'transport_boot', 'transport_wing', 'transport_dolphin');

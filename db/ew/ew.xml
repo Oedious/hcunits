@@ -1,0 +1,6254 @@
+<resultset>
+  <row>
+    <unit_id>ew001</unit_id>
+    <set_id>ew</set_id>
+    <collector_number>001</collector_number>
+    <name>Batman</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <real_name>Bruce Wayne</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[60]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["batman_ally"]</team_abilities>
+    <keywords>["Batman Family", "Detective", "Gotham City", "Justice League", "Trinity"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "SHIFTING FOCUS - BATMAN", 
+    "description": "Give Batman a free action if he began your turn on the map. Replace him with another character with this trait on the same click number."
+  }, 
+  {
+    "type": "damage", 
+    "name": "THEY DON'T EVEN REALIZE HOW MUCH THEY NEED ME", 
+    "description": "Batman can use Perplex. UNIQUE MODIFIER - He may use Perplex to target all other friendly characters within 4 squares and line of fire, choosing the same single combat value other than damage to modify.", 
+    "powers": [
+      "perplex"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>4</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "leap_climb", 
+    "speed_value": 8, 
+    "attack_value": 10, 
+    "defense_power": "willpower", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "leap_climb", 
+    "speed_value": 8, 
+    "attack_value": 10, 
+    "defense_power": "willpower", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "leap_climb", 
+    "speed_value": 7, 
+    "attack_value": 10, 
+    "defense_power": "defend", 
+    "defense_value": 18, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_value": 7, 
+    "attack_value": 9, 
+    "defense_power": "defend", 
+    "defense_value": 17, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_value": 6, 
+    "attack_value": 9, 
+    "defense_power": "willpower", 
+    "defense_value": 17, 
+    "damage_power": "perplex", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_value": 6, 
+    "attack_value": 9, 
+    "defense_power": "willpower", 
+    "defense_value": 16, 
+    "damage_power": "perplex", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ew002</unit_id>
+    <set_id>ew</set_id>
+    <collector_number>002</collector_number>
+    <name>Superman</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <real_name>Kal-El</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[90]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Justice League", "Kryptonian", "Metropolis", "Reporter", "Trinity"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "SHIFTING FOCUS - SUPERMAN", 
+    "description": "Give Superman a free action if he began your turn on the map. Replace him with another character with this trait on the same click number."
+  }, 
+  {
+    "type": "attack", 
+    "name": "DEEP IMPACT", 
+    "description": "Superman can use Precision Strike and Quake. When Superman uses Leap/Climb, after actions resolve he may use Quake as a free action.", 
+    "powers": [
+      "precision_strike", 
+      "quake"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "leap_climb", 
+    "speed_value": 11, 
+    "attack_power": "special", 
+    "attack_value": 11, 
+    "defense_power": "toughness", 
+    "defense_value": 18, 
+    "damage_power": "leadership", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "leap_climb", 
+    "speed_value": 11, 
+    "attack_power": "special", 
+    "attack_value": 11, 
+    "defense_power": "toughness", 
+    "defense_value": 18, 
+    "damage_power": "leadership", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "leap_climb", 
+    "speed_value": 11, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 17, 
+    "damage_power": "shape_change", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "leap_climb", 
+    "speed_value": 10, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 17, 
+    "damage_power": "shape_change", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "leap_climb", 
+    "speed_value": 10, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_power": "shape_change", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "sidestep", 
+    "speed_value": 9, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_power": "shape_change", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "sidestep", 
+    "speed_value": 9, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 17, 
+    "damage_power": "shape_change", 
+    "damage_value": 3
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ew003</unit_id>
+    <set_id>ew</set_id>
+    <collector_number>003</collector_number>
+    <name>Wonder Woman</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <real_name>Diana Prince</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[70]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["mystics"]</team_abilities>
+    <keywords>["Amazon", "Deity", "Justice League", "Mystical", "Trinity", "Warrior"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "BRACELET BASH", 
+    "description": "Wonder Woman can use Force Blast. When Wonder Woman misses with a close attack, after actions resolve she may use Force Blast as a free action.", 
+    "powers": [
+      "force_blast"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "charge", 
+    "speed_value": 9, 
+    "attack_power": "super_strength", 
+    "attack_value": 11, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "charge", 
+    "speed_value": 8, 
+    "attack_power": "super_strength", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "super_strength", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_power": "super_strength", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_power": "super_strength", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ew004</unit_id>
+    <set_id>ew</set_id>
+    <collector_number>004</collector_number>
+    <name>Green Lantern</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <real_name>Hal Jordan</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[55]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["green_lantern_corps", "justice_league"]</team_abilities>
+    <keywords>["Green Lantern Corps", "Justice League"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "TEAM TRANSPORTER", 
+    "description": "When Green Lantern is the only character on your force with the Green Lantern Team Ability symbol and uses the Carry ability, you may roll a d6: 5: One carried higher-point character may be given a non-free action. 6: Up to two carried higher-point characters may each be given a non-free action."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>6</unit_range>
+    <targets>1</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 11, 
+    "attack_value": 10, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 17, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 11, 
+    "attack_value": 10, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 17, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 10, 
+    "attack_value": 9, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 9, 
+    "attack_value": 9, 
+    "defense_power": "defend", 
+    "defense_value": 18, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 9, 
+    "attack_value": 9, 
+    "defense_power": "defend", 
+    "defense_value": 17, 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ew005</unit_id>
+    <set_id>ew</set_id>
+    <collector_number>005</collector_number>
+    <name>The Flash</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <real_name>Barry Allen</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[45]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["police"]</team_abilities>
+    <keywords>["Central City", "Justice League", "Police", "Scientist", "Speedster"]</keywords>
+    <special_powers>[]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "hypersonic_speed", 
+    "speed_value": 14, 
+    "attack_value": 10, 
+    "defense_value": 19, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "hypersonic_speed", 
+    "speed_value": 13, 
+    "attack_value": 10, 
+    "defense_value": 18, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "hypersonic_speed", 
+    "speed_value": 12, 
+    "attack_value": 10, 
+    "defense_value": 17, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "hypersonic_speed", 
+    "speed_value": 11, 
+    "attack_value": 10, 
+    "defense_value": 16, 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ew006</unit_id>
+    <set_id>ew</set_id>
+    <collector_number>006</collector_number>
+    <name>Templar</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <real_name>Various</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[30]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Gotham City", "Past", "Warrior"]</keywords>
+    <special_powers>[
+  {
+    "type": "attack", 
+    "name": "FOR DIVINE GLORY", 
+    "description": "Templar can use Penetrating/Psychic Blast. When he does and the target has the Monster or Mystical keyword, this action doesn't count against your action total.", 
+    "powers": [
+      "penetrating_psychic_blast"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>6</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 17, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_value": 7, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 9, 
+    "defense_value": 16, 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 4, 
+    "speed_value": 7, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 8, 
+    "defense_value": 16, 
+    "damage_value": 1
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ew007</unit_id>
+    <set_id>ew</set_id>
+    <collector_number>007</collector_number>
+    <name>The Bat</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <real_name>Bruce Wayne</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[45]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["batman_ally"]</team_abilities>
+    <keywords>["Batman Family", "Detective", "Gotham City", "Past", "Scientist"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "THE STRENGTH I NEED AT A TERRIBLE COST", 
+    "description": "At the beginning of your turn, you may roll a d6 that can't be rerolled and add The Bat's click number. On a result of 7 or more, you replace The Bat with ew020 The Joker Creature on the same click number plus 2."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>4</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_value": 10, 
+    "defense_power": "willpower", 
+    "defense_value": 17, 
+    "damage_power": "perplex", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_value": 9, 
+    "defense_power": "willpower", 
+    "defense_value": 17, 
+    "damage_power": "perplex", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_value": 6, 
+    "attack_value": 9, 
+    "defense_power": "willpower", 
+    "defense_value": 16, 
+    "damage_power": "perplex", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_value": 6, 
+    "attack_value": 9, 
+    "defense_value": 16, 
+    "damage_power": "outwit", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ew008</unit_id>
+    <set_id>ew</set_id>
+    <collector_number>008</collector_number>
+    <name>Super Police</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <real_name>None</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[40]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["police"]</team_abilities>
+    <keywords>["Metal Men", "Police", "Robot"]</keywords>
+    <special_powers>[
+  {
+    "type": "speed", 
+    "name": "APPREHEND THE ALIENS!", 
+    "description": "Super Police can use Charge and Plasticity.", 
+    "powers": [
+      "charge", 
+      "plasticity"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "special", 
+    "speed_value": 9, 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "special", 
+    "speed_value": 9, 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "special", 
+    "speed_value": 8, 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "charge", 
+    "speed_value": 8, 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ew009</unit_id>
+    <set_id>ew</set_id>
+    <collector_number>009</collector_number>
+    <name>Gunfighter</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <real_name>Various</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[25]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Past"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "HIGH NOON", 
+    "description": "If Gunfighter is the last character with this trait to hit an opposing character with a range attack, until your next turn, if the hit character makes a range attack, Gunfighter must be one of its targets."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>5</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_value": 9, 
+    "defense_value": 16, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_value": 9, 
+    "defense_value": 16, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "stealth", 
+    "speed_value": 6, 
+    "attack_value": 9, 
+    "defense_power": "willpower", 
+    "defense_value": 16, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "stealth", 
+    "speed_value": 6, 
+    "attack_value": 9, 
+    "defense_power": "willpower", 
+    "defense_value": 15, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 1
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ew010</unit_id>
+    <set_id>ew</set_id>
+    <collector_number>010</collector_number>
+    <name>Super Men</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <real_name>Various</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[35]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Armor", "Justice League", "Metropolis"]</keywords>
+    <special_powers>[
+  {
+    "type": "attack", 
+    "name": "ELECTRO-STUNNER", 
+    "description": "Super Men can use Incapacitate. When he uses it as part of a close combat action, he may target up to 2 adjacent characters.", 
+    "powers": [
+      "incapacitate"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>4</unit_range>
+    <targets>1</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 18, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_value": 6, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_value": 6, 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_value": 6, 
+    "attack_value": 8, 
+    "defense_value": 17, 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ew011</unit_id>
+    <set_id>ew</set_id>
+    <collector_number>011</collector_number>
+    <name>Diana Prince (Justice Rider)</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <real_name>Diana Prince</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[70]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Justice League", "Past", "Police"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "HIGH NOON", 
+    "description": "If Diana Prince (Justice Rider) is the last character with this trait to hit an opposing character with a range attack, until your next turn, if the hit character makes a range attack, Diana Prince (Justice Rider) must be one of its targets."
+  }, 
+  {
+    "type": "damage", 
+    "name": "NEW SHERIFF IN TOWN", 
+    "description": "Diana Prince (Justice RIder) can use Leadership. UNIQUE MODIFIER - When she does and succeeds, other friendly characters that share a keyword with her modify their attack and defense values by +1 until your next turn."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>6</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "running_shot", 
+    "speed_value": 8, 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_value": 11, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "running_shot", 
+    "speed_value": 7, 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_value": 9, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 16, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_value": 9, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 16, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ew012</unit_id>
+    <set_id>ew</set_id>
+    <collector_number>012</collector_number>
+    <name>Kid Flash (Justice Rider)</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <real_name>Wallace West</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[60]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Justice League", "Past"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "HIGH NOON", 
+    "description": "If Kid Flash (Justice Rider) is the last character with this trait to hit an opposing character with a range attack, until your next turn, if the hit character makes a range attack, Kid Flash (Justice Rider) must be one of its targets."
+  }, 
+  {
+    "type": "speed", 
+    "name": "QUICKEST SHOT IN THE WEST", 
+    "description": "Kid Flash (Justice Rider) can use Hypersonic Speed. When he does, he doesn't halve his range value.", 
+    "powers": [
+      "hypersonic_speed"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>6</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "special", 
+    "speed_value": 10, 
+    "attack_value": 10, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "special", 
+    "speed_value": 10, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 17, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "special", 
+    "speed_value": 10, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 17, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "running_shot", 
+    "speed_value": 9, 
+    "attack_value": 9, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 16, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "running_shot", 
+    "speed_value": 9, 
+    "attack_value": 9, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 16, 
+    "damage_value": 3
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ew013</unit_id>
+    <set_id>ew</set_id>
+    <collector_number>013</collector_number>
+    <name>John Jones (Justice Rider)</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <real_name>John Jones</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[50]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["police"]</team_abilities>
+    <keywords>["Justice League", "Past", "Police"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "ALWAYS GET MY MAN", 
+    "description": "At the beginning of the game, choose an opposing character. If John Jones (Justice Rider) would get a second action token while adjacent to the chosen character, instead he doesn't get an action token."
+  }, 
+  {
+    "type": "trait", 
+    "name": "HIGH NOON", 
+    "description": "If John Jones (Justice Rider) is the last character with this trait to hit an opposing character with a range attack, until your next turn, if the hit character makes a range attack, John Jones (Justice Rider) must be one of its targets."
+  }, 
+  {
+    "type": "speed", 
+    "name": "MANHUNTING LAWMAN", 
+    "description": "John Jones (Justice Rider) can use Charge and Plasticity.", 
+    "powers": [
+      "charge", 
+      "plasticity"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>5</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "special", 
+    "speed_value": 8, 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "shape_change", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "special", 
+    "speed_value": 8, 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "shape_change", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "plasticity", 
+    "speed_value": 8, 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "shape_change", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "plasticity", 
+    "speed_value": 7, 
+    "attack_value": 9, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 17, 
+    "damage_power": "shape_change", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "plasticity", 
+    "speed_value": 7, 
+    "attack_value": 9, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 17, 
+    "damage_power": "shape_change", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ew014</unit_id>
+    <set_id>ew</set_id>
+    <collector_number>014</collector_number>
+    <name>Batman</name>
+    <type>character</type>
+    <rarity>uncommon</rarity>
+    <real_name>Dick Grayson</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[50]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["batman_ally"]</team_abilities>
+    <keywords>["Batman Family", "Detective", "Gotham City", "Martial Artist"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "THERE MUST ALWAYS BE A BATMAN", 
+    "description": "When Batman would be KO'd, you may instead KO another friendly character with a point value of 25 or more and turn Batman to click #1."
+  }
+]</special_powers>
+    <improved_movement>["hindering", "elevated"]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>5</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "sidestep", 
+    "speed_value": 9, 
+    "attack_value": 11, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "outwit", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "sidestep", 
+    "speed_value": 9, 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_value": 11, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "flurry", 
+    "speed_value": 8, 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 17, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "flurry", 
+    "speed_value": 7, 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ew015</unit_id>
+    <set_id>ew</set_id>
+    <collector_number>015</collector_number>
+    <name>Superman</name>
+    <type>character</type>
+    <rarity>uncommon</rarity>
+    <real_name>Kal-L</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[70]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["superman_ally"]</team_abilities>
+    <keywords>["Kryptonian", "Metropolis", "Reporter"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "I PLEAD GUILTY, YOUR HONOR", 
+    "description": "Whenever Superman deals damage from an attack, you may choose to deal an amount of damage from 1 to his damage value instead of normal damage. If Superman KO's an opposing character, after actions resolve, deal him 1 unavoidable damage."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>6</unit_range>
+    <targets>1</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "charge", 
+    "speed_value": 12, 
+    "attack_power": "super_strength", 
+    "attack_value": 11, 
+    "defense_power": "impervious", 
+    "defense_value": 18, 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "charge", 
+    "speed_value": 11, 
+    "attack_power": "super_strength", 
+    "attack_value": 11, 
+    "defense_power": "invulnerability", 
+    "defense_value": 18, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "charge", 
+    "speed_value": 11, 
+    "attack_power": "super_strength", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 18, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "sidestep", 
+    "speed_value": 10, 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 18, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "sidestep", 
+    "speed_value": 10, 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "sidestep", 
+    "speed_value": 9, 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ew016</unit_id>
+    <set_id>ew</set_id>
+    <collector_number>016</collector_number>
+    <name>Wonder Woman</name>
+    <type>character</type>
+    <rarity>uncommon</rarity>
+    <real_name>Diana Prince</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[110]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["justice_league"]</team_abilities>
+    <keywords>["Amazon", "Justice League", "Warrior"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "BRACELETS", 
+    "description": "Wonder Woman can use Super Senses, but only when targeted by a range attack.", 
+    "powers": [
+      "super_senses"
+    ]
+  }, 
+  {
+    "type": "attack", 
+    "name": "CREATED EQUAL", 
+    "description": "Wonder Woman can use Incapacitate and Super Strength.", 
+    "powers": [
+      "incapacitate", 
+      "super_strength"
+    ]
+  }, 
+  {
+    "type": "damage", 
+    "name": "I PRAY ATHENA GUIDES US IN DOING WHAT IS RIGHT FOR MANKI-... UHM... HUMANITY", 
+    "description": "Wonder Woman can use Leadership. When she does, increase the result by 1 for each adjacent friendly character with the Amazon keyword.", 
+    "powers": [
+      "leadership"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>4</unit_range>
+    <targets>1</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "charge", 
+    "speed_value": 9, 
+    "attack_power": "special", 
+    "attack_value": 11, 
+    "defense_power": "invincible", 
+    "defense_value": 18, 
+    "damage_power": "special", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "charge", 
+    "speed_value": 9, 
+    "attack_power": "special", 
+    "attack_value": 11, 
+    "defense_power": "invincible", 
+    "defense_value": 18, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "charge", 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "invincible", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "super_strength", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 18, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_power": "super_strength", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_value": 11, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_value": 4
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ew017</unit_id>
+    <set_id>ew</set_id>
+    <collector_number>017</collector_number>
+    <name>Green Lantern</name>
+    <type>character</type>
+    <rarity>uncommon</rarity>
+    <real_name>Hal Jordan</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[60]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["justice_league"]</team_abilities>
+    <keywords>["Green Lantern Corps", "Justice League"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "THE POWER BATTERY IS DRAINING... I HAVE LIMITED TIME", 
+    "description": "At the beginning of the game, place 8 Battery tokens on this card. When Green Lantern attacks, remove a battery token. When there are no Battery tokens on this card, Green Lantern can't make range attacks or use powers or abilities."
+  }, 
+  {
+    "type": "attack", 
+    "name": "TO FIGHT DARKSEID AND APOKOLIPS", 
+    "description": "Green Lantern can use Pulse Wave and Telekinesis.", 
+    "powers": [
+      "pulse_wave", 
+      "telekinesis"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>7</unit_range>
+    <targets>1</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "running_shot", 
+    "speed_value": 10, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 18, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "running_shot", 
+    "speed_value": 9, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 17, 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "running_shot", 
+    "speed_value": 9, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_value": 9, 
+    "defense_power": "barrier", 
+    "defense_value": 17, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_value": 9, 
+    "defense_power": "barrier", 
+    "defense_value": 17, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_value": 10, 
+    "defense_power": "barrier", 
+    "defense_value": 18, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ew018</unit_id>
+    <set_id>ew</set_id>
+    <collector_number>018</collector_number>
+    <name>The Flash</name>
+    <type>character</type>
+    <rarity>uncommon</rarity>
+    <real_name>Barry Allen</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[60]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Central City", "Flashpoint", "Scientist", "Speedster"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "SAVING THE PRESIDENT", 
+    "description": "Once per game, if another friendly character within 10 squares and line of fire would be hit by a range attack, you may place The Flash in a square adjacent to the target and that attack misses that target. If you do, for the rest of the game, The Flash's speed value becomes 0 and he can use Sidestep and Outwit."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "hypersonic_speed", 
+    "speed_value": 12, 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 18, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "hypersonic_speed", 
+    "speed_value": 12, 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "hypersonic_speed", 
+    "speed_value": 11, 
+    "attack_value": 10, 
+    "defense_value": 17, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "hypersonic_speed", 
+    "speed_value": 10, 
+    "attack_value": 10, 
+    "defense_value": 17, 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ew019</unit_id>
+    <set_id>ew</set_id>
+    <collector_number>019</collector_number>
+    <name>Oliver Queen, Templar</name>
+    <type>character</type>
+    <rarity>uncommon</rarity>
+    <real_name>Oliver Queen</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[80]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Gotham City", "Past", "Warrior"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "HEAVEN GRANTS ME PROTECTION", 
+    "description": "If Oliver Queen, Templar would take damage from the Mystics team ability, instead heal him 1 click."
+  }, 
+  {
+    "type": "attack", 
+    "name": "MAGIC ARROWS", 
+    "description": "Oliver Queen, Templar can use Penetrating/Psychic Blast. When he targets a character with the Monster or Mystical keyword, he modifies his attack value by +1. If the target has both keywords, he also modifies his damage value by +1."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>["adjacent"]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>7</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "running_shot", 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "enhancement", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "enhancement", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 17, 
+    "damage_power": "enhancement", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "running_shot", 
+    "speed_value": 7, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 16, 
+    "damage_power": "enhancement", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_power": "precision_strike", 
+    "attack_value": 9, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 16, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_power": "precision_strike", 
+    "attack_value": 9, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 15, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ew020</unit_id>
+    <set_id>ew</set_id>
+    <collector_number>020</collector_number>
+    <name>The Joker Creature</name>
+    <type>character</type>
+    <rarity>uncommon</rarity>
+    <real_name>Bruce Wayne</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[75]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["batman_ally"]</team_abilities>
+    <keywords>["Batman Family", "Brute", "Gotham City", "Past"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "THE CREATURE, IT'S... YOU, DR. WAYNE!", 
+    "description": "When The Joker Creature replaces ew007 The Bat, give each other character within 6 squares and line of fire an action token."
+  }, 
+  {
+    "type": "attack", 
+    "name": "HE STALKED THEM AT NIGHT", 
+    "description": "The Joker Creature deals penetrating damage to characters with 2 action tokens. When The Joker Creature hits a character, after actions resolve give that character an action token if The Joker Creature occupies hindering terrain."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "charge", 
+    "speed_value": 9, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 11, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "battle_fury", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "charge", 
+    "speed_value": 8, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "battle_fury", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "charge", 
+    "speed_value": 8, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 11, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "battle_fury", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "flurry", 
+    "speed_value": 7, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "battle_fury", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "flurry", 
+    "speed_value": 7, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 15, 
+    "damage_power": "battle_fury", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "flurry", 
+    "speed_value": 7, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 15, 
+    "damage_power": "battle_fury", 
+    "damage_value": 3
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ew021</unit_id>
+    <set_id>ew</set_id>
+    <collector_number>021</collector_number>
+    <name>Bizarro Police</name>
+    <type>character</type>
+    <rarity>uncommon</rarity>
+    <real_name>None</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[50]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["police"]</team_abilities>
+    <keywords>["Brute", "Monster", "Police"]</keywords>
+    <special_powers>[
+  {
+    "type": "defense", 
+    "name": "BIZARRO D.N.A. DEGRADATION", 
+    "description": "Bizarro Police takes a maximum of 1 damage from attacks. When Bizarro Police is hit with an attack and his defense value is equal to the attacker's attack total, KO Bizarro Police. This power can't be countered or ignored."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "charge", 
+    "speed_value": 8, 
+    "attack_power": "super_strength", 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 15, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_power": "super_strength", 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 15, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "quake", 
+    "attack_value": 9, 
+    "defense_power": "special", 
+    "defense_value": 15, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "sidestep", 
+    "speed_value": 10, 
+    "attack_power": "quake", 
+    "attack_value": 9, 
+    "defense_power": "special", 
+    "defense_value": 14, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ew022</unit_id>
+    <set_id>ew</set_id>
+    <collector_number>022</collector_number>
+    <name>Clockwork Man</name>
+    <type>character</type>
+    <rarity>uncommon</rarity>
+    <real_name>None</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[45]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Past", "Robot"]</keywords>
+    <special_powers>[
+  {
+    "type": "attack", 
+    "name": "CALCULATED YOUR DEFEAT", 
+    "description": "Clockwork Man can use Precision Strike. UNIQUE MODIFIER - When he hits an opposing character, that character modifies its attack value by -1 until your next turn.", 
+    "powers": [
+      "precision_strike"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>6</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "stealth", 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "shape_change", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "stealth", 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "shape_change", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 15, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_value": 9, 
+    "defense_power": "regeneration", 
+    "defense_value": 15, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 1
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ew023</unit_id>
+    <set_id>ew</set_id>
+    <collector_number>023</collector_number>
+    <name>Pete Ross</name>
+    <type>character</type>
+    <rarity>uncommon</rarity>
+    <real_name>Pete Ross</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[80]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Armor", "Justice League", "Metropolis"]</keywords>
+    <special_powers>[
+  {
+    "type": "attack", 
+    "name": "ENHANCED ELECTRO-STUNNER", 
+    "description": "Pete Ross can use Incapacitate. When he does, also target all opposing characters adjacent to the original target.", 
+    "powers": [
+      "incapacitate"
+    ]
+  }, 
+  {
+    "type": "defense", 
+    "name": "FREEDOM HAS A PRICE. MINE IS TWO HUNDRED MILLION.", 
+    "description": "STOP. Opposing characters within 4 squares can use Incapacitate and Toughness.", 
+    "powers": [
+      "stop"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>6</unit_range>
+    <targets>1</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "running_shot", 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 11, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "leadership", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "running_shot", 
+    "speed_value": 7, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "leadership", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "charge", 
+    "speed_value": 7, 
+    "attack_power": "incapacitate", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "charge", 
+    "speed_value": 7, 
+    "attack_power": "incapacitate", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "earthbound_neutralized", 
+    "speed_value": 6, 
+    "attack_value": 8, 
+    "defense_power": "special", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ew024</unit_id>
+    <set_id>ew</set_id>
+    <collector_number>024</collector_number>
+    <name>Nekhrun, The Bat-God</name>
+    <type>character</type>
+    <rarity>uncommon</rarity>
+    <real_name>Nekhrun</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[200, 100]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["batman_ally", "quintessence"]</team_abilities>
+    <keywords>["Batman Family", "Cosmic", "Deity"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "AVATAR OF DARKNESS", 
+    "description": "Other friendly characters can use the Batman Ally team ability. When Nekhrun, The Bat-God is KO'd by an opponent's attack, for the rest of the game other friendly characters can't be targeted by opposing characters 4 or more squares away."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>7</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_value": 11, 
+    "defense_power": "impervious", 
+    "defense_value": 19, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "running_shot", 
+    "speed_value": 7, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 11, 
+    "defense_power": "impervious", 
+    "defense_value": 18, 
+    "damage_power": "outwit", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "running_shot", 
+    "speed_value": 7, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 11, 
+    "defense_power": "invincible", 
+    "defense_value": 18, 
+    "damage_power": "outwit", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "running_shot", 
+    "speed_value": 7, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 11, 
+    "defense_power": "invincible", 
+    "defense_value": 18, 
+    "damage_power": "outwit", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_power": "super_strength", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 3, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "sidestep", 
+    "speed_value": 6, 
+    "attack_power": "super_strength", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "perplex", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "sidestep", 
+    "speed_value": 6, 
+    "attack_power": "super_strength", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "perplex", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 8, 
+    "speed_value": 5, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 9, 
+    "speed_value": 5, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ew025</unit_id>
+    <set_id>ew</set_id>
+    <collector_number>025</collector_number>
+    <name>Jakita Wagner</name>
+    <type>character</type>
+    <rarity>uncommon</rarity>
+    <real_name>Jakita Wagner</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[80]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Detective", "Planetary", "Warrior"]</keywords>
+    <special_powers>[
+  {
+    "type": "speed", 
+    "name": "BURSTS OF INCREDIBLE SPEED", 
+    "description": "When Jakita Wagner has no action tokens, she can use Hypersonic Speed and modifies her speed value by +2. When she has one action token, she can use Charge and modifies her speed value by +1.", 
+    "powers": [
+      "hypersonic_speed"
+    ]
+  }, 
+  {
+    "type": "damage", 
+    "name": "PLANETARY: ARCHAEOLOGISTS OF THE IMPOSSIBLE", 
+    "description": "Once per turn, Jakita Wagner can use either Outwit or Perplex.", 
+    "powers": [
+      "outwit", 
+      "perplex"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "special", 
+    "speed_value": 9, 
+    "attack_power": "super_strength", 
+    "attack_value": 11, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "special", 
+    "speed_value": 9, 
+    "attack_power": "super_strength", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 18, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "special", 
+    "speed_value": 8, 
+    "attack_power": "super_strength", 
+    "attack_value": 11, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "special", 
+    "speed_value": 8, 
+    "attack_power": "super_strength", 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "flurry", 
+    "speed_value": 7, 
+    "attack_value": 11, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "flurry", 
+    "speed_value": 7, 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 16, 
+    "damage_value": 3
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ew026</unit_id>
+    <set_id>ew</set_id>
+    <collector_number>026</collector_number>
+    <name>Batman</name>
+    <type>character</type>
+    <rarity>rare</rarity>
+    <real_name>Bruce Wayne</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[100]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["batman_ally"]</team_abilities>
+    <keywords>["Batman Family", "Detective", "Gotham City", "Justice League"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "WORLD WITHOUT A SUPERMAN", 
+    "description": "Modify this characters attack value by +2 when attacking only characters of 50 points or less. Modify this characters attack value by -1 when attacking only characters of 150 points or more"
+  }, 
+  {
+    "type": "attack", 
+    "name": "DEAD! DEAD! DEAD!", 
+    "description": "Whenever a friendly character is KO'd, you may place Batman in the KO'd character's square. UNIQUE MODIFIER - If you do, modify his combat values by +1 until the end of your next turn."
+  }, 
+  {
+    "type": "defense", 
+    "name": "SKILLS THAT RIVAL SHIVA", 
+    "description": "Batman can use Combat Reflexes and Toughness.", 
+    "powers": [
+      "combat_reflexes", 
+      "toughness"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>5</unit_range>
+    <targets>2</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "charge", 
+    "speed_value": 10, 
+    "attack_power": "precision_strike", 
+    "attack_value": 11, 
+    "defense_power": "special", 
+    "defense_value": 17, 
+    "damage_power": "outwit", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "charge", 
+    "speed_value": 9, 
+    "attack_power": "precision_strike", 
+    "attack_value": 11, 
+    "defense_power": "special", 
+    "defense_value": 17, 
+    "damage_power": "outwit", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 17, 
+    "damage_power": "perplex", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 17, 
+    "damage_power": "perplex", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_power": "perplex", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "charge", 
+    "speed_value": 7, 
+    "attack_power": "special", 
+    "attack_value": 11, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_power": "outwit", 
+    "damage_value": 3
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ew027</unit_id>
+    <set_id>ew</set_id>
+    <collector_number>027</collector_number>
+    <name>Superman</name>
+    <type>character</type>
+    <rarity>rare</rarity>
+    <real_name>Zod</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[160, 100]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["superman_ally"]</team_abilities>
+    <keywords>["Justice Society", "Kryptonian", "Phantom Zone", "Spy"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "YOU THINK I CARE HOW MANY OF YOU I KILL?", 
+    "description": "Superman can use Super Strength. When he KO's an opposing character with a close attack, after actions resolve you may give him a standard heavy object to hold from outside the game.", 
+    "powers": [
+      "super_strength"
+    ]
+  }, 
+  {
+    "type": "damage", 
+    "name": "PLAYED EVERYBODY FOR FOOLS", 
+    "description": "If Superman hasn't made an attack this game, Superman can use Shape Change, Stealth and Super Senses.", 
+    "powers": [
+      "shape_change", 
+      "stealth", 
+      "super_senses"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>8</unit_range>
+    <targets>1</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "hypersonic_speed", 
+    "speed_value": 11, 
+    "attack_value": 11, 
+    "defense_power": "invincible", 
+    "defense_value": 18, 
+    "damage_power": "special", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "hypersonic_speed", 
+    "speed_value": 10, 
+    "attack_value": 11, 
+    "defense_power": "invincible", 
+    "defense_value": 17, 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "charge", 
+    "speed_value": 10, 
+    "attack_value": 11, 
+    "defense_power": "impervious", 
+    "defense_value": 18, 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "charge", 
+    "speed_value": 10, 
+    "attack_value": 10, 
+    "defense_power": "invincible", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 4, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "charge", 
+    "speed_value": 9, 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "sidestep", 
+    "speed_value": 9, 
+    "attack_power": "quake", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "quake", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 8, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "quake", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ew028</unit_id>
+    <set_id>ew</set_id>
+    <collector_number>028</collector_number>
+    <name>Wonder Woman</name>
+    <type>character</type>
+    <rarity>rare</rarity>
+    <real_name>Diana Prince</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[100]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["justice_league"]</team_abilities>
+    <keywords>["Amazon", "Celebrity", "Justice League", "Politician"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "WORLD WITHOUT A SUPERMAN", 
+    "description": "Modify this characters attack value by +2 when attacking only characters of 50 points or less. Modify this characters attack value by -1 when attacking only characters of 150 points or more"
+  }, 
+  {
+    "type": "defense", 
+    "name": "HAS MY MISSION TO MAN'S WORLD FAILED?", 
+    "description": "STOP. Wonder Woman can use Impervious. When this power is first revealed, after actions resolve choose one: Remove an action token from all friendly characters; -or- give all opposing characters an action token.", 
+    "powers": [
+      "stop", 
+      "impervious"
+    ]
+  }, 
+  {
+    "type": "damage", 
+    "name": "BATTLING PUBLIC OPINION", 
+    "description": "Wonder Woman can use Leadership. When she does and succeeds, choose a friendly character. Until your next turn, that character can't have its powers or abilities countered or have its combat values decreased.", 
+    "powers": [
+      "leadership"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "incapacitate", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "incapacitate", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "incapacitate", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "charge", 
+    "speed_value": 10, 
+    "attack_power": "super_strength", 
+    "attack_value": 11, 
+    "defense_power": "special", 
+    "defense_value": 17, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "charge", 
+    "speed_value": 9, 
+    "attack_power": "super_strength", 
+    "attack_value": 10, 
+    "defense_power": "impervious", 
+    "defense_value": 17, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "charge", 
+    "speed_value": 9, 
+    "attack_power": "super_strength", 
+    "attack_value": 10, 
+    "defense_power": "impervious", 
+    "defense_value": 17, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 3
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ew029</unit_id>
+    <set_id>ew</set_id>
+    <collector_number>029</collector_number>
+    <name>Green Lantern</name>
+    <type>character</type>
+    <rarity>rare</rarity>
+    <real_name>Hal Jordan</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[90]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["green_lantern_corps"]</team_abilities>
+    <keywords>["Cosmic", "Green Lantern Corps", "Justice League"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "WORLD WITHOUT A SUPERMAN", 
+    "description": "Modify this characters attack value by +2 when attacking only characters of 50 points or less. Modify this characters attack value by -1 when attacking only characters of 150 points or more"
+  }, 
+  {
+    "type": "attack", 
+    "name": "BIG GREEN BOXING GLOVES", 
+    "description": "Green Lantern can use Giant Reach: 3. When he does, he can use Improved Targeting: Elevated, Characters."
+  }, 
+  {
+    "type": "defense", 
+    "name": "GREEN SHIELDING", 
+    "description": "Green Lantern can use Energy Shield/Deflection and Toughness.", 
+    "powers": [
+      "energy_shield_deflection", 
+      "toughness"
+    ]
+  }, 
+  {
+    "type": "damage", 
+    "name": "DON'T KNOW HOW LONG I CAN KEEP YOU SUPER-CHARGED", 
+    "description": "Give Green Lantern a power action and choose another friendly character within 3 squares and line of fire. Until your next turn, that character can use Invincible and modifies its attack and damage values by +1. At the beginning of your next turn, deal Green Lantern 1 unavoidable damage, even if this power is lost."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>6</unit_range>
+    <targets>1</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "charge", 
+    "speed_value": 10, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 17, 
+    "damage_power": "perplex", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "charge", 
+    "speed_value": 9, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 17, 
+    "damage_power": "perplex", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_value": 9, 
+    "attack_power": "telekinesis", 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 17, 
+    "damage_power": "perplex", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_value": 8, 
+    "attack_power": "telekinesis", 
+    "attack_value": 9, 
+    "defense_power": "special", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_value": 8, 
+    "attack_power": "telekinesis", 
+    "attack_value": 9, 
+    "defense_power": "willpower", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_value": 8, 
+    "attack_value": 8, 
+    "defense_power": "willpower", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ew030</unit_id>
+    <set_id>ew</set_id>
+    <collector_number>030</collector_number>
+    <name>The Flash</name>
+    <type>character</type>
+    <rarity>rare</rarity>
+    <real_name>Barry Allen</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[110]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["justice_league"]</team_abilities>
+    <keywords>["Central City", "Justice League", "Police", "Speedster"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "WORLD WITHOUT A SUPERMAN", 
+    "description": "Modify this characters attack value by +2 when attacking only characters of 50 points or less. Modify this characters attack value by -1 when attacking only characters of 150 points or more"
+  }, 
+  {
+    "type": "trait", 
+    "name": "A CONSTANT BLUR OF MOTION", 
+    "description": "The Flash can use Energy Shield/Deflection. When the Flash is missed by an attack, you may immediately place him up to 3 squares away.", 
+    "powers": [
+      "energy_shield_deflection"
+    ]
+  }
+]</special_powers>
+    <improved_movement>["hindering"]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "hypersonic_speed", 
+    "speed_value": 13, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 18, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "hypersonic_speed", 
+    "speed_value": 13, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_power": "outwit", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "hypersonic_speed", 
+    "speed_value": 13, 
+    "attack_power": "precision_strike", 
+    "attack_value": 9, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_power": "outwit", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "hypersonic_speed", 
+    "speed_value": 12, 
+    "attack_value": 9, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_power": "outwit", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "hypersonic_speed", 
+    "speed_value": 12, 
+    "attack_value": 9, 
+    "defense_power": "regeneration", 
+    "defense_value": 17, 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ew031</unit_id>
+    <set_id>ew</set_id>
+    <collector_number>031</collector_number>
+    <name>Green Lantern of Gotham</name>
+    <type>character</type>
+    <rarity>rare</rarity>
+    <real_name>Bruce Wayne</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[105]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["green_lantern_corps"]</team_abilities>
+    <keywords>["Batman Family", "Green Lantern Corps"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "FROM AN ALTERNATE EARTH", 
+    "description": "If this character is on your sideline, you may give a free action to a friendly character named Batman or Green Lantern that's equal or more points. Replace that character with this character on the same click number."
+  }, 
+  {
+    "type": "trait", 
+    "name": "ALL THIS POWER, LIMITED BY MY WILL", 
+    "description": "When Green Lantern of Gotham has 2 action tokens, he can use Barrier as a free action until your next turn.", 
+    "powers": [
+      "barrier"
+    ]
+  }, 
+  {
+    "type": "speed", 
+    "name": "EMERALD KNIGHT", 
+    "description": "Green Lantern of Gotham can use Phasing/Teleport, Running Shot, and Stealth.", 
+    "powers": [
+      "phasing_teleport", 
+      "running_shot", 
+      "stealth"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>7</unit_range>
+    <targets>1</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "special", 
+    "speed_value": 10, 
+    "attack_power": "telekinesis", 
+    "attack_value": 11, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 18, 
+    "damage_power": "outwit", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "special", 
+    "speed_value": 9, 
+    "attack_power": "telekinesis", 
+    "attack_value": 10, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 17, 
+    "damage_power": "outwit", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 9, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "perplex", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 9, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "perplex", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "sidestep", 
+    "speed_value": 9, 
+    "attack_value": 9, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 17, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "sidestep", 
+    "speed_value": 9, 
+    "attack_value": 9, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 18, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ew032</unit_id>
+    <set_id>ew</set_id>
+    <collector_number>032</collector_number>
+    <name>Green Lantern of Krypton</name>
+    <type>character</type>
+    <rarity>rare</rarity>
+    <real_name>Clark Kent</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[125, 100]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["green_lantern_corps"]</team_abilities>
+    <keywords>["Green Lantern Corps", "Kryptonian", "Metropolis"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "FROM AN ALTERNATE EARTH", 
+    "description": "If this character is on your sideline, you may give a free action to a friendly character named Green Lantern or Superman that's equal or more points. Replace that character with this character on the same click number."
+  }, 
+  {
+    "type": "speed", 
+    "name": "MY BODY ADAPTED TO LIVING ON KRYPTON", 
+    "description": "Green Lantern of Krypton can use Charge and Improved Movement: Destroy Blocking.", 
+    "powers": [
+      "charge"
+    ]
+  }, 
+  {
+    "type": "damage", 
+    "name": "YOU WON'T SHOOT, IF YOU KNOW WHAT'S GOOD FOR YOU", 
+    "description": "When Green Lantern of Krypton is the target of a ranged attack, Green Lantern of Krypton can use Probability Control.", 
+    "powers": [
+      "probability_control"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>7</unit_range>
+    <targets>1</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "running_shot", 
+    "speed_value": 10, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 10, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "running_shot", 
+    "speed_value": 9, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 10, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "sidestep", 
+    "speed_value": 9, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 3, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "special", 
+    "speed_value": 8, 
+    "attack_power": "super_strength", 
+    "attack_value": 11, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "perplex", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "special", 
+    "speed_value": 9, 
+    "attack_power": "super_strength", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "perplex", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "special", 
+    "speed_value": 10, 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 16, 
+    "damage_power": "perplex", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ew033</unit_id>
+    <set_id>ew</set_id>
+    <collector_number>033</collector_number>
+    <name>The Ray</name>
+    <type>character</type>
+    <rarity>rare</rarity>
+    <real_name>Ray Terrill</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[125, 25]</point_values>
+    <properties>["unique"]</properties>
+    <team_abilities>["kingdom_come"]</team_abilities>
+    <keywords>["Future", "Justice League"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "WE WILL MAKE THINGS RIGHT AGAIN", 
+    "description": "The Ray's combat values can only be modified by power or abilities from characters with the \"Kingdom Come team ability symbol\". The Ray's powers and abilities can only be countered by characters with the \"Kingdom Come team ability symbol\"."
+  }, 
+  {
+    "type": "damage", 
+    "name": "JUSTICE SHINES BRIGHT", 
+    "description": "Give The Ray a free action and choose an opposing character within 8 squares. Until your next turn, if The Ray has line of fire to that character, that character can't make attacks."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>8</unit_range>
+    <targets>4</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "running_shot", 
+    "speed_value": 12, 
+    "attack_power": "precision_strike", 
+    "attack_value": 11, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 18, 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "running_shot", 
+    "speed_value": 11, 
+    "attack_power": "precision_strike", 
+    "attack_value": 11, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 18, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "sidestep", 
+    "speed_value": 11, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 11, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "sidestep", 
+    "speed_value": 11, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 11, 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 18, 
+    "damage_power": "support", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 11, 
+    "attack_value": 10, 
+    "defense_power": "regeneration", 
+    "defense_value": 19, 
+    "damage_power": "support", 
+    "damage_value": 2
+  }, 
+  {
+    "defense_power": "energy_shield_deflection", 
+    "damage_power": "special", 
+    "speed_value": 0, 
+    "click_number": 11, 
+    "starting_line": true, 
+    "damage_value": 0, 
+    "attack_value": 0, 
+    "defense_value": 18
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ew034</unit_id>
+    <set_id>ew</set_id>
+    <collector_number>034</collector_number>
+    <name>Green Oracle</name>
+    <type>character</type>
+    <rarity>rare</rarity>
+    <real_name>Barbara Gordon</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[50]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["green_lantern_corps", "justice_league"]</team_abilities>
+    <keywords>["Batman Family", "Green Lantern Corps"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "FROM AN ALTERNATE EARTH", 
+    "description": "If this character is on your sideline, you may give a free action to a friendly character named Oracle, Batgirl or Green Lantern that's equal or more points. Replace that character with this character on the same click number."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>7</unit_range>
+    <targets>1</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 12, 
+    "attack_value": 9, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 18, 
+    "damage_power": "perplex", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 12, 
+    "attack_value": 9, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 17, 
+    "damage_power": "outwit", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 11, 
+    "attack_value": 8, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 17, 
+    "damage_power": "perplex", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 11, 
+    "attack_value": 8, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 16, 
+    "damage_power": "outwit", 
+    "damage_value": 3
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ew035</unit_id>
+    <set_id>ew</set_id>
+    <collector_number>035</collector_number>
+    <name>Dale Suderman</name>
+    <type>character</type>
+    <rarity>rare</rarity>
+    <real_name>Dale Suderman</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[100]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Celebrity", "Kryptonian"]</keywords>
+    <special_powers>[
+  {
+    "type": "defense", 
+    "name": "MOST FAMOUS ATHLETE ON EARTH", 
+    "description": "The first time each turn a character without the Celebrity or Reporter keyword attacks Dale Suderman, you may modify Dale Suderman's defense value by +2 that turn. If you do, modify his attack value by -2 until the end of your next turn."
+  }, 
+  {
+    "type": "damage", 
+    "name": "I DIDN'T KNOW I WASN'T... FROM AROUND HERE", 
+    "description": "STOP. For the rest of the game Dale Suderman has the Wing Speed symbol and can't be healed.", 
+    "powers": [
+      "stop"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>5</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "hypersonic_speed", 
+    "speed_value": 9, 
+    "attack_power": "precision_strike", 
+    "attack_value": 12, 
+    "defense_power": "special", 
+    "defense_value": 17, 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "hypersonic_speed", 
+    "speed_value": 8, 
+    "attack_power": "precision_strike", 
+    "attack_value": 12, 
+    "defense_power": "special", 
+    "defense_value": 17, 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "hypersonic_speed", 
+    "speed_value": 8, 
+    "attack_power": "precision_strike", 
+    "attack_value": 11, 
+    "defense_power": "special", 
+    "defense_value": 17, 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "charge", 
+    "speed_value": 12, 
+    "attack_power": "super_strength", 
+    "attack_value": 11, 
+    "defense_power": "invincible", 
+    "defense_value": 18, 
+    "damage_power": "special", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "charge", 
+    "speed_value": 11, 
+    "attack_power": "super_strength", 
+    "attack_value": 10, 
+    "defense_power": "invincible", 
+    "defense_value": 18, 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "charge", 
+    "speed_value": 10, 
+    "attack_power": "super_strength", 
+    "attack_value": 10, 
+    "defense_power": "impervious", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "charge", 
+    "speed_value": 10, 
+    "attack_power": "super_strength", 
+    "attack_value": 9, 
+    "defense_power": "impervious", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ew036</unit_id>
+    <set_id>ew</set_id>
+    <collector_number>036</collector_number>
+    <name>The Drummer</name>
+    <type>character</type>
+    <rarity>rare</rarity>
+    <real_name>Unknown</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[40]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Detective", "Planetary", "Scientist"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "READING THE INFORMATION FLOWS", 
+    "description": "Once per turn, when an opposing character within range and line of fire would use one of Outwit, Perplex or Probability Control during their turn, you may choose that instead the opposing character can't use that power that turn."
+  }, 
+  {
+    "type": "damage", 
+    "name": "PLANETARY: ARCHAEOLOGISTS OF THE IMPOSSIBLE", 
+    "description": "Once per turn, The Drummer can use either Outwit or Perplex.", 
+    "powers": [
+      "outwit", 
+      "perplex"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>10</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "sidestep", 
+    "speed_value": 6, 
+    "attack_value": 8, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 0
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "sidestep", 
+    "speed_value": 5, 
+    "attack_value": 8, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 0
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "sidestep", 
+    "speed_value": 5, 
+    "attack_value": 7, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 15, 
+    "damage_power": "perplex", 
+    "damage_value": 0
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "sidestep", 
+    "speed_value": 4, 
+    "attack_value": 7, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 15, 
+    "damage_power": "perplex", 
+    "damage_value": 0
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ew037</unit_id>
+    <set_id>ew</set_id>
+    <collector_number>037</collector_number>
+    <name>The Flying Batman</name>
+    <type>character</type>
+    <rarity>super_rare</rarity>
+    <real_name>Kal-El</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[140, 100]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["batman_ally", "superman_ally"]</team_abilities>
+    <keywords>["Batman Family", "Gotham City", "Kryptonian"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "FROM AN ALTERNATE EARTH", 
+    "description": "If this character is on your sideline, you may give a free action to a friendly character named Batman or Superman that's equal or more points. Replace that character with this character on the same click number."
+  }, 
+  {
+    "type": "defense", 
+    "name": "HERO OF GOTHAM", 
+    "description": "The Flying Batman can use Defend and Toughness.", 
+    "powers": [
+      "defend", 
+      "toughness"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>7</unit_range>
+    <targets>1</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "hypersonic_speed", 
+    "speed_value": 11, 
+    "attack_value": 11, 
+    "defense_power": "invincible", 
+    "defense_value": 18, 
+    "damage_power": "shape_change", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "hypersonic_speed", 
+    "speed_value": 10, 
+    "attack_value": 10, 
+    "defense_power": "invincible", 
+    "defense_value": 18, 
+    "damage_power": "shape_change", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "hypersonic_speed", 
+    "speed_value": 10, 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_value": 3, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "charge", 
+    "speed_value": 9, 
+    "attack_power": "super_strength", 
+    "attack_value": 11, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "battle_fury", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "charge", 
+    "speed_value": 9, 
+    "attack_power": "super_strength", 
+    "attack_value": 11, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "battle_fury", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "sidestep", 
+    "speed_value": 9, 
+    "attack_value": 9, 
+    "defense_power": "special", 
+    "defense_value": 18, 
+    "damage_power": "outwit", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_value": 9, 
+    "defense_power": "special", 
+    "defense_value": 18, 
+    "damage_power": "outwit", 
+    "damage_value": 3
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ew038</unit_id>
+    <set_id>ew</set_id>
+    <collector_number>038</collector_number>
+    <name>Colonel Wayne</name>
+    <type>character</type>
+    <rarity>super_rare</rarity>
+    <real_name>Bruce Wayne</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[75]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["batman_ally"]</team_abilities>
+    <keywords>["Batman Family", "Past", "Soldier"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "HIGH NOON", 
+    "description": "If Colonel Wayne is the last character with this trait to hit an opposing character with a range attack, until your next turn, if the hit character makes a range attack, Colonel Wayne must be one of its targets."
+  }, 
+  {
+    "type": "speed", 
+    "name": "CAVALRY CHARGE", 
+    "description": "Colonel Wayne can use Running Shot and Improved Movement: Hindering, Characters.", 
+    "powers": [
+      "running_shot"
+    ]
+  }, 
+  {
+    "type": "attack", 
+    "name": "FIND MY CONTACT, AGENT REDBIRD", 
+    "description": "Once per game, give Colonel Wayne a free action and place adjacent a Redbird bystander."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>5</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "special", 
+    "speed_value": 9, 
+    "attack_value": 10, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 17, 
+    "damage_power": "shape_change", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "special", 
+    "speed_value": 9, 
+    "attack_value": 10, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 17, 
+    "damage_power": "shape_change", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "special", 
+    "speed_value": 9, 
+    "attack_power": "special", 
+    "attack_value": 11, 
+    "defense_power": "toughness", 
+    "defense_value": 18, 
+    "damage_power": "leadership", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "special", 
+    "speed_value": 9, 
+    "attack_power": "special", 
+    "attack_value": 11, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "leadership", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "leadership", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_value": 10, 
+    "defense_power": "willpower", 
+    "defense_value": 17, 
+    "damage_power": "perplex", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_value": 9, 
+    "defense_power": "willpower", 
+    "defense_value": 16, 
+    "damage_power": "perplex", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ew038bt</unit_id>
+    <set_id>ew</set_id>
+    <collector_number>038bt</collector_number>
+    <name>Redbird</name>
+    <type>bystander</type>
+    <rarity>super_rare</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>standard</bystander_type>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>1</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "hypersonic_speed", 
+    "speed_value": 6, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 11, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 17, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ew039</unit_id>
+    <set_id>ew</set_id>
+    <collector_number>039</collector_number>
+    <name>Sergeant Kent</name>
+    <type>character</type>
+    <rarity>super_rare</rarity>
+    <real_name>Atticus Kent</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[100]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["superman_ally"]</team_abilities>
+    <keywords>["Kryptonian", "Past", "Soldier"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "HIGH NOON", 
+    "description": "If Sergeant Kent is the last character with this trait to hit an opposing character with a range attack, until your next turn, if the hit character makes a range attack, Sergeant Kent must be one of its targets."
+  }, 
+  {
+    "type": "trait", 
+    "name": "I'LL TAKE THE BULLETS FOR THE BOYS", 
+    "description": "Sergeant Kent can use Defend. Opposing characters can't ignore Sergeant Kent for line of fire purposes.", 
+    "powers": [
+      "defend"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>4</unit_range>
+    <targets>1</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "charge", 
+    "speed_value": 10, 
+    "attack_power": "super_strength", 
+    "attack_value": 10, 
+    "defense_power": "invincible", 
+    "defense_value": 18, 
+    "damage_power": "enhancement", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_value": 10, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 10, 
+    "defense_power": "invincible", 
+    "defense_value": 18, 
+    "damage_power": "enhancement", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_value": 9, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 10, 
+    "defense_power": "impervious", 
+    "defense_value": 18, 
+    "damage_power": "enhancement", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "hypersonic_speed", 
+    "speed_value": 9, 
+    "attack_power": "super_strength", 
+    "attack_value": 9, 
+    "defense_power": "impervious", 
+    "defense_value": 18, 
+    "damage_power": "enhancement", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "hypersonic_speed", 
+    "speed_value": 9, 
+    "attack_power": "super_strength", 
+    "attack_value": 9, 
+    "defense_power": "impervious", 
+    "defense_value": 18, 
+    "damage_power": "enhancement", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ew040</unit_id>
+    <set_id>ew</set_id>
+    <collector_number>040</collector_number>
+    <name>Al Jhor Dan</name>
+    <type>character</type>
+    <rarity>super_rare</rarity>
+    <real_name>Al Jhor Dan</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[90]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Green Lantern Corps", "Mystical", "Past", "Ruler"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "GENIE OF THE LAMP", 
+    "description": "Give Al Jhor Dan a free action. Choose a standard power and choose one of the following: \"wing symbol\", \"dolphin symbol\", \"giant symbol\", or \"tiny symbol\". Al Jhor Dan can use the chosen power and has the chosen symbol until your next turn.", 
+    "powers": [
+      "flurry", 
+      "leap_climb", 
+      "phasing_teleport", 
+      "earthbound_neutralized", 
+      "charge", 
+      "mind_control", 
+      "plasticity", 
+      "force_blast", 
+      "sidestep", 
+      "hypersonic_speed", 
+      "stealth", 
+      "running_shot", 
+      "blades_claws_fangs", 
+      "energy_explosion", 
+      "pulse_wave", 
+      "quake", 
+      "super_strength", 
+      "incapacitate", 
+      "penetrating_psychic_blast", 
+      "smoke_cloud", 
+      "precision_strike", 
+      "poison", 
+      "steal_energy", 
+      "telekinesis", 
+      "super_senses", 
+      "toughness", 
+      "defend", 
+      "combat_reflexes", 
+      "energy_shield_deflection", 
+      "barrier", 
+      "mastermind", 
+      "willpower", 
+      "invincible", 
+      "impervious", 
+      "regeneration", 
+      "invulnerability", 
+      "ranged_combat_expert", 
+      "battle_fury", 
+      "support", 
+      "exploit_weakness", 
+      "enhancement", 
+      "probability_control", 
+      "shape_change", 
+      "close_combat_expert", 
+      "empower", 
+      "perplex", 
+      "outwit", 
+      "leadership"
+    ]
+  }, 
+  {
+    "type": "damage", 
+    "name": "1001 (KNIGHTS OF EMPIRES)", 
+    "description": "Al Jhor Dan can use Perplex. If he uses Perplex to modify the same character and same value as during your last turn, he can modify it by +2 or -2 instead.", 
+    "powers": [
+      "perplex"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>7</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_value": 10, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 18, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_value": 10, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 18, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_value": 10, 
+    "defense_power": "barrier", 
+    "defense_value": 18, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "sidestep", 
+    "speed_value": 6, 
+    "attack_value": 9, 
+    "defense_power": "barrier", 
+    "defense_value": 18, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 10, 
+    "attack_value": 9, 
+    "defense_power": "regeneration", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ew041</unit_id>
+    <set_id>ew</set_id>
+    <collector_number>041</collector_number>
+    <name>Sinestro</name>
+    <type>character</type>
+    <rarity>super_rare</rarity>
+    <real_name>Thaal Sinestro</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[140, 80]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["batman_enemy"]</team_abilities>
+    <keywords>["Gotham City Underworld", "Green Lantern Corps", "Sinestro Corps"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "FROM AN ALTERNATE EARTH", 
+    "description": "If this character is on your sideline, you may give a free action to a friendly character named The Joker or Sinestro that's equal or more points. Replace that character with this character on the same click number."
+  }, 
+  {
+    "type": "trait", 
+    "name": "HERO OF QWARD", 
+    "description": "Sinestro can use Perplex, but only to decrease combat values.", 
+    "powers": [
+      "perplex"
+    ]
+  }, 
+  {
+    "type": "attack", 
+    "name": "HERO OF THE CORPS", 
+    "description": "Sinestro can use Pulse Wave and has the Green Lantern team ability.", 
+    "powers": [
+      "pulse_wave"
+    ]
+  }, 
+  {
+    "type": "damage", 
+    "name": "ULTIMATE NEMESIS", 
+    "description": "Opposing characters with the Batman Family, Gotham City, or Green Lantern Corps keywords modify their attack value by -1. If they target Sinestro, modify their attack value by an additional -1."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>6</unit_range>
+    <targets>2</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "running_shot", 
+    "speed_value": 9, 
+    "attack_power": "special", 
+    "attack_value": 11, 
+    "defense_power": "invincible", 
+    "defense_value": 18, 
+    "damage_power": "special", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "running_shot", 
+    "speed_value": 9, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 11, 
+    "defense_power": "invincible", 
+    "defense_value": 18, 
+    "damage_power": "special", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "running_shot", 
+    "speed_value": 9, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "enhancement", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "mind_control", 
+    "speed_value": 9, 
+    "attack_power": "telekinesis", 
+    "attack_value": 11, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 3, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "mind_control", 
+    "speed_value": 10, 
+    "attack_power": "telekinesis", 
+    "attack_value": 10, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 16, 
+    "damage_power": "enhancement", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 10, 
+    "attack_value": 9, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 16, 
+    "damage_power": "enhancement", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 10, 
+    "attack_value": 9, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 16, 
+    "damage_power": "enhancement", 
+    "damage_value": 3
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ew042</unit_id>
+    <set_id>ew</set_id>
+    <collector_number>042</collector_number>
+    <name>Green Lantern</name>
+    <type>character</type>
+    <rarity>super_rare</rarity>
+    <real_name>Unknown</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[45]</point_values>
+    <properties>["unique"]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Mystical"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "ONE LAST EARTHLY MISSION", 
+    "description": "When another friendly character is KO'd, place a Resurrection marker in a square they last occupied. Give Green Lantern a free action when she is adjacent to a Resurrection marker, you may choose the name of a friendly character with a point value of 10 or more that has been KO'd and hasn't yet been chosen this game. Replace the Resurrection marker with a KO'd character with that name and give Green Lantern an action token, if possible. Turn the KO'd character to any click it could have been on this game. At the beginning of your next turn, remove that character from the game but don't score it."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 12, 
+    "attack_value": 0, 
+    "defense_power": "willpower", 
+    "defense_value": 18, 
+    "damage_value": 0
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 11, 
+    "attack_value": 0, 
+    "defense_power": "willpower", 
+    "defense_value": 18, 
+    "damage_value": 0
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 11, 
+    "attack_value": 0, 
+    "defense_power": "willpower", 
+    "defense_value": 17, 
+    "damage_value": 0
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 10, 
+    "attack_value": 0, 
+    "defense_power": "willpower", 
+    "defense_value": 17, 
+    "damage_value": 0
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ew043</unit_id>
+    <set_id>ew</set_id>
+    <collector_number>043</collector_number>
+    <name>Leatherwing</name>
+    <type>character</type>
+    <rarity>super_rare</rarity>
+    <real_name>Bruce Wayne</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[80]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Past", "Pirate"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "CAPTAIN OF THE FLYING FOX", 
+    "description": "At the beginning of the game, place adjacent a Robin Redblade bystander. Leatherwing can use the Carry ability to carry up to 4 characters with the Pirate keyword."
+  }, 
+  {
+    "type": "speed", 
+    "name": "DOWN FROM THE RIGGING AND ACROSS THE DECK", 
+    "description": "Leatherwing can use Leap/Climb and Sidestep. When Leatherwing uses Leap/Climb and moves half his speed value or less, after actions resolve he may make a range attack.", 
+    "powers": [
+      "leap_climb", 
+      "sidestep"
+    ]
+  }, 
+  {
+    "type": "attack", 
+    "name": "FLOURISH OF THE BLADE AND CLOAK", 
+    "description": "Leatherwing can use Blades/Claws/Fangs and Smoke Cloud. When he uses Blades/Claws/Fangs, after actions resolve he can use Smoke Cloud as a free action.", 
+    "powers": [
+      "blades_claws_fangs", 
+      "smoke_cloud"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>5</unit_range>
+    <targets>2</targets>
+    <speed_type>dolphin</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "special", 
+    "speed_value": 9, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 11, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "special", 
+    "speed_value": 9, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 11, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "stealth", 
+    "speed_value": 7, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "stealth", 
+    "speed_value": 7, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ew043bt</unit_id>
+    <set_id>ew</set_id>
+    <collector_number>043bt</collector_number>
+    <name>Robin Redblade</name>
+    <type>bystander</type>
+    <rarity>super_rare</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>standard</bystander_type>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>1</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "stealth", 
+    "speed_value": 8, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "perplex", 
+    "damage_value": 1
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ew044</unit_id>
+    <set_id>ew</set_id>
+    <collector_number>044</collector_number>
+    <name>Diana Prince</name>
+    <type>character</type>
+    <rarity>super_rare</rarity>
+    <real_name>Diana Prince</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[40]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Amazon", "Detective", "Justice League", "Scientist"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "INVESTIGATING PLANETARY", 
+    "description": "Opposing characters within 4 squares and line of fire can't use Outwit or Perplex."
+  }, 
+  {
+    "type": "attack", 
+    "name": "SWORDS MANIFESTED FROM MY WRISTBANDS", 
+    "description": "Diana Prince can use Blades/Claws/Fangs. Give Diana Prince a close combat action to make a close attack targeting each opposing character within 2 squares and line of fire.", 
+    "powers": [
+      "blades_claws_fangs"
+    ]
+  }, 
+  {
+    "type": "damage", 
+    "name": "AVENGE THE AMAZONS, BUT REMEMBER THEIR HEART", 
+    "description": "Diana Prince can use Close Combat Expert and Support.", 
+    "powers": [
+      "close_combat_expert", 
+      "support"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "stealth", 
+    "speed_value": 8, 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "stealth", 
+    "speed_value": 8, 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "stealth", 
+    "speed_value": 8, 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "charge", 
+    "speed_value": 7, 
+    "attack_power": "special", 
+    "attack_value": 11, 
+    "defense_power": "super_senses", 
+    "defense_value": 16, 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "charge", 
+    "speed_value": 7, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 16, 
+    "damage_value": 1
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ew045</unit_id>
+    <set_id>ew</set_id>
+    <collector_number>045</collector_number>
+    <name>King Aquaman</name>
+    <type>character</type>
+    <rarity>super_rare</rarity>
+    <real_name>Arthur Curry</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[110, 20]</point_values>
+    <properties>["unique"]</properties>
+    <team_abilities>["kingdom_come"]</team_abilities>
+    <keywords>["Atlantis", "Future", "Ruler"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "WE WILL MAKE THINGS RIGHT AGAIN", 
+    "description": "King Aquaman's combat values can only be modified by power or abilities from characters with the \"Kingdom Come team ability symbol\". King Aquaman's powers and abilities can only be countered by characters with the \"Kingdom Come team ability symbol\"."
+  }, 
+  {
+    "type": "damage", 
+    "name": "I HAVE RESPONSIBILITIES YOU CANNOT EVEN DREAM OF", 
+    "description": "At the beginning of your turn, you may place a water terrain marker in any square of clear terrain within 8 squares. Give King Aquaman a free action and choose an opposing character that occupies water terrain within 8 squares. Place that character into an adjacent square."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>dolphin</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "charge", 
+    "speed_value": 9, 
+    "attack_value": 12, 
+    "defense_power": "invulnerability", 
+    "defense_value": 18, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "charge", 
+    "speed_value": 9, 
+    "attack_value": 12, 
+    "defense_power": "invulnerability", 
+    "defense_value": 18, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "charge", 
+    "speed_value": 8, 
+    "attack_power": "super_strength", 
+    "attack_value": 11, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "super_strength", 
+    "attack_value": 11, 
+    "defense_power": "toughness", 
+    "defense_value": 18, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 11, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 11, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 2
+  }, 
+  {
+    "defense_power": "invulnerability", 
+    "damage_power": "special", 
+    "speed_value": 0, 
+    "click_number": 11, 
+    "starting_line": true, 
+    "damage_value": 0, 
+    "attack_value": 0, 
+    "defense_value": 18
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ew046</unit_id>
+    <set_id>ew</set_id>
+    <collector_number>046</collector_number>
+    <name>Elijah Snow</name>
+    <type>character</type>
+    <rarity>super_rare</rarity>
+    <real_name>Elijah Snow</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[120, 70]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Detective", "Past", "Planetary"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "THE BIG FREEZE", 
+    "description": "Once per game, give Elijah Snow a free action. For the rest of the game, while Elijah Snow is on the map other characters that can't use the Flight ability can only move in a direct path."
+  }, 
+  {
+    "type": "trait", 
+    "name": "CHILL IN YOUR BONES", 
+    "description": "Give Elijah Snow a free action and choose one that hasn't been chosen yet this game: Power, Close Combat, Range Combat, or Move. Until your next turn, when an opposing character is given an action of the chosen type, after actions resolve give that character an action token. If you can't, deal them 1 unavoidable damage."
+  }, 
+  {
+    "type": "damage", 
+    "name": "PLANETARY: ARCHAEOLOGISTS OF THE IMPOSSIBLE", 
+    "description": "Once per turn, Elijah Snow can use either Outwit or Perplex.", 
+    "powers": [
+      "outwit", 
+      "perplex"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>8</unit_range>
+    <targets>3</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_power": "incapacitate", 
+    "attack_value": 11, 
+    "defense_power": "barrier", 
+    "defense_value": 18, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_power": "incapacitate", 
+    "attack_value": 11, 
+    "defense_power": "barrier", 
+    "defense_value": 18, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_power": "incapacitate", 
+    "attack_value": 10, 
+    "defense_power": "barrier", 
+    "defense_value": 18, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "running_shot", 
+    "speed_value": 6, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 10, 
+    "defense_power": "barrier", 
+    "defense_value": 17, 
+    "damage_power": "leadership", 
+    "damage_value": 3, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "running_shot", 
+    "speed_value": 6, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 10, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 17, 
+    "damage_power": "leadership", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 6, 
+    "attack_value": 9, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 17, 
+    "damage_power": "leadership", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 6, 
+    "attack_value": 9, 
+    "defense_power": "regeneration", 
+    "defense_value": 17, 
+    "damage_power": "leadership", 
+    "damage_value": 4
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ew047</unit_id>
+    <set_id>ew</set_id>
+    <collector_number>047</collector_number>
+    <name>Batman</name>
+    <type>character</type>
+    <rarity>chase</rarity>
+    <real_name>Bruce Wayne</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[100]</point_values>
+    <properties>["unique"]</properties>
+    <team_abilities>["batman_ally"]</team_abilities>
+    <keywords>["Batman Family", "Future", "Gotham City"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "THE DARK KNIGHT RETURNS: WE'VE ALWAYS BEEN CRIMINALS", 
+    "description": "When Batman occupies clear terrain, and is given a non-free action, after actions resolve you may place him in printed hindering terrain within 4 squares and line of fire."
+  }, 
+  {
+    "type": "damage", 
+    "name": "STRIKING TERROR... BEST PART OF THE JOB", 
+    "description": "Batman can use Outwit and Shape Change.", 
+    "powers": [
+      "outwit", 
+      "shape_change"
+    ]
+  }
+]</special_powers>
+    <improved_movement>["hindering"]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>5</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "charge", 
+    "speed_value": 8, 
+    "attack_power": "precision_strike", 
+    "attack_value": 11, 
+    "defense_power": "toughness", 
+    "defense_value": 18, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "charge", 
+    "speed_value": 8, 
+    "attack_power": "precision_strike", 
+    "attack_value": 12, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "flurry", 
+    "speed_value": 8, 
+    "attack_power": "precision_strike", 
+    "attack_value": 12, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "flurry", 
+    "speed_value": 7, 
+    "attack_power": "precision_strike", 
+    "attack_value": 11, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 17, 
+    "damage_power": "outwit", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_value": 11, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_value": 11, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 7, 
+    "speed_value": 7, 
+    "attack_value": 11, 
+    "defense_power": "regeneration", 
+    "defense_value": 16, 
+    "damage_power": "outwit", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ew048</unit_id>
+    <set_id>ew</set_id>
+    <collector_number>048</collector_number>
+    <name>Robin</name>
+    <type>character</type>
+    <rarity>chase</rarity>
+    <real_name>Carrie Kelly</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[45]</point_values>
+    <properties>["unique"]</properties>
+    <team_abilities>["batman_ally"]</team_abilities>
+    <keywords>["Batman Family", "Future", "Gotham City"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "COMPUTER CLASSES, DUH", 
+    "description": "At the beginning of the game place adjacent either the Batcycle or Batwing bystander. When that bystander is KO'd, after actions resolve place the other bystander adjacent."
+  }, 
+  {
+    "type": "trait", 
+    "name": "THE DARK KNIGHT RETURNS: GET SEEN AND YOU'RE FIRED", 
+    "description": "When Robin occupies clear terrain, she can use Shape Change. When she occupies hindering terrain, she can use Perplex but only to target another character occupying hindering terrain.", 
+    "powers": [
+      "shape_change", 
+      "perplex"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>3</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "leap_climb", 
+    "speed_value": 7, 
+    "attack_power": "precision_strike", 
+    "attack_value": 9, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 17, 
+    "damage_power": "support", 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "leap_climb", 
+    "speed_value": 7, 
+    "attack_power": "precision_strike", 
+    "attack_value": 9, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 17, 
+    "damage_power": "support", 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "leap_climb", 
+    "speed_value": 7, 
+    "attack_power": "precision_strike", 
+    "attack_value": 8, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 17, 
+    "damage_power": "enhancement", 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "leap_climb", 
+    "speed_value": 7, 
+    "attack_value": 8, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_power": "enhancement", 
+    "damage_value": 1
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ew048bta</unit_id>
+    <set_id>ew</set_id>
+    <collector_number>048bta</collector_number>
+    <name>Batcycle</name>
+    <type>bystander</type>
+    <rarity>chase</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>standard</bystander_type>
+    <passengers>1</passengers>
+    <unit_range>4</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>vehicle</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>1</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "running_shot", 
+    "speed_value": 8, 
+    "attack_value": 0, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 17, 
+    "damage_power": "shape_change", 
+    "damage_value": 3
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ew048btb</unit_id>
+    <set_id>ew</set_id>
+    <collector_number>048btb</collector_number>
+    <name>Bat-Wing</name>
+    <type>bystander</type>
+    <rarity>chase</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>standard</bystander_type>
+    <passengers>2</passengers>
+    <unit_range>6</unit_range>
+    <targets>1</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>vehicle</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>1</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "sidestep", 
+    "speed_value": 9, 
+    "attack_value": 0, 
+    "defense_power": "super_senses", 
+    "defense_value": 18, 
+    "damage_value": 3
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ew049</unit_id>
+    <set_id>ew</set_id>
+    <collector_number>049</collector_number>
+    <name>Green Arrow</name>
+    <type>character</type>
+    <rarity>chase</rarity>
+    <real_name>Oliver Queen</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[80]</point_values>
+    <properties>["unique"]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Gotham City", "Martial Artist", "Star City"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "THE DARK KNIGHT RETURNS: NOT HIDING ANYMORE", 
+    "description": "When Green Arrow occupies clear terrain, he can use Sidestep and opposing characters can't draw lines of fire to him unless they are within three squares of him or he has 2 action tokens.", 
+    "powers": [
+      "sidestep"
+    ]
+  }, 
+  {
+    "type": "trait", 
+    "name": "...IT STILL HURTS WHEN IT'S COLD", 
+    "description": "Green Arrow can't make range attacks when he has 1 action token."
+  }, 
+  {
+    "type": "attack", 
+    "name": "KRYPTONITE ARROWS", 
+    "description": "When Green Arrow hits with a ranged attack, the hit target can't use defense powers until your next turn. If the hit target has the Kryptonian keyword also give it an action token."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>["elevated", "hindering", "characters"]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>8</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "leap_climb", 
+    "speed_value": 10, 
+    "attack_power": "special", 
+    "attack_value": 12, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 17, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "leap_climb", 
+    "speed_value": 9, 
+    "attack_power": "special", 
+    "attack_value": 11, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "leap_climb", 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 11, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "stealth", 
+    "speed_value": 8, 
+    "attack_power": "precision_strike", 
+    "attack_value": 12, 
+    "defense_power": "super_senses", 
+    "defense_value": 16, 
+    "damage_power": "outwit", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "stealth", 
+    "speed_value": 7, 
+    "attack_power": "precision_strike", 
+    "attack_value": 11, 
+    "defense_power": "super_senses", 
+    "defense_value": 16, 
+    "damage_power": "outwit", 
+    "damage_value": 2, 
+    "starting_line": true
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ew050</unit_id>
+    <set_id>ew</set_id>
+    <collector_number>050</collector_number>
+    <name>Superman</name>
+    <type>character</type>
+    <rarity>chase</rarity>
+    <real_name>Kal-El</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[230, 110]</point_values>
+    <properties>["unique"]</properties>
+    <team_abilities>["superman_ally"]</team_abilities>
+    <keywords>["Kryptonian", "Metropolis", "Politician", "Reporter"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "A SYMBOL OF AUTHORITY... AND OBEDIENCE", 
+    "description": "At the beginning of your turn, you may roll a d6. 5-6: Superman's powers can't be countered and his attack rolls can't be rerolled by opponents until your next turn. 3-4: You may remove an action token from him. 1: He can't be moved or placed until your next turn."
+  }, 
+  {
+    "type": "speed", 
+    "name": "WE MUST NOT REMIND THEM THAT GIANTS WALK THE EARTH", 
+    "description": "Superman can use Charge and Stealth. If Superman began the turn occupying hindering terrain, don't halve his speed value when using Charge this turn.", 
+    "powers": [
+      "charge", 
+      "stealth"
+    ]
+  }, 
+  {
+    "type": "damage", 
+    "name": "SOLAR POWER STORED BY A SUFFERING WORLD", 
+    "description": "Give Superman a free action when he occupies printed outdoor hindering terrain and roll a d6. Heal him of half the result and put a Scoured marker in that square. Squares with Scoured markers in them are considered clear terrain instead of hindering terrain for the rest of the game."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>9</unit_range>
+    <targets>1</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "special", 
+    "speed_value": 11, 
+    "attack_power": "super_strength", 
+    "attack_value": 13, 
+    "defense_power": "invincible", 
+    "defense_value": 19, 
+    "damage_value": 5
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "special", 
+    "speed_value": 11, 
+    "attack_power": "super_strength", 
+    "attack_value": 12, 
+    "defense_power": "invincible", 
+    "defense_value": 18, 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "special", 
+    "speed_value": 10, 
+    "attack_power": "super_strength", 
+    "attack_value": 11, 
+    "defense_power": "impervious", 
+    "defense_value": 18, 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "charge", 
+    "speed_value": 11, 
+    "attack_power": "super_strength", 
+    "attack_value": 13, 
+    "defense_power": "impervious", 
+    "defense_value": 17, 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "charge", 
+    "speed_value": 10, 
+    "attack_power": "super_strength", 
+    "attack_value": 12, 
+    "defense_power": "invulnerability", 
+    "defense_value": 18, 
+    "damage_power": "shape_change", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "flurry", 
+    "speed_value": 8, 
+    "attack_power": "super_strength", 
+    "attack_value": 11, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "flurry", 
+    "speed_value": 8, 
+    "attack_power": "poison", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 8, 
+    "speed_power": "earthbound_neutralized", 
+    "speed_value": 6, 
+    "attack_power": "poison", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 9, 
+    "speed_power": "earthbound_neutralized", 
+    "speed_value": 6, 
+    "attack_power": "poison", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ew100</unit_id>
+    <set_id>ew</set_id>
+    <collector_number>100</collector_number>
+    <name>Hourman</name>
+    <type>character</type>
+    <rarity>limited_edition</rarity>
+    <real_name>Rick Tyler</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[50]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["justice_society"]</team_abilities>
+    <keywords>["All-Star Squadron", "Justice Society"]</keywords>
+    <special_powers>[
+  {
+    "type": "speed", 
+    "name": "REVERT TO RICK", 
+    "description": "Hourman can use Charge and Sidestep. At the beginning of your turn, remove an Hour token. When Hourman has no Hour tokens turn him to click #2.", 
+    "powers": [
+      "charge", 
+      "sidestep"
+    ]
+  }, 
+  {
+    "type": "attack", 
+    "name": "HOUR OF POWER", 
+    "description": "At the beginning of your turn give Hourman an Hour token. When Hourman has three Hour tokens, turn him to click #9."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "stealth", 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 17, 
+    "damage_power": "outwit", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "stealth", 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_power": "perplex", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "leap_climb", 
+    "speed_value": 7, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_power": "outwit", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "leap_climb", 
+    "speed_value": 7, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 15, 
+    "damage_power": "perplex", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 9, 
+    "speed_power": "special", 
+    "speed_value": 9, 
+    "attack_power": "super_strength", 
+    "attack_value": 11, 
+    "defense_power": "invincible", 
+    "defense_value": 18, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 10, 
+    "speed_power": "special", 
+    "speed_value": 9, 
+    "attack_power": "super_strength", 
+    "attack_value": 10, 
+    "defense_power": "invincible", 
+    "defense_value": 18, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 11, 
+    "speed_power": "special", 
+    "speed_value": 8, 
+    "attack_power": "super_strength", 
+    "attack_value": 10, 
+    "defense_power": "invincible", 
+    "defense_value": 17, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ew101</unit_id>
+    <set_id>ew</set_id>
+    <collector_number>101</collector_number>
+    <name>Batman</name>
+    <type>character</type>
+    <rarity>starter</rarity>
+    <real_name>Bruce Wayne</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[100, 50]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["batman_ally"]</team_abilities>
+    <keywords>["Detective", "Justice League"]</keywords>
+    <special_powers>[
+  {
+    "type": "attack", 
+    "name": "GRAPPLING GUN", 
+    "description": "Batman can use Improved Movement: Elevated, Hindering."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>5</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "charge", 
+    "speed_value": 9, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "outwit", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "charge", 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 11, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "outwit", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "flurry", 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "outwit", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "leap_climb", 
+    "speed_value": 8, 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "outwit", 
+    "damage_value": 3, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "flurry", 
+    "speed_value": 7, 
+    "attack_value": 9, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_power": "outwit", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "leap_climb", 
+    "speed_value": 7, 
+    "attack_value": 9, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 15, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "leap_climb", 
+    "speed_value": 7, 
+    "attack_value": 9, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 15, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ew102</unit_id>
+    <set_id>ew</set_id>
+    <collector_number>102</collector_number>
+    <name>Superman</name>
+    <type>character</type>
+    <rarity>starter</rarity>
+    <real_name>Kal-El</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[100, 50]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["superman_ally"]</team_abilities>
+    <keywords>["Justice League", "Reporter"]</keywords>
+    <special_powers>[
+  {
+    "type": "damage", 
+    "name": "LEADER OF HEROES", 
+    "description": "Superman can use Leadership. When he does and succeeds, other friendly characters that share a keyword with Superman modify their defense value by +1 until your next turn.", 
+    "powers": [
+      "leadership"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>6</unit_range>
+    <targets>1</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "charge", 
+    "speed_value": 10, 
+    "attack_power": "super_strength", 
+    "attack_value": 11, 
+    "defense_power": "invulnerability", 
+    "defense_value": 18, 
+    "damage_power": "special", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "charge", 
+    "speed_value": 9, 
+    "attack_power": "super_strength", 
+    "attack_value": 11, 
+    "defense_power": "toughness", 
+    "defense_value": 18, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "sidestep", 
+    "speed_value": 9, 
+    "attack_power": "super_strength", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "sidestep", 
+    "speed_value": 9, 
+    "attack_power": "super_strength", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "leadership", 
+    "damage_value": 3, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "sidestep", 
+    "speed_value": 9, 
+    "attack_value": 9, 
+    "defense_power": "super_senses", 
+    "defense_value": 16, 
+    "damage_power": "leadership", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "force_blast", 
+    "speed_value": 8, 
+    "attack_value": 9, 
+    "defense_power": "super_senses", 
+    "defense_value": 16, 
+    "damage_power": "leadership", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "force_blast", 
+    "speed_value": 8, 
+    "attack_value": 9, 
+    "defense_power": "super_senses", 
+    "defense_value": 16, 
+    "damage_power": "leadership", 
+    "damage_value": 3
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ew103</unit_id>
+    <set_id>ew</set_id>
+    <collector_number>103</collector_number>
+    <name>Wonder Woman</name>
+    <type>character</type>
+    <rarity>starter</rarity>
+    <real_name>Diana Prince</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[100, 50]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["justice_league"]</team_abilities>
+    <keywords>["Justice League", "Warrior"]</keywords>
+    <special_powers>[
+  {
+    "type": "speed", 
+    "name": "LASSO-WIELDING WARRIOR", 
+    "description": "Wonder Woman can use Charge, Flurry and Plasticity.", 
+    "powers": [
+      "charge", 
+      "flurry", 
+      "plasticity"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "special", 
+    "speed_value": 10, 
+    "attack_value": 10, 
+    "defense_power": "invincible", 
+    "defense_value": 18, 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "special", 
+    "speed_value": 9, 
+    "attack_power": "precision_strike", 
+    "attack_value": 11, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "charge", 
+    "speed_value": 9, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "charge", 
+    "speed_value": 9, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 3, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "flurry", 
+    "speed_value": 8, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 17, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "flurry", 
+    "speed_value": 7, 
+    "attack_power": "precision_strike", 
+    "attack_value": 9, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "flurry", 
+    "speed_value": 7, 
+    "attack_power": "precision_strike", 
+    "attack_value": 9, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_value": 3
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ew104</unit_id>
+    <set_id>ew</set_id>
+    <collector_number>104</collector_number>
+    <name>Green Lantern</name>
+    <type>character</type>
+    <rarity>starter</rarity>
+    <real_name>Hal Jordan</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[100, 50]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["green_lantern_corps"]</team_abilities>
+    <keywords>["Green Lantern Corps", "Justice League"]</keywords>
+    <special_powers>[
+  {
+    "type": "attack", 
+    "name": "BEWARE MY POWER", 
+    "description": "Give Green Lantern a free action and choose: Penetrating/Psychic Blast, Perplex, or Telekinesis. Green Lantern can use the chosen power until your next turn.", 
+    "powers": [
+      "penetrating_psychic_blast", 
+      "perplex", 
+      "telekinesis"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>6</unit_range>
+    <targets>1</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "running_shot", 
+    "speed_value": 10, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "running_shot", 
+    "speed_value": 10, 
+    "attack_power": "special", 
+    "attack_value": 11, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "sidestep", 
+    "speed_value": 10, 
+    "attack_value": 10, 
+    "defense_power": "willpower", 
+    "defense_value": 17, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "sidestep", 
+    "speed_value": 9, 
+    "attack_value": 10, 
+    "defense_power": "willpower", 
+    "defense_value": 18, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 3, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 9, 
+    "attack_value": 9, 
+    "defense_power": "barrier", 
+    "defense_value": 17, 
+    "damage_power": "perplex", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 9, 
+    "attack_value": 9, 
+    "defense_power": "barrier", 
+    "defense_value": 18, 
+    "damage_power": "perplex", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 8, 
+    "attack_value": 9, 
+    "defense_power": "barrier", 
+    "defense_value": 18, 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ew105</unit_id>
+    <set_id>ew</set_id>
+    <collector_number>105</collector_number>
+    <name>The Flash</name>
+    <type>character</type>
+    <rarity>starter</rarity>
+    <real_name>Barry Allen</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[100, 50]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["justice_league"]</team_abilities>
+    <keywords>["Justice League", "Speedster"]</keywords>
+    <special_powers>[
+  {
+    "type": "attack", 
+    "name": "BRACE YOURSELF, WE'RE GOING TO MOVE QUICKLY", 
+    "description": "The Flash can use the Carry ability."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "hypersonic_speed", 
+    "speed_value": 13, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 18, 
+    "damage_power": "probability_control", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "hypersonic_speed", 
+    "speed_value": 12, 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 18, 
+    "damage_power": "probability_control", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "hypersonic_speed", 
+    "speed_value": 12, 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 18, 
+    "damage_power": "probability_control", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "hypersonic_speed", 
+    "speed_value": 11, 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_power": "probability_control", 
+    "damage_value": 2, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "hypersonic_speed", 
+    "speed_value": 11, 
+    "attack_value": 9, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 17, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "flurry", 
+    "speed_value": 10, 
+    "attack_value": 9, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "flurry", 
+    "speed_value": 10, 
+    "attack_value": 9, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 15, 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ew106</unit_id>
+    <set_id>ew</set_id>
+    <collector_number>106</collector_number>
+    <name>Cyborg</name>
+    <type>character</type>
+    <rarity>starter</rarity>
+    <real_name>Vic Stone</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[100, 50]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["justice_league"]</team_abilities>
+    <keywords>["Justice League", "Scientist"]</keywords>
+    <special_powers>[
+  {
+    "type": "attack", 
+    "name": "REVERBERATING MULTITHREADED ION CANNONS", 
+    "description": "Cyborg can use Energy Explosion and Penetrating/Psychic Blast.", 
+    "powers": [
+      "energy_explosion", 
+      "penetrating_psychic_blast"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>6</unit_range>
+    <targets>2</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "running_shot", 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 11, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "enhancement", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "running_shot", 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 18, 
+    "damage_power": "outwit", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 17, 
+    "damage_power": "enhancement", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "running_shot", 
+    "speed_value": 7, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "enhancement", 
+    "damage_value": 3, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 7, 
+    "attack_value": 9, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 16, 
+    "damage_power": "outwit", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 7, 
+    "attack_value": 9, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 16, 
+    "damage_power": "enhancement", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 7, 
+    "attack_value": 9, 
+    "defense_power": "regeneration", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ewG001</unit_id>
+    <set_id>ew</set_id>
+    <collector_number>G001</collector_number>
+    <name>The Skyscraper Wonder Woman</name>
+    <type>character</type>
+    <rarity>limited_edition</rarity>
+    <real_name>N/A</real_name>
+    <dimensions>2x2</dimensions>
+    <point_values>[350, 225, 100, 15]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Cosmic", "Robot"]</keywords>
+    <special_powers>[
+  {
+    "type": "speed", 
+    "name": "MAGNETIC SKIN", 
+    "description": "The Skyscraper Wonder Woman can use Plasticity and Sidestep. When an adjacent opposing character fails to break away, after actions resolve give it an action token. If you can't, deal it 1 unavoidable damage.", 
+    "powers": [
+      "plasticity", 
+      "sidestep"
+    ]
+  }, 
+  {
+    "type": "attack", 
+    "name": "THE TRIAL OF ICE", 
+    "description": "When The Skyscraper Wonder Woman hits an opposing character, after actions resolve choose one: give that character an action token; -or- place that character in any square within 5 squares of The Skyscraper Wonder Woman that's closer to your starting area than its current square."
+  }, 
+  {
+    "type": "defense", 
+    "name": "COLOSSAL RETALIATION: BURY YOU IN SAND", 
+    "description": "Give The Skyscraper Wonder Woman a free action if no other Colossal Retaliation power has been activated this turn and choose an opposing character that attacked The Skyscraper Wonder Woman or damaged a friendly character since your last turn. Place The Skyscraper Wonder Woman such that it can make a close attack targeting the chosen character and also target all other characters within 2 squares of the target. Hit characters are each dealt 3 damage instead of normal damage and can't move or be placed or make range attacks during their next turns."
+  }, 
+  {
+    "type": "damage", 
+    "name": "COLOSSAL INDIFFERENCE", 
+    "description": "STOP. The Skyscraper Wonder Woman can use Toughness. If The Skyscraper Wonder Woman began the game on the 15-point starting line, she can't attack smaller characters except via Colossal Retaliation.", 
+    "powers": [
+      "stop", 
+      "toughness"
+    ]
+  }
+]</special_powers>
+    <improved_movement>["destroy_blocking"]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>7</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>colossal</damage_type>
+    <dial_size>26</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "running_shot", 
+    "speed_value": 10, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 12, 
+    "defense_power": "invincible", 
+    "defense_value": 19, 
+    "damage_value": 5
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "running_shot", 
+    "speed_value": 10, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 11, 
+    "defense_power": "invincible", 
+    "defense_value": 19, 
+    "damage_value": 5
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "running_shot", 
+    "speed_value": 9, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 12, 
+    "defense_power": "impervious", 
+    "defense_value": 19, 
+    "damage_value": 5
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "running_shot", 
+    "speed_value": 9, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 11, 
+    "defense_power": "impervious", 
+    "defense_value": 19, 
+    "damage_value": 5
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "sidestep", 
+    "speed_value": 9, 
+    "attack_power": "super_strength", 
+    "attack_value": 12, 
+    "defense_power": "toughness", 
+    "defense_value": 18, 
+    "damage_value": 5
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "sidestep", 
+    "speed_value": 9, 
+    "attack_power": "super_strength", 
+    "attack_value": 11, 
+    "defense_power": "toughness", 
+    "defense_value": 18, 
+    "damage_value": 5
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "hypersonic_speed", 
+    "speed_value": 12, 
+    "attack_power": "special", 
+    "attack_value": 11, 
+    "defense_power": "impervious", 
+    "defense_value": 18, 
+    "damage_value": 4, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 8, 
+    "speed_power": "hypersonic_speed", 
+    "speed_value": 11, 
+    "attack_power": "special", 
+    "attack_value": 11, 
+    "defense_power": "impervious", 
+    "defense_value": 18, 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 9, 
+    "speed_power": "hypersonic_speed", 
+    "speed_value": 11, 
+    "attack_power": "special", 
+    "attack_value": 11, 
+    "defense_power": "invulnerability", 
+    "defense_value": 18, 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 10, 
+    "speed_power": "hypersonic_speed", 
+    "speed_value": 10, 
+    "attack_power": "special", 
+    "attack_value": 11, 
+    "defense_power": "invulnerability", 
+    "defense_value": 18, 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 11, 
+    "speed_power": "sidestep", 
+    "speed_value": 10, 
+    "attack_power": "super_strength", 
+    "attack_value": 11, 
+    "defense_power": "toughness", 
+    "defense_value": 18, 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 12, 
+    "speed_power": "sidestep", 
+    "speed_value": 9, 
+    "attack_power": "super_strength", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 18, 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 13, 
+    "speed_power": "special", 
+    "speed_value": 8, 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 17, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 4, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 14, 
+    "speed_power": "special", 
+    "speed_value": 8, 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 17, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 15, 
+    "speed_power": "special", 
+    "speed_value": 8, 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 16, 
+    "speed_power": "special", 
+    "speed_value": 7, 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 17, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_power": "super_strength", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 18, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_power": "super_strength", 
+    "attack_value": 7, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 19, 
+    "speed_power": "special", 
+    "speed_value": 7, 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 3, 
+    "starting_line": true
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ewM001</unit_id>
+    <set_id>ew</set_id>
+    <collector_number>M001</collector_number>
+    <name>Junkyard</name>
+    <type>map</type>
+    <point_values>[]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <map_url>https://hcmaps.net/maps/ew/junkyard.json</map_url>
+    <dial>[]</dial>
+  </row>
+  <row>
+    <unit_id>ewM002</unit_id>
+    <set_id>ew</set_id>
+    <collector_number>M002</collector_number>
+    <name>High Noon Saloon</name>
+    <type>map</type>
+    <point_values>[]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <map_url>https://hcmaps.net/maps/ew/high_noon_saloon.json</map_url>
+    <dial>[]</dial>
+  </row>
+  <row>
+    <unit_id>ewM003</unit_id>
+    <set_id>ew</set_id>
+    <collector_number>M003</collector_number>
+    <name>Wonder Woman Barn</name>
+    <type>map</type>
+    <point_values>[]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <map_url>https://hcmaps.net/maps/ew/wonder_woman_barn.json</map_url>
+    <dial>[]</dial>
+  </row>
+  <row>
+    <unit_id>ewM004</unit_id>
+    <set_id>ew</set_id>
+    <collector_number>M004</collector_number>
+    <name>High Noon Street</name>
+    <type>map</type>
+    <point_values>[]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <map_url>https://hcmaps.net/maps/ew/high_noon_street.json</map_url>
+    <dial>[]</dial>
+  </row>
+</resultset>
