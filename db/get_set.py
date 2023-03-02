@@ -224,6 +224,9 @@ SET_MAP = {
   "ew": {
     "name": "15th Anniversary Elseworlds",
   },
+  "wi": {
+    "name": "15th Anniversary What If?",
+  },
 }
 
 POWERS = {
@@ -392,6 +395,7 @@ IMPROVED_ABILITIES = {
       "imrpoved targeting: ignores hindering terrain": "hindering",
       "blocking": "blocking",
       "destroy blocking": "destroy_blocking",
+      "ignores blocking terrain. when a ranged combat attack resolves, any blocking terrain along its line of fire to the target is destroyed": "destroy_blocking",
       "once per range attack, this character can draw a line of fire through one piece of blocking terrain. immediately after the attack resolves, destroy that piece of blocking terrain": "destroy_blocking",
       "once per range attack, this character can draw a line through one piece of blocking terrain. immediately after the attack resolves, destroy that piece of blocking terrain": "destroy_blocking",
       "characters": "characters",
@@ -401,6 +405,7 @@ IMPROVED_ABILITIES = {
       "this character can make range attacks while adjacent to opposing characters. (may target adjacent or non-adjacent opposing characters.)": "adjacent",
       "this character can make range attacks while adjacent to opposing characters": "adjacent",
       "may make a ranged combat attack against any opposing character within range and line of fire, even if that character is in an adjacent square": "adjacent",
+      "may make a ranged combat attack targeting adjacent opposing characters": "adjacent",
       "water": "water",
     },
   }
@@ -1002,11 +1007,14 @@ class Unit:
             continue
           
           # Skip the special power that describes Special Terrain rules.
-          if self.type == "character" and sp_name.upper().startswith("SPECIAL TERRAIN TRAIT"):
+          if (self.type == "character" and
+              sp_name and
+              sp_name.upper().startswith("SPECIAL TERRAIN TRAIT")):
             continue
           
           # Handle special power that describe the number of passengers.
           if ((self.type == "character" or self.type == "bystander") and
+              sp_name and
               sp_name.startswith("PASSENGER")):
             self.passengers = int(sp_description)
             continue
@@ -1026,54 +1034,71 @@ class Unit:
             continue
 
           if sp_type == "improved":
-            if sp_name.lower().startswith("improved "):
-              sp_name = sp_name.split(" ", 1)[1].strip()
-            # Correct the spelling of 'targeting'.
-            if sp_name == 'TARGETTING':
-              sp_name = 'TARGETING'
-            elif sp_name == 'MOVEMENT; IMPROVED TARGETING':
-              print("Warning: unit '%s' has invalid improved ability type '%s'" % (self.unit_id, sp_name))
-              continue
-            improved_ability_info = IMPROVED_ABILITIES.get(sp_name.lower(), None)
-            if not improved_ability_info:
-              raise RuntimeError("Error: unit '%s' has invalid improved ability type '%s'" % (self.unit_id, sp_name))
-            else:
-              # First try to parse when the abilities are listed as rules.
-              attr_name = improved_ability_info["attr_name"]
-              types = improved_ability_info["types"]
-              
-              # Remove any trailing period.
-              if len(sp_description) > 0 and sp_description[-1] == ".":
-                sp_description = sp_description[:-1]
+            # Check whether the description holds different types of improved
+            # abilities and, if so, split it up and process each separately.
+            improved_abilities = None
+            for imp_type in IMPROVED_ABILITIES.keys():
+              type_str =  "improved " + imp_type + ":"
+              idx = sp_description.lower().find(type_str)
+              if idx >= 0:
+                improved_abilities = [
+                  (sp_name, sp_description[:idx].strip()),
+                  (type_str[:-1], sp_description[idx + len(type_str):].strip())
+                ]
 
-              # Try and split apart the description by different delimiters and
-              # extract the values that have a match.
-              for delimiter in [", and", "and", ".", ","]:
-                parts = sp_description.split(delimiter)
-                sp_description = ""
-                while len(parts) > 0:
-                  tail = parts.pop()
-                  lower_tail = tail.strip().lower()
-                  if lower_tail in types:
-                    # If a match was found, add the improved ability and begin
-                    # searching for the next.
-                    attr = getattr(self, attr_name)
-                    attr.append(types[lower_tail])
-                    setattr(self, attr_name, attr)
-                  elif len(parts) > 0:
-                    # Couldn't find a match, so combine the last two strings and try again.
-                    parts[-1] = parts[-1] + delimiter + tail
-                  else:
-                    # Move the remaining segments back to the sp_description
-                    # field to try again (or fail out with an error)
-                    sp_description = tail
-
-              if sp_description and len(sp_description) > 0:
-                print("For %s, skipping unknown %s ability, description='%s'" % (self.unit_id, attr_name, sp_description))
-
-              # Reverse the list since we were previously working backwards
-              # from the end of the list.
-              getattr(self, attr_name).reverse()
+            if not improved_abilities:
+              improved_abilities = [(sp_name, sp_description)]
+            
+            for (imp_name, imp_types) in improved_abilities:
+              imp_name = imp_name.lower()
+              if imp_name.startswith("improved "):
+                imp_name = imp_name.split(" ", 1)[1].strip()
+              # Correct the spelling of 'targeting'.
+              if imp_name == 'TARGETTING':
+                imp_name = 'TARGETING'
+              elif imp_name == 'MOVEMENT; IMPROVED TARGETING':
+                print("Warning: unit '%s' has invalid improved ability type '%s'" % (self.unit_id, imp_name))
+                continue
+              improved_ability_info = IMPROVED_ABILITIES.get(imp_name, None)
+              if not improved_ability_info:
+                raise RuntimeError("Error: unit '%s' has invalid improved ability type '%s'" % (self.unit_id, imp_name))
+              else:
+                # First try to parse when the abilities are listed as rules.
+                attr_name = improved_ability_info["attr_name"]
+                types = improved_ability_info["types"]
+                
+                # Remove any trailing period.
+                if len(imp_types) > 0 and imp_types[-1] == ".":
+                  imp_types = imp_types[:-1]
+  
+                # Try and split apart the description by different delimiters and
+                # extract the values that have a match.
+                for delimiter in [", and", "and", ".", ","]:
+                  parts = imp_types.split(delimiter)
+                  imp_types = ""
+                  while len(parts) > 0:
+                    tail = parts.pop()
+                    lower_tail = tail.strip().lower()
+                    if lower_tail in types:
+                      # If a match was found, add the improved ability and begin
+                      # searching for the next.
+                      attr = getattr(self, attr_name)
+                      attr.append(types[lower_tail])
+                      setattr(self, attr_name, attr)
+                    elif len(parts) > 0:
+                      # Couldn't find a match, so combine the last two strings and try again.
+                      parts[-1] = parts[-1] + delimiter + tail
+                    else:
+                      # Move the remaining segments back to the imp_types
+                      # field to try again (or fail out with an error)
+                      imp_types = tail
+  
+                if imp_types and len(imp_types) > 0:
+                  print("For %s, skipping unknown %s ability, description='%s'" % (self.unit_id, attr_name, imp_types))
+  
+                # Reverse the list since we were previously working backwards
+                # from the end of the list.
+                getattr(self, attr_name).reverse()
 
           else:
             sp = OrderedDict([("type", sp_type)])
@@ -1363,7 +1388,7 @@ class Unit:
     for src_sp in src_unit.special_powers:
       found = False
       for dst_sp in self.special_powers:
-        if src_sp["name"] == dst_sp["name"]:
+        if src_sp.get("name", "") == dst_sp.get("name", ""):
           found = True
           break;
       if not found:

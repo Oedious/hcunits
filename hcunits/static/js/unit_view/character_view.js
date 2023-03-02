@@ -276,7 +276,7 @@ class CharacterView extends BaseUnitView {
         type = this.unit_[type + "_type"];
       }
         
-      const headerLines = Math.ceil(power.name.length / CHARS_PER_NAME_LINE);
+      const headerLines = power.name ? Math.ceil(power.name.length / CHARS_PER_NAME_LINE) : 0;
       const descLines = Math.ceil(power.description.length / CHARS_PER_DESC_LINE);
       const lines = headerLines + descLines;
       if (lines > LINES_PER_COLUMN[LINES_PER_COLUMN.length - 1]) {
@@ -318,8 +318,11 @@ class CharacterView extends BaseUnitView {
       html += `
         <tr class='specialPowerRow'>
           <td class='specialPowerImg'>${iconHtml}</td>
-          <td class='specialPower'><b>${escapeHtml(power.name.toUpperCase())}</b><br>${escapeHtml(power.description)}</td>
-        </tr>`;
+          <td class='specialPower'>`;
+      if (power.name) {
+        html += `<b>${escapeHtml(power.name.toUpperCase())}</b><br>`;
+      }
+      html += `${escapeHtml(power.description)}</td></tr>`;
     }
     html += "</table>"
     htmlColumns.push(html)

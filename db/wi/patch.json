@@ -1,0 +1,131 @@
+{
+  "updates": {
+    "wi007": {
+      "special_powers": [{
+        "description": "Oni Hulk can use Super Strength. If a friendly character named Oni Leader is within 8 squares modify Oni Hulk's attack by +1.",
+        "powers": ["super_strength"]
+      }]
+    },
+    "wi010": {
+      "special_powers": [{
+      }, {
+        "description": "Iron Rick can use Super Senses and Toughness. When he uses Super-Senses, on a result of 3-4, he can use Invulnerability instead of Toughness for that attack.",
+        "powers": ["super_senses", "toughness", "invulnerability"]
+      }]
+    },
+    "wi020": {
+      "special_powers": [{
+        "description": "Oni Leader can use Outwit and when he does, he can use Improved Targeting: Characters. He can use it one additional time during your turn for each other friendly character closer to the opponent's starting than your own, but only if that character is 50 points or more or is named Oni Hulk."
+      }]
+    },
+    "wi010": {
+      "special_powers": [{
+      }, {
+        "powers": ["energy_shield_deflection"]
+      }]
+    },
+    "wi022": {
+      "special_powers": [{
+      }, {
+        "powers": ["energy_shield_deflection"]
+      }]
+    },
+    "wi026": {
+      "special_powers": [{
+        "powers": ["combat_reflexes"]
+      }, {
+        "description": "Spider-Man can use Charge and Improved Movement: Elevated, Hindering, Characters. Give Spider-Man a power action to move him up to his printed speed value and then make a close attack."
+      }]
+    },
+    "wi027": {
+      "special_powers": [{
+        "powers": ["energy_shield_deflection"]
+      }]
+    },
+    "wi028bt": {
+      "special_powers": [{
+        "powers": ["pulse_wave"]
+      }]
+    },
+    "wi029": {
+      "special_powers": [{
+        "powers": ["outwit", "perplex"]
+      }]
+    },
+    "wi031": {
+      "special_powers": [{
+      }, {
+        "powers": ["flurry", "leap_climb", "phasing_teleport", "earthbound_neutralized", "charge", "mind_control", "plasticity", "force_blast", "sidestep", "hypersonic_speed", "stealth", "running_shot", "blades_claws_fangs", "energy_explosion", "pulse_wave", "quake", "super_strength", "incapacitate", "penetrating_psychic_blast", "smoke_cloud", "precision_strike", "poison", "steal_energy", "telekinesis", "super_senses", "toughness", "defend", "combat_reflexes", "energy_shield_deflection", "barrier", "mastermind", "willpower", "invincible", "impervious", "regeneration", "invulnerability", "ranged_combat_expert", "battle_fury", "support", "exploit_weakness", "enhancement", "probability_control", "shape_change", "close_combat_expert", "empower", "perplex", "outwit", "leadership"]
+      }]
+    },
+    "wi032": {
+      "special_powers": [{
+        "powers": ["probability_control"]
+      }]
+    },
+    "wi035": {
+      "special_powers": [{
+        "powers": ["running_shot", "sidestep", "stealth"]
+      }]
+    },
+    "wi037": {
+      "special_powers": [{
+      }, {
+      }, {
+        "description": "Gertrude Yorkes &amp; Old Lace can use Leadership. When they do and succeed, you may instead remove an action token from one friendly character with the Runaways or Young Avengers keyword, regardless of adjacency or point value.",
+        "powers": ["leadership"]
+      }]
+    },
+    "wi040": {
+      "special_powers": [{
+      }, {
+        "powers": ["flurry", "leap_climb", "phasing_teleport", "earthbound_neutralized", "charge", "mind_control", "plasticity", "force_blast", "sidestep", "hypersonic_speed", "stealth", "running_shot", "blades_claws_fangs", "energy_explosion", "pulse_wave", "quake", "super_strength", "incapacitate", "penetrating_psychic_blast", "smoke_cloud", "precision_strike", "poison", "steal_energy", "telekinesis", "super_senses", "toughness", "defend", "combat_reflexes", "energy_shield_deflection", "barrier", "mastermind", "willpower", "invincible", "impervious", "regeneration", "invulnerability", "ranged_combat_expert", "battle_fury", "support", "exploit_weakness", "enhancement", "probability_control", "shape_change", "close_combat_expert", "empower", "perplex", "outwit", "leadership"]
+      }]
+    },
+    "wi041": {
+      "special_powers": [{
+      }, {
+        "description": "The Advocate can use Stealth and Improved Movement: Hindering. Before The Advocate is given a non-free action, you may place him in a square of hindering terrain within 3 squares and line of fire."
+      }]
+    },
+    "wi101": {
+      "special_powers": [{
+        "powers": ["super_senses"]
+      }]
+    },
+    "wi103": {
+      "special_powers": [{
+        "powers": ["sidestep", "stealth", "smoke_cloud"]
+      }]
+    }
+  },
+  "additions": [{
+    "unit_id": "wiM001",
+    "set_id": "wi",
+    "collector_number": "M001",
+    "name": "Arthur's Castle",
+    "type": "map",
+    "map_url": "https://hcmaps.net/maps/wi/arthurs_castle.json"
+  }, {
+    "unit_id": "wiM002",
+    "set_id": "wi",
+    "collector_number": "M002",
+    "name": "Avengers Unity Rooftop",
+    "type": "map",
+    "map_url": "https://hcmaps.net/maps/wi/avengers_unity_rooftop.json"
+  }, {
+    "unit_id": "wiM003",
+    "set_id": "wi",
+    "collector_number": "M003",
+    "name": "Runaways Base",
+    "type": "map",
+    "map_url": "https://hcmaps.net/maps/wi/runaways_base.json"
+  }, {
+    "unit_id": "wiM004",
+    "set_id": "wi",
+    "collector_number": "M004",
+    "name": "Avenger's Island",
+    "type": "map",
+    "map_url": "https://hcmaps.net/maps/wi/avengers_island.json"
+  }]
+}

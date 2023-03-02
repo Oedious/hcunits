@@ -334,6 +334,11 @@ const SET_LIST = {
     "release_date": "2017-07-19",
     "universe": "dc"
   },
+  "wi": {
+    "name": "15th Anniversary What If?",
+    "release_date": "2017-06-07",
+    "universe": "dc"
+  },
   "wk": {
     "name": "WizKids Standard Game Pieces",
     "release_date": "2002-05-01",
