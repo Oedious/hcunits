@@ -355,7 +355,7 @@ PROPERTY_VALUES = [
 ]
 
 SPECIAL_POWER_TYPE_VALUES = [
-  "trait", "costed_trait", "rally_trait", "title_trait", "plus_plot_points", "minus_plot_points", "speed", "attack", "defense", "damage", "location", "consolation"
+  "trait", "costed_trait", "rally_trait", "title_trait", "plus_plot_points", "minus_plot_points", "speed", "attack", "defense", "damage", "location", "consolation", "other_id", "inspiration"
 ]
 
 RALLY_TYPE_VALUES = [
@@ -877,7 +877,6 @@ class Unit:
               sp_name = sp[0]
               sp_description = sp[1].strip()
               self.special_powers.append(OrderedDict([
-                ("type", "equipment"),
                 ("name", sp_name),
                 ("description", clean_string(sp_description))
               ]))
@@ -911,7 +910,6 @@ class Unit:
           name_tag = tag.find(text=re.compile(name))
           if name_tag:
             self.special_powers.append(OrderedDict([
-              ("type", "mystery_card"),
               ("name", clean_string(name_tag.strip())),
               ("description", clean_string(name_tag.parent.next_sibling.strip()[2:]))
             ]))
@@ -922,7 +920,6 @@ class Unit:
       equip_tag = soup.find("td", class_="card_tarot_card").parent
       desc_tag = equip_tag.next_sibling.next_sibling.find("div")
       self.special_powers.append(OrderedDict([
-        ("type", "tarot_card"),
         ("description", clean_string(desc_tag.string.strip()))
       ]))
 
@@ -1317,7 +1314,7 @@ class Unit:
         power = power[len(prefix):]
       if power in POWERS:
         sp_powers.append(POWERS[power])
-      elif sp["type"] == "trait" and power.startswith("Improved Movement:"):
+      elif sp.get("type", None) == "trait" and power.startswith("Improved Movement:"):
         im_name = power.split(":", 1)[1].strip()
         im_type = IMPROVED_ABILITIES["movement"]["types"].get(im_name.lower(), None)
         if im_type:
@@ -1325,7 +1322,7 @@ class Unit:
             self.improved_movement.append(im_type)
         else:
           print("Warning: unit '%s' has unknown traited improved movement '%s'" % (self.unit_id, im_name))
-      elif sp["type"] == "trait" and power.startswith("Improved Targeting:"):
+      elif sp.get("type", None) == "trait" and power.startswith("Improved Targeting:"):
         it_name = power.split(":", 1)[1].strip()
         it_type = IMPROVED_ABILITIES["targeting"]["types"].get(it_name.lower(), None)
         if it_type:
