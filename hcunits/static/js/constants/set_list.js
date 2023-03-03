@@ -354,6 +354,11 @@ const SET_LIST = {
     "release_date": "2017-05-10",
     "universe": "marvel"
   },
+  "gotg2m": {
+    "name": "Guardians of the Galaxy 2 Movie",
+    "release_date": "2017-04-05",
+    "universe": "marvel"
+  },
   "wk": {
     "name": "WizKids Standard Game Pieces",
     "release_date": "2002-05-01",

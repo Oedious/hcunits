@@ -236,6 +236,9 @@ SET_MAP = {
   "ffadw": {
     "name": "Fast Forces: Avengers/Defenders War",
   },
+  "gotg2m": {
+    "name": "Guardians of the Galaxy 2 Movie",
+  },
 }
 
 POWERS = {
