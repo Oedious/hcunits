@@ -1,0 +1,170 @@
+{
+  "updates": {
+    "dxf002": {
+      "special_powers": [{
+        "powers": ["regeneration"]
+      }]
+    },
+    "dxf009": {
+      "special_powers": [{
+        "powers": ["leap_climb", "stealth", "quake"]
+      }]
+    },
+    "dxf014": {
+      "special_powers": [{
+      }, {
+      }, {
+        "description": "Cable can use Invulnerability. When Cable has less than 2 action tokens, he can use Energy Shield/Deflection.",
+        "powers": ["invulnerability", "energy_shield_deflection"]
+      }]
+    },
+    "dxf019": {
+      "special_powers": [{
+      }, {
+        "powers": ["perplex", "support"]
+      }]
+    },
+    "dxf020": {
+      "special_powers": [{
+      }, {
+        "powers": ["running_shot", "sidestep", "stealth"]
+      }]
+    },
+    "dxf034a": {
+      "special_powers": [{
+      }, {
+        "powers": ["probability_control"]
+      }, {
+        "powers": ["perplex"]
+      }]
+    },
+    "dxf034b": {
+      "special_powers": [{
+      }, {
+      }, {
+        "powers": ["perplex"]
+      }]
+    },
+    "dxf034c": {
+      "special_powers": [{
+      }, {
+      }, {
+        "powers": ["perplex"]
+      }]
+    },
+    "dxf035": {
+      "special_powers": [{
+        "powers": ["sidestep"]
+      }, {
+        "powers": ["incapacitate"]
+      }]
+    },
+    "dxf036": {
+      "special_powers": [{
+        "powers": ["steal_energy"]
+      }]
+    },
+    "dxf037a": {
+      "special_powers": [{
+      }, {
+        "powers": ["phasing_teleport"]
+      }]
+    },
+    "dxf041": {
+      "special_powers": [{
+        "powers": ["mind_control", "outwit"]
+      }]
+    },
+    "dxf042": {
+      "special_powers": [{
+        "powers": ["energy_explosion", "penetrating_psychic_blast"]
+      }]
+    },
+    "dxf046": {
+      "special_powers": [{
+        "description": "Give Doop a power action and roll a d6 that can only be rerolled one per turn by removing a Headline Token from him. 1-2: Moving Between Panels - Place Doop and all adjacent characters into any square adjacent to themselves. 3-4: Doop Space - All characters within 4 squares are placed adjacent to Doop. 5: Gleaming The Cosmic Cube - Choose a friendly character and it can use the Power Cosmic team ability until your next turn. 6: Hailstorm Of Mjolnirs - Doop makes a range attack with a range value of 10, three lightning bolts and Improved Targeting: Adjacent. Instead of normal damage, each hit character and each character adjacent to one or more hit characters is dealt 3 damage."
+      }]
+    },
+    "dxf050": {
+      "special_powers": [{
+        "powers": ["steal_energy"]
+      }]
+    },
+    "dxf055": {
+      "special_powers": [{
+      }, {
+        "powers": ["hypersonic_speed", "flurry"]
+      }]
+    },
+    "dxf056": {
+      "special_powers": [{
+      }, {
+        "description": "Colossus can use Charge and Improved Movement: Destroy Blocking." 
+      }]
+    },
+    "dxf055": {
+      "special_powers": [{
+        "description": "Cannonball can use Charge, Force Blast and Improved Movement: Destroy Blocking, Characters. When Cannonball moves 4 or more squares and only in a direct path, increase his attack and damage by +1 this turn."
+      }, {
+        "powers": ["energy_shield_deflection", "toughness", "invulnerability"]
+      }, {
+        "powers": ["stop", "regeneration"]
+      }]
+    },
+    "dxf060": {
+      "special_powers": [{
+      }, {
+      }, {
+      }, {
+      }, {
+        "description": "Deadpool, Merc with a Mouth makes a range attack using [Improved Targeting: Characters, Hindering, Adjacent)], targeting each opposing character within range and line of fire. Each hit character is dealt 2 penetrating damage instead of normal damage. Deadpool, Merc with a Mouth can use Probability Control during this attack.",
+        "powers": ["probability_control"]
+      }]
+    },
+    "dxf061": {
+      "special_powers": [{
+      }, {
+        "description": "D.E.A.D.P.O.O.L. can't use the Carry ability. When D.E.A.D.P.O.O.L. makes a close attack and actions resolve, he may make a ranged attack with Improved Targeting: Adjacent."
+      }, {
+        "powers": ["charge", "sidestep", "smoke_cloud"]
+      }]
+    },
+    "dxf069": {
+      "special_powers": [{
+        "powers": ["blades_claws_fangs"]
+      }]
+    },
+    "dxf101": {
+      "special_powers": [{
+      }, {
+        "powers": ["toughness", "regeneration"]
+      }]
+    }
+  },
+  "additions": [{
+    "unit_id": "dxfM001",
+    "set_id": "dxf",
+    "collector_number": "M001",
+    "name": "Speakeasy",
+    "type": "map",
+    "special_powers": [{
+      "name": "Yellow Dashed Line",
+      "description": "This line separates the two levels. A trap door needs to be used to move between the two levels."
+    }, {
+      "name": "Orange Numbers",
+      "description": "These mark the trapdoors. Characters using trapdoors must enter and exit with a trapdoor with the same number."
+    }],
+    "map_url": "https://hcmaps.net/maps/dxf/speakeasy.json"
+  }, {
+    "unit_id": "dxfM002",
+    "set_id": "dxf",
+    "collector_number": "M002",
+    "name": "Cargo Plane",
+    "type": "map",
+    "special_powers": [{
+      "name": "Open Air Terrain",
+      "description": "If a character that can't use Leap/Climb, Phasing/Teleport, Flight or Great Size occupies Open Air Terrain after actions resolve, deal that character 1 unavoidable damage and then the character's controller places the character in their starting area."
+    }],
+    "map_url": "https://hcmaps.net/maps/dxf/cargo_plane.json"
+  }]
+}

@@ -32,7 +32,7 @@ CREATE TABLE units (
 
   -- The type of the unit.
   -- TODO: Add types for 'battlefield_condition', 'event_dial', 'resource', 'terrain'
-  type ENUM('character', 'object', 'equipment', 'map', 'bystander', 'tarot_card', 'mystery_card', 'id_card') NOT NULL,
+  type ENUM('character', 'object', 'equipment', 'map', 'bystander', 'tarot_card', 'mystery_card', 'id_card', 'comic_panel') NOT NULL,
 
   -- A JSON array of numbers containing point values of different starting lines.
   point_values JSON,

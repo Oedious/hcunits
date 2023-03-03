@@ -23,6 +23,9 @@ const TYPE_LIST = {
   "id_card": {
     "name": "ID Card"
   },
+  "comic_panel": {
+    "name": "Comic Panel"
+  }
   /*
   "terrain": {
     "name": "Terrain"
@@ -132,5 +135,13 @@ const CARD_TYPE_INFO = {
     "name": "Tarot Card",
     "title": "TAROT CARD",
   },
-  // TODO: Add ID cards
+  "id_card": {
+    "name": "ID Card",
+    "title": "ID CARD",
+  },
+  "comic_panel": {
+    "name": "Comic Panel",
+    "title": "COMIC PANEL",
+    "description": "At the beginning of your turn, if [DXF Chase Unit] has no action tokens, you may attach a comic panel to him, removing an already attached one. He can use the listed effect."
+  },
 };

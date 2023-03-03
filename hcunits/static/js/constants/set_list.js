@@ -359,6 +359,16 @@ const SET_LIST = {
     "release_date": "2017-04-05",
     "universe": "marvel"
   },
+  "dxf": {
+    "name": "Deadpool and X-Force",
+    "release_date": "2017-03-01",
+    "universe": "marvel"
+  },
+  "ffdxf": {
+    "name": "Fast Forces: Deadpool and X-Force",
+    "release_date": "2017-03-01",
+    "universe": "marvel"
+  },
   "wk": {
     "name": "WizKids Standard Game Pieces",
     "release_date": "2002-05-01",

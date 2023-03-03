@@ -239,6 +239,12 @@ SET_MAP = {
   "gotg2m": {
     "name": "Guardians of the Galaxy 2 Movie",
   },
+  "dxf": {
+    "name": "Deadpool and X-Force",
+  },
+  "ffdxf": {
+    "name": "Fast Forces: Deadpool and X-Force",
+  },
 }
 
 POWERS = {
@@ -346,7 +352,7 @@ POWER_VALUES = [
 ]
 
 TYPE_VALUES = [
-  'character', 'object', 'equipment', 'map', 'bystander', 'tarot_card', 'mystery_card', 'id_card'
+  'character', 'object', 'equipment', 'map', 'bystander', 'tarot_card', 'mystery_card', 'id_card', 'comic_panel'
 ]
 
 RARITY_VALUES = [
@@ -678,6 +684,8 @@ class Unit:
                         self.name.startswith("Episode Team Up:"))
           if is_team_up:
             self.type = "team_up"
+          elif self.unit_id.endswith("fx"):
+            self.type = "comic_panel"
           else:
             has_parent = soup.find(text=re.compile(r'\s*Inventory options for this figure are controlled by the main/parent unit.\s*'))
             if has_parent:
@@ -685,7 +693,7 @@ class Unit:
               print("Skipping costed trait %s" % (self.unit_id))
             else:
               # It's an unknown type - skip it for now
-              print("Skipping unknown unit type %s" % self.unit_id)
+              print("Skipping unknown unit type %s with figure_rank='%s'" % (self.unit_id, figure_rank))
             return False
     elif figure_rank == "bystander":
       self.type = "bystander"
@@ -704,7 +712,7 @@ class Unit:
       point_value_tag = soup.find("div", {"style": "float:right;padding-top:3px;"})
     elif self.type == "object" or self.type == "equipment" or self.type == "id_card" or self.type == "mystery_card":
       point_value_tag = soup.find("td", class_="tfoot")
-    elif self.type == "team_up" or self.type == "tarot_card":
+    elif self.type == "team_up" or self.type == "tarot_card" or self.type == "comic_panel":
       point_value_tag = None
     else:
       raise RuntimeError("Don't know how to decode points for unit type (%s)" % unit_id)
@@ -949,6 +957,19 @@ class Unit:
             ]))
             self.special_powers[-1] = self.parse_powers_from_description(self.special_powers[-1])
 
+    # Parse Comic Panels
+    if self.type == "comic_panel":
+      if self.name == "Energy Shield / Deflection":
+        self.name = "Energy Shield/Deflection"
+
+      self.special_powers.append(OrderedDict([
+        ("name", clean_string(self.name)),
+        ("description", "The unit to which the comic panel is attached can use the listed effect.")
+      ]))
+      power = POWERS.get(self.name, None)
+      if power:
+        self.special_powers[-1]["powers"] = [power]
+
     # Parse special powers
     if (self.type == "character" or
         self.type == "team_up" or
@@ -1046,21 +1067,27 @@ class Unit:
             continue
 
           if sp_type == "improved":
+            # Check if the name is empty and the improved ability type is
+            # just the first part of the description.
+            if (not sp_name or len(sp_name) == 0) and sp_description.lower().startswith("improved"):
+              idx = sp_description.find(":")
+              sp_name = sp_description[:idx].strip()
+              sp_description = sp_description[idx + 1:].strip()
+
             # Check whether the description holds different types of improved
             # abilities and, if so, split it up and process each separately.
-            improved_abilities = None
+            improved_abilities = []
             for imp_type in IMPROVED_ABILITIES.keys():
               type_str =  "improved " + imp_type + ":"
               idx = sp_description.lower().find(type_str)
               if idx >= 0:
-                improved_abilities = [
-                  (sp_name, sp_description[:idx].strip()),
-                  (type_str[:-1], sp_description[idx + len(type_str):].strip())
-                ]
+                improved_abilities.append((sp_name, sp_description[:idx].strip()))
+                sp_name = type_str[:-1]
+                sp_description = sp_description[idx + len(type_str):]
 
-            if not improved_abilities:
-              improved_abilities = [(sp_name, sp_description)]
-            
+            if len(sp_description) > 0:
+              improved_abilities.append((sp_name, sp_description))
+              
             for (imp_name, imp_types) in improved_abilities:
               if not imp_name:
                 continue
@@ -1087,7 +1114,7 @@ class Unit:
   
                 # Try and split apart the description by different delimiters and
                 # extract the values that have a match.
-                for delimiter in [", and", "and", ".", ","]:
+                for delimiter in [", and", "and", ".", ",", ";"]:
                   parts = imp_types.split(delimiter)
                   imp_types = ""
                   while len(parts) > 0:

@@ -259,7 +259,7 @@ class CharacterView extends BaseUnitView {
     if (!this.unit_.special_powers) {
       return [];
     }
-    const LINES_PER_COLUMN = (this.numDialTables_ == 1) ? [16, 9, 30] : [7, 1, 30];
+    const LINES_PER_COLUMN = (this.numDialTables_ == 1) ? [16, 9, 31] : [7, 1, 31];
     const CHARS_PER_NAME_LINE = 23;
     const CHARS_PER_DESC_LINE = 30;
     var currentLineCount = 0;

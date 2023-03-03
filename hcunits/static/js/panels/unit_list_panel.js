@@ -7,6 +7,7 @@ const TYPE_TO_ICON = {
   "tarot_card": "content_copy",
   "mystery_card": "psychology_alt",
   "id_card": "badge",
+  "comic_panel": "background_replace",
 };
 
 const SORT_ORDERS = {
