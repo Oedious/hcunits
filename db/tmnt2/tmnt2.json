@@ -1,0 +1,3845 @@
+[
+  {
+    "unit_id": "tmnt2001", 
+    "set_id": "tmnt2", 
+    "collector_number": "001", 
+    "name": "Raphael", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      60
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Animal", 
+      "Martial Artist", 
+      "TMNT", 
+      "TMNT Ally"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "COOL BUT CRUDE", 
+        "description": "Raphael can use Battle Fury and Shape Change.", 
+        "powers": [
+          "battle_fury", 
+          "shape_change"
+        ]
+      }, 
+      {
+        "type": "attack", 
+        "name": "LOCK BLADES", 
+        "description": "Raphael can use Blades/Claws/Fangs. Adjacent opposing characters can't use Blades/Claws/Fangs.", 
+        "powers": [
+          "blades_claws_fangs"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "dolphin", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "charge", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "sidestep", 
+        "speed_value": 6, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "tmnt2002", 
+    "set_id": "tmnt2", 
+    "collector_number": "002", 
+    "name": "Michelangelo", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      60
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Animal", 
+      "Martial Artist", 
+      "TMNT", 
+      "TMNT Ally"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "PARTY DUDE", 
+        "description": "When Michelangelo or another friendly character with the TMNT keyword makes an attack, attack rolls of 11 are also critical hits."
+      }, 
+      {
+        "type": "speed", 
+        "name": "SEWER SKATING", 
+        "description": "If Michelangelo is indoors, he can use Hypersonic Speed. If he's outdoors, he can use Sidestep.", 
+        "powers": [
+          "hypersonic_speed", 
+          "sidestep"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "dolphin", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 9, 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "special", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "empower", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "flurry", 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_power": "willpower", 
+        "defense_value": 17, 
+        "damage_power": "empower", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "flurry", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "special", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "empower", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "tmnt2003", 
+    "set_id": "tmnt2", 
+    "collector_number": "003", 
+    "name": "Donatello", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      60
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Animal", 
+      "Martial Artist", 
+      "TMNT", 
+      "TMNT Ally"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "DOES MACHINES", 
+        "description": "Give Donatello a power action when he is adjacent to an object or a character holding an object. Remove that object from the game and all friendly characters with the TMNT keyword modify their attack values by +1 until one of those characters hits an opposing character."
+      }, 
+      {
+        "type": "damage", 
+        "name": "BRAINS OF THE BUNCH", 
+        "description": "Donatello can use Outwit. When he does, roll a d6. 5-6: Donatello can use Outwit a second time this turn, targeting the same character.", 
+        "powers": [
+          "outwit"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "dolphin", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "leap_climb", 
+        "speed_value": 9, 
+        "attack_value": 10, 
+        "defense_power": "defend", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "leap_climb", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "defend", 
+        "defense_value": 18, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "leap_climb", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "tmnt2004", 
+    "set_id": "tmnt2", 
+    "collector_number": "004", 
+    "name": "Leonardo", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      60
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Animal", 
+      "Martial Artist", 
+      "TMNT", 
+      "TMNT Ally"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "LEADS", 
+        "description": "Leonardo can use Leadership. When he does and succeeds, modify the defense value of one friendly character with the TMNT keyword by +1 until your next turn.", 
+        "powers": [
+          "leadership"
+        ]
+      }, 
+      {
+        "type": "attack", 
+        "name": "TWIN KATANAS", 
+        "description": "Leonardo can use Blades/Claws/Fangs. When he does, he may instead roll 2d6 and choose one as the result.", 
+        "powers": [
+          "blades_claws_fangs"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "dolphin", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 11, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "leap_climb", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "leap_climb", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "leap_climb", 
+        "speed_value": 8, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "charge", 
+        "speed_value": 7, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "tmnt2005", 
+    "set_id": "tmnt2", 
+    "collector_number": "005", 
+    "name": "Casey Jones", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      60
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Martial Artist", 
+      "TMNT Ally"
+    ], 
+    "special_powers": [
+      {
+        "type": "damage", 
+        "name": "BODY CHECK OR SLAPSHOT?", 
+        "description": "Give Casey Jones a free action and choose Close Combat Expert or Ranged Combat Expert. Casey Jones can use that power until you choose again.", 
+        "powers": [
+          "close_combat_expert", 
+          "ranged_combat_expert"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "5", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "tmnt2006", 
+    "set_id": "tmnt2", 
+    "collector_number": "006", 
+    "name": "Foot Ninja (Katar)", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      30
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Foot Clan", 
+      "Martial Artist", 
+      "TMNT Villain"
+    ], 
+    "special_powers": [
+      {
+        "type": "speed", 
+        "name": "500 YEARS OF FOOT TRADITION", 
+        "description": "Foot Ninja can use Sidestep and Stealth.", 
+        "powers": [
+          "sidestep", 
+          "stealth"
+        ]
+      }, 
+      {
+        "type": "attack", 
+        "name": "KATAR: PENETRATING DAGGER", 
+        "description": "Foot Ninja can use Blades/Claws/Fangs. When Foot Ninja makes a close attack while occupying Hindering Terrain, the damage dealt is penetrating.", 
+        "powers": [
+          "blades_claws_fangs"
+        ]
+      }
+    ], 
+    "improved_movement": [
+      "hindering"
+    ], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "willpower", 
+        "defense_value": 17, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "special", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "stealth", 
+        "speed_value": 6, 
+        "attack_value": 8, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 15, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "tmnt2007", 
+    "set_id": "tmnt2", 
+    "collector_number": "007", 
+    "name": "Foot Ninja (3-Segment Staff)", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      30
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Foot Clan", 
+      "Martial Artist", 
+      "TMNT Villain"
+    ], 
+    "special_powers": [
+      {
+        "type": "speed", 
+        "name": "500 YEARS OF FOOT TRADITION", 
+        "description": "Foot Ninja can use Sidestep and Stealth.", 
+        "powers": [
+          "sidestep", 
+          "stealth"
+        ]
+      }, 
+      {
+        "type": "attack", 
+        "name": "THREE-SEGMENT STAFF", 
+        "description": "Give Foot Ninja a power action. Make a close attack targeting up to three adjacent opposing characters. Hit characters are each dealt 1 damage instead of normal damage and given an action token."
+      }
+    ], 
+    "improved_movement": [
+      "hindering"
+    ], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "willpower", 
+        "defense_value": 17, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "special", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "stealth", 
+        "speed_value": 6, 
+        "attack_value": 8, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 15, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "tmnt2008", 
+    "set_id": "tmnt2", 
+    "collector_number": "008", 
+    "name": "Foot Ninja (Shuriken)", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      30
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Foot Clan", 
+      "Martial Artist", 
+      "TMNT Villain"
+    ], 
+    "special_powers": [
+      {
+        "type": "speed", 
+        "name": "500 YEARS OF FOOT TRADITION", 
+        "description": "Foot Ninja can use Sidestep and Stealth.", 
+        "powers": [
+          "sidestep", 
+          "stealth"
+        ]
+      }, 
+      {
+        "type": "attack", 
+        "name": "SHURIKEN: WEAPON OF DISTRACTION", 
+        "description": "UNIQUE MODIFIER - When Foot Ninja hits with a range attack, hit characters modify their attack and defense values by -1 until your next turn."
+      }
+    ], 
+    "improved_movement": [
+      "destroy_blocking"
+    ], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "5", 
+    "targets": "2", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "willpower", 
+        "defense_value": 17, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "special", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "stealth", 
+        "speed_value": 6, 
+        "attack_value": 8, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 15, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "tmnt2009", 
+    "set_id": "tmnt2", 
+    "collector_number": "009", 
+    "name": "Foot Ninja (Twin Katanas)", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      30
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Foot Clan", 
+      "Martial Artist", 
+      "TMNT Villain"
+    ], 
+    "special_powers": [
+      {
+        "type": "speed", 
+        "name": "500 YEARS OF FOOT TRADITION", 
+        "description": "Foot Ninja can use Sidestep and Stealth.", 
+        "powers": [
+          "sidestep", 
+          "stealth"
+        ]
+      }, 
+      {
+        "type": "attack", 
+        "name": "TWIN KATANAS", 
+        "description": "Foot Ninja can use Blades/Claws/Fangs. When he does, he may instead roll 2d6 and choose one as the result.", 
+        "powers": [
+          "blades_claws_fangs"
+        ]
+      }
+    ], 
+    "improved_movement": [
+      "destroy_blocking"
+    ], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "willpower", 
+        "defense_value": 17, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "special", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "stealth", 
+        "speed_value": 6, 
+        "attack_value": 8, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 15, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "tmnt2010", 
+    "set_id": "tmnt2", 
+    "collector_number": "010", 
+    "name": "Triceraton", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      65
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Soldier", 
+      "TMNT Villain", 
+      "Triceraton"
+    ], 
+    "special_powers": [
+      {
+        "type": "defense", 
+        "name": "EXTREMELY TOUGH HIDE", 
+        "description": "Triceraton can use Toughness and takes a maximum of 2 damage from attacks.", 
+        "powers": [
+          "toughness"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "6", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "running_shot", 
+        "speed_value": 7, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_value": 6, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_value": 6, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "charge", 
+        "speed_value": 5, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 4, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "tmnt2011", 
+    "set_id": "tmnt2", 
+    "collector_number": "011", 
+    "name": "April O'Neil", 
+    "type": "character", 
+    "rarity": "uncommon", 
+    "dimensions": "1x1", 
+    "point_values": [
+      25
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Reporter", 
+      "TMNT Ally"
+    ], 
+    "special_powers": [
+      {
+        "type": "attack", 
+        "name": "THE WORLD NEEDS TO KNOW: YOUR CRIMES", 
+        "description": "At the beginning of your turn, you may choose an opposing character within 4 squares and line of fire. Until your next turn, that character subtracts 2 from its break away rolls."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "sidestep", 
+        "speed_value": 6, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "super_senses", 
+        "defense_value": 16, 
+        "damage_power": "support", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 2, 
+        "speed_value": 5, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "super_senses", 
+        "defense_value": 16, 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "sidestep", 
+        "speed_value": 5, 
+        "attack_power": "special", 
+        "attack_value": 8, 
+        "defense_value": 15, 
+        "damage_power": "shape_change", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 5, 
+        "attack_power": "special", 
+        "attack_value": 8, 
+        "defense_value": 15, 
+        "damage_power": "shape_change", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "tmnt2012", 
+    "set_id": "tmnt2", 
+    "collector_number": "012", 
+    "name": "Irma", 
+    "type": "character", 
+    "rarity": "uncommon", 
+    "dimensions": "1x1", 
+    "point_values": [
+      60, 
+      25
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Robot", 
+      "Spy", 
+      "TMNT Ally", 
+      "TMNT Villain", 
+      "Utrom"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "IRMA?", 
+        "description": "If Irma is 25 points, she is KO'd if she crosses the red KO line. If Irma is 60 points, she is not KO'd when she crosses the red KO line."
+      }, 
+      {
+        "type": "defense", 
+        "name": "HIDDEN KRAANG SUBPRIME", 
+        "description": "STOP - Irma can use Invulnerability.", 
+        "powers": [
+          "stop", 
+          "invulnerability"
+        ]
+      }, 
+      {
+        "type": "damage", 
+        "name": "THAT'S JUST IRMA", 
+        "description": "Irma can use Perplex and doesn't block friendly characters' line of fire.", 
+        "powers": [
+          "perplex"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "sidestep", 
+        "speed_value": 6, 
+        "attack_value": 8, 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "sidestep", 
+        "speed_value": 6, 
+        "attack_value": 8, 
+        "defense_value": 15, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "sidestep", 
+        "speed_value": 6, 
+        "attack_value": 7, 
+        "defense_value": 15, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "super_strength", 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 3, 
+        "starting_line": true
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "flurry", 
+        "speed_value": 8, 
+        "attack_power": "super_strength", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "flurry", 
+        "speed_value": 8, 
+        "attack_power": "super_strength", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "tmnt2013", 
+    "set_id": "tmnt2", 
+    "collector_number": "013", 
+    "name": "Fugitoid", 
+    "type": "character", 
+    "rarity": "uncommon", 
+    "dimensions": "1x1", 
+    "point_values": [
+      50
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Robot", 
+      "Scientist", 
+      "TMNT Ally"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "RUNNING FROM THE FEDERATION AND TRICERATONS FOR YEARS", 
+        "description": "Fugitoid can use Energy Shield/Deflection and Stealth. When an attack misses Fugitoid, after actions resolve you may place him up to 3 squares away from his current square.", 
+        "powers": [
+          "energy_shield_deflection", 
+          "stealth"
+        ]
+      }, 
+      {
+        "type": "speed", 
+        "name": "INVENTOR OF THE TRANSMAT", 
+        "description": "Fugitoid can use Phasing/Teleport with a speed value of 12. When he does, he can use the Carry ability to carry up to 4 characters, but only those that share a keyword with him.", 
+        "powers": [
+          "phasing_teleport"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "special", 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "special", 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "sidestep", 
+        "speed_value": 6, 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "support", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "sidestep", 
+        "speed_value": 5, 
+        "attack_value": 10, 
+        "defense_power": "regeneration", 
+        "defense_value": 16, 
+        "damage_power": "support", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "tmnt2014", 
+    "set_id": "tmnt2", 
+    "collector_number": "014", 
+    "name": "Chien Khan", 
+    "type": "character", 
+    "rarity": "uncommon", 
+    "dimensions": "1x1", 
+    "point_values": [
+      75
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Martial Artist", 
+      "Mystical", 
+      "TMNT Villain"
+    ], 
+    "special_powers": [
+      {
+        "type": "attack", 
+        "name": "SACRIFICIAL DAGGER", 
+        "description": "Chien Khan can use Blades/Claws/Fangs and Steal Energy. When Chien Khan KO's an opposing character, after actions resolve, heal him 2 clicks.", 
+        "powers": [
+          "blades_claws_fangs", 
+          "steal_energy"
+        ]
+      }, 
+      {
+        "type": "damage", 
+        "name": "OPEN A GATE TO THE WORLD OF THE ONI", 
+        "description": "Once per game, when Chien Khan KO's an opposing character, after actions resolve, you may place a Noi Tai Dar, Great Oni bystander as described on this card in the KO'd character's square."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "5", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 7, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "leadership", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "mind_control", 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "probability_control", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "mind_control", 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "probability_control", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 11, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "flurry", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "flurry", 
+        "speed_value": 6, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "super_senses", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "tmnt2014bt", 
+    "set_id": "tmnt2", 
+    "collector_number": "014bt", 
+    "name": "Noi Tai Dar, Great Oni", 
+    "type": "bystander", 
+    "rarity": "uncommon", 
+    "dimensions": "1x1", 
+    "point_values": [], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [], 
+    "special_powers": [], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "bystander_type": "standard", 
+    "unit_range": "6", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "colossal", 
+    "dial_size": "1", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 10, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 11, 
+        "defense_power": "impervious", 
+        "defense_value": 18, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 3
+      }
+    ]
+  }, 
+  {
+    "unit_id": "tmnt2015", 
+    "set_id": "tmnt2", 
+    "collector_number": "015", 
+    "name": "Squirrelanoid", 
+    "type": "character", 
+    "rarity": "uncommon", 
+    "dimensions": "1x1", 
+    "point_values": [
+      60
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Animal", 
+      "Monster", 
+      "TMNT Villain"
+    ], 
+    "special_powers": [
+      {
+        "type": "speed", 
+        "name": "FAST DEADLY SHADOWS", 
+        "description": "Squirrelanoid can use Charge, Flurry, and Stealth.", 
+        "powers": [
+          "charge", 
+          "flurry", 
+          "stealth"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 9, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "shape_change", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "special", 
+        "speed_value": 9, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "shape_change", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "stealth", 
+        "speed_value": 9, 
+        "attack_power": "precision_strike", 
+        "attack_value": 9, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "stealth", 
+        "speed_value": 8, 
+        "attack_power": "precision_strike", 
+        "attack_value": 9, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "quake", 
+        "attack_value": 9, 
+        "defense_power": "super_senses", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "quake", 
+        "attack_value": 8, 
+        "defense_power": "super_senses", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "tmnt2016", 
+    "set_id": "tmnt2", 
+    "collector_number": "016", 
+    "name": "Bebop", 
+    "type": "character", 
+    "rarity": "uncommon", 
+    "dimensions": "1x1", 
+    "point_values": [
+      80
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Animal", 
+      "Brute", 
+      "Foot Clan", 
+      "TMNT Villain"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "SO MY PART OF THE PLAN WAS WHAT?", 
+        "description": "If a friendly character named Shredder is on the map, Bebop can use Willpower. Friendly characters named Shredder or Rocksteady can use Enhancement, but only to modify characters named Bebop or Rocksteady.", 
+        "powers": [
+          "willpower"
+        ]
+      }, 
+      {
+        "type": "trait", 
+        "name": "UH... DID I SCREW UP AGAIN?", 
+        "description": "Once per turn when Bebop misses an attack, put an Incompetent Idiot token on this card. Give Bebop a free action and remove 2 Incompetent Idiot tokens to heal another friendly character that shares a keyword 2 clicks."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "5", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 10, 
+        "defense_power": "invincible", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 10, 
+        "defense_power": "invincible", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "charge", 
+        "speed_value": 7, 
+        "attack_power": "super_strength", 
+        "attack_value": 10, 
+        "defense_power": "invincible", 
+        "defense_value": 16, 
+        "damage_power": "battle_fury", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "charge", 
+        "speed_value": 7, 
+        "attack_power": "super_strength", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "battle_fury", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 15, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "sidestep", 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "regeneration", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }
+    ]
+  }, 
+  {
+    "unit_id": "tmnt2017", 
+    "set_id": "tmnt2", 
+    "collector_number": "017", 
+    "name": "Rocksteady", 
+    "type": "character", 
+    "rarity": "uncommon", 
+    "dimensions": "1x1", 
+    "point_values": [
+      80
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Animal", 
+      "Brute", 
+      "Foot Clan", 
+      "TMNT Villain"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "UH... WHAT WAS I SUPPOSED TO BE DOING?", 
+        "description": "If a friendly character named Shredder is on the map, Rocksteady can use Willpower.  Friendly characters named Shredder or Bebop can use Empower, but only to modify characters named Bebop or Rocksteady.", 
+        "powers": [
+          "willpower"
+        ]
+      }, 
+      {
+        "type": "trait", 
+        "name": "MISSED IT BY THAAAAAT MUCH", 
+        "description": "Once per turn when Rocksteady misses an attack, put a Mutant Moron token on this card. Give Rocksteady a free action and remove 2 Mutant Moron tokens to remove all action tokens from another friendly character that shares a keyword."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "5", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "super_strength", 
+        "attack_value": 10, 
+        "defense_power": "invincible", 
+        "defense_value": 17, 
+        "damage_power": "battle_fury", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "super_strength", 
+        "attack_value": 10, 
+        "defense_power": "invincible", 
+        "defense_value": 17, 
+        "damage_power": "battle_fury", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "running_shot", 
+        "speed_value": 7, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 10, 
+        "defense_power": "invincible", 
+        "defense_value": 16, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "running_shot", 
+        "speed_value": 7, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 15, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "sidestep", 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "regeneration", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }
+    ]
+  }, 
+  {
+    "unit_id": "tmnt2018", 
+    "set_id": "tmnt2", 
+    "collector_number": "018", 
+    "name": "Shredder", 
+    "type": "character", 
+    "rarity": "uncommon", 
+    "dimensions": "1x1", 
+    "point_values": [
+      50
+    ], 
+    "properties": [
+      "unique"
+    ], 
+    "team_abilities": [], 
+    "keywords": [
+      "Foot Clan", 
+      "Martial Artist", 
+      "TMNT Villain"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "THERMITE GRENADE", 
+        "description": "When Shredder is KO'd from an attack, deal 3 penetrating damage to all characters within 3 squares, and on the same elevation, of the square that he last occupied."
+      }, 
+      {
+        "type": "defense", 
+        "name": "YOU CANNOT BEAT ME, EVEN FOUR TO ONE", 
+        "description": "Shredder modifies his defense value by +1 for each opposing character within 3 squares."
+      }, 
+      {
+        "type": "damage", 
+        "name": "HEAD OF THE NEW YORK BRANCH OF THE FOOT", 
+        "description": "Shredder can use Leadership. When he does and succeeds, instead of removing one action token, remove an action token from up to 2 adjacent friendly characters with the Foot Clan keyword regardless of point value.", 
+        "powers": [
+          "leadership"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 9, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 11, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "stealth", 
+        "speed_value": 7, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 16, 
+        "damage_power": "perplex", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "perplex", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_value": 3
+      }
+    ]
+  }, 
+  {
+    "unit_id": "tmnt2019", 
+    "set_id": "tmnt2", 
+    "collector_number": "019", 
+    "name": "Splinter", 
+    "type": "character", 
+    "rarity": "rare", 
+    "dimensions": "1x1", 
+    "point_values": [
+      45
+    ], 
+    "properties": [
+      "unique"
+    ], 
+    "team_abilities": [], 
+    "keywords": [
+      "Martial Artist", 
+      "TMNT Ally"
+    ], 
+    "special_powers": [
+      {
+        "type": "damage", 
+        "name": "RAT NO MORE", 
+        "description": "Splinter can use Shape Change. If Splinter has been attacked, that opponent's force can't make attacks this turn.", 
+        "powers": [
+          "shape_change"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "stealth", 
+        "speed_value": 8, 
+        "attack_power": "incapacitate", 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 18, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "stealth", 
+        "speed_value": 8, 
+        "attack_power": "quake", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "stealth", 
+        "speed_value": 7, 
+        "attack_power": "quake", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "charge", 
+        "speed_value": 7, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_power": "super_senses", 
+        "defense_value": 16, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "charge", 
+        "speed_value": 7, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "tmnt2020", 
+    "set_id": "tmnt2", 
+    "collector_number": "020", 
+    "name": "Alopex", 
+    "type": "character", 
+    "rarity": "rare", 
+    "dimensions": "1x1", 
+    "point_values": [
+      50
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Animal", 
+      "Foot Clan", 
+      "Martial Artist", 
+      "TMNT Ally", 
+      "TMNT Villain"
+    ], 
+    "special_powers": [
+      {
+        "type": "speed", 
+        "name": "TUNDRA STALKER", 
+        "description": "Alopex can use Sidestep and Stealth. When Alopex attacks an opposing character that isn't the highest point value on its force, modify her attack value by +1.", 
+        "powers": [
+          "sidestep", 
+          "stealth"
+        ]
+      }, 
+      {
+        "type": "damage", 
+        "name": "YOUR ARMOR MAKES YOU WEAK", 
+        "description": "When Alopex hits an opposing character with an attack and the damage is reduced, modify that character's attack value by -2 until your next turn."
+      }
+    ], 
+    "improved_movement": [
+      "hindering"
+    ], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 10, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "battle_fury", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "special", 
+        "speed_value": 9, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "battle_fury", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "tmnt2021", 
+    "set_id": "tmnt2", 
+    "collector_number": "021", 
+    "name": "Karai", 
+    "type": "character", 
+    "rarity": "rare", 
+    "dimensions": "1x1", 
+    "point_values": [
+      80
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Foot Clan", 
+      "Martial Artist", 
+      "TMNT Ally"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "LEONARDO, MY... RIVAL", 
+        "description": "UNIQUE MODIFIER - When Karai is adjacent to a friendly character named Leonardo, modify their attack values by +1."
+      }, 
+      {
+        "type": "damage", 
+        "name": "THE SHREDDER BLUFF", 
+        "description": "STOP - Karai can use Close Combat Expert. Once per game, give Karai a free action to make a range attack. If she hits, instead of normal damage, deal the hit target penetrating damage equal to your attack total minus the target's defense value (minimum 1).", 
+        "powers": [
+          "stop", 
+          "close_combat_expert"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "6", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_power": "precision_strike", 
+        "attack_value": 11, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "running_shot", 
+        "speed_value": 7, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 16, 
+        "damage_power": "outwit", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_value": 7, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 16, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 18, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "tmnt2022", 
+    "set_id": "tmnt2", 
+    "collector_number": "022", 
+    "name": "Slash", 
+    "type": "character", 
+    "rarity": "rare", 
+    "dimensions": "1x1", 
+    "point_values": [
+      100
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Animal", 
+      "Mutanimals", 
+      "TMNT Ally", 
+      "TMNT Villain"
+    ], 
+    "special_powers": [
+      {
+        "type": "speed", 
+        "name": "THROWING MY WEIGHT AROUND", 
+        "description": "Slash can use Charge and Improved Movement: Destroy Blocking.", 
+        "powers": [
+          "charge"
+        ]
+      }, 
+      {
+        "type": "damage", 
+        "name": "JUST YOU AND ME AGAINST THE WORLD, RAPH", 
+        "description": "Slash can use Close Combat Expert and Empower.  UNIQUE MODIFIER - Adjacent friendly characters named Raphael modify their attack and defense values by +1.", 
+        "powers": [
+          "close_combat_expert", 
+          "empower"
+        ]
+      }
+    ], 
+    "improved_movement": [
+      "hindering"
+    ], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 8, 
+        "attack_power": "quake", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "special", 
+        "speed_value": 8, 
+        "attack_power": "quake", 
+        "attack_value": 9, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "special", 
+        "speed_value": 7, 
+        "attack_power": "quake", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "flurry", 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 18, 
+        "damage_power": "battle_fury", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "flurry", 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 18, 
+        "damage_power": "battle_fury", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "flurry", 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 7, 
+        "speed_value": 6, 
+        "attack_value": 8, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "tmnt2023", 
+    "set_id": "tmnt2", 
+    "collector_number": "023", 
+    "name": "Zog", 
+    "type": "character", 
+    "rarity": "rare", 
+    "dimensions": "1x1", 
+    "point_values": [
+      150
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Soldier", 
+      "TMNT Ally", 
+      "Triceraton"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "THE SKULL COMMANDS ME", 
+        "description": "When another friendly character KO's an opposing character, place a Skull token on this card. Once per turn you may remove a Skull token to give Zog a move, close combat, or range combat action as a free action with his speed and attack values modified by -1."
+      }, 
+      {
+        "type": "speed", 
+        "name": "CAN'T GET PINNED DOWN, COMMANDER ZORAPH", 
+        "description": "Zog can use Charge. When he does and begins the action adjacent to a friendly character named Raphael, modify his speed value by +3.", 
+        "powers": [
+          "charge"
+        ]
+      }, 
+      {
+        "type": "defense", 
+        "name": "EXTREMELY TOUGH HIDE", 
+        "description": "Zog can use Invulnerability and takes a maximum of 2 damage from attacks.", 
+        "powers": [
+          "invulnerability"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "5", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 11, 
+        "defense_power": "special", 
+        "defense_value": 18, 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 18, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "running_shot", 
+        "speed_value": 7, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 11, 
+        "defense_power": "special", 
+        "defense_value": 18, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "special", 
+        "speed_value": 7, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "special", 
+        "speed_value": 7, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "special", 
+        "speed_value": 6, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "special", 
+        "speed_value": 6, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "tmnt2024", 
+    "set_id": "tmnt2", 
+    "collector_number": "024", 
+    "name": "Rat King", 
+    "type": "character", 
+    "rarity": "rare", 
+    "dimensions": "1x1", 
+    "point_values": [
+      100
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "mystics"
+    ], 
+    "keywords": [
+      "Animal", 
+      "Deity", 
+      "Monster", 
+      "Mystical", 
+      "TMNT Villain"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "RATS EVERYWHERE... I AM EVERYWHERE", 
+        "description": "Give Rat King a free action if he occupies hindering terrain. Place him in another square of hindering terrain within 6 squares."
+      }, 
+      {
+        "type": "speed", 
+        "name": "PAWNS IN MY GAME", 
+        "description": "Rat King can use Stealth. He can use Mind Control as if he had a range value of 6 and when he does, he can use Improved Targeting: Elevated, Hindering, Blocking, Characters.", 
+        "powers": [
+          "stealth", 
+          "mind_control"
+        ]
+      }, 
+      {
+        "type": "damage", 
+        "name": "GAME FOR THE WORLD", 
+        "description": "Rat King can use Perplex and Probability Control.", 
+        "powers": [
+          "perplex", 
+          "probability_control"
+        ]
+      }
+    ], 
+    "improved_movement": [
+      "hindering"
+    ], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 8, 
+        "attack_power": "poison", 
+        "attack_value": 11, 
+        "defense_power": "super_senses", 
+        "defense_value": 18, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "special", 
+        "speed_value": 8, 
+        "attack_power": "poison", 
+        "attack_value": 11, 
+        "defense_power": "super_senses", 
+        "defense_value": 18, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "special", 
+        "speed_value": 8, 
+        "attack_power": "poison", 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 18, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 7, 
+        "attack_power": "poison", 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 18, 
+        "damage_power": "outwit", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_power": "regeneration", 
+        "defense_value": 17, 
+        "damage_power": "shape_change", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_power": "regeneration", 
+        "defense_value": 17, 
+        "damage_power": "shape_change", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "tmnt2025", 
+    "set_id": "tmnt2", 
+    "collector_number": "025", 
+    "name": "Donatello", 
+    "type": "character", 
+    "rarity": "rare", 
+    "dimensions": "1x1", 
+    "point_values": [
+      100
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Animal", 
+      "Martial Artist", 
+      "Scientist", 
+      "TMNT", 
+      "TMNT Ally"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "TURTLE POWER", 
+        "description": "Donatello can use Stealth and Toughness.", 
+        "powers": [
+          "stealth", 
+          "toughness"
+        ]
+      }, 
+      {
+        "type": "attack", 
+        "name": "RIDE THE BO", 
+        "description": "When Donatello hits an opposing character, after actions resolve you may place that character within Donatello's range and line of fire."
+      }, 
+      {
+        "type": "damage", 
+        "name": "TEEN TURTLE INTELLECT", 
+        "description": "At the beginning of your turn, choose one: Outwit, Perplex, or Support. Donatello can use the chosen power until your next turn.", 
+        "powers": [
+          "outwit", 
+          "perplex", 
+          "support"
+        ]
+      }
+    ], 
+    "improved_movement": [
+      "elevated", 
+      "hindering"
+    ], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "3", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "sidestep", 
+        "speed_value": 10, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "sidestep", 
+        "speed_value": 9, 
+        "attack_power": "special", 
+        "attack_value": 11, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "sidestep", 
+        "speed_value": 9, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "leap_climb", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "leap_climb", 
+        "speed_value": 8, 
+        "attack_power": "quake", 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 16, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "leap_climb", 
+        "speed_value": 7, 
+        "attack_power": "quake", 
+        "attack_value": 11, 
+        "defense_power": "super_senses", 
+        "defense_value": 16, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "tmnt2026", 
+    "set_id": "tmnt2", 
+    "collector_number": "026", 
+    "name": "Leonardo", 
+    "type": "character", 
+    "rarity": "rare", 
+    "dimensions": "1x1", 
+    "point_values": [
+      100
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Animal", 
+      "Martial Artist", 
+      "TMNT", 
+      "TMNT Ally"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "TURTLE POWER", 
+        "description": "Leonardo can use Stealth and Toughness.", 
+        "powers": [
+          "stealth", 
+          "toughness"
+        ]
+      }, 
+      {
+        "type": "damage", 
+        "name": "BORN TO LEAD, GROOMED TO SUCCEED", 
+        "description": "Leonardo can use Leadership. When he does, increase the result by 1 for each adjacent friendly character with the TMNT keyword.", 
+        "powers": [
+          "leadership"
+        ]
+      }
+    ], 
+    "improved_movement": [
+      "elevated", 
+      "hindering"
+    ], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 10, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 11, 
+        "defense_power": "defend", 
+        "defense_value": 18, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "charge", 
+        "speed_value": 9, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "defend", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "charge", 
+        "speed_value": 9, 
+        "attack_value": 11, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_value": 11, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "defend", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "defend", 
+        "defense_value": 18, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "tmnt2027", 
+    "set_id": "tmnt2", 
+    "collector_number": "027", 
+    "name": "Raphael", 
+    "type": "character", 
+    "rarity": "super_rare", 
+    "dimensions": "1x1", 
+    "point_values": [
+      100
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Animal", 
+      "Martial Artist", 
+      "TMNT", 
+      "TMNT Ally"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "TURTLE POWER", 
+        "description": "Raphael can use Stealth and Toughness.", 
+        "powers": [
+          "stealth", 
+          "toughness"
+        ]
+      }, 
+      {
+        "type": "damage", 
+        "name": "THAT ALL YOU GOT?", 
+        "description": "Raphael can use Empower. Whenever Raphael is missed by an attack, remove an action token from him. If you can't, modify the attacker's defense value by -1 until the end of your next turn.", 
+        "powers": [
+          "empower"
+        ]
+      }
+    ], 
+    "improved_movement": [
+      "elevated", 
+      "hindering"
+    ], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "3", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 10, 
+        "attack_power": "precision_strike", 
+        "attack_value": 11, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "charge", 
+        "speed_value": 9, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "sidestep", 
+        "speed_value": 9, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "flurry", 
+        "speed_value": 8, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 11, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "battle_fury", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "flurry", 
+        "speed_value": 7, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 12, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 15, 
+        "damage_power": "battle_fury", 
+        "damage_value": 3
+      }
+    ]
+  }, 
+  {
+    "unit_id": "tmnt2028", 
+    "set_id": "tmnt2", 
+    "collector_number": "028", 
+    "name": "Michelangelo", 
+    "type": "character", 
+    "rarity": "super_rare", 
+    "dimensions": "1x1", 
+    "point_values": [
+      100
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Animal", 
+      "Martial Artist", 
+      "TMNT", 
+      "TMNT Ally"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "TURTLE POWER", 
+        "description": "Michelangelo can use Stealth and Toughness.", 
+        "powers": [
+          "stealth", 
+          "toughness"
+        ]
+      }, 
+      {
+        "type": "defense", 
+        "name": "YOU GONNA HIT WHO?", 
+        "description": "Michelangelo can use Combat Reflexes and Super Senses.", 
+        "powers": [
+          "combat_reflexes", 
+          "super_senses"
+        ]
+      }
+    ], 
+    "improved_movement": [
+      "elevated", 
+      "hindering"
+    ], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "3", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 10, 
+        "attack_power": "quake", 
+        "attack_value": 11, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_power": "probability_control", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "charge", 
+        "speed_value": 9, 
+        "attack_power": "quake", 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 16, 
+        "damage_power": "probability_control", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "flurry", 
+        "speed_value": 9, 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "flurry", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 16, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_power": "smoke_cloud", 
+        "attack_value": 9, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_power": "probability_control", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_power": "smoke_cloud", 
+        "attack_value": 9, 
+        "defense_power": "special", 
+        "defense_value": 16, 
+        "damage_power": "probability_control", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "tmnt2029", 
+    "set_id": "tmnt2", 
+    "collector_number": "029", 
+    "name": "Renet Tilley", 
+    "type": "character", 
+    "rarity": "super_rare", 
+    "dimensions": "1x1", 
+    "point_values": [
+      55
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Future", 
+      "Past", 
+      "TMNT Ally"
+    ], 
+    "special_powers": [
+      {
+        "type": "speed", 
+        "name": "TAKE US WHEN AND WHERE WE NEED TO GO!", 
+        "description": "Renet Tilley can use Phasing/Teleport and Sidestep. She can use the Carry ability and when she does, can carry up to 4 characters.", 
+        "powers": [
+          "phasing_teleport", 
+          "sidestep"
+        ]
+      }, 
+      {
+        "type": "damage", 
+        "name": "SCEPTER OF THE SANDS OF TIME", 
+        "description": "Renet Tilley can use Probability Control regardless of range and line of fire.", 
+        "powers": [
+          "probability_control"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "7", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 12, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 9, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 17, 
+        "damage_power": "probability_control", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "special", 
+        "speed_value": 7, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 9, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "charge", 
+        "speed_value": 7, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 16, 
+        "damage_power": "probability_control", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "charge", 
+        "speed_value": 7, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_power": "super_senses", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "special", 
+        "speed_value": 6, 
+        "attack_power": "quake", 
+        "attack_value": 9, 
+        "defense_power": "super_senses", 
+        "defense_value": 15, 
+        "damage_power": "probability_control", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "tmnt2030", 
+    "set_id": "tmnt2", 
+    "collector_number": "030", 
+    "name": "Armaggon", 
+    "type": "character", 
+    "rarity": "super_rare", 
+    "dimensions": "1x1", 
+    "point_values": [
+      170
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Animal", 
+      "Future", 
+      "Scientist", 
+      "TMNT Villain"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "BEWARE HIS TAIL!", 
+        "description": "Give Armaggon a free action when he has two action tokens to make a close attack."
+      }, 
+      {
+        "type": "damage", 
+        "name": "FUTURE SHARK", 
+        "description": "Armaggon can use Probability Control. He can use it normally, or he can use it twice on your turn, but only to target himself.", 
+        "powers": [
+          "probability_control"
+        ]
+      }
+    ], 
+    "improved_movement": [
+      "characters"
+    ], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "5", 
+    "targets": "1", 
+    "speed_type": "dolphin", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 12, 
+        "attack_power": "super_strength", 
+        "attack_value": 11, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "charge", 
+        "speed_value": 9, 
+        "attack_power": "super_strength", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "charge", 
+        "speed_value": 9, 
+        "attack_power": "super_strength", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 11, 
+        "defense_power": "invincible", 
+        "defense_value": 18, 
+        "damage_power": "probability_control", 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 11, 
+        "defense_power": "invincible", 
+        "defense_value": 18, 
+        "damage_power": "probability_control", 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "impervious", 
+        "defense_value": 18, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_power": "impervious", 
+        "defense_value": 17, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 8, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "regeneration", 
+        "defense_value": 17, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 3
+      }
+    ]
+  }, 
+  {
+    "unit_id": "tmnt2031", 
+    "set_id": "tmnt2", 
+    "collector_number": "031", 
+    "name": "Kraang Subprime", 
+    "type": "character", 
+    "rarity": "super_rare", 
+    "dimensions": "1x1", 
+    "point_values": [
+      160
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Robot", 
+      "TMNT Villain", 
+      "Utrom"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "NON-ESSENTIAL PARTS", 
+        "description": "Once per game, when Kraang Subprime would take damage, you may instead place an Autonomous Head bystander as described on the card within 3 squares and line of fire. When he does, modify his attack by -1 for the rest of the game."
+      }, 
+      {
+        "type": "speed", 
+        "name": "MULTIPLE TENTACLES", 
+        "description": "Kraang Subprime can use Force Blast, Plasticity, and Running Shot.", 
+        "powers": [
+          "force_blast", 
+          "plasticity", 
+          "running_shot"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [
+      "adjacent"
+    ], 
+    "object_keyphrases": [], 
+    "unit_range": "7", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "giant", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 10, 
+        "attack_power": "super_strength", 
+        "attack_value": 11, 
+        "defense_power": "invincible", 
+        "defense_value": 17, 
+        "damage_power": "shape_change", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "flurry", 
+        "speed_value": 9, 
+        "attack_power": "super_strength", 
+        "attack_value": 11, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "shape_change", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "special", 
+        "speed_value": 9, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 11, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "special", 
+        "speed_value": 8, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "special", 
+        "speed_value": 8, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "sidestep", 
+        "speed_value": 6, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "tmnt2031bt", 
+    "set_id": "tmnt2", 
+    "collector_number": "031bt", 
+    "name": "Autonomous Head", 
+    "type": "bystander", 
+    "rarity": "super_rare", 
+    "dimensions": "1x1", 
+    "point_values": [], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [], 
+    "special_powers": [], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "bystander_type": "standard", 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "tiny", 
+    "dial_size": "1", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_value": 8, 
+        "defense_power": "super_senses", 
+        "defense_value": 18, 
+        "damage_power": "outwit", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "tmnt2032", 
+    "set_id": "tmnt2", 
+    "collector_number": "032", 
+    "name": "Griddex", 
+    "type": "character", 
+    "rarity": "chase", 
+    "dimensions": "1x1", 
+    "point_values": [
+      125, 
+      100
+    ], 
+    "properties": [
+      "unique"
+    ], 
+    "team_abilities": [], 
+    "keywords": [
+      "TMNT"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "SHRINK TO SAVE YOURSELF!", 
+        "description": "At the beginning of your turn, you may choose one to last until your next turn. Griddex has Giant Damage Symbol; -or- Griddex has Tiny Damage Symbol but can't make attacks."
+      }, 
+      {
+        "type": "attack", 
+        "name": "POUND, CRUSH, SMASH", 
+        "description": "Griddex can use Super Strength. When he makes a close object attack and hits, after actions resolve he may make a close attack targeting the hit character.", 
+        "powers": [
+          "super_strength"
+        ]
+      }
+    ], 
+    "improved_movement": [
+      "elevated"
+    ], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 11, 
+        "defense_power": "invincible", 
+        "defense_value": 19, 
+        "damage_power": "empower", 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "charge", 
+        "speed_value": 6, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "invincible", 
+        "defense_value": 18, 
+        "damage_power": "empower", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "charge", 
+        "speed_value": 6, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "impervious", 
+        "defense_value": 18, 
+        "damage_power": "empower", 
+        "damage_value": 4, 
+        "starting_line": true
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "sidestep", 
+        "speed_value": 6, 
+        "attack_power": "quake", 
+        "attack_value": 10, 
+        "defense_power": "impervious", 
+        "defense_value": 18, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "sidestep", 
+        "speed_value": 5, 
+        "attack_power": "quake", 
+        "attack_value": 10, 
+        "defense_power": "impervious", 
+        "defense_value": 18, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "sidestep", 
+        "speed_value": 5, 
+        "attack_value": 9, 
+        "defense_power": "invulnerability", 
+        "defense_value": 18, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "sidestep", 
+        "speed_value": 5, 
+        "attack_value": 9, 
+        "defense_power": "invulnerability", 
+        "defense_value": 18, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 3
+      }
+    ]
+  }, 
+  {
+    "unit_id": "tmnt2033", 
+    "set_id": "tmnt2", 
+    "collector_number": "033", 
+    "name": "Blobboid", 
+    "type": "character", 
+    "rarity": "chase", 
+    "dimensions": "1x1", 
+    "point_values": [
+      100, 
+      75
+    ], 
+    "properties": [
+      "unique"
+    ], 
+    "team_abilities": [], 
+    "keywords": [
+      "TMNT"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "ABILITY TO CHANGE AND FLOW AND IMITATE", 
+        "description": "Blobboid can use Plasticity and Shape Change.", 
+        "powers": [
+          "plasticity", 
+          "shape_change"
+        ]
+      }, 
+      {
+        "type": "defense", 
+        "name": "MELT AND REFORM FOR COMBAT CONFIGURATION", 
+        "description": "At the beginning of your turn, you may choose one to last until you choose again. Blobboid can use Close Combat Expert and Combat Reflexes; -or- Blobboid can use Ranged Combat Expert and Energy Shield/Deflection.", 
+        "powers": [
+          "close_combat_expert", 
+          "combat_reflexes", 
+          "ranged_combat_expert", 
+          "energy_shield_deflection"
+        ]
+      }
+    ], 
+    "improved_movement": [
+      "hindering"
+    ], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "4", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 18, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_power": "poison", 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_value": 3, 
+        "starting_line": true
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "sidestep", 
+        "speed_value": 6, 
+        "attack_power": "poison", 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "force_blast", 
+        "speed_value": 6, 
+        "attack_power": "poison", 
+        "attack_value": 11, 
+        "defense_power": "toughness", 
+        "defense_value": 18, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "force_blast", 
+        "speed_value": 5, 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 3
+      }
+    ]
+  }, 
+  {
+    "unit_id": "tmnt2034", 
+    "set_id": "tmnt2", 
+    "collector_number": "034", 
+    "name": "Shellectro", 
+    "type": "character", 
+    "rarity": "chase", 
+    "dimensions": "1x1", 
+    "point_values": [
+      100, 
+      50
+    ], 
+    "properties": [
+      "unique"
+    ], 
+    "team_abilities": [], 
+    "keywords": [
+      "Scientist", 
+      "TMNT"
+    ], 
+    "special_powers": [
+      {
+        "type": "attack", 
+        "name": "ZAPPOWER!", 
+        "description": "Shellectro can use Energy Explosion. When he does, hit characters are knocked back 3 squares.", 
+        "powers": [
+          "energy_explosion"
+        ]
+      }, 
+      {
+        "type": "damage", 
+        "name": "COUNTER FORCE BOLT", 
+        "description": "When Shellectro hits with a range attack, choose one hit opposing character. That character can't make range attacks until your next turn."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "7", 
+    "targets": "2", 
+    "speed_type": "wing", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "running_shot", 
+        "speed_value": 9, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 11, 
+        "defense_power": "toughness", 
+        "defense_value": 18, 
+        "damage_power": "outwit", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 11, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "running_shot", 
+        "speed_value": 9, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 10, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 3, 
+        "starting_line": true
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 8, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 10, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "running_shot", 
+        "speed_value": 9, 
+        "attack_power": "pulse_wave", 
+        "attack_value": 9, 
+        "defense_power": "super_senses", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 7, 
+        "speed_value": 8, 
+        "attack_power": "pulse_wave", 
+        "attack_value": 9, 
+        "defense_power": "super_senses", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "tmnt2035", 
+    "set_id": "tmnt2", 
+    "collector_number": "035", 
+    "name": "Graviturtle", 
+    "type": "character", 
+    "rarity": "chase", 
+    "dimensions": "1x1", 
+    "point_values": [
+      75, 
+      50
+    ], 
+    "properties": [
+      "unique"
+    ], 
+    "team_abilities": [], 
+    "keywords": [
+      "TMNT"
+    ], 
+    "special_powers": [
+      {
+        "type": "attack", 
+        "name": "GRAVITY WHIP FLING", 
+        "description": "When Graviturtle hits an opposing character, give that character an action token and it can't make close attacks until your next turn."
+      }, 
+      {
+        "type": "damage", 
+        "name": "SUPER TURTLES, COUNT IT OFF!", 
+        "description": "Once per turn, when an adjacent friendly character with the TMNT keyword hits an opposing character, after actions resolve, you may roll a d6. On a result of 4 - 6, remove an action token from that friendly character."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "3", 
+    "targets": "1", 
+    "speed_type": "wing", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "sidestep", 
+        "speed_value": 9, 
+        "attack_power": "special", 
+        "attack_value": 11, 
+        "defense_power": "invulnerability", 
+        "defense_value": 18, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_power": "telekinesis", 
+        "attack_value": 11, 
+        "defense_power": "invulnerability", 
+        "defense_value": 18, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "telekinesis", 
+        "attack_value": 11, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 3, 
+        "starting_line": true
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 8, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "probability_control", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_value": 7, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "probability_control", 
+        "damage_value": 2
+      }
+    ]
+  }
+]

@@ -494,6 +494,46 @@ LOAD XML LOCAL INFILE 'gotg2m/gotg2m.xml'
   INTO TABLE units
   ROWS IDENTIFIED BY '<row>';
 
+LOAD XML LOCAL INFILE 'dxf/dxf.xml'
+  REPLACE
+  INTO TABLE units
+  ROWS IDENTIFIED BY '<row>';
+
+LOAD XML LOCAL INFILE 'ffdxf/ffdxf.xml'
+  REPLACE
+  INTO TABLE units
+  ROWS IDENTIFIED BY '<row>';
+
+LOAD XML LOCAL INFILE 'tmnt3/tmnt3.xml'
+  REPLACE
+  INTO TABLE units
+  ROWS IDENTIFIED BY '<row>';
+
+LOAD XML LOCAL INFILE 'fftmnt3/fftmnt3.xml'
+  REPLACE
+  INTO TABLE units
+  ROWS IDENTIFIED BY '<row>';
+
+LOAD XML LOCAL INFILE 'jw/jw.xml'
+  REPLACE
+  INTO TABLE units
+  ROWS IDENTIFIED BY '<row>';
+
+LOAD XML LOCAL INFILE 'ffjw/ffjw.xml'
+  REPLACE
+  INTO TABLE units
+  ROWS IDENTIFIED BY '<row>';
+
+LOAD XML LOCAL INFILE 'tmnt2/tmnt2.xml'
+  REPLACE
+  INTO TABLE units
+  ROWS IDENTIFIED BY '<row>';
+
+LOAD XML LOCAL INFILE 'fftmnt2/fftmnt2.xml'
+  REPLACE
+  INTO TABLE units
+  ROWS IDENTIFIED BY '<row>';
+
 ALTER TABLE units
 MODIFY COLUMN rarity ENUM('common', 'uncommon', 'rare', 'super_rare', 'chase', 'ultra_chase', 'limited_edition');
 
@@ -508,4 +548,4 @@ FROM units
 WHERE set_id = 'hgpc';
 
 ALTER TABLE units
-MODIFY COLUMN type ENUM('character', 'object', 'equipment', 'map', 'bystander', 'tarot_card', 'mystery_card', 'id_card') NOT NULL,
+MODIFY COLUMN type ENUM('character', 'object', 'equipment', 'map', 'bystander', 'tarot_card', 'mystery_card', 'id_card', 'comic_panel') NOT NULL;

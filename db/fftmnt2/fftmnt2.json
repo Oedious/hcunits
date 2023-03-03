@@ -1,0 +1,590 @@
+[
+  {
+    "unit_id": "fftmnt2001", 
+    "set_id": "fftmnt2", 
+    "collector_number": "001", 
+    "name": "Raphael", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      75
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Animal", 
+      "Martial Artist", 
+      "TMNT", 
+      "TMNT Ally"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "'CLANG'? DID YOU SAY 'CLANG'?", 
+        "description": "When Raphael attacks only characters of 75 points or less, modify his attack value by +1. When Raphael attacks only characters with the Robot keyword, modify his damage value by +1."
+      }, 
+      {
+        "type": "attack", 
+        "name": "BREAK OPEN A FIRE HYDRANT", 
+        "description": "Raphael can use Incapacitate with a range value of 4. When he does, after actions resolve hit characters are knocked back a number of squares equal to the number of action tokens on them.", 
+        "powers": [
+          "incapacitate"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "dolphin", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "sidestep", 
+        "speed_value": 10, 
+        "attack_power": "special", 
+        "attack_value": 11, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "sidestep", 
+        "speed_value": 9, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "sidestep", 
+        "speed_value": 9, 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "charge", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "fftmnt2002", 
+    "set_id": "fftmnt2", 
+    "collector_number": "002", 
+    "name": "Michelangelo", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      75
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Animal", 
+      "Martial Artist", 
+      "TMNT", 
+      "TMNT Ally"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "'CLANG'? DID YOU SAY 'CLANG'?", 
+        "description": "When Michelangelol attacks only characters of 75 points or less, modify his attack value by +1. When Michelangelo attacks only characters with the Robot keyword, modify his damage value by +1."
+      }, 
+      {
+        "type": "attack", 
+        "name": "PIZZA TO THE FACE", 
+        "description": "When Michelangelo hits a single opposing character, the hit character can't use attack powers until your next turn.", 
+        "powers": [
+          "force_blast"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "dolphin", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "flurry", 
+        "speed_value": 10, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "shape_change", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "flurry", 
+        "speed_value": 9, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "shape_change", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "flurry", 
+        "speed_value": 9, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "probability_control", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "plasticity", 
+        "speed_value": 8, 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "probability_control", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "plasticity", 
+        "speed_value": 8, 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "probability_control", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "plasticity", 
+        "speed_value": 7, 
+        "attack_value": 8, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "probability_control", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "fftmnt2003", 
+    "set_id": "fftmnt2", 
+    "collector_number": "003", 
+    "name": "Donatello", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      75
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Animal", 
+      "Martial Artist", 
+      "Scientist", 
+      "TMNT", 
+      "TMNT Ally"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "'CLANG'? DID YOU SAY 'CLANG'?", 
+        "description": "When Donatello attacks only characters of 75 points or less, modify his attack value by +1. When Donatello attacks only characters with the Robot keyword, modify his damage value by +1."
+      }, 
+      {
+        "type": "attack", 
+        "name": "TRASH CAN OVER THE HEAD", 
+        "description": "When Donatello hits a single opposing character, the hit character can't use defense powers until your next turn."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "dolphin", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "leap_climb", 
+        "speed_value": 10, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "leap_climb", 
+        "speed_value": 9, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "leap_climb", 
+        "speed_value": 9, 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "leap_climb", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 16, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "leap_climb", 
+        "speed_value": 8, 
+        "attack_value": 9, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 16, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "leap_climb", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 16, 
+        "damage_power": "perplex", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "fftmnt2004", 
+    "set_id": "fftmnt2", 
+    "collector_number": "004", 
+    "name": "Leonardo", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      75
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Animal", 
+      "Martial Artist", 
+      "TMNT", 
+      "TMNT Ally"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "'CLANG'? DID YOU SAY 'CLANG'?", 
+        "description": "When Leonardo attacks only characters of 75 points or less, modify his attack value by +1. When Leonardo attacks only characters with the Robot keyword, modify his damage value by +1."
+      }, 
+      {
+        "type": "attack", 
+        "name": "TWO-TOED KICK", 
+        "description": "When Leonardo hits a single opposing character with a close attack, after actions resolve he can use Force Blast as a free action and the target is given an action token if it doesn't have one already."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "dolphin", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 10, 
+        "attack_power": "special", 
+        "attack_value": 11, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "empower", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "sidestep", 
+        "speed_value": 9, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "empower", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "sidestep", 
+        "speed_value": 9, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "empower", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "fftmnt2005", 
+    "set_id": "fftmnt2", 
+    "collector_number": "005", 
+    "name": "April", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      25
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Reporter", 
+      "TMNT Ally"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "WE GOTTA SAVE APRIL", 
+        "description": "When April would be KO'd by an opposing character's attack, place her on that character's card instead and place a Rescue token on April's card. Friendly characters with the TMNT Ally keyword modify their attack value by +1 when targeting a character that has April on its card. If a character with April on its card due to this effect is KO'd, place April into a square it last occupied on click #1. At the end of the game, the opponent scores 25 points for each Rescue Token on April's card. This ability can't be ignored."
+      }, 
+      {
+        "type": "damage", 
+        "name": "I'VE GOT PIZZA GUYS!", 
+        "description": "Once per turn, you may choose one of the following: Give April a free action to heal one adjacent character with the TMNT keyword 1 click. -or- Give April a power action to heal all adjacent friendly characters with the TMNT keyword 1 click each."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "plasticity", 
+        "speed_value": 8, 
+        "attack_value": 9, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "plasticity", 
+        "speed_value": 8, 
+        "attack_value": 9, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "fftmnt2006", 
+    "set_id": "fftmnt2", 
+    "collector_number": "006", 
+    "name": "Casey Jones", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      50
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Martial Artist", 
+      "TMNT Ally"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "RULES ARE FOR SUCKERS", 
+        "description": "Casey Jones's actions do not count against your action total."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "5", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 9, 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "empower", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "empower", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "flurry", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "flurry", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "battle_fury", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "flurry", 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "battle_fury", 
+        "damage_value": 2
+      }
+    ]
+  }
+]

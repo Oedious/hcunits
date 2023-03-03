@@ -372,12 +372,12 @@ const SET_LIST = {
   "tmnt3": {
     "name": "Teenage Mutant Ninja Turtles: Shredder's Return",
     "release_date": "2017-02-01",
-    "universe": "marvel"
+    "universe": "indy"
   },
   "fftmnt3": {
     "name": "Fast Forces: Teenage Mutant Ninja Turtles: Shredder's Return",
     "release_date": "2017-02-01",
-    "universe": "marvel"
+    "universe": "indy"
   },
   "jw": {
     "name": "The Joker's Wild!",
@@ -388,6 +388,16 @@ const SET_LIST = {
     "name": "Fast Forces: Batman and His Greatest Foes",
     "release_date": "2016-11-09",
     "universe": "dc"
+  },
+  "tmnt2": {
+    "name": "Teenage Mutant Ninja Turtles: Heroes in a Half Shell",
+    "release_date": "2016-10-12",
+    "universe": "indy"
+  },
+  "fftmnt2": {
+    "name": "Fast Forces: Teenage Mutant Ninja Turtles: Heroes in a Half Shell",
+    "release_date": "2016-10-12",
+    "universe": "indy"
   },
   "wk": {
     "name": "WizKids Standard Game Pieces",

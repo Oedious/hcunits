@@ -257,6 +257,12 @@ SET_MAP = {
   "ffjw": {
     "name": "Fast Forces: Batman and His Greatest Foes",
   },
+  "tmnt2": {
+    "name": "Teenage Mutant Ninja Turtles: Heroes in a Half Shell",
+  },
+  "fftmnt2": {
+    "name": "Fast Forces: Teenage Mutant Ninja Turtles: Heroes in a Half Shell",
+  },
 }
 
 POWERS = {
