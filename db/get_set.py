@@ -251,6 +251,12 @@ SET_MAP = {
   "fftmnt3": {
     "name": "Fast Forces: Teenage Mutant Ninja Turtles: Shredder's Return",
   },
+  "jw": {
+    "name": "The Joker's Wild!",
+  },
+  "ffjw": {
+    "name": "Fast Forces: Batman and His Greatest Foes",
+  },
 }
 
 POWERS = {
@@ -650,10 +656,10 @@ class Unit:
         self.bystander_type = "construct"
       elif (soup.find("td", class_="card_special_object") or
             soup.find("td", class_="card_light_object")):
-        if ((soup.find(text=re.compile(r'.*EFFECT: .*')) or
+        if ((soup.find(text=re.compile(r'.*EFFECT:.*')) or
              # Yes - eaxs003 spelled this "EFECT"...
-             soup.find(text=re.compile(r'.*EFECT: .*')) or
-             soup.find(text=re.compile(r'.*Effect: .*'))) and
+             soup.find(text=re.compile(r'.*EFECT:.*')) or
+             soup.find(text=re.compile(r'.*Effect:.*'))) and
              not soup.find(text=re.compile(r".*is not equipment.*"))):
           self.type = "equipment"
           self.object_type = "equipment"
@@ -780,7 +786,11 @@ class Unit:
           parts = []
           for subtag in tag.children:
             if subtag.string:
-              parts.append(subtag.string.strip())
+              part = subtag.string.strip()
+              # Remove trailing periods since they'll be added back in later.
+              if len(part) > 0 and part[-1] == ".":
+                part = part[:-1].strip()
+              parts.append(part)
         description = None
         for part in parts:
           part = part.strip()
@@ -810,7 +820,6 @@ class Unit:
           if self.object_type == "standard":
             self.object_type = "special"
           self.special_powers.append(OrderedDict([
-            ("type", "object"),
             ("description", clean_string(description))
           ]))
           self.special_powers[-1] = self.parse_powers_from_description(self.special_powers[-1])
@@ -863,7 +872,12 @@ class Unit:
           for attr in children:
             # Ignore non-strings.
             if attr.string:
-              attr_list.append(attr.string.strip())
+              if len(attr_list) > 0 and attr_list[-1] == "EFFECT:":
+                # If the previous item was just the title of the effect, join
+                # the two strings.
+                attr_list[-1] += attr.string.strip()
+              else:
+                attr_list.append(attr.string.strip())
 
         for attr in attr_list:
           if len(attr) <= 0:
@@ -887,6 +901,10 @@ class Unit:
             self.object_size = "ultra_light"
           elif lower_attr == "ultra heavy object":
             self.object_size = "ultra_heavy"
+          elif (lower_attr == "equip" or
+                lower_attr.startswith("give a friendly character in this square")):
+            # Skip the attributes that just describe equipment rules.
+            pass
           else:
             # Handle equipment special powers, including "EFFECT"
             sp = attr.split(':', 1)
@@ -1114,8 +1132,10 @@ class Unit:
                 attr_name = improved_ability_info["attr_name"]
                 types = improved_ability_info["types"]
                 
-                # Remove any trailing period.
-                if len(imp_types) > 0 and imp_types[-1] == ".":
+                # Remove any trailing delimiters.
+                if (len(imp_types) > 0 and
+                    (imp_types[-1] == "." or
+                     imp_types[-1] == ";")):
                   imp_types = imp_types[:-1]
   
                 # Try and split apart the description by different delimiters and

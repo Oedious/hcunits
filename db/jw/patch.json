@@ -1,0 +1,166 @@
+{
+  "updates": {
+    "jw007": {
+      "special_powers": [{
+        "description": "When Commissioner Gordon is the only friendly character using the Police team ability for an attack, modify the defense value of the target by -2 instead of -1."
+      }, {
+        "description": "Commissioner Gordon can use Enhancement and Leadership. He may use each only if no other character has used that power this turn.",
+        "powers": ["enhancement", "leadership"]
+      }]
+    },
+    "jw014": {
+      "special_powers": [{
+        "powers": ["incapacitate"]
+      }]
+    },
+    "jw015": {
+      "special_powers": [{
+        "powers": ["sidestep"]
+      }]
+    },
+    "jw016": {
+      "special_powers": [{
+        "powers": ["outwit"]
+      }, {
+        "powers": ["energy_explosion", "force_blast", "incapacitate", "precision_strike", "willpower"]
+      }]
+    },
+    "jw020": {
+      "special_powers": [{
+        "description": "Tattooed Man can use Plasticity and Stealth. If he has an action token when he attacks modify his damage value by +1.",
+        "powers": ["plasticity", "stealth"]
+      }]
+    },
+    "jw021": {
+      "special_powers": [{
+      }, {
+      }, {
+        "powers": ["charge", "flurry"]
+      }, {
+        "powers": ["outwit"]
+      }]
+    },
+    "jw024": {
+      "special_powers": [{
+      }, {
+        "powers": ["outwit", "perplex"]
+      }]
+    },
+    "jw030": {
+      "special_powers": [{
+      }, {
+        "powers": ["probability_control"]
+      }, {
+        "powers": ["energy_explosion"]
+      }]
+    },
+    "jw032": {
+      "special_powers": [{
+        "powers": ["stealth"]
+      }, {
+        "powers": ["outwit", "perplex"]
+      }]
+    },
+    "jw034": {
+      "special_powers": [{
+        "powers": ["force_blast", "hypersonic_speed"]
+      }]
+    },
+    "jw037b": {
+      "special_powers": [{
+        "powers": ["steal_energy"]
+      }],
+      "dial": [{
+      }, {
+      }, {
+      }, {
+      }, {
+        "starting_line": "green"
+      }]
+    },
+    "jw042": {
+      "special_powers": [{
+      }, {
+        "powers": ["empower", "ehancement"]
+      }]
+    },
+    "jw042": {
+      "special_powers": [{
+        "powers": ["precision_strike", "steal_energy", "willpower"]
+      }]
+    },
+    "jw049": {
+      "special_powers": [{
+      }, {
+      }, {
+        "powers": ["toughness"]
+      }]
+    },
+    "jw052": {
+      "special_powers": [{
+      }, {
+        "powers": ["barrier"]
+      }]
+    },
+    "jw053b": {
+      "special_powers": [{
+        "powers": ["flurry", "leap_climb", "phasing_teleport", "earthbound_neutralized", "charge", "mind_control", "plasticity", "force_blast", "sidestep", "hypersonic_speed", "stealth", "running_shot", "blades_claws_fangs", "energy_explosion", "pulse_wave", "quake", "super_strength", "incapacitate", "penetrating_psychic_blast", "smoke_cloud", "precision_strike", "poison", "steal_energy", "telekinesis", "super_senses", "toughness", "defend", "combat_reflexes", "energy_shield_deflection", "barrier", "mastermind", "willpower", "invincible", "impervious", "regeneration", "invulnerability", "ranged_combat_expert", "battle_fury", "support", "exploit_weakness", "enhancement", "probability_control", "shape_change", "close_combat_expert", "empower", "perplex", "outwit", "leadership"]
+      }]
+    },
+    "jw054": {
+      "special_powers": [{
+        "powers": ["barrier"]
+      }, {
+        "description": "Geo-Force can use Charge, Force Blast, and Improved Movement: Destroy Blocking.",
+        "powers": ["charge", "force_blast"]
+      }]
+    },
+    "jw055": {
+      "special_powers": [{
+      }, {
+        "powers": ["blades_claws_fangs", "steal_energy"]
+      }]
+    },
+    "jw056": {
+      "special_powers": [{
+      }, {
+        "powers": ["sidestep"]
+      }]
+    },
+    "jw059": {
+      "special_powers": [{
+      }, {
+      }, {
+      }, {
+        "description": "The Joker can use Ranged Combat Expert and Improved Targeting: Characters. When The Joker hits with an attack, hit characters are each given up to 2 action tokens."
+      }]
+    },
+    "jw060": {
+      "dial": [{
+        "starting_line": "green"
+      }, {
+      }, {
+      }, {
+      }, {
+      }, {
+      }, {
+        "starting_line": "red"
+      }]
+    }
+  },
+  "additions": [{
+    "unit_id": "jwM001",
+    "set_id": "jw",
+    "collector_number": "M001",
+    "name": "Ace Chemicals",
+    "type": "map",
+    "map_url": "https://hcmaps.net/maps/jw/ace_chemicals.json"
+  }, {
+    "unit_id": "jwM002",
+    "set_id": "jw",
+    "collector_number": "M002",
+    "name": "Ace Street",
+    "type": "map",
+    "map_url": "https://hcmaps.net/maps/jw/ace_street.json"
+  }]
+}

@@ -379,6 +379,16 @@ const SET_LIST = {
     "release_date": "2017-02-01",
     "universe": "marvel"
   },
+  "jw": {
+    "name": "The Joker's Wild!",
+    "release_date": "2016-11-09",
+    "universe": "dc"
+  },
+  "ffjw": {
+    "name": "Fast Forces: Batman and His Greatest Foes",
+    "release_date": "2016-11-09",
+    "universe": "dc"
+  },
   "wk": {
     "name": "WizKids Standard Game Pieces",
     "release_date": "2002-05-01",
