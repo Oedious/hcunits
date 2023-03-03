@@ -245,6 +245,12 @@ SET_MAP = {
   "ffdxf": {
     "name": "Fast Forces: Deadpool and X-Force",
   },
+  "tmnt3": {
+    "name": "Teenage Mutant Ninja Turtles: Shredder's Return",
+  },
+  "fftmnt3": {
+    "name": "Fast Forces: Teenage Mutant Ninja Turtles: Shredder's Return",
+  },
 }
 
 POWERS = {

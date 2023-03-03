@@ -369,6 +369,16 @@ const SET_LIST = {
     "release_date": "2017-03-01",
     "universe": "marvel"
   },
+  "tmnt3": {
+    "name": "Teenage Mutant Ninja Turtles: Shredder's Return",
+    "release_date": "2017-02-01",
+    "universe": "marvel"
+  },
+  "fftmnt3": {
+    "name": "Fast Forces: Teenage Mutant Ninja Turtles: Shredder's Return",
+    "release_date": "2017-02-01",
+    "universe": "marvel"
+  },
   "wk": {
     "name": "WizKids Standard Game Pieces",
     "release_date": "2002-05-01",
