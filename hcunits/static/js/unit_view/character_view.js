@@ -312,7 +312,7 @@ class CharacterView extends BaseUnitView {
             <img class='specialPowerIcon' src='/static/images/sp/${type}.png' alt=''/>
             <div class='specialPowerPlotPoints' style='color:${textColor};'>${plotPoints}</div>
           </div>`;
-      } else {
+      } else if (type) {
         iconHtml = `<img class='specialPowerIcon' src='/static/images/sp/${type}.png' alt=''/>`;
       }
       html += `

@@ -227,6 +227,15 @@ SET_MAP = {
   "wi": {
     "name": "15th Anniversary What If?",
   },
+  "ww": {
+    "name": "Wonder Woman",
+  },
+  "adw": {
+    "name": "Avengers/Defenders War",
+  },
+  "ffadw": {
+    "name": "Fast Forces: Avengers/Defenders War",
+  },
 }
 
 POWERS = {
@@ -346,7 +355,7 @@ PROPERTY_VALUES = [
 ]
 
 SPECIAL_POWER_TYPE_VALUES = [
-  "trait", "costed_trait", "rally_trait", "title_trait", "plus_plot_points", "minus_plot_points", "speed", "attack", "defense", "damage", "location", "consolation", "object", "equipment", "tarot_card", "mystery_card", "terrain", "other_id", "inspiration"
+  "trait", "costed_trait", "rally_trait", "title_trait", "plus_plot_points", "minus_plot_points", "speed", "attack", "defense", "damage", "location", "consolation"
 ]
 
 RALLY_TYPE_VALUES = [
@@ -366,6 +375,7 @@ IMPROVED_ABILITIES = {
       "ignores hindering terrain": "hindering",
       "blocking": "blocking",
       "blocking terrain": "blocking",
+      "ignores blocking": "blocking",
       "ignores blocking terrain": "blocking",
       "outdoor blocking": "outdoor_blocking",
       "ignores blocking terrain (outdoor)": "outdoor_blocking",
@@ -579,28 +589,26 @@ class Unit:
     # Determine the rarity and special type
     figure_rank_tag = soup.select_one("td[class^=figure_rank_]")
     rarity = figure_rank_tag.strong.string.strip()
-    if (rarity == "Rarity: Free Comic Book Day Exclusive" or
-        rarity == "Rarity: Limited Edition" or
-        rarity == "Rarity: Brick"):
-      self.rarity = "limited_edition"
-    elif rarity == "Rarity: Common":
+    if (rarity == "Rarity: Common" or
+        rarity == "Rarity: Starter Set" or
+        rarity == "Rarity: Fast Forces"):
       self.rarity = "common"
     elif rarity == "Rarity: Uncommon":
       self.rarity = "uncommon"
-    elif rarity == "Rarity: Rare":
+    elif (rarity == "Rarity: Rare" or
+          rarity == "Rarity: Mass Market Exclusive"):
       self.rarity = "rare"
     elif rarity == "Rarity: Super Rare":
       self.rarity = "super_rare"
-    elif rarity == "Rarity: Chase":
+    elif (rarity == "Rarity: Chase" or
+          rarity == "Rarity: Free Comic Book Day Exclusive" or
+          rarity == "Rarity: Limited Edition" or
+          rarity == "Rarity: Brick" or
+          rarity == "Rarity: Super Booster" or
+          rarity == "Rarity: Mass Market Exclusive Chase"):
       self.rarity = "chase"
     elif rarity == "Rarity: Ultra Chase":
       self.rarity = "ultra_chase"
-    elif rarity == "Rarity: Starter Set":
-      self.rarity = "starter"
-    elif rarity == "Rarity: Fast Forces":
-      self.rarity = "fast_forces"
-    elif rarity == "Rarity: Super Booster":
-      self.rarity = "super_booster"
     else:
       raise RuntimeError("The unit rarity '%s' for '%s' is currently not supported" % (rarity, self.unit_id))
 
@@ -620,7 +628,8 @@ class Unit:
       is_construct = False
       tag_list = soup.find_all(text=re.compile(r'\s*Special Powers\s*'))
       if len(tag_list) > 0:
-        is_construct = tag_list[0].parent.parent.parent.parent.tbody.select('tr')[0].select('td')[1].strong.string.strip() == "CONSTRUCTS:"
+        val = tag_list[0].parent.parent.parent.parent.tbody.select('tr')[0].select('td')[1].strong
+        is_construct = (val and val.string.strip() == "CONSTRUCTS:")
       if is_construct:
         self.type = "bystander"
         self.bystander_type = "construct"
@@ -956,7 +965,9 @@ class Unit:
           if sp_type_str == "special":
             sp_type = "trait"
           elif sp_type_str == "improved":
-            desc = td_tags[1].strong.string.strip()
+            desc = ""
+            if td_tags[1].strong:
+              desc = td_tags[1].strong.string.strip()
             if "title" in self.properties and desc.startswith("STARTING PLOT POINTS"):
               sp_type = "title_trait"
             elif desc.startswith("LEADER OF THE NASTY BOYS"):
@@ -996,8 +1007,9 @@ class Unit:
               sp_type = "title_trait"
             elif sp_name.lower().startswith("improved"):
               sp_type ="improved"
-            elif self.unit_id.startswith("aiG024"):
-              # Hack to fix trait type for aiG024.
+            elif (self.unit_id.startswith("aiG024") or
+                  self.unit_id.startswith("adw048")):
+              # Hack to fix trait type for a few specific units.
               sp_type = "trait"
             else:
               raise RuntimeError("Unit '%s' has special power type 'epic', which is not currently supported" % (unit_id))
@@ -1050,6 +1062,8 @@ class Unit:
               improved_abilities = [(sp_name, sp_description)]
             
             for (imp_name, imp_types) in improved_abilities:
+              if not imp_name:
+                continue
               imp_name = imp_name.lower()
               if imp_name.startswith("improved "):
                 imp_name = imp_name.split(" ", 1)[1].strip()
@@ -1287,7 +1301,7 @@ class Unit:
     # so that the list can be used for search.
     sp_desc = sp["description"]
     sp_desc = sp_desc.replace(" and", ",")
-    split_list = re.split("\.|,|//", sp_desc)
+    split_list = re.split("\.|,|//|-", sp_desc)
     sp_powers = []
     for power in split_list:
       power = power.strip()
@@ -1470,10 +1484,7 @@ class Unit:
     
     for sp in self.special_powers:
       sp_type = sp.get("type", None)
-      if not sp_type:
-        print("Warning: unit '%s' does not have a special power type" % (self.unit_id))
-        continue
-      if not sp_type in SPECIAL_POWER_TYPE_VALUES:
+      if sp_type and not sp_type in SPECIAL_POWER_TYPE_VALUES:
         print("Warning: unit '%s' has an unknown special power type '%s'" % (self.unit_id, sp_type))
         continue
       if not sp.get("name", None):

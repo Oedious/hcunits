@@ -1,0 +1,158 @@
+{
+  "updates": {
+    "adw001": {
+      "special_powers": [{
+      }, {
+      }, {
+        "powers": ["phasing_teleport"]
+      }]
+    },
+    "adw003": {
+      "special_powers": [{
+      }, {
+        "powers": ["leap_climb", "quake"]
+      }]
+    },
+    "adw010": {
+      "special_powers": [{
+        "powers": ["regeneration"]
+      }]
+    },
+    "adw015": {
+      "special_powers": [{
+        "powers": ["empower"]
+      }]
+    },
+    "adw019": {
+      "special_powers": [{
+      }, {
+      }, {
+        "powers": ["defend"]
+      }]
+    },
+    "adw022": {
+      "special_powers": [{
+        "powers": ["energy_explosion", "penetrating_psychic_blast", "incapacitate"]
+      }]
+    },
+    "adw023": {
+      "special_powers": [{
+      }, {
+        "powers": ["leadership"]
+      }]
+    },
+    "adw010": {
+      "special_powers": [{
+        "powers": ["regeneration"]
+      }]
+    },
+    "adw035": {
+      "special_powers": [{
+      }, {
+      }, {
+        "powers": ["empower", "enhancement"]
+      }]
+    },
+    "adw047": {
+      "special_powers": [{
+        "powers": ["empower", "probability_control"]
+      }]
+    },
+    "adw048": {
+      "special_powers": [{
+        "powers": ["battle_fury", "precision_strike"]
+      }]
+    },
+    "adw052": {
+      "special_powers": [{
+      }, {
+      }, {
+        "powers": ["outwit", "perplex"]
+      }]
+    },
+    "adw053": {
+      "special_powers": [{
+        "powers": ["flurry", "leap_climb", "phasing_teleport", "earthbound_neutralized", "charge", "mind_control", "plasticity", "force_blast", "sidestep", "hypersonic_speed", "stealth", "running_shot", "blades_claws_fangs", "energy_explosion", "pulse_wave", "quake", "super_strength", "incapacitate", "penetrating_psychic_blast", "smoke_cloud", "precision_strike", "poison", "steal_energy", "telekinesis", "ranged_combat_expert", "battle_fury", "support", "exploit_weakness", "enhancement", "probability_control", "shape_change", "close_combat_expert", "empower", "perplex", "outwit", "leadership"]
+      }]
+    },
+    "adw054": {
+      "special_powers": [{
+      }, {
+        "powers": ["outwit", "perplex", "leadership"]
+      }]
+    },
+    "adw054": {
+      "special_powers": [{
+      }, {
+        "powers": ["sidestep"]
+      }]
+    },
+    "adw056": {
+      "special_powers": [{
+      }, {
+        "powers": ["mind_control"]
+      }]
+    },
+    "adw059": {
+      "special_powers": [{
+        "powers": ["blades_claws_fangs", "energy_explosion", "pulse_wave", "quake", "super_strength", "incapacitate", "penetrating_psychic_blast", "smoke_cloud", "precision_strike", "poison", "steal_energy", "telekinesis"]
+      }, {
+        "description": "Klaw can use Sidestep and Improved Movement: Hindering, Blocking, Characters. When he uses Sidestep, you may roll a d6 and he may move up to the result instead of 2."
+      }]
+    },
+    "adw061": {
+      "special_powers": [{
+        "powers": ["steal_energy"]
+      }]
+    },
+    "adw063": {
+      "special_powers": [{
+        "powers": ["sidestep", "stealth"]
+      }, {
+        "powers": ["perplex"]
+      }]
+    },
+    "adw065": {
+      "special_powers": [{
+      }, {
+        "description": "Give Valkyrie a power action to move in a direct path using Improved Movement: Characters. After actions resolve, make a close attack targeting all characters she moved through. Valkyrie can use Blades/Claws/Fangs for this attack, and if she does, roll a d6 for each hit character. These d6 rolls can't be rerolled."
+      }]
+    },
+    "adw066": {
+      "special_powers": [{
+      }, {
+        "description": "Give Black Knight a power action to move in a direct path using Improved Movement: Characters. After actions resolve, make a close attack using Exploit Weakness targeting all characters he moved through.",
+        "powers": ["perplex"]
+      }]
+    },
+    "adw073": {
+      "special_powers": [{
+      }, {
+        "description": "Hulk can use Charge and Improved Movement: Characters, Destroy Blocking. When he uses Charge, he doesn't halve his speed value."
+      }]
+    }
+  },
+  "additions": [{
+    "unit_id": "adwM001",
+    "set_id": "adw",
+    "collector_number": "M001",
+    "name": "Dark Dimension",
+    "type": "map",
+    "special_powers": [{
+      "name": "Special Rules",
+      "description": "Squares bordered by (orange solid line) are Void terrain. Squares bordered by (orange dotted line) are Portals. Both are considered clear terrain for movement and line of fire purposes. After any action resolves, the active player rolls a d6 for each character occupying Void terrain and places them in the portal square with the number matching the result. If the character can't be placed in that square, place them in a square nearest to that square."
+    }],
+    "map_url": "https://hcmaps.net/maps/adw/dark_dimension.json"
+  }, {
+    "unit_id": "adwM002",
+    "set_id": "adw",
+    "collector_number": "M002",
+    "name": "Wakanda",
+    "type": "map",
+    "special_powers": [{
+      "name": "Thick Jungle",
+      "description": "Hindered lines of fire drawn through printed hindering terrain modify a target's defense value by +2 instead of +1."
+    }],
+    "map_url": "https://hcmaps.net/maps/adw/wakanda.json"
+  }]
+}

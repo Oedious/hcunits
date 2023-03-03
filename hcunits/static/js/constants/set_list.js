@@ -337,7 +337,22 @@ const SET_LIST = {
   "wi": {
     "name": "15th Anniversary What If?",
     "release_date": "2017-06-07",
+    "universe": "marvel"
+  },
+  "ww": {
+    "name": "Wonder Woman",
+    "release_date": "2017-05-24",
     "universe": "dc"
+  },
+  "adw": {
+    "name": "Avengers/Defenders War",
+    "release_date": "2017-05-10",
+    "universe": "marvel"
+  },
+  "ffadw": {
+    "name": "Fast Forces: Avengers/Defenders War",
+    "release_date": "2017-05-10",
+    "universe": "marvel"
   },
   "wk": {
     "name": "WizKids Standard Game Pieces",

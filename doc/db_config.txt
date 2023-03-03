@@ -59,8 +59,8 @@ CREATE TABLE units (
 
   -- A JSON array of objects containing special powers and traits, of the format:
   -- {
-  --   "type": string - contains "trait", "speed", "attack", "defense", "damage", "costed_trait", "rally_trait", "title_trait", "plus_plot_points", "minus_plot_points", "location", "consolation", "object", "equipment", "tarot_card", "mystery_card", "other_id", "inspiration"
-  --   "name": string - the name of the power.
+  --   "type": (Optional) string - contains "trait", "speed", "attack", "defense", "damage", "costed_trait", "rally_trait", "title_trait", "plus_plot_points", "minus_plot_points", "location", "consolation"
+  --   "name": (Optional) string - the name of the power.
   --   "description": string - the description of the power.
   --   "powers": (Optional) array of strings, containing names to standard powers granted.
   --   "point_value": (Optional) the additional point value for a costed trait or location bonus.
@@ -470,6 +470,21 @@ LOAD XML LOCAL INFILE 'ew/ew.xml'
   ROWS IDENTIFIED BY '<row>';
 
 LOAD XML LOCAL INFILE 'wi/wi.xml'
+  REPLACE
+  INTO TABLE units
+  ROWS IDENTIFIED BY '<row>';
+
+LOAD XML LOCAL INFILE 'ww/ww.xml'
+  REPLACE
+  INTO TABLE units
+  ROWS IDENTIFIED BY '<row>';
+
+LOAD XML LOCAL INFILE 'adw/adw.xml'
+  REPLACE
+  INTO TABLE units
+  ROWS IDENTIFIED BY '<row>';
+
+LOAD XML LOCAL INFILE 'ffadw/ffadw.xml'
   REPLACE
   INTO TABLE units
   ROWS IDENTIFIED BY '<row>';

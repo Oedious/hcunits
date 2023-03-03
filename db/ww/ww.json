@@ -1,0 +1,1605 @@
+[
+  {
+    "unit_id": "ww001", 
+    "set_id": "ww", 
+    "collector_number": "001", 
+    "name": "Wonder Woman", 
+    "type": "character", 
+    "rarity": "common", 
+    "real_name": "Diana Prince", 
+    "dimensions": "1x1", 
+    "point_values": [
+      70
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "justice_league"
+    ], 
+    "keywords": [
+      "Amazon", 
+      "Justice League", 
+      "Warrior"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "AMAZON SISTERHOOD", 
+        "description": "Wonder Woman can use Super Senses. For all characters with this trait, when a friendly character with the Amazon keyword attacks an opposing character and actions resolve, you may give the attacker an Amazonian token.", 
+        "powers": [
+          "super_senses"
+        ]
+      }, 
+      {
+        "type": "defense", 
+        "name": "BATTLE-HARDENED", 
+        "description": "Wonder Woman can use Toughness. Friendly characters within 1 square that have an Amazonian token can use Shape Change. When they do and succeed, remove an Amazonian token from that character.", 
+        "powers": [
+          "toughness", 
+          "shape_change"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "wing", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "flurry", 
+        "speed_value": 8, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 11, 
+        "defense_power": "special", 
+        "defense_value": 18, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "flurry", 
+        "speed_value": 7, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 18, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "sidestep", 
+        "speed_value": 6, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 18, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "charge", 
+        "speed_value": 7, 
+        "attack_power": "quake", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 18, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "charge", 
+        "speed_value": 6, 
+        "attack_power": "quake", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "ww002", 
+    "set_id": "ww", 
+    "collector_number": "002", 
+    "name": "Starfire", 
+    "type": "character", 
+    "rarity": "common", 
+    "real_name": "Koriand'R", 
+    "dimensions": "1x1", 
+    "point_values": [
+      75
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "titans"
+    ], 
+    "keywords": [
+      "Cosmic", 
+      "Teen Titans", 
+      "Warrior"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "TITANS TOGETHER", 
+        "description": "If another friendly character healed this turn with the Titans team ability, modify Starfire's attack value by +1 this turn."
+      }, 
+      {
+        "type": "defense", 
+        "name": "FLYING TAMARANEAN", 
+        "description": "Starfire can use Energy Shield/Deflection and Toughness.", 
+        "powers": [
+          "energy_shield_deflection", 
+          "toughness"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [
+      "characters"
+    ], 
+    "object_keyphrases": [], 
+    "unit_range": "8", 
+    "targets": "2", 
+    "speed_type": "wing", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "running_shot", 
+        "speed_value": 10, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 18, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "running_shot", 
+        "speed_value": 9, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "running_shot", 
+        "speed_value": 10, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 9, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 9, 
+        "attack_value": 9, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 10, 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 16, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "ww003", 
+    "set_id": "ww", 
+    "collector_number": "003", 
+    "name": "Queen Hippolyta", 
+    "type": "character", 
+    "rarity": "common", 
+    "real_name": "Hippolyta", 
+    "dimensions": "1x1", 
+    "point_values": [
+      85, 
+      60
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Amazon", 
+      "Ruler", 
+      "Warrior"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "AMAZON SISTERHOOD", 
+        "description": "Queen Hippolyta can use Super Senses. For all characters with this trait, when a friendly character with the Amazon keyword attacks an opposing character and actions resolve, you may give the attacker an Amazonian token.", 
+        "powers": [
+          "super_senses"
+        ]
+      }, 
+      {
+        "type": "defense", 
+        "name": "SHIELD WALL!", 
+        "description": "Queen Hippolyta can use Toughness. Friendly characters within 1 square that have an Amazonian token can use Empower. When they do and the attacker hits, remove an Amazonian token from their card.", 
+        "powers": [
+          "toughness", 
+          "empower"
+        ]
+      }, 
+      {
+        "type": "damage", 
+        "name": "QUEEN OF THE AMAZONS", 
+        "description": "Queen Hippolyta can use Leadership. When she does and succeeds, instead of removing an action token, you may add an Amazonian token to all other friendly characters with the Amazon keyword.", 
+        "powers": [
+          "leadership"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 18, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "flurry", 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 18, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "flurry", 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "charge", 
+        "speed_value": 6, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 11, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 2, 
+        "starting_line": true
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "sidestep", 
+        "speed_value": 6, 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 18, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "sidestep", 
+        "speed_value": 6, 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 7, 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "special", 
+        "defense_value": 18, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 8, 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 3
+      }
+    ]
+  }, 
+  {
+    "unit_id": "ww004", 
+    "set_id": "ww", 
+    "collector_number": "004", 
+    "name": "Cheetah", 
+    "type": "character", 
+    "rarity": "common", 
+    "real_name": "Barbara Ann Minerva", 
+    "dimensions": "1x1", 
+    "point_values": [
+      50
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Animal", 
+      "Legion of Doom", 
+      "Scientist", 
+      "Society"
+    ], 
+    "special_powers": [
+      {
+        "type": "speed", 
+        "name": "JUNGLE PREDATOR", 
+        "description": "Cheetah can use Charge and Improved Movement: Hindering. When Cheetah is outdoors, she can use Stealth.", 
+        "powers": [
+          "charge", 
+          "stealth"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 7, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "battle_fury", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "special", 
+        "speed_value": 7, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_power": "super_senses", 
+        "defense_value": 16, 
+        "damage_power": "battle_fury", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "flurry", 
+        "speed_value": 6, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "battle_fury", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "flurry", 
+        "speed_value": 6, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_power": "super_senses", 
+        "defense_value": 16, 
+        "damage_power": "battle_fury", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 5, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 8, 
+        "defense_power": "super_senses", 
+        "defense_value": 16, 
+        "damage_power": "battle_fury", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "ww005", 
+    "set_id": "ww", 
+    "collector_number": "005", 
+    "name": "The Flash", 
+    "type": "character", 
+    "rarity": "common", 
+    "real_name": "Wally West", 
+    "dimensions": "1x1", 
+    "point_values": [
+      60
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "titans"
+    ], 
+    "keywords": [
+      "Keystone City", 
+      "Speedster", 
+      "Teen Titans"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "TITANS TOGETHER", 
+        "description": "If another friendly character healed this turn with the Titans team ability, modify The Flash's attack value by +1 this turn."
+      }, 
+      {
+        "type": "speed", 
+        "name": "THE SPEED FORCE STRENGTHENS ME", 
+        "description": "The Flash can use Hypersonic Speed. When he does, he can use Steal Energy and modifies his speed value by +2.", 
+        "powers": [
+          "hypersonic_speed", 
+          "steal_energy"
+        ]
+      }, 
+      {
+        "type": "damage", 
+        "name": "VELOCITY IMPACT", 
+        "description": "When The Flash uses Hypersonic Speed, increase his damage value by 1 this action for every 5 different squares he's moved through this turn."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 9, 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 19, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "special", 
+        "speed_value": 9, 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 18, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "special", 
+        "speed_value": 8, 
+        "attack_power": "quake", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 18, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "special", 
+        "speed_value": 8, 
+        "attack_power": "quake", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "ww006", 
+    "set_id": "ww", 
+    "collector_number": "006", 
+    "name": "Amazon", 
+    "type": "character", 
+    "rarity": "common", 
+    "real_name": "Various", 
+    "dimensions": "1x1", 
+    "point_values": [
+      30, 
+      15
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Amazon", 
+      "Warrior"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "AMAZON SISTERHOOD", 
+        "description": "Amazon can use Super Senses. For all characters with this trait, when a friendly character with the Amazon keyword attacks an opposing character and actions resolve, you may give the attacker an Amazonian token.", 
+        "powers": [
+          "super_senses"
+        ]
+      }, 
+      {
+        "type": "defense", 
+        "name": "BORN TO BE A WARRIOR", 
+        "description": "Amazon can use Combat Reflexes. Friendly characters within 1 square that have an Amazonian token can use Flurry. When they do and hit at least once, remove an Amazonian token from their card.", 
+        "powers": [
+          "combat_reflexes", 
+          "flurry"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "charge", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_value": 2, 
+        "starting_line": true
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "ww007", 
+    "set_id": "ww", 
+    "collector_number": "007", 
+    "name": "Cheetah", 
+    "type": "character", 
+    "rarity": "common", 
+    "real_name": "Unknown", 
+    "dimensions": "1x1", 
+    "point_values": [
+      40
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Animal", 
+      "Mystical"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "AMAZON HATRED", 
+        "description": "Cheetah can use Exploit Weakness, but only to target characters with the Amazon keyword.", 
+        "powers": [
+          "exploit_weakness"
+        ]
+      }, 
+      {
+        "type": "speed", 
+        "name": "JUNGLE CREATURE", 
+        "description": "Cheetah can use Charge and Leap/Climb.", 
+        "powers": [
+          "charge", 
+          "leap_climb"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 8, 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "special", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "special", 
+        "speed_value": 6, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 8, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "stealth", 
+        "speed_value": 7, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "stealth", 
+        "speed_value": 7, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 15, 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "ww008", 
+    "set_id": "ww", 
+    "collector_number": "008", 
+    "name": "The Flash", 
+    "type": "character", 
+    "rarity": "common", 
+    "real_name": "Wally West", 
+    "dimensions": "1x1", 
+    "point_values": [
+      85
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "justice_league", 
+      "police"
+    ], 
+    "keywords": [
+      "Speedster", 
+      "Teen Titans"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "THE RED BLUR", 
+        "description": "When The Flash is given a move action, he may make a close attack during the move."
+      }
+    ], 
+    "improved_movement": [
+      "characters"
+    ], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_value": 10, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 18, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_value": 10, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 18, 
+        "damage_power": "perplex", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 3, 
+        "speed_value": 9, 
+        "attack_power": "precision_strike", 
+        "attack_value": 9, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 9, 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "outwit", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 12, 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "outwit", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "ww009", 
+    "set_id": "ww", 
+    "collector_number": "009", 
+    "name": "Raven", 
+    "type": "character", 
+    "rarity": "rare", 
+    "real_name": "Rachel Roth", 
+    "dimensions": "1x1", 
+    "point_values": [
+      40
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "titans"
+    ], 
+    "keywords": [
+      "Mystical", 
+      "Teen Titans"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "TITANS TOGETHER", 
+        "description": "If another friendly character healed this turn with the Titans team ability, modify Raven's attack value by +1 this turn."
+      }, 
+      {
+        "type": "speed", 
+        "name": "TELEPORTATION", 
+        "description": "Give Raven a power action and choose an adjacent friendly character with the Mystical keyword or up to two adjacent friendly characters with the Teen Titans keyword. Place Raven in a square within 6 squares and line of fire and place the chosen characters adjacent to her."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "6", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 5, 
+        "attack_value": 9, 
+        "defense_value": 16, 
+        "damage_power": "probability_control", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 9, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 10, 
+        "defense_value": 16, 
+        "damage_power": "support", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "special", 
+        "speed_value": 5, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 9, 
+        "defense_value": 16, 
+        "damage_power": "support", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 9, 
+        "attack_value": 10, 
+        "defense_power": "regeneration", 
+        "defense_value": 16, 
+        "damage_power": "probability_control", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "ww010", 
+    "set_id": "ww", 
+    "collector_number": "010", 
+    "name": "Steve Trevor", 
+    "type": "character", 
+    "rarity": "rare", 
+    "real_name": "Steve Trevor", 
+    "dimensions": "1x1", 
+    "point_values": [
+      65
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Pilot", 
+      "Soldier"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "FRIEND OF THE AMAZONS", 
+        "description": "An Amazon themed team may include Steve Trevor and is still considered a theme team."
+      }, 
+      {
+        "type": "defense", 
+        "name": "MILITARY TRAINING", 
+        "description": "When Steve Trevor is attacked by a lower-point character, modify his defense value by +1. When he is attacked by a higher-point character, he can use Toughness."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "6", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "running_shot", 
+        "speed_value": 10, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_power": "leadership", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "stealth", 
+        "speed_value": 9, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 9, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_power": "leadership", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "stealth", 
+        "speed_value": 9, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 9, 
+        "defense_power": "special", 
+        "defense_value": 16, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "running_shot", 
+        "speed_value": 9, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 8, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 9, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 8, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 3
+      }
+    ]
+  }, 
+  {
+    "unit_id": "ww011", 
+    "set_id": "ww", 
+    "collector_number": "011", 
+    "name": "Etta Candy", 
+    "type": "character", 
+    "rarity": "rare", 
+    "real_name": "Etta Candy", 
+    "dimensions": "1x1", 
+    "point_values": [
+      20
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Soldier"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "FRIEND OF THE AMAZONS", 
+        "description": "An Amazon themed team may include Etta Candy and is still considered a theme team."
+      }, 
+      {
+        "type": "damage", 
+        "name": "ADMINISTRATIVE ASSISTANT", 
+        "description": "Etta Candy can use Probability Control, but only when she is adjacent to a friendly character of 100 points or more, or named Wonder Woman, or named Steve Trevor.", 
+        "powers": [
+          "probability_control"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 2, 
+        "speed_value": 4, 
+        "attack_value": 8, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 3, 
+        "speed_value": 4, 
+        "attack_value": 8, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 15, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "ww012", 
+    "set_id": "ww", 
+    "collector_number": "012", 
+    "name": "Raven", 
+    "type": "character", 
+    "rarity": "rare", 
+    "real_name": "Rachel Roth", 
+    "dimensions": "1x1", 
+    "point_values": [
+      125
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "mystics"
+    ], 
+    "keywords": [
+      "Monster", 
+      "Mystical", 
+      "Teen Titans"
+    ], 
+    "special_powers": [
+      {
+        "type": "defense", 
+        "name": "DAUGHTER OF TRIGON", 
+        "description": "STOP. Raven can use Impervious, Ranged Combat Expert, and Willpower. She has the giant damage symbol and can't be healed.", 
+        "powers": [
+          "stop", 
+          "impervious", 
+          "ranged_combat_expert", 
+          "willpower"
+        ]
+      }, 
+      {
+        "type": "damage", 
+        "name": "MAGICAL SUPPORT", 
+        "description": "Raven can use Enhancement and Support.", 
+        "powers": [
+          "enhancement", 
+          "support"
+        ]
+      }
+    ], 
+    "improved_movement": [
+      "blocking", 
+      "characters"
+    ], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "6", 
+    "targets": "1", 
+    "speed_type": "wing", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_value": 8, 
+        "attack_power": "telekinesis", 
+        "attack_value": 9, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_value": 8, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 9, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_value": 8, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 10, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 18, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_value": 11, 
+        "defense_power": "special", 
+        "defense_value": 18, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "running_shot", 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "running_shot", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "ww013", 
+    "set_id": "ww", 
+    "collector_number": "013", 
+    "name": "Steve Trevor", 
+    "type": "character", 
+    "rarity": "rare", 
+    "real_name": "Steve Trevor", 
+    "dimensions": "1x1", 
+    "point_values": [
+      45
+    ], 
+    "properties": [
+      "unique"
+    ], 
+    "team_abilities": [], 
+    "keywords": [
+      "Soldier", 
+      "Spy"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "FRIEND OF THE AMAZONS", 
+        "description": "An Amazon themed team may include Steve Trevor and is still considered a theme team."
+      }, 
+      {
+        "type": "damage", 
+        "name": "SOLDIER FIRST", 
+        "description": "Steve Trevor can use Leadership. When he does and removes an action token, he may place an action token on an adjacent opposing character.", 
+        "powers": [
+          "leadership"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "6", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "stealth", 
+        "speed_value": 8, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "running_shot", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 7, 
+        "attack_value": 8, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 15, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "ww014", 
+    "set_id": "ww", 
+    "collector_number": "014", 
+    "name": "Etta Candy", 
+    "type": "character", 
+    "rarity": "rare", 
+    "real_name": "Etta Candy", 
+    "dimensions": "1x1", 
+    "point_values": [
+      25
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Soldier"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "FRIEND OF THE AMAZONS", 
+        "description": "An Amazon themed team may include Etta Candy and is still considered a theme team."
+      }, 
+      {
+        "type": "defense", 
+        "name": "CANDY CAN PROTECT US FROM THE RUFFIANS", 
+        "description": "Etta Candy can use Defend. Modify Etta Candy's defense value by -2.", 
+        "powers": [
+          "defend"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "stealth", 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "support", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "stealth", 
+        "speed_value": 6, 
+        "attack_value": 8, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "support", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 3, 
+        "speed_value": 4, 
+        "attack_value": 8, 
+        "defense_power": "special", 
+        "defense_value": 18, 
+        "damage_power": "support", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "ww015", 
+    "set_id": "ww", 
+    "collector_number": "015", 
+    "name": "Donna Troy", 
+    "type": "character", 
+    "rarity": "chase", 
+    "real_name": "Donna Troy", 
+    "dimensions": "1x1", 
+    "point_values": [
+      45
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "titans"
+    ], 
+    "keywords": [
+      "Amazon", 
+      "Teen Titans"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "AMAZON SISTERHOOD", 
+        "description": "Donna Troy can use Super Senses. For all characters with this trait, when a friendly character with the Amazon keyword attacks an opposing character and actions resolve, you may give the attacker an Amazonian token.", 
+        "powers": [
+          "super_senses"
+        ]
+      }, 
+      {
+        "type": "trait", 
+        "name": "TITANS TOGETHER", 
+        "description": "If another friendly character healed this turn with the Titans ability, modify Donna Troy's attack value by +1 this turn."
+      }, 
+      {
+        "type": "trait", 
+        "name": "STRATEGIST", 
+        "description": "Give Donna Troy a free action to remove an Amazonian token from one friendly character to a different friendly character. Both characters must be within Donna Troy's line of fire."
+      }, 
+      {
+        "type": "defense", 
+        "name": "SISTERS UNITE", 
+        "description": "Donna Troy can use Toughness. Friendly characters within 1 square than have an Amazonian token can use Willpower. When they do, remove an Amazonian token from their card.", 
+        "powers": [
+          "toughness", 
+          "willpower"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "wing", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "flurry", 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 18, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "flurry", 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 18, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "sidestep", 
+        "speed_value": 6, 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "sidestep", 
+        "speed_value": 5, 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 5, 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "ww016", 
+    "set_id": "ww", 
+    "collector_number": "016", 
+    "name": "Wonder Woman", 
+    "type": "character", 
+    "rarity": "chase", 
+    "real_name": "Diana Prince", 
+    "dimensions": "1x1", 
+    "point_values": [
+      90
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Amazon", 
+      "Celebrity"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "AMAZON SISTERHOOD", 
+        "description": "Wonder Woman can use Super Senses. For all characters with this trait, when a friendly character with the Amazon keyword attacks an opposing character and actions resolve, you may give the attacker an Amazonian token.", 
+        "powers": [
+          "super_senses"
+        ]
+      }, 
+      {
+        "type": "damage", 
+        "name": "FAVOR OF THE GODS", 
+        "description": "Wonder Woman can use Close Combat Expert. Friendly characters within 1 square that have an Amazonian token can use Probability Control to reroll opposing characters' attack rolls. When they do, remove an Amazonian token from their card.", 
+        "powers": [
+          "close_combat_expert", 
+          "probability_control"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "wing", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "super_strength", 
+        "attack_value": 12, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "super_strength", 
+        "attack_value": 11, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_value": 8, 
+        "attack_power": "super_strength", 
+        "attack_value": 11, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 18, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }
+    ]
+  }
+]
