@@ -1,0 +1,5604 @@
+<resultset>
+  <row>
+    <unit_id>cwsop001</unit_id>
+    <set_id>cwsop</set_id>
+    <collector_number>001</collector_number>
+    <name>Captain America</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <real_name>Steve Rogers</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[80]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Anti-Registration", "Avengers", "Soldier"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "JUST A FRIENDLY HANDSHAKE", 
+    "description": "Once per game, when Captain America hits an adjacent character with the Armor or Robot keyword, after actions resolve you may give that character up to two action tokens."
+  }, 
+  {
+    "type": "defense", 
+    "name": "BLOCKING REPULSOR BLASTS", 
+    "description": "Captain America can use Energy Shield/Deflection and Toughness. Captain America can't be targeted by an attack using Ranged Combat Expert.", 
+    "powers": [
+      "energy_shield_deflection", 
+      "toughness"
+    ]
+  }, 
+  {
+    "type": "damage", 
+    "name": "LEADING THE RESISTANCE", 
+    "description": "Captain America can use Close Combat Expert and Leadership as if he were 100 points.", 
+    "powers": [
+      "close_combat_expert", 
+      "leadership"
+    ]
+  }
+]</special_powers>
+    <improved_movement>["hindering", "characters"]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>5</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "flurry", 
+    "speed_value": 7, 
+    "attack_value": 11, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "outwit", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "flurry", 
+    "speed_value": 7, 
+    "attack_value": 11, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "outwit", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "charge", 
+    "speed_value": 7, 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "charge", 
+    "speed_value": 6, 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>cwsop002</unit_id>
+    <set_id>cwsop</set_id>
+    <collector_number>002</collector_number>
+    <name>Iron Man</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <real_name>Tony Stark</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[80]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Armor", "Avengers", "Illuminati", "Pro-Registration", "S.H.I.E.L.D.", "Scientist"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "I WANTED TO TALK, BUT...", 
+    "description": "Once per game, when Iron Man targets a single opposing character with an attack, if he shares a keyword with the target, you may counter that character's defense power for this attack."
+  }, 
+  {
+    "type": "defense", 
+    "name": "YOUR SHIELD CAN'T SCRATCH ME, STEVE", 
+    "description": "Iron Man can use Impervious. Iron Man can't be targeted by an attack using Close Combat Expert.", 
+    "powers": [
+      "impervious"
+    ]
+  }, 
+  {
+    "type": "damage", 
+    "name": "WE MUST FOLLOW AND IMPLEMENT THE LAW", 
+    "description": "Iron Man can use Ranged Combat Expert and Leadership as if he were 100 points.", 
+    "powers": [
+      "ranged_combat_expert", 
+      "leadership"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>6</unit_range>
+    <targets>1</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "sidestep", 
+    "speed_value": 9, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_value": 8, 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "outwit", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_value": 8, 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "outwit", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "force_blast", 
+    "speed_value": 8, 
+    "attack_value": 9, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "force_blast", 
+    "speed_value": 7, 
+    "attack_value": 9, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>cwsop003</unit_id>
+    <set_id>cwsop</set_id>
+    <collector_number>003</collector_number>
+    <name>Vision</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <real_name>Jonas</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[80]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["avengers"]</team_abilities>
+    <keywords>["Anti-Registration", "Robot", "Young Avengers"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "PROTECT CASSIE, NO MATTER WHAT", 
+    "description": "Unique Modifier: If Vision is adjacent to a friendly character named Stature modify their attack value by +1."
+  }, 
+  {
+    "type": "defense", 
+    "name": "DENSITY CONTROL", 
+    "description": "At the beginning of your turn, you may choose one to last until you choose again: Vision can use Super Senses and modifies his defense value by +1 or Vision can use Invulnerability and Super Strength.", 
+    "powers": [
+      "super_senses"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>5</unit_range>
+    <targets>1</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 9, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 8, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_value": 7, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 17, 
+    "damage_power": "shape_change", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_value": 7, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_power": "shape_change", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "charge", 
+    "speed_value": 6, 
+    "attack_value": 9, 
+    "defense_power": "super_senses", 
+    "defense_value": 16, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "charge", 
+    "speed_value": 6, 
+    "attack_value": 9, 
+    "defense_power": "super_senses", 
+    "defense_value": 16, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>cwsop004</unit_id>
+    <set_id>cwsop</set_id>
+    <collector_number>004</collector_number>
+    <name>Ms. Marvel</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <real_name>Carol Danvers</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[80]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Avengers", "Kree", "Pro-Registration", "Soldier"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "PHOTONIC ABSORBTION", 
+    "description": "When Ms. Marvel is hit by a character that can use Penetrating/Psychic Blast or Pulse Wave, after actions resolve remove an action token from her. If you can't, heal her 1 click. This can't be ignored."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>4</unit_range>
+    <targets>1</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "charge", 
+    "speed_value": 9, 
+    "attack_power": "super_strength", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "charge", 
+    "speed_value": 9, 
+    "attack_power": "super_strength", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "running_shot", 
+    "speed_value": 9, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 10, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "running_shot", 
+    "speed_value": 8, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 10, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 18, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_value": 7, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_value": 7, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>cwsop005</unit_id>
+    <set_id>cwsop</set_id>
+    <collector_number>005</collector_number>
+    <name>Hercules</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <real_name>Hercules</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[90]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Anti-Registration", "Avengers", "Celebrity", "Deity", "Heroes for Hire"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "\"FAIR\" GRECO-ROMAN WRESTLING", 
+    "description": "Hercules can use Super Strength. When Hercules moves adjacent to an opposing character holding an object, after actions resolve KO that object.", 
+    "powers": [
+      "super_strength"
+    ]
+  }, 
+  {
+    "type": "speed", 
+    "name": "IF YOU WON'T COME TO ME", 
+    "description": "Hercules can use Charge and Plasticity.", 
+    "powers": [
+      "charge", 
+      "plasticity"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "special", 
+    "speed_value": 8, 
+    "attack_value": 11, 
+    "defense_power": "invulnerability", 
+    "defense_value": 18, 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "special", 
+    "speed_value": 7, 
+    "attack_power": "quake", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "special", 
+    "speed_value": 6, 
+    "attack_power": "quake", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 6, 
+    "speed_value": 6, 
+    "attack_value": 11, 
+    "defense_power": "toughness", 
+    "defense_value": 18, 
+    "damage_value": 4
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>cwsop006</unit_id>
+    <set_id>cwsop</set_id>
+    <collector_number>006</collector_number>
+    <name>She-Hulk</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <real_name>Jennifer Walters</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[90]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Avengers", "Brute", "Heroes for Hire", "Lady Liberators", "Pro-Registration"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "CEASE AND DESIST", 
+    "description": "She-Hulk can use Super Strength. When she makes an object attack and hits, after actions resolve give the hit character an action token.", 
+    "powers": [
+      "super_strength"
+    ]
+  }
+]</special_powers>
+    <improved_movement>["destroy_blocking"]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "charge", 
+    "speed_value": 8, 
+    "attack_value": 11, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "leap_climb", 
+    "speed_value": 7, 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 18, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "leap_climb", 
+    "speed_value": 8, 
+    "attack_power": "quake", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "charge", 
+    "speed_value": 7, 
+    "attack_power": "quake", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>cwsop007</unit_id>
+    <set_id>cwsop</set_id>
+    <collector_number>007</collector_number>
+    <name>Daredevil</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <real_name>Danny Rand</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[70]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["spider_man"]</team_abilities>
+    <keywords>["Anti-Registration", "Heroes for Hire", "Martial Artist", "Marvel Knights", "Mystical"]</keywords>
+    <special_powers>[
+  {
+    "type": "defense", 
+    "name": "NO RADAR: JUST WELL TRAINED", 
+    "description": "Daredevil can use Combat Reflexes and Super Senses.", 
+    "powers": [
+      "combat_reflexes", 
+      "super_senses"
+    ]
+  }
+]</special_powers>
+    <improved_movement>["elevated"]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>3</unit_range>
+    <targets>2</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "incapacitate", 
+    "attack_value": 11, 
+    "defense_power": "special", 
+    "defense_value": 17, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "incapacitate", 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 17, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "flurry", 
+    "speed_value": 7, 
+    "attack_value": 10, 
+    "defense_power": "willpower", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "charge", 
+    "speed_value": 7, 
+    "attack_value": 11, 
+    "defense_power": "willpower", 
+    "defense_value": 17, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "charge", 
+    "speed_value": 6, 
+    "attack_value": 10, 
+    "defense_power": "willpower", 
+    "defense_value": 17, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "flurry", 
+    "speed_value": 6, 
+    "attack_value": 10, 
+    "defense_power": "regeneration", 
+    "defense_value": 16, 
+    "damage_value": 3
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>cwsop008</unit_id>
+    <set_id>cwsop</set_id>
+    <collector_number>008</collector_number>
+    <name>Wasp</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <real_name>Janet Van Dyne</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[70]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Avengers", "Celebrity", "Lady Liberators", "Pro-Registration"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "THE MAGIC OF PYM PARTICLES", 
+    "description": "Wasp can use Shape Change. When she does and the result is 6, after actions resolve you may place her adjacent to any character within 6 squares.", 
+    "powers": [
+      "shape_change"
+    ]
+  }
+]</special_powers>
+    <improved_movement>["characters"]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>4</unit_range>
+    <targets>1</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>tiny</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 18, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "sidestep", 
+    "speed_value": 6, 
+    "attack_power": "incapacitate", 
+    "attack_value": 9, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "sidestep", 
+    "speed_value": 6, 
+    "attack_power": "incapacitate", 
+    "attack_value": 9, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "sidestep", 
+    "speed_value": 5, 
+    "attack_power": "incapacitate", 
+    "attack_value": 9, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>cwsop009</unit_id>
+    <set_id>cwsop</set_id>
+    <collector_number>009</collector_number>
+    <name>Spider-Woman</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <real_name>Jessica Drew</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[60]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Anti-Registration", "Avengers", "Lady Liberators", "Spy"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "HIDDEN AGENDA", 
+    "description": "When a friendly character is KO'd, heal Spider-Woman 1 click."
+  }, 
+  {
+    "type": "attack", 
+    "name": "BIO-ELECTRIC BLASTS", 
+    "description": "Spider-Woman can use Precision Strike. When she hits with a range attack, after actions resolve give the hit character an action token.", 
+    "powers": [
+      "precision_strike"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>4</unit_range>
+    <targets>1</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "plasticity", 
+    "speed_value": 9, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "plasticity", 
+    "speed_value": 8, 
+    "attack_value": 9, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_power": "perplex", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_power": "perplex", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_power": "super_senses", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>cwsop010</unit_id>
+    <set_id>cwsop</set_id>
+    <collector_number>010</collector_number>
+    <name>Yellowjacket</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <real_name>Hank Pym</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[60]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Avengers", "Initiative", "Pro-Registration", "Scientist", "Spy"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "HIDDEN AGENDA", 
+    "description": "When a friendly character is KO'd, heal Yellowjacket 1 click."
+  }, 
+  {
+    "type": "damage", 
+    "name": "HELPING WITH ALL 42 PLANS", 
+    "description": "Yellowjacket can use Perplex and when he does choose one: Yellowjacket can use Perplex normally - or- UNIQUE MODIFIER- He may use Perplex to target all friendly characters within 4 squares and line of fire, choosing a single combat value to modify.", 
+    "powers": [
+      "perplex"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>4</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_value": 9, 
+    "defense_power": "willpower", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_value": 9, 
+    "defense_power": "willpower", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "leap_climb", 
+    "speed_value": 7, 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "outwit", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "leap_climb", 
+    "speed_value": 7, 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "outwit", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_value": 8, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 1
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>cwsop011</unit_id>
+    <set_id>cwsop</set_id>
+    <collector_number>011</collector_number>
+    <name>Luke Cage</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <real_name>Luke Cage</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[70]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Anti-Registration", "Avengers", "Heroes for Hire", "Marvel Knights"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "UNBREAKABLE SKIN", 
+    "description": "When Luke Cage is dealt penetrating damage, it can be reduced."
+  }, 
+  {
+    "type": "defense", 
+    "name": "NOT GIVING UP", 
+    "description": "Luke Cage can use Toughness and Willpower.", 
+    "powers": [
+      "toughness", 
+      "willpower"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "charge", 
+    "speed_value": 8, 
+    "attack_power": "super_strength", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "empower", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "charge", 
+    "speed_value": 8, 
+    "attack_power": "super_strength", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 18, 
+    "damage_power": "empower", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "flurry", 
+    "speed_value": 7, 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "battle_fury", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "flurry", 
+    "speed_value": 7, 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "battle_fury", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "plasticity", 
+    "speed_value": 7, 
+    "attack_value": 9, 
+    "defense_power": "special", 
+    "defense_value": 17, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "plasticity", 
+    "speed_value": 6, 
+    "attack_value": 9, 
+    "defense_power": "special", 
+    "defense_value": 16, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>cwsop012</unit_id>
+    <set_id>cwsop</set_id>
+    <collector_number>012</collector_number>
+    <name>Doc Samson</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <real_name>Leonard Samson</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[70]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Hulkbusters", "Pro-Registration", "Scientist", "X-Factor"]</keywords>
+    <special_powers>[
+  {
+    "type": "speed", 
+    "name": "PSYCHOANALYZATION", 
+    "description": "Doc Samson can use Mind Control with a range of 6. He may use it to target a single friendly character of equal or less points. If he does and hits, after actions resolve deal that friendly target 1 penetrating damage.", 
+    "powers": [
+      "mind_control"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "special", 
+    "speed_value": 7, 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "empower", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "special", 
+    "speed_value": 6, 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "empower", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "super_strength", 
+    "attack_value": 11, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "super_strength", 
+    "attack_value": 11, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_power": "super_strength", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_power": "super_strength", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 18, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>cwsop013</unit_id>
+    <set_id>cwsop</set_id>
+    <collector_number>013</collector_number>
+    <name>Spider-Man</name>
+    <type>character</type>
+    <rarity>uncommon</rarity>
+    <real_name>Peter Parker</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[80]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["spider_man"]</team_abilities>
+    <keywords>["Anti-Registration", "Avengers", "Celebrity", "Spider-Man Family"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "ANNOYING ARACHNID", 
+    "description": "Spider-Man can use Super Senses. If he hit with a close combat attack this turn, he can use Sidestep this turn and automatically breaks away when doing so.", 
+    "powers": [
+      "super_senses"
+    ]
+  }, 
+  {
+    "type": "speed", 
+    "name": "AMAZING, SPECTACULAR, SENSATIONAL", 
+    "description": "Spider-man can use Charge and Flurry.", 
+    "powers": [
+      "charge", 
+      "flurry"
+    ]
+  }
+]</special_powers>
+    <improved_movement>["elevated", "hindering"]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>4</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "special", 
+    "speed_value": 9, 
+    "attack_value": 11, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "special", 
+    "speed_value": 9, 
+    "attack_value": 10, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "charge", 
+    "speed_value": 8, 
+    "attack_power": "super_strength", 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_power": "perplex", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "charge", 
+    "speed_value": 8, 
+    "attack_power": "super_strength", 
+    "attack_value": 9, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_power": "perplex", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "special", 
+    "speed_value": 8, 
+    "attack_value": 9, 
+    "defense_power": "willpower", 
+    "defense_value": 17, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "special", 
+    "speed_value": 8, 
+    "attack_value": 9, 
+    "defense_power": "willpower", 
+    "defense_value": 17, 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>cwsop014</unit_id>
+    <set_id>cwsop</set_id>
+    <collector_number>014</collector_number>
+    <name>Spider-Man</name>
+    <type>character</type>
+    <rarity>uncommon</rarity>
+    <real_name>Peter Parker</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[80]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["spider_man"]</team_abilities>
+    <keywords>["Avengers", "Celebrity", "Pro-Registration", "Spider-Man Family"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "CLOAKING DEVICE", 
+    "description": "Spider-man can use Shape Change. If he hit with a range attack this turn, he can use Sidestep this turn.", 
+    "powers": [
+      "shape_change", 
+      "sidestep"
+    ]
+  }, 
+  {
+    "type": "speed", 
+    "name": "IT'S A GLIDER, TOO?", 
+    "description": "Spider-Man can use Running Shot and the Flight ability.", 
+    "powers": [
+      "running_shot"
+    ]
+  }
+]</special_powers>
+    <improved_movement>["elevated", "hindering"]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>4</unit_range>
+    <targets>3</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "special", 
+    "speed_value": 9, 
+    "attack_power": "incapacitate", 
+    "attack_value": 11, 
+    "defense_power": "toughness", 
+    "defense_value": 18, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "special", 
+    "speed_value": 9, 
+    "attack_power": "incapacitate", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "flurry", 
+    "speed_value": 8, 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "outwit", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "flurry", 
+    "speed_value": 8, 
+    "attack_value": 9, 
+    "defense_power": "super_senses", 
+    "defense_value": 16, 
+    "damage_power": "outwit", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "stealth", 
+    "speed_value": 8, 
+    "attack_value": 9, 
+    "defense_power": "super_senses", 
+    "defense_value": 16, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "stealth", 
+    "speed_value": 8, 
+    "attack_value": 9, 
+    "defense_power": "super_senses", 
+    "defense_value": 16, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>cwsop015</unit_id>
+    <set_id>cwsop</set_id>
+    <collector_number>015</collector_number>
+    <name>Battlestar</name>
+    <type>character</type>
+    <rarity>uncommon</rarity>
+    <real_name>Lemar Hoskins</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[70]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Anti-Registration", "Soldier", "Wild Pack"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "BORN TO FIGHT, NOT TO LEAD", 
+    "description": "When Battlestar is adjacent to a friendly character of higher points, that character can use Leadership, but may only remove the action token from Battlestar."
+  }, 
+  {
+    "type": "defense", 
+    "name": "ADAMANTIUM SHIELD", 
+    "description": "Battlestar can use Energy Shield/Deflection and Toughness.", 
+    "powers": [
+      "energy_shield_deflection", 
+      "toughness"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>4</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "charge", 
+    "speed_value": 7, 
+    "attack_power": "quake", 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "charge", 
+    "speed_value": 7, 
+    "attack_power": "quake", 
+    "attack_value": 11, 
+    "defense_power": "special", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_power": "quake", 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_power": "empower", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "sidestep", 
+    "speed_value": 6, 
+    "attack_power": "quake", 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_power": "empower", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "leap_climb", 
+    "speed_value": 6, 
+    "attack_value": 9, 
+    "defense_power": "defend", 
+    "defense_value": 18, 
+    "damage_power": "empower", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "leap_climb", 
+    "speed_value": 6, 
+    "attack_value": 9, 
+    "defense_power": "defend", 
+    "defense_value": 18, 
+    "damage_power": "empower", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>cwsop016</unit_id>
+    <set_id>cwsop</set_id>
+    <collector_number>016</collector_number>
+    <name>Radioactive Man</name>
+    <type>character</type>
+    <rarity>uncommon</rarity>
+    <real_name>Chen Lu</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[70]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["masters_of_evil"]</team_abilities>
+    <keywords>["Masters of Evil", "Pro-Registration", "Scientist", "Thunderbolts"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "JUSTICE, LIKE LIGHTNING", 
+    "description": "After an action resolves in which Radioactive Man damaged one or more opposing characters with an attack, roll a d6 that can't be rerolled. 5-6 Remove an action token from a friendly character with the Thunderbolts keyword within 4 squares."
+  }, 
+  {
+    "type": "attack", 
+    "name": "NUCLEAR-LEVEL RADIATION", 
+    "description": "At the beginning of your turn, if Radioactive Man is adjacent to an opposing character, choose one: Deal 2 damage to each adjacent character or deal 1 damage to all other characters within 3 squares."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>3</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 18, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 18, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 18, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_value": 6, 
+    "attack_power": "poison", 
+    "attack_value": 9, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 5, 
+    "speed_value": 6, 
+    "attack_power": "poison", 
+    "attack_value": 9, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_value": 4
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>cwsop017</unit_id>
+    <set_id>cwsop</set_id>
+    <collector_number>017</collector_number>
+    <name>Coldblood</name>
+    <type>character</type>
+    <rarity>uncommon</rarity>
+    <real_name>Eric Savin</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[70]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Anti-Registration", "Robot", "Soldier"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "CYBORG BODY, CYBORG BRAIN", 
+    "description": "Coldblood can use Toughness.", 
+    "powers": [
+      "toughness"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>["hindering", "adjacent"]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>6</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "running_shot", 
+    "speed_value": 8, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 11, 
+    "defense_power": "willpower", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "running_shot", 
+    "speed_value": 7, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 10, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "running_shot", 
+    "speed_value": 7, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 10, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 17, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "stealth", 
+    "speed_value": 8, 
+    "attack_value": 9, 
+    "defense_power": "regeneration", 
+    "defense_value": 17, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "stealth", 
+    "speed_value": 8, 
+    "attack_value": 9, 
+    "defense_power": "regeneration", 
+    "defense_value": 16, 
+    "damage_value": 3
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>cwsop018</unit_id>
+    <set_id>cwsop</set_id>
+    <collector_number>018</collector_number>
+    <name>Bullseye</name>
+    <type>character</type>
+    <rarity>uncommon</rarity>
+    <real_name>Lester</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[70]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Assassin", "Pro-Registration", "Thunderbolts"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "JUSTICE, LIKE LIGHTNING", 
+    "description": "After an action resolves during which Bullseye damaged one or more opposing characters with an attack, roll a d6 that can't be rerolled. 5 - 6: Remove an action token from a friendly character with the Thunderbolts keyword within 4 squares."
+  }, 
+  {
+    "type": "trait", 
+    "name": "THIS ONE'S GOT YOUR NAME ON IT", 
+    "description": "When Bullseye damages an opposing character with an attack, place a Marked token on that character's card. When Bullseye targets a character with a Marked token with an attack, he may remove one Marked token from that character to increase the damage dealt to that character by 1 if he hits."
+  }, 
+  {
+    "type": "speed", 
+    "name": "TIME TO FINISH THE CONTRACT", 
+    "description": "Bullseye can use Sidestep and Stealth.", 
+    "powers": [
+      "sidestep", 
+      "stealth"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>["hindering", "characters", "adjacent"]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>6</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "running_shot", 
+    "speed_value": 8, 
+    "attack_power": "precision_strike", 
+    "attack_value": 12, 
+    "defense_power": "willpower", 
+    "defense_value": 17, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "running_shot", 
+    "speed_value": 7, 
+    "attack_power": "precision_strike", 
+    "attack_value": 11, 
+    "defense_power": "willpower", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "special", 
+    "speed_value": 7, 
+    "attack_value": 10, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 16, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "special", 
+    "speed_value": 7, 
+    "attack_value": 10, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 16, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "special", 
+    "speed_value": 6, 
+    "attack_value": 10, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 15, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>cwsop019</unit_id>
+    <set_id>cwsop</set_id>
+    <collector_number>019</collector_number>
+    <name>Silhouette</name>
+    <type>character</type>
+    <rarity>uncommon</rarity>
+    <real_name>Silhouette Chord</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[60]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Anti-Registration", "Martial Artist", "Mystical", "New Warriors"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "TRAVELING WITHIN THE DARKFORCE", 
+    "description": "Give Silhouette a power action if she occupies hindering terrain and you may choose an adjacent single-base friendly character of her size or smaller. Place her in another square of hindering terrain within 4 squares, then place the chosen character adjacent."
+  }, 
+  {
+    "type": "damage", 
+    "name": "SHADOW WARRIOR", 
+    "description": "Silhouette can use Exploit Weakness, Shape Change, and Giant Reach: 2.", 
+    "powers": [
+      "exploit_weakness", 
+      "shape_change"
+    ]
+  }
+]</special_powers>
+    <improved_movement>["hindering"]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 10, 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 9, 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 9, 
+    "attack_value": 9, 
+    "defense_power": "super_senses", 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "stealth", 
+    "speed_value": 8, 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "stealth", 
+    "speed_value": 8, 
+    "attack_value": 9, 
+    "defense_power": "super_senses", 
+    "defense_value": 16, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>cwsop020</unit_id>
+    <set_id>cwsop</set_id>
+    <collector_number>020</collector_number>
+    <name>Jack O'Lantern</name>
+    <type>character</type>
+    <rarity>uncommon</rarity>
+    <real_name>Steven Levins</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[60]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["sinister_syndicate"]</team_abilities>
+    <keywords>["Pro-Registration", "Sinister Syndicate", "Skeleton Crew", "Thunderbolts"]</keywords>
+    <special_powers>[]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>["hindering"]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>5</unit_range>
+    <targets>2</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "running_shot", 
+    "speed_value": 9, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 11, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "earthbound_neutralized", 
+    "speed_value": 6, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "earthbound_neutralized", 
+    "speed_value": 6, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 10, 
+    "defense_value": 16, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>cwsop021</unit_id>
+    <set_id>cwsop</set_id>
+    <collector_number>021</collector_number>
+    <name>Patriot</name>
+    <type>character</type>
+    <rarity>uncommon</rarity>
+    <real_name>Eli Bradley</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[60]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["avengers"]</team_abilities>
+    <keywords>["Anti-Registration", "Young Avengers"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "YOUNG AVENGERS, ASSEMBLE", 
+    "description": "Patriot can use Leadership. When he does and succeeds he can remove a token from a character with the Young Avengers keyword regardless of point cost.", 
+    "powers": [
+      "leadership"
+    ]
+  }
+]</special_powers>
+    <improved_movement>["hindering"]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>4</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "charge", 
+    "speed_value": 8, 
+    "attack_value": 10, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "flurry", 
+    "speed_value": 7, 
+    "attack_value": 9, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "flurry", 
+    "speed_value": 6, 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "battle_fury", 
+    "damage_value": 3
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>cwsop022</unit_id>
+    <set_id>cwsop</set_id>
+    <collector_number>022</collector_number>
+    <name>Jester</name>
+    <type>character</type>
+    <rarity>uncommon</rarity>
+    <real_name>Jody Putt</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[60]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Assembly of Evil", "Pro-Registration", "Thunderbolts"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "THE JESTER BOTS", 
+    "description": "Once per game, give Jester a free action to place adjacent three Jester Bot bystanders as described on this card."
+  }, 
+  {
+    "type": "attack", 
+    "name": "BAG OF TOYS", 
+    "description": "Jester can use Blades/Claws/Fangs and Incapacitate.", 
+    "powers": [
+      "blades_claws_fangs", 
+      "incapacitate"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>4</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "sidestep", 
+    "speed_value": 6, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_power": "smoke_cloud", 
+    "attack_value": 9, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_power": "perplex", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "sidestep", 
+    "speed_value": 6, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "leap_climb", 
+    "speed_value": 7, 
+    "attack_power": "smoke_cloud", 
+    "attack_value": 9, 
+    "defense_power": "super_senses", 
+    "defense_value": 16, 
+    "damage_power": "perplex", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "leap_climb", 
+    "speed_value": 6, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 16, 
+    "damage_value": 1
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>cwsop022bt</unit_id>
+    <set_id>cwsop</set_id>
+    <collector_number>022bt</collector_number>
+    <name>Jester Bot</name>
+    <type>bystander</type>
+    <rarity>uncommon</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "THEY KNOW WHO MAKES THEM LAUGH", 
+    "description": "As long as a friendly character named Jester is on the map, this character's move actions don't count against your action total."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>standard</bystander_type>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>1</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "sidestep", 
+    "speed_value": 6, 
+    "attack_value": 9, 
+    "defense_power": "willpower", 
+    "defense_value": 15, 
+    "damage_value": 1
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>cwsop023</unit_id>
+    <set_id>cwsop</set_id>
+    <collector_number>023</collector_number>
+    <name>Falcon</name>
+    <type>character</type>
+    <rarity>rare</rarity>
+    <real_name>Sam Wilson</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[70]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Anti-Registration", "Avengers", "Heroes for Hire", "S.H.I.E.L.D."]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "WINGED MARVEL", 
+    "description": "Falcon can use Super Senses, but only against range attacks.", 
+    "powers": [
+      "super_senses"
+    ]
+  }, 
+  {
+    "type": "speed", 
+    "name": "DIVE BOMBING", 
+    "description": "Falcon can use Charge. When he uses Charge, he automatically breaks away and he may choose that his attack generates knockback.", 
+    "powers": [
+      "charge"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "special", 
+    "speed_value": 11, 
+    "attack_power": "quake", 
+    "attack_value": 10, 
+    "defense_power": "willpower", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "special", 
+    "speed_value": 11, 
+    "attack_power": "quake", 
+    "attack_value": 10, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 17, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "special", 
+    "speed_value": 10, 
+    "attack_power": "quake", 
+    "attack_value": 10, 
+    "defense_power": "willpower", 
+    "defense_value": 17, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "special", 
+    "speed_value": 10, 
+    "attack_power": "quake", 
+    "attack_value": 10, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "special", 
+    "speed_value": 9, 
+    "attack_value": 10, 
+    "defense_power": "willpower", 
+    "defense_value": 17, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "earthbound_neutralized", 
+    "speed_value": 6, 
+    "attack_value": 9, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>cwsop024</unit_id>
+    <set_id>cwsop</set_id>
+    <collector_number>024</collector_number>
+    <name>Songbird</name>
+    <type>character</type>
+    <rarity>rare</rarity>
+    <real_name>Melissa Gold</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[70]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Femizons", "Masters of Evil", "Pro-Registration", "Thunderbolts"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "JUSTICE, LIKE LIGHTNING", 
+    "description": "After an action resolves in which Songbird damaged one or more opposing characters with an attack, roll a d6 that can't be rerolled. 5-6 Remove an action token from a friendly character with the Thunderbolts keyword within 4 squares."
+  }, 
+  {
+    "type": "attack", 
+    "name": "SONIC CONSTRUCTS", 
+    "description": "Songbird can use Force Blast, Incapacitate, and Telekinesis.", 
+    "powers": [
+      "force_blast", 
+      "incapacitate", 
+      "telekinesis"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>5</unit_range>
+    <targets>2</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "sidestep", 
+    "speed_value": 10, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "barrier", 
+    "defense_value": 17, 
+    "damage_power": "leadership", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "sidestep", 
+    "speed_value": 9, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "barrier", 
+    "defense_value": 17, 
+    "damage_power": "leadership", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "force_blast", 
+    "speed_value": 9, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 10, 
+    "defense_power": "barrier", 
+    "defense_value": 17, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "force_blast", 
+    "speed_value": 8, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 9, 
+    "defense_power": "super_senses", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "running_shot", 
+    "speed_value": 8, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 9, 
+    "defense_power": "super_senses", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "running_shot", 
+    "speed_value": 7, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 9, 
+    "defense_power": "super_senses", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>cwsop025</unit_id>
+    <set_id>cwsop</set_id>
+    <collector_number>025</collector_number>
+    <name>Punisher</name>
+    <type>character</type>
+    <rarity>rare</rarity>
+    <real_name>Frank Castle</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[80]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["spider_man"]</team_abilities>
+    <keywords>["Anti-Registration", "Marvel Knights", "Soldier"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "LOCKED AND LOADED", 
+    "description": "At the beginning of the game, place 3 Ammo tokens on this card. When Punisher KO's an opposing character, place an Ammo token on this card."
+  }, 
+  {
+    "type": "trait", 
+    "name": "EMPTY THE CLIP", 
+    "description": "When Punisher targets one or more characters with a range attack, he can remove one or more Ammo tokens. If you do, when making the attack roll, it can't be rerolled and you roll an extra d6 for each token removed then choose 2 dice for the attack roll."
+  }, 
+  {
+    "type": "attack", 
+    "name": "DEADLY BARRAGE", 
+    "description": "Give Punisher a power action and remove an Ammo token to make a range attack, then make another range attack. The first attack doesn't activate the Damage Depletion Modifier."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>6</unit_range>
+    <targets>2</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 11, 
+    "defense_power": "willpower", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "willpower", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "running_shot", 
+    "speed_value": 7, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "running_shot", 
+    "speed_value": 7, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "stealth", 
+    "speed_value": 7, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 10, 
+    "defense_power": "willpower", 
+    "defense_value": 16, 
+    "damage_power": "outwit", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "stealth", 
+    "speed_value": 6, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 9, 
+    "defense_power": "willpower", 
+    "defense_value": 16, 
+    "damage_power": "outwit", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>cwsop026</unit_id>
+    <set_id>cwsop</set_id>
+    <collector_number>026</collector_number>
+    <name>Taskmaster</name>
+    <type>character</type>
+    <rarity>rare</rarity>
+    <real_name>Tony Masters</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[80]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["minions_of_doom"]</team_abilities>
+    <keywords>["Hydra", "Initiative", "Martial Artist", "Pro-Registration", "Thunderbolts"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "I TOOK OUT THE AVENGERS ONCE. MOST OF THEM.", 
+    "description": "Give Taskmaster a free action and choose one of his combat values that is lower than the same combat value on one adjacent opposing character. Modify the chosen combat value by +1 until your next turn or until his dial is clicked."
+  }, 
+  {
+    "type": "trait", 
+    "name": "MASTER OF ALL MOVES", 
+    "description": "At the beginning of your turn, you may turn Taskmaster's dial to another click. If you do, at the end of your turn return him to the click he began the turn on."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>5</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "stealth", 
+    "speed_value": 8, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_power": "perplex", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "charge", 
+    "speed_value": 8, 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 17, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "running_shot", 
+    "speed_value": 8, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 10, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 17, 
+    "damage_power": "enhancement", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "leap_climb", 
+    "speed_value": 8, 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_power": "outwit", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_value": 10, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 17, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "flurry", 
+    "speed_value": 8, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 10, 
+    "defense_value": 17, 
+    "damage_power": "battle_fury", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>cwsop027</unit_id>
+    <set_id>cwsop</set_id>
+    <collector_number>027</collector_number>
+    <name>Hulkling</name>
+    <type>character</type>
+    <rarity>rare</rarity>
+    <real_name>Teddy Altman</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[90]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["avengers"]</team_abilities>
+    <keywords>["Anti-Registration", "Kree", "Skrulls", "Young Avengers"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "DEFEND BILLY, NO MATTER WHAT", 
+    "description": "Adjacent friendly characters named Wiccan can use Mastermind, but only to transfer damage to Hulkling regardless of point value."
+  }, 
+  {
+    "type": "trait", 
+    "name": "ALIEN PHYSIOLOGY", 
+    "description": "Hulkling can use Shape Change. Adjacent friendly characters with the Young Avengers keyword modifying their defense values by +1", 
+    "powers": [
+      "shape_change"
+    ]
+  }, 
+  {
+    "type": "speed", 
+    "name": "GROW WINGS AND GET OUT", 
+    "description": "Hulkling has Wing Movement and can use Improved Movement: Characters"
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "charge", 
+    "speed_value": 8, 
+    "attack_power": "super_strength", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 18, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "flurry", 
+    "speed_value": 8, 
+    "attack_power": "super_strength", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "special", 
+    "speed_value": 9, 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "empower", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "special", 
+    "speed_value": 9, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "special", 
+    "speed_value": 9, 
+    "attack_power": "super_strength", 
+    "attack_value": 9, 
+    "defense_power": "regeneration", 
+    "defense_value": 18, 
+    "damage_value": 3
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>cwsop028</unit_id>
+    <set_id>cwsop</set_id>
+    <collector_number>028</collector_number>
+    <name>Mach-IV</name>
+    <type>character</type>
+    <rarity>rare</rarity>
+    <real_name>Abner Jenkins</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[90]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Armor", "Masters of Evil", "Pro-Registration", "Scientist", "Thunderbolts"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "JUSTICE, LIKE LIGHTNING", 
+    "description": "After an action resolves in which Mach-IV damaged one or more opposing characters with an attack, roll a d6 that can't be rerolled. 5-6 Remove an action token from a friendly character with the Thunderbolts keyword within 4 squares."
+  }, 
+  {
+    "type": "speed", 
+    "name": "DID YOU NOT HEAR MY NAME?", 
+    "description": "Mach-IV can use Running Shot and increases his roll to break away by +1. When he successfully breaks away, after action resolve choose an opposing character he broke away from and deal that character 1 penetrating damage.", 
+    "powers": [
+      "running_shot"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>7</unit_range>
+    <targets>2</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "special", 
+    "speed_value": 11, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "leadership", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "special", 
+    "speed_value": 10, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "special", 
+    "speed_value": 10, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "sidestep", 
+    "speed_value": 9, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "sidestep", 
+    "speed_value": 9, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 9, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "sidestep", 
+    "speed_value": 9, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 10, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>cwsop029</unit_id>
+    <set_id>cwsop</set_id>
+    <collector_number>029</collector_number>
+    <name>Goliath</name>
+    <type>character</type>
+    <rarity>super_rare</rarity>
+    <real_name>Bill Foster</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[90]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["defenders"]</team_abilities>
+    <keywords>["Anti-Registration", "Avengers", "Champions", "Defenders", "Scientist"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "A HERO REMEMBERED", 
+    "description": "When Goliath is KO'd during an opponent's turn, heal all friendly characters 1 click and during your next turn, friendly characters can use Sidestep."
+  }, 
+  {
+    "type": "speed", 
+    "name": "GET READY FOR THE SHORTEST COMEBACK IN HISTORY!", 
+    "description": "Goliath can use Charge. When he does, do not halve his speed value.", 
+    "powers": [
+      "charge"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>giant</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "charge", 
+    "speed_value": 9, 
+    "attack_power": "super_strength", 
+    "attack_value": 10, 
+    "defense_power": "invincible", 
+    "defense_value": 18, 
+    "damage_power": "empower", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "charge", 
+    "speed_value": 8, 
+    "attack_power": "super_strength", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "empower", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "super_strength", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_power": "super_strength", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "special", 
+    "speed_value": 7, 
+    "attack_value": 11, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "special", 
+    "speed_value": 6, 
+    "attack_value": 12, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_value": 4
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>cwsop030</unit_id>
+    <set_id>cwsop</set_id>
+    <collector_number>030</collector_number>
+    <name>Atlas</name>
+    <type>character</type>
+    <rarity>super_rare</rarity>
+    <real_name>Erik Josten</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[90]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["masters_of_evil"]</team_abilities>
+    <keywords>["Lethal Legion", "Masters of Evil", "Pro-Registration", "Thunderbolts"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "JUSTICE, LIKE LIGHTNING", 
+    "description": "After an action resolves during which Atlas damaged one or more opposing characters with an attack, roll a d6 that can't be rerolled. 5 - 6: Remove an action token from a friendly character with the Thunderbolts keyword within 4 squares."
+  }, 
+  {
+    "type": "speed", 
+    "name": "JUST LIKE WHEN WE INVADED THE MANSION", 
+    "description": "Atlas can use Flurry and Sidestep. When he uses Flurry, after actions resolve you may place any hit characters adjacent to him.", 
+    "powers": [
+      "flurry", 
+      "sidestep"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>giant</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "charge", 
+    "speed_value": 8, 
+    "attack_power": "quake", 
+    "attack_value": 10, 
+    "defense_power": "impervious", 
+    "defense_value": 18, 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "special", 
+    "speed_value": 8, 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "special", 
+    "speed_value": 8, 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_power": "quake", 
+    "attack_value": 11, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_value": 3
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>cwsop031</unit_id>
+    <set_id>cwsop</set_id>
+    <collector_number>031</collector_number>
+    <name>Wiccan</name>
+    <type>character</type>
+    <rarity>super_rare</rarity>
+    <real_name>Billy Kaplan</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[90]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["avengers"]</team_abilities>
+    <keywords>["Anti-Registration", "Mystical", "Young Avengers"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "TELEPORTING THE YOUNG AVENGERS", 
+    "description": "Wiccan can use the Carry ability. When he does, he may carry up to 5 characters if they all have the Young Avengers keyword."
+  }, 
+  {
+    "type": "attack", 
+    "name": "MYSTICAL TUTELAGE", 
+    "description": "Wiccan can use the Mystics team ability."
+  }, 
+  {
+    "type": "defense", 
+    "name": "DEFENSIVE SPELLS", 
+    "description": "Wiccan can use Barrier, Energy Shield/Deflection, and Toughness.", 
+    "powers": [
+      "barrier", 
+      "energy_shield_deflection", 
+      "toughness"
+    ]
+  }, 
+  {
+    "type": "damage", 
+    "name": "ANY SPELL YOU NEED", 
+    "description": "Wiccan can use Outwit, Perplex, Probability Control, and Support.", 
+    "powers": [
+      "outwit", 
+      "perplex", 
+      "probability_control", 
+      "support"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>5</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 10, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 10, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 9, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_power": "special", 
+    "defense_value": 16, 
+    "damage_power": "probability_control", 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 9, 
+    "attack_value": 9, 
+    "defense_power": "special", 
+    "defense_value": 16, 
+    "damage_power": "probability_control", 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 8, 
+    "attack_value": 9, 
+    "defense_power": "special", 
+    "defense_value": 16, 
+    "damage_power": "probability_control", 
+    "damage_value": 1
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>cwsop032</unit_id>
+    <set_id>cwsop</set_id>
+    <collector_number>032</collector_number>
+    <name>Venom</name>
+    <type>character</type>
+    <rarity>super_rare</rarity>
+    <real_name>Mac Gargan</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[90]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Monster", "Pro-Registration", "Sinister Syndicate", "Thunderbolts"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "JUSTICE, LIKE LIGHTNING", 
+    "description": "After an action resolves in which Venom damaged one or more opposing characters with an attack, roll a d6 that can't be rerolled. 5-6 Remove an action token from a friendly character with the Thunderbolts keyword within 4 squares."
+  }, 
+  {
+    "type": "trait", 
+    "name": "GIVE IN TO THE MONSTER", 
+    "description": "Venom can use Leap/Climb, Sidestep, and Steal Energy.", 
+    "powers": [
+      "leap_climb", 
+      "sidestep", 
+      "steal_energy"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>4</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "flurry", 
+    "speed_value": 8, 
+    "attack_value": 11, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "shape_change", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "plasticity", 
+    "speed_value": 8, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 11, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "shape_change", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "flurry", 
+    "speed_value": 8, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "shape_change", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "plasticity", 
+    "speed_value": 9, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 16, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "plasticity", 
+    "speed_value": 9, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 16, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "flurry", 
+    "speed_value": 9, 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>cwsop033</unit_id>
+    <set_id>cwsop</set_id>
+    <collector_number>033</collector_number>
+    <name>Namorita</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <real_name>Namorita Prentiss</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[60]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Atlantis", "Celebrity", "Defenders", "New Warriors"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "OCTOPOID CAMOUFLAGE", 
+    "description": "Namorita can use Stealth. She can use Shape Change is she's adjacent to a wall or square of blocking terrain.", 
+    "powers": [
+      "stealth"
+    ]
+  }, 
+  {
+    "type": "attack", 
+    "name": "ACIDIC TOUCH", 
+    "description": "When Namorita hits an adjacent opposing character that can use Impervious, Invincible or Invulnerability, this turn that character can't use that power, but can use Toughness instead.", 
+    "powers": [
+      "stealth", 
+      "shape_change"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "charge", 
+    "speed_value": 7, 
+    "attack_power": "super_strength", 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "charge", 
+    "speed_value": 7, 
+    "attack_power": "super_strength", 
+    "attack_value": 9, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "sidestep", 
+    "speed_value": 6, 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "sidestep", 
+    "speed_value": 6, 
+    "attack_value": 9, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>cwsop034</unit_id>
+    <set_id>cwsop</set_id>
+    <collector_number>034</collector_number>
+    <name>Coldheart</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <real_name>Kateri Deseronto</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[60]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Martial Artist"]</keywords>
+    <special_powers>[
+  {
+    "type": "attack", 
+    "name": "CRYONIC SWORDS", 
+    "description": "Coldheart can use Blades/Claws/Fangs. When she does and the result is 3 or more, you may choose to decrease the damage dealt by 2. If you do, after actions resolve, give the hit character an action token and that character can't be moved or placed during its next turn.", 
+    "powers": [
+      "blades_claws_fangs"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "charge", 
+    "speed_value": 7, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "charge", 
+    "speed_value": 6, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "flurry", 
+    "speed_value": 6, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 17, 
+    "damage_power": "battle_fury", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "flurry", 
+    "speed_value": 6, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_power": "battle_fury", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "flurry", 
+    "speed_value": 5, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_power": "battle_fury", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>cwsop035</unit_id>
+    <set_id>cwsop</set_id>
+    <collector_number>035</collector_number>
+    <name>Goldbug</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <real_name>Matthew Gilden</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[60]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Armor", "Maggia", "Scientist"]</keywords>
+    <special_powers>[
+  {
+    "type": "attack", 
+    "name": "GOLD DUST GUN", 
+    "description": "Give Goldbug a rage combat action. After actions resolve, you may choose to give an action token to all hit characters and all characters adjacent to them. If you do, heal those characters 1 click for each action token on them."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>["hindering"]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>4</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "sidestep", 
+    "speed_value": 6, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "sidestep", 
+    "speed_value": 6, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "flurry", 
+    "speed_value": 5, 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "perplex", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "flurry", 
+    "speed_value": 5, 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 15, 
+    "damage_power": "perplex", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>cwsop036</unit_id>
+    <set_id>cwsop</set_id>
+    <collector_number>036</collector_number>
+    <name>Microbe</name>
+    <type>character</type>
+    <rarity>uncommon</rarity>
+    <real_name>Zachary Smith jr.</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[70]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Celebrity", "New Warriors", "Scientist"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "YOUR GERMS TOLD ME ALL OF YOUR DIRTY SECRETS", 
+    "description": "Microbe can use Outwit. When he does, modify the target's defense value by -1 until your next turn.", 
+    "powers": [
+      "outwit"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "plasticity", 
+    "speed_value": 5, 
+    "attack_value": 9, 
+    "defense_power": "willpower", 
+    "defense_value": 17, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "sidestep", 
+    "speed_value": 5, 
+    "attack_power": "incapacitate", 
+    "attack_value": 11, 
+    "defense_power": "willpower", 
+    "defense_value": 16, 
+    "damage_power": "support", 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "sidestep", 
+    "speed_value": 4, 
+    "attack_power": "incapacitate", 
+    "attack_value": 11, 
+    "defense_power": "willpower", 
+    "defense_value": 16, 
+    "damage_power": "support", 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "stealth", 
+    "speed_value": 4, 
+    "attack_value": 11, 
+    "defense_power": "willpower", 
+    "defense_value": 16, 
+    "damage_power": "support", 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "stealth", 
+    "speed_value": 4, 
+    "attack_value": 11, 
+    "defense_power": "willpower", 
+    "defense_value": 15, 
+    "damage_power": "support", 
+    "damage_value": 0
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>cwsop037</unit_id>
+    <set_id>cwsop</set_id>
+    <collector_number>037</collector_number>
+    <name>Speedfreek</name>
+    <type>character</type>
+    <rarity>uncommon</rarity>
+    <real_name>Joss Shappe</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[70]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Armor"]</keywords>
+    <special_powers>[
+  {
+    "type": "attack", 
+    "name": "ADAMANTIUM COIL", 
+    "description": "Speedfreek can use Precision Strike. When Speedfreek hits an opposing character, after actions resolve you may place that character within 2 squares of Speedfreek.", 
+    "powers": [
+      "precision_strike"
+    ]
+  }
+]</special_powers>
+    <improved_movement>["elevated"]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>4</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "hypersonic_speed", 
+    "speed_value": 11, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "invincible", 
+    "defense_value": 18, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "hypersonic_speed", 
+    "speed_value": 10, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "impervious", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "charge", 
+    "speed_value": 11, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "charge", 
+    "speed_value": 10, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>cwsop038</unit_id>
+    <set_id>cwsop</set_id>
+    <collector_number>038</collector_number>
+    <name>Plunderer</name>
+    <type>character</type>
+    <rarity>uncommon</rarity>
+    <real_name>Parnival Plunder</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[70]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Pirate", "Savage Land", "Scientist"]</keywords>
+    <special_powers>[
+  {
+    "type": "speed", 
+    "name": "PLUNDERER'S HYDROFOIL", 
+    "description": "Plunderer has dolphin speed symbol and can use Running Shot.", 
+    "powers": [
+      "running_shot"
+    ]
+  }, 
+  {
+    "type": "attack", 
+    "name": "ANTI-METAL VIBRA BLASTER", 
+    "description": "When Plunderer hits a non-adjacent opposing character that can use Impervious, Invincible, or Invulnerability, this turn that character can't use that power, but can use Toughness instead."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>5</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "special", 
+    "speed_value": 10, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "leadership", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "special", 
+    "speed_value": 10, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "leadership", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "stealth", 
+    "speed_value": 6, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "willpower", 
+    "defense_value": 17, 
+    "damage_power": "leadership", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "stealth", 
+    "speed_value": 6, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 9, 
+    "defense_power": "willpower", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "stealth", 
+    "speed_value": 5, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 9, 
+    "defense_power": "willpower", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "stealth", 
+    "speed_value": 5, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 9, 
+    "defense_power": "willpower", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>cwsop039</unit_id>
+    <set_id>cwsop</set_id>
+    <collector_number>039</collector_number>
+    <name>Cobalt Man</name>
+    <type>character</type>
+    <rarity>rare</rarity>
+    <real_name>Ralph Roberts</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[80]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Armor", "Emissaries of Evil", "Scientist"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "TURNS OUT THE NAME'S TONY, NOT RALPH", 
+    "description": "If a character whose name is Iron Man or real name is Tony Stark of an equal or lower point value is on your sideline when your opponent's force is revealed, you may replace Cobalt Man with that sideline character. If you do, at the beginning of your first turn give that character an action token."
+  }, 
+  {
+    "type": "attack", 
+    "name": "UNSTABLE COBALT REACTOR", 
+    "description": "Cobalt Man can use Pulse Wave. When he does, after actions resolve, if he hit more than one character, roll a d6 for each hit character. The hit character(s) with the lowest result or tied for it are dealt 1 penetrating damage.", 
+    "powers": [
+      "pulse_wave"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>5</unit_range>
+    <targets>1</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "invincible", 
+    "defense_value": 18, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "force_blast", 
+    "speed_value": 6, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "enhancement", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "force_blast", 
+    "speed_value": 6, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "enhancement", 
+    "damage_value": 3
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>cwsop040</unit_id>
+    <set_id>cwsop</set_id>
+    <collector_number>040</collector_number>
+    <name>Tigra</name>
+    <type>character</type>
+    <rarity>rare</rarity>
+    <real_name>Greer Nelson</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[80]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Animal", "Avengers", "Initiative", "Lady Liberators", "New Warriors", "Police", "Spy"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "DEEP COVER SPY FOR THE OTHER SIDE", 
+    "description": "At the beginning of the game, choose Anti-Registration or Pro-Registration. Once per game, at the beginning of one of your turns, you may choose again. Tigra can use Precision Strike when attacking opposing characters with the most recently chosen keyword."
+  }, 
+  {
+    "type": "trait", 
+    "name": "ALL NATURAL, BABY", 
+    "description": "Tigra can use Blades/Claws/Fangs.", 
+    "powers": [
+      "blades_claws_fangs"
+    ]
+  }, 
+  {
+    "type": "defense", 
+    "name": "CAT SENSES", 
+    "description": "Tigra can use Super Senses, When she does, she succeeds on a result of 4 - 6.", 
+    "powers": [
+      "super_senses"
+    ]
+  }
+]</special_powers>
+    <improved_movement>["hindering"]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "charge", 
+    "speed_value": 9, 
+    "attack_value": 11, 
+    "defense_power": "special", 
+    "defense_value": 18, 
+    "damage_power": "empower", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "charge", 
+    "speed_value": 8, 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 17, 
+    "damage_power": "empower", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "charge", 
+    "speed_value": 7, 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 17, 
+    "damage_power": "empower", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 17, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "sidestep", 
+    "speed_value": 6, 
+    "attack_value": 9, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>cwsop041</unit_id>
+    <set_id>cwsop</set_id>
+    <collector_number>041</collector_number>
+    <name>Stature</name>
+    <type>character</type>
+    <rarity>super_rare</rarity>
+    <real_name>Cassie Lang</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[80]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["avengers"]</team_abilities>
+    <keywords>["Young Avengers"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "PUSHING MYSELF LARGER", 
+    "description": "At the beginning of your turn, you may have Stature gain colossal damage symbol and modify her attack value by +1 this turn. If you do, at the end of your turn deal her 1 unavoidable damage."
+  }, 
+  {
+    "type": "trait", 
+    "name": "I'VE DECIDED TO CHANGE SIDES", 
+    "description": "At the beginning of the game, choose Anti-Registration or Pro-Registration. Once per game at the beginning of one of your turns, you may choose again. Stature modifies her attack value by +1 when attacking opposing characters with the most recently chosen keyword."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>giant</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "charge", 
+    "speed_value": 9, 
+    "attack_power": "super_strength", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 18, 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "charge", 
+    "speed_value": 9, 
+    "attack_power": "super_strength", 
+    "attack_value": 11, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "charge", 
+    "speed_value": 9, 
+    "attack_power": "super_strength", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "charge", 
+    "speed_value": 9, 
+    "attack_power": "super_strength", 
+    "attack_value": 10, 
+    "defense_power": "willpower", 
+    "defense_value": 18, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "plasticity", 
+    "speed_value": 8, 
+    "attack_value": 10, 
+    "defense_power": "willpower", 
+    "defense_value": 18, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "plasticity", 
+    "speed_value": 8, 
+    "attack_value": 9, 
+    "defense_power": "willpower", 
+    "defense_value": 17, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "plasticity", 
+    "speed_value": 8, 
+    "attack_value": 9, 
+    "defense_power": "barrier", 
+    "defense_value": 17, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 8, 
+    "speed_power": "plasticity", 
+    "speed_value": 8, 
+    "attack_value": 9, 
+    "defense_power": "barrier", 
+    "defense_value": 16, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>cwsop101</unit_id>
+    <set_id>cwsop</set_id>
+    <collector_number>101</collector_number>
+    <name>Captain America</name>
+    <type>character</type>
+    <rarity>chase</rarity>
+    <real_name>Steve Rogers</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[80]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Anti-Registration", "Soldier"]</keywords>
+    <special_powers>[
+  {
+    "type": "defense", 
+    "name": "YOU ARE WRONG ON THIS ONE, TONY", 
+    "description": "STOP.  Captain America can use Combat Reflexes and Toughness.", 
+    "powers": [
+      "stop", 
+      "combat_reflexes", 
+      "toughness"
+    ]
+  }
+]</special_powers>
+    <improved_movement>["elevated", "hindering", "characters"]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>6</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "charge", 
+    "speed_value": 6, 
+    "attack_power": "precision_strike", 
+    "attack_value": 11, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "leadership", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "charge", 
+    "speed_value": 6, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "leadership", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "sidestep", 
+    "speed_value": 5, 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "sidestep", 
+    "speed_value": 5, 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 16, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "sidestep", 
+    "speed_value": 4, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "sidestep", 
+    "speed_value": 4, 
+    "attack_power": "precision_strike", 
+    "attack_value": 11, 
+    "defense_power": "special", 
+    "defense_value": 18, 
+    "damage_value": 3
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>cwsop102</unit_id>
+    <set_id>cwsop</set_id>
+    <collector_number>102</collector_number>
+    <name>Iron Man</name>
+    <type>character</type>
+    <rarity>chase</rarity>
+    <real_name>Tony Stark</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[80]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Armor", "Pro-Registration", "Scientist", "Stark Industries"]</keywords>
+    <special_powers>[
+  {
+    "type": "defense", 
+    "name": "STAND DOWN, STEVE... PLEASE", 
+    "description": "STOP.  Iron Man can use Energy Shield/Deflection and Toughness.", 
+    "powers": [
+      "stop", 
+      "energy_shield_deflection", 
+      "toughness"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>6</unit_range>
+    <targets>1</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "running_shot", 
+    "speed_value": 6, 
+    "attack_power": "precision_strike", 
+    "attack_value": 11, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "leadership", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "running_shot", 
+    "speed_value": 6, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "leadership", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "sidestep", 
+    "speed_value": 5, 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "sidestep", 
+    "speed_value": 5, 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 16, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "sidestep", 
+    "speed_value": 4, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "sidestep", 
+    "speed_value": 4, 
+    "attack_power": "precision_strike", 
+    "attack_value": 11, 
+    "defense_power": "special", 
+    "defense_value": 18, 
+    "damage_value": 3
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>cwsop103</unit_id>
+    <set_id>cwsop</set_id>
+    <collector_number>103</collector_number>
+    <name>Punisher</name>
+    <type>character</type>
+    <rarity>chase</rarity>
+    <real_name>Frank Castle</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[60]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Anti-Registration", "Marvel Knights", "Soldier"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "INFILTRATION SUIT DAMPENERS", 
+    "description": "Punisher can use Stealth. Non-adjacent opposing characters can't use the Improved Targeting ability to target Punisher.", 
+    "powers": [
+      "stealth"
+    ]
+  }, 
+  {
+    "type": "damage", 
+    "name": "DOWNLOADING THE SCHEMATICS AND ACCESS CODES", 
+    "description": "Punisher can use Outwit. If Punisher occupies an opponent's starting area, when he uses Outwit he may target an opposing character regardless of range or line of fire.", 
+    "powers": [
+      "outwit"
+    ]
+  }
+]</special_powers>
+    <improved_movement>["elevated", "hindering"]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "incapacitate", 
+    "attack_value": 10, 
+    "defense_power": "willpower", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_power": "incapacitate", 
+    "attack_value": 10, 
+    "defense_power": "willpower", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_power": "incapacitate", 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "sidestep", 
+    "speed_value": 6, 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>cwsop104</unit_id>
+    <set_id>cwsop</set_id>
+    <collector_number>104</collector_number>
+    <name>Captain Marvel</name>
+    <type>character</type>
+    <rarity>chase</rarity>
+    <real_name>Mar-Vell</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[130]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["power_cosmic"]</team_abilities>
+    <keywords>["Cosmic", "Kree", "Pro-Registration", "Spy"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "COSMIC AWARENESS", 
+    "description": "Captain Marvel can use Probability Control, but only when he is attacking or is the target of an attack. Opposing characters can't target Captain Marvel with Probability Control.", 
+    "powers": [
+      "probability_control"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>7</unit_range>
+    <targets>1</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "running_shot", 
+    "speed_value": 9, 
+    "attack_value": 11, 
+    "defense_power": "impervious", 
+    "defense_value": 17, 
+    "damage_power": "shape_change", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "running_shot", 
+    "speed_value": 9, 
+    "attack_value": 10, 
+    "defense_power": "impervious", 
+    "defense_value": 17, 
+    "damage_power": "shape_change", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_value": 10, 
+    "defense_power": "impervious", 
+    "defense_value": 16, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "outwit", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "outwit", 
+    "damage_value": 3
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>cwsop105</unit_id>
+    <set_id>cwsop</set_id>
+    <collector_number>105</collector_number>
+    <name>Night Nurse</name>
+    <type>character</type>
+    <rarity>chase</rarity>
+    <real_name>Linda Carter</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[20]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Anti-Registration", "Marvel Knights"]</keywords>
+    <special_powers>[]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "stealth", 
+    "speed_value": 6, 
+    "attack_value": 11, 
+    "defense_power": "defend", 
+    "defense_value": 16, 
+    "damage_power": "support", 
+    "damage_value": 0
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "stealth", 
+    "speed_value": 5, 
+    "attack_value": 11, 
+    "defense_power": "defend", 
+    "defense_value": 16, 
+    "damage_power": "support", 
+    "damage_value": 0
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "stealth", 
+    "speed_value": 5, 
+    "attack_value": 10, 
+    "defense_power": "willpower", 
+    "defense_value": 15, 
+    "damage_power": "support", 
+    "damage_value": 0
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "stealth", 
+    "speed_value": 4, 
+    "attack_value": 10, 
+    "defense_power": "willpower", 
+    "defense_value": 15, 
+    "damage_power": "support", 
+    "damage_value": 0
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>cwsop106</unit_id>
+    <set_id>cwsop</set_id>
+    <collector_number>106</collector_number>
+    <name>Sentry</name>
+    <type>character</type>
+    <rarity>chase</rarity>
+    <real_name>Robert Reynolds</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[160]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Avengers", "Dark Avengers", "Pro-Registration"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "HE'S ON OUR SIDE AND DOES WHAT I SAY", 
+    "description": "When an adjacent friendly character of 40 points or more uses Leadership, after actions resolve if the roll was 3 - 6, you may remove an action token from Sentry."
+  }, 
+  {
+    "type": "defense", 
+    "name": "UNSTABLE", 
+    "description": "STOP. Sentry can use Impervious. When this click is revealed, roll a d6 that can't be rerolled. Until you roll for this power again, even if this power is lost, modify Sentry's combat values by the results. This can't be countered or ignored. 1: -1; 2 - 4: 0; 5 - 6: +1", 
+    "powers": [
+      "stop", 
+      "impervious"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "charge", 
+    "speed_value": 10, 
+    "attack_value": 10, 
+    "defense_power": "invincible", 
+    "defense_value": 18, 
+    "damage_value": 5
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "charge", 
+    "speed_value": 10, 
+    "attack_value": 10, 
+    "defense_power": "invincible", 
+    "defense_value": 18, 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "hypersonic_speed", 
+    "speed_value": 11, 
+    "attack_power": "super_strength", 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 18, 
+    "damage_power": "battle_fury", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "hypersonic_speed", 
+    "speed_value": 10, 
+    "attack_power": "super_strength", 
+    "attack_value": 10, 
+    "defense_power": "impervious", 
+    "defense_value": 17, 
+    "damage_power": "battle_fury", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "hypersonic_speed", 
+    "speed_value": 10, 
+    "attack_power": "super_strength", 
+    "attack_value": 10, 
+    "defense_power": "impervious", 
+    "defense_value": 17, 
+    "damage_power": "battle_fury", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "flurry", 
+    "speed_value": 9, 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 17, 
+    "damage_power": "battle_fury", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "flurry", 
+    "speed_value": 8, 
+    "attack_value": 11, 
+    "defense_power": "invulnerability", 
+    "defense_value": 16, 
+    "damage_power": "battle_fury", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 8, 
+    "speed_power": "flurry", 
+    "speed_value": 8, 
+    "attack_value": 12, 
+    "defense_power": "invulnerability", 
+    "defense_value": 16, 
+    "damage_power": "battle_fury", 
+    "damage_value": 5
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>cwsop107</unit_id>
+    <set_id>cwsop</set_id>
+    <collector_number>107</collector_number>
+    <name>Cloak &amp; Dagger</name>
+    <type>character</type>
+    <rarity>chase</rarity>
+    <real_name>Ty Johnson and Tandy Bowen</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[70]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["spider_man"]</team_abilities>
+    <keywords>["Anti-Registration", "Marvel Knights", "New Warriors"]</keywords>
+    <special_powers>[
+  {
+    "type": "costed_trait", 
+    "name": "MOVING THE BATTLE TO NEW YORK", 
+    "description": "Cloak &amp; Dagger can use the Carry ability and may carry up to 4 characters when doing so.", 
+    "point_value": 20
+  }, 
+  {
+    "type": "trait", 
+    "name": "LIGHT FROM THE DARKNESS", 
+    "description": "If Cloak &amp; Dagger moved 5 or less squares this turn, you may give Cloak &amp; Dagger a free action to place adjacent a Dagger bystander token if there isn't one on the map. If the Dagger bystander is KO'd, this can't be activated again this game."
+  }, 
+  {
+    "type": "trait", 
+    "name": "THROUGH THE DARK DIMENSION", 
+    "description": "Cloak &amp; Dagger can use Phasing/Teleport.", 
+    "powers": [
+      "phasing_teleport"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "stealth", 
+    "speed_value": 10, 
+    "attack_value": 10, 
+    "defense_power": "defend", 
+    "defense_value": 18, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "stealth", 
+    "speed_value": 10, 
+    "attack_value": 10, 
+    "defense_power": "defend", 
+    "defense_value": 18, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "stealth", 
+    "speed_value": 10, 
+    "attack_value": 10, 
+    "defense_power": "defend", 
+    "defense_value": 17, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "stealth", 
+    "speed_value": 9, 
+    "attack_value": 9, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_power": "shape_change", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "stealth", 
+    "speed_value": 9, 
+    "attack_value": 9, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_power": "shape_change", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>cwsop107bt</unit_id>
+    <set_id>cwsop</set_id>
+    <collector_number>107bt</collector_number>
+    <name>Dagger</name>
+    <type>bystander</type>
+    <rarity>chase</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "PARTNERS FOR LIFE", 
+    "description": "Dagger's actions don't count against your action total. At the beginning of your turn, you may remove Dagger from the game if she is adjacent to a friendly CWSOP #107 Cloak &amp; Dagger."
+  }, 
+  {
+    "type": "attack", 
+    "name": "DAGGERS OF LIGHT", 
+    "description": "Give Dagger a range action to make a range attack with \"3 targets\". Each hit target is dealt 1 penetrating damage instead of normal damage."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>standard</bystander_type>
+    <unit_range>6</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>1</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "running_shot", 
+    "speed_value": 6, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_value": 17, 
+    "damage_power": "support", 
+    "damage_value": 0
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>cwsop108</unit_id>
+    <set_id>cwsop</set_id>
+    <collector_number>108</collector_number>
+    <name>Spider-Man</name>
+    <type>character</type>
+    <rarity>chase</rarity>
+    <real_name>Peter Parker</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[70]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Avengers", "Pro-Registration", "Spider-Man Family"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "MY NAME IS PETER PARKER...AND I HAVE BEEN SPIDER-MAN SINCE I WAS 15.", 
+    "description": "Adjacent friendly characters can use Shape Change.  If they do and succeed, Spider-Man becomes that target of the attack even if he is otherwise an illegal target."
+  }, 
+  {
+    "type": "trait", 
+    "name": "EVERYONE'S LOOKING OUT FOR ME AND MY FAMILY...OR OUT LOOKING FOR THEM", 
+    "description": "Spider-Man can use Super Senses, but succeeds on a result of 4 - 6.", 
+    "powers": [
+      "super_senses"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>4</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "leap_climb", 
+    "speed_value": 10, 
+    "attack_power": "incapacitate", 
+    "attack_value": 11, 
+    "defense_power": "defend", 
+    "defense_value": 18, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "leap_climb", 
+    "speed_value": 10, 
+    "attack_power": "incapacitate", 
+    "attack_value": 10, 
+    "defense_power": "defend", 
+    "defense_value": 18, 
+    "damage_power": "perplex", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "leap_climb", 
+    "speed_value": 9, 
+    "attack_value": 9, 
+    "defense_power": "barrier", 
+    "defense_value": 17, 
+    "damage_power": "perplex", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "leap_climb", 
+    "speed_value": 9, 
+    "attack_value": 9, 
+    "defense_power": "barrier", 
+    "defense_value": 17, 
+    "damage_power": "outwit", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "leap_climb", 
+    "speed_value": 8, 
+    "attack_value": 10, 
+    "defense_power": "barrier", 
+    "defense_value": 17, 
+    "damage_power": "outwit", 
+    "damage_value": 3
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>cwsop109</unit_id>
+    <set_id>cwsop</set_id>
+    <collector_number>109</collector_number>
+    <name>Black Panther</name>
+    <type>character</type>
+    <rarity>chase</rarity>
+    <real_name>T'Challa</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[70]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Anti-Registration", "Illuminati", "Ruler", "Warrior"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "JUNGLE TACTICS", 
+    "description": "Black Panther can use Stealth.  At the end of your turn, if he's within 2 squares and line of fire of a square of hindering terrain, you may place him into that square.", 
+    "powers": [
+      "stealth"
+    ]
+  }
+]</special_powers>
+    <improved_movement>["elevated", "hindering", "characters"]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>4</unit_range>
+    <targets>2</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "charge", 
+    "speed_value": 10, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 17, 
+    "damage_power": "outwit", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "charge", 
+    "speed_value": 10, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 11, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 17, 
+    "damage_power": "outwit", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "flurry", 
+    "speed_value": 9, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "flurry", 
+    "speed_value": 9, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "flurry", 
+    "speed_value": 9, 
+    "attack_power": "precision_strike", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>cwsop110</unit_id>
+    <set_id>cwsop</set_id>
+    <collector_number>110</collector_number>
+    <name>Ragnarok</name>
+    <type>character</type>
+    <rarity>chase</rarity>
+    <real_name>Project Lightning</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[120]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Dark Avengers", "Pro-Registration", "Robot"]</keywords>
+    <special_powers>[
+  {
+    "type": "damage", 
+    "name": "THOR JUST KILLED GOLIATH...", 
+    "description": "When Ragnarok KO's an opposing character, give all opposing characters within 4 squares of the KO'd character's square(s) an action token."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>7</unit_range>
+    <targets>1</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "charge", 
+    "speed_value": 7, 
+    "attack_value": 10, 
+    "defense_power": "impervious", 
+    "defense_value": 18, 
+    "damage_power": "shape_change", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "charge", 
+    "speed_value": 7, 
+    "attack_value": 10, 
+    "defense_power": "impervious", 
+    "defense_value": 17, 
+    "damage_power": "shape_change", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "charge", 
+    "speed_value": 7, 
+    "attack_value": 10, 
+    "defense_power": "impervious", 
+    "defense_value": 17, 
+    "damage_power": "shape_change", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 11, 
+    "defense_power": "invulnerability", 
+    "defense_value": 18, 
+    "damage_power": "special", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 9, 
+    "defense_power": "invulnerability", 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 9, 
+    "defense_power": "invulnerability", 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>cwsop111</unit_id>
+    <set_id>cwsop</set_id>
+    <collector_number>111</collector_number>
+    <name>Namor</name>
+    <type>character</type>
+    <rarity>chase</rarity>
+    <real_name>Namor McKenzie</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[110]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Anti-Registration", "Atlantis", "Defenders", "Illuminati", "Ruler"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "KING OF ATLANTIS", 
+    "description": "Other friendly character with the Atlantis keyword modify their attack value by +1. Namor can use Leadership.", 
+    "powers": [
+      "leadership"
+    ]
+  }, 
+  {
+    "type": "attack", 
+    "name": "IMPERIUS REX!", 
+    "description": "Give Namor a power action to place adjacent an Atlantean Warrior bystander -or- Give Namor a double power action to place adjacent two Atlantean Warrior bystanders. You may not use this power if there are more than 4 Atlantean Warrior bystanders on your force."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>dolphin</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "sidestep", 
+    "speed_value": 6, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 18, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "sidestep", 
+    "speed_value": 6, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 18, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "sidestep", 
+    "speed_value": 6, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "charge", 
+    "speed_value": 9, 
+    "attack_power": "super_strength", 
+    "attack_value": 11, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "empower", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "charge", 
+    "speed_value": 9, 
+    "attack_power": "super_strength", 
+    "attack_value": 11, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "empower", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "charge", 
+    "speed_value": 9, 
+    "attack_power": "super_strength", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "empower", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "sidestep", 
+    "speed_value": 6, 
+    "attack_value": 9, 
+    "defense_power": "regeneration", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>cwsop111bt</unit_id>
+    <set_id>cwsop</set_id>
+    <collector_number>111bt</collector_number>
+    <name>Atlantean Warrior</name>
+    <type>bystander</type>
+    <rarity>chase</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Atlantis"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "WARRIOR OF ATLANTIS", 
+    "description": "Atlantean Warrior has the Atlantis keyword. Atlantean Warrior's move actions don't count against your action total."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>standard</bystander_type>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>dolphin</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>1</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "charge", 
+    "speed_value": 8, 
+    "attack_value": 9, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>cwsop112</unit_id>
+    <set_id>cwsop</set_id>
+    <collector_number>112</collector_number>
+    <name>Dr. Strange</name>
+    <type>character</type>
+    <rarity>chase</rarity>
+    <real_name>Stephen Strange</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[70]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Defenders", "Illuminati", "Mystical"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "RETREAT FROM MY FRIEND'S MADNESS", 
+    "description": "Give Dr. Strange a power action that deals no pushing damage and turn him to click #11."
+  }, 
+  {
+    "type": "speed", 
+    "name": "CONCENTRATION BROKEN", 
+    "description": "At the end of your turn, place a Concentration token on this card. When Dr. Strange would take damage from an opponent's attack, instead turn Dr. Strange to the click number (minimum click #1) equal to 7 minus the number of Concentration tokens, then remove all Concentration tokens."
+  }, 
+  {
+    "type": "damage", 
+    "name": "TRY NOT TO HURT EACH OTHER", 
+    "description": "At the beginning of your turn, you may choose a combat value other than damage. Until your next turn, all other characters within 8 squares of Dr. Strange modify the chosen combat value by +1."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>8</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 10, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_power": "outwit", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 10, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 18, 
+    "damage_power": "perplex", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "precision_strike", 
+    "attack_value": 11, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_power": "perplex", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 16, 
+    "damage_power": "support", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_power": "precision_strike", 
+    "attack_value": 9, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 16, 
+    "damage_power": "support", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 11, 
+    "speed_power": "special", 
+    "speed_value": 0, 
+    "attack_value": 0, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 18, 
+    "damage_power": "special", 
+    "damage_value": 0
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>cwsop113</unit_id>
+    <set_id>cwsop</set_id>
+    <collector_number>113</collector_number>
+    <name>Captain Ironmerica</name>
+    <type>character</type>
+    <rarity>chase</rarity>
+    <real_name>Steve Rogers</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[175]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Anti-Registration", "Armor", "Soldier"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "TONY'S LEGACY", 
+    "description": "Captain Ironmerica can use Invulnerability.", 
+    "powers": [
+      "invulnerability"
+    ]
+  }, 
+  {
+    "type": "speed", 
+    "name": "COMBAT BOOTS AND BOOT JETS", 
+    "description": "Captain Ironmerica can use Charge and Running Shot.", 
+    "powers": [
+      "charge", 
+      "running_shot"
+    ]
+  }, 
+  {
+    "type": "defense", 
+    "name": "SUIT AND SHIELD", 
+    "description": "Captain Ironmerica can use Energy Shield/Deflection and Combat Reflexes.", 
+    "powers": [
+      "energy_shield_deflection", 
+      "combat_reflexes"
+    ]
+  }, 
+  {
+    "type": "damage", 
+    "name": "TECHNOLOGY AND TRAINING", 
+    "description": "Captain Ironmerica can use Close Combat Expert and Ranged Combat Expert. Once per turn, when he uses either, after actions resolve he may use the other as a free action.", 
+    "powers": [
+      "close_combat_expert", 
+      "ranged_combat_expert"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>["adjacent"]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>8</unit_range>
+    <targets>1</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "special", 
+    "speed_value": 8, 
+    "attack_value": 11, 
+    "defense_power": "special", 
+    "defense_value": 17, 
+    "damage_power": "leadership", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "special", 
+    "speed_value": 8, 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 17, 
+    "damage_power": "leadership", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_value": 11, 
+    "defense_power": "special", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_value": 11, 
+    "defense_value": 18, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_value": 11, 
+    "defense_value": 18, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>cwsopM001</unit_id>
+    <set_id>cwsop</set_id>
+    <collector_number>M001</collector_number>
+    <name>Prison 42</name>
+    <type>map</type>
+    <point_values>[]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <map_url>https://hcmaps.net/maps/cwsop/prison_42.json</map_url>
+    <dial>[]</dial>
+  </row>
+  <row>
+    <unit_id>cwsopM002</unit_id>
+    <set_id>cwsop</set_id>
+    <collector_number>M002</collector_number>
+    <name>Stamford</name>
+    <type>map</type>
+    <point_values>[]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <map_url>https://hcmaps.net/maps/cwsop/stamford.json</map_url>
+    <dial>[]</dial>
+  </row>
+  <row>
+    <unit_id>cwsopM003</unit_id>
+    <set_id>cwsop</set_id>
+    <collector_number>M003</collector_number>
+    <name>Final Battle, New York</name>
+    <type>map</type>
+    <point_values>[]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <map_url>https://hcmaps.net/maps/cwsop/final_battle_new_york.json</map_url>
+    <dial>[]</dial>
+  </row>
+  <row>
+    <unit_id>cwsopM004</unit_id>
+    <set_id>cwsop</set_id>
+    <collector_number>M004</collector_number>
+    <name>chemical_plant</name>
+    <type>map</type>
+    <point_values>[]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <map_url>https://hcmaps.net/maps/cwsop/chemical_plant.json</map_url>
+    <dial>[]</dial>
+  </row>
+</resultset>

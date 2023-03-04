@@ -269,6 +269,9 @@ SET_MAP = {
   "ffsfsm": {
     "name": "Fast Forces: Spider-Man and His Greatest Foes",
   },
+  "cwsop": {
+    "name": "Civil War: Storyline Organized Play",
+  },
 }
 
 POWERS = {
@@ -434,6 +437,7 @@ IMPROVED_ABILITIES = {
       "ignores elevated terrain": "elevated",
       "hindering": "hindering",
       "hindering terrain": "hindering",
+      "ignores hindering": "hindering",
       "ignores hindering terrain": "hindering",
       "improved targeting: ignores hindering terrain": "hindering",
       "imrpoved targeting: ignores hindering terrain": "hindering",
@@ -1109,9 +1113,9 @@ class Unit:
             continue
 
           if sp_type == "improved":
-            # Check if the name is empty and the improved ability type is
+            # Check if the name is empty or descriptive and the improved ability type is
             # just the first part of the description.
-            if (not sp_name or len(sp_name) == 0) and sp_description.lower().startswith("improved"):
+            if (not sp_name or not sp_name.lower().startswith("improved")) and sp_description.lower().startswith("improved"):
               idx = sp_description.find(":")
               sp_name = sp_description[:idx].strip()
               sp_description = sp_description[idx + 1:].strip()

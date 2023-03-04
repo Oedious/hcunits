@@ -409,6 +409,11 @@ const SET_LIST = {
     "release_date": "2016-08-10",
     "universe": "marvel"
   },
+  "cwsop": {
+    "name": "Civil War: Storyline Organized Play",
+    "release_date": "2016-06-01",
+    "universe": "marvel"
+  },
   "wk": {
     "name": "WizKids Standard Game Pieces",
     "release_date": "2002-05-01",
