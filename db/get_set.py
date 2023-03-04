@@ -281,6 +281,12 @@ SET_MAP = {
   "tmnt": {
     "name": "Teenage Mutant Ninja Turtles",
   },
+  "cacw": {
+    "name": "Captain America: Civil War",
+  },
+  "cacws": {
+    "name": "Captain America: Civil War Starter",
+  },
 }
 
 POWERS = {
@@ -657,6 +663,8 @@ class Unit:
       self.rarity = "chase"
     elif rarity == "Rarity: Ultra Chase":
       self.rarity = "ultra_chase"
+    elif rarity == "Rarity:":
+      pass
     else:
       raise RuntimeError("The unit rarity '%s' for '%s' is currently not supported" % (rarity, self.unit_id))
 

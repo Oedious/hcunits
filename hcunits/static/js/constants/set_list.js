@@ -429,6 +429,16 @@ const SET_LIST = {
     "release_date": "2016-04-13",
     "universe": "indy"
   },
+  "cacw": {
+    "name": "Captain America: Civil War",
+    "release_date": "2016-04-06",
+    "universe": "marvel"
+  },
+  "cacws": {
+    "name": "Captain America: Civil War Starter",
+    "release_date": "2016-04-06",
+    "universe": "marvel"
+  },
   "wk": {
     "name": "WizKids Standard Game Pieces",
     "release_date": "2002-05-01",
