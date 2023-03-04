@@ -278,6 +278,9 @@ SET_MAP = {
   "ffuxm": {
     "name": "Fast Forces: Uncanny X-Men",
   },
+  "tmnt": {
+    "name": "Teenage Mutant Ninja Turtles",
+  },
 }
 
 POWERS = {

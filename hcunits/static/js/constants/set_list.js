@@ -424,6 +424,11 @@ const SET_LIST = {
     "release_date": "2016-05-04",
     "universe": "marvel"
   },
+  "tmnt": {
+    "name": "Teenage Mutant Ninja Turtles",
+    "release_date": "2016-04-13",
+    "universe": "indy"
+  },
   "wk": {
     "name": "WizKids Standard Game Pieces",
     "release_date": "2002-05-01",
