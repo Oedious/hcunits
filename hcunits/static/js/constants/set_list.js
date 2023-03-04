@@ -459,6 +459,11 @@ const SET_LIST = {
     "release_date": "2016-02-10",
     "universe": "dc"
   },
+  "smww": {
+    "name": "Superman/Wonder Woman",
+    "release_date": "2015-11-04",
+    "universe": "dc"
+  },
   "wk": {
     "name": "WizKids Standard Game Pieces",
     "release_date": "2002-05-01",

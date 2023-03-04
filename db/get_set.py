@@ -308,6 +308,9 @@ SET_MAP = {
       ("ffwf001", "ffwf006"),
     ],
   },
+  "smww": {
+    "name": "Superman/Wonder Woman",
+  },
 }
 
 POWERS = {
@@ -543,6 +546,7 @@ TEAM_ABILITY_CORRECTIONS = {
   "Klingon Empire (Away Team)": "klingon_empire",
   "United Federation of Planets": "united_federation",
   "Borg (Away Team)": "borg",
+  "Legion of Superheroes": "legion_of_super_heroes"
 }
 
 CACHE_DIR = ".cache"
@@ -706,8 +710,10 @@ class Unit:
       is_construct = False
       tag_list = soup.find_all(text=re.compile(r'\s*Special Powers\s*'))
       if len(tag_list) > 0:
-        val = tag_list[0].parent.parent.parent.parent.tbody.select('tr')[0].select('td')[1].strong
-        is_construct = (val and val.string.strip() == "CONSTRUCTS:")
+        tbody = tag_list[0].parent.parent.parent.parent.tbody
+        if tbody:
+          val = tbody.select('tr')[0].select('td')[1].strong
+          is_construct = (val and val.string.strip() == "CONSTRUCTS:")
       if is_construct:
         self.type = "bystander"
         self.bystander_type = "construct"
@@ -1062,7 +1068,7 @@ class Unit:
         self.type == "object" or
         self.type == "equipment"):
       tag_list = soup.find_all(text=re.compile(r'\s*Special Powers\s*'))
-      if len(tag_list) > 0:
+      if len(tag_list) > 0 and tag_list[0].parent.parent.parent.parent.tbody:
         sp_tag = tag_list[0]
         for tr_tag in sp_tag.parent.parent.parent.parent.tbody.select('tr'):
           td_tags = tr_tag.select('td')
@@ -1426,7 +1432,7 @@ class Unit:
           power.lower().startswith("passenger") or
           power.lower().startswith("giant reach")):
         continue
-      for prefix in ["Can use ", self.name + " can use "]:
+      for prefix in ["Can use ", self.name + " can use ", "This character can use "]:
         if power.startswith(prefix):
           power = power[len(prefix):]
           break

@@ -217,7 +217,7 @@ const TEAM_ABILITY_LIST = {
     "wildcard": false
   },
   "legion_of_super_heroes": {
-    "name": "Legion of Super Heroes",
+    "name": "Legion of Super-Heroes",
     "universe": "dc",
     "description": "FREE: Choose a team ability that a friendly character can use (that isn’t Uncopyable). This character can use the chosen team ability until you choose again. Uncopyable.",
     "copyable": false,
