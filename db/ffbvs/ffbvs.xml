@@ -1,0 +1,615 @@
+<resultset>
+  <row>
+    <unit_id>ffbvs001</unit_id>
+    <set_id>ffbvs</set_id>
+    <collector_number>001</collector_number>
+    <name>Batman</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[100, 50]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["superman_ally"]</team_abilities>
+    <keywords>["Detective", "Gotham City", "Justice League"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "JUSTICE LEAGUE", 
+    "description": "Modify Batman's defense value by +1 for each action token on him."
+  }, 
+  {
+    "type": "attack", 
+    "name": "WHERE DID HE COME FROM?", 
+    "description": "Batman can use Smoke Cloud. When he does, after actions resolve he can use Incapacitate as a free action.", 
+    "powers": [
+      "smoke_cloud", 
+      "incapacitate"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>6</unit_range>
+    <targets>2</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "running_shot", 
+    "speed_value": 9, 
+    "attack_power": "special", 
+    "attack_value": 11, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_power": "perplex", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "running_shot", 
+    "speed_value": 9, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "stealth", 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 16, 
+    "damage_power": "perplex", 
+    "damage_value": 2, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "stealth", 
+    "speed_value": 8, 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 16, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "stealth", 
+    "speed_value": 6, 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 15, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "running_shot", 
+    "speed_value": 6, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 9, 
+    "defense_power": "super_senses", 
+    "defense_value": 15, 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ffbvs002</unit_id>
+    <set_id>ffbvs</set_id>
+    <collector_number>002</collector_number>
+    <name>Superman</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[150, 100]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["superman_ally"]</team_abilities>
+    <keywords>["Justice League", "Kryptonian", "Metropolis"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "JUSTICE LEAGUE", 
+    "description": "Modify Superman's defense value by +1 for each action token on him."
+  }, 
+  {
+    "type": "speed", 
+    "name": "RIPPING THE DOORS OFF", 
+    "description": "Superman can use Flurry and Sidestep.", 
+    "powers": [
+      "flurry", 
+      "sidestep"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>6</unit_range>
+    <targets>1</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "charge", 
+    "speed_value": 12, 
+    "attack_power": "super_strength", 
+    "attack_value": 10, 
+    "defense_power": "invincible", 
+    "defense_value": 17, 
+    "damage_power": "outwit", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "special", 
+    "speed_value": 10, 
+    "attack_power": "super_strength", 
+    "attack_value": 11, 
+    "defense_power": "invulnerability", 
+    "defense_value": 18, 
+    "damage_power": "outwit", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "charge", 
+    "speed_value": 9, 
+    "attack_power": "super_strength", 
+    "attack_value": 10, 
+    "defense_power": "invincible", 
+    "defense_value": 17, 
+    "damage_value": 3, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "special", 
+    "speed_value": 9, 
+    "attack_power": "super_strength", 
+    "attack_value": 11, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "charge", 
+    "speed_value": 8, 
+    "attack_power": "super_strength", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "special", 
+    "speed_value": 8, 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "special", 
+    "speed_value": 8, 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_value": 3
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ffbvs003</unit_id>
+    <set_id>ffbvs</set_id>
+    <collector_number>003</collector_number>
+    <name>Wonder Woman</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[125, 75]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["superman_ally"]</team_abilities>
+    <keywords>["Amazon", "Justice League", "Warrior"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "JUSTICE LEAGUE", 
+    "description": "Modify Wonder Woman's defense value by +1 for each action token on her."
+  }, 
+  {
+    "type": "attack", 
+    "name": "LEARNED A FEW THINGS FROM MY MOTHER", 
+    "description": "Wonder Woman can use Incapacitate as if she had a range value of 6. When she does, she can use Precision Strike.", 
+    "powers": [
+      "incapacitate", 
+      "precision_strike"
+    ]
+  }, 
+  {
+    "type": "damage", 
+    "name": "BRACELETS AND A LASSO", 
+    "description": "Wonder Woman can use Super Senses but only succeeds on a result of 6. If she succeeds her Super Senses roll, give the attacker an action token or if the attacker can't be given an action token, after actions resolve, deal that character 1 penetrating damage.", 
+    "powers": [
+      "super_senses"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "charge", 
+    "speed_value": 11, 
+    "attack_power": "super_strength", 
+    "attack_value": 11, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "charge", 
+    "speed_value": 10, 
+    "attack_power": "special", 
+    "attack_value": 11, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "charge", 
+    "speed_value": 9, 
+    "attack_power": "super_strength", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 3, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "charge", 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
+    "speed_value": 8, 
+    "attack_power": "super_strength", 
+    "attack_value": 10, 
+    "defense_power": "willpower", 
+    "defense_value": 16, 
+    "damage_power": "support", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 6, 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "willpower", 
+    "defense_value": 16, 
+    "damage_power": "support", 
+    "damage_value": 3
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ffbvs004</unit_id>
+    <set_id>ffbvs</set_id>
+    <collector_number>004</collector_number>
+    <name>Aquaman</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[125, 75]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["superman_ally"]</team_abilities>
+    <keywords>["Atlantis", "Justice League", "Ruler"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "JUSTICE LEAGUE", 
+    "description": "Modify Aquaman's defense value by +1 for each action token on him."
+  }, 
+  {
+    "type": "defense", 
+    "name": "KING OF ATLANTIS", 
+    "description": "Aquaman can use Invulnerability and Barrier. When he occupies water terrain he can use Barrier as a free action. When he uses Barrier, he may place the blocking terrain markers in water terrain.", 
+    "powers": [
+      "invulnerability", 
+      "barrier"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>dolphin</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "charge", 
+    "speed_value": 11, 
+    "attack_power": "quake", 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 18, 
+    "damage_power": "perplex", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "charge", 
+    "speed_value": 10, 
+    "attack_power": "quake", 
+    "attack_value": 11, 
+    "defense_power": "special", 
+    "defense_value": 17, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "charge", 
+    "speed_value": 9, 
+    "attack_power": "quake", 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 18, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 3, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "charge", 
+    "speed_value": 9, 
+    "attack_power": "quake", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "perplex", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "perplex", 
+    "damage_value": 3
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ffbvs005</unit_id>
+    <set_id>ffbvs</set_id>
+    <collector_number>005</collector_number>
+    <name>Mercy Graves</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[50, 25]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Metropolis", "Politician", "Superman Revenge Squad"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "POLITICAL COVER-UP", 
+    "description": "At the beginning of the game choose another friendly character with the Politician keyword. When Mercy Graves is adjacent to the choosen character, that character can use Shape Change."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>5</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 10, 
+    "defense_power": "defend", 
+    "defense_value": 17, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "sidestep", 
+    "speed_value": 6, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 10, 
+    "defense_power": "defend", 
+    "defense_value": 18, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "sidestep", 
+    "speed_value": 6, 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "sidestep", 
+    "speed_value": 5, 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 1
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ffbvs006</unit_id>
+    <set_id>ffbvs</set_id>
+    <collector_number>006</collector_number>
+    <name>Lex Luthor</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[50]</point_values>
+    <properties>["unique"]</properties>
+    <team_abilities>["calculator"]</team_abilities>
+    <keywords>["Celebrity", "Metropolis", "Politician", "Superman Revenge Squad"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "ONE FACE FOR THE PUBLIC, ONE FACE FOR YOU", 
+    "description": "At the beginning of the game, choose either the red or yellow starting line. Turn the dial to that click and use that starting line for this game."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>5</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": "red", 
+    "speed_power": "stealth", 
+    "speed_value": 6, 
+    "attack_power": "telekinesis", 
+    "attack_value": 9, 
+    "defense_power": "willpower", 
+    "defense_value": 16, 
+    "damage_power": "perplex", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "stealth", 
+    "speed_value": 6, 
+    "attack_power": "telekinesis", 
+    "attack_value": 8, 
+    "defense_power": "willpower", 
+    "defense_value": 15, 
+    "damage_power": "perplex", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "stealth", 
+    "speed_value": 6, 
+    "attack_power": "telekinesis", 
+    "attack_value": 7, 
+    "defense_power": "willpower", 
+    "defense_value": 15, 
+    "damage_power": "perplex", 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "sidestep", 
+    "speed_value": 6, 
+    "attack_power": "poison", 
+    "attack_value": 9, 
+    "defense_power": "super_senses", 
+    "defense_value": 16, 
+    "damage_power": "outwit", 
+    "damage_value": 2, 
+    "starting_line": "yellow"
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "sidestep", 
+    "speed_value": 6, 
+    "attack_power": "poison", 
+    "attack_value": 8, 
+    "defense_power": "super_senses", 
+    "defense_value": 15, 
+    "damage_power": "outwit", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "sidestep", 
+    "speed_value": 6, 
+    "attack_power": "poison", 
+    "attack_value": 7, 
+    "defense_power": "super_senses", 
+    "defense_value": 15, 
+    "damage_power": "outwit", 
+    "damage_value": 1
+  }
+]</dial>
+  </row>
+</resultset>

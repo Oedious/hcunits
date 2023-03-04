@@ -1,0 +1,1526 @@
+[
+  {
+    "unit_id": "bvs001", 
+    "set_id": "bvs", 
+    "collector_number": "001", 
+    "name": "Batman", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      85
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "batman_ally"
+    ], 
+    "keywords": [
+      "Detective", 
+      "Gotham City", 
+      "Justice League"
+    ], 
+    "special_powers": [
+      {
+        "type": "speed", 
+        "name": "PERSONAL RESTRAINT SYSTEMS", 
+        "description": "Batman can use Charge. When he hits an opposing character, give the hit character action token.", 
+        "powers": [
+          "charge"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "5", 
+    "targets": "2", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 8, 
+        "attack_power": "precision_strike", 
+        "attack_value": 11, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "special", 
+        "speed_value": 7, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "special", 
+        "speed_value": 6, 
+        "attack_power": "precision_strike", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "leap_climb", 
+        "speed_value": 6, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 3, 
+        "starting_line": "orange"
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "leap_climb", 
+        "speed_value": 6, 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "leap_climb", 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "bvs002", 
+    "set_id": "bvs", 
+    "collector_number": "002", 
+    "name": "Superman", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      135
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "superman_ally"
+    ], 
+    "keywords": [
+      "Justice League", 
+      "Kryptonian", 
+      "Metropolis", 
+      "Reporter"
+    ], 
+    "special_powers": [], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "7", 
+    "targets": "1", 
+    "speed_type": "wing", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "hypersonic_speed", 
+        "speed_value": 10, 
+        "attack_power": "super_strength", 
+        "attack_value": 11, 
+        "defense_power": "impervious", 
+        "defense_value": 17, 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 2, 
+        "speed_value": 9, 
+        "attack_power": "super_strength", 
+        "attack_value": 10, 
+        "defense_power": "impervious", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "hypersonic_speed", 
+        "speed_value": 9, 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 16, 
+        "damage_power": "shape_change", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 11, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "shape_change", 
+        "damage_value": 3, 
+        "starting_line": "orange"
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 8, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 16, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 6, 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 7, 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "super_senses", 
+        "defense_value": 16, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "bvs003", 
+    "set_id": "bvs", 
+    "collector_number": "003", 
+    "name": "Wonder Woman", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      105
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Amazon", 
+      "Justice League", 
+      "Politician", 
+      "Warrior"
+    ], 
+    "special_powers": [
+      {
+        "type": "speed", 
+        "name": "PRINCESS OF THEMYSCIRA", 
+        "description": "Wonder Woman can use Charge and Flurry.", 
+        "powers": [
+          "charge", 
+          "flurry"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 11, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 11, 
+        "defense_power": "invulnerability", 
+        "defense_value": 18, 
+        "damage_power": "battle_fury", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "special", 
+        "speed_value": 9, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "battle_fury", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "special", 
+        "speed_value": 8, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "battle_fury", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "quake", 
+        "attack_value": 11, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "empower", 
+        "damage_value": 3, 
+        "starting_line": "orange"
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "quake", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "empower", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "flurry", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "flurry", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "bvs004", 
+    "set_id": "bvs", 
+    "collector_number": "004", 
+    "name": "Henchman's Goon", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      20
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "underworld"
+    ], 
+    "keywords": [
+      "Gotham City Underworld", 
+      "Metropolis"
+    ], 
+    "special_powers": [], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "4", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "sidestep", 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "super_senses", 
+        "defense_value": 16, 
+        "damage_power": "enhancement", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "sidestep", 
+        "speed_value": 6, 
+        "attack_value": 10, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "sidestep", 
+        "speed_value": 5, 
+        "attack_value": 10, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "bvs005", 
+    "set_id": "bvs", 
+    "collector_number": "005", 
+    "name": "Lois Lane", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      40
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "superman_ally"
+    ], 
+    "keywords": [
+      "Metropolis", 
+      "Reporter"
+    ], 
+    "special_powers": [], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "stealth", 
+        "speed_value": 6, 
+        "attack_value": 8, 
+        "defense_power": "willpower", 
+        "defense_value": 15, 
+        "damage_power": "probability_control", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "stealth", 
+        "speed_value": 6, 
+        "attack_value": 8, 
+        "defense_power": "willpower", 
+        "defense_value": 15, 
+        "damage_power": "probability_control", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "plasticity", 
+        "speed_value": 5, 
+        "attack_value": 7, 
+        "defense_power": "super_senses", 
+        "defense_value": 15, 
+        "damage_power": "perplex", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "plasticity", 
+        "speed_value": 5, 
+        "attack_value": 7, 
+        "defense_power": "super_senses", 
+        "defense_value": 15, 
+        "damage_power": "perplex", 
+        "damage_value": 0
+      }
+    ]
+  }, 
+  {
+    "unit_id": "bvs006", 
+    "set_id": "bvs", 
+    "collector_number": "006", 
+    "name": "Aquaman", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      110
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Atlantis", 
+      "Justice League", 
+      "Ruler"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "KING OF THE SEAS", 
+        "description": "When Aquaman occupies water terrain, he can use Hypersonic Speed and Super Senses.", 
+        "powers": [
+          "hypersonic_speed", 
+          "super_senses"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "dolphin", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 11, 
+        "attack_power": "super_strength", 
+        "attack_value": 11, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "charge", 
+        "speed_value": 10, 
+        "attack_power": "super_strength", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "charge", 
+        "speed_value": 9, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_value": 3, 
+        "starting_line": "orange"
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "charge", 
+        "speed_value": 9, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "regeneration", 
+        "defense_value": 15, 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "bvs007", 
+    "set_id": "bvs", 
+    "collector_number": "007", 
+    "name": "Mercy Graves", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      50
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Metropolis", 
+      "Superman Revenge Squad"
+    ], 
+    "special_powers": [
+      {
+        "type": "speed", 
+        "name": "BRING THE CAR AROUND", 
+        "description": "Mercy Graves can use the carry ability."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "5", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 10, 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "special", 
+        "speed_value": 9, 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "charge", 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "charge", 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "bvs008", 
+    "set_id": "bvs", 
+    "collector_number": "008", 
+    "name": "Lex Luthor", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      45
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "underworld"
+    ], 
+    "keywords": [
+      "Celebrity", 
+      "Metropolis", 
+      "Politician", 
+      "Superman Revenge Squad"
+    ], 
+    "special_powers": [
+      {
+        "type": "damage", 
+        "name": "SOCIAL MEDIA MANIPULATION", 
+        "description": "Lex Luthor can use Perplex and Probability Control, both with a range value of 8. He may use either to target an opposing character named Superman regardless of range or line of fire.", 
+        "powers": [
+          "perplex", 
+          "probability_control"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "sidestep", 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "mastermind", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "sidestep", 
+        "speed_value": 5, 
+        "attack_value": 9, 
+        "defense_power": "mastermind", 
+        "defense_value": 17, 
+        "damage_power": "probability_control", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "sidestep", 
+        "speed_value": 5, 
+        "attack_value": 9, 
+        "defense_power": "mastermind", 
+        "defense_value": 16, 
+        "damage_power": "probability_control", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "bvs009", 
+    "set_id": "bvs", 
+    "collector_number": "009", 
+    "name": "Bruce Wayne", 
+    "type": "character", 
+    "rarity": "rare", 
+    "dimensions": "1x1", 
+    "point_values": [
+      40
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "batman_ally"
+    ], 
+    "keywords": [
+      "Batman Family", 
+      "Celebrity", 
+      "Gotham City"
+    ], 
+    "special_powers": [
+      {
+        "type": "attack", 
+        "name": "ALTER EGO: I AM BATMAN", 
+        "description": "Give Bruce Wayne a power action that deals no pushing damage and replace this character with BVS #001 Batman on its orange starting line. This power can't be countered."
+      }, 
+      {
+        "type": "damage", 
+        "name": "I'VE ALWAYS BEEN UNDER THE TUX", 
+        "description": "When you add Bruce Wayne to your force during construction, you may also add BVS #001 Batman to your sideline, turned to its orange starting line. At the beginning of your turn, you may choose a standard power that Batman can use on that starting click. Bruce Wayne can use the chosen power until you choose again."
+      }
+    ], 
+    "improved_movement": [
+      "characters"
+    ], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "4", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_power": "willpower", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_value": 6, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "support", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 6, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "support", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "bvs010", 
+    "set_id": "bvs", 
+    "collector_number": "010", 
+    "name": "Alfred Pennyworth", 
+    "type": "character", 
+    "rarity": "rare", 
+    "dimensions": "1x1", 
+    "point_values": [
+      30
+    ], 
+    "properties": [
+      "unique"
+    ], 
+    "team_abilities": [
+      "batman_ally"
+    ], 
+    "keywords": [
+      "Batman Family", 
+      "Gotham City"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "HE'S NOT YOUR ENEMY, BRUCE", 
+        "description": "Once per game, you may give Alfred Pennyworth a power action. If you do, choose a friendly character and an opposing character both within line of fire. Until your next turn, the chosen characters can't target each other."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "leap_climb", 
+        "speed_value": 5, 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "enhancement", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "leap_climb", 
+        "speed_value": 5, 
+        "attack_value": 8, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "empower", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "sidestep", 
+        "speed_value": 4, 
+        "attack_value": 10, 
+        "defense_power": "defend", 
+        "defense_value": 14, 
+        "damage_power": "support", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "sidestep", 
+        "speed_value": 4, 
+        "attack_value": 9, 
+        "defense_power": "defend", 
+        "defense_value": 14, 
+        "damage_power": "support", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "bvs011", 
+    "set_id": "bvs", 
+    "collector_number": "011", 
+    "name": "Zev", 
+    "type": "character", 
+    "rarity": "rare", 
+    "dimensions": "1x1", 
+    "point_values": [
+      80
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "underworld"
+    ], 
+    "keywords": [
+      "Metropolis", 
+      "Superman Revenge Squad"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "I AM THE FIRST TO THE FRONT", 
+        "description": "Zev can use Mastermind but only to transfer damage to a friendly character named Henchman's Goon.", 
+        "powers": [
+          "mastermind"
+        ]
+      }, 
+      {
+        "type": "speed", 
+        "name": "COVER FIRE", 
+        "description": "Zev can use Running Shot and Force Blast.", 
+        "powers": [
+          "running_shot", 
+          "force_blast"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "6", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 8, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 10, 
+        "defense_power": "willpower", 
+        "defense_value": 17, 
+        "damage_power": "leadership", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "special", 
+        "speed_value": 7, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 17, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "special", 
+        "speed_value": 7, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "stealth", 
+        "speed_value": 6, 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "stealth", 
+        "speed_value": 5, 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "bvs012", 
+    "set_id": "bvs", 
+    "collector_number": "012", 
+    "name": "Batman", 
+    "type": "character", 
+    "rarity": "rare", 
+    "dimensions": "1x1", 
+    "point_values": [
+      150
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "batman_ally", 
+      "superman_ally"
+    ], 
+    "keywords": [
+      "Armor", 
+      "Gotham City", 
+      "Justice League"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "TELL ME... DO YOU BLEED?", 
+        "description": "When Batman hits an opposing character with Superman Ally Team Ability or Kryptonian keyword, damage dealt is penetrating."
+      }, 
+      {
+        "type": "speed", 
+        "name": "BILLION DOLLAR BAT PLANE", 
+        "description": "Batman can use Running Shot and the Flight ability and modifies his range value by +3.", 
+        "powers": [
+          "running_shot"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "5", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 11, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 11, 
+        "defense_power": "impervious", 
+        "defense_value": 18, 
+        "damage_power": "outwit", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "special", 
+        "speed_value": 10, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 10, 
+        "defense_power": "impervious", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "super_strength", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "super_strength", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "flurry", 
+        "speed_value": 6, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "flurry", 
+        "speed_value": 6, 
+        "attack_power": "precision_strike", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "flurry", 
+        "speed_value": 6, 
+        "attack_power": "precision_strike", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "bvs013", 
+    "set_id": "bvs", 
+    "collector_number": "013", 
+    "name": "Clark Kent", 
+    "type": "character", 
+    "rarity": "rare", 
+    "dimensions": "1x1", 
+    "point_values": [
+      75
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "superman_ally"
+    ], 
+    "keywords": [
+      "Kryptonian", 
+      "Metropolis", 
+      "Reporter"
+    ], 
+    "special_powers": [
+      {
+        "type": "speed", 
+        "name": "ALTER EGO: SUPERMAN", 
+        "description": "Give Clark Kent a power action that deals no pushing damage and replace this character with BVS #002 Superman on its orange starting line. This power can't be countered."
+      }, 
+      {
+        "type": "attack", 
+        "name": "I'VE ALWAYS BEEN THE MAN BEHIND THE GLASSES", 
+        "description": "When you add Clark Kent to your force during force construction, you may also add BVS #002 Superman to your sideline, turned to its orange starting line. At the beginning of your turn, you may choose a standard power that Superman can use on that starting click. Clark Kent can use the chosen power until you choose again.", 
+        "powers": [
+          "running_shot", 
+          "energy_explosion", 
+          "invulnerability", 
+          "shape_change"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "4", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "leap_climb", 
+        "speed_value": 9, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "leap_climb", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "perplex", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "special", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "special", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "special", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_value": 16, 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "bvs014", 
+    "set_id": "bvs", 
+    "collector_number": "014", 
+    "name": "Diana Prince", 
+    "type": "character", 
+    "rarity": "rare", 
+    "dimensions": "1x1", 
+    "point_values": [
+      40
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Amazon", 
+      "Politician", 
+      "Warrior"
+    ], 
+    "special_powers": [
+      {
+        "type": "attack", 
+        "name": "WARRIOR PRINCESS", 
+        "description": "When you add Diana Prince to your force during force construction, you may also add BVS #003 Wonder Woman to your sideline, turned to its orange starting line. At the beginning of your turn, you may choose a standard power that Wonder Woman can use on that starting click. Diana Prince can use the chosen power until you choose again.", 
+        "powers": [
+          "charge", 
+          "quake", 
+          "toughness", 
+          "empower"
+        ]
+      }, 
+      {
+        "type": "defense", 
+        "name": "ALTER EGO: WONDER WOMAN", 
+        "description": "Give Diana Prince a power action that deals no pushing damage and replace this character with BVS #003 Wonder Woman on its orange starting line. This power can't be countered."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "leap_climb", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "leadership", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "leap_climb", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "leadership", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "plasticity", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "special", 
+        "defense_value": 16, 
+        "damage_power": "leadership", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "plasticity", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "special", 
+        "defense_value": 15, 
+        "damage_power": "leadership", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "bvs015", 
+    "set_id": "bvs", 
+    "collector_number": "015", 
+    "name": "Perry White", 
+    "type": "character", 
+    "rarity": "rare", 
+    "dimensions": "1x1", 
+    "point_values": [
+      40
+    ], 
+    "properties": [
+      "unique"
+    ], 
+    "team_abilities": [], 
+    "keywords": [
+      "Metropolis", 
+      "Reporter"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "YOUR BANNER HEADLINE", 
+        "description": "At the beginning of the game, you may choose an opposing character of 150 points or less. That character can't ignore pushing damage as long as Perry White is on the map. If the chosen character is 100 points or more, whenever that character takes pushing damage, deal Perry White 1 unavoidable damage."
+      }, 
+      {
+        "type": "damage", 
+        "name": "YOU DON'T ALWAYS GET TO DECIDE WHAT THE RIGHT THING IS!", 
+        "description": "Perry White can use Perplex. When he does, instead of the normal modifier, choose +2 or -2, and roll a d6 that can't be rerolled. Modify the resulting values on the target character by the chosen amount: 1 - Speed 2 - Attack 3 - Defense 4 - Damage 5 - Range 6 - Choose another result.", 
+        "powers": [
+          "perplex"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_value": 5, 
+        "attack_value": 8, 
+        "defense_power": "barrier", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 2, 
+        "speed_value": 5, 
+        "attack_value": 8, 
+        "defense_power": "barrier", 
+        "defense_value": 15, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 3, 
+        "speed_value": 5, 
+        "attack_value": 8, 
+        "defense_power": "barrier", 
+        "defense_value": 15, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "bvs016", 
+    "set_id": "bvs", 
+    "collector_number": "016", 
+    "name": "Superman", 
+    "type": "character", 
+    "rarity": "rare", 
+    "dimensions": "1x1", 
+    "point_values": [
+      225, 
+      150
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "batman_ally", 
+      "superman_ally"
+    ], 
+    "keywords": [
+      "Justice League", 
+      "Kryptonian", 
+      "Metropolis"
+    ], 
+    "special_powers": [
+      {
+        "type": "defense", 
+        "name": "POWERED BY THE YELLOW SUN", 
+        "description": "Superman can use Impervious. At the beginning of your turn if Superman occupies clear outdoor terrain heal him of damage equal to the number of action tokens on him.", 
+        "powers": [
+          "impervious"
+        ]
+      }
+    ], 
+    "improved_movement": [
+      "destroy_blocking"
+    ], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "8", 
+    "targets": "1", 
+    "speed_type": "wing", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "hypersonic_speed", 
+        "speed_value": 12, 
+        "attack_power": "super_strength", 
+        "attack_value": 12, 
+        "defense_power": "invincible", 
+        "defense_value": 19, 
+        "damage_value": 5
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "hypersonic_speed", 
+        "speed_value": 11, 
+        "attack_power": "super_strength", 
+        "attack_value": 11, 
+        "defense_power": "invincible", 
+        "defense_value": 18, 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 3, 
+        "speed_value": 10, 
+        "attack_power": "super_strength", 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 18, 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "running_shot", 
+        "speed_value": 12, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 10, 
+        "defense_power": "impervious", 
+        "defense_value": 18, 
+        "damage_value": 4, 
+        "starting_line": true
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "running_shot", 
+        "speed_value": 11, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 11, 
+        "defense_power": "impervious", 
+        "defense_value": 17, 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 6, 
+        "speed_value": 10, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "charge", 
+        "speed_value": 9, 
+        "attack_power": "super_strength", 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 8, 
+        "speed_power": "charge", 
+        "speed_value": 9, 
+        "attack_power": "super_strength", 
+        "attack_value": 9, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 9, 
+        "speed_power": "sidestep", 
+        "speed_value": 9, 
+        "attack_value": 9, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }
+    ]
+  }
+]

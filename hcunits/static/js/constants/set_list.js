@@ -439,6 +439,16 @@ const SET_LIST = {
     "release_date": "2016-04-06",
     "universe": "marvel"
   },
+  "bvs": {
+    "name": "Batman v Superman: Dawn of Justice",
+    "release_date": "2016-02-24",
+    "universe": "dc"
+  },
+  "ffbvs": {
+    "name": "Fast Forces: Batman v Superman: Dawn of Justice",
+    "release_date": "2016-02-24",
+    "universe": "dc"
+  },
   "wk": {
     "name": "WizKids Standard Game Pieces",
     "release_date": "2002-05-01",

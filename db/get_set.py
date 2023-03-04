@@ -287,6 +287,12 @@ SET_MAP = {
   "cacws": {
     "name": "Captain America: Civil War Starter",
   },
+  "bvs": {
+    "name": "Batman v Superman: Dawn of Justice",
+  },
+  "ffbvs": {
+    "name": "Fast Forces: Batman v Superman: Dawn of Justice",
+  },
 }
 
 POWERS = {
@@ -679,7 +685,8 @@ class Unit:
         figure_rank == "prime" or
         figure_rank == "limited_edition" or
         figure_rank == "special_object" or
-        figure_rank == "location_bonus"):
+        figure_rank == "location_bonus" or
+        figure_rank == "alter_ego"):
       # Look to see if it's a construct, indicated by a special power.
       is_construct = False
       tag_list = soup.find_all(text=re.compile(r'\s*Special Powers\s*'))
