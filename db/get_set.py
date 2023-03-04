@@ -293,6 +293,21 @@ SET_MAP = {
   "ffbvs": {
     "name": "Fast Forces: Batman v Superman: Dawn of Justice",
   },
+  "wf": {
+    "name": "World's Finest",
+    "ranges": [
+      # TODO: Add support for R100
+      ("wf001", "wf100"),
+      ("wfWFID-001", "wfWFID-104"),
+    ],
+  },
+  "ffwf": {
+    "name": "Fast Forces: World's Finest",
+    "ranges": [
+      # TODO: Add support for S100
+      ("ffwf001", "ffwf006"),
+    ],
+  },
 }
 
 POWERS = {
@@ -1411,9 +1426,10 @@ class Unit:
           power.lower().startswith("passenger") or
           power.lower().startswith("giant reach")):
         continue
-      prefix = self.name + " can use "
-      if power.startswith(prefix):
-        power = power[len(prefix):]
+      for prefix in ["Can use ", self.name + " can use "]:
+        if power.startswith(prefix):
+          power = power[len(prefix):]
+          break
       if power in POWERS:
         sp_powers.append(POWERS[power])
       elif sp.get("type", None) == "trait" and power.startswith("Improved Movement:"):

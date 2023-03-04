@@ -449,6 +449,16 @@ const SET_LIST = {
     "release_date": "2016-02-24",
     "universe": "dc"
   },
+  "wf": {
+    "name": "World's Finest",
+    "release_date": "2016-02-10",
+    "universe": "dc"
+  },
+  "ffwf": {
+    "name": "Fast Forces: World's Finest",
+    "release_date": "2016-02-10",
+    "universe": "dc"
+  },
   "wk": {
     "name": "WizKids Standard Game Pieces",
     "release_date": "2002-05-01",

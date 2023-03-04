@@ -1,0 +1,389 @@
+{
+  "updates": {
+    "wf007a": {
+      "special_powers": [{
+        "powers": ["smoke_cloud"]
+      }]
+    },
+    "wf009": {
+      "special_powers": [{
+        "powers": ["sidestep"]
+      }]
+    },
+    "wf010": {
+      "special_powers": [{
+        "powers": ["sidestep"]
+      }]
+    },
+    "wf018": {
+      "special_powers": [{
+      }, {
+      }, {
+        "powers": ["outwit"]
+      }]
+    },
+    "wf023": {
+      "special_powers": [{
+      }, {
+      }, {
+        "powers": ["outwit", "perplex"]
+      }]
+    },
+    "wf024": {
+      "special_powers": [{
+      }, {
+        "powers": ["precision_strike", "steal_energy"]
+      }]
+    },
+    "wf025": {
+      "special_powers": [{
+        "powers": ["sidestep"]
+      }]
+    },
+    "wf026": {
+      "special_powers": [{
+        "powers": ["sidestep"]
+      }]
+    },
+    "wf035": {
+      "special_powers": [{
+      }, {
+      }, {
+        "powers": ["combat_reflexes", "regeneration"]
+      }]
+    },
+    "wf037b": {
+      "special_powers": [{
+        "type": "costed_trait",
+        "point_value": 25
+      }]
+    },
+    "wf040": {
+      "special_powers": [{
+        "powers": ["plasticity", "shape_change", "phasing_teleport"]
+      }, {
+        "powers": ["blades_claws_fangs", "energy_explosion", "pulse_wave", "quake", "super_strength", "incapacitate", "penetrating_psychic_blast", "smoke_cloud", "precision_strike", "poison", "steal_energy", "telekinesis", "super_senses", "toughness", "defend", "combat_reflexes", "energy_shield_deflection", "barrier", "mastermind", "willpower", "invincible", "impervious", "regeneration", "invulnerability"]
+      }]
+    },
+    "wf041": {
+      "special_powers": [{
+      }, {
+        "powers": ["regeneration"]
+      }]
+    },
+    "wf042": {
+      "special_powers": [{
+        "powers": ["sidestep"]
+      }]
+    },
+    "wf043": {
+      "special_powers": [{
+        "powers": ["sidestep"]
+      }]
+    },
+    "wf044": {
+      "special_powers": [{
+      }, {
+        "powers": ["sidestep"]
+      }]
+    },
+    "wf045": {
+      "special_powers": [{
+      }, {
+      }, {
+        "powers": ["energy_explosion", "smoke_cloud"]
+      }]
+    },
+    "wf046": {
+      "special_powers": [{
+        "powers": ["super_senses"]
+      }, {
+        "powers": ["sidestep", "stealth", "phasing_teleport"]
+      }]
+    },
+    "wf052": {
+      "special_powers": [{
+        "powers": ["penetrating_psychic_blast", "super_senses"]
+      }]
+    },
+    "wf055": {
+      "special_powers": [{
+        "powers": ["flurry", "leap_climb", "phasing_teleport", "earthbound_neutralized", "charge", "mind_control", "plasticity", "force_blast", "sidestep", "hypersonic_speed", "stealth", "running_shot", "blades_claws_fangs", "energy_explosion", "pulse_wave", "quake", "super_strength", "incapacitate", "penetrating_psychic_blast", "smoke_cloud", "precision_strike", "poison", "steal_energy", "telekinesis", "super_senses", "toughness", "defend", "combat_reflexes", "energy_shield_deflection", "barrier", "mastermind", "willpower", "invincible", "impervious", "regeneration", "invulnerability", "ranged_combat_expert", "battle_fury", "support", "exploit_weakness", "enhancement", "probability_control", "shape_change", "close_combat_expert", "empower", "perplex", "outwit", "leadership"]
+      }]
+    },
+    "wf057": {
+      "special_powers": [{
+        "powers": ["sidestep"]
+      }]
+    },
+    "wf059": {
+      "special_powers": [{
+        "description": "Lex Luthor &amp; Joker's power and abilities can't be countered and their combat values can't be decreased."
+      }, {
+        "description": "Lex Luthor &amp; Joker can use Mastermind. Lex Luthor and Joker and other friendly characters of 20 points or more can use the Underworld team ability.",
+        "powers": ["mastermind"]
+      }, {
+        "description": "Lex Luthor &amp; Joker can use Sidestep twice during your turn.",
+        "powers": ["sidestep"]
+      }, {
+        "description": "Lex Luthor &amp; Joker can use Perplex and Outwit. This Outwit can be used in addition to a use of Outwit from the Superman Enemy team ability.",
+        "powers": ["perplex", "outwit"]
+      }]
+    },
+    "wf057": {
+      "special_powers": [{
+        "powers": ["sidestep"]
+      }]
+    },
+    "wf061": {
+      "point_values": [200, 35],
+      "special_powers": [{
+        "description": "(200 points) Superman's combat values can only be modified by powers or abilities from characters with \"Kingdom Come team ability symbol\". Superman's powers and abilities can only be countered by powers or abilities from characters with \"Kingdom Come team ability symbol\"."
+      }, {
+        "type": "trait", 
+        "name": "ISOLATED FROM THIS VIOLENT WORLD", 
+        "description": "(35 points) Superman begins the game placed at least 6 squares from any starting area and not adjacent to another character. While on click 11, he can't be moved or placed. When he is the only character on your force or an opposing character critical hits another friendly character, you may turn him to click 7 and he can't be healed for the remainder of the game."
+      }, {
+        "type": "attack", 
+        "name": "I WANT TO FARM IN PEACE", 
+        "description": "Superman can use Incapacitate with two targets and an attack value of 12. Hit characters can't make ranged attacks during their turn.",
+        "powers": ["incapacitate"]
+      }],
+      "dial": [{
+      }, {
+      }, {
+      }, {
+      }, {
+      }, {
+      }, {
+      }, {
+        "click_number": 11, 
+        "speed_value": 0, 
+        "attack_power": "special", 
+        "attack_value": 0, 
+        "defense_power": "impervious", 
+        "defense_value": 18, 
+        "damage_value": 0,
+        "starting_line": "yellow"
+      }]
+    },
+    "wf062": {
+      "point_values": [150, 25],
+      "special_powers": [{
+        "description": "(150 points) Batman's combat values can only be modified by powers or abilities from characters with \"Kingdom Come team ability symbol\". Batman's powers and abilities can only be countered by powers or abilities from characters with \"Kingdom Come team ability symbol\"."
+      },   {
+        "type": "trait", 
+        "name": "ISOLATED FROM THIS VIOLENT WORLD", 
+        "description": "(25 points) Batman begins the game placed at least 6 squares from any starting area and not adjacent to another character. While on click 11, he can't be moved or placed. When he is the only character on your force or an opposing character critical hits another friendly character, you may turn him to click 6 and he can't be healed for the remainder of the game."
+      },  {
+        "type": "damage", 
+        "name": "I MONITOR GOTHAM FROM THE BATCAVE", 
+        "description": "Batman can use Outwit with a range value of 10. Opposing characters 4 or more squares from him can't draw lines of fire to him.",
+        "powers": ["outwit"]
+      }],
+      "dial": [{
+      }, {
+      }, {
+      }, {
+      }, {
+      }, {
+      }, {
+        "click_number": 11, 
+        "speed_value": 0, 
+        "attack_value": 0, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 18, 
+        "damage_power": "special", 
+        "damage_value": 0,
+        "starting_line": "yellow"
+      }]
+    },
+    "wf063": {
+      "point_values": [140, 25],
+      "special_powers": [{
+        "description": "(140 points) Wonder Woman's combat values can only be modified by powers or abilities from characters with \"Kingdom Come team ability symbol\". Wonder Woman's powers and abilities can only be countered by powers or abilities from characters with \"Kingdom Come team ability symbol\"."
+      }, {
+        "type": "trait", 
+        "name": "ISOLATED FROM THIS BROKEN WORLD", 
+        "description": "(25 points) Wonder Woman begins the game placed at least 6 squares from any starting area and not adjacent to another character. While on click 11, she can't be moved or placed, and when she is the only character on your force or an opposing character critical hits another friendly character, you may turn her to click 6 and she can't be healed for the remainder of the game."
+      }, {
+        "type": "damage", 
+        "name": "I TRY AND HEAL THIS BROKEN WORLD", 
+        "description": "Wonder Woman can use Support with an attack value of 12. When she does, both she and/or the target may be adjacent to opposing characters.",
+        "powers": ["support"]
+      }],
+      "dial": [{
+      }, {
+      }, {
+      }, {
+      }, {
+      }, {
+      }, {
+        "click_number": 11, 
+        "speed_value": 0, 
+        "attack_value": 0, 
+        "defense_power": "super_senses", 
+        "defense_value": 18, 
+        "damage_power": "special", 
+        "damage_value": 0,
+        "starting_line": "yellow"
+      }]
+    },
+    "wf064": {
+      "point_values": [170, 30],
+      "special_powers": [{
+        "description": "(170 points) Green Lantern's combat values can only be modified by powers or abilities from characters with \"Kingdom Come team ability symbol\". Green Lantern's powers and abilities can only be countered by powers or abilities from characters with \"Kingdom Come team ability symbol\"."
+      }, {
+        "type": "trait", 
+        "name": "ISOLATED FROM THIS VIOLENT WORLD", 
+        "description": "(30 points) Green Lantern begins the game placed at least 6 squares from any starting area and not adjacent to another character. While on click 11, he can't be moved or placed, and when he is the only character on your force or an opposing character critically hits another friendly character, you may turn him to click 6 and he can't be healed for the remainder of the game."
+      }, 
+      {
+        "type": "damage", 
+        "name": "I PROTECT FROM AFAR", 
+        "description": "Green Lantern can use Perplex to target a character regardless of line of fire.",
+        "powers": ["perplex"]
+      }],
+      "dial": [{
+      }, {
+      }, {
+      }, {
+      }, {
+      }, {
+      }, {
+        "click_number": 11, 
+        "speed_value": 0, 
+        "attack_value": 0, 
+        "defense_power": "barrier", 
+        "defense_value": 18, 
+        "damage_power": "special", 
+        "damage_value": 0,
+        "starting_line": "yellow"
+      }]
+    },
+    "wf065": {
+      "point_values": [170, 30],
+      "special_powers": [{
+        "description": "(170 points) Shazam's combat values can only be modified by powers or abilities from characters with \"Kingdom Come team ability symbol\". Shazam's powers and abilities can only be countered by powers or abilities from characters with \"Kingdom Come team ability symbol\"."
+      }, {
+        "type": "trait", 
+        "name": "ISOLATED FROM THIS VIOLENT WORLD", 
+        "description": "(30 points) Shazam! begins the game placed at least 6 squares from any starting area and not adjacent to another character. While on click 11, he can't be moved or placed. When he is the only character on your force or an opposing character critical hits another friendly character, you may turn him to click 7 and he can't be healed for the remainder of the game."
+      }, 
+      {
+        "type": "damage", 
+        "name": "LUTHOR'S LACKEY", 
+        "description": "Give Shazam! a double power action to remove an action token from an adjacent friendly character."
+      }],
+      "dial": [{
+      }, {
+      }, {
+      }, {
+      }, {
+      }, {
+      }, {
+      }, {
+        "click_number": 11, 
+        "speed_value": 0, 
+        "attack_value": 0, 
+        "defense_power": "defend", 
+        "defense_value": 18, 
+        "damage_power": "special", 
+        "damage_value": 0,
+        "starting_line": "yellow"
+      }]
+    },
+    "wf066": {
+      "point_values": [130, 35],
+      "special_powers": [{
+        "description": "(130 points) Spectre's combat values can only be modified by powers or abilities from characters with \"Kingdom Come team ability symbol\". Spectre's powers and abilities can only be countered by powers or abilities from characters with \"Kingdom Come team ability symbol\"."
+      }, {
+        "type": "trait", 
+        "name": "ISOLATED FROM THIS VIOLENT WORLD", 
+        "description": "Spectre begins the game placed at least 6 squares from any starting area and not adjacent to another character. While on click 11, he can't be moved or placed, and when he is the only character on your force or an opposing character critically hits another friendly character, you may turn him to click 7 and he can't be healed for the remainder of the game."
+      }, 
+      {
+        "type": "damage", 
+        "name": "I SET THIS WORLD ON A DIFFERENT PATH", 
+        "description": "Spectre can use Probability Control to target a character regardless of line of fire.",
+        "powers": ["probability_control"]
+      }],
+      "dial": [{
+      }, {
+      }, {
+      }, {
+      }, {
+      }, {
+      }, {
+      }, {
+        "click_number": 11, 
+        "speed_value": 0, 
+        "attack_value": 0, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 18, 
+        "damage_power": "special", 
+        "damage_value": 0,
+        "starting_line": "yellow"
+      }]
+    },
+    "wfWFID-014": {
+      "special_powers": [{
+        "powers": ["probability_control"]
+      }]
+    },
+    "wfWFID-015": {
+      "special_powers": [{
+        "description": "Can use Improved Targeting: Hindering. Modify attack value by +1 when making a ranged combat attack."
+      }]
+    },
+    "wfWFID-016": {
+      "special_powers": [{
+        "powers": ["steal_energy"]
+      }]
+    },
+    "wfWFID-019": {
+      "special_powers": [{
+        "powers": ["blades_claws_fangs", "flurry"]
+      }]
+    },
+    "wfWFID-020": {
+      "special_powers": [{
+        "description": "Can use Leap/Climb, Improved Movement: Hindering, and Improved Targeting: Hindering." 
+      }]
+    }
+  },
+  "deletions": [
+    "wf061r",
+    "wf062r",
+    "wf063r",
+    "wf064r",
+    "wf065r",
+    "wf066r"
+  ],
+  "additions": [{
+    "unit_id": "wfM001",
+    "set_id": "wf",
+    "collector_number": "M001",
+    "name": "Danny the Street",
+    "type": "map",
+    "special_powers": [{
+      "name": "Dance Like I Say",
+      "description": "At the beginning of each players turn roll 1d6 and on a 1-2: Characters can't move horizontally or vertically this turn. 3-4: Characters can't move diagonally this turn. 5-6: No effect."
+    }],
+    "map_url": "https://hcmaps.net/maps/wf/danny_the_street.json"
+  }, {
+    "unit_id": "wfM002",
+    "set_id": "wf",
+    "collector_number": "M002",
+    "name": "United Nations Conference",
+    "type": "map",
+    "special_powers": [{
+      "name": "(Orange Dotted Line) Glass Walls",
+      "description": "Glass Walls are walls that do not block line of fire. After an attack resolves, destroy all glass walls which had a line of fire drawn through them by that attack."
+    }, {
+      "name": "(Black Dotted Line) Doors",
+      "description": "Doors are walls that do not block movement."
+    }],
+    "map_url": "https://hcmaps.net/maps/wf/united_nations_conference.json"
+  }]
+}
