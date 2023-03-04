@@ -464,6 +464,16 @@ const SET_LIST = {
     "release_date": "2015-11-04",
     "universe": "dc"
   },
+  "nfaos": {
+    "name": "Nick Fury, Agent of S.H.I.E.L.D.",
+    "release_date": "2015-08-12",
+    "universe": "marvel"
+  },
+  "ffnfaos": {
+    "name": "Fast Forces: Nick Fury, Agent of S.H.I.E.L.D.",
+    "release_date": "2015-08-12",
+    "universe": "marvel"
+  },
   "wk": {
     "name": "WizKids Standard Game Pieces",
     "release_date": "2002-05-01",

@@ -1,0 +1,623 @@
+<resultset>
+  <row>
+    <unit_id>ffnfaos001</unit_id>
+    <set_id>ffnfaos</set_id>
+    <collector_number>001</collector_number>
+    <name>Nick Fury, Jr.</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <real_name>Marcus Johnson</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[75, 50]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["shield"]</team_abilities>
+    <keywords>["S.H.I.E.L.D.", "Soldier", "Spy"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "ME AND CHEESE, FROM AFGHANISTAN TO S.H.I.E.L.D.", 
+    "description": "When Nick Fury, Jr. is adjacent to a friendly character named Agent Coulson, they both modify their attack value +1 if not already modified by this effect."
+  }, 
+  {
+    "type": "damage", 
+    "name": "FIGURE OUT HOW YOU'RE DOING THAT, AND STOP IT", 
+    "description": "When Nick Fury, Jr. damages an opposing character and actions resolve, choose a power or team ability that character can use. That character can't use that power or team ability until your next turn."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>6</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "running_shot", 
+    "speed_value": 9, 
+    "attack_value": 11, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "running_shot", 
+    "speed_value": 8, 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "charge", 
+    "speed_value": 8, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 11, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 3, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "charge", 
+    "speed_value": 7, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 9, 
+    "defense_power": "regeneration", 
+    "defense_value": 17, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "stealth", 
+    "speed_value": 6, 
+    "attack_value": 9, 
+    "defense_power": "regeneration", 
+    "defense_value": 17, 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ffnfaos002</unit_id>
+    <set_id>ffnfaos</set_id>
+    <collector_number>002</collector_number>
+    <name>Agent Coulson</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <real_name>Phil Coulson</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[75, 50]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["shield"]</team_abilities>
+    <keywords>["Avengers", "S.H.I.E.L.D.", "Soldier"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "CALL IN THE REINFORCEMENTS", 
+    "description": "Give Agent Coulson a power action and choose another friendly character of equal or less points that shares a keyword with him and has no action tokens. Place that character adjacent to Agent Coulson."
+  }, 
+  {
+    "type": "trait", 
+    "name": "FIELD TEAM BACKUP", 
+    "description": "While Agent Coulson is attacking a single character, if another friendly character with this trait has line of fire to the target, Agent Coulson can use Probability Control."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>6</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "running_shot", 
+    "speed_value": 9, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 10, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_value": 8, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 10, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "running_shot", 
+    "speed_value": 8, 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "outwit", 
+    "damage_value": 2, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 4, 
+    "speed_value": 8, 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "outwit", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_value": 7, 
+    "attack_value": 9, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 6, 
+    "speed_value": 7, 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 1
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ffnfaos003</unit_id>
+    <set_id>ffnfaos</set_id>
+    <collector_number>003</collector_number>
+    <name>Agent May</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <real_name>Melinda May</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[75, 50]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["shield"]</team_abilities>
+    <keywords>["Martial Artist", "Pilot", "S.H.I.E.L.D."]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "FIELD TEAM BACKUP", 
+    "description": "While Agent May is attacking a single character, if another friendly character with this trait has line of fire to the target, Agent May can use Probability Control."
+  }, 
+  {
+    "type": "defense", 
+    "name": "NEVER OUTNUMBERED", 
+    "description": "Agent May modifies her defense value by +1 for each adjacent opposing character."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>5</unit_range>
+    <targets>2</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "running_shot", 
+    "speed_value": 9, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "running_shot", 
+    "speed_value": 8, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "charge", 
+    "speed_value": 8, 
+    "attack_value": 11, 
+    "defense_power": "special", 
+    "defense_value": 17, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 2, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "charge", 
+    "speed_value": 7, 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 17, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 16, 
+    "damage_power": "perplex", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "sidestep", 
+    "speed_value": 6, 
+    "attack_power": "precision_strike", 
+    "attack_value": 9, 
+    "defense_power": "special", 
+    "defense_value": 16, 
+    "damage_power": "perplex", 
+    "damage_value": 1
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ffnfaos004</unit_id>
+    <set_id>ffnfaos</set_id>
+    <collector_number>004</collector_number>
+    <name>Fitz</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <real_name>Leo Fitz</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[50]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["shield"]</team_abilities>
+    <keywords>["S.H.I.E.L.D.", "Scientist"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "FIELD TEAM BACKUP", 
+    "description": "While Fitz is attacking a single character, if another friendly character with this trait has line of fire to the target, Fitz can use Probability Control."
+  }, 
+  {
+    "type": "trait", 
+    "name": "GOOD FOR ONE FREE MONKEY", 
+    "description": "At the beginning of the game, place FF:NFAOS #099 H.E.N.R.Y. adjacent to Fitz at no cost."
+  }, 
+  {
+    "type": "damage", 
+    "name": "TECH'S READY NOW SIR!", 
+    "description": "Fitz can use Perplex. Give Fitz a power action and a friendly character within line of fire that shares a keyword can use Perplex until your next turn.", 
+    "powers": [
+      "perplex"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_power": "telekinesis", 
+    "attack_value": 9, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "sidestep", 
+    "speed_value": 6, 
+    "attack_power": "telekinesis", 
+    "attack_value": 9, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "stealth", 
+    "speed_value": 6, 
+    "attack_value": 8, 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "stealth", 
+    "speed_value": 5, 
+    "attack_value": 8, 
+    "defense_value": 15, 
+    "damage_power": "special", 
+    "damage_value": 1
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ffnfaos005</unit_id>
+    <set_id>ffnfaos</set_id>
+    <collector_number>005</collector_number>
+    <name>Simmons</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <real_name>Jemma Simmons</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[50]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["shield"]</team_abilities>
+    <keywords>["S.H.I.E.L.D.", "Scientist"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "FIELD TEAM BACKUP", 
+    "description": "While Simmons is attacking a single character, if another friendly character with this trait has line of fire to the target, Simmons can use Probability Control."
+  }, 
+  {
+    "type": "damage", 
+    "name": "NEUTRALIZATION SERUM", 
+    "description": "Simmons can use Outwit. Give Simmons a power action and a friendly character within line of fire that shares a keyword can use Outwit until your next turn.", 
+    "powers": [
+      "outwit"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>4</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_value": 9, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "sidestep", 
+    "speed_value": 6, 
+    "attack_value": 10, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "stealth", 
+    "speed_value": 6, 
+    "attack_power": "incapacitate", 
+    "attack_value": 9, 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "stealth", 
+    "speed_value": 5, 
+    "attack_power": "incapacitate", 
+    "attack_value": 8, 
+    "defense_value": 15, 
+    "damage_value": 1
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ffnfaos006</unit_id>
+    <set_id>ffnfaos</set_id>
+    <collector_number>006</collector_number>
+    <name>Skye</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <real_name>Skye</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[50]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["shield"]</team_abilities>
+    <keywords>["S.H.I.E.L.D.", "Spy"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "FIELD TEAM BACKUP", 
+    "description": "While Skye is attacking a single character, if another friendly character with this trait has line of fire to the target, Skye can use Probability Control."
+  }, 
+  {
+    "type": "attack", 
+    "name": "TRAINED WITH A SNIPER RIFLE...", 
+    "description": "Skye can use Ranged Combat Expert and has a range value of 7.", 
+    "powers": [
+      "ranged_combat_expert"
+    ]
+  }, 
+  {
+    "type": "damage", 
+    "name": "...DEADLIER WITH A LAPTOP", 
+    "description": "Opposing characters within line of fire must be given a power action to use Outwit or Perplex."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "stealth", 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 17, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "stealth", 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "stealth", 
+    "speed_value": 7, 
+    "attack_power": "precision_strike", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "stealth", 
+    "speed_value": 7, 
+    "attack_power": "precision_strike", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "sidestep", 
+    "speed_value": 6, 
+    "attack_value": 8, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "sidestep", 
+    "speed_value": 6, 
+    "attack_value": 8, 
+    "defense_value": 15, 
+    "damage_power": "special", 
+    "damage_value": 1
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ffnfaos099</unit_id>
+    <set_id>ffnfaos</set_id>
+    <collector_number>099</collector_number>
+    <name>H.E.N.R.Y.</name>
+    <type>bystander</type>
+    <rarity>common</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[15]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[
+  {
+    "type": "damage", 
+    "name": "FITZ'S HELPER MONKEY", 
+    "description": "H.E.N.R.Y. can use Empower and Enhancement.", 
+    "powers": [
+      "empower", 
+      "enhancement"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>standard</bystander_type>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>tiny</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 7, 
+    "attack_value": 0, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 0
+  }
+]</dial>
+  </row>
+</resultset>

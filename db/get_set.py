@@ -311,6 +311,12 @@ SET_MAP = {
   "smww": {
     "name": "Superman/Wonder Woman",
   },
+  "nfaos": {
+    "name": "Nick Fury, Agent of S.H.I.E.L.D.",
+  },
+  "ffnfaos": {
+    "name": "Fast Forces: Nick Fury, Agent of S.H.I.E.L.D.",
+  },
 }
 
 POWERS = {
@@ -722,6 +728,7 @@ class Unit:
         if ((soup.find(text=re.compile(r'.*EFFECT:.*')) or
              # Yes - eaxs003 spelled this "EFECT"...
              soup.find(text=re.compile(r'.*EFECT:.*')) or
+             soup.find(text=re.compile(r'.*\(To equip, .*')) or
              soup.find(text=re.compile(r'.*Effect:.*'))) and
              not soup.find(text=re.compile(r".*is not equipment.*"))):
           self.type = "equipment"
@@ -983,6 +990,12 @@ class Unit:
                 ("description", clean_string(sp_description))
               ]))
               self.special_powers[-1] = self.parse_powers_from_description(self.special_powers[-1])
+            elif attr.startswith("This character can use"):
+              self.special_powers.append(OrderedDict([
+                ("name", "EFFECT"),
+                ("description", clean_string(attr))
+              ]))
+              self.special_powers[-1] = self.parse_powers_from_description(self.special_powers[-1])
             elif len(self.special_powers) > 0:
               # Append it to the end of the previous description.
               self.special_powers[-1]["description"] += clean_string(" " + attr)
@@ -1028,9 +1041,9 @@ class Unit:
     # Parse ID cards
     if self.type == "id_card":
       card_tag = soup.find("td", class_="card_id_card")
-      tag = card_tag.parent.next_sibling.next_sibling.td.div
+      tag = card_tag.parent.next_sibling.next_sibling.td
       for (regex, type) in [(r'\s(Other Identities): (.*)\s', 'other_id'),
-                            (r'\s(Inspiration): *\s', 'inspiration')]:
+                            (r'\s(Inspiration):\s', 'inspiration')]:
         compiled_re = re.compile(regex)
         sp_tag = tag.find(text=compiled_re)
         if sp_tag:
@@ -1580,10 +1593,12 @@ class Unit:
             else:
               self.dial[i][k] = v
       elif (key == "name" or
+            key == "type" or
             key == "real_name" or
             key == "keywords" or
             key == "defense_type" or
             key == "object_size" or
+            key == "bystander_type" or
             key == "point_values" or
             key == "team_abilities" or
             key == "improved_movement" or

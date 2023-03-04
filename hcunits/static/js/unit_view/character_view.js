@@ -246,7 +246,7 @@ class CharacterView extends BaseUnitView {
     if (!this.unit_.passengers) {
       return "";
     }
-    var html = `
+    const html = `
       <div class='cardPassengers'>
         <img class='cardPassengersIcon' src='/static/images/misc/passenger.png' alt=''>
         <span>${this.unit_.passengers}</span>
