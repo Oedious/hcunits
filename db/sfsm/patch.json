@@ -1,0 +1,187 @@
+{
+  "updates": {
+    "sfsm001": {
+      "special_powers": [{
+      }, {
+        "powers": ["super_senses"]
+      }]
+    },
+    "sfsm006": {
+      "special_powers": [{
+        "powers": ["mastermind"]
+      }, {
+        "powers": ["combat_reflexes", "energy_shield_deflection"]
+      }, {
+        "powers": ["perplex"]
+      }]
+    },
+    "sfsm008": {
+      "special_powers": [{
+      }, {
+        "powers": ["force_blast", "plasticity"]
+      }, {
+        "powers": ["probability_control"]
+      }]
+    },
+    "sfsm009": {
+      "special_powers": [{
+      }, {
+        "description": "Rattler can use Quake as if he had a Giant Reach: 3 and Improve Targeting: Characters. When he does, hit characters can't make range attacks until your next turn, even if this power is lost.",
+        "powers": ["quake"]
+      }]
+    },
+    "sfsm023b": {
+      "special_powers": [{
+        "powers": ["plasticity", "shape_change"]
+      }]
+    },
+    "sfsm034": {
+      "special_powers": [{
+      }, {
+        "powers": ["sidestep"]
+      }]
+    },
+    "sfsm035": {
+      "special_powers": [{
+      }, {
+        "powers": ["super_strength"]
+      }]
+    },
+    "sfsm040": {
+      "special_powers": [{
+      }, {
+      }, {
+        "powers": ["hypersonic_speed", "flurry"]
+      }, {
+        "powers": ["combat_reflexes", "energy_shield_deflection"]
+      }]
+    },
+    "sfsm041b": {
+      "special_powers": [{
+      }, {
+      }, {
+      }, {
+        "description": "Hydro-Man can use Sidestep and Improved Movement: Elevated, Hindering, Blocking, Characters",
+        "powers": ["sidestep"]
+      }]
+    },
+    "sfsm043": {
+      "special_powers": [{
+        "powers": ["precision_strike", "energy_explosion"]
+      }]
+    },
+    "sfsm045": {
+      "special_powers": [{
+        "powers": ["regeneration"]
+      }]
+    },
+    "sfsm049": {
+      "special_powers": [{
+        "powers": ["super_senses"]
+      }, {
+      }, {
+        "powers": ["hypersonic_speed"]
+      }, {
+        "powers": ["precision_strike"]
+      }]
+    },
+    "sfsm052": {
+      "special_powers": [{
+        "powers": ["super_senses"]
+      }]
+    },
+    "sfsm053a": {
+      "special_powers": [{
+      }, {
+      }, {
+        "powers": ["blades_claws_fangs", "flurry"]
+      }]
+    },
+    "sfsm055": {
+      "special_powers": [{
+        "description": "When he makes a close combat attack Doctor Octopus can use Giant Reach: 3 and Improved Targeting: Characters. Give him a power action to make 4 close combat attacks that deal 2 damage. After actions resolve modify the defense value of any character hit more than 2 times by these attacks by -2 until your next turn."
+      }]
+    },
+    "sfsm058": {
+      "dial": [{
+      }, {
+      }, {
+      }, {
+        "starting_line": "green"
+      }]
+    },
+    "sfsm059": {
+      "special_powers": [{
+      }, {
+      }, {
+        "powers": ["probability_control"]
+      }]
+    },
+    "sfsm060": {
+      "special_powers": [{
+        "powers": ["flurry", "probability_control"]
+      }, {
+      }, {
+        "powers": ["super_senses", "toughness", "willpower"]
+      }]
+    },
+    "sfsm061": {
+      "special_powers": [{
+      }, {
+      }, {
+        "powers": ["leap_climb", "sidestep", "stealth"]
+      }]
+    },
+    "sfsm062": {
+      "special_powers": [{
+      }, {
+      }, {
+        "powers": ["charge", "flurry"]
+      }]
+    },
+    "sfsm065": {
+      "special_powers": [{
+      }, {
+      }, {
+        "powers": ["impervious", "super_senses"]
+      }]
+    },
+    "sfsm066": {
+      "special_powers": [{
+      }, {
+      }, {
+        "powers": ["leap_climb"]
+      }]
+    },
+    "sfsms101": {
+      "special_powers": [{
+        "description": "Equipped character can use Plasticity and Shape Change, and automatically breaks away. Give the equipped character a free action and roll a d6 that can't be rerolled. 5-6: Modify this characters combat values by +1 until your next turn. 1: Place this object in an adjacent square and the last equipped character can't be equipped by it again this game.",
+        "powers": ["plasticity", "shape_change"]
+      }, {
+        "__delete__": true
+      }, {
+        "__delete__": true
+      }]
+    },
+    "sfsms102": {
+      "special_powers": [{
+        "powers": ["leap_climb"]
+      }]
+    }
+  },
+  "additions": [{
+    "unit_id": "sfsmM001",
+    "set_id": "sfsm",
+    "collector_number": "M001",
+    "name": "Bank Heist",
+    "type": "map",
+    "map_url": "https://hcmaps.net/maps/sfsm/bank_heist.json"
+  }, {
+    "unit_id": "sfsmM002",
+    "set_id": "sfsm",
+    "collector_number": "M002",
+    "name": "Friendly Neighborhood",
+    "type": "map",
+    "map_url": "https://hcmaps.net/maps/sfsm/friendly_neighborhood.json"
+  }]
+}

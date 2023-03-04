@@ -263,6 +263,12 @@ SET_MAP = {
   "fftmnt2": {
     "name": "Fast Forces: Teenage Mutant Ninja Turtles: Heroes in a Half Shell",
   },
+  "sfsm": {
+    "name": "Superior Foes of Spider-Man",
+  },
+  "ffsfsm": {
+    "name": "Fast Forces: Spider-Man and His Greatest Foes",
+  },
 }
 
 POWERS = {
@@ -405,6 +411,7 @@ IMPROVED_ABILITIES = {
       "ignores blocking": "blocking",
       "ignores blocking terrain": "blocking",
       "outdoor blocking": "outdoor_blocking",
+      "ignores outdoor blocking terrain": "outdoor_blocking",
       "ignores blocking terrain (outdoor)": "outdoor_blocking",
       "destroy blocking": "destroy_blocking",
       "ignores and destroys blocking terrain": "destroy_blocking",
@@ -439,10 +446,11 @@ IMPROVED_ABILITIES = {
       "ignores characters": "characters",
       "lines of fire drawn by this character are not blocked by characters": "characters",
       "adjacent": "adjacent",
-      "this character can make range attacks while adjacent to opposing characters. (may target adjacent or non-adjacent opposing characters.)": "adjacent",
-      "this character can make range attacks while adjacent to opposing characters": "adjacent",
-      "may make a ranged combat attack against any opposing character within range and line of fire, even if that character is in an adjacent square": "adjacent",
       "may make a ranged combat attack targeting adjacent opposing characters": "adjacent",
+      "may make a ranged combat attack even when adjacent to an opposing character": "adjacent",
+      "this character can make range attacks while adjacent to opposing characters": "adjacent",
+      "this character can make range attacks while adjacent to opposing characters. (may target adjacent or non-adjacent opposing characters.)": "adjacent",
+      "may make a ranged combat attack against any opposing character within range and line of fire, even if that character is in an adjacent square": "adjacent",
       "water": "water",
     },
   }
@@ -604,7 +612,7 @@ class Unit:
     # Extract the unit ID and the name from the first table.
     unit_id_and_name = soup.find("td", class_="tcat").strong.string.strip().split(' ')
     self.unit_id = unit_id_and_name[0]
-    self.name = " ".join(unit_id_and_name[1:])
+    self.name = " ".join(unit_id_and_name[1:]).strip()
     
     for prefix in [self.set_id, "wkM-", "wk"]:
       if self.unit_id.startswith(prefix):
@@ -811,6 +819,8 @@ class Unit:
             self.object_size = "ultra_light"
           elif part == "Ultra Heavy Object":
             self.object_size = "ultra_heavy"
+          elif part == "Immobile Object":
+            self.object_size = "immobile"
           elif part == "Special Object":
             self.object_type = "special"
           elif part == "Disguised Plastic Man Special Object":
@@ -907,6 +917,8 @@ class Unit:
             self.object_size = "ultra_light"
           elif lower_attr == "ultra heavy object":
             self.object_size = "ultra_heavy"
+          elif lower_attr == "immobile object":
+            self.object_size = "immobile"
           elif (lower_attr == "equip" or
                 lower_attr.startswith("give a friendly character in this square")):
             # Skip the attributes that just describe equipment rules.
@@ -1517,7 +1529,8 @@ class Unit:
               del self.dial[i][k]
             else:
               self.dial[i][k] = v
-      elif (key == "real_name" or
+      elif (key == "name" or
+            key == "real_name" or
             key == "keywords" or
             key == "defense_type" or
             key == "object_size" or

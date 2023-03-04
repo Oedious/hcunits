@@ -399,6 +399,16 @@ const SET_LIST = {
     "release_date": "2016-10-12",
     "universe": "indy"
   },
+  "sfsm": {
+    "name": "Superior Foes of Spider-Man",
+    "release_date": "2016-08-10",
+    "universe": "marvel"
+  },
+  "ffsfsm": {
+    "name": "Fast Forces: Spider-Man and His Greatest Foes",
+    "release_date": "2016-08-10",
+    "universe": "marvel"
+  },
   "wk": {
     "name": "WizKids Standard Game Pieces",
     "release_date": "2002-05-01",
