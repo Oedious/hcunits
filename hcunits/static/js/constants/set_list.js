@@ -414,6 +414,16 @@ const SET_LIST = {
     "release_date": "2016-06-01",
     "universe": "marvel"
   },
+  "uxm": {
+    "name": "Uncanny X-Men",
+    "release_date": "2016-05-04",
+    "universe": "marvel"
+  },
+  "ffuxm": {
+    "name": "Fast Forces: Uncanny X-Men",
+    "release_date": "2016-05-04",
+    "universe": "marvel"
+  },
   "wk": {
     "name": "WizKids Standard Game Pieces",
     "release_date": "2002-05-01",

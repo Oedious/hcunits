@@ -272,6 +272,12 @@ SET_MAP = {
   "cwsop": {
     "name": "Civil War: Storyline Organized Play",
   },
+  "uxm": {
+    "name": "Uncanny X-Men",
+  },
+  "ffuxm": {
+    "name": "Fast Forces: Uncanny X-Men",
+  },
 }
 
 POWERS = {
@@ -840,7 +846,7 @@ class Unit:
           if self.object_type == "standard":
             self.object_type = "special"
           self.special_powers.append(OrderedDict([
-            ("description", clean_string(description))
+            ("description", clean_string(description.strip()))
           ]))
           self.special_powers[-1] = self.parse_powers_from_description(self.special_powers[-1])
     # Parse equipment special powers
@@ -995,11 +1001,11 @@ class Unit:
             if len(match_obj.groups()) >= 2:
               sp_desc = match_obj.group(2)
             else:
-              sp_desc = sp_tag.parent.next_sibling.strip()
+              sp_desc = sp_tag.parent.next_sibling
             self.special_powers.append(OrderedDict([
               ("type", type),
               ("name", clean_string(sp_name)),
-              ("description", clean_string(sp_desc))
+              ("description", clean_string(sp_desc.strip()))
             ]))
             self.special_powers[-1] = self.parse_powers_from_description(self.special_powers[-1])
 
@@ -1193,7 +1199,7 @@ class Unit:
             sp = OrderedDict([("type", sp_type)])
             if sp_name:
               sp["name"] = clean_string(sp_name)
-            sp["description"] = clean_string(sp_description)
+            sp["description"] = clean_string(sp_description.strip())
 
             # Handle special trait types, like costed, rally, or plot points.
             if sp_type == "trait" and sp_name:
@@ -1246,7 +1252,7 @@ class Unit:
                     match_obj = re.search(r"([a-zA-Z]*) attack rolls\. (.*)", td_tags[1].contents[2].strip())
                   if not match_obj:
                     raise RuntimeError("Cannot parse rally trait")
-                  sp["description"] = clean_string(match_obj.group(2))
+                  sp["description"] = clean_string(match_obj.group(2).strip())
                   sp["rally_type"] = match_obj.group(1).lower()
                 sp["rally_die"] = rally_die
                 # Clean description string to remove rally rules.

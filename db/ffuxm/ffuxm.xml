@@ -1,0 +1,513 @@
+<resultset>
+  <row>
+    <unit_id>ffuxm001</unit_id>
+    <set_id>ffuxm</set_id>
+    <collector_number>001</collector_number>
+    <name>Cyclops</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <real_name>Scott Summers</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[50]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["x_men"]</team_abilities>
+    <keywords>["All-New X-Men", "Past"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "TIME LOCKED", 
+    "description": "Opposing characters can't use Probability Control to reroll attacks made by or targeting this character."
+  }, 
+  {
+    "type": "speed", 
+    "name": "PRECISE OPTIC BLAST", 
+    "description": "Cyclops can use Force Blast. He can use it as a free action if he has no action tokens. Anytime he knocks a character back, he may choose the direction of the knockback.", 
+    "powers": [
+      "force_blast"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>7</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "special", 
+    "speed_value": 8, 
+    "attack_value": 10, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 16, 
+    "damage_power": "leadership", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "special", 
+    "speed_value": 7, 
+    "attack_value": 10, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 16, 
+    "damage_power": "leadership", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "special", 
+    "speed_value": 7, 
+    "attack_value": 10, 
+    "defense_power": "willpower", 
+    "defense_value": 16, 
+    "damage_power": "leadership", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "force_blast", 
+    "speed_value": 7, 
+    "attack_value": 9, 
+    "defense_power": "willpower", 
+    "defense_value": 16, 
+    "damage_power": "leadership", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "force_blast", 
+    "speed_value": 7, 
+    "attack_value": 9, 
+    "defense_power": "willpower", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ffuxm002</unit_id>
+    <set_id>ffuxm</set_id>
+    <collector_number>002</collector_number>
+    <name>Jean Grey</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <real_name>Jean Grey</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[50]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["x_men"]</team_abilities>
+    <keywords>["All-New X-Men", "Past"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "TIME LOCKED", 
+    "description": "Opposing characters can't use Probability Control to reroll attacks made by or targeting this character."
+  }, 
+  {
+    "type": "attack", 
+    "name": "COORDINATED MOVEMENT", 
+    "description": "Jean Grey can use Telekinesis. She can use it as a free action if she has no action tokens.", 
+    "powers": [
+      "telekinesis"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>6</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "willpower", 
+    "defense_value": 17, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_power": "willpower", 
+    "defense_value": 17, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_power": "super_senses", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_value": 7, 
+    "attack_power": "telekinesis", 
+    "attack_value": 9, 
+    "defense_power": "super_senses", 
+    "defense_value": 16, 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 5, 
+    "speed_value": 7, 
+    "attack_power": "telekinesis", 
+    "attack_value": 8, 
+    "defense_power": "super_senses", 
+    "defense_value": 16, 
+    "damage_value": 1
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ffuxm003</unit_id>
+    <set_id>ffuxm</set_id>
+    <collector_number>003</collector_number>
+    <name>Angel</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <real_name>Warren Worthington III</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[50]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["x_men"]</team_abilities>
+    <keywords>["All-New X-Men", "Past"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "TIME LOCKED", 
+    "description": "Opposing characters can't use Probability Control to reroll attacks made by or targeting this character."
+  }, 
+  {
+    "type": "trait", 
+    "name": "SWOOPING IN", 
+    "description": "Give Angel a power action and halve his speed value, then move him up to his speed value. After actions resolve, either Angel or a character he carried with the All-New X-Men keyword may make a close attack."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "sidestep", 
+    "speed_value": 11, 
+    "attack_value": 10, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 17, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "sidestep", 
+    "speed_value": 11, 
+    "attack_value": 9, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 17, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "sidestep", 
+    "speed_value": 10, 
+    "attack_value": 9, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 17, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "sidestep", 
+    "speed_value": 10, 
+    "attack_value": 9, 
+    "defense_value": 16, 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "sidestep", 
+    "speed_value": 10, 
+    "attack_value": 8, 
+    "defense_value": 16, 
+    "damage_value": 1
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ffuxm004</unit_id>
+    <set_id>ffuxm</set_id>
+    <collector_number>004</collector_number>
+    <name>Beast</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <real_name>Hank McCoy</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[50]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["x_men"]</team_abilities>
+    <keywords>["All-New X-Men", "Past", "Scientist"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "TIME LOCKED", 
+    "description": "Opposing characters can't use Probability Control to reroll attacks made by or targeting this character."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "leap_climb", 
+    "speed_value": 10, 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 17, 
+    "damage_power": "perplex", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "leap_climb", 
+    "speed_value": 9, 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 17, 
+    "damage_power": "perplex", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "leap_climb", 
+    "speed_value": 9, 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "leap_climb", 
+    "speed_value": 8, 
+    "attack_value": 9, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "leap_climb", 
+    "speed_value": 8, 
+    "attack_value": 9, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ffuxm005</unit_id>
+    <set_id>ffuxm</set_id>
+    <collector_number>005</collector_number>
+    <name>Iceman</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <real_name>Bobby Drake</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[50]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["x_men"]</team_abilities>
+    <keywords>["All-New X-Men", "Past"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "TIME LOCKED", 
+    "description": "Opposing characters can't use Probability Control to reroll attacks made by or targeting this character."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>6</unit_range>
+    <targets>2</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "sidestep", 
+    "speed_value": 9, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "precision_strike", 
+    "attack_value": 9, 
+    "defense_power": "barrier", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "precision_strike", 
+    "attack_value": 9, 
+    "defense_power": "barrier", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_value": 7, 
+    "attack_power": "precision_strike", 
+    "attack_value": 8, 
+    "defense_power": "barrier", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ffuxm006</unit_id>
+    <set_id>ffuxm</set_id>
+    <collector_number>006</collector_number>
+    <name>X-23</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <real_name>Laura Kinney</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[50]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["x_men"]</team_abilities>
+    <keywords>["All-New X-Men", "Circle of Four", "Weapon X", "X-Force", "X-Men"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "LET 'EM BLEED", 
+    "description": "When an opposing character takes damage from her close attack, after actions resolve you may attach the Slash marker to that character, removing it from anywhere else. When the character with the Slash marker is given an action token, deal it 1 penetrating damage. When that character heals or clears action tokens, remove the Slash marker."
+  }
+]</special_powers>
+    <improved_movement>["hindering"]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "charge", 
+    "speed_value": 9, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 11, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "charge", 
+    "speed_value": 8, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "charge", 
+    "speed_value": 7, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "stealth", 
+    "speed_value": 7, 
+    "attack_value": 10, 
+    "defense_power": "regeneration", 
+    "defense_value": 16, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "stealth", 
+    "speed_value": 7, 
+    "attack_value": 9, 
+    "defense_power": "regeneration", 
+    "defense_value": 15, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+</resultset>
