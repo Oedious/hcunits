@@ -71,11 +71,11 @@ CREATE TABLE units (
   special_powers JSON,
 
   -- Should be in the form of an array of strings, with values from:
-  -- "elevated", "hindering", "blocking", "outdoor_blocking", "destroy_blocking", "characters", "move_through", "water".
+  -- "elevated", "hindering", "blocking", "indoor_blocking", "outdoor_blocking", "destroy_blocking", "characters", "move_through", "water".
   improved_movement JSON,
 
   -- Should be in the form of an array of strings, with values from:
-  -- "elevated", "hindering", "blocking", "destroy_blocking", "characters", "adjacent"
+  -- "elevated", "hindering", "blocking", "outdoor_blocking", "destroy_blocking", "characters", "adjacent"
   improved_targeting JSON,
 
   -- The type or specialization of an object.
@@ -605,6 +605,26 @@ LOAD XML LOCAL INFILE 'nfaos/nfaos.xml'
   ROWS IDENTIFIED BY '<row>';
 
 LOAD XML LOCAL INFILE 'ffnfaos/ffnfaos.xml'
+  REPLACE
+  INTO TABLE units
+  ROWS IDENTIFIED BY '<row>';
+
+LOAD XML LOCAL INFILE 'aou/aou.xml'
+  REPLACE
+  INTO TABLE units
+  ROWS IDENTIFIED BY '<row>';
+
+LOAD XML LOCAL INFILE 'ffoa/ffoa.xml'
+  REPLACE
+  INTO TABLE units
+  ROWS IDENTIFIED BY '<row>';
+
+LOAD XML LOCAL INFILE 'ygo3/ygo3.xml'
+  REPLACE
+  INTO TABLE units
+  ROWS IDENTIFIED BY '<row>';
+
+LOAD XML LOCAL INFILE 'avas/avas.xml'
   REPLACE
   INTO TABLE units
   ROWS IDENTIFIED BY '<row>';

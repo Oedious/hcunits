@@ -11,6 +11,10 @@ const IMPROVED_MOVEMENT_LIST = {
     "name": "Blocking",
     "description": "This character can move through Blocking terrain."
   },
+  "indoor_blocking": {
+    "name": "Indoor Blocking",
+    "description": "This character can move through Indoor Blocking terrain."
+  },
   "outdoor_blocking": {
     "name": "Outdoor Blocking",
     "description": "This character can move through Outdoor Blocking terrain."
@@ -45,6 +49,10 @@ const IMPROVED_TARGETING_LIST = {
   "blocking": {
     "name": "Blocking",
     "description": "Lines of fire drawn by this character are not blocked by Blocking terrain."
+  },
+  "outdoor_blocking": {
+    "name": "Outdoor Blocking",
+    "description": "Lines of fire drawn by this character are not blocked by Outdoor Blocking terrain."
   },
   "destroy_blocking": {
     "name": "Destroy Blocking",

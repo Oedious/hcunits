@@ -328,6 +328,22 @@ SET_MAP = {
   "ffoa": {
     "name": "Fast Forces: Original Avengers",
   },
+  "ygo3": {
+    "name": "Yu-Gi-Oh! HeroClix: Series Three",
+    "ranges": [
+      # TODO: Add support for ygo3017 through ygo3020
+      ("ygo3001", "ygo3016"),
+      ("ygo3100", "ygo3100r"),
+    ],
+  },
+  "avas": {
+    "name": "Avengers Assemble",
+    "ranges": [
+      # TODO: Add support for avas067
+      ("avas001", "avas066"),
+      ("avasAVID-001", "avasS100"),
+    ],
+  },
 }
 
 POWERS = {
@@ -469,6 +485,7 @@ IMPROVED_ABILITIES = {
       "blocking terrain": "blocking",
       "ignores blocking": "blocking",
       "ignores blocking terrain": "blocking",
+      "ignores indoor blocking terrain": "indoor_blocking",
       "outdoor blocking": "outdoor_blocking",
       "ignores outdoor blocking terrain": "outdoor_blocking",
       "ignores blocking terrain (outdoor)": "outdoor_blocking",
@@ -498,6 +515,7 @@ IMPROVED_ABILITIES = {
       "improved targeting: ignores hindering terrain": "hindering",
       "imrpoved targeting: ignores hindering terrain": "hindering",
       "blocking": "blocking",
+      "ignores outdoor blocking terrain": "outdoor_blocking",
       "destroy blocking": "destroy_blocking",
       "ignores blocking terrain. when a ranged combat attack resolves, any blocking terrain along its line of fire to the target is destroyed": "destroy_blocking",
       "once per range attack, this character can draw a line of fire through one piece of blocking terrain. immediately after the attack resolves, destroy that piece of blocking terrain": "destroy_blocking",
@@ -517,11 +535,11 @@ IMPROVED_ABILITIES = {
 }
 
 IMPROVED_MOVEMENT_VALUES = [
-  "elevated", "hindering", "blocking", "outdoor_blocking", "destroy_blocking", "characters", "move_through", "water"
+  "elevated", "hindering", "blocking", "indoor_blocking", "outdoor_blocking", "destroy_blocking", "characters", "move_through", "water"
 ]
 
 IMPROVED_TARGETING_VALUES = [
-  "elevated", "hindering", "blocking", "destroy_blocking", "characters", "adjacent", "water"
+  "elevated", "hindering", "blocking", "outdoor_blocking", "destroy_blocking", "characters", "adjacent", "water"
 ]
 
 OBJECT_TYPE_VALUES = [
@@ -1614,7 +1632,8 @@ class Unit:
             key == "point_values" or
             key == "team_abilities" or
             key == "improved_movement" or
-            key == "improved_targeting"):
+            key == "improved_targeting" or
+            key == "object_keyphrases"):
         setattr(self, key, value)
       else:
         raise RuntimeError("The update type '%s' for '%s' is currently not supported" % (key, self.unit_id))

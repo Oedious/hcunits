@@ -1,0 +1,182 @@
+{
+  "updates": {
+    "avas005": {
+      "special_powers": [{
+        "powers": ["sidestep"]
+      }]
+    },
+    "avas009": {
+      "special_powers": [{
+        "powers": ["energy_shield_deflection", "force_blast"]
+      }]
+    },
+    "avas013b": {
+      "special_powers": [{
+      }, {
+        "powers": ["perplex"]
+      }]
+    },
+    "avas017": {
+      "special_powers": [{
+        "powers": ["close_combat_expert"]
+      }, {
+        "powers": ["combat_reflexes", "energy_shield_deflection", "super_senses"]
+      }]
+    },
+    "avas018": {
+      "special_powers": [{
+        "powers": ["enhancement", "shape_change"]
+      }]
+    },
+    "avas023": {
+      "special_powers": [{
+      }, {
+        "powers": ["smoke_cloud"]
+      }]
+    },
+    "avas025": {
+      "special_powers": [{
+        "powers": ["combat_reflexes", "regeneration", "toughness"]
+      }]
+    },
+    "avas028": {
+      "special_powers": [{
+        "powers": ["barrier", "super_senses"]
+      }, {
+        "powers": ["outwit", "perplex", "probability_control"]
+      }]
+    },
+    "avas030": {
+      "special_powers": [{
+        "powers": ["force_blast"]
+      }, {
+        "description": "Whirlwind can use Charge and Flurry. When he uses Charge he can use Improved Movement: Hindering, Characters."
+      }]
+    },
+    "avas031a": {
+      "special_powers": [{
+        "description": "Moonstone can use Super Senses and Improved Movement: Indoor Blocking."
+      }]
+    },
+    "avas032": {
+      "special_powers": [{
+        "powers": ["perplex"]
+      }, {
+        "powers": ["force_blast", "pulse_wave"]
+      }]
+    },
+    "avas033": {
+      "special_powers": [{
+      }, {
+        "powers": ["flurry", "leap_climb", "quake"]
+      }, {
+        "powers": ["force_blast", "pulse_wave"]
+      }]
+    },
+    "avas034": {
+      "special_powers": [{
+      }, {
+        "description": "Friendly characters can use Improved Movement: Hindering and Improved Targeting: Hindering, but only if they occupy indoor terrain."
+      }]
+    },
+    "avas036": {
+      "special_powers": [{
+        "powers": ["incapacitate", "telekinesis"]
+      }]
+    },
+    "avas039": {
+      "special_powers": [{
+        "powers": ["empower"]
+      }, {
+        "description": "Give Nova a free action, and until the end of the turn, he can use Improved Movement: Destroy Blocking; and his speed value becomes 5 and is locked."
+      }]
+    },
+    "avas041a": {
+      "special_powers": [{
+      }, {
+      }, {
+        "description": "Starbrand can use Energy Explosion and Improved Targeting: Destroy Blocking, Opposing Characters, Adjacent."
+      }]
+    },
+    "avas049": {
+      "special_powers": [{
+        "powers": ["leadership"]
+      }]
+    },
+    "avas050": {
+      "special_powers": [{
+        "powers": ["defend"]
+      }]
+    },
+    "avas051": {
+      "special_powers": [{
+        "powers": ["flurry"]
+      }, {
+      }, {
+        "powers": ["combat_reflexes", "super_senses", "willpower"]
+      }]
+    },
+    "avas053a": {
+      "special_powers": [{
+        "powers": ["energy_explosion"]
+      }]
+    },
+    "avas055": {
+      "special_powers": [{
+        "powers": ["super_strength", "stealth", "close_combat_expert"]
+      }, {
+        "powers": ["shape_change"]
+      }]
+    },
+    "avas056": {
+      "special_powers": [{
+      }, {
+      }, {
+        "powers": ["telekinesis", "quake"]
+      }]
+    },
+    "avas059": {
+      "special_powers": [{
+      }, {
+        "powers": ["invincible"]
+      }]
+    },
+    "avas062": {
+      "special_powers": [{
+        "powers": ["invulnerability", "invincible"]
+      }, {
+      }, {
+        "description": "Iron Man can use Outwit and has Improved Targeting: Hindering, Destroy Blocking, Characters."
+      }]
+    },
+    "avas064": {
+      "special_powers": [{
+      }, {
+        "description": "Hulk can use Charge. When he does, he doesn't halve his speed value and can use Improved Movement: Hindering, Destroy Blocking, Characters."
+      }]
+    },
+    "avass100": {
+      "special_powers": [{
+        "description": "At the beginning of the game, choose either \"tiny damage symbol\" or \"giant damage symbol\". A single-based character with \"starburst damage symbol\" holding this object or in the same square as this object may be given a power action to equip it. This object can't be targeted by an attack. Character possesses the chosen symbol this game."
+      }, {
+        "__delete__": true
+      }],
+      "object_keyphrases": ["unequip_ko"]
+    }
+  },
+  "additions": [{
+    "unit_id": "avasM001",
+    "set_id": "avas",
+    "collector_number": "M001",
+    "name": "Arcade's Arena",
+    "type": "map",
+    "map_url": "https://hcmaps.net/maps/avas/arcades_arena.json"
+  }, {
+    "unit_id": "avasM002",
+    "set_id": "avas",
+    "collector_number": "M002",
+    "name": "Avengers Compound",
+    "type": "map",
+    "map_url": "https://hcmaps.net/maps/avas/avengers_compound.json"
+  }]
+}

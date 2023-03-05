@@ -484,6 +484,16 @@ const SET_LIST = {
     "release_date": "2015-06-01",
     "universe": "marvel"
   },
+  "ygo3": {
+    "name": "Yu-Gi-Oh! Series 3",
+    "release_date": "2015-05-27",
+    "universe": "indy"
+  },
+  "avas": {
+    "name": "Avengers Assemble",
+    "release_date": "2015-05-06",
+    "universe": "marvel"
+  },
   "wk": {
     "name": "WizKids Standard Game Pieces",
     "release_date": "2002-05-01",
