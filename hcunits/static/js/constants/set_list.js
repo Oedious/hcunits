@@ -474,6 +474,16 @@ const SET_LIST = {
     "release_date": "2015-08-12",
     "universe": "marvel"
   },
+  "aou": {
+    "name": "Age of Ultron: Storyline Organized Play",
+    "release_date": "2015-06-01",
+    "universe": "marvel"
+  },
+  "ffoa": {
+    "name": "Fast Forces: Original Avengers",
+    "release_date": "2015-06-01",
+    "universe": "marvel"
+  },
   "wk": {
     "name": "WizKids Standard Game Pieces",
     "release_date": "2002-05-01",

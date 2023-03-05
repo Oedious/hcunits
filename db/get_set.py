@@ -317,6 +317,17 @@ SET_MAP = {
   "ffnfaos": {
     "name": "Fast Forces: Nick Fury, Agent of S.H.I.E.L.D.",
   },
+  "aou": {
+    "name": "Age of Ultron: Storyline Organized Play",
+    "ranges": [
+      # TODO: Add support for R100 and V001r
+      ("aou001", "aouG200v"),
+      ("aouV001", "aouV001e"),
+    ]
+  },
+  "ffoa": {
+    "name": "Fast Forces: Original Avengers",
+  },
 }
 
 POWERS = {
@@ -690,6 +701,7 @@ class Unit:
           rarity == "Rarity: Limited Edition" or
           rarity == "Rarity: Brick" or
           rarity == "Rarity: Super Booster" or
+          rarity == "Rarity: Ant-Man Box Set" or
           rarity == "Rarity: Mass Market Exclusive Chase"):
       self.rarity = "chase"
     elif rarity == "Rarity: Ultra Chase":
@@ -1087,7 +1099,7 @@ class Unit:
           td_tags = tr_tag.select('td')
           match_obj = re.search(r"/images/sp-(.+)\.[a-z]{3}", td_tags[0].img['src'])
           sp_type_str = match_obj.group(1)
-          if sp_type_str == "special":
+          if sp_type_str == "special" or sp_type_str == "prereq":
             sp_type = "trait"
           elif sp_type_str == "improved":
             desc = ""
@@ -1338,10 +1350,10 @@ class Unit:
         self.defense_type = "shield"
         self.damage_type = "colossal"
       else:
-        self.speed_type = re.search(r"/images/units-m-(.+)\.[a-z]{3}", combat_symbols[0].td.img['src']).group(1)
-        self.attack_type = re.search(r"/images/units-a-(.+)\.[a-z]{3}", combat_symbols[1].td.img['src']).group(1)
-        self.defense_type = re.search(r"/images/units-d-(.+)\.[a-z]{3}", combat_symbols[2].td.img['src']).group(1)
-        self.damage_type = re.search(r"/images/units-g-(.+)\.[a-z]{3}", combat_symbols[3].td.img['src']).group(1)
+        self.speed_type = fix_style(re.search(r"/images/units-m-(.+)\.[a-z]{3}", combat_symbols[0].td.img['src']).group(1))
+        self.attack_type = fix_style(re.search(r"/images/units-a-(.+)\.[a-z]{3}", combat_symbols[1].td.img['src']).group(1))
+        self.defense_type = fix_style(re.search(r"/images/units-d-(.+)\.[a-z]{3}", combat_symbols[2].td.img['src']).group(1))
+        self.damage_type = fix_style(re.search(r"/images/units-g-(.+)\.[a-z]{3}", combat_symbols[3].td.img['src']).group(1))
       # Disambiguate between the attack and damage "fist" symbols by making damage 'colossal'
       if self.damage_type == "fist":
         self.damage_type = "colossal"
@@ -1695,19 +1707,19 @@ class Unit:
       if not self.speed_type:
         print("Warning: unit '%s' has a missing speed_type" % (self.unit_id))
       elif not self.speed_type in SPEED_TYPE_VALUES:
-        print("Warning: unit '%s' has an unknown type '%s'" % (self.unit_id, self.speed_type))
+        print("Warning: unit '%s' has an unknown speed type '%s'" % (self.unit_id, self.speed_type))
       if not self.attack_type:
         print("Warning: unit '%s' has a missing attack_type" % (self.unit_id))
       elif not self.attack_type in ATTACK_TYPE_VALUES:
-        print("Warning: unit '%s' has an unknown type '%s'" % (self.unit_id, self.attack_type))
+        print("Warning: unit '%s' has an unknown attack type '%s'" % (self.unit_id, self.attack_type))
       if not self.defense_type:
         print("Warning: unit '%s' has a missing defense_type" % (self.unit_id))
       elif not self.defense_type in DEFENSE_TYPE_VALUES:
-        print("Warning: unit '%s' has an unknown type '%s'" % (self.unit_id, self.defense_type))
+        print("Warning: unit '%s' has an unknown defense type '%s'" % (self.unit_id, self.defense_type))
       if not self.damage_type:
         print("Warning: unit '%s' has a missing damage_type" % (self.unit_id))
       elif not self.damage_type in DAMAGE_TYPE_VALUES:
-        print("Warning: unit '%s' has an unknown type '%s'" % (self.unit_id, self.damage_type))
+        print("Warning: unit '%s' has an unknown damage type '%s'" % (self.unit_id, self.damage_type))
 
       for click in self.dial:
         click_number = click.get("click_number", 0)
@@ -1951,10 +1963,10 @@ if __name__ == "__main__":
       unit_page = fetcher.fetch_unit_page(unit_id);
       unit = Unit(set_id=args.set_id, dimensions=dimensions)
       if unit.parse_unit_page(unit_page):
-        # If the unit ID ends in 'r', 'e', or 'v', check for other units with
+        # If the unit ID ends in 'r', 'e', 'v' or 'd', check for other units with
         # similar same unit ID and if so, merge point values.
         main_unit = None
-        if unit.unit_id.endswith(('r', 'e', 'v', 'x', 'p')):
+        if unit.unit_id.endswith(('r', 'e', 'v', 'x', 'p', 'd')):
           main_unit = next((u for u in units if u.unit_id == unit.unit_id[:-1] and u.type == unit.type), None)
         # If the unit ID ends in with its point value, check for other units with
         # similar same unit ID and if so, merge point values.

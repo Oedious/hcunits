@@ -1,0 +1,787 @@
+[
+  {
+    "unit_id": "ffoa001", 
+    "set_id": "ffoa", 
+    "collector_number": "001", 
+    "name": "Ant-Man", 
+    "type": "character", 
+    "rarity": "common", 
+    "real_name": "Hank Pym", 
+    "dimensions": "1x1", 
+    "point_values": [
+      75, 
+      50
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "avengers"
+    ], 
+    "keywords": [
+      "Avengers", 
+      "Scientist"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "AVENGERS FOUNDER", 
+        "description": "When adjacent to other friendly characters with this trait, Ant-Man can use Empower.", 
+        "powers": [
+          "empower"
+        ]
+      }, 
+      {
+        "type": "damage", 
+        "name": "I PACK A PUNCH", 
+        "description": "Ant-Man can activate Close Combat Expert as a close combat action. When he uses Close Combat Expert, he has \"starburst damage symbol\" until your next turn.", 
+        "powers": [
+          "close_combat_expert"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "4", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "tiny", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "stealth", 
+        "speed_value": 8, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 19, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "stealth", 
+        "speed_value": 8, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 18, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "charge", 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 18, 
+        "damage_power": "special", 
+        "damage_value": 2, 
+        "starting_line": true
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "charge", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "stealth", 
+        "speed_value": 6, 
+        "attack_power": "precision_strike", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "stealth", 
+        "speed_value": 6, 
+        "attack_power": "precision_strike", 
+        "attack_value": 8, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "perplex", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "ffoa002", 
+    "set_id": "ffoa", 
+    "collector_number": "002", 
+    "name": "Wasp", 
+    "type": "character", 
+    "rarity": "common", 
+    "real_name": "Janet Van Dyne", 
+    "dimensions": "1x1", 
+    "point_values": [
+      75, 
+      50
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "avengers"
+    ], 
+    "keywords": [
+      "Avengers", 
+      "Celebrity", 
+      "Lady Liberators"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "AVENGERS FOUNDER", 
+        "description": "When adjacent to other friendly characters with this trait, Wasp can use Empower.", 
+        "powers": [
+          "empower"
+        ]
+      }, 
+      {
+        "type": "attack", 
+        "name": "BIO-ELECTRIC BURSTS", 
+        "description": "Wasp can use Energy Explosion. When she does, the damage dealt to hit characters is penetrating damage if they have 2 action tokens.", 
+        "powers": [
+          "energy_explosion"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "6", 
+    "targets": "2", 
+    "speed_type": "wing", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "tiny", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "running_shot", 
+        "speed_value": 10, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_value": 19, 
+        "damage_power": "enhancement", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_value": 10, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 18, 
+        "damage_power": "enhancement", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "stealth", 
+        "speed_value": 9, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 17, 
+        "damage_power": "enhancement", 
+        "damage_value": 2, 
+        "starting_line": true
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "stealth", 
+        "speed_value": 9, 
+        "attack_power": "poison", 
+        "attack_value": 8, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "stealth", 
+        "speed_value": 8, 
+        "attack_power": "poison", 
+        "attack_value": 8, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "earthbound_neutralized", 
+        "speed_value": 8, 
+        "attack_value": 8, 
+        "defense_power": "super_senses", 
+        "defense_value": 16, 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "ffoa003", 
+    "set_id": "ffoa", 
+    "collector_number": "003", 
+    "name": "Iron Man", 
+    "type": "character", 
+    "rarity": "common", 
+    "real_name": "Tony Stark", 
+    "dimensions": "1x1", 
+    "point_values": [
+      150, 
+      100
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "avengers"
+    ], 
+    "keywords": [
+      "Armor", 
+      "Avengers", 
+      "Scientist", 
+      "Stark Industries"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "AVENGERS FOUNDER", 
+        "description": "When adjacent to other friendly characters with this trait, Iron Man can use Enhancement.", 
+        "powers": [
+          "enhancement"
+        ]
+      }, 
+      {
+        "type": "speed", 
+        "name": "JET SKATES", 
+        "description": "Iron Man can use Charge and Running Shot.", 
+        "powers": [
+          "charge", 
+          "running_shot"
+        ]
+      }, 
+      {
+        "type": "attack", 
+        "name": "MONOBEAM!", 
+        "description": "Iron Man can use Penetrating/Psychic Blast and when he does, he can use Improved Targeting: Hindering, Destroy Blocking.", 
+        "powers": [
+          "penetrating_psychic_blast"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "8", 
+    "targets": "1", 
+    "speed_type": "wing", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 10, 
+        "attack_power": "special", 
+        "attack_value": 11, 
+        "defense_power": "invincible", 
+        "defense_value": 18, 
+        "damage_power": "outwit", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "special", 
+        "speed_value": 10, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "invincible", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "special", 
+        "speed_value": 9, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 3, 
+        "starting_line": true
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "force_blast", 
+        "speed_value": 9, 
+        "attack_power": "pulse_wave", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "force_blast", 
+        "speed_value": 8, 
+        "attack_power": "pulse_wave", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 6, 
+        "speed_value": 8, 
+        "attack_power": "pulse_wave", 
+        "attack_value": 9, 
+        "defense_power": "regeneration", 
+        "defense_value": 16, 
+        "damage_power": "outwit", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 7, 
+        "speed_value": 7, 
+        "attack_power": "pulse_wave", 
+        "attack_value": 9, 
+        "defense_power": "regeneration", 
+        "defense_value": 16, 
+        "damage_power": "outwit", 
+        "damage_value": 3
+      }
+    ]
+  }, 
+  {
+    "unit_id": "ffoa004", 
+    "set_id": "ffoa", 
+    "collector_number": "004", 
+    "name": "Hulk", 
+    "type": "character", 
+    "rarity": "common", 
+    "real_name": "Bruce Banner", 
+    "dimensions": "1x1", 
+    "point_values": [
+      150, 
+      100
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "avengers"
+    ], 
+    "keywords": [
+      "Avengers", 
+      "Brute", 
+      "Defenders", 
+      "Monster"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "AVENGERS FOUNDER", 
+        "description": "When adjacent to other friendly characters with this trait, Hulk can use Empower.", 
+        "powers": [
+          "empower"
+        ]
+      }, 
+      {
+        "type": "speed", 
+        "name": "UNSTOPPABLE FURY", 
+        "description": "Hulk can use Flurry, Sidestep, and Improved Movement: Hindering, Destroy Blocking, Characters", 
+        "powers": [
+          "flurry", 
+          "sidestep"
+        ]
+      }, 
+      {
+        "type": "attack", 
+        "name": "HULK SMASH!", 
+        "description": "Hulk can use Super Strength. When he uses an object during an attack, he can choose to increase his attack value instead of his damage value by the same amount.", 
+        "powers": [
+          "super_strength"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "transport_boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 11, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "special", 
+        "speed_value": 10, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_value": 10, 
+        "attack_power": "quake", 
+        "attack_value": 11, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "charge", 
+        "speed_value": 10, 
+        "attack_power": "super_strength", 
+        "attack_value": 11, 
+        "defense_power": "invincible", 
+        "defense_value": 17, 
+        "damage_power": "battle_fury", 
+        "damage_value": 4, 
+        "starting_line": true
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 9, 
+        "attack_power": "super_strength", 
+        "attack_value": 12, 
+        "defense_power": "invincible", 
+        "defense_value": 18, 
+        "damage_power": "battle_fury", 
+        "damage_value": 5
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "leap_climb", 
+        "speed_value": 9, 
+        "attack_power": "quake", 
+        "attack_value": 12, 
+        "defense_power": "toughness", 
+        "defense_value": 18, 
+        "damage_power": "battle_fury", 
+        "damage_value": 5
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "leap_climb", 
+        "speed_value": 9, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 8, 
+        "speed_power": "leap_climb", 
+        "speed_value": 9, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_value": 3
+      }
+    ]
+  }, 
+  {
+    "unit_id": "ffoa005", 
+    "set_id": "ffoa", 
+    "collector_number": "005", 
+    "name": "Thor", 
+    "type": "character", 
+    "rarity": "common", 
+    "real_name": "Thor Odinson", 
+    "dimensions": "1x1", 
+    "point_values": [
+      150, 
+      100
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "avengers"
+    ], 
+    "keywords": [
+      "Asgardian", 
+      "Avengers", 
+      "Deity"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "AVENGERS FOUNDER", 
+        "description": "When adjacent to other friendly characters with this trait, Thor can use Enhancement.", 
+        "powers": [
+          "enhancement"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "8", 
+    "targets": "2", 
+    "speed_type": "wing", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "running_shot", 
+        "speed_value": 10, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 11, 
+        "defense_power": "impervious", 
+        "defense_value": 17, 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "running_shot", 
+        "speed_value": 10, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 11, 
+        "defense_power": "impervious", 
+        "defense_value": 17, 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "charge", 
+        "speed_value": 9, 
+        "attack_power": "super_strength", 
+        "attack_value": 11, 
+        "defense_power": "invulnerability", 
+        "defense_value": 18, 
+        "damage_value": 4, 
+        "starting_line": true
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "charge", 
+        "speed_value": 9, 
+        "attack_power": "super_strength", 
+        "attack_value": 11, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "flurry", 
+        "speed_value": 8, 
+        "attack_power": "super_strength", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "flurry", 
+        "speed_value": 8, 
+        "attack_power": "super_strength", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "flurry", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }
+    ]
+  }, 
+  {
+    "unit_id": "ffoa006", 
+    "set_id": "ffoa", 
+    "collector_number": "006", 
+    "name": "Captain America", 
+    "type": "character", 
+    "rarity": "common", 
+    "real_name": "Steve Rogers", 
+    "dimensions": "1x1", 
+    "point_values": [
+      100, 
+      50
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "avengers"
+    ], 
+    "keywords": [
+      "Avengers", 
+      "Invaders", 
+      "Soldier"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "AVENGERS FOUNDER", 
+        "description": "When adjacent to other friendly characters with this trait, Captain America can use Empower.", 
+        "powers": [
+          "empower"
+        ]
+      }, 
+      {
+        "type": "attack", 
+        "name": "SHIELD RICOCHET", 
+        "description": "Give Captain America a ranged combat action and his damage value is locked at his printed value until actions resolve. After the ranged combat attack resolves, he may make a second ranged combat attack as a free action."
+      }, 
+      {
+        "type": "damage", 
+        "name": "AVENGERS, ASSEMBLE", 
+        "description": "Give Captain America a power action and choose another friendly character that shares a keyword with him and doesn't have 2 action tokens. That character is immediately given a move action as a free action with their speed value halved for this action."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "6", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "running_shot", 
+        "speed_value": 10, 
+        "attack_power": "special", 
+        "attack_value": 11, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "running_shot", 
+        "speed_value": 9, 
+        "attack_power": "special", 
+        "attack_value": 11, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "charge", 
+        "speed_value": 10, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 2, 
+        "starting_line": true
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "charge", 
+        "speed_value": 9, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "flurry", 
+        "speed_value": 8, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "willpower", 
+        "defense_value": 17, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "flurry", 
+        "speed_value": 8, 
+        "attack_power": "precision_strike", 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 17, 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "ffoaAUID-100", 
+    "set_id": "ffoa", 
+    "collector_number": "AUID-100", 
+    "name": "Hank Pym", 
+    "type": "id_card", 
+    "rarity": "common", 
+    "point_values": [
+      5
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [], 
+    "special_powers": [
+      {
+        "type": "inspiration", 
+        "name": "Inspiration", 
+        "description": "Modify range value by +3 when using Outwit or Perplex. Modify defense value by +3 when attacked by an opposing character with the Robot keyword."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "dial": []
+  }
+]
