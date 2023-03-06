@@ -367,6 +367,14 @@ SET_MAP = {
       ("botmS100", "botmS106"),
     ],
   },
+  "ygo2": {
+    "name": "Yu-Gi-Oh! HeroClix: Series Two",
+    "ranges": [
+      # TODO: Add support for ygo2017-ygo2020
+      ("ygo2001", "ygo2016"),
+      ("ygo2100", "ygo2100"),
+    ],
+  },
 }
 
 POWERS = {

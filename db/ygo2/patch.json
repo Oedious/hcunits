@@ -1,0 +1,33 @@
+{
+  "updates": {
+    "ygo2008": {
+      "special_powers": [{
+        "description": "Thorn Princess can use Mind Control and Plasticity.  When Thorn Princess uses Mind Control, she can use Improved Targeting: Hindering."
+      }]
+    },
+    "ygo2012": {
+      "special_powers": [{
+        "powers": ["mastermind"]
+      }]
+    }
+  },
+  "additions": [{
+    "unit_id": "ygo2M001",
+    "set_id": "ygo2",
+    "collector_number": "M001",
+    "name": "Zeppelin",
+    "type": "map",
+    "special_powers": [{
+      "name": "Open Air",
+      "description": "Orange squares are Open Air squares. After actions resolve, if a character who can't use the Flight ability occupies an Open Aiir square, deal them 1 unavoidable damage, then that character's owner places them in their starting area. Non-held objects in Open Air squares are removed from the map."
+    }],
+    "map_url": "https://hcmaps.net/maps/ygo2/zeppelin.json"
+  }, {
+    "unit_id": "ygo2M002",
+    "set_id": "ygo2",
+    "collector_number": "M002",
+    "name": "Battlecity",
+    "type": "map",
+    "map_url": "https://hcmaps.net/maps/ygo2/battlecity.json"
+  }]
+}
