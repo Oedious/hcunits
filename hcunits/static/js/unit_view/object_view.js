@@ -35,6 +35,15 @@ class ObjectView extends SmallUnitView {
           </div>
         </div>`;
     }
+    if (this.unit_.object_type == "relic") {
+      var relicRoll;
+      if (this.unit_.relic_roll_min == 6) {
+        relicRoll = "6";
+      } else {
+        relicRoll = `${this.unit_.relic_roll_min}-6`;
+      }
+      html += `<div><b>Relic:</b> ${relicRoll}</div>`;
+    }
     return html;
   }
   

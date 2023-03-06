@@ -1,0 +1,878 @@
+[
+  {
+    "unit_id": "ffjltw001", 
+    "set_id": "ffjltw", 
+    "collector_number": "001", 
+    "name": "Ultraman", 
+    "type": "character", 
+    "rarity": "common", 
+    "real_name": "Kal-Il", 
+    "dimensions": "1x1", 
+    "point_values": [
+      250, 
+      150
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "crime_syndicate"
+    ], 
+    "keywords": [
+      "Brute", 
+      "Crime Syndicate", 
+      "Ruler"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "SYNDICATE RULES!", 
+        "description": "When Ultraman is part of a Crime Syndicate themed team, you may add one use of Themed Team Probability Control to your pool each time an opposing character uses Themed Team Probability Control."
+      }, 
+      {
+        "type": "defense", 
+        "name": "RULER OF HIS EARTH", 
+        "description": "Ultraman can use Impervious and Mastermind. When the result for Impervious is 4, reduce damage by 3 instead of 2.", 
+        "powers": [
+          "impervious", 
+          "mastermind"
+        ]
+      }, 
+      {
+        "type": "damage", 
+        "name": "SECRET KRYPTONITE RECHARGE", 
+        "description": "When this click is revealed due to taking damage from an attack, stop turning the dial. Give Ultraman a free action and destroy an unheld object within 4 squares. When you do, Ultraman can use Regeneration as a free action.", 
+        "powers": [
+          "regeneration"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [
+      "hindering"
+    ], 
+    "object_keyphrases": [], 
+    "unit_range": "7", 
+    "targets": "1", 
+    "speed_type": "wing", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "hypersonic_speed", 
+        "speed_value": 11, 
+        "attack_power": "precision_strike", 
+        "attack_value": 12, 
+        "defense_power": "special", 
+        "defense_value": 18, 
+        "damage_value": 5
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "hypersonic_speed", 
+        "speed_value": 11, 
+        "attack_value": 11, 
+        "defense_power": "invulnerability", 
+        "defense_value": 18, 
+        "damage_value": 5
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "charge", 
+        "speed_value": 10, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 18, 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "charge", 
+        "speed_value": 9, 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "hypersonic_speed", 
+        "speed_value": 9, 
+        "attack_power": "precision_strike", 
+        "attack_value": 11, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_value": 4, 
+        "starting_line": true
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "charge", 
+        "speed_value": 9, 
+        "attack_value": 11, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "sidestep", 
+        "speed_value": 9, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 8, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 9, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 10, 
+        "speed_power": "earthbound_neutralized", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "ffjltw002", 
+    "set_id": "ffjltw", 
+    "collector_number": "002", 
+    "name": "Owlman", 
+    "type": "character", 
+    "rarity": "common", 
+    "real_name": "Thomas Wayne, Jr.", 
+    "dimensions": "1x1", 
+    "point_values": [
+      150, 
+      100
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "crime_syndicate"
+    ], 
+    "keywords": [
+      "Crime Syndicate", 
+      "Gotham City Underworld"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "ALL MY FATHER'S MEN BELONG TO ME", 
+        "description": "Owlman can use Stealth. When building your force, friendly characters with the Gotham City or Police keyword also have the Gotham City Underworld keyword.", 
+        "powers": [
+          "stealth"
+        ]
+      }, 
+      {
+        "type": "speed", 
+        "name": "INTO THE SHADOWS", 
+        "description": "Owlman can use Charge. Before being given a non-free action, you may place Owlman in a square of hindering terrain within 4 squares and line of fire.", 
+        "powers": [
+          "charge"
+        ]
+      }, 
+      {
+        "type": "defense", 
+        "name": "ALL CRIME PROFITS ME IN THE END", 
+        "description": "Owlman can use Mastermind and Toughness. When he uses Mastermind, friendly characters within 4 squares and with the Gotham City Underworld keyword are considered adjacent.", 
+        "powers": [
+          "mastermind", 
+          "toughness"
+        ]
+      }, 
+      {
+        "type": "damage", 
+        "name": "SECRETLY, *I* RUN THE WORLD", 
+        "description": "Owlman can use Empower, Enhancement, and Outwit.", 
+        "powers": [
+          "empower", 
+          "enhancement", 
+          "outwit"
+        ]
+      }
+    ], 
+    "improved_movement": [
+      "elevated", 
+      "hindering"
+    ], 
+    "improved_targeting": [
+      "hindering"
+    ], 
+    "object_keyphrases": [], 
+    "unit_range": "5", 
+    "targets": "2", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 9, 
+        "attack_value": 11, 
+        "defense_power": "special", 
+        "defense_value": 18, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "special", 
+        "speed_value": 10, 
+        "attack_value": 11, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "sidestep", 
+        "speed_value": 9, 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "special", 
+        "speed_value": 10, 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 2, 
+        "starting_line": true
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "sidestep", 
+        "speed_value": 9, 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "flurry", 
+        "speed_value": 8, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 16, 
+        "damage_power": "outwit", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "flurry", 
+        "speed_value": 8, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 3
+      }
+    ]
+  }, 
+  {
+    "unit_id": "ffjltw003", 
+    "set_id": "ffjltw", 
+    "collector_number": "003", 
+    "name": "Superwoman", 
+    "type": "character", 
+    "rarity": "common", 
+    "real_name": "Lois Lane", 
+    "dimensions": "1x1", 
+    "point_values": [
+      150, 
+      100
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "crime_syndicate"
+    ], 
+    "keywords": [
+      "Amazon", 
+      "Crime Syndicate"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "CHOOSE YOUR LOYALTY: ULTRAMAN OR OWLMAN?", 
+        "description": "At the beginning of the game, choose Ultraman or Owlman. If you choose Ultraman, Superwoman and friendly characters named Ultraman can use Super Strength. If you choose Owlman, Superwoman can use Combat Reflexes and friendly characters named Owlman modify their defense values by +1, if not already modifies by this effect.", 
+        "powers": [
+          "super_strength", 
+          "combat_reflexes"
+        ]
+      }, 
+      {
+        "type": "attack", 
+        "name": "LASSO OF INHIBITIONS RELEASED", 
+        "description": "When Superwoman hits a character with a close combat attack, place an Unfettered Inhibitions token on that character's card if it doesn't have one already. Characters with an Unfettered Inhibitions token on their card can't ignore pushing damage and can't be targeted by a friendly character's Perplex. A character with an Unfettered Inhibition token on its card may be given a double power action to remove the token."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "wing", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 11, 
+        "attack_power": "special", 
+        "attack_value": 11, 
+        "defense_power": "invulnerability", 
+        "defense_value": 18, 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "charge", 
+        "speed_value": 10, 
+        "attack_power": "special", 
+        "attack_value": 11, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "flurry", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "charge", 
+        "speed_value": 9, 
+        "attack_power": "special", 
+        "attack_value": 11, 
+        "defense_power": "invulnerability", 
+        "defense_value": 18, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 3, 
+        "starting_line": true
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "flurry", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "flurry", 
+        "speed_value": 7, 
+        "attack_power": "quake", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 7, 
+        "speed_value": 7, 
+        "attack_power": "quake", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 8, 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "regeneration", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "ffjltw004", 
+    "set_id": "ffjltw", 
+    "collector_number": "004", 
+    "name": "Power Ring", 
+    "type": "character", 
+    "rarity": "common", 
+    "real_name": "Hal Jordan", 
+    "dimensions": "1x1", 
+    "point_values": [
+      100
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "crime_syndicate"
+    ], 
+    "keywords": [
+      "Crime Syndicate"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "BULLY AND COWARD COMBINED... LOVELY", 
+        "description": "When Power Ring attacks a figure with a lower point value, modify his attack and damage values by +1. When Power Ring attacks a character with a higher point value, modify his attack and damage values by -1."
+      }, 
+      {
+        "type": "speed", 
+        "name": "ATTACK FROM A POSITION OF SAFETY", 
+        "description": "Power Ring can use Running Shot and Stealth.", 
+        "powers": [
+          "running_shot", 
+          "stealth"
+        ]
+      }, 
+      {
+        "type": "attack", 
+        "name": "THE WILL OF VOLTHOOM", 
+        "description": "Power Ring can use Energy Explosion. When Power Ring hits more than one target with a ranged combat attack but chooses to deal all damage to one character, give other hit targets an action token.", 
+        "powers": [
+          "energy_explosion"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "7", 
+    "targets": "2", 
+    "speed_type": "wing", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 10, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "special", 
+        "speed_value": 9, 
+        "attack_power": "special", 
+        "attack_value": 11, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "special", 
+        "speed_value": 9, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_power": "pulse_wave", 
+        "attack_value": 9, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 17, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_power": "pulse_wave", 
+        "attack_value": 10, 
+        "defense_power": "barrier", 
+        "defense_value": 17, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "earthbound_neutralized", 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_power": "barrier", 
+        "defense_value": 17, 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "ffjltw005", 
+    "set_id": "ffjltw", 
+    "collector_number": "005", 
+    "name": "Johnny Quick", 
+    "type": "character", 
+    "rarity": "common", 
+    "real_name": "Jonathan Allen", 
+    "dimensions": "1x1", 
+    "point_values": [
+      100
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "crime_syndicate"
+    ], 
+    "keywords": [
+      "Crime Syndicate", 
+      "Speedster"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "MAINLINING THE JUICE", 
+        "description": "When Johnny Quick has no action tokens, he can use Hypersonic Speed.  When Johnny Quick has 1 action token, he can use Charge.  When Johnny Quick has 2 action tokens, he can use Sidestep.", 
+        "powers": [
+          "hypersonic_speed", 
+          "charge", 
+          "sidestep"
+        ]
+      }, 
+      {
+        "type": "defense", 
+        "name": "THE JUICE IS LOOSE", 
+        "description": "Johnny Quick can use Super Senses and Willpower.  When Johnny Quick is given a second action token and actions resolve, you may roll a d6 that can't be rerolled.  On a result of 1, deal him 1 unavoidable damage.  On a result of 5-6, remove an action token from him.", 
+        "powers": [
+          "super_senses", 
+          "willpower"
+        ]
+      }
+    ], 
+    "improved_movement": [
+      "elevated"
+    ], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "plasticity", 
+        "speed_value": 12, 
+        "attack_value": 11, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_power": "shape_change", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "flurry", 
+        "speed_value": 11, 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_power": "shape_change", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "plasticity", 
+        "speed_value": 11, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "flurry", 
+        "speed_value": 11, 
+        "attack_power": "precision_strike", 
+        "attack_value": 9, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "plasticity", 
+        "speed_value": 10, 
+        "attack_value": 9, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "flurry", 
+        "speed_value": 11, 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "ffjltw006", 
+    "set_id": "ffjltw", 
+    "collector_number": "006", 
+    "name": "Deathstorm", 
+    "type": "character", 
+    "rarity": "common", 
+    "real_name": "Martin Stein", 
+    "dimensions": "1x1", 
+    "point_values": [
+      125
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "crime_syndicate"
+    ], 
+    "keywords": [
+      "Crime Syndicate", 
+      "Scientist"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "MATTER SEPARATION", 
+        "description": "Give Deathstorm a double power action to remove one assigned relic or resource attachment from an opposing character with range and line of fire and place it in that character's square. The placed game effect follows all game rules as if it were a relic."
+      }, 
+      {
+        "type": "attack", 
+        "name": "DESTROYING CENTRAL CITY", 
+        "description": "Deathstorm can use Energy Explosion and Precision Strike.", 
+        "powers": [
+          "energy_explosion", 
+          "precision_strike"
+        ]
+      }, 
+      {
+        "type": "damage", 
+        "name": "OWLMAN ISN'T THE ONLY SMART GUY IN THE CSA", 
+        "description": "Deathstorm can use Perplex. When Deathstorm doesn't have 2 action tokens, give him a free action and remove up to 4 hindering or blocking terrain markers within range and line of fire.", 
+        "powers": [
+          "perplex"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "7", 
+    "targets": "2", 
+    "speed_type": "wing", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "running_shot", 
+        "speed_value": 11, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 10, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "running_shot", 
+        "speed_value": 10, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 11, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "running_shot", 
+        "speed_value": 9, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "sidestep", 
+        "speed_value": 10, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "sidestep", 
+        "speed_value": 9, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 6, 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "regeneration", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 7, 
+        "speed_value": 8, 
+        "attack_value": 9, 
+        "defense_power": "regeneration", 
+        "defense_value": 18, 
+        "damage_power": "outwit", 
+        "damage_value": 3
+      }
+    ]
+  }, 
+  {
+    "unit_id": "ffjltw007", 
+    "set_id": "ffjltw", 
+    "collector_number": "007", 
+    "name": "Atomica", 
+    "type": "character", 
+    "rarity": "common", 
+    "real_name": "Rhonda Pineda", 
+    "dimensions": "1x1", 
+    "point_values": [
+      25
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "crime_syndicate"
+    ], 
+    "keywords": [
+      "A.R.G.U.S.", 
+      "Crime Syndicate", 
+      "Justice League", 
+      "Justice League of America", 
+      "Spy"
+    ], 
+    "special_powers": [
+      {
+        "type": "defense", 
+        "name": "TRAITOR TO ALL BUT MY HOMIES", 
+        "description": "When Atomica isn't part of a Crime Syndicate themed team, each time you use Themed Team Probability Control each opponent adds one use of Themed Team Probability Control to their pool if they have a named themed team and haven't already added one this turn from this effect."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "3", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "tiny", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "plasticity", 
+        "speed_value": 6, 
+        "attack_power": "precision_strike", 
+        "attack_value": 9, 
+        "defense_power": "special", 
+        "defense_value": 19, 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "plasticity", 
+        "speed_value": 6, 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 18, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "plasticity", 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_value": 1
+      }
+    ]
+  }
+]

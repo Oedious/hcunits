@@ -174,6 +174,13 @@ const TEAM_ABILITY_LIST = {
     "copyable": false,
     "wildcard": true
   },
+  "crime_syndicate": {
+    "name": "Crime Syndicate",
+    "universe": "dc",
+    "description": "Characters using the Crime Syndicate team ability can use Probability Control. When a roll is ignored because of this team ability an action token must be placed on a friendly character on the battlefield or the roll is not ignored. Uncopyable.",
+    "copyable": false,
+    "wildcard": false,
+  },
   "green_lantern_corps": {
     "name": "Green Lantern Corps",
     "universe": "dc",

@@ -347,6 +347,17 @@ SET_MAP = {
   "aaou": {
     "name": "Avengers: Age of Ultron",
   },
+  "jltw": {
+    "name": "Justice League Trinity War",
+    "ranges": [
+      # TODO: Add support for jltwR101 and jltwR102
+      ("jltw001", "jltw210"),
+      ("jltwS101", "jltwS107"),
+    ],
+  },
+  "ffjltw": {
+    "name": "Fast Forces: The Crime Syndicate",
+  },
 }
 
 POWERS = {
@@ -504,6 +515,7 @@ IMPROVED_ABILITIES = {
       "this character can move through squares adjacent to or occupied by opposing characters without stopping, and automatically breaks away, even if adjacent to a character than can use plasticity": "move_through",
       "this character can move through squares adjacent to or occupied by opposing characters without stopping, and automatically breaks away, even if adjacent to a character that can use plasticity": "move_through",
       "water": "water",
+      "ignores water terrain": "water",
     },
   },
   "targeting": {
@@ -546,7 +558,7 @@ IMPROVED_TARGETING_VALUES = [
 ]
 
 OBJECT_TYPE_VALUES = [
-  'standard', 'special', 'equipment', 'plastic_man'
+  'standard', 'special', 'equipment', 'plastic_man', 'relic'
 ]
 
 OBJECT_SIZE_VALUES = [
@@ -655,6 +667,7 @@ class Unit:
     self.object_type = kwargs.get("object_type", None)
     self.object_size = kwargs.get("object_size", None)
     self.bystander_type = kwargs.get("bystander_type", None)
+    self.relic_roll_min = kwargs.get("relic_roll_min", 0)
     self.map_url = kwargs.get("map_url", None)
     self.unit_range = kwargs.get("unit_range", -1)
     self.targets = kwargs.get("targets", -1)
@@ -914,6 +927,14 @@ class Unit:
             self.object_type = "special"
           elif part == "Disguised Plastic Man Special Object":
             self.object_type = "plastic_man"
+          elif part.startswith("Relic:"):
+            self.object_type = "relic"
+            self.object_size = "immobile"
+            match_obj = re.search(r"Relic: (\d)-6", part)
+            if match_obj:
+              self.relic_roll_min = int(match_obj.group(1))
+            else:
+              print("Warning: for unit '%s', could not find relic_roll_min" % (self.unit_id))
           elif part.upper == "INDESTRUCTIBLE":
             self.object_keyphrases.append("indestructible")
           elif not description:
@@ -1116,7 +1137,7 @@ class Unit:
       tag_list = soup.find_all(text=re.compile(r'\s*Special Powers\s*'))
       if len(tag_list) > 0 and tag_list[0].parent.parent.parent.parent.tbody:
         sp_tag = tag_list[0]
-        for tr_tag in sp_tag.parent.parent.parent.parent.tbody.select('tr'):
+        for tr_tag in sp_tag.parent.parent.parent.parent.tbody.find_all('tr', recursive=False):
           td_tags = tr_tag.select('td')
           match_obj = re.search(r"/images/sp-(.+)\.[a-z]{3}", td_tags[0].img['src'])
           sp_type_str = match_obj.group(1)
@@ -1158,6 +1179,9 @@ class Unit:
           else:
             sp_name = None
             sp_description = td_tags[1].string.strip()
+
+          if td_tags[1].table:
+            print("Warning: for unit '%s', special power has an embedded table that is ignored" % (self.unit_id))
 
           # Correct epic action types
           if sp_type == "epic":
@@ -1711,6 +1735,9 @@ class Unit:
       for ok in self.object_keyphrases:
         if not ok in OBJECT_KEYPHRASE_VALUES:
           print("Warning: for unit '%s' with type 'object' - invalid object_keyphrase '%s'" % (self.unit_id, ok))
+      if self.object_type == "relic":
+        if self.relic_roll_min <= 0 or self.relic_roll_min > 6:
+          print("Warning: for unit '%s' with object_type 'relic' - invalid relic_roll_min '%i'" % (self.unit_id, self.relic_roll_min))
 
     # Sanity-check bystander types.
     if self.type == "bystander":
@@ -1795,6 +1822,8 @@ class Unit:
     xml += "\n    <object_keyphrases>%s</object_keyphrases>" % json.dumps(self.object_keyphrases)
     if self.bystander_type:
       xml += "\n    <bystander_type>%s</bystander_type>" % self.bystander_type
+    if self.relic_roll_min:
+      xml += "\n    <relic_roll_min>%s</relic_roll_min>" % self.relic_roll_min
     if self.map_url:
       xml += "\n    <map_url>%s</map_url>" % self.map_url
     if self.passengers >= 0:

@@ -499,6 +499,16 @@ const SET_LIST = {
     "release_date": "2015-04-01",
     "universe": "marvel"
   },
+  "jltw": {
+    "name": "Justice League Trinity War",
+    "release_date": "2015-02-25",
+    "universe": "dc"
+  },
+  "ffjltw": {
+    "name": "Fast Forces: Justice League Trinity War",
+    "release_date": "2015-02-25",
+    "universe": "dc"
+  },
   "wk": {
     "name": "WizKids Standard Game Pieces",
     "release_date": "2002-05-01",

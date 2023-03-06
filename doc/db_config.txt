@@ -93,6 +93,9 @@ CREATE TABLE units (
   -- The type or specialization of an bystander.
   bystander_type ENUM('standard', 'construct'),
   
+  -- The minimum roll necessary to equip the relic.
+  relic_roll_min TINYINT,
+
   -- For 'map' types, the path to the URL containing the map layout.
   map_url TEXT(256),
   
@@ -625,6 +628,11 @@ LOAD XML LOCAL INFILE 'ygo3/ygo3.xml'
   ROWS IDENTIFIED BY '<row>';
 
 LOAD XML LOCAL INFILE 'avas/avas.xml'
+  REPLACE
+  INTO TABLE units
+  ROWS IDENTIFIED BY '<row>';
+
+LOAD XML LOCAL INFILE 'aaou/aaou.xml'
   REPLACE
   INTO TABLE units
   ROWS IDENTIFIED BY '<row>';

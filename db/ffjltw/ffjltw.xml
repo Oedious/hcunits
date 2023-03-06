@@ -1,0 +1,814 @@
+<resultset>
+  <row>
+    <unit_id>ffjltw001</unit_id>
+    <set_id>ffjltw</set_id>
+    <collector_number>001</collector_number>
+    <name>Ultraman</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <real_name>Kal-Il</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[250, 150]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["crime_syndicate"]</team_abilities>
+    <keywords>["Brute", "Crime Syndicate", "Ruler"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "SYNDICATE RULES!", 
+    "description": "When Ultraman is part of a Crime Syndicate themed team, you may add one use of Themed Team Probability Control to your pool each time an opposing character uses Themed Team Probability Control."
+  }, 
+  {
+    "type": "defense", 
+    "name": "RULER OF HIS EARTH", 
+    "description": "Ultraman can use Impervious and Mastermind. When the result for Impervious is 4, reduce damage by 3 instead of 2.", 
+    "powers": [
+      "impervious", 
+      "mastermind"
+    ]
+  }, 
+  {
+    "type": "damage", 
+    "name": "SECRET KRYPTONITE RECHARGE", 
+    "description": "When this click is revealed due to taking damage from an attack, stop turning the dial. Give Ultraman a free action and destroy an unheld object within 4 squares. When you do, Ultraman can use Regeneration as a free action.", 
+    "powers": [
+      "regeneration"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>["hindering"]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>7</unit_range>
+    <targets>1</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "hypersonic_speed", 
+    "speed_value": 11, 
+    "attack_power": "precision_strike", 
+    "attack_value": 12, 
+    "defense_power": "special", 
+    "defense_value": 18, 
+    "damage_value": 5
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "hypersonic_speed", 
+    "speed_value": 11, 
+    "attack_value": 11, 
+    "defense_power": "invulnerability", 
+    "defense_value": 18, 
+    "damage_value": 5
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "charge", 
+    "speed_value": 10, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 18, 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "charge", 
+    "speed_value": 9, 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "hypersonic_speed", 
+    "speed_value": 9, 
+    "attack_power": "precision_strike", 
+    "attack_value": 11, 
+    "defense_power": "special", 
+    "defense_value": 17, 
+    "damage_value": 4, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "charge", 
+    "speed_value": 9, 
+    "attack_value": 11, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "sidestep", 
+    "speed_value": 9, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 8, 
+    "speed_power": "charge", 
+    "speed_value": 8, 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 9, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_value": 9, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 10, 
+    "speed_power": "earthbound_neutralized", 
+    "speed_value": 7, 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ffjltw002</unit_id>
+    <set_id>ffjltw</set_id>
+    <collector_number>002</collector_number>
+    <name>Owlman</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <real_name>Thomas Wayne, Jr.</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[150, 100]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["crime_syndicate"]</team_abilities>
+    <keywords>["Crime Syndicate", "Gotham City Underworld"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "ALL MY FATHER'S MEN BELONG TO ME", 
+    "description": "Owlman can use Stealth. When building your force, friendly characters with the Gotham City or Police keyword also have the Gotham City Underworld keyword.", 
+    "powers": [
+      "stealth"
+    ]
+  }, 
+  {
+    "type": "speed", 
+    "name": "INTO THE SHADOWS", 
+    "description": "Owlman can use Charge. Before being given a non-free action, you may place Owlman in a square of hindering terrain within 4 squares and line of fire.", 
+    "powers": [
+      "charge"
+    ]
+  }, 
+  {
+    "type": "defense", 
+    "name": "ALL CRIME PROFITS ME IN THE END", 
+    "description": "Owlman can use Mastermind and Toughness. When he uses Mastermind, friendly characters within 4 squares and with the Gotham City Underworld keyword are considered adjacent.", 
+    "powers": [
+      "mastermind", 
+      "toughness"
+    ]
+  }, 
+  {
+    "type": "damage", 
+    "name": "SECRETLY, *I* RUN THE WORLD", 
+    "description": "Owlman can use Empower, Enhancement, and Outwit.", 
+    "powers": [
+      "empower", 
+      "enhancement", 
+      "outwit"
+    ]
+  }
+]</special_powers>
+    <improved_movement>["elevated", "hindering"]</improved_movement>
+    <improved_targeting>["hindering"]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>5</unit_range>
+    <targets>2</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "special", 
+    "speed_value": 9, 
+    "attack_value": 11, 
+    "defense_power": "special", 
+    "defense_value": 18, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "special", 
+    "speed_value": 10, 
+    "attack_value": 11, 
+    "defense_power": "special", 
+    "defense_value": 17, 
+    "damage_power": "outwit", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "sidestep", 
+    "speed_value": 9, 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 17, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "special", 
+    "speed_value": 10, 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 2, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "sidestep", 
+    "speed_value": 9, 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "flurry", 
+    "speed_value": 8, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 16, 
+    "damage_power": "outwit", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "flurry", 
+    "speed_value": 8, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 3
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ffjltw003</unit_id>
+    <set_id>ffjltw</set_id>
+    <collector_number>003</collector_number>
+    <name>Superwoman</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <real_name>Lois Lane</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[150, 100]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["crime_syndicate"]</team_abilities>
+    <keywords>["Amazon", "Crime Syndicate"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "CHOOSE YOUR LOYALTY: ULTRAMAN OR OWLMAN?", 
+    "description": "At the beginning of the game, choose Ultraman or Owlman. If you choose Ultraman, Superwoman and friendly characters named Ultraman can use Super Strength. If you choose Owlman, Superwoman can use Combat Reflexes and friendly characters named Owlman modify their defense values by +1, if not already modifies by this effect.", 
+    "powers": [
+      "super_strength", 
+      "combat_reflexes"
+    ]
+  }, 
+  {
+    "type": "attack", 
+    "name": "LASSO OF INHIBITIONS RELEASED", 
+    "description": "When Superwoman hits a character with a close combat attack, place an Unfettered Inhibitions token on that character's card if it doesn't have one already. Characters with an Unfettered Inhibitions token on their card can't ignore pushing damage and can't be targeted by a friendly character's Perplex. A character with an Unfettered Inhibition token on its card may be given a double power action to remove the token."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "charge", 
+    "speed_value": 11, 
+    "attack_power": "special", 
+    "attack_value": 11, 
+    "defense_power": "invulnerability", 
+    "defense_value": 18, 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "charge", 
+    "speed_value": 10, 
+    "attack_power": "special", 
+    "attack_value": 11, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "flurry", 
+    "speed_value": 8, 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "charge", 
+    "speed_value": 9, 
+    "attack_power": "special", 
+    "attack_value": 11, 
+    "defense_power": "invulnerability", 
+    "defense_value": 18, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 3, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "flurry", 
+    "speed_value": 7, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "flurry", 
+    "speed_value": 7, 
+    "attack_power": "quake", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 7, 
+    "speed_value": 7, 
+    "attack_power": "quake", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 8, 
+    "speed_value": 7, 
+    "attack_value": 9, 
+    "defense_power": "regeneration", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ffjltw004</unit_id>
+    <set_id>ffjltw</set_id>
+    <collector_number>004</collector_number>
+    <name>Power Ring</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <real_name>Hal Jordan</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[100]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["crime_syndicate"]</team_abilities>
+    <keywords>["Crime Syndicate"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "BULLY AND COWARD COMBINED... LOVELY", 
+    "description": "When Power Ring attacks a figure with a lower point value, modify his attack and damage values by +1. When Power Ring attacks a character with a higher point value, modify his attack and damage values by -1."
+  }, 
+  {
+    "type": "speed", 
+    "name": "ATTACK FROM A POSITION OF SAFETY", 
+    "description": "Power Ring can use Running Shot and Stealth.", 
+    "powers": [
+      "running_shot", 
+      "stealth"
+    ]
+  }, 
+  {
+    "type": "attack", 
+    "name": "THE WILL OF VOLTHOOM", 
+    "description": "Power Ring can use Energy Explosion. When Power Ring hits more than one target with a ranged combat attack but chooses to deal all damage to one character, give other hit targets an action token.", 
+    "powers": [
+      "energy_explosion"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>7</unit_range>
+    <targets>2</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "special", 
+    "speed_value": 10, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "special", 
+    "speed_value": 9, 
+    "attack_power": "special", 
+    "attack_value": 11, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "special", 
+    "speed_value": 9, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 9, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 17, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 10, 
+    "defense_power": "barrier", 
+    "defense_value": 17, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "earthbound_neutralized", 
+    "speed_value": 7, 
+    "attack_value": 10, 
+    "defense_power": "barrier", 
+    "defense_value": 17, 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ffjltw005</unit_id>
+    <set_id>ffjltw</set_id>
+    <collector_number>005</collector_number>
+    <name>Johnny Quick</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <real_name>Jonathan Allen</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[100]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["crime_syndicate"]</team_abilities>
+    <keywords>["Crime Syndicate", "Speedster"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "MAINLINING THE JUICE", 
+    "description": "When Johnny Quick has no action tokens, he can use Hypersonic Speed.  When Johnny Quick has 1 action token, he can use Charge.  When Johnny Quick has 2 action tokens, he can use Sidestep.", 
+    "powers": [
+      "hypersonic_speed", 
+      "charge", 
+      "sidestep"
+    ]
+  }, 
+  {
+    "type": "defense", 
+    "name": "THE JUICE IS LOOSE", 
+    "description": "Johnny Quick can use Super Senses and Willpower.  When Johnny Quick is given a second action token and actions resolve, you may roll a d6 that can't be rerolled.  On a result of 1, deal him 1 unavoidable damage.  On a result of 5-6, remove an action token from him.", 
+    "powers": [
+      "super_senses", 
+      "willpower"
+    ]
+  }
+]</special_powers>
+    <improved_movement>["elevated"]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "plasticity", 
+    "speed_value": 12, 
+    "attack_value": 11, 
+    "defense_power": "special", 
+    "defense_value": 17, 
+    "damage_power": "shape_change", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "flurry", 
+    "speed_value": 11, 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 17, 
+    "damage_power": "shape_change", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "plasticity", 
+    "speed_value": 11, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "flurry", 
+    "speed_value": 11, 
+    "attack_power": "precision_strike", 
+    "attack_value": 9, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "plasticity", 
+    "speed_value": 10, 
+    "attack_value": 9, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "flurry", 
+    "speed_value": 11, 
+    "attack_value": 9, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 17, 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ffjltw006</unit_id>
+    <set_id>ffjltw</set_id>
+    <collector_number>006</collector_number>
+    <name>Deathstorm</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <real_name>Martin Stein</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[125]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["crime_syndicate"]</team_abilities>
+    <keywords>["Crime Syndicate", "Scientist"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "MATTER SEPARATION", 
+    "description": "Give Deathstorm a double power action to remove one assigned relic or resource attachment from an opposing character with range and line of fire and place it in that character's square. The placed game effect follows all game rules as if it were a relic."
+  }, 
+  {
+    "type": "attack", 
+    "name": "DESTROYING CENTRAL CITY", 
+    "description": "Deathstorm can use Energy Explosion and Precision Strike.", 
+    "powers": [
+      "energy_explosion", 
+      "precision_strike"
+    ]
+  }, 
+  {
+    "type": "damage", 
+    "name": "OWLMAN ISN'T THE ONLY SMART GUY IN THE CSA", 
+    "description": "Deathstorm can use Perplex. When Deathstorm doesn't have 2 action tokens, give him a free action and remove up to 4 hindering or blocking terrain markers within range and line of fire.", 
+    "powers": [
+      "perplex"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>7</unit_range>
+    <targets>2</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "running_shot", 
+    "speed_value": 11, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 10, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "running_shot", 
+    "speed_value": 10, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 11, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "running_shot", 
+    "speed_value": 9, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "sidestep", 
+    "speed_value": 10, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "sidestep", 
+    "speed_value": 9, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 6, 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "regeneration", 
+    "defense_value": 17, 
+    "damage_power": "outwit", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 7, 
+    "speed_value": 8, 
+    "attack_value": 9, 
+    "defense_power": "regeneration", 
+    "defense_value": 18, 
+    "damage_power": "outwit", 
+    "damage_value": 3
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ffjltw007</unit_id>
+    <set_id>ffjltw</set_id>
+    <collector_number>007</collector_number>
+    <name>Atomica</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <real_name>Rhonda Pineda</real_name>
+    <dimensions>1x1</dimensions>
+    <point_values>[25]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["crime_syndicate"]</team_abilities>
+    <keywords>["A.R.G.U.S.", "Crime Syndicate", "Justice League", "Justice League of America", "Spy"]</keywords>
+    <special_powers>[
+  {
+    "type": "defense", 
+    "name": "TRAITOR TO ALL BUT MY HOMIES", 
+    "description": "When Atomica isn't part of a Crime Syndicate themed team, each time you use Themed Team Probability Control each opponent adds one use of Themed Team Probability Control to their pool if they have a named themed team and haven't already added one this turn from this effect."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>3</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>tiny</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "plasticity", 
+    "speed_value": 6, 
+    "attack_power": "precision_strike", 
+    "attack_value": 9, 
+    "defense_power": "special", 
+    "defense_value": 19, 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "plasticity", 
+    "speed_value": 6, 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 18, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "plasticity", 
+    "speed_value": 6, 
+    "attack_value": 9, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_value": 1
+  }
+]</dial>
+  </row>
+</resultset>
