@@ -358,6 +358,15 @@ SET_MAP = {
   "ffjltw": {
     "name": "Fast Forces: The Crime Syndicate",
   },
+  "botm": {
+    "name": "Yu-Gi-Oh! HeroClix: Battle of the Millennium",
+    "ranges": [
+      # TODO: Add support for botm006, R100
+      ("botm001", "botm005"),
+      ("botm007", "botmB005"),
+      ("botmS100", "botmS106"),
+    ],
+  },
 }
 
 POWERS = {

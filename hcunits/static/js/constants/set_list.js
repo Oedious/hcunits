@@ -509,6 +509,11 @@ const SET_LIST = {
     "release_date": "2015-02-25",
     "universe": "dc"
   },
+  "botm": {
+    "name": "Yu-Gi-Oh! Battle of the Millennium",
+    "release_date": "2015-02-01",
+    "universe": "indy"
+  },
   "wk": {
     "name": "WizKids Standard Game Pieces",
     "release_date": "2002-05-01",
