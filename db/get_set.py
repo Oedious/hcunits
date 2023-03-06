@@ -344,6 +344,9 @@ SET_MAP = {
       ("avasAVID-001", "avasS100"),
     ],
   },
+  "aaou": {
+    "name": "Avengers: Age of Ultron",
+  },
 }
 
 POWERS = {

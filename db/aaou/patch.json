@@ -1,0 +1,81 @@
+{
+  "updates": {
+    "aaou002": {
+      "dial": [{
+      }, {
+      }, {
+      }, {
+      }, {
+        "starting_line": "blue"
+      }, {
+      }, {
+        "starting_line": "yellow"
+      }]
+    },
+    "aaou004": {
+      "dial": [{
+      }, {
+      }, {
+      }, {
+        "starting_line": "blue"
+      }, {
+      }, {
+      }, {
+        "starting_line": "yellow"
+      }]
+    },
+    "aaou005": {
+      "special_powers": [{
+      }, {
+        "powers": ["energy_shield_deflection"]
+      }]
+    },
+    "aaou006": {
+      "special_powers": [{
+        "powers": ["charge"]
+      }]
+    },
+    "aaou009": {
+      "special_powers": [{
+        "description": "Hawkeye can use Sidestep and Stealth. When he uses Sidestep, he can use Improved Movement: Elevated."
+      }]
+    },
+    "aaou0015": {
+      "special_powers": [{
+        "powers": ["leadership"]
+      }]
+    },
+    "aaou104": {
+      "special_powers": [{
+      }, {
+      }, {
+        "description": "Hulk can use Impervious and Improved Movement: Destroy Blocking.  After rolling for Impervious, remove a Rage token for each click of damage that Hulk would take. If Hulk takes more damage than the number of Rage tokens on this card, he is KO'd. This power can't be countered or ignored."
+      }]
+    },
+    "aaou106": {
+      "special_powers": [{
+      }, {
+        "description": "Hawkeye can use Energy Explosion and Improved Targeting: Destroy Blocking."
+      }]
+    }
+  },
+  "additions": [{
+    "unit_id": "aaouM001",
+    "set_id": "aaou",
+    "collector_number": "M001",
+    "name": "Strucker's Fortress",
+    "type": "map",
+    "map_url": "https://hcmaps.net/maps/aaou/struckers_fortress.json"
+  }, {
+    "unit_id": "aaouM002",
+    "set_id": "aaou",
+    "collector_number": "M002",
+    "name": "Avengers Tower",
+    "type": "map",
+    "special_powers": [{
+      "name": "Open Air Terrain",
+      "description": "If a character that can’t use Leap/Climb, Phasing/Teleport, Flight or Great Size occupies Open Air Terrain after actions resolve, deal that character 1 unavoidable damage and then the character’s controller places the character in their starting area."
+    }],
+    "map_url": "https://hcmaps.net/maps/aaou/avengers_tower.json"
+  }]
+}

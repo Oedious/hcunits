@@ -1,0 +1,2893 @@
+[
+  {
+    "unit_id": "aaou001", 
+    "set_id": "aaou", 
+    "collector_number": "001", 
+    "name": "Iron Man", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      250, 
+      185
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "avengers_initiative"
+    ], 
+    "keywords": [
+      "Armor", 
+      "Avengers", 
+      "Stark Industries"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "AVENGERS ASSEMBLE!", 
+        "description": "When Iron Man hits one or more characters with an attack and actions resolve, the opposing player chooses: You place a friendly AAOU #002 Iron Legion from outside the game into your starting area or, modify the defense value of your friendly characters by +1 until your next turn."
+      }, 
+      {
+        "type": "trait", 
+        "name": "THE HOUSE PARTY PROTOCOL, SIR?", 
+        "description": "Give Iron Man a power action if there are less than 4 friendly undefeated characters named Iron Legion. If you do, place a AAOU #002 Iron Legion in your starting area from outside the game."
+      }, 
+      {
+        "type": "attack", 
+        "name": "THE CLEAN SLATE PROTOCOL", 
+        "description": "Give Iron Man a free action and choose a friendly character named Iron Legion with one or less action tokens. If an opposing character is within 3 squares of the chosen character, after actions resolve the chosen character may immediately use Pulse Wave as a free action with a locked damage value of 2. After actions resolve, KO the chosen figure."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "7", 
+    "targets": "1", 
+    "speed_type": "transport_wing", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "running_shot", 
+        "speed_value": 12, 
+        "attack_power": "precision_strike", 
+        "attack_value": 12, 
+        "defense_power": "invincible", 
+        "defense_value": 18, 
+        "damage_power": "outwit", 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "running_shot", 
+        "speed_value": 11, 
+        "attack_value": 11, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "running_shot", 
+        "speed_value": 10, 
+        "attack_value": 10, 
+        "defense_power": "invincible", 
+        "defense_value": 18, 
+        "damage_power": "perplex", 
+        "damage_value": 4, 
+        "starting_line": true
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "force_blast", 
+        "speed_value": 11, 
+        "attack_power": "precision_strike", 
+        "attack_value": 11, 
+        "defense_power": "invulnerability", 
+        "defense_value": 16, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "force_blast", 
+        "speed_value": 10, 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "force_blast", 
+        "speed_value": 9, 
+        "attack_value": 9, 
+        "defense_power": "invincible", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "sidestep", 
+        "speed_value": 9, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "regeneration", 
+        "defense_value": 18, 
+        "damage_power": "outwit", 
+        "damage_value": 4
+      }
+    ]
+  }, 
+  {
+    "unit_id": "aaou002", 
+    "set_id": "aaou", 
+    "collector_number": "002", 
+    "name": "Iron Legion", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      50
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Armor", 
+      "Stark Industries"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "AVAILABLE BACKUP", 
+        "description": "When Iron Legion is placed in your starting area from outside the game, roll a d6. On a result of 1-3, click it to its blue starting line. On a result of 4-6, click it to its yellow starting line."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "5", 
+    "targets": "1", 
+    "speed_type": "wing", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "enhancement", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "enhancement", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_power": "super_strength", 
+        "attack_value": 9, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 16, 
+        "damage_power": "enhancement", 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "running_shot", 
+        "speed_value": 7, 
+        "attack_power": "super_strength", 
+        "attack_value": 9, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 16, 
+        "damage_power": "enhancement", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "super_strength", 
+        "attack_value": 9, 
+        "defense_value": 16, 
+        "damage_power": "empower", 
+        "damage_value": 3, 
+        "starting_line": "blue"
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "super_strength", 
+        "attack_value": 9, 
+        "defense_value": 16, 
+        "damage_power": "empower", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 9, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 9, 
+        "defense_value": 16, 
+        "damage_power": "enhancement", 
+        "damage_value": 3, 
+        "starting_line": "yellow"
+      }, 
+      {
+        "click_number": 10, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 9, 
+        "defense_value": 16, 
+        "damage_power": "enhancement", 
+        "damage_value": 3
+      }
+    ]
+  }, 
+  {
+    "unit_id": "aaou003", 
+    "set_id": "aaou", 
+    "collector_number": "003", 
+    "name": "Captain America", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      125, 
+      80
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "avengers_initiative"
+    ], 
+    "keywords": [
+      "Avengers", 
+      "Howling Commandos", 
+      "Soldier"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "AVENGERS ASSEMBLE!", 
+        "description": "When Captain America hits one or more characters with an attack and actions resolve, the opposing player chooses: Captain America may modify the damage value of a friendly character by +1 this turn or, all opposing characters modify their attack value by -1 until your next turn."
+      }, 
+      {
+        "type": "damage", 
+        "name": "HIS ENEMIES FEAR HIM", 
+        "description": "Captain America can use Leadership. When he does and succeeds, he may also either place an action token on a higher point opposing character within range or he may place an action token on each lower point opposing character within range. Placing this action token doesn't deal pushing damage.", 
+        "powers": [
+          "leadership"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [
+      "characters", 
+      "adjacent"
+    ], 
+    "object_keyphrases": [], 
+    "unit_range": "4", 
+    "targets": "3", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "running_shot", 
+        "speed_value": 10, 
+        "attack_value": 11, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 18, 
+        "damage_power": "leadership", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "running_shot", 
+        "speed_value": 9, 
+        "attack_value": 10, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 17, 
+        "damage_power": "leadership", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "charge", 
+        "speed_value": 10, 
+        "attack_value": 11, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 18, 
+        "damage_power": "special", 
+        "damage_value": 3, 
+        "starting_line": true
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "charge", 
+        "speed_value": 9, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "flurry", 
+        "speed_value": 8, 
+        "attack_power": "precision_strike", 
+        "attack_value": 11, 
+        "defense_power": "willpower", 
+        "defense_value": 18, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "flurry", 
+        "speed_value": 8, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "willpower", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "flurry", 
+        "speed_value": 8, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "willpower", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "aaou004", 
+    "set_id": "aaou", 
+    "collector_number": "004", 
+    "name": "Test Subject", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      30
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Test Subject"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "THEY WORK FOR US, EVEN IF THEY DON'T KNOW IT", 
+        "description": "A themed team may include Test Subject and is still a themed team if it also includes a character named Baron Strucker, Red Skull, or Nick Fury."
+      }, 
+      {
+        "type": "trait", 
+        "name": "THESE EXPERIMENTS ARE YIELDING... INTERESTING... RESULTS", 
+        "description": "When Test Subject is first placed on the map, roll a d6 and click the character to the indicated starting line: 1 - 2 red 3 - 4 blue 5 - 6 yellow"
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "6", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_value": 6, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 9, 
+        "defense_value": 16, 
+        "damage_power": "enhancement", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_value": 6, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 9, 
+        "defense_value": 16, 
+        "damage_power": "enhancement", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "stealth", 
+        "speed_value": 5, 
+        "attack_value": 8, 
+        "defense_value": 17, 
+        "damage_power": "probability_control", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "mind_control", 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "barrier", 
+        "defense_value": 16, 
+        "damage_value": 2, 
+        "starting_line": "blue"
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "mind_control", 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "barrier", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "stealth", 
+        "speed_value": 5, 
+        "attack_value": 8, 
+        "defense_value": 17, 
+        "damage_power": "probability_control", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 9, 
+        "speed_power": "plasticity", 
+        "speed_value": 6, 
+        "attack_power": "incapacitate", 
+        "attack_value": 9, 
+        "defense_value": 16, 
+        "damage_value": 2, 
+        "starting_line": "yellow"
+      }, 
+      {
+        "click_number": 10, 
+        "speed_power": "plasticity", 
+        "speed_value": 6, 
+        "attack_power": "incapacitate", 
+        "attack_value": 9, 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 11, 
+        "speed_power": "stealth", 
+        "speed_value": 5, 
+        "attack_value": 8, 
+        "defense_value": 17, 
+        "damage_power": "probability_control", 
+        "damage_value": 3
+      }
+    ]
+  }, 
+  {
+    "unit_id": "aaou005", 
+    "set_id": "aaou", 
+    "collector_number": "005", 
+    "name": "Thor", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      200, 
+      150
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "avengers_initiative"
+    ], 
+    "keywords": [
+      "Asgardian", 
+      "Avengers", 
+      "Deity"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "AVENGERS ASSEMBLE!", 
+        "description": "When Thor hits one or more characters with an attack and actions resolve, the opposing player chooses: Opposing characters modify their damage values by -1 until your next turn or, opposing characters can't make ranged combat attacks until your next turn."
+      }, 
+      {
+        "type": "trait", 
+        "name": "MJOLNIR TO CARRY ME", 
+        "description": "When Thor has one or more action tokens, he can use Energy Shield/Deflection.", 
+        "powers": [
+          "energy_shield_deflection"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "8", 
+    "targets": "2", 
+    "speed_type": "wing", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "running_shot", 
+        "speed_value": 9, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 11, 
+        "defense_power": "invincible", 
+        "defense_value": 18, 
+        "damage_value": 5
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_power": "pulse_wave", 
+        "attack_value": 11, 
+        "defense_power": "invincible", 
+        "defense_value": 17, 
+        "damage_value": 5
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 11, 
+        "defense_power": "invincible", 
+        "defense_value": 17, 
+        "damage_power": "enhancement", 
+        "damage_value": 4, 
+        "starting_line": true
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_power": "pulse_wave", 
+        "attack_value": 10, 
+        "defense_power": "invincible", 
+        "defense_value": 16, 
+        "damage_power": "enhancement", 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 7, 
+        "attack_power": "pulse_wave", 
+        "attack_value": 10, 
+        "defense_power": "impervious", 
+        "defense_value": 17, 
+        "damage_power": "enhancement", 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 6, 
+        "speed_value": 7, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 10, 
+        "defense_power": "impervious", 
+        "defense_value": 16, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 7, 
+        "speed_value": 6, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 9, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 8, 
+        "speed_value": 6, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 9, 
+        "defense_power": "invulnerability", 
+        "defense_value": 16, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 3
+      }
+    ]
+  }, 
+  {
+    "unit_id": "aaou006", 
+    "set_id": "aaou", 
+    "collector_number": "006", 
+    "name": "Hydra Soldier", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      40
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "hydra"
+    ], 
+    "keywords": [
+      "Hydra", 
+      "Soldier"
+    ], 
+    "special_powers": [
+      {
+        "type": "attack", 
+        "name": "MINION: HAIL HYDRA", 
+        "description": "When a friendly character with the HYDRA keyword and a higher point value is within 8 squares, Hydra Soldier can use Charge. When that character uses Leadership and succeeds, remove an action token from all characters named Hydra Soldier within that character's range and line of fire unless one has already been removed this turn from that character from this effect.", 
+        "powers": [
+          "charge"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_value": 6, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_value": 6, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "stealth", 
+        "speed_value": 5, 
+        "attack_power": "special", 
+        "attack_value": 8, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "stealth", 
+        "speed_value": 5, 
+        "attack_power": "special", 
+        "attack_value": 8, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 15, 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "aaou007", 
+    "set_id": "aaou", 
+    "collector_number": "007", 
+    "name": "Ultron Sentry", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      40
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Robot"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "HIDDEN PROGRAMMING", 
+        "description": "Once per game, when a friendly character named Ultron Sentry is KO'd by an opposing character, you may roll a d6 that can't be rerolled. Increase the result by 1 for each character named Ultron Mk 1 or Ultron Prime that began the game on your force. Based on the result, place in your starting area: 3 - 4, place AAOU #007 Ultron Sentry on its starting line; 5, place AAOU #012 Ultron Mk 1 on its yellow starting line; 6, place AAOU #012 Ultron Mk 1 on its blue starting line."
+      }, 
+      {
+        "type": "trait", 
+        "name": "COMBINED EFFORTS", 
+        "description": "Modify Ultron Sentry's attack value by +1 for each adjacent friendly character named Ultron Sentry. Modify Ultron Sentry's damage value by +1 for each 2 adjacent friendly characters named Ultron Sentry."
+      }, 
+      {
+        "type": "trait", 
+        "name": "CONSISTENT PROGRAMMING", 
+        "description": "When using the Carry ability, Ultron Sentry may carry any number of adjacent friendly characters named Ultron Sentry regardless of their combat symbols."
+      }, 
+      {
+        "type": "speed", 
+        "name": "THERE'S NO END IN SIGHT!", 
+        "description": "Once per turn, for all characters with this power, give Ultron Sentry a double power action. Place AAOU #007 Ultron Sentry from outside the game in an adjacent square on click number 3."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "4", 
+    "targets": "1", 
+    "speed_type": "wing", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_value": 7, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 15, 
+        "damage_power": "enhancement", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "special", 
+        "speed_value": 6, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 9, 
+        "defense_value": 15, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "special", 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "regeneration", 
+        "defense_value": 15, 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "aaou008", 
+    "set_id": "aaou", 
+    "collector_number": "008", 
+    "name": "Hulk", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      300, 
+      250, 
+      200
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "avengers_initiative"
+    ], 
+    "keywords": [
+      "Avengers", 
+      "Brute", 
+      "Monster"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "AVENGERS ASSEMBLE!", 
+        "description": "When Hulk hits one or more characters with an attack and actions resolve, the opposing player chooses: Deal one target 1 unavoidable damage and give it an action token or, put an Anger token on this card."
+      }, 
+      {
+        "type": "trait", 
+        "name": "FUELED BY ANGER", 
+        "description": "Hulk can use Colossal Stamina. When he has two action tokens and is given a non-free action, you may remove any number of Anger tokens from this card and roll a d6 that can't be rerolled, increasing the result by 1 for each token removed. On a result of 5 - 6, Hulk isn't dealt unavoidable damage from Colossal Stamina for this action."
+      }, 
+      {
+        "type": "trait", 
+        "name": "ENORMOUS GREEN MONSTER", 
+        "description": "Hulk can use Battle Fury. Each time Hulk takes damage from an opponent's attack or one of his powers or combat abilities is countered, put an Anger token on this card.", 
+        "powers": [
+          "battle_fury"
+        ]
+      }, 
+      {
+        "type": "defense", 
+        "name": "HIS ANGER SUSTAINS HIM", 
+        "description": "When this click is revealed due to taking damage, stop turning the dial and remove all actions tokens from Hulk. This power can't be ignored."
+      }, 
+      {
+        "type": "damage", 
+        "name": "HE ONLY LEAVES RUBBLE", 
+        "description": "Hulk can use Invincible and Regeneration. When he uses Regeneration, you may remove any number of Anger tokens from this card. If you do, the d6 roll can't be rerolled and you may increase the result by 1 for each token removed.", 
+        "powers": [
+          "invincible", 
+          "regeneration"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "giant", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 9, 
+        "attack_power": "super_strength", 
+        "attack_value": 13, 
+        "defense_power": "impervious", 
+        "defense_value": 19, 
+        "damage_value": 6
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "charge", 
+        "speed_value": 10, 
+        "attack_power": "super_strength", 
+        "attack_value": 12, 
+        "defense_power": "impervious", 
+        "defense_value": 19, 
+        "damage_value": 5
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "charge", 
+        "speed_value": 10, 
+        "attack_power": "super_strength", 
+        "attack_value": 12, 
+        "defense_power": "impervious", 
+        "defense_value": 19, 
+        "damage_value": 5, 
+        "starting_line": true
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "charge", 
+        "speed_value": 10, 
+        "attack_value": 11, 
+        "defense_power": "invulnerability", 
+        "defense_value": 18, 
+        "damage_value": 5
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "charge", 
+        "speed_value": 10, 
+        "attack_power": "super_strength", 
+        "attack_value": 10, 
+        "defense_power": "impervious", 
+        "defense_value": 17, 
+        "damage_value": 4, 
+        "starting_line": true
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "charge", 
+        "speed_value": 10, 
+        "attack_power": "super_strength", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "charge", 
+        "speed_value": 9, 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 8, 
+        "speed_power": "charge", 
+        "speed_value": 9, 
+        "attack_power": "super_strength", 
+        "attack_value": 11, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 9, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "super_strength", 
+        "attack_value": 12, 
+        "defense_power": "impervious", 
+        "defense_value": 18, 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 10, 
+        "speed_power": "charge", 
+        "speed_value": 10, 
+        "attack_value": 12, 
+        "defense_power": "invulnerability", 
+        "defense_value": 19, 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 11, 
+        "speed_power": "charge", 
+        "speed_value": 11, 
+        "attack_value": 11, 
+        "defense_power": "special", 
+        "defense_value": 18, 
+        "damage_power": "special", 
+        "damage_value": 5
+      }
+    ]
+  }, 
+  {
+    "unit_id": "aaou009", 
+    "set_id": "aaou", 
+    "collector_number": "009", 
+    "name": "Hawkeye", 
+    "type": "character", 
+    "rarity": "rare", 
+    "dimensions": "1x1", 
+    "point_values": [
+      94
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "avengers_initiative"
+    ], 
+    "keywords": [
+      "Avengers"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "AVENGERS ASSEMBLE!", 
+        "description": "Hawkeye can use Sidestep and Stealth. When he uses Sidestep, he can use Improved Movement: Elevated."
+      }, 
+      {
+        "type": "trait", 
+        "name": "VANTAGE POINT", 
+        "description": "When making a ranged combat attack, modify Hawkeye's attack value by +1 for each target of the attack. When he hits 3 characters, he may give one hit character an action token if he doesn't assign that character any damage."
+      }, 
+      {
+        "type": "speed", 
+        "name": "ROOFTOP MANEUVER", 
+        "description": "Hawkeye can use Sidestep and Stealth. When he uses Sidestep, he can use Improved Movement: Ignores Elevated Terrain.", 
+        "powers": [
+          "sidestep", 
+          "stealth"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "8", 
+    "targets": "3", 
+    "speed_type": "boot", 
+    "attack_type": "sharpshooter", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 6, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "willpower", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "special", 
+        "speed_value": 6, 
+        "attack_value": 11, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "special", 
+        "speed_value": 6, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "stealth", 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "stealth", 
+        "speed_value": 6, 
+        "attack_power": "precision_strike", 
+        "attack_value": 9, 
+        "defense_power": "super_senses", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "stealth", 
+        "speed_value": 6, 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 15, 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "aaou010", 
+    "set_id": "aaou", 
+    "collector_number": "010", 
+    "name": "Scarlet Witch", 
+    "type": "character", 
+    "rarity": "rare", 
+    "dimensions": "1x1", 
+    "point_values": [
+      55
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Avengers", 
+      "Mystical", 
+      "Test Subject"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "UNCAGING THE BEAST", 
+        "description": "Give Scarlet Witch a free action when she has two action tokens and choose a friendly character within range and line of fire. Modify the chosen character's combat values by +1 until the end of the turn, and, at the end of the turn, deal Scarlet Witch 1 unavoidable damage and don't clear her action tokens. If the chosen character's name is Hulk, you may modify the chosen character's combat values by +2 instead."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "8", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "stealth", 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_power": "perplex", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "stealth", 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_power": "willpower", 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "mind_control", 
+        "speed_value": 9, 
+        "attack_value": 11, 
+        "defense_power": "barrier", 
+        "defense_value": 16, 
+        "damage_power": "probability_control", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "mind_control", 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_power": "barrier", 
+        "defense_value": 17, 
+        "damage_power": "probability_control", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 9, 
+        "attack_value": 9, 
+        "defense_value": 16, 
+        "damage_power": "support", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "aaou011", 
+    "set_id": "aaou", 
+    "collector_number": "011", 
+    "name": "Vision", 
+    "type": "character", 
+    "rarity": "rare", 
+    "dimensions": "1x1", 
+    "point_values": [
+      100
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Avengers", 
+      "Robot"
+    ], 
+    "special_powers": [], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "wing", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "plasticity", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "invincible", 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "plasticity", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "invincible", 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "plasticity", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "invincible", 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 3
+      }
+    ]
+  }, 
+  {
+    "unit_id": "aaou012", 
+    "set_id": "aaou", 
+    "collector_number": "012", 
+    "name": "Ultron Mk 1", 
+    "type": "character", 
+    "rarity": "rare", 
+    "dimensions": "1x1", 
+    "point_values": [
+      120, 
+      65
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Robot"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "HIDDEN PROGRAMMING", 
+        "description": "Once per game, when a friendly character named Ultron Mk 1 is KO'd by an opposing character, you may roll a d6 that can't be rerolled. Increase the result by 1 for each character named Ultron Mk 1 or Ultron Prime that began the game on your force. Based on the result, place in your starting area: (4)-(5), place 012 Ultron Mk 1 on its yellow starting line. (6), place either 012 Ultron Mk 1 or 018 Ultron Prime on its blue starting line."
+      }, 
+      {
+        "type": "attack", 
+        "name": "TARGETING COMPUTER ADJUSTMENT", 
+        "description": "When Ultron Mk 1 makes an attack and misses, place a Tracking token on the target's card. Ultron Mk 1 increases its attack value by 1 for each Tracking token on its target's card. When Ultron Mk 1 makes an attack and hits, remove all Tracking tokens from the target's card."
+      }, 
+      {
+        "type": "damage", 
+        "name": "STRENGTH IN NUMBERS", 
+        "description": "Modify Ultron Mk 1's damage value by +1 for each adjacent friendly character with Ultron in its name."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "6", 
+    "targets": "2", 
+    "speed_type": "wing", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "sidestep", 
+        "speed_value": 10, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "sidestep", 
+        "speed_value": 10, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "sidestep", 
+        "speed_value": 10, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_power": "invulnerability", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "sidestep", 
+        "speed_value": 10, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_power": "invulnerability", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 2, 
+        "starting_line": true
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "flurry", 
+        "speed_value": 9, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "flurry", 
+        "speed_value": 9, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 15, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "flurry", 
+        "speed_value": 8, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 15, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "aaou013", 
+    "set_id": "aaou", 
+    "collector_number": "013", 
+    "name": "Black Widow", 
+    "type": "character", 
+    "rarity": "rare", 
+    "dimensions": "1x1", 
+    "point_values": [
+      80
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "avengers_initiative"
+    ], 
+    "keywords": [
+      "Avengers", 
+      "Martial Artist", 
+      "Spy"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "AVENGERS ASSEMBLE!", 
+        "description": "When Black Widow hits one or more characters with an attack and actions resolve, the opposing player chooses: Opposing characters can't attack Black Widow until your next turn or opposing characters can't ignore pushing damage until your next turn."
+      }, 
+      {
+        "type": "attack", 
+        "name": "WIDOW'S STING", 
+        "description": "When Black Widow hits with a ranged combat attack, after actions resolve, roll a d6. On a result of 4 - 6, Black Widow can use Incapacitate twice, each as a free action, but only to target a hit character."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "4", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "stealth", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "willpower", 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "stealth", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 11, 
+        "defense_power": "willpower", 
+        "defense_value": 17, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "stealth", 
+        "speed_value": 6, 
+        "attack_value": 10, 
+        "defense_power": "willpower", 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "stealth", 
+        "speed_value": 6, 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 16, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 6, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 15, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_value": 5, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "super_senses", 
+        "defense_value": 15, 
+        "damage_power": "perplex", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "aaou014", 
+    "set_id": "aaou", 
+    "collector_number": "014", 
+    "name": "Quicksilver", 
+    "type": "character", 
+    "rarity": "rare", 
+    "dimensions": "1x1", 
+    "point_values": [
+      63
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Avengers", 
+      "Test Subject"
+    ], 
+    "special_powers": [
+      {
+        "type": "speed", 
+        "name": "IT'S CALLED MOMENTUM", 
+        "description": "Quicksilver can use Force Blast and Hypersonic Speed.", 
+        "powers": [
+          "force_blast", 
+          "hypersonic_speed"
+        ]
+      }, 
+      {
+        "type": "attack", 
+        "name": "FEEL THAT?", 
+        "description": "Quicksilver can use Flurry and Force Blast.", 
+        "powers": [
+          "flurry", 
+          "force_blast"
+        ]
+      }, 
+      {
+        "type": "damage", 
+        "name": "FAST ENOUGH TO TRY AGAIN", 
+        "description": "Quicksilver can use Probability Control, but only to reroll his own rolls.", 
+        "powers": [
+          "probability_control"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 14, 
+        "attack_value": 10, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 18, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "special", 
+        "speed_value": 14, 
+        "attack_value": 10, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "special", 
+        "speed_value": 13, 
+        "attack_value": 9, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "plasticity", 
+        "speed_value": 13, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "plasticity", 
+        "speed_value": 12, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "aaou015", 
+    "set_id": "aaou", 
+    "collector_number": "015", 
+    "name": "Nick Fury", 
+    "type": "character", 
+    "rarity": "rare", 
+    "dimensions": "1x1", 
+    "point_values": [
+      45
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "avengers_initiative"
+    ], 
+    "keywords": [
+      "Avengers"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "I STILL BELIEVE IN HEROES", 
+        "description": "If Nick Fury is part of an Avengers themed team and has the lowest point value character on your starting force, he can use Leadership and Outwit. When he uses Leadership, he is considered 300 points."
+      }, 
+      {
+        "type": "attack", 
+        "name": "I RECOGNIZE THE COUNCIL HAS MADE A DECISION...", 
+        "description": "When an opponent makes a choice from an Avengers Assemble! trait, you may roll a d6. On a result of 5 or 6, change the effect to the other option."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "6", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "stealth", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "willpower", 
+        "defense_value": 17, 
+        "damage_power": "shape_change", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "stealth", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_power": "shape_change", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 17, 
+        "damage_power": "shape_change", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "shape_change", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "aaou016", 
+    "set_id": "aaou", 
+    "collector_number": "016", 
+    "name": "Baron Strucker", 
+    "type": "character", 
+    "rarity": "rare", 
+    "dimensions": "1x1", 
+    "point_values": [
+      95
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "hydra"
+    ], 
+    "keywords": [
+      "Hydra", 
+      "Mystical", 
+      "Scientist"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "THEIR SACRIFICE ENSURES OUR FUTURE", 
+        "description": "When a friendly character with the Test Subject keyword is KO'd put an Evolution token on Baron Strucker's card. Modify Baron Strucker's combat values +1 for every two Evolution tokens on his card."
+      }, 
+      {
+        "type": "attack", 
+        "name": "WE LEARN SO MUCH FROM THEM...", 
+        "description": "Give Baron Strucker a power action if there are less than 4 friendly characters with the Test Subject keyword on the map. When you do, place a friendly AAOU #004 Test Subject from outside the game on the map within 6 squares of him."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "5", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "stealth", 
+        "speed_value": 9, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "mastermind", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "charge", 
+        "speed_value": 9, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "mastermind", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "charge", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 11, 
+        "defense_value": 18, 
+        "damage_power": "perplex", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "charge", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "sidestep", 
+        "speed_value": 9, 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "shape_change", 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "sidestep", 
+        "speed_value": 9, 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "shape_change", 
+        "damage_value": 3
+      }
+    ]
+  }, 
+  {
+    "unit_id": "aaou017", 
+    "set_id": "aaou", 
+    "collector_number": "017", 
+    "name": "Hulkbuster", 
+    "type": "character", 
+    "rarity": "chase", 
+    "dimensions": "1x1", 
+    "point_values": [
+      300, 
+      225
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "avengers_initiative"
+    ], 
+    "keywords": [
+      "Armor", 
+      "Avengers", 
+      "Stark Industries"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "AVENGERS ASSEMBLE!", 
+        "description": "Once per turn, when Hulkbuster hits one or more characters with a close combat attack and actions resolve, the opposing player chooses: Modify Hulkbuster's defense value by +2 until your next turn or Hulkbuster may make a close combat attack as a free action against a hit target, modifying his attack value by -2 for the attack."
+      }, 
+      {
+        "type": "trait", 
+        "name": "DESIGNED TO PUT YOU DOWN, BRUCE", 
+        "description": "At the beginning of the game for all characters with this trait, choose an opposing character with :g-giant:, :g-colossal:, :a-team:, or :d-wheel:. That character can't ignore pushing damage or have its combat values increased."
+      }, 
+      {
+        "type": "attack", 
+        "name": "KNOCKOUT PUNCH", 
+        "description": "When making a close combat attack, you may decrease Hulkbuster's printed attack value by up to 3. If you do, increase Hulkbuster's printed damage value up to the same amount. If you do, both combat values can't be replaced or otherwise modified."
+      }, 
+      {
+        "type": "defense", 
+        "name": "SHE IS BUILT TO FIGHT THE BIG ONES", 
+        "description": "Hulkbuster can use Invincible. When Hulkbuster is hit by an attack from a character with the :g-giant:, :g-colossal:, :a-team:, or :d-wheel:, modify that's character's damage value by -1 for the attack.", 
+        "powers": [
+          "invincible"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "5", 
+    "targets": "1", 
+    "speed_type": "wing", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "giant", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 12, 
+        "attack_power": "special", 
+        "attack_value": 12, 
+        "defense_power": "special", 
+        "defense_value": 19, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 5
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "charge", 
+        "speed_value": 10, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 18, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "charge", 
+        "speed_value": 11, 
+        "attack_value": 11, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 4, 
+        "starting_line": true
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "hypersonic_speed", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 11, 
+        "defense_power": "impervious", 
+        "defense_value": 16, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "hypersonic_speed", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "impervious", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "hypersonic_speed", 
+        "speed_value": 9, 
+        "attack_value": 11, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 5
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "charge", 
+        "speed_value": 9, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 16, 
+        "damage_power": "perplex", 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 8, 
+        "speed_power": "charge", 
+        "speed_value": 9, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 3
+      }
+    ]
+  }, 
+  {
+    "unit_id": "aaou018", 
+    "set_id": "aaou", 
+    "collector_number": "018", 
+    "name": "Ultron Prime", 
+    "type": "character", 
+    "rarity": "chase", 
+    "dimensions": "1x1", 
+    "point_values": [
+      250, 
+      125
+    ], 
+    "properties": [
+      "unique"
+    ], 
+    "team_abilities": [], 
+    "keywords": [
+      "Robot"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "HIDDEN PROGRAMMING", 
+        "description": "Once per game, when Ultron Prime would be KO'd, roll a d6 that can't be rerolled. On a result of 5 - 6 place this character in your starting area on its blue starting line."
+      }, 
+      {
+        "type": "defense", 
+        "name": "FODDER FOR THE MACHINE", 
+        "description": "Ultron Prime can use Mastermind. When he does, friendly characters within 4 squares and with the Robot keyword are considered adjacent.", 
+        "powers": [
+          "mastermind"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "8", 
+    "targets": "3", 
+    "speed_type": "transport_wing", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 12, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 11, 
+        "defense_power": "invincible", 
+        "defense_value": 18, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 5
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "charge", 
+        "speed_value": 12, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 12, 
+        "defense_power": "impervious", 
+        "defense_value": 19, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 5
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "running_shot", 
+        "speed_value": 11, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 12, 
+        "defense_power": "impervious", 
+        "defense_value": 18, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 5
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "running_shot", 
+        "speed_value": 11, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 11, 
+        "defense_power": "invincible", 
+        "defense_value": 18, 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "charge", 
+        "speed_value": 10, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 11, 
+        "defense_power": "impervious", 
+        "defense_value": 18, 
+        "damage_value": 4, 
+        "starting_line": true
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "charge", 
+        "speed_value": 10, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "running_shot", 
+        "speed_value": 11, 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 8, 
+        "speed_power": "running_shot", 
+        "speed_value": 11, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 11, 
+        "defense_power": "special", 
+        "defense_value": 16, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 9, 
+        "speed_power": "charge", 
+        "speed_value": 10, 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 16, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 10, 
+        "speed_power": "charge", 
+        "speed_value": 10, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 9, 
+        "defense_power": "special", 
+        "defense_value": 16, 
+        "damage_value": 3
+      }
+    ]
+  }, 
+  {
+    "unit_id": "aaou101", 
+    "set_id": "aaou", 
+    "collector_number": "101", 
+    "name": "Iron Man", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      150
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "avengers_initiative"
+    ], 
+    "keywords": [
+      "Armor", 
+      "Avengers", 
+      "Celebrity", 
+      "Scientist", 
+      "Stark Industries"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "THE HOUSE PARTY PROTOCOL", 
+        "description": "Once per game, give Iron Man a double power action that doesn't deal pushing damage. Place a friendly AAOU #002 Iron Legion from outside the game in an adjacent square on its red starting line. That character is removed from the game once it takes damage and your opponent scores no points when it is removed."
+      }, 
+      {
+        "type": "speed", 
+        "name": "SOMETIMES YOU HAVE TO RUN BEFORE YOU CAN WALK", 
+        "description": "Iron Man can use Running Shot. When he does, his speed value isn't halved from this power.", 
+        "powers": [
+          "running_shot"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "7", 
+    "targets": "2", 
+    "speed_type": "wing", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "running_shot", 
+        "speed_value": 10, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 11, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "special", 
+        "speed_value": 10, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "special", 
+        "speed_value": 10, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 18, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "running_shot", 
+        "speed_value": 9, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "special", 
+        "speed_value": 9, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_value": 9, 
+        "attack_power": "precision_strike", 
+        "attack_value": 9, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 16, 
+        "damage_power": "perplex", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 7, 
+        "speed_value": 8, 
+        "attack_power": "precision_strike", 
+        "attack_value": 9, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 15, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "aaou102", 
+    "set_id": "aaou", 
+    "collector_number": "102", 
+    "name": "Captain America", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      100
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "avengers_initiative"
+    ], 
+    "keywords": [
+      "Avengers", 
+      "Past", 
+      "Soldier", 
+      "Stark Industries"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "SHIELD TOSS", 
+        "description": "When Captain America makes a close combat attack, all squares within 6 squares and line of fire are considered adjacent."
+      }, 
+      {
+        "type": "damage", 
+        "name": "HEART OF THE AVENGERS", 
+        "description": "Captain America can use Leadership. He can use it normally or as a power action. If he uses it as a power action and succeeds, he may remove an action token from all friendly characters with the Avengers keyword within 6 squares.", 
+        "powers": [
+          "leadership"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 9, 
+        "attack_value": 12, 
+        "defense_power": "toughness", 
+        "defense_value": 18, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "sidestep", 
+        "speed_value": 9, 
+        "attack_value": 11, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_value": 11, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "sidestep", 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "aaou103", 
+    "set_id": "aaou", 
+    "collector_number": "103", 
+    "name": "Thor", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      150, 
+      100
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "avengers_initiative"
+    ], 
+    "keywords": [
+      "Asgardian", 
+      "Avengers", 
+      "Deity", 
+      "Stark Industries", 
+      "Warrior"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "THE MIGHT OF MJOLNIR", 
+        "description": "When Thor makes an attack, you may choose that the attack generates knock back."
+      }, 
+      {
+        "type": "speed", 
+        "name": "BRINGING THE HAMMER DOWN", 
+        "description": "Thor can use Charge and Quake. When he uses Charge, you may choose to not halve his speed value from it, but if you do, he may only activate Quake with the close combat action.", 
+        "powers": [
+          "charge", 
+          "quake"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "8", 
+    "targets": "1", 
+    "speed_type": "wing", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 11, 
+        "attack_value": 11, 
+        "defense_power": "impervious", 
+        "defense_value": 17, 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "running_shot", 
+        "speed_value": 11, 
+        "attack_power": "pulse_wave", 
+        "attack_value": 10, 
+        "defense_power": "impervious", 
+        "defense_value": 18, 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "special", 
+        "speed_value": 10, 
+        "attack_value": 11, 
+        "defense_power": "invulnerability", 
+        "defense_value": 18, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "special", 
+        "speed_value": 10, 
+        "attack_value": 11, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_value": 4, 
+        "starting_line": true
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "running_shot", 
+        "speed_value": 9, 
+        "attack_power": "pulse_wave", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 6, 
+        "speed_value": 9, 
+        "attack_power": "pulse_wave", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 8, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 3
+      }
+    ]
+  }, 
+  {
+    "unit_id": "aaou104", 
+    "set_id": "aaou", 
+    "collector_number": "104", 
+    "name": "Hulk", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      250, 
+      150
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "avengers_initiative"
+    ], 
+    "keywords": [
+      "Avengers", 
+      "Brute", 
+      "Monster", 
+      "Stark Industries"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "ENORMOUS GREEN RAGE MONSTER", 
+        "description": "Hulk can use Battle Fury and Super Strength. When Hulk is the target of an attack, place a Rage token on this card. Give Hulk a free action, choose a combat value and remove any Rage tokens. Increase the chosen combat value by 1 for each token removed until your next turn. If the chosen combat value is damage, instead increase it by 1 for every 2 tokens removed.", 
+        "powers": [
+          "battle_fury", 
+          "super_strength"
+        ]
+      }, 
+      {
+        "type": "speed", 
+        "name": "HULK SMASH!", 
+        "description": "Hulk can use Charge. When he does, his speed value isn't halved from the use of this power.", 
+        "powers": [
+          "charge"
+        ]
+      }, 
+      {
+        "type": "defense", 
+        "name": "RAGING OUT!", 
+        "description": "Hulk can use Impervious and Improved Movement: Destroy Blocking.  After rolling for Impervious, remove a Rage token for each click of damage that Hulk would take. If Hulk takes more damage than the number of Rage tokens on this card, he is KO'd. This power can't be countered or ignored.", 
+        "powers": [
+          "impervious"
+        ]
+      }, 
+      {
+        "type": "damage", 
+        "name": "YOU'RE MAKING HULK ANGRY!", 
+        "description": "When turning the dial, if this click is revealed due to damage taken from an opponent's attack, stop turning the dial and roll a d6 that can't be rerolled. On a result of 1 - 2, turn the dial to click number 11. On a result of 3 - 4, stay on this click. On a result of 5 - 6, choose one."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "giant", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 8, 
+        "attack_value": 11, 
+        "defense_power": "impervious", 
+        "defense_value": 18, 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "special", 
+        "speed_value": 9, 
+        "attack_value": 11, 
+        "defense_power": "invincible", 
+        "defense_value": 18, 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "special", 
+        "speed_value": 9, 
+        "attack_value": 12, 
+        "defense_power": "impervious", 
+        "defense_value": 18, 
+        "damage_value": 5
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "special", 
+        "speed_value": 9, 
+        "attack_value": 11, 
+        "defense_power": "invincible", 
+        "defense_value": 18, 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "charge", 
+        "speed_value": 9, 
+        "attack_value": 11, 
+        "defense_power": "impervious", 
+        "defense_value": 18, 
+        "damage_value": 4, 
+        "starting_line": true
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "charge", 
+        "speed_value": 9, 
+        "attack_value": 11, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "charge", 
+        "speed_value": 9, 
+        "attack_value": 11, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 8, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 11, 
+        "speed_power": "special", 
+        "speed_value": 10, 
+        "attack_value": 13, 
+        "defense_power": "special", 
+        "defense_value": 19, 
+        "damage_value": 6
+      }
+    ]
+  }, 
+  {
+    "unit_id": "aaou105", 
+    "set_id": "aaou", 
+    "collector_number": "105", 
+    "name": "Black Widow", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      75
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "avengers_initiative"
+    ], 
+    "keywords": [
+      "Avengers", 
+      "Martial Artist", 
+      "Spy", 
+      "Stark Industries"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "JUST LIKE BUDAPEST ALL OVER AGAIN", 
+        "description": "Black Widow can use Charge. When Black Widow is adjacent to a friendly character named Hawkeye, they both modify their defense values by +1 if not already modified by this effect.", 
+        "powers": [
+          "charge"
+        ]
+      }, 
+      {
+        "type": "attack", 
+        "name": "ESCRIMA STICKS AND WIDOW STINGS", 
+        "description": "Black Widow can use Incapacitate and Quake.", 
+        "powers": [
+          "incapacitate", 
+          "quake"
+        ]
+      }, 
+      {
+        "type": "damage", 
+        "name": "THE DEADLY WIDOW", 
+        "description": "Black Widow can use Close Combat Expert. When she has no action tokens, she may either activate it as a close combat action or she may modify her attack value by an additional +1 when using it.", 
+        "powers": [
+          "close_combat_expert"
+        ]
+      }
+    ], 
+    "improved_movement": [
+      "characters"
+    ], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "5", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_power": "precision_strike", 
+        "attack_value": 11, 
+        "defense_power": "willpower", 
+        "defense_value": 17, 
+        "damage_power": "shape_change", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 11, 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "stealth", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 11, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "stealth", 
+        "speed_value": 7, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "stealth", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "aaou106", 
+    "set_id": "aaou", 
+    "collector_number": "106", 
+    "name": "Hawkeye", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      75
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "avengers_initiative"
+    ], 
+    "keywords": [
+      "Avengers", 
+      "Martial Artist", 
+      "Spy", 
+      "Stark Industries"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "YOU AND I REMEMBER BUDAPEST VERY DIFFERENTLY", 
+        "description": "Hawkeye can use Running Shot. When Hawkeye is adjacent to a friendly character named Black Widow, they both modify their attack values by +1 if not already modified by this effect.", 
+        "powers": [
+          "running_shot"
+        ]
+      }, 
+      {
+        "type": "attack", 
+        "name": "EXPLOSIVE ARROWS", 
+        "description": "Hawkeye can use Energy Explosion and Improved Targeting: Destroy Blocking.", 
+        "powers": [
+          "energy_explosion"
+        ]
+      }, 
+      {
+        "type": "damage", 
+        "name": "THE DEADLY HAWK", 
+        "description": "Hawkeye can use Ranged Combat Expert. When he has no action tokens, he may either activate it as a ranged combat action or he may modify his attack value by an additional +1 when using it.", 
+        "powers": [
+          "ranged_combat_expert"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [
+      "characters"
+    ], 
+    "object_keyphrases": [], 
+    "unit_range": "8", 
+    "targets": "2", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "stealth", 
+        "speed_value": 8, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 11, 
+        "defense_power": "willpower", 
+        "defense_value": 17, 
+        "damage_power": "enhancement", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "stealth", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 11, 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 11, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 10, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "aaouM001", 
+    "set_id": "aaou", 
+    "collector_number": "M001", 
+    "name": "Strucker's Fortress", 
+    "type": "map", 
+    "point_values": [], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [], 
+    "special_powers": [], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "map_url": "https://hcmaps.net/maps/aaou/struckers_fortress.json", 
+    "dial": []
+  }, 
+  {
+    "unit_id": "aaouM002", 
+    "set_id": "aaou", 
+    "collector_number": "M002", 
+    "name": "Avengers Tower", 
+    "type": "map", 
+    "point_values": [], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [], 
+    "special_powers": [
+      {
+        "name": "Open Air Terrain", 
+        "description": "If a character that can\u2019t use Leap/Climb, Phasing/Teleport, Flight or Great Size occupies Open Air Terrain after actions resolve, deal that character 1 unavoidable damage and then the character\u2019s controller places the character in their starting area."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "map_url": "https://hcmaps.net/maps/aaou/avengers_tower.json", 
+    "dial": []
+  }
+]
