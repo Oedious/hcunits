@@ -292,7 +292,7 @@ class CharacterView extends BaseUnitView {
         html = `<table id='largeCardSpecialPowersTable${currentColumn}' class='specialPowersTable'>`;
       }
 
-      currentLineCount += lines + 1;
+      currentLineCount += lines;
       var iconHtml = "";
       if (type == "costed_trait") {
         iconHtml = `

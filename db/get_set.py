@@ -381,6 +381,15 @@ SET_MAP = {
   "fffl": {
     "name": "Fast Forces: Rogues",
   },
+  "hbtbfa": {
+    "name": "The Hobbit: The Battle of the Five Armies",
+  },
+  "gotg": {
+    "name": "Guardians of the Galaxy",
+  },
+  "ffgotg": {
+    "name": "Fast Forces: The Inhumans",
+  },
 }
 
 POWERS = {
@@ -500,7 +509,7 @@ PROPERTY_VALUES = [
 ]
 
 SPECIAL_POWER_TYPE_VALUES = [
-  "trait", "costed_trait", "rally_trait", "title_trait", "plus_plot_points", "minus_plot_points", "speed", "attack", "defense", "damage", "location", "consolation", "other_id", "inspiration", "asset"
+  "trait", "costed_trait", "rally_trait", "title_trait", "plus_plot_points", "minus_plot_points", "speed", "attack", "defense", "damage", "location", "consolation", "other_id", "inspiration", "asset", "epic"
 ]
 
 RALLY_TYPE_VALUES = [
@@ -535,6 +544,7 @@ IMPROVED_ABILITIES = {
       "characters": "characters",
       "ignores characters": "characters",
       "move through": "move_through",
+      "may move through squares adjacent to or occupied by opposing characters, but still needs to break away normally": "move_through",
       "this character can move through squares adjacent to or occupied by opposing characters without stopping, and automatically breaks away, even if adjacent to a character than can use plasticity": "move_through",
       "this character can move through squares adjacent to or occupied by opposing characters without stopping, and automatically breaks away, even if adjacent to a character that can use plasticity": "move_through",
       "water": "water",
@@ -908,7 +918,7 @@ class Unit:
         self.type == "mystery_card"):
       tag_list = soup.select("span[onclick^=showByKeywordId]")
       for tag in tag_list:
-        self.keywords.append(tag.string.strip())
+        self.keywords.append(clean_string(tag.string.strip()))
 
     # Parse object special powers
     if self.type == "object":
@@ -1218,9 +1228,7 @@ class Unit:
                   self.unit_id.startswith("adw048")):
               # Hack to fix trait type for a few specific units.
               sp_type = "trait"
-            else:
-              raise RuntimeError("Unit '%s' has special power type 'epic', which is not currently supported" % (unit_id))
-              
+
           # Skip the special power that describes a construct
           if self.type == "bystander" and self.bystander_type == "construct" and sp_name == "CONSTRUCTS":
             continue

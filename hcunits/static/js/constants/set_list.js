@@ -529,6 +529,21 @@ const SET_LIST = {
     "release_date": "2014-11-12",
     "universe": "dc"
   },
+  "hbtbfa": {
+    "name": "The Hobbit: The Battle of the Five Armies",
+    "release_date": "2014-11-05",
+    "universe": "indy"
+  },
+  "gotg": {
+    "name": "Guardians of the Galaxy",
+    "release_date": "2014-08-13",
+    "universe": "marvel"
+  },
+  "ffgotg": {
+    "name": "Fast Forces: The Inhumans",
+    "release_date": "2014-08-13",
+    "universe": "marvel"
+  },
   "wk": {
     "name": "WizKids Standard Game Pieces",
     "release_date": "2002-05-01",
