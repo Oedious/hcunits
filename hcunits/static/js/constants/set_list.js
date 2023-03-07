@@ -519,6 +519,16 @@ const SET_LIST = {
     "release_date": "2015-01-07",
     "universe": "indy"
   },
+  "fl": {
+    "name": "The Flash",
+    "release_date": "2014-11-12",
+    "universe": "dc"
+  },
+  "fffl": {
+    "name": "Fast Forces: Rogues",
+    "release_date": "2014-11-12",
+    "universe": "dc"
+  },
   "wk": {
     "name": "WizKids Standard Game Pieces",
     "release_date": "2002-05-01",

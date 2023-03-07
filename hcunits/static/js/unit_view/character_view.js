@@ -259,7 +259,7 @@ class CharacterView extends BaseUnitView {
     if (!this.unit_.special_powers) {
       return [];
     }
-    const LINES_PER_COLUMN = (this.numDialTables_ == 1) ? [16, 9, 31] : [7, 1, 31];
+    const LINES_PER_COLUMN = (this.numDialTables_ == 1) ? [16, 9, 32] : [7, 1, 32];
     const CHARS_PER_NAME_LINE = 23;
     const CHARS_PER_DESC_LINE = 30;
     var currentLineCount = 0;
@@ -280,7 +280,7 @@ class CharacterView extends BaseUnitView {
       const descLines = Math.ceil(power.description.length / CHARS_PER_DESC_LINE);
       const lines = headerLines + descLines;
       if (lines > LINES_PER_COLUMN[LINES_PER_COLUMN.length - 1]) {
-        throw new Error("Special power contains more than 30 lines in a single column.");
+        throw new Error(`Special power contains ${lines} in a single column.`);
       }
       // If the line count surpasses the max in the current column, move to the
       // next column.
