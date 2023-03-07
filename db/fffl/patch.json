@@ -1,0 +1,35 @@
+{
+  "updates": {
+    "fffl003": {
+      "special_powers": [{
+      }, {
+        "description": "Mirror Master can use Super Senses. When he does while adjacent to blocking terrain, he succeeds on a result of 4-6."
+      }]
+    },
+    "fffl003": {
+      "special_powers": [{
+        "description": "Give Weather Wizard a power action and roll a d6 that can't be rerolled except from this power. On a result of: 1 - Reroll the d6 and add 1 to the result., 2-3 - Deal 1 damage to each adjacent opposing character. 4-5 - Deal 2 damage to all opposing characters within 2 squares. 6 (or more) - Deal 3 damage to all opposing characters within 3 squares."
+      }]
+    },
+    "fffl006bt": {
+      "special_powers": [{
+        "powers": ["exploit_weakness"]
+      }]
+    }
+  },
+  "additions": [{
+    "unit_id": "ffflM001",
+    "set_id": "fffl",
+    "collector_number": "M001",
+    "name": "Central City Park",
+    "type": "map",
+    "map_url": "https://hcmaps.net/maps/fl/central_city_park.json"
+  }, {
+    "unit_id": "ffflM002",
+    "set_id": "fffl",
+    "collector_number": "M002",
+    "name": "The Flash Museum",
+    "type": "map",
+    "map_url": "https://hcmaps.net/maps/fl/the_flash_museum.json"
+  }]
+}

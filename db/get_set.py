@@ -375,6 +375,12 @@ SET_MAP = {
       ("ygo2100", "ygo2100"),
     ],
   },
+  "fl": {
+    "name": "The Flash",
+  },
+  "fffl": {
+    "name": "Fast Forces: Rogues",
+  },
 }
 
 POWERS = {
@@ -494,7 +500,7 @@ PROPERTY_VALUES = [
 ]
 
 SPECIAL_POWER_TYPE_VALUES = [
-  "trait", "costed_trait", "rally_trait", "title_trait", "plus_plot_points", "minus_plot_points", "speed", "attack", "defense", "damage", "location", "consolation", "other_id", "inspiration"
+  "trait", "costed_trait", "rally_trait", "title_trait", "plus_plot_points", "minus_plot_points", "speed", "attack", "defense", "damage", "location", "consolation", "other_id", "inspiration", "asset"
 ]
 
 RALLY_TYPE_VALUES = [
@@ -876,8 +882,8 @@ class Unit:
       real_name = soup.select_one("span[onclick^=showRealName]")
       if real_name:
         self.real_name = real_name.string.strip()
-      else:
-        print("Warning: could not find a real name for %s" % self.unit_id)
+      #else:
+        #print("Warning: could not find a real name for %s" % self.unit_id)
   
     # Parse team abilities
     if self.type == "character" or self.type == "bystander":
@@ -1181,6 +1187,8 @@ class Unit:
             sp_type = "damage"
           elif sp_type_str == "epic":
             sp_type = "epic"
+          elif sp_type_str == "black-circle":
+            sp_type = "asset"
           elif sp_type_str == "pilot":
             # This will be handled down below when we extract passengers.
             sp_type = "none"
@@ -1519,7 +1527,7 @@ class Unit:
           power.lower().startswith("passenger") or
           power.lower().startswith("giant reach")):
         continue
-      for prefix in ["Can use ", self.name + " can use ", "This character can use "]:
+      for prefix in ["Can use ", self.name + " can use ", "This character can use ", "This team character can use "]:
         if power.startswith(prefix):
           power = power[len(prefix):]
           break
