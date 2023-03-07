@@ -390,6 +390,12 @@ SET_MAP = {
   "ffgotg": {
     "name": "Fast Forces: The Inhumans",
   },
+  "jlsg": {
+    "name": "Justice League Strategy Game",
+  },
+  "gotgm": {
+    "name": "Guardians of the Galaxy Movie",
+  },
 }
 
 POWERS = {
@@ -544,6 +550,7 @@ IMPROVED_ABILITIES = {
       "characters": "characters",
       "ignores characters": "characters",
       "move through": "move_through",
+      "may move through squares adjacent to opposing characters, but still needs to break away normally": "move_through",
       "may move through squares adjacent to or occupied by opposing characters, but still needs to break away normally": "move_through",
       "this character can move through squares adjacent to or occupied by opposing characters without stopping, and automatically breaks away, even if adjacent to a character than can use plasticity": "move_through",
       "this character can move through squares adjacent to or occupied by opposing characters without stopping, and automatically breaks away, even if adjacent to a character that can use plasticity": "move_through",

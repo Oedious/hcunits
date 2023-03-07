@@ -544,6 +544,16 @@ const SET_LIST = {
     "release_date": "2014-08-13",
     "universe": "marvel"
   },
+  "jlsg": {
+    "name": "Justice League Strategy Game",
+    "release_date": "2014-07-09",
+    "universe": "dc"
+  },
+  "gotgm": {
+    "name": "Guardians of the Galaxy Movie",
+    "release_date": "2014-07-02",
+    "universe": "marvel"
+  },
   "wk": {
     "name": "WizKids Standard Game Pieces",
     "release_date": "2002-05-01",

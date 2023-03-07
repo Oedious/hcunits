@@ -1,0 +1,765 @@
+[
+  {
+    "unit_id": "jlsg001", 
+    "set_id": "jlsg", 
+    "collector_number": "001", 
+    "name": "Superman", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      200, 
+      100
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "justice_league", 
+      "superman_ally"
+    ], 
+    "keywords": [
+      "Celebrity", 
+      "Justice League", 
+      "Kryptonian", 
+      "Metropolis", 
+      "Reporter"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "PROTECT THE INNOCENT", 
+        "description": "Whenever another friendly character takes damage from an opponent's attack, place a Protection token on Superman's card. Give Superman a free action, remove any number of Protection tokens from his card, and increase his damage value by 1 until your next turn for each two tokens removed."
+      }, 
+      {
+        "type": "speed", 
+        "name": "FASTER THAN A SPEEDING BULLET, MORE POWERFUL THAN A LOCOMOTIVE", 
+        "description": "Superman can use Charge. When using Charge, if he moves along a direct line, he does not halve his speed value and he can use Improved Movement: Destroy Blocking.", 
+        "powers": [
+          "charge"
+        ]
+      }, 
+      {
+        "type": "defense", 
+        "name": "BIG BLUE BOY SCOUT", 
+        "description": "Superman can use Invincible. Once per attack, when a friendly character within 6 squares and line of fire would be hit by a ranged combat attack, you may place Superman adjacent to that character so that he blocks the line of fire from the attacker. If you do, modify Superman's defense value by +2 for this attack, and the attack targets him, instead, even if it would be illegal.", 
+        "powers": [
+          "invincible"
+        ]
+      }, 
+      {
+        "type": "asset", 
+        "name": "TT #T002 JUSTICE LEAGUE", 
+        "description": "Damage dealt to this team character is reduced by 1 in addition to any other effects."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "8", 
+    "targets": "1", 
+    "speed_type": "wing", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 13, 
+        "attack_value": 11, 
+        "defense_power": "special", 
+        "defense_value": 18, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "special", 
+        "speed_value": 12, 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 18, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "special", 
+        "speed_value": 12, 
+        "attack_value": 11, 
+        "defense_power": "impervious", 
+        "defense_value": 18, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "special", 
+        "speed_value": 11, 
+        "attack_power": "super_strength", 
+        "attack_value": 10, 
+        "defense_power": "impervious", 
+        "defense_value": 17, 
+        "damage_value": 4, 
+        "starting_line": true
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "hypersonic_speed", 
+        "speed_value": 10, 
+        "attack_power": "super_strength", 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "hypersonic_speed", 
+        "speed_value": 11, 
+        "attack_power": "super_strength", 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "force_blast", 
+        "speed_value": 10, 
+        "attack_value": 9, 
+        "defense_power": "invulnerability", 
+        "defense_value": 16, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 8, 
+        "speed_power": "force_blast", 
+        "speed_value": 9, 
+        "attack_value": 9, 
+        "defense_power": "invulnerability", 
+        "defense_value": 16, 
+        "damage_value": 3
+      }
+    ]
+  }, 
+  {
+    "unit_id": "jlsg002", 
+    "set_id": "jlsg", 
+    "collector_number": "002", 
+    "name": "Batman", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      150, 
+      100
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "batman_ally", 
+      "justice_league"
+    ], 
+    "keywords": [
+      "Batman Family", 
+      "Detective", 
+      "Gotham City", 
+      "Justice League", 
+      "Martial Artist"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "STUDY THE ENEMY", 
+        "description": "Whenever Batman is hit by an attack or misses an attack, place a Strategy token on his character card. Give Batman a free action, remove any number of Strategy tokens from his card, and increase his attack value by 1 until your next turn for each token removed."
+      }, 
+      {
+        "type": "attack", 
+        "name": "UTILITY BELT", 
+        "description": "Batman can use Energy Explosion, Sidestep, Smoke Cloud, Regeneration, and Improved Targeting: Hindering. When he uses Sidestep, he can use Improved Movement: Characters.", 
+        "powers": [
+          "energy_explosion", 
+          "sidestep", 
+          "smoke_cloud", 
+          "regeneration"
+        ]
+      }, 
+      {
+        "type": "asset", 
+        "name": "TT #T002 JUSTICE LEAGUE", 
+        "description": "Opposing characters within 5 squares of this team character can't use Perplex."
+      }
+    ], 
+    "improved_movement": [
+      "elevated", 
+      "hindering"
+    ], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "6", 
+    "targets": "2", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "running_shot", 
+        "speed_value": 10, 
+        "attack_power": "special", 
+        "attack_value": 11, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "running_shot", 
+        "speed_value": 9, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 18, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_power": "incapacitate", 
+        "attack_value": 11, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 3, 
+        "starting_line": true
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_power": "incapacitate", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 11, 
+        "defense_power": "toughness", 
+        "defense_value": 18, 
+        "damage_power": "perplex", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "charge", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "charge", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "jlsg003", 
+    "set_id": "jlsg", 
+    "collector_number": "003", 
+    "name": "Wonder Woman", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      150, 
+      100
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "justice_league"
+    ], 
+    "keywords": [
+      "Amazon", 
+      "Justice League", 
+      "Warrior"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "OUTMATCH THE OPPONENT", 
+        "description": "When Wonder Woman hits an opposing character, place a Thwart token on her character card. When Wonder Woman is targeted with an attack, you may remove any number of Thwart tokens from her card, and increase her defense value by 1 until your next turn for each token removed."
+      }, 
+      {
+        "type": "trait", 
+        "name": "BRACELET DEFLECTION", 
+        "description": "Wonder Woman can use Super Strength. She can use Super Senses, but only against ranged attacks.", 
+        "powers": [
+          "super_strength", 
+          "super_senses"
+        ]
+      }, 
+      {
+        "type": "attack", 
+        "name": "LASSO OF TRUTH", 
+        "description": "Wonder Woman can use Incapacitate as if she has a range value of 4.", 
+        "powers": [
+          "incapacitate"
+        ]
+      }, 
+      {
+        "type": "defense", 
+        "name": "WARRIOR PRINCESS", 
+        "description": "Wonder Woman can use Combat Reflexes, Invulnerability, and Willpower.", 
+        "powers": [
+          "combat_reflexes", 
+          "invulnerability", 
+          "willpower"
+        ]
+      }, 
+      {
+        "type": "asset", 
+        "name": "TT #T002 JUSTICE LEAGUE", 
+        "description": "This team character can use Energy Shield/Deflection.", 
+        "powers": [
+          "energy_shield_deflection"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "wing", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 11, 
+        "attack_value": 11, 
+        "defense_power": "special", 
+        "defense_value": 18, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "charge", 
+        "speed_value": 10, 
+        "attack_power": "special", 
+        "attack_value": 11, 
+        "defense_power": "special", 
+        "defense_value": 18, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "sidestep", 
+        "speed_value": 10, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 3, 
+        "starting_line": true
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "sidestep", 
+        "speed_value": 9, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "impervious", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "flurry", 
+        "speed_value": 8, 
+        "attack_value": 11, 
+        "defense_power": "impervious", 
+        "defense_value": 16, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "flurry", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "impervious", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "jlsg004", 
+    "set_id": "jlsg", 
+    "collector_number": "004", 
+    "name": "Cyborg", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      100
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "justice_league"
+    ], 
+    "keywords": [
+      "Justice League", 
+      "Robot"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "TRACK COMMUNICATIONS", 
+        "description": "Whenever an opposing character within range is given a free action, place a Tracking token on Cyborg's character card. Give Cyborg a free action, remove any number of Tracking tokens from his card, and increase his range value by 1 until your next turn for each token removed."
+      }, 
+      {
+        "type": "asset", 
+        "name": "TT #T002 JUSTICE LEAGUE", 
+        "description": "This team character can use the Sharpshooter ability and modifies their range value by +2."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [
+      "hindering"
+    ], 
+    "object_keyphrases": [], 
+    "unit_range": "6", 
+    "targets": "2", 
+    "speed_type": "boot", 
+    "attack_type": "sharpshooter", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "force_blast", 
+        "speed_value": 10, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "force_blast", 
+        "speed_value": 8, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 11, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_value": 7, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "empower", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 9, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "empower", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 10, 
+        "attack_power": "pulse_wave", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 10, 
+        "attack_value": 9, 
+        "defense_power": "regeneration", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "jlsg005", 
+    "set_id": "jlsg", 
+    "collector_number": "005", 
+    "name": "Darkseid", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      400, 
+      300
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "quintessence"
+    ], 
+    "keywords": [
+      "Apokolips", 
+      "Ruler"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "BOOM TUBE INVASION", 
+        "description": "Give Darkseid a double power action when there are no other friendly characters named Parademon on the map. For every 100 points of the game's build total, place a JLSG #B001 Parademon bystander in an adjacent square."
+      }, 
+      {
+        "type": "trait", 
+        "name": "LORD OF APOKOLIPS", 
+        "description": "Darkseid can use Mastermind, but may only transfer damage to characters with the Apokolips keyword or with \"Parademon\" in their name.", 
+        "powers": [
+          "mastermind"
+        ]
+      }, 
+      {
+        "type": "speed", 
+        "name": "BOOM TUBE ESCAPE", 
+        "description": "Give Darkseid a power action. Place him and any number of adjacent friendly characters in your starting area."
+      }, 
+      {
+        "type": "attack", 
+        "name": "OMEGA BEAMS", 
+        "description": "Give Darkseid a double power action and make a ranged combat attack targeting a single opposing character. For this attack, he can use Precision Strike and Improved Targeting: Hindering, Elevated, Destroy Blocking, Characters, Adjacent, and damage dealt from this attack is penetrating damage.", 
+        "powers": [
+          "precision_strike"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "10", 
+    "targets": "2", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "sidestep", 
+        "speed_value": 9, 
+        "attack_power": "special", 
+        "attack_value": 12, 
+        "defense_power": "impervious", 
+        "defense_value": 19, 
+        "damage_power": "empower", 
+        "damage_value": 6
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "sidestep", 
+        "speed_value": 9, 
+        "attack_power": "special", 
+        "attack_value": 11, 
+        "defense_power": "impervious", 
+        "defense_value": 18, 
+        "damage_power": "empower", 
+        "damage_value": 6
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 11, 
+        "defense_power": "impervious", 
+        "defense_value": 18, 
+        "damage_power": "empower", 
+        "damage_value": 5, 
+        "starting_line": true
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "super_strength", 
+        "attack_value": 11, 
+        "defense_power": "invincible", 
+        "defense_value": 18, 
+        "damage_power": "empower", 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "super_strength", 
+        "attack_value": 10, 
+        "defense_power": "invincible", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "charge", 
+        "speed_value": 7, 
+        "attack_power": "super_strength", 
+        "attack_value": 10, 
+        "defense_power": "invincible", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "charge", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 16, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 8, 
+        "speed_power": "special", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 16, 
+        "damage_power": "outwit", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 9, 
+        "speed_power": "special", 
+        "speed_value": 6, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "regeneration", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 10, 
+        "speed_power": "special", 
+        "speed_value": 6, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "regeneration", 
+        "defense_value": 18, 
+        "damage_power": "outwit", 
+        "damage_value": 3
+      }
+    ]
+  }, 
+  {
+    "unit_id": "jlsgB001", 
+    "set_id": "jlsg", 
+    "collector_number": "B001", 
+    "name": "Parademon", 
+    "type": "bystander", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      10
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [], 
+    "special_powers": [
+      {
+        "type": "damage", 
+        "name": "MINION: HOLD THEM DOWN", 
+        "description": "When a friendly character named Darkseid makes an attack, adjacent opposing targets modify their defense value by -1. For all characters with this power, when Darkseid misses with an attack, deal 1 unavoidable damage to a friendly Parademon adjacent to the target."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "bystander_type": "standard", 
+    "unit_range": "5", 
+    "targets": "1", 
+    "speed_type": "wing", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "1", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }
+    ]
+  }
+]
