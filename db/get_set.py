@@ -396,6 +396,9 @@ SET_MAP = {
   "gotgm": {
     "name": "Guardians of the Galaxy Movie",
   },
+  "rotk": {
+    "name": "Return of the King",
+  },
 }
 
 POWERS = {

@@ -554,6 +554,11 @@ const SET_LIST = {
     "release_date": "2014-07-02",
     "universe": "marvel"
   },
+  "rotk": {
+    "name": "Return of the King",
+    "release_date": "2014-06-04",
+    "universe": "indy"
+  },
   "wk": {
     "name": "WizKids Standard Game Pieces",
     "release_date": "2002-05-01",
