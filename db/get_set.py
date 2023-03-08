@@ -399,6 +399,15 @@ SET_MAP = {
   "rotk": {
     "name": "Return of the King",
   },
+  "wol": {
+    "name": "War of Light",
+    "ranges": [
+      # TODO: Add support for wol115 and power batteries
+      ("wol001", "wol114"),
+      ("wolB001", "wolH007"),
+      ("wolS300", "wolS308"),
+    ],
+  },
 }
 
 POWERS = {
@@ -518,7 +527,7 @@ PROPERTY_VALUES = [
 ]
 
 SPECIAL_POWER_TYPE_VALUES = [
-  "trait", "costed_trait", "rally_trait", "title_trait", "plus_plot_points", "minus_plot_points", "speed", "attack", "defense", "damage", "location", "consolation", "other_id", "inspiration", "asset", "epic"
+  "trait", "costed_trait", "rally_trait", "title_trait", "plus_plot_points", "minus_plot_points", "speed", "attack", "defense", "damage", "location", "consolation", "other_id", "inspiration", "asset", "epic", "construct"
 ]
 
 RALLY_TYPE_VALUES = [
@@ -613,7 +622,7 @@ OBJECT_KEYPHRASE_VALUES = [
 ]
 
 BYSTANDER_TYPE_VALUES = [
-  'standard', 'construct'
+  'standard', 'construct', 'horde'
 ]
 
 SPEED_TYPE_VALUES = [
@@ -710,6 +719,7 @@ class Unit:
     self.object_type = kwargs.get("object_type", None)
     self.object_size = kwargs.get("object_size", None)
     self.bystander_type = kwargs.get("bystander_type", None)
+    self.horde_stack_max = kwargs.get("horde_stack_max", 0)
     self.relic_roll_min = kwargs.get("relic_roll_min", 0)
     self.map_url = kwargs.get("map_url", None)
     self.unit_range = kwargs.get("unit_range", -1)
@@ -779,6 +789,7 @@ class Unit:
           rarity == "Rarity: Brick" or
           rarity == "Rarity: Super Booster" or
           rarity == "Rarity: Ant-Man Box Set" or
+          rarity == "Rarity: Sinestro Corps War Scenario Pack" or
           rarity == "Rarity: Mass Market Exclusive Chase"):
       self.rarity = "chase"
     elif rarity == "Rarity: Ultra Chase":
@@ -1209,6 +1220,11 @@ class Unit:
             sp_type = "epic"
           elif sp_type_str == "black-circle":
             sp_type = "asset"
+          elif sp_type_str == "special-circle" and self.set_id == "wol":
+            sp_type = "construct"
+          elif sp_type_str == "max_stack":
+            # Extract horde stack properties below.
+            sp_type = "horde"
           elif sp_type_str == "pilot":
             # This will be handled down below when we extract passengers.
             sp_type = "none"
@@ -1249,11 +1265,17 @@ class Unit:
               sp_name.upper().startswith("SPECIAL TERRAIN TRAIT")):
             continue
           
-          # Handle special power that describe the number of passengers.
+          # Handle special power that describes the number of passengers.
           if ((self.type == "character" or self.type == "bystander") and
               sp_name and
               sp_name.startswith("PASSENGER")):
             self.passengers = int(sp_description)
+            continue
+          
+          # Handle special power that describes the max horde stack size.
+          if self.type == "bystander" and sp_type == "horde":
+            self.bystander_type = "horde"
+            self.horde_stack_max = int(sp_description[2:])
             continue
           
           # Handle special powers that describe properties
@@ -1788,6 +1810,9 @@ class Unit:
         print("Warning: for unit '%s' with type 'bystander' - missing bystander_type" % self.unit_id)
       if not self.bystander_type in BYSTANDER_TYPE_VALUES:
         print("Warning: for unit '%s' with type 'bystander' - unknown bystander_type '%s'" % (self.unit_id, self.bystander_type))
+      if self.bystander_type == "horde":
+        if self.horde_stack_max <= 0 or self.horde_stack_max > 6:
+          print("Warning: for unit '%s' with object_type 'horde' - invalid horde_stack_max '%i'" % (self.unit_id, self.horde_stack_max))
 
     if self.type == "character" or self.type == "bystander":
       if self.unit_range < 0 or self.unit_range > 13:
@@ -1865,6 +1890,8 @@ class Unit:
     xml += "\n    <object_keyphrases>%s</object_keyphrases>" % json.dumps(self.object_keyphrases)
     if self.bystander_type:
       xml += "\n    <bystander_type>%s</bystander_type>" % self.bystander_type
+    if self.horde_stack_max:
+      xml += "\n    <horde_stack_max>%s</horde_stack_max>" % self.horde_stack_max
     if self.relic_roll_min:
       xml += "\n    <relic_roll_min>%s</relic_roll_min>" % self.relic_roll_min
     if self.map_url:

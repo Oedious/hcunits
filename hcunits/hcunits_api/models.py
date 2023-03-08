@@ -30,6 +30,7 @@ class Unit(models.Model):
     object_size = models.CharField(max_length=11, blank=True, null=True)
     object_keyphrases = models.JSONField()
     bystander_type = models.CharField(max_length=9, blank=True, null=True)
+    horde_stack_max = models.IntegerField(blank=True, null=True)
     relic_roll_min = models.IntegerField(blank=True, null=True)
     map_url = models.TextField(blank=True, null=True)
     unit_range = models.IntegerField(blank=True, null=True)

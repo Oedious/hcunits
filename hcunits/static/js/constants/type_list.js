@@ -121,6 +121,10 @@ const BYSTANDER_TYPE_INFO = {
     "description": "Immediately KO this Construct if it is not within 6 squares of the character that generated it.<br>// Constructs do not block line of fire, do not require opposing characters to break away, and opposing characters don't stop moving when they become adjacent to a Construct. Constructs can't be chosen for Mastermind or have their combat values modified by other characters.",
     "icon": "table_lamp",
   },
+  "horde": {
+    "name": "Horde",
+    "icon": "groups",
+  },
 };
 
 const CARD_TYPE_INFO = {

@@ -559,6 +559,11 @@ const SET_LIST = {
     "release_date": "2014-06-04",
     "universe": "indy"
   },
+  "wol": {
+    "name": "War of Light",
+    "release_date": "2014-06-01",
+    "universe": "dc"
+  },
   "wk": {
     "name": "WizKids Standard Game Pieces",
     "release_date": "2002-05-01",

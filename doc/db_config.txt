@@ -91,8 +91,11 @@ CREATE TABLE units (
   object_keyphrases JSON,
 
   -- The type or specialization of an bystander.
-  bystander_type ENUM('standard', 'construct'),
+  bystander_type ENUM('standard', 'construct', 'horde'),
   
+  -- The max number of tokens you can have in this horde stack.
+  horde_stack_max TINYINT,
+
   -- The minimum roll necessary to equip the relic.
   relic_roll_min TINYINT,
 
@@ -663,6 +666,36 @@ LOAD XML LOCAL INFILE 'fl/fl.xml'
   ROWS IDENTIFIED BY '<row>';
 
 LOAD XML LOCAL INFILE 'fffl/fffl.xml'
+  REPLACE
+  INTO TABLE units
+  ROWS IDENTIFIED BY '<row>';
+
+LOAD XML LOCAL INFILE 'gotg/gotg.xml'
+  REPLACE
+  INTO TABLE units
+  ROWS IDENTIFIED BY '<row>';
+
+LOAD XML LOCAL INFILE 'ffgotg/ffgotg.xml'
+  REPLACE
+  INTO TABLE units
+  ROWS IDENTIFIED BY '<row>';
+
+LOAD XML LOCAL INFILE 'jlsg/jlsg.xml'
+  REPLACE
+  INTO TABLE units
+  ROWS IDENTIFIED BY '<row>';
+
+LOAD XML LOCAL INFILE 'gotgm/gotgm.xml'
+  REPLACE
+  INTO TABLE units
+  ROWS IDENTIFIED BY '<row>';
+
+LOAD XML LOCAL INFILE 'rotk/rotk.xml'
+  REPLACE
+  INTO TABLE units
+  ROWS IDENTIFIED BY '<row>';
+
+LOAD XML LOCAL INFILE 'wol/wol.xml'
   REPLACE
   INTO TABLE units
   ROWS IDENTIFIED BY '<row>';
