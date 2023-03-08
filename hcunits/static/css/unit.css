@@ -391,7 +391,7 @@
 
 #smallCardRange {
   position: absolute;
-  right: 53px;
+  right: 58px;
   top: 4px;
   color: white;
   font-size: 11px;
@@ -434,6 +434,40 @@
   top: 2px;
 }
 
+#smallCardImprovedAbilities {
+  position: absolute;
+  left: 97px;
+  top: 97px;
+}
+
+.smallCardImprovedAbilityIcon {
+  position: absolute;
+}
+
+#smallCardTeamAbilities {
+  position: absolute;
+  top: 49px;
+  left: 10px;
+  width: 67px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#smallCardTeamAbilities div {
+  display: flex;
+  align-items: center;
+}
+
+#smallCardPassengers {
+  position: absolute;
+  left: 75px;
+  bottom: 2px;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
 #smallCardDial {
   position: absolute;
   left: 48px;
@@ -472,6 +506,20 @@
 
 .smallCardFooter a {
   color: white;
+}
+
+.smallCardFooter {
+  position: absolute;
+  left: 0px;
+  width: 182px;
+  height: 24px;
+  color: white;
+  background-color: black;
+  border-radius: 0px 9px 9px 0px;
+  font-size: 14px;
+  font-family: arial, sans-serif;
+  text-align: center;
+  line-height: 1.75em;
 }
 
 .specialObjectIcon {

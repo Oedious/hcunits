@@ -169,27 +169,27 @@ class CharacterView extends BaseUnitView {
     var html = "<div id='largeCardImprovedAbilities'>";
     // First iterate through each array and collect a list of all the symbols
     // that need to be drawn.
-    var imp_info = [];
+    var impInfo = [];
     if (this.unit_.improved_movement.length > 0) {
-      imp_info.push({
+      impInfo.push({
         "url": "/static/images/imp/movement.png",
       });
     }
     for (const im of this.unit_.improved_movement) {
       const info = IMPROVED_MOVEMENT_LIST[im];
-      imp_info.push({
+      impInfo.push({
         "tooltip": `<b>${escapeHtml(info.name)}</b>: ${escapeHtml(info.description)}`,
         "url": `/static/images/imp/${im}.png`
       });
     }
     if (this.unit_.improved_targeting.length > 0) {
-      imp_info.push({
+      impInfo.push({
         "url": "/static/images/imp/targeting.png",
       });
     }
     for (const it of this.unit_.improved_targeting) {
       const info = IMPROVED_TARGETING_LIST[it];
-      imp_info.push({
+      impInfo.push({
         "tooltip": `<b>${escapeHtml(info.name)}</b>: ${escapeHtml(info.description)}`,
         "url": `/static/images/imp/${it}.png`
       });
@@ -199,19 +199,19 @@ class CharacterView extends BaseUnitView {
     const INCREMENT = 2 * Math.PI / 16;
     const RADIUS = 70;
     const IMG_OFFSET = 9;
-    for (var i = 0; i < imp_info.length; ++i) {
-      const img_url = imp_info[i].url;
-      const tooltip = imp_info[i].tooltip;
+    for (var i = 0; i < impInfo.length; ++i) {
+      const imgUrl = impInfo[i].url;
+      const tooltip = impInfo[i].tooltip;
       const left = Math.cos(INCREMENT * i) * -RADIUS - IMG_OFFSET;
       const top = Math.sin(INCREMENT * i) * RADIUS - IMG_OFFSET;
       if (tooltip) {
         html += `
           <div class='tooltip' style='position:absolute;left:${left}px;top:${top}px;'>
-            <img class='largeCardImprovedAbilityIcon' src='${img_url}'>
+            <img class='largeCardImprovedAbilityIcon' src='${imgUrl}'>
             <span class='tooltiptext'>${tooltip}</span>
           </div>`;
       } else {
-        html += `<img class='largeCardImprovedAbilityIcon' src='${img_url}' style='left:${left}px;top:${top}px;'>`
+        html += `<img class='largeCardImprovedAbilityIcon' src='${imgUrl}' style='left:${left}px;top:${top}px;'>`
       }
     }
     html += "</div>";

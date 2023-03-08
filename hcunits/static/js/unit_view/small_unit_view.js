@@ -147,7 +147,7 @@ class SmallUnitView extends BaseUnitView {
       } else if (type == "consolation") {
         // Don't use an icon, but add a tag to preserve spacing.
         iconHtml = "<td class='specialPowerImg'></td>";
-      } else if (type == "speed" || type == "attack" || type == "defense" || type == "damage") {
+      } else if (type == "trait" || type == "speed" || type == "attack" || type == "defense" || type == "damage") {
         var combatSymbolType = type;
         if (type != "trait") {
           combatSymbolType = this.unit_[type + "_type"];
