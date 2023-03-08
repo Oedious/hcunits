@@ -58,7 +58,9 @@ class BystanderView extends SmallUnitView {
         ${this.drawImprovedAbilities_()}
         ${this.drawTeamAbilities_()}
         ${this.drawPassengers_()}
-        <div id='smallCardBystanderName'>${this.unit_.name.toUpperCase()}</div>
+        <div id='smallCardBystanderName'>
+          ${this.unit_.name.toUpperCase()}
+        </div>
         <div id='smallCardDial'>`;
 
     for (var row = 0; row < 4; ++row) {

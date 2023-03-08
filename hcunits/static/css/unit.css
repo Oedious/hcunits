@@ -355,12 +355,17 @@
 
 #smallCardBystanderName {
   position: absolute;
-  left: 23%;
-  top: 15px;
-  width: 54%;
+  left: 45px;
+  height: 45px;
+  top: 2px;
+  width: 105px;
   color: white;
   text-align: center;
   line-height: 1em;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #smallCardDialBackground {
