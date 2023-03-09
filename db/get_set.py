@@ -411,6 +411,12 @@ SET_MAP = {
   "dofp": {
     "name": "X-Men - Days of Future Past",
   },
+  "dp": {
+    "name": "Deadpool",
+  },
+  "ffdp": {
+    "name": "Fast Forces: Deadpool",
+  },
 }
 
 POWERS = {
@@ -518,7 +524,7 @@ POWER_VALUES = [
 ]
 
 TYPE_VALUES = [
-  'character', 'object', 'equipment', 'map', 'bystander', 'tarot_card', 'mystery_card', 'id_card', 'comic_panel'
+  'character', 'object', 'equipment', 'map', 'bystander', 'tarot_card', 'mystery_card', 'id_card', 'attachment'
 ]
 
 RARITY_VALUES = [
@@ -530,7 +536,7 @@ PROPERTY_VALUES = [
 ]
 
 SPECIAL_POWER_TYPE_VALUES = [
-  "trait", "costed_trait", "rally_trait", "title_trait", "plus_plot_points", "minus_plot_points", "speed", "attack", "defense", "damage", "location", "consolation", "other_id", "inspiration", "asset", "epic", "construct"
+  "trait", "costed_trait", "rally_trait", "title_trait", "plus_plot_points", "minus_plot_points", "speed", "attack", "defense", "damage", "location", "consolation", "other_id", "inspiration", "asset", "epic", "construct", "word_balloon"
 ]
 
 RALLY_TYPE_VALUES = [
@@ -626,6 +632,10 @@ OBJECT_KEYPHRASE_VALUES = [
 
 BYSTANDER_TYPE_VALUES = [
   'standard', 'construct', 'horde'
+]
+
+ATTACHMENT_TYPE_VALUES = [
+  'comic_panel', 'construct', 'word_balloon'
 ]
 
 SPEED_TYPE_VALUES = [
@@ -724,6 +734,7 @@ class Unit:
     self.bystander_type = kwargs.get("bystander_type", None)
     self.horde_stack_max = kwargs.get("horde_stack_max", 0)
     self.relic_roll_min = kwargs.get("relic_roll_min", 0)
+    self.attachment_type = kwargs.get("attachment_type", None)
     self.map_url = kwargs.get("map_url", None)
     self.unit_range = kwargs.get("unit_range", -1)
     self.targets = kwargs.get("targets", -1)
@@ -777,7 +788,8 @@ class Unit:
     rarity = figure_rank_tag.strong.string.strip()
     if (rarity == "Rarity: Common" or
         rarity == "Rarity: Starter Set" or
-        rarity == "Rarity: Fast Forces"):
+        rarity == "Rarity: Fast Forces" or
+        rarity == "Rarity: Deadpool Gravity Feed"):
       self.rarity = "common"
     elif rarity == "Rarity: Uncommon":
       self.rarity = "uncommon"
@@ -856,6 +868,9 @@ class Unit:
       elif soup.find("td", class_="card_location_bonus"):
         print("Skipping location bonuses for '%s' - %s" % (self.unit_id, self.name))
         return False
+      elif soup.find("td", class_="card_word_balloon"):
+        self.type = "attachment"
+        self.attachment_type = "word_balloon"
       else:
         self.type = "character"
         if figure_rank == "prime" or figure_rank == "unique":
@@ -871,7 +886,11 @@ class Unit:
           if is_team_up:
             self.type = "team_up"
           elif self.unit_id.endswith("fx"):
-            self.type = "comic_panel"
+            self.type = "attachment"
+            self.attachment_type = "comic_panel"
+          elif self.unit_id.startswith("wolR2"):
+            self.type = "attachment"
+            self.attachment_type = "construct"
           else:
             has_parent = soup.find(text=re.compile(r'\s*Inventory options for this figure are controlled by the main/parent unit.\s*'))
             if has_parent:
@@ -894,11 +913,11 @@ class Unit:
         self.collector_number = self.collector_number.replace("S", "s", 1)
         self.unit_id = self.set_id + self.collector_number
 
-    if self.type == "character" or self.type == "bystander":
+    if self.type == "character" or self.type == "bystander" or self.type == "attachment":
       point_value_tag = soup.find("div", {"style": "float:right;padding-top:3px;"})
     elif self.type == "object" or self.type == "equipment" or self.type == "id_card" or self.type == "mystery_card":
       point_value_tag = soup.find("td", class_="tfoot")
-    elif self.type == "team_up" or self.type == "tarot_card" or self.type == "comic_panel":
+    elif self.type == "team_up" or self.type == "tarot_card":
       point_value_tag = None
     else:
       raise RuntimeError("Don't know how to decode points for unit type (%s)" % unit_id)
@@ -1173,18 +1192,32 @@ class Unit:
             ]))
             self.special_powers[-1] = self.parse_powers_from_description(self.special_powers[-1])
 
-    # Parse Comic Panels
-    if self.type == "comic_panel":
-      if self.name == "Energy Shield / Deflection":
-        self.name = "Energy Shield/Deflection"
-
-      self.special_powers.append(OrderedDict([
-        ("name", clean_string(self.name)),
-        ("description", "The unit to which the comic panel is attached can use the listed effect.")
-      ]))
-      power = POWERS.get(self.name, None)
-      if power:
-        self.special_powers[-1]["powers"] = [power]
+    # Parse attachments
+    if self.type == "attachment":
+      if self.attachment_type == "comic_panel":
+        if self.name == "Energy Shield / Deflection":
+          self.name = "Energy Shield/Deflection"
+  
+        self.special_powers.append(OrderedDict([
+          ("name", clean_string(self.name)),
+          ("description", "The unit to which the comic panel is attached can use the listed effect.")
+        ]))
+        power = POWERS.get(self.name, None)
+        if power:
+          self.special_powers[-1]["powers"] = [power]
+      elif self.attachment_type == "construct":
+        # TODO
+        raise RuntimeError("Not supported yet")
+      elif self.attachment_type == "word_balloon":
+        card_tag = soup.find("td", class_="card_word_balloon")
+        sp_tag = card_tag.parent.next_sibling.next_sibling.td.div
+        if sp_tag:
+          self.special_powers.append(OrderedDict([
+            ("description", clean_string(sp_tag.string.strip()))
+          ]))
+          self.special_powers[-1] = self.parse_powers_from_description(self.special_powers[-1])
+        else:
+          raise RuntimeError("For unit '%s', could not find a word balloon special power." % (self.unit_id))
 
     # Parse special powers
     if (self.type == "character" or
@@ -1226,6 +1259,8 @@ class Unit:
             sp_type = "asset"
           elif sp_type_str == "special-circle" and self.set_id == "wol":
             sp_type = "construct"
+          elif sp_type_str == "special-circle" and (self.set_id == "dp" or self.set_id == "ffdp"):
+            sp_type = "word_balloon"
           elif sp_type_str == "max_stack":
             # Extract horde stack properties below.
             sp_type = "horde"
@@ -1346,7 +1381,7 @@ class Unit:
   
                 # Try and split apart the description by different delimiters and
                 # extract the values that have a match.
-                for delimiter in [", and", "and", ".", ",", ";"]:
+                for delimiter in [", and", "and", ".", ";", ","]:
                   parts = imp_types.split(delimiter)
                   imp_types = ""
                   while len(parts) > 0:
@@ -1818,6 +1853,13 @@ class Unit:
         if self.horde_stack_max <= 0 or self.horde_stack_max > 8:
           print("Warning: for unit '%s' with object_type 'horde' - invalid horde_stack_max '%i'" % (self.unit_id, self.horde_stack_max))
 
+    # Sanity-check attachment types.
+    if self.type == "attachment":
+      if not self.attachment_type:
+        print("Warning: for unit '%s' with type 'attachment' - missing attachment_type" % self.unit_id)
+      if not self.attachment_type in ATTACHMENT_TYPE_VALUES:
+        print("Warning: for unit '%s' with type 'attachment' - unknown attachment_type '%s'" % (self.unit_id, self.attachment_type))
+
     if self.type == "character" or self.type == "bystander":
       if self.unit_range < 0 or self.unit_range > 13:
         print("Warning: unit '%s' has unexpected range '%d'" % (self.unit_id, self.unit_range))
@@ -1898,6 +1940,8 @@ class Unit:
       xml += "\n    <horde_stack_max>%s</horde_stack_max>" % self.horde_stack_max
     if self.relic_roll_min:
       xml += "\n    <relic_roll_min>%s</relic_roll_min>" % self.relic_roll_min
+    if self.attachment_type:
+      xml += "\n    <attachment_type>%s</attachment_type>" % self.attachment_type
     if self.map_url:
       xml += "\n    <map_url>%s</map_url>" % self.map_url
     if self.passengers >= 0:

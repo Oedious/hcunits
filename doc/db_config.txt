@@ -32,7 +32,7 @@ CREATE TABLE units (
 
   -- The type of the unit.
   -- TODO: Add types for 'battlefield_condition', 'event_dial', 'resource', 'terrain'
-  type ENUM('character', 'object', 'equipment', 'map', 'bystander', 'tarot_card', 'mystery_card', 'id_card', 'comic_panel') NOT NULL,
+  type ENUM('character', 'object', 'equipment', 'map', 'bystander', 'tarot_card', 'mystery_card', 'id_card', 'attachment') NOT NULL,
 
   -- A JSON array of numbers containing point values of different starting lines.
   point_values JSON,
@@ -59,7 +59,7 @@ CREATE TABLE units (
 
   -- A JSON array of objects containing special powers and traits, of the format:
   -- {
-  --   "type": (Optional) string - contains "trait", "speed", "attack", "defense", "damage", "costed_trait", "rally_trait", "title_trait", "plus_plot_points", "minus_plot_points", "location", "consolation", "other_id", "inspiration", "epic"
+  --   "type": (Optional) string - contains "trait", "speed", "attack", "defense", "damage", "costed_trait", "rally_trait", "title_trait", "plus_plot_points", "minus_plot_points", "location", "consolation", "other_id", "inspiration", "epic", "construct", "word_balloon"
   --   "name": (Optional) string - the name of the power.
   --   "description": string - the description of the power.
   --   "powers": (Optional) array of strings, containing names to standard powers granted.
@@ -90,7 +90,7 @@ CREATE TABLE units (
   -- "indestructible", "equip_any", "equip_friendly", "unequip_ko", "unequip_drop", "sword_equipment"
   object_keyphrases JSON,
 
-  -- The type or specialization of an bystander.
+  -- The type or specialization of a bystander.
   bystander_type ENUM('standard', 'construct', 'horde'),
   
   -- The max number of tokens you can have in this horde stack.
@@ -98,6 +98,9 @@ CREATE TABLE units (
 
   -- The minimum roll necessary to equip the relic.
   relic_roll_min TINYINT,
+
+  -- The type or specialization of an attachment.
+  attachment_type ENUM('comic_panel', 'construct', 'word_balloon'),
 
   -- For 'map' types, the path to the URL containing the map layout.
   map_url TEXT(256),
@@ -705,6 +708,16 @@ LOAD XML LOCAL INFILE 'dofp/dofp.xml'
   INTO TABLE units
   ROWS IDENTIFIED BY '<row>';
 
+LOAD XML LOCAL INFILE 'dp/dp.xml'
+  REPLACE
+  INTO TABLE units
+  ROWS IDENTIFIED BY '<row>';
+
+LOAD XML LOCAL INFILE 'ffdp/ffdp.xml'
+  REPLACE
+  INTO TABLE units
+  ROWS IDENTIFIED BY '<row>';
+
 ALTER TABLE units
 MODIFY COLUMN rarity ENUM('common', 'uncommon', 'rare', 'super_rare', 'chase', 'ultra_chase', 'limited_edition');
 
@@ -719,4 +732,4 @@ FROM units
 WHERE set_id = 'hgpc';
 
 ALTER TABLE units
-MODIFY COLUMN type ENUM('character', 'object', 'equipment', 'map', 'bystander', 'tarot_card', 'mystery_card', 'id_card', 'comic_panel') NOT NULL;
+MODIFY COLUMN type ENUM('character', 'object', 'equipment', 'map', 'bystander', 'tarot_card', 'mystery_card', 'id_card', 'attachment') NOT NULL;

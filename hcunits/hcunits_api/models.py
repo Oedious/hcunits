@@ -32,6 +32,7 @@ class Unit(models.Model):
     bystander_type = models.CharField(max_length=9, blank=True, null=True)
     horde_stack_max = models.IntegerField(blank=True, null=True)
     relic_roll_min = models.IntegerField(blank=True, null=True)
+    attachment_type = models.CharField(max_length=12, blank=True, null=True)
     map_url = models.TextField(blank=True, null=True)
     unit_range = models.IntegerField(blank=True, null=True)
     passengers = models.IntegerField(blank=True, null=True)

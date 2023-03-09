@@ -7,7 +7,7 @@ const TYPE_TO_ICON = {
   "tarot_card": "content_copy",
   "mystery_card": "psychology_alt",
   "id_card": "badge",
-  "comic_panel": "background_replace",
+  "attachment": "settings_account_box",
 };
 
 const SORT_ORDERS = {
@@ -260,6 +260,12 @@ class UnitListPanel extends ListPanel {
             minorInfo = OBJECT_TYPE_INFO[unit.object_type].name;
           } else if (unit.type == "bystander") {
             const typeInfo = BYSTANDER_TYPE_INFO[unit.bystander_type];
+            minorInfo = typeInfo.name;
+            if (typeInfo.icon) {
+              icon = typeInfo.icon;
+            }
+          } else if (unit.type == "attachment") {
+            const typeInfo = ATTACHMENT_TYPE_INFO[unit.attachment_type];
             minorInfo = typeInfo.name;
             if (typeInfo.icon) {
               icon = typeInfo.icon;

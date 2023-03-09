@@ -146,6 +146,13 @@ const TEAM_ABILITY_LIST = {
     "copyable": true,
     "wildcard": false
   },
+  "ultimate_x_men": {
+    "name": "Ultimate X-Men",
+    "universe": "marvel",
+    "description": "Once per game per character, a character using the Ultimate X-Men team ability may choose one opposing character or all characters possessing a single chosen team ability; this choice can be made only once per game even if the character has used another team ability. When this character attacks a chosen character, modify the chosen character’s defense value by -1.",
+    "copyable": true,
+    "wildcard": false
+  },
   "x_men": {
     "name": "X-Men",
     "universe": "marvel",

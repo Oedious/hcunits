@@ -569,6 +569,16 @@ const SET_LIST = {
     "release_date": "2014-05-21",
     "universe": "marvel"
   },
+  "dp": {
+    "name": "Deadpool",
+    "release_date": "2014-05-14",
+    "universe": "marvel"
+  },
+  "ffdp": {
+    "name": "Fast Forces: Thunderbolts",
+    "release_date": "2014-05-14",
+    "universe": "marvel"
+  },
   "wk": {
     "name": "WizKids Standard Game Pieces",
     "release_date": "2002-05-01",

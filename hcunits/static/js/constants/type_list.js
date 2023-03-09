@@ -23,8 +23,8 @@ const TYPE_LIST = {
   "id_card": {
     "name": "ID Card"
   },
-  "comic_panel": {
-    "name": "Comic Panel"
+  "attachment": {
+    "name": "Attachment"
   }
   /*
   "terrain": {
@@ -127,6 +127,24 @@ const BYSTANDER_TYPE_INFO = {
   },
 };
 
+const ATTACHMENT_TYPE_INFO = {
+  "comic_panel": {
+    "name": "Comic Panel",
+    "title": "COMIC PANEL",
+    "description": "At the beginning of your turn, if [DXF Chase Unit] has no action tokens, you may attach a comic panel to him, removing an already attached one. He can use the listed effect.",
+    "icon": "background_replace",
+  },
+  "construct": {
+    "name": "Construct",
+    "icon": "table_lamp",
+  },
+  "word_balloon": {
+    "name": "Word Balloon",
+    "description": "Give [DP Unit] a free action and attach a word balloon to him, replacing any currently attached. [DP Unit] can use the associated affects.",
+    "icon": "chat_bubble",
+  },
+};
+
 const CARD_TYPE_INFO = {
   "mystery_card": {
     "name": "Mystery Card",
@@ -140,10 +158,5 @@ const CARD_TYPE_INFO = {
   "id_card": {
     "name": "ID Card",
     "title": "ID CARD",
-  },
-  "comic_panel": {
-    "name": "Comic Panel",
-    "title": "COMIC PANEL",
-    "description": "At the beginning of your turn, if [DXF Chase Unit] has no action tokens, you may attach a comic panel to him, removing an already attached one. He can use the listed effect."
   },
 };

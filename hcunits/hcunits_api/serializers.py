@@ -12,7 +12,7 @@ class NonNullModelSerializer(serializers.ModelSerializer):
 class UnitListSerializer(NonNullModelSerializer):
   class Meta:
     model = Unit
-    fields = ['unit_id', 'set_id', 'name', 'type', 'collector_number', 'point_values', 'rarity', 'object_type', 'bystander_type']
+    fields = ['unit_id', 'set_id', 'name', 'type', 'collector_number', 'point_values', 'rarity', 'object_type', 'bystander_type', 'attachment_type']
     
 class UnitDetailSerializer(NonNullModelSerializer):
   img_url = serializers.SerializerMethodField('get_img_url')
