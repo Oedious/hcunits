@@ -1,0 +1,3525 @@
+[
+  {
+    "unit_id": "dofp001", 
+    "set_id": "dofp", 
+    "collector_number": "001", 
+    "name": "Sentinel", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      150, 
+      125, 
+      75
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Future", 
+      "Robot", 
+      "Sentinel"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "MUTANT HUNTER", 
+        "description": "When Sentinel targets a character possessing the Brotherhood of Mutants or X-Men team ability or keywords, modify its attack and damage values by +1 for that attack."
+      }, 
+      {
+        "type": "attack", 
+        "name": "ACTIVATE INHIBITOR COLLAR", 
+        "description": "Sentinel can use Pulse Wave. When it does, hit characters are also given an action token.", 
+        "powers": [
+          "pulse_wave"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "5", 
+    "targets": "1", 
+    "speed_type": "wing", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "giant", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 10, 
+        "attack_power": "quake", 
+        "attack_value": 10, 
+        "defense_power": "invincible", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "quake", 
+        "attack_value": 11, 
+        "defense_power": "invincible", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "force_blast", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 11, 
+        "defense_power": "invincible", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 3, 
+        "starting_line": true
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "force_blast", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "force_blast", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "outwit", 
+        "damage_value": 3, 
+        "starting_line": true
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "force_blast", 
+        "speed_value": 7, 
+        "attack_power": "precision_strike", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 7, 
+        "speed_value": 6, 
+        "attack_power": "precision_strike", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 8, 
+        "speed_value": 6, 
+        "attack_power": "precision_strike", 
+        "attack_value": 8, 
+        "defense_power": "regeneration", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 9, 
+        "speed_value": 6, 
+        "attack_value": 8, 
+        "defense_power": "regeneration", 
+        "defense_value": 18, 
+        "damage_value": 3
+      }
+    ]
+  }, 
+  {
+    "unit_id": "dofp002", 
+    "set_id": "dofp", 
+    "collector_number": "002", 
+    "name": "Ariel", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      55
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "x_men"
+    ], 
+    "keywords": [
+      "Days of Future Past", 
+      "Future", 
+      "X-Men"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "VISIONS OF THE PAST", 
+        "description": "Battlefield Promotion: When Ariel hits one or more opposing characters, after actions resolve, place a Promotion token on her character card. You may then roll a d6 that can't be rerolled and add 1 for each Promotion token on her character card; on a result of 6 or higher, you may remove all Promotion tokens and replace this character with DOFP #020 Sprite on the same click number."
+      }, 
+      {
+        "type": "trait", 
+        "name": "I BRING DARK TIDINGS FROM THE FUTURE", 
+        "description": "Ariel can use Super Senses. If Ariel was placed on the map through the Battlefield Promotion ability, she can use Probability Control.", 
+        "powers": [
+          "probability_control"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "6", 
+    "targets": "1", 
+    "speed_type": "transport_boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 9, 
+        "attack_power": "precision_strike", 
+        "attack_value": 9, 
+        "defense_value": 17, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 9, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_value": 17, 
+        "damage_power": "support", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "stealth", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "support", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "stealth", 
+        "speed_value": 8, 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 15, 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "stealth", 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_value": 15, 
+        "damage_power": "support", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "dofp003", 
+    "set_id": "dofp", 
+    "collector_number": "003", 
+    "name": "Colossus", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      200, 
+      100
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "x_men"
+    ], 
+    "keywords": [
+      "Armor", 
+      "X-Men"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "UNSTOPPABLE!", 
+        "description": "Colossus can use Super Strength. At the beginning of your turn, Colossus can use Sidestep.", 
+        "powers": [
+          "super_strength", 
+          "sidestep"
+        ]
+      }, 
+      {
+        "type": "damage", 
+        "name": "MUTANT POWERHOUSE", 
+        "description": "Colossus can use Close Combat Expert. Colossus' other powers can't be countered.", 
+        "powers": [
+          "close_combat_expert"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 10, 
+        "attack_value": 10, 
+        "defense_power": "impervious", 
+        "defense_value": 18, 
+        "damage_power": "special", 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_value": 11, 
+        "defense_power": "impervious", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 3, 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "impervious", 
+        "defense_value": 17, 
+        "damage_power": "empower", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "quake", 
+        "attack_value": 10, 
+        "defense_power": "invincible", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "charge", 
+        "speed_value": 7, 
+        "attack_power": "quake", 
+        "attack_value": 10, 
+        "defense_power": "invincible", 
+        "defense_value": 18, 
+        "damage_power": "empower", 
+        "damage_value": 3, 
+        "starting_line": true
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "charge", 
+        "speed_value": 7, 
+        "attack_power": "quake", 
+        "attack_value": 10, 
+        "defense_power": "invincible", 
+        "defense_value": 16, 
+        "damage_power": "empower", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 7, 
+        "speed_value": 7, 
+        "attack_power": "quake", 
+        "attack_value": 9, 
+        "defense_power": "invulnerability", 
+        "defense_value": 16, 
+        "damage_power": "empower", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 8, 
+        "speed_value": 8, 
+        "attack_power": "steal_energy", 
+        "attack_value": 9, 
+        "defense_power": "invulnerability", 
+        "defense_value": 16, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 9, 
+        "speed_value": 6, 
+        "attack_power": "steal_energy", 
+        "attack_value": 8, 
+        "defense_power": "invulnerability", 
+        "defense_value": 15, 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "dofp004", 
+    "set_id": "dofp", 
+    "collector_number": "004", 
+    "name": "Avalanche", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      72
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "brotherhood_of_mutants"
+    ], 
+    "keywords": [
+      "Brotherhood of Mutants", 
+      "Freedom Force"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "EARTHEN TIDAL WAVE", 
+        "description": "Avalanche can use Quake. When he does, he targets all opposing characters within 3 squares and damage dealt to each hit character is instead equal to 5 minus the number of squares that character is from Avalanche.", 
+        "powers": [
+          "quake"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_value": 8, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_value": 8, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "precision_strike", 
+        "attack_value": 9, 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_value": 9, 
+        "defense_value": 16, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 8, 
+        "attack_value": 8, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_value": 7, 
+        "attack_value": 8, 
+        "defense_power": "toughness", 
+        "defense_value": 15, 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "dofp005", 
+    "set_id": "dofp", 
+    "collector_number": "005", 
+    "name": "Angel", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      74
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "defenders", 
+      "x_men"
+    ], 
+    "keywords": [
+      "Celebrity", 
+      "Champions", 
+      "Defenders", 
+      "X-Factor", 
+      "X-Men"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "A TEAM PLAYER SINCE THE BEGINNING", 
+        "description": "Adjacent friendly characters with the Defenders or X-Men team ability can use both the Defenders and X-Men team abilities."
+      }, 
+      {
+        "type": "attack", 
+        "name": "WINGED WARRIOR", 
+        "description": "Angel can use Charge. When he does, he can use Improved Movement: Characters and modifies his speed value by +2.", 
+        "powers": [
+          "charge"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "wing", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "sidestep", 
+        "speed_value": 10, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "sidestep", 
+        "speed_value": 10, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "flurry", 
+        "speed_value": 10, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "super_senses", 
+        "defense_value": 16, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "flurry", 
+        "speed_value": 10, 
+        "attack_value": 8, 
+        "defense_power": "super_senses", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "earthbound_neutralized", 
+        "speed_value": 8, 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "earthbound_neutralized", 
+        "speed_value": 6, 
+        "attack_value": 8, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 15, 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "dofp006", 
+    "set_id": "dofp", 
+    "collector_number": "006", 
+    "name": "Pyro", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      90
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "brotherhood_of_mutants"
+    ], 
+    "keywords": [
+      "Brotherhood of Mutants", 
+      "Freedom Force"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "FLAME CONSTRUCTS", 
+        "description": "When Pyro has no action tokens and there isn't a Flame Construct token on the map placed by him, give him a free action to place one in an unoccupied, adjacent square and it becomes a bystander token as described on this card."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "6", 
+    "targets": "2", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 11, 
+        "defense_value": 17, 
+        "damage_power": "enhancement", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 10, 
+        "defense_value": 17, 
+        "damage_power": "enhancement", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 11, 
+        "defense_value": 18, 
+        "damage_power": "perplex", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 10, 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "running_shot", 
+        "speed_value": 6, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 8, 
+        "defense_value": 16, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_value": 6, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 8, 
+        "defense_value": 17, 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "dofp006bt", 
+    "set_id": "dofp", 
+    "collector_number": "006bt", 
+    "name": "Flame Construct", 
+    "type": "bystander", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [], 
+    "special_powers": [], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "bystander_type": "standard", 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "1", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 6, 
+        "attack_power": "poison", 
+        "attack_value": 9, 
+        "defense_value": 15, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "dofp007", 
+    "set_id": "dofp", 
+    "collector_number": "007", 
+    "name": "Franklin Richards", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      64
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "fantastic_four", 
+      "x_men"
+    ], 
+    "keywords": [
+      "Days of Future Past", 
+      "Fantastic Four", 
+      "Future", 
+      "Scientist"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "MARRIED DUO", 
+        "description": "When Franklin Richards is adjacent to a friendly character named Rachel Summers, modify both characters' defense values by +1 if not already modified by this effect."
+      }, 
+      {
+        "type": "damage", 
+        "name": "SENTINEL SURVIVOR", 
+        "description": "Franklin Richards can use Empower, Enhancement and Support. When Franklin Richards has less than 2 action tokens, adjacent friendly characters' powers can't be countered and their combat values can't be modified by opposing characters.", 
+        "powers": [
+          "empower", 
+          "enhancement", 
+          "support"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "4", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "stealth", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "barrier", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "stealth", 
+        "speed_value": 8, 
+        "attack_value": 9, 
+        "defense_power": "barrier", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "stealth", 
+        "speed_value": 8, 
+        "attack_value": 9, 
+        "defense_power": "barrier", 
+        "defense_value": 16, 
+        "damage_power": "probability_control", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "stealth", 
+        "speed_value": 7, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 9, 
+        "defense_value": 17, 
+        "damage_power": "probability_control", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "stealth", 
+        "speed_value": 6, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 8, 
+        "defense_value": 16, 
+        "damage_power": "probability_control", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "dofp008", 
+    "set_id": "dofp", 
+    "collector_number": "008", 
+    "name": "Senator Robert Kelly", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      42
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Celebrity", 
+      "Politician"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "MUTANT REGISTRATION ACT", 
+        "description": "During your first turn, choose a keyword possessed by an opposing character for all friendly characters with this trait. As long as Senator Robert Kelly is on the map, opposing characters possessing the chosen keyword can't ignore pushing damage and can't use Outwit or Perplex if they have 2 action tokens. If Senator Robert Kelly is KO'd by an opposing character with the chosen keyword, all friendly characters with the chosen keyword are healed of 1 damage."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_value": 6, 
+        "attack_value": 8, 
+        "defense_power": "willpower", 
+        "defense_value": 15, 
+        "damage_power": "outwit", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 2, 
+        "speed_value": 6, 
+        "attack_value": 8, 
+        "defense_power": "willpower", 
+        "defense_value": 14, 
+        "damage_power": "perplex", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 3, 
+        "speed_value": 5, 
+        "attack_value": 7, 
+        "defense_power": "willpower", 
+        "defense_value": 14, 
+        "damage_power": "probability_control", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 4, 
+        "attack_value": 6, 
+        "defense_power": "willpower", 
+        "defense_value": 14, 
+        "damage_power": "outwit", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "dofp009", 
+    "set_id": "dofp", 
+    "collector_number": "009", 
+    "name": "Nightcrawler", 
+    "type": "character", 
+    "rarity": "uncommon", 
+    "dimensions": "1x1", 
+    "point_values": [
+      80
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "x_men"
+    ], 
+    "keywords": [
+      "Excalibur", 
+      "Martial Artist", 
+      "X-Men"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "TELEPORTER", 
+        "description": "Nightcrawler can use Combat Reflexes and Energy Shield/Deflection.", 
+        "powers": [
+          "combat_reflexes", 
+          "energy_shield_deflection"
+        ]
+      }, 
+      {
+        "type": "speed", 
+        "name": "BURST OF FLAME AND STENCH OF BRIMSTONE", 
+        "description": "Nightcrawler can use Phasing/Teleport. When he does, he can use the Carry ability and, if he moves 6 squares or less, after actions resolve he may make a close combat attack as a free action.", 
+        "powers": [
+          "phasing_teleport"
+        ]
+      }, 
+      {
+        "type": "damage", 
+        "name": "EVERYWHERE AT ONCE", 
+        "description": "Once per attack, if Nightcrawler is attacked, he can use Probability Control. This power can't be countered or ignored.", 
+        "powers": [
+          "probability_control"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 12, 
+        "attack_power": "precision_strike", 
+        "attack_value": 11, 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "special", 
+        "speed_value": 12, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "special", 
+        "speed_value": 10, 
+        "attack_power": "precision_strike", 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "flurry", 
+        "speed_value": 10, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "flurry", 
+        "speed_value": 10, 
+        "attack_power": "precision_strike", 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "flurry", 
+        "speed_value": 8, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 8, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "dofp010", 
+    "set_id": "dofp", 
+    "collector_number": "010", 
+    "name": "Rachel Summers", 
+    "type": "character", 
+    "rarity": "uncommon", 
+    "dimensions": "1x1", 
+    "point_values": [
+      76
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "x_men"
+    ], 
+    "keywords": [
+      "Days of Future Past", 
+      "Future", 
+      "X-Men"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "MARRIED DUO", 
+        "description": "When Rachel Summers is adjacent to a friendly character named Franklin Richards, modify both characters' attack values by +1 if not already modified by this effect."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "7", 
+    "targets": "1", 
+    "speed_type": "wing", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "running_shot", 
+        "speed_value": 6, 
+        "attack_power": "telekinesis", 
+        "attack_value": 10, 
+        "defense_power": "willpower", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_power": "telekinesis", 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 9, 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 8, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 10, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 17, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 7, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 9, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_value": 16, 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "dofp011", 
+    "set_id": "dofp", 
+    "collector_number": "011", 
+    "name": "Destiny", 
+    "type": "character", 
+    "rarity": "uncommon", 
+    "dimensions": "1x1", 
+    "point_values": [
+      50
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "brotherhood_of_mutants"
+    ], 
+    "keywords": [
+      "Brotherhood of Mutants", 
+      "Freedom Force"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "IMPOSSIBLE TO PLAN AGAINST THE FUTURE", 
+        "description": "After an opposing character within 8 squares uses Outwit, Perplex, or Probability Control and actions resolve, deal that character 1 damage if it has not already taken damage from this effect this turn."
+      }, 
+      {
+        "type": "attack", 
+        "name": "CROSSBOW", 
+        "description": "Destiny can use Precision Strike and Ranged Combat Expert as if she had a range value of 5.", 
+        "powers": [
+          "precision_strike", 
+          "ranged_combat_expert"
+        ]
+      }, 
+      {
+        "type": "damage", 
+        "name": "YOU CANNOT FOOL THE FUTURE", 
+        "description": "Destiny can use Probability Control as if she had a range value of 8 and doesn't need line of fire to the attacker if she has line of fire to a target of the attack.", 
+        "powers": [
+          "probability_control"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_value": 6, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 0
+      }, 
+      {
+        "click_number": 2, 
+        "speed_value": 6, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 0
+      }, 
+      {
+        "click_number": 3, 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "super_senses", 
+        "defense_value": 15, 
+        "damage_power": "special", 
+        "damage_value": 0
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 6, 
+        "attack_value": 8, 
+        "defense_power": "super_senses", 
+        "defense_value": 15, 
+        "damage_power": "special", 
+        "damage_value": 0
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 5, 
+        "attack_value": 7, 
+        "defense_power": "super_senses", 
+        "defense_value": 14, 
+        "damage_power": "special", 
+        "damage_value": 0
+      }
+    ]
+  }, 
+  {
+    "unit_id": "dofp012", 
+    "set_id": "dofp", 
+    "collector_number": "012", 
+    "name": "Storm", 
+    "type": "character", 
+    "rarity": "uncommon", 
+    "dimensions": "1x1", 
+    "point_values": [
+      89
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "x_men"
+    ], 
+    "keywords": [
+      "Days of Future Past", 
+      "Deity", 
+      "Future", 
+      "X-Men"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "I HAVE BEEN FIGHTING SENTINELS FOR THIRTY YEARS", 
+        "description": "When an opposing character with the Armor or Robot keyword takes damage from Storm's attack, give that character an action token."
+      }, 
+      {
+        "type": "attack", 
+        "name": "WEATHER WITCH", 
+        "description": "Storm can use Energy Explosion and Force Blast.", 
+        "powers": [
+          "energy_explosion", 
+          "force_blast"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "7", 
+    "targets": "2", 
+    "speed_type": "wing", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "running_shot", 
+        "speed_value": 11, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 18, 
+        "damage_power": "leadership", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "running_shot", 
+        "speed_value": 10, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 17, 
+        "damage_power": "leadership", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "running_shot", 
+        "speed_value": 10, 
+        "attack_value": 9, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 16, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "sidestep", 
+        "speed_value": 10, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 16, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "sidestep", 
+        "speed_value": 9, 
+        "attack_value": 9, 
+        "defense_value": 15, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "dofp013", 
+    "set_id": "dofp", 
+    "collector_number": "013", 
+    "name": "Wolverine", 
+    "type": "character", 
+    "rarity": "uncommon", 
+    "dimensions": "1x1", 
+    "point_values": [
+      130
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "x_men"
+    ], 
+    "keywords": [
+      "X-Men"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "HEALING FACTOR", 
+        "description": "Wolverine can use Regeneration. When he has two action tokens, he can use it as a free action.", 
+        "powers": [
+          "regeneration"
+        ]
+      }, 
+      {
+        "type": "speed", 
+        "name": "BERSERKER BARRAGE!", 
+        "description": "Wolverine can use Blades/Claws/Fangs, Charge, and Flurry.", 
+        "powers": [
+          "blades_claws_fangs", 
+          "charge", 
+          "flurry"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 8, 
+        "attack_power": "precision_strike", 
+        "attack_value": 11, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "empower", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "special", 
+        "speed_value": 8, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "empower", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "special", 
+        "speed_value": 8, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "empower", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "flurry", 
+        "speed_value": 8, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "flurry", 
+        "speed_value": 8, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 15, 
+        "damage_value": 3
+      }
+    ]
+  }, 
+  {
+    "unit_id": "dofp014", 
+    "set_id": "dofp", 
+    "collector_number": "014", 
+    "name": "Colossus", 
+    "type": "character", 
+    "rarity": "uncommon", 
+    "dimensions": "1x1", 
+    "point_values": [
+      150
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "x_men"
+    ], 
+    "keywords": [
+      "Days of Future Past", 
+      "Future", 
+      "X-Men"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "I WILL FINISH WHAT I BEGAN", 
+        "description": "Colossus can use Plasticity.", 
+        "powers": [
+          "plasticity"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 10, 
+        "attack_power": "precision_strike", 
+        "attack_value": 11, 
+        "defense_power": "invincible", 
+        "defense_value": 18, 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "charge", 
+        "speed_value": 9, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "invincible", 
+        "defense_value": 17, 
+        "damage_value": 5
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "sidestep", 
+        "speed_value": 9, 
+        "attack_power": "super_strength", 
+        "attack_value": 9, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_power": "super_strength", 
+        "attack_value": 9, 
+        "defense_power": "invulnerability", 
+        "defense_value": 16, 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "earthbound_neutralized", 
+        "speed_value": 8, 
+        "attack_power": "super_strength", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "earthbound_neutralized", 
+        "speed_value": 8, 
+        "attack_power": "super_strength", 
+        "attack_value": 11, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "earthbound_neutralized", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "regeneration", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 8, 
+        "speed_power": "earthbound_neutralized", 
+        "speed_value": 7, 
+        "attack_value": 8, 
+        "defense_power": "regeneration", 
+        "defense_value": 15, 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "dofp015", 
+    "set_id": "dofp", 
+    "collector_number": "015", 
+    "name": "Blob", 
+    "type": "character", 
+    "rarity": "uncommon", 
+    "dimensions": "1x1", 
+    "point_values": [
+      89
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "brotherhood_of_mutants"
+    ], 
+    "keywords": [
+      "Brotherhood of Mutants", 
+      "Freedom Force"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "IMMOVABLE", 
+        "description": "Blob can't be placed by Telekinesis, carried or knocked back."
+      }, 
+      {
+        "type": "damage", 
+        "name": "IRRESISTIBLE FORCE", 
+        "description": "If an opposing character moves due to its own action and ends within 2 squares and line of fire, after actions resolve you may place that character adjacent to Blob and the square in which it ended its move."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "plasticity", 
+        "speed_value": 6, 
+        "attack_power": "quake", 
+        "attack_value": 10, 
+        "defense_power": "impervious", 
+        "defense_value": 18, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "plasticity", 
+        "speed_value": 6, 
+        "attack_power": "quake", 
+        "attack_value": 9, 
+        "defense_power": "impervious", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "plasticity", 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "impervious", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "plasticity", 
+        "speed_value": 6, 
+        "attack_power": "quake", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "plasticity", 
+        "speed_value": 6, 
+        "attack_power": "quake", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "plasticity", 
+        "speed_value": 6, 
+        "attack_value": 8, 
+        "defense_power": "toughness", 
+        "defense_value": 15, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "dofp016", 
+    "set_id": "dofp", 
+    "collector_number": "016", 
+    "name": "Moira MacTaggert", 
+    "type": "character", 
+    "rarity": "uncommon", 
+    "dimensions": "1x1", 
+    "point_values": [
+      28
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Scientist", 
+      "X-Men"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "FIGHTING FOR MUTANT EQUALITY", 
+        "description": "Characters can't use the Capture ability."
+      }, 
+      {
+        "type": "damage", 
+        "name": "I'M A DOCTOR!", 
+        "description": "Moira MacTaggert can use Support. When she does, her attack value becomes 11.", 
+        "powers": [
+          "support"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_value": 6, 
+        "attack_value": 8, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 2, 
+        "speed_value": 6, 
+        "attack_value": 8, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_power": "perplex", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 3, 
+        "speed_value": 6, 
+        "attack_value": 7, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 6, 
+        "attack_value": 7, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_power": "support", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "dofp017", 
+    "set_id": "dofp", 
+    "collector_number": "017", 
+    "name": "Magneto", 
+    "type": "character", 
+    "rarity": "rare", 
+    "dimensions": "1x1", 
+    "point_values": [
+      75
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "x_men"
+    ], 
+    "keywords": [
+      "Days of Future Past", 
+      "Future", 
+      "X-Men"
+    ], 
+    "special_powers": [
+      {
+        "type": "attack", 
+        "name": "YOU GO WHERE I CANNOT FOLLOW", 
+        "description": "Give Magneto a power action and choose a friendly character within 8 squares and line of fire; deal Magneto 2 unavoidable damage and modify the chosen character's combat values by +1 for the remainder of the game."
+      }, 
+      {
+        "type": "damage", 
+        "name": "SO MUCH DEPENDS ON YOU, CHILD", 
+        "description": "Magneto can use Perplex. When he does and targets a character with a shared keyword, you may roll a d6; on a result of 5-6; modify the target's chosen combat value by +2 or -2.", 
+        "powers": [
+          "perplex"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_value": 6, 
+        "attack_power": "telekinesis", 
+        "attack_value": 10, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 16, 
+        "damage_power": "leadership", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_value": 6, 
+        "attack_power": "telekinesis", 
+        "attack_value": 9, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_value": 6, 
+        "attack_power": "telekinesis", 
+        "attack_value": 9, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 15, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 5, 
+        "attack_power": "telekinesis", 
+        "attack_value": 9, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 15, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 5, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_value": 14, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_value": 4, 
+        "attack_power": "special", 
+        "attack_value": 8, 
+        "defense_value": 14, 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "dofp018", 
+    "set_id": "dofp", 
+    "collector_number": "018", 
+    "name": "Mystique", 
+    "type": "character", 
+    "rarity": "rare", 
+    "dimensions": "1x1", 
+    "point_values": [
+      82
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "brotherhood_of_mutants"
+    ], 
+    "keywords": [
+      "Brotherhood of Mutants", 
+      "Freedom Force", 
+      "Spy"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "SHAPE SHIFTER", 
+        "description": "Mystique can use Shape Change. When she does and the result is 6, opposing characters can't attack her this turn.", 
+        "powers": [
+          "shape_change"
+        ]
+      }, 
+      {
+        "type": "defense", 
+        "name": "LEADER OF THE BROTHERHOOD", 
+        "description": "Mystique can use Mastermind and Toughness. She may transfer damage to a friendly character with a higher point value that shares a keyword with her and when she does, that character ignores 1 of the damage dealt after damage is reduced.", 
+        "powers": [
+          "mastermind", 
+          "toughness"
+        ]
+      }, 
+      {
+        "type": "damage", 
+        "name": "MAGNETO TAUGHT ME WELL", 
+        "description": "Mystique can use Leadership and Perplex.", 
+        "powers": [
+          "leadership", 
+          "perplex"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "6", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "stealth", 
+        "speed_value": 7, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "stealth", 
+        "speed_value": 6, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "sidestep", 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "stealth", 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_power": "outwit", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "stealth", 
+        "speed_value": 5, 
+        "attack_value": 8, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "dofp019", 
+    "set_id": "dofp", 
+    "collector_number": "019", 
+    "name": "Wolverine", 
+    "type": "character", 
+    "rarity": "rare", 
+    "dimensions": "1x1", 
+    "point_values": [
+      156
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "x_men"
+    ], 
+    "keywords": [
+      "Days of Future Past", 
+      "Future", 
+      "X-Men"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "YOU'RE GONNA NEED HELP, BUB", 
+        "description": "Modify Wolverine's attack and defense values by +1 for each adjacent opposing character."
+      }, 
+      {
+        "type": "speed", 
+        "name": "HEALING FACTOR AIN'T WHAT IT USED TO BE", 
+        "description": "At the beginning of your turn, heal Wolverine of 1 damage."
+      }, 
+      {
+        "type": "damage", 
+        "name": "CANADIAN RESISTANCE ARMY ", 
+        "description": "When Wolverine is adjacent to an opposing character, his powers and abilities can't be countered or ignored. When he is adjacent to more than one opposing character, lines of fire drawn from opposing characters to Wolverine are blocked."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 10, 
+        "attack_power": "precision_strike", 
+        "attack_value": 11, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "special", 
+        "speed_value": 10, 
+        "attack_power": "precision_strike", 
+        "attack_value": 11, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "special", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "charge", 
+        "speed_value": 7, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "battle_fury", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "special", 
+        "speed_value": 7, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "battle_fury", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "charge", 
+        "speed_value": 7, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 11, 
+        "defense_power": "regeneration", 
+        "defense_value": 17, 
+        "damage_power": "battle_fury", 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 8, 
+        "speed_power": "special", 
+        "speed_value": 6, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_value": 3
+      }
+    ]
+  }, 
+  {
+    "unit_id": "dofp020", 
+    "set_id": "dofp", 
+    "collector_number": "020", 
+    "name": "Sprite", 
+    "type": "character", 
+    "rarity": "rare", 
+    "dimensions": "1x1", 
+    "point_values": [
+      55
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "x_men"
+    ], 
+    "keywords": [
+      "X-Men"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "SENT FROM THE FUTURE TO SAVE THE WORLD", 
+        "description": "Battlefield Promotion: When Sprite hits one or more opposing characters, after actions resolve, place a Promotion token on her character card. You may then roll a d6 that can't be rerolled and add 1 for each Promotion token on her character card; on a result of 6 or higher, you may remove all Promotion tokens and replace this character with DOFP #002 Ariel on the same click number."
+      }, 
+      {
+        "type": "trait", 
+        "name": "I'VE SEEN A FUTURE CLOUDED IN DEATH", 
+        "description": "Sprite can use Super Senses. If Sprite was placed on the map through the Battlefield Promotion ability, she can use Outwit and Perplex.", 
+        "powers": [
+          "super_senses", 
+          "outwit", 
+          "perplex"
+        ]
+      }
+    ], 
+    "improved_movement": [
+      "hindering", 
+      "blocking", 
+      "characters"
+    ], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "4", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 15, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_value": 15, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 6, 
+        "attack_value": 8, 
+        "defense_value": 14, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "dofp021", 
+    "set_id": "dofp", 
+    "collector_number": "021", 
+    "name": "Storm", 
+    "type": "character", 
+    "rarity": "rare", 
+    "dimensions": "1x1", 
+    "point_values": [
+      150
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "x_men"
+    ], 
+    "keywords": [
+      "Deity", 
+      "Morlocks", 
+      "X-Men"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "NOT AS GOOD AS CYCLOPS, BUT..,", 
+        "description": "Storm can use Leadership. When she does, on a result of 6 she may remove an action token from two characters if both characters have the X-Men keyword.", 
+        "powers": [
+          "leadership"
+        ]
+      }, 
+      {
+        "type": "defense", 
+        "name": "HIGH WINDS", 
+        "description": "Storm can use Energy Shield/Deflection. When she is targeted with a ranged combat attack, she can use Super Senses.", 
+        "powers": [
+          "energy_shield_deflection", 
+          "super_senses"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "7", 
+    "targets": "2", 
+    "speed_type": "transport_wing", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "running_shot", 
+        "speed_value": 11, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "running_shot", 
+        "speed_value": 10, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 11, 
+        "defense_power": "special", 
+        "defense_value": 18, 
+        "damage_power": "perplex", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "running_shot", 
+        "speed_value": 9, 
+        "attack_power": "pulse_wave", 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 16, 
+        "damage_power": "perplex", 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "force_blast", 
+        "speed_value": 9, 
+        "attack_power": "pulse_wave", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "force_blast", 
+        "speed_value": 9, 
+        "attack_power": "pulse_wave", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 6, 
+        "speed_value": 8, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 17, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 7, 
+        "speed_value": 8, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 8, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "dofp022", 
+    "set_id": "dofp", 
+    "collector_number": "022", 
+    "name": "Professor X", 
+    "type": "character", 
+    "rarity": "rare", 
+    "dimensions": "1x1", 
+    "point_values": [
+      150
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "x_men"
+    ], 
+    "keywords": [
+      "X-Men"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "TO ME, MY X-MEN", 
+        "description": "Give Professor X a power action and choose a friendly character that isn't within range. Place the chosen character adjacent to Professor X and that character can't be given an action until your next turn."
+      }, 
+      {
+        "type": "speed", 
+        "name": "MY CAUSE IS RIGHTEOUS AND I WILL NOT BE DENIED", 
+        "description": "Professor X's powers and abilities can't be countered or ignored."
+      }, 
+      {
+        "type": "damage", 
+        "name": "PSYCHIC ENTITY", 
+        "description": "Professor X can use Leadership, Outwit, and Perplex. Professor X's combat values can't be modified.", 
+        "powers": [
+          "leadership", 
+          "outwit", 
+          "perplex"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [
+      "characters"
+    ], 
+    "object_keyphrases": [], 
+    "unit_range": "8", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "sharpshooter", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 6, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 11, 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "special", 
+        "speed_value": 6, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 10, 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "special", 
+        "speed_value": 6, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 10, 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 6, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 9, 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 6, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 9, 
+        "defense_value": 16, 
+        "damage_power": "enhancement", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_value": 6, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 8, 
+        "defense_value": 15, 
+        "damage_power": "enhancement", 
+        "damage_value": 3
+      }
+    ]
+  }, 
+  {
+    "unit_id": "dofp023", 
+    "set_id": "dofp", 
+    "collector_number": "023", 
+    "name": "Sentinel Alpha 3", 
+    "type": "character", 
+    "rarity": "rare", 
+    "dimensions": "1x1", 
+    "point_values": [
+      300, 
+      200, 
+      100
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Days of Future Past", 
+      "Future", 
+      "Robot", 
+      "Sentinel"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "SENTINEL SQUAD LEADER", 
+        "description": "Friendly characters with \"Sentinel\" in their name, the Robot keyword, and a lower point value can use the Capture ability."
+      }, 
+      {
+        "type": "attack", 
+        "name": "ATTACK PROTOCOL GAMMA", 
+        "description": "Give Sentinel Alpha 3 a free action and choose one: Energy Explosion, Force Blast, or Pulse Wave. Sentinel Alpha 3 can use the chosen power until your next turn.", 
+        "powers": [
+          "energy_explosion", 
+          "force_blast", 
+          "pulse_wave"
+        ]
+      }, 
+      {
+        "type": "damage", 
+        "name": "ANTI-MUTANT PROGRAMMING", 
+        "description": "Sentinel Alpha 3 can use Outwit and this power can't be countered. Each time Sentinel Alpha 3 counters Outwit or a power that allows Outwit to be used, it can use Outwit again this turn.", 
+        "powers": [
+          "outwit"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "7", 
+    "targets": "3", 
+    "speed_type": "wing", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "giant", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "running_shot", 
+        "speed_value": 12, 
+        "attack_power": "special", 
+        "attack_value": 11, 
+        "defense_power": "impervious", 
+        "defense_value": 19, 
+        "damage_power": "special", 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "running_shot", 
+        "speed_value": 12, 
+        "attack_power": "special", 
+        "attack_value": 12, 
+        "defense_power": "impervious", 
+        "defense_value": 19, 
+        "damage_power": "special", 
+        "damage_value": 5
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "running_shot", 
+        "speed_value": 10, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "impervious", 
+        "defense_value": 18, 
+        "damage_power": "special", 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "charge", 
+        "speed_value": 10, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "invincible", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 4, 
+        "starting_line": true
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "charge", 
+        "speed_value": 10, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "invincible", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "force_blast", 
+        "speed_value": 9, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 10, 
+        "defense_power": "invincible", 
+        "defense_value": 17, 
+        "damage_power": "probability_control", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "force_blast", 
+        "speed_value": 9, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 10, 
+        "defense_power": "invincible", 
+        "defense_value": 17, 
+        "damage_power": "probability_control", 
+        "damage_value": 3, 
+        "starting_line": true
+      }, 
+      {
+        "click_number": 8, 
+        "speed_power": "force_blast", 
+        "speed_value": 9, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "probability_control", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 9, 
+        "speed_power": "force_blast", 
+        "speed_value": 9, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 10, 
+        "speed_power": "running_shot", 
+        "speed_value": 9, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "regeneration", 
+        "defense_value": 16, 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 11, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 11, 
+        "defense_power": "regeneration", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }
+    ]
+  }, 
+  {
+    "unit_id": "dofp024", 
+    "set_id": "dofp", 
+    "collector_number": "024", 
+    "name": "Nimrod", 
+    "type": "character", 
+    "rarity": "chase", 
+    "dimensions": "1x1", 
+    "point_values": [
+      350, 
+      250, 
+      150
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Days of Future Past", 
+      "Future", 
+      "Purifiers", 
+      "Robot", 
+      "Sentinel"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "ASSAULT FROM THE FUTURE", 
+        "description": "Nimrod can use the Multiattack ability. Once per game, give Nimrod a double power action, place him in any square, and he may make a close or ranged combat attack as a free action."
+      }, 
+      {
+        "type": "speed", 
+        "name": "PHOTON PROPULSION", 
+        "description": "Nimrod can use Phasing/Teleport and Running Shot.", 
+        "powers": [
+          "phasing_teleport", 
+          "running_shot"
+        ]
+      }, 
+      {
+        "type": "defense", 
+        "name": "RAPID REFORMATION", 
+        "description": "Nimrod can use Invulnerability and Regeneration. If Nimrod has 2 action tokens, he can use Regeneration as a free action.", 
+        "powers": [
+          "invulnerability", 
+          "regeneration"
+        ]
+      }, 
+      {
+        "type": "damage", 
+        "name": "FUTURE KNOWLEDGE OF THE MUTANT MENACE", 
+        "description": "Nimrod's powers and abilities can't be countered. Nimrod can use Outwit. He can use it twice on your turn targeting 2 different opposing characters that each have the Brotherhood of Mutants or X-Men team ability or keyword.", 
+        "powers": [
+          "outwit"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "8", 
+    "targets": "2", 
+    "speed_type": "wing", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "hypersonic_speed", 
+        "speed_value": 10, 
+        "attack_power": "pulse_wave", 
+        "attack_value": 12, 
+        "defense_power": "impervious", 
+        "defense_value": 19, 
+        "damage_power": "special", 
+        "damage_value": 5
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "special", 
+        "speed_value": 11, 
+        "attack_power": "pulse_wave", 
+        "attack_value": 11, 
+        "defense_power": "impervious", 
+        "defense_value": 18, 
+        "damage_power": "special", 
+        "damage_value": 5
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "special", 
+        "speed_value": 10, 
+        "attack_power": "precision_strike", 
+        "attack_value": 11, 
+        "defense_power": "invincible", 
+        "defense_value": 18, 
+        "damage_power": "probability_control", 
+        "damage_value": 5, 
+        "starting_line": true
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "hypersonic_speed", 
+        "speed_value": 10, 
+        "attack_power": "pulse_wave", 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_power": "probability_control", 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "special", 
+        "speed_value": 10, 
+        "attack_value": 11, 
+        "defense_power": "impervious", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "special", 
+        "speed_value": 8, 
+        "attack_power": "pulse_wave", 
+        "attack_value": 10, 
+        "defense_power": "impervious", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 4, 
+        "starting_line": true
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "hypersonic_speed", 
+        "speed_value": 8, 
+        "attack_power": "precision_strike", 
+        "attack_value": 9, 
+        "defense_power": "invincible", 
+        "defense_value": 17, 
+        "damage_power": "probability_control", 
+        "damage_value": 5
+      }, 
+      {
+        "click_number": 8, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_power": "probability_control", 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 9, 
+        "speed_power": "sidestep", 
+        "speed_value": 10, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "invincible", 
+        "defense_value": 17, 
+        "damage_power": "empower", 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 10, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 16, 
+        "damage_power": "empower", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 11, 
+        "speed_power": "special", 
+        "speed_value": 8, 
+        "attack_value": 12, 
+        "defense_power": "special", 
+        "defense_value": 16, 
+        "damage_value": 3
+      }
+    ]
+  }, 
+  {
+    "unit_id": "dofpG001", 
+    "set_id": "dofp", 
+    "collector_number": "G001", 
+    "name": "Alpha Class Sentinel (Attack Mode)", 
+    "type": "character", 
+    "rarity": "chase", 
+    "dimensions": "2x2", 
+    "point_values": [
+      350, 
+      250, 
+      150
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Armor", 
+      "Robot", 
+      "Sentinel"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "PROGRAMMED TO HUNT", 
+        "description": "Alpha Class Sentinel (Attack Mode) can't be healed. At the beginning of your turn, roll a d6 and turn DOFP #G002 Alpha Class Sentinel (Attack Program Dial) to the blue click number matching the result. Alpha Class Sentinel (Attack Mode) can use the powers indicated and when a standard power on that dial has a black border, instead, Alpha Class Sentinel (Attack Mode) modifies its attack value by +1 when targeting a character that can use that power."
+      }, 
+      {
+        "type": "trait", 
+        "name": "ENTER RECOVERY MODE", 
+        "description": "Give Alpha Class Sentinel (Attack Mode) a free action when it has 2 action tokens. Replace Alpha Class Sentinel (Attack Mode) with DOFP #G002 Alpha Class Sentinel (Defense Mode) on the same click number and as if it began on the same starting line. When you do, roll a d6 and turn this dial to the blue click number matching the result."
+      }, 
+      {
+        "type": "attack", 
+        "name": "SECONDARY THREAT ANALYSIS", 
+        "description": "When Alpha Class Sentinel (Attack Mode) has two action tokens, it can use Incapacitate as a free action.", 
+        "powers": [
+          "incapacitate"
+        ]
+      }, 
+      {
+        "type": "defense", 
+        "name": "INERTIAL RETALIATION FIELD", 
+        "description": "When Alpha Class Sentinel (Attack Mode) takes damage from an attack, deal the attacker penetrating damage equal to half of the damage taken."
+      }, 
+      {
+        "type": "damage", 
+        "name": "THREAT ENGAGEMENT PACKAGE", 
+        "description": "Alpha Class Sentinel (Attack Mode) can use the Multiattack ability."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "9", 
+    "targets": "3", 
+    "speed_type": "transport_wing", 
+    "attack_type": "sharpshooter", 
+    "defense_type": "indomitable", 
+    "damage_type": "colossal", 
+    "dial_size": "26", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "plasticity", 
+        "speed_value": 8, 
+        "attack_power": "pulse_wave", 
+        "attack_value": 13, 
+        "defense_power": "invincible", 
+        "defense_value": 16, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 6
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "plasticity", 
+        "speed_value": 8, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 13, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 16, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 5
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "plasticity", 
+        "speed_value": 8, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 12, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 15, 
+        "damage_power": "probability_control", 
+        "damage_value": 5
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "plasticity", 
+        "speed_value": 8, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 12, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "probability_control", 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "plasticity", 
+        "speed_value": 8, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 12, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_value": 4, 
+        "starting_line": true
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "flurry", 
+        "speed_value": 8, 
+        "attack_power": "precision_strike", 
+        "attack_value": 12, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "battle_fury", 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "flurry", 
+        "speed_value": 8, 
+        "attack_power": "precision_strike", 
+        "attack_value": 12, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "battle_fury", 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 8, 
+        "speed_value": 8, 
+        "attack_power": "precision_strike", 
+        "attack_value": 11, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 16, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 5
+      }, 
+      {
+        "click_number": 9, 
+        "speed_value": 10, 
+        "attack_value": 11, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 15, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 5
+      }, 
+      {
+        "click_number": 10, 
+        "speed_power": "plasticity", 
+        "speed_value": 10, 
+        "attack_power": "poison", 
+        "attack_value": 11, 
+        "defense_power": "barrier", 
+        "defense_value": 15, 
+        "damage_value": 5, 
+        "starting_line": true
+      }, 
+      {
+        "click_number": 11, 
+        "speed_power": "plasticity", 
+        "speed_value": 10, 
+        "attack_power": "poison", 
+        "attack_value": 10, 
+        "defense_power": "barrier", 
+        "defense_value": 16, 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 12, 
+        "speed_power": "plasticity", 
+        "speed_value": 10, 
+        "attack_power": "poison", 
+        "attack_value": 10, 
+        "defense_power": "barrier", 
+        "defense_value": 16, 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 13, 
+        "speed_power": "sidestep", 
+        "speed_value": 10, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 10, 
+        "defense_value": 16, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 14, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 11, 
+        "defense_value": 15, 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 15, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 12, 
+        "defense_value": 15, 
+        "damage_value": 5
+      }, 
+      {
+        "click_number": 16, 
+        "speed_power": "sidestep", 
+        "speed_value": 10, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 12, 
+        "defense_value": 15, 
+        "damage_value": 5
+      }
+    ]
+  }, 
+  {
+    "unit_id": "dofpG002", 
+    "set_id": "dofp", 
+    "collector_number": "G002", 
+    "name": "Alpha Class Sentinel (Defense Mode)", 
+    "type": "character", 
+    "rarity": "chase", 
+    "dimensions": "2x2", 
+    "point_values": [
+      350, 
+      250, 
+      150
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Armor", 
+      "Robot", 
+      "Sentinel"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "PERFECTED DEFENSE", 
+        "description": "If Alpha Class Sentinel (Defense Mode) makes an attack, after actions resolve, deal it 1 unavoidable damage. At the beginning of your turn, roll a d6 and turn the DOFP #G001 Alpha Class Sentinel (Defense Program Dial) to the blue click number matching the result. Alpha Class Sentinel (Defense Mode) can use the powers indicated and when a standard power on that dial has a black border, instead, opposing charactes can't use that power to target Alpha Class Sentinel (Defense Mode)."
+      }, 
+      {
+        "type": "trait", 
+        "name": "MUTANT DETECTED", 
+        "description": "Give Alpha Class Sentinel (Defense Mode) a free action when it has no action tokens. Replace Alpha Class Sentinel (Defense Mode) with DOFP #G001 Alpha Class Sentinel (Attack Mode) on the same click number and as if it began on the same starting line. When you do, roll a d6 and turn this dial to the blue click number matching the result."
+      }, 
+      {
+        "type": "speed", 
+        "name": "STEALTH FIELD", 
+        "description": "When Alpha Class Sentinel (Defense Mode) is adjacent to a square of blocking terrain, lines of fire drawn to it are blocked."
+      }, 
+      {
+        "type": "attack", 
+        "name": "INHIBITOR FIELD", 
+        "description": "Opposing characters within 6 squares can't be given power actions."
+      }, 
+      {
+        "type": "defense", 
+        "name": "SENTINEL SHIELD", 
+        "description": "Alpha Class Sentinel (Defense Mode) can use Mastermind. When it does, friendly characters with the Robot keyword and within 4 squares are considered adjacent.", 
+        "powers": [
+          "mastermind"
+        ]
+      }, 
+      {
+        "type": "damage", 
+        "name": "SUMMON REINFORCEMENTS", 
+        "description": "Give Alpha Class Sentinel (Defense Mode) a power action when it has 1 or more action tokens and place a DOFP #001 Sentinel in an adjacent square on its orange starting line."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "4", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "colossal", 
+    "dial_size": "26", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "force_blast", 
+        "speed_value": 8, 
+        "attack_power": "poison", 
+        "attack_value": 9, 
+        "defense_value": 20, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "force_blast", 
+        "speed_value": 8, 
+        "attack_power": "poison", 
+        "attack_value": 9, 
+        "defense_value": 20, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "mind_control", 
+        "speed_value": 7, 
+        "attack_power": "incapacitate", 
+        "attack_value": 9, 
+        "defense_power": "regeneration", 
+        "defense_value": 19, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "mind_control", 
+        "speed_value": 7, 
+        "attack_power": "incapacitate", 
+        "attack_value": 8, 
+        "defense_power": "regeneration", 
+        "defense_value": 19, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "mind_control", 
+        "speed_value": 7, 
+        "attack_power": "incapacitate", 
+        "attack_value": 8, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 19, 
+        "damage_power": "probability_control", 
+        "damage_value": 2, 
+        "starting_line": true
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "stealth", 
+        "speed_value": 7, 
+        "attack_power": "smoke_cloud", 
+        "attack_value": 8, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 19, 
+        "damage_power": "probability_control", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "stealth", 
+        "speed_value": 7, 
+        "attack_power": "smoke_cloud", 
+        "attack_value": 8, 
+        "defense_power": "regeneration", 
+        "defense_value": 18, 
+        "damage_power": "perplex", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 8, 
+        "speed_power": "stealth", 
+        "speed_value": 8, 
+        "attack_power": "smoke_cloud", 
+        "attack_value": 7, 
+        "defense_power": "regeneration", 
+        "defense_value": 18, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 9, 
+        "speed_value": 8, 
+        "attack_power": "incapacitate", 
+        "attack_value": 7, 
+        "defense_power": "regeneration", 
+        "defense_value": 18, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 10, 
+        "speed_value": 8, 
+        "attack_power": "incapacitate", 
+        "attack_value": 8, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 19, 
+        "damage_value": 2, 
+        "starting_line": true
+      }, 
+      {
+        "click_number": 11, 
+        "speed_value": 8, 
+        "attack_power": "incapacitate", 
+        "attack_value": 8, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 19, 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 12, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_power": "steal_energy", 
+        "attack_value": 8, 
+        "defense_power": "barrier", 
+        "defense_value": 19, 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 13, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_power": "steal_energy", 
+        "attack_value": 9, 
+        "defense_power": "barrier", 
+        "defense_value": 18, 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 14, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_power": "steal_energy", 
+        "attack_value": 9, 
+        "defense_power": "regeneration", 
+        "defense_value": 18, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 15, 
+        "speed_value": 7, 
+        "attack_value": 7, 
+        "defense_power": "regeneration", 
+        "defense_value": 19, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 16, 
+        "speed_value": 7, 
+        "attack_value": 8, 
+        "defense_power": "regeneration", 
+        "defense_value": 20, 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "dofpH001", 
+    "set_id": "dofp", 
+    "collector_number": "H001", 
+    "name": "Sentinel (Hunter)", 
+    "type": "bystander", 
+    "rarity": "chase", 
+    "dimensions": "1x1", 
+    "point_values": [
+      20
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [], 
+    "special_powers": [
+      {
+        "type": "damage", 
+        "name": "HORDE: BIOMECHANIC TENDRILS", 
+        "description": "When S, Sentinel can use Plasticity.  When M, Sentinel can use the Capture ability.", 
+        "powers": [
+          "plasticity"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "bystander_type": "horde", 
+    "horde_stack_max": "4", 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "1", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_power": "incapacitate", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "dofpH002", 
+    "set_id": "dofp", 
+    "collector_number": "H002", 
+    "name": "Sentinel Sentry", 
+    "type": "bystander", 
+    "rarity": "chase", 
+    "dimensions": "1x1", 
+    "point_values": [
+      14
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [], 
+    "special_powers": [
+      {
+        "type": "defense", 
+        "name": "HORDE", 
+        "description": "When S, Sentinel Sentry can use Barrier as a free action, but only to place half of S blocking terrain markers.", 
+        "powers": [
+          "barrier"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "bystander_type": "horde", 
+    "horde_stack_max": "6", 
+    "unit_range": "5", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "giant", 
+    "dial_size": "1", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "plasticity", 
+        "speed_value": 5, 
+        "attack_power": "smoke_cloud", 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "dofpH003", 
+    "set_id": "dofp", 
+    "collector_number": "H003", 
+    "name": "Human Protestor", 
+    "type": "bystander", 
+    "rarity": "chase", 
+    "dimensions": "1x1", 
+    "point_values": [
+      10
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [], 
+    "special_powers": [
+      {
+        "type": "attack", 
+        "name": "HORDE: MUTIE!", 
+        "description": "Characters within S / 2 squares possessing the Brotherhood of Mutants or X-Men keyword or team ability can't ignore pushing damage."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "bystander_type": "horde", 
+    "horde_stack_max": "8", 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "1", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_value": 4, 
+        "attack_power": "special", 
+        "attack_value": 8, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 15, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "dofpH004", 
+    "set_id": "dofp", 
+    "collector_number": "H004", 
+    "name": "Mutant Protestor", 
+    "type": "bystander", 
+    "rarity": "chase", 
+    "dimensions": "1x1", 
+    "point_values": [
+      15
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [], 
+    "special_powers": [
+      {
+        "type": "defense", 
+        "name": "HORDE: GENE NATION", 
+        "description": "Friendly characters with the Brotherhood of Mutants or X-Men team ability or keyword can use Mastermind, but only to deal damage to this character."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "bystander_type": "horde", 
+    "horde_stack_max": "8", 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "1", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "force_blast", 
+        "speed_value": 4, 
+        "attack_value": 8, 
+        "defense_power": "special", 
+        "defense_value": 15, 
+        "damage_power": "empower", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "dofpM001", 
+    "set_id": "dofp", 
+    "collector_number": "M001", 
+    "name": "Baxter Building/Sentinel HQ", 
+    "type": "map", 
+    "point_values": [], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [], 
+    "special_powers": [], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "map_url": "https://hcmaps.net/maps/dofp/baxter_building_sentinel_hq.json", 
+    "dial": []
+  }, 
+  {
+    "unit_id": "dofpM002", 
+    "set_id": "dofp", 
+    "collector_number": "M002", 
+    "name": "South Bronx Mutant Internment Center", 
+    "type": "map", 
+    "point_values": [], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [], 
+    "special_powers": [], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "map_url": "https://hcmaps.net/maps/dofp/south_bronx_mutant_internment_center.json", 
+    "dial": []
+  }
+]

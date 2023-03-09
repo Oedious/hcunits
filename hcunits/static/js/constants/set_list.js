@@ -564,6 +564,11 @@ const SET_LIST = {
     "release_date": "2014-06-01",
     "universe": "dc"
   },
+  "dofp": {
+    "name": "X-Men: Days of Future Past",
+    "release_date": "2014-05-21",
+    "universe": "marvel"
+  },
   "wk": {
     "name": "WizKids Standard Game Pieces",
     "release_date": "2002-05-01",

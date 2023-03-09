@@ -408,6 +408,9 @@ SET_MAP = {
       ("wolS300", "wolS308"),
     ],
   },
+  "dofp": {
+    "name": "X-Men - Days of Future Past",
+  },
 }
 
 POWERS = {
@@ -790,6 +793,7 @@ class Unit:
           rarity == "Rarity: Super Booster" or
           rarity == "Rarity: Ant-Man Box Set" or
           rarity == "Rarity: Sinestro Corps War Scenario Pack" or
+          rarity == "Rarity: Alpha Class Sentinel Scenario Pack" or
           rarity == "Rarity: Mass Market Exclusive Chase"):
       self.rarity = "chase"
     elif rarity == "Rarity: Ultra Chase":
@@ -1811,7 +1815,7 @@ class Unit:
       if not self.bystander_type in BYSTANDER_TYPE_VALUES:
         print("Warning: for unit '%s' with type 'bystander' - unknown bystander_type '%s'" % (self.unit_id, self.bystander_type))
       if self.bystander_type == "horde":
-        if self.horde_stack_max <= 0 or self.horde_stack_max > 6:
+        if self.horde_stack_max <= 0 or self.horde_stack_max > 8:
           print("Warning: for unit '%s' with object_type 'horde' - invalid horde_stack_max '%i'" % (self.unit_id, self.horde_stack_max))
 
     if self.type == "character" or self.type == "bystander":
