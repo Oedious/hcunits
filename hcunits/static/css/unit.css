@@ -574,7 +574,29 @@
 
   /* Added these while playing with bystander */
   width: 18px;
-  height: 19px;
+  height: 18px;
+}
+
+.dialEntryImage {
+  position: relative;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 0px 0px !important;
+  border-radius: 0px;
+  width: 0px;
+  height: 0px;
+}
+
+.dialEntryImage .tooltip {
+  position: unset;
+}
+
+.dialEntryImage .tooltip img {
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  width: 24px;
+  height: 24px;
 }
 
 .dialEntryKO {

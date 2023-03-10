@@ -594,6 +594,11 @@ const SET_LIST = {
     "release_date": "2014-02-26",
     "universe": "dc"
   },
+  "ygo": {
+    "name": "Yu-Gi-Oh! Series 1",
+    "release_date": "2015-01-08",
+    "universe": "indy"
+  },
   "wk": {
     "name": "WizKids Standard Game Pieces",
     "release_date": "2002-05-01",

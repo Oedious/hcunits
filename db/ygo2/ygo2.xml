@@ -1407,6 +1407,563 @@
 ]</dial>
   </row>
   <row>
+    <unit_id>ygo2017</unit_id>
+    <set_id>ygo2</set_id>
+    <collector_number>017</collector_number>
+    <name>Magician of Black Chaos</name>
+    <type>character</type>
+    <rarity>super_rare</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[180]</point_values>
+    <properties>["unique"]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["\"Yugi Muto\"", "Dark", "Mystical"]</keywords>
+    <special_powers>[
+  {
+    "type": "ritual", 
+    "name": "RITUAL", 
+    "description": "When Magician of Black Chaos is on your sideline and at least 90 points of friendly characters have been KO'd, you may give any friendly character with the \"Yugi Muto\" or Dark keyword a free action.  When you do, KO that character and place Magician of Black Chaos on its starting click in a square that character occupied.  A player may only use the Ritual ability once per game."
+  }, 
+  {
+    "type": "attack", 
+    "name": "CHAOS SCEPTER BLAST", 
+    "description": "Magician of Black Chaos can use Energy Explosion and Penetrating/Psychic Blast.  When it does, place a Chaos token on hit characters' cards if they don't have one already.  When a character with a Chaos token makes an attack roll, you may remove the Chaos token to ignore the result and force them to reroll.", 
+    "powers": [
+      "energy_explosion", 
+      "penetrating_psychic_blast"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>8</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "running_shot", 
+    "speed_value": 10, 
+    "attack_power": "special", 
+    "attack_value": 11, 
+    "defense_power": "invulnerability", 
+    "defense_value": 18, 
+    "damage_power": "outwit", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "running_shot", 
+    "speed_value": 10, 
+    "attack_power": "special", 
+    "attack_value": 11, 
+    "defense_power": "invulnerability", 
+    "defense_value": 18, 
+    "damage_power": "outwit", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "running_shot", 
+    "speed_value": 10, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "outwit", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "running_shot", 
+    "speed_value": 9, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 10, 
+    "defense_power": "impervious", 
+    "defense_value": 17, 
+    "damage_power": "probability_control", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 9, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 10, 
+    "defense_power": "impervious", 
+    "defense_value": 17, 
+    "damage_power": "probability_control", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 9, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "probability_control", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 8, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "perplex", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 8, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 8, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "perplex", 
+    "damage_value": 3
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ygo2018</unit_id>
+    <set_id>ygo2</set_id>
+    <collector_number>018</collector_number>
+    <name>Dark Magician Girl</name>
+    <type>character</type>
+    <rarity>super_rare</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[140]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["\"Yugi Muto\"", "Dark", "Mystical"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "ARCANE ALLIANCE", 
+    "description": "Give Dark Magician Girl a free action and choose a friendly character with the Mystical keyword within 8 squares. Choose up to 2 standard powers that character possesses. Dark Magician Girl can use the chosen powers until your next turn."
+  }, 
+  {
+    "type": "trap_spell", 
+    "name": "TRAP/SPELL", 
+    "description": "When this character is KO'd or when building your force by paying the purple point cost, add this dial face down to your Trap/Spell pool. Give a friendly Yu-Gi-Oh! character a power action to set this dial from your pool by choosing \"Spell Symbol\" or \"Trap Symbol\" and placing it face down on their card. The set character may use the effects of that Trap/Spell."
+  }, 
+  {
+    "type": "spell", 
+    "name": "SPELL: MYSTICAL SPACE TYPHOON", 
+    "description": "Give the set character a power action and choose an adjacent opposing character. Remove any tokens or set traps/spells from that character's card, that character drops any held objects or assigned Relics, and that character ignores any Resource assigned to it. When that character hits an opposing character with a close combat attack, remove the spell."
+  }, 
+  {
+    "type": "trap", 
+    "name": "TRAP: MIRROR WALL", 
+    "description": "When the set character takes damage from an opponent's attack and isn't KO'd, after actions resolve you may activate this trap. Choose an opposing character that dealt damage to this character this turn. The set character's combat values are replaced with all of the chosen character's combat values and may use any standard power the chosen character can use. When the set character is healed or takes damage, remove the trap."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>7</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "sidestep", 
+    "speed_value": 9, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 11, 
+    "defense_power": "invulnerability", 
+    "defense_value": 18, 
+    "damage_power": "probability_control", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "sidestep", 
+    "speed_value": 9, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "probability_control", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 10, 
+    "defense_power": "invincible", 
+    "defense_value": 17, 
+    "damage_power": "outwit", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 10, 
+    "defense_power": "invincible", 
+    "defense_value": 17, 
+    "damage_power": "outwit", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
+    "speed_value": 8, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 9, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 17, 
+    "damage_power": "perplex", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 6, 
+    "speed_value": 8, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 9, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 16, 
+    "damage_power": "perplex", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 7, 
+    "speed_value": 7, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 9, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 16, 
+    "damage_power": "perplex", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 9, 
+    "speed_value": "", 
+    "attack_power": "spell", 
+    "attack_value": "", 
+    "defense_value": "", 
+    "damage_value": ""
+  }, 
+  {
+    "click_number": 11, 
+    "speed_value": "", 
+    "attack_power": "trap", 
+    "attack_value": "", 
+    "defense_value": "", 
+    "damage_value": ""
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ygo2019</unit_id>
+    <set_id>ygo2</set_id>
+    <collector_number>019</collector_number>
+    <name>Blue-Eyes Ultimate Dragon</name>
+    <type>character</type>
+    <rarity>chase</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[350, 250]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["\"Seto Kaiba\"", "Light"]</keywords>
+    <special_powers>[
+  {
+    "type": "fusion", 
+    "name": "FUSION", 
+    "description": "When a listed character is adjacent to all other listed characters and hits an opposing character, after actions resolve it may be given a free action to replace these characters with Blue-Eyes Ultimate Dragon from your sideline.  When Blue-Eyes Ultimate Dragon enters the game in this way, it starts the same number of clics from its starting line as the character given the action and modifies its combat values by +1.  This trait is active even when this character isn't on the map. Blue-Eyes White Dragon Blue-Eyes White Dragon Blue-Eyes White Dragon"
+  }, 
+  {
+    "type": "attack", 
+    "name": "NEUTRON BLAST ATTACK", 
+    "description": "Blue-Eyes Ultimate Dragon can use Energy Explosion. When it does, the area of effect includes all untargeted characters within 3 squares and line of fire of one or more hit targets assigned at least 1 damage."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>8</unit_range>
+    <targets>2</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "hypersonic_speed", 
+    "speed_value": 10, 
+    "attack_power": "special", 
+    "attack_value": 12, 
+    "defense_power": "impervious", 
+    "defense_value": 19, 
+    "damage_power": "leadership", 
+    "damage_value": 6
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "hypersonic_speed", 
+    "speed_value": 10, 
+    "attack_power": "special", 
+    "attack_value": 12, 
+    "defense_power": "impervious", 
+    "defense_value": 18, 
+    "damage_power": "leadership", 
+    "damage_value": 5
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "hypersonic_speed", 
+    "speed_value": 10, 
+    "attack_power": "special", 
+    "attack_value": 11, 
+    "defense_power": "impervious", 
+    "defense_value": 18, 
+    "damage_power": "leadership", 
+    "damage_value": 4, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "running_shot", 
+    "speed_value": 10, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "running_shot", 
+    "speed_value": 10, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "running_shot", 
+    "speed_value": 9, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "sidestep", 
+    "speed_value": 9, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 8, 
+    "speed_power": "sidestep", 
+    "speed_value": 9, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 9, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 9, 
+    "defense_power": "invulnerability", 
+    "defense_value": 16, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 10, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 9, 
+    "defense_power": "impervious", 
+    "defense_value": 16, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 11, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 8, 
+    "defense_power": "impervious", 
+    "defense_value": 16, 
+    "damage_value": 4
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ygo2020</unit_id>
+    <set_id>ygo2</set_id>
+    <collector_number>020</collector_number>
+    <name>Valkyrion The Magna Warrior</name>
+    <type>character</type>
+    <rarity>chase</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[199]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["\"Yugi Muto\"", "Earth", "Magnet Warrior", "Warrior"]</keywords>
+    <special_powers>[
+  {
+    "type": "fusion", 
+    "name": "FUSION", 
+    "description": "When a listed character is adjacent to all other listed characters and hits an opposing character, after actions resolve it may be given a free action to replace these characters with Valkyrion the Magna Warrior from your sideline. When Valkyrion the Magna Warrior enters the game in this way, it starts the same number of clicks from its starting line as the character given the action and modifies its combat values by +1. This trait is active even when this character isn't on the map. Alpha the Magnet Warrior Beta the Magnet Warrior Gamma the Magnet Warrior"
+  }, 
+  {
+    "type": "trait", 
+    "name": "MAGNETIC WARRIORS", 
+    "description": "If Valkyrion the Magna Warrior is on the map as a result of using the Fusion ability, penetrating damage dealt to it can be reduced."
+  }, 
+  {
+    "type": "attack", 
+    "name": "MAGNET SWORD", 
+    "description": "Valkyrion the Magna Warrior can use Precision Strike. When Valkyrion the Magna Warrior hits with a close combat attack, after actions resolve, it may use Pulse Wave as if it had a range value of 6 as a free action."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>transport_wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "charge", 
+    "speed_value": 12, 
+    "attack_power": "precision_strike", 
+    "attack_value": 11, 
+    "defense_power": "impervious", 
+    "defense_value": 18, 
+    "damage_value": 5
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "charge", 
+    "speed_value": 11, 
+    "attack_power": "precision_strike", 
+    "attack_value": 11, 
+    "defense_power": "impervious", 
+    "defense_value": 18, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "charge", 
+    "speed_value": 10, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "impervious", 
+    "defense_value": 18, 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "charge", 
+    "speed_value": 10, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 18, 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "charge", 
+    "speed_value": 10, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "sidestep", 
+    "speed_value": 9, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "sidestep", 
+    "speed_value": 9, 
+    "attack_power": "quake", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 8, 
+    "speed_power": "sidestep", 
+    "speed_value": 9, 
+    "attack_power": "quake", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 9, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "quake", 
+    "attack_value": 11, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 4
+  }
+]</dial>
+  </row>
+  <row>
     <unit_id>ygo2100</unit_id>
     <set_id>ygo2</set_id>
     <collector_number>100</collector_number>

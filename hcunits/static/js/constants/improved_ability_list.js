@@ -62,6 +62,10 @@ const IMPROVED_TARGETING_LIST = {
     "name": "Characters",
     "description": "Lines of fire drawn by this character are not blocked by characters."
   },
+  "opposing_characters": {
+    "name": "Opposing Characters",
+    "description": "Lines of fire drawn by this character are not blocked by opposing characters."
+  },
   "adjacent": {
     "name": "Adjacent",
     "description": "This character can make range attacks while adjacent to opposing characters."

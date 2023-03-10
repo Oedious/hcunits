@@ -1,0 +1,118 @@
+{
+  "updates": {
+    "ygo005": {
+      "special_powers": [{
+        "powers": ["smoke_cloud"]
+      }]
+    },
+    "ygo011": {
+      "special_powers": [{
+        "powers": ["toughness"]
+      }]
+    },
+    "ygo020": {
+      "special_powers": [{
+        "powers": ["invulnerability"]
+      }]
+    },
+    "ygo034": {
+      "point_values": [52, 6],
+      "special_powers": [{
+      }, {
+      }, {
+      }, {
+        "powers": ["stealth", "smoke_cloud"],
+        "__reorder__": 0
+      }, {
+        "__reorder__": 1
+      }]
+    },
+    "ygo038": {
+      "special_powers": [{
+        "powers": ["flurry"]
+      }]
+    },
+    "ygo040": {
+      "special_powers": [{
+        "powers": ["steal_energy", "combat_reflexes", "energy_shield_deflection"]
+      }]
+    },
+    "ygo042": {
+      "special_powers": [{
+      }, {
+        "description": "Give Thousand Dragon a ranged combat action. When it does, it can use Improved Targeting: Characters and targets all opposing characters occupying squares along a single direct line of fire. Hit characters are each dealt 3 damage."
+      }]
+    },
+    "ygo044": {
+      "point_values": [50, 7],
+      "special_powers": [{
+      }, {
+      }, {
+      }, {
+        "__reorder__": 0
+      }, {
+        "__reorder__": 1
+      }]
+    },
+    "ygo047": {
+      "point_values": [99, 8],
+      "special_powers": [{
+      }, {
+      }, {
+      }, {
+        "__reorder__": 0
+      }, {
+        "__reorder__": 1
+      }, {
+        "__reorder__": 2
+      }]
+    },
+    "ygo049": {
+      "point_values": [61, 4],
+      "special_powers": [{
+      }, {
+      }, {
+      }, {
+        "__reorder__": 0
+      }, {
+        "__reorder__": 1
+      }]
+    },
+    "ygo053": {
+      "special_powers": [{
+        "powers": ["penetrating_psychic_blast", "pulse_wave"]
+      }]
+    },
+    "ygo054": {
+      "special_powers": [{
+        "powers": ["energy_explosion", "penetrating_psychic_blast"]
+      }]
+    },
+    "ygo055": {
+      "special_powers": [{
+      }, {
+        "powers": ["blades_claws_fangs", "energy_explosion", "pulse_wave", "quake", "super_strength", "incapacitate", "penetrating_psychic_blast", "smoke_cloud", "precision_strike", "poison", "steal_energy", "telekinesis"]
+      }, {
+        "powers": ["probability_control", "outwit", "perplex"]
+      }]
+    },
+    "ygo105": {
+      "point_values": [100, 10]
+    }
+  },
+  "additions": [{
+    "unit_id": "ygoM001",
+    "set_id": "ygo",
+    "collector_number": "M001",
+    "name": "Duelist Kingdom: Water",
+    "type": "map",
+    "map_url": "https://hcmaps.net/maps/ygo/duelist_kingdom_water.json"
+  }, {
+    "unit_id": "ygoM002",
+    "set_id": "ygo",
+    "collector_number": "M002",
+    "name": "The Cavern of Lost Souls",
+    "type": "map",
+    "map_url": "https://hcmaps.net/maps/ygo/the_cavern_of_lost_souls.json"
+  }]
+}

@@ -1406,6 +1406,548 @@
 ]</dial>
   </row>
   <row>
+    <unit_id>ygo3017</unit_id>
+    <set_id>ygo3</set_id>
+    <collector_number>017</collector_number>
+    <name>XY-Dragon Cannon</name>
+    <type>character</type>
+    <rarity>super_rare</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[200]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["\"Seto Kaiba\"", "Light"]</keywords>
+    <special_powers>[
+  {
+    "type": "fusion", 
+    "name": "FUSION", 
+    "description": "When a listed character is adjacent to all other listed characters and hits an opposing character, it may use the Merge ability to replace these characters with XY-Dragon Cannon regardless of the number of action tokens assigned to any of them. When this character enters the game in this way, modify its combat values by +1. X-Head Cannon Y-Dragon Head"
+  }, 
+  {
+    "type": "attack", 
+    "name": "DRAGON BREATH", 
+    "description": "XY-Dragon Cannon can use Energy Explosion, Poison, and Precision Strike."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>8</unit_range>
+    <targets>2</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "running_shot", 
+    "speed_value": 10, 
+    "attack_power": "special", 
+    "attack_value": 11, 
+    "defense_power": "impervious", 
+    "defense_value": 18, 
+    "damage_power": "enhancement", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "running_shot", 
+    "speed_value": 10, 
+    "attack_power": "special", 
+    "attack_value": 11, 
+    "defense_power": "impervious", 
+    "defense_value": 18, 
+    "damage_power": "enhancement", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "running_shot", 
+    "speed_value": 9, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "enhancement", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "running_shot", 
+    "speed_value": 9, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "enhancement", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "sidestep", 
+    "speed_value": 9, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "sidestep", 
+    "speed_value": 9, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 8, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_value": 3
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ygo3018</unit_id>
+    <set_id>ygo3</set_id>
+    <collector_number>018</collector_number>
+    <name>Buster Blader</name>
+    <type>character</type>
+    <rarity>super_rare</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[150]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["\"Yugi Muto\"", "Earth", "Warrior"]</keywords>
+    <special_powers>[
+  {
+    "type": "attack", 
+    "name": "DRAGON SWORD", 
+    "description": "Buster Blader can use Blade/Claws/Fangs. When he attacks a character with Dragon in its name and uses it, he may roll 2d6 instead of 1 and replace its damage value with the result of either one of the results."
+  }, 
+  {
+    "type": "defense", 
+    "name": "AGILE AND DURABLE", 
+    "description": "Buster Blader can use Combat Reflexes and Invincible.", 
+    "powers": [
+      "combat_reflexes", 
+      "invincible"
+    ]
+  }, 
+  {
+    "type": "trap_spell", 
+    "name": "SPELL/TRAP", 
+    "description": "When this character is KO'd or when building your force by paying the purple point cost, add this dial face down to your Trap/Spell pool. Give a friendly Yu-Gi-Oh! character a power action to set this dial from your pool by choosing \"Spell Symbol\" or \"Trap Symbol\" and placing it face down on their card. The set character may use the effects of that Trap/Spell."
+  }, 
+  {
+    "type": "spell", 
+    "name": "SPELL: HORN OF THE UNICORN", 
+    "description": "Give the set character a power action and modify its attack value by +1. When the set character is KO'd, return the dial to your Trap/Spell pool."
+  }, 
+  {
+    "type": "trap", 
+    "name": "TRAP: TORRENTIAL TRIBUTE", 
+    "description": "The set character must not be on its starting click. When the set character is KO'd, you may activate this trap. All opposing characters within 6 squares are given an action token, then remove the trap."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "charge", 
+    "speed_value": 9, 
+    "attack_power": "quake", 
+    "attack_value": 12, 
+    "defense_power": "impervious", 
+    "defense_value": 18, 
+    "damage_power": "battle_fury", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "charge", 
+    "speed_value": 9, 
+    "attack_power": "quake", 
+    "attack_value": 11, 
+    "defense_power": "impervious", 
+    "defense_value": 18, 
+    "damage_power": "battle_fury", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "charge", 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 11, 
+    "defense_power": "special", 
+    "defense_value": 17, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "charge", 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 11, 
+    "defense_power": "special", 
+    "defense_value": 17, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "charge", 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 11, 
+    "defense_power": "special", 
+    "defense_value": 16, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 8, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 18, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 10, 
+    "speed_value": "", 
+    "attack_power": "spell", 
+    "attack_value": "", 
+    "defense_value": "", 
+    "damage_value": ""
+  }, 
+  {
+    "click_number": 11, 
+    "speed_value": "", 
+    "attack_power": "trap", 
+    "attack_value": "", 
+    "defense_value": "", 
+    "damage_value": ""
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ygo3019</unit_id>
+    <set_id>ygo3</set_id>
+    <collector_number>019</collector_number>
+    <name>XYZ-Dragon Cannon</name>
+    <type>character</type>
+    <rarity>chase</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[175]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["\"Seto Kaiba\"", "Armor", "Light"]</keywords>
+    <special_powers>[
+  {
+    "type": "fusion", 
+    "name": "FUSION", 
+    "description": "When a listed character is adjacent to all other listed characters and hits an opposing character, it may use the Merge ability to replace these characters with XYZ-Dragon Cannon regardless of the number of action tokens assigned to any of them. When this character enters the game in this way, modify its combat values by +1. X-Head Cannon Y-Dragon Head Z-Metal Tank"
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>8</unit_range>
+    <targets>3</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "running_shot", 
+    "speed_value": 9, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 11, 
+    "defense_power": "impervious", 
+    "defense_value": 18, 
+    "damage_value": 5
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "running_shot", 
+    "speed_value": 8, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 11, 
+    "defense_power": "impervious", 
+    "defense_value": 18, 
+    "damage_value": 5
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "running_shot", 
+    "speed_value": 8, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 11, 
+    "defense_power": "impervious", 
+    "defense_value": 18, 
+    "damage_value": 5
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "sidestep", 
+    "speed_value": 6, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 8, 
+    "speed_power": "sidestep", 
+    "speed_value": 6, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 3
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ygo3020</unit_id>
+    <set_id>ygo3</set_id>
+    <collector_number>020</collector_number>
+    <name>B. Skull Dragon</name>
+    <type>character</type>
+    <rarity>chase</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[350, 200]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["\"Joey Wheeler\"", "\"Yugi Muto\"", "Dark"]</keywords>
+    <special_powers>[
+  {
+    "type": "fusion", 
+    "name": "FUSION", 
+    "description": "When a listed character is adjacent to all other listed characters and hits an opposing character, it may use the Merge ability to replace these characters with B. Skull Dragon regardless of the number of action tokens assigned to any of them. When this character enters the game in this way, modify its combat values by +1. Red-Eyes B. Dragon Summoned Skull"
+  }, 
+  {
+    "type": "trait", 
+    "name": "AVOIDING THE LABYRINTH", 
+    "description": "Once per game give B. Skull Dragon a free action and choose a friendly character that has not been given an action this turn; place B. Skull Dragon and the selected character in each other's square."
+  }, 
+  {
+    "type": "attack", 
+    "name": "MOLTEN FIREBALLS", 
+    "description": "B. Skull Dragon can use Energy Explosion. When B. Skull Dragon hits an opposing character with a ranged combat attack, place a Burning token on that character's card if there isn't one already. Even if this power is lost or countered, when a character with a Burning token begins a turn, deal that character 1 penetrating damage. Characters with Burning tokens can be given a power action to remove a Burning token from its card."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>9</unit_range>
+    <targets>2</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "running_shot", 
+    "speed_value": 9, 
+    "attack_power": "special", 
+    "attack_value": 12, 
+    "defense_power": "invincible", 
+    "defense_value": 19, 
+    "damage_value": 5
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "running_shot", 
+    "speed_value": 9, 
+    "attack_power": "special", 
+    "attack_value": 12, 
+    "defense_power": "invincible", 
+    "defense_value": 18, 
+    "damage_value": 5
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "running_shot", 
+    "speed_value": 9, 
+    "attack_power": "special", 
+    "attack_value": 12, 
+    "defense_power": "invincible", 
+    "defense_value": 18, 
+    "damage_value": 5
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "running_shot", 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 11, 
+    "defense_power": "invincible", 
+    "defense_value": 18, 
+    "damage_value": 5, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 11, 
+    "defense_power": "invincible", 
+    "defense_value": 17, 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 11, 
+    "defense_power": "impervious", 
+    "defense_value": 17, 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 10, 
+    "defense_power": "impervious", 
+    "defense_value": 17, 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 8, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_value": 10, 
+    "defense_power": "impervious", 
+    "defense_value": 17, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 9, 
+    "speed_value": 7, 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 10, 
+    "speed_value": 6, 
+    "attack_value": 9, 
+    "defense_power": "invulnerability", 
+    "defense_value": 16, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 4
+  }
+]</dial>
+  </row>
+  <row>
     <unit_id>ygo3100</unit_id>
     <set_id>ygo3</set_id>
     <collector_number>100</collector_number>

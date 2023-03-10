@@ -413,10 +413,21 @@ class CharacterView extends BaseUnitView {
                   description: power
                 }
               }
+              var style = "";
+              if (powerObj.style) {
+                style = `style='${powerObj.style}'`;
+              }
+              var entryHtml = "";
+              if (powerObj.image) {
+                entryClass = "dialEntryImage";
+                entryHtml = `<img src='${powerObj.image}' alt=''>`;
+              } else {
+                entryHtml = `<div>${value}</div>`;
+              }
               html += `
-                <td class='${entryClass}' style='${powerObj.style}'>
+                <td class='${entryClass}' ${style}>
                   <div class='tooltip'>
-                    <div>${value}</div>
+                    ${entryHtml}
                     <span class='tooltiptext'><b>${powerObj.name}</b>: ${escapeHtml(powerObj.description)}</span>
                   </div>
                 </td>`;

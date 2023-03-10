@@ -298,7 +298,19 @@ const POWER_LIST = {
     "description": "When this click is revealed due to damage taken from an opponent's attack, stop turning the dial. When this character would be healed by Regeneration or Support, it’s healed 1 less click. Protected: Outwit, Pulse Wave.",
     "type": "special",
     "style": STYLE_WHITE
-  }
+  },
+  "trap": {
+    "name": "Trap",
+    "description": "See Card",
+    "type": "special",
+    "image": "/static/images/sp/trap.png"
+  },
+  "spell": {
+    "name": "Spell",
+    "description": "See Card",
+    "type": "special",
+    "image": "/static/images/sp/spell.png"
+  },
 };
 
 const POWER_TYPE_LIST = {
@@ -360,5 +372,26 @@ const SPECIAL_POWER_TYPE_LIST = {
     "name": "Location",
     "title": "LOCATION",
     "description": "LOCATION: You may add one Location to your starting force. You may add any number of the Location's different Bonuses to your staring force by paying their costs. If you are the player that chooses the map and you chose the Location, you can use the Bonus(es) you paid for. If you didn't choose the map and didn't win the roll for the first player, you instead can use the Consolation(s) associated with the Bonus(es) you paid for. (Otherwise, there are no effects.) SCORING: Your Location's Bonus(es) that you paid for are scored if you are defeated. (Whether you received the Bonus, the Consolation, or nothing.)"
-  }
+  },
+  "epic": {
+    "name": "Epic Action"
+  },
+  "construct": {
+    "name": "Construct"
+  },
+  "word_balloon": {
+    "name": "Word Ballon"
+  },
+  "toy": {
+    "name": "Toy"
+  },
+  "fusion": {
+    "name": "Fusion"
+  },
+  "spell": {
+    "name": "Spell"
+  },
+  "trap": {
+    "name": "Trap"
+  },
 };
