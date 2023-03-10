@@ -1,0 +1,127 @@
+{
+  "updates": {
+    "catws001": {
+      "dial": [{
+      }, {
+      }, {
+      }, {
+      }, {
+        "starting_line": "orange"
+      }]
+    },
+    "catws002": {
+      "special_powers": [{
+        "powers": ["empower", "enhancement"]
+      }]
+    },
+    "catws006": {
+      "special_powers": [{
+        "powers": ["empower", "enhancement", "sidestep"]
+      }]
+    },
+    "catws007": {
+      "special_powers": [{
+        "powers": ["empower", "enhancement"]
+      }]
+    },
+    "catws011": {
+      "special_powers": [{
+        "powers": ["outwit"]
+      }]
+    },
+    "catws012": {
+      "special_powers": [{
+        "powers": ["energy_shield_deflection", "running_shot"]
+      }]
+    },
+    "catws015": {
+      "special_powers": [{
+      }, {
+      }, {
+        "description": "Nick Fury can use Leadership. When he uses Leadership, adjacent friendly characters are considered a lower point value if they share a keyword with Nick Fury.",
+        "powers": ["leadership"]
+      }]
+    },
+    "catws017": {
+      "special_powers": [{
+        "powers": ["stealth"]
+      }, {
+        "powers": ["incapacitate"]
+      }]
+    },
+    "catws018": {
+      "special_powers": [{
+        "powers": ["energy_shield_deflection", "super_senses", "toughness"]
+      }, {
+        "powers": ["penetrating_psychic_blast"]
+      }, {
+        "powers": ["leadership", "willpower"]
+      }]
+    },
+    "catws101": {
+      "special_powers": [{
+        "description": "If Captain America does not make an attack during your turn, Captain America can use Stealth until your next turn. When Captain America has no action tokens, he can use Improved Movement: Hindering.",
+        "powers": ["stealth"]
+      }]
+    },
+    "catws102": {
+      "special_powers": [{
+      }, {
+        "powers": ["willpower"]
+      }]
+    },
+    "catws103": {
+      "special_powers": [{
+      }, {
+      }, {
+        "powers": ["energy_shield_deflection", "super_senses"]
+      }]
+    },
+    "catws105": {
+      "special_powers": [{
+      }, {
+      }, {
+        "description": "Winter Soldier can use Ranged Combat Expert. When he does, he can use Improved Targeting: Hindering, Characters."
+      }]
+    },
+    "catwsH001": {
+      "special_powers": [{
+        "powers": ["support"]
+      }]
+    },
+    "catwsH002": {
+      "special_powers": [{
+        "powers": ["running_shot"]
+      }]
+    },
+    "catwsH003": {
+      "special_powers": [{
+        "powers": ["sidestep"]
+      }]
+    },
+    "catwsH005": {
+      "special_powers": [{
+        "powers": ["sidestep"]
+      }]
+    }
+  },
+  "additions": [{
+    "unit_id": "catwsM001",
+    "set_id": "catws",
+    "collector_number": "M001",
+    "name": "Triskelion Helibay",
+    "type": "map",
+    "map_url": "https://hcmaps.net/maps/catws/triskelion_helibay.json"
+  }, {
+    "unit_id": "catwsM002",
+    "set_id": "catws",
+    "collector_number": "M002",
+    "name": "Helicarrier",
+    "type": "map",
+    "special_powers": [{
+      "name": "Open Air Terrain",
+      "description": "If a character that can't use Leap/Climb, Phasing/Teleport, Flight or Great Size occupies Open Air Terrain after actions resolve, deal that character 1 unavoidable damage and then the character's controller places the character in their starting area."
+    }],
+    "map_url": "https://hcmaps.net/maps/catws/helicarrier.json"
+  }]
+}

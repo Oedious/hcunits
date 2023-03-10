@@ -10,7 +10,6 @@ Missing units
 - botmR100 (Millennium Stone) and units with spell/trap
 
 Broken units:
-- Vampire dials like swb037b don't start at the top
 - caav061 Mandarin costed trait is variable (3-30)
 - abpi029a, abpi054, abpi057, abpi058 - costed trait is 5 or 15
 - Chase A name in hx036.01
@@ -23,24 +22,26 @@ Broken units:
 - Equip-at-construction units (smww055, etc)
 - dofpG001 and G002 second dials
 - dp037 has a table we can't decode
+- slosh039 (Bizaaro) has 25 point tokens
 
 Missing Search Features:
 - Search for properties: legacy cards, team up cards, etc
 - Search by age - modern, silver, bronze, golden, etc
+- Search for text in special powers
+- Search for improved abilities in special powers
 
 Missing Unit Rendering Features:
-- Sort keywords by named then generic
 - Make costed trait icon pretty
 - Nicer rendering of ID cards
-- Tooltips for cards show below the searchbar.
 - Allow keyword link search in Explore Units (but not Teams)
 
 Missing Team Building Features:
-- Prime and unique outlines in sideline
 - Team building rules validation
 - Copy a team into my account
 - "Related" items or some section for associated bystanders, dials, etc.
 - Support locations that are 0 points if a condition is met
+- Attach wol constructs to wol lanterns at construction
+
 
 API:
 - Fix HTML page for search
@@ -56,6 +57,10 @@ Tournament Reports:
 
 Pages:
 - Add a page that allows you to drop in a Unit JSON and have it render it inline
+
+Optimizations:
+- Explore database normalization
+- Minify the Javascript
 
 Things in team build:
 Main force

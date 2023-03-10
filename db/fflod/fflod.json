@@ -1,0 +1,777 @@
+[
+  {
+    "unit_id": "fflod001", 
+    "set_id": "fflod", 
+    "collector_number": "001", 
+    "name": "Lex Luthor", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      100
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "calculator"
+    ], 
+    "keywords": [
+      "Celebrity", 
+      "Injustice League", 
+      "Legion of Doom", 
+      "Metropolis", 
+      "Scientist", 
+      "Society"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "THE BEST TECHNOLOGY", 
+        "description": "Lex Luthor can use Stealth. Opposing characters using the Superman Ally team ability can't ignore hindering terrain when drawing a line of fire to a character within 4 squares of Lex Luthor.", 
+        "powers": [
+          "stealth"
+        ]
+      }, 
+      {
+        "type": "damage", 
+        "name": "SMARTEST MAN ALIVE", 
+        "description": "Lex Luthor can use Leadership, Outwit, and Perplex. When using Leadership and Mastermind, he is considered to be 200 points.", 
+        "powers": [
+          "leadership", 
+          "outwit", 
+          "perplex"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "6", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 10, 
+        "attack_power": "pulse_wave", 
+        "attack_value": 9, 
+        "defense_power": "mastermind", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_value": 6, 
+        "attack_power": "pulse_wave", 
+        "attack_value": 9, 
+        "defense_power": "mastermind", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_value": 6, 
+        "attack_power": "pulse_wave", 
+        "attack_value": 9, 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 6, 
+        "attack_power": "pulse_wave", 
+        "attack_value": 9, 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 6, 
+        "attack_value": 10, 
+        "defense_power": "regeneration", 
+        "defense_value": 16, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 10, 
+        "attack_value": 9, 
+        "defense_power": "regeneration", 
+        "defense_value": 15, 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "fflod002", 
+    "set_id": "fflod", 
+    "collector_number": "002", 
+    "name": "Bizarro", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      275, 
+      175, 
+      75
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "injustice_league"
+    ], 
+    "keywords": [
+      "Brute", 
+      "Injustice League", 
+      "Legion of Doom"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "GREEN KRYPTONITE ENHANCEMENT", 
+        "description": "When a friendly character named Lex Luthor is within 4 squares and line of fire, modify Bizarro's attack and defense values by +1."
+      }, 
+      {
+        "type": "attack", 
+        "name": "BIZARRO HELP YOU!", 
+        "description": "Bizarro can use Super Strength. When he does, light objects modify his damage value by +3 instead of +1, and ultra heavy objects modify his damage value by +1 instead of +3.", 
+        "powers": [
+          "super_strength"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "6", 
+    "targets": "1", 
+    "speed_type": "wing", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 10, 
+        "attack_power": "special", 
+        "attack_value": 11, 
+        "defense_power": "impervious", 
+        "defense_value": 18, 
+        "damage_value": 5
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "charge", 
+        "speed_value": 10, 
+        "attack_power": "special", 
+        "attack_value": 11, 
+        "defense_power": "impervious", 
+        "defense_value": 17, 
+        "damage_value": 5
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "hypersonic_speed", 
+        "speed_value": 10, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "charge", 
+        "speed_value": 9, 
+        "attack_value": 11, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_value": 3, 
+        "starting_line": true
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "charge", 
+        "speed_value": 9, 
+        "attack_power": "super_strength", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "flurry", 
+        "speed_value": 9, 
+        "attack_power": "super_strength", 
+        "attack_value": 11, 
+        "defense_power": "invulnerability", 
+        "defense_value": 16, 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "flurry", 
+        "speed_value": 8, 
+        "attack_power": "poison", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_value": 3, 
+        "starting_line": true
+      }, 
+      {
+        "click_number": 8, 
+        "speed_power": "charge", 
+        "speed_value": 9, 
+        "attack_power": "super_strength", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 18, 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 9, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "poison", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 10, 
+        "speed_power": "flurry", 
+        "speed_value": 7, 
+        "attack_power": "poison", 
+        "attack_value": 8, 
+        "defense_power": "invulnerability", 
+        "defense_value": 16, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 11, 
+        "speed_power": "charge", 
+        "speed_value": 10, 
+        "attack_power": "poison", 
+        "attack_value": 10, 
+        "defense_power": "regeneration", 
+        "defense_value": 18, 
+        "damage_value": 5
+      }
+    ]
+  }, 
+  {
+    "unit_id": "fflod003", 
+    "set_id": "fflod", 
+    "collector_number": "003", 
+    "name": "Cheetah", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      50
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "injustice_league"
+    ], 
+    "keywords": [
+      "Animal", 
+      "Injustice Gang", 
+      "Injustice League", 
+      "Legion of Doom"
+    ], 
+    "special_powers": [
+      {
+        "type": "defense", 
+        "name": "CATLIKE REFLEXES", 
+        "description": "Cheetah can use Super Senses. When she evades an attack, you may place her adjacent to the attacker.", 
+        "powers": [
+          "super_senses"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "flurry", 
+        "speed_value": 7, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "flurry", 
+        "speed_value": 7, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 16, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_value": 7, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_power": "special", 
+        "defense_value": 16, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "shape_change", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "fflod004", 
+    "set_id": "fflod", 
+    "collector_number": "004", 
+    "name": "Black Manta", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      125
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "injustice_league"
+    ], 
+    "keywords": [
+      "Injustice League", 
+      "Legion of Doom", 
+      "Soldier"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "MARINE MARAUDER", 
+        "description": "At the beginning of the game, you may place Black Manta in any water terrain within 8 squares. When Black Manta occupies water terrain, modify his speed and defense values by +2."
+      }, 
+      {
+        "type": "attack", 
+        "name": "CONCUSSIVE EYE BEAMS", 
+        "description": "Black Manta's ranged combat attacks always generate knock back."
+      }, 
+      {
+        "type": "defense", 
+        "name": "PROTECTION OF THE DEPTHS", 
+        "description": "Black Manta can use Regeneration. When he does and occupies water terrain, if the d6 result is 1 or 2, he can use it again as a free action.", 
+        "powers": [
+          "regeneration"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "7", 
+    "targets": "1", 
+    "speed_type": "transport_dolphin", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 11, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 7, 
+        "attack_power": "pulse_wave", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 7, 
+        "attack_power": "pulse_wave", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 18, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_value": 8, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 7, 
+        "speed_value": 8, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_power": "special", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "fflod005", 
+    "set_id": "fflod", 
+    "collector_number": "005", 
+    "name": "Solomon Grundy", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      150
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "injustice_league"
+    ], 
+    "keywords": [
+      "Brute", 
+      "Injustice Gang", 
+      "Injustice League", 
+      "Legion of Doom", 
+      "Monster", 
+      "Society"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "BORN ON A MONDAY", 
+        "description": "When Solomon Grundy is KO'd, remove him from the map and place him on his character card. While on his card, at the beginning of your turn, you may heal Solomon Grundy of 1 damage and if he is on click 1-6; you may place him in any starting area or square of hindering terrain. Opponents receive victory points each time Solomon Grundy is KO'd."
+      }, 
+      {
+        "type": "defense", 
+        "name": "CURSE OF SLAUGHTER SWAMP", 
+        "description": "When Solomon Grundy is dealt damage, roll a d6. Ignore damage up to half the result."
+      }, 
+      {
+        "type": "damage", 
+        "name": "NEVER DYING", 
+        "description": "At the beginning of your turn, you may heal Solomon Grundy of 1 damage."
+      }
+    ], 
+    "improved_movement": [
+      "hindering"
+    ], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "super_strength", 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 16, 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "super_strength", 
+        "attack_value": 9, 
+        "defense_power": "special", 
+        "defense_value": 16, 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "plasticity", 
+        "speed_value": 8, 
+        "attack_power": "steal_energy", 
+        "attack_value": 9, 
+        "defense_power": "special", 
+        "defense_value": 16, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "plasticity", 
+        "speed_value": 6, 
+        "attack_power": "steal_energy", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "plasticity", 
+        "speed_value": 6, 
+        "attack_power": "steal_energy", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "steal_energy", 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 7, 
+        "speed_value": 6, 
+        "attack_power": "steal_energy", 
+        "attack_value": 8, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 8, 
+        "speed_value": 6, 
+        "attack_value": 8, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 4
+      }
+    ]
+  }, 
+  {
+    "unit_id": "fflod006", 
+    "set_id": "fflod", 
+    "collector_number": "006", 
+    "name": "Giganta", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      100
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "injustice_league"
+    ], 
+    "keywords": [
+      "Injustice League", 
+      "Legion of Doom", 
+      "Scientist", 
+      "Society"
+    ], 
+    "special_powers": [
+      {
+        "type": "speed", 
+        "name": "GIANT RAMPAGE", 
+        "description": "Giganta can use Charge, Flurry, and Sidestep.", 
+        "powers": [
+          "charge", 
+          "flurry", 
+          "sidestep"
+        ]
+      }, 
+      {
+        "type": "attack", 
+        "name": "THUNDEROUS STOMP", 
+        "description": "When Giganta moves 3 squares or less and actions resolve, she can use Quake as a free action.", 
+        "powers": [
+          "quake"
+        ]
+      }
+    ], 
+    "improved_movement": [
+      "characters"
+    ], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "giant", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 10, 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "battle_fury", 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "special", 
+        "speed_value": 10, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "battle_fury", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "special", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "battle_fury", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "flurry", 
+        "speed_value": 8, 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "outwit", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "earthbound_neutralized", 
+        "speed_value": 6, 
+        "attack_value": 8, 
+        "defense_value": 16, 
+        "damage_power": "outwit", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "fflodM001", 
+    "set_id": "fflod", 
+    "collector_number": "M001", 
+    "name": "Hall of Doom", 
+    "type": "map", 
+    "point_values": [], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [], 
+    "special_powers": [], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "map_url": "https://hcmaps.net/maps/slosh/hall_of_doom.json", 
+    "dial": []
+  }, 
+  {
+    "unit_id": "fflodM002", 
+    "set_id": "fflod", 
+    "collector_number": "M002", 
+    "name": "Hall of Doom: Slaughter Swamp", 
+    "type": "map", 
+    "point_values": [], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [], 
+    "special_powers": [], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "map_url": "https://hcmaps.net/maps/slosh/hall_of_doom_slaughter_swamp.json", 
+    "dial": []
+  }
+]

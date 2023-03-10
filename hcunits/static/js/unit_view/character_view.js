@@ -113,7 +113,7 @@ class CharacterView extends BaseUnitView {
 
   drawCollectorNumber_() {
     const PROPERTY_NAMES = {
-      "team_up": "TEAM_UP",
+      "team_up": "TEAM UP",
       "legacy": "LEGACY",
       "captain": "CAPTAIN",
       "sidekick": "SIDEKICK",
@@ -295,12 +295,14 @@ class CharacterView extends BaseUnitView {
       currentLineCount += lines;
       var iconHtml = "";
       if (type == "costed_trait") {
+        const description = escapeHtml(SPECIAL_POWER_TYPE_LIST[type].description);
         iconHtml = `
-          <img class='specialPowerIcon' src='/static/images/sp/${type}.png' alt=''/>
+          <img class='specialPowerIcon' src='/static/images/sp/${type}.png' alt='' title='${description}'/>
           <div class='specialPowerPointValue'>+${power.point_value} POINTS</div>`;
       } else if (type == "rally_trait") {
+        const description = escapeHtml(SPECIAL_POWER_TYPE_LIST[type].description);
         iconHtml = `
-          <div class='specialPowerRally' style='${RALLY_TYPE_TO_STYLE[power.rally_type]}'>
+          <div class='specialPowerRally' style='${RALLY_TYPE_TO_STYLE[power.rally_type]}' title='${description}>
             <img class='specialPowerIcon' src='/static/images/sp/trait.png' alt=''/>
             <img class='specialPowerRallyDie' src='/static/images/misc/d6_${power.rally_die}.png' alt='${power.rally_die}'/>
           </div>`;

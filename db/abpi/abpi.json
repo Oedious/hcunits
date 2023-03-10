@@ -6984,7 +6984,8 @@
         "defense_power": "invulnerability", 
         "defense_value": 18, 
         "damage_power": "special", 
-        "damage_value": 3
+        "damage_value": 3, 
+        "starting_line": true
       }, 
       {
         "click_number": 5, 
@@ -9350,7 +9351,7 @@
     "collector_number": "100", 
     "name": "Winter Soldier", 
     "type": "character", 
-    "rarity": "limited_edition", 
+    "rarity": "chase", 
     "real_name": "James Buchanan Barnes", 
     "dimensions": "1x1", 
     "point_values": [
@@ -9483,7 +9484,6 @@
     "keywords": [], 
     "special_powers": [
       {
-        "type": "equipment", 
         "name": "EFFECT", 
         "description": "This character gains an extra target. Perplex, Telekinesis. // When this character hits, if the attack roll was 10 or higher, after resolutions they may generate an object to immediately hold. If you do, give them a RANGE Object Action as FREE. If they continue to hit with an attack roll of 10 or higher, they may use this effect an additional time.", 
         "powers": [
@@ -9518,7 +9518,6 @@
     "keywords": [], 
     "special_powers": [
       {
-        "type": "equipment", 
         "name": "EFFECT", 
         "description": "Modify range +1. Probability Control. When this character attacks, if the attack roll is 10 or higher, opposing characters can't use effects to reroll attacks this turn.", 
         "powers": [
@@ -9552,7 +9551,6 @@
     "keywords": [], 
     "special_powers": [
       {
-        "type": "equipment", 
         "name": "EFFECT", 
         "description": "Modify damage +1. Close Combat Expert, Range Combat Expert. When this character hits, if the attack roll was 10 or higher, after resolutions deal a hit target 1 penetrating damage.", 
         "powers": [
@@ -9587,7 +9585,6 @@
     "keywords": [], 
     "special_powers": [
       {
-        "type": "equipment", 
         "name": "EFFECT", 
         "description": "Modify speed +1. Phasing/Teleport, Passenger: 2. When this character hits, if the attack roll was 10 or higher, after resolutions you may place a hit character up to 8 squares away from their current square.", 
         "powers": [
@@ -9621,7 +9618,6 @@
     "keywords": [], 
     "special_powers": [
       {
-        "type": "equipment", 
         "name": "EFFECT", 
         "description": "Modify defense +1. Steal energy, but with close or range attacks. When this character hits, if the attack roll was 10 or higher, after resolutions heal 1 click.", 
         "powers": [
@@ -9655,7 +9651,6 @@
     "keywords": [], 
     "special_powers": [
       {
-        "type": "equipment", 
         "name": "EFFECT", 
         "description": "Modify attack +1. Mind Control, Incapacitate. // When this character hits, if the attack roll was 10 or higher, after resolutions they can use Mind Control as FREE. If they continue to hit with an attack roll of 10 or higher, they may use this effect an additional time.", 
         "powers": [
@@ -9690,7 +9685,6 @@
     "keywords": [], 
     "special_powers": [
       {
-        "type": "equipment", 
         "name": "EFFECT", 
         "description": "FREE: An opponent chooses Speed, Attack, Defense, or Damage and you then choose a standard power that isn't of the chosen type. Until your next turn, as long as the Cosmic Cube is equipped, modify the combat value of the type chosen by your opponent +1 and this character can use the power you chose. At the end of your turn, roll a d6 if this character doesn't have the Cosmic keyword. [1-2]: Unequip the Cosmic Cube.", 
         "powers": [
@@ -9771,7 +9765,6 @@
     "keywords": [], 
     "special_powers": [
       {
-        "type": "equipment", 
         "name": "EFFECT", 
         "description": "FREE: Choose one: Place this character up to 3 squares away from its current square; -or- Until your next turn, [Improved Targeting: Elevated, Hindering] and modify range +2; -or- Give an action token to an adjacent opposing character. If you can't, deal them 1 penetrating damage."
       }
@@ -9802,7 +9795,6 @@
     "keywords": [], 
     "special_powers": [
       {
-        "type": "equipment", 
         "name": "EFFECT", 
         "description": "FREE: Choose a standard power, then roll a d6. [5-6]: You may choose an additional standard power. [1-2]: Deal this character 1 unavoidable damage. This character can use the chosen power(s) until your next turn.", 
         "powers": [
@@ -9885,12 +9877,10 @@
     "keywords": [], 
     "special_powers": [
       {
-        "type": "equipment", 
         "name": "EFFECT", 
         "description": "Infinity Gauntlet starts with 6 Infinity tokens. [Power Cosmic]."
       }, 
       {
-        "type": "equipment", 
         "name": "FREE", 
         "description": "Choose standard powers from this list up to the number of Infinity tokens: Mind Control, Pulse Wave, Close Combat Expert, Ranged Combat Expert, opposing Probability Control, and Poison. Until your next turn, this character has PROTECTED from all of the chosen powers. After resolutions, roll a d6. [2-4] Remove an Infinity token. [1]: Remove an Infinity token and deal this character 1 unavoidable damage."
       }
@@ -9921,7 +9911,6 @@
     "keywords": [], 
     "special_powers": [
       {
-        "type": "equipment", 
         "name": "EFFECT", 
         "description": "This character can be equipped with any number of [ABPaI] Infinity Gems with different names. FREE: Choose a combat value to modify +1 until your next turn."
       }

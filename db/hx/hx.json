@@ -9210,7 +9210,7 @@
     "special_powers": [
       {
         "type": "trait", 
-        "name": "TEAM UP: ' ??????? ', CAPTAIN BRITAIN, GAMBIT, JUBILEE, RICTOR", 
+        "name": "TEAM UP: \u2022 \u25aa\u25aa\u1ecb\u1eac\u1ecb\u25aa\u25aa \u2022, CAPTAIN BRITAIN, GAMBIT, JUBILEE, RICTOR", 
         "description": "If 1+ listed friendly characters are on the map, Rogue and the listed friendly character's Excalibur, Mystical Protectors trait also triggers with close attacks. If 3+ are on the map, when they hit, after resolutions heal the attacker 1 click. (After revealing forces, you may replace character cards with their alternates. You can't choose a Team Up if your starting characters share a name)."
       }, 
       {
@@ -14441,11 +14441,6 @@
         "description": "For all characters with this trait, when a friendly standard character with the X-Men keyword and a lower point value would be KO'd by an opposing effect, you may instead choose to turn that character to it's starting click (this game) and place them adjacent to a friendly character that can use this trait. If you do, your opponent scores that character and generates a bystander on this card (of their choice) adjacent to any of their characters. Your opponent then scores 10 points for every bystander they generated this game via this trait, regardless of source."
       }, 
       {
-        "type": "trait", 
-        "name": "PASSENGER", 
-        "description": "1"
-      }, 
-      {
         "type": "speed", 
         "name": "GETTING THE X-MEN INTO POSITION", 
         "description": "Phasing/Teleport, Stealth. When Nightcrawler uses Phasing/Teleport and carries a friendly character that shares a keyword, after resolutions you may place him in the square he began movement from.", 
@@ -14466,6 +14461,7 @@
     "improved_movement": [], 
     "improved_targeting": [], 
     "object_keyphrases": [], 
+    "passengers": "1", 
     "unit_range": "0", 
     "targets": "1", 
     "speed_type": "boot", 
@@ -17030,7 +17026,7 @@
     "collector_number": "100", 
     "name": "Rogue", 
     "type": "character", 
-    "rarity": "limited_edition", 
+    "rarity": "chase", 
     "real_name": "Anna Marie LeBeau", 
     "dimensions": "1x1", 
     "point_values": [

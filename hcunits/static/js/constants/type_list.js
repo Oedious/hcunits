@@ -125,6 +125,11 @@ const BYSTANDER_TYPE_INFO = {
     "name": "Horde",
     "icon": "groups",
   },
+  "toy": {
+    "name": "Toy",
+    "description": "When you build your force, this Toy has all keywords possessed by a friendly character named Toyman. Give this Toy a free action and attach it to an adjacent friendly SLOSH #050 Toyman. When attached, you may give this Toy a move action to detach and move on the map. When on the map, you may give this Toy a move action as a free action if it is within and remains within 3 squares of SLOSH #050 Toyman.",
+    "icon": "toys",
+  },
 };
 
 const ATTACHMENT_TYPE_INFO = {

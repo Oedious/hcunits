@@ -1,6 +1,26 @@
 class BaseUnitView {
   constructor(unit) {
     this.unit_ = unit;
+    
+    // Sort the keywords so that named keywords are first, generic
+    // keywords are last, otherwise sorted alphabetically.
+    this.unit_.keywords.sort(function(k1, k2) {
+      var keywordType1 = KEYWORD_LIST[k1];
+      var keywordType2 = KEYWORD_LIST[k2];
+      if (keywordType1 == "generic" && keywordType2 != "generic") {
+        return 1;
+      }
+      if (keywordType1 != "generic" && keywordType2 == "generic") {
+        return -1;
+      }
+      if (k1 > k2) {
+        return 1;
+      }
+      if (k1 < k2) {
+        return -1;
+      }
+      return 0;
+    })
   }
   
   draw() {

@@ -579,6 +579,21 @@ const SET_LIST = {
     "release_date": "2014-05-14",
     "universe": "marvel"
   },
+  "catws": {
+    "name": "Captain America: The Winer Soldier",
+    "release_date": "2014-03-12",
+    "universe": "marvel"
+  },
+  "slosh": {
+    "name": "Superman and the Legion of Super-Heroes",
+    "release_date": "2014-02-26",
+    "universe": "dc"
+  },
+  "fflod": {
+    "name": "Fast Forces: Legion of Doom",
+    "release_date": "2014-02-26",
+    "universe": "dc"
+  },
   "wk": {
     "name": "WizKids Standard Game Pieces",
     "release_date": "2002-05-01",

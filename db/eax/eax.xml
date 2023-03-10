@@ -462,7 +462,8 @@
     "defense_power": "willpower", 
     "defense_value": 17, 
     "damage_power": "outwit", 
-    "damage_value": 3
+    "damage_value": 3, 
+    "starting_line": true
   }, 
   {
     "click_number": 4, 
@@ -7791,7 +7792,7 @@
     <collector_number>100</collector_number>
     <name>Scarlet Spider</name>
     <type>character</type>
-    <rarity>limited_edition</rarity>
+    <rarity>chase</rarity>
     <real_name>Ben Reilly</real_name>
     <dimensions>1x1</dimensions>
     <point_values>[75]</point_values>
@@ -7891,7 +7892,7 @@
     <collector_number>LB-STBT1</collector_number>
     <name>Tank</name>
     <type>bystander</type>
-    <rarity>limited_edition</rarity>
+    <rarity>common</rarity>
     <dimensions>1x1</dimensions>
     <point_values>[]</point_values>
     <properties>["legacy"]</properties>
@@ -7929,7 +7930,7 @@
     <collector_number>LB-STBT2</collector_number>
     <name>Monolith</name>
     <type>bystander</type>
-    <rarity>limited_edition</rarity>
+    <rarity>common</rarity>
     <dimensions>1x1</dimensions>
     <point_values>[]</point_values>
     <properties>["legacy"]</properties>
@@ -7968,7 +7969,7 @@
     <collector_number>LB-STBT3</collector_number>
     <name>Crimson Sage</name>
     <type>bystander</type>
-    <rarity>limited_edition</rarity>
+    <rarity>common</rarity>
     <dimensions>1x1</dimensions>
     <point_values>[]</point_values>
     <properties>["legacy"]</properties>
@@ -8007,7 +8008,7 @@
     <collector_number>LB-STBT4</collector_number>
     <name>Steelbow</name>
     <type>bystander</type>
-    <rarity>limited_edition</rarity>
+    <rarity>common</rarity>
     <dimensions>1x1</dimensions>
     <point_values>[]</point_values>
     <properties>["legacy"]</properties>
@@ -8046,7 +8047,7 @@
     <collector_number>LB-STBT5</collector_number>
     <name>Bolt</name>
     <type>bystander</type>
-    <rarity>limited_edition</rarity>
+    <rarity>common</rarity>
     <dimensions>1x1</dimensions>
     <point_values>[]</point_values>
     <properties>["legacy"]</properties>
@@ -8084,7 +8085,7 @@
     <collector_number>LB-STBT6</collector_number>
     <name>Sting</name>
     <type>bystander</type>
-    <rarity>limited_edition</rarity>
+    <rarity>common</rarity>
     <dimensions>1x1</dimensions>
     <point_values>[]</point_values>
     <properties>["legacy"]</properties>
@@ -8129,7 +8130,6 @@
     <keywords>[]</keywords>
     <special_powers>[
   {
-    "type": "equipment", 
     "name": "EFFECT", 
     "description": "[Wing Symbol], Toughness, Modify speed +2.", 
     "powers": [
@@ -8157,7 +8157,6 @@
     <keywords>[]</keywords>
     <special_powers>[
   {
-    "type": "equipment", 
     "name": "EFFECT", 
     "description": "When this character hits, if friendly to this equipment, after resolutions you may equip this object to a hit character. (It will unequip other equipment.) // If this character is friendly to this equipment it can use Super Senses but only succeeds on a 6. // If this character is opposing to this equipment it can't be given actions to equip and modifies speed -2."
   }
@@ -8182,7 +8181,6 @@
     <keywords>[]</keywords>
     <special_powers>[
   {
-    "type": "equipment", 
     "name": "EFECT", 
     "description": "Incapacitate with a maximum range value of 4. When this character uses it and hits, instead of giving an action token you may have hit targets gain Immobile until your next turn. (They still take 1 penetrating damage if they had 2 action tokens.)", 
     "powers": [
@@ -8210,7 +8208,6 @@
     <keywords>[]</keywords>
     <special_powers>[
   {
-    "type": "equipment", 
     "name": "EFFECT", 
     "description": "Giant Reach: 2, Flurry, Improved Movement: Elevated, Hindering.", 
     "powers": [
@@ -8238,7 +8235,6 @@
     <keywords>[]</keywords>
     <special_powers>[
   {
-    "type": "equipment", 
     "name": "EFFECT", 
     "description": "[Wing Symbol], Running Shot. If this character is named Green Goblin or can already use Running Shot, this character can use Hypersonic Speed.", 
     "powers": [
@@ -8267,7 +8263,6 @@
     <keywords>[]</keywords>
     <special_powers>[
   {
-    "type": "equipment", 
     "name": "EFFECT", 
     "description": "Plasticity, Shape Change. This character automatically breaks away.", 
     "powers": [

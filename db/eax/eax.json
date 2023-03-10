@@ -510,7 +510,8 @@
         "defense_power": "willpower", 
         "defense_value": 17, 
         "damage_power": "outwit", 
-        "damage_value": 3
+        "damage_value": 3, 
+        "starting_line": true
       }, 
       {
         "click_number": 4, 
@@ -8404,7 +8405,7 @@
     "collector_number": "100", 
     "name": "Scarlet Spider", 
     "type": "character", 
-    "rarity": "limited_edition", 
+    "rarity": "chase", 
     "real_name": "Ben Reilly", 
     "dimensions": "1x1", 
     "point_values": [
@@ -8514,7 +8515,7 @@
     "collector_number": "LB-STBT1", 
     "name": "Tank", 
     "type": "bystander", 
-    "rarity": "limited_edition", 
+    "rarity": "common", 
     "dimensions": "1x1", 
     "point_values": [], 
     "properties": [
@@ -8554,7 +8555,7 @@
     "collector_number": "LB-STBT2", 
     "name": "Monolith", 
     "type": "bystander", 
-    "rarity": "limited_edition", 
+    "rarity": "common", 
     "dimensions": "1x1", 
     "point_values": [], 
     "properties": [
@@ -8595,7 +8596,7 @@
     "collector_number": "LB-STBT3", 
     "name": "Crimson Sage", 
     "type": "bystander", 
-    "rarity": "limited_edition", 
+    "rarity": "common", 
     "dimensions": "1x1", 
     "point_values": [], 
     "properties": [
@@ -8636,7 +8637,7 @@
     "collector_number": "LB-STBT4", 
     "name": "Steelbow", 
     "type": "bystander", 
-    "rarity": "limited_edition", 
+    "rarity": "common", 
     "dimensions": "1x1", 
     "point_values": [], 
     "properties": [
@@ -8677,7 +8678,7 @@
     "collector_number": "LB-STBT5", 
     "name": "Bolt", 
     "type": "bystander", 
-    "rarity": "limited_edition", 
+    "rarity": "common", 
     "dimensions": "1x1", 
     "point_values": [], 
     "properties": [
@@ -8717,7 +8718,7 @@
     "collector_number": "LB-STBT6", 
     "name": "Sting", 
     "type": "bystander", 
-    "rarity": "limited_edition", 
+    "rarity": "common", 
     "dimensions": "1x1", 
     "point_values": [], 
     "properties": [
@@ -8766,7 +8767,6 @@
     "keywords": [], 
     "special_powers": [
       {
-        "type": "equipment", 
         "name": "EFFECT", 
         "description": "[Wing Symbol], Toughness, Modify speed +2.", 
         "powers": [
@@ -8799,7 +8799,6 @@
     "keywords": [], 
     "special_powers": [
       {
-        "type": "equipment", 
         "name": "EFFECT", 
         "description": "When this character hits, if friendly to this equipment, after resolutions you may equip this object to a hit character. (It will unequip other equipment.) // If this character is friendly to this equipment it can use Super Senses but only succeeds on a 6. // If this character is opposing to this equipment it can't be given actions to equip and modifies speed -2."
       }
@@ -8829,7 +8828,6 @@
     "keywords": [], 
     "special_powers": [
       {
-        "type": "equipment", 
         "name": "EFECT", 
         "description": "Incapacitate with a maximum range value of 4. When this character uses it and hits, instead of giving an action token you may have hit targets gain Immobile until your next turn. (They still take 1 penetrating damage if they had 2 action tokens.)", 
         "powers": [
@@ -8862,7 +8860,6 @@
     "keywords": [], 
     "special_powers": [
       {
-        "type": "equipment", 
         "name": "EFFECT", 
         "description": "Giant Reach: 2, Flurry, Improved Movement: Elevated, Hindering.", 
         "powers": [
@@ -8896,7 +8893,6 @@
     "keywords": [], 
     "special_powers": [
       {
-        "type": "equipment", 
         "name": "EFFECT", 
         "description": "[Wing Symbol], Running Shot. If this character is named Green Goblin or can already use Running Shot, this character can use Hypersonic Speed.", 
         "powers": [
@@ -8930,7 +8926,6 @@
     "keywords": [], 
     "special_powers": [
       {
-        "type": "equipment", 
         "name": "EFFECT", 
         "description": "Plasticity, Shape Change. This character automatically breaks away.", 
         "powers": [

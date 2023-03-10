@@ -120,6 +120,12 @@ class SmallUnitView extends BaseUnitView {
     for (var i = 0; i < this.unit_.special_powers.length; ++i) {
       var power = this.unit_.special_powers[i];
       var type = power.type;
+
+      // Handling for special trait types
+      if (type == "speed" || type == "attack" || type == "defense" || type == "damage") {
+        type = this.unit_[type + "_type"];
+      }
+
       var iconHtml = "";
       if (type == "costed_trait") {
         const description = escapeHtml(SPECIAL_POWER_TYPE_LIST[type].description);
@@ -147,14 +153,10 @@ class SmallUnitView extends BaseUnitView {
       } else if (type == "consolation") {
         // Don't use an icon, but add a tag to preserve spacing.
         iconHtml = "<td class='specialPowerImg'></td>";
-      } else if (type == "trait" || type == "speed" || type == "attack" || type == "defense" || type == "damage") {
-        var combatSymbolType = type;
-        if (type != "trait") {
-          combatSymbolType = this.unit_[type + "_type"];
-        }
+      } else if (type) {
         iconHtml = `
           <td class='specialPowerImg'>
-            <img class='specialPowerIcon' src='/static/images/sp/${combatSymbolType}.png' alt=''/>
+            <img class='specialPowerIcon' src='/static/images/sp/${type}.png' alt=''/>
           </td>`;
       } else {
         // Don't use an icon and use the full space of the card.

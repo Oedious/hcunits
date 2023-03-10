@@ -9140,7 +9140,8 @@
         "name": "GALE-FORCE WINDS", 
         "description": "Force Blast. Charge and Combat Reflexes can't prevent knockback of opposing characters within 3 squares of Red Tornado. (Size, multi-base and other effects can still prevent it).", 
         "powers": [
-          "force_blast"
+          "force_blast", 
+          "charge"
         ]
       }, 
       {
@@ -11566,7 +11567,7 @@
     "properties": [], 
     "team_abilities": [
       "justice_league", 
-      "legion_of_superheroes"
+      "legion_of_super_heroes"
     ], 
     "keywords": [
       "Justice League", 
@@ -14863,6 +14864,7 @@
       }, 
       {
         "click_number": 6, 
+        "alt_click_number": 1, 
         "speed_power": "charge", 
         "speed_value": 7, 
         "attack_power": "quake", 
@@ -14874,6 +14876,7 @@
       }, 
       {
         "click_number": 7, 
+        "alt_click_number": 2, 
         "speed_power": "charge", 
         "speed_value": 8, 
         "attack_power": "quake", 
@@ -14885,6 +14888,7 @@
       }, 
       {
         "click_number": 8, 
+        "alt_click_number": 3, 
         "speed_power": "charge", 
         "speed_value": 7, 
         "attack_power": "quake", 
@@ -14896,6 +14900,7 @@
       }, 
       {
         "click_number": 9, 
+        "alt_click_number": 4, 
         "speed_power": "charge", 
         "speed_value": 8, 
         "attack_power": "quake", 
@@ -15006,6 +15011,7 @@
       }, 
       {
         "click_number": 6, 
+        "alt_click_number": 1, 
         "speed_power": "charge", 
         "speed_value": 7, 
         "attack_power": "quake", 
@@ -15017,6 +15023,7 @@
       }, 
       {
         "click_number": 7, 
+        "alt_click_number": 2, 
         "speed_power": "charge", 
         "speed_value": 8, 
         "attack_power": "quake", 
@@ -15028,6 +15035,7 @@
       }, 
       {
         "click_number": 8, 
+        "alt_click_number": 3, 
         "speed_power": "charge", 
         "speed_value": 7, 
         "attack_power": "quake", 
@@ -15039,6 +15047,7 @@
       }, 
       {
         "click_number": 9, 
+        "alt_click_number": 4, 
         "speed_power": "charge", 
         "speed_value": 8, 
         "attack_power": "quake", 
@@ -16256,7 +16265,8 @@
         "defense_power": "toughness", 
         "defense_value": 17, 
         "damage_power": "shape_change", 
-        "damage_value": 3
+        "damage_value": 3, 
+        "starting_line": true
       }, 
       {
         "click_number": 7, 
@@ -20218,6 +20228,7 @@
       }, 
       {
         "click_number": 7, 
+        "alt_click_number": 1, 
         "speed_power": "charge", 
         "speed_value": 6, 
         "attack_power": "quake", 
@@ -20228,6 +20239,7 @@
       }, 
       {
         "click_number": 8, 
+        "alt_click_number": 2, 
         "speed_power": "charge", 
         "speed_value": 6, 
         "attack_power": "quake", 
@@ -20238,6 +20250,7 @@
       }, 
       {
         "click_number": 9, 
+        "alt_click_number": 3, 
         "speed_power": "flurry", 
         "speed_value": 6, 
         "attack_power": "steal_energy", 
@@ -20249,6 +20262,7 @@
       }, 
       {
         "click_number": 10, 
+        "alt_click_number": 4, 
         "speed_power": "flurry", 
         "speed_value": 5, 
         "attack_power": "steal_energy", 
@@ -20260,6 +20274,7 @@
       }, 
       {
         "click_number": 11, 
+        "alt_click_number": 5, 
         "speed_power": "flurry", 
         "speed_value": 5, 
         "attack_power": "steal_energy", 
@@ -23324,7 +23339,7 @@
     "collector_number": "100", 
     "name": "Hawkgirl", 
     "type": "character", 
-    "rarity": "limited_edition", 
+    "rarity": "chase", 
     "real_name": "Shayera Hol", 
     "dimensions": "1x1", 
     "point_values": [
@@ -23425,7 +23440,7 @@
     "collector_number": "101", 
     "name": "Wonder Woman", 
     "type": "character", 
-    "rarity": "limited_edition", 
+    "rarity": "common", 
     "real_name": "Diana", 
     "dimensions": "1x1", 
     "point_values": [
@@ -23540,7 +23555,7 @@
     "collector_number": "102", 
     "name": "The Flash", 
     "type": "character", 
-    "rarity": "limited_edition", 
+    "rarity": "common", 
     "real_name": "Wally West", 
     "dimensions": "1x1", 
     "point_values": [
@@ -23667,7 +23682,7 @@
     "collector_number": "103", 
     "name": "Batman", 
     "type": "character", 
-    "rarity": "limited_edition", 
+    "rarity": "common", 
     "real_name": "Bruce Wayne", 
     "dimensions": "1x1", 
     "point_values": [
@@ -23795,7 +23810,7 @@
     "collector_number": "104", 
     "name": "Green Lantern", 
     "type": "character", 
-    "rarity": "limited_edition", 
+    "rarity": "common", 
     "real_name": "John Stewart", 
     "dimensions": "1x1", 
     "point_values": [
@@ -23905,7 +23920,7 @@
     "collector_number": "105", 
     "name": "Superman", 
     "type": "character", 
-    "rarity": "limited_edition", 
+    "rarity": "common", 
     "real_name": "Kal-El", 
     "dimensions": "1x1", 
     "point_values": [
@@ -24038,7 +24053,7 @@
     "collector_number": "106", 
     "name": "Martian Manhunter", 
     "type": "character", 
-    "rarity": "limited_edition", 
+    "rarity": "common", 
     "real_name": "J'onn J'onzz", 
     "dimensions": "1x1", 
     "point_values": [

@@ -405,6 +405,7 @@ SET_MAP = {
       # TODO: Add support for wol115 and power batteries
       ("wol001", "wol114"),
       ("wolB001", "wolH007"),
+      ("wolR200", "wolR208.14"),
       ("wolS300", "wolS308"),
     ],
   },
@@ -416,6 +417,15 @@ SET_MAP = {
   },
   "ffdp": {
     "name": "Fast Forces: Deadpool",
+  },
+  "catws": {
+    "name": "Captain America - The Winter Soldier",
+  },
+  "slosh": {
+    "name": "Superman and the Legion of Super-Heroes",
+  },
+  "fflod": {
+    "name": "Fast Forces: The Legion of Doom",
   },
 }
 
@@ -536,7 +546,7 @@ PROPERTY_VALUES = [
 ]
 
 SPECIAL_POWER_TYPE_VALUES = [
-  "trait", "costed_trait", "rally_trait", "title_trait", "plus_plot_points", "minus_plot_points", "speed", "attack", "defense", "damage", "location", "consolation", "other_id", "inspiration", "asset", "epic", "construct", "word_balloon"
+  "trait", "costed_trait", "rally_trait", "title_trait", "plus_plot_points", "minus_plot_points", "speed", "attack", "defense", "damage", "location", "consolation", "other_id", "inspiration", "asset", "epic", "construct", "word_balloon", "toy"
 ]
 
 RALLY_TYPE_VALUES = [
@@ -592,8 +602,10 @@ IMPROVED_ABILITIES = {
       "imrpoved targeting: ignores hindering terrain": "hindering",
       "blocking": "blocking",
       "ignores outdoor blocking terrain": "outdoor_blocking",
+      "ignores outside blocking terrain": "outdoor_blocking",
       "destroy blocking": "destroy_blocking",
       "ignores blocking terrain. when a ranged combat attack resolves, any blocking terrain along its line of fire to the target is destroyed": "destroy_blocking",
+      "ignores blocking terrain.  when a ranged combat attack resolves, any blocking terrain along its line of fire to the target is destroyed": "destroy_blocking",
       "once per range attack, this character can draw a line of fire through one piece of blocking terrain. immediately after the attack resolves, destroy that piece of blocking terrain": "destroy_blocking",
       "once per range attack, this character can draw a line through one piece of blocking terrain. immediately after the attack resolves, destroy that piece of blocking terrain": "destroy_blocking",
       "characters": "characters",
@@ -601,6 +613,7 @@ IMPROVED_ABILITIES = {
       "lines of fire drawn by this character are not blocked by characters": "characters",
       "adjacent": "adjacent",
       "may make a ranged combat attack targeting adjacent opposing characters": "adjacent",
+      "may make a ranged combat attack while adjacent to an opposing character": "adjacent",
       "may make a ranged combat attack even when adjacent to an opposing character": "adjacent",
       "this character can make range attacks while adjacent to opposing characters": "adjacent",
       "this character can make range attacks while adjacent to opposing characters. (may target adjacent or non-adjacent opposing characters.)": "adjacent",
@@ -631,7 +644,7 @@ OBJECT_KEYPHRASE_VALUES = [
 ]
 
 BYSTANDER_TYPE_VALUES = [
-  'standard', 'construct', 'horde'
+  'standard', 'construct', 'horde', 'toy'
 ]
 
 ATTACHMENT_TYPE_VALUES = [
@@ -789,6 +802,7 @@ class Unit:
     if (rarity == "Rarity: Common" or
         rarity == "Rarity: Starter Set" or
         rarity == "Rarity: Fast Forces" or
+        rarity == "Rarity: Mini Game" or
         rarity == "Rarity: Deadpool Gravity Feed"):
       self.rarity = "common"
     elif rarity == "Rarity: Uncommon":
@@ -806,6 +820,10 @@ class Unit:
           rarity == "Rarity: Ant-Man Box Set" or
           rarity == "Rarity: Sinestro Corps War Scenario Pack" or
           rarity == "Rarity: Alpha Class Sentinel Scenario Pack" or
+          rarity == "Rarity: Con In Your Store Exclusive" or
+          rarity == "Rarity: WOL Gravity Feed" or
+          rarity == "Rarity: Lantern Pack Case Assortment" or
+          rarity == "Rarity: 2014 Convention Exclusive" or
           rarity == "Rarity: Mass Market Exclusive Chase"):
       self.rarity = "chase"
     elif rarity == "Rarity: Ultra Chase":
@@ -828,17 +846,24 @@ class Unit:
         figure_rank == "special_object" or
         figure_rank == "location_bonus" or
         figure_rank == "alter_ego"):
-      # Look to see if it's a construct, indicated by a special power.
+      # Look to see if it's a construct or toy, indicated by a special power.
       is_construct = False
+      is_toy = False
       tag_list = soup.find_all(text=re.compile(r'\s*Special Powers\s*'))
       if len(tag_list) > 0:
         tbody = tag_list[0].parent.parent.parent.parent.tbody
         if tbody:
           val = tbody.select('tr')[0].select('td')[1].strong
-          is_construct = (val and val.string.strip() == "CONSTRUCTS:")
+          if val:
+            val = val.string.strip()
+            is_construct = (val == "CONSTRUCTS:")
+            is_toy = (val == "MOBILE TOYS:" or val == "MOBIL TOYS:")
       if is_construct:
         self.type = "bystander"
         self.bystander_type = "construct"
+      elif is_toy:
+        self.type = "bystander"
+        self.bystander_type = "toy"
       elif (soup.find("td", class_="card_special_object") or
             soup.find("td", class_="card_light_object")):
         if ((soup.find(text=re.compile(r'.*EFFECT:.*')) or
@@ -903,6 +928,10 @@ class Unit:
     elif figure_rank == "bystander":
       self.type = "bystander"
       self.bystander_type = "standard"
+    elif figure_rank == "resource":
+      if self.unit_id.startswith("wolR2"):
+        self.type = "attachment"
+        self.attachment_type = "construct"
 
     if not self.type:
       raise RuntimeError("The unit type (%s) for '%s' is currently not supported" % (figure_rank, self.unit_id))
@@ -913,9 +942,13 @@ class Unit:
         self.collector_number = self.collector_number.replace("S", "s", 1)
         self.unit_id = self.set_id + self.collector_number
 
-    if self.type == "character" or self.type == "bystander" or self.type == "attachment":
+    if self.type == "character" or self.type == "bystander":
       point_value_tag = soup.find("div", {"style": "float:right;padding-top:3px;"})
-    elif self.type == "object" or self.type == "equipment" or self.type == "id_card" or self.type == "mystery_card":
+    elif (self.type == "object" or
+          self.type == "equipment" or
+          self.type == "id_card" or
+          self.type == "mystery_card" or
+          self.type == "attachment"):
       point_value_tag = soup.find("td", class_="tfoot")
     elif self.type == "team_up" or self.type == "tarot_card":
       point_value_tag = None
@@ -923,7 +956,7 @@ class Unit:
       raise RuntimeError("Don't know how to decode points for unit type (%s)" % unit_id)
   
     # Parse point value.
-    if point_value_tag:
+    if point_value_tag and point_value_tag.string:
       point_value_str = point_value_tag.string.strip()
       if point_value_str and len(point_value_str) > 0:
         point_value = int(point_value_str.split(' ')[0])
@@ -1205,11 +1238,11 @@ class Unit:
         power = POWERS.get(self.name, None)
         if power:
           self.special_powers[-1]["powers"] = [power]
-      elif self.attachment_type == "construct":
-        # TODO
-        raise RuntimeError("Not supported yet")
-      elif self.attachment_type == "word_balloon":
+      elif (self.attachment_type == "construct" or 
+            self.attachment_type == "word_balloon"):
         card_tag = soup.find("td", class_="card_word_balloon")
+        if not card_tag:
+          card_tag = soup.find("td", class_="card_resource")
         sp_tag = card_tag.parent.next_sibling.next_sibling.td.div
         if sp_tag:
           self.special_powers.append(OrderedDict([
@@ -1231,6 +1264,9 @@ class Unit:
         for tr_tag in sp_tag.parent.parent.parent.parent.tbody.find_all('tr', recursive=False):
           td_tags = tr_tag.select('td')
           match_obj = re.search(r"/images/sp-(.+)\.[a-z]{3}", td_tags[0].img['src'])
+          if not match_obj:
+            print("For unit '%s', skipping a special power due to invalid image tag" % (self.unit_id))
+            continue
           sp_type_str = match_obj.group(1)
           if sp_type_str == "special" or sp_type_str == "prereq":
             sp_type = "trait"
@@ -1261,6 +1297,8 @@ class Unit:
             sp_type = "construct"
           elif sp_type_str == "special-circle" and (self.set_id == "dp" or self.set_id == "ffdp"):
             sp_type = "word_balloon"
+          elif sp_type_str == "special-circle" and self.set_id == "slosh":
+            sp_type = "toy"
           elif sp_type_str == "max_stack":
             # Extract horde stack properties below.
             sp_type = "horde"
@@ -1360,9 +1398,9 @@ class Unit:
               if imp_name.startswith("improved "):
                 imp_name = imp_name.split(" ", 1)[1].strip()
               # Correct the spelling of 'targeting'.
-              if imp_name == 'TARGETTING':
-                imp_name = 'TARGETING'
-              elif imp_name == 'MOVEMENT; IMPROVED TARGETING':
+              if imp_name == 'targetting':
+                imp_name = 'targeting'
+              elif imp_name == 'movement; improved targeting':
                 print("Warning: unit '%s' has invalid improved ability type '%s'" % (self.unit_id, imp_name))
                 continue
               improved_ability_info = IMPROVED_ABILITIES.get(imp_name, None)
@@ -1786,8 +1824,8 @@ class Unit:
       if sp_type and not sp_type in SPECIAL_POWER_TYPE_VALUES:
         print("Warning: unit '%s' has an unknown special power type '%s'" % (self.unit_id, sp_type))
         continue
-      if not sp.get("name", None):
-        print("Warning: unit '%s' does not have a special power name" % (self.unit_id))
+      #if not sp.get("name", None):
+      #  print("Warning: unit '%s' does not have a special power name" % (self.unit_id))
       if not sp.get("description", None):
         print("Warning: unit '%s' does not have a special power description" % (self.unit_id))
       if sp_type == "costed_trait":
