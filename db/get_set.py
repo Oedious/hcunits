@@ -419,6 +419,14 @@ SET_MAP = {
   "ygo": {
     "name": "Yu-Gi-Oh! HeroClix: Series One",
   },
+  "iim": {
+    "name": "The Invincible Iron Man",
+    "ranges": [
+      # TODO: Add support for iimR100 and relics
+      ("iim001a", "iim210"),
+      ("iimS001", "iimS101"),
+    ],
+  },
 }
 
 POWERS = {

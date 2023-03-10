@@ -596,8 +596,13 @@ const SET_LIST = {
   },
   "ygo": {
     "name": "Yu-Gi-Oh! Series 1",
-    "release_date": "2015-01-08",
+    "release_date": "2014-01-08",
     "universe": "indy"
+  },
+  "iim": {
+    "name": "The Invincible Iron Man",
+    "release_date": "2013-11-20",
+    "universe": "marvel"
   },
   "wk": {
     "name": "WizKids Standard Game Pieces",
