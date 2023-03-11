@@ -743,7 +743,12 @@ LOAD XML LOCAL INFILE 'iim/iim.xml'
   INTO TABLE units
   ROWS IDENTIFIED BY '<row>';
 
-LOAD XML LOCAL INFILE 'avx/avxxml'
+LOAD XML LOCAL INFILE 'avx/avx.xml'
+  REPLACE
+  INTO TABLE units
+  ROWS IDENTIFIED BY '<row>';
+
+LOAD XML LOCAL INFILE 'bmao/bmao.xml'
   REPLACE
   INTO TABLE units
   ROWS IDENTIFIED BY '<row>';

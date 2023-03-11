@@ -435,6 +435,9 @@ SET_MAP = {
       ("avxS101", "avxT002r"),
     ],
   },
+  "bmao": {
+    "name": "Batman: Arkham Origins",
+  },
 }
 
 POWERS = {

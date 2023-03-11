@@ -609,6 +609,11 @@ const SET_LIST = {
     "release_date": "2013-11-20",
     "universe": "marvel"
   },
+  "bmao": {
+    "name": "Batman: Arkham Origins",
+    "release_date": "2013-11-13",
+    "universe": "dc"
+  },
   "wk": {
     "name": "WizKids Standard Game Pieces",
     "release_date": "2002-05-01",
