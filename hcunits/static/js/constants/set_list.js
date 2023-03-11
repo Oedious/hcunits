@@ -684,6 +684,21 @@ const SET_LIST = {
     "release_date": "2013-06-05",
     "universe": "dc"
   },
+  "im": {
+    "name": "Iron Maiden",
+    "release_date": "2013-05-22",
+    "universe": "indy"
+  },
+  "tt": {
+    "name": "Teen Titans",
+    "release_date": "2013-05-15",
+    "universe": "dc"
+  },
+  "fftt": {
+    "name": "Fast Forces: Teen Titans",
+    "release_date": "2013-05-15",
+    "universe": "dc"
+  },
   "wk": {
     "name": "WizKids Standard Game Pieces",
     "release_date": "2002-05-01",
