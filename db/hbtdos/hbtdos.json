@@ -1,0 +1,3461 @@
+[
+  {
+    "unit_id": "hbtdos001", 
+    "set_id": "hbtdos", 
+    "collector_number": "001", 
+    "name": "Bilbo Baggins", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      50
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Hobbit", 
+      "Ringbearer", 
+      "Thorin & Company"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "LUCKY BURGLAR", 
+        "description": "Modify Bilbo Baggin's attack value by +2 when he targets a character assigned a relic or resource and, if he hits, that character can't use the effects of that relic or resource until they have no action tokens."
+      }
+    ], 
+    "improved_movement": [
+      "hindering"
+    ], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "stealth", 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "super_senses", 
+        "defense_value": 16, 
+        "damage_power": "probability_control", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "stealth", 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "probability_control", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 3, 
+        "speed_value": 5, 
+        "attack_power": "precision_strike", 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_power": "empower", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 5, 
+        "attack_power": "precision_strike", 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_power": "empower", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "stealth", 
+        "speed_value": 5, 
+        "attack_value": 8, 
+        "defense_power": "super_senses", 
+        "defense_value": 16, 
+        "damage_power": "perplex", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "stealth", 
+        "speed_value": 5, 
+        "attack_value": 8, 
+        "defense_power": "super_senses", 
+        "defense_value": 15, 
+        "damage_power": "perplex", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "hbtdos002", 
+    "set_id": "hbtdos", 
+    "collector_number": "002", 
+    "name": "Mirkwood Elf Warrior", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      50, 
+      25
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Elf", 
+      "Mirkwood", 
+      "Warrior"
+    ], 
+    "special_powers": [], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "7", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "running_shot", 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_value": 17, 
+        "damage_power": "enhancement", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "stealth", 
+        "speed_value": 8, 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_power": "enhancement", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "stealth", 
+        "speed_value": 8, 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_power": "enhancement", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_value": 1, 
+        "starting_line": true
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 8, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 15, 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "running_shot", 
+        "speed_value": 6, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "hbtdos003", 
+    "set_id": "hbtdos", 
+    "collector_number": "003", 
+    "name": "Mirkwood Jailer", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      34
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Elf", 
+      "Mirkwood"
+    ], 
+    "special_powers": [
+      {
+        "type": "attack", 
+        "name": "HOLD YOU HERE AS LONG AS WE HAVE TO", 
+        "description": "If an opposing character is adjacent to both Mirkwood Jailer and a printed square of blocking or hindering terrain, that character can't break away automatically and subtracts 1 from its d6 roll when breaking away."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "flurry", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "flurry", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "flurry", 
+        "speed_value": 6, 
+        "attack_power": "special", 
+        "attack_value": 8, 
+        "defense_power": "toughness", 
+        "defense_value": 15, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 6, 
+        "attack_power": "special", 
+        "attack_value": 8, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 15, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 6, 
+        "attack_power": "special", 
+        "attack_value": 8, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 15, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "hbtdos004", 
+    "set_id": "hbtdos", 
+    "collector_number": "004", 
+    "name": "Mirkwood Sentry", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      30
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Elf", 
+      "Mirkwood"
+    ], 
+    "special_powers": [
+      {
+        "type": "attack", 
+        "name": "NIGHT WATCH", 
+        "description": "When a friendly character named Thranduil is within 8 squares, opposing characters within 5 squares of Mirkwood Sentry can't use Stealth."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "5", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "stealth", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_power": "enhancement", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_power": "enhancement", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_value": 6, 
+        "attack_power": "special", 
+        "attack_value": 8, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 15, 
+        "damage_power": "enhancement", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "leap_climb", 
+        "speed_value": 6, 
+        "attack_value": 8, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 15, 
+        "damage_power": "empower", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "leap_climb", 
+        "speed_value": 6, 
+        "attack_value": 8, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 14, 
+        "damage_power": "empower", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "hbtdos005", 
+    "set_id": "hbtdos", 
+    "collector_number": "005", 
+    "name": "Lake-town Archer", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      30
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Lake-town", 
+      "Man"
+    ], 
+    "special_powers": [
+      {
+        "type": "attack", 
+        "name": "LINE UP AND FIRE TOGETHER", 
+        "description": "When Lake-town Archer is adjacent to two or more friendly characters with the word \"Lake-town\" in their name, Lake-town Archer can use Improved Targeting: Ignores Hindering Terrain, Ignores Opposing Characters, May make a ranged combat attack targeting adjacent opposing characters."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "6", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "leap_climb", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 16, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 3, 
+        "speed_value": 6, 
+        "attack_power": "special", 
+        "attack_value": 8, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 15, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "leap_climb", 
+        "speed_value": 6, 
+        "attack_value": 8, 
+        "defense_value": 15, 
+        "damage_power": "enhancement", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "hbtdos006", 
+    "set_id": "hbtdos", 
+    "collector_number": "006", 
+    "name": "Lake-town Sentry", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      40
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Lake-town", 
+      "Man"
+    ], 
+    "special_powers": [
+      {
+        "type": "damage", 
+        "name": "CHAIN OF COMMAND", 
+        "description": "When a friendly character named \"Master of Lake-town\" is within 8 squares, Lake-town Sentry can use Charge and Leadership. When he uses Leadership, he may only remove action tokens from characters named Lake-town Sentry regardless of their point cost.", 
+        "powers": [
+          "charge", 
+          "leadership"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "2", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_value": 7, 
+        "attack_power": "precision_strike", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_value": 7, 
+        "attack_power": "precision_strike", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 15, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_value": 6, 
+        "attack_power": "precision_strike", 
+        "attack_value": 8, 
+        "defense_power": "willpower", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 6, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 8, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 6, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 8, 
+        "defense_power": "willpower", 
+        "defense_value": 15, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "hbtdos007", 
+    "set_id": "hbtdos", 
+    "collector_number": "007", 
+    "name": "Hunter Orc", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      40
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Brute", 
+      "Monster", 
+      "Orc"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "BATTLEFIELD PROMOTION: MOUNT UP!", 
+        "description": "When Hunter Orc hits an opposing character, put a Mount token on this card and you may roll a d6, adding 1 for each Mount token on this card. On a result of 8 or more, remove all Mount tokens from this card and replace him with HBT:DOS #107 Hunter Orc on the same click number."
+      }, 
+      {
+        "type": "attack", 
+        "name": "FIND THEM, HUNT THEM DOWN", 
+        "description": "When a friendly character named Azog is within 8 squares, Hunter Orc can use Willpower and modifies his attack value by +1.", 
+        "powers": [
+          "willpower"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "4", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "running_shot", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "running_shot", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "empower", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "sidestep", 
+        "speed_value": 6, 
+        "attack_power": "special", 
+        "attack_value": 8, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 15, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "sidestep", 
+        "speed_value": 6, 
+        "attack_power": "special", 
+        "attack_value": 7, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 15, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "hbtdos008", 
+    "set_id": "hbtdos", 
+    "collector_number": "008", 
+    "name": "Azog", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      104
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Monster", 
+      "Orc", 
+      "Ruler", 
+      "Warrior"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "BATTLEFIELD PROMOTION: MOUNT UP!", 
+        "description": "When Azog hits an opposing character, put a Mount token on this card and you may roll a d6, adding 1 for each Mount token on this card. On a result of 9 or more, remove all Mount tokens from this card and replace him with HBT:DOS #108 Azog on the same click number."
+      }, 
+      {
+        "type": "speed", 
+        "name": "WADING THROUGH THE BATTLEFIELD", 
+        "description": "Azog can use Flurry and Sidestep. Azog can use Sidestep between attacks using Flurry.", 
+        "powers": [
+          "flurry", 
+          "sidestep"
+        ]
+      }
+    ], 
+    "improved_movement": [
+      "characters"
+    ], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 7, 
+        "attack_value": 11, 
+        "defense_power": "invincible", 
+        "defense_value": 18, 
+        "damage_power": "leadership", 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "special", 
+        "speed_value": 6, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "charge", 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "battle_fury", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "charge", 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "battle_fury", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "special", 
+        "speed_value": 7, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "special", 
+        "speed_value": 6, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_power": "regeneration", 
+        "defense_value": 17, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 3
+      }
+    ]
+  }, 
+  {
+    "unit_id": "hbtdos009", 
+    "set_id": "hbtdos", 
+    "collector_number": "009", 
+    "name": "Bard the Bowman", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      83
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Lake-town", 
+      "Man", 
+      "Warrior"
+    ], 
+    "special_powers": [
+      {
+        "type": "attack", 
+        "name": "UNCANNY AIM", 
+        "description": "When Bard the Bowman makes a ranged combat attack against a single character, the target can't use defense powers during the attack."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "7", 
+    "targets": "2", 
+    "speed_type": "boot", 
+    "attack_type": "sharpshooter", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "running_shot", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 17, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "sidestep", 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 17, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "sidestep", 
+        "speed_value": 6, 
+        "attack_value": 10, 
+        "defense_power": "willpower", 
+        "defense_value": 17, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "hbtdos010", 
+    "set_id": "hbtdos", 
+    "collector_number": "010", 
+    "name": "Thorin Oakenshield", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      79
+    ], 
+    "properties": [
+      "unique"
+    ], 
+    "team_abilities": [], 
+    "keywords": [
+      "Dwarf", 
+      "Ruler", 
+      "Thorin & Company", 
+      "Warrior"
+    ], 
+    "special_powers": [
+      {
+        "type": "attack", 
+        "name": "AND STAY DOWN!", 
+        "description": "Thorin Oakenshield can use Blades/Claws/Fangs and when he does, the minimum result of the d6 roll is his printed damage value. When an opposing character would be KO'd from Thorin Oakenshield's attack, any other game effects that would activate as a result of that KO are ignored.", 
+        "powers": [
+          "blades_claws_fangs"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 6, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "leadership", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "charge", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "leadership", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "flurry", 
+        "speed_value": 6, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "leadership", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "flurry", 
+        "speed_value": 6, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "charge", 
+        "speed_value": 5, 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "charge", 
+        "speed_value": 5, 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "hbtdos011", 
+    "set_id": "hbtdos", 
+    "collector_number": "011", 
+    "name": "Beorn", 
+    "type": "character", 
+    "rarity": "rare", 
+    "dimensions": "1x1", 
+    "point_values": [
+      75
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Animal", 
+      "Man", 
+      "Mystical"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "MORPH: BEORN (011A)", 
+        "description": "Give Beorn a move or close combat action that deals no pushing damage; after actions resolve, replace this character with HBT:DOS #011b Beorn on the same click number."
+      }, 
+      {
+        "type": "trait", 
+        "name": "MORPH: BEORN (011B)", 
+        "description": "Give Beorn a move or close combat action that deals no pushing damage; after actions resolve, replace this character with HBT:DOS #011a Beorn on the same click number."
+      }, 
+      {
+        "type": "damage", 
+        "name": "A FRIEND TO THE WOODS", 
+        "description": "Beorn can use Perplex, but may only target friendly characters. When he uses it and targets a character with the Animal keyword, he may modify two different combat values by +1 or -1 each.", 
+        "powers": [
+          "perplex"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_power": "quake", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_power": "quake", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "force_blast", 
+        "speed_value": 6, 
+        "attack_power": "quake", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "force_blast", 
+        "speed_value": 7, 
+        "attack_value": 8, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "charge", 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 2, 
+        "alt_click_number": 1
+      }, 
+      {
+        "click_number": 8, 
+        "speed_power": "charge", 
+        "speed_value": 7, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "battle_fury", 
+        "damage_value": 2, 
+        "alt_click_number": 2
+      }, 
+      {
+        "click_number": 9, 
+        "speed_power": "charge", 
+        "speed_value": 6, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "battle_fury", 
+        "damage_value": 2, 
+        "alt_click_number": 3
+      }, 
+      {
+        "click_number": 10, 
+        "speed_value": 6, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "battle_fury", 
+        "damage_value": 2, 
+        "alt_click_number": 4
+      }, 
+      {
+        "click_number": 11, 
+        "speed_value": 5, 
+        "attack_value": 9, 
+        "defense_power": "invulnerability", 
+        "defense_value": 16, 
+        "damage_power": "battle_fury", 
+        "damage_value": 3, 
+        "alt_click_number": 5
+      }
+    ]
+  }, 
+  {
+    "unit_id": "hbtdos012", 
+    "set_id": "hbtdos", 
+    "collector_number": "012", 
+    "name": "Tauriel", 
+    "type": "character", 
+    "rarity": "rare", 
+    "dimensions": "1x1", 
+    "point_values": [
+      65
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Elf", 
+      "Mirkwood", 
+      "Warrior"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "CAPABLE WARRIOR", 
+        "description": "When Tauriel's force isn't a themed team, she is a wild card."
+      }
+    ], 
+    "improved_movement": [
+      "hindering"
+    ], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 9, 
+        "attack_power": "quake", 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "quake", 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 8, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "flurry", 
+        "speed_value": 7, 
+        "attack_value": 8, 
+        "defense_power": "super_senses", 
+        "defense_value": 16, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "flurry", 
+        "speed_value": 8, 
+        "attack_value": 8, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 15, 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "hbtdos013", 
+    "set_id": "hbtdos", 
+    "collector_number": "013", 
+    "name": "Thranduil", 
+    "type": "character", 
+    "rarity": "rare", 
+    "dimensions": "1x1", 
+    "point_values": [
+      93
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Elf", 
+      "Mirkwood", 
+      "Ruler", 
+      "Warrior"
+    ], 
+    "special_powers": [
+      {
+        "type": "epic", 
+        "name": "WHAT BROUGHT YOU INTO THE FOREST AT ALL?", 
+        "description": "Give Thranduil an epic action if he occupies hindering terrain and choose one friendly character with the Mirkwood keyword for every 100 points of the build total.  Chosen characters can use Plasticity until your next turn. Opposing characters can't ignore hindering terrain to target chosen characters until your next turn."
+      }, 
+      {
+        "type": "trait", 
+        "name": "KING OF THE WOODLAND REALM", 
+        "description": "Thranduil can use Leadership, but may only remove action tokens from characters with whom he shares a keyword.", 
+        "powers": [
+          "leadership"
+        ]
+      }, 
+      {
+        "type": "defense", 
+        "name": "ELVEN ARMY", 
+        "description": "Thranduil can use Mastermind and Super Senses.", 
+        "powers": [
+          "mastermind", 
+          "super_senses"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "stealth", 
+        "speed_value": 9, 
+        "attack_value": 11, 
+        "defense_power": "special", 
+        "defense_value": 18, 
+        "damage_power": "enhancement", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "leap_climb", 
+        "speed_value": 9, 
+        "attack_value": 11, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_power": "enhancement", 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "leap_climb", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "leap_climb", 
+        "speed_value": 8, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 7, 
+        "attack_power": "precision_strike", 
+        "attack_value": 9, 
+        "defense_power": "super_senses", 
+        "defense_value": 16, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_value": 7, 
+        "attack_power": "precision_strike", 
+        "attack_value": 9, 
+        "defense_power": "super_senses", 
+        "defense_value": 16, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "hbtdos014", 
+    "set_id": "hbtdos", 
+    "collector_number": "014", 
+    "name": "Gandalf the Grey", 
+    "type": "character", 
+    "rarity": "rare", 
+    "dimensions": "1x1", 
+    "point_values": [
+      160
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "mystics"
+    ], 
+    "keywords": [
+      "Maiar", 
+      "White Council"
+    ], 
+    "special_powers": [
+      {
+        "type": "epic", 
+        "name": "DAWN TAKE YOU ALL", 
+        "description": "Give Gandalf the Grey an epic action and make a ranged combat attack targeting up to 1 opposing character within range and line of fire for each 200 points of the built total. Hit characters are given an action token and all targeted character can't be given power actions until your next turn."
+      }, 
+      {
+        "type": "speed", 
+        "name": "WHERE IS A WIZARD WHEN YOU NEED ONE?", 
+        "description": "Gandalf the Grey can use Stealth and has \"wing symbol\".", 
+        "powers": [
+          "stealth"
+        ]
+      }, 
+      {
+        "type": "damage", 
+        "name": "FIGHT, YOU FOOLS!", 
+        "description": "Gandalf the Grey can use Empower and Exploit Weakness.", 
+        "powers": [
+          "empower", 
+          "exploit_weakness"
+        ]
+      }
+    ], 
+    "improved_movement": [
+      "characters"
+    ], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "7", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 10, 
+        "attack_power": "telekinesis", 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "special", 
+        "speed_value": 9, 
+        "attack_power": "telekinesis", 
+        "attack_value": 9, 
+        "defense_power": "super_senses", 
+        "defense_value": 18, 
+        "damage_power": "outwit", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "special", 
+        "speed_value": 9, 
+        "attack_value": 9, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "invincible", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 11, 
+        "defense_power": "invincible", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_value": 9, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 3
+      }
+    ]
+  }, 
+  {
+    "unit_id": "hbtdos015", 
+    "set_id": "hbtdos", 
+    "collector_number": "015", 
+    "name": "Alfrid", 
+    "type": "character", 
+    "rarity": "rare", 
+    "dimensions": "1x1", 
+    "point_values": [
+      49
+    ], 
+    "properties": [
+      "unique"
+    ], 
+    "team_abilities": [], 
+    "keywords": [
+      "Herald", 
+      "Lake-town", 
+      "Man", 
+      "Politician"
+    ], 
+    "special_powers": [
+      {
+        "type": "damage", 
+        "name": "I SERVE LAKE-TOWN....IN MY OWN FASHION", 
+        "description": "Alfrid can't be the target of an attack unless the attacking character is 100 or more points or Alfrid is the only friendly character."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "stealth", 
+        "speed_value": 7, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "willpower", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "stealth", 
+        "speed_value": 7, 
+        "attack_power": "precision_strike", 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_value": 7, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 8, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 15, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "stealth", 
+        "speed_value": 8, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_value": 15, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "hbtdos016", 
+    "set_id": "hbtdos", 
+    "collector_number": "016", 
+    "name": "Legolas Greenleaf", 
+    "type": "character", 
+    "rarity": "rare", 
+    "dimensions": "1x1", 
+    "point_values": [
+      100
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Elf", 
+      "Mirkwood", 
+      "Ruler", 
+      "Warrior"
+    ], 
+    "special_powers": [], 
+    "improved_movement": [], 
+    "improved_targeting": [
+      "hindering"
+    ], 
+    "object_keyphrases": [], 
+    "unit_range": "7", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "sharpshooter", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_value": 11, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 17, 
+        "damage_power": "leadership", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "running_shot", 
+        "speed_value": 9, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 18, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_power": "precision_strike", 
+        "attack_value": 9, 
+        "defense_power": "super_senses", 
+        "defense_value": 16, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "leap_climb", 
+        "speed_value": 7, 
+        "attack_power": "precision_strike", 
+        "attack_value": 9, 
+        "defense_power": "super_senses", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "leap_climb", 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_power": "defend", 
+        "defense_value": 17, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "leap_climb", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "defend", 
+        "defense_value": 16, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "hbtdos017", 
+    "set_id": "hbtdos", 
+    "collector_number": "017", 
+    "name": "Thorin Oakenshield", 
+    "type": "character", 
+    "rarity": "rare", 
+    "dimensions": "1x1", 
+    "point_values": [
+      100
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Dwarf", 
+      "Ruler", 
+      "Thorin & Company"
+    ], 
+    "special_powers": [
+      {
+        "type": "speed", 
+        "name": "WE MUST RETAKE MORIA!", 
+        "description": "When Thorin Oakenshield attacks an opposing character with the Dol Guldur or Monster keyword, modify his attack and damage values by +1."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 7, 
+        "attack_power": "quake", 
+        "attack_value": 11, 
+        "defense_power": "invulnerability", 
+        "defense_value": 18, 
+        "damage_power": "leadership", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "charge", 
+        "speed_value": 7, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "leadership", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "charge", 
+        "speed_value": 6, 
+        "attack_power": "precision_strike", 
+        "attack_value": 11, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "leadership", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 6, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "leadership", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "special", 
+        "speed_value": 6, 
+        "attack_power": "quake", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "special", 
+        "speed_value": 6, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "special", 
+        "speed_value": 5, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 15, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "hbtdos018", 
+    "set_id": "hbtdos", 
+    "collector_number": "018", 
+    "name": "Master of Lake-town", 
+    "type": "character", 
+    "rarity": "rare", 
+    "dimensions": "1x1", 
+    "point_values": [
+      88
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Lake-town", 
+      "Man", 
+      "Politician", 
+      "Ruler"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "GREED IS GOOD", 
+        "description": "Master of Lake-town can use Leadership. When does and succeeds, in addition to the normal effects, place a Greed token on this card. At the beginning of your turn, you may remove a Greed token from this card and increase your action pool by one.", 
+        "powers": [
+          "leadership"
+        ]
+      }, 
+      {
+        "type": "speed", 
+        "name": "MASTER OF ESGAROTH", 
+        "description": "Master of Lake-town can use Mind Control. When he uses it as a close combat action, he may target all adjacent opposing characters that share a keyword with him, and characters that share a keyword with him are 0 points for totaling point values for Mind Control.", 
+        "powers": [
+          "mind_control"
+        ]
+      }, 
+      {
+        "type": "damage", 
+        "name": "MASTER \"MONEY BAGS\"", 
+        "description": "Master of Lake-town can use Outwit and Perplex.", 
+        "powers": [
+          "outwit", 
+          "perplex"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_power": "mastermind", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "special", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "mastermind", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "special", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "mastermind", 
+        "defense_value": 15, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 7, 
+        "attack_value": 8, 
+        "defense_power": "mastermind", 
+        "defense_value": 15, 
+        "damage_power": "outwit", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 7, 
+        "attack_value": 8, 
+        "defense_value": 15, 
+        "damage_power": "outwit", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "hbtdos019", 
+    "set_id": "hbtdos", 
+    "collector_number": "019", 
+    "name": "The Necromancer of Dol Guldur", 
+    "type": "character", 
+    "rarity": "chase", 
+    "dimensions": "1x1", 
+    "point_values": [
+      250
+    ], 
+    "properties": [
+      "unique"
+    ], 
+    "team_abilities": [
+      "mystics"
+    ], 
+    "keywords": [
+      "Dol Guldur", 
+      "Forces of Sauron", 
+      "Mystical", 
+      "Ringbearer", 
+      "Ruler"
+    ], 
+    "special_powers": [
+      {
+        "type": "epic", 
+        "name": "DARK SPECTRE OF DOL GULDUR", 
+        "description": "Give The Necromancer of Dol Guldur an epic action and choose one character for each 300 points of the build total. Until your next turn, chosen characters may only be given move actions."
+      }, 
+      {
+        "type": "trait", 
+        "name": "SERVANT OF MORGOTH", 
+        "description": "If The Necromancer of Dol Guldur is adjacent to a friendly character with the Nazgul keyword, he can use Steal Energy.", 
+        "powers": [
+          "steal_energy"
+        ]
+      }, 
+      {
+        "type": "attack", 
+        "name": "THE TRUE LORD OF THE RINGS", 
+        "description": "The Necromancer of Dol Guldur can use Pulse Wave as if he had a range value of 12. When he does, you may give any hit character with the Ringbearer keyword an action token.", 
+        "powers": [
+          "pulse_wave"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 11, 
+        "defense_power": "invincible", 
+        "defense_value": 19, 
+        "damage_power": "outwit", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 11, 
+        "defense_power": "invincible", 
+        "defense_value": 18, 
+        "damage_power": "outwit", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 11, 
+        "defense_power": "invincible", 
+        "defense_value": 18, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "impervious", 
+        "defense_value": 18, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 7, 
+        "attack_power": "quake", 
+        "attack_value": 10, 
+        "defense_power": "impervious", 
+        "defense_value": 17, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 7, 
+        "attack_power": "quake", 
+        "attack_value": 9, 
+        "defense_power": "impervious", 
+        "defense_value": 17, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 7, 
+        "attack_power": "quake", 
+        "attack_value": 9, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 8, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 6, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 18, 
+        "damage_power": "outwit", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 9, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 6, 
+        "attack_power": "special", 
+        "attack_value": 11, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 3
+      }
+    ]
+  }, 
+  {
+    "unit_id": "hbtdos020", 
+    "set_id": "hbtdos", 
+    "collector_number": "020", 
+    "name": "Bilbo Baggins and Gandalf the Grey", 
+    "type": "character", 
+    "rarity": "chase", 
+    "dimensions": "1x1", 
+    "point_values": [
+      192
+    ], 
+    "properties": [
+      "unique"
+    ], 
+    "team_abilities": [], 
+    "keywords": [
+      "Hobbit", 
+      "Maiar", 
+      "Man", 
+      "Mystical", 
+      "Ringbearer", 
+      "Thorin & Company"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "PERHAPS BECAUSE HE GIVES ME COURAGE", 
+        "description": "When Bilbo Baggins and Gandalf the Grey KOs an opposing character and actions resolve, don't give them an action token for this action and modify their defense value by +1 until your next turn."
+      }, 
+      {
+        "type": "speed", 
+        "name": "THE WORLD IS OUT THERE", 
+        "description": "At the beginning of your turn, choose an Improved Movement symbol. Bilbo Baggins and Gandalf the Grey can use Sidestep and Improved Movement with the chosen symbol until your next turn. They may use Sidestep before the second attack while using the Duo Attack ability.", 
+        "powers": [
+          "sidestep"
+        ]
+      }, 
+      {
+        "type": "damage", 
+        "name": "YOU PROMISE I WILL COME BACK?", 
+        "description": "Bilbo Baggins and Gandalf the Grey can use Defend and Probability Control.", 
+        "powers": [
+          "defend", 
+          "probability_control"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "6", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "duo", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 9, 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "special", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "special", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_power": "super_senses", 
+        "defense_value": 16, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_power": "super_senses", 
+        "defense_value": 16, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "charge", 
+        "speed_value": 7, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "special", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 8, 
+        "speed_power": "special", 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "regeneration", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "hbtdos101", 
+    "set_id": "hbtdos", 
+    "collector_number": "101", 
+    "name": "Bilbo Baggins", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      75
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Hobbit", 
+      "Ringbearer", 
+      "Thorin & Company"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "A TOOK AS WELL AS A BAGGINS", 
+        "description": "Bilbo Baggins is a wild card."
+      }, 
+      {
+        "type": "trait", 
+        "name": "TO STEAL THE ARKENSTONE", 
+        "description": "When Bilbo Baggins is assigned a relic, modify his combat values by +1."
+      }, 
+      {
+        "type": "attack", 
+        "name": "BURGLAR-BAGGINS", 
+        "description": "Give Bilbo Baggins a power action when he is adjacent to a character assigned a relic. Bilbo Baggins can make a relic roll for that relic as if it were in his square and may modify the result by +1. If he succeeds the relic is now assigned to him instead."
+      }
+    ], 
+    "improved_movement": [
+      "characters"
+    ], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "stealth", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "stealth", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "stealth", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 16, 
+        "damage_power": "perplex", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "stealth", 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "enhancement", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "stealth", 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 15, 
+        "damage_power": "enhancement", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "stealth", 
+        "speed_value": 6, 
+        "attack_value": 8, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 15, 
+        "damage_power": "enhancement", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "hbtdos102", 
+    "set_id": "hbtdos", 
+    "collector_number": "102", 
+    "name": "Thorin Oakenshield", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      100
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Dwarf", 
+      "Ruler", 
+      "Thorin & Company", 
+      "Warrior"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "TO WIN OUR HARPS AND GOLD FROM HIM", 
+        "description": "When an opposing character is assigned a resource, modify Thorin OakenShield's attack and defense value by +1."
+      }, 
+      {
+        "type": "speed", 
+        "name": "FAR OVER MISTY MOUNTAINS GRIM", 
+        "description": "Thorin Oakenshield can use Charge. Adjacent friendly characters modify their speed values by +2 when they are given a non-free action.", 
+        "powers": [
+          "charge"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 8, 
+        "attack_value": 11, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "leadership", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "special", 
+        "speed_value": 8, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 18, 
+        "damage_power": "leadership", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "special", 
+        "speed_value": 7, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "leadership", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "flurry", 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "flurry", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "special", 
+        "speed_value": 6, 
+        "attack_power": "quake", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_value": 3
+      }
+    ]
+  }, 
+  {
+    "unit_id": "hbtdos103", 
+    "set_id": "hbtdos", 
+    "collector_number": "103", 
+    "name": "Bard the Bowman", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      100
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Lake-town", 
+      "Man", 
+      "Ruler", 
+      "Warrior"
+    ], 
+    "special_powers": [
+      {
+        "type": "attack", 
+        "name": "MASTER ARCHER OF THE DALE", 
+        "description": "When Bard the Bowman targets a single character with a ranged combat attack, choose: modify his attack value by +2 or damage dealt from this attack is penetrating damage."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "7", 
+    "targets": "2", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "running_shot", 
+        "speed_value": 9, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 18, 
+        "damage_power": "leadership", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "leadership", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 16, 
+        "damage_power": "leadership", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "sidestep", 
+        "speed_value": 7, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 10, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 16, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "running_shot", 
+        "speed_value": 7, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 9, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 16, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "hbtdos104", 
+    "set_id": "hbtdos", 
+    "collector_number": "104", 
+    "name": "Legolas Greenleaf", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      125
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Elf", 
+      "Martial Artist", 
+      "Mirkwood", 
+      "Ruler", 
+      "Warrior"
+    ], 
+    "special_powers": [
+      {
+        "type": "attack", 
+        "name": "UNPARALLELED ARCHER", 
+        "description": "Legolas Greenleaf can use Energy Explosion and Precision Strike.", 
+        "powers": [
+          "energy_explosion", 
+          "precision_strike"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [
+      "hindering", 
+      "characters"
+    ], 
+    "object_keyphrases": [], 
+    "unit_range": "7", 
+    "targets": "2", 
+    "speed_type": "boot", 
+    "attack_type": "sharpshooter", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "running_shot", 
+        "speed_value": 10, 
+        "attack_power": "special", 
+        "attack_value": 11, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "running_shot", 
+        "speed_value": 10, 
+        "attack_power": "special", 
+        "attack_value": 11, 
+        "defense_power": "super_senses", 
+        "defense_value": 18, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "running_shot", 
+        "speed_value": 9, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 18, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "sidestep", 
+        "speed_value": 9, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 11, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "sidestep", 
+        "speed_value": 8, 
+        "attack_power": "precision_strike", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }
+    ]
+  }, 
+  {
+    "unit_id": "hbtdos105", 
+    "set_id": "hbtdos", 
+    "collector_number": "105", 
+    "name": "Tauriel", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      75
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Elf", 
+      "Mirkwood", 
+      "Warrior"
+    ], 
+    "special_powers": [
+      {
+        "type": "speed", 
+        "name": "STRING ARM OF THE FOREST", 
+        "description": "Tauriel can use Stealth. When Tauriel occupies hindering terrain, she can use Charge.", 
+        "powers": [
+          "stealth", 
+          "charge"
+        ]
+      }
+    ], 
+    "improved_movement": [
+      "hindering"
+    ], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 8, 
+        "attack_power": "quake", 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "special", 
+        "speed_value": 9, 
+        "attack_power": "quake", 
+        "attack_value": 9, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "empower", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "special", 
+        "speed_value": 8, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "empower", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "stealth", 
+        "speed_value": 7, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 15, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "stealth", 
+        "speed_value": 7, 
+        "attack_power": "quake", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 15, 
+        "damage_power": "empower", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "stealth", 
+        "speed_value": 7, 
+        "attack_power": "quake", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 15, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "hbtdos106", 
+    "set_id": "hbtdos", 
+    "collector_number": "106", 
+    "name": "Gandalf the Grey", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      250, 
+      150
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "mystics"
+    ], 
+    "keywords": [
+      "Dwarf", 
+      "Elf", 
+      "Hobbit", 
+      "Maiar", 
+      "Man", 
+      "Mystical", 
+      "Ringbearer", 
+      "Thorin & Company", 
+      "White Council"
+    ], 
+    "special_powers": [
+      {
+        "type": "epic", 
+        "name": "SUMMON THE EAGLES", 
+        "description": "Give Gandalf the Grey an epic action. For every 100 points of the build total, up to one friendly character has \"wing symbol\" this turn."
+      }, 
+      {
+        "type": "trait", 
+        "name": "SECOND OF THE ISTARI", 
+        "description": "When part of a themed team, Gandalf the Grey can use Leadership. Otherwise, Gandalf the Grey can use Probability Control.", 
+        "powers": [
+          "leadership", 
+          "probability_control"
+        ]
+      }, 
+      {
+        "type": "attack", 
+        "name": "MASTER OF FIRE IN ALL ITS FORMS", 
+        "description": "Gandalf the Grey can use Pulse Wave and Telekinesis.", 
+        "powers": [
+          "pulse_wave", 
+          "telekinesis"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "8", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "running_shot", 
+        "speed_value": 9, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 18, 
+        "damage_power": "outwit", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "running_shot", 
+        "speed_value": 9, 
+        "attack_power": "special", 
+        "attack_value": 11, 
+        "defense_power": "super_senses", 
+        "defense_value": 18, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 8, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 8, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 18, 
+        "damage_power": "outwit", 
+        "damage_value": 3, 
+        "starting_line": true
+      }, 
+      {
+        "click_number": 6, 
+        "speed_value": 7, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_power": "impervious", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 7, 
+        "speed_value": 7, 
+        "attack_power": "pulse_wave", 
+        "attack_value": 10, 
+        "defense_power": "impervious", 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 8, 
+        "speed_value": 7, 
+        "attack_power": "pulse_wave", 
+        "attack_value": 9, 
+        "defense_power": "impervious", 
+        "defense_value": 16, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 9, 
+        "speed_value": 6, 
+        "attack_power": "pulse_wave", 
+        "attack_value": 9, 
+        "defense_power": "impervious", 
+        "defense_value": 16, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "hbtdos107", 
+    "set_id": "hbtdos", 
+    "collector_number": "107", 
+    "name": "Hunter Orc", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x2", 
+    "point_values": [
+      50
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Animal", 
+      "Dol Guldur", 
+      "Monster", 
+      "Orc", 
+      "Warrior"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "ORC", 
+        "description": "When Hunter Orc uses the Split ability or any character uses the Merge ability, characters with the Orc keyword are considered to have the name Orc."
+      }, 
+      {
+        "type": "trait", 
+        "name": "TRUSTED STEED", 
+        "description": "When Hunter Orc uses the Split ability, a bystander token named \"Warg\" is considered to be on the same click as Hunter Orc and can't be given an action to use the Merge ability."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "duo", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "willpower", 
+        "defense_value": 17, 
+        "damage_power": "battle_fury", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_value": 11, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_power": "battle_fury", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "earthbound_neutralized", 
+        "speed_value": 7, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "earthbound_neutralized", 
+        "speed_value": 7, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_value": 15, 
+        "damage_power": "battle_fury", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "hbtdos108", 
+    "set_id": "hbtdos", 
+    "collector_number": "108", 
+    "name": "Azog", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x2", 
+    "point_values": [
+      125
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Animal", 
+      "Dol Guldur", 
+      "Monster", 
+      "Orc", 
+      "Warrior"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "TRUSTED STEED", 
+        "description": "When Azog uses the Split ability, a bystander token named \"Warg\" is considered to be on the same click as Azog and can't be given an action to use the Merge ability."
+      }, 
+      {
+        "type": "trait", 
+        "name": "HUNT THEM DOWN!", 
+        "description": "Adjacent friendly characters whose name includes \"Warg\" modify their speed values by +2."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "duo", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 10, 
+        "attack_value": 12, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "leadership", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "charge", 
+        "speed_value": 10, 
+        "attack_value": 11, 
+        "defense_power": "invulnerability", 
+        "defense_value": 18, 
+        "damage_power": "leadership", 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "hypersonic_speed", 
+        "speed_value": 9, 
+        "attack_value": 11, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "leadership", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "hypersonic_speed", 
+        "speed_value": 9, 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "battle_fury", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "quake", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "battle_fury", 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "quake", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "battle_fury", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "quake", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 15, 
+        "damage_power": "battle_fury", 
+        "damage_value": 3
+      }
+    ]
+  }, 
+  {
+    "unit_id": "hbtdosH001", 
+    "set_id": "hbtdos", 
+    "collector_number": "H001", 
+    "name": "Rhosgobel Rabbit", 
+    "type": "bystander", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      15
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [], 
+    "special_powers": [
+      {
+        "type": "speed", 
+        "name": "HORDE: RABBIT SLED", 
+        "description": "When stacked, Rhosgobel Rabbit can use the Carry ability and increases its speed value by S. When M, Rhosgobel Rabbit doesn't modify its speed value by -2 from the Carry ability."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "bystander_type": "horde", 
+    "horde_stack_max": "4", 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "1", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 9, 
+        "attack_value": 8, 
+        "defense_power": "super_senses", 
+        "defense_value": 16, 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "hbtdosH002", 
+    "set_id": "hbtdos", 
+    "collector_number": "H002", 
+    "name": "Lake-town Merchant", 
+    "type": "bystander", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      18
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [], 
+    "special_powers": [
+      {
+        "type": "speed", 
+        "name": "HORDE: WE'VE SURVIVED WORSE", 
+        "description": "When M, Lake-town Merchant can use Invulnerability.", 
+        "powers": [
+          "invulnerability"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "bystander_type": "horde", 
+    "horde_stack_max": "3", 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "dolphin", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "1", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 15, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "hbtdosH003", 
+    "set_id": "hbtdos", 
+    "collector_number": "H003", 
+    "name": "Spider", 
+    "type": "bystander", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      20
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [], 
+    "special_powers": [
+      {
+        "type": "defense", 
+        "name": "HORDE: EIGHT LEGS, ONE STINGER", 
+        "description": "When M, Spider can use Combat Reflexes and Poison.", 
+        "powers": [
+          "combat_reflexes", 
+          "poison"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "bystander_type": "horde", 
+    "horde_stack_max": "3", 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "1", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "leap_climb", 
+        "speed_value": 8, 
+        "attack_power": "smoke_cloud", 
+        "attack_value": 8, 
+        "defense_power": "special", 
+        "defense_value": 16, 
+        "damage_power": "shape_change", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "hbtdosH004", 
+    "set_id": "hbtdos", 
+    "collector_number": "H004", 
+    "name": "Woodland Creature", 
+    "type": "bystander", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      13
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [], 
+    "special_powers": [
+      {
+        "type": "attack", 
+        "name": "HORDE: VARIED CREATURES", 
+        "description": "At the beginning of your turn, choose S-1 powers from the list and Woodland Creature can use it until your next turn. Battle Fury, Blades/Claws/Fangs, Leap/Climb, Stealth, and Super Senses.", 
+        "powers": [
+          "battle_fury", 
+          "blades_claws_fangs", 
+          "leap_climb", 
+          "stealth", 
+          "super_senses"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "bystander_type": "horde", 
+    "horde_stack_max": "4", 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "1", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 8, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "hbtdosH005", 
+    "set_id": "hbtdos", 
+    "collector_number": "H005", 
+    "name": "Goblin", 
+    "type": "bystander", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      15
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [], 
+    "special_powers": [
+      {
+        "type": "attack", 
+        "name": "HORDE: TRAMPLE", 
+        "description": "When M, Goblin modifies its attack and damage value by +2."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "bystander_type": "horde", 
+    "horde_stack_max": "4", 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "1", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "flurry", 
+        "speed_value": 6, 
+        "attack_power": "special", 
+        "attack_value": 8, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 15, 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "hbtdosH006", 
+    "set_id": "hbtdos", 
+    "collector_number": "H006", 
+    "name": "Worker Spider", 
+    "type": "bystander", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      10
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [], 
+    "special_powers": [
+      {
+        "type": "attack", 
+        "name": "HORDE: DRONES, BUILDERS", 
+        "description": "When stacked, Worker Spider increases its range by S."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "bystander_type": "horde", 
+    "horde_stack_max": "3", 
+    "unit_range": "2", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "1", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "leap_climb", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 8, 
+        "defense_power": "barrier", 
+        "defense_value": 16, 
+        "damage_power": "empower", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "hbtdosH007", 
+    "set_id": "hbtdos", 
+    "collector_number": "H007", 
+    "name": "Hunter Orc", 
+    "type": "bystander", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      20
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [], 
+    "special_powers": [
+      {
+        "type": "attack", 
+        "name": "HORDE: UNSTOPPABLE ARMY", 
+        "description": "When stacked, Hunter Orc increases its defense value by S."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "bystander_type": "horde", 
+    "horde_stack_max": "3", 
+    "unit_range": "2", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "1", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "force_blast", 
+        "speed_value": 6, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 15, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }
+    ]
+  }
+]

@@ -1,0 +1,528 @@
+<resultset>
+  <row>
+    <unit_id>dota2101</unit_id>
+    <set_id>dota2</set_id>
+    <collector_number>101</collector_number>
+    <name>Tidehunter</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[125]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Brute", "Warrior"]</keywords>
+    <special_powers>[
+  {
+    "type": "attack", 
+    "name": "RAVAGE", 
+    "description": "Tidehunter can use Incapacitate as a double power action to make a close combat attack targeting all opposing characters within 4 squares on the same elevation level as Tidehunter. Hit characters can't ignore pushing damage during this action.", 
+    "powers": [
+      "incapacitate"
+    ]
+  }, 
+  {
+    "type": "damage", 
+    "name": "GUSH", 
+    "description": "Tidehunter can use Penetrating/Psychic Blast and the Sharpshooter ability as if he had a range of 4.", 
+    "powers": [
+      "penetrating_psychic_blast"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>3</unit_range>
+    <targets>1</targets>
+    <speed_type>dolphin</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_value": 8, 
+    "attack_power": "quake", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 18, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_value": 7, 
+    "attack_power": "quake", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 18, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
+    "speed_value": 7, 
+    "attack_power": "quake", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 6, 
+    "speed_value": 7, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 7, 
+    "speed_value": 6, 
+    "attack_power": "quake", 
+    "attack_value": 9, 
+    "defense_power": "invulnerability", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 8, 
+    "speed_value": 6, 
+    "attack_power": "quake", 
+    "attack_value": 8, 
+    "defense_power": "toughness", 
+    "defense_value": 15, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 9, 
+    "speed_value": 6, 
+    "attack_power": "special", 
+    "attack_value": 8, 
+    "defense_power": "toughness", 
+    "defense_value": 15, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 10, 
+    "speed_value": 6, 
+    "attack_power": "special", 
+    "attack_value": 8, 
+    "defense_power": "invulnerability", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>dota2102</unit_id>
+    <set_id>dota2</set_id>
+    <collector_number>102</collector_number>
+    <name>Witch Doctor</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[100]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Mystical"]</keywords>
+    <special_powers>[
+  {
+    "type": "epic", 
+    "name": "DEATH WARD", 
+    "description": "Give Witch Doctor a ranged combat action that deals no damage and targets a single opposing character.  If the attack hits, he may make additional ranged combat attacks that deal no damage against the same target until he misses.  Each of these additional attacks can't be evaded, but modify the target's defense value by +1 for each attack.  After actions resolve, deal damage to the target equal to Witch Doctor's damage value +1 for each additional attack that hit.  If any successful attack roll was doubles during this action, that attack generates knock back."
+  }, 
+  {
+    "type": "defense", 
+    "name": "VOODOO RESTORATION", 
+    "description": "Witch Doctor can use Regeneration.  When he does, all adjacent friendly characters are healed as many clicks as Witch Doctor is healed.", 
+    "powers": [
+      "regeneration"
+    ]
+  }, 
+  {
+    "type": "damage", 
+    "name": "MALEDICT", 
+    "description": "Witch Doctor can use Outwit, but may only counter defense powers.  When he does, after actions resolve roll a d6 and on a result of 4-6, deal the targeted character 1 damage.", 
+    "powers": [
+      "outwit"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>5</unit_range>
+    <targets>2</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_value": 7, 
+    "attack_power": "incapacitate", 
+    "attack_value": 10, 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 2, 
+    "speed_value": 7, 
+    "attack_power": "incapacitate", 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 3, 
+    "speed_value": 7, 
+    "attack_value": 9, 
+    "defense_power": "special", 
+    "defense_value": 16, 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 4, 
+    "speed_value": 7, 
+    "attack_value": 9, 
+    "defense_power": "special", 
+    "defense_value": 16, 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 5, 
+    "speed_value": 7, 
+    "attack_power": "incapacitate", 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 1
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>dota2103</unit_id>
+    <set_id>dota2</set_id>
+    <collector_number>103</collector_number>
+    <name>Faceless Void</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[125]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Warrior"]</keywords>
+    <special_powers>[
+  {
+    "type": "epic", 
+    "name": "CHRONO SPHERE", 
+    "description": "Once per game, give Faceless Void an epic action and all opposing characters within 4 squares are given up to 2 action tokens. Placement of these action tokens does not cause pushing damage. After the resolution of this action, remove all action tokens from Faceless Void."
+  }, 
+  {
+    "type": "trait", 
+    "name": "TIME LOCK", 
+    "description": "Whenever Faceless Void hits an opposing character with an attack, roll a d6. On a result of 6, give that character an action token."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "charge", 
+    "speed_value": 10, 
+    "attack_value": 11, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "flurry", 
+    "speed_value": 8, 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 18, 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "flurry", 
+    "speed_value": 8, 
+    "attack_value": 9, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "charge", 
+    "speed_value": 10, 
+    "attack_value": 10, 
+    "defense_value": 16, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "flurry", 
+    "speed_value": 8, 
+    "attack_value": 9, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "flurry", 
+    "speed_value": 8, 
+    "attack_value": 8, 
+    "defense_power": "super_senses", 
+    "defense_value": 16, 
+    "damage_value": 1
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>dota2104</unit_id>
+    <set_id>dota2</set_id>
+    <collector_number>104</collector_number>
+    <name>Razor</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[75]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Deity", "Monster"]</keywords>
+    <special_powers>[
+  {
+    "type": "epic", 
+    "name": "EYE OF THE STORM", 
+    "description": "Give Razor an epic action to make a ranged combat attack targeting the opposing character on the highest click number within range. For this attack, modify Razor's attack and damage value by +1 for each action token assigned to the target."
+  }, 
+  {
+    "type": "trait", 
+    "name": "PLASMA FIELD", 
+    "description": "Razor can use Pulse Wave. When he does, friendly characters are not effected by this use of Pulse Wave.", 
+    "powers": [
+      "pulse_wave"
+    ]
+  }, 
+  {
+    "type": "defense", 
+    "name": "UNSTABLE CURRENT", 
+    "description": "Razor can use the Mystics team ability."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>5</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_value": 7, 
+    "attack_value": 10, 
+    "defense_value": 16, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_value": 8, 
+    "attack_power": "steal_energy", 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_value": 8, 
+    "attack_power": "steal_energy", 
+    "attack_value": 9, 
+    "defense_power": "special", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_value": 9, 
+    "attack_power": "steal_energy", 
+    "attack_value": 9, 
+    "defense_power": "special", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_value": 9, 
+    "attack_power": "steal_energy", 
+    "attack_value": 9, 
+    "defense_value": 17, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_value": 10, 
+    "attack_power": "steal_energy", 
+    "attack_value": 9, 
+    "defense_value": 17, 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 7, 
+    "speed_value": 10, 
+    "attack_power": "steal_energy", 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 18, 
+    "damage_value": 1
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>dota2105</unit_id>
+    <set_id>dota2</set_id>
+    <collector_number>105</collector_number>
+    <name>Lich</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[75]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Monster", "Mystical"]</keywords>
+    <special_powers>[
+  {
+    "type": "attack", 
+    "name": "CHAIN FROST", 
+    "description": "Give Lich a ranged combat action as if he had \"4 targets\". After actions resolve, he may make another ranged combat attack targeting up to 3 opposing characters that were not hit by the first attack but are within 3 squares and line of fire of a hit target. All hit characters from these attacks are dealt 1 penetrating damage and are given an action token."
+  }, 
+  {
+    "type": "defense", 
+    "name": "ICE ARMOR", 
+    "description": "Give Lich a power action and choose a friendly character within 3 squares and line of fire. Until the beginning of your next turn, the chosen character can use Toughness and any opposing character that attacks the chosen character with a close combat attack is given an action token after actions resolve."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>5</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_value": 6, 
+    "attack_power": "incapacitate", 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_value": 6, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_value": 6, 
+    "attack_power": "incapacitate", 
+    "attack_value": 9, 
+    "defense_value": 16, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_value": 6, 
+    "attack_power": "incapacitate", 
+    "attack_value": 9, 
+    "defense_power": "special", 
+    "defense_value": 15, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_value": 6, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 15, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_value": 5, 
+    "attack_power": "incapacitate", 
+    "attack_value": 9, 
+    "defense_value": 16, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 7, 
+    "speed_value": 5, 
+    "attack_power": "incapacitate", 
+    "attack_value": 9, 
+    "defense_power": "special", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+</resultset>

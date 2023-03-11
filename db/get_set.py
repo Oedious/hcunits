@@ -438,6 +438,12 @@ SET_MAP = {
   "bmao": {
     "name": "Batman: Arkham Origins",
   },
+  "dota2": {
+    "name": "DOTA 2",
+  },
+  "hbtdos": {
+    "name": "The Hobbit: The Desolation of Smaug",
+  },
 }
 
 POWERS = {
@@ -1701,7 +1707,7 @@ class Unit:
     # so that the list can be used for search.
     sp_desc = sp["description"]
     sp_desc = sp_desc.replace(" and", ",")
-    split_list = re.split("\.|,|//|-", sp_desc)
+    split_list = re.split("\.|,|//|-| as ", sp_desc)
     sp_powers = []
     for power in split_list:
       power = power.strip()
