@@ -467,6 +467,18 @@ SET_MAP = {
   "wxm": {
     "name": "Wolverine and the X-Men",
   },
+  "lr": {
+    "name": "The Lone Ranger",
+  },
+  "ka2": {
+    "name": "Kick Ass 2",
+  },
+  "pr": {
+    "name": "Pacific Rim",
+  },
+  "bsi": {
+    "name": "BioShock Infinite",
+  },
 }
 
 POWERS = {
@@ -888,6 +900,7 @@ class Unit:
           rarity == "Rarity: Free Comic Book Day Exclusive" or
           rarity == "Rarity: Limited Edition" or
           rarity == "Rarity: Brick" or
+          rarity == "Rarity: Marquee" or
           rarity == "Rarity: Super Booster" or
           rarity == "Rarity: Ant-Man Box Set" or
           rarity == "Rarity: Sinestro Corps War Scenario Pack" or

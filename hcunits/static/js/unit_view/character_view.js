@@ -291,12 +291,13 @@ class CharacterView extends BaseUnitView {
       const headerLines = powerName ? Math.ceil(powerName.length / CHARS_PER_NAME_LINE) : 0;
       const descLines = Math.ceil(power.description.length / CHARS_PER_DESC_LINE);
       const lines = headerLines + descLines;
-      //if (lines > LINES_PER_COLUMN[LINES_PER_COLUMN.length - 1]) {
-      //  console.log(`Special power contains ${lines} in a single column, but rendering it anyways`);
-      //}
       // If the line count surpasses the max in the current column, move to the
       // next column.
       while (currentLineCount + lines > LINES_PER_COLUMN[Math.min(currentColumn, LINES_PER_COLUMN.length - 1)]) {
+        if (currentLineCount == 0 && lines > LINES_PER_COLUMN[LINES_PER_COLUMN.length - 1]) {
+          console.log(`Special power contains ${lines} in a single column, but rendering it anyways`);
+          break;
+        }
         html += "</table>";
         htmlColumns.push(html);
         ++currentColumn;

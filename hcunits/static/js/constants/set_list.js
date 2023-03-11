@@ -627,7 +627,7 @@ const SET_LIST = {
   "mkr": {
     "name": "Mage Knight Resurrection",
     "release_date": "2013-11-06",
-    "universe": "mageknight"
+    "universe": "mage_knight"
   },
   "t2t": {
     "name": "The Two Towers",
@@ -653,6 +653,26 @@ const SET_LIST = {
     "name": "Wolverine and the X-Men",
     "release_date": "2013-08-21",
     "universe": "marvel"
+  },
+  "lr": {
+    "name": "The Lone Ranger",
+    "release_date": "2013-08-14",
+    "universe": "indy"
+  },
+  "ka2": {
+    "name": "Kick Ass 2",
+    "release_date": "2013-07-31",
+    "universe": "indy"
+  },
+  "pr": {
+    "name": "Pacific Rim",
+    "release_date": "2013-07-01",
+    "universe": "pacific_rim"
+  },
+  "bsi": {
+    "name": "BioShock Infinite",
+    "release_date": "2013-06-26",
+    "universe": "bioshock"
   },
   "wk": {
     "name": "WizKids Standard Game Pieces",

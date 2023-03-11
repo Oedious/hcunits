@@ -1,0 +1,1628 @@
+<resultset>
+  <row>
+    <unit_id>pr001</unit_id>
+    <set_id>pr</set_id>
+    <collector_number>001</collector_number>
+    <name>Gipsy Danger</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[225, 125]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["pan_pacific_defense_corps"]</team_abilities>
+    <keywords>["Armor", "Jaeger", "Pan Pacific Defense Corps", "Robot", "Soldier"]</keywords>
+    <special_powers>[
+  {
+    "type": "attack", 
+    "name": "WHIP-SLASH MODE CHAIN SWORD", 
+    "description": "Gipsy Danger can use Blades/Claws/Fangs and the Giant Reach Ability. When Gipsy Danger uses Blades/Claws/Fangs, instead of rolling a d6, roll 2d6, and subtract 4, minimum 2.", 
+    "powers": [
+      "blades_claws_fangs"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>8</unit_range>
+    <targets>1</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>colossal</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "charge", 
+    "speed_value": 11, 
+    "attack_power": "special", 
+    "attack_value": 12, 
+    "defense_power": "impervious", 
+    "defense_value": 18, 
+    "damage_value": 5
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "charge", 
+    "speed_value": 10, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 11, 
+    "defense_power": "impervious", 
+    "defense_value": 18, 
+    "damage_power": "perplex", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "flurry", 
+    "speed_value": 10, 
+    "attack_power": "special", 
+    "attack_value": 11, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 4, 
+    "speed_value": 9, 
+    "attack_value": 12, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "charge", 
+    "speed_value": 9, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 11, 
+    "defense_power": "impervious", 
+    "defense_value": 17, 
+    "damage_value": 5
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "charge", 
+    "speed_value": 8, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 10, 
+    "defense_power": "impervious", 
+    "defense_value": 16, 
+    "damage_power": "perplex", 
+    "damage_value": 4, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 7, 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 11, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 8, 
+    "speed_power": "flurry", 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 16, 
+    "damage_power": "perplex", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 9, 
+    "speed_power": "flurry", 
+    "speed_value": 7, 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 10, 
+    "speed_power": "charge", 
+    "speed_value": 7, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "perplex", 
+    "damage_value": 3
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>pr002</unit_id>
+    <set_id>pr</set_id>
+    <collector_number>002</collector_number>
+    <name>Striker Eureka</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[350, 175]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["pan_pacific_defense_corps"]</team_abilities>
+    <keywords>["Armor", "Jaeger", "Pan Pacific Defense Corps", "Robot", "Soldier"]</keywords>
+    <special_powers>[
+  {
+    "type": "defense", 
+    "name": "RECORD-BREAKER", 
+    "description": "Striker Eureka can use Impervious, but reduces damage to 0 on a result of 4 - 6.", 
+    "powers": [
+      "impervious"
+    ]
+  }, 
+  {
+    "type": "damage", 
+    "name": "SIX-SHOOTER ATTACK", 
+    "description": "Give Striker Eureka a ranged combat action. After the ranged combat attack resolves, it may make a second ranged combat attack as a free action."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>6</unit_range>
+    <targets>3</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>colossal</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_value": 11, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 12, 
+    "defense_power": "impervious", 
+    "defense_value": 19, 
+    "damage_value": 6
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "running_shot", 
+    "speed_value": 11, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 12, 
+    "defense_power": "impervious", 
+    "defense_value": 18, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 5
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "flurry", 
+    "speed_value": 10, 
+    "attack_value": 11, 
+    "defense_power": "special", 
+    "defense_value": 18, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 5
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "flurry", 
+    "speed_value": 10, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 13, 
+    "defense_power": "special", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 5, 
+    "speed_value": 10, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 12, 
+    "defense_power": "impervious", 
+    "defense_value": 18, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "running_shot", 
+    "speed_value": 11, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 11, 
+    "defense_power": "impervious", 
+    "defense_value": 18, 
+    "damage_power": "special", 
+    "damage_value": 4, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "running_shot", 
+    "speed_value": 11, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 11, 
+    "defense_power": "impervious", 
+    "defense_value": 17, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 8, 
+    "speed_power": "flurry", 
+    "speed_value": 10, 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 9, 
+    "speed_power": "flurry", 
+    "speed_value": 10, 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 10, 
+    "speed_value": 9, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 11, 
+    "speed_power": "running_shot", 
+    "speed_value": 9, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 16, 
+    "damage_value": 3
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>pr003</unit_id>
+    <set_id>pr</set_id>
+    <collector_number>003</collector_number>
+    <name>Cherno Alpha</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[325, 225]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["pan_pacific_defense_corps"]</team_abilities>
+    <keywords>["Armor", "Jaeger", "Pan Pacific Defense Corps", "Robot", "Soldier"]</keywords>
+    <special_powers>[
+  {
+    "type": "speed", 
+    "name": "TWO-FISTED FURY", 
+    "description": "Cherno Alpha can use Flurry. When it does, after actions resolve, it may use Quake as a free action.", 
+    "powers": [
+      "flurry", 
+      "quake"
+    ]
+  }, 
+  {
+    "type": "defense", 
+    "name": "ALPHA ARMOR", 
+    "description": "Cherno Alpha can use Impervious but when the result of its d6 roll is a 3-4, it reduces the damage dealt by 3 instead."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>4</unit_range>
+    <targets>2</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>colossal</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "charge", 
+    "speed_value": 7, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 12, 
+    "defense_power": "special", 
+    "defense_value": 19, 
+    "damage_value": 6
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "special", 
+    "speed_value": 7, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 11, 
+    "defense_power": "special", 
+    "defense_value": 19, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 5
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "charge", 
+    "speed_value": 7, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 12, 
+    "defense_power": "impervious", 
+    "defense_value": 18, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 5
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "special", 
+    "speed_value": 7, 
+    "attack_power": "quake", 
+    "attack_value": 11, 
+    "defense_power": "special", 
+    "defense_value": 18, 
+    "damage_value": 4, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "special", 
+    "speed_value": 6, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 11, 
+    "defense_power": "impervious", 
+    "defense_value": 17, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "special", 
+    "speed_value": 6, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 11, 
+    "defense_power": "impervious", 
+    "defense_value": 17, 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "charge", 
+    "speed_value": 6, 
+    "attack_value": 10, 
+    "defense_power": "impervious", 
+    "defense_value": 16, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 8, 
+    "speed_power": "charge", 
+    "speed_value": 5, 
+    "attack_power": "quake", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 16, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 9, 
+    "speed_power": "charge", 
+    "speed_value": 5, 
+    "attack_power": "quake", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 10, 
+    "speed_power": "special", 
+    "speed_value": 4, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 16, 
+    "damage_value": 3
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>pr004</unit_id>
+    <set_id>pr</set_id>
+    <collector_number>004</collector_number>
+    <name>Crimson Typhoon</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[300, 150]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["pan_pacific_defense_corps"]</team_abilities>
+    <keywords>["Armor", "Jaeger", "Pan Pacific Defense Corps", "Robot", "Soldier"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "THREE-ARMED ASSAULT", 
+    "description": "Crimson Typhoon can use the Giant Reach ability."
+  }, 
+  {
+    "type": "speed", 
+    "name": "TRINITY PUNCH", 
+    "description": "Give Crimson Typhoon a close combat action and it may make 3 close combat attacks as free actions. During this action, its combat values are locked. If it loses this power before an attack, it may not make another attack."
+  }, 
+  {
+    "type": "attack", 
+    "name": "RIPTIDE RED", 
+    "description": "Crimson Typhoon can use Quake. When it does, its damage becomes 3 and is locked.", 
+    "powers": [
+      "quake"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>colossal</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "charge", 
+    "speed_value": 11, 
+    "attack_power": "special", 
+    "attack_value": 12, 
+    "defense_power": "impervious", 
+    "defense_value": 19, 
+    "damage_value": 6
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "special", 
+    "speed_value": 11, 
+    "attack_value": 12, 
+    "defense_power": "impervious", 
+    "defense_value": 18, 
+    "damage_power": "perplex", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "plasticity", 
+    "speed_value": 10, 
+    "attack_power": "special", 
+    "attack_value": 11, 
+    "defense_power": "impervious", 
+    "defense_value": 17, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 5
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "special", 
+    "speed_value": 10, 
+    "attack_value": 11, 
+    "defense_power": "impervious", 
+    "defense_value": 17, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "charge", 
+    "speed_value": 9, 
+    "attack_power": "special", 
+    "attack_value": 12, 
+    "defense_power": "invulnerability", 
+    "defense_value": 18, 
+    "damage_value": 5, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "special", 
+    "speed_value": 9, 
+    "attack_value": 11, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "perplex", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "plasticity", 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 11, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 8, 
+    "speed_power": "special", 
+    "speed_value": 8, 
+    "attack_value": 11, 
+    "defense_power": "invulnerability", 
+    "defense_value": 16, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 9, 
+    "speed_power": "charge", 
+    "speed_value": 7, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "perplex", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 10, 
+    "speed_power": "special", 
+    "speed_value": 7, 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_value": 3
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>pr005</unit_id>
+    <set_id>pr</set_id>
+    <collector_number>005</collector_number>
+    <name>Coyote Tango</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[250, 150]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["pan_pacific_defense_corps"]</team_abilities>
+    <keywords>["Armor", "Jaeger", "Pan Pacific Defense Corps", "Robot", "Soldier"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "KAIJU COUNTERSTRIKE", 
+    "description": "When Coyote Tango targets an opposing character that dealt it damage since your last turn, modify its attack value by +1."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>7</unit_range>
+    <targets>2</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>colossal</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "running_shot", 
+    "speed_value": 9, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 11, 
+    "defense_power": "impervious", 
+    "defense_value": 18, 
+    "damage_power": "outwit", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "stealth", 
+    "speed_value": 9, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 11, 
+    "defense_power": "impervious", 
+    "defense_value": 17, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "stealth", 
+    "speed_value": 9, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 11, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "outwit", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "stealth", 
+    "speed_value": 9, 
+    "attack_power": "quake", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 4, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "running_shot", 
+    "speed_value": 9, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 11, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "stealth", 
+    "speed_value": 8, 
+    "attack_power": "quake", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "outwit", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "stealth", 
+    "speed_value": 7, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 11, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "outwit", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 8, 
+    "speed_power": "stealth", 
+    "speed_value": 7, 
+    "attack_power": "quake", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 9, 
+    "speed_power": "running_shot", 
+    "speed_value": 7, 
+    "attack_power": "quake", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 3
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>pr006</unit_id>
+    <set_id>pr</set_id>
+    <collector_number>006</collector_number>
+    <name>Knifehead</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[350, 200]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["kaiju"]</team_abilities>
+    <keywords>["Kaiju", "Monster"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "MONSTROUS TOXIC CREATURE FROM THE DEEP", 
+    "description": "Knifehead can use Poison and the Giant Reach ability. When it occupies water terrain, modify its attack and damage value by +1.", 
+    "powers": [
+      "poison"
+    ]
+  }, 
+  {
+    "type": "speed", 
+    "name": "BONE KNIFE HEADBLADE SLASH AND SLICE", 
+    "description": "Give Knifehead a move action: its speed and damage values are locked for this action. Move Knifehead along a direct path and after actions resolve, make a close combat attack as a free action that targets all opposing characters that were moved through. Each hit character is dealt damage equal to Knifehead's damage value."
+  }
+]</special_powers>
+    <improved_movement>["destroy_blocking"]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>dolphin</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>colossal</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "charge", 
+    "speed_value": 8, 
+    "attack_value": 12, 
+    "defense_power": "impervious", 
+    "defense_value": 19, 
+    "damage_power": "battle_fury", 
+    "damage_value": 5
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "special", 
+    "speed_value": 8, 
+    "attack_power": "steal_energy", 
+    "attack_value": 11, 
+    "defense_power": "impervious", 
+    "defense_value": 19, 
+    "damage_power": "battle_fury", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "flurry", 
+    "speed_value": 7, 
+    "attack_value": 11, 
+    "defense_power": "impervious", 
+    "defense_value": 18, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "charge", 
+    "speed_value": 7, 
+    "attack_power": "steal_energy", 
+    "attack_value": 12, 
+    "defense_power": "impervious", 
+    "defense_value": 18, 
+    "damage_power": "battle_fury", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "special", 
+    "speed_value": 7, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 11, 
+    "defense_power": "invulnerability", 
+    "defense_value": 18, 
+    "damage_power": "battle_fury", 
+    "damage_value": 4, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "flurry", 
+    "speed_value": 7, 
+    "attack_power": "steal_energy", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 18, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "charge", 
+    "speed_value": 6, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 11, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "battle_fury", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 8, 
+    "speed_power": "special", 
+    "speed_value": 6, 
+    "attack_power": "steal_energy", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "battle_fury", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 9, 
+    "speed_power": "flurry", 
+    "speed_value": 6, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 10, 
+    "speed_power": "flurry", 
+    "speed_value": 5, 
+    "attack_power": "steal_energy", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "battle_fury", 
+    "damage_value": 3
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>pr007</unit_id>
+    <set_id>pr</set_id>
+    <collector_number>007</collector_number>
+    <name>Slattern</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[600, 300]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["kaiju"]</team_abilities>
+    <keywords>["Kaiju", "Monster"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "MONSTROUS TOXIC CREATURE FROM THE DEEP", 
+    "description": "Slattern can use Poison and the Giant Reach ability. When it occupies water terrain, modify its attack and damage value by +1.", 
+    "powers": [
+      "poison"
+    ]
+  }, 
+  {
+    "type": "trait", 
+    "name": "BIGGEST, BADDEST MONSTER TO EVER WALK THE EARTH", 
+    "description": "Once per game, when Slattern would be KO'd, instead, heal it to its starting line, roll a d6 that can't be rerolled, and subtract 1. Deal it the result as unavoidable damage. For the rest of the game, modify Slattern's attack and damage values by +1. This power can't be ignored."
+  }, 
+  {
+    "type": "attack", 
+    "name": "TRIPLE TAILWHIP", 
+    "description": "Give Slattern a close combat action targeting all adjacent characters. Each hit characters is dealt Slattern's printed damage value and is knocked back."
+  }, 
+  {
+    "type": "defense", 
+    "name": "UNSTOPPABLE", 
+    "description": "Slattern can use Invulnerability. After damage is reduced, Slattern ignores all but 1 damage dealt to it.", 
+    "powers": [
+      "invulnerability"
+    ]
+  }
+]</special_powers>
+    <improved_movement>["destroy_blocking"]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>dolphin</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>colossal</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "charge", 
+    "speed_value": 12, 
+    "attack_power": "special", 
+    "attack_value": 13, 
+    "defense_power": "impervious", 
+    "defense_value": 20, 
+    "damage_power": "shape_change", 
+    "damage_value": 6
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "plasticity", 
+    "speed_value": 12, 
+    "attack_power": "steal_energy", 
+    "attack_value": 12, 
+    "defense_power": "special", 
+    "defense_value": 20, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 5
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "hypersonic_speed", 
+    "speed_value": 11, 
+    "attack_power": "special", 
+    "attack_value": 11, 
+    "defense_power": "impervious", 
+    "defense_value": 19, 
+    "damage_power": "battle_fury", 
+    "damage_value": 5, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "hypersonic_speed", 
+    "speed_value": 11, 
+    "attack_power": "steal_energy", 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 18, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "plasticity", 
+    "speed_value": 10, 
+    "attack_power": "special", 
+    "attack_value": 12, 
+    "defense_power": "impervious", 
+    "defense_value": 18, 
+    "damage_power": "battle_fury", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "hypersonic_speed", 
+    "speed_value": 10, 
+    "attack_power": "steal_energy", 
+    "attack_value": 11, 
+    "defense_power": "special", 
+    "defense_value": 18, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "hypersonic_speed", 
+    "speed_value": 10, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "impervious", 
+    "defense_value": 17, 
+    "damage_power": "battle_fury", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 8, 
+    "speed_power": "plasticity", 
+    "speed_value": 9, 
+    "attack_power": "steal_energy", 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 17, 
+    "damage_power": "battle_fury", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 9, 
+    "speed_power": "charge", 
+    "speed_value": 9, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_power": "impervious", 
+    "defense_value": 16, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 10, 
+    "speed_power": "plasticity", 
+    "speed_value": 9, 
+    "attack_power": "steal_energy", 
+    "attack_value": 9, 
+    "defense_power": "invulnerability", 
+    "defense_value": 16, 
+    "damage_power": "battle_fury", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 11, 
+    "speed_power": "charge", 
+    "speed_value": 9, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_power": "invulnerability", 
+    "defense_value": 16, 
+    "damage_power": "battle_fury", 
+    "damage_value": 3
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>pr008</unit_id>
+    <set_id>pr</set_id>
+    <collector_number>008</collector_number>
+    <name>Raiju</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[400, 250]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["kaiju"]</team_abilities>
+    <keywords>["Kaiju", "Monster"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "MONSTROUS TOXIC CREATURE FROM THE DEEP", 
+    "description": "Raiju can use Poison and the Giant Reach ability. When it occupies water terrain, modify its attack and damage value by +1.", 
+    "powers": [
+      "poison"
+    ]
+  }, 
+  {
+    "type": "attack", 
+    "name": "THUNDER BEAST", 
+    "description": "Raiju can use Pulse Wave as if it had a range value of 8. When it does, it deals damage equal to half its printed damage value to each hit character no matter how many characters are within range.", 
+    "powers": [
+      "pulse_wave"
+    ]
+  }, 
+  {
+    "type": "damage", 
+    "name": "MAXIMUM TOXICITY", 
+    "description": "When Raiju uses Poison, damage dealt is penetrating damage."
+  }
+]</special_powers>
+    <improved_movement>["destroy_blocking"]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>dolphin</speed_type>
+    <attack_type>duo</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>colossal</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "charge", 
+    "speed_value": 11, 
+    "attack_value": 12, 
+    "defense_power": "impervious", 
+    "defense_value": 19, 
+    "damage_power": "battle_fury", 
+    "damage_value": 5
+  }, 
+  {
+    "click_number": 2, 
+    "speed_value": 11, 
+    "attack_power": "special", 
+    "attack_value": 11, 
+    "defense_power": "impervious", 
+    "defense_value": 18, 
+    "damage_power": "special", 
+    "damage_value": 5
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "charge", 
+    "speed_value": 10, 
+    "attack_value": 11, 
+    "defense_power": "impervious", 
+    "defense_value": 18, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "charge", 
+    "speed_value": 10, 
+    "attack_power": "special", 
+    "attack_value": 12, 
+    "defense_power": "impervious", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 5, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "flurry", 
+    "speed_value": 10, 
+    "attack_power": "steal_energy", 
+    "attack_value": 11, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "battle_fury", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "flurry", 
+    "speed_value": 9, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 18, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "flurry", 
+    "speed_value": 9, 
+    "attack_power": "steal_energy", 
+    "attack_value": 11, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 8, 
+    "speed_power": "flurry", 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 9, 
+    "speed_power": "charge", 
+    "speed_value": 8, 
+    "attack_power": "steal_energy", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 10, 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 3
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>pr009</unit_id>
+    <set_id>pr</set_id>
+    <collector_number>009</collector_number>
+    <name>Scunner</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[400, 200]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["kaiju"]</team_abilities>
+    <keywords>["Kaiju", "Monster"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "MONSTROUS TOXIC CREATURE FROM THE DEEP", 
+    "description": "Scunner can use Poison and the Giant Reach ability. When it occupies water terrain, modify its attack and damage value by +1.", 
+    "powers": [
+      "poison"
+    ]
+  }, 
+  {
+    "type": "speed", 
+    "name": "GNASHING, THRASHING NIGHTMARE", 
+    "description": "Scunner can use Charge, but doesn't halve its speed value.", 
+    "powers": [
+      "charge"
+    ]
+  }, 
+  {
+    "type": "attack", 
+    "name": "CHOMPER STOMPER", 
+    "description": "Scunner can use Blades/Claws/Fangs and Quake. When it rolls a d6 for Blades/Claws/Fangs, its printed damage value is the minimum result.", 
+    "powers": [
+      "blades_claws_fangs", 
+      "quake"
+    ]
+  }
+]</special_powers>
+    <improved_movement>["destroy_blocking"]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>dolphin</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>colossal</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "special", 
+    "speed_value": 9, 
+    "attack_value": 12, 
+    "defense_power": "impervious", 
+    "defense_value": 19, 
+    "damage_power": "battle_fury", 
+    "damage_value": 6
+  }, 
+  {
+    "click_number": 2, 
+    "speed_value": 9, 
+    "attack_power": "special", 
+    "attack_value": 11, 
+    "defense_power": "impervious", 
+    "defense_value": 18, 
+    "damage_power": "battle_fury", 
+    "damage_value": 5
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "special", 
+    "speed_value": 8, 
+    "attack_power": "steal_energy", 
+    "attack_value": 11, 
+    "defense_power": "impervious", 
+    "defense_value": 18, 
+    "damage_power": "battle_fury", 
+    "damage_value": 5
+  }, 
+  {
+    "click_number": 4, 
+    "speed_value": 8, 
+    "attack_power": "steal_energy", 
+    "attack_value": 12, 
+    "defense_power": "impervious", 
+    "defense_value": 17, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "special", 
+    "speed_value": 7, 
+    "attack_power": "special", 
+    "attack_value": 12, 
+    "defense_power": "impervious", 
+    "defense_value": 17, 
+    "damage_value": 5, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "special", 
+    "speed_value": 7, 
+    "attack_power": "special", 
+    "attack_value": 11, 
+    "defense_power": "invulnerability", 
+    "defense_value": 18, 
+    "damage_power": "battle_fury", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 7, 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 11, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "battle_fury", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 8, 
+    "speed_power": "special", 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 11, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "battle_fury", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 9, 
+    "speed_value": 7, 
+    "attack_power": "steal_energy", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 10, 
+    "speed_value": 7, 
+    "attack_power": "steal_energy", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 3
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>pr010</unit_id>
+    <set_id>pr</set_id>
+    <collector_number>010</collector_number>
+    <name>Leatherback</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[450, 225]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["kaiju"]</team_abilities>
+    <keywords>["Kaiju", "Monster"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "MONSTROUS TOXIC CREATURE FROM THE DEEP", 
+    "description": "Leatherback can use Poison and the Giant Reach ability. When it occupies water terrain, modify its attack and damage value by +1.", 
+    "powers": [
+      "poison"
+    ]
+  }, 
+  {
+    "type": "defense", 
+    "name": "SHRUGS OFF MISSILES", 
+    "description": "Leatherback can use Invulnerability. Leatherback ignores damage from ranged combat attacks.", 
+    "powers": [
+      "invulnerability"
+    ]
+  }
+]</special_powers>
+    <improved_movement>["destroy_blocking"]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>dolphin</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>colossal</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "charge", 
+    "speed_value": 9, 
+    "attack_value": 11, 
+    "defense_power": "special", 
+    "defense_value": 20, 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "charge", 
+    "speed_value": 8, 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 19, 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "flurry", 
+    "speed_value": 8, 
+    "attack_value": 11, 
+    "defense_power": "special", 
+    "defense_value": 19, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "flurry", 
+    "speed_value": 7, 
+    "attack_value": 10, 
+    "defense_power": "impervious", 
+    "defense_value": 20, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "charge", 
+    "speed_value": 8, 
+    "attack_value": 11, 
+    "defense_power": "impervious", 
+    "defense_value": 19, 
+    "damage_value": 4, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "charge", 
+    "speed_value": 8, 
+    "attack_value": 10, 
+    "defense_power": "impervious", 
+    "defense_value": 19, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "flurry", 
+    "speed_value": 7, 
+    "attack_value": 9, 
+    "defense_power": "special", 
+    "defense_value": 18, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 8, 
+    "speed_power": "flurry", 
+    "speed_value": 8, 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 18, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 9, 
+    "speed_power": "charge", 
+    "speed_value": 7, 
+    "attack_value": 9, 
+    "defense_power": "special", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 10, 
+    "speed_power": "flurry", 
+    "speed_value": 6, 
+    "attack_value": 10, 
+    "defense_power": "impervious", 
+    "defense_value": 18, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 11, 
+    "speed_value": 6, 
+    "attack_value": 9, 
+    "defense_power": "impervious", 
+    "defense_value": 19, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 3
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>prB001</unit_id>
+    <set_id>pr</set_id>
+    <collector_number>B001</collector_number>
+    <name>Fighter Jet</name>
+    <type>bystander</type>
+    <rarity>common</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[25]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>standard</bystander_type>
+    <unit_range>6</unit_range>
+    <targets>1</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>1</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "running_shot", 
+    "speed_value": 8, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_value": 1
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>prB002</unit_id>
+    <set_id>pr</set_id>
+    <collector_number>B002</collector_number>
+    <name>Battleship</name>
+    <type>bystander</type>
+    <rarity>common</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[33]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>standard</bystander_type>
+    <unit_range>5</unit_range>
+    <targets>1</targets>
+    <speed_type>dolphin</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>1</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_value": 6, 
+    "attack_power": "quake", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>prB003</unit_id>
+    <set_id>pr</set_id>
+    <collector_number>B003</collector_number>
+    <name>Military Tank</name>
+    <type>bystander</type>
+    <rarity>common</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[33]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>standard</bystander_type>
+    <unit_range>4</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>1</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_value": 4, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 11, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "enhancement", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+</resultset>

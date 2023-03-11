@@ -10,7 +10,7 @@ const TEAM_ABILITY_LIST = {
     "name": "Mystics",
     "universe": "universal",
     "description": "Each time this character takes damage from an opposing character's attack, after resolutions deal the attacker 1 penetrating damage. Uncopyable.",
-    "copyable": true,
+    "copyable": false,
     "wildcard": false
   },
   "police": {
@@ -344,44 +344,72 @@ const TEAM_ABILITY_LIST = {
   },
   "ascendent": {
     "name": "Ascendent",
-    "universe": "mageknight",
+    "universe": "mage_knight",
     "description": "A character using this team ability modifies its attack value by +1 when marked with 1 action token.",
     "copyable": true,
     "wildcard": false
   },
   "council_of_the_mists": {
     "name": "Council of the Mists",
-    "universe": "mageknight",
+    "universe": "mage_knight",
     "description": "A character using this team ability can use Probability Control, but only during your turn and if the reroll does not have at least one die with a 1 or 6, the reroll is ignored.",
     "copyable": true,
     "wildcard": false
   },
   "dominion_pact": {
     "name": "Dominion Pact",
-    "universe": "mageknight",
+    "universe": "mage_knight",
     "description": "When an opposing character within 4 squares is ko'ed, characters using this team ability are healed 1 damage.",
     "copyable": true,
     "wildcard": false
   },
   "mage_spawn": {
     "name": "Mage Spawn",
-    "universe": "mageknight",
+    "universe": "mage_knight",
     "description": "At the beginning of the game, choose a friendly character with the highest point value to be this team's master. If a character using this team ability is within 4 squares of its master when the master if given a move action, then the character using this team ability may be given a move action as a free action. Uncopyable.",
     "copyable": false,
     "wildcard": false
   },
   "mercenary": {
     "name": "Mercenary",
-    "universe": "mageknight",
+    "universe": "mage_knight",
     "description": "At the beginning of the game, choose a friendly character with the highest point value to be this team's leader. A character using this team ability modifies its defense value by +1 when it is within 4 squares of its leader. Uncopyable.",
     "copyable": false,
     "wildcard": false
   },
   "phoenix_concord": {
     "name": "Phoenix Concord",
-    "universe": "mageknight",
+    "universe": "mage_knight",
     "description": "Once per turn when a power or ability of a character using this team ability or an adjacent friendly character would be countered, roll a d6; on a result of 5-6 the power or ability is not countered.",
     "copyable": true,
     "wildcard": false
+  },
+  "kaiju": {
+    "name": "Kaiju",
+    "universe": "pacific_rim",
+    "description": "When a character using the Kaiju team ability takes damage from an attack, the attacker is dealt 1 unavoidable damage. This damage is not an attack.",
+    "copyable": true,
+    "wildcard": false
+  },
+  "pan_pacific_defense_corps": {
+    "name": "Pan Pacific Defense Corps",
+    "universe": "pacific_rim",
+    "description": "When this character is adjacent to a friendly character making a ranged combat attack, modify the target's defense value by -1 if the target is within line of fire of this character.",
+    "copyable": true,
+    "wildcard": false
+  },
+  "founders": {
+    "name": "Founders",
+    "universe": "bioshock",
+    "description": "At the beginning of your turn, choose a single opposing character within line of fire of any one character that can use this team ability; all friendly characters using this team ability modify their attack value by +1 when attacking the chosen target this turn. Uncopyable.",
+    "copyable": false,
+    "wildcard": false,
+  },
+  "vox_populi": {
+    "name": "Vox Populi",
+    "universe": "bioshock",
+    "description": "When a character using this team ability is marked with an action token and makes an attack, any attack roll of doubles (other than a critical miss) is considered a hit.",
+    "copyable": true,
+    "wildcard": false,
   },
 }

@@ -1,0 +1,27 @@
+{
+  "updates": {
+    "pr002": {
+      "point_values": [350, 175],
+      "special_powers": [{
+        "description": "Striker Eureka can use Impervious, but reduces damage to 0 on a result of 4 - 6.",
+        "powers": ["impervious"]
+      }],
+      "dial": [{
+      }, {
+      }, {
+      }, {
+      }, {
+      }, {
+        "starting_line": true
+      }]
+    },
+    "pr003": {
+      "special_powers": [{
+        "powers": ["flurry", "quake"]
+      }]
+    }
+  },
+  "deletions": [
+    "pr002e"
+  ]
+}
