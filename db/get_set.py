@@ -464,6 +464,9 @@ SET_MAP = {
       ("bctvV001a", "bctvV001b"),
     ],
   },
+  "wxm": {
+    "name": "Wolverine and the X-Men",
+  },
 }
 
 POWERS = {
