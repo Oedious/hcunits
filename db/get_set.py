@@ -456,6 +456,14 @@ SET_MAP = {
   "tdw": {
     "name": "Thor: The Dark World",
   },
+  "bctv": {
+    "name": "Batman Classic TV",
+    "ranges": [
+      # Skip V001 Batmobile as use separate units V001a and V001b
+      ("bctv001", "bctvS001"),
+      ("bctvV001a", "bctvV001b"),
+    ],
+  },
 }
 
 POWERS = {
@@ -602,6 +610,7 @@ SPECIAL_POWER_TYPE_VALUES = [
   "trap",
   "trap_spell",
   "ritual",
+  "deathtrap",
 ]
 
 RALLY_TYPE_VALUES = [
@@ -1406,6 +1415,8 @@ class Unit:
               sp_type = "word_balloon"
             elif self.set_id == "slosh":
               sp_type = "toy"
+            elif self.set_id == "bctv":
+              sp_type = "deathtrap"
             elif self.set_id.startswith("ygo") or self.set_id == "botm":
               if sp_name:
                 if sp_name == "FUSION":

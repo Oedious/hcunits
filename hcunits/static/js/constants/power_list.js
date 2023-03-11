@@ -394,4 +394,8 @@ const SPECIAL_POWER_TYPE_LIST = {
   "trap": {
     "name": "Trap"
   },
+  "deathtrap": {
+    "name": "Elaborate Deathtrap",
+    "description": "<b>ELABORATE DEATHTRAP</b>: Give this character a power action to make a close combat attack that deals no damage. Once per game, immediately place a hit character on this character's card. A character on this card can use the Escape Deathtrap ability.<br><br><b>ESCAPE DEATHTRAP</b>: At the beginning of your turn, roll 2d6. This character rolls a d6 and adds their Elaborate Deathtrap Bonus (maximum Bonus 8). If this character is friendly, not on the map, or if your result is higher, place this character in your starting area or adjacent to a friendly character. Otherwise, deal this character damage equal to the difference (maximum 5) and when dealt this damage, this character can use its defense powers.",
+  },
 };

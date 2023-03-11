@@ -1,0 +1,2131 @@
+<resultset>
+  <row>
+    <unit_id>bctv001</unit_id>
+    <set_id>bctv</set_id>
+    <collector_number>001</collector_number>
+    <name>Batman</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[100, 50]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Batman Family", "Celebrity", "Detective", "Gotham City", "Martial Artist", "Police"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "BIFF! BANG! POW!", 
+    "description": "When Batman makes a close combat attack, all attack rolls of double 3, 4, 5, or 6 are critical hits."
+  }, 
+  {
+    "type": "defense", 
+    "name": "A BATMAN TOOL FOR EVERY OCCASSION", 
+    "description": "When Batman is targeted by an attack, choose a color of a standard power the attacker can use. Batman can use the defense power of the chosen color until your next turn."
+  }, 
+  {
+    "type": "damage", 
+    "name": "DISCOVER YOUR FIENDISH PLOT-AND FOIL IT", 
+    "description": "Batman can use Outwit and Perplex.", 
+    "powers": [
+      "outwit", 
+      "perplex"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "charge", 
+    "speed_value": 8, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "charge", 
+    "speed_value": 8, 
+    "attack_value": 11, 
+    "defense_power": "special", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "plasticity", 
+    "speed_value": 7, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 16, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "plasticity", 
+    "speed_value": 7, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 16, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "sidestep", 
+    "speed_value": 6, 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 2, 
+    "starting_line": "orange"
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "sidestep", 
+    "speed_value": 6, 
+    "attack_value": 9, 
+    "defense_power": "super_senses", 
+    "defense_value": 16, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 1
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>bctv002</unit_id>
+    <set_id>bctv</set_id>
+    <collector_number>002</collector_number>
+    <name>Bruce Wayne</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[45]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Batman Family", "Celebrity", "Gotham City"]</keywords>
+    <special_powers>[
+  {
+    "type": "speed", 
+    "name": "THE COMMISSIONER CALLED, LET'S GO!", 
+    "description": "When another friendly character is given a move action, after actions resolve, you may give Bruce Wayne a move action as a free action."
+  }, 
+  {
+    "type": "attack", 
+    "name": "ALTER EGO: TO THE BATMAN POLE!", 
+    "description": "Give Bruce Wayne a free action when he has no action tokens and replace him with BCTV #001 Batman on his orange starting line."
+  }, 
+  {
+    "type": "defense", 
+    "name": "SOMETIMES, IT SEEMS LIKE I'M A PROFESSIONAL HOSTAGE FOR RANSOM", 
+    "description": "When an opposing character not on its starting click would deal damage to Bruce Wayne with an attack, you may ignore all of that damage. If you do, the attacker immediately heals that much damage."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "special", 
+    "speed_value": 7, 
+    "attack_value": 9, 
+    "defense_power": "special", 
+    "defense_value": 16, 
+    "damage_power": "outwit", 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "special", 
+    "speed_value": 7, 
+    "attack_value": 9, 
+    "defense_power": "special", 
+    "defense_value": 16, 
+    "damage_power": "outwit", 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "special", 
+    "speed_value": 6, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_power": "special", 
+    "defense_value": 16, 
+    "damage_power": "outwit", 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "plasticity", 
+    "speed_value": 6, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_power": "willpower", 
+    "defense_value": 15, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "plasticity", 
+    "speed_value": 5, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_power": "willpower", 
+    "defense_value": 15, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 1
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>bctv003</unit_id>
+    <set_id>bctv</set_id>
+    <collector_number>003</collector_number>
+    <name>Robin</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[50, 25]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Batman Family", "Celebrity", "Gotham City", "Martial Artist", "Police"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "BIFF! BANG! POW!", 
+    "description": "When Robin makes a close combat attack, all attack rolls of double 3, 4, 5, or 6 are critical hits."
+  }, 
+  {
+    "type": "attack", 
+    "name": "HOLY _________, BATMAN!", 
+    "description": "Give Robin a free action and choose an opposing character within 6 squares and line of fire. Choose a power action, a close combat action, or a ranged combat action. If the chosen character is given that type of action during its next turn, that character immediately modifies its combat values by -1 for that turn if not already modified by this effect and you may remove an action token from Robin."
+  }
+]</special_powers>
+    <improved_movement>["characters"]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "charge", 
+    "speed_value": 8, 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "charge", 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "leap_climb", 
+    "speed_value": 7, 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 15, 
+    "damage_value": 2, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "leap_climb", 
+    "speed_value": 7, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 15, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "flurry", 
+    "speed_value": 6, 
+    "attack_value": 9, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 16, 
+    "damage_value": 2, 
+    "starting_line": "orange"
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "flurry", 
+    "speed_value": 6, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 15, 
+    "damage_power": "support", 
+    "damage_value": 1
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>bctv004</unit_id>
+    <set_id>bctv</set_id>
+    <collector_number>004</collector_number>
+    <name>Dick Grayson</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[25]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Batman Family", "Celebrity", "Gotham City"]</keywords>
+    <special_powers>[
+  {
+    "type": "speed", 
+    "name": "DICK, FOLLOW ME...", 
+    "description": "When a friendly character named Batman or Bruce Wayne is given a move action, after actions resolve, you may give Dick Grayson a move action as a free action."
+  }, 
+  {
+    "type": "attack", 
+    "name": "ALTER EGO: TO THE BATMAN POLE!", 
+    "description": "Give Dick Grayson a free action when he has no action tokens and replace him with BCTV #003 Robin on his orange starting line."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "special", 
+    "speed_value": 7, 
+    "attack_value": 9, 
+    "defense_value": 16, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "special", 
+    "speed_value": 7, 
+    "attack_value": 9, 
+    "defense_value": 16, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "special", 
+    "speed_value": 7, 
+    "attack_value": 9, 
+    "defense_value": 15, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "plasticity", 
+    "speed_value": 6, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_value": 15, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "plasticity", 
+    "speed_value": 6, 
+    "attack_power": "special", 
+    "attack_value": 8, 
+    "defense_value": 14, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 0
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>bctv005</unit_id>
+    <set_id>bctv</set_id>
+    <collector_number>005</collector_number>
+    <name>Catwoman</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[60]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Animal", "Martial Artist", "United Underworld"]</keywords>
+    <special_powers>[
+  {
+    "type": "deathtrap", 
+    "name": "GIANT MAGNIFYING GLASSES", 
+    "description": "Catwoman can use the Elaborate Deathtrap ability and the Bonus is equal to the number of different colored powers showing on her and the target's dials."
+  }, 
+  {
+    "type": "attack", 
+    "name": "TINKERBELL THE TIGER: EEE-YOW!", 
+    "description": "When Catwoman resolves a close combat action, place an EEE-YOW! token on this card. Give Catwoman a power action if no friendly Tinkerbell the Tiger token is on the map and remove an EEE-YOW! token to place a Tinkerbell the Tiger token adjacent to Catwoman. That token is a bystander token as described on the back of this card."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "stealth", 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "stealth", 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "mind_control", 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "mind_control", 
+    "speed_value": 7, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_power": "super_senses", 
+    "defense_value": 15, 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "leap_climb", 
+    "speed_value": 7, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 9, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 15, 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "leap_climb", 
+    "speed_value": 7, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 9, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 15, 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>bctv005bt</unit_id>
+    <set_id>bctv</set_id>
+    <collector_number>005bt</collector_number>
+    <name>Tinkerbell the Tiger</name>
+    <type>bystander</type>
+    <rarity>common</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>standard</bystander_type>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>1</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "charge", 
+    "speed_value": 6, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 14, 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>bctv006</unit_id>
+    <set_id>bctv</set_id>
+    <collector_number>006</collector_number>
+    <name>Shame</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[65]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["United Underworld", "Warrior"]</keywords>
+    <special_powers>[
+  {
+    "type": "deathtrap", 
+    "name": "SOLO SHOWDOWN AT HIGH NOON", 
+    "description": "Shame can use the Elaborate Deathtrap ability and the Bonus is equal to the number of characters on the map."
+  }, 
+  {
+    "type": "speed", 
+    "name": "TANK ESCAPE FROM JAIL", 
+    "description": "Shame can use Running Shot.  When he does, until your next turn he can use Improved Movement: Destroy Blocking, Invulnerability, and modifies his damage by +1.  Then, at the end of the turn, roll a d6.  On a result of 1-3, deal Shame 1 unavoidable damage.", 
+    "powers": [
+      "running_shot", 
+      "invulnerability"
+    ]
+  }, 
+  {
+    "type": "attack", 
+    "name": "PISTOL WHIP: BAM!", 
+    "description": "When Shame resolves a ranged combat action, place a BAM! token on this card.  Give Shame a free action to remove a BAM! token and make a close combat attack."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>6</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>sharpshooter</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "special", 
+    "speed_value": 7, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_value": 17, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "special", 
+    "speed_value": 7, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_value": 16, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "running_shot", 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_value": 16, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "running_shot", 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_power": "willpower", 
+    "defense_value": 16, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "sidestep", 
+    "speed_value": 6, 
+    "attack_power": "precision_strike", 
+    "attack_value": 9, 
+    "defense_power": "willpower", 
+    "defense_value": 15, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "sidestep", 
+    "speed_value": 6, 
+    "attack_power": "precision_strike", 
+    "attack_value": 9, 
+    "defense_power": "willpower", 
+    "defense_value": 15, 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>bctv007</unit_id>
+    <set_id>bctv</set_id>
+    <collector_number>007</collector_number>
+    <name>Egghead</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[55]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Scientist", "United Underworld"]</keywords>
+    <special_powers>[
+  {
+    "type": "deathtrap", 
+    "name": "ELECTRO-THOUGHT VACUUM", 
+    "description": "Egghead can use the Elaborate Deathtrap ability and the Bonus is equal to the total number of distinct keywords possessed by the opposing characters on the map."
+  }, 
+  {
+    "type": "attack", 
+    "name": "EGGCELLENT ATTEMPT, BATMAN: CRRAACK!", 
+    "description": "When Egghead resolves a move action, place a CRRAACK! token on this card. Give Egghead a free action and remove a CRRAACK! token to use Probability Control until your next turn.", 
+    "powers": [
+      "probability_control"
+    ]
+  }, 
+  {
+    "type": "damage", 
+    "name": "THE SMARTEST VILLAIN IN GOTHAM CITY", 
+    "description": "Egghead can use Outwit and Perplex, when he does, he can't target characters that can use Outwit or Perplex.", 
+    "powers": [
+      "outwit", 
+      "perplex"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>3</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "mind_control", 
+    "speed_value": 7, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "mind_control", 
+    "speed_value": 7, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "mind_control", 
+    "speed_value": 7, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 15, 
+    "damage_power": "special", 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 4, 
+    "speed_value": 6, 
+    "attack_power": "special", 
+    "attack_value": 8, 
+    "defense_value": 15, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 5, 
+    "speed_value": 6, 
+    "attack_value": 8, 
+    "defense_value": 15, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 1
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>bctv008</unit_id>
+    <set_id>bctv</set_id>
+    <collector_number>008</collector_number>
+    <name>The Riddler</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[60]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["United Underworld"]</keywords>
+    <special_powers>[
+  {
+    "type": "deathtrap", 
+    "name": "GIANT FANS WILL SPIN YOU TO DEATH", 
+    "description": "The Riddler can use the Elaborate Deathtrap ability and the Bonus is equal to the last digit of the target character's point value. If the last digit is 0, the bonus is equal to 4."
+  }, 
+  {
+    "type": "attack", 
+    "name": "RIDDLE ME THIS", 
+    "description": "Give The Riddler a free action and choose a KO'd character and secretly turn its dial to any click other than #1 and tell your opponent the click number, Your opponent must guess the color of a power showing on that click. Reveal that dial on that click number. If there is a power and your opponent didn't guess correctly, modify The Riddler's combat values by +1 this turn and return that dial to a KO click."
+  }, 
+  {
+    "type": "defense", 
+    "name": "WHAT KIND OF PEOPLE ARE ALWAYS IN A HURRY?", 
+    "description": "The Riddler can use Super Senses and adds 1 to his result for each character that moved this turn, maximum result 6. If the d6 roll is a 1, he does not evade the attack.", 
+    "powers": [
+      "super_senses"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_value": 8, 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 16, 
+    "damage_power": "probability_control", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_value": 7, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_power": "special", 
+    "defense_value": 16, 
+    "damage_power": "perplex", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_value": 7, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_power": "special", 
+    "defense_value": 16, 
+    "damage_power": "perplex", 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 4, 
+    "speed_value": 7, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_power": "special", 
+    "defense_value": 15, 
+    "damage_power": "perplex", 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 5, 
+    "speed_value": 6, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_value": 15, 
+    "damage_power": "perplex", 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 6, 
+    "speed_value": 6, 
+    "attack_power": "special", 
+    "attack_value": 8, 
+    "defense_value": 14, 
+    "damage_value": 1
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>bctv009</unit_id>
+    <set_id>bctv</set_id>
+    <collector_number>009</collector_number>
+    <name>Catwoman</name>
+    <type>character</type>
+    <rarity>rare</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[60]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["United Underworld"]</keywords>
+    <special_powers>[
+  {
+    "type": "deathtrap", 
+    "name": "YARN-CUTTING MACHINE", 
+    "description": "Catwoman can use the Elaborate Deathtrap ability, and when a character on this card uses the Escape Deathtrap ability, roll a d6. The Bonus is equal to 9 minus the result."
+  }, 
+  {
+    "type": "damage", 
+    "name": "HIDING IN THE LADIES' DRESSING ROOM, CLOSE YOUR EYES: RAKKK!", 
+    "description": "When Catwoman resolves a move action, place a RAKKK! token on this card. Give Catwoman a free action and remove a RAKKK! token. Catwoman can use Perplex until your next turn but may only use it to modify an attack value by -2.", 
+    "powers": [
+      "perplex"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "charge", 
+    "speed_value": 9, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 17, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "charge", 
+    "speed_value": 8, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "plasticity", 
+    "speed_value": 8, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "plasticity", 
+    "speed_value": 7, 
+    "attack_power": "precision_strike", 
+    "attack_value": 9, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 15, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "leap_climb", 
+    "speed_value": 7, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 9, 
+    "defense_power": "super_senses", 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "leap_climb", 
+    "speed_value": 7, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 9, 
+    "defense_power": "super_senses", 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>bctv010</unit_id>
+    <set_id>bctv</set_id>
+    <collector_number>010</collector_number>
+    <name>Mr. Freeze</name>
+    <type>character</type>
+    <rarity>rare</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[50]</point_values>
+    <properties>["unique"]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["United Underworld"]</keywords>
+    <special_powers>[
+  {
+    "type": "deathtrap", 
+    "name": "HUMAN FROSTY FREEZIES", 
+    "description": "Mr. Freeze can use the Elaborate Deathtrap ability and the Bonus is equal to the total number of action tokens on all opposing characters."
+  }, 
+  {
+    "type": "attack", 
+    "name": "NO ORDINARY GUNS, PLEASE", 
+    "description": "Mr. Freeze and other friendly characters within 4 squares can use Incapacitate and have a minimum range value of 4. All characters within 4 squares can't make ranged attacks unless they use Incapacitate. This power can't be countered or ignored.", 
+    "powers": [
+      "incapacitate"
+    ]
+  }, 
+  {
+    "type": "damage", 
+    "name": "FREEZING CHILL: FWOOSH!", 
+    "description": "When Mr. Freeze uses Incapacitate and hits, after actions resolve place a FWOOSH! token on this card. When he uses Incapacitate and hits, hit characters are dealt damage equal to the number of FWOOSH! tokens on this card."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>4</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_value": 7, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "barrier", 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 0
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "sidestep", 
+    "speed_value": 6, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "barrier", 
+    "defense_value": 15, 
+    "damage_power": "special", 
+    "damage_value": 0
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "sidestep", 
+    "speed_value": 6, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_power": "barrier", 
+    "defense_value": 15, 
+    "damage_power": "special", 
+    "damage_value": 0
+  }, 
+  {
+    "click_number": 4, 
+    "speed_value": 6, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_power": "barrier", 
+    "defense_value": 15, 
+    "damage_power": "special", 
+    "damage_value": 0
+  }, 
+  {
+    "click_number": 5, 
+    "speed_value": 5, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_value": 14, 
+    "damage_power": "special", 
+    "damage_value": 0
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>bctv011</unit_id>
+    <set_id>bctv</set_id>
+    <collector_number>011</collector_number>
+    <name>The Mad Hatter</name>
+    <type>character</type>
+    <rarity>rare</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[45]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["United Underworld"]</keywords>
+    <special_powers>[
+  {
+    "type": "deathtrap", 
+    "name": "SUPER FAST HARDENING PLASTER", 
+    "description": "The Mad Hatter can use the Elaborate Deathtrap ability and the Bonus is equal to the highest click number showing among opposing characters."
+  }, 
+  {
+    "type": "speed", 
+    "name": "INSTANT MESMERIZING DEVICE: ZZZZT!", 
+    "description": "When The Mad Hatter resolves a move action, place a ZZZZT! token on this card. Give Mad Hatter a free action and remove a ZZZZT! token to use Mind Control normally this turn. You may choose to remove 2 tokens to use it as a free action instead.", 
+    "powers": [
+      "mind_control"
+    ]
+  }, 
+  {
+    "type": "attack", 
+    "name": "MY HATS MAKE ME SUPERIOR", 
+    "description": "When compared from a common surface; if the highest point of The Mad Hatter's sculpt is above the highest point of the sculpt of any character he targets with an attack, modify Mad Hatter's attack value by +3."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>4</unit_range>
+    <targets>2</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "special", 
+    "speed_value": 7, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_value": 16, 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "special", 
+    "speed_value": 7, 
+    "attack_power": "special", 
+    "attack_value": 8, 
+    "defense_power": "willpower", 
+    "defense_value": 16, 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "special", 
+    "speed_value": 6, 
+    "attack_power": "special", 
+    "attack_value": 8, 
+    "defense_power": "willpower", 
+    "defense_value": 15, 
+    "damage_power": "perplex", 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 4, 
+    "speed_value": 6, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 8, 
+    "defense_power": "willpower", 
+    "defense_value": 15, 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 5, 
+    "speed_value": 6, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 8, 
+    "defense_power": "willpower", 
+    "defense_value": 15, 
+    "damage_value": 1
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>bctv012</unit_id>
+    <set_id>bctv</set_id>
+    <collector_number>012</collector_number>
+    <name>The Penguin</name>
+    <type>character</type>
+    <rarity>rare</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[75]</point_values>
+    <properties>["unique"]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Politician", "United Underworld"]</keywords>
+    <special_powers>[
+  {
+    "type": "deathtrap", 
+    "name": "ICE BLOCK OVER ACID PIT", 
+    "description": "The Penguin can use the Elaborate Deathtrap ability and the Bonus is equal to double the printed damage value of the character using the Escape Deathtrap ability."
+  }, 
+  {
+    "type": "attack", 
+    "name": "MULTIPLE UMBRELLA ATTACK: ZZZZZWAP!", 
+    "description": "When The Penguin resolves a ranged combat action, place a ZZZZZWAP! token on this card. Give The Penguin a free action and remove a ZZZZZWAP! token to choose a standard attack power. The Penguin can use that power this turn.", 
+    "powers": [
+      "blades_claws_fangs", 
+      "energy_explosion", 
+      "pulse_wave", 
+      "quake", 
+      "super_strength", 
+      "incapacitate", 
+      "penetrating_psychic_blast", 
+      "smoke_cloud", 
+      "precision_strike", 
+      "poison", 
+      "steal_energy", 
+      "telekinesis"
+    ]
+  }, 
+  {
+    "type": "damage", 
+    "name": "INSTAND HENCHMEN - JUST ADD WATER!", 
+    "description": "Give The Penguin a power action and place a Dehydrated Henchmen token in an adjacent square. That token becomes a bystander token as described on the back of this card. If The Penguin occupies water terrain, place two Dehydrated Henchmen tokens instead."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>5</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "running_shot", 
+    "speed_value": 7, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "mastermind", 
+    "defense_value": 17, 
+    "damage_power": "outwit", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "running_shot", 
+    "speed_value": 7, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_power": "mastermind", 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "running_shot", 
+    "speed_value": 6, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "mastermind", 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "sidestep", 
+    "speed_value": 6, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "sidestep", 
+    "speed_value": 5, 
+    "attack_value": 9, 
+    "defense_value": 15, 
+    "damage_power": "special", 
+    "damage_value": 1
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>bctv012bt</unit_id>
+    <set_id>bctv</set_id>
+    <collector_number>012bt</collector_number>
+    <name>Dehydrated Henchmen</name>
+    <type>bystander</type>
+    <rarity>rare</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>standard</bystander_type>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>1</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_value": 6, 
+    "attack_value": 9, 
+    "defense_value": 15, 
+    "damage_value": 1
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>bctv013</unit_id>
+    <set_id>bctv</set_id>
+    <collector_number>013</collector_number>
+    <name>The Bookworm</name>
+    <type>character</type>
+    <rarity>rare</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[45]</point_values>
+    <properties>["unique"]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["United Underworld"]</keywords>
+    <special_powers>[
+  {
+    "type": "deathtrap", 
+    "name": "THE BELL TOLLS FOR THEE", 
+    "description": "The Bookworm can use the Elaborate Deathtrap ability and the Bonus is equal to the number of the current hour in the 12-hour system."
+  }, 
+  {
+    "type": "trait", 
+    "name": "I'M NEVER FAR FROM MY BOOKCASE OF SECRETS", 
+    "description": "The Bookcase begins the game attached to The Bookworm at no cost. Give The Bookworm a power action and place the The Bookcase anywhere on the map. Give The Bookworm a power action, place him in The Bookcase's square, and then attach The Bookcase to his base."
+  }, 
+  {
+    "type": "damage", 
+    "name": "YOU KNOW EVERY PLOT, BUT CAN'T WRITE YOUR OWN", 
+    "description": "The Bookworm can use Outwit, but only to counter a power or combat ability that another character on your force can also use.", 
+    "powers": [
+      "outwit"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_value": 7, 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 2, 
+    "speed_value": 7, 
+    "attack_value": 9, 
+    "defense_power": "super_senses", 
+    "defense_value": 15, 
+    "damage_power": "special", 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 3, 
+    "speed_value": 6, 
+    "attack_value": 9, 
+    "defense_power": "super_senses", 
+    "defense_value": 15, 
+    "damage_power": "special", 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 4, 
+    "speed_value": 6, 
+    "attack_value": 9, 
+    "defense_power": "super_senses", 
+    "defense_value": 15, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 5, 
+    "speed_value": 6, 
+    "attack_value": 8, 
+    "defense_power": "super_senses", 
+    "defense_value": 15, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 1
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>bctv014</unit_id>
+    <set_id>bctv</set_id>
+    <collector_number>014</collector_number>
+    <name>King Tut</name>
+    <type>character</type>
+    <rarity>rare</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[65]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Ruler", "Scientist", "United Underworld"]</keywords>
+    <special_powers>[
+  {
+    "type": "deathtrap", 
+    "name": "THEBAN PEBBLE TORTURE", 
+    "description": "King Tut can use the Elaborate Death Trap ability and when a character on this card uses the Escape Deathtrap ability, roll 4d6. The Bonus is equal to half the result."
+  }, 
+  {
+    "type": "attack", 
+    "name": "GOTHAM CITY IS THE NEW THEBES", 
+    "description": "At the beginning of your first turn, place a Sphinx marker in a square of clear terrain; it is hindering terrain and remains on the map even if this power is lost. While King Tut is within 6 squares of that marker, modify his combat values by +1."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_value": 7, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "probability_control", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "sidestep", 
+    "speed_value": 6, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "probability_control", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "sidestep", 
+    "speed_value": 6, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "probability_control", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "sidestep", 
+    "speed_value": 5, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 15, 
+    "damage_power": "probability_control", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_value": 5, 
+    "attack_value": 8, 
+    "defense_power": "mastermind", 
+    "defense_value": 16, 
+    "damage_power": "perplex", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_value": 5, 
+    "attack_value": 8, 
+    "defense_power": "mastermind", 
+    "defense_value": 15, 
+    "damage_power": "perplex", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>bctv015</unit_id>
+    <set_id>bctv</set_id>
+    <collector_number>015</collector_number>
+    <name>The Joker</name>
+    <type>character</type>
+    <rarity>rare</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[75]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["United Underworld"]</keywords>
+    <special_powers>[
+  {
+    "type": "deathtrap", 
+    "name": "ZODIAC METEROITE", 
+    "description": "The Joker can use the Elaborate Deathtrap ability and the Bonus is equal to the number of the current month or the defense value of the character using the Escape Deathtrap ability minus 12, whichever is higher."
+  }, 
+  {
+    "type": "speed", 
+    "name": "JOY BUZZER: ZAP!!!", 
+    "description": "When The Joker resolves a move action, place a ZAP!!! token on this card.  Before The Joker makes a close combat attack, you may remove one ZAP!!! token to modify his damage value by +1 and have the attack deal penetrating damage."
+  }, 
+  {
+    "type": "attack", 
+    "name": "PLUNDER BY REMOTE CONTROL", 
+    "description": "Give The Joker a free action and choose an unheld object within 8 squares.  For this turn, that object becomes a friendly bystander token as described on the back of this card.  When KO'd or at the end of your turn, it becomes an object again and is placed in the square it last ocupied."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "special", 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_power": "perplex", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "special", 
+    "speed_value": 7, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_power": "willpower", 
+    "defense_value": 17, 
+    "damage_power": "perplex", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "special", 
+    "speed_value": 7, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_power": "probability_control", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "special", 
+    "speed_value": 7, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "willpower", 
+    "defense_value": 17, 
+    "damage_power": "probability_control", 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "sidestep", 
+    "speed_value": 7, 
+    "attack_power": "poison", 
+    "attack_value": 9, 
+    "defense_value": 16, 
+    "damage_power": "outwit", 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "sidestep", 
+    "speed_value": 6, 
+    "attack_power": "poison", 
+    "attack_value": 8, 
+    "defense_value": 15, 
+    "damage_power": "outwit", 
+    "damage_value": 1
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>bctv015bt</unit_id>
+    <set_id>bctv</set_id>
+    <collector_number>015bt</collector_number>
+    <name>Remote Controlled Object</name>
+    <type>bystander</type>
+    <rarity>rare</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>standard</bystander_type>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>1</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_value": 0, 
+    "attack_power": "incapacitate", 
+    "attack_value": 8, 
+    "defense_value": 15, 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>bctv016</unit_id>
+    <set_id>bctv</set_id>
+    <collector_number>016</collector_number>
+    <name>The Dynamic Duo</name>
+    <type>character</type>
+    <rarity>rare</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[150, 100]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Batman Family", "Detective", "Gotham City", "Martial Artist", "Pilot", "Police"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "BATMAN VEHICLES-BATCYCLE, BATCOPTER, BATBOAT", 
+    "description": "At the beginning of your turn, if the Dynamic Duo Occupies your starting area, you may choose \"transporter boot symbol\" or \"transporter dolphin symbol\" or \"transporter wing symbol\". If you do, The Dynamic Duo possesses that combat symbol until they take damage. Each may be chosen only once per game."
+  }, 
+  {
+    "type": "trait", 
+    "name": "BIFF! BANG! POW!", 
+    "description": "When The Dynamic Duo makes a close combat attack, all attack rolls of double 3, 4, 5, or 6 are critical hits."
+  }, 
+  {
+    "type": "attack", 
+    "name": "CHAOTIC FISTFIGHT", 
+    "description": "The Dynamic Duo can use Energy Shield/Deflection. When the Dynamic Duo misses with a close combat attack, after actions resolve, roll a d6 for each other adjacent opposing character in any order you choose. On the first result of 5-6, The Dynamic Duo can use the Duo Attack ability as a free action, but may only target that character.", 
+    "powers": [
+      "energy_shield_deflection"
+    ]
+  }, 
+  {
+    "type": "defense", 
+    "name": "THE BIGGER THEY ARE, ROBIN...", 
+    "description": "The Dynamic Duo can use Super Senses. When the Dynamic Duo is targeted by an attack, increase The Dynamic Duo's defense value by the attacker's printed damage value. This power can't be countered or ignored.", 
+    "powers": [
+      "super_senses"
+    ]
+  }
+]</special_powers>
+    <improved_movement>["elevated"]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>duo</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "charge", 
+    "speed_value": 10, 
+    "attack_value": 11, 
+    "defense_power": "special", 
+    "defense_value": 15, 
+    "damage_power": "outwit", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "charge", 
+    "speed_value": 10, 
+    "attack_power": "quake", 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 16, 
+    "damage_power": "outwit", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "charge", 
+    "speed_value": 10, 
+    "attack_power": "quake", 
+    "attack_value": 11, 
+    "defense_power": "special", 
+    "defense_value": 15, 
+    "damage_power": "outwit", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "charge", 
+    "speed_value": 10, 
+    "attack_power": "quake", 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 15, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 3, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 5, 
+    "speed_value": 10, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "perplex", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 6, 
+    "speed_value": 9, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "perplex", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 7, 
+    "speed_value": 9, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 15, 
+    "damage_power": "perplex", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 8, 
+    "speed_value": 9, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 15, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>bctvS001</unit_id>
+    <set_id>bctv</set_id>
+    <collector_number>S001</collector_number>
+    <name>The Bookcase</name>
+    <type>object</type>
+    <rarity>chase</rarity>
+    <point_values>[6]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[
+  {
+    "description": "This object can't be destroyed. Characters adjacent to this object can use Empower and Enhancement.", 
+    "powers": [
+      "empower", 
+      "enhancement"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_type>special</object_type>
+    <object_size>immobile</object_size>
+    <object_keyphrases>[]</object_keyphrases>
+    <dial>[]</dial>
+  </row>
+  <row>
+    <unit_id>bctvV001a</unit_id>
+    <set_id>bctv</set_id>
+    <collector_number>V001a</collector_number>
+    <name>Batmobile (Autopilot)</name>
+    <type>character</type>
+    <rarity>chase</rarity>
+    <dimensions>2x4</dimensions>
+    <point_values>[75]</point_values>
+    <properties>["unique"]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Batman Family", "Gotham City", "Vehicle"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "VOICE CONTROLLED BATMOBILE RELAY UNIT", 
+    "description": "When a friendly character named Batman is on the map and has no action tokens, Batmobile is not dealt unavoidable damage from being given an action that included an attack."
+  }, 
+  {
+    "type": "trait", 
+    "name": "AUTOPILOT", 
+    "description": "This vehicle may be given actions without a pilot. When it doesn't have a pilot and an action resolves during which it made an attack, deal it 1 unavoidable damage."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <passengers>2</passengers>
+    <unit_range>4</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>vehicle</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>20</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_value": 10, 
+    "attack_power": "smoke_cloud", 
+    "attack_value": 9, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_value": 10, 
+    "attack_power": "smoke_cloud", 
+    "attack_value": 9, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_value": 10, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 9, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_value": 9, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
+    "speed_value": 9, 
+    "attack_power": "smoke_cloud", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 6, 
+    "speed_value": 9, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 7, 
+    "speed_value": 9, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 8, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 8, 
+    "speed_power": "flurry", 
+    "speed_value": 8, 
+    "attack_value": 8, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 15, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 9, 
+    "speed_power": "flurry", 
+    "speed_value": 8, 
+    "attack_value": 8, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 15, 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 10, 
+    "speed_power": "flurry", 
+    "speed_value": 8, 
+    "attack_value": 8, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 15, 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 11, 
+    "speed_power": "flurry", 
+    "speed_value": 8, 
+    "attack_value": 8, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 15, 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 12, 
+    "speed_value": 10, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "outwit", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>bctvV001b</unit_id>
+    <set_id>bctv</set_id>
+    <collector_number>V001b</collector_number>
+    <name>Batmobile (Piloted)</name>
+    <type>character</type>
+    <rarity>chase</rarity>
+    <dimensions>2x4</dimensions>
+    <point_values>[145]</point_values>
+    <properties>["unique"]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Batman Family", "Gotham City", "Vehicle"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "PILOT ABILITY: MOBILE TRACKING SCOPE", 
+    "description": "Prerequisites: Batman Family keyword. When Batmobile replaces its combat values with the combat values of its pilot, modify any one replaced combat value by +1."
+  }, 
+  {
+    "type": "trait", 
+    "name": "PILOT ABILITY: BATCOMPUTER", 
+    "description": "Prerequisites: Batman or Robin. At the beginning of your turn, roll a d6. On a result of 3 - 6, Batmobile can use Outwit until your next turn.", 
+    "powers": [
+      "outwit"
+    ]
+  }, 
+  {
+    "type": "speed", 
+    "name": "CALLING POLICE CHIEF O'HARA", 
+    "description": "Give Batmobile a power action and give any other friendly characters with the Police keyword a move action as a free action with their speed value halved."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <passengers>1</passengers>
+    <unit_range>6</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>vehicle</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>20</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "running_shot", 
+    "speed_value": 10, 
+    "attack_power": "smoke_cloud", 
+    "attack_value": 9, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "running_shot", 
+    "speed_value": 10, 
+    "attack_power": "smoke_cloud", 
+    "attack_value": 9, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "running_shot", 
+    "speed_value": 10, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 10, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 17, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "running_shot", 
+    "speed_value": 10, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 10, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 16, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "running_shot", 
+    "speed_value": 9, 
+    "attack_power": "smoke_cloud", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "running_shot", 
+    "speed_value": 8, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "running_shot", 
+    "speed_value": 8, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 8, 
+    "speed_power": "flurry", 
+    "speed_value": 8, 
+    "attack_power": "smoke_cloud", 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 9, 
+    "speed_power": "flurry", 
+    "speed_value": 8, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 9, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 15, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 10, 
+    "speed_power": "flurry", 
+    "speed_value": 8, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 8, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 15, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 11, 
+    "speed_power": "flurry", 
+    "speed_value": 9, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 8, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 15, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 12, 
+    "speed_power": "flurry", 
+    "speed_value": 9, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 8, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 14, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 13, 
+    "speed_power": "special", 
+    "speed_value": 8, 
+    "attack_power": "smoke_cloud", 
+    "attack_value": 7, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 14, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 14, 
+    "speed_power": "special", 
+    "speed_value": 8, 
+    "attack_power": "smoke_cloud", 
+    "attack_value": 7, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 14, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 15, 
+    "speed_power": "special", 
+    "speed_value": 8, 
+    "attack_power": "smoke_cloud", 
+    "attack_value": 7, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 14, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 16, 
+    "speed_power": "special", 
+    "speed_value": 8, 
+    "attack_power": "smoke_cloud", 
+    "attack_value": 7, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 14, 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+</resultset>

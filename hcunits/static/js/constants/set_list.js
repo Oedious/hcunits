@@ -644,6 +644,11 @@ const SET_LIST = {
     "release_date": "2013-10-02",
     "universe": "marvel"
   },
+  "bctv": {
+    "name": "Batman Classic TV",
+    "release_date": "2013-09-18",
+    "universe": "dc"
+  },
   "wk": {
     "name": "WizKids Standard Game Pieces",
     "release_date": "2002-05-01",
