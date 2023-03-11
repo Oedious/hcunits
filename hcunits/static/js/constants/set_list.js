@@ -704,6 +704,32 @@ const SET_LIST = {
     "release_date": "2013-05-15",
     "universe": "marvel"
   },
+  "tae": {
+    "name": "TabApp Elite",
+    "release_date": "2013-04-28",
+    // This should probably be split apart by marvel/dc.
+    "universe": "marvel"
+  },
+  "im3": {
+    "name": "Iron Man 3",
+    "release_date": "2013-04-24",
+    "universe": "marvel"
+  },
+  "stmg": {
+    "name": "Star Trek: Mini Game",
+    "release_date": "2013-04-01",
+    "universe": "star_trek"
+  },
+  "gc": {
+    "name": "Batman: Gotham City Strategy Game",
+    "release_date": "2013-03-20",
+    "universe": "dc"
+  },
+  "asm": {
+    "name": "Amazing Spider-Man",
+    "release_date": "2013-02-16",
+    "universe": "marvel"
+  },
   "wk": {
     "name": "WizKids Standard Game Pieces",
     "release_date": "2002-05-01",

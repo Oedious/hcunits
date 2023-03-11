@@ -1,0 +1,83 @@
+{
+  "updates": {
+    "im3001": {
+      "special_powers": [{
+      }, {
+      }, {
+        "powers": ["perplex", "outwit"]
+      }]
+    },
+    "im3010": {
+      "special_powers": [{
+        "powers": ["combat_reflexes"]
+      }]
+    },
+    "im3012a": {
+      "special_powers": [{
+        "powers": ["energy_shield_deflection"]
+      }]
+    },
+    "im3016": {
+      "special_powers": [{
+        "powers": ["energy_explosion", "penetrating_psychic_blast", "ranged_combat_expert"]
+      }]
+    },
+    "im3017": {
+      "special_powers": [{
+        "powers": ["energy_shield_deflection", "defend"]
+      }]
+    },
+    "im3018": {
+      "special_powers": [{
+      }, {
+        "powers": ["energy_shield_deflection"]
+      }]
+    },
+    "im3101": {
+      "special_powers": [{
+      }, {
+      }, {
+        "powers": ["super_senses"]
+      }]
+    },
+    "im3103": {
+      "special_powers": [{
+      }, {
+        "powers": ["incapacitate"]
+      }, {
+        "powers": ["leadership", "perplex", "enhancement"]
+      }]
+    },
+    "im3104": {
+      "special_powers": [{
+        "powers": ["leadership", "mind_control"]
+      }, {
+        "powers": ["combat_reflexes", "mastermind"]
+      }]
+    },
+    "im3105": {
+      "special_powers": [{
+      }, {
+        "powers": ["smoke_cloud"]
+      }]
+    }
+  },
+  "deletions": [
+    "im3012"
+  ],
+  "additions": [{
+    "unit_id": "im3M001",
+    "set_id": "im3",
+    "collector_number": "M001",
+    "name": "Port of Miami",
+    "type": "map",
+    "map_url": "https://hcmaps.net/maps/im3/port_of_miami.json"
+  }, {
+    "unit_id": "im3M002",
+    "set_id": "im3",
+    "collector_number": "M002",
+    "name": "The Madarin's Mansion",
+    "type": "map",
+    "map_url": "https://hcmaps.net/maps/im3/the_mandarins_mansion.json"
+  }]
+}

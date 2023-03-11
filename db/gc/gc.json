@@ -1,0 +1,596 @@
+[
+  {
+    "unit_id": "gc001", 
+    "set_id": "gc", 
+    "collector_number": "001", 
+    "name": "Batman", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      115
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "batman_ally"
+    ], 
+    "keywords": [
+      "Batman Family", 
+      "Detective", 
+      "Gotham City", 
+      "Martial Artist"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "UTILITY BELT", 
+        "description": "At the beginning of the game, choose a standard attack or damage power that Batman does not possess somewhere on his dial; Batman can use that power this game.", 
+        "powers": [
+          "blades_claws_fangs", 
+          "energy_explosion", 
+          "pulse_wave", 
+          "quake", 
+          "super_strength", 
+          "incapacitate", 
+          "penetrating_psychic_blast", 
+          "smoke_cloud", 
+          "precision_strike", 
+          "poison", 
+          "steal_energy", 
+          "telekinesis", 
+          "ranged_combat_expert", 
+          "battle_fury", 
+          "support", 
+          "exploit_weakness", 
+          "enhancement", 
+          "shape_change", 
+          "close_combat_expert", 
+          "empower", 
+          "leadership"
+        ]
+      }, 
+      {
+        "type": "attack", 
+        "name": "ALWAYS PREPARED", 
+        "description": "Batman can use Incapacitate. If he has no action tokens, he can use it as a free action.", 
+        "powers": [
+          "incapacitate"
+        ]
+      }
+    ], 
+    "improved_movement": [
+      "hindering"
+    ], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "6", 
+    "targets": "2", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "running_shot", 
+        "speed_value": 9, 
+        "attack_power": "special", 
+        "attack_value": 11, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "flurry", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "leap_climb", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 11, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "probability_control", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "flurry", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "leap_climb", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "leap_climb", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "gc002", 
+    "set_id": "gc", 
+    "collector_number": "002", 
+    "name": "The Joker", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      99
+    ], 
+    "properties": [
+      "unique"
+    ], 
+    "team_abilities": [
+      "batman_enemy"
+    ], 
+    "keywords": [
+      "Arkham Asylum", 
+      "Legion of Doom"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "CRAZIEST IN THE ROOM", 
+        "description": "Opposing characters within 4 squares can't use Perplex."
+      }, 
+      {
+        "type": "attack", 
+        "name": "JOKER GAS", 
+        "description": "At the beginning of your turn, place a Joker Gas token on each adjacent opposing character's character card, then each opposing character adjacent to The Joker at the beginning of your turn is dealt damage equal to the number of Joker Gas tokens now on its character card."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "stealth", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "stealth", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_value": 6, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "mastermind", 
+        "defense_value": 16, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 6, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "mastermind", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 5, 
+        "attack_power": "steal_energy", 
+        "attack_value": 9, 
+        "defense_value": 15, 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 6, 
+        "speed_value": 4, 
+        "attack_power": "steal_energy", 
+        "attack_value": 8, 
+        "defense_value": 15, 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "gc003", 
+    "set_id": "gc", 
+    "collector_number": "003", 
+    "name": "Two-Face", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      49
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "batman_enemy"
+    ], 
+    "keywords": [
+      "Arkham Asylum", 
+      "Gotham City Underworld"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "HARVEY OR TWO-FACE?", 
+        "description": "Opposing characters within 4 squares can't use Stealth."
+      }, 
+      {
+        "type": "attack", 
+        "name": "HEADS I WIN, TAILS YOU LOSE", 
+        "description": "At the beginning of your turn roll a d6.  On a result of 1-3, Two-Face modifies his defense value by +2 until he makes an attack or until your next turn.  On a result of 4-6, Two-Face modifies his attack by +2 until your next turn."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "5", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "running_shot", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_value": 6, 
+        "attack_power": "special", 
+        "attack_value": 11, 
+        "defense_value": 16, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 3, 
+        "speed_value": 6, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_value": 16, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "running_shot", 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "running_shot", 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "gc004", 
+    "set_id": "gc", 
+    "collector_number": "004", 
+    "name": "Killer Croc", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      82
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "batman_enemy"
+    ], 
+    "keywords": [
+      "Animal", 
+      "Arkham Asylum", 
+      "Brute"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "A FORCE TO BE RECKONED WITH", 
+        "description": "Opposing characters within 4 squares can't use Willpower."
+      }, 
+      {
+        "type": "speed", 
+        "name": "CLAW, CLAW, BITE", 
+        "description": "Killer Croc can use Flurry. When he does and one character takes damage from both close combat attacks, after actions resolve, he may be given a free action to make a close combat attack using Blades/Claws/Fangs against the same target.", 
+        "powers": [
+          "flurry", 
+          "blades_claws_fangs"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "dolphin", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 7, 
+        "attack_power": "super_strength", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "special", 
+        "speed_value": 7, 
+        "attack_power": "super_strength", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "special", 
+        "speed_value": 6, 
+        "attack_value": 11, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "special", 
+        "speed_value": 6, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "flurry", 
+        "speed_value": 6, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_value": 17, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "flurry", 
+        "speed_value": 6, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "flurry", 
+        "speed_value": 6, 
+        "attack_value": 11, 
+        "defense_power": "willpower", 
+        "defense_value": 15, 
+        "damage_value": 3
+      }
+    ]
+  }, 
+  {
+    "unit_id": "gc005", 
+    "set_id": "gc", 
+    "collector_number": "005", 
+    "name": "The Penguin", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      70
+    ], 
+    "properties": [
+      "unique"
+    ], 
+    "team_abilities": [
+      "batman_enemy"
+    ], 
+    "keywords": [
+      "Arkham Asylum", 
+      "Gotham City Underworld"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "PENGUIN AUTOMA-BOMBS", 
+        "description": "Give The Penguin a power action when there are no friendly Penguin Automa-bombs on the map, and place one on the map in a square adjacent to The Penguin.  The Penguin Automa-bomb is a bystander token as described on this card."
+      }, 
+      {
+        "type": "trait", 
+        "name": "CRIMINAL MASTERMIND", 
+        "description": "Opposing characters within 4 squares can't use Outwit."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "5", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_value": 6, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 9, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 16, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_value": 6, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 16, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_value": 5, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 15, 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "force_blast", 
+        "speed_value": 5, 
+        "attack_power": "quake", 
+        "attack_value": 8, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 14, 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "force_blast", 
+        "speed_value": 4, 
+        "attack_power": "quake", 
+        "attack_value": 7, 
+        "defense_value": 13, 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "gc005bt", 
+    "set_id": "gc", 
+    "collector_number": "005bt", 
+    "name": "Penguin Automa-Bomb", 
+    "type": "bystander", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "SET TO BLOW", 
+        "description": "Penguin Automa-bomb's combat values can't be modified."
+      }, 
+      {
+        "type": "attack", 
+        "name": "BOOM!!!!", 
+        "description": "Penguin Automa-Bomb can use Pulse Wave.  When it does, its damage value becomes 2 and is locked no matter how many targets are within range.  After actions resolve, deal Penguin Automa-Bomb 1 unavoidable damage.", 
+        "powers": [
+          "pulse_wave"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "bystander_type": "standard", 
+    "unit_range": "5", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "1", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_value": 4, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 15, 
+        "damage_value": 0
+      }
+    ]
+  }
+]

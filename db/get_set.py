@@ -508,6 +508,21 @@ SET_MAP = {
       ("fiS101", "fiS301"),
     ],
   },
+  "tae": {
+    "name": "TabApp Elite",
+  },
+  "im3": {
+    "name": "Iron Man 3",
+  },
+  "stmg": {
+    "name": "Star Trek: Mini-Game",
+  },
+  "gc": {
+    "name": "Batman: Gotham City Strategy Game",
+  },
+  "asm": {
+    "name": "Amazing Spider-Man",
+  },
 }
 
 POWERS = {
@@ -1539,6 +1554,9 @@ class Unit:
               # Correct the spelling of 'targeting'.
               if imp_name == 'targetting':
                 imp_name = 'targeting'
+              # Correct the spelling of 'movement'.
+              elif imp_name == 'movemet':
+                imp_name = 'movement'
               elif imp_name == 'movement; improved targeting':
                 print("Warning: unit '%s' has invalid improved ability type '%s'" % (self.unit_id, imp_name))
                 continue
