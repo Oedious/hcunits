@@ -614,6 +614,16 @@ const SET_LIST = {
     "release_date": "2013-11-13",
     "universe": "dc"
   },
+  "dota2": {
+    "name": "DOTA 2",
+    "release_date": "2013-11-13",
+    "universe": "indy"
+  },
+  "hbtdos": {
+    "name": "The Hobbit: The Desolation of Smaug",
+    "release_date": "2013-11-13",
+    "universe": "indy"
+  },
   "wk": {
     "name": "WizKids Standard Game Pieces",
     "release_date": "2002-05-01",
