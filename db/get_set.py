@@ -499,6 +499,15 @@ SET_MAP = {
   "fftt": {
     "name": "Fast Forces: Teen Titans",
   },
+  "fi": {
+    "name": "Fear Itself",
+    "ranges": [
+      # TODO: Add support for The Serpent and resources
+      ("fi001", "fi106"),
+      ("fi200", "fiH014"),
+      ("fiS101", "fiS301"),
+    ],
+  },
 }
 
 POWERS = {
@@ -929,6 +938,8 @@ class Unit:
           rarity == "Rarity: WOL Gravity Feed" or
           rarity == "Rarity: Lantern Pack Case Assortment" or
           rarity == "Rarity: 2014 Convention Exclusive" or
+          rarity == "Rarity: Blitzkrieg U.S.A. Scenario Pack" or
+          rarity == "Rarity: The Mighty Scenario Pack" or
           rarity == "Rarity: Mass Market Exclusive Chase"):
       self.rarity = "chase"
     elif rarity == "Rarity: Ultra Chase":

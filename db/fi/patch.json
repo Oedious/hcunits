@@ -1,0 +1,321 @@
+{
+  "updates": {
+    "fi006": {
+      "special_powers": [{
+        "powers": ["super_strength"]
+      }]
+    },
+    "fi014": {
+      "special_powers": [{
+        "powers": ["steal_energy"]
+      }, {
+      }, {
+        "powers": ["outwit"]
+      }],
+      "dial": [{
+      }, {
+      }, {
+        "starting_line": true
+      }]
+    },
+    "fi015": {
+      "special_powers": [{
+        "powers": ["super_senses"]
+      }]
+    },
+    "fi017": {
+      "special_powers": [{
+        "powers": ["super_strength"]
+      }]
+    },
+    "fi020": {
+      "special_powers": [{
+      }, {
+        "powers": ["blades_claws_fangs"]
+      }]
+    },
+    "fi021": {
+      "name": "Doctor Strange",
+      "special_powers": [{
+        "powers": ["penetrating_psychic_blast"]
+      }, {
+        "powers": ["energy_shield_deflection", "super_senses"]
+      }]
+    },
+    "fi025": {
+      "special_powers": [{
+      }, {
+        "powers": ["pulse_wave"]
+      }]
+    },
+    "fi028": {
+      "special_powers": [{
+        "powers": ["steal_energy"]
+      }],
+      "dial": [{
+      }, {
+      }, {
+      }, {
+        "starting_line": true
+      }]
+    },
+    "fi030": {
+      "special_powers": [{
+        "powers": ["flurry"]
+      }]
+    },
+    "fi031": {
+      "special_powers": [{
+        "description": "Wolverine can use Blades/Claws/Fangs and Poison. When he uses Poison, roll a d6 after the action resolves. On a result of 4 - 6, deal 1 penetrating damage to each adjacent opposing character.",
+        "powers": ["blades_claws_fangs", "poison"]
+      }]
+    },
+    "fi104": {
+      "special_powers": [{
+      }, {
+        "powers": ["blades_claws_fangs", "energy_explosion", "pulse_wave", "quake", "super_strength", "incapacitate", "penetrating_psychic_blast", "smoke_cloud", "precision_strike", "poison", "steal_energy", "telekinesis"]
+      }]
+    },
+    "fi300": {
+      "special_powers": [{
+      }, {
+        "powers": ["impervious"]
+      }]
+    },
+    "fiH003": {
+      "special_powers": [{
+        "powers": ["pulse_wave"]
+      }]
+    },
+    "fiH004": {
+      "special_powers": [{
+        "powers": ["close_combat_expert"]
+      }]
+    },
+    "fiH005": {
+      "special_powers": [{
+        "powers": ["enhancement"]
+      }]
+    },
+    "fiH006": {
+      "special_powers": [{
+        "powers": ["ranged_combat_expert"]
+      }]
+    },
+    "fiH008": {
+      "special_powers": [{
+        "powers": ["poison"]
+      }]
+    },
+    "fiH010": {
+      "special_powers": [{
+        "powers": ["outwit", "perplex"]
+      }]
+    },
+    "fiH011": {
+      "special_powers": [{
+        "powers": ["charge", "flurry"]
+      }]
+    },
+    "fiH013": {
+      "special_powers": [{
+        "powers": ["outwit"]
+      }]
+    },
+    "fiH014": {
+      "special_powers": [{
+        "powers": ["flurry", "leap_climb", "phasing_teleport", "earthbound_neutralized", "charge", "mind_control", "plasticity", "force_blast", "sidestep", "hypersonic_speed", "stealth", "running_shot", "blades_claws_fangs", "energy_explosion", "pulse_wave", "quake", "super_strength", "incapacitate", "penetrating_psychic_blast", "smoke_cloud", "precision_strike", "poison", "steal_energy", "telekinesis", "super_senses", "toughness", "defend", "combat_reflexes", "energy_shield_deflection", "barrier", "mastermind", "willpower", "invincible", "impervious", "regeneration", "invulnerability", "ranged_combat_expert", "battle_fury", "support", "exploit_weakness", "enhancement", "probability_control", "shape_change", "close_combat_expert", "empower", "perplex", "outwit", "leadership"]
+      }]
+    },
+    "fiS101": {
+      "special_powers": [{
+        "description": "This character can use Charge, Improved Movement: Destroy Blocking, Hindering, and Toughness. This character modifies its attack value by +2.",
+        "powers": ["charge", "toughness"]
+      }]
+    },
+    "fiS102": {
+      "special_powers": [{
+        "powers": ["plasticity", "running_shot"]
+      }]
+    },
+    "fiS103": {
+      "special_powers": [{
+        "description": "This character can use Charge, Improved Movement: Elevated, Characters, and Toughness. This character modifies its attack value by +2.", 
+        "powers": ["charge", "toughness"]
+      }]
+    },
+    "fiS104": {
+      "special_powers": [{
+        "powers": ["running_shot"]
+      }]
+    },
+    "fiS106": {
+      "special_powers": [{
+        "powers": ["running_shot", "willpower"]
+      }]
+    }
+  },
+  "additions": [{
+    "unit_id": "fiM001",
+    "set_id": "fi",
+    "collector_number": "M001",
+    "name": "Blitzkreig DC",
+    "type": "map",
+    "map_url": "https://hcmaps.net/maps/fi/blitzkreig_dc.json"
+  }, {
+    "unit_id": "fiM002",
+    "set_id": "fi",
+    "collector_number": "M002",
+    "name": "Blitzkreig Manhattan",
+    "type": "map",
+    "map_url": "https://hcmaps.net/maps/fi/blitzkreig_manhattan.json"
+  }, {
+    "unit_id": "fiM003",
+    "set_id": "fi",
+    "collector_number": "M003",
+    "name": "The Book of the Skull Fortress",
+    "type": "map",
+    "special_powers": [{
+      "name": "Security Drones",
+      "description": "(Not for Tournament Play) Orange squares are Security Drone squares. After any action resolves, if the character given the action moved into or through a square within 2 squares of a Security Drone, that drone makes a ranged combat attack targeting that character with 9 attack, 2 damage. This attack does not need range or line of fire."
+    }],
+    "map_url": "https://hcmaps.net/maps/fi/the_book_of_the_skull_fortress.json"
+  }, {
+    "unit_id": "fiM004",
+    "set_id": "fi",
+    "collector_number": "M004",
+    "name": "The Raft",
+    "type": "map",
+    "special_powers": [{
+      "name": "Kuurth's Hammer Impact Zone",
+      "description": "(Not for Tournament Play) Orange squares are IMPACT ZONE squares. Before the beginning of the game either player may place a Fear Itself S101 Kuurth's Hammer from outside the game in the Impact Zone. While that object occupies the Impact Zone, characters within 6 squares of the Impact Zone can't use Charge."
+    }],
+    "map_url": "https://hcmaps.net/maps/fi/the_raft.json"
+  }, {
+    "unit_id": "fiM005",
+    "set_id": "fi",
+    "collector_number": "M005",
+    "name": "Antarctica",
+    "type": "map",
+    "special_powers": [{
+      "name": "Skadi's Hammer Impact Zone",
+      "description": "(Not for Tournament Play) Orange squares are IMPACT ZONE squares. Before the beginning of the game either player may place a Fear Itself S201 Skadi's Hammer from outside the game in the Impact Zone. While that object occupies the Impact Zone, characters within 6 squares of the Impact Zone can't use Leadership."
+    }],
+    "map_url": "https://hcmaps.net/maps/fi/antarctica.json"
+  }, {
+    "unit_id": "fiM006",
+    "set_id": "fi",
+    "collector_number": "M006",
+    "name": "Paris",
+    "type": "map",
+    "special_powers": [{
+      "name": "Mokk's Hammer Impact Zone",
+      "description": "(Not for Tournament Play) Orange squares are IMPACT ZONE squares. Before the beginning of the game either player may place a Fear Itself S102 Mokk's Hammer from outside the game in the Impact Zone. While that object occupies the Impact Zone, characters within 6 squares of the Impact Zone can't use Team Abilities."
+    }],
+    "map_url": "https://hcmaps.net/maps/fi/paris.json"
+  }, {
+    "unit_id": "fiM007",
+    "set_id": "fi",
+    "collector_number": "M007",
+    "name": "NYC: Yancy Street",
+    "type": "map",
+    "special_powers": [{
+      "name": "Angrier's Hammer Impact Zone",
+      "description": "(Not for Tournament Play) Orange squares are IMPACT ZONE squares. Before the beginning of the game either player may place a Fear Itself S107 Angrir's Hammer from outside the game in the Impact Zone. While that object occupies the Impact Zone, characters within 6 squares of the Impact Zone can't use Support or Regeneration."
+    }],
+    "map_url": "https://hcmaps.net/maps/fi/nyc_yancy_street.json"
+  }, {
+    "unit_id": "fiM008",
+    "set_id": "fi",
+    "collector_number": "M008",
+    "name": "South Africa",
+    "type": "map",
+    "special_powers": [{
+      "name": "Skirn's Hammer Impact Zone",
+      "description": "(Not for Tournament Play) Orange squares are IMPACT ZONE squares. Before the beginning of the game either player may place a Fear Itself S103 Skirn's Hammer from outside the game in the Impact Zone. While that object occupies the Impact Zone, characters within 6 squares of the Impact Zone can't use Outwit."
+    }],
+    "map_url": "https://hcmaps.net/maps/fi/south_africa.json"
+  }, {
+    "unit_id": "fiM009",
+    "set_id": "fi",
+    "collector_number": "M009",
+    "name": "Grey Gargoyle Holding Facility",
+    "type": "map",
+    "map_url": "https://hcmaps.net/maps/fi/grey_gargoyle_holding_facility.json"
+  }, {
+    "unit_id": "fiM010",
+    "set_id": "fi",
+    "collector_number": "M010",
+    "name": "Svartalfheim",
+    "type": "map",
+    "special_powers": [{
+      "name": "Uru Forge",
+      "description": "Orange squares are Uru Forge squares. At the beginning of your turn, friendly characters occupying Uru Forge squares are dealt 1 unavoidable damage and are given an Uru token. Characters modify their attack and defense values by -1 for each Uru token they are assigned. When a character takes damage from an attack, remove all Uru tokens from that character."
+    }],
+    "map_url": "https://hcmaps.net/maps/fi/svartalfheim.json"
+  }, {
+    "unit_id": "fiM011",
+    "set_id": "fi",
+    "collector_number": "M011",
+    "name": "Broxton, OK",
+    "type": "map",
+    "map_url": "https://hcmaps.net/maps/fi/broxton_ok.json"
+  }, {
+    "unit_id": "fiM012",
+    "set_id": "fi",
+    "collector_number": "M012",
+    "name": "China",
+    "type": "map",
+    "special_powers": [{
+      "name": "Greithoth's Hammer Impact Zone",
+      "description": "(Not for Tournament Play) Orange squares are IMPACT ZONE squares. Before the beginning of the game either player may place a Fear Itself S104 Greithoth's Hammer from outside the game in the Impact Zone. While that object occupies the Impact Zone, characters within 6 squares of the Impact Zone can't use Willpower."
+    }],
+    "map_url": "https://hcmaps.net/maps/fi/china.json"
+  }, {
+    "unit_id": "fiM013",
+    "set_id": "fi",
+    "collector_number": "M013",
+    "name": "Fallen Asgard",
+    "type": "map",
+    "special_powers": [{
+      "name": "Yggdrasil, The World Tree",
+      "description": "Orange squares are hindering terrain. When damage would be dealt to a character occupying these squares, ignore 1 of that damage. Ignoring damage this way does not prevent the damage from being reduced or ignored by another game effect."
+    }],
+    "map_url": "https://hcmaps.net/maps/fi/fallen_asgard.json"
+  }, {
+    "unit_id": "fiM014",
+    "set_id": "fi",
+    "collector_number": "M014",
+    "name": "Pacific Ocean",
+    "type": "map",
+    "special_powers": [{
+      "name": "Ocean Depths",
+      "description": "Characters ignore the water terrain for movement purposes. Characters that can use the Swim ability modify their speed value by +2 and can use Improved Movement: Hindering, Elevated, Characters."
+    }, {
+      "name": "Nerkkod's Hammer Impact Zone",
+      "description": "(Not for Tournament Play) Orange squares are IMPACT ZONE squares. Before the beginning of the game either player may place a Fear Itself S105 Nerkkod's Hammer from outside the game in the Impact Zone. While that object occupies the Impact Zone, characters within 6 squares of the Impact Zone have (Foot Symbol)."
+    }],
+    "map_url": "https://hcmaps.net/maps/fi/pacific_ocean.json"
+  }, {
+    "unit_id": "fiM015",
+    "set_id": "fi",
+    "collector_number": "M015",
+    "name": "Brazil",
+    "type": "map",
+    "special_powers": [{
+      "name": "Ocean Depths",
+      "description": "Characters ignore the water terrain for movement purposes. Characters that can use the Swim ability modify their speed value by +2 and can use Improved Movement: Hindering, Elevated, Characters."
+    }, {
+      "name": "Nul's Hammer Impact Zone",
+      "description": "(Not for Tournament Play) Orange squares are IMPACT ZONE squares. Before the beginning of the game either player may place a Fear Itself S106 Nul's Hammer from outside the game in the Impact Zone. While that object occupies the Impact Zone, characters within 6 squares of the Impact Zone can't use Super Strength."
+    }],
+    "map_url": "https://hcmaps.net/maps/fi/brazil.json"
+  }, {
+    "unit_id": "fiM016",
+    "set_id": "fi",
+    "collector_number": "M016",
+    "name": "Dark Asgard",
+    "type": "map",
+    "map_url": "https://hcmaps.net/maps/fi/dark_asgard.json"
+  }]
+}

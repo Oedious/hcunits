@@ -699,6 +699,11 @@ const SET_LIST = {
     "release_date": "2013-05-15",
     "universe": "dc"
   },
+  "fi": {
+    "name": "Fear Itself",
+    "release_date": "2013-05-15",
+    "universe": "marvel"
+  },
   "wk": {
     "name": "WizKids Standard Game Pieces",
     "release_date": "2002-05-01",
