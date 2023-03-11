@@ -479,6 +479,9 @@ SET_MAP = {
   "bsi": {
     "name": "BioShock Infinite",
   },
+  "fotr": {
+    "name": "Fellowship of the Ring",
+  },
 }
 
 POWERS = {
@@ -1452,7 +1455,9 @@ class Unit:
             # Handle special power that describes the max horde stack size.
             if self.type == "bystander":
               self.bystander_type = "horde"
-              self.horde_stack_max = int(sp_description[2:])
+              if sp_description.startswith("= "):
+                sp_description = sp_description[2:]
+              self.horde_stack_max = int(sp_description)
               continue
           
           if not sp_type:

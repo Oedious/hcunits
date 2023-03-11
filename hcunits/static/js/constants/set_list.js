@@ -674,6 +674,11 @@ const SET_LIST = {
     "release_date": "2013-06-26",
     "universe": "bioshock"
   },
+  "fotr": {
+    "name": "Fellowship of the Ring",
+    "release_date": "2013-06-19",
+    "universe": "lotr"
+  },
   "wk": {
     "name": "WizKids Standard Game Pieces",
     "release_date": "2002-05-01",

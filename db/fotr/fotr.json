@@ -1,0 +1,3982 @@
+[
+  {
+    "unit_id": "fotr001", 
+    "set_id": "fotr", 
+    "collector_number": "001", 
+    "name": "Frodo Baggins", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      55
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Fellowship", 
+      "Hobbit", 
+      "Ringbearer"
+    ], 
+    "special_powers": [
+      {
+        "type": "epic", 
+        "name": "HIDE OVER HERE!", 
+        "description": "Give Frodo Baggins an epic action; until the beginning of your next turn, up to 2 friendly characters per 100 points of the game's build total who occupy the same area of hindering terrain as him or are adjacent to him can use Stealth until your next turn."
+      }, 
+      {
+        "type": "defense", 
+        "name": "MITHRIL SHIRT", 
+        "description": "When Frodo Baggins is hit by an attack, roll a d6; on a result of 4-6, he can use Invulnerability until the end of the turn.", 
+        "powers": [
+          "invulnerability"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "stealth", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_value": 17, 
+        "damage_power": "probability_control", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "stealth", 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 16, 
+        "damage_power": "probability_control", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "stealth", 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 16, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 6, 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 15, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 6, 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 15, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "special", 
+        "defense_value": 14, 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "fotr002", 
+    "set_id": "fotr", 
+    "collector_number": "002", 
+    "name": "Elven Warrior", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      45
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Elf", 
+      "Last Alliance", 
+      "Soldier", 
+      "Warrior"
+    ], 
+    "special_powers": [
+      {
+        "type": "speed", 
+        "name": "AGAINST THE ARMIES OF MORDOR", 
+        "description": "Elven Warrior can use Charge and Flurry.", 
+        "powers": [
+          "charge", 
+          "flurry"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 8, 
+        "attack_value": 9, 
+        "defense_power": "defend", 
+        "defense_value": 17, 
+        "damage_power": "battle_fury", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "special", 
+        "speed_value": 8, 
+        "attack_value": 9, 
+        "defense_power": "defend", 
+        "defense_value": 17, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "flurry", 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 17, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "flurry", 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "flurry", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "fotr003", 
+    "set_id": "fotr", 
+    "collector_number": "003", 
+    "name": "Uruk-Hai Archer", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      45
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Forces of Sauron", 
+      "Monster", 
+      "Orc", 
+      "Soldier"
+    ], 
+    "special_powers": [
+      {
+        "type": "attack", 
+        "name": "AIM FOR THE EYES!", 
+        "description": "Give Uruk-Hai Archer a double power action; he can use the Sharpshooter ability, modifies his damage value by +1 this turn, and may immediately make a ranged combat attack as a free action."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "7", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 17, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_power": "enhancement", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "enhancement", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 15, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "fotr004", 
+    "set_id": "fotr", 
+    "collector_number": "004", 
+    "name": "Samwise Gamgee", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      50
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Fellowship", 
+      "Hobbit", 
+      "Ringbearer"
+    ], 
+    "special_powers": [
+      {
+        "type": "attack", 
+        "name": "WIELDER OF THE STARGLASS", 
+        "description": "Samwise Gamgee can use Willpower. When he has no tokens, he can use Pulse Wave as if he had a range value of 6.", 
+        "powers": [
+          "willpower", 
+          "pulse_wave"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "stealth", 
+        "speed_value": 7, 
+        "attack_value": 8, 
+        "defense_power": "defend", 
+        "defense_value": 15, 
+        "damage_power": "support", 
+        "damage_value": 0
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "stealth", 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_power": "defend", 
+        "defense_value": 15, 
+        "damage_power": "support", 
+        "damage_value": 0
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "stealth", 
+        "speed_value": 6, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "defend", 
+        "defense_value": 15, 
+        "damage_power": "support", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "running_shot", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 8, 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "running_shot", 
+        "speed_value": 6, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "running_shot", 
+        "speed_value": 6, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_value": 17, 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "fotr005", 
+    "set_id": "fotr", 
+    "collector_number": "005", 
+    "name": "Moria Orc Archer", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      32
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Monster", 
+      "Orc", 
+      "Warrior"
+    ], 
+    "special_powers": [
+      {
+        "type": "attack", 
+        "name": "DRUMS IN THE DEEP... THEY ARE COMING!", 
+        "description": "Moria Orc Archer can use the Carry ability, but only to carry other characters named Moria Orc Archer. For each adjacent character with \"Goblin\" or \"Orc\" in its name, you may modify Moria Orc Archer's attack or range value by +1."
+      }
+    ], 
+    "improved_movement": [
+      "elevated", 
+      "hindering"
+    ], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "6", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "stealth", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 8, 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "stealth", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 8, 
+        "defense_value": 15, 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "plasticity", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 8, 
+        "defense_value": 15, 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "plasticity", 
+        "speed_value": 8, 
+        "attack_power": "poison", 
+        "attack_value": 7, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "plasticity", 
+        "speed_value": 8, 
+        "attack_power": "poison", 
+        "attack_value": 7, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "fotr006", 
+    "set_id": "fotr", 
+    "collector_number": "006", 
+    "name": "Merry", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      40
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Fellowship", 
+      "Hobbit"
+    ], 
+    "special_powers": [
+      {
+        "type": "epic", 
+        "name": "RALLYING NEW ALLIES", 
+        "description": "Give Merry an epic action and choose up to one adjacent horde token per 200 points of the game's build total. Until your next turn, chosen horde tokens with the (Fellowship of the Ring set) symbol are considered to be (M) while adjacent to Merry."
+      }, 
+      {
+        "type": "attack", 
+        "name": "ORC-DRAUGHTS AND ENT-DRAUGHTS", 
+        "description": "Merry can use Super Strength, but can't pick up or hold heavy objects. When Merry makes a close combat attack, modify his damage value by +1.", 
+        "powers": [
+          "super_strength"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "stealth", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "stealth", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_power": "shape_change", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "leap_climb", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 15, 
+        "damage_power": "shape_change", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "stealth", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 8, 
+        "defense_power": "willpower", 
+        "defense_value": 15, 
+        "damage_power": "shape_change", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "leap_climb", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 8, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 15, 
+        "damage_power": "enhancement", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "leap_climb", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 8, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 14, 
+        "damage_power": "enhancement", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "fotr007", 
+    "set_id": "fotr", 
+    "collector_number": "007", 
+    "name": "Pippin", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      40
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Fellowship", 
+      "Hobbit"
+    ], 
+    "special_powers": [
+      {
+        "type": "epic", 
+        "name": "THE CLOSER WE ARE TO DANGER, THE FURTHER WE ARE FROM HARM!", 
+        "description": "Give Pippin an epic action and choose up to 1 friendly character per 100 points of the game's build total. Until your next turn, chosen characters modify their defense values by +1 for each opposing character adjacent to them."
+      }, 
+      {
+        "type": "attack", 
+        "name": "STRIDER'S GIFT", 
+        "description": "Pippin can use Exploit Weakness and Flurry.", 
+        "powers": [
+          "exploit_weakness", 
+          "flurry"
+        ]
+      }, 
+      {
+        "type": "damage", 
+        "name": "SPEAKING TREEISH", 
+        "description": "Pippin can use Leadership, but only to remove action tokens; when he does, any character with a point value of 100 or less is considered to have a lower point value than Pippin.", 
+        "powers": [
+          "leadership"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "plasticity", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 8, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "stealth", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 8, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "stealth", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 15, 
+        "damage_power": "enhancement", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "stealth", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 15, 
+        "damage_power": "enhancement", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "stealth", 
+        "speed_value": 8, 
+        "attack_value": 9, 
+        "defense_value": 15, 
+        "damage_power": "enhancement", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "fotr008", 
+    "set_id": "fotr", 
+    "collector_number": "008", 
+    "name": "Orc Warrior", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      35
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Forces of Sauron", 
+      "Monster", 
+      "Orc", 
+      "Warrior"
+    ], 
+    "special_powers": [
+      {
+        "type": "damage", 
+        "name": "FRENZIED ATTACK", 
+        "description": "Orc Warrior can use Probability Control, but only for his own attack rolls. When he does, if the target character is hit, deal 1 penetrating damage instead of dealing damage normally.", 
+        "powers": [
+          "probability_control"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_value": 9, 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "charge", 
+        "speed_value": 6, 
+        "attack_value": 8, 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_value": 6, 
+        "attack_value": 8, 
+        "defense_power": "toughness", 
+        "defense_value": 15, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "flurry", 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 15, 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "flurry", 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 15, 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "fotr009", 
+    "set_id": "fotr", 
+    "collector_number": "009", 
+    "name": "Gimli", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      130
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Dwarf", 
+      "Fellowship", 
+      "Warrior"
+    ], 
+    "special_powers": [
+      {
+        "type": "epic", 
+        "name": "BLOW THE HORN", 
+        "description": "Give Gimli an epic action and modify by +1 the same combat value of up to 1 friendly character per 100 points of the game's build total."
+      }, 
+      {
+        "type": "attack", 
+        "name": "I WOULD STAY STILL, IF I WERE YOU", 
+        "description": "When an opposing character takes damage from a close combat attack by Gimli, after actions resolve, he may immediately use Incapacitate as a free action against the same target.", 
+        "powers": [
+          "incapacitate"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "4", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 6, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "charge", 
+        "speed_value": 6, 
+        "attack_power": "quake", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "shape_change", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "charge", 
+        "speed_value": 6, 
+        "attack_power": "quake", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "shape_change", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "charge", 
+        "speed_value": 6, 
+        "attack_power": "quake", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "shape_change", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "leap_climb", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 11, 
+        "defense_power": "invulnerability", 
+        "defense_value": 18, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "leap_climb", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 11, 
+        "defense_power": "invulnerability", 
+        "defense_value": 18, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "leap_climb", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 11, 
+        "defense_power": "invulnerability", 
+        "defense_value": 18, 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "fotr010", 
+    "set_id": "fotr", 
+    "collector_number": "010", 
+    "name": "Boromir", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      65
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Fellowship", 
+      "Man", 
+      "Soldier"
+    ], 
+    "special_powers": [
+      {
+        "type": "epic", 
+        "name": "HELD BY THE HORN", 
+        "description": "During the beginning of your turn, give Boromir an epic action; place up to 1 action token per 200 points of the game's build total on any opposing characters within 10 squares and line of fire."
+      }, 
+      {
+        "type": "defense", 
+        "name": "SHIELD-MASTER", 
+        "description": "Boromir can use Combat Reflexes and Toughness. Boromir may make a close combat attack as a free action targeting an opposing character who missed him with a close combat attack since your last turn.", 
+        "powers": [
+          "combat_reflexes", 
+          "toughness"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "stealth", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "stealth", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "stealth", 
+        "speed_value": 7, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 16, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "stealth", 
+        "speed_value": 7, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 15, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "stealth", 
+        "speed_value": 7, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 15, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "flurry", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "flurry", 
+        "speed_value": 7, 
+        "attack_value": 8, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "fotr011", 
+    "set_id": "fotr", 
+    "collector_number": "011", 
+    "name": "Gandalf the Grey", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      175
+    ], 
+    "properties": [
+      "unique"
+    ], 
+    "team_abilities": [], 
+    "keywords": [
+      "Fellowship", 
+      "Maiar", 
+      "Mystical"
+    ], 
+    "special_powers": [
+      {
+        "type": "epic", 
+        "name": "I RELEASE YOU FROM THE SPELL", 
+        "description": "Give Gandalf the Grey an epic action; until your next turn, all friendly characters can't be targeted by Mind Control, and using Outwit requires a power action instead of a free action when targeting Gandalf the Grey or friendly characters adjacent to him."
+      }, 
+      {
+        "type": "trait", 
+        "name": "LOOK TO MY COMMING", 
+        "description": "Gandalf the Grey can use Plasticity. When a friendly character is KO'd, after it is removed from the battlefield you may immediately place Gandalf the Grey in a square the character had occupied.", 
+        "powers": [
+          "plasticity"
+        ]
+      }, 
+      {
+        "type": "attack", 
+        "name": "GLAMDRING AND LIGHTNING", 
+        "description": "Gandalf the Grey can use Blades/Claws/Fangs and Penetrating/Psychic Blast; when he uses Blades/Claws/Fangs, his damage value isn't replaced if the result would be lower.", 
+        "powers": [
+          "blades_claws_fangs", 
+          "penetrating_psychic_blast"
+        ]
+      }, 
+      {
+        "type": "defense", 
+        "name": "YOU DID NOT KILL ME, YOU WILL NOT KILL HIM", 
+        "description": "Gandalf the Grey can use Regeneration; when he does and heals, you may also heal up to 3 adjacent friendly characters of 1 damage each.", 
+        "powers": [
+          "regeneration"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "9", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 11, 
+        "defense_power": "invulnerability", 
+        "defense_value": 18, 
+        "damage_power": "outwit", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 11, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 12, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 9, 
+        "attack_power": "special", 
+        "attack_value": 11, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 9, 
+        "attack_power": "special", 
+        "attack_value": 11, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 9, 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 7, 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 16, 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 8, 
+        "speed_value": 8, 
+        "attack_value": 11, 
+        "defense_power": "special", 
+        "defense_value": 16, 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 9, 
+        "speed_value": 8, 
+        "attack_value": 12, 
+        "defense_power": "special", 
+        "defense_value": 16, 
+        "damage_value": 4
+      }
+    ]
+  }, 
+  {
+    "unit_id": "fotr012", 
+    "set_id": "fotr", 
+    "collector_number": "012", 
+    "name": "Bilbo Baggins", 
+    "type": "character", 
+    "rarity": "uncommon", 
+    "dimensions": "1x1", 
+    "point_values": [
+      70
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Hobbit", 
+      "Ringbearer"
+    ], 
+    "special_powers": [
+      {
+        "type": "epic", 
+        "name": "THERE AND BACK AGAIN", 
+        "description": "Give Bilbo Baggins an epic action; until your next turn, up to 1 friendly character per 100 points of the game's build total may each use Charge or Running Shot, but must end their move closer to your starting area then where they began."
+      }, 
+      {
+        "type": "speed", 
+        "name": "MY OLD RING", 
+        "description": "Bilbo Baggins can use Stealth and Super Senses.", 
+        "powers": [
+          "stealth", 
+          "super_senses"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "invulnerability", 
+        "defense_value": 15, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "special", 
+        "speed_value": 6, 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 15, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "special", 
+        "speed_value": 6, 
+        "attack_power": "incapacitate", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 14, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "special", 
+        "speed_value": 5, 
+        "attack_power": "incapacitate", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 14, 
+        "damage_power": "battle_fury", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 5, 
+        "attack_power": "incapacitate", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 14, 
+        "damage_power": "battle_fury", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 6, 
+        "speed_value": 5, 
+        "attack_power": "incapacitate", 
+        "attack_value": 8, 
+        "defense_value": 14, 
+        "damage_power": "battle_fury", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "fotr013", 
+    "set_id": "fotr", 
+    "collector_number": "013", 
+    "name": "Elven Archer", 
+    "type": "character", 
+    "rarity": "uncommon", 
+    "dimensions": "1x1", 
+    "point_values": [
+      40
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Elf", 
+      "Last Alliance", 
+      "Soldier"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "MARKSMEN", 
+        "description": "Elven Archer ignores friendly characters named Elven Archer for line of fire purposes."
+      }, 
+      {
+        "type": "damage", 
+        "name": "LEITHIO I PHILINN!", 
+        "description": "Elven Archer can use Enhancement; when he does, you may modify the range value by +1 instead of the damage value.", 
+        "powers": [
+          "enhancement"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "8", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 6, 
+        "attack_value": 10, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 16, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 6, 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 15, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "fotr014", 
+    "set_id": "fotr", 
+    "collector_number": "014", 
+    "name": "Elrond", 
+    "type": "character", 
+    "rarity": "uncommon", 
+    "dimensions": "1x1", 
+    "point_values": [
+      175
+    ], 
+    "properties": [
+      "unique"
+    ], 
+    "team_abilities": [], 
+    "keywords": [
+      "Elf", 
+      "Last Alliance", 
+      "Ringbearer", 
+      "Ruler", 
+      "Soldier"
+    ], 
+    "special_powers": [
+      {
+        "type": "epic", 
+        "name": "VETERAN COMMANDER", 
+        "description": "Give Elrond an epic action; he can use Outwit once per 100 points of the game's build total, but may only target opposing characters adjaent to characters friendly to Elrond and may not target an opposing character more than once with Outwit this turn."
+      }, 
+      {
+        "type": "trait", 
+        "name": "LEAD BY EXAMPLE", 
+        "description": "Modify the attack value of all friendly characters adjacent to Elrond by +1 for each action token assigned to him."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "flurry", 
+        "speed_value": 7, 
+        "attack_value": 11, 
+        "defense_power": "invulnerability", 
+        "defense_value": 18, 
+        "damage_power": "leadership", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "flurry", 
+        "speed_value": 7, 
+        "attack_value": 11, 
+        "defense_power": "toughness", 
+        "defense_value": 18, 
+        "damage_power": "leadership", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_value": 8, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "leadership", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 8, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "leadership", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "charge", 
+        "speed_value": 7, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 16, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "charge", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "invulnerability", 
+        "defense_value": 16, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "charge", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "regeneration", 
+        "defense_value": 15, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 8, 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "regeneration", 
+        "defense_value": 15, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 9, 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "regeneration", 
+        "defense_value": 15, 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "fotr015", 
+    "set_id": "fotr", 
+    "collector_number": "015", 
+    "name": "Uruk-Hai Warrior", 
+    "type": "character", 
+    "rarity": "uncommon", 
+    "dimensions": "1x1", 
+    "point_values": [
+      30
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Forces of Sauron", 
+      "Monster", 
+      "Orc", 
+      "Warrior"
+    ], 
+    "special_powers": [], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "flurry", 
+        "speed_value": 7, 
+        "attack_value": 8, 
+        "defense_power": "willpower", 
+        "defense_value": 15, 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "flurry", 
+        "speed_value": 7, 
+        "attack_value": 8, 
+        "defense_value": 15, 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "fotr016", 
+    "set_id": "fotr", 
+    "collector_number": "016", 
+    "name": "Arwen", 
+    "type": "character", 
+    "rarity": "uncommon", 
+    "dimensions": "1x1", 
+    "point_values": [
+      69
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Elf", 
+      "Ruler", 
+      "Warrior"
+    ], 
+    "special_powers": [
+      {
+        "type": "epic", 
+        "name": "I CALL ON THE LOUDWATER!", 
+        "description": "Give Arwen an epic action; she can use Smoke Cloud as a free action regardless of range and line of fire, but the first token must be placed in any square on the edge of the map and she may place 1 additional hindering terrain marker per 100 points of the build total; after action resolve, deal 1 penetrating damage to each opposing character occupying a square into which a marker was just placed."
+      }, 
+      {
+        "type": "trait", 
+        "name": "WHAT'S THIS? A RANGER CAUGHT OFF HIS GUARD?", 
+        "description": "When you build your force, Arwen possesses the Fellowship keyword if your force also included a character named Aragorn."
+      }, 
+      {
+        "type": "speed", 
+        "name": "I'M THE FASTER RIDER", 
+        "description": "Arwen can use Plasticity and the Carry ability.", 
+        "powers": [
+          "plasticity"
+        ]
+      }
+    ], 
+    "improved_movement": [
+      "hindering"
+    ], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 10, 
+        "attack_value": 9, 
+        "defense_power": "defend", 
+        "defense_value": 18, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "special", 
+        "speed_value": 9, 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "special", 
+        "speed_value": 9, 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "special", 
+        "speed_value": 9, 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 9, 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_value": 8, 
+        "attack_power": "quake", 
+        "attack_value": 9, 
+        "defense_power": "defend", 
+        "defense_value": 17, 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 7, 
+        "speed_value": 8, 
+        "attack_power": "quake", 
+        "attack_value": 8, 
+        "defense_power": "defend", 
+        "defense_value": 17, 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 8, 
+        "speed_value": 8, 
+        "attack_power": "quake", 
+        "attack_value": 8, 
+        "defense_power": "defend", 
+        "defense_value": 17, 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "fotr017", 
+    "set_id": "fotr", 
+    "collector_number": "017", 
+    "name": "Moria Orc Warrior", 
+    "type": "character", 
+    "rarity": "uncommon", 
+    "dimensions": "1x1", 
+    "point_values": [
+      40
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Monster", 
+      "Orc", 
+      "Warrior"
+    ], 
+    "special_powers": [
+      {
+        "type": "speed", 
+        "name": "FROM THE HUNGRY DARKNESS", 
+        "description": "Moria Orc Warrior can use Charge and Stealth.", 
+        "powers": [
+          "charge", 
+          "stealth"
+        ]
+      }
+    ], 
+    "improved_movement": [
+      "elevated", 
+      "hindering"
+    ], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 8, 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "special", 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "special", 
+        "speed_value": 6, 
+        "attack_power": "poison", 
+        "attack_value": 8, 
+        "defense_value": 15, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "plasticity", 
+        "speed_value": 6, 
+        "attack_power": "poison", 
+        "attack_value": 8, 
+        "defense_value": 15, 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "plasticity", 
+        "speed_value": 6, 
+        "attack_power": "poison", 
+        "attack_value": 8, 
+        "defense_value": 15, 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "fotr018", 
+    "set_id": "fotr", 
+    "collector_number": "018", 
+    "name": "Legolas Greenleaf", 
+    "type": "character", 
+    "rarity": "uncommon", 
+    "dimensions": "1x1", 
+    "point_values": [
+      125
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Elf", 
+      "Fellowship", 
+      "Martial Artist", 
+      "Warrior"
+    ], 
+    "special_powers": [
+      {
+        "type": "epic", 
+        "name": "GO FOR THE WEAK POINTS IN THEIR ARMOR!", 
+        "description": "Give Legolas Greenleaf an epic action and choose up to 1 opposing character per 200 points of the game's build total. Until your next turn, when a chosen character is dealt damage by a close combat attack, roll a d6; on a result of 2-6, the damage dealt can't be reduced to less than 1."
+      }, 
+      {
+        "type": "trait", 
+        "name": "WHIRLWIND OF BLADES", 
+        "description": "When Legolas Greenleaf or an adjacent friendly character KO's an opposing character with a close combat attack, after actions resolve, Legolas may immediately use Charge as a free action.", 
+        "powers": [
+          "charge"
+        ]
+      }, 
+      {
+        "type": "attack", 
+        "name": "THINNING THE RANKS", 
+        "description": "Once per turn, when a target opposing character takes damage from a close combat attack made by Legolas Greenleaf, you may place an action token on the target after the attack resolves."
+      }
+    ], 
+    "improved_movement": [
+      "elevated"
+    ], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "6", 
+    "targets": "2", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 9, 
+        "attack_value": 11, 
+        "defense_power": "super_senses", 
+        "defense_value": 18, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "flurry", 
+        "speed_value": 9, 
+        "attack_power": "special", 
+        "attack_value": 11, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "flurry", 
+        "speed_value": 9, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "flurry", 
+        "speed_value": 9, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 7, 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "super_senses", 
+        "defense_value": 16, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 8, 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "super_senses", 
+        "defense_value": 16, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "fotr019", 
+    "set_id": "fotr", 
+    "collector_number": "019", 
+    "name": "Ringwraith", 
+    "type": "character", 
+    "rarity": "uncommon", 
+    "dimensions": "1x1", 
+    "point_values": [
+      125
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Forces of Sauron", 
+      "Mystical", 
+      "Nazgul", 
+      "Ringbearer", 
+      "Ruler", 
+      "Warrior"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "POISONED DARTS", 
+        "description": "Ringwraith can use Poison. Ringwraith may make a ranged combat attack as a free action targeting all characters that damaged a friendly character with the Nazgul keyword last turn. When he does, his damage value becomes 2 and is locked.", 
+        "powers": [
+          "poison"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "4", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 9, 
+        "attack_power": "quake", 
+        "attack_value": 9, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "stealth", 
+        "speed_value": 9, 
+        "attack_power": "quake", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "stealth", 
+        "speed_value": 9, 
+        "attack_power": "quake", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 16, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "stealth", 
+        "speed_value": 8, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "stealth", 
+        "speed_value": 8, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "stealth", 
+        "speed_value": 8, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 8, 
+        "defense_value": 16, 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "fotr020", 
+    "set_id": "fotr", 
+    "collector_number": "020", 
+    "name": "Orc Archer", 
+    "type": "character", 
+    "rarity": "uncommon", 
+    "dimensions": "1x1", 
+    "point_values": [
+      40
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Forces of Sauron", 
+      "Monster", 
+      "Orc", 
+      "Soldier"
+    ], 
+    "special_powers": [
+      {
+        "type": "attack", 
+        "name": "BLACKEN THE SKY", 
+        "description": "Orc Archer ignores hindering and elevated terrain for line of fire purposed when he is adjacent to a friendly character with which he shares a keyword and which has a range value of 5 or greater."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "7", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "enhancement", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 8, 
+        "defense_power": "willpower", 
+        "defense_value": 15, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_value": 8, 
+        "defense_power": "willpower", 
+        "defense_value": 15, 
+        "damage_power": "enhancement", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 7, 
+        "attack_value": 8, 
+        "defense_value": 15, 
+        "damage_power": "enhancement", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "fotr021", 
+    "set_id": "fotr", 
+    "collector_number": "021", 
+    "name": "Celeborn", 
+    "type": "character", 
+    "rarity": "uncommon", 
+    "dimensions": "1x1", 
+    "point_values": [
+      100
+    ], 
+    "properties": [
+      "unique"
+    ], 
+    "team_abilities": [], 
+    "keywords": [
+      "Elf", 
+      "Ruler"
+    ], 
+    "special_powers": [
+      {
+        "type": "epic", 
+        "name": "SANCTUARY", 
+        "description": "Give Celeborn an epic action; he and all friendly characters within 3 squares can use Stealth until your next turn.", 
+        "powers": [
+          "stealth"
+        ]
+      }, 
+      {
+        "type": "attack", 
+        "name": "FARSIGHT", 
+        "description": "Celeborn can use Perplex and Probability Control.", 
+        "powers": [
+          "perplex", 
+          "probability_control"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "super_senses", 
+        "defense_value": 18, 
+        "damage_power": "leadership", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "leadership", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "mind_control", 
+        "speed_value": 6, 
+        "attack_power": "special", 
+        "attack_value": 11, 
+        "defense_power": "super_senses", 
+        "defense_value": 16, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "mind_control", 
+        "speed_value": 6, 
+        "attack_value": 11, 
+        "defense_power": "regeneration", 
+        "defense_value": 16, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "mind_control", 
+        "speed_value": 6, 
+        "attack_value": 10, 
+        "defense_power": "regeneration", 
+        "defense_value": 15, 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 7, 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "regeneration", 
+        "defense_value": 15, 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "fotr022", 
+    "set_id": "fotr", 
+    "collector_number": "022", 
+    "name": "Galadriel", 
+    "type": "character", 
+    "rarity": "rare", 
+    "dimensions": "1x1", 
+    "point_values": [
+      110
+    ], 
+    "properties": [
+      "unique"
+    ], 
+    "team_abilities": [], 
+    "keywords": [
+      "Elf", 
+      "Mystical", 
+      "Ringbearer", 
+      "Ruler"
+    ], 
+    "special_powers": [
+      {
+        "type": "epic", 
+        "name": "LOOK INTO MY MIRROR", 
+        "description": "Give Galadriel an epic action; choose up to one friendly character per 200 points of the game's build total; until your next turn, chosen characters that occupy hindering terrain can use Probability Control."
+      }, 
+      {
+        "type": "trait", 
+        "name": "FAIREST OF ALL BEINGS", 
+        "description": "Galadriel can use Super Senses; when she evades an attack and actions resolve, give the attacker an action token.", 
+        "powers": [
+          "super_senses"
+        ]
+      }, 
+      {
+        "type": "attack", 
+        "name": "EVEN THE SMALLEST PERSON CAN CHANGE THE COURSE OF THE FUTURE", 
+        "description": "Give Galadriel a double power action; all combat values of the friendly character with the lowest point value and a point value of 100 or less are modified by +1 until your next turn."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "10", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_value": 7, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 11, 
+        "defense_power": "defend", 
+        "defense_value": 17, 
+        "damage_power": "support", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_value": 7, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 11, 
+        "defense_power": "defend", 
+        "defense_value": 17, 
+        "damage_power": "support", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_value": 6, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 11, 
+        "defense_power": "willpower", 
+        "defense_value": 17, 
+        "damage_power": "support", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 6, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "willpower", 
+        "defense_value": 18, 
+        "damage_power": "support", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 6, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "regeneration", 
+        "defense_value": 18, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_value": 6, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "regeneration", 
+        "defense_value": 17, 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 7, 
+        "speed_value": 5, 
+        "attack_power": "special", 
+        "attack_value": 8, 
+        "defense_power": "regeneration", 
+        "defense_value": 16, 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "fotr023", 
+    "set_id": "fotr", 
+    "collector_number": "023", 
+    "name": "Lurtz", 
+    "type": "character", 
+    "rarity": "rare", 
+    "dimensions": "1x1", 
+    "point_values": [
+      70
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Forces of Sauron", 
+      "Monster", 
+      "Orc", 
+      "Warrior"
+    ], 
+    "special_powers": [
+      {
+        "type": "speed", 
+        "name": "SPARE ONLY THE HALFLINGS!", 
+        "description": "Lurtz can use Charge and Flurry; when he uses Flurry, he can't target the same character with both attacks.", 
+        "powers": [
+          "charge", 
+          "flurry"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "5", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "willpower", 
+        "defense_value": 18, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "special", 
+        "speed_value": 8, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 17, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "special", 
+        "speed_value": 8, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "special", 
+        "speed_value": 6, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 8, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "special", 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 15, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "special", 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 15, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "fotr024", 
+    "set_id": "fotr", 
+    "collector_number": "024", 
+    "name": "Aragorn", 
+    "type": "character", 
+    "rarity": "rare", 
+    "dimensions": "1x1", 
+    "point_values": [
+      100
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Fellowship", 
+      "Man", 
+      "Ruler", 
+      "Warrior"
+    ], 
+    "special_powers": [
+      {
+        "type": "epic", 
+        "name": "MERCIFUL VICTORY", 
+        "description": "Give Aragorn an epic action and until your next turn, when any friendly character rolls a critical hit, it does not increase damage dealt. Instead any roll of doubles that hits heals the attacker of 1 damage."
+      }, 
+      {
+        "type": "attack", 
+        "name": "THE LUCKIEST, THE CANNIEST, AND THE MOST RECKLESS MAN I EVER KNEW", 
+        "description": "Aragorn can use Probability Control (but only to reroll his own attack rolls), Perplex (but only to modify his own combat values), and Flurry.", 
+        "powers": [
+          "probability_control", 
+          "perplex", 
+          "flurry"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "5", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "defend", 
+        "defense_value": 17, 
+        "damage_power": "leadership", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "defend", 
+        "defense_value": 18, 
+        "damage_power": "leadership", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "defend", 
+        "defense_value": 17, 
+        "damage_power": "leadership", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 7, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "defend", 
+        "defense_value": 18, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 7, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 18, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_value": 7, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 11, 
+        "defense_power": "invulnerability", 
+        "defense_value": 18, 
+        "damage_power": "outwit", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "fotr025", 
+    "set_id": "fotr", 
+    "collector_number": "025", 
+    "name": "Isildur", 
+    "type": "character", 
+    "rarity": "rare", 
+    "dimensions": "1x1", 
+    "point_values": [
+      80
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Last Alliance", 
+      "Man", 
+      "Ringbearer", 
+      "Ruler"
+    ], 
+    "special_powers": [
+      {
+        "type": "speed", 
+        "name": "HE WILL BE AVENGED!", 
+        "description": "Isildur can use Charge; when a friendly character 6 or fewer squares from Isildur is KO'd by an opposing character's attack, after actions resolve you may place Isildur in a square that friendly character occupied.", 
+        "powers": [
+          "charge"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 7, 
+        "attack_power": "quake", 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "special", 
+        "speed_value": 7, 
+        "attack_power": "quake", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "special", 
+        "speed_value": 6, 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "special", 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 6, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_power": "super_senses", 
+        "defense_value": 16, 
+        "damage_power": "battle_fury", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_value": 6, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 8, 
+        "defense_power": "super_senses", 
+        "defense_value": 16, 
+        "damage_power": "battle_fury", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 7, 
+        "speed_value": 6, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 8, 
+        "defense_power": "super_senses", 
+        "defense_value": 16, 
+        "damage_power": "battle_fury", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "fotr026", 
+    "set_id": "fotr", 
+    "collector_number": "026", 
+    "name": "Gil-Galad", 
+    "type": "character", 
+    "rarity": "rare", 
+    "dimensions": "1x1", 
+    "point_values": [
+      125
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Elf", 
+      "Last Alliance", 
+      "Ringbearer", 
+      "Ruler", 
+      "Soldier"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "THE LAST HIGH KING", 
+        "description": "Gil-Galad can use Leadership; when he does, modify the result of his d6 roll by +2.", 
+        "powers": [
+          "leadership"
+        ]
+      }, 
+      {
+        "type": "attack", 
+        "name": "AEGLOS", 
+        "description": "Gil-Galad can use Incapacitate; when he does, the attack deals damage equal to his damage value divided among hit targets.", 
+        "powers": [
+          "incapacitate"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "3", 
+    "targets": "2", 
+    "speed_type": "boot", 
+    "attack_type": "sharpshooter", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 2, 
+        "speed_value": 6, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_value": 6, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 18, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 6, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 6, 
+        "attack_power": "quake", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 6, 
+        "speed_value": 5, 
+        "attack_power": "quake", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 7, 
+        "speed_value": 5, 
+        "attack_power": "quake", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "fotr027", 
+    "set_id": "fotr", 
+    "collector_number": "027", 
+    "name": "Elrond", 
+    "type": "character", 
+    "rarity": "rare", 
+    "dimensions": "1x1", 
+    "point_values": [
+      100
+    ], 
+    "properties": [
+      "unique"
+    ], 
+    "team_abilities": [], 
+    "keywords": [
+      "Elf", 
+      "Mystical", 
+      "Ringbearer", 
+      "Ruler"
+    ], 
+    "special_powers": [
+      {
+        "type": "epic", 
+        "name": "YOU SHALL BE THE FELLOWSHIP", 
+        "description": "Give Elrond an epic action and choose a keyword and combat value (other than damage); until your next turn, modify that combat value by +1 of all friendly characters who possess the chosen keyword."
+      }, 
+      {
+        "type": "trait", 
+        "name": "INCORRUPTIBLE ADIVSOR", 
+        "description": "Elrond can use Outwit. Elrond and adjacent friendly characters can't be the target of Mind Control or opposing characters' use of Perplex.", 
+        "powers": [
+          "outwit"
+        ]
+      }, 
+      {
+        "type": "damage", 
+        "name": "COME BACK TO THE LIGHT", 
+        "description": "Elrond can use Support; when he does and a target character is healed of damage, also remove all action tokens from that character.", 
+        "powers": [
+          "support"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_power": "willpower", 
+        "defense_value": 18, 
+        "damage_power": "leadership", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 2, 
+        "speed_value": 7, 
+        "attack_value": 11, 
+        "defense_power": "willpower", 
+        "defense_value": 18, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 3, 
+        "speed_value": 7, 
+        "attack_value": 11, 
+        "defense_power": "willpower", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 6, 
+        "attack_value": 10, 
+        "defense_power": "regeneration", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 6, 
+        "attack_value": 10, 
+        "defense_power": "regeneration", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 6, 
+        "speed_value": 6, 
+        "attack_value": 10, 
+        "defense_power": "regeneration", 
+        "defense_value": 16, 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "fotr028", 
+    "set_id": "fotr", 
+    "collector_number": "028", 
+    "name": "Saruman", 
+    "type": "character", 
+    "rarity": "rare", 
+    "dimensions": "1x1", 
+    "point_values": [
+      130
+    ], 
+    "properties": [
+      "unique"
+    ], 
+    "team_abilities": [], 
+    "keywords": [
+      "Forces of Sauron", 
+      "Maiar", 
+      "Mystical"
+    ], 
+    "special_powers": [
+      {
+        "type": "epic", 
+        "name": "IF I GO, HE DIES", 
+        "description": "Give Saruman an epic action, choose up to 1 opposing character per 200 points of the game's build total that's marked with an action token and roll a d6 that can't be rerolled; if the result of the roll is 4 - 6, deal each of the chosen characters 1 penetrating damage."
+      }, 
+      {
+        "type": "speed", 
+        "name": "THE POWER OF ISENGARD", 
+        "description": "Saruman can use Mind Control as if he had a range of 10; when he does, he ignores elevated and blocking terrain for line of fire purposes.", 
+        "powers": [
+          "mind_control"
+        ]
+      }, 
+      {
+        "type": "defense", 
+        "name": "PALANTIR", 
+        "description": "Saruman can use Outwit and Probability Control.", 
+        "powers": [
+          "outwit", 
+          "probability_control"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "6", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 6, 
+        "attack_value": 11, 
+        "defense_power": "special", 
+        "defense_value": 18, 
+        "damage_power": "shape_change", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "special", 
+        "speed_value": 6, 
+        "attack_value": 11, 
+        "defense_power": "special", 
+        "defense_value": 18, 
+        "damage_power": "shape_change", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "special", 
+        "speed_value": 6, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_power": "shape_change", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "special", 
+        "speed_value": 6, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_power": "shape_change", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 6, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 16, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 6, 
+        "speed_value": 5, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 9, 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 7, 
+        "speed_value": 5, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 9, 
+        "defense_value": 16, 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "fotr029", 
+    "set_id": "fotr", 
+    "collector_number": "029", 
+    "name": "Bilbo Baggins", 
+    "type": "character", 
+    "rarity": "chase", 
+    "dimensions": "1x1", 
+    "point_values": [
+      45
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Hobbit", 
+      "Ringbearer"
+    ], 
+    "special_powers": [
+      {
+        "type": "epic", 
+        "name": "PLENTY OF EXCITEMENT AND REASONABLE REWARD", 
+        "description": "Give Bilbo Baggins an epic action; until your next turn, any friendly character with an attack total at least 3 greater than the target's defense value modifies its damage value by +1 for each action token assigned to Bilbo Baggins."
+      }, 
+      {
+        "type": "speed", 
+        "name": "INTO THE MISTY MOUNTAINS", 
+        "description": "Bilbo Baggins can use Leap/Climb and Stealth.", 
+        "powers": [
+          "leap_climb", 
+          "stealth"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "3", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 6, 
+        "attack_power": "incapacitate", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "special", 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 15, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "special", 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "super_senses", 
+        "defense_value": 16, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 5, 
+        "attack_value": 8, 
+        "defense_power": "super_senses", 
+        "defense_value": 15, 
+        "damage_power": "outwit", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 5, 
+        "attack_value": 8, 
+        "defense_power": "invulnerability", 
+        "defense_value": 16, 
+        "damage_power": "outwit", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "fotr030", 
+    "set_id": "fotr", 
+    "collector_number": "030", 
+    "name": "Elendil", 
+    "type": "character", 
+    "rarity": "chase", 
+    "dimensions": "1x1", 
+    "point_values": [
+      120
+    ], 
+    "properties": [
+      "unique"
+    ], 
+    "team_abilities": [], 
+    "keywords": [
+      "Last Alliance", 
+      "Man", 
+      "Ruler", 
+      "Warrior"
+    ], 
+    "special_powers": [
+      {
+        "type": "epic", 
+        "name": "LET THEM FEEL YOUR BLADES", 
+        "description": "Give Elendil an epic action; until the beginning of your next turn, any friendly character who is knocked back may, after actions resolve, immediately make a close combat attack against the opposing character who caused them to be knocked back as if they occupied a square adjacent to the target."
+      }, 
+      {
+        "type": "trait", 
+        "name": "LOYAL FOLLOWERS", 
+        "description": "Any friendly characters adjacent to Elendil may modify its defense value by +1 for each action token Elendil is marked with."
+      }, 
+      {
+        "type": "damage", 
+        "name": "HIGH KING", 
+        "description": "Elendil can use Leadership and Outwit; when he uses Leadership and succeeds, instead of removing an action token from a friendly character you may place an action token on an opposing character with a lower point value within 6 squares that has no action tokens.", 
+        "powers": [
+          "leadership", 
+          "outwit"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 10, 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "flurry", 
+        "speed_value": 9, 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "flurry", 
+        "speed_value": 8, 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 18, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 18, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 18, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 6, 
+        "speed_value": 7, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 11, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 7, 
+        "speed_value": 7, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 11, 
+        "defense_value": 16, 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "fotr031", 
+    "set_id": "fotr", 
+    "collector_number": "031", 
+    "name": "Witch-King of Angmar", 
+    "type": "character", 
+    "rarity": "chase", 
+    "dimensions": "1x1", 
+    "point_values": [
+      200
+    ], 
+    "properties": [
+      "unique"
+    ], 
+    "team_abilities": [], 
+    "keywords": [
+      "Forces of Sauron", 
+      "Mystical", 
+      "Nazgul", 
+      "Ringbearer", 
+      "Ruler", 
+      "Warrior"
+    ], 
+    "special_powers": [
+      {
+        "type": "epic", 
+        "name": "SHATTER THE GATES", 
+        "description": "Give the Witch-King of Angmar an epic action; remove one of the following from the battlefield: 1) all blocking terrain markers, 2) all hindering terrain markers, 3) all light object tokens, 4) all heavy object tokens."
+      }, 
+      {
+        "type": "trait", 
+        "name": "BLACK BREATH", 
+        "description": "The Witch-King of Angmar can use Poison. When the Witch-King of Angmar is dealt damage from an attack and that damages is reduced, after the attack resolves, roll a d6; on a result of [5] - [6], deal the attacker 1 penetrating damage.", 
+        "powers": [
+          "poison"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "8", 
+    "targets": "2", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 9, 
+        "attack_power": "telekinesis", 
+        "attack_value": 10, 
+        "defense_value": 18, 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 9, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 11, 
+        "defense_power": "invulnerability", 
+        "defense_value": 18, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 9, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 11, 
+        "defense_power": "invulnerability", 
+        "defense_value": 18, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 9, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 18, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 9, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 9, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 9, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 8, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 9, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_power": "impervious", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 9, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 9, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_power": "impervious", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "fotr101", 
+    "set_id": "fotr", 
+    "collector_number": "101", 
+    "name": "Ringwraith", 
+    "type": "character", 
+    "rarity": "chase", 
+    "dimensions": "1x2", 
+    "point_values": [
+      125
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Forces of Sauron", 
+      "Mystical", 
+      "Nazgul", 
+      "Ringbearer", 
+      "Warrior"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "NAZGUL", 
+        "description": "When Ringwaith uses the Split ablity or any character uses the Merge ability, characters with the Nazgul keyword are considered to have the name Ringwraith."
+      }, 
+      {
+        "type": "trait", 
+        "name": "BLACK HOOVES, IRON GAUNTLETS", 
+        "description": "Opposing characters can't use the Carry ability or be carried while adjacent to Ringwraith or friendly characters with the Nazgul keyword within 4 squares."
+      }
+    ], 
+    "improved_movement": [
+      "hindering"
+    ], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "duo", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 10, 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "charge", 
+        "speed_value": 10, 
+        "attack_power": "incapacitate", 
+        "attack_value": 9, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "plasticity", 
+        "speed_value": 8, 
+        "attack_power": "incapacitate", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "plasticity", 
+        "speed_value": 8, 
+        "attack_power": "incapacitate", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "plasticity", 
+        "speed_value": 8, 
+        "attack_value": 9, 
+        "defense_value": 16, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "plasticity", 
+        "speed_value": 8, 
+        "attack_value": 9, 
+        "defense_value": 16, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "plasticity", 
+        "speed_value": 8, 
+        "attack_value": 8, 
+        "defense_value": 16, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "fotr102", 
+    "set_id": "fotr", 
+    "collector_number": "102", 
+    "name": "Ringwraith", 
+    "type": "character", 
+    "rarity": "chase", 
+    "dimensions": "1x2", 
+    "point_values": [
+      125
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Forces of Sauron", 
+      "Mystical", 
+      "Nazgul", 
+      "Ringbearer", 
+      "Warrior"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "NAZGUL", 
+        "description": "When Ringwaith uses the Split ablity or any character uses the Merge ability, characters with the Nazgul keyword are considered to have the name Ringwraith."
+      }, 
+      {
+        "type": "attack", 
+        "name": "SURROUND THE UNWARY", 
+        "description": "When Ringwraith and another friendly character with the Nazgul keyword are both adjacent to the same opposing character but not adjacent to each other, both may modify their attack value by +1 when attacking the target."
+      }
+    ], 
+    "improved_movement": [
+      "hindering", 
+      "move_through"
+    ], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "duo", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 10, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "shape_change", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "charge", 
+        "speed_value": 10, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "shape_change", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "charge", 
+        "speed_value": 10, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 16, 
+        "damage_power": "shape_change", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "flurry", 
+        "speed_value": 9, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 16, 
+        "damage_power": "shape_change", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "flurry", 
+        "speed_value": 9, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "flurry", 
+        "speed_value": 9, 
+        "attack_value": 9, 
+        "defense_value": 16, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "flurry", 
+        "speed_value": 9, 
+        "attack_value": 9, 
+        "defense_value": 17, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 8, 
+        "speed_power": "flurry", 
+        "speed_value": 9, 
+        "attack_value": 8, 
+        "defense_value": 17, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "fotrB101a", 
+    "set_id": "fotr", 
+    "collector_number": "B101a", 
+    "name": "Dark Steed", 
+    "type": "bystander", 
+    "rarity": "chase", 
+    "dimensions": "1x1", 
+    "point_values": [
+      25
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "BRED FOR THE DARK LORD", 
+        "description": "Dark Steed enters play as B101a. When Dark Steed takes damage, instead of defeating Dark Steed flip it to B101b."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "bystander_type": "standard", 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "1", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_value": 11, 
+        "attack_value": 8, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "fotrB101b", 
+    "set_id": "fotr", 
+    "collector_number": "B101b", 
+    "name": "Dark Steed", 
+    "type": "bystander", 
+    "rarity": "chase", 
+    "dimensions": "1x1", 
+    "point_values": [
+      25
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [], 
+    "special_powers": [], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "bystander_type": "standard", 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "1", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_value": 9, 
+        "attack_value": 8, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "fotrB102", 
+    "set_id": "fotr", 
+    "collector_number": "B102", 
+    "name": "Black Courser", 
+    "type": "bystander", 
+    "rarity": "chase", 
+    "dimensions": "1x1", 
+    "point_values": [
+      25
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [], 
+    "special_powers": [], 
+    "improved_movement": [
+      "hindering", 
+      "water"
+    ], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "bystander_type": "standard", 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "1", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_value": 8, 
+        "attack_power": "quake", 
+        "attack_value": 9, 
+        "defense_power": "invulnerability", 
+        "defense_value": 16, 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "fotrH101", 
+    "set_id": "fotr", 
+    "collector_number": "H101", 
+    "name": "Longbeard", 
+    "type": "bystander", 
+    "rarity": "chase", 
+    "dimensions": "1x1", 
+    "point_values": [
+      20
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [], 
+    "special_powers": [
+      {
+        "type": "damage", 
+        "name": "HORDE: UNYIELDING", 
+        "description": "When a second action token would be placed on Longbeard, roll a d6; if the result is less than (S), no token is placed."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "bystander_type": "horde", 
+    "horde_stack_max": "4", 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "1", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_value": 5, 
+        "attack_power": "quake", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 15, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "fotrH102", 
+    "set_id": "fotr", 
+    "collector_number": "H102", 
+    "name": "Moria Goblin", 
+    "type": "bystander", 
+    "rarity": "chase", 
+    "dimensions": "1x1", 
+    "point_values": [
+      10
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [], 
+    "special_powers": [
+      {
+        "type": "damage", 
+        "name": "HORDE: WALL-CRAWLING", 
+        "description": "Once per turn as a free action when it occupies elevated terrain, give Moria Goblin a move action as if its speed value is (S)."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "bystander_type": "horde", 
+    "horde_stack_max": "6", 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "1", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "leap_climb", 
+        "speed_value": 8, 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 14, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "fotrH103", 
+    "set_id": "fotr", 
+    "collector_number": "H103", 
+    "name": "Dagorland Orc", 
+    "type": "bystander", 
+    "rarity": "chase", 
+    "dimensions": "1x1", 
+    "point_values": [
+      15
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [], 
+    "special_powers": [
+      {
+        "type": "damage", 
+        "name": "HORDE: DRIVEN BY THE DARK LORD", 
+        "description": "When using Charge, Dagorland Orc increases its speed value by (S)."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "bystander_type": "horde", 
+    "horde_stack_max": "3", 
+    "unit_range": "2", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "1", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 6, 
+        "attack_value": 8, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 15, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "fotrS101", 
+    "set_id": "fotr", 
+    "collector_number": "S101", 
+    "name": "Mithril Vest", 
+    "type": "object", 
+    "rarity": "chase", 
+    "point_values": [
+      8
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [], 
+    "special_powers": [
+      {
+        "description": "When this character is hit by a ranged combat attack, roll a d6, on a result of 5-6, this character ignores all damage dealt and is then dealt 1 unavoidable damage."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_type": "relic", 
+    "object_size": "immobile", 
+    "object_keyphrases": [], 
+    "relic_roll_min": "5", 
+    "dial": []
+  }, 
+  {
+    "unit_id": "fotrS102", 
+    "set_id": "fotr", 
+    "collector_number": "S102", 
+    "name": "Lothlorien Cloak", 
+    "type": "object", 
+    "rarity": "chase", 
+    "point_values": [
+      10
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [], 
+    "special_powers": [
+      {
+        "description": "This character can use Super Senses when it occupies hindering terrain.", 
+        "powers": [
+          "super_senses"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_type": "relic", 
+    "object_size": "immobile", 
+    "object_keyphrases": [], 
+    "relic_roll_min": "4", 
+    "dial": []
+  }
+]
