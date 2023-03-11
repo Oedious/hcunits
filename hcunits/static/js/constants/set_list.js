@@ -649,6 +649,11 @@ const SET_LIST = {
     "release_date": "2013-09-18",
     "universe": "dc"
   },
+  "wxm": {
+    "name": "Wolverine and the X-Men",
+    "release_date": "2013-08-21",
+    "universe": "marvel"
+  },
   "wk": {
     "name": "WizKids Standard Game Pieces",
     "release_date": "2002-05-01",
