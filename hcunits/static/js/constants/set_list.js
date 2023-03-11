@@ -679,6 +679,11 @@ const SET_LIST = {
     "release_date": "2013-06-19",
     "universe": "lotr"
   },
+  "mos": {
+    "name": "Man of Steel",
+    "release_date": "2013-06-05",
+    "universe": "dc"
+  },
   "wk": {
     "name": "WizKids Standard Game Pieces",
     "release_date": "2002-05-01",

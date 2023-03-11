@@ -482,6 +482,9 @@ SET_MAP = {
   "fotr": {
     "name": "Fellowship of the Ring",
   },
+  "mos": {
+    "name": "Man of Steel",
+  },
 }
 
 POWERS = {
