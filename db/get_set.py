@@ -444,6 +444,9 @@ SET_MAP = {
   "hbtdos": {
     "name": "The Hobbit: The Desolation of Smaug",
   },
+  "mkr": {
+    "name": "Mage Knight: Resurrection",
+  },
 }
 
 POWERS = {
@@ -624,6 +627,7 @@ IMPROVED_ABILITIES = {
       "characters": "characters",
       "ignores characters": "characters",
       "move through": "move_through",
+      "may move through squares adjacent to opposing characters, but still need to break away normally": "move_through",
       "may move through squares adjacent to opposing characters, but still needs to break away normally": "move_through",
       "may move through squares adjacent to or occupied by opposing characters, but still needs to break away normally": "move_through",
       "this character can move through squares adjacent to or occupied by opposing characters without stopping, and automatically breaks away, even if adjacent to a character than can use plasticity": "move_through",
@@ -654,6 +658,7 @@ IMPROVED_ABILITIES = {
       "characters": "characters",
       "ignores characters": "characters",
       "lines of fire drawn by this character are not blocked by characters": "characters",
+      "ignores friendly characters": "friendly_characters",
       "ignores opposing characters": "opposing_characters",
       "adjacent": "adjacent",
       "may make a ranged combat attack when adjacent to an opposing character": "adjacent",
@@ -673,7 +678,7 @@ IMPROVED_MOVEMENT_VALUES = [
 ]
 
 IMPROVED_TARGETING_VALUES = [
-  "elevated", "hindering", "blocking", "outdoor_blocking", "destroy_blocking", "characters", "opposing_characters", "adjacent", "water"
+  "elevated", "hindering", "blocking", "outdoor_blocking", "destroy_blocking", "characters", "friendly_characters", "opposing_characters", "adjacent", "water"
 ]
 
 OBJECT_TYPE_VALUES = [
@@ -1707,7 +1712,7 @@ class Unit:
     # so that the list can be used for search.
     sp_desc = sp["description"]
     sp_desc = sp_desc.replace(" and", ",")
-    split_list = re.split("\.|,|//|-| as ", sp_desc)
+    split_list = re.split("\.|,|//|-|;| as ", sp_desc)
     sp_powers = []
     for power in split_list:
       power = power.strip()

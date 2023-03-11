@@ -1,0 +1,3695 @@
+<resultset>
+  <row>
+    <unit_id>mkr001</unit_id>
+    <set_id>mkr</set_id>
+    <collector_number>001</collector_number>
+    <name>Moonborn Dunewolf</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[45]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["mage_spawn"]</team_abilities>
+    <keywords>["Animal", "Blood Cult", "Galeshi", "Monster"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "BORN OF DESERT DARKNESS", 
+    "description": "Moonborn Dunewolf can use Stealth. When Moonborn Dunewolf occupies hindering terrain, he can use Flurry.", 
+    "powers": [
+      "stealth", 
+      "charge"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "plasticity", 
+    "speed_value": 7, 
+    "attack_value": 9, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "charge", 
+    "speed_value": 8, 
+    "attack_value": 8, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 15, 
+    "damage_power": "battle_fury", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "charge", 
+    "speed_value": 8, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 8, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 15, 
+    "damage_power": "battle_fury", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "charge", 
+    "speed_value": 8, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 8, 
+    "defense_power": "willpower", 
+    "defense_value": 15, 
+    "damage_power": "battle_fury", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "plasticity", 
+    "speed_value": 7, 
+    "attack_value": 7, 
+    "defense_power": "willpower", 
+    "defense_value": 14, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "plasticity", 
+    "speed_value": 7, 
+    "attack_value": 7, 
+    "defense_power": "willpower", 
+    "defense_value": 14, 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>mkr002</unit_id>
+    <set_id>mkr</set_id>
+    <collector_number>002</collector_number>
+    <name>Dwarven Axeshield</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[45]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["mercenary"]</team_abilities>
+    <keywords>["Dwarf", "Forgemasters", "Soldier"]</keywords>
+    <special_powers>[
+  {
+    "type": "defense", 
+    "name": "AXESHIELD", 
+    "description": "Dwarven Axeshield can use Toughness; once per turn, when he or his adjacent leader takes damage from a ranged combat attack, roll a d6 and on a result of 5 - 6 deal 1 damage to the attacker.", 
+    "powers": [
+      "toughness"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "sidestep", 
+    "speed_value": 6, 
+    "attack_power": "quake", 
+    "attack_value": 9, 
+    "defense_power": "special", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "force_blast", 
+    "speed_value": 5, 
+    "attack_value": 9, 
+    "defense_power": "special", 
+    "defense_value": 15, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "force_blast", 
+    "speed_value": 5, 
+    "attack_value": 8, 
+    "defense_power": "special", 
+    "defense_value": 15, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "sidestep", 
+    "speed_value": 4, 
+    "attack_power": "quake", 
+    "attack_value": 9, 
+    "defense_power": "willpower", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "sidestep", 
+    "speed_value": 4, 
+    "attack_value": 9, 
+    "defense_power": "willpower", 
+    "defense_value": 15, 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>mkr003</unit_id>
+    <set_id>mkr</set_id>
+    <collector_number>003</collector_number>
+    <name>Skeleton Skullwalker</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[55]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["mage_spawn"]</team_abilities>
+    <keywords>["Deathspeakers", "Monster", "Warrior"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "BONES THAT MUST RISE", 
+    "description": "Give Skeleton Skullwalker a move action and, after actions resolve, place a hindering terrain marker in its square that remains on the map until Skeleton Skullwalker no longer occupies the square.  Skeleton Skullwalker ignores the marker for movement purposes."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "stealth", 
+    "speed_value": 7, 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "stealth", 
+    "speed_value": 7, 
+    "attack_value": 8, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "stealth", 
+    "speed_value": 6, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 9, 
+    "defense_power": "invincible", 
+    "defense_value": 14, 
+    "damage_power": "battle_fury", 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "stealth", 
+    "speed_value": 6, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 9, 
+    "defense_power": "invincible", 
+    "defense_value": 14, 
+    "damage_power": "battle_fury", 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "flurry", 
+    "speed_value": 6, 
+    "attack_value": 10, 
+    "defense_power": "regeneration", 
+    "defense_value": 16, 
+    "damage_power": "battle_fury", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "flurry", 
+    "speed_value": 5, 
+    "attack_value": 9, 
+    "defense_power": "regeneration", 
+    "defense_value": 16, 
+    "damage_power": "battle_fury", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>mkr004</unit_id>
+    <set_id>mkr</set_id>
+    <collector_number>004</collector_number>
+    <name>Xandressan Windsman</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[40]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["mercenary"]</team_abilities>
+    <keywords>["Atlantean", "Pilot", "Soldier"]</keywords>
+    <special_powers>[
+  {
+    "type": "speed", 
+    "name": "WE SERVE THE WIND", 
+    "description": "Xandressan Windsman can use Flurry and Force Blast; when he uses Force Blast, subtract 3 from the result of the d6 roll, minimum result 1.", 
+    "powers": [
+      "flurry", 
+      "force_blast"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>dolphin</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "leap_climb", 
+    "speed_value": 8, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 9, 
+    "defense_power": "willpower", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "special", 
+    "speed_value": 9, 
+    "attack_power": "precision_strike", 
+    "attack_value": 9, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 15, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "special", 
+    "speed_value": 8, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 15, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "special", 
+    "speed_value": 9, 
+    "attack_power": "precision_strike", 
+    "attack_value": 9, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 15, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_value": 8, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 8, 
+    "defense_power": "willpower", 
+    "defense_value": 15, 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 6, 
+    "speed_value": 8, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 8, 
+    "defense_power": "willpower", 
+    "defense_value": 14, 
+    "damage_value": 1
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>mkr005</unit_id>
+    <set_id>mkr</set_id>
+    <collector_number>005</collector_number>
+    <name>Altem Sentinel</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[50]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["phoenix_concord"]</team_abilities>
+    <keywords>["Armor", "Atlantean", "Soldier"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "I UNDERTAKE A DUTY TO DEFEND THE GUILD", 
+    "description": "When a character fails to break away from Altem Sentinel, deal that character 1 damage."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>2</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "plasticity", 
+    "speed_value": 8, 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "plasticity", 
+    "speed_value": 7, 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "plasticity", 
+    "speed_value": 7, 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "plasticity", 
+    "speed_value": 6, 
+    "attack_value": 10, 
+    "defense_power": "willpower", 
+    "defense_value": 16, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "plasticity", 
+    "speed_value": 6, 
+    "attack_value": 10, 
+    "defense_power": "willpower", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "plasticity", 
+    "speed_value": 5, 
+    "attack_value": 9, 
+    "defense_power": "willpower", 
+    "defense_value": 15, 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>mkr006</unit_id>
+    <set_id>mkr</set_id>
+    <collector_number>006</collector_number>
+    <name>Goblin Pillager</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[40]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["ascendent"]</team_abilities>
+    <keywords>["Broken Tusk", "Brute", "Orc"]</keywords>
+    <special_powers>[
+  {
+    "type": "attack", 
+    "name": "PLUNDER", 
+    "description": "Goblin Pillager can use Super Strength.  When he moves, he may pick up objects held by adjacent opposing characters.  Goblin Pillager may pick up an object when he is holding one; when he does so, choose one of the two objects and remove it from the game.", 
+    "powers": [
+      "super_strength"
+    ]
+  }
+]</special_powers>
+    <improved_movement>["move_through"]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "leap_climb", 
+    "speed_value": 9, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_power": "willpower", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "leap_climb", 
+    "speed_value": 9, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_power": "willpower", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "leap_climb", 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 8, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "flurry", 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 8, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 15, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "flurry", 
+    "speed_value": 8, 
+    "attack_value": 9, 
+    "defense_value": 16, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "flurry", 
+    "speed_value": 8, 
+    "attack_value": 9, 
+    "defense_value": 15, 
+    "damage_value": 1
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>mkr007</unit_id>
+    <set_id>mkr</set_id>
+    <collector_number>007</collector_number>
+    <name>Zombie Shambler</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[45]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["mage_spawn"]</team_abilities>
+    <keywords>["Atlantean", "Dominion", "Monster", "Mystical"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "MAGE DRAIN", 
+    "description": "Whenever an opposing character takes damage from Zombie Shambler's attack, roll a d6. On a result of 5-6 Zombie Shambler can use Outwit, but may only target that character.", 
+    "powers": [
+      "outwit"
+    ]
+  }, 
+  {
+    "type": "damage", 
+    "name": "WITHERING TOUCH", 
+    "description": "Adjacent opposing characters modify their defense values by -1."
+  }
+]</special_powers>
+    <improved_movement>["hindering"]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>5</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_value": 5, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 9, 
+    "defense_power": "willpower", 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "charge", 
+    "speed_value": 6, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 9, 
+    "defense_power": "willpower", 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 3, 
+    "speed_value": 5, 
+    "attack_power": "steal_energy", 
+    "attack_value": 9, 
+    "defense_power": "willpower", 
+    "defense_value": 16, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_value": 5, 
+    "attack_power": "steal_energy", 
+    "attack_value": 8, 
+    "defense_value": 15, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_value": 4, 
+    "attack_power": "steal_energy", 
+    "attack_value": 8, 
+    "defense_value": 15, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>mkr008</unit_id>
+    <set_id>mkr</set_id>
+    <collector_number>008</collector_number>
+    <name>Gassalite Swordbrother</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[45]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["mercenary"]</team_abilities>
+    <keywords>["Martial Artist", "Soldier"]</keywords>
+    <special_powers>[
+  {
+    "type": "speed", 
+    "name": "DANCE OF THE BLADE", 
+    "description": "Gassalite Swordbrother can use Flurry.  When he does, he can use Sidestep immediately before making the second attack.", 
+    "powers": [
+      "flurry", 
+      "sidestep"
+    ]
+  }
+]</special_powers>
+    <improved_movement>["characters"]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "special", 
+    "speed_value": 8, 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "special", 
+    "speed_value": 8, 
+    "attack_value": 9, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_power": "empower", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "special", 
+    "speed_value": 8, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 9, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 15, 
+    "damage_power": "empower", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_value": 7, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 15, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_value": 7, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 10, 
+    "defense_power": "willpower", 
+    "defense_value": 15, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_value": 7, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 9, 
+    "defense_power": "willpower", 
+    "defense_value": 15, 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>mkr009</unit_id>
+    <set_id>mkr</set_id>
+    <collector_number>009</collector_number>
+    <name>Wolfkin Raider</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[75]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["ascendent"]</team_abilities>
+    <keywords>["Broken Tusk", "Brute", "Orc", "Warrior"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "I ACCEPT YOUR CHALLENGE!", 
+    "description": "After a friendly character within 4 squares and line of fire takes damage from a close combat attack and actions resolve, you may place Wolfkin Raider in a square adjacent to the attacker or the target."
+  }, 
+  {
+    "type": "defense", 
+    "name": "YOU ARE WEAK!", 
+    "description": "Wolfkin Raider can use Toughness and Willpower.", 
+    "powers": [
+      "toughness", 
+      "willpower"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "plasticity", 
+    "speed_value": 7, 
+    "attack_power": "incapacitate", 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "plasticity", 
+    "speed_value": 7, 
+    "attack_power": "quake", 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 17, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "plasticity", 
+    "speed_value": 7, 
+    "attack_power": "quake", 
+    "attack_value": 9, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "plasticity", 
+    "speed_value": 6, 
+    "attack_power": "incapacitate", 
+    "attack_value": 8, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "plasticity", 
+    "speed_value": 6, 
+    "attack_value": 8, 
+    "defense_power": "special", 
+    "defense_value": 16, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "charge", 
+    "speed_value": 6, 
+    "attack_value": 9, 
+    "defense_power": "special", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "charge", 
+    "speed_value": 6, 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>mkr010</unit_id>
+    <set_id>mkr</set_id>
+    <collector_number>010</collector_number>
+    <name>Shyft Ravager</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[60]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["mage_spawn"]</team_abilities>
+    <keywords>["Brute", "Monster", "Shyft"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "BORN OF SEA AND SWAMP", 
+    "description": "When it is not your turn, lines of fire drawn to Shyft Ravager when it occupies water terrain are hindered."
+  }, 
+  {
+    "type": "attack", 
+    "name": "WE BRING THE DARKNESS WITH US", 
+    "description": "Shyft Ravager can use Poison and Smoke Cloud.", 
+    "powers": [
+      "poison", 
+      "smoke_cloud"
+    ]
+  }
+]</special_powers>
+    <improved_movement>["elevated"]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>dolphin</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "stealth", 
+    "speed_value": 9, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "stealth", 
+    "speed_value": 9, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 15, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "stealth", 
+    "speed_value": 8, 
+    "attack_power": "smoke_cloud", 
+    "attack_value": 9, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 15, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "stealth", 
+    "speed_value": 8, 
+    "attack_power": "smoke_cloud", 
+    "attack_value": 9, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 15, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 5, 
+    "speed_value": 8, 
+    "attack_power": "poison", 
+    "attack_value": 8, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 15, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 6, 
+    "speed_value": 7, 
+    "attack_power": "poison", 
+    "attack_value": 8, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 14, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 1
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>mkr011</unit_id>
+    <set_id>mkr</set_id>
+    <collector_number>011</collector_number>
+    <name>Bonebreaker Shaman</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[80]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["dominion_pact"]</team_abilities>
+    <keywords>["Chaos Shamans", "Mystical", "Orc"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "HEAR THEIR BONES GRIND", 
+    "description": "When an opposing character takes damage from Bonebreaker Shaman's attack and the result of the attack roll is doubles, the target can't move until your next turn."
+  }, 
+  {
+    "type": "damage", 
+    "name": "MEND THE TRIBE", 
+    "description": "Bonebreaker Shaman can use Perplex and Support.", 
+    "powers": [
+      "perplex", 
+      "support"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>8</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 7, 
+    "attack_power": "telekinesis", 
+    "attack_value": 10, 
+    "defense_power": "barrier", 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 7, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 9, 
+    "defense_power": "barrier", 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 6, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 9, 
+    "defense_power": "willpower", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 6, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 9, 
+    "defense_power": "willpower", 
+    "defense_value": 17, 
+    "damage_power": "enhancement", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 6, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 9, 
+    "defense_power": "willpower", 
+    "defense_value": 16, 
+    "damage_power": "enhancement", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 5, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 8, 
+    "defense_power": "willpower", 
+    "defense_value": 16, 
+    "damage_power": "enhancement", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>mkr012</unit_id>
+    <set_id>mkr</set_id>
+    <collector_number>012</collector_number>
+    <name>Norowas</name>
+    <type>character</type>
+    <rarity>uncommon</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[100]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["council_of_the_mists"]</team_abilities>
+    <keywords>["Elf", "Mage Knight", "Martial Artist", "Storm Druid", "Temple Masters", "Warrior"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "WHISPERS IN THE TREETOPS", 
+    "description": "Norowas can use Leap/Climb and Stealth.", 
+    "powers": [
+      "leap_climb", 
+      "stealth"
+    ]
+  }, 
+  {
+    "type": "damage", 
+    "name": "INSPIRING NEGOTIATOR", 
+    "description": "Norowas can use Leadership and Perplex. When he uses Perplex, he may only target a character from whom he removed an action token this turn, but he may modify a combat value by +2.", 
+    "powers": [
+      "leadership", 
+      "perplex"
+    ]
+  }
+]</special_powers>
+    <improved_movement>["hindering"]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>9</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>sharpshooter</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "running_shot", 
+    "speed_value": 10, 
+    "attack_value": 11, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "running_shot", 
+    "speed_value": 8, 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_value": 8, 
+    "attack_value": 9, 
+    "defense_power": "super_senses", 
+    "defense_value": 15, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_value": 9, 
+    "attack_value": 9, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_value": 8, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 9, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 15, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_value": 8, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 9, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_value": 3
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>mkr013</unit_id>
+    <set_id>mkr</set_id>
+    <collector_number>013</collector_number>
+    <name>Arythea</name>
+    <type>character</type>
+    <rarity>uncommon</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[100]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["dominion_pact"]</team_abilities>
+    <keywords>["Blood Cult", "Mage Knight", "Mystical", "Warrior"]</keywords>
+    <special_powers>[
+  {
+    "type": "epic", 
+    "name": "DOMINEER RITUAL", 
+    "description": "Give Arythea an epic action, and for each character on your force that takes damage before your next turn place a Ritual token on her card; at the beginning of your next turn, deal damage equal to the number of Ritual tokens on her card to a target opposing character, maximum damage 1 per 200 points of the game's build total."
+  }, 
+  {
+    "type": "trait", 
+    "name": "BLOOD POLARIZATION", 
+    "description": "Arythea can use Incapacitate. When she does and actions resolve, roll a d6. On a result of 5-6, a hit target is dealt damage equal to the number of action tokens on it.", 
+    "powers": [
+      "incapacitate"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>5</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "stealth", 
+    "speed_value": 8, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 10, 
+    "defense_power": "willpower", 
+    "defense_value": 18, 
+    "damage_power": "support", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "stealth", 
+    "speed_value": 8, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_power": "support", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "stealth", 
+    "speed_value": 8, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 9, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 15, 
+    "damage_power": "support", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "stealth", 
+    "speed_value": 7, 
+    "attack_power": "poison", 
+    "attack_value": 9, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 15, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "stealth", 
+    "speed_value": 7, 
+    "attack_power": "poison", 
+    "attack_value": 9, 
+    "defense_power": "willpower", 
+    "defense_value": 16, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "stealth", 
+    "speed_value": 7, 
+    "attack_power": "poison", 
+    "attack_value": 9, 
+    "defense_power": "willpower", 
+    "defense_value": 16, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>mkr014</unit_id>
+    <set_id>mkr</set_id>
+    <collector_number>014</collector_number>
+    <name>Goldyx</name>
+    <type>character</type>
+    <rarity>uncommon</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[150]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["phoenix_concord"]</team_abilities>
+    <keywords>["Draconum", "Mage Knight", "Mystical", "Warrior"]</keywords>
+    <special_powers>[
+  {
+    "type": "epic", 
+    "name": "MAGESTONE RESONANCE", 
+    "description": "Give Goldyx an epic action, and choose up to 1 object per 200 points of the game build total. For each object, roll a d6 and on a result of 3-6, deal 1 penetrating damage to up to 2 opposing characters holding or adjacent to the chosen objects or occupying a chosen object's square."
+  }, 
+  {
+    "type": "attack", 
+    "name": "FREEZE AND FLAME", 
+    "description": "Goldyx can use Energy Explosion as if he had 1 target. When he does and actions resolve, he can use Incapacitate as a free action.", 
+    "powers": [
+      "energy_explosion", 
+      "incapacitate"
+    ]
+  }, 
+  {
+    "type": "damage", 
+    "name": "HEALING POTION", 
+    "description": "At the beginning of your turn, heal a friendly adjacent character of 1 damage."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>7</unit_range>
+    <targets>2</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "hypersonic_speed", 
+    "speed_value": 9, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 17, 
+    "damage_power": "probability_control", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "running_shot", 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 11, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 16, 
+    "damage_power": "probability_control", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "running_shot", 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "probability_control", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "hypersonic_speed", 
+    "speed_value": 8, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "probability_control", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_value": 8, 
+    "attack_power": "precision_strike", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_value": 8, 
+    "attack_power": "precision_strike", 
+    "attack_value": 9, 
+    "defense_power": "regeneration", 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 7, 
+    "speed_value": 8, 
+    "attack_value": 9, 
+    "defense_power": "regeneration", 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 8, 
+    "speed_value": 8, 
+    "attack_value": 9, 
+    "defense_power": "regeneration", 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>mkr015</unit_id>
+    <set_id>mkr</set_id>
+    <collector_number>015</collector_number>
+    <name>Tovak</name>
+    <type>character</type>
+    <rarity>uncommon</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[150]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["ascendent"]</team_abilities>
+    <keywords>["Atlantean", "Free Armies", "Mage Knight", "Oathsworn", "Soldier", "Solonavi", "Warrior"]</keywords>
+    <special_powers>[
+  {
+    "type": "epic", 
+    "name": "MAN CAN KILL MONSTER", 
+    "description": "Give Tovak an epic action; until your next turn, modify the damage value of all friendly characters by +1 when they attack a character with a greater point value."
+  }, 
+  {
+    "type": "trait", 
+    "name": "A MISS IS NOT THE FINAL STRIKE", 
+    "description": "When Tovak makes a close combat attack and misses, he may immediately use Sidestep.", 
+    "powers": [
+      "sidestep"
+    ]
+  }, 
+  {
+    "type": "attack", 
+    "name": "WIELDING AN ANCIENT BLADE", 
+    "description": "Tovak can use Close Combat Expert. When he does and the attack roll is doubles, damage dealt is penetrating damage.", 
+    "powers": [
+      "close_combat_expert"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "charge", 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 11, 
+    "defense_power": "invulnerability", 
+    "defense_value": 18, 
+    "damage_power": "outwit", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "charge", 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 18, 
+    "damage_power": "outwit", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "flurry", 
+    "speed_value": 6, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "outwit", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "flurry", 
+    "speed_value": 6, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "outwit", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "plasticity", 
+    "speed_value": 6, 
+    "attack_power": "super_strength", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "plasticity", 
+    "speed_value": 6, 
+    "attack_power": "super_strength", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "plasticity", 
+    "speed_value": 6, 
+    "attack_power": "super_strength", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 3
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>mkr016</unit_id>
+    <set_id>mkr</set_id>
+    <collector_number>016</collector_number>
+    <name>Skyguard Captain</name>
+    <type>character</type>
+    <rarity>uncommon</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[100]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["council_of_the_mists"]</team_abilities>
+    <keywords>["Armor", "Atlantean", "Imperial Legion", "Soldier"]</keywords>
+    <special_powers>[
+  {
+    "type": "speed", 
+    "name": "MY SPEAR WILL LEAD THE WAY", 
+    "description": "Skyguard Captain can use Charge and Flurry.", 
+    "powers": [
+      "charge", 
+      "flurry"
+    ]
+  }, 
+  {
+    "type": "attack", 
+    "name": "MY BLADE WILL PIERCE OUR FOES", 
+    "description": "Skyguard Captain can use Blades/Claws/Fangs. When he does, the attack does not generate knock back; on a result of 4 - 6, after actions resolve, deal the same amount of damage to an opposing character adjacent to the target but not adjacent to Skyguard Captain.", 
+    "powers": [
+      "blades_claws_fangs"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>3</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "special", 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "leadership", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "special", 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "leadership", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "special", 
+    "speed_value": 7, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "flurry", 
+    "speed_value": 7, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_power": "willpower", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "flurry", 
+    "speed_value": 6, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_power": "willpower", 
+    "defense_value": 16, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "flurry", 
+    "speed_value": 6, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_power": "willpower", 
+    "defense_value": 16, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>mkr017</unit_id>
+    <set_id>mkr</set_id>
+    <collector_number>017</collector_number>
+    <name>Orc Harrower</name>
+    <type>character</type>
+    <rarity>uncommon</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[90]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["dominion_pact"]</team_abilities>
+    <keywords>["Broken Tusk", "Brute", "Orc", "Warrior"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "CRUEL STRENGTH", 
+    "description": "Orc Harrower can use Super Strength; when he attacks with a light object, the damage dealt is penetrating damage.", 
+    "powers": [
+      "super_strength"
+    ]
+  }, 
+  {
+    "type": "attack", 
+    "name": "BLOODY HARVEST", 
+    "description": "Orc Harrower can use Blades/Claws/Fangs; when he does and the result of the d6 is 1 - 2, damage dealt by the attack is penetrating damage.", 
+    "powers": [
+      "blades_claws_fangs"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "charge", 
+    "speed_value": 7, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "charge", 
+    "speed_value": 7, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "battle_fury", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_value": 7, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "battle_fury", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_value": 7, 
+    "attack_power": "quake", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "battle_fury", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "charge", 
+    "speed_value": 6, 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 15, 
+    "damage_power": "battle_fury", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "charge", 
+    "speed_value": 6, 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 15, 
+    "damage_power": "battle_fury", 
+    "damage_value": 3
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>mkr018</unit_id>
+    <set_id>mkr</set_id>
+    <collector_number>018</collector_number>
+    <name>Technoshocker</name>
+    <type>character</type>
+    <rarity>uncommon</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[85]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["council_of_the_mists"]</team_abilities>
+    <keywords>["Atlantean", "Delphana", "Golemkore", "Mystical"]</keywords>
+    <special_powers>[
+  {
+    "type": "damage", 
+    "name": "SHOCKER OVERCHARGE", 
+    "description": "Give Technoshocker a double power action, roll a d6 and replace his damage value with the result and it is locked. When you do, give Technoshocker a ranged combat action as a free action."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>["hindering"]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>7</unit_range>
+    <targets>2</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>sharpshooter</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "leap_climb", 
+    "speed_value": 9, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 10, 
+    "defense_power": "willpower", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "leap_climb", 
+    "speed_value": 7, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 9, 
+    "defense_power": "willpower", 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "leap_climb", 
+    "speed_value": 7, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 10, 
+    "defense_power": "defend", 
+    "defense_value": 18, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "leap_climb", 
+    "speed_value": 9, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 10, 
+    "defense_power": "defend", 
+    "defense_value": 18, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "leap_climb", 
+    "speed_value": 8, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 9, 
+    "defense_power": "willpower", 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "leap_climb", 
+    "speed_value": 8, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 8, 
+    "defense_power": "willpower", 
+    "defense_value": 18, 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>mkr019</unit_id>
+    <set_id>mkr</set_id>
+    <collector_number>019</collector_number>
+    <name>Solonavi Domineer</name>
+    <type>character</type>
+    <rarity>uncommon</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[165]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["dominion_pact"]</team_abilities>
+    <keywords>["Dominion", "Mystical", "Oracles of Rokos", "Solonavi", "Warrior"]</keywords>
+    <special_powers>[
+  {
+    "type": "attack", 
+    "name": "WE ARE ALL PAWNS OF THE PACT", 
+    "description": "Solonavi Domineer can use Mind Control and, when he does, the hit target modifies either its attack or damage values by +1 until actions resolve. Solonavi Domineer can use Mind Control as a free action and, when he does, instead modify his attack value by -1.", 
+    "powers": [
+      "mind_control"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>8</unit_range>
+    <targets>1</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 10, 
+    "attack_power": "special", 
+    "attack_value": 11, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "outwit", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 10, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_power": "outwit", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 9, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 16, 
+    "damage_power": "outwit", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 9, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 16, 
+    "damage_power": "probability_control", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 9, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "probability_control", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_value": 8, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 9, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "probability_control", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 7, 
+    "speed_value": 8, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 9, 
+    "defense_power": "super_senses", 
+    "defense_value": 16, 
+    "damage_power": "probability_control", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 8, 
+    "speed_value": 8, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 9, 
+    "defense_power": "super_senses", 
+    "defense_value": 16, 
+    "damage_power": "probability_control", 
+    "damage_value": 4
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>mkr020</unit_id>
+    <set_id>mkr</set_id>
+    <collector_number>020</collector_number>
+    <name>Wolfhawk</name>
+    <type>character</type>
+    <rarity>rare</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[150]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["phoenix_concord"]</team_abilities>
+    <keywords>["Amazon", "Mage Knight", "Solonavi", "Warrior"]</keywords>
+    <special_powers>[
+  {
+    "type": "epic", 
+    "name": "WOLF'S TAUNT", 
+    "description": "Give Wolfhawk an epic action; Wolfhawk can use Incapacitate as a free action once for each 150 points of the game's build total, as if she had a range value of 8.", 
+    "powers": [
+      "incapacitate"
+    ]
+  }, 
+  {
+    "type": "trait", 
+    "name": "BEASTBOND", 
+    "description": "At the beginning of your turn, choose one standard power or combat ability possessed by a character on the map with the Animal, Monster, or Mystical keyword; Wolfhawk can use the chosen power or combat ability until your next turn."
+  }, 
+  {
+    "type": "damage", 
+    "name": "ON MY OWN", 
+    "description": "Wolfhawk can use Perplex; when she is not adjacent to a friendly character and uses Perplex, she can modify a target opposing character's combat value by -2.", 
+    "powers": [
+      "perplex"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "leap_climb", 
+    "speed_value": 9, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "leap_climb", 
+    "speed_value": 9, 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "shape_change", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "flurry", 
+    "speed_value": 8, 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "shape_change", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "flurry", 
+    "speed_value": 8, 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "flurry", 
+    "speed_value": 8, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 9, 
+    "defense_power": "super_senses", 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "flurry", 
+    "speed_value": 7, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 9, 
+    "defense_power": "super_senses", 
+    "defense_value": 15, 
+    "damage_power": "battle_fury", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 7, 
+    "speed_value": 7, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 15, 
+    "damage_power": "battle_fury", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 8, 
+    "speed_value": 7, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 15, 
+    "damage_power": "battle_fury", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>mkr021</unit_id>
+    <set_id>mkr</set_id>
+    <collector_number>021</collector_number>
+    <name>General Volkare</name>
+    <type>character</type>
+    <rarity>rare</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[170]</point_values>
+    <properties>["unique"]</properties>
+    <team_abilities>["ascendent"]</team_abilities>
+    <keywords>["Atlantean", "Soldier", "Warrior"]</keywords>
+    <special_powers>[
+  {
+    "type": "epic", 
+    "name": "RAZE THE CITY GATES", 
+    "description": "Give General Volkare an epic action and choose either the row or column of the map he occupies; destroy up to 1 square of hindering or blocking terrain (or token representing that terrain) for each 100 points of the game's build total in the chosen area, and deal every opposing character occupying hindering terrain on the chosen area 1 damage."
+  }, 
+  {
+    "type": "trait", 
+    "name": "THE BLOODY BANNER", 
+    "description": "Once per turn, when General Volkare KO's an opposing character, you may place a Banner token in the square occupied by the KO'ed character. When a Banner token is placed, remove all other Banner tokens from the map. At the beginning of your turn, up to 2 friendly characters occupying or adjacent to a Banner token my be healed of 1 damage. A Banner token may be destroyed as if it were a square of blocking terrain."
+  }, 
+  {
+    "type": "damage", 
+    "name": "THE LEGION IS UNDER MY COMMAND", 
+    "description": "General Volkare can use Leadership, Mind Control, and Outwit; when he uses Mind Control, if the result of a successful attack roll is doubles, deal the targeted character 1 penetrating damage after it becomes an opposing character again.", 
+    "powers": [
+      "leadership", 
+      "mind_control", 
+      "outwit"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>6</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "stealth", 
+    "speed_value": 7, 
+    "attack_power": "precision_strike", 
+    "attack_value": 11, 
+    "defense_power": "invincible", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "stealth", 
+    "speed_value": 7, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 11, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "stealth", 
+    "speed_value": 6, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 16, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "stealth", 
+    "speed_value": 6, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 5, 
+    "speed_value": 6, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 6, 
+    "speed_value": 6, 
+    "attack_power": "precision_strike", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 7, 
+    "speed_value": 6, 
+    "attack_power": "steal_energy", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "outwit", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 8, 
+    "speed_value": 5, 
+    "attack_power": "steal_energy", 
+    "attack_value": 9, 
+    "defense_value": 15, 
+    "damage_power": "outwit", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>mkr022</unit_id>
+    <set_id>mkr</set_id>
+    <collector_number>022</collector_number>
+    <name>Khan Bonespike</name>
+    <type>character</type>
+    <rarity>rare</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[175]</point_values>
+    <properties>["unique"]</properties>
+    <team_abilities>["ascendent"]</team_abilities>
+    <keywords>["Blood Shamans", "Broken Tusk", "Brute", "Orc", "Ruler"]</keywords>
+    <special_powers>[
+  {
+    "type": "epic", 
+    "name": "BLOOD ROAR", 
+    "description": "Give Khan Bonespike an epic action and choose up to 1 opposing character marked with an action token for each 200 points of the game's build total; deal each of the chosen characters 1 damage."
+  }, 
+  {
+    "type": "trait", 
+    "name": "KHAN'S RAMPAGE", 
+    "description": "Khan Bonespike can use Charge.  When an adjacent opposing character is KO'd and actions resolve, Khan Bonespike can use Charge as a free action, and when he does, he can use Exploit Weakness.", 
+    "powers": [
+      "charge", 
+      "exploit_weakness"
+    ]
+  }, 
+  {
+    "type": "attack", 
+    "name": "WE WILL SPIKE THE WEAK!", 
+    "description": "Khan Bonespike can use Quake; when he does and hits a target character marked with one action token, place a second action token on the target.", 
+    "powers": [
+      "quake"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 11, 
+    "defense_power": "toughness", 
+    "defense_value": 18, 
+    "damage_power": "leadership", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 2, 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 18, 
+    "damage_power": "empower", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_value": 6, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "empower", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_value": 6, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
+    "speed_value": 6, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_value": 6, 
+    "attack_value": 9, 
+    "defense_power": "invulnerability", 
+    "defense_value": 15, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 7, 
+    "speed_value": 6, 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 16, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 8, 
+    "speed_value": 6, 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 3
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>mkr023</unit_id>
+    <set_id>mkr</set_id>
+    <collector_number>023</collector_number>
+    <name>Exarch Balion</name>
+    <type>character</type>
+    <rarity>rare</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[200]</point_values>
+    <properties>["unique"]</properties>
+    <team_abilities>["phoenix_concord"]</team_abilities>
+    <keywords>["Atlantean", "Delphana", "Mystical", "Ruler"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "I AM THE WILL OF ATLANTIS", 
+    "description": "Exarch Balion can use Mastermind. Exarch Balion can use Mind Control, but may only target characters marked with an action token.", 
+    "powers": [
+      "mastermind", 
+      "mind_control"
+    ]
+  }, 
+  {
+    "type": "attack", 
+    "name": "THE POWER FLOWS THROUGH ME", 
+    "description": "Exarch Balion can use Penetrating/Psychic Blast. When Exarch Balion is not marked with two action tokens, up to 2 friendly characters adjacent to him can use Poison.", 
+    "powers": [
+      "penetrating_psychic_blast"
+    ]
+  }, 
+  {
+    "type": "damage", 
+    "name": "OBEY, AND BE REWARDED", 
+    "description": "Exarch Balion can use Empower, Enhancement and Outwit.", 
+    "powers": [
+      "empower", 
+      "enhancement", 
+      "outwit"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>8</unit_range>
+    <targets>1</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_value": 7, 
+    "attack_power": "special", 
+    "attack_value": 12, 
+    "defense_power": "impervious", 
+    "defense_value": 18, 
+    "damage_power": "special", 
+    "damage_value": 5
+  }, 
+  {
+    "click_number": 2, 
+    "speed_value": 7, 
+    "attack_power": "special", 
+    "attack_value": 12, 
+    "defense_power": "invincible", 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 3, 
+    "speed_value": 7, 
+    "attack_power": "special", 
+    "attack_value": 11, 
+    "defense_power": "invincible", 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_value": 6, 
+    "attack_power": "special", 
+    "attack_value": 11, 
+    "defense_power": "regeneration", 
+    "defense_value": 14, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
+    "speed_value": 6, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 10, 
+    "defense_power": "regeneration", 
+    "defense_value": 14, 
+    "damage_power": "perplex", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 6, 
+    "speed_value": 6, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 9, 
+    "defense_power": "invulnerability", 
+    "defense_value": 16, 
+    "damage_power": "perplex", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 7, 
+    "speed_value": 6, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 9, 
+    "defense_power": "invulnerability", 
+    "defense_value": 18, 
+    "damage_power": "perplex", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 8, 
+    "speed_value": 6, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 9, 
+    "defense_power": "impervious", 
+    "defense_value": 18, 
+    "damage_power": "perplex", 
+    "damage_value": 3
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>mkr024</unit_id>
+    <set_id>mkr</set_id>
+    <collector_number>024</collector_number>
+    <name>Lord Varatrix</name>
+    <type>character</type>
+    <rarity>rare</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[175]</point_values>
+    <properties>["unique"]</properties>
+    <team_abilities>["council_of_the_mists"]</team_abilities>
+    <keywords>["Oracles of Rokos", "Ruler", "Solonavi"]</keywords>
+    <special_powers>[
+  {
+    "type": "epic", 
+    "name": "ECHOES OF THE PAST", 
+    "description": "Give Lord Varatrix an epic action. He can use Perplex, targeting up to 1 character per 150 points of the game's build total regardless of range or line of fire, after which Lord Varatrix can make either a close or ranged combat attack as a free action.", 
+    "powers": [
+      "perplex"
+    ]
+  }, 
+  {
+    "type": "trait", 
+    "name": "WE NEVER STOPPED WALKING THE LAND", 
+    "description": "When Lord Varatrix is marked with 2 action tokens, he may be given a move action as a free action."
+  }, 
+  {
+    "type": "damage", 
+    "name": "STOLEN POWER", 
+    "description": "Lord Varatrix can use Outwit; when he does, roll a d6 and on a result of 5-6 he can use the countered power or ability until the end of your next turn.", 
+    "powers": [
+      "outwit"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>9</unit_range>
+    <targets>2</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_value": 10, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 12, 
+    "defense_power": "impervious", 
+    "defense_value": 18, 
+    "damage_power": "shape_change", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 2, 
+    "speed_value": 10, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 11, 
+    "defense_power": "impervious", 
+    "defense_value": 17, 
+    "damage_power": "shape_change", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 3, 
+    "speed_value": 10, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 11, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_power": "shape_change", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "flurry", 
+    "speed_value": 9, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_power": "shape_change", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "flurry", 
+    "speed_value": 9, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "flurry", 
+    "speed_value": 9, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 10, 
+    "defense_power": "regeneration", 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 7, 
+    "speed_value": 9, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 9, 
+    "defense_power": "regeneration", 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 8, 
+    "speed_value": 9, 
+    "attack_value": 9, 
+    "defense_power": "regeneration", 
+    "defense_value": 15, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>mkr025</unit_id>
+    <set_id>mkr</set_id>
+    <collector_number>025</collector_number>
+    <name>Raydan Marz (Tezla Champion)</name>
+    <type>character</type>
+    <rarity>chase</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[175]</point_values>
+    <properties>["unique"]</properties>
+    <team_abilities>["phoenix_concord"]</team_abilities>
+    <keywords>["Atlantean", "Herald", "Mystical", "Tezla", "Warrior"]</keywords>
+    <special_powers>[
+  {
+    "type": "epic", 
+    "name": "I HAVE RETURNED!", 
+    "description": "Give Raydan Marz an epic action; until your next turn, no die may be rerolled, and no attack can be evaded."
+  }, 
+  {
+    "type": "trait", 
+    "name": "AVATAR OF THE PROPHET", 
+    "description": "Raydan Marz can use Empower, Enhancement, Outwit, Perplex, and Probability Control. At the end of your turn, roll a d6 for each of these powers he used and on a result of 1 - 2, do not remove action tokens from him this turn.", 
+    "powers": [
+      "empower", 
+      "enhancement", 
+      "outwit", 
+      "perplex", 
+      "probability_control"
+    ]
+  }, 
+  {
+    "type": "attack", 
+    "name": "MANA CHAIN", 
+    "description": "Raydan Marz can use Penetrating/Psychic Blast. Each time Raydan Marz hits with a ranged combat attack and the attack roll is doubles, he may be given a ranged combat action as a free action counting range and line of fire from a square occupied by the hit target.", 
+    "powers": [
+      "penetrating_psychic_blast"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>["friendly_characters"]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>8</unit_range>
+    <targets>1</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>sharpshooter</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 12, 
+    "defense_power": "invincible", 
+    "defense_value": 17, 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 5, 
+    "attack_power": "special", 
+    "attack_value": 11, 
+    "defense_power": "invincible", 
+    "defense_value": 16, 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 5, 
+    "attack_power": "special", 
+    "attack_value": 11, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 5, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 16, 
+    "damage_power": "support", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 5, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 15, 
+    "damage_power": "support", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 5, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 10, 
+    "defense_power": "regeneration", 
+    "defense_value": 16, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 5, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 10, 
+    "defense_power": "regeneration", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 8, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 5, 
+    "attack_value": 10, 
+    "defense_power": "regeneration", 
+    "defense_value": 18, 
+    "damage_value": 3
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>mkr101</unit_id>
+    <set_id>mkr</set_id>
+    <collector_number>101</collector_number>
+    <name>Za'rax'as</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[50]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["mage_spawn"]</team_abilities>
+    <keywords>["Monster", "Shyft", "Warrior"]</keywords>
+    <special_powers>[
+  {
+    "type": "speed", 
+    "name": "FLURRY OF BLADES", 
+    "description": "Za'rax'as can use Flurry, Force Blast, and Leap/Climb; when he uses Flurry to attack the same target twice, damage dealt by the second attack is penetrating damage.", 
+    "powers": [
+      "flurry", 
+      "force_blast", 
+      "leap_climb"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>4</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "special", 
+    "speed_value": 8, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 10, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "special", 
+    "speed_value": 8, 
+    "attack_power": "precision_strike", 
+    "attack_value": 9, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 17, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "special", 
+    "speed_value": 8, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "plasticity", 
+    "speed_value": 7, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 9, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "plasticity", 
+    "speed_value": 7, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 9, 
+    "defense_power": "willpower", 
+    "defense_value": 15, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "plasticity", 
+    "speed_value": 7, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 8, 
+    "defense_power": "willpower", 
+    "defense_value": 15, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>mkr102</unit_id>
+    <set_id>mkr</set_id>
+    <collector_number>102</collector_number>
+    <name>Cavalier Freeblade</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[50]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["mercenary"]</team_abilities>
+    <keywords>["Celebrity", "Soldier", "Warrior"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "IT MAKES FOR A GOOD STORY", 
+    "description": "Whenever any other character on the map rolls a critical hit or a critical miss, you may remove all action tokens from Cavalier Freeblade."
+  }, 
+  {
+    "type": "damage", 
+    "name": "LET ME SHOW YOU A FEW TRICKS...", 
+    "description": "Cavalier Freeblade can use Battle Fury and Empower.", 
+    "powers": [
+      "battle_fury", 
+      "empower"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "charge", 
+    "speed_value": 8, 
+    "attack_value": 9, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "charge", 
+    "speed_value": 6, 
+    "attack_power": "quake", 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 15, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "sidestep", 
+    "speed_value": 6, 
+    "attack_power": "quake", 
+    "attack_value": 9, 
+    "defense_power": "willpower", 
+    "defense_value": 15, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "sidestep", 
+    "speed_value": 6, 
+    "attack_value": 9, 
+    "defense_power": "willpower", 
+    "defense_value": 15, 
+    "damage_power": "perplex", 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "sidestep", 
+    "speed_value": 6, 
+    "attack_value": 8, 
+    "defense_power": "willpower", 
+    "defense_value": 16, 
+    "damage_power": "perplex", 
+    "damage_value": 1
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>mkr103</unit_id>
+    <set_id>mkr</set_id>
+    <collector_number>103</collector_number>
+    <name>Growlfang</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[75]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["dominion_pact"]</team_abilities>
+    <keywords>["Blood Cult", "Dominion", "Monster"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "PAIN WAITS IN THE SHADOWS", 
+    "description": "Growlfang can use Stealth.", 
+    "powers": [
+      "stealth"
+    ]
+  }, 
+  {
+    "type": "damage", 
+    "name": "ATTACK THE HELPLESS", 
+    "description": "Growlfang can use Exploit Weakness; when he does, modify his damage value by +1 for each action token on the target.", 
+    "powers": [
+      "exploit_weakness"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "leap_climb", 
+    "speed_value": 9, 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "leap_climb", 
+    "speed_value": 8, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "leap_climb", 
+    "speed_value": 8, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 9, 
+    "defense_power": "super_senses", 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "plasticity", 
+    "speed_value": 7, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 8, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "plasticity", 
+    "speed_value": 7, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "plasticity", 
+    "speed_value": 7, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 8, 
+    "defense_power": "toughness", 
+    "defense_value": 15, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "plasticity", 
+    "speed_value": 6, 
+    "attack_value": 8, 
+    "defense_power": "toughness", 
+    "defense_value": 15, 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>mkr104</unit_id>
+    <set_id>mkr</set_id>
+    <collector_number>104</collector_number>
+    <name>General Marz</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[125]</point_values>
+    <properties>["unique"]</properties>
+    <team_abilities>["phoenix_concord"]</team_abilities>
+    <keywords>["Atlantean", "Delphana", "Golemkore", "Imperial Legion", "Politician", "Soldier", "Warrior"]</keywords>
+    <special_powers>[
+  {
+    "type": "epic", 
+    "name": "NOW IS THE TIME TO STRIKE!", 
+    "description": "Give General Marz an epic action; until your next turn, when a friendly character makes an attack, modify their attack value by +1 for each adjacent opposing character marked with one or more action tokens."
+  }, 
+  {
+    "type": "trait", 
+    "name": "SLASHSHOT", 
+    "description": "When General Marz hits with a ranged combat attack, after actions resolve he may be given a close combat action as a free action, but can't attack the same target."
+  }, 
+  {
+    "type": "damage", 
+    "name": "A PLAN TO PUT THE EMPIRE RIGHT", 
+    "description": "General Marz can use Leadership and Outwit. He can use Leadership twice per turn.", 
+    "powers": [
+      "leadership", 
+      "outwit"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>6</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>sharpshooter</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "running_shot", 
+    "speed_value": 8, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 11, 
+    "defense_power": "toughness", 
+    "defense_value": 18, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "running_shot", 
+    "speed_value": 6, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "sidestep", 
+    "speed_value": 6, 
+    "attack_value": 9, 
+    "defense_power": "willpower", 
+    "defense_value": 16, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "sidestep", 
+    "speed_value": 6, 
+    "attack_value": 10, 
+    "defense_power": "willpower", 
+    "defense_value": 17, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "sidestep", 
+    "speed_value": 6, 
+    "attack_power": "precision_strike", 
+    "attack_value": 9, 
+    "defense_value": 18, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "sidestep", 
+    "speed_value": 6, 
+    "attack_power": "precision_strike", 
+    "attack_value": 8, 
+    "defense_value": 18, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>mkr105</unit_id>
+    <set_id>mkr</set_id>
+    <collector_number>105</collector_number>
+    <name>Harrowblade</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[125]</point_values>
+    <properties>["unique"]</properties>
+    <team_abilities>["ascendent"]</team_abilities>
+    <keywords>["Orc", "Shadow Khans", "Warrior"]</keywords>
+    <special_powers>[
+  {
+    "type": "epic", 
+    "name": "POWER OF THE MAGESTONE POWDER", 
+    "description": "Give Harrowblade an epic action and choose up to 1 character per 200 points of the game's build total. Chosen characters can use Super Strength until the end of your next turn and can pick up objects held by adjacent opposing characters."
+  }, 
+  {
+    "type": "trait", 
+    "name": "SWORD OF THE KHANS", 
+    "description": "Immediately after Harrowblade KO's an opposing character he may use Sidestep and make a close combat attack as a free action.", 
+    "powers": [
+      "sidestep"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "charge", 
+    "speed_value": 8, 
+    "attack_power": "super_strength", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 18, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "charge", 
+    "speed_value": 8, 
+    "attack_power": "super_strength", 
+    "attack_value": 11, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "plasticity", 
+    "speed_value": 7, 
+    "attack_power": "quake", 
+    "attack_value": 11, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "battle_fury", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "plasticity", 
+    "speed_value": 7, 
+    "attack_power": "quake", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "battle_fury", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "plasticity", 
+    "speed_value": 6, 
+    "attack_power": "super_strength", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "battle_fury", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "plasticity", 
+    "speed_value": 6, 
+    "attack_power": "super_strength", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "plasticity", 
+    "speed_value": 6, 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>mkr106</unit_id>
+    <set_id>mkr</set_id>
+    <collector_number>106</collector_number>
+    <name>Quavon</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[175]</point_values>
+    <properties>["unique"]</properties>
+    <team_abilities>["council_of_the_mists"]</team_abilities>
+    <keywords>["Herald", "Oracles of Rokos", "Solonavi", "Spy"]</keywords>
+    <special_powers>[
+  {
+    "type": "epic", 
+    "name": "SUMMON THE LOST WORLD", 
+    "description": "Give Quavon an epic action and choose either Barrier or Smoke Cloud. Until your next turn, Quavon and up to 1 friendly character for each 200 points of the game's build total can use the chosen power and Quavon may use the chosen power as a free action.", 
+    "powers": [
+      "barrier", 
+      "smoke_cloud"
+    ]
+  }, 
+  {
+    "type": "defense", 
+    "name": "SEEKING THE MAGE-KING'S THRONE", 
+    "description": "Quavon can use Super Senses and Toughness. When he uses Super Senses and succeeds, you may place him within 6 squares and line of fire.", 
+    "powers": [
+      "super_senses", 
+      "toughness"
+    ]
+  }, 
+  {
+    "type": "damage", 
+    "name": "THESE BOOKS CONTAIN MANY SECRETS", 
+    "description": "Quavon can use Outwit and Perplex; when he uses Perplex to modify the combat value of an opposing character by -1, he may modify the same combat value on himself or an adjacent friendly character by +1.", 
+    "powers": [
+      "outwit", 
+      "perplex"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>8</unit_range>
+    <targets>2</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "force_blast", 
+    "speed_value": 11, 
+    "attack_value": 11, 
+    "defense_power": "special", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "force_blast", 
+    "speed_value": 10, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 11, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 10, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 12, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "outwit", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 10, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 11, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "outwit", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 9, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 16, 
+    "damage_power": "outwit", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 9, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 16, 
+    "damage_power": "outwit", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 9, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 9, 
+    "defense_power": "special", 
+    "defense_value": 16, 
+    "damage_power": "outwit", 
+    "damage_value": 3
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>mkrH001</unit_id>
+    <set_id>mkr</set_id>
+    <collector_number>H001</collector_number>
+    <name>Delphana Infernus</name>
+    <type>bystander</type>
+    <rarity>common</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[12]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[
+  {
+    "type": "damage", 
+    "name": "TOGETHER WE BURN", 
+    "description": "Replace Delphana Infernus's range value with S+3. When M, Delphana Infernus has 2 targets."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>horde</bystander_type>
+    <horde_stack_max>5</horde_stack_max>
+    <unit_range>3</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>1</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_value": 7, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 9, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 15, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>mkrH002</unit_id>
+    <set_id>mkr</set_id>
+    <collector_number>H002</collector_number>
+    <name>Domineer Monk</name>
+    <type>bystander</type>
+    <rarity>common</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[12]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[
+  {
+    "type": "damage", 
+    "name": "HUNGRY SHADOWS", 
+    "description": "When Domineer Monk makes a close combat attack, increase its attack value by S. When M, Domineer Monk's attack rolls with a result of a 10 or 11 are a critical hit."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>horde</bystander_type>
+    <horde_stack_max>3</horde_stack_max>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>1</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "flurry", 
+    "speed_value": 8, 
+    "attack_value": 8, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 15, 
+    "damage_power": "special", 
+    "damage_value": 1
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>mkrH003</unit_id>
+    <set_id>mkr</set_id>
+    <collector_number>H003</collector_number>
+    <name>Kutturgoyle</name>
+    <type>bystander</type>
+    <rarity>common</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[15]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[
+  {
+    "type": "damage", 
+    "name": "STONEGAZE", 
+    "description": "When opposing characters attempt to break away from Kutturgoyle, subtract S from the roll. When M, Kutturgoyle can use Incapacitate.", 
+    "powers": [
+      "incapacitate"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>horde</bystander_type>
+    <horde_stack_max>4</horde_stack_max>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>1</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_value": 6, 
+    "attack_value": 8, 
+    "defense_power": "toughness", 
+    "defense_value": 15, 
+    "damage_power": "special", 
+    "damage_value": 1
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>mkrH004</unit_id>
+    <set_id>mkr</set_id>
+    <collector_number>H004</collector_number>
+    <name>Northspirit</name>
+    <type>bystander</type>
+    <rarity>common</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[11]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[
+  {
+    "type": "damage", 
+    "name": "ICY ERUPTION", 
+    "description": "When M, Northspirit can use Quake.", 
+    "powers": [
+      "quake"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>horde</bystander_type>
+    <horde_stack_max>4</horde_stack_max>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>1</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "force_blast", 
+    "speed_value": 6, 
+    "attack_value": 9, 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 1
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>mkrH005</unit_id>
+    <set_id>mkr</set_id>
+    <collector_number>H005</collector_number>
+    <name>Wild Rider</name>
+    <type>bystander</type>
+    <rarity>common</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[16]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[
+  {
+    "type": "damage", 
+    "name": "KHAN'S HOWL", 
+    "description": "Increase Wild Rider's speed value by S. When M, Wild Rider can use Improved Movement: Elevated, Water, Outdoor Blocking, Characters."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>horde</bystander_type>
+    <horde_stack_max>3</horde_stack_max>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>1</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "charge", 
+    "speed_value": 7, 
+    "attack_value": 9, 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>mkrH006</unit_id>
+    <set_id>mkr</set_id>
+    <collector_number>H006</collector_number>
+    <name>Vampire Thrall</name>
+    <type>bystander</type>
+    <rarity>common</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[14]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[
+  {
+    "type": "damage", 
+    "name": "BLOODTHIRST", 
+    "description": "When M, Vampire Thrall can use Poison.", 
+    "powers": [
+      "poison"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <bystander_type>horde</bystander_type>
+    <horde_stack_max>5</horde_stack_max>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>1</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_value": 9, 
+    "attack_value": 8, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 1
+  }
+]</dial>
+  </row>
+</resultset>

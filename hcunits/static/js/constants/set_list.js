@@ -624,6 +624,11 @@ const SET_LIST = {
     "release_date": "2013-11-13",
     "universe": "indy"
   },
+  "mkr": {
+    "name": "Mage Knight Resurrection",
+    "release_date": "2013-11-06",
+    "universe": "indy"
+  },
   "wk": {
     "name": "WizKids Standard Game Pieces",
     "release_date": "2002-05-01",

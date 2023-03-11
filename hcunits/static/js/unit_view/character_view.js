@@ -279,7 +279,6 @@ class CharacterView extends BaseUnitView {
       var powerName = power.name;
       var iconText;
       var iconTextColor;
-      console.log(`type=${type} powerName=${powerName}`)
       if (type == "asset_unit" && powerName && powerName.length == 1) {
         iconText = powerName;
         iconTextColor = "white"

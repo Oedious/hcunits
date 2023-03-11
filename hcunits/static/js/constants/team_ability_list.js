@@ -341,5 +341,47 @@ const TEAM_ABILITY_LIST = {
     "description": "Stealth.",
     "copyable": true,
     "wildcard": false
-  }
+  },
+  "ascendent": {
+    "name": "Ascendent",
+    "universe": "mageknight",
+    "description": "A character using this team ability modifies its attack value by +1 when marked with 1 action token.",
+    "copyable": true,
+    "wildcard": false
+  },
+  "council_of_the_mists": {
+    "name": "Council of the Mists",
+    "universe": "mageknight",
+    "description": "A character using this team ability can use Probability Control, but only during your turn and if the reroll does not have at least one die with a 1 or 6, the reroll is ignored.",
+    "copyable": true,
+    "wildcard": false
+  },
+  "dominion_pact": {
+    "name": "Dominion Pact",
+    "universe": "mageknight",
+    "description": "When an opposing character within 4 squares is ko'ed, characters using this team ability are healed 1 damage.",
+    "copyable": true,
+    "wildcard": false
+  },
+  "mage_spawn": {
+    "name": "Mage Spawn",
+    "universe": "mageknight",
+    "description": "At the beginning of the game, choose a friendly character with the highest point value to be this team's master. If a character using this team ability is within 4 squares of its master when the master if given a move action, then the character using this team ability may be given a move action as a free action. Uncopyable.",
+    "copyable": false,
+    "wildcard": false
+  },
+  "mercenary": {
+    "name": "Mercenary",
+    "universe": "mageknight",
+    "description": "At the beginning of the game, choose a friendly character with the highest point value to be this team's leader. A character using this team ability modifies its defense value by +1 when it is within 4 squares of its leader. Uncopyable.",
+    "copyable": false,
+    "wildcard": false
+  },
+  "phoenix_concord": {
+    "name": "Phoenix Concord",
+    "universe": "mageknight",
+    "description": "Once per turn when a power or ability of a character using this team ability or an adjacent friendly character would be countered, roll a d6; on a result of 5-6 the power or ability is not countered.",
+    "copyable": true,
+    "wildcard": false
+  },
 }
