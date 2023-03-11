@@ -634,6 +634,16 @@ const SET_LIST = {
     "release_date": "2013-11-06",
     "universe": "lotr"
   },
+  "hbtjlm": {
+    "name": "The Hobbit: Journey to the Lonely Mountain Strategy Game",
+    "release_date": "2013-10-30",
+    "universe": "lotr"
+  },
+  "tdw": {
+    "name": "Thor: The Dark World",
+    "release_date": "2013-10-02",
+    "universe": "marvel"
+  },
   "wk": {
     "name": "WizKids Standard Game Pieces",
     "release_date": "2002-05-01",

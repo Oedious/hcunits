@@ -1,0 +1,134 @@
+{
+  "updates": {
+    "tdw005": {
+      "special_powers": [{
+        "description": "Sif can use Invulnerability. When Sif is adajcent to a friendly character named Thor, he can use Shape Change, but only succeeds on a result of 6.",
+        "powers": ["invulnerability"]
+      }]
+    },
+    "tdw008": {
+      "dial": [{
+      }, {
+      }, {
+        "starting_line": "red"
+      }, {
+      }, {
+      }, {
+      }, {
+      }, {
+      }, {
+      }, {
+        "starting_line": "orange",
+        "attack_value": "2"
+      }, {
+        "attack_value": "1"
+      }]
+    },
+    "tdw010": {
+      "special_powers": [{
+      }, {
+      }, {
+        "description": "Heimdall can use Perplex and Probability Control as if he had a range value of 8. When he does, he can use Improved Targeting: Hindering, Characters."
+      }]
+    },
+    "tdw011": {
+      "special_powers": [{
+        "powers": ["sidestep"]
+      }]
+    },
+    "tdw013": {
+      "special_powers": [{
+      }, {
+        "powers": ["pulse_wave"]
+      }],
+      "dial": [{
+        "attack_value": "3"
+      }, {
+        "attack_value": "2"
+      }, {
+        "attack_value": "1"
+      }]
+    },
+    "tdw014": {
+      "special_powers": [{
+      }, {
+      }, {
+        "powers": ["perplex", "shape_change", "mind_control"]
+      }]
+    },
+    "tdw016": {
+      "special_powers": [{
+        "powers": ["empower"]
+      }, {
+        "powers": ["super_strength"]
+      }]
+    },
+    "tdw017": {
+      "special_powers": [{
+        "powers": ["mastermind"]
+      }]
+    },
+    "tdw019": {
+      "special_powers": [{
+        "powers": ["super_strength", "defend"]
+      }, {
+      }, {
+        "description": "Give Thor a ranged combat action and he can use Improved Targeting: Characters for this action. The area of effect for this ranged attack is any one square within range and line of fire and each square adjacent to it. A hit character occupying the chosen square is dealt Thor's printed damage value. Other hit characters are dealt Thor's printed damage -1."
+      }]
+    },
+    "tdw101": {
+      "special_powers": [{
+        "description": "Thor can use Charge. He can use it normally, or when he is given an action to use Charge, if he moves in a direct line, he can use Improved Movement: Characters and, after actions resolve, each character occupying a square that Thor moved through is dealt 1 damage, assigned an action token, and you may place it in a square adjacent to their current position."
+      }]
+    },
+    "tdw105": {
+      "special_powers": [{
+      }, {
+        "powers": ["enhancement"]
+      }]
+    },
+    "tdw106": {
+      "special_powers": [{
+      }, {
+        "powers": ["charge"]
+      }]
+    },
+    "tdwH001": {
+      "special_powers": [{
+        "powers": ["leadership", "empower"]
+      }]
+    },
+    "tdwH003": {
+      "special_powers": [{
+        "powers": ["flurry", "combat_reflexes"]
+      }]
+    },
+    "tdwH008": {
+      "special_powers": [{
+        "powers": ["empower"]
+      }]
+    }
+  },
+  "deletions": [
+    "tdw003"
+  ],
+  "additions": [{
+    "unit_id": "tdwM001",
+    "set_id": "tdw",
+    "collector_number": "M001",
+    "name": "Svartalfheim",
+    "type": "map",
+    "map_url": "https://hcmaps.net/maps/tdw/svartalfheim.json"
+  }, {
+    "unit_id": "tdwM002",
+    "set_id": "tdw",
+    "collector_number": "M002",
+    "name": "Royal Naval Academy",
+    "type": "map",
+    "special_powers": [{
+      "name": "Interdimensional Portal",
+      "description": "Orange squares are Portal squares. Portal squares are hindering terrain. For other exciting scenarioes, check the scenario sheet included in this starter!"
+    }],
+    "map_url": "https://hcmaps.net/maps/tdw/royal_naval_academy.json"
+  }]
+}

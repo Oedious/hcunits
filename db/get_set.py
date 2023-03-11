@@ -450,6 +450,12 @@ SET_MAP = {
   "t2t": {
     "name": "The Two Towers",
   },
+  "hbtjlm": {
+    "name": "The Hobbit: Journey to the Lonely Mountain Strategy Game",
+  },
+  "tdw": {
+    "name": "Thor: The Dark World",
+  },
 }
 
 POWERS = {
