@@ -532,7 +532,7 @@ const SET_LIST = {
   "hbtbfa": {
     "name": "The Hobbit: The Battle of the Five Armies",
     "release_date": "2014-11-05",
-    "universe": "indy"
+    "universe": "lotr"
   },
   "gotg": {
     "name": "Guardians of the Galaxy",
@@ -557,7 +557,7 @@ const SET_LIST = {
   "rotk": {
     "name": "Return of the King",
     "release_date": "2014-06-04",
-    "universe": "indy"
+    "universe": "lotr"
   },
   "wol": {
     "name": "War of Light",
@@ -622,12 +622,17 @@ const SET_LIST = {
   "hbtdos": {
     "name": "The Hobbit: The Desolation of Smaug",
     "release_date": "2013-11-13",
-    "universe": "indy"
+    "universe": "lotr"
   },
   "mkr": {
     "name": "Mage Knight Resurrection",
     "release_date": "2013-11-06",
-    "universe": "indy"
+    "universe": "mageknight"
+  },
+  "t2t": {
+    "name": "The Two Towers",
+    "release_date": "2013-11-06",
+    "universe": "lotr"
   },
   "wk": {
     "name": "WizKids Standard Game Pieces",

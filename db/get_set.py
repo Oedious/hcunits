@@ -447,6 +447,9 @@ SET_MAP = {
   "mkr": {
     "name": "Mage Knight: Resurrection",
   },
+  "t2t": {
+    "name": "The Two Towers",
+  },
 }
 
 POWERS = {
@@ -853,6 +856,7 @@ class Unit:
         rarity == "Rarity: Starter Set" or
         rarity == "Rarity: Fast Forces" or
         rarity == "Rarity: Mini Game" or
+        rarity == "Rarity: Team Pack" or
         rarity == "Rarity: Deadpool Gravity Feed"):
       self.rarity = "common"
     elif rarity == "Rarity: Uncommon":
@@ -1091,10 +1095,10 @@ class Unit:
             self.object_type = "special"
           elif part == "Disguised Plastic Man Special Object":
             self.object_type = "plastic_man"
-          elif part.startswith("Relic:"):
+          elif part.startswith("Relic"):
             self.object_type = "relic"
             self.object_size = "immobile"
-            match_obj = re.search(r"Relic: (\d)-6", part)
+            match_obj = re.search(r"Relic[:]? (\d)-6", part)
             if match_obj:
               self.relic_roll_min = int(match_obj.group(1))
             else:
