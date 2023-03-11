@@ -59,7 +59,7 @@ CREATE TABLE units (
 
   -- A JSON array of objects containing special powers and traits, of the format:
   -- {
-  --   "type": (Optional) string - contains "trait", "speed", "attack", "defense", "damage", "costed_trait", "rally_trait", "title_trait", "plus_plot_points", "minus_plot_points", "location", "consolation", "other_id", "inspiration", "epic", "construct", "word_balloon", "toy", "fusion", "spell", "trap", "trap_spell", "ritual"
+  --   "type": (Optional) string - contains "trait", "speed", "attack", "defense", "damage", "costed_trait", "rally_trait", "title_trait", "plus_plot_points", "minus_plot_points", "location", "consolation", "other_id", "inspiration", "epic", "construct", "word_balloon", "toy", "fusion", "spell", "trap", "trap_spell", "ritual", "asset_unit", "asset_team"
   --   "name": (Optional) string - the name of the power.
   --   "description": string - the description of the power.
   --   "powers": (Optional) array of strings, containing names to standard powers granted.
@@ -739,6 +739,11 @@ LOAD XML LOCAL INFILE 'ygo/ygo.xml'
   ROWS IDENTIFIED BY '<row>';
 
 LOAD XML LOCAL INFILE 'iim/iim.xml'
+  REPLACE
+  INTO TABLE units
+  ROWS IDENTIFIED BY '<row>';
+
+LOAD XML LOCAL INFILE 'avx/avxxml'
   REPLACE
   INTO TABLE units
   ROWS IDENTIFIED BY '<row>';

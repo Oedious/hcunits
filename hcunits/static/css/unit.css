@@ -620,6 +620,7 @@
 }
 
 .specialPowerImg {
+  position: relative;
   vertical-align: top;
   padding: 0px 3px 5px 0px !important;
   width: 28px;
@@ -634,6 +635,15 @@
   padding: 2px 2px;
   min-width: 28px;
   min-height: 28px;
+}
+
+.specialPowerIconText {
+  font-family: 'Gill Sans', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  position: absolute;
+  left: 11px;
+  top: 7px;
 }
 
 .specialPowerRallyDie {

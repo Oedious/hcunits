@@ -1,0 +1,3625 @@
+<resultset>
+  <row>
+    <unit_id>avx001</unit_id>
+    <set_id>avx</set_id>
+    <collector_number>001</collector_number>
+    <name>Captain America</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[200, 100]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["avengers"]</team_abilities>
+    <keywords>["All-Winners Squad", "Avengers", "Invaders", "Past", "S.H.I.E.L.D.", "Soldier"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "AVENGERS ASSEMBLE!", 
+    "description": "Captain America can use Leadership. When he does and the result is 6, you may place a friendly character with the Avengers keyword, a lower point value, and within 4 squares adjacent to him, but only if you remove the action token from that character.", 
+    "powers": [
+      "leadership"
+    ]
+  }, 
+  {
+    "type": "trait", 
+    "name": "SUPER SOLDIER &amp; SHIELD", 
+    "description": "At the beginning of your turn choose either Combat Reflexes or Energy Shield/Deflection. Captain America can use that power until the beginning of your next turn.", 
+    "powers": [
+      "combat_reflexes", 
+      "energy_shield_deflection"
+    ]
+  }, 
+  {
+    "type": "attack", 
+    "name": "TAKE DOWN", 
+    "description": "Captain America can use Incapacitate as if he had 2 targets. When he does and hits 2 characters, he may give one hit character 2 action tokens instead of giving each of them one. If that character can't be given the second action token, deal it 1 penetrating damage instead.", 
+    "powers": [
+      "incapacitate"
+    ]
+  }
+]</special_powers>
+    <improved_movement>["hindering", "characters"]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>5</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "running_shot", 
+    "speed_value": 9, 
+    "attack_power": "special", 
+    "attack_value": 11, 
+    "defense_power": "impervious", 
+    "defense_value": 18, 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "running_shot", 
+    "speed_value": 9, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "impervious", 
+    "defense_value": 17, 
+    "damage_power": "perplex", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "charge", 
+    "speed_value": 9, 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "perplex", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "running_shot", 
+    "speed_value": 9, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "empower", 
+    "damage_value": 3, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "charge", 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "empower", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 6, 
+    "speed_value": 7, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "charge", 
+    "speed_value": 8, 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 15, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 8, 
+    "speed_power": "charge", 
+    "speed_value": 9, 
+    "attack_value": 11, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 3
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>avx002</unit_id>
+    <set_id>avx</set_id>
+    <collector_number>002</collector_number>
+    <name>Iron Man</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[150, 100]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["avengers"]</team_abilities>
+    <keywords>["Armor", "Avengers", "Illuminati", "Scientist"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "ENHANCED REPULSORS", 
+    "description": "All of Iron Man's attacks generate knock back."
+  }, 
+  {
+    "type": "damage", 
+    "name": "INVENTING ON THE FLY", 
+    "description": "Once per turn, Iron Man can use Outwit or Perplex.", 
+    "powers": [
+      "outwit", 
+      "perplex"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>7</unit_range>
+    <targets>2</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "running_shot", 
+    "speed_value": 10, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 10, 
+    "defense_power": "impervious", 
+    "defense_value": 17, 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 2, 
+    "speed_value": 9, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 18, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "running_shot", 
+    "speed_value": 9, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 3, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "running_shot", 
+    "speed_value": 10, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
+    "speed_value": 9, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "running_shot", 
+    "speed_value": 8, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 9, 
+    "defense_power": "regeneration", 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 7, 
+    "speed_value": 8, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 10, 
+    "defense_power": "regeneration", 
+    "defense_value": 15, 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>avx003</unit_id>
+    <set_id>avx</set_id>
+    <collector_number>003</collector_number>
+    <name>Thor</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[200, 100]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["avengers"]</team_abilities>
+    <keywords>["Asgardian", "Avengers", "Deity", "Mystical"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "CALL THE STORM &amp; TEAR OPEN THE SKY", 
+    "description": "Thor can use Super Strength. When Thor targets and hits more than 1 opposing character with an attack, targets of the attack are dealt penetrating damage.", 
+    "powers": [
+      "super_strength"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>8</unit_range>
+    <targets>2</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "running_shot", 
+    "speed_value": 11, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 12, 
+    "defense_power": "impervious", 
+    "defense_value": 17, 
+    "damage_value": 5
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "running_shot", 
+    "speed_value": 10, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 11, 
+    "defense_power": "impervious", 
+    "defense_value": 17, 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 3, 
+    "speed_value": 10, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 11, 
+    "defense_power": "impervious", 
+    "defense_value": 16, 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "running_shot", 
+    "speed_value": 9, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 10, 
+    "defense_power": "impervious", 
+    "defense_value": 17, 
+    "damage_value": 4, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 5, 
+    "speed_value": 9, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 6, 
+    "speed_value": 8, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 7, 
+    "speed_value": 8, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 8, 
+    "speed_value": 8, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>avx004</unit_id>
+    <set_id>avx</set_id>
+    <collector_number>004</collector_number>
+    <name>Spider-Man</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[125, 100]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["avengers", "spider_man"]</team_abilities>
+    <keywords>["Avengers", "Scientist", "Spider-Man Family"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "WHATEVER A SPIDER CAN", 
+    "description": "When Spider-Man is the target of a ranged combat attack, he can use Super Senses, but evades the attack on a result of 4 - 6.", 
+    "powers": [
+      "super_senses"
+    ]
+  }, 
+  {
+    "type": "speed", 
+    "name": "STRENGTH AND SPEED OF A SPIDER", 
+    "description": "Spider-Man can use Incapacitate and the Move and Attack ability. When he uses the Move and Attack ability, he modifies his attack value by -1 instead of -2.", 
+    "powers": [
+      "incapacitate"
+    ]
+  }
+]</special_powers>
+    <improved_movement>["elevated", "hindering", "outdoor_blocking", "characters"]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>5</unit_range>
+    <targets>2</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "special", 
+    "speed_value": 11, 
+    "attack_power": "super_strength", 
+    "attack_value": 11, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 17, 
+    "damage_power": "shape_change", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "special", 
+    "speed_value": 10, 
+    "attack_power": "super_strength", 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_power": "perplex", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "charge", 
+    "speed_value": 9, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 18, 
+    "damage_power": "perplex", 
+    "damage_value": 3, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "charge", 
+    "speed_value": 9, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "outwit", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "flurry", 
+    "speed_value": 9, 
+    "attack_value": 9, 
+    "defense_power": "willpower", 
+    "defense_value": 17, 
+    "damage_power": "outwit", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "flurry", 
+    "speed_value": 9, 
+    "attack_value": 9, 
+    "defense_power": "willpower", 
+    "defense_value": 16, 
+    "damage_power": "outwit", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 7, 
+    "speed_value": 9, 
+    "attack_value": 9, 
+    "defense_power": "willpower", 
+    "defense_value": 16, 
+    "damage_power": "shape_change", 
+    "damage_value": 3
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>avx005</unit_id>
+    <set_id>avx</set_id>
+    <collector_number>005</collector_number>
+    <name>Wolverine</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[175, 125, 75]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["avengers", "x_men"]</team_abilities>
+    <keywords>["Avengers", "Martial Artist", "Soldier", "X-Force", "X-Men"]</keywords>
+    <special_powers>[]</special_powers>
+    <improved_movement>["hindering"]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "stealth", 
+    "speed_value": 10, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 11, 
+    "defense_power": "impervious", 
+    "defense_value": 17, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "charge", 
+    "speed_value": 9, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 11, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "battle_fury", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "charge", 
+    "speed_value": 9, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 3, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "flurry", 
+    "speed_value": 8, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "battle_fury", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "stealth", 
+    "speed_value": 8, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 10, 
+    "defense_power": "regeneration", 
+    "defense_value": 18, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "charge", 
+    "speed_value": 7, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 2, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "charge", 
+    "speed_value": 7, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "battle_fury", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 8, 
+    "speed_power": "stealth", 
+    "speed_value": 6, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 9, 
+    "defense_power": "regeneration", 
+    "defense_value": 17, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 9, 
+    "speed_power": "flurry", 
+    "speed_value": 6, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 8, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "battle_fury", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 10, 
+    "speed_power": "charge", 
+    "speed_value": 7, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 11, 
+    "defense_power": "regeneration", 
+    "defense_value": 18, 
+    "damage_power": "battle_fury", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>avx006</unit_id>
+    <set_id>avx</set_id>
+    <collector_number>006</collector_number>
+    <name>Scarlet Witch</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[150, 100]</point_values>
+    <properties>["unique"]</properties>
+    <team_abilities>["avengers", "mystics"]</team_abilities>
+    <keywords>["Avengers", "Mystical"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "NO MORE MUTANTS", 
+    "description": "Once per game, give Scarlet Witch a double power action and choose a team ability.  Any other character that can use that team ability must roll a d6 that can't be rerolled and if the result is 1 - 5, that character can't use the chosen team ability for the rest of the game."
+  }, 
+  {
+    "type": "defense", 
+    "name": "MYSTICAL WARDS", 
+    "description": "Scarlet Witch can use Energy Shield/Deflection.  When Scarlet Witch is hit with an attack, the roll is ignored and the attacker must roll again.  This new roll can't be rerolled or ignored.", 
+    "powers": [
+      "energy_shield_deflection"
+    ]
+  }, 
+  {
+    "type": "damage", 
+    "name": "CASTING SPELLS", 
+    "description": "Scarlet Witch can use Perplex, Probability Control, and Support.", 
+    "powers": [
+      "perplex", 
+      "probability_control", 
+      "support"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>8</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>sharpshooter</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "stealth", 
+    "speed_value": 10, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 17, 
+    "damage_power": "probability_control", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "stealth", 
+    "speed_value": 9, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 16, 
+    "damage_power": "probability_control", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 9, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 3, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 9, 
+    "attack_power": "precision_strike", 
+    "attack_value": 9, 
+    "defense_power": "willpower", 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 9, 
+    "attack_power": "precision_strike", 
+    "attack_value": 9, 
+    "defense_power": "willpower", 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "stealth", 
+    "speed_value": 8, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 8, 
+    "defense_power": "willpower", 
+    "defense_value": 15, 
+    "damage_power": "probability_control", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "stealth", 
+    "speed_value": 8, 
+    "attack_value": 8, 
+    "defense_power": "willpower", 
+    "defense_value": 15, 
+    "damage_power": "probability_control", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>avx007</unit_id>
+    <set_id>avx</set_id>
+    <collector_number>007</collector_number>
+    <name>Black Panther</name>
+    <type>character</type>
+    <rarity>chase</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[100]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["spider_man"]</team_abilities>
+    <keywords>["Avengers", "Illuminati", "Martial Artist", "Ruler", "Scientist", "Warrior"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "YOU DON'T GET TO GIVE UP", 
+    "description": "Once during your turn, another friendly character within 4 squares that shares a keyword with Black Panther can use Willpower."
+  }, 
+  {
+    "type": "damage", 
+    "name": "KING OF WAKANDA", 
+    "description": "Black Panther can use Empower, Leadership, and Outwit. When he uses Leadership and the result is 6, in addition to the normal effects he may remove an action token from himself.", 
+    "powers": [
+      "empower", 
+      "leadership", 
+      "outwit"
+    ]
+  }
+]</special_powers>
+    <improved_movement>["hindering", "characters"]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>4</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "stealth", 
+    "speed_value": 9, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 11, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "stealth", 
+    "speed_value": 9, 
+    "attack_power": "precision_strike", 
+    "attack_value": 9, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "charge", 
+    "speed_value": 8, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "charge", 
+    "speed_value": 8, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 9, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_power": "enhancement", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "stealth", 
+    "speed_value": 7, 
+    "attack_power": "precision_strike", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "enhancement", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "stealth", 
+    "speed_value": 7, 
+    "attack_power": "precision_strike", 
+    "attack_value": 8, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_value": 1
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>avx008</unit_id>
+    <set_id>avx</set_id>
+    <collector_number>008</collector_number>
+    <name>Professor X</name>
+    <type>character</type>
+    <rarity>chase</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[150]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["x_men"]</team_abilities>
+    <keywords>["Avengers", "Illuminati", "X-Men"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "YOU THINK YOU KNOW ME", 
+    "description": "When Professor X does not have 2 action tokens, he can use Shape Change.", 
+    "powers": [
+      "shape_change"
+    ]
+  }, 
+  {
+    "type": "speed", 
+    "name": "I CAN'T LET YOU DO THIS", 
+    "description": "Professor X can use Mind Control and is not dealt unavoidable damage from it. Opposing characters within range must be given double power actions instead of power actions.", 
+    "powers": [
+      "mind_control"
+    ]
+  }, 
+  {
+    "type": "defense", 
+    "name": "ONLY WHEN I HAVE TO", 
+    "description": "Professor X can use Mastermind. When he does, he may divide the damage dealt between 2 adjacent friendly characters if they each share a keyword with him.", 
+    "powers": [
+      "mastermind"
+    ]
+  }, 
+  {
+    "type": "damage", 
+    "name": "I LOVE ALL OF YOU", 
+    "description": "Professor X can use Empower, Enhancement, and Leadership. When he uses Leadership and succeeds, he may remove up to one action token from each adjacent friendly character with the X-Men keyword.", 
+    "powers": [
+      "empower", 
+      "enhancement", 
+      "leadership"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>["hindering"]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>8</unit_range>
+    <targets>3</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "special", 
+    "speed_value": 7, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 11, 
+    "defense_power": "special", 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "special", 
+    "speed_value": 7, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "special", 
+    "speed_value": 8, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "special", 
+    "speed_value": 8, 
+    "attack_power": "incapacitate", 
+    "attack_value": 9, 
+    "defense_power": "super_senses", 
+    "defense_value": 16, 
+    "damage_power": "outwit", 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "special", 
+    "speed_value": 7, 
+    "attack_power": "incapacitate", 
+    "attack_value": 9, 
+    "defense_power": "super_senses", 
+    "defense_value": 15, 
+    "damage_power": "outwit", 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "special", 
+    "speed_value": 7, 
+    "attack_power": "incapacitate", 
+    "attack_value": 9, 
+    "defense_power": "super_senses", 
+    "defense_value": 15, 
+    "damage_power": "outwit", 
+    "damage_value": 1
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>avx009</unit_id>
+    <set_id>avx</set_id>
+    <collector_number>009</collector_number>
+    <name>Cyclops</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[150, 100]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["x_men"]</team_abilities>
+    <keywords>["Ruler", "X-Men"]</keywords>
+    <special_powers>[
+  {
+    "type": "speed", 
+    "name": "ONGOING OPTIC BLASTS", 
+    "description": "Cyclops can use Force Blast and Running Shot. When he uses Running Shot, after actions resolve, he can use Force Blast as a free action.", 
+    "powers": [
+      "force_blast", 
+      "running_shot"
+    ]
+  }, 
+  {
+    "type": "damage", 
+    "name": "LET'S PUT THE WORLD BACK ON TRACK", 
+    "description": "Cyclops can use Leadership and Outwit. When he uses Leadership, adjacent characters with a shared keyword are considered to have a lower point value.", 
+    "powers": [
+      "leadership", 
+      "outwit"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>["destroy_blocking", "adjacent"]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>8</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>sharpshooter</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "running_shot", 
+    "speed_value": 9, 
+    "attack_power": "precision_strike", 
+    "attack_value": 11, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "running_shot", 
+    "speed_value": 9, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 11, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "special", 
+    "speed_value": 8, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 4, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "special", 
+    "speed_value": 7, 
+    "attack_power": "precision_strike", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "force_blast", 
+    "speed_value": 7, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 9, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 16, 
+    "damage_power": "enhancement", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "force_blast", 
+    "speed_value": 6, 
+    "attack_value": 9, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 15, 
+    "damage_power": "enhancement", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "force_blast", 
+    "speed_value": 6, 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>avx010</unit_id>
+    <set_id>avx</set_id>
+    <collector_number>010</collector_number>
+    <name>Emma Frost</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[125, 100]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["x_men"]</team_abilities>
+    <keywords>["Hellfire Club", "Hellions", "X-Men"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "SCOTT CAN HANDLE IT", 
+    "description": "Emma Frost's powers can't be countered. When a friendly character with the X-Men keyword is more than four squares away, Emma Frost can use Sidestep.", 
+    "powers": [
+      "sidestep"
+    ]
+  }, 
+  {
+    "type": "attack", 
+    "name": "IT'S HER DECISION", 
+    "description": "Emma Frost can use Outwit and has a range value of 7.", 
+    "powers": [
+      "outwit"
+    ]
+  }, 
+  {
+    "type": "defense", 
+    "name": "DIAMOND FORM", 
+    "description": "Emma Frost can use Exploit Weakness, Impervious, and Shape Change.", 
+    "powers": [
+      "exploit_weakness", 
+      "impervious", 
+      "shape_change"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "mind_control", 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_power": "enhancement", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "mind_control", 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 18, 
+    "damage_power": "enhancement", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "charge", 
+    "speed_value": 7, 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 17, 
+    "damage_power": "outwit", 
+    "damage_value": 3, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "charge", 
+    "speed_value": 6, 
+    "attack_value": 9, 
+    "defense_power": "special", 
+    "defense_value": 17, 
+    "damage_power": "outwit", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "charge", 
+    "speed_value": 6, 
+    "attack_value": 8, 
+    "defense_power": "special", 
+    "defense_value": 16, 
+    "damage_power": "outwit", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "mind_control", 
+    "speed_value": 7, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_power": "willpower", 
+    "defense_value": 16, 
+    "damage_power": "probability_control", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "mind_control", 
+    "speed_value": 6, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_power": "willpower", 
+    "defense_value": 17, 
+    "damage_power": "probability_control", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>avx011</unit_id>
+    <set_id>avx</set_id>
+    <collector_number>011</collector_number>
+    <name>Namor</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[225, 150]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["x_men"]</team_abilities>
+    <keywords>["Atlantis", "Defenders", "Illuminati", "Ruler", "X-Men"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "IMPERIUS REX!", 
+    "description": "When Namor is hit with an attack or given a second action token, put a Rage token on his card. Before Namor rolls for an attack, you may remove a Rage token from his card so that the attack deals penetrating damage."
+  }, 
+  {
+    "type": "defense", 
+    "name": "ENTRENCHED RECOVERY", 
+    "description": "Namor can use Toughness. When Namor occupies water terrain, he can use Regeneration and, when it's not your turn, opposing characters can't draw a line of fire to him.", 
+    "powers": [
+      "toughness", 
+      "regeneration"
+    ]
+  }
+]</special_powers>
+    <improved_movement>["characters"]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "charge", 
+    "speed_value": 11, 
+    "attack_power": "super_strength", 
+    "attack_value": 11, 
+    "defense_power": "impervious", 
+    "defense_value": 18, 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "flurry", 
+    "speed_value": 10, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "battle_fury", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "flurry", 
+    "speed_value": 9, 
+    "attack_power": "precision_strike", 
+    "attack_value": 11, 
+    "defense_power": "invulnerability", 
+    "defense_value": 16, 
+    "damage_power": "battle_fury", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "charge", 
+    "speed_value": 9, 
+    "attack_power": "super_strength", 
+    "attack_value": 11, 
+    "defense_power": "impervious", 
+    "defense_value": 17, 
+    "damage_value": 4, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "flurry", 
+    "speed_value": 9, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 16, 
+    "damage_power": "battle_fury", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "charge", 
+    "speed_value": 9, 
+    "attack_power": "super_strength", 
+    "attack_value": 10, 
+    "defense_power": "invincible", 
+    "defense_value": 16, 
+    "damage_power": "battle_fury", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "flurry", 
+    "speed_value": 8, 
+    "attack_power": "super_strength", 
+    "attack_value": 9, 
+    "defense_power": "invincible", 
+    "defense_value": 16, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 8, 
+    "speed_power": "flurry", 
+    "speed_value": 8, 
+    "attack_value": 9, 
+    "defense_power": "special", 
+    "defense_value": 16, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 9, 
+    "speed_power": "flurry", 
+    "speed_value": 8, 
+    "attack_value": 9, 
+    "defense_power": "special", 
+    "defense_value": 15, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>avx012</unit_id>
+    <set_id>avx</set_id>
+    <collector_number>012</collector_number>
+    <name>Colossus</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[175, 125]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["x_men"]</team_abilities>
+    <keywords>["Armor", "Mystical", "X-Men"]</keywords>
+    <special_powers>[
+  {
+    "type": "speed", 
+    "name": "I BELIEVE IN THE X-MEN", 
+    "description": "Colossus can use Charge and Plasticity. If he has two action tokens, adjacent friendly characters that can use the X-Men team ability can use that team ability as a free action.", 
+    "powers": [
+      "charge", 
+      "plasticity"
+    ]
+  }, 
+  {
+    "type": "defense", 
+    "name": "STEEL-SKINNED X-MAN", 
+    "description": "Colossus can use Defend and Impervious.", 
+    "powers": [
+      "defend", 
+      "impervious"
+    ]
+  }
+]</special_powers>
+    <improved_movement>["hindering", "destroy_blocking"]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "special", 
+    "speed_value": 10, 
+    "attack_power": "super_strength", 
+    "attack_value": 11, 
+    "defense_power": "special", 
+    "defense_value": 18, 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "special", 
+    "speed_value": 9, 
+    "attack_power": "super_strength", 
+    "attack_value": 11, 
+    "defense_power": "invincible", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "special", 
+    "speed_value": 9, 
+    "attack_power": "super_strength", 
+    "attack_value": 11, 
+    "defense_power": "special", 
+    "defense_value": 17, 
+    "damage_value": 4, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "sidestep", 
+    "speed_value": 9, 
+    "attack_value": 10, 
+    "defense_power": "invincible", 
+    "defense_value": 17, 
+    "damage_power": "empower", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "sidestep", 
+    "speed_value": 9, 
+    "attack_value": 10, 
+    "defense_power": "invincible", 
+    "defense_value": 17, 
+    "damage_power": "empower", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_value": 9, 
+    "defense_power": "invulnerability", 
+    "defense_value": 16, 
+    "damage_power": "battle_fury", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "charge", 
+    "speed_value": 6, 
+    "attack_value": 9, 
+    "defense_power": "invulnerability", 
+    "defense_value": 16, 
+    "damage_power": "battle_fury", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 8, 
+    "speed_power": "charge", 
+    "speed_value": 6, 
+    "attack_value": 9, 
+    "defense_power": "special", 
+    "defense_value": 16, 
+    "damage_power": "battle_fury", 
+    "damage_value": 3
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>avx013</unit_id>
+    <set_id>avx</set_id>
+    <collector_number>013</collector_number>
+    <name>Magik</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[125, 75]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["mystics", "x_men"]</team_abilities>
+    <keywords>["Mystical", "X-Men"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "TELEPORTATION DISKS", 
+    "description": "Give Magik a power action and choose an adjacent character. Place Magik in any square within range, place the chosen character in an adjacent square, and roll a d6. On a result of 1-4, the chosen character can't be given a non-free action until your next turn."
+  }, 
+  {
+    "type": "speed", 
+    "name": "I'VE BEATEN BELASCO", 
+    "description": "Magik deals penetrating damage to characters with the Mystical keyword."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>5</unit_range>
+    <targets>2</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "special", 
+    "speed_value": 10, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 10, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 17, 
+    "damage_power": "probability_control", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "special", 
+    "speed_value": 9, 
+    "attack_power": "telekinesis", 
+    "attack_value": 9, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 17, 
+    "damage_power": "probability_control", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "special", 
+    "speed_value": 10, 
+    "attack_power": "telekinesis", 
+    "attack_value": 9, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 16, 
+    "damage_value": 2, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "special", 
+    "speed_value": 9, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 8, 
+    "defense_power": "barrier", 
+    "defense_value": 16, 
+    "damage_power": "outwit", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "special", 
+    "speed_value": 9, 
+    "attack_value": 8, 
+    "defense_power": "barrier", 
+    "defense_value": 16, 
+    "damage_power": "outwit", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "charge", 
+    "speed_value": 8, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 9, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 15, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "charge", 
+    "speed_value": 8, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 9, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 15, 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>avx014</unit_id>
+    <set_id>avx</set_id>
+    <collector_number>014</collector_number>
+    <name>Magneto</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[200, 150]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["x_men"]</team_abilities>
+    <keywords>["Ruler", "X-Men"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "ARE YOU SURE ABOUT THIS, SCOTT?", 
+    "description": "Magneto can use Energy Shield/Deflection and Telekinesis. During the beginning of your turn, if Magneto has two action tokens, he can use Telekinesis as a free action, but may only use it to place friendly characters.", 
+    "powers": [
+      "energy_shield_deflection", 
+      "telekinesis"
+    ]
+  }, 
+  {
+    "type": "speed", 
+    "name": "MAGNETIC FIELD", 
+    "description": "Magneto can use Force Blast. When he has no action tokens, he can use it as a free action.", 
+    "powers": [
+      "force_blast"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>8</unit_range>
+    <targets>2</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "running_shot", 
+    "speed_value": 10, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 11, 
+    "defense_power": "invincible", 
+    "defense_value": 18, 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "special", 
+    "speed_value": 9, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 11, 
+    "defense_power": "invincible", 
+    "defense_value": 17, 
+    "damage_power": "leadership", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "running_shot", 
+    "speed_value": 10, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 10, 
+    "defense_power": "invincible", 
+    "defense_value": 17, 
+    "damage_power": "leadership", 
+    "damage_value": 3, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "special", 
+    "speed_value": 9, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 10, 
+    "defense_power": "invincible", 
+    "defense_value": 16, 
+    "damage_power": "outwit", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "special", 
+    "speed_value": 8, 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "outwit", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 6, 
+    "speed_value": 8, 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "enhancement", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "special", 
+    "speed_value": 7, 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "enhancement", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 8, 
+    "speed_power": "special", 
+    "speed_value": 7, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 9, 
+    "defense_value": 17, 
+    "damage_power": "enhancement", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>avx015</unit_id>
+    <set_id>avx</set_id>
+    <collector_number>015</collector_number>
+    <name>Danger</name>
+    <type>character</type>
+    <rarity>chase</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[150]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["x_men"]</team_abilities>
+    <keywords>["Robot", "Shi'ar", "X-Men"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "ISLAND DEFENSE SYSTEMS", 
+    "description": "When Danger has one action token, she can draw lines of fire and count squares for range from any square occupied by a friendly character with the Robot or Vehicle keyword."
+  }, 
+  {
+    "type": "attack", 
+    "name": "WARDEN OF UTOPIA", 
+    "description": "Danger can use the Capture ability, but may not have more than 1 captive."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>5</unit_range>
+    <targets>1</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "incapacitate", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "perplex", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "precision_strike", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "plasticity", 
+    "speed_value": 8, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "probability_control", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "plasticity", 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_power": "invulnerability", 
+    "defense_value": 16, 
+    "damage_power": "probability_control", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "plasticity", 
+    "speed_value": 7, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "probability_control", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 7, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 15, 
+    "damage_power": "perplex", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 7, 
+    "attack_value": 8, 
+    "defense_power": "regeneration", 
+    "defense_value": 16, 
+    "damage_power": "perplex", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>avx016</unit_id>
+    <set_id>avx</set_id>
+    <collector_number>016</collector_number>
+    <name>Hope Summers</name>
+    <type>character</type>
+    <rarity>chase</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[122]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["x_men"]</team_abilities>
+    <keywords>["Avengers", "Future", "K'un Lun", "X-Men"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "POWER MIMIC", 
+    "description": "Give Hope Summers a free action. Choose a standard power possessed by any character within 4 squares. Hope Summers can use that power until your next turn as if she had a range value of 6."
+  }, 
+  {
+    "type": "speed", 
+    "name": "JET PACK", 
+    "description": "Hope Summers can use Charge and the Flight ability.", 
+    "powers": [
+      "charge"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "special", 
+    "speed_value": 10, 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 17, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "special", 
+    "speed_value": 10, 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "special", 
+    "speed_value": 9, 
+    "attack_power": "precision_strike", 
+    "attack_value": 9, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_power": "perplex", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "leap_climb", 
+    "speed_value": 9, 
+    "attack_power": "precision_strike", 
+    "attack_value": 9, 
+    "defense_power": "willpower", 
+    "defense_value": 16, 
+    "damage_power": "perplex", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "leap_climb", 
+    "speed_value": 8, 
+    "attack_power": "precision_strike", 
+    "attack_value": 9, 
+    "defense_power": "willpower", 
+    "defense_value": 15, 
+    "damage_power": "perplex", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "stealth", 
+    "speed_value": 8, 
+    "attack_value": 10, 
+    "defense_power": "willpower", 
+    "defense_value": 15, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "stealth", 
+    "speed_value": 8, 
+    "attack_value": 10, 
+    "defense_power": "regeneration", 
+    "defense_value": 15, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>avx101</unit_id>
+    <set_id>avx</set_id>
+    <collector_number>101</collector_number>
+    <name>Cable</name>
+    <type>character</type>
+    <rarity>chase</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[124]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Future", "Past", "Soldier", "X-Force", "X-Men"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "SAVE HOPE", 
+    "description": "Adjacent friendly characters named Hope Summers modify their defense value by +1 if not already modified by this effect."
+  }, 
+  {
+    "type": "trait", 
+    "name": "COMING AFTER ALL OF YOU", 
+    "description": "Cable modifies his attack and damage values by +1 when attacking a character with the Avengers keyword or team ability."
+  }, 
+  {
+    "type": "speed", 
+    "name": "TIMESLIDE", 
+    "description": "Cable can use Phasing/Teleport and Shape Change.", 
+    "powers": [
+      "phasing_teleport", 
+      "shape_change"
+    ]
+  }, 
+  {
+    "type": "attack", 
+    "name": "THERE'S ALWAYS \"PLAN B\"", 
+    "description": "Cable can use the Duo Attack ability. When he does, during the second attack, he can use Precision Strike.", 
+    "powers": [
+      "precision_strike"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>7</unit_range>
+    <targets>2</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "special", 
+    "speed_value": 12, 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "outwit", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "special", 
+    "speed_value": 10, 
+    "attack_value": 11, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "outwit", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "running_shot", 
+    "speed_value": 9, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "perplex", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_power": "invulnerability", 
+    "defense_value": 16, 
+    "damage_power": "perplex", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "running_shot", 
+    "speed_value": 7, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_power": "invulnerability", 
+    "defense_value": 16, 
+    "damage_power": "perplex", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_value": 6, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 9, 
+    "defense_power": "invulnerability", 
+    "defense_value": 15, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "earthbound_neutralized", 
+    "speed_value": 5, 
+    "attack_value": 8, 
+    "defense_power": "regeneration", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>avx102</unit_id>
+    <set_id>avx</set_id>
+    <collector_number>102</collector_number>
+    <name>Lei-Kung the Thunderer</name>
+    <type>character</type>
+    <rarity>chase</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[125]</point_values>
+    <properties>["unique"]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["K'un Lun", "Martial Artist", "Mystical", "Past", "Soldier"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "TEACHER &amp; PUPIL", 
+    "description": "During the beginning of your turn, give Lei-Kung the Thunderer a free action and choose a friendly character within 3 squares, with the Martial Artist keyword, and with a lower point value. The chosen character may modify either their attack or defense value by +1 until your next turn."
+  }, 
+  {
+    "type": "speed", 
+    "name": "STRIKES LIKE LIGHTNING", 
+    "description": "Lei-Kung the Thunderer can use Charge, Flurry, and Plasticity.", 
+    "powers": [
+      "charge", 
+      "flurry", 
+      "plasticity"
+    ]
+  }, 
+  {
+    "type": "attack", 
+    "name": "CRASHES LIKE THUNDER", 
+    "description": "Lei-Kung the Thunderer can use Quake. When he does, hit characters are also given an action token.", 
+    "powers": [
+      "quake"
+    ]
+  }
+]</special_powers>
+    <improved_movement>["hindering"]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "special", 
+    "speed_value": 9, 
+    "attack_power": "special", 
+    "attack_value": 11, 
+    "defense_power": "toughness", 
+    "defense_value": 18, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "special", 
+    "speed_value": 9, 
+    "attack_power": "special", 
+    "attack_value": 11, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "sidestep", 
+    "speed_value": 8, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "special", 
+    "speed_value": 8, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "special", 
+    "speed_value": 8, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_value": 17, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>avx103</unit_id>
+    <set_id>avx</set_id>
+    <collector_number>103</collector_number>
+    <name>White Phoenix Hope</name>
+    <type>character</type>
+    <rarity>chase</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[175]</point_values>
+    <properties>["unique"]</properties>
+    <team_abilities>["power_cosmic"]</team_abilities>
+    <keywords>["Avengers", "Cosmic", "Future", "K'un Lun", "Phoenix Force", "X-Men"]</keywords>
+    <special_powers>[
+  {
+    "type": "speed", 
+    "name": "REVERT: HOPE SUMMERS", 
+    "description": "Give White Phoenix Hope a free action and replace her with a AvX #016 Hope Summers on the same click number -2. The replacement character can't be given an action this turn."
+  }, 
+  {
+    "type": "damage", 
+    "name": "REBIRTH", 
+    "description": "White Phoenix Hope can use Support. When she does, choose: Her attack value becomes 12 or do not subtract 2 from the result of the d6 roll to heal.", 
+    "powers": [
+      "support"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>10</unit_range>
+    <targets>2</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "hypersonic_speed", 
+    "speed_value": 11, 
+    "attack_value": 11, 
+    "defense_power": "impervious", 
+    "defense_value": 18, 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 2, 
+    "speed_value": 12, 
+    "attack_power": "incapacitate", 
+    "attack_value": 11, 
+    "defense_power": "impervious", 
+    "defense_value": 18, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_value": 11, 
+    "attack_power": "incapacitate", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "hypersonic_speed", 
+    "speed_value": 10, 
+    "attack_power": "steal_energy", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
+    "speed_value": 10, 
+    "attack_power": "steal_energy", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "special", 
+    "speed_value": 10, 
+    "attack_power": "steal_energy", 
+    "attack_value": 9, 
+    "defense_power": "regeneration", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "special", 
+    "speed_value": 10, 
+    "attack_power": "steal_energy", 
+    "attack_value": 9, 
+    "defense_power": "regeneration", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>avx104</unit_id>
+    <set_id>avx</set_id>
+    <collector_number>104</collector_number>
+    <name>Phoenixbuster Iron Man</name>
+    <type>character</type>
+    <rarity>chase</rarity>
+    <dimensions>1x2</dimensions>
+    <point_values>[175]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["avengers"]</team_abilities>
+    <keywords>["Armor", "Avengers", "Scientist"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "HERE GOES NUTHIN'", 
+    "description": "Phoenixbuster Iron Man's attacks deal penetrating damage if the target character is assigned a relic or a resource or possesses any of the following: \"Giant damage symbol\", \"Colossal damage symbol\", the Power Cosmic team ability, the Cosmic or Phoenix Force keyword, or the word Phoenix in its name as a separate word."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>10</unit_range>
+    <targets>1</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>giant</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "running_shot", 
+    "speed_value": 10, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 11, 
+    "defense_power": "invulnerability", 
+    "defense_value": 18, 
+    "damage_value": 5
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "running_shot", 
+    "speed_value": 9, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 11, 
+    "defense_power": "invulnerability", 
+    "defense_value": 18, 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "running_shot", 
+    "speed_value": 9, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 11, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "perplex", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "running_shot", 
+    "speed_value": 9, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 10, 
+    "defense_power": "invincible", 
+    "defense_value": 17, 
+    "damage_power": "perplex", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "earthbound_neutralized", 
+    "speed_value": 9, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 10, 
+    "defense_power": "invincible", 
+    "defense_value": 16, 
+    "damage_power": "outwit", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "earthbound_neutralized", 
+    "speed_value": 9, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "outwit", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "earthbound_neutralized", 
+    "speed_value": 9, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "outwit", 
+    "damage_value": 3
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>avxG001</unit_id>
+    <set_id>avx</set_id>
+    <collector_number>G001</collector_number>
+    <name>Dark Phoenix Cyclops</name>
+    <type>character</type>
+    <rarity>chase</rarity>
+    <dimensions>2x2</dimensions>
+    <point_values>[1000, 750, 300]</point_values>
+    <properties>["unique"]</properties>
+    <team_abilities>["power_cosmic", "x_men"]</team_abilities>
+    <keywords>["Cosmic", "Phoenix Force", "X-Men"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "POWER OF THE PHOENIX", 
+    "description": "Dark Phoenix Cyclops can use the Multiattack ability. When he does and makes 2 attacks, the second attack deals penetrating damage."
+  }, 
+  {
+    "type": "trait", 
+    "name": "DRIVEN TO CHANGE THE WORLD", 
+    "description": "When Dark Phoenix Cyclops KO's another character with an attack, remove an action token from him after actions resolve."
+  }, 
+  {
+    "type": "attack", 
+    "name": "WAVES OF DESTRUCTION", 
+    "description": "Dark Phoenix Cyclops can use Energy Explosion and Pulse Wave. When he uses Pulse Wave and there is more than one character within the area of effect, his damage value becomes 7 minus his click number, minimum 2.", 
+    "powers": [
+      "energy_explosion", 
+      "pulse_wave"
+    ]
+  }, 
+  {
+    "type": "damage", 
+    "name": "LAST VESTIGE OF POWER", 
+    "description": "When this click is revealed, stop turning the dial. Dark Phoenix Cyclops can't use the Multiattack ability and if he has already taken damage this turn, can't be dealt damage again."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>["destroy_blocking"]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>9</unit_range>
+    <targets>3</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>colossal</damage_type>
+    <dial_size>26</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "hypersonic_speed", 
+    "speed_value": 11, 
+    "attack_value": 13, 
+    "defense_power": "impervious", 
+    "defense_value": 20, 
+    "damage_value": 6
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "hypersonic_speed", 
+    "speed_value": 11, 
+    "attack_power": "precision_strike", 
+    "attack_value": 12, 
+    "defense_power": "impervious", 
+    "defense_value": 19, 
+    "damage_power": "probability_control", 
+    "damage_value": 5
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "running_shot", 
+    "speed_value": 12, 
+    "attack_power": "special", 
+    "attack_value": 12, 
+    "defense_power": "impervious", 
+    "defense_value": 19, 
+    "damage_power": "probability_control", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "running_shot", 
+    "speed_value": 11, 
+    "attack_power": "special", 
+    "attack_value": 11, 
+    "defense_power": "impervious", 
+    "defense_value": 19, 
+    "damage_power": "probability_control", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "hypersonic_speed", 
+    "speed_value": 11, 
+    "attack_power": "special", 
+    "attack_value": 12, 
+    "defense_power": "impervious", 
+    "defense_value": 18, 
+    "damage_value": 5
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "running_shot", 
+    "speed_value": 11, 
+    "attack_power": "precision_strike", 
+    "attack_value": 11, 
+    "defense_power": "impervious", 
+    "defense_value": 18, 
+    "damage_power": "probability_control", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "hypersonic_speed", 
+    "speed_value": 11, 
+    "attack_power": "precision_strike", 
+    "attack_value": 12, 
+    "defense_power": "invincible", 
+    "defense_value": 19, 
+    "damage_power": "probability_control", 
+    "damage_value": 5, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 8, 
+    "speed_power": "hypersonic_speed", 
+    "speed_value": 10, 
+    "attack_power": "special", 
+    "attack_value": 11, 
+    "defense_power": "invincible", 
+    "defense_value": 19, 
+    "damage_power": "probability_control", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 9, 
+    "speed_power": "running_shot", 
+    "speed_value": 9, 
+    "attack_power": "special", 
+    "attack_value": 11, 
+    "defense_power": "invincible", 
+    "defense_value": 18, 
+    "damage_power": "outwit", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 10, 
+    "speed_power": "running_shot", 
+    "speed_value": 9, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "invincible", 
+    "defense_value": 18, 
+    "damage_power": "outwit", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 11, 
+    "speed_power": "hypersonic_speed", 
+    "speed_value": 9, 
+    "attack_power": "precision_strike", 
+    "attack_value": 11, 
+    "defense_power": "invulnerability", 
+    "defense_value": 18, 
+    "damage_power": "outwit", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 12, 
+    "speed_power": "hypersonic_speed", 
+    "speed_value": 9, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 18, 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 13, 
+    "speed_power": "running_shot", 
+    "speed_value": 10, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 18, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 14, 
+    "speed_power": "running_shot", 
+    "speed_value": 9, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 15, 
+    "speed_power": "running_shot", 
+    "speed_value": 10, 
+    "attack_power": "special", 
+    "attack_value": 11, 
+    "defense_power": "impervious", 
+    "defense_value": 18, 
+    "damage_power": "probability_control", 
+    "damage_value": 5, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 16, 
+    "speed_power": "running_shot", 
+    "speed_value": 10, 
+    "attack_power": "special", 
+    "attack_value": 11, 
+    "defense_power": "impervious", 
+    "defense_value": 18, 
+    "damage_power": "probability_control", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 17, 
+    "speed_power": "running_shot", 
+    "speed_value": 11, 
+    "attack_power": "special", 
+    "attack_value": 11, 
+    "defense_power": "invincible", 
+    "defense_value": 18, 
+    "damage_power": "probability_control", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 18, 
+    "speed_power": "running_shot", 
+    "speed_value": 9, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "invincible", 
+    "defense_value": 17, 
+    "damage_power": "outwit", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 19, 
+    "speed_power": "hypersonic_speed", 
+    "speed_value": 9, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 16, 
+    "damage_power": "outwit", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 20, 
+    "speed_power": "hypersonic_speed", 
+    "speed_value": 9, 
+    "attack_power": "precision_strike", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 16, 
+    "damage_power": "outwit", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 21, 
+    "speed_power": "hypersonic_speed", 
+    "speed_value": 9, 
+    "attack_power": "precision_strike", 
+    "attack_value": 9, 
+    "defense_power": "regeneration", 
+    "defense_value": 16, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 22, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 8, 
+    "attack_value": 9, 
+    "defense_power": "regeneration", 
+    "defense_value": 16, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 23, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 8, 
+    "attack_value": 10, 
+    "defense_power": "regeneration", 
+    "defense_value": 15, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>avxS101</unit_id>
+    <set_id>avx</set_id>
+    <collector_number>S101</collector_number>
+    <name>Fragment - Cyclops</name>
+    <type>object</type>
+    <rarity>chase</rarity>
+    <point_values>[10]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[
+  {
+    "description": "This character can use Poison, Ranged Combat Expert and the Flight ability.", 
+    "powers": [
+      "poison", 
+      "ranged_combat_expert"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_type>relic</object_type>
+    <object_size>immobile</object_size>
+    <object_keyphrases>[]</object_keyphrases>
+    <relic_roll_min>5</relic_roll_min>
+    <dial>[]</dial>
+  </row>
+  <row>
+    <unit_id>avxS102</unit_id>
+    <set_id>avx</set_id>
+    <collector_number>S102</collector_number>
+    <name>Fragment - Namor</name>
+    <type>object</type>
+    <rarity>chase</rarity>
+    <point_values>[10]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[
+  {
+    "description": "This character can use Poison, the Flight ability, and the Avengers, Defenders, and X-Men team abilities.", 
+    "powers": [
+      "poison"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_type>relic</object_type>
+    <object_size>immobile</object_size>
+    <object_keyphrases>[]</object_keyphrases>
+    <relic_roll_min>5</relic_roll_min>
+    <dial>[]</dial>
+  </row>
+  <row>
+    <unit_id>avxS103</unit_id>
+    <set_id>avx</set_id>
+    <collector_number>S103</collector_number>
+    <name>Fragment - Colossus</name>
+    <type>object</type>
+    <rarity>chase</rarity>
+    <point_values>[10]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[
+  {
+    "description": "This character can use Invulnerability, Poison, and the Flight ability.", 
+    "powers": [
+      "invulnerability", 
+      "poison"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_type>relic</object_type>
+    <object_size>immobile</object_size>
+    <object_keyphrases>[]</object_keyphrases>
+    <relic_roll_min>5</relic_roll_min>
+    <dial>[]</dial>
+  </row>
+  <row>
+    <unit_id>avxS104</unit_id>
+    <set_id>avx</set_id>
+    <collector_number>S104</collector_number>
+    <name>Fragment - Emma Frost</name>
+    <type>object</type>
+    <rarity>chase</rarity>
+    <point_values>[10]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[
+  {
+    "description": "This character can use Poison, Telekinesis and the Flight ability.", 
+    "powers": [
+      "poison", 
+      "telekinesis"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_type>relic</object_type>
+    <object_size>immobile</object_size>
+    <object_keyphrases>[]</object_keyphrases>
+    <relic_roll_min>5</relic_roll_min>
+    <dial>[]</dial>
+  </row>
+  <row>
+    <unit_id>avxS105</unit_id>
+    <set_id>avx</set_id>
+    <collector_number>S105</collector_number>
+    <name>Fragment - Magik</name>
+    <type>object</type>
+    <rarity>chase</rarity>
+    <point_values>[10]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[
+  {
+    "description": "This character can use Poison, the Flight ability, and the Mystics team ability.", 
+    "powers": [
+      "poison"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_type>relic</object_type>
+    <object_size>immobile</object_size>
+    <object_keyphrases>[]</object_keyphrases>
+    <relic_roll_min>5</relic_roll_min>
+    <dial>[]</dial>
+  </row>
+  <row>
+    <unit_id>avxT001</unit_id>
+    <set_id>avx</set_id>
+    <collector_number>T001</collector_number>
+    <name>Avengers</name>
+    <type>character</type>
+    <rarity>chase</rarity>
+    <dimensions>2x4</dimensions>
+    <point_values>[575, 375, 175]</point_values>
+    <properties>["unique"]</properties>
+    <team_abilities>["avengers"]</team_abilities>
+    <keywords>["Avengers"]</keywords>
+    <special_powers>[
+  {
+    "type": "defense", 
+    "name": "SHIELDING", 
+    "description": "Avengers can use Energy Shield/Deflection and Invulnerability.", 
+    "powers": [
+      "energy_shield_deflection", 
+      "invulnerability"
+    ]
+  }, 
+  {
+    "type": "damage", 
+    "name": "COMBINED MIGHT", 
+    "description": "Avengers can use Empower and Enhancement.", 
+    "powers": [
+      "empower", 
+      "enhancement"
+    ]
+  }, 
+  {
+    "type": "asset_unit", 
+    "name": "1", 
+    "description": "Use the asset ability of the character attached in position #1."
+  }, 
+  {
+    "type": "asset_unit", 
+    "name": "2", 
+    "description": "Use the asset ability of the character attached in position #2."
+  }, 
+  {
+    "type": "asset_unit", 
+    "name": "3", 
+    "description": "Use the asset ability of the character attached in position #3."
+  }, 
+  {
+    "type": "asset_unit", 
+    "name": "4", 
+    "description": "Use the asset ability of the character attached in position #4."
+  }, 
+  {
+    "type": "asset_unit", 
+    "name": "5", 
+    "description": "Use the asset ability of the character attached in position #5."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>8</unit_range>
+    <targets>3</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>team</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>20</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "running_shot", 
+    "speed_value": 12, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 12, 
+    "defense_power": "impervious", 
+    "defense_value": 19, 
+    "damage_power": "special", 
+    "damage_value": 6
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "running_shot", 
+    "speed_value": 12, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 12, 
+    "defense_power": "impervious", 
+    "defense_value": 19, 
+    "damage_power": "special", 
+    "damage_value": 5
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "running_shot", 
+    "speed_value": 11, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 11, 
+    "defense_power": "impervious", 
+    "defense_value": 18, 
+    "damage_power": "special", 
+    "damage_value": 5
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "running_shot", 
+    "speed_value": 11, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 11, 
+    "defense_power": "impervious", 
+    "defense_value": 18, 
+    "damage_power": "special", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "charge", 
+    "speed_value": 10, 
+    "attack_power": "super_strength", 
+    "attack_value": 11, 
+    "defense_power": "impervious", 
+    "defense_value": 18, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "charge", 
+    "speed_value": 10, 
+    "attack_power": "super_strength", 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 18, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 4, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "charge", 
+    "speed_value": 9, 
+    "attack_power": "super_strength", 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 17, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 8, 
+    "speed_power": "charge", 
+    "speed_value": 9, 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 17, 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 9, 
+    "speed_power": "running_shot", 
+    "speed_value": 8, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 9, 
+    "defense_power": "special", 
+    "defense_value": 17, 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 10, 
+    "speed_power": "running_shot", 
+    "speed_value": 8, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 9, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "perplex", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 11, 
+    "speed_power": "running_shot", 
+    "speed_value": 8, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 9, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "perplex", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 12, 
+    "speed_power": "running_shot", 
+    "speed_value": 9, 
+    "attack_value": 9, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "perplex", 
+    "damage_value": 3, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 13, 
+    "speed_power": "running_shot", 
+    "speed_value": 9, 
+    "attack_value": 9, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 14, 
+    "speed_power": "running_shot", 
+    "speed_value": 9, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 17, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 15, 
+    "speed_value": 10, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 16, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 16, 
+    "speed_value": 10, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 17, 
+    "speed_power": "charge", 
+    "speed_value": 10, 
+    "attack_power": "super_strength", 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 18, 
+    "speed_power": "charge", 
+    "speed_value": 10, 
+    "attack_power": "super_strength", 
+    "attack_value": 11, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 19, 
+    "speed_power": "charge", 
+    "speed_value": 10, 
+    "attack_power": "super_strength", 
+    "attack_value": 11, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 4
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>avxT002</unit_id>
+    <set_id>avx</set_id>
+    <collector_number>T002</collector_number>
+    <name>X-Men</name>
+    <type>character</type>
+    <rarity>chase</rarity>
+    <dimensions>2x4</dimensions>
+    <point_values>[575, 375, 175]</point_values>
+    <properties>["unique"]</properties>
+    <team_abilities>["x_men"]</team_abilities>
+    <keywords>["X-Men"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "NOW, WHEN YOU NEED SOMETHING", 
+    "description": "Characters with one action token attacking X-Men modify their attack value by -1."
+  }, 
+  {
+    "type": "trait", 
+    "name": "ENDAGERED SPECIES", 
+    "description": "If 5 team members are attached, X-Men can use Colossal Stamina."
+  }, 
+  {
+    "type": "defense", 
+    "name": "YOU CANNOT HURT US", 
+    "description": "X-Men can use Super Senses and Toughness."
+  }, 
+  {
+    "type": "damage", 
+    "name": "X-MEN NEVER GIVE UP", 
+    "description": "X-Men can use Outwit. If X-Men are adjacent to an opposing character, they can use Regeneration."
+  }, 
+  {
+    "type": "asset_unit", 
+    "name": "1", 
+    "description": "Use the asset ability of the character attached in position #1."
+  }, 
+  {
+    "type": "asset_unit", 
+    "name": "2", 
+    "description": "Use the asset ability of the character attached in position #2."
+  }, 
+  {
+    "type": "asset_unit", 
+    "name": "3", 
+    "description": "Use the asset ability of the character attached in position #3."
+  }, 
+  {
+    "type": "asset_unit", 
+    "name": "4", 
+    "description": "Use the asset ability of the character attached in position #4."
+  }, 
+  {
+    "type": "asset_unit", 
+    "name": "5", 
+    "description": "Use the asset ability of the character attached in position #5."
+  }, 
+  {
+    "type": "asset_team", 
+    "description": "X-Men can use Barrier until your next turn. They can use it as a free action, but when they do, they may only place up to 2 terrain markers.", 
+    "powers": [
+      "barrier"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>8</unit_range>
+    <targets>2</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>team</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>20</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "running_shot", 
+    "speed_value": 12, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 12, 
+    "defense_power": "invincible", 
+    "defense_value": 19, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 6
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "running_shot", 
+    "speed_value": 12, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 12, 
+    "defense_power": "invincible", 
+    "defense_value": 19, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 5
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "running_shot", 
+    "speed_value": 11, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 11, 
+    "defense_power": "invincible", 
+    "defense_value": 18, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 5
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "running_shot", 
+    "speed_value": 11, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 11, 
+    "defense_power": "invincible", 
+    "defense_value": 18, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "sidestep", 
+    "speed_value": 10, 
+    "attack_power": "super_strength", 
+    "attack_value": 11, 
+    "defense_power": "invincible", 
+    "defense_value": 18, 
+    "damage_power": "special", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "sidestep", 
+    "speed_value": 10, 
+    "attack_power": "super_strength", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 18, 
+    "damage_power": "special", 
+    "damage_value": 4, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "sidestep", 
+    "speed_value": 9, 
+    "attack_power": "super_strength", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 8, 
+    "speed_power": "sidestep", 
+    "speed_value": 9, 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 9, 
+    "speed_power": "running_shot", 
+    "speed_value": 8, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 9, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 10, 
+    "speed_power": "running_shot", 
+    "speed_value": 8, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 9, 
+    "defense_power": "special", 
+    "defense_value": 17, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 11, 
+    "speed_power": "running_shot", 
+    "speed_value": 8, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 9, 
+    "defense_power": "special", 
+    "defense_value": 17, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 12, 
+    "speed_power": "running_shot", 
+    "speed_value": 9, 
+    "attack_value": 9, 
+    "defense_power": "special", 
+    "defense_value": 17, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 3, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 13, 
+    "speed_power": "running_shot", 
+    "speed_value": 9, 
+    "attack_value": 9, 
+    "defense_power": "special", 
+    "defense_value": 17, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 14, 
+    "speed_power": "running_shot", 
+    "speed_value": 9, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 15, 
+    "speed_value": 10, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 16, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 16, 
+    "speed_value": 10, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 17, 
+    "speed_value": 10, 
+    "attack_power": "super_strength", 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 18, 
+    "speed_power": "running_shot", 
+    "speed_value": 10, 
+    "attack_power": "super_strength", 
+    "attack_value": 11, 
+    "defense_power": "special", 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 19, 
+    "speed_power": "running_shot", 
+    "speed_value": 10, 
+    "attack_power": "super_strength", 
+    "attack_value": 11, 
+    "defense_power": "special", 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 4
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>avxM001</unit_id>
+    <set_id>avx</set_id>
+    <collector_number>M001</collector_number>
+    <name>Utopia: West</name>
+    <type>map</type>
+    <point_values>[]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <map_url>https://hcmaps.net/maps/avx/utopia_west.json</map_url>
+    <dial>[]</dial>
+  </row>
+  <row>
+    <unit_id>avxM002</unit_id>
+    <set_id>avx</set_id>
+    <collector_number>M002</collector_number>
+    <name>Avengers Tower</name>
+    <type>map</type>
+    <point_values>[]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <map_url>https://hcmaps.net/maps/avx/avengers_tower.json</map_url>
+    <dial>[]</dial>
+  </row>
+  <row>
+    <unit_id>avxM003</unit_id>
+    <set_id>avx</set_id>
+    <collector_number>M003</collector_number>
+    <name>Utopia</name>
+    <type>map</type>
+    <point_values>[]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <map_url>https://hcmaps.net/maps/avx/utopia.json</map_url>
+    <dial>[]</dial>
+  </row>
+  <row>
+    <unit_id>avxM004</unit_id>
+    <set_id>avx</set_id>
+    <collector_number>M004</collector_number>
+    <name>Utopia: East</name>
+    <type>map</type>
+    <point_values>[]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <map_url>https://hcmaps.net/maps/avx/utopia_east.json</map_url>
+    <dial>[]</dial>
+  </row>
+  <row>
+    <unit_id>avxM005</unit_id>
+    <set_id>avx</set_id>
+    <collector_number>M005</collector_number>
+    <name>Wundagore Mountain</name>
+    <type>map</type>
+    <point_values>[]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <map_url>https://hcmaps.net/maps/avx/wundagore_mountain.json</map_url>
+    <dial>[]</dial>
+  </row>
+  <row>
+    <unit_id>avxM006</unit_id>
+    <set_id>avx</set_id>
+    <collector_number>M006</collector_number>
+    <name>Savage Land</name>
+    <type>map</type>
+    <point_values>[]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <map_url>https://hcmaps.net/maps/avx/savage_land.json</map_url>
+    <dial>[]</dial>
+  </row>
+  <row>
+    <unit_id>avxM007</unit_id>
+    <set_id>avx</set_id>
+    <collector_number>M007</collector_number>
+    <name>Latveria</name>
+    <type>map</type>
+    <point_values>[]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <map_url>https://hcmaps.net/maps/avx/latveria.json</map_url>
+    <dial>[]</dial>
+  </row>
+  <row>
+    <unit_id>avxM008</unit_id>
+    <set_id>avx</set_id>
+    <collector_number>M008</collector_number>
+    <name>Flooded Wakanda</name>
+    <type>map</type>
+    <point_values>[]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <map_url>https://hcmaps.net/maps/avx/flooded_wakanda.json</map_url>
+    <dial>[]</dial>
+  </row>
+  <row>
+    <unit_id>avxM009</unit_id>
+    <set_id>avx</set_id>
+    <collector_number>M009</collector_number>
+    <name>Limbo</name>
+    <type>map</type>
+    <point_values>[]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <map_url>https://hcmaps.net/maps/avx/limbo.json</map_url>
+    <dial>[]</dial>
+  </row>
+  <row>
+    <unit_id>avxM010</unit_id>
+    <set_id>avx</set_id>
+    <collector_number>M010</collector_number>
+    <name>Verkhoyansk Mountains</name>
+    <type>map</type>
+    <point_values>[]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <map_url>https://hcmaps.net/maps/avx/verkhoyansk_mountains.json</map_url>
+    <dial>[]</dial>
+  </row>
+  <row>
+    <unit_id>avxM011</unit_id>
+    <set_id>avx</set_id>
+    <collector_number>M011</collector_number>
+    <name>K'un L'un</name>
+    <type>map</type>
+    <point_values>[]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <map_url>https://hcmaps.net/maps/avx/kun_lun.json</map_url>
+    <dial>[]</dial>
+  </row>
+  <row>
+    <unit_id>avxM012</unit_id>
+    <set_id>avx</set_id>
+    <collector_number>M012</collector_number>
+    <name>Surface of the Moon</name>
+    <type>map</type>
+    <point_values>[]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <map_url>https://hcmaps.net/maps/avx/surface_of_the_moon.json</map_url>
+    <dial>[]</dial>
+  </row>
+</resultset>

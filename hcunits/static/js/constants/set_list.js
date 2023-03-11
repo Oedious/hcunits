@@ -125,7 +125,7 @@ const SET_LIST = {
     "universe": "marvel"
   },
   "bgame": {
-    "name": "Battlegrounds: Avengers vs. Masters of Evil",
+    "name": "Battlegrounds: Avengers vs Masters of Evil",
     "release_date": "2020-07-22",
     "universe": "marvel"
   },
@@ -601,6 +601,11 @@ const SET_LIST = {
   },
   "iim": {
     "name": "The Invincible Iron Man",
+    "release_date": "2013-11-20",
+    "universe": "marvel"
+  },
+  "avx": {
+    "name": "Avengers vs X-Men",
     "release_date": "2013-11-20",
     "universe": "marvel"
   },

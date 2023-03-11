@@ -270,13 +270,26 @@ class CharacterView extends BaseUnitView {
     for (var i = 0; i < this.unit_.special_powers.length; ++i) {
       const power = this.unit_.special_powers[i];
       var type = power.type;
-  
       // Handling for special trait types
       if (type == "speed" || type == "attack" || type == "defense" || type == "damage") {
         type = this.unit_[type + "_type"];
       }
         
-      const headerLines = power.name ? Math.ceil(power.name.length / CHARS_PER_NAME_LINE) : 0;
+      // Move the power name to the text on the icon for team bases.
+      var powerName = power.name;
+      var iconText;
+      var iconTextColor;
+      console.log(`type=${type} powerName=${powerName}`)
+      if (type == "asset_unit" && powerName && powerName.length == 1) {
+        iconText = powerName;
+        iconTextColor = "white"
+        powerName = null;
+      } else if (type == "asset_team") {
+        iconText = "1";
+        iconTextColor = "black";
+      }
+      
+      const headerLines = powerName ? Math.ceil(powerName.length / CHARS_PER_NAME_LINE) : 0;
       const descLines = Math.ceil(power.description.length / CHARS_PER_DESC_LINE);
       const lines = headerLines + descLines;
       if (lines > LINES_PER_COLUMN[LINES_PER_COLUMN.length - 1]) {
@@ -316,13 +329,18 @@ class CharacterView extends BaseUnitView {
           </div>`;
       } else if (type) {
         iconHtml = `<img class='specialPowerIcon' src='/static/images/sp/${type}.png' alt=''/>`;
+
+        // Draw text over top of the icon.
+        if (iconText) {
+          iconHtml += `<div class='specialPowerIconText' style='color:${iconTextColor};'>${iconText}</div>`
+        }
       }
       html += `
         <tr class='specialPowerRow'>
           <td class='specialPowerImg'>${iconHtml}</td>
           <td class='specialPower'>`;
-      if (power.name) {
-        html += `<b>${escapeHtml(power.name.toUpperCase())}</b><br>`;
+      if (powerName) {
+        html += `<b>${escapeHtml(powerName.toUpperCase())}</b><br>`;
       }
       html += `${escapeHtml(power.description)}</td></tr>`;
     }

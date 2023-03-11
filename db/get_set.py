@@ -427,6 +427,14 @@ SET_MAP = {
       ("iimS001", "iimS101"),
     ],
   },
+  "avx": {
+    "name": "Avengers vs X-Men",
+    "ranges": [
+      # TODO: Add support for avxR100 and relics
+      ("avx001", "avxG001r"),
+      ("avxS101", "avxT002r"),
+    ],
+  },
 }
 
 POWERS = {
@@ -562,7 +570,8 @@ SPECIAL_POWER_TYPE_VALUES = [
   "consolation",
   "other_id",
   "inspiration",
-  "asset",
+  "asset_unit",
+  "asset_team",
   "epic",
   "construct",
   "word_balloon",
@@ -638,6 +647,7 @@ IMPROVED_ABILITIES = {
       "lines of fire drawn by this character are not blocked by characters": "characters",
       "ignores opposing characters": "opposing_characters",
       "adjacent": "adjacent",
+      "may make a ranged combat attack when adjacent to an opposing character": "adjacent",
       "may make a ranged combat attack targeting adjacent opposing characters": "adjacent",
       "may make a ranged combat attack while adjacent to an opposing character": "adjacent",
       "may make a ranged combat attack even when adjacent to an opposing character": "adjacent",
@@ -1362,7 +1372,9 @@ class Unit:
             else:
               sp_type = "epic"
           elif sp_type_str == "black-circle":
-            sp_type = "asset"
+            sp_type = "asset_unit"
+          elif sp_type_str == "special-circle1":
+            sp_type = "asset_team"
           elif sp_type_str == "special-circle":
             if self.set_id == "wol":
               sp_type = "construct"
@@ -1378,6 +1390,7 @@ class Unit:
                   sp_type = "ritual"
                 elif sp_name == "TRAP/SPELL" or sp_name == "SPELL/TRAP":
                   sp_type = "trap_spell"
+            asset_type = "team"
           elif sp_type_str == "blue-circle":
             if self.set_id.startswith("ygo"):
               sp_type = "spell"
