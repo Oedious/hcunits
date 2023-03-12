@@ -577,6 +577,12 @@ SET_MAP = {
   "tab": {
     "name": "TabApp",
   },
+  "d10a": {
+    "name": "DC Heroclix 10th Anniversary",
+  },
+  "m10a": {
+    "name": "Marvel Heroclix 10th Anniversary",
+  },
 }
 
 POWERS = {
@@ -1585,10 +1591,13 @@ class Unit:
           if sp_type == "improved":
             # Check if the name is empty or descriptive and the improved ability type is
             # just the first part of the description.
-            if (not sp_name or not sp_name.lower().startswith("improved ")) and sp_description.lower().startswith("improved"):
-              idx = sp_description.find(":")
-              sp_name = sp_description[:idx].strip()
-              sp_description = sp_description[idx + 1:].strip()
+            if not sp_name or not sp_name.lower().startswith("improved "):
+              sp_desc_lower = sp_description.lower()
+              if sp_desc_lower.startswith("improved") or sp_desc_lower.startswith(self.name.lower()):
+                name_idx = sp_desc_lower.find("improved")
+                desc_idx = sp_description.find(":")
+                sp_name = sp_description[name_idx:desc_idx].strip()
+                sp_description = sp_description[desc_idx + 1:].strip()
 
             # Check whether the description holds different types of improved
             # abilities and, if so, split it up and process each separately.

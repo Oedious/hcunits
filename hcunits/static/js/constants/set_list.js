@@ -771,6 +771,16 @@ const SET_LIST = {
     // TODO: Separate these out into marvel/dc.
     "universe": "marvel"
   },
+  "d10a": {
+    "name": "DC 10th Anniversary",
+    "release_date": "2012-09-12",
+    "universe": "dc"
+  },
+  "m10a": {
+    "name": "Marvel 10th Anniversary",
+    "release_date": "2012-09-12",
+    "universe": "marvel"
+  },
   "wk": {
     "name": "WizKids Standard Game Pieces",
     "release_date": "2002-05-01",
