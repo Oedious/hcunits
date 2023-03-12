@@ -260,7 +260,7 @@ class CharacterView extends BaseUnitView {
       return [];
     }
     const LINES_PER_COLUMN = (this.numDialTables_ == 1) ? [16, 9, 30] : [7, 1, 30];
-    const CHARS_PER_NAME_LINE = 23;
+    const CHARS_PER_NAME_LINE = 22;
     const CHARS_PER_DESC_LINE = 29;
     var currentLineCount = 0;
     var currentColumn = 0;

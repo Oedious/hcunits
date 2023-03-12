@@ -47,6 +47,7 @@ const OBJECT_TYPE_INFO = {
   },
   "special": {
     "name": "Special Object",
+    "icon": "blur_circular",
   },
   "equipment": {
     "name": "Equipment",
@@ -55,10 +56,12 @@ const OBJECT_TYPE_INFO = {
   },
   "plastic_man": {
     "name": "Disguised Plastic Man Special Object",
+    "icon": "fire_hydrant",
   },
   "relic": {
     "name": "Relic",
     "description": "If a character occupies the same square as a relic, that character may be given a power action to roll a d6 that can’t be rerolled. This roll is called a relic roll. If the result of that roll is within the indicated range of numbers (or higher), the relic is assigned to that character, placed on that character’s card, and the character will gain certain abilities as described on the relic's card.",
+    "icon": "social_leaderboard",
   }
 };
 

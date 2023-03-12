@@ -253,32 +253,33 @@ class UnitListPanel extends ListPanel {
           color = RARITY_COMMON_COLOR;
         }
         var minorInfo = "";
-        var icon = TYPE_TO_ICON[unit.type];
+        var icon = null;
         if (unit.type != "character") {
           // If the point is zero, just show the type.
+          var typeInfo = null;
           if (unit.type == "object") {
-            minorInfo = OBJECT_TYPE_INFO[unit.object_type].name;
+            typeInfo = OBJECT_TYPE_INFO[unit.object_type];
           } else if (unit.type == "bystander") {
-            const typeInfo = BYSTANDER_TYPE_INFO[unit.bystander_type];
-            minorInfo = typeInfo.name;
-            if (typeInfo.icon) {
-              icon = typeInfo.icon;
-            }
+            typeInfo = BYSTANDER_TYPE_INFO[unit.bystander_type];
           } else if (unit.type == "attachment") {
-            const typeInfo = ATTACHMENT_TYPE_INFO[unit.attachment_type];
-            minorInfo = typeInfo.name;
-            if (typeInfo.icon) {
-              icon = typeInfo.icon;
-            }
+            typeInfo = ATTACHMENT_TYPE_INFO[unit.attachment_type];
           } else {
-            if (!TYPE_LIST[unit.type].name) {
+            typeInfo = TYPE_LIST[unit.type];
+            if (!typeInfo || !typeInfo.name) {
               throw new Error(`Unit '{unit.unit_id}' has unknown type '${unit.type}'`)
             }
-            minorInfo = TYPE_LIST[unit.type].name;
+          }
+          minorInfo = typeInfo.name;
+          if (typeInfo.icon) {
+            icon = typeInfo.icon;
           }
           if (unit.point_values.length > 0) {
             minorInfo += " - ";
           }
+        }
+        // If there was no specialized icon, use a more generic one.
+        if (!icon) {
+          icon = TYPE_TO_ICON[unit.type];
         }
         if (unit.point_values.length > 0) {
           for (var j = 0; j < unit.point_values.length; ++j) {

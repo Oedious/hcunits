@@ -740,6 +740,16 @@ const SET_LIST = {
     "release_date": "2012-12-19",
     "universe": "dc"
   },
+  "bm": {
+    "name": "Batman",
+    "release_date": "2012-11-14",
+    "universe": "dc"
+  },
+  "ffbm": {
+    "name": "Fast Forces: Batman",
+    "release_date": "2012-11-14",
+    "universe": "dc"
+  },
   "wk": {
     "name": "WizKids Standard Game Pieces",
     "release_date": "2002-05-01",

@@ -1,0 +1,31 @@
+{
+  "updates": {
+    "ffbm001": {
+      "special_powers": [{
+        "powers": ["combat_reflexes"]
+      }]
+    },
+    "ffbm002": {
+      "special_powers": [{
+        "powers": ["outwit"]
+      }]
+    }
+  },  "additions": [{
+    "unit_id": "ffbmM001",
+    "set_id": "ffbm",
+    "collector_number": "M001",
+    "name": "Wayne Manor",
+    "type": "map",
+    "special_powers": [{
+      "description": "Orange squares are Bat-pole squares. If you are also playing with the Batcave map, you may give a character occupying this square a power action and place that character in the corresponding square on that map. If that square is occupied, place that character in the nearest square it could be placed in."
+    }],
+    "map_url": "https://hcmaps.net/maps/bm/wayne_manor.json"
+  }, {
+    "unit_id": "ffbmM002",
+    "set_id": "ffbm",
+    "collector_number": "M002",
+    "name": "The Temple",
+    "type": "map",
+    "map_url": "https://hcmaps.net/maps/bm/the_temple.json"
+  }]
+}

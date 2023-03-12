@@ -538,6 +538,25 @@ SET_MAP = {
   "ffsog": {
     "name": "Fast Forces: Streets of Gotham",
   },
+  "bm": {
+    "name": "Batman",
+    "ranges": [
+      # TODO: Add support for R101 and R102
+      ("bm001", "bm210b"),
+      ("bmS100", "bmS102"),
+      # Skip core vehicle units and use the separate piloted/autopiloted versions
+      ("bmV001a", "bmV001b"),
+      ("bmV002a", "bmV002b"),
+      ("bmV003a", "bmV003b"),
+      ("bmV004a", "bmV004b"),
+      ("bmV005a", "bmV005b"),
+      ("bmV006a", "bmV006b"),
+      ("bmV007a", "bmV007b"),
+    ],
+  },
+  "ffbm": {
+    "name": "Fast Forces: Batman",
+  },
 }
 
 POWERS = {
@@ -1981,6 +2000,7 @@ class Unit:
       elif (key == "name" or
             key == "type" or
             key == "real_name" or
+            key == "rarity" or
             key == "keywords" or
             key == "defense_type" or
             key == "object_size" or
