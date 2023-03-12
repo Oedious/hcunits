@@ -613,6 +613,12 @@ SET_MAP = {
   "ams": {
     "name": "Avengers Movie Starter",
   },
+  "gg": {
+    "name": "Galactic Guardians",
+  },
+  "ffgga": {
+    "name": "Fast Forces: Galactic Guardians Annihilators",
+  },
 }
 
 POWERS = {
@@ -1824,6 +1830,11 @@ class Unit:
           for i in range(4):
             tag = tags[i]
             power = tag.td['title']
+            # Fix when the title is empty.
+            if not power or power == "":
+              class_attrs = tag.td.get('class', []);
+              if class_attrs and "special" in class_attrs:
+                power = "special"
             # Fix mis-named powers
             if power:
               if power == "Psychic Blast":
@@ -2064,7 +2075,9 @@ class Unit:
               del self.dial[i][k]
             else:
               self.dial[i][k] = v
-      elif (key == "name" or
+      elif (key == "unit_id" or
+            key == "collector_number" or
+            key == "name" or
             key == "type" or
             key == "real_name" or
             key == "rarity" or
