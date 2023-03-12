@@ -601,6 +601,18 @@ SET_MAP = {
   "dkr": {
     "name": "The Dark Knight Rises",
   },
+  "ffwol": {
+    "name": "Fast Forces: War of the Light",
+  },
+  "ffgsx": {
+    "name": "Fast Forces: Giant-Size X-Men",
+  },
+  "avm": {
+    "name": "Avengers Movie",
+  },
+  "ams": {
+    "name": "Avengers Movie Starter",
+  },
 }
 
 POWERS = {

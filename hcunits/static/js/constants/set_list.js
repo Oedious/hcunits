@@ -811,6 +811,26 @@ const SET_LIST = {
     "release_date": "2012-06-06",
     "universe": "dc"
   },
+  "ffwol": {
+    "name": "Fast Forces: War of the Light",
+    "release_date": "2012-06-06",
+    "universe": "dc"
+  },
+  "ffgsx": {
+    "name": "Fast Forces: Giant-Size X-Men",
+    "release_date": "2012-06-06",
+    "universe": "marvel"
+  },
+  "avm": {
+    "name": "Avengers Movie",
+    "release_date": "2012-04-18",
+    "universe": "marvel"
+  },
+  "ams": {
+    "name": "Avengers Movie Starter",
+    "release_date": "2012-04-18",
+    "universe": "marvel"
+  },
   "wk": {
     "name": "WizKids Standard Game Pieces",
     "release_date": "2002-05-01",

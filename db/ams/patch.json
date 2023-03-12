@@ -1,0 +1,27 @@
+{
+  "updates": {
+    "ams002": {
+      "special_powers": [{
+        "powers": ["energy_shield_deflection"]
+      }]
+    }
+  },
+  "additions": [{
+    "unit_id": "amsM001",
+    "set_id": "ams",
+    "collector_number": "M001",
+    "name": "S.H.I.E.L.D. Helicarrier",
+    "type": "map",
+    "map_url": "https://hcmaps.net/maps/avm/shield_helicarrier.json"
+  }, {
+    "unit_id": "amsM002",
+    "set_id": "ams",
+    "collector_number": "M002",
+    "name": "Stark Tower",
+    "type": "map",
+    "special_rules": [{
+      "description": "Orange squares are City Below Squares. At the end of each turn, if a character that can't use the Flight ability is occupying one of these squares, place them in the nearest non-orange square that they can be placed in and give them an action token."
+    }],
+    "map_url": "https://hcmaps.net/maps/avm/stark_tower.json"
+  }]
+}
