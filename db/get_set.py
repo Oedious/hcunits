@@ -619,6 +619,20 @@ SET_MAP = {
   "ffgga": {
     "name": "Fast Forces: Galactic Guardians Annihilators",
   },
+  "ig": {
+    "name": "Infinity Gauntlet",
+    "ranges": [
+      # TODO: Add support for ig008 (Thanos) and resources
+      ("ig001", "ig007"),
+      ("ig009", "ig009"),
+      ("igS101", "igS101"),
+      ("igS102", "igS102"),
+      ("igS103", "igS103"),
+      ("igS104", "igS104"),
+      ("igS105", "igS105"),
+      ("igS106", "igS106"),
+    ],
+  },
 }
 
 POWERS = {
@@ -1256,6 +1270,10 @@ class Unit:
           part = part.strip()
           if part == "":
             continue
+          
+          # Skip powers that are just the normal rules.
+          if part.startswith("Relic X"):
+            continue
 
           if part == "Light Object":
             self.object_size = "light"
@@ -1296,6 +1314,7 @@ class Unit:
             ("description", clean_string(description.strip()))
           ]))
           self.special_powers[-1] = self.parse_powers_from_description(self.special_powers[-1])
+
     # Parse equipment special powers
     elif self.type == "equipment":
       equip_tag = soup.find("td", class_="card_special_object")

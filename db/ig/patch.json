@@ -1,0 +1,96 @@
+{
+  "updates": {
+    "ig001": {
+      "special_powers": [{
+        "description": "Adam Warlock can use Hypersonic Speed, Mind Control, Penetrating/Psychic Blast, and Phasing/Teleport.", 
+        "powers": ["hypersonic_speed", "mind_control", "penetrating_psychic_blast", "phasing_teleport"]
+      }]
+    },
+    "ig005": {
+      "special_powers": [{
+      }, {
+      }, {
+        "powers": ["flurry", "exploit_weakness"]
+      }]
+    },
+    "ig006": {
+      "special_powers": [{
+        "powers": ["probability_control"]
+      }]
+    },
+    "ig009": {
+      "special_powers": [{
+        "powers": ["perplex"]
+      }]
+    },
+    "igS102": {
+      "special_powers": [{
+        "powers": ["close_combat_expert", "ranged_combat_expert"]
+      }]
+    }
+  },
+  "additions": [{
+    "unit_id": "igM001",
+    "set_id": "ig",
+    "collector_number": "M001",
+    "name": "Nexus of Reality",
+    "type": "map",
+    "special_powers": [{
+      "name": "Caught in the Nexus",
+      "description": "Orange squares are treated as clear terrain. Characters occupying orange squares can't be given Close Combat Actions, Ranged Combat Actions, or Power Actions, but can break away automatically."
+    }],
+    "map_url": "https://hcmaps.net/maps/ig/nexus_of_reality.json"
+  }, {
+    "unit_id": "igM002",
+    "set_id": "ig",
+    "collector_number": "M002",
+    "name": "Soul World",
+    "type": "map",
+    "map_url": "https://hcmaps.net/maps/ig/soul_world.json"
+  }, {
+    "unit_id": "igM003",
+    "set_id": "ig",
+    "collector_number": "M003",
+    "name": "Tamarata",
+    "type": "map",
+    "map_url": "https://hcmaps.net/maps/ig/tamarata.json"
+  }, {
+    "unit_id": "igM004",
+    "set_id": "ig",
+    "collector_number": "M004",
+    "name": "The Garden",
+    "type": "map",
+    "map_url": "https://hcmaps.net/maps/ig/the_garden.json"
+  }, {
+    "unit_id": "igM005",
+    "set_id": "ig",
+    "collector_number": "M005",
+    "name": "Space Racetrack",
+    "type": "map",
+    "special_powers": [{
+      "description": "Orange squares are Low Gravity Squares. Characters occupying Low Gravity Squares may move per standard movement rules. When a character occupying an Orange Square is hit by an attack they are knocked back equal to the damage taken."
+    }],
+    "map_url": "https://hcmaps.net/maps/ig/space_racetrack.json"
+  }, {
+    "unit_id": "igM006",
+    "set_id": "ig",
+    "collector_number": "M006",
+    "name": "Collector's Ship",
+    "type": "map",
+    "map_url": "https://hcmaps.net/maps/ig/collectors_ship.json"
+  }, {
+    "unit_id": "igM007",
+    "set_id": "ig",
+    "collector_number": "M007",
+    "name": "The Mental Plane",
+    "type": "map",
+    "map_url": "https://hcmaps.net/maps/ig/the_mental_plane.json"
+  }, {
+    "unit_id": "igM008",
+    "set_id": "ig",
+    "collector_number": "M008",
+    "name": "Shrine to Death",
+    "type": "map",
+    "map_url": "https://hcmaps.net/maps/ig/shrine_to_death.json"
+  }]
+}

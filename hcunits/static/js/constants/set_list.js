@@ -841,6 +841,11 @@ const SET_LIST = {
     "release_date": "2012-04-11",
     "universe": "marvel"
   },
+  "ig": {
+    "name": "Infinity Gauntlet",
+    "release_date": "2012-01-01",
+    "universe": "marvel"
+  },
   "wk": {
     "name": "WizKids Standard Game Pieces",
     "release_date": "2002-05-01",

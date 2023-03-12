@@ -1,0 +1,1352 @@
+<resultset>
+  <row>
+    <unit_id>ig001</unit_id>
+    <set_id>ig</set_id>
+    <collector_number>001</collector_number>
+    <name>Adam Warlock</name>
+    <type>character</type>
+    <rarity>chase</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[450, 250]</point_values>
+    <properties>["unique"]</properties>
+    <team_abilities>["power_cosmic"]</team_abilities>
+    <keywords>["Cosmic", "Infinity Watch"]</keywords>
+    <special_powers>[
+  {
+    "type": "speed", 
+    "name": "FOCUS ON MIND AND SPACE", 
+    "description": "Adam Warlock can use Hypersonic Speed, Mind Control, Penetrating/Psychic Blast, and Phasing/Teleport.", 
+    "powers": [
+      "hypersonic_speed", 
+      "mind_control", 
+      "penetrating_psychic_blast", 
+      "phasing_teleport"
+    ]
+  }, 
+  {
+    "type": "attack", 
+    "name": "FOCUS ON SOUL AND TIME", 
+    "description": "Adam Warlock can use Incapacitate, Poison, Steal Energy, and Telekinesis.", 
+    "powers": [
+      "incapacitate", 
+      "poison", 
+      "steal_energy", 
+      "telekinesis"
+    ]
+  }, 
+  {
+    "type": "damage", 
+    "name": "FOCUS ON POWER AND REALITY", 
+    "description": "Adam Warlock can use Close Combat Expert, Probability Control, Ranged Combat Expert, and Shape Change.", 
+    "powers": [
+      "close_combat_expert", 
+      "probability_control", 
+      "ranged_combat_expert", 
+      "shape_change"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>10</unit_range>
+    <targets>3</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "special", 
+    "speed_value": 13, 
+    "attack_value": 12, 
+    "defense_power": "impervious", 
+    "defense_value": 19, 
+    "damage_value": 5
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "special", 
+    "speed_value": 12, 
+    "attack_value": 12, 
+    "defense_power": "impervious", 
+    "defense_value": 18, 
+    "damage_value": 5
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "special", 
+    "speed_value": 12, 
+    "attack_power": "special", 
+    "attack_value": 11, 
+    "defense_power": "impervious", 
+    "defense_value": 18, 
+    "damage_value": 5
+  }, 
+  {
+    "click_number": 4, 
+    "speed_value": 11, 
+    "attack_power": "special", 
+    "attack_value": 11, 
+    "defense_power": "impervious", 
+    "defense_value": 18, 
+    "damage_value": 5, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 5, 
+    "speed_value": 10, 
+    "attack_power": "special", 
+    "attack_value": 11, 
+    "defense_power": "impervious", 
+    "defense_value": 18, 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 6, 
+    "speed_value": 10, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 7, 
+    "speed_value": 10, 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 8, 
+    "speed_value": 9, 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 9, 
+    "speed_power": "special", 
+    "speed_value": 9, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_power": "invulnerability", 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 10, 
+    "speed_power": "special", 
+    "speed_value": 9, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_power": "invulnerability", 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ig002</unit_id>
+    <set_id>ig</set_id>
+    <collector_number>002</collector_number>
+    <name>In-Betweener</name>
+    <type>character</type>
+    <rarity>chase</rarity>
+    <dimensions>1x2</dimensions>
+    <point_values>[290]</point_values>
+    <properties>["unique"]</properties>
+    <team_abilities>["mystics", "power_cosmic"]</team_abilities>
+    <keywords>["Cosmic", "Elders of the Universe", "Mystical", "Zodiac"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "SOUL GEM", 
+    "description": "In-Betweener may begin the game with the Soul Gem attached to his base by paying its point cost. This object does not count toward your object total and is scored and removed from the game when In-Betweener is KO'd. In addition to its normal effects, modify In-Betweener's defense value by +1 if the Soul Gem is attached."
+  }, 
+  {
+    "type": "speed", 
+    "name": "THE SOURCE OF MAGIC", 
+    "description": "In-Betweener deals 2 unavoidable damage instead of 1 unavoidable damage when using the Mystics team ability."
+  }, 
+  {
+    "type": "damage", 
+    "name": "POLAR OPPOSITE ATTACK", 
+    "description": "As a free action, choose an opposing character within range and line of fire. Until your next turn, In-Betweener may use all standard powers and combat abilities that character can use as long as that character is on the map. At the end of your turn, if In-Betweener didn't attack that character this turn, deal In-Betweener 2 unavoidable damage."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>10</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 10, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 11, 
+    "defense_power": "impervious", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 10, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 11, 
+    "defense_power": "impervious", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 10, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 11, 
+    "defense_power": "impervious", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 10, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 11, 
+    "defense_power": "impervious", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "special", 
+    "speed_value": 9, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 16, 
+    "damage_power": "probability_control", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "special", 
+    "speed_value": 9, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 16, 
+    "damage_power": "probability_control", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "special", 
+    "speed_value": 9, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 16, 
+    "damage_power": "probability_control", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 8, 
+    "speed_power": "special", 
+    "speed_value": 9, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 16, 
+    "damage_power": "probability_control", 
+    "damage_value": 3
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ig003</unit_id>
+    <set_id>ig</set_id>
+    <collector_number>003</collector_number>
+    <name>Champion</name>
+    <type>character</type>
+    <rarity>chase</rarity>
+    <dimensions>1x2</dimensions>
+    <point_values>[290]</point_values>
+    <properties>["unique"]</properties>
+    <team_abilities>["power_cosmic"]</team_abilities>
+    <keywords>["Brute", "Cosmic", "Elders of the Universe", "Martial Artist", "Warrior"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "POWER GEM", 
+    "description": "Champion may begin the game with the Power Gem attached to his base by paying its point cost. This object does not count toward your object total and is scored and removed from the game when Champion is KO'd. In addition to its normal effects modify Champion's damage value by +1 if the Power Gem is attached."
+  }, 
+  {
+    "type": "trait", 
+    "name": "FIGHT ME! I HAVE NO NEED OF ALLIES", 
+    "description": "Opposing characters modify their attack values by -1 when attacking another character friendly to Champion. Modify Champion's attack value by -1 if there's another character on your force."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "charge", 
+    "speed_value": 9, 
+    "attack_power": "super_strength", 
+    "attack_value": 12, 
+    "defense_power": "impervious", 
+    "defense_value": 18, 
+    "damage_power": "battle_fury", 
+    "damage_value": 5
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "charge", 
+    "speed_value": 9, 
+    "attack_power": "super_strength", 
+    "attack_value": 12, 
+    "defense_power": "impervious", 
+    "defense_value": 17, 
+    "damage_power": "battle_fury", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "charge", 
+    "speed_value": 9, 
+    "attack_power": "super_strength", 
+    "attack_value": 12, 
+    "defense_power": "impervious", 
+    "defense_value": 17, 
+    "damage_power": "battle_fury", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "leap_climb", 
+    "speed_value": 8, 
+    "attack_power": "quake", 
+    "attack_value": 11, 
+    "defense_power": "impervious", 
+    "defense_value": 17, 
+    "damage_power": "battle_fury", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "leap_climb", 
+    "speed_value": 8, 
+    "attack_power": "quake", 
+    "attack_value": 11, 
+    "defense_power": "impervious", 
+    "defense_value": 17, 
+    "damage_power": "battle_fury", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "leap_climb", 
+    "speed_value": 8, 
+    "attack_power": "quake", 
+    "attack_value": 11, 
+    "defense_power": "invulnerability", 
+    "defense_value": 16, 
+    "damage_power": "battle_fury", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "flurry", 
+    "speed_value": 7, 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 16, 
+    "damage_power": "battle_fury", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 8, 
+    "speed_power": "flurry", 
+    "speed_value": 7, 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 16, 
+    "damage_power": "battle_fury", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 9, 
+    "speed_power": "flurry", 
+    "speed_value": 7, 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 16, 
+    "damage_power": "battle_fury", 
+    "damage_value": 3
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ig004</unit_id>
+    <set_id>ig</set_id>
+    <collector_number>004</collector_number>
+    <name>Gardener</name>
+    <type>character</type>
+    <rarity>chase</rarity>
+    <dimensions>1x2</dimensions>
+    <point_values>[150]</point_values>
+    <properties>["unique"]</properties>
+    <team_abilities>["power_cosmic"]</team_abilities>
+    <keywords>["Cosmic", "Elders of the Universe"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "TIME GEM", 
+    "description": "Gardener may begin the game with the Time Gem attached to his base by paying its points cost. This object does not count toward your object total and is scored and removed from the game when Gardener is KO'd. In addition to its normal effects, modify Gardener's range value by +2 if the Time Gem is attached."
+  }, 
+  {
+    "type": "trait", 
+    "name": "WATCH MY GARDEN GROW", 
+    "description": "At the end of your turn, you may place a hindering terrain marker in a square within range that's not occupied by an opposing character."
+  }, 
+  {
+    "type": "damage", 
+    "name": "UNFRIENDLY FLORA", 
+    "description": "Gardener can use Poison. When he does, after actions resolve you may deal 1 damage to up to 3 opposing characters that are within range and occupying hindering terrain.", 
+    "powers": [
+      "poison"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>6</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "stealth", 
+    "speed_value": 7, 
+    "attack_power": "telekinesis", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "stealth", 
+    "speed_value": 6, 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "stealth", 
+    "speed_value": 6, 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "stealth", 
+    "speed_value": 6, 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "stealth", 
+    "speed_value": 5, 
+    "attack_power": "smoke_cloud", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "stealth", 
+    "speed_value": 5, 
+    "attack_power": "smoke_cloud", 
+    "attack_value": 8, 
+    "defense_power": "regeneration", 
+    "defense_value": 16, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "stealth", 
+    "speed_value": 5, 
+    "attack_power": "smoke_cloud", 
+    "attack_value": 8, 
+    "defense_power": "regeneration", 
+    "defense_value": 16, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ig005</unit_id>
+    <set_id>ig</set_id>
+    <collector_number>005</collector_number>
+    <name>Runner</name>
+    <type>character</type>
+    <rarity>chase</rarity>
+    <dimensions>1x2</dimensions>
+    <point_values>[210]</point_values>
+    <properties>["unique"]</properties>
+    <team_abilities>["power_cosmic"]</team_abilities>
+    <keywords>["Cosmic", "Elders of the Universe"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "SPACE GEM", 
+    "description": "Runner may begin the game with the Space Gem attached to his base by paying its point cost. This object does not count toward your object total and is scored and removed from the game when Runner is KO'd. In addition to its normal effects, modify Runner's speed value by +1 if the Space Gem is attached."
+  }, 
+  {
+    "type": "trait", 
+    "name": "I HAVE TO BE THE FASTEST", 
+    "description": "Runner ignores hindering terrain for movement purposes. Modify Runner's attack value by +2 when attacking a character with a speed value of 10 or higher."
+  }, 
+  {
+    "type": "attack", 
+    "name": "QUICKER THAN THOUGHT", 
+    "description": "While using Hypersonic Speed, instead of a close combat attack, Runner may be given a close combat action as a free action to use Flurry or Exploit Weakness.", 
+    "powers": [
+      "flurry", 
+      "exploit_weakness"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "hypersonic_speed", 
+    "speed_value": 14, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 18, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "hypersonic_speed", 
+    "speed_value": 13, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 18, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "hypersonic_speed", 
+    "speed_value": 13, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "hypersonic_speed", 
+    "speed_value": 12, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "hypersonic_speed", 
+    "speed_value": 12, 
+    "attack_value": 10, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_power": "perplex", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "hypersonic_speed", 
+    "speed_value": 11, 
+    "attack_value": 9, 
+    "defense_power": "super_senses", 
+    "defense_value": 16, 
+    "damage_power": "perplex", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "hypersonic_speed", 
+    "speed_value": 11, 
+    "attack_value": 8, 
+    "defense_power": "super_senses", 
+    "defense_value": 16, 
+    "damage_power": "perplex", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ig006</unit_id>
+    <set_id>ig</set_id>
+    <collector_number>006</collector_number>
+    <name>Collector</name>
+    <type>character</type>
+    <rarity>chase</rarity>
+    <dimensions>1x2</dimensions>
+    <point_values>[210]</point_values>
+    <properties>["unique"]</properties>
+    <team_abilities>["power_cosmic"]</team_abilities>
+    <keywords>["Cosmic", "Elders of the Universe"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "REALITY GEM", 
+    "description": "Collector may begin the game with the Reality Gem attached to his base by paying its point cost.  This object does not count toward your object total and is scored and removed from the game when Collector is KO'd.  In addition to its normal effects, Collector can use Probability Control during an opponent's turn if the Reality Gem is attached.", 
+    "powers": [
+      "probability_control"
+    ]
+  }, 
+  {
+    "type": "trait", 
+    "name": "A UNIQUE SPECIMEN!", 
+    "description": "Modify Collector's attack value by +2 when attacking a Unique character."
+  }, 
+  {
+    "type": "attack", 
+    "name": "ADD YOU TO THE COLLECTION", 
+    "description": "Collector can use Incapacitate.  When he does so and hits, you may either: give the hit character two action tokens instead of one, or place the hit character in your starting area (in addition to the normal effects).", 
+    "powers": [
+      "incapacitate"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>8</unit_range>
+    <targets>2</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 10, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "impervious", 
+    "defense_value": 17, 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 9, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_power": "impervious", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 9, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "impervious", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "stealth", 
+    "speed_value": 8, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 9, 
+    "defense_power": "invulnerability", 
+    "defense_value": 18, 
+    "damage_power": "shape_change", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "stealth", 
+    "speed_value": 8, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "shape_change", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "mind_control", 
+    "speed_value": 8, 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "perplex", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "mind_control", 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "perplex", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 8, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 7, 
+    "attack_value": 9, 
+    "defense_power": "regeneration", 
+    "defense_value": 16, 
+    "damage_power": "shape_change", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 9, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 7, 
+    "attack_value": 8, 
+    "defense_power": "regeneration", 
+    "defense_value": 15, 
+    "damage_power": "shape_change", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ig007</unit_id>
+    <set_id>ig</set_id>
+    <collector_number>007</collector_number>
+    <name>Grandmaster</name>
+    <type>character</type>
+    <rarity>chase</rarity>
+    <dimensions>1x2</dimensions>
+    <point_values>[250]</point_values>
+    <properties>["unique"]</properties>
+    <team_abilities>["power_cosmic"]</team_abilities>
+    <keywords>["Cosmic", "Elders of the Universe"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "MIND GEM", 
+    "description": "Grandmaster may begin the game with the Mind Gem attached to his base by paying its point cost. This object does not count toward your object total and is scored and removed from the game when Grandmaster is KO'd. In addition to its normal effects, modify Grandmaster's attack value by +1 if the Mind Gem is attached."
+  }, 
+  {
+    "type": "attack", 
+    "name": "MATCH YOUR LUCK TO MINE", 
+    "description": "When an opponent attacks Grandmaster, after the attack roll but before the damage is dealt, you may give Grandmaster an action token. If you do, roll 2d6 that can't be rerolled and if your roll is higher than the unmodified attack roll, ignore the damage dealt by that attack."
+  }, 
+  {
+    "type": "damage", 
+    "name": "LET'S PLAY AN HONEST GAME", 
+    "description": "Grandmaster can use Outwit. Opposing characters can't use Probability Control during his attacks.", 
+    "powers": [
+      "outwit"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>9</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "stealth", 
+    "speed_value": 9, 
+    "attack_power": "special", 
+    "attack_value": 11, 
+    "defense_power": "impervious", 
+    "defense_value": 18, 
+    "damage_power": "perplex", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "stealth", 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 18, 
+    "damage_power": "special", 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "stealth", 
+    "speed_value": 8, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "perplex", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_value": 8, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 11, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
+    "speed_value": 8, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "perplex", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 6, 
+    "speed_value": 7, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "impervious", 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 7, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_power": "regeneration", 
+    "defense_value": 16, 
+    "damage_power": "perplex", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 8, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 7, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_power": "regeneration", 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ig009</unit_id>
+    <set_id>ig</set_id>
+    <collector_number>009</collector_number>
+    <name>Terraxia</name>
+    <type>character</type>
+    <rarity>chase</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[100]</point_values>
+    <properties>["unique"]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Cosmic", "Eternal"]</keywords>
+    <special_powers>[
+  {
+    "type": "damage", 
+    "name": "MINION: THANOS' CREATION", 
+    "description": "If you control a character whose name includes \"Thanos\", Terraxia can use Perplex.", 
+    "powers": [
+      "perplex"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "charge", 
+    "speed_value": 7, 
+    "attack_power": "super_strength", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "charge", 
+    "speed_value": 7, 
+    "attack_power": "super_strength", 
+    "attack_value": 9, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "flurry", 
+    "speed_value": 6, 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "flurry", 
+    "speed_value": 6, 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "charge", 
+    "speed_value": 6, 
+    "attack_power": "super_strength", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_value": 5, 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 15, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 7, 
+    "speed_value": 5, 
+    "attack_value": 8, 
+    "defense_power": "toughness", 
+    "defense_value": 14, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 1
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>igS101</unit_id>
+    <set_id>ig</set_id>
+    <collector_number>S101</collector_number>
+    <name>Soul Gem</name>
+    <type>object</type>
+    <rarity>chase</rarity>
+    <point_values>[10]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[
+  {
+    "description": "Character can use Steal Energy. When character KO's an opposing character, heal character of 2 damage.", 
+    "powers": [
+      "steal_energy"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_type>relic</object_type>
+    <object_size>immobile</object_size>
+    <object_keyphrases>[]</object_keyphrases>
+    <relic_roll_min>5</relic_roll_min>
+    <dial>[]</dial>
+  </row>
+  <row>
+    <unit_id>igS102</unit_id>
+    <set_id>ig</set_id>
+    <collector_number>S102</collector_number>
+    <name>Power Gem</name>
+    <type>object</type>
+    <rarity>chase</rarity>
+    <point_values>[10]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[
+  {
+    "description": "If character's printed range value is 4 or less, character can use Close Combat Expert. If character's range value is 5 or more, character can use Ranged Combat Expert.", 
+    "powers": [
+      "close_combat_expert", 
+      "ranged_combat_expert"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_type>relic</object_type>
+    <object_size>immobile</object_size>
+    <object_keyphrases>[]</object_keyphrases>
+    <relic_roll_min>5</relic_roll_min>
+    <dial>[]</dial>
+  </row>
+  <row>
+    <unit_id>igS103</unit_id>
+    <set_id>ig</set_id>
+    <collector_number>S103</collector_number>
+    <name>Time Gem</name>
+    <type>object</type>
+    <rarity>chase</rarity>
+    <point_values>[10]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[
+  {
+    "description": "Character can use Incapacitate and Super Senses.", 
+    "powers": [
+      "incapacitate", 
+      "super_senses"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_type>relic</object_type>
+    <object_size>immobile</object_size>
+    <object_keyphrases>[]</object_keyphrases>
+    <relic_roll_min>5</relic_roll_min>
+    <dial>[]</dial>
+  </row>
+  <row>
+    <unit_id>igS104</unit_id>
+    <set_id>ig</set_id>
+    <collector_number>S104</collector_number>
+    <name>Space Gem</name>
+    <type>object</type>
+    <rarity>chase</rarity>
+    <point_values>[10]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[
+  {
+    "description": "Character can use Phasing/Teleport and the Carry ability. Modify character's speed value by +2.", 
+    "powers": [
+      "phasing_teleport"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_type>relic</object_type>
+    <object_size>immobile</object_size>
+    <object_keyphrases>[]</object_keyphrases>
+    <relic_roll_min>5</relic_roll_min>
+    <dial>[]</dial>
+  </row>
+  <row>
+    <unit_id>igS105</unit_id>
+    <set_id>ig</set_id>
+    <collector_number>S105</collector_number>
+    <name>Reality Gem</name>
+    <type>object</type>
+    <rarity>chase</rarity>
+    <point_values>[10]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[
+  {
+    "description": "Character can use Probability Control, but only during character's turn.", 
+    "powers": [
+      "probability_control"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_type>relic</object_type>
+    <object_size>immobile</object_size>
+    <object_keyphrases>[]</object_keyphrases>
+    <relic_roll_min>5</relic_roll_min>
+    <dial>[]</dial>
+  </row>
+  <row>
+    <unit_id>igS106</unit_id>
+    <set_id>ig</set_id>
+    <collector_number>S106</collector_number>
+    <name>Mind Gem</name>
+    <type>object</type>
+    <rarity>chase</rarity>
+    <point_values>[10]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[
+  {
+    "description": "Character can use Mind Control and Telekinesis.", 
+    "powers": [
+      "mind_control", 
+      "telekinesis"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_type>relic</object_type>
+    <object_size>immobile</object_size>
+    <object_keyphrases>[]</object_keyphrases>
+    <relic_roll_min>5</relic_roll_min>
+    <dial>[]</dial>
+  </row>
+  <row>
+    <unit_id>igM001</unit_id>
+    <set_id>ig</set_id>
+    <collector_number>M001</collector_number>
+    <name>Nexus of Reality</name>
+    <type>map</type>
+    <point_values>[]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[
+  {
+    "name": "Caught in the Nexus", 
+    "description": "Orange squares are treated as clear terrain. Characters occupying orange squares can't be given Close Combat Actions, Ranged Combat Actions, or Power Actions, but can break away automatically."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <map_url>https://hcmaps.net/maps/ig/nexus_of_reality.json</map_url>
+    <dial>[]</dial>
+  </row>
+  <row>
+    <unit_id>igM002</unit_id>
+    <set_id>ig</set_id>
+    <collector_number>M002</collector_number>
+    <name>Soul World</name>
+    <type>map</type>
+    <point_values>[]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <map_url>https://hcmaps.net/maps/ig/soul_world.json</map_url>
+    <dial>[]</dial>
+  </row>
+  <row>
+    <unit_id>igM003</unit_id>
+    <set_id>ig</set_id>
+    <collector_number>M003</collector_number>
+    <name>Tamarata</name>
+    <type>map</type>
+    <point_values>[]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <map_url>https://hcmaps.net/maps/ig/tamarata.json</map_url>
+    <dial>[]</dial>
+  </row>
+  <row>
+    <unit_id>igM004</unit_id>
+    <set_id>ig</set_id>
+    <collector_number>M004</collector_number>
+    <name>The Garden</name>
+    <type>map</type>
+    <point_values>[]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <map_url>https://hcmaps.net/maps/ig/the_garden.json</map_url>
+    <dial>[]</dial>
+  </row>
+  <row>
+    <unit_id>igM005</unit_id>
+    <set_id>ig</set_id>
+    <collector_number>M005</collector_number>
+    <name>Space Racetrack</name>
+    <type>map</type>
+    <point_values>[]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[
+  {
+    "description": "Orange squares are Low Gravity Squares. Characters occupying Low Gravity Squares may move per standard movement rules. When a character occupying an Orange Square is hit by an attack they are knocked back equal to the damage taken."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <map_url>https://hcmaps.net/maps/ig/space_racetrack.json</map_url>
+    <dial>[]</dial>
+  </row>
+  <row>
+    <unit_id>igM006</unit_id>
+    <set_id>ig</set_id>
+    <collector_number>M006</collector_number>
+    <name>Collector's Ship</name>
+    <type>map</type>
+    <point_values>[]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <map_url>https://hcmaps.net/maps/ig/collectors_ship.json</map_url>
+    <dial>[]</dial>
+  </row>
+  <row>
+    <unit_id>igM007</unit_id>
+    <set_id>ig</set_id>
+    <collector_number>M007</collector_number>
+    <name>The Mental Plane</name>
+    <type>map</type>
+    <point_values>[]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <map_url>https://hcmaps.net/maps/ig/the_mental_plane.json</map_url>
+    <dial>[]</dial>
+  </row>
+  <row>
+    <unit_id>igM008</unit_id>
+    <set_id>ig</set_id>
+    <collector_number>M008</collector_number>
+    <name>Shrine to Death</name>
+    <type>map</type>
+    <point_values>[]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <map_url>https://hcmaps.net/maps/ig/shrine_to_death.json</map_url>
+    <dial>[]</dial>
+  </row>
+</resultset>
