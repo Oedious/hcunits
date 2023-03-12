@@ -342,6 +342,20 @@ const TEAM_ABILITY_LIST = {
     "copyable": true,
     "wildcard": false
   },
+  "federation_away_team": {
+    "name": "Federation Away Team",
+    "universe": "star_trek",
+    "description": "Once per game per character, when this character occupies your starting area, you may give another character with the Federation keyword a power action and place this character within 12 squares of its current square. Uncopyable.",
+    "copyable": false,
+    "wildcard": false
+  },
+  "federation_support_team": {
+    "name": "Federation Support Team",
+    "universe": "star_trek",
+    "description": "Once during each of your turns, you may give a character that can use this team ability a power action to use Perplex, but only to target a character with the Federation keyword. This Perplex may be used in addition to other uses of Perplex by this character.",
+    "copyable": true,
+    "wildcard": false
+  },
   "ascendent": {
     "name": "Ascendent",
     "universe": "mage_knight",

@@ -595,6 +595,12 @@ SET_MAP = {
   "ffcw": {
     "name": "Fast Forces: Chaos War",
   },
+  "sttat": {
+    "name": "Star Trek: Tactics Away Team",
+  },
+  "dkr": {
+    "name": "The Dark Knight Rises",
+  },
 }
 
 POWERS = {

@@ -801,6 +801,16 @@ const SET_LIST = {
     "release_date": "2012-07-11",
     "universe": "marvel"
   },
+  "sttat": {
+    "name": "Star Trek Tactics: Away Team",
+    "release_date": "2012-07-05",
+    "universe": "star_trek"
+  },
+  "dkr": {
+    "name": "The Dark Knight Rises",
+    "release_date": "2012-06-06",
+    "universe": "dc"
+  },
   "wk": {
     "name": "WizKids Standard Game Pieces",
     "release_date": "2002-05-01",

@@ -1,0 +1,98 @@
+{
+  "updates": {
+    "dkr001": {
+      "special_powers": [{
+        "powers": ["outwit"]
+      }],
+      "dial": [{
+      }, {
+      }, {
+      }, {
+      }, {
+        "starting_line": "orange"
+      }]
+    },
+    "dkr005b": {
+      "special_powers": [{
+        "powers": ["perplex"]
+      }]
+    },
+    "dkr019": {
+      "special_powers": [{
+        "powers": ["probability_control"]
+      }]
+    },
+    "dkr023": {
+      "special_powers": [{
+        "powers": ["regeneration"]
+      }]
+    },
+    "dkr025": {
+      "special_powers": [{
+        "powers": ["poison", "mind_control"]
+      }]
+    },
+    "dkr029": {
+      "dial": [{
+      }, {
+      }, {
+      }, {
+      }, {
+      }, {
+        "starting_line": "orange"
+      }]
+    },
+    "dkr101": {
+      "special_powers": [{
+        "powers": ["incapacitate"]
+      }]
+    },
+    "dkr106": {
+      "special_powers": [{
+        "powers": ["charge", "leap_climb", "running_shot"]
+      }]
+    },
+    "dkr201": {
+      "special_powers": [{
+      }, {
+        "powers": ["charge", "leap_climb", "plasticity"]
+      }],
+      "dial": [{
+      }, {
+      }, {
+      }, {
+        "starting_line": "orange"
+      }]
+    },
+    "dkr204": {
+      "special_powers": [{
+      }, {
+      }, {
+        "powers": ["mastermind", "toughness"]
+      }]
+    }
+  },
+  "deletions": [
+    "dkr002",
+    "dkr004",
+    "dkr005",
+    "dkr008",
+    "dkr010",
+    "dkr011"
+  ],
+  "additions": [{
+    "unit_id": "dkrM001",
+    "set_id": "dkr",
+    "collector_number": "M001",
+    "name": "Arkham Asylum",
+    "type": "map",
+    "map_url": "https://hcmaps.net/maps/dkr/arkham_asylum.json"
+  }, {
+    "unit_id": "dkrM002",
+    "set_id": "dkr",
+    "collector_number": "M002",
+    "name": "Gotham Bank",
+    "type": "map",
+    "map_url": "https://hcmaps.net/maps/dkr/gotham_bank.json"
+  }]
+}
