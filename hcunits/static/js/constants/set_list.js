@@ -791,6 +791,16 @@ const SET_LIST = {
     "release_date": "2012-08-15",
     "universe": "dc"
   },
+  "cw": {
+    "name": "Chaos War",
+    "release_date": "2012-07-11",
+    "universe": "marvel"
+  },
+  "ffcw": {
+    "name": "Fast Forces: Chaos War",
+    "release_date": "2012-07-11",
+    "universe": "marvel"
+  },
   "wk": {
     "name": "WizKids Standard Game Pieces",
     "release_date": "2002-05-01",

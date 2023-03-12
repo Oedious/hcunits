@@ -1,0 +1,605 @@
+<resultset>
+  <row>
+    <unit_id>ffcw001</unit_id>
+    <set_id>ffcw</set_id>
+    <collector_number>001</collector_number>
+    <name>Iron Man</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[125]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Armor", "Avengers", "Scientist"]</keywords>
+    <special_powers>[
+  {
+    "type": "speed", 
+    "name": "STAND TOGETHER!", 
+    "description": "When turning the dial, if there is an adjacent friendly figure with the Avengers keyword and the same or higher point value and this click is revealed due to damage taken from an opponent's attack, stop turning the dial."
+  }, 
+  {
+    "type": "attack", 
+    "name": "THERMAL VISION", 
+    "description": "Iron Man ignores hindering terrain for line of fire purposes."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>6</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>sharpshooter</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "running_shot", 
+    "speed_value": 10, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "running_shot", 
+    "speed_value": 10, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 9, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "outwit", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "running_shot", 
+    "speed_value": 9, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "outwit", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "force_blast", 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 17, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "force_blast", 
+    "speed_value": 7, 
+    "attack_value": 9, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "special", 
+    "speed_value": 7, 
+    "attack_value": 8, 
+    "defense_power": "regeneration", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ffcw002</unit_id>
+    <set_id>ffcw</set_id>
+    <collector_number>002</collector_number>
+    <name>Thor</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[125]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Asgardian", "Avengers", "Deity"]</keywords>
+    <special_powers>[
+  {
+    "type": "speed", 
+    "name": "STAND TOGETHER!", 
+    "description": "When turning the dial, if there is an adjacent friendly figure with the Avengers keyword and the same or higher point value and this click is revealed due to damage taken from an opponent's attack, stop turning the dial."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>8</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "running_shot", 
+    "speed_value": 9, 
+    "attack_value": 11, 
+    "defense_power": "impervious", 
+    "defense_value": 17, 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "charge", 
+    "speed_value": 9, 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "charge", 
+    "speed_value": 8, 
+    "attack_power": "quake", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 16, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "charge", 
+    "speed_value": 8, 
+    "attack_power": "quake", 
+    "attack_value": 9, 
+    "defense_value": 16, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "flurry", 
+    "speed_value": 7, 
+    "attack_power": "quake", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "flurry", 
+    "speed_value": 7, 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "charge", 
+    "speed_value": 7, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 9, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 15, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 8, 
+    "speed_power": "special", 
+    "speed_value": 6, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 8, 
+    "defense_value": 15, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 1
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ffcw003</unit_id>
+    <set_id>ffcw</set_id>
+    <collector_number>003</collector_number>
+    <name>Captain America</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[75]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Avengers", "Past", "Soldier"]</keywords>
+    <special_powers>[
+  {
+    "type": "speed", 
+    "name": "STAND TOGETHER!", 
+    "description": "When turning the dial, if there is an adjacent friendly figure with the Avengers keyword and the same or higher point value and this click is revealed due to damage taken from an opponent's attack, stop turning the dial."
+  }, 
+  {
+    "type": "damage", 
+    "name": "AVENGERS ASSEMBLE", 
+    "description": "Captain America can use Leadership.  When he uses Leadership and rolls a 6, he may also remove an action token from another adjacent character with the Avengers keyword that's 125 points or less.", 
+    "powers": [
+      "leadership"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>6</unit_range>
+    <targets>2</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "charge", 
+    "speed_value": 8, 
+    "attack_power": "quake", 
+    "attack_value": 11, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "charge", 
+    "speed_value": 8, 
+    "attack_power": "quake", 
+    "attack_value": 10, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 16, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "leap_climb", 
+    "speed_value": 7, 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "leap_climb", 
+    "speed_value": 7, 
+    "attack_value": 9, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 15, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "flurry", 
+    "speed_value": 6, 
+    "attack_value": 10, 
+    "defense_power": "willpower", 
+    "defense_value": 17, 
+    "damage_power": "outwit", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "special", 
+    "speed_value": 6, 
+    "attack_value": 9, 
+    "defense_power": "willpower", 
+    "defense_value": 17, 
+    "damage_power": "outwit", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ffcw004</unit_id>
+    <set_id>ffcw</set_id>
+    <collector_number>004</collector_number>
+    <name>Wasp</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[50]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Avengers", "Celebrity", "Lady Liberators"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "WINSOME WASP", 
+    "description": "Wasp breaks away automatically."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>5</unit_range>
+    <targets>2</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>tiny</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "stealth", 
+    "speed_value": 10, 
+    "attack_power": "incapacitate", 
+    "attack_value": 9, 
+    "defense_power": "super_senses", 
+    "defense_value": 18, 
+    "damage_power": "perplex", 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "stealth", 
+    "speed_value": 9, 
+    "attack_power": "incapacitate", 
+    "attack_value": 9, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_power": "outwit", 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 3, 
+    "speed_value": 7, 
+    "attack_value": 9, 
+    "defense_power": "super_senses", 
+    "defense_value": 17, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "earthbound_neutralized", 
+    "speed_value": 7, 
+    "attack_value": 8, 
+    "defense_power": "willpower", 
+    "defense_value": 16, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 1
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ffcw005</unit_id>
+    <set_id>ffcw</set_id>
+    <collector_number>005</collector_number>
+    <name>Mockingbird</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[50, 25]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Avengers", "Martial Artist", "S.H.I.E.L.D.", "Spy"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "OCTOBER 12TH", 
+    "description": "When a friendly character named Hawkeye is adjacent to Mockingbird, they both modify their attack values by +1 if not already modified by this effect."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>2</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "leap_climb", 
+    "speed_value": 8, 
+    "attack_value": 10, 
+    "defense_power": "willpower", 
+    "defense_value": 17, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "flurry", 
+    "speed_value": 8, 
+    "attack_power": "quake", 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "leap_climb", 
+    "speed_value": 7, 
+    "attack_power": "quake", 
+    "attack_value": 9, 
+    "defense_power": "willpower", 
+    "defense_value": 16, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 1, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "flurry", 
+    "speed_value": 7, 
+    "attack_power": "quake", 
+    "attack_value": 9, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_value": 6, 
+    "attack_value": 9, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 15, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 1
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ffcw006</unit_id>
+    <set_id>ffcw</set_id>
+    <collector_number>006</collector_number>
+    <name>Scarlet Witch</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[75, 50]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["mystics"]</team_abilities>
+    <keywords>["Avengers", "Brotherhood of Mutants", "Lady Liberators", "Mystical"]</keywords>
+    <special_powers>[
+  {
+    "type": "damage", 
+    "name": "CHAOS MAGIC", 
+    "description": "Scarlet Witch can use Perplex and Probability Control.", 
+    "powers": [
+      "perplex", 
+      "probability_control"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>6</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "phasing_teleport", 
+    "speed_value": 8, 
+    "attack_power": "telekinesis", 
+    "attack_value": 9, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_value": 8, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 9, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 16, 
+    "damage_power": "shape_change", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_value": 7, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 9, 
+    "defense_power": "barrier", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 2, 
+    "starting_line": true
+  }, 
+  {
+    "click_number": 4, 
+    "speed_value": 7, 
+    "attack_power": "penetrating_psychic_blast", 
+    "attack_value": 9, 
+    "defense_power": "barrier", 
+    "defense_value": 16, 
+    "damage_power": "shape_change", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_value": 7, 
+    "attack_value": 8, 
+    "defense_power": "defend", 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 1
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ffcwM001</unit_id>
+    <set_id>ffcw</set_id>
+    <collector_number>M001</collector_number>
+    <name>Quinjet Hangar</name>
+    <type>map</type>
+    <point_values>[]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <map_url>https://hcmaps.net/maps/cw/quinjet_hangar.json</map_url>
+    <dial>[]</dial>
+  </row>
+  <row>
+    <unit_id>ffcwM002</unit_id>
+    <set_id>ffcw</set_id>
+    <collector_number>M002</collector_number>
+    <name>European Castle</name>
+    <type>map</type>
+    <point_values>[]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <map_url>https://hcmaps.net/maps/cw/european_castle.json</map_url>
+    <dial>[]</dial>
+  </row>
+</resultset>
