@@ -633,6 +633,9 @@ SET_MAP = {
       ("igS106", "igS106"),
     ],
   },
+  "lotr": {
+    "name": "Lord of the Rings",
+  },
 }
 
 POWERS = {

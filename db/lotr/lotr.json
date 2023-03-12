@@ -1,0 +1,4425 @@
+[
+  {
+    "unit_id": "lotr001", 
+    "set_id": "lotr", 
+    "collector_number": "001", 
+    "name": "Frodo", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      45
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Fellowship", 
+      "Hobbit", 
+      "Ringbearer"
+    ], 
+    "special_powers": [
+      {
+        "type": "epic", 
+        "name": "HEART OF THE FELLOWSHIP", 
+        "description": "Give Frodo an epic action and choose one adjacent friendly character per 100 points of the game's build total. Until your next turn, the chosen characters can use Willpower."
+      }, 
+      {
+        "type": "defense", 
+        "name": "RING-BEARER", 
+        "description": "When Frodo is hit by an attack, before damage is dealt you may declare he evaded the attack. If you do, after actions resolve, deal Frodo 1 unavoidable damage."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "stealth", 
+        "speed_value": 6, 
+        "attack_value": 8, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "stealth", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "special", 
+        "defense_value": 16, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "stealth", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "special", 
+        "defense_value": 15, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 6, 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 15, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "special", 
+        "defense_value": 14, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 6, 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "lotr002", 
+    "set_id": "lotr", 
+    "collector_number": "002", 
+    "name": "Sam", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      30
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Fellowship", 
+      "Hobbit", 
+      "Ringbearer"
+    ], 
+    "special_powers": [
+      {
+        "type": "defense", 
+        "name": "DON'T YOU LOSE HIM, SAMWISE GAMGEE!", 
+        "description": "Sam can use Defend.  When a friendly character would replace its defense value with Sam's, you may first choose to replace Sam's defense value with his value +1, +2, or +3.  If you do, after actions resolve, roll a d6 and on a result of 1-3 deal Sam unavoidable damage equal to the increase.", 
+        "powers": [
+          "defend"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_value": 5, 
+        "attack_value": 9, 
+        "defense_power": "special", 
+        "defense_value": 16, 
+        "damage_power": "support", 
+        "damage_value": 0
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "flurry", 
+        "speed_value": 5, 
+        "attack_value": 9, 
+        "defense_power": "special", 
+        "defense_value": 15, 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "flurry", 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "special", 
+        "defense_value": 15, 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "flurry", 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 5, 
+        "attack_value": 8, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 0
+      }
+    ]
+  }, 
+  {
+    "unit_id": "lotr003", 
+    "set_id": "lotr", 
+    "collector_number": "003", 
+    "name": "Aragorn", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      75
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Fellowship", 
+      "Ruler", 
+      "Warrior"
+    ], 
+    "special_powers": [
+      {
+        "type": "epic", 
+        "name": "THROUGH THE WILD", 
+        "description": "Give Aragon an epic action and all friendly characters can use Leap/Climb until your next turn.  At the end of your turn, one friendly character per 100 points of the game's build total may be given a move action as a free action if they have not been moved or placed this turn.", 
+        "powers": [
+          "leap_climb"
+        ]
+      }, 
+      {
+        "type": "attack", 
+        "name": "PROTECTOR", 
+        "description": "Any opposing character who damages a friendly character adjacent to Aragorn with a close combat attack is dealt 1 damage after actions resolve."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "6", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "stealth", 
+        "speed_value": 9, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "shape_change", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "leadership", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "leadership", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "flurry", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 15, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "flurry", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 14, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "flurry", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 14, 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "lotr004", 
+    "set_id": "lotr", 
+    "collector_number": "004", 
+    "name": "Legolas", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      130
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Fellowship", 
+      "Martial Artist", 
+      "Warrior"
+    ], 
+    "special_powers": [
+      {
+        "type": "epic", 
+        "name": "FLANK", 
+        "description": "Give Legolas an epic action when he occupies a square on an edge of the map. Legolas may use Phasing/Teleport to move up to 12 squares, but only through squares on the edge of the map. He can use the Carry ability and may carry one character per 100 points of the game's build total.", 
+        "powers": [
+          "phasing_teleport"
+        ]
+      }, 
+      {
+        "type": "attack", 
+        "name": "RAPID SHOT", 
+        "description": "Modify the attack value of Legolas by +2 when he makes a ranged combat attack. Modify the damage value of Legolas by +1 for each character he targets with a ranged combat attack beyond the first; each hit target must be assigned at least 1 damage."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "10", 
+    "targets": "3", 
+    "speed_type": "boot", 
+    "attack_type": "sharpshooter", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 18, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "leap_climb", 
+        "speed_value": 8, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 9, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "leap_climb", 
+        "speed_value": 9, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 9, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "leap_climb", 
+        "speed_value": 9, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 9, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 15, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_value": 9, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "super_senses", 
+        "defense_value": 16, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 7, 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "lotr005", 
+    "set_id": "lotr", 
+    "collector_number": "005", 
+    "name": "Gimli", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      107
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Fellowship", 
+      "Warrior"
+    ], 
+    "special_powers": [
+      {
+        "type": "epic", 
+        "name": "HOLD YOUR GROUND!", 
+        "description": "Give Gimli an epic action. Until your next turn, Gimli and up to 1 other friendly character per 200 points of the game's build total (each of whom must be adjacent to Gimli and/or at least one other chosen character) modify their defense values by +2 and may choose to ignore knockback."
+      }, 
+      {
+        "type": "damage", 
+        "name": "LET THEM COME!", 
+        "description": "When a single opposing character takes 3 or more total damage during Gimli's action, after actions resolve you may place an action token on that character."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "4", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 6, 
+        "attack_power": "quake", 
+        "attack_value": 9, 
+        "defense_power": "invulnerability", 
+        "defense_value": 18, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "charge", 
+        "speed_value": 6, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "charge", 
+        "speed_value": 6, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "flurry", 
+        "speed_value": 5, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 11, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "flurry", 
+        "speed_value": 5, 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "flurry", 
+        "speed_value": 4, 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "flurry", 
+        "speed_value": 4, 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "lotr006", 
+    "set_id": "lotr", 
+    "collector_number": "006", 
+    "name": "Ringwraith", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      100
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Forces of Sauron", 
+      "Mystical", 
+      "Nazgul", 
+      "Ringbearer", 
+      "Ruler", 
+      "Warrior"
+    ], 
+    "special_powers": [
+      {
+        "type": "defense", 
+        "name": "YOU CANNOT KILL THEM", 
+        "description": "Ringwraith can use Invulnerability.  Modify the defense values of adjacent characters with the Nazgul keyword by the number of action tokens on Ringwraith.", 
+        "powers": [
+          "invulnerability"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 9, 
+        "attack_power": "quake", 
+        "attack_value": 9, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "stealth", 
+        "speed_value": 9, 
+        "attack_power": "quake", 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "stealth", 
+        "speed_value": 9, 
+        "attack_power": "quake", 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 16, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "stealth", 
+        "speed_value": 8, 
+        "attack_power": "quake", 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 16, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "stealth", 
+        "speed_value": 8, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_power": "special", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "stealth", 
+        "speed_value": 8, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 8, 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "stealth", 
+        "speed_value": 8, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 8, 
+        "defense_value": 16, 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "lotr007", 
+    "set_id": "lotr", 
+    "collector_number": "007", 
+    "name": "Gorbag", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      40
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Forces of Sauron", 
+      "Monster", 
+      "Soldier"
+    ], 
+    "special_powers": [
+      {
+        "type": "damage", 
+        "name": "ORC CAPTAIN", 
+        "description": "Gorbag can use Enhancement and Leadership.", 
+        "powers": [
+          "enhancement", 
+          "leadership"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "2", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "flurry", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "flurry", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_value": 7, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 15, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 6, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 15, 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 6, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 15, 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 6, 
+        "speed_value": 6, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 8, 
+        "defense_value": 15, 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "lotr008", 
+    "set_id": "lotr", 
+    "collector_number": "008", 
+    "name": "Shagrat", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      42
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Forces of Sauron", 
+      "Monster", 
+      "Soldier"
+    ], 
+    "special_powers": [
+      {
+        "type": "speed", 
+        "name": "URUK-HAI CAPTAIN", 
+        "description": "Friendly characters adjacent to Shagrat and making a close combat attack can modify their attack values by +1 if not already modified by +1 or more."
+      }, 
+      {
+        "type": "damage", 
+        "name": "POWERFUL BLOW", 
+        "description": "When Shagrat hits an opposing character, after actions resolve he may use Force Blast against the same target as a free action, but can't knock back a character more than 3 squares.", 
+        "powers": [
+          "force_blast"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "charge", 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "special", 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "special", 
+        "speed_value": 6, 
+        "attack_value": 8, 
+        "defense_power": "toughness", 
+        "defense_value": 15, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "special", 
+        "speed_value": 5, 
+        "attack_value": 8, 
+        "defense_power": "toughness", 
+        "defense_value": 15, 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "lotr009", 
+    "set_id": "lotr", 
+    "collector_number": "009", 
+    "name": "Ugluk", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      40
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Forces of Sauron", 
+      "Monster", 
+      "Soldier"
+    ], 
+    "special_powers": [
+      {
+        "type": "damage", 
+        "name": "INSTRUCTIONS FROM THE EYE", 
+        "description": "Ugluk can use Perplex, but he can only target other friendly characters.", 
+        "powers": [
+          "perplex"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "leap_climb", 
+        "speed_value": 8, 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "leap_climb", 
+        "speed_value": 8, 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "leap_climb", 
+        "speed_value": 7, 
+        "attack_value": 8, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 15, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "leap_climb", 
+        "speed_value": 7, 
+        "attack_value": 8, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 15, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 7, 
+        "attack_power": "steal_energy", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 14, 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 6, 
+        "speed_value": 7, 
+        "attack_power": "steal_energy", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 14, 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "lotr010", 
+    "set_id": "lotr", 
+    "collector_number": "010", 
+    "name": "Lurtz", 
+    "type": "character", 
+    "rarity": "uncommon", 
+    "dimensions": "1x1", 
+    "point_values": [
+      87
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Forces of Sauron", 
+      "Monster", 
+      "Warrior"
+    ], 
+    "special_powers": [], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "6", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 9, 
+        "defense_value": 18, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 8, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 15, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 15, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "lotr011", 
+    "set_id": "lotr", 
+    "collector_number": "011", 
+    "name": "Merry", 
+    "type": "character", 
+    "rarity": "uncommon", 
+    "dimensions": "1x1", 
+    "point_values": [
+      30
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Fellowship", 
+      "Hobbit"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "TOOK-FRIEND", 
+        "description": "When Merry begins your turn adjacent to a friendly character named Pippin, modify both of their speed values by +1 until the end of the turn if not already modified by this effect."
+      }, 
+      {
+        "type": "speed", 
+        "name": "I KNOW A SHORTCUT!", 
+        "description": "Merry can use Leap/Climb and the Carry ability; when he uses the Carry ability, he may carry up to three characters with a combined point value of 100 points or less.", 
+        "powers": [
+          "leap_climb"
+        ]
+      }, 
+      {
+        "type": "attack", 
+        "name": "BARROW BLADE", 
+        "description": "Merry can use Blades/Claws/Fangs; when he does, instead replace his damage value with half of that d6 roll, rouded up.", 
+        "powers": [
+          "blades_claws_fangs"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 7, 
+        "attack_power": "incapacitate", 
+        "attack_value": 9, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 15, 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "stealth", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 8, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 15, 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "stealth", 
+        "speed_value": 6, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_value": 15, 
+        "damage_power": "shape_change", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "leap_climb", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_value": 14, 
+        "damage_power": "shape_change", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "leap_climb", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_value": 14, 
+        "damage_power": "shape_change", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "lotr012", 
+    "set_id": "lotr", 
+    "collector_number": "012", 
+    "name": "Pippin", 
+    "type": "character", 
+    "rarity": "uncommon", 
+    "dimensions": "1x1", 
+    "point_values": [
+      23
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Fellowship", 
+      "Hobbit"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "BRANDYBUCK-FRIEND", 
+        "description": "When Pippin is adjacent to a friendly character named Merry, modify both of their defense values by +1 if not already modified by this effect."
+      }, 
+      {
+        "type": "speed", 
+        "name": "FOOL OF A TOOK!", 
+        "description": "Pippin can use Stealth. Give him a power action and choose up to two adjacent friendly characters and roll a d6; on a result of 1, place an action token on the chosen characters, and on a result of 4-6, the chosen characters can use Stealth until your next turn.", 
+        "powers": [
+          "stealth"
+        ]
+      }, 
+      {
+        "type": "attack", 
+        "name": "BARROW BLADE", 
+        "description": "Pippin can use Blades/Claws/Fangs; when he does, instead replace his damage value with half of that d6 roll.", 
+        "powers": [
+          "blades_claws_fangs"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 7, 
+        "attack_power": "smoke_cloud", 
+        "attack_value": 8, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 15, 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "special", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 15, 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "leap_climb", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_value": 14, 
+        "damage_power": "enhancement", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "leap_climb", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_value": 14, 
+        "damage_power": "enhancement", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "leap_climb", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_value": 14, 
+        "damage_power": "enhancement", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "lotr013", 
+    "set_id": "lotr", 
+    "collector_number": "013", 
+    "name": "Boromir", 
+    "type": "character", 
+    "rarity": "uncommon", 
+    "dimensions": "1x1", 
+    "point_values": [
+      55
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Fellowship", 
+      "Soldier"
+    ], 
+    "special_powers": [
+      {
+        "type": "epic", 
+        "name": "HORN OF GONDOR", 
+        "description": "Give Boromir and epic action.  Up to one other friendly character per 100 points of the game's build total that shares a keyword with Boromir and is within 10 squares may be placed adjacent to Boromir or another character just placed by this effect.  Placed characters may not be given an action until your next turn."
+      }, 
+      {
+        "type": "attack", 
+        "name": "NUMENOREAN BLOOD", 
+        "description": "Boromir can use Super Strength, but can only hold light objects.", 
+        "powers": [
+          "super_strength"
+        ]
+      }, 
+      {
+        "type": "damage", 
+        "name": "DARK PREMONITIONS", 
+        "description": "Boromir can use Probability Control.  After an action resolves during which Boromir used Probability Control, roll a d6; on a result of 1-3 deal Boromir 1 unavoidable damage.", 
+        "powers": [
+          "probability_control"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "flurry", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "flurry", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "flurry", 
+        "speed_value": 7, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 8, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "plasticity", 
+        "speed_value": 7, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "plasticity", 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_value": 18, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "plasticity", 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_value": 18, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }
+    ]
+  }, 
+  {
+    "unit_id": "lotr014", 
+    "set_id": "lotr", 
+    "collector_number": "014", 
+    "name": "Faramir", 
+    "type": "character", 
+    "rarity": "uncommon", 
+    "dimensions": "1x1", 
+    "point_values": [
+      65
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Soldier", 
+      "Warrior"
+    ], 
+    "special_powers": [
+      {
+        "type": "speed", 
+        "name": "RANGER CAPTAIN", 
+        "description": "Faramir can use Enhancement, Running Shot, and Stealth.", 
+        "powers": [
+          "enhancement", 
+          "running_shot", 
+          "stealth"
+        ]
+      }, 
+      {
+        "type": "defense", 
+        "name": "HE'S NOT DEAD!", 
+        "description": "Faramir can use Toughness.  When turning the dial, if this click is revealed due to damage taken from an opponent's attack, stop turning the dial and give Faramir an action token that doesn't deal pushing damage.", 
+        "powers": [
+          "toughness"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "8", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_value": 17, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "special", 
+        "speed_value": 8, 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 17, 
+        "damage_power": "leadership", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "special", 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 17, 
+        "damage_power": "leadership", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "running_shot", 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "running_shot", 
+        "speed_value": 6, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "lotr015", 
+    "set_id": "lotr", 
+    "collector_number": "015", 
+    "name": "Gollum", 
+    "type": "character", 
+    "rarity": "uncommon", 
+    "dimensions": "1x1", 
+    "point_values": [
+      47
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Brute", 
+      "Monster", 
+      "Ringbearer", 
+      "Spy"
+    ], 
+    "special_powers": [
+      {
+        "type": "attack", 
+        "name": "MINE!", 
+        "description": "Gollum can use Exploit Weakness and Plasticity.", 
+        "powers": [
+          "exploit_weakness", 
+          "plasticity"
+        ]
+      }, 
+      {
+        "type": "damage", 
+        "name": "SMEAGOL", 
+        "description": "Gollum can use Enhancement, Perplex and Support.  When he uses any of these powers roll 2d6 at the end of your turn, and on a result of 6 or less deal Gollum 1 unavoidable damage.", 
+        "powers": [
+          "enhancement", 
+          "perplex", 
+          "support"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "stealth", 
+        "speed_value": 9, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "super_senses", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "stealth", 
+        "speed_value": 9, 
+        "attack_power": "steal_energy", 
+        "attack_value": 8, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "stealth", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 8, 
+        "defense_power": "super_senses", 
+        "defense_value": 18, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "stealth", 
+        "speed_value": 8, 
+        "attack_power": "steal_energy", 
+        "attack_value": 8, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "stealth", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 7, 
+        "defense_power": "super_senses", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "lotr016", 
+    "set_id": "lotr", 
+    "collector_number": "016", 
+    "name": "Black Rider", 
+    "type": "character", 
+    "rarity": "uncommon", 
+    "dimensions": "1x1", 
+    "point_values": [
+      100
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Forces of Sauron", 
+      "Mystical", 
+      "Nazgul", 
+      "Ringbearer", 
+      "Warrior"
+    ], 
+    "special_powers": [
+      {
+        "type": "speed", 
+        "name": "WRAITHS ON WINGS", 
+        "description": "Black Rider can use Phasing/Teleport, Stealth, and the Carry ability. When he uses the Carry ability, he can carry up to two characters, if they each share a keyword with him or up to four characters if they have the Nazgul keyword.", 
+        "powers": [
+          "phasing_teleport", 
+          "stealth"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 9, 
+        "attack_power": "quake", 
+        "attack_value": 9, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "special", 
+        "speed_value": 9, 
+        "attack_power": "quake", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "special", 
+        "speed_value": 9, 
+        "attack_power": "quake", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 16, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "special", 
+        "speed_value": 8, 
+        "attack_power": "quake", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 16, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "special", 
+        "speed_value": 8, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "special", 
+        "speed_value": 8, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 8, 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "special", 
+        "speed_value": 8, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 8, 
+        "defense_value": 16, 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "lotr017", 
+    "set_id": "lotr", 
+    "collector_number": "017", 
+    "name": "Eowyn", 
+    "type": "character", 
+    "rarity": "rare", 
+    "dimensions": "1x1", 
+    "point_values": [
+      50
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Warrior"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "FEARLESS CHARGE", 
+        "description": "When Eowyn uses Charge, she ignores the effects of characters on movement and can use the Carry ability to carry a lower point value character."
+      }, 
+      {
+        "type": "damage", 
+        "name": "WHITE LADY OF ROHAN", 
+        "description": "Eowyn can use Perplex and Support but only to target characters with one or more action tokens.", 
+        "powers": [
+          "perplex", 
+          "support"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_value": 8, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 15, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 8, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 15, 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 14, 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "charge", 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 14, 
+        "damage_power": "outwit", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "lotr018", 
+    "set_id": "lotr", 
+    "collector_number": "018", 
+    "name": "Gandalf the Grey", 
+    "type": "character", 
+    "rarity": "rare", 
+    "dimensions": "1x1", 
+    "point_values": [
+      155
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Fellowship", 
+      "Mystical"
+    ], 
+    "special_powers": [
+      {
+        "type": "epic", 
+        "name": "YOU SHALL NOT PASS!", 
+        "description": "Give Gandalf the Grey an epic action and place 1 SPECIAL marker per 50 points of the game's build total in squares of either the row or column that Gandalf occupies.  The first marker must be placed adjacent to Gandalf, the second adjacent to the first, etc.  Until your next turn, any opposing character that would move out of or through the marked squares must first make an attack roll of their printed attack value against Gandalf the Grey's printed defense value.  If the attack roll is unsuccessful, movement stops.  (Character may continue with the rest of their action if able.)"
+      }, 
+      {
+        "type": "damage", 
+        "name": "SERVANT OF THE SECRET FIRE", 
+        "description": "Gandalf the Grey can use Outwit and Perplex.  Gandalf the Grey can use Outwit a second time during your turn, but must be given a power action instead of a free action to use it.", 
+        "powers": [
+          "outwit", 
+          "perplex"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "8", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_power": "telekinesis", 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 18, 
+        "damage_power": "leadership", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_power": "telekinesis", 
+        "attack_value": 11, 
+        "defense_power": "super_senses", 
+        "defense_value": 18, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_power": "pulse_wave", 
+        "attack_value": 11, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 7, 
+        "attack_power": "pulse_wave", 
+        "attack_value": 12, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 7, 
+        "attack_power": "pulse_wave", 
+        "attack_value": 12, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 16, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 6, 
+        "speed_value": 7, 
+        "attack_value": 11, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 16, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 7, 
+        "speed_value": 7, 
+        "attack_power": "quake", 
+        "attack_value": 11, 
+        "defense_power": "invulnerability", 
+        "defense_value": 16, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 8, 
+        "speed_value": 6, 
+        "attack_power": "quake", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 16, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 9, 
+        "speed_value": 6, 
+        "attack_power": "quake", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 15, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 3
+      }
+    ]
+  }, 
+  {
+    "unit_id": "lotr019", 
+    "set_id": "lotr", 
+    "collector_number": "019", 
+    "name": "Saruman", 
+    "type": "character", 
+    "rarity": "rare", 
+    "dimensions": "1x1", 
+    "point_values": [
+      167
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Forces of Sauron", 
+      "Mystical", 
+      "Ruler"
+    ], 
+    "special_powers": [
+      {
+        "type": "epic", 
+        "name": "AN ARMY WORTHY OF MORDOR", 
+        "description": "Give Saruman an epic action and choose 1 character per 200 points of the game's build total. If that character's attack roll this turn is 9 or higher, the damage dealt by that character is penetrating damage."
+      }, 
+      {
+        "type": "attack", 
+        "name": "EMBRACE YOUR OWN DESTRUCTION!", 
+        "description": "Saruman can use Poison and Pulse Wave.", 
+        "powers": [
+          "poison", 
+          "pulse_wave"
+        ]
+      }, 
+      {
+        "type": "damage", 
+        "name": "PALANTIR", 
+        "description": "Saruman can use Outwit and Probability Control.", 
+        "powers": [
+          "outwit", 
+          "probability_control"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "8", 
+    "targets": "2", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "stealth", 
+        "speed_value": 7, 
+        "attack_power": "smoke_cloud", 
+        "attack_value": 11, 
+        "defense_power": "invulnerability", 
+        "defense_value": 18, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "stealth", 
+        "speed_value": 7, 
+        "attack_power": "smoke_cloud", 
+        "attack_value": 11, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "stealth", 
+        "speed_value": 7, 
+        "attack_power": "smoke_cloud", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "stealth", 
+        "speed_value": 6, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "stealth", 
+        "speed_value": 6, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "stealth", 
+        "speed_value": 6, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "super_senses", 
+        "defense_value": 16, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "stealth", 
+        "speed_value": 6, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "super_senses", 
+        "defense_value": 15, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 8, 
+        "speed_power": "stealth", 
+        "speed_value": 5, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "super_senses", 
+        "defense_value": 15, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 9, 
+        "speed_power": "stealth", 
+        "speed_value": 5, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "super_senses", 
+        "defense_value": 15, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "lotr020", 
+    "set_id": "lotr", 
+    "collector_number": "020", 
+    "name": "Servant of Sauron", 
+    "type": "character", 
+    "rarity": "rare", 
+    "dimensions": "1x1", 
+    "point_values": [
+      100
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Forces of Sauron", 
+      "Mystical", 
+      "Nazgul", 
+      "Ringbearer", 
+      "Warrior"
+    ], 
+    "special_powers": [
+      {
+        "type": "attack", 
+        "name": "FALLEN INTO DARKNESS", 
+        "description": "Servant of Sauron can use Blades/Claws/Fangs.  When he does, on a result of 1-2 on the d6 roll, until the end of the turn any attack that hits made by friendly characters with the Nazgul keyword (including this one) is a critical hit.", 
+        "powers": [
+          "blades_claws_fangs"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 9, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "stealth", 
+        "speed_value": 9, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "stealth", 
+        "speed_value": 9, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 16, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "stealth", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 16, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "stealth", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "stealth", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 8, 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "stealth", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 8, 
+        "defense_value": 16, 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "lotr021", 
+    "set_id": "lotr", 
+    "collector_number": "021", 
+    "name": "Mouth of Sauron", 
+    "type": "character", 
+    "rarity": "rare", 
+    "dimensions": "1x1", 
+    "point_values": [
+      100
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Forces of Sauron", 
+      "Herald"
+    ], 
+    "special_powers": [
+      {
+        "type": "speed", 
+        "name": "DARK WORDS", 
+        "description": "Mouth of Sauron can use Mind Control.  When he does and hits, roll a d6 after actions resolve; on a result of 5-6, deal 1 damage to the target of his Mind Control.", 
+        "powers": [
+          "mind_control"
+        ]
+      }, 
+      {
+        "type": "damage", 
+        "name": "DEMORALIZE", 
+        "description": "Mouth of Sauron can use Perplex and Probability Control.  When he uses Perplex he can modify combat values only by -2 and he does not need line of fire to the target if the target is within 5 squares.", 
+        "powers": [
+          "perplex", 
+          "probability_control"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "8", 
+    "targets": "2", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 7, 
+        "attack_power": "poison", 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 18, 
+        "damage_power": "special", 
+        "damage_value": 0
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "special", 
+        "speed_value": 7, 
+        "attack_power": "poison", 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 18, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "special", 
+        "speed_value": 6, 
+        "attack_power": "poison", 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "stealth", 
+        "speed_value": 6, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 9, 
+        "defense_power": "regeneration", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "stealth", 
+        "speed_value": 6, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 8, 
+        "defense_power": "regeneration", 
+        "defense_value": 16, 
+        "damage_power": "outwit", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "stealth", 
+        "speed_value": 6, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 8, 
+        "defense_power": "regeneration", 
+        "defense_value": 16, 
+        "damage_power": "outwit", 
+        "damage_value": 3
+      }
+    ]
+  }, 
+  {
+    "unit_id": "lotr022", 
+    "set_id": "lotr", 
+    "collector_number": "022", 
+    "name": "Merry and Pippin", 
+    "type": "character", 
+    "rarity": "chase", 
+    "dimensions": "1x1", 
+    "point_values": [
+      34
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Fellowship", 
+      "Hobbit"
+    ], 
+    "special_powers": [
+      {
+        "type": "epic", 
+        "name": "WE'LL ALL HAVE ONE OF THESE \"PINTS\"", 
+        "description": "Give Merry and Pippin an epic action; once this turn when Merry and Pippin are healed of at least 1 damage you may also heal 1 damage on all friendly characters adjacent to them."
+      }, 
+      {
+        "type": "attack", 
+        "name": "HEAL OUR HEART AND DROWN OUR WOE", 
+        "description": "Merry and Pippin can use Quake; when they do the attack deals no damage and you may place an action token on each hit opposing character.", 
+        "powers": [
+          "quake"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "duo", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "leap_climb", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 15, 
+        "damage_power": "shape_change", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "leap_climb", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 8, 
+        "defense_power": "willpower", 
+        "defense_value": 15, 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "leap_climb", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 8, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 15, 
+        "damage_power": "shape_change", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "flurry", 
+        "speed_value": 6, 
+        "attack_power": "special", 
+        "attack_value": 8, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 14, 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "flurry", 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 14, 
+        "damage_power": "shape_change", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "flurry", 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 14, 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "lotr023", 
+    "set_id": "lotr", 
+    "collector_number": "023", 
+    "name": "Frodo and Sam", 
+    "type": "character", 
+    "rarity": "chase", 
+    "dimensions": "1x1", 
+    "point_values": [
+      85
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Fellowship", 
+      "Hobbit", 
+      "Ringbearer"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "LET US BE RID OF IT ONCE AND FOR ALL!", 
+        "description": "All damage dealt to Frodo and Sam is reduced by the number of action tokens on them."
+      }, 
+      {
+        "type": "speed", 
+        "name": "I CAN'T CARRY IT FOR YOU, BUT I CAN CARRY YOU!", 
+        "description": "Frodo and Sam can use Leap/Climb, Stealth, and the Carry ability.", 
+        "powers": [
+          "leap_climb", 
+          "stealth"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "duo", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 6, 
+        "attack_power": "poison", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 15, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "special", 
+        "speed_value": 6, 
+        "attack_power": "poison", 
+        "attack_value": 8, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 15, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "special", 
+        "speed_value": 6, 
+        "attack_power": "poison", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 15, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "flurry", 
+        "speed_value": 5, 
+        "attack_power": "poison", 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 15, 
+        "damage_power": "probability_control", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "flurry", 
+        "speed_value": 5, 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 15, 
+        "damage_power": "probability_control", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "flurry", 
+        "speed_value": 5, 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_power": "probability_control", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "flurry", 
+        "speed_value": 5, 
+        "attack_value": 10, 
+        "defense_power": "willpower", 
+        "defense_value": 17, 
+        "damage_power": "probability_control", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "lotr024", 
+    "set_id": "lotr", 
+    "collector_number": "024", 
+    "name": "Mr. Underhill", 
+    "type": "character", 
+    "rarity": "chase", 
+    "dimensions": "1x1", 
+    "point_values": [
+      45
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Fellowship", 
+      "Hobbit", 
+      "Ringbearer"
+    ], 
+    "special_powers": [
+      {
+        "type": "speed", 
+        "name": "WE STAY TOGETHER, WE STAY OFF THE ROAD!", 
+        "description": "Mr. Underhill can use Phasing/Teleport, Stealth, and the Carry ability.", 
+        "powers": [
+          "phasing_teleport", 
+          "stealth"
+        ]
+      }, 
+      {
+        "type": "defense", 
+        "name": "WE MUST NOT BE SEEN!", 
+        "description": "Friendly characters adjacent to Mr. Underhill can use Super Senses; when they roll a d6 for this Super Senses, on a result of 1-2 Mr. Underhill is dealt 1 unavoidable damage."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 7, 
+        "attack_power": "smoke_cloud", 
+        "attack_value": 8, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "special", 
+        "speed_value": 6, 
+        "attack_power": "smoke_cloud", 
+        "attack_value": 9, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "stealth", 
+        "speed_value": 6, 
+        "attack_power": "smoke_cloud", 
+        "attack_value": 8, 
+        "defense_power": "special", 
+        "defense_value": 16, 
+        "damage_power": "perplex", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "stealth", 
+        "speed_value": 6, 
+        "attack_power": "smoke_cloud", 
+        "attack_value": 7, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_power": "outwit", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "stealth", 
+        "speed_value": 5, 
+        "attack_power": "smoke_cloud", 
+        "attack_value": 7, 
+        "defense_power": "willpower", 
+        "defense_value": 15, 
+        "damage_power": "outwit", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "lotr101", 
+    "set_id": "lotr", 
+    "collector_number": "101", 
+    "name": "Nazgul", 
+    "type": "character", 
+    "rarity": "chase", 
+    "dimensions": "1x1", 
+    "point_values": [
+      100
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Forces of Sauron", 
+      "Mystical", 
+      "Nazgul", 
+      "Ringbearer", 
+      "Warrior"
+    ], 
+    "special_powers": [
+      {
+        "type": "damage", 
+        "name": "ICY TOUCH", 
+        "description": "Nazgul can use Exploit Weakness. Give Nazgul a power action, whenever a friendly character with the Nazgul keyword damages an opposing character this turn, place an action token on the opposing character.", 
+        "powers": [
+          "exploit_weakness"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 9, 
+        "attack_power": "quake", 
+        "attack_value": 9, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "stealth", 
+        "speed_value": 9, 
+        "attack_power": "quake", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "stealth", 
+        "speed_value": 9, 
+        "attack_power": "quake", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "stealth", 
+        "speed_value": 8, 
+        "attack_power": "quake", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "stealth", 
+        "speed_value": 8, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "stealth", 
+        "speed_value": 8, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 8, 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "stealth", 
+        "speed_value": 8, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 8, 
+        "defense_value": 16, 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "lotr102", 
+    "set_id": "lotr", 
+    "collector_number": "102", 
+    "name": "One Of The Nine", 
+    "type": "character", 
+    "rarity": "chase", 
+    "dimensions": "1x1", 
+    "point_values": [
+      100
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Forces of Sauron", 
+      "Mystical", 
+      "Nazgul", 
+      "Ringbearer", 
+      "Warrior"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "NINE KINGS OF MEN, DOOMED TO NEVER DIE", 
+        "description": "Whenever this character or another friendly character with the Nazgul keyword is KO'd, heal 1 damage on all friendly characters with the Nazgul keyword"
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 9, 
+        "attack_power": "quake", 
+        "attack_value": 9, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "stealth", 
+        "speed_value": 9, 
+        "attack_power": "quake", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "stealth", 
+        "speed_value": 9, 
+        "attack_power": "quake", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 16, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "stealth", 
+        "speed_value": 8, 
+        "attack_power": "quake", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 16, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "stealth", 
+        "speed_value": 8, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "stealth", 
+        "speed_value": 8, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 8, 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "stealth", 
+        "speed_value": 8, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 8, 
+        "defense_value": 16, 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "lotr201", 
+    "set_id": "lotr", 
+    "collector_number": "201", 
+    "name": "Ringbearer", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      49
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Fellowship", 
+      "Hobbit", 
+      "Ringbearer"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "THE BURDEN OF RINGBEARERS", 
+        "description": "All friendly characters with the Ringbearer keyword who are adjacent to Ringbearer at the beginning of your turn can use Willpower until your next turn."
+      }, 
+      {
+        "type": "speed", 
+        "name": "NOTHING BUT A TRAIL OF FOOTPRINTS", 
+        "description": "When Ringbearer is given a move action, he breaks away automatically and ignores the effects of characters on movement."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 8, 
+        "attack_value": 9, 
+        "defense_power": "super_senses", 
+        "defense_value": 16, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "special", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "super_senses", 
+        "defense_value": 16, 
+        "damage_power": "outwit", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "special", 
+        "speed_value": 6, 
+        "attack_value": 8, 
+        "defense_power": "super_senses", 
+        "defense_value": 15, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 6, 
+        "attack_value": 8, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 14, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 5, 
+        "attack_value": 8, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 14, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "lotr202", 
+    "set_id": "lotr", 
+    "collector_number": "202", 
+    "name": "Strider", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      70
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Fellowship", 
+      "Warrior"
+    ], 
+    "special_powers": [
+      {
+        "type": "epic", 
+        "name": "LEAVING DECOYS", 
+        "description": "Give Strider an epic action; for each 200 points of the build total, choose one friendly character next to an opposing character, place the friendly character in an unoccupied square adjacent to Strider but not adjacent to any opposing character, and place a hindering terrain marker in the square formerly occupied by the friendly character."
+      }, 
+      {
+        "type": "damage", 
+        "name": "SWORD TRAINING", 
+        "description": "Strider can use Perplex, but he can only modify the combat values of other friendly characters.", 
+        "powers": [
+          "perplex"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "7", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "leadership", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "quake", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "quake", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "stealth", 
+        "speed_value": 7, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "stealth", 
+        "speed_value": 7, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 15, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "stealth", 
+        "speed_value": 6, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_value": 15, 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "lotr203", 
+    "set_id": "lotr", 
+    "collector_number": "203", 
+    "name": "Esquire of Rohan", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      31
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Fellowship", 
+      "Hobbit", 
+      "Warrior"
+    ], 
+    "special_powers": [
+      {
+        "type": "epic", 
+        "name": "SCATTER THE FOE", 
+        "description": "Give Esquire of Rohan an epic action.  Choose a stack of opposing horde tokens, remove one horde token from it for each 200 points of the build total, and place it in its owner's starting area."
+      }, 
+      {
+        "type": "attack", 
+        "name": "BARROW BLADE", 
+        "description": "Esquire of Rohan can use Blades/Claws/Fangs; when he does, instead replace his damage value with half of the d6 roll.", 
+        "powers": [
+          "blades_claws_fangs"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "plasticity", 
+        "speed_value": 6, 
+        "attack_power": "special", 
+        "attack_value": 8, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "plasticity", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 15, 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "flurry", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 15, 
+        "damage_power": "shape_change", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "flurry", 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 14, 
+        "damage_power": "shape_change", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "flurry", 
+        "speed_value": 6, 
+        "attack_value": 8, 
+        "defense_power": "willpower", 
+        "defense_value": 14, 
+        "damage_power": "shape_change", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "lotr204", 
+    "set_id": "lotr", 
+    "collector_number": "204", 
+    "name": "Guard of the Citadel", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      29
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Fellowship", 
+      "Hobbit", 
+      "Soldier"
+    ], 
+    "special_powers": [
+      {
+        "type": "defense", 
+        "name": "HE'S ALIVE!", 
+        "description": "Guard of the Citadel can use Defend. When he or a friendly adjacent character uses Support, replace their attack value with their printed value +1.", 
+        "powers": [
+          "defend"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "leap_climb", 
+        "speed_value": 7, 
+        "attack_value": 8, 
+        "defense_power": "special", 
+        "defense_value": 16, 
+        "damage_power": "support", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "leap_climb", 
+        "speed_value": 8, 
+        "attack_value": 9, 
+        "defense_power": "special", 
+        "defense_value": 16, 
+        "damage_power": "support", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "leap_climb", 
+        "speed_value": 8, 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 15, 
+        "damage_power": "enhancement", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "leap_climb", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 14, 
+        "damage_power": "enhancement", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "leap_climb", 
+        "speed_value": 7, 
+        "attack_value": 8, 
+        "defense_power": "willpower", 
+        "defense_value": 13, 
+        "damage_power": "enhancement", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "lotr205", 
+    "set_id": "lotr", 
+    "collector_number": "205", 
+    "name": "Captain Lurtz", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      49
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Forces of Sauron", 
+      "Monster", 
+      "Warrior"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "ON THE TRAIL", 
+        "description": "At the beginning of the game, choose an opposing character.  After Captain Lurtz resolves a move action, he may immediately use Charge as a free action if he can use it to attack the chosen character and does so.  If Captain Lurtz KO's the chosen character, he may choose a new opposing character.", 
+        "powers": [
+          "charge"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "6", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "leap_climb", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "leadership", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "leap_climb", 
+        "speed_value": 8, 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "battle_fury", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "leap_climb", 
+        "speed_value": 8, 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 17, 
+        "damage_power": "battle_fury", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "leap_climb", 
+        "speed_value": 7, 
+        "attack_value": 8, 
+        "defense_power": "willpower", 
+        "defense_value": 15, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "lotr206", 
+    "set_id": "lotr", 
+    "collector_number": "206", 
+    "name": "Olog Hai", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x2", 
+    "point_values": [
+      84
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Brute", 
+      "Forces of Sauron", 
+      "Monster"
+    ], 
+    "special_powers": [
+      {
+        "type": "speed", 
+        "name": "TRAMPLE", 
+        "description": "For movement purposes, Olog Hai ignores characters possessing \"standard damage symbol\".  Once per turn, when Olog Hai moves through a square occupied by an opposing character, roll a d6; on a result of 4-6, deal the character 1 unavoidable damage."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "giant", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 6, 
+        "attack_power": "super_strength", 
+        "attack_value": 9, 
+        "defense_power": "impervious", 
+        "defense_value": 16, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "special", 
+        "speed_value": 6, 
+        "attack_power": "super_strength", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 16, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "special", 
+        "speed_value": 5, 
+        "attack_power": "super_strength", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 16, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "special", 
+        "speed_value": 5, 
+        "attack_power": "super_strength", 
+        "attack_value": 11, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "plasticity", 
+        "speed_value": 5, 
+        "attack_power": "super_strength", 
+        "attack_value": 11, 
+        "defense_power": "toughness", 
+        "defense_value": 15, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "plasticity", 
+        "speed_value": 5, 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 15, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "plasticity", 
+        "speed_value": 5, 
+        "attack_value": 9, 
+        "defense_value": 14, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 8, 
+        "speed_power": "plasticity", 
+        "speed_value": 5, 
+        "attack_value": 8, 
+        "defense_value": 14, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "lotr207", 
+    "set_id": "lotr", 
+    "collector_number": "207", 
+    "name": "Witch-King of Angmar", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      130
+    ], 
+    "properties": [
+      "unique"
+    ], 
+    "team_abilities": [], 
+    "keywords": [
+      "Forces of Sauron", 
+      "Mystical", 
+      "Nazgul", 
+      "Ringbearer", 
+      "Ruler"
+    ], 
+    "special_powers": [
+      {
+        "type": "epic", 
+        "name": "CHOSEN PREY", 
+        "description": "Give Witch-King of Angmar an epic action and choose an opposing character.  Modify that character's defense value by -2 until your next turn."
+      }, 
+      {
+        "type": "speed", 
+        "name": "RIDER IN BLACK", 
+        "description": "Witch-King of Angmar can use Charge and Stealth.", 
+        "powers": [
+          "charge", 
+          "stealth"
+        ]
+      }, 
+      {
+        "type": "damage", 
+        "name": "MORGUL BLADE", 
+        "description": "Witch-King of Angmar can use Mind Control as if he had a range of 8.  Each time an opposing character takes damage from his attack, place a blade token on this card.  When he uses Mind Control, before his attack roll he may remove any number of blade tokens to modify his attack value by +1 for each removed token.", 
+        "powers": [
+          "mind_control"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 10, 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "special", 
+        "speed_value": 10, 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "stealth", 
+        "speed_value": 9, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 16, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "stealth", 
+        "speed_value": 9, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "stealth", 
+        "speed_value": 8, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "flurry", 
+        "speed_value": 8, 
+        "attack_power": "quake", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 15, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "flurry", 
+        "speed_value": 7, 
+        "attack_power": "quake", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 15, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 8, 
+        "speed_power": "flurry", 
+        "speed_value": 7, 
+        "attack_power": "quake", 
+        "attack_value": 9, 
+        "defense_power": "regeneration", 
+        "defense_value": 14, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 9, 
+        "speed_power": "flurry", 
+        "speed_value": 7, 
+        "attack_power": "quake", 
+        "attack_value": 8, 
+        "defense_power": "regeneration", 
+        "defense_value": 13, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 10, 
+        "speed_power": "flurry", 
+        "speed_value": 7, 
+        "attack_power": "quake", 
+        "attack_value": 8, 
+        "defense_power": "regeneration", 
+        "defense_value": 12, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "lotr208", 
+    "set_id": "lotr", 
+    "collector_number": "208", 
+    "name": "Sauron", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      335
+    ], 
+    "properties": [
+      "unique"
+    ], 
+    "team_abilities": [], 
+    "keywords": [
+      "Forces of Sauron", 
+      "Mystical", 
+      "Ringbearer", 
+      "Ruler"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "THE FREE LANDS WILL FALL", 
+        "description": "When Sauron attacks a stack of horde tokens and deals damage, roll a d6; on a result of 3-4 you may remove one additional token; and on a result of 5-6 you may remove two additional tokens."
+      }, 
+      {
+        "type": "epic", 
+        "name": "FROZEN WITH FEAR", 
+        "description": "Give Sauron an epic action and choose one opposing character for each 200 points of the build total. Until your next turn, the chosen characters cannot be given move actions or power actions unless there are no other opposing characters."
+      }, 
+      {
+        "type": "speed", 
+        "name": "THE SHADOW ACROSS THE LAND", 
+        "description": "Sauron can use Phasing/Teleport. When he does, after actions resolve he may make a close combat attack modifying his attack value by -2.", 
+        "powers": [
+          "phasing_teleport"
+        ]
+      }, 
+      {
+        "type": "attack", 
+        "name": "ONE RING TO RULE THEM ALL", 
+        "description": "Sauron can use Pulse Wave as if he had a range value of 10. When he uses Pulse Wave and hits, you may give the hit character an action token instead of dealing damage.", 
+        "powers": [
+          "pulse_wave"
+        ]
+      }, 
+      {
+        "type": "damage", 
+        "name": "RING OF POWER", 
+        "description": "Unless this power is countered, Sauron's other powers and abilities cannot be countered. Sauron can use Exploit Weakness, Outwit and Perplex.", 
+        "powers": [
+          "exploit_weakness", 
+          "outwit", 
+          "perplex"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "giant", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 12, 
+        "defense_power": "impervious", 
+        "defense_value": 18, 
+        "damage_power": "special", 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "special", 
+        "speed_value": 8, 
+        "attack_power": "quake", 
+        "attack_value": 11, 
+        "defense_power": "impervious", 
+        "defense_value": 19, 
+        "damage_power": "special", 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "special", 
+        "speed_value": 7, 
+        "attack_power": "quake", 
+        "attack_value": 10, 
+        "defense_power": "impervious", 
+        "defense_value": 19, 
+        "damage_power": "special", 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "flurry", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "impervious", 
+        "defense_value": 18, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "flurry", 
+        "speed_value": 6, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "impervious", 
+        "defense_value": 18, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "flurry", 
+        "speed_value": 6, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "impervious", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 6, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 8, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 6, 
+        "attack_power": "steal_energy", 
+        "attack_value": 11, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 9, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 6, 
+        "attack_power": "steal_energy", 
+        "attack_value": 12, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 10, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 6, 
+        "attack_power": "steal_energy", 
+        "attack_value": 12, 
+        "defense_power": "invulnerability", 
+        "defense_value": 16, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "lotrH001", 
+    "set_id": "lotr", 
+    "collector_number": "H001", 
+    "name": "Orcs", 
+    "type": "bystander", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      10
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [], 
+    "special_powers": [
+      {
+        "type": "damage", 
+        "name": "HORDE: SWARM", 
+        "description": "When stacked give Orcs a power action and as a free action you may unstack any number of Orcs tokens and move each up to (S) squares."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "bystander_type": "horde", 
+    "horde_stack_max": "8", 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "1", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "flurry", 
+        "speed_value": 6, 
+        "attack_value": 8, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "lotrH002", 
+    "set_id": "lotr", 
+    "collector_number": "H002", 
+    "name": "Uruk-Hai", 
+    "type": "bystander", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      12
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [], 
+    "special_powers": [
+      {
+        "type": "damage", 
+        "name": "HORDE: FEARSOME ATTACK", 
+        "description": "When stacked and Uruk-Hai hits a character with a close combat attack, after actions resolve you may place an action token on up to (S) adjacent opposing characters (these tokens do not deal pushing damage.)"
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "bystander_type": "horde", 
+    "horde_stack_max": "4", 
+    "unit_range": "4", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "1", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 18, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "lotrH003", 
+    "set_id": "lotr", 
+    "collector_number": "H003", 
+    "name": "Warg Riders", 
+    "type": "bystander", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      15
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [], 
+    "special_powers": [
+      {
+        "type": "damage", 
+        "name": "HORDE: FANG AND BLADE", 
+        "description": "When stacked and Warg Riders use Blades/Claws/Fangs, they deal a minimum (S) damage.", 
+        "powers": [
+          "blades_claws_fangs"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "bystander_type": "horde", 
+    "horde_stack_max": "4", 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "1", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "leap_climb", 
+        "speed_value": 9, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "lotrH004", 
+    "set_id": "lotr", 
+    "collector_number": "H004", 
+    "name": "Riders of Rohan", 
+    "type": "bystander", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      13
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [], 
+    "special_powers": [
+      {
+        "type": "speed", 
+        "name": "HORDE: BATTLEFIELD MOBILITY", 
+        "description": "When stacked, Riders of Rohan may use the Carry ability to carry up to (S) characters."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "bystander_type": "horde", 
+    "horde_stack_max": "6", 
+    "unit_range": "2", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "1", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 10, 
+        "attack_value": 9, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 16, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "lotrH005", 
+    "set_id": "lotr", 
+    "collector_number": "H005", 
+    "name": "Ithilien Rangers", 
+    "type": "bystander", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      17
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [], 
+    "special_powers": [
+      {
+        "type": "damage", 
+        "name": "HORDE: AMBUSH", 
+        "description": "When stacked Ithilen Rangers replace their speed value with 8 + (S)."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "bystander_type": "horde", 
+    "horde_stack_max": "4", 
+    "unit_range": "5", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "1", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "lotrH006", 
+    "set_id": "lotr", 
+    "collector_number": "H006", 
+    "name": "Haldir's Archers", 
+    "type": "bystander", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      15
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [], 
+    "special_powers": [
+      {
+        "type": "damage", 
+        "name": "HORDE: UNMATCHED RANGE", 
+        "description": "When stacked, Haldir's Archers replace their range value with 8 + (S)."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "bystander_type": "horde", 
+    "horde_stack_max": "4", 
+    "unit_range": "6", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "1", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_value": 9, 
+        "defense_value": 18, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "lotrH007", 
+    "set_id": "lotr", 
+    "collector_number": "H007", 
+    "name": "Eagle", 
+    "type": "bystander", 
+    "rarity": "chase", 
+    "dimensions": "1x1", 
+    "point_values": [
+      15
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [], 
+    "special_powers": [
+      {
+        "type": "speed", 
+        "name": "HORDE: RESCUE FLIGHT", 
+        "description": "When stacked, Eagle replaces their speed value with 8 + (S).  When (M), Eagles may use the Carry ability to begin carrying a character in any square they move through."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "bystander_type": "horde", 
+    "horde_stack_max": "3", 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "wing", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "1", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 9, 
+        "attack_value": 9, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "lotrH008", 
+    "set_id": "lotr", 
+    "collector_number": "H008", 
+    "name": "Ent", 
+    "type": "bystander", 
+    "rarity": "chase", 
+    "dimensions": "1x1", 
+    "point_values": [
+      15
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [], 
+    "special_powers": [
+      {
+        "type": "damage", 
+        "name": "HORDE: BREAK THE DAM!", 
+        "description": "When stacked, any close combat attack made by Ent destroys up to (S) squares of adjacent blocking terrain after actions resolve."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "bystander_type": "horde", 
+    "horde_stack_max": "5", 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "1", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_value": 4, 
+        "attack_power": "quake", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "lotrH009", 
+    "set_id": "lotr", 
+    "collector_number": "H009", 
+    "name": "Dead Man of Dunharrow", 
+    "type": "bystander", 
+    "rarity": "chase", 
+    "dimensions": "1x1", 
+    "point_values": [
+      10
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [], 
+    "special_powers": [
+      {
+        "type": "damage", 
+        "name": "HORDE: GHOSTLY CHARGE", 
+        "description": "When stacked, Dead Man of Dunharrow can use Charge.  When (M) and they use Charge, damage dealt by the close combat attack is penetrating damage.", 
+        "powers": [
+          "charge"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "bystander_type": "horde", 
+    "horde_stack_max": "4", 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "1", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 6, 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 14, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "lotrH010", 
+    "set_id": "lotr", 
+    "collector_number": "H010", 
+    "name": "Mumakil", 
+    "type": "bystander", 
+    "rarity": "chase", 
+    "dimensions": "1x1", 
+    "point_values": [
+      9
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [], 
+    "special_powers": [
+      {
+        "type": "speed", 
+        "name": "HORDE: TRAMPLE", 
+        "description": "When stacked, Mumakil ignores the effects of hindering terrain and characters on movement.  When (M), after actions resolve, deal 1 damage to each opposing character occupying a square Mumakil moved through."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "bystander_type": "horde", 
+    "horde_stack_max": "4", 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "1", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 6, 
+        "attack_value": 8, 
+        "defense_value": 18, 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "lotrH011", 
+    "set_id": "lotr", 
+    "collector_number": "H011", 
+    "name": "Orc Catapult", 
+    "type": "bystander", 
+    "rarity": "chase", 
+    "dimensions": "1x1", 
+    "point_values": [
+      12
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [], 
+    "special_powers": [
+      {
+        "type": "damage", 
+        "name": "HORDE: FIRE!", 
+        "description": "When stacked, Orc Catapult replaces their range value with 8 + (S).  When (M) and Orc Catapult uses Energy Explosion, damage dealt to the character in the target square is penetrating."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "bystander_type": "horde", 
+    "horde_stack_max": "3", 
+    "unit_range": "8", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "1", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_value": 3, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 8, 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "lotrH012", 
+    "set_id": "lotr", 
+    "collector_number": "H012", 
+    "name": "Mountain Troll", 
+    "type": "bystander", 
+    "rarity": "chase", 
+    "dimensions": "1x1", 
+    "point_values": [
+      15
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [], 
+    "special_powers": [
+      {
+        "type": "damage", 
+        "name": "HORDE: SMASH!", 
+        "description": "When stacked and attacking with an object, modify Mountain Troll's attack value by + (S).  When (M), Mountain Trolls treat light objects as heavy objects when attacking with an object."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "bystander_type": "horde", 
+    "horde_stack_max": "3", 
+    "unit_range": "8", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "1", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_value": 6, 
+        "attack_power": "super_strength", 
+        "attack_value": 8, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "lotrS101", 
+    "set_id": "lotr", 
+    "collector_number": "S101", 
+    "name": "The One Ring", 
+    "type": "object", 
+    "rarity": "chase", 
+    "point_values": [
+      15
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [], 
+    "special_powers": [
+      {
+        "description": "Frodo, Frodo and Sam, Gollum, Mr. Underhill, Ringbearer, Sauron.", 
+        "name": "Owner"
+      }, 
+      {
+        "powers": [
+          "leadership", 
+          "probability_control", 
+          "stealth"
+        ], 
+        "description": "The character controlling The One Ring can use Leadership, Probability Control and Stealth. At the end of each turn of the character controlling The One Ring, roll a d6 that can't be rerolled. On a roll of 1, the character places The One Ring in its square and is dealt 1 unavoidable damage."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_type": "relic", 
+    "object_size": "immobile", 
+    "object_keyphrases": [], 
+    "relic_roll_min": "6", 
+    "dial": []
+  }
+]

@@ -846,6 +846,11 @@ const SET_LIST = {
     "release_date": "2012-01-01",
     "universe": "marvel"
   },
+  "lotr": {
+    "name": "Lord of the Rings",
+    "release_date": "2011-12-01",
+    "universe": "lotr"
+  },
   "wk": {
     "name": "WizKids Standard Game Pieces",
     "release_date": "2002-05-01",
