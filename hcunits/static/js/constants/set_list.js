@@ -750,6 +750,11 @@ const SET_LIST = {
     "release_date": "2012-11-14",
     "universe": "dc"
   },
+  "hbt": {
+    "name": "The Hobbit: An Unexpected Journey",
+    "release_date": "2012-11-14",
+    "universe": "lotr"
+  },
   "wk": {
     "name": "WizKids Standard Game Pieces",
     "release_date": "2002-05-01",

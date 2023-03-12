@@ -557,6 +557,9 @@ SET_MAP = {
   "ffbm": {
     "name": "Fast Forces: Batman",
   },
+  "hbt": {
+    "name": "The Hobbit: An Unexpected Journey",
+  },
 }
 
 POWERS = {
