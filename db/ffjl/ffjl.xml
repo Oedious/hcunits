@@ -1,0 +1,639 @@
+<resultset>
+  <row>
+    <unit_id>ffjl001</unit_id>
+    <set_id>ffjl</set_id>
+    <collector_number>001</collector_number>
+    <name>Cyborg</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[75]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Justice League", "Metropolis", "S.T.A.R. Labs"]</keywords>
+    <special_powers>[]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>6</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "leap_climb", 
+    "speed_value": 8, 
+    "attack_power": "energy_explosion", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "enhancement", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "leap_climb", 
+    "speed_value": 8, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 16, 
+    "damage_power": "outwit", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "leap_climb", 
+    "speed_value": 8, 
+    "attack_power": "quake", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "enhancement", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "leap_climb", 
+    "speed_value": 7, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "outwit", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_value": 7, 
+    "attack_power": "quake", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 15, 
+    "damage_power": "enhancement", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_value": 7, 
+    "attack_value": 9, 
+    "defense_power": "regeneration", 
+    "defense_value": 15, 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ffjl002</unit_id>
+    <set_id>ffjl</set_id>
+    <collector_number>002</collector_number>
+    <name>Superman</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[125]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Justice League", "Metropolis", "Reporter"]</keywords>
+    <special_powers>[
+  {
+    "type": "speed", 
+    "name": "KNOCKOUT PUNCH", 
+    "description": "Superman can use Charge. When he does, he breaks away automatically and all hit characters are knocked back 1 square after actions resolve.", 
+    "powers": [
+      "charge"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "special", 
+    "speed_value": 11, 
+    "attack_power": "super_strength", 
+    "attack_value": 10, 
+    "defense_power": "impervious", 
+    "defense_value": 18, 
+    "damage_value": 4
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "charge", 
+    "speed_value": 10, 
+    "attack_power": "super_strength", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "special", 
+    "speed_value": 10, 
+    "attack_power": "super_strength", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "charge", 
+    "speed_value": 9, 
+    "attack_value": 9, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "special", 
+    "speed_value": 9, 
+    "attack_power": "quake", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "charge", 
+    "speed_value": 9, 
+    "attack_power": "quake", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 7, 
+    "speed_value": 8, 
+    "attack_power": "quake", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ffjl003</unit_id>
+    <set_id>ffjl</set_id>
+    <collector_number>003</collector_number>
+    <name>Batman</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[100]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Detective", "Gotham City", "Justice League", "Martial Artist"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "AVOID DETECTION", 
+    "description": "When it is not your turn, lines of fire drawn to Batman are blocked unless a friendly character has taken damage this turn."
+  }, 
+  {
+    "type": "attack", 
+    "name": "BATARANGS", 
+    "description": "Batman can use Incapacitate as if he had \"3 Targets\". When he does, he ignores friendly characters and hindering terrain for line of fire purposes.", 
+    "powers": [
+      "incapacitate"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>6</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "leap_climb", 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "outwit", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "leap_climb", 
+    "speed_value": 7, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "outwit", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "leap_climb", 
+    "speed_value": 7, 
+    "attack_value": 9, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "leap_climb", 
+    "speed_value": 7, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 15, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "leap_climb", 
+    "speed_value": 6, 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 15, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "leap_climb", 
+    "speed_value": 6, 
+    "attack_power": "special", 
+    "attack_value": 11, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 3
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ffjl004</unit_id>
+    <set_id>ffjl</set_id>
+    <collector_number>004</collector_number>
+    <name>Wonder Woman</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[100]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>["Amazon", "Justice League", "Warrior"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "AMAZON WARRIOR", 
+    "description": "After Wonder Woman has been carried, she may be given a non-free action if she has not already been given one this turn."
+  }, 
+  {
+    "type": "defense", 
+    "name": "DAUGHTER OF THEMYSCIRA", 
+    "description": "Wonder Woman can use Combat Reflexes and Toughness.", 
+    "powers": [
+      "combat_reflexes", 
+      "toughness"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "charge", 
+    "speed_value": 8, 
+    "attack_value": 11, 
+    "defense_power": "invulnerability", 
+    "defense_value": 18, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "leap_climb", 
+    "speed_value": 7, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "flurry", 
+    "speed_value": 7, 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "flurry", 
+    "speed_value": 7, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 9, 
+    "defense_power": "special", 
+    "defense_value": 16, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "leap_climb", 
+    "speed_value": 6, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 15, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "flurry", 
+    "speed_value": 6, 
+    "attack_value": 11, 
+    "defense_power": "special", 
+    "defense_value": 17, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 3
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ffjl005</unit_id>
+    <set_id>ffjl</set_id>
+    <collector_number>005</collector_number>
+    <name>The Flash</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[125]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["police"]</team_abilities>
+    <keywords>["Central City", "Justice League", "Police"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "I'VE NEVER BEEN TOUCHED", 
+    "description": "The Flash can use Super Senses but evades on a result of 4-6 instead.", 
+    "powers": [
+      "super_senses"
+    ]
+  }, 
+  {
+    "type": "speed", 
+    "name": "THEY WON'T KNOW WHAT HIT'EM", 
+    "description": "The Flash can use Charge and Flurry.", 
+    "powers": [
+      "charge", 
+      "flurry"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "hypersonic_speed", 
+    "speed_value": 14, 
+    "attack_value": 10, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 17, 
+    "damage_power": "perplex", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "hypersonic_speed", 
+    "speed_value": 13, 
+    "attack_value": 10, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 16, 
+    "damage_power": "outwit", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "hypersonic_speed", 
+    "speed_value": 13, 
+    "attack_value": 9, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 15, 
+    "damage_power": "perplex", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "hypersonic_speed", 
+    "speed_value": 12, 
+    "attack_value": 9, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 14, 
+    "damage_power": "outwit", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "special", 
+    "speed_value": 12, 
+    "attack_value": 9, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 16, 
+    "damage_power": "perplex", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "special", 
+    "speed_value": 11, 
+    "attack_value": 9, 
+    "defense_power": "energy_shield_deflection", 
+    "defense_value": 16, 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ffjl006</unit_id>
+    <set_id>ffjl</set_id>
+    <collector_number>006</collector_number>
+    <name>Green Lantern</name>
+    <type>character</type>
+    <rarity>common</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[100]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["green_lantern_corps"]</team_abilities>
+    <keywords>["Coast City", "Green Lantern Corps", "Justice League"]</keywords>
+    <special_powers>[]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>8</unit_range>
+    <targets>2</targets>
+    <speed_type>wing</speed_type>
+    <attack_type>sharpshooter</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "running_shot", 
+    "speed_value": 10, 
+    "attack_power": "telekinesis", 
+    "attack_value": 10, 
+    "defense_power": "willpower", 
+    "defense_value": 18, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "running_shot", 
+    "speed_value": 9, 
+    "attack_power": "telekinesis", 
+    "attack_value": 11, 
+    "defense_power": "willpower", 
+    "defense_value": 17, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "running_shot", 
+    "speed_value": 9, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 10, 
+    "defense_power": "willpower", 
+    "defense_value": 17, 
+    "damage_power": "ranged_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "running_shot", 
+    "speed_value": 8, 
+    "attack_value": 9, 
+    "defense_power": "barrier", 
+    "defense_value": 17, 
+    "damage_power": "probability_control", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "force_blast", 
+    "speed_value": 8, 
+    "attack_power": "pulse_wave", 
+    "attack_value": 10, 
+    "defense_power": "barrier", 
+    "defense_value": 17, 
+    "damage_power": "probability_control", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "force_blast", 
+    "speed_value": 8, 
+    "attack_value": 10, 
+    "defense_power": "regeneration", 
+    "defense_value": 17, 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>ffjlM001</unit_id>
+    <set_id>ffjl</set_id>
+    <collector_number>M001</collector_number>
+    <name>Rooftops of Gotham City</name>
+    <type>map</type>
+    <point_values>[]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[
+  {
+    "name": "Street Terrain", 
+    "description": "If a character that can't use Leap/Climb, Phasing/Teleport, Flight or Great Size occupies Street Terrain after actions resolve, deal that character 1 unavoidable damage and then the character's controller places the character in their starting area."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <map_url>https://hcmaps.net/maps/jl52/rooftops_of_gotham_city.json</map_url>
+    <dial>[]</dial>
+  </row>
+  <row>
+    <unit_id>ffjlM002</unit_id>
+    <set_id>ffjl</set_id>
+    <collector_number>M002</collector_number>
+    <name>Paradise Island</name>
+    <type>map</type>
+    <point_values>[]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <map_url>https://hcmaps.net/maps/jl52/paradise_island.json</map_url>
+    <dial>[]</dial>
+  </row>
+</resultset>

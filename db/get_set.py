@@ -583,6 +583,12 @@ SET_MAP = {
   "m10a": {
     "name": "Marvel Heroclix 10th Anniversary",
   },
+  "jl52": {
+    "name": "Justice League 52",
+  },
+  "ffjl": {
+    "name": "Fast Forces: Justice League",
+  },
 }
 
 POWERS = {

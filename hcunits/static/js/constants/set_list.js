@@ -781,6 +781,16 @@ const SET_LIST = {
     "release_date": "2012-09-12",
     "universe": "marvel"
   },
+  "jl52": {
+    "name": "Justice League 52",
+    "release_date": "2012-08-15",
+    "universe": "dc"
+  },
+  "ffjl": {
+    "name": "Fast Forces: Justice League",
+    "release_date": "2012-08-15",
+    "universe": "dc"
+  },
   "wk": {
     "name": "WizKids Standard Game Pieces",
     "release_date": "2002-05-01",

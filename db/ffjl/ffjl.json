@@ -1,0 +1,680 @@
+[
+  {
+    "unit_id": "ffjl001", 
+    "set_id": "ffjl", 
+    "collector_number": "001", 
+    "name": "Cyborg", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      75
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Justice League", 
+      "Metropolis", 
+      "S.T.A.R. Labs"
+    ], 
+    "special_powers": [], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "6", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "leap_climb", 
+        "speed_value": 8, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "enhancement", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "leap_climb", 
+        "speed_value": 8, 
+        "attack_power": "pulse_wave", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 16, 
+        "damage_power": "outwit", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "leap_climb", 
+        "speed_value": 8, 
+        "attack_power": "quake", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "enhancement", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "leap_climb", 
+        "speed_value": 7, 
+        "attack_power": "pulse_wave", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 7, 
+        "attack_power": "quake", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 15, 
+        "damage_power": "enhancement", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "regeneration", 
+        "defense_value": 15, 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "ffjl002", 
+    "set_id": "ffjl", 
+    "collector_number": "002", 
+    "name": "Superman", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      125
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Justice League", 
+      "Metropolis", 
+      "Reporter"
+    ], 
+    "special_powers": [
+      {
+        "type": "speed", 
+        "name": "KNOCKOUT PUNCH", 
+        "description": "Superman can use Charge. When he does, he breaks away automatically and all hit characters are knocked back 1 square after actions resolve.", 
+        "powers": [
+          "charge"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "wing", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 11, 
+        "attack_power": "super_strength", 
+        "attack_value": 10, 
+        "defense_power": "impervious", 
+        "defense_value": 18, 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "charge", 
+        "speed_value": 10, 
+        "attack_power": "super_strength", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "special", 
+        "speed_value": 10, 
+        "attack_power": "super_strength", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "charge", 
+        "speed_value": 9, 
+        "attack_value": 9, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "special", 
+        "speed_value": 9, 
+        "attack_power": "quake", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "charge", 
+        "speed_value": 9, 
+        "attack_power": "quake", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 7, 
+        "speed_value": 8, 
+        "attack_power": "quake", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "ffjl003", 
+    "set_id": "ffjl", 
+    "collector_number": "003", 
+    "name": "Batman", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      100
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Detective", 
+      "Gotham City", 
+      "Justice League", 
+      "Martial Artist"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "AVOID DETECTION", 
+        "description": "When it is not your turn, lines of fire drawn to Batman are blocked unless a friendly character has taken damage this turn."
+      }, 
+      {
+        "type": "attack", 
+        "name": "BATARANGS", 
+        "description": "Batman can use Incapacitate as if he had \"3 Targets\". When he does, he ignores friendly characters and hindering terrain for line of fire purposes.", 
+        "powers": [
+          "incapacitate"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "6", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "leap_climb", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "leap_climb", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "leap_climb", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "leap_climb", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 15, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "leap_climb", 
+        "speed_value": 6, 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 15, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "leap_climb", 
+        "speed_value": 6, 
+        "attack_power": "special", 
+        "attack_value": 11, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 3
+      }
+    ]
+  }, 
+  {
+    "unit_id": "ffjl004", 
+    "set_id": "ffjl", 
+    "collector_number": "004", 
+    "name": "Wonder Woman", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      100
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Amazon", 
+      "Justice League", 
+      "Warrior"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "AMAZON WARRIOR", 
+        "description": "After Wonder Woman has been carried, she may be given a non-free action if she has not already been given one this turn."
+      }, 
+      {
+        "type": "defense", 
+        "name": "DAUGHTER OF THEMYSCIRA", 
+        "description": "Wonder Woman can use Combat Reflexes and Toughness.", 
+        "powers": [
+          "combat_reflexes", 
+          "toughness"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_value": 11, 
+        "defense_power": "invulnerability", 
+        "defense_value": 18, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "leap_climb", 
+        "speed_value": 7, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "flurry", 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "flurry", 
+        "speed_value": 7, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_power": "special", 
+        "defense_value": 16, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "leap_climb", 
+        "speed_value": 6, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 15, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "flurry", 
+        "speed_value": 6, 
+        "attack_value": 11, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 3
+      }
+    ]
+  }, 
+  {
+    "unit_id": "ffjl005", 
+    "set_id": "ffjl", 
+    "collector_number": "005", 
+    "name": "The Flash", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      125
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "police"
+    ], 
+    "keywords": [
+      "Central City", 
+      "Justice League", 
+      "Police"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "I'VE NEVER BEEN TOUCHED", 
+        "description": "The Flash can use Super Senses but evades on a result of 4-6 instead.", 
+        "powers": [
+          "super_senses"
+        ]
+      }, 
+      {
+        "type": "speed", 
+        "name": "THEY WON'T KNOW WHAT HIT'EM", 
+        "description": "The Flash can use Charge and Flurry.", 
+        "powers": [
+          "charge", 
+          "flurry"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "hypersonic_speed", 
+        "speed_value": 14, 
+        "attack_value": 10, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "hypersonic_speed", 
+        "speed_value": 13, 
+        "attack_value": 10, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 16, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "hypersonic_speed", 
+        "speed_value": 13, 
+        "attack_value": 9, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 15, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "hypersonic_speed", 
+        "speed_value": 12, 
+        "attack_value": 9, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 14, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "special", 
+        "speed_value": 12, 
+        "attack_value": 9, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 16, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "special", 
+        "speed_value": 11, 
+        "attack_value": 9, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "ffjl006", 
+    "set_id": "ffjl", 
+    "collector_number": "006", 
+    "name": "Green Lantern", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      100
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "green_lantern_corps"
+    ], 
+    "keywords": [
+      "Coast City", 
+      "Green Lantern Corps", 
+      "Justice League"
+    ], 
+    "special_powers": [], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "8", 
+    "targets": "2", 
+    "speed_type": "wing", 
+    "attack_type": "sharpshooter", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "running_shot", 
+        "speed_value": 10, 
+        "attack_power": "telekinesis", 
+        "attack_value": 10, 
+        "defense_power": "willpower", 
+        "defense_value": 18, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "running_shot", 
+        "speed_value": 9, 
+        "attack_power": "telekinesis", 
+        "attack_value": 11, 
+        "defense_power": "willpower", 
+        "defense_value": 17, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "running_shot", 
+        "speed_value": 9, 
+        "attack_power": "pulse_wave", 
+        "attack_value": 10, 
+        "defense_power": "willpower", 
+        "defense_value": 17, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_value": 9, 
+        "defense_power": "barrier", 
+        "defense_value": 17, 
+        "damage_power": "probability_control", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "force_blast", 
+        "speed_value": 8, 
+        "attack_power": "pulse_wave", 
+        "attack_value": 10, 
+        "defense_power": "barrier", 
+        "defense_value": 17, 
+        "damage_power": "probability_control", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "force_blast", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "regeneration", 
+        "defense_value": 17, 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "ffjlM001", 
+    "set_id": "ffjl", 
+    "collector_number": "M001", 
+    "name": "Rooftops of Gotham City", 
+    "type": "map", 
+    "point_values": [], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [], 
+    "special_powers": [
+      {
+        "name": "Street Terrain", 
+        "description": "If a character that can't use Leap/Climb, Phasing/Teleport, Flight or Great Size occupies Street Terrain after actions resolve, deal that character 1 unavoidable damage and then the character's controller places the character in their starting area."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "map_url": "https://hcmaps.net/maps/jl52/rooftops_of_gotham_city.json", 
+    "dial": []
+  }, 
+  {
+    "unit_id": "ffjlM002", 
+    "set_id": "ffjl", 
+    "collector_number": "M002", 
+    "name": "Paradise Island", 
+    "type": "map", 
+    "point_values": [], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [], 
+    "special_powers": [], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "map_url": "https://hcmaps.net/maps/jl52/paradise_island.json", 
+    "dial": []
+  }
+]
