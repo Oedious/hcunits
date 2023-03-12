@@ -1,0 +1,157 @@
+{
+  "updates": {
+    "sog001b": {
+      "special_powers": [{
+        "powers": ["leap_climb", "willpower"]
+      }]
+    },
+    "sog004a": {
+      "special_powers": [{
+        "powers": ["outwit"]
+      }]
+    },
+    "sog007b": {
+      "special_powers": [{
+        "powers": ["poison"]
+      }]
+    },
+    "sog011": {
+      "special_powers": [{
+        "powers": ["mind_control"]
+      }, {
+        "powers": ["outwit", "shape_change", "support"]
+      }]
+    },
+    "sog015b": {
+      "special_powers": [{
+        "powers": ["smoke_cloud"]
+      }],
+      "dial": [{
+      }, {
+      }, {
+      }, {
+        "starting_line": "orange"
+      }]
+    },
+    "sog016": {
+      "special_powers": [{
+        "powers": ["stealth"]
+      }]
+    },
+    "sog020": {
+      "special_powers": [{
+      }, {
+        "powers": ["energy_explosion", "outwit"]
+      }]
+    },
+    "sog023": {
+      "special_powers": [{
+        "powers": ["smoke_cloud"]
+      }]
+    },
+    "sog027": {
+      "special_powers": [{
+      }, {
+      }, {
+        "powers": ["exploit_weakness", "battle_fury"]
+      }]
+    },
+    "sog030": {
+      "special_powers": [{
+      }, {
+      }, {
+        "powers": ["outwit", "perplex"]
+      }]
+    },
+    "sog034": {
+      "special_powers": [{
+      }, {
+        "powers": ["toughness", "defend"]
+      }]
+    },
+    "sog035": {
+      "special_powers": [{
+        "powers": ["support"]
+      }]
+    },
+    "sog036": {
+      "special_powers": [{
+      }, {
+        "powers": ["leadership", "perplex"]
+      }]
+    },
+    "sog038": {
+      "special_powers": [{
+        "powers": ["enhancement", "leadership", "perplex", "shape_change"]
+      }]
+    },
+    "sog040": {
+      "special_powers": [{
+        "powers": ["stealth", "charge", "running_shot"]
+      }]
+    },
+    "sog047": {
+      "special_powers": [{
+      }, {
+        "powers": ["smoke_cloud"]
+      }]
+    },
+    "sog103": {
+      "special_powers": [{
+        "powers": ["charge", "smoke_cloud"]
+      }]
+    },
+    "sogS101": {
+      "object_size": "heavy"
+    },
+    "sogV001a": {
+      "special_powers": [{
+        "powers": ["smoke_cloud"]
+      }]
+    },
+    "sogV001b": {
+      "special_powers": [{
+        "powers": ["stealth", "outwit"]
+      }, {
+      }, {
+        "powers": ["smoke_cloud"]
+      }]
+    },
+    "sogV002b": {
+      "special_powers": [{
+        "powers": ["enhancement", "perplex"]
+      }, {
+        "powers": ["incapacitate"]
+      }]
+    }
+  },
+  "deletions": [
+    "sog001",
+    "sog004",
+    "sog005",
+    "sog007",
+    "sog010",
+    "sog015"
+  ],
+  "additions": [{
+    "unit_id": "sogM001",
+    "set_id": "sog",
+    "collector_number": "M001",
+    "name": "Streets of Gotham City",
+    "type": "map",
+    "special_powers": [{
+      "description": "Orange squares are Manhole squares. If you are also playing with the Killer Croc Sewer Lair map, you may give a character occupying this square a power action and place that character in the corresponding square on that map. If that square is occupied, place that character in the nearest square it could be placed in."
+    }],
+    "map_url": "https://hcmaps.net/maps/sog/streets_of_gotham_city.json"
+  }, {
+    "unit_id": "sogM002",
+    "set_id": "sog",
+    "collector_number": "M002",
+    "name": "Killer Croc Sewer Lair",
+    "type": "map",
+    "special_powers": [{
+      "description": "Orange squares are Manhole squares. If you are also playing with the Streets of Gotham City map, you may give a character occupying this square a power action and place that character in the corresponding square on that map. If that square is occupied, place that character in the nearest square it could be placed in."
+    }],
+    "map_url": "https://hcmaps.net/maps/sog/killer_croc_sewer_lair.json"
+  }]
+}

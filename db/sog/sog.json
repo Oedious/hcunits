@@ -1,0 +1,6886 @@
+[
+  {
+    "unit_id": "sog001a", 
+    "set_id": "sog", 
+    "collector_number": "001a", 
+    "name": "GCPD Officer", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      30
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "police"
+    ], 
+    "keywords": [
+      "Gotham City", 
+      "Police"
+    ], 
+    "special_powers": [
+      {
+        "type": "damage", 
+        "name": "MINION: LEARNING THE ROPES", 
+        "description": "When a friendly character with the Police keyword and a higher point value is within 8 squares, modify GCPD Officer's attack value by +1. If that character is named Commissioner Gordon, modify his speed and damage values by +1 as well."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "5", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "running_shot", 
+        "speed_value": 6, 
+        "attack_value": 8, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "running_shot", 
+        "speed_value": 6, 
+        "attack_value": 8, 
+        "defense_power": "willpower", 
+        "defense_value": 15, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "running_shot", 
+        "speed_value": 5, 
+        "attack_value": 7, 
+        "defense_value": 14, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "sog001b", 
+    "set_id": "sog", 
+    "collector_number": "001b", 
+    "name": "GCPD Officer", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      30
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "police"
+    ], 
+    "keywords": [
+      "Gotham City", 
+      "Police"
+    ], 
+    "special_powers": [
+      {
+        "type": "attack", 
+        "name": "MINION: REMEMBER YOUR BASIC TRAINING", 
+        "description": "When a friendly character with the Police keyword and a higher point value is within 8 squares, GCPD Officer can use Leap/Climb and Willpower.", 
+        "powers": [
+          "leap_climb", 
+          "willpower"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "5", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_value": 6, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_value": 6, 
+        "attack_power": "special", 
+        "attack_value": 8, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 5, 
+        "attack_power": "special", 
+        "attack_value": 8, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 15, 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 5, 
+        "attack_power": "special", 
+        "attack_value": 8, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 15, 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "sog002", 
+    "set_id": "sog", 
+    "collector_number": "002", 
+    "name": "Lady Blackhawk", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      55
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "police"
+    ], 
+    "keywords": [
+      "Birds of Prey", 
+      "Blackhawks", 
+      "Past", 
+      "Pilot", 
+      "Soldier"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "JET JOCKEY", 
+        "description": "When Lady Blackhawk is the pilot of a vehicle with the \"wing\" speed symbol, modify its speed value by +2 and its attack value by +1."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "4", 
+    "targets": "2", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 9, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "running_shot", 
+        "speed_value": 6, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 10, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 16, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 3, 
+        "speed_value": 7, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 17, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 17, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "sog003", 
+    "set_id": "sog", 
+    "collector_number": "003", 
+    "name": "Black Canary", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      62
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "batman_ally"
+    ], 
+    "keywords": [
+      "Birds of Prey", 
+      "Justice League", 
+      "Justice League International", 
+      "Martial Artist"
+    ], 
+    "special_powers": [
+      {
+        "type": "attack", 
+        "name": "CANARY CRY", 
+        "description": "Black Canary can use Incapacitate.  When she uses it to make a close combat attack, modify her attack value by +2 and all adjacent opposing characters are targeted.", 
+        "powers": [
+          "incapacitate"
+        ]
+      }
+    ], 
+    "improved_movement": [
+      "characters"
+    ], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "3", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "leap_climb", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "flurry", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 11, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "flurry", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "willpower", 
+        "defense_value": 18, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "leap_climb", 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_power": "willpower", 
+        "defense_value": 17, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 6, 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "sog004a", 
+    "set_id": "sog", 
+    "collector_number": "004a", 
+    "name": "GCPD Detective", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      37
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "police"
+    ], 
+    "keywords": [
+      "Detective", 
+      "Gotham City", 
+      "Police"
+    ], 
+    "special_powers": [
+      {
+        "type": "speed", 
+        "name": "ON THE CASE", 
+        "description": "At the beginning of the game, choose a team ability or keyword possessed by an opposing character; GCPD Detective can use Outwit, but can only target characters with the chosen keyword or team ability.", 
+        "powers": [
+          "outwit"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "5", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "special", 
+        "speed_value": 6, 
+        "attack_value": 8, 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "special", 
+        "speed_value": 5, 
+        "attack_value": 8, 
+        "defense_value": 15, 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "special", 
+        "speed_value": 5, 
+        "attack_value": 7, 
+        "defense_value": 15, 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "special", 
+        "speed_value": 5, 
+        "attack_value": 7, 
+        "defense_value": 15, 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "sog004b", 
+    "set_id": "sog", 
+    "collector_number": "004b", 
+    "name": "GCPD Detective", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      37
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "police"
+    ], 
+    "keywords": [
+      "Detective", 
+      "Gotham City", 
+      "Police"
+    ], 
+    "special_powers": [
+      {
+        "type": "damage", 
+        "name": "INTERNAL AFFAIRS", 
+        "description": "GCPD Detective can use Perplex, but may only target characters that share a keyword with her and can't modify damage values.", 
+        "powers": [
+          "perplex"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "5", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_value": 6, 
+        "attack_value": 8, 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_value": 5, 
+        "attack_value": 8, 
+        "defense_value": 15, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 5, 
+        "attack_value": 7, 
+        "defense_value": 15, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 5, 
+        "attack_value": 7, 
+        "defense_value": 15, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "sog005a", 
+    "set_id": "sog", 
+    "collector_number": "005a", 
+    "name": "GCPD Sergeant", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      51
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "police"
+    ], 
+    "keywords": [
+      "Gotham City", 
+      "Police", 
+      "Soldier"
+    ], 
+    "special_powers": [
+      {
+        "type": "defense", 
+        "name": "COVER FIRE", 
+        "description": "GCPD Sergeant can use Toughness. When GCPD Sergeant is adjacent to a friendly character with the Police team ability, modify both characters' defense values by +1 if not already modified by this effect.", 
+        "powers": [
+          "toughness"
+        ]
+      }, 
+      {
+        "type": "damage", 
+        "name": "GROUP ORGANIZER", 
+        "description": "GCPD Sergeant can use Leadership and Perplex. When he uses Leadership, all friendly characters with the Police team ability are considered to have a lower point value.", 
+        "powers": [
+          "leadership", 
+          "perplex"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "6", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "sharpshooter", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_value": 6, 
+        "attack_value": 10, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_value": 5, 
+        "attack_value": 9, 
+        "defense_power": "special", 
+        "defense_value": 15, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 3, 
+        "speed_value": 5, 
+        "attack_value": 8, 
+        "defense_power": "special", 
+        "defense_value": 15, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 5, 
+        "attack_value": 7, 
+        "defense_power": "special", 
+        "defense_value": 14, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "sog005b", 
+    "set_id": "sog", 
+    "collector_number": "005b", 
+    "name": "GCPD Sergeant", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      51
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "police"
+    ], 
+    "keywords": [
+      "Gotham City", 
+      "Police", 
+      "Soldier"
+    ], 
+    "special_powers": [], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "6", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "sharpshooter", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "running_shot", 
+        "speed_value": 6, 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "running_shot", 
+        "speed_value": 5, 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 15, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 3, 
+        "speed_value": 5, 
+        "attack_value": 8, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 15, 
+        "damage_power": "enhancement", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 5, 
+        "attack_value": 7, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 14, 
+        "damage_power": "enhancement", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "sog006", 
+    "set_id": "sog", 
+    "collector_number": "006", 
+    "name": "Blue Beetle", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      61
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "justice_league"
+    ], 
+    "keywords": [
+      "Birds of Prey", 
+      "Justice League", 
+      "Justice League International", 
+      "Pilot", 
+      "Scientist"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "BEETLE'S BUG", 
+        "description": "When Blue Beetle pilots a vehicle named The Bug, modify the vehicle's speed and attack values by +1."
+      }, 
+      {
+        "type": "attack", 
+        "name": "BB GUN", 
+        "description": "Blue Beetle's ranged combat attacks cause knock back, but the target reduces knockback damage by 1.  If the result of the attack roll was doubles, double the number of squares the character is knocked back."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "5", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "flurry", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "flurry", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "leap_climb", 
+        "speed_value": 6, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 15, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "leap_climb", 
+        "speed_value": 6, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 15, 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "sog007a", 
+    "set_id": "sog", 
+    "collector_number": "007a", 
+    "name": "False Facer", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      32
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "batman_enemy", 
+      "underworld"
+    ], 
+    "keywords": [
+      "Gotham City Underworld"
+    ], 
+    "special_powers": [
+      {
+        "type": "attack", 
+        "name": "GUNSEL", 
+        "description": "False Facer can use Probability Control, but may only reroll his own ranged combat attacks.", 
+        "powers": [
+          "probability_control"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "5", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_value": 6, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_value": 16, 
+        "damage_power": "shape_change", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_value": 6, 
+        "attack_power": "special", 
+        "attack_value": 8, 
+        "defense_value": 16, 
+        "damage_power": "shape_change", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_value": 5, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_value": 15, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 5, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_value": 15, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "sog007b", 
+    "set_id": "sog", 
+    "collector_number": "007b", 
+    "name": "False Facer", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      32
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "batman_enemy", 
+      "underworld"
+    ], 
+    "keywords": [
+      "Gotham City Underworld"
+    ], 
+    "special_powers": [
+      {
+        "type": "damage", 
+        "name": "MINION: THUGS WITH PURPOSE", 
+        "description": "When a friendly character named Black Mask is within 8 squares False Facer can use Poison.", 
+        "powers": [
+          "poison"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "5", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "plasticity", 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "plasticity", 
+        "speed_value": 6, 
+        "attack_value": 8, 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "flurry", 
+        "speed_value": 5, 
+        "attack_value": 9, 
+        "defense_value": 15, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "flurry", 
+        "speed_value": 5, 
+        "attack_value": 9, 
+        "defense_value": 15, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "sog008", 
+    "set_id": "sog", 
+    "collector_number": "008", 
+    "name": "Fire", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      75
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "justice_league"
+    ], 
+    "keywords": [
+      "Checkmate", 
+      "Global Guardians", 
+      "Justice League", 
+      "Justice League International", 
+      "Spy"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "FAST FRIENDS", 
+        "description": "When Fire carries a character named Ice that has no action tokens, Ice may be given a non-free action this turn."
+      }, 
+      {
+        "type": "damage", 
+        "name": "FIERY FORM", 
+        "description": "When Fire takes damage from a close combat attack, the attacker is dealt 1 unavoidable damage."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "6", 
+    "targets": "2", 
+    "speed_type": "wing", 
+    "attack_type": "sharpshooter", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 9, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 10, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_value": 8, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 9, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 15, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 7, 
+        "attack_power": "poison", 
+        "attack_value": 9, 
+        "defense_value": 15, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 7, 
+        "attack_power": "poison", 
+        "attack_value": 8, 
+        "defense_value": 15, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "sog009", 
+    "set_id": "sog", 
+    "collector_number": "009", 
+    "name": "Dove", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      86
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "batman_ally"
+    ], 
+    "keywords": [
+      "Birds of Prey", 
+      "Brightest Day", 
+      "Mystical"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "USE YOUR STRENGTH AGAINST YOU", 
+        "description": "When Dove makes a close combat attack, replace her damage value with the printed damage value of her target."
+      }, 
+      {
+        "type": "defense", 
+        "name": "AGILE DEFENDER", 
+        "description": "Dove can use Defend and Super Senses.", 
+        "powers": [
+          "defend", 
+          "super_senses"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "wing", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 18, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 0
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_value": 11, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 0
+      }, 
+      {
+        "click_number": 3, 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 0
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "flurry", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 0
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "flurry", 
+        "speed_value": 6, 
+        "attack_value": 8, 
+        "defense_power": "regeneration", 
+        "defense_value": 15, 
+        "damage_value": 0
+      }
+    ]
+  }, 
+  {
+    "unit_id": "sog010a", 
+    "set_id": "sog", 
+    "collector_number": "010a", 
+    "name": "Black Glove Demon", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      34
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "batman_enemy"
+    ], 
+    "keywords": [
+      "Black Glove", 
+      "Brute"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "STRIKE FROM THE SHADOWS", 
+        "description": "When a friendly character misses an opposing character adjacent to Black Glove Demon, after actions resolve, you may give Black Glove Demon a free action to make a close combat attack targeting the same opposing character."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "stealth", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_value": 16, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "flurry", 
+        "speed_value": 6, 
+        "attack_value": 8, 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "flurry", 
+        "speed_value": 6, 
+        "attack_value": 8, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "stealth", 
+        "speed_value": 6, 
+        "attack_value": 8, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 15, 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "sog010b", 
+    "set_id": "sog", 
+    "collector_number": "010b", 
+    "name": "Black Glove Demon", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      34
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "batman_enemy"
+    ], 
+    "keywords": [
+      "Black Glove", 
+      "Brute"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "WE ARE LEGION, UNSTOPPABLE", 
+        "description": "At the end of your turn, you may place Black Glove Demon in an adjacent square."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "leap_climb", 
+        "speed_value": 7, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "leap_climb", 
+        "speed_value": 6, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 8, 
+        "defense_value": 16, 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "force_blast", 
+        "speed_value": 6, 
+        "attack_value": 8, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "force_blast", 
+        "speed_value": 6, 
+        "attack_value": 8, 
+        "defense_value": 15, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "sog011", 
+    "set_id": "sog", 
+    "collector_number": "011", 
+    "name": "Dr. Hurt", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      82
+    ], 
+    "properties": [
+      "unique"
+    ], 
+    "team_abilities": [
+      "underworld"
+    ], 
+    "keywords": [
+      "Black Glove", 
+      "Past"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "THE HOLE IN THINGS", 
+        "description": "Dr. Hurt can use Mind Control. When a friendly character adjacent to Dr. Hurt makes an attack roll that misses and the roll was doubles, remove an action token from a friendly character that is not the attacker.", 
+        "powers": [
+          "mind_control"
+        ]
+      }, 
+      {
+        "type": "damage", 
+        "name": "THE ULTIMATE FOE", 
+        "description": "Dr. Hurt can use Outwit, Shape Change, and Support.", 
+        "powers": [
+          "outwit", 
+          "shape_change", 
+          "support"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "6", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "stealth", 
+        "speed_value": 6, 
+        "attack_value": 11, 
+        "defense_power": "mastermind", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "stealth", 
+        "speed_value": 6, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 10, 
+        "defense_power": "mastermind", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "stealth", 
+        "speed_value": 6, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 10, 
+        "defense_power": "mastermind", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "stealth", 
+        "speed_value": 5, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 10, 
+        "defense_power": "mastermind", 
+        "defense_value": 17, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "stealth", 
+        "speed_value": 5, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 9, 
+        "defense_value": 18, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "sog012", 
+    "set_id": "sog", 
+    "collector_number": "012", 
+    "name": "Robin", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      100
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "batman_ally"
+    ], 
+    "keywords": [
+      "Batman Family", 
+      "Batman Inc", 
+      "Detective", 
+      "Teen"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "SOMEDAY HE MIGHT BE BETTER THAN ME", 
+        "description": "Robin can use Perplex.", 
+        "powers": [
+          "perplex"
+        ]
+      }
+    ], 
+    "improved_movement": [
+      "elevated", 
+      "hindering"
+    ], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "5", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "smoke_cloud", 
+        "attack_value": 10, 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "smoke_cloud", 
+        "attack_value": 10, 
+        "defense_value": 16, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "flurry", 
+        "speed_value": 8, 
+        "attack_power": "smoke_cloud", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "flurry", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 15, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 15, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "sog013", 
+    "set_id": "sog", 
+    "collector_number": "013", 
+    "name": "Batman", 
+    "type": "character", 
+    "rarity": "uncommon", 
+    "dimensions": "1x1", 
+    "point_values": [
+      128
+    ], 
+    "properties": [
+      "unique"
+    ], 
+    "team_abilities": [
+      "batman_ally"
+    ], 
+    "keywords": [
+      "Armor", 
+      "Batman Family", 
+      "Batman Inc", 
+      "Detective"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "I HAVE MISSIONS FOR ALL OF MY ALLIES", 
+        "description": "Batman can use Leadership and Perplex, when he uses Perplex, he can only target friendly characters possessing the same team ability or keyword as Batman.", 
+        "powers": [
+          "leadership", 
+          "perplex"
+        ]
+      }, 
+      {
+        "type": "speed", 
+        "name": "JETSUIT", 
+        "description": "Batman can use Charge and the Flight ability.", 
+        "powers": [
+          "charge"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "5", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 10, 
+        "attack_power": "super_strength", 
+        "attack_value": 11, 
+        "defense_power": "toughness", 
+        "defense_value": 18, 
+        "damage_power": "outwit", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "special", 
+        "speed_value": 8, 
+        "attack_power": "super_strength", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 18, 
+        "damage_power": "outwit", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "leap_climb", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "leap_climb", 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "flurry", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "flurry", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "flurry", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "sog014", 
+    "set_id": "sog", 
+    "collector_number": "014", 
+    "name": "Huntress", 
+    "type": "character", 
+    "rarity": "uncommon", 
+    "dimensions": "1x1", 
+    "point_values": [
+      59
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "batman_ally"
+    ], 
+    "keywords": [
+      "Batman Family", 
+      "Birds of Prey"
+    ], 
+    "special_powers": [
+      {
+        "type": "damage", 
+        "name": "KNEECAPPING ISN'T KILLING", 
+        "description": "Huntress can use Close Combat Expert.  When Huntress hits a target with a ranged combat attack, modify the target's speed value by -2 until the beginning of your next turn.", 
+        "powers": [
+          "close_combat_expert"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "5", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "flurry", 
+        "speed_value": 8, 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "flurry", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "flurry", 
+        "speed_value": 7, 
+        "attack_value": 8, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_power": "perplex", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "sog015a", 
+    "set_id": "sog", 
+    "collector_number": "015a", 
+    "name": "Renee Montoya", 
+    "type": "character", 
+    "rarity": "uncommon", 
+    "dimensions": "1x1", 
+    "point_values": [
+      40
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "police"
+    ], 
+    "keywords": [
+      "Detective", 
+      "Gotham City", 
+      "Police"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "PARTNERS", 
+        "description": "When a friendly character named Harvey Bullock is adjacent to Renee Montoya, they both modify their attack values by +1 if not already modified by this effect."
+      }, 
+      {
+        "type": "attack", 
+        "name": "ALTER EGO:THE QUESTION", 
+        "description": "Give Renee Montoya a power action that deals no pushing damage and replace her with a SOG #015b The Question on its orange starting line. This power can't be countered."
+      }, 
+      {
+        "type": "damage", 
+        "name": "DIVIDE THE ENFORCERS FROM THE BOSSES", 
+        "description": "Opposing characters within 6 squares can't use Leadership or the Carry ability."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "5", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "defend", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "plasticity", 
+        "speed_value": 6, 
+        "attack_value": 8, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "plasticity", 
+        "speed_value": 5, 
+        "attack_power": "special", 
+        "attack_value": 8, 
+        "defense_power": "willpower", 
+        "defense_value": 15, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "plasticity", 
+        "speed_value": 5, 
+        "attack_power": "special", 
+        "attack_value": 8, 
+        "defense_power": "willpower", 
+        "defense_value": 15, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "sog015b", 
+    "set_id": "sog", 
+    "collector_number": "015b", 
+    "name": "The Question", 
+    "type": "character", 
+    "rarity": "uncommon", 
+    "dimensions": "1x1", 
+    "point_values": [
+      55
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Detective", 
+      "Gotham City", 
+      "Police"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "ASKING QUESTIONS", 
+        "description": "The Question does not possess the Police team ability.  At the beginning of your turn, the Question can use Smoke Cloud as a free action, but can only place 1 hindering terrain marker.", 
+        "powers": [
+          "smoke_cloud"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "5", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "stealth", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "probability_control", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "leap_climb", 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_power": "willpower", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "leap_climb", 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "stealth", 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "probability_control", 
+        "damage_value": 2, 
+        "starting_line": "orange"
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "leap_climb", 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "flurry", 
+        "speed_value": 6, 
+        "attack_value": 8, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_power": "outwit", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "sog016", 
+    "set_id": "sog", 
+    "collector_number": "016", 
+    "name": "Harvey Bullock", 
+    "type": "character", 
+    "rarity": "uncommon", 
+    "dimensions": "1x1", 
+    "point_values": [
+      32
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "police"
+    ], 
+    "keywords": [
+      "Detective", 
+      "Gotham City", 
+      "Police"
+    ], 
+    "special_powers": [
+      {
+        "type": "speed", 
+        "name": "LEMME SHOW YOU HOW WE STAKEOUT", 
+        "description": "Harvey Bullock and adjacent friendly characters who possess a keyword or team ability in common with him can use Stealth.", 
+        "powers": [
+          "stealth"
+        ]
+      }, 
+      {
+        "type": "damage", 
+        "name": "I WANT THE BIG FISH", 
+        "description": "Opposing characters within 6 squares and line of fire can't use Mastermind or Shape Change."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "4", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 5, 
+        "attack_value": 9, 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_value": 5, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 9, 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 3, 
+        "speed_value": 5, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 8, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 4, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 8, 
+        "defense_power": "willpower", 
+        "defense_value": 15, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 4, 
+        "attack_value": 8, 
+        "defense_power": "willpower", 
+        "defense_value": 15, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "sog017", 
+    "set_id": "sog", 
+    "collector_number": "017", 
+    "name": "Ice", 
+    "type": "character", 
+    "rarity": "uncommon", 
+    "dimensions": "1x1", 
+    "point_values": [
+      64
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "justice_league"
+    ], 
+    "keywords": [
+      "Deity", 
+      "Global Guardians", 
+      "Justice League", 
+      "Justice League International"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "UNLIKELY COUPLE", 
+        "description": "When a friendly character named Guy Gardner is adjacent to Ice they both modify their attack values by +1 if not already modified by this effect."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "6", 
+    "targets": "2", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "running_shot", 
+        "speed_value": 7, 
+        "attack_power": "incapacitate", 
+        "attack_value": 9, 
+        "defense_power": "barrier", 
+        "defense_value": 17, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "running_shot", 
+        "speed_value": 7, 
+        "attack_power": "incapacitate", 
+        "attack_value": 9, 
+        "defense_power": "barrier", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "running_shot", 
+        "speed_value": 7, 
+        "attack_power": "incapacitate", 
+        "attack_value": 8, 
+        "defense_power": "barrier", 
+        "defense_value": 16, 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "plasticity", 
+        "speed_value": 6, 
+        "attack_value": 8, 
+        "defense_power": "defend", 
+        "defense_value": 18, 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "plasticity", 
+        "speed_value": 6, 
+        "attack_value": 8, 
+        "defense_power": "defend", 
+        "defense_value": 18, 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "sog018", 
+    "set_id": "sog", 
+    "collector_number": "018", 
+    "name": "Hawk", 
+    "type": "character", 
+    "rarity": "uncommon", 
+    "dimensions": "1x1", 
+    "point_values": [
+      89
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "justice_league"
+    ], 
+    "keywords": [
+      "Birds of Prey", 
+      "Brightest Day", 
+      "Mystical", 
+      "Teen Titans", 
+      "Warrior"
+    ], 
+    "special_powers": [], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 6, 
+        "attack_power": "super_strength", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "super_strength", 
+        "attack_value": 9, 
+        "defense_power": "invulnerability", 
+        "defense_value": 16, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "super_strength", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "flurry", 
+        "speed_value": 7, 
+        "attack_value": 11, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "battle_fury", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "flurry", 
+        "speed_value": 7, 
+        "attack_value": 11, 
+        "defense_power": "super_senses", 
+        "defense_value": 18, 
+        "damage_power": "battle_fury", 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 6, 
+        "speed_value": 7, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "regeneration", 
+        "defense_value": 17, 
+        "damage_power": "battle_fury", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 7, 
+        "speed_value": 6, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_power": "regeneration", 
+        "defense_value": 16, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "sog019", 
+    "set_id": "sog", 
+    "collector_number": "019", 
+    "name": "Red Hood", 
+    "type": "character", 
+    "rarity": "uncommon", 
+    "dimensions": "1x1", 
+    "point_values": [
+      96
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "outsiders"
+    ], 
+    "keywords": [
+      "Outlaws", 
+      "Warrior"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "BULLSEYE", 
+        "description": "When Red Hood makes a successful ranged combat attack and either die is a 6, the damage dealt is penetrating damage."
+      }, 
+      {
+        "type": "attack", 
+        "name": "GUNS BLAZING", 
+        "description": "When making a ranged combat attack, modify Red Hood's attack value by +1 for each target."
+      }
+    ], 
+    "improved_movement": [
+      "hindering"
+    ], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "5", 
+    "targets": "2", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "running_shot", 
+        "speed_value": 6, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_value": 7, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 7, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 6, 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 15, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "sog020", 
+    "set_id": "sog", 
+    "collector_number": "020", 
+    "name": "Calendar Man", 
+    "type": "character", 
+    "rarity": "uncommon", 
+    "dimensions": "1x1", 
+    "point_values": [
+      52
+    ], 
+    "properties": [
+      "unique"
+    ], 
+    "team_abilities": [
+      "batman_enemy"
+    ], 
+    "keywords": [
+      "Arkham Asylum"
+    ], 
+    "special_powers": [
+      {
+        "type": "speed", 
+        "name": "ODD DAYS...AND EVEN", 
+        "description": "Calendar Man can use Stealth.  When the game begins on a day with an even-numbered day of the month: Give Calendar Man a power action; halve the speed value and range value of a target opposing character until the beginning of your next turn.  When the game begins on a day with an odd-numbered day of the month: Give Calendar Man a power action; up to three friendly characters adjacent to him can use Phasing/Teleport until the beginning of your next turn.", 
+        "powers": [
+          "stealth"
+        ]
+      }, 
+      {
+        "type": "attack", 
+        "name": "WEEKEND WARRIORS", 
+        "description": "Calendar Man can use Energy Explosion.  When the game begins on Monday through Thursday, Calendar Man can use Outwit; when he counters an ability he counteres that ability on all opposing characters.  When the game begins on Friday through Sunday: modify the attack value of friendly characters adjacent to Calendar Man by +1.", 
+        "powers": [
+          "energy_explosion", 
+          "outwit"
+        ]
+      }, 
+      {
+        "type": "damage", 
+        "name": "CELEBRATING HOLIDAYS WITH A BANG", 
+        "description": "Calendar Man can use Probability Control.  Give Calendar Man a power action and roll a d6.  When the battle begins during the winter or spring, on a result of 5-6 give an action token to an opposing character within 10 squares and adjacent to or holding an object.  When the battle begins during the summer or fall, on a result of 5-6, deal 1 penetrating damage to an opposing character within 10 squares and adjacent to or holding an object.", 
+        "powers": [
+          "probability_control"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "4", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 6, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "mastermind", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "special", 
+        "speed_value": 6, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "mastermind", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "special", 
+        "speed_value": 5, 
+        "attack_power": "special", 
+        "attack_value": 8, 
+        "defense_power": "mastermind", 
+        "defense_value": 15, 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "special", 
+        "speed_value": 5, 
+        "attack_value": 8, 
+        "defense_power": "mastermind", 
+        "defense_value": 15, 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "sog021", 
+    "set_id": "sog", 
+    "collector_number": "021", 
+    "name": "Killer Croc", 
+    "type": "character", 
+    "rarity": "uncommon", 
+    "dimensions": "1x1", 
+    "point_values": [
+      96
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "batman_enemy"
+    ], 
+    "keywords": [
+      "Animal", 
+      "Arkham Asylum", 
+      "Brute", 
+      "Society"
+    ], 
+    "special_powers": [
+      {
+        "type": "attack", 
+        "name": "CHOMP", 
+        "description": "Killer Croc can use Blades/Claws/Fangs and Super Strength. When he uses Blades/Claws/Fangs and the d6 result is 3 or less, damage from the attack is penetrating damage.", 
+        "powers": [
+          "blades_claws_fangs", 
+          "super_strength"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "dolphin", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 6, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "charge", 
+        "speed_value": 6, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "charge", 
+        "speed_value": 6, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 15, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "charge", 
+        "speed_value": 6, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 15, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 5, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_value": 5, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 15, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "stealth", 
+        "speed_value": 5, 
+        "attack_power": "steal_energy", 
+        "attack_value": 8, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 14, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 8, 
+        "speed_power": "stealth", 
+        "speed_value": 5, 
+        "attack_power": "steal_energy", 
+        "attack_value": 8, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 14, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "sog022", 
+    "set_id": "sog", 
+    "collector_number": "022", 
+    "name": "Harvey Dent", 
+    "type": "character", 
+    "rarity": "uncommon", 
+    "dimensions": "1x1", 
+    "point_values": [
+      93
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "police"
+    ], 
+    "keywords": [
+      "Gotham City", 
+      "Police", 
+      "Politician"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "MORPH: HORRIFIC TRANSFORMATION", 
+        "description": "When Harvey Dent takes 2 or more damage from an attack, roll a d6. On a result of 4-6, you may replace this character with BM #022 Two-Face on the same click number."
+      }, 
+      {
+        "type": "defense", 
+        "name": "CLEANING UP THE STREETS", 
+        "description": "Harvey Dent can use Defend and Toughness. When he uses Defend, adjacent characters with a point value less than 50 also modify their defense values by +1.", 
+        "powers": [
+          "defend", 
+          "toughness"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "flurry", 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "flurry", 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "special", 
+        "defense_value": 16, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "flurry", 
+        "speed_value": 5, 
+        "attack_value": 8, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "flurry", 
+        "speed_value": 5, 
+        "attack_value": 8, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "flurry", 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "special", 
+        "defense_value": 16, 
+        "damage_power": "outwit", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "flurry", 
+        "speed_value": 5, 
+        "attack_value": 10, 
+        "defense_value": 15, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "sog023", 
+    "set_id": "sog", 
+    "collector_number": "023", 
+    "name": "Scarecrow", 
+    "type": "character", 
+    "rarity": "uncommon", 
+    "dimensions": "1x1", 
+    "point_values": [
+      74
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "batman_enemy"
+    ], 
+    "keywords": [
+      "Arkham Asylum", 
+      "Scientist"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "FEAR GAS", 
+        "description": "At the end of your turn, Scarecrow can use Smoke Cloud as a free action. Adjacent friendly characters occupying a hindering terrain token placed by Scarecrow's Smoke Cloud are considered to have a lower point value when Scarecrow uses Mastermind.", 
+        "powers": [
+          "smoke_cloud"
+        ]
+      }, 
+      {
+        "type": "attack", 
+        "name": "MANIAPHOBIA", 
+        "description": "Scarecrow can use Incapacitate as if he had 3 targets. When he does, instead of giving each hit target an action token, he may instead deal penetrating damage to the target(s) equal to the number of action tokens on each target.", 
+        "powers": [
+          "incapacitate"
+        ]
+      }
+    ], 
+    "improved_movement": [
+      "hindering", 
+      "characters"
+    ], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "4", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "stealth", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "mastermind", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "stealth", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "mastermind", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "stealth", 
+        "speed_value": 6, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "mastermind", 
+        "defense_value": 17, 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "stealth", 
+        "speed_value": 6, 
+        "attack_power": "poison", 
+        "attack_value": 9, 
+        "defense_power": "mastermind", 
+        "defense_value": 17, 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "stealth", 
+        "speed_value": 6, 
+        "attack_power": "poison", 
+        "attack_value": 8, 
+        "defense_power": "mastermind", 
+        "defense_value": 17, 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "sog024", 
+    "set_id": "sog", 
+    "collector_number": "024", 
+    "name": "Mr. Zsasz", 
+    "type": "character", 
+    "rarity": "rare", 
+    "dimensions": "1x1", 
+    "point_values": [
+      45
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "batman_enemy"
+    ], 
+    "keywords": [
+      "Arkham Asylum"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "COUNTING COUP", 
+        "description": "Each time Mr. Zsasz damages an opposing character, place a tally token on Mr. Zsasz's card. When he makes an attack, you may remove one tally token to modify his damage value by +1 or remove two tally tokens to have damage dealt from the attack be penetrating."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "stealth", 
+        "speed_value": 6, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_value": 17, 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "stealth", 
+        "speed_value": 6, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "flurry", 
+        "speed_value": 6, 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 15, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "flurry", 
+        "speed_value": 5, 
+        "attack_value": 9, 
+        "defense_value": 16, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 5, 
+        "attack_value": 8, 
+        "defense_value": 15, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "sog025", 
+    "set_id": "sog", 
+    "collector_number": "025", 
+    "name": "OMAC", 
+    "type": "character", 
+    "rarity": "rare", 
+    "dimensions": "1x1", 
+    "point_values": [
+      96
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Robot", 
+      "Warrior"
+    ], 
+    "special_powers": [], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "8", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "earthbound_neutralized", 
+        "speed_value": 6, 
+        "attack_value": 8, 
+        "defense_value": 15, 
+        "damage_power": "shape_change", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "pulse_wave", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "charge", 
+        "speed_value": 6, 
+        "attack_power": "quake", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "charge", 
+        "speed_value": 6, 
+        "attack_power": "quake", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 18, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "charge", 
+        "speed_value": 6, 
+        "attack_power": "super_strength", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 18, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "plasticity", 
+        "speed_value": 6, 
+        "attack_power": "super_strength", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "plasticity", 
+        "speed_value": 6, 
+        "attack_power": "super_strength", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 8, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 10, 
+        "attack_power": "pulse_wave", 
+        "attack_value": 10, 
+        "defense_power": "regeneration", 
+        "defense_value": 15, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 9, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 10, 
+        "attack_power": "pulse_wave", 
+        "attack_value": 10, 
+        "defense_power": "regeneration", 
+        "defense_value": 14, 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "sog026", 
+    "set_id": "sog", 
+    "collector_number": "026", 
+    "name": "Commissioner Gordon", 
+    "type": "character", 
+    "rarity": "rare", 
+    "dimensions": "1x1", 
+    "point_values": [
+      56
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "police"
+    ], 
+    "keywords": [
+      "Gotham City", 
+      "Police", 
+      "Politician"
+    ], 
+    "special_powers": [
+      {
+        "type": "speed", 
+        "name": "ON ME, OFFICERS!", 
+        "description": "Commissioner Gordon can use Enhancement and Running Shot. Give a friendly character with the Police keyword a power action to move up to half of their speed value. If you do and they end their move adjacent to Commissioner Gordon, you may give that character a ranged combat action as a free action.", 
+        "powers": [
+          "enhancement", 
+          "running_shot"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "5", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "leadership", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "special", 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "special", 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_value": 15, 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_value": 15, 
+        "damage_power": "perplex", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 5, 
+        "attack_value": 8, 
+        "defense_value": 14, 
+        "damage_power": "perplex", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "sog027", 
+    "set_id": "sog", 
+    "collector_number": "027", 
+    "name": "Guy Gardner", 
+    "type": "character", 
+    "rarity": "rare", 
+    "dimensions": "1x1", 
+    "point_values": [
+      142
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "justice_league"
+    ], 
+    "keywords": [
+      "Green Lantern Corps", 
+      "Justice League", 
+      "Justice League International"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "I CARRY THIS TEAM", 
+        "description": "When Guy Gardner is adjacent to a character with whom he shares a keyword, unless they have already been modified by this effect, modify Guy Gardner's damage value by +1 and the adjacent character's defense value by +1."
+      }, 
+      {
+        "type": "speed", 
+        "name": "TWO-FISTED CHARGE", 
+        "description": "Guy Gardner can use Charge and Flurry; when he uses Flurry to attack the same character twice, damage dealt by the second attack is penetrating damage.", 
+        "powers": [
+          "charge", 
+          "flurry"
+        ]
+      }, 
+      {
+        "type": "damage", 
+        "name": "BUSTING HEADS", 
+        "description": "Guy Gardner can use Exploit Weakness and possesses Battle Fury.", 
+        "powers": [
+          "exploit_weakness", 
+          "battle_fury"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "8", 
+    "targets": "1", 
+    "speed_type": "wing", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 10, 
+        "attack_power": "quake", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "special", 
+        "speed_value": 8, 
+        "attack_power": "quake", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "special", 
+        "speed_value": 8, 
+        "attack_power": "quake", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 18, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "special", 
+        "speed_value": 8, 
+        "attack_power": "quake", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 18, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 9, 
+        "attack_power": "telekinesis", 
+        "attack_value": 9, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 6, 
+        "speed_value": 8, 
+        "attack_power": "telekinesis", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 7, 
+        "speed_value": 8, 
+        "attack_power": "telekinesis", 
+        "attack_value": 8, 
+        "defense_power": "regeneration", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "sog028", 
+    "set_id": "sog", 
+    "collector_number": "028", 
+    "name": "Vixen", 
+    "type": "character", 
+    "rarity": "rare", 
+    "dimensions": "1x1", 
+    "point_values": [
+      74
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "justice_league"
+    ], 
+    "keywords": [
+      "Animal", 
+      "Justice League International"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "TANTU TOTEM", 
+        "description": "Give Vixen a free action and she can use any one standard power possessed by any one character on the battlefield with the Animal keyword until your next turn and as long as that character possesses the power. When she does, at the beginning of her next turn, roll a d6 and on a result of 1 deal Vixen 1 unavoidable damage."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "8", 
+    "targets": "1", 
+    "speed_type": "wing", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "super_strength", 
+        "attack_value": 10, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 16, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "flurry", 
+        "speed_value": 7, 
+        "attack_power": "super_strength", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "flurry", 
+        "speed_value": 7, 
+        "attack_power": "poison", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 6, 
+        "attack_power": "poison", 
+        "attack_value": 8, 
+        "defense_power": "regeneration", 
+        "defense_value": 15, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_value": 6, 
+        "attack_power": "poison", 
+        "attack_value": 8, 
+        "defense_power": "regeneration", 
+        "defense_value": 14, 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "sog029", 
+    "set_id": "sog", 
+    "collector_number": "029", 
+    "name": "Onomatopoeia", 
+    "type": "character", 
+    "rarity": "rare", 
+    "dimensions": "1x1", 
+    "point_values": [
+      57
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "calculator"
+    ], 
+    "keywords": [
+      "Martial Artist", 
+      "Society"
+    ], 
+    "special_powers": [], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "5", 
+    "targets": "2", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "leap_climb", 
+        "speed_value": 7, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 9, 
+        "defense_power": "super_senses", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "flurry", 
+        "speed_value": 7, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "flurry", 
+        "speed_value": 7, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 6, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 15, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 6, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 8, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 15, 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "sog030", 
+    "set_id": "sog", 
+    "collector_number": "030", 
+    "name": "Black Mask", 
+    "type": "character", 
+    "rarity": "rare", 
+    "dimensions": "1x1", 
+    "point_values": [
+      73
+    ], 
+    "properties": [
+      "unique"
+    ], 
+    "team_abilities": [
+      "underworld"
+    ], 
+    "keywords": [
+      "Arkham Asylum", 
+      "Gotham City Underworld"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "I PROTECT MY KEY MEN", 
+        "description": "When Black Mask is adjacent to a friendly character that is being dealt damage through Mastermind, you may give action tokens to that character, if you do, reduce the transferred damage by 1 for each action token given."
+      }, 
+      {
+        "type": "attack", 
+        "name": "HANDLE THIS MYSELF", 
+        "description": "Black Mask can use Close Combat Expert.", 
+        "powers": [
+          "close_combat_expert"
+        ]
+      }, 
+      {
+        "type": "damage", 
+        "name": "IT'S TIME CRIMINALS WALKED IN THE LIGHT", 
+        "description": "Black Mask can use Outwit. He can also use Perplex, but he can only target friendly characters.", 
+        "powers": [
+          "outwit", 
+          "perplex"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "5", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "mastermind", 
+        "defense_value": 16, 
+        "damage_power": "leadership", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "mastermind", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 3, 
+        "speed_value": 5, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "mastermind", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 5, 
+        "attack_power": "special", 
+        "attack_value": 8, 
+        "defense_power": "mastermind", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 5, 
+        "attack_value": 8, 
+        "defense_power": "mastermind", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "sog031", 
+    "set_id": "sog", 
+    "collector_number": "031", 
+    "name": "The Architect", 
+    "type": "character", 
+    "rarity": "rare", 
+    "dimensions": "1x1", 
+    "point_values": [
+      50
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Armor", 
+      "Gotham City Underworld", 
+      "Past"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "BRINGING DOWN GOTHAM", 
+        "description": "Give the Architect a close combat action and target a wall or square of blocking terrain; the targeted terrain is destroyed as well as an adjacent square of blocking terrain."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "5", 
+    "targets": "1", 
+    "speed_type": "dolphin", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_value": 6, 
+        "attack_power": "super_strength", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "flurry", 
+        "speed_value": 6, 
+        "attack_power": "super_strength", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "flurry", 
+        "speed_value": 5, 
+        "attack_power": "super_strength", 
+        "attack_value": 8, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 5, 
+        "attack_power": "super_strength", 
+        "attack_value": 8, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 5, 
+        "attack_power": "super_strength", 
+        "attack_value": 8, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "sog032", 
+    "set_id": "sog", 
+    "collector_number": "032", 
+    "name": "Batman", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      76
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "justice_league"
+    ], 
+    "keywords": [
+      "Batman Family", 
+      "Justice League"
+    ], 
+    "special_powers": [
+      {
+        "type": "attack", 
+        "name": "IT'S NECESSARY FOR THE WORLD TO BE AFRAID OF US", 
+        "description": "When Batman rolls doubles (except a critical miss) and misses, if the target has one action token, it is a hit instead of a miss."
+      }
+    ], 
+    "improved_movement": [
+      "hindering", 
+      "elevated"
+    ], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "4", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "stealth", 
+        "speed_value": 9, 
+        "attack_power": "smoke_cloud", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "stealth", 
+        "speed_value": 9, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "flurry", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "flurry", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 15, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "flurry", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_value": 15, 
+        "damage_power": "perplex", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "sog033", 
+    "set_id": "sog", 
+    "collector_number": "033", 
+    "name": "Superman", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      196
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "justice_league"
+    ], 
+    "keywords": [
+      "Justice League", 
+      "Kryptonian", 
+      "Metropolis"
+    ], 
+    "special_powers": [], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "7", 
+    "targets": "1", 
+    "speed_type": "wing", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 11, 
+        "attack_power": "super_strength", 
+        "attack_value": 10, 
+        "defense_power": "impervious", 
+        "defense_value": 18, 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "charge", 
+        "speed_value": 9, 
+        "attack_power": "super_strength", 
+        "attack_value": 11, 
+        "defense_power": "impervious", 
+        "defense_value": 17, 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "hypersonic_speed", 
+        "speed_value": 9, 
+        "attack_power": "super_strength", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "running_shot", 
+        "speed_value": 10, 
+        "attack_power": "super_strength", 
+        "attack_value": 9, 
+        "defense_power": "invulnerability", 
+        "defense_value": 18, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "hypersonic_speed", 
+        "speed_value": 9, 
+        "attack_power": "super_strength", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "hypersonic_speed", 
+        "speed_value": 8, 
+        "attack_power": "super_strength", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_power": "super_strength", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 18, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 8, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_power": "super_strength", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 18, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "sog034", 
+    "set_id": "sog", 
+    "collector_number": "034", 
+    "name": "Wonder Woman", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      125
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "justice_league"
+    ], 
+    "keywords": [
+      "Amazon", 
+      "Justice League", 
+      "Warrior"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "LASSO OF TRUTH", 
+        "description": "Wonder Woman can use Incapacitate as if she had a range of 6.  When she does, hit characters can't have their combat values modified until your next turn.", 
+        "powers": [
+          "incapacitate"
+        ]
+      }, 
+      {
+        "type": "defense", 
+        "name": "BULLETS AND BRACELETS", 
+        "description": "Wonder Woman can use Toughness; she can use Defend if an adjacent friendly character is the target of a ranged attack.", 
+        "powers": [
+          "toughness", 
+          "defend"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "wing", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "flurry", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 18, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "flurry", 
+        "speed_value": 8, 
+        "attack_value": 11, 
+        "defense_power": "special", 
+        "defense_value": 18, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "flurry", 
+        "speed_value": 8, 
+        "attack_value": 11, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "quake", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "charge", 
+        "speed_value": 6, 
+        "attack_power": "quake", 
+        "attack_value": 9, 
+        "defense_power": "invulnerability", 
+        "defense_value": 16, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "charge", 
+        "speed_value": 6, 
+        "attack_power": "quake", 
+        "attack_value": 9, 
+        "defense_power": "invulnerability", 
+        "defense_value": 16, 
+        "damage_value": 4
+      }
+    ]
+  }, 
+  {
+    "unit_id": "sog035", 
+    "set_id": "sog", 
+    "collector_number": "035", 
+    "name": "Void", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      70
+    ], 
+    "properties": [
+      "unique"
+    ], 
+    "team_abilities": [], 
+    "keywords": [
+      "Cosmic", 
+      "WildC.A.T.s"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "QUANTUM TRANSPORTER", 
+        "description": "When Void uses the Carry ability, she can carry up to four friendly characters. After Void resolves a move action, she may immediately use Support as a free action.", 
+        "powers": [
+          "support"
+        ]
+      }, 
+      {
+        "type": "damage", 
+        "name": "PRECOGNITION", 
+        "description": "Void can use Outwit, Probability Control, and Super Senses; when an action resolves after she uses any of these powers, roll a d6 that cannot be rerolled and on a result of 'one' deal Void 1 unavoidable damage.", 
+        "powers": [
+          "outwit", 
+          "probability_control", 
+          "super_senses"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "wing", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 12, 
+        "attack_value": 8, 
+        "defense_power": "barrier", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 11, 
+        "attack_value": 8, 
+        "defense_power": "barrier", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 10, 
+        "attack_value": 8, 
+        "defense_power": "barrier", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 10, 
+        "attack_value": 8, 
+        "defense_power": "regeneration", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 9, 
+        "attack_value": 8, 
+        "defense_power": "regeneration", 
+        "defense_value": 18, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "sog036", 
+    "set_id": "sog", 
+    "collector_number": "036", 
+    "name": "Spartan Warrior Spirit", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      125
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Robot", 
+      "Soldier", 
+      "Stormwatch", 
+      "WildC.A.T.s"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "ANDROID SOLDIER", 
+        "description": "Spartan Warrior Spirit can use Super Strength.", 
+        "powers": [
+          "super_strength"
+        ]
+      }, 
+      {
+        "type": "damage", 
+        "name": "TACTICAL SYSTEMS", 
+        "description": "Spartan Warrior Spirit can use Leadership. He can also use Perplex, but can only modify his own combat values.", 
+        "powers": [
+          "leadership", 
+          "perplex"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "5", 
+    "targets": "1", 
+    "speed_type": "wing", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "charge", 
+        "speed_value": 6, 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "charge", 
+        "speed_value": 6, 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "flurry", 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "flurry", 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 15, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "flurry", 
+        "speed_value": 6, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 9, 
+        "defense_power": "regeneration", 
+        "defense_value": 15, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 7, 
+        "speed_value": 6, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 9, 
+        "defense_power": "regeneration", 
+        "defense_value": 15, 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "sog037", 
+    "set_id": "sog", 
+    "collector_number": "037", 
+    "name": "Emp", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      93
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Politician", 
+      "WildC.A.T.s"
+    ], 
+    "special_powers": [
+      {
+        "type": "defense", 
+        "name": "IMMORTAL", 
+        "description": "Emp can use Invulnerability and Regeneration. When turning the dial, if this click is revealed due to damage taken from and opponent's attack, stop turning the dial. This power can't be ignored.", 
+        "powers": [
+          "invulnerability", 
+          "regeneration"
+        ]
+      }, 
+      {
+        "type": "damage", 
+        "name": "HIGH LORD", 
+        "description": "Emp can use Outwit and Perplex. When he uses Perplex, he can only target opposing characters.", 
+        "powers": [
+          "outwit", 
+          "perplex"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "stealth", 
+        "speed_value": 5, 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "stealth", 
+        "speed_value": 5, 
+        "attack_value": 9, 
+        "defense_power": "special", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 3, 
+        "speed_value": 4, 
+        "attack_value": 9, 
+        "defense_power": "special", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 4, 
+        "attack_value": 8, 
+        "defense_power": "special", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 4, 
+        "attack_value": 8, 
+        "defense_power": "special", 
+        "defense_value": 15, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "sog038", 
+    "set_id": "sog", 
+    "collector_number": "038", 
+    "name": "David Cain", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      76
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "batman_enemy"
+    ], 
+    "keywords": [
+      "Assassin", 
+      "League of Assassins", 
+      "Martial Artist", 
+      "Soldier"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "DEADLY MENTOR", 
+        "description": "As you reveal your force, choose a friendly character with a lower point value; David Cain can use Enhancement, Leadership, and Perplex, but he can only affect the chosen character. David Cain can use Shape Change when he is adjacent to the chosen character.", 
+        "powers": [
+          "enhancement", 
+          "leadership", 
+          "perplex", 
+          "shape_change"
+        ]
+      }
+    ], 
+    "improved_movement": [
+      "hindering"
+    ], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "8", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "sharpshooter", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "stealth", 
+        "speed_value": 7, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 11, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "stealth", 
+        "speed_value": 7, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "stealth", 
+        "speed_value": 7, 
+        "attack_power": "smoke_cloud", 
+        "attack_value": 9, 
+        "defense_value": 16, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "stealth", 
+        "speed_value": 6, 
+        "attack_power": "smoke_cloud", 
+        "attack_value": 9, 
+        "defense_value": 16, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "stealth", 
+        "speed_value": 6, 
+        "attack_power": "smoke_cloud", 
+        "attack_value": 10, 
+        "defense_value": 15, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "sog039", 
+    "set_id": "sog", 
+    "collector_number": "039", 
+    "name": "Lady Shiva", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      67
+    ], 
+    "properties": [
+      "unique"
+    ], 
+    "team_abilities": [], 
+    "keywords": [
+      "Assassin", 
+      "Birds of Prey", 
+      "League of Assassins", 
+      "Martial Artist"
+    ], 
+    "special_powers": [
+      {
+        "type": "damage", 
+        "name": "THE LEOPARD BLOW-A WARRIOR'S DEATH", 
+        "description": "Lady Shiva can use Flurry. When she does and the result of the attack roll is doubles, damage dealt by the attack is penetrating damage.", 
+        "powers": [
+          "flurry"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 11, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 18, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "leap_climb", 
+        "speed_value": 7, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 12, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "leap_climb", 
+        "speed_value": 7, 
+        "attack_value": 12, 
+        "defense_power": "super_senses", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "leap_climb", 
+        "speed_value": 7, 
+        "attack_power": "steal_energy", 
+        "attack_value": 11, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 15, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 7, 
+        "attack_power": "steal_energy", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 15, 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "sog040", 
+    "set_id": "sog", 
+    "collector_number": "040", 
+    "name": "Deathstroke", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      147
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "calculator"
+    ], 
+    "keywords": [
+      "Assassin", 
+      "Martial Artist", 
+      "Society", 
+      "Soldier"
+    ], 
+    "special_powers": [
+      {
+        "type": "speed", 
+        "name": "ATTACK FROM COVER", 
+        "description": "Deathstroke can use Stealth; when he occupies hindering terrain, he can use Charge and Running Shot.", 
+        "powers": [
+          "stealth", 
+          "charge", 
+          "running_shot"
+        ]
+      }
+    ], 
+    "improved_movement": [
+      "hindering"
+    ], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "6", 
+    "targets": "3", 
+    "speed_type": "boot", 
+    "attack_type": "sharpshooter", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 8, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 11, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "special", 
+        "speed_value": 8, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 18, 
+        "damage_power": "perplex", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "special", 
+        "speed_value": 8, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 18, 
+        "damage_power": "perplex", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "flurry", 
+        "speed_value": 7, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "flurry", 
+        "speed_value": 7, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "leap_climb", 
+        "speed_value": 6, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 10, 
+        "defense_power": "regeneration", 
+        "defense_value": 16, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "leap_climb", 
+        "speed_value": 6, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 11, 
+        "defense_power": "regeneration", 
+        "defense_value": 15, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 3
+      }
+    ]
+  }, 
+  {
+    "unit_id": "sog041", 
+    "set_id": "sog", 
+    "collector_number": "041", 
+    "name": "Black Canary", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      84
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "batman_ally"
+    ], 
+    "keywords": [
+      "Birds of Prey", 
+      "Martial Artist"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "ON THE RUN TOGETHER", 
+        "description": "When Black Canary is adjacent to a friendly figure with which she shares a keyword, modify her attack and defense values by +1."
+      }, 
+      {
+        "type": "speed", 
+        "name": "SPINNING KICK", 
+        "description": "Black Canary can use Charge and Flurry.", 
+        "powers": [
+          "charge", 
+          "flurry"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "4", 
+    "targets": "2", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 7, 
+        "attack_power": "incapacitate", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "enhancement", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "special", 
+        "speed_value": 7, 
+        "attack_power": "incapacitate", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "running_shot", 
+        "speed_value": 6, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "enhancement", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "running_shot", 
+        "speed_value": 6, 
+        "attack_power": "pulse_wave", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "running_shot", 
+        "speed_value": 6, 
+        "attack_power": "pulse_wave", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "enhancement", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "running_shot", 
+        "speed_value": 6, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 8, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "sog042", 
+    "set_id": "sog", 
+    "collector_number": "042", 
+    "name": "Starling", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      75
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "batman_ally"
+    ], 
+    "keywords": [
+      "Birds of Prey", 
+      "Spy"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "I'LL DRIVE US STRAIGHT THROUGH THAT WALL", 
+        "description": "Starling can use the Carry ability. When Starling moves, she may ignore the effects of one object or one square of blocking terrain for movement purposes. If she does, after she completes her move, destroy the object of square of terrain."
+      }
+    ], 
+    "improved_movement": [
+      "hindering"
+    ], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "5", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_value": 9, 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_value": 9, 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_value": 9, 
+        "defense_value": 16, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_value": 8, 
+        "defense_value": 16, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "plasticity", 
+        "speed_value": 6, 
+        "attack_value": 8, 
+        "defense_value": 15, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "plasticity", 
+        "speed_value": 6, 
+        "attack_value": 8, 
+        "defense_value": 15, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "sog043", 
+    "set_id": "sog", 
+    "collector_number": "043", 
+    "name": "Katana", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      71
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "batman_ally"
+    ], 
+    "keywords": [
+      "Birds of Prey", 
+      "Martial Artist", 
+      "Outsiders"
+    ], 
+    "special_powers": [
+      {
+        "type": "attack", 
+        "name": "SWEEPING SLASH", 
+        "description": "Katana can use Quake. When she does, roll a d6, subtract 2 (minimum 2) and hit characters are dealt the result instead of 2. This attack does not knock back characters.", 
+        "powers": [
+          "quake"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "leap_climb", 
+        "speed_value": 7, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "leap_climb", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 11, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "leap_climb", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 6, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 6, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 8, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 15, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 6, 
+        "speed_value": 6, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 8, 
+        "defense_power": "super_senses", 
+        "defense_value": 16, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "sog044", 
+    "set_id": "sog", 
+    "collector_number": "044", 
+    "name": "Starfire", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      83
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "outsiders"
+    ], 
+    "keywords": [
+      "Outlaws", 
+      "Warrior"
+    ], 
+    "special_powers": [
+      {
+        "type": "attack", 
+        "name": "LIVING STELLAR FLAME", 
+        "description": "Starfire can use Energy Explosion; when she does, damage dealt is penetrating.", 
+        "powers": [
+          "energy_explosion"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "8", 
+    "targets": "2", 
+    "speed_type": "wing", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "running_shot", 
+        "speed_value": 10, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "running_shot", 
+        "speed_value": 9, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 17, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 9, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 8, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 8, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 6, 
+        "speed_value": 8, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 8, 
+        "defense_power": "toughness", 
+        "defense_value": 15, 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "sog045", 
+    "set_id": "sog", 
+    "collector_number": "045", 
+    "name": "Arsenal", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      72
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "outsiders"
+    ], 
+    "keywords": [
+      "Outlaws"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "JUST PUT A BOW IN MY HANDS", 
+        "description": "When Arsenal makes a ranged combat attack, he may modify his attack value by +2 or he may modify both his attack and damage values by +1."
+      }, 
+      {
+        "type": "attack", 
+        "name": "TIME BOMB ARROW", 
+        "description": "Arsenal can use Incapacitate.  When he does, choose a hit character.  At the beginning of your next turn, roll a d6; on a result of 5-6, deal that character 1 damage.", 
+        "powers": [
+          "incapacitate"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "7", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "running_shot", 
+        "speed_value": 6, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "running_shot", 
+        "speed_value": 6, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "running_shot", 
+        "speed_value": 5, 
+        "attack_power": "special", 
+        "attack_value": 8, 
+        "defense_value": 17, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "running_shot", 
+        "speed_value": 5, 
+        "attack_power": "pulse_wave", 
+        "attack_value": 8, 
+        "defense_value": 16, 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 5, 
+        "attack_power": "pulse_wave", 
+        "attack_value": 8, 
+        "defense_value": 15, 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "sog046", 
+    "set_id": "sog", 
+    "collector_number": "046", 
+    "name": "Crux", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      82
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Monster", 
+      "Scientist"
+    ], 
+    "special_powers": [], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "wing", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "super_strength", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "plasticity", 
+        "speed_value": 7, 
+        "attack_power": "super_strength", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "plasticity", 
+        "speed_value": 7, 
+        "attack_power": "super_strength", 
+        "attack_value": 9, 
+        "defense_power": "invulnerability", 
+        "defense_value": 16, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "plasticity", 
+        "speed_value": 6, 
+        "attack_power": "poison", 
+        "attack_value": 8, 
+        "defense_power": "invulnerability", 
+        "defense_value": 15, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "plasticity", 
+        "speed_value": 6, 
+        "attack_power": "poison", 
+        "attack_value": 8, 
+        "defense_power": "willpower", 
+        "defense_value": 15, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "plasticity", 
+        "speed_value": 6, 
+        "attack_power": "poison", 
+        "attack_value": 8, 
+        "defense_power": "willpower", 
+        "defense_value": 15, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "sog047", 
+    "set_id": "sog", 
+    "collector_number": "047", 
+    "name": "Batman", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      90
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "batman_ally"
+    ], 
+    "keywords": [
+      "Batman Family", 
+      "Detective", 
+      "Gotham City", 
+      "Justice League", 
+      "Pilot"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "NO ONE RIDES BUT ME", 
+        "description": "When Batman becomes the pilot for SoG #V001 Batcycle, the vehicle may be given a non free action this turn."
+      }, 
+      {
+        "type": "trait", 
+        "name": "I BRING THE DARKNESS", 
+        "description": "When Batman passes through a square containing an opposing character during a move action, after actions resolve he may use Smoke Cloud as a free action but must place the first token in the square occupied by the opposing character.", 
+        "powers": [
+          "smoke_cloud"
+        ]
+      }, 
+      {
+        "type": "speed", 
+        "name": "ROLLING STRIKE", 
+        "description": "Batman can use Charge and Running Shot. When he uses Charge, after actions resolve he may be given a move action with his speed value halved as a free action.", 
+        "powers": [
+          "charge", 
+          "running_shot"
+        ]
+      }
+    ], 
+    "improved_movement": [
+      "hindering", 
+      "characters"
+    ], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "5", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 8, 
+        "attack_power": "smoke_cloud", 
+        "attack_value": 11, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "special", 
+        "speed_value": 8, 
+        "attack_power": "smoke_cloud", 
+        "attack_value": 11, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "special", 
+        "speed_value": 8, 
+        "attack_power": "smoke_cloud", 
+        "attack_value": 10, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "special", 
+        "speed_value": 8, 
+        "attack_power": "smoke_cloud", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 15, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 7, 
+        "attack_power": "smoke_cloud", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 15, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 15, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "sog048", 
+    "set_id": "sog", 
+    "collector_number": "048", 
+    "name": "Robin", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      59
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "titans"
+    ], 
+    "keywords": [
+      "Batman Family", 
+      "Detective", 
+      "Gotham City", 
+      "Pilot", 
+      "Teen Titans"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "SNAG AND DRAG", 
+        "description": "When Robin uses Incapacitate and hits, after actions resolve, Robin automatically breaks away and may move 4 squares as a free action and then places the hit character in an adjacent square."
+      }, 
+      {
+        "type": "trait", 
+        "name": "THAT'S MY BIKE!", 
+        "description": "When Robin becomes the pilot for SoG #V002 Robincycle, the vehicle may be given a non-free action this turn."
+      }, 
+      {
+        "type": "damage", 
+        "name": "ROAD TO DETECTIVE", 
+        "description": "The combat values of opposing characters adjacent to Robin cannot be modified if the modification would increase the value."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "4", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_power": "incapacitate", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_value": 8, 
+        "attack_power": "incapacitate", 
+        "attack_value": 10, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 9, 
+        "attack_value": 9, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 15, 
+        "damage_power": "perplex", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 9, 
+        "attack_value": 9, 
+        "defense_value": 16, 
+        "damage_power": "perplex", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "sog049", 
+    "set_id": "sog", 
+    "collector_number": "049", 
+    "name": "GCPD Motor Officer", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      33
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "police"
+    ], 
+    "keywords": [
+      "Gotham City", 
+      "Pilot", 
+      "Police"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "SPECIAL TRAINING", 
+        "description": "When GCPD Motor Officer becomes the pilot for SoG #V003 GCPD Motorcycle, the vehicle may be given a non-free action this turn."
+      }, 
+      {
+        "type": "attack", 
+        "name": "APB", 
+        "description": "When GCPD Motor Officer makes a ranged attack, after actions resolve, modify the defense value of the target by -1 until the end of your turn."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "5", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "running_shot", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 15, 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 3, 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 8, 
+        "defense_power": "willpower", 
+        "defense_value": 15, 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 6, 
+        "attack_value": 8, 
+        "defense_power": "willpower", 
+        "defense_value": 15, 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 6, 
+        "attack_value": 7, 
+        "defense_value": 15, 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "sog050", 
+    "set_id": "sog", 
+    "collector_number": "050", 
+    "name": "Batman", 
+    "type": "character", 
+    "rarity": "chase", 
+    "dimensions": "1x1", 
+    "point_values": [
+      83
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "police"
+    ], 
+    "keywords": [
+      "Ghosts of Batman", 
+      "Police"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "GHOSTS OF BATMAN", 
+        "description": "Once per game for all characters with this trait, choose an opposing character. When Batman attacks the chosen character, modify his attack value by +1 for each other friendly character with this trait."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "6", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "sharpshooter", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "running_shot", 
+        "speed_value": 6, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "enhancement", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "running_shot", 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_value": 6, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 10, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 16, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 5, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 10, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 16, 
+        "damage_power": "enhancement", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "charge", 
+        "speed_value": 5, 
+        "attack_value": 9, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 15, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "running_shot", 
+        "speed_value": 6, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 9, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 15, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "sog051", 
+    "set_id": "sog", 
+    "collector_number": "051", 
+    "name": "Batman", 
+    "type": "character", 
+    "rarity": "chase", 
+    "dimensions": "1x1", 
+    "point_values": [
+      101
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "police"
+    ], 
+    "keywords": [
+      "Brute", 
+      "Ghosts of Batman", 
+      "Police"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "GHOSTS OF BATMAN", 
+        "description": "Once per game for all characters with this trait, choose an opposing character. When Batman attacks the chosen character, modify his attack value by +1 for each other friendly character with this trait."
+      }, 
+      {
+        "type": "trait", 
+        "name": "ALPHA MALE", 
+        "description": "When Batman is adjacent to a friendly character with a shared keyword, that character can't be attacked if Batman can be attacked instead."
+      }, 
+      {
+        "type": "speed", 
+        "name": "VENOM ADDICT", 
+        "description": "Batman can use Flurry. When he does, modify his attack and damage values by +1 for the second attack if he attacks the same target as the first attack.", 
+        "powers": [
+          "flurry"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 7, 
+        "attack_power": "super_strength", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "special", 
+        "speed_value": 6, 
+        "attack_power": "super_strength", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "special", 
+        "speed_value": 6, 
+        "attack_power": "super_strength", 
+        "attack_value": 9, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "special", 
+        "speed_value": 5, 
+        "attack_power": "super_strength", 
+        "attack_value": 9, 
+        "defense_power": "invulnerability", 
+        "defense_value": 16, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "charge", 
+        "speed_value": 5, 
+        "attack_power": "super_strength", 
+        "attack_value": 8, 
+        "defense_power": "invulnerability", 
+        "defense_value": 16, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "charge", 
+        "speed_value": 5, 
+        "attack_power": "super_strength", 
+        "attack_value": 8, 
+        "defense_value": 16, 
+        "damage_power": "battle_fury", 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "special", 
+        "speed_value": 5, 
+        "attack_power": "super_strength", 
+        "attack_value": 8, 
+        "defense_power": "regeneration", 
+        "defense_value": 15, 
+        "damage_power": "battle_fury", 
+        "damage_value": 4
+      }
+    ]
+  }, 
+  {
+    "unit_id": "sog052", 
+    "set_id": "sog", 
+    "collector_number": "052", 
+    "name": "Batman", 
+    "type": "character", 
+    "rarity": "chase", 
+    "dimensions": "1x1", 
+    "point_values": [
+      116
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "mystics", 
+      "police"
+    ], 
+    "keywords": [
+      "Ghosts of Batman", 
+      "Mystical", 
+      "Police"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "GHOSTS OF BATMAN", 
+        "description": "Once per game for all characters with this trait, choose an opposing character. When Batman attacks the chosen character, modify his attack value by +1 for each other friendly character with this trait."
+      }, 
+      {
+        "type": "attack", 
+        "name": "BURN", 
+        "description": "Batman can use Energy Explosion, when he does, damage dealt is penetrating.", 
+        "powers": [
+          "energy_explosion"
+        ]
+      }, 
+      {
+        "type": "defense", 
+        "name": "HOSTAGE SOULS", 
+        "description": "Batman can use Super Senses. Modify Batman's defense value by +1 when he is adjacent to an opposing character marked with an action token.", 
+        "powers": [
+          "super_senses"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "5", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "stealth", 
+        "speed_value": 9, 
+        "attack_power": "special", 
+        "attack_value": 11, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "stealth", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 16, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_value": 8, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 9, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 7, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 9, 
+        "defense_power": "special", 
+        "defense_value": 16, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "stealth", 
+        "speed_value": 6, 
+        "attack_power": "poison", 
+        "attack_value": 9, 
+        "defense_power": "regeneration", 
+        "defense_value": 15, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_value": 6, 
+        "attack_power": "poison", 
+        "attack_value": 8, 
+        "defense_power": "regeneration", 
+        "defense_value": 16, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 7, 
+        "speed_value": 6, 
+        "attack_power": "poison", 
+        "attack_value": 8, 
+        "defense_power": "regeneration", 
+        "defense_value": 15, 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "sog100", 
+    "set_id": "sog", 
+    "collector_number": "100", 
+    "name": "Batman", 
+    "type": "character", 
+    "rarity": "chase", 
+    "dimensions": "1x1", 
+    "point_values": [
+      102
+    ], 
+    "properties": [
+      "unique"
+    ], 
+    "team_abilities": [
+      "batman_ally"
+    ], 
+    "keywords": [
+      "Batman Family", 
+      "Future"
+    ], 
+    "special_powers": [
+      {
+        "type": "damage", 
+        "name": "I MADE THIS CITY A WEAPON", 
+        "description": "Batman can use Outwit. Give Batman a free action and choose an unheld object within 10 squares; deal all opposing characters occupying or adjacent to the same square as the object 1 damage, then remove the object from the game.", 
+        "powers": [
+          "outwit"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "4", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "leap_climb", 
+        "speed_value": 10, 
+        "attack_value": 10, 
+        "defense_value": 18, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_value": 18, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 11, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 8, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 11, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 8, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 11, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "leap_climb", 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_power": "regeneration", 
+        "defense_value": 16, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "leap_climb", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "regeneration", 
+        "defense_value": 15, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 8, 
+        "speed_power": "leap_climb", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "regeneration", 
+        "defense_value": 15, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 3
+      }
+    ]
+  }, 
+  {
+    "unit_id": "sog101", 
+    "set_id": "sog", 
+    "collector_number": "101", 
+    "name": "Hugo Strange", 
+    "type": "character", 
+    "rarity": "chase", 
+    "dimensions": "1x1", 
+    "point_values": [
+      80
+    ], 
+    "properties": [
+      "unique"
+    ], 
+    "team_abilities": [
+      "batman_ally", 
+      "batman_enemy"
+    ], 
+    "keywords": [
+      "Scientist"
+    ], 
+    "special_powers": [
+      {
+        "type": "speed", 
+        "name": "POST-HYPNOTIC SUGGESTION", 
+        "description": "Hugo Strange can use Mind Control.  When he does, modify his attack value by +1 if the target is marked with an action token; if the target has an action token and is adjacent, modify his attack value by an additional +1.", 
+        "powers": [
+          "mind_control"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "6", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "special", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 15, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "flurry", 
+        "speed_value": 6, 
+        "attack_value": 8, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 15, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "flurry", 
+        "speed_value": 6, 
+        "attack_value": 8, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 6, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 6, 
+        "speed_value": 5, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "sog102", 
+    "set_id": "sog", 
+    "collector_number": "102", 
+    "name": "Dr. Thomas Wayne", 
+    "type": "character", 
+    "rarity": "chase", 
+    "dimensions": "1x1", 
+    "point_values": [
+      43
+    ], 
+    "properties": [
+      "unique"
+    ], 
+    "team_abilities": [], 
+    "keywords": [
+      "Gotham City", 
+      "Past"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "INSPIRATION", 
+        "description": "Adjacent friendly characters can use Willpower."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "flurry", 
+        "speed_value": 5, 
+        "attack_value": 8, 
+        "defense_value": 15, 
+        "damage_power": "support", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "flurry", 
+        "speed_value": 5, 
+        "attack_value": 8, 
+        "defense_power": "defend", 
+        "defense_value": 14, 
+        "damage_power": "support", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 3, 
+        "speed_value": 5, 
+        "attack_value": 9, 
+        "defense_power": "defend", 
+        "defense_value": 14, 
+        "damage_power": "support", 
+        "damage_value": 0
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 4, 
+        "attack_value": 9, 
+        "defense_power": "defend", 
+        "defense_value": 14, 
+        "damage_power": "support", 
+        "damage_value": 0
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 4, 
+        "attack_value": 10, 
+        "defense_value": 13, 
+        "damage_power": "support", 
+        "damage_value": 0
+      }
+    ]
+  }, 
+  {
+    "unit_id": "sog103", 
+    "set_id": "sog", 
+    "collector_number": "103", 
+    "name": "Batman and Nightwing", 
+    "type": "character", 
+    "rarity": "chase", 
+    "dimensions": "1x1", 
+    "point_values": [
+      176
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "batman_ally"
+    ], 
+    "keywords": [
+      "Batman Family", 
+      "Bludhaven", 
+      "Gotham City", 
+      "Martial Artist"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "CONTROLLING THE FLOW OF COMBAT", 
+        "description": "When using the Duo Attack ability, Batman and Nightwing may use Charge or Smoke Cloud as a free action instead of making the second attack.", 
+        "powers": [
+          "charge", 
+          "smoke_cloud"
+        ]
+      }
+    ], 
+    "improved_movement": [
+      "hindering", 
+      "elevated", 
+      "characters"
+    ], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "5", 
+    "targets": "2", 
+    "speed_type": "boot", 
+    "attack_type": "duo", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "quake", 
+        "attack_value": 11, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "quake", 
+        "attack_value": 11, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_value": 9, 
+        "attack_power": "quake", 
+        "attack_value": 11, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 9, 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "flurry", 
+        "speed_value": 9, 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "flurry", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "flurry", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "sogS101", 
+    "set_id": "sog", 
+    "collector_number": "S101", 
+    "name": "Bat Signal", 
+    "type": "object", 
+    "rarity": "chase", 
+    "point_values": [
+      2
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [], 
+    "special_powers": [
+      {
+        "description": "Give a character adjacent to this object a power action and choose another friendly character that is not within 8 squares of this object. Place the chosen character adjacent to this character and this object."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_type": "special", 
+    "object_size": "heavy", 
+    "object_keyphrases": [], 
+    "dial": []
+  }, 
+  {
+    "unit_id": "sogS102", 
+    "set_id": "sog", 
+    "collector_number": "S102", 
+    "name": "Radar Monitor", 
+    "type": "object", 
+    "rarity": "chase", 
+    "point_values": [
+      10
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [], 
+    "special_powers": [
+      {
+        "description": "This character is a wild card, but can use opposing team abilities instead of friendly team abilities."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_type": "relic", 
+    "object_size": "immobile", 
+    "object_keyphrases": [], 
+    "relic_roll_min": "5", 
+    "dial": []
+  }, 
+  {
+    "unit_id": "sogV001a", 
+    "set_id": "sog", 
+    "collector_number": "V001a", 
+    "name": "Batcycle (Autopilot)", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x2", 
+    "point_values": [
+      25
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "batman_ally"
+    ], 
+    "keywords": [
+      "Batman Family", 
+      "Vehicle"
+    ], 
+    "special_powers": [
+      {
+        "type": "attack", 
+        "name": "TRAILING DARKNESS", 
+        "description": "Batcycle can use Smoke Cloud as a free action immediately after the resolution of an action in which it moved, but the first hindering terrain marker must be placed in a square moved through by Batcycle this turn.", 
+        "powers": [
+          "smoke_cloud"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "passengers": "2", 
+    "unit_range": "6", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "vehicle", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 15, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 8, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 15, 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 7, 
+        "defense_value": 15, 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "sogV001b", 
+    "set_id": "sog", 
+    "collector_number": "V001b", 
+    "name": "Batcycle (Piloted)", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x2", 
+    "point_values": [
+      50
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "batman_ally"
+    ], 
+    "keywords": [
+      "Batman Family", 
+      "Vehicle"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "PILOT ABILITY: FAMILIAR CONTROLS", 
+        "description": "Prerequisites: Batman Ally team ability or Batman Family keyword.  Batcycle can use Stealth and Outwit.", 
+        "powers": [
+          "stealth", 
+          "outwit"
+        ]
+      }, 
+      {
+        "type": "trait", 
+        "name": "PILOT ABILITY: HELPED REBUILD IT", 
+        "description": "Prerequisites: Alfred Pennyworth, Batgirl, Batman, Batwoman, Bruce Wayne, Robin or Nightwing.  Batcycle modifies its attack and defense values by +1."
+      }, 
+      {
+        "type": "attack", 
+        "name": "TRAILING DARKNESS", 
+        "description": "Batcycle can use Smoke Cloud as a free action immediately after the resolution of an action in which it moved, but the first hindering terrain marker must be placed in a square moved through by Batcycle this turn.", 
+        "powers": [
+          "smoke_cloud"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "passengers": "1", 
+    "unit_range": "6", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "vehicle", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "running_shot", 
+        "speed_value": 9, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 15, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 6, 
+        "speed_value": 7, 
+        "attack_value": 8, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "sogV002a", 
+    "set_id": "sog", 
+    "collector_number": "V002a", 
+    "name": "Robincycle (Autopilot)", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x2", 
+    "point_values": [
+      34
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "titans"
+    ], 
+    "keywords": [
+      "Batman Family", 
+      "Vehicle"
+    ], 
+    "special_powers": [], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "passengers": "2", 
+    "unit_range": "5", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "vehicle", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "flurry", 
+        "speed_value": 8, 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "flurry", 
+        "speed_value": 8, 
+        "attack_value": 8, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 7, 
+        "attack_value": 8, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 16, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 7, 
+        "attack_value": 8, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 16, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "sogV002b", 
+    "set_id": "sog", 
+    "collector_number": "V002b", 
+    "name": "Robincycle (Piloted)", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x2", 
+    "point_values": [
+      41
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "titans"
+    ], 
+    "keywords": [
+      "Batman Family", 
+      "Vehicle"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "PILOT ABILITY: BATCOMPUTER-ASSISTED TARGET DETECTI", 
+        "description": "Prerequisites: Batman Ally team ability or Titans team ability.  Robincycle can use Enhancement. It can also use Perplex, but it can only modify its own attack and range values.", 
+        "powers": [
+          "enhancement", 
+          "perplex"
+        ]
+      }, 
+      {
+        "type": "trait", 
+        "name": "PILOT ABILITY: TEAR GAS CANISTERS", 
+        "description": "Prerequisites: Batgirl, Nightwing, Red Robin, or Robin.  Robincycle can use Incapacitate. When it uses Incapacitate, if the attack hits and the result of the attack roll is doubles, you may also place an action token on 1 opposing character adjacent to the target.", 
+        "powers": [
+          "incapacitate"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "passengers": "1", 
+    "unit_range": "5", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "vehicle", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_value": 9, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 17, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "flurry", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "flurry", 
+        "speed_value": 7, 
+        "attack_value": 8, 
+        "defense_value": 15, 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "sogV003a", 
+    "set_id": "sog", 
+    "collector_number": "V003a", 
+    "name": "GCPD Motorcycle (Autopilot)", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x2", 
+    "point_values": [
+      19
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "police"
+    ], 
+    "keywords": [
+      "Gotham City", 
+      "Police", 
+      "Vehicle"
+    ], 
+    "special_powers": [], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "passengers": "2", 
+    "unit_range": "4", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "vehicle", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_value": 6, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 9, 
+        "defense_power": "barrier", 
+        "defense_value": 16, 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 2, 
+        "speed_value": 6, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 8, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 3, 
+        "speed_value": 6, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 8, 
+        "defense_power": "willpower", 
+        "defense_value": 15, 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 6, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 8, 
+        "defense_power": "willpower", 
+        "defense_value": 15, 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "sogV003b", 
+    "set_id": "sog", 
+    "collector_number": "V003b", 
+    "name": "GCPD Motorcycle (Piloted)", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x2", 
+    "point_values": [
+      27
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "police"
+    ], 
+    "keywords": [
+      "Gotham City", 
+      "Police", 
+      "Vehicle"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "PILOT ABILITY: STAY ON TARGET", 
+        "description": "Prerequisites: Police team ability or Police keyword. Once per turn, when a friendly character adjacent to GCPD Motorcycle rolls an attack and misses but the attack roll is doubles (other than a critical miss), you may reroll the attack roll. After the attack resolves, deal GCPD Motorcycle 1 unavoidable damage."
+      }, 
+      {
+        "type": "trait", 
+        "name": "PILOT ABILITY: CALL FOR BACKUP", 
+        "description": "Prerequisites: Any character with \"GCPD\" or \"Gordon\" in its name.  Give GCPD Motorcycle a power action and roll 2d6. Any number of friendly characters with the Police team ability may immediately be given move actions as free actions as long as 1) all moved characters end their move adjacent to GCPD Motorcycle, and 2) the combined total number of squares the characters move does not exceed the total rolled by GCPD Motorcycle."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "passengers": "1", 
+    "unit_range": "4", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "vehicle", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_value": 7, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 2, 
+        "speed_value": 7, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 3, 
+        "speed_value": 7, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 7, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "sogM001", 
+    "set_id": "sog", 
+    "collector_number": "M001", 
+    "name": "Streets of Gotham City", 
+    "type": "map", 
+    "point_values": [], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [], 
+    "special_powers": [
+      {
+        "description": "Orange squares are Manhole squares. If you are also playing with the Killer Croc Sewer Lair map, you may give a character occupying this square a power action and place that character in the corresponding square on that map. If that square is occupied, place that character in the nearest square it could be placed in."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "map_url": "https://hcmaps.net/maps/sog/streets_of_gotham_city.json", 
+    "dial": []
+  }, 
+  {
+    "unit_id": "sogM002", 
+    "set_id": "sog", 
+    "collector_number": "M002", 
+    "name": "Killer Croc Sewer Lair", 
+    "type": "map", 
+    "point_values": [], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [], 
+    "special_powers": [
+      {
+        "description": "Orange squares are Manhole squares. If you are also playing with the Streets of Gotham City map, you may give a character occupying this square a power action and place that character in the corresponding square on that map. If that square is occupied, place that character in the nearest square it could be placed in."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "map_url": "https://hcmaps.net/maps/sog/killer_croc_sewer_lair.json", 
+    "dial": []
+  }
+]

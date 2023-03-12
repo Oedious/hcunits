@@ -523,6 +523,21 @@ SET_MAP = {
   "asm": {
     "name": "Amazing Spider-Man",
   },
+  "sog": {
+    "name": "Batman: Streets of Gotham",
+    "ranges": [
+      # TODO: Add support for R102 Radar Monitor
+      ("sog001", "sog103"),
+      ("sogS101", "sogS102"),
+      # Skip core vehicle units and use the separate piloted/autopiloted versions
+      ("sogV001a", "sogV001b"),
+      ("sogV002a", "sogV002b"),
+      ("sogV003a", "sogV003b"),
+    ],
+  },
+  "ffsog": {
+    "name": "Fast Forces: Streets of Gotham",
+  },
 }
 
 POWERS = {
@@ -703,6 +718,8 @@ IMPROVED_ABILITIES = {
       "this character can move through blocking terrain. immediately after movement resolves, destroy all blocking terrain moved through": "destroy_blocking",
       "characters": "characters",
       "ignores characters": "characters",
+      # There is not "IM: opposing characters" - it was a typo in sog023 meant to be all characters.
+      "ignores opposing characters": "characters",
       "move through": "move_through",
       "may move through squares adjacent to opposing characters, but still need to break away normally": "move_through",
       "may move through squares adjacent to opposing characters, but still needs to break away normally": "move_through",
