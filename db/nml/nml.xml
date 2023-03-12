@@ -1,0 +1,1106 @@
+<resultset>
+  <row>
+    <unit_id>nml001</unit_id>
+    <set_id>nml</set_id>
+    <collector_number>001</collector_number>
+    <name>Lock-Up</name>
+    <type>character</type>
+    <rarity>chase</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[69]</point_values>
+    <properties>["unique"]</properties>
+    <team_abilities>["batman_enemy"]</team_abilities>
+    <keywords>["Brute", "Gotham City", "Police"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "ENJOYS OTHERS PAIN", 
+    "description": "When a character takes damage from Lock-Up's attack, place a Riot token on its character card. When Lock-Up attacks a character that has one or more Riot token on its card, modify his attack value by +1 for each Riot token."
+  }, 
+  {
+    "type": "speed", 
+    "name": "WARDEN OF BLACKGATE PRISON", 
+    "description": "Lock-Up can use Plasticity. If a character fails a breakaway roll when adjacent to Lock-Up, after actions resolve, deal the character 1 damage.", 
+    "powers": [
+      "plasticity"
+    ]
+  }, 
+  {
+    "type": "attack", 
+    "name": "EXCESSIVE RESTRAINT", 
+    "description": "Lock-Up can use Incapacitate. When he does and hits, after actions resolve, deal the hit character 1 damage.", 
+    "powers": [
+      "incapacitate"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "charge", 
+    "speed_value": 8, 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "leadership", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "charge", 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "leadership", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "special", 
+    "speed_value": 7, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 15, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "special", 
+    "speed_value": 7, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 15, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "special", 
+    "speed_value": 7, 
+    "attack_value": 9, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 15, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "special", 
+    "speed_value": 6, 
+    "attack_value": 8, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 14, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 1
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>nml002</unit_id>
+    <set_id>nml</set_id>
+    <collector_number>002</collector_number>
+    <name>Batgirl</name>
+    <type>character</type>
+    <rarity>chase</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[67]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["batman_ally"]</team_abilities>
+    <keywords>["Batman Family", "Gotham City", "Martial Artist"]</keywords>
+    <special_powers>[
+  {
+    "type": "speed", 
+    "name": "GOTHAM CITY'S PROTECTOR", 
+    "description": "Batgirl can use Charge, Flurry and Plasticity.", 
+    "powers": [
+      "charge", 
+      "flurry", 
+      "plasticity"
+    ]
+  }, 
+  {
+    "type": "attack", 
+    "name": "THE BAT IS A SYMBOL", 
+    "description": "Once per turn, Batgirl may use Force Blast or Incapacitate as a free action. When she does, target opposing characters do not take knock back damage or pushing damage from this use.", 
+    "powers": [
+      "force_blast", 
+      "incapacitate"
+    ]
+  }
+]</special_powers>
+    <improved_movement>["elevated", "hindering"]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>4</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "special", 
+    "speed_value": 9, 
+    "attack_value": 10, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 17, 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "special", 
+    "speed_value": 9, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_power": "combat_reflexes", 
+    "defense_value": 16, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "special", 
+    "speed_value": 8, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_power": "willpower", 
+    "defense_value": 17, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "leap_climb", 
+    "speed_value": 8, 
+    "attack_value": 10, 
+    "defense_power": "willpower", 
+    "defense_value": 18, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "leap_climb", 
+    "speed_value": 7, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "willpower", 
+    "defense_value": 17, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "leap_climb", 
+    "speed_value": 7, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 1
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>nml003</unit_id>
+    <set_id>nml</set_id>
+    <collector_number>003</collector_number>
+    <name>Ultimate Clayface</name>
+    <type>character</type>
+    <rarity>chase</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[136]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["batman_enemy"]</team_abilities>
+    <keywords>["Arkham Asylum", "Brute", "Monster", "Mud Pack", "Secret Society of Super-Villains"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "SUCTION", 
+    "description": "When an opposing character hits Ultimate Clayface with a close combat attack, after the attack resolves, the opposing character rolls a d6. On a result of 1-3, that character immediately ends its action."
+  }, 
+  {
+    "type": "speed", 
+    "name": "SUFFOCATE", 
+    "description": "Ultimate Clayface can use Plasticity. Opposing characters adjacent to Ultimate Clayface can't automatically break away and can't ignore Ultimate Clayface for movement purposes. When an adjacent character fails to break away from Ultimate Clayface, it is given an additional action token.", 
+    "powers": [
+      "plasticity"
+    ]
+  }, 
+  {
+    "type": "attack", 
+    "name": "BURNING TOUCH", 
+    "description": "Ultimate Clayface can use Poison. When he does, roll a d6 and compare: 1-2 no damage is dealt. 3-4 damage is dealt normally. 5-6 the damage dealt is penetrating.", 
+    "powers": [
+      "poison"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>3</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "special", 
+    "speed_value": 7, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "impervious", 
+    "defense_value": 17, 
+    "damage_power": "shape_change", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "special", 
+    "speed_value": 6, 
+    "attack_power": "special", 
+    "attack_value": 11, 
+    "defense_power": "impervious", 
+    "defense_value": 17, 
+    "damage_power": "shape_change", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "special", 
+    "speed_value": 6, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_power": "invulnerability", 
+    "defense_value": 18, 
+    "damage_power": "shape_change", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "special", 
+    "speed_value": 6, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_power": "invulnerability", 
+    "defense_value": 17, 
+    "damage_power": "shape_change", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "special", 
+    "speed_value": 5, 
+    "attack_power": "special", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 18, 
+    "damage_power": "shape_change", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "special", 
+    "speed_value": 5, 
+    "attack_power": "special", 
+    "attack_value": 8, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "shape_change", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "special", 
+    "speed_value": 4, 
+    "attack_power": "special", 
+    "attack_value": 8, 
+    "defense_power": "toughness", 
+    "defense_value": 16, 
+    "damage_power": "shape_change", 
+    "damage_value": 3
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>nml004</unit_id>
+    <set_id>nml</set_id>
+    <collector_number>004</collector_number>
+    <name>Poison Ivy</name>
+    <type>character</type>
+    <rarity>chase</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[98]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["batman_enemy"]</team_abilities>
+    <keywords>["Arkham Asylum", "Gotham City Sirens", "Scientist"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "PLANTS GROW WHEREVER SHE WALKS", 
+    "description": "After the resolution of a move action by Poison Ivy, place a Plant object in a square that she occupied or moved through that action. A Plant object is an immobile object that can be destroyed if it is dealt 1 damage. Poison Ivy considers squares adjacent to or occupied by Plant objects as adjacent to her. Poison Ivy can draw lines of fire and count range and squares from the square of any single Plant object."
+  }, 
+  {
+    "type": "trait", 
+    "name": "CONTROL OVER ALL VEGETATION", 
+    "description": "Give Poison Ivy a power action and choose one of the following: Accelerate Growth: Place a Plant object in a square of printed hindering terrain within 5 squares. Sprout a Mighty Oak: Replace a Plant object with a blocking terrain marker. Reclaim the Land: Destroy a Plant object and a wall or square of blocking terrain adjacent to the Plant object. Entanglements: Poison Ivy can use Incapacitate as a free action to make a close combat attack targeting all opposing characters that are adjacent to a Plant object.", 
+    "powers": [
+      "incapacitate"
+    ]
+  }
+]</special_powers>
+    <improved_movement>["hindering"]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>shield</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "stealth", 
+    "speed_value": 8, 
+    "attack_power": "poison", 
+    "attack_value": 10, 
+    "defense_value": 16, 
+    "damage_power": "support", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "stealth", 
+    "speed_value": 8, 
+    "attack_power": "poison", 
+    "attack_value": 9, 
+    "defense_value": 16, 
+    "damage_power": "support", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "mind_control", 
+    "speed_value": 7, 
+    "attack_power": "poison", 
+    "attack_value": 10, 
+    "defense_power": "defend", 
+    "defense_value": 17, 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "mind_control", 
+    "speed_value": 7, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 11, 
+    "defense_power": "defend", 
+    "defense_value": 17, 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "stealth", 
+    "speed_value": 8, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 10, 
+    "defense_power": "regeneration", 
+    "defense_value": 16, 
+    "damage_power": "support", 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "stealth", 
+    "speed_value": 8, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 9, 
+    "defense_power": "regeneration", 
+    "defense_value": 15, 
+    "damage_power": "support", 
+    "damage_value": 1
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>nml005</unit_id>
+    <set_id>nml</set_id>
+    <collector_number>005</collector_number>
+    <name>Killer Croc</name>
+    <type>character</type>
+    <rarity>chase</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[173]</point_values>
+    <properties>[]</properties>
+    <team_abilities>["batman_enemy"]</team_abilities>
+    <keywords>["Animal", "Arkham Asylum", "Brute"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "DEATH ROLL", 
+    "description": "Killer Croc can use Blades/Claws/Fangs. When he does, he may roll 2d6 instead of a d6 and choose one die to be the damage dealt for the attack.", 
+    "powers": [
+      "blades_claws_fangs"
+    ]
+  }, 
+  {
+    "type": "speed", 
+    "name": "PREDATOR OF THE SEWERS", 
+    "description": "Killer Croc can use Charge and Plasticity. When Killer Croc occupies water terrain, lines of fire drawn to him are blocked.", 
+    "powers": [
+      "charge", 
+      "plasticity"
+    ]
+  }, 
+  {
+    "type": "defense", 
+    "name": "REPTILIAN REGENERATION", 
+    "description": "Killer Croc can use Toughness and Regeneration.", 
+    "powers": [
+      "toughness", 
+      "regeneration"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>0</unit_range>
+    <targets>1</targets>
+    <speed_type>dolphin</speed_type>
+    <attack_type>fist</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "special", 
+    "speed_value": 9, 
+    "attack_value": 11, 
+    "defense_power": "toughness", 
+    "defense_value": 18, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "special", 
+    "speed_value": 8, 
+    "attack_value": 11, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "special", 
+    "speed_value": 8, 
+    "attack_value": 10, 
+    "defense_power": "special", 
+    "defense_value": 17, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "special", 
+    "speed_value": 7, 
+    "attack_power": "super_strength", 
+    "attack_value": 10, 
+    "defense_power": "toughness", 
+    "defense_value": 18, 
+    "damage_power": "close_combat_expert", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "charge", 
+    "speed_value": 7, 
+    "attack_power": "super_strength", 
+    "attack_value": 9, 
+    "defense_power": "toughness", 
+    "defense_value": 17, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 3
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "charge", 
+    "speed_value": 6, 
+    "attack_power": "super_strength", 
+    "attack_value": 8, 
+    "defense_power": "special", 
+    "defense_value": 16, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "charge", 
+    "speed_value": 6, 
+    "attack_value": 8, 
+    "defense_power": "special", 
+    "defense_value": 16, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 2
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>nml006</unit_id>
+    <set_id>nml</set_id>
+    <collector_number>006</collector_number>
+    <name>The Joker and Harley Quinn</name>
+    <type>character</type>
+    <rarity>chase</rarity>
+    <dimensions>1x1</dimensions>
+    <point_values>[178]</point_values>
+    <properties>["unique"]</properties>
+    <team_abilities>["batman_enemy"]</team_abilities>
+    <keywords>["Arkham Asylum"]</keywords>
+    <special_powers>[
+  {
+    "type": "trait", 
+    "name": "I'LL PROTECT YOU MISTAH J", 
+    "description": "Once per game, when The Joker and Harley Quinn would be KO'd, instead heal them to click 1. When you do, The Joker and Harley Quinn possess Earthbound for the rest of the game.", 
+    "powers": [
+      "earthbound_neutralized"
+    ]
+  }, 
+  {
+    "type": "speed", 
+    "name": "WHY EVEN BOTHER CHASING ME? I'M JUST GOING TO ESCAPE AGAIN.", 
+    "description": "The Joker and Harley Quinn can use Stealth and Plasticity.", 
+    "powers": [
+      "stealth", 
+      "plasticity"
+    ]
+  }, 
+  {
+    "type": "attack", 
+    "name": "DIABOLICAL DEATH TRAP", 
+    "description": "Give the The Joker and Harley Quinn a power action. Place a Deathtrap marker in a square occupied by an adjacent opposing character. When an opposing character occupies a square with a Deathtrap marker attempts to move, it must roll a break away even if it normally breaks away automatically. At the beginning of your turn, The Joker and Harley Quinn may be given a free action to deal 1 penetrating damage to an opposing character occupying a square with a Deathtrap marker."
+  }, 
+  {
+    "type": "damage", 
+    "name": "UNPREDICTABLE AND UNSTABLE", 
+    "description": "The Joker and Harley Quinn can use Perplex, but can only modify their own combat values.  If The Joker and Harley Quinn possess \"Duo Attack Symbol\", they can use Perplex in this way twice per turn.", 
+    "powers": [
+      "perplex"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <unit_range>4</unit_range>
+    <targets>2</targets>
+    <speed_type>boot</speed_type>
+    <attack_type>duo</attack_type>
+    <defense_type>indomitable</defense_type>
+    <damage_type>starburst</damage_type>
+    <dial_size>12</dial_size>
+    <dial>[
+  {
+    "click_number": 1, 
+    "starting_line": true, 
+    "speed_power": "special", 
+    "speed_value": 6, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_value": 17, 
+    "damage_power": "special", 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 2, 
+    "speed_power": "special", 
+    "speed_value": 6, 
+    "attack_power": "special", 
+    "attack_value": 10, 
+    "defense_value": 16, 
+    "damage_power": "special", 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 3, 
+    "speed_power": "special", 
+    "speed_value": 6, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 11, 
+    "defense_value": 15, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 4, 
+    "speed_power": "special", 
+    "speed_value": 6, 
+    "attack_power": "blades_claws_fangs", 
+    "attack_value": 10, 
+    "defense_value": 16, 
+    "damage_power": "exploit_weakness", 
+    "damage_value": 2
+  }, 
+  {
+    "click_number": 5, 
+    "speed_power": "special", 
+    "speed_value": 6, 
+    "attack_power": "poison", 
+    "attack_value": 10, 
+    "defense_value": 14, 
+    "damage_power": "special", 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 6, 
+    "speed_power": "special", 
+    "speed_value": 7, 
+    "attack_power": "poison", 
+    "attack_value": 10, 
+    "defense_power": "regeneration", 
+    "defense_value": 15, 
+    "damage_power": "special", 
+    "damage_value": 1
+  }, 
+  {
+    "click_number": 7, 
+    "speed_power": "special", 
+    "speed_value": 8, 
+    "attack_power": "poison", 
+    "attack_value": 9, 
+    "defense_power": "regeneration", 
+    "defense_value": 14, 
+    "damage_power": "special", 
+    "damage_value": 1
+  }
+]</dial>
+  </row>
+  <row>
+    <unit_id>nmlS101</unit_id>
+    <set_id>nml</set_id>
+    <collector_number>S101</collector_number>
+    <name>Gas Pellets/Smoke Grenade</name>
+    <type>object</type>
+    <rarity>chase</rarity>
+    <point_values>[3]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[
+  {
+    "description": "Character can use Smoke Cloud.  When it does, after actions resolve it can be given a move action as a free action with a speed value of 4.", 
+    "powers": [
+      "smoke_cloud"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_type>relic</object_type>
+    <object_size>immobile</object_size>
+    <object_keyphrases>[]</object_keyphrases>
+    <relic_roll_min>4</relic_roll_min>
+    <dial>[]</dial>
+  </row>
+  <row>
+    <unit_id>nmlS102</unit_id>
+    <set_id>nml</set_id>
+    <collector_number>S102</collector_number>
+    <name>Batarangs</name>
+    <type>object</type>
+    <rarity>chase</rarity>
+    <point_values>[10]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[
+  {
+    "description": "Character can use Incapacitate, the Sharpshooter ability and possesses one additional \"target\".", 
+    "powers": [
+      "incapacitate"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_type>relic</object_type>
+    <object_size>immobile</object_size>
+    <object_keyphrases>[]</object_keyphrases>
+    <relic_roll_min>4</relic_roll_min>
+    <dial>[]</dial>
+  </row>
+  <row>
+    <unit_id>nmlS103</unit_id>
+    <set_id>nml</set_id>
+    <collector_number>S103</collector_number>
+    <name>Grapnel Gun</name>
+    <type>object</type>
+    <rarity>chase</rarity>
+    <point_values>[4]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[
+  {
+    "description": "Character can use Improved Movement: Elevated and the Carry ability."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_type>relic</object_type>
+    <object_size>immobile</object_size>
+    <object_keyphrases>[]</object_keyphrases>
+    <relic_roll_min>4</relic_roll_min>
+    <dial>[]</dial>
+  </row>
+  <row>
+    <unit_id>nmlS104</unit_id>
+    <set_id>nml</set_id>
+    <collector_number>S104</collector_number>
+    <name>Flash Grenade</name>
+    <type>object</type>
+    <rarity>chase</rarity>
+    <point_values>[5]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[
+  {
+    "description": "Character can use the Throw a Grenade ability using Flashbang Grenades and has a Grenade Pool: +3."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_type>relic</object_type>
+    <object_size>immobile</object_size>
+    <object_keyphrases>[]</object_keyphrases>
+    <relic_roll_min>4</relic_roll_min>
+    <dial>[]</dial>
+  </row>
+  <row>
+    <unit_id>nmlS105</unit_id>
+    <set_id>nml</set_id>
+    <collector_number>S105</collector_number>
+    <name>Rebreather</name>
+    <type>object</type>
+    <rarity>chase</rarity>
+    <point_values>[6]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[
+  {
+    "description": "When this character occupies water terrain, it can use Willpower. This character ignores opposing characters' Poison.", 
+    "powers": [
+      "willpower"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_type>relic</object_type>
+    <object_size>immobile</object_size>
+    <object_keyphrases>[]</object_keyphrases>
+    <relic_roll_min>4</relic_roll_min>
+    <dial>[]</dial>
+  </row>
+  <row>
+    <unit_id>nmlS106</unit_id>
+    <set_id>nml</set_id>
+    <collector_number>S106</collector_number>
+    <name>Handcuffs</name>
+    <type>object</type>
+    <rarity>chase</rarity>
+    <point_values>[5]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[
+  {
+    "description": "Character can use Plasticity.  Opposing characters adjacent to this character modify their attack values by -1.", 
+    "powers": [
+      "plasticity"
+    ]
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_type>relic</object_type>
+    <object_size>immobile</object_size>
+    <object_keyphrases>[]</object_keyphrases>
+    <relic_roll_min>4</relic_roll_min>
+    <dial>[]</dial>
+  </row>
+  <row>
+    <unit_id>nmlS107</unit_id>
+    <set_id>nml</set_id>
+    <collector_number>S107</collector_number>
+    <name>Batman Cowl</name>
+    <type>object</type>
+    <rarity>chase</rarity>
+    <point_values>[5]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[
+  {
+    "description": "This character possesses \"Batman Ally Team Ability Symbol\".  If the character already possesses \"Batman Ally Team Ability Symbol\" and is adjacent to a wall or square of higher elevated terrain, lines of fire drawn to it are blocked when it is not your turn."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_type>relic</object_type>
+    <object_size>immobile</object_size>
+    <object_keyphrases>[]</object_keyphrases>
+    <relic_roll_min>4</relic_roll_min>
+    <dial>[]</dial>
+  </row>
+  <row>
+    <unit_id>nmlM001</unit_id>
+    <set_id>nml</set_id>
+    <collector_number>M001</collector_number>
+    <name>Blackgate Prison</name>
+    <type>map</type>
+    <point_values>[]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[
+  {
+    "description": "Orange squares are Bridge terrain. Bridge terrain is elevated terrain (level 2). Characters occupying grounded terrain that draw a line of fire to a game element that occupies the same elevation ignoring the Bridge terrain and anything occupying Bridge terrain for line of fire purposes. Characters that begin to move on a lower elevation ignoring the Bridge terrain and anything occupying Bridge terrain for movement purposes: these characters cannot end their movement in a square of Bridge terrain unless they can use a game effect that allows them to ignore elevation for movement purposes or move through a square of elevation level 2 terrain immediately prior to moving into Bridge terrain."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <map_url>https://hcmaps.net/maps/nml/blackgate_prison.json</map_url>
+    <dial>[]</dial>
+  </row>
+  <row>
+    <unit_id>nmlM002</unit_id>
+    <set_id>nml</set_id>
+    <collector_number>M002</collector_number>
+    <name>Blackgate Prison: Post-Cataclysm</name>
+    <type>map</type>
+    <point_values>[]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[
+  {
+    "description": "Orange squares are Bridge terrain. Bridge terrain is elevated terrain (level 2). Characters occupying grounded terrain that draw a line of fire to a game element that occupies the same elevation ignoring the Bridge terrain and anything occupying Bridge terrain for line of fire purposes. Characters that begin to move on a lower elevation ignoring the Bridge terrain and anything occupying Bridge terrain for movement purposes: these characters cannot end their movement in a square of Bridge terrain unless they can use a game effect that allows them to ignore elevation for movement purposes or move through a square of elevation level 2 terrain immediately prior to moving into Bridge terrain."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <map_url>https://hcmaps.net/maps/nml/blackgate_prison_post_cataclysm.json</map_url>
+    <dial>[]</dial>
+  </row>
+  <row>
+    <unit_id>nmlM003</unit_id>
+    <set_id>nml</set_id>
+    <collector_number>M003</collector_number>
+    <name>Wayne Manor Grounds</name>
+    <type>map</type>
+    <point_values>[]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <map_url>https://hcmaps.net/maps/nml/wayne_manor_grounds.json</map_url>
+    <dial>[]</dial>
+  </row>
+  <row>
+    <unit_id>nmlM004</unit_id>
+    <set_id>nml</set_id>
+    <collector_number>M004</collector_number>
+    <name>Wayne Manor Grounds: Post-Cataclysm</name>
+    <type>map</type>
+    <point_values>[]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <map_url>https://hcmaps.net/maps/nml/wayne_manor_grounds_post_cataclysm.json</map_url>
+    <dial>[]</dial>
+  </row>
+  <row>
+    <unit_id>nmlM005</unit_id>
+    <set_id>nml</set_id>
+    <collector_number>M005</collector_number>
+    <name>Gotham City Power Plant</name>
+    <type>map</type>
+    <point_values>[]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <map_url>https://hcmaps.net/maps/nml/gotham_city_power_plant.json</map_url>
+    <dial>[]</dial>
+  </row>
+  <row>
+    <unit_id>nmlM006</unit_id>
+    <set_id>nml</set_id>
+    <collector_number>M006</collector_number>
+    <name>Gotham City Power Plant: Post-Cataclysm</name>
+    <type>map</type>
+    <point_values>[]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <map_url>https://hcmaps.net/maps/nml/gotham_city_power_plant_post_cataclysm.json</map_url>
+    <dial>[]</dial>
+  </row>
+  <row>
+    <unit_id>nmlM007</unit_id>
+    <set_id>nml</set_id>
+    <collector_number>M007</collector_number>
+    <name>Robinson Park</name>
+    <type>map</type>
+    <point_values>[]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <map_url>https://hcmaps.net/maps/nml/robinson_park.json</map_url>
+    <dial>[]</dial>
+  </row>
+  <row>
+    <unit_id>nmlM008</unit_id>
+    <set_id>nml</set_id>
+    <collector_number>M008</collector_number>
+    <name>Robinson Park: Post-Cataclysm</name>
+    <type>map</type>
+    <point_values>[]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <map_url>https://hcmaps.net/maps/nml/robinson_park_post_cataclysm.json</map_url>
+    <dial>[]</dial>
+  </row>
+  <row>
+    <unit_id>nmlM009</unit_id>
+    <set_id>nml</set_id>
+    <collector_number>M009</collector_number>
+    <name>Gotham City Waterfront</name>
+    <type>map</type>
+    <point_values>[]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <map_url>https://hcmaps.net/maps/nml/gotham_city_waterfront.json</map_url>
+    <dial>[]</dial>
+  </row>
+  <row>
+    <unit_id>nmlM010</unit_id>
+    <set_id>nml</set_id>
+    <collector_number>M010</collector_number>
+    <name>Gotham City Waterfront: Post-Cataclysm</name>
+    <type>map</type>
+    <point_values>[]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[
+  {
+    "description": "Orange squares are Fire terrain. These squares are treated as blocking terrain and cannot be destroyed."
+  }
+]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <map_url>https://hcmaps.net/maps/nml/gotham_city_waterfront_post_cataclysm.json</map_url>
+    <dial>[]</dial>
+  </row>
+  <row>
+    <unit_id>nmlM011</unit_id>
+    <set_id>nml</set_id>
+    <collector_number>M011</collector_number>
+    <name>Dockside Amusement Park</name>
+    <type>map</type>
+    <point_values>[]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <map_url>https://hcmaps.net/maps/nml/dockside_amusement_park.json</map_url>
+    <dial>[]</dial>
+  </row>
+  <row>
+    <unit_id>nmlM012</unit_id>
+    <set_id>nml</set_id>
+    <collector_number>M012</collector_number>
+    <name>Dockside Amusement Park: Post-Cataclysm</name>
+    <type>map</type>
+    <point_values>[]</point_values>
+    <properties>[]</properties>
+    <team_abilities>[]</team_abilities>
+    <keywords>[]</keywords>
+    <special_powers>[]</special_powers>
+    <improved_movement>[]</improved_movement>
+    <improved_targeting>[]</improved_targeting>
+    <object_keyphrases>[]</object_keyphrases>
+    <map_url>https://hcmaps.net/maps/nml/dockside_amusement_park_post_cataclysm.json</map_url>
+    <dial>[]</dial>
+  </row>
+</resultset>

@@ -560,6 +560,14 @@ SET_MAP = {
   "hbt": {
     "name": "The Hobbit: An Unexpected Journey",
   },
+  "nml": {
+    "name": "No Man's Land",
+    "ranges": [
+      # TODO: Add support for resources
+      ("nml001", "nml006"),
+      ("nmlS101", "nmlS107")
+    ],
+  },
 }
 
 POWERS = {
@@ -1529,6 +1537,9 @@ class Unit:
                   sp_type = "ritual"
                 elif sp_name == "TRAP/SPELL" or sp_name == "SPELL/TRAP":
                   sp_type = "trap_spell"
+            elif sp_name == "SPLIT/MERGE":
+              # Ignore split/merge rules
+              continue
             asset_type = "team"
           elif sp_type_str == "blue-circle":
             if self.set_id.startswith("ygo"):
@@ -1544,7 +1555,7 @@ class Unit:
                 sp_description = sp_description[2:]
               self.horde_stack_max = int(sp_description)
               continue
-          
+
           if not sp_type:
             raise RuntimeError("The special power type '%s' for '%s' is currently not supported" % (sp_type_str, unit_id))
 
@@ -1853,7 +1864,7 @@ class Unit:
           power.lower().startswith("passenger") or
           power.lower().startswith("giant reach")):
         continue
-      for prefix in ["Can use ", self.name + " can use ", "This character can use ", "This team character can use "]:
+      for prefix in ["Can use ", self.name + " can use ", "This character can use ", "This team character can use ", "Character can use "]:
         if power.startswith(prefix):
           power = power[len(prefix):]
           break

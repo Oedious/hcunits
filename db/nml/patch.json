@@ -1,0 +1,139 @@
+{
+  "updates": {
+    "nml001": {
+      "special_powers": [{
+      }, {
+        "powers": ["plasticity"]
+      }, {
+        "powers": ["incapacitate"]
+      }]
+    },
+    "nml002": {
+      "special_powers": [{
+      }, {
+        "powers": ["force_blast", "incapacitate"]
+      }]
+    },
+    "nml004": {
+      "special_powers": [{
+      }, {
+        "description": "Give Poison Ivy a power action and choose one of the following: Accelerate Growth: Place a Plant object in a square of printed hindering terrain within 5 squares. Sprout a Mighty Oak: Replace a Plant object with a blocking terrain marker. Reclaim the Land: Destroy a Plant object and a wall or square of blocking terrain adjacent to the Plant object. Entanglements: Poison Ivy can use Incapacitate as a free action to make a close combat attack targeting all opposing characters that are adjacent to a Plant object.",
+        "powers": ["incapacitate"]
+      }]
+    },
+    "nml006": {
+      "special_powers": [{
+        "powers": ["earthbound_neutralized"]
+      }, {
+        "powers": ["stealth", "plasticity"]
+      }, {
+      }, {
+        "powers": ["perplex"]
+      }]
+    },
+    "nmlS103": {
+      "special_powers": [{
+        "description": "Character can use Improved Movement: Elevated and the Carry ability."
+      }]
+    },
+    "nmlS105": {
+      "special_powers": [{
+        "powers": ["willpower"]
+      }]
+    }
+  },
+  "additions": [{
+    "unit_id": "nmlM001",
+    "set_id": "nml",
+    "collector_number": "M001",
+    "name": "Blackgate Prison",
+    "type": "map",
+    "special_powers": [{
+      "description": "Orange squares are Bridge terrain. Bridge terrain is elevated terrain (level 2). Characters occupying grounded terrain that draw a line of fire to a game element that occupies the same elevation ignoring the Bridge terrain and anything occupying Bridge terrain for line of fire purposes. Characters that begin to move on a lower elevation ignoring the Bridge terrain and anything occupying Bridge terrain for movement purposes: these characters cannot end their movement in a square of Bridge terrain unless they can use a game effect that allows them to ignore elevation for movement purposes or move through a square of elevation level 2 terrain immediately prior to moving into Bridge terrain."
+    }],
+    "map_url": "https://hcmaps.net/maps/nml/blackgate_prison.json"
+  }, {
+    "unit_id": "nmlM002",
+    "set_id": "nml",
+    "collector_number": "M002",
+    "name": "Blackgate Prison: Post-Cataclysm",
+    "type": "map",
+    "special_powers": [{
+      "description": "Orange squares are Bridge terrain. Bridge terrain is elevated terrain (level 2). Characters occupying grounded terrain that draw a line of fire to a game element that occupies the same elevation ignoring the Bridge terrain and anything occupying Bridge terrain for line of fire purposes. Characters that begin to move on a lower elevation ignoring the Bridge terrain and anything occupying Bridge terrain for movement purposes: these characters cannot end their movement in a square of Bridge terrain unless they can use a game effect that allows them to ignore elevation for movement purposes or move through a square of elevation level 2 terrain immediately prior to moving into Bridge terrain."
+    }],
+    "map_url": "https://hcmaps.net/maps/nml/blackgate_prison_post_cataclysm.json"
+  }, {
+    "unit_id": "nmlM003",
+    "set_id": "nml",
+    "collector_number": "M003",
+    "name": "Wayne Manor Grounds",
+    "type": "map",
+    "map_url": "https://hcmaps.net/maps/nml/wayne_manor_grounds.json"
+  }, {
+    "unit_id": "nmlM004",
+    "set_id": "nml",
+    "collector_number": "M004",
+    "name": "Wayne Manor Grounds: Post-Cataclysm",
+    "type": "map",
+    "map_url": "https://hcmaps.net/maps/nml/wayne_manor_grounds_post_cataclysm.json"
+  }, {
+    "unit_id": "nmlM005",
+    "set_id": "nml",
+    "collector_number": "M005",
+    "name": "Gotham City Power Plant",
+    "type": "map",
+    "map_url": "https://hcmaps.net/maps/nml/gotham_city_power_plant.json"
+  }, {
+    "unit_id": "nmlM006",
+    "set_id": "nml",
+    "collector_number": "M006",
+    "name": "Gotham City Power Plant: Post-Cataclysm",
+    "type": "map",
+    "map_url": "https://hcmaps.net/maps/nml/gotham_city_power_plant_post_cataclysm.json"
+  }, {
+    "unit_id": "nmlM007",
+    "set_id": "nml",
+    "collector_number": "M007",
+    "name": "Robinson Park",
+    "type": "map",
+    "map_url": "https://hcmaps.net/maps/nml/robinson_park.json"
+  }, {
+    "unit_id": "nmlM008",
+    "set_id": "nml",
+    "collector_number": "M008",
+    "name": "Robinson Park: Post-Cataclysm",
+    "type": "map",
+    "map_url": "https://hcmaps.net/maps/nml/robinson_park_post_cataclysm.json"
+  }, {
+    "unit_id": "nmlM009",
+    "set_id": "nml",
+    "collector_number": "M009",
+    "name": "Gotham City Waterfront",
+    "type": "map",
+    "map_url": "https://hcmaps.net/maps/nml/gotham_city_waterfront.json"
+  }, {
+    "unit_id": "nmlM010",
+    "set_id": "nml",
+    "collector_number": "M010",
+    "name": "Gotham City Waterfront: Post-Cataclysm",
+    "special_powers": [{
+      "description": "Orange squares are Fire terrain. These squares are treated as blocking terrain and cannot be destroyed."
+    }],
+    "type": "map",
+    "map_url": "https://hcmaps.net/maps/nml/gotham_city_waterfront_post_cataclysm.json"
+  }, {
+    "unit_id": "nmlM011",
+    "set_id": "nml",
+    "collector_number": "M011",
+    "name": "Dockside Amusement Park",
+    "type": "map",
+    "map_url": "https://hcmaps.net/maps/nml/dockside_amusement_park.json"
+  }, {
+    "unit_id": "nmlM012",
+    "set_id": "nml",
+    "collector_number": "M012",
+    "name": "Dockside Amusement Park: Post-Cataclysm",
+    "type": "map",
+    "map_url": "https://hcmaps.net/maps/nml/dockside_amusement_park_post_cataclysm.json"
+  }]
+}
