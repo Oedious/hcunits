@@ -568,6 +568,15 @@ SET_MAP = {
       ("nmlS101", "nmlS107")
     ],
   },
+  "acb": {
+    "name": "Assassin's Creed Brotherhood",
+  },
+  "acr": {
+    "name": "Assassin's Creed Revelations",
+  },
+  "tab": {
+    "name": "TabApp",
+  },
 }
 
 POWERS = {

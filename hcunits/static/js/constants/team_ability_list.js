@@ -412,4 +412,18 @@ const TEAM_ABILITY_LIST = {
     "copyable": true,
     "wildcard": false,
   },
+  "assassins": {
+    "name": "Assassins",
+    "universe": "assassins_creed",
+    "description": "Characters with this team ability can use Stealth. When a close combat attack by an opposing character misses this character and the attack roll is doubles, you may place an action token on this character and deal the attacker 1 damage.",
+    "copyable": true,
+    "wildcard": false,
+  },
+  "templars": {
+    "name": "Templars",
+    "universe": "assassins_creed",
+    "description": "When this character has one or more action tokens at the beginning of your turn, as a free action they can modify the attack or defense value of an adjacent friendly character by +1 until your next turn.",
+    "copyable": true,
+    "wildcard": false,
+  },
 }

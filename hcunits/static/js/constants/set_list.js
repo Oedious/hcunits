@@ -760,6 +760,17 @@ const SET_LIST = {
     "release_date": "2012-11-01",
     "universe": "dc"
   },
+  "acb": {
+    "name": "Assassin's Creed Brotherhood",
+    "release_date": "2012-10-03",
+    "universe": "assassins_creed"
+  },
+  "tab": {
+    "name": "TabApp",
+    "release_date": "2012-09-26",
+    // TODO: Separate these out into marvel/dc.
+    "universe": "marvel"
+  },
   "wk": {
     "name": "WizKids Standard Game Pieces",
     "release_date": "2002-05-01",
