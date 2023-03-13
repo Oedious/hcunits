@@ -660,6 +660,15 @@ SET_MAP = {
   "ca": {
     "name": "Captain America",
   },
+  "glgf": {
+    "name": "Green Lantern: Gravity Feed",
+  },
+  "ffgl": {
+    "name": "Fast Forces: Green Lantern",
+  },
+  "gx": {
+    "name": "Giant-Size X-Men",
+  },
 }
 
 POWERS = {
@@ -1080,6 +1089,7 @@ class Unit:
     elif rarity == "Rarity: Super Rare":
       self.rarity = "super_rare"
     elif (rarity == "Rarity: Chase" or
+          rarity == "Rarity: Retail" or
           rarity == "Rarity: Free Comic Book Day Exclusive" or
           rarity == "Rarity: Limited Edition" or
           rarity == "Rarity: Brick" or
@@ -1091,6 +1101,7 @@ class Unit:
           rarity == "Rarity: Con In Your Store Exclusive" or
           rarity == "Rarity: WOL Gravity Feed" or
           rarity == "Rarity: Lantern Pack Case Assortment" or
+          rarity == "Rarity: 2011 Convention Exclusive" or
           rarity == "Rarity: 2012 Convention Exclusive" or
           rarity == "Rarity: 2014 Convention Exclusive" or
           rarity == "Rarity: Blitzkrieg U.S.A. Scenario Pack" or
@@ -1136,7 +1147,8 @@ class Unit:
         self.type = "bystander"
         self.bystander_type = "toy"
       elif (soup.find("td", class_="card_special_object") or
-            soup.find("td", class_="card_light_object")):
+            soup.find("td", class_="card_light_object") or
+            soup.find("td", class_="card_immobile_object")):
         if ((soup.find(text=re.compile(r'.*EFFECT:.*')) or
              # Yes - eaxs003 spelled this "EFECT"...
              soup.find(text=re.compile(r'.*EFECT:.*')) or
@@ -1274,9 +1286,15 @@ class Unit:
 
     # Parse object special powers
     if self.type == "object":
-      object_tag = soup.find("td", class_="card_special_object")
+      for card_type in ["card_special_object",
+                        "card_light_object",
+                        "card_immobile_object"]:
+        object_tag = soup.find("td", class_=card_type)
+        if object_tag:
+          break
       if not object_tag:
-        object_tag = soup.find("td", class_="card_light_object")
+        raise RuntimeError("For unit '%s', cannot find object special power tags")
+
       tag_list = object_tag.parent.next_sibling.next_sibling.find_all("div")
       for tag in tag_list:
         if tag.string:

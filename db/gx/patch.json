@@ -1,0 +1,120 @@
+{
+  "updates": {
+    "gx002": {
+      "special_powers": [{
+        "powers": ["willpower"]
+      }]
+    },
+    "gx021": {
+      "special_powers": [{
+        "powers": ["barrier", "poison", "defend", "probability_control", "leap_climb", "perplex"]
+      }]
+    },
+    "gx022": {
+      "special_powers": [{
+        "powers": ["impervious"]
+      }]
+    },
+    "gx045": {
+      "special_powers": [{
+      }, {
+        "description": "Vulcan can use Incapacitate, Perplex and Quake.",
+        "powers": ["incapacitate", "perplex", "quake"]
+      }]
+    },
+    "gx053": {
+      "special_powers": [{
+      }, {
+        "powers": ["telekinesis"]
+      }]
+    },
+    "gx055": {
+      "special_powers": [{
+      }, {
+      }, {
+      }, {
+        "powers": ["penetrating_psychic_blast", "perplex", "regeneration"]
+      }]
+    },
+    "gx056": {
+      "special_powers": [{
+      }, {
+        "powers": ["invulnerability"]
+      }]
+    },
+    "gx057": {
+      "special_powers": [{
+        "powers": ["force_blast", "telekinesis"]
+      }]
+    },
+    "gx058": {
+      "special_powers": [{
+      }, {
+      }, {
+        "powers": ["outwit"]
+      }]
+    },
+    "gx103": {
+      "special_powers": [{
+      }, {
+        "powers": ["ranged_combat_expert", "combat_reflexes", "close_combat_expert", "energy_shield_deflection"]
+      }]
+    },
+    "gxG03": {
+      "special_powers": [{
+        "powers": ["plasticity", "shape_change"]
+      }]
+    },
+    "gxG04": {
+      "special_powers": [{
+      }, {
+      }, {
+        "powers": ["impervious"]
+      }]
+    },
+    "gxG06": {
+      "special_powers": [{
+      }, {
+      }, {
+        "powers": ["perplex"]
+      }]
+    },
+    "gxS101": {
+      "object_type": "relic",
+      "object_size": "immobile",
+      "relic_roll_min": 5,
+      "special_powers": [{
+        "description": "Modify this character's damage value by +1 and this character can use Charge, Super Strength, and Toughness.",
+        "powers": ["charge", "super_strength", "toughness"]
+      }]
+    },
+    "gxS102": {
+      "object_type": "standard",
+      "object_size": "heavy",
+      "special_powers": [{
+        "__delete__": true
+      }]
+    }
+  },
+  "deletions": [
+    "gxG08",
+    "gxG09"
+  ],
+  "additions": [{
+    "unit_id": "gxM001",
+    "set_id": "gx",
+    "collector_number": "M001",
+    "name": "Madripoor Lowtown",
+    "type": "map",
+    "map_url": "https://hcmaps.net/maps/gsx/madripoor_lowtown.json"
+  }, {
+    "unit_id": "gxM002",
+    "set_id": "gx",
+    "collector_number": "M002",
+    "name": "Krakoa",
+    "type": "map",
+    "special_powers": [{
+      "description": "The orange squares are Krakoa nerve center squares. They act as blocking terrain but can't be destroyed. The Living Island - At the end of your turn, roll a d6. On a result of 1-3, nothing happens. On a result of 4, EARTHQUAKE! Each character is dealt 1 damage. On a result of 5, SHIFTING FOILAGE. Printed hindering terrain acts as blocking terrain instead until the beginning of your next turn. Characters occupying those squares take 1 unavoidable damage and are placed in their owner's starting area. On a result of 6, THE ISLAND AWAKES. The Krakoa nerve center in the orange squares make an 8 range, 10 attack, 3 damage ranged combat attack against an opposing character of your choice. The line of fire for this attack ignores hindering terrain and elevation."
+    }],
+    "map_url": "https://hcmaps.net/maps/gsx/krakoa.json"
+  }]}

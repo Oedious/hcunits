@@ -891,6 +891,21 @@ const SET_LIST = {
     "release_date": "2011-07-01",
     "universe": "marvel"
   },
+  "glgf": {
+    "name": "Green Lantern: Gravity Feed",
+    "release_date": "2011-05-01",
+    "universe": "dc"
+  },
+  "ffgl": {
+    "name": "Fast Forces: Green Lantern",
+    "release_date": "2011-05-01",
+    "universe": "dc"
+  },
+  "gx": {
+    "name": "Giant-Size X-Men",
+    "release_date": "2011-01-20",
+    "universe": "marvel"
+  },
   "wk": {
     "name": "WizKids Standard Game Pieces",
     "release_date": "2002-05-01",
