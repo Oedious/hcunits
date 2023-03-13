@@ -114,6 +114,10 @@ class SmallUnitView extends BaseUnitView {
     var currentLineCount = 0;
     var currentCard = 0;
 
+    // Keep track of whether there was a special power with an icon, as we need
+    // to account for the spacing of any powers after that.
+    var wasIcon = false;
+
     var htmlColumns = [];
     var top = hasToken ? 288 : 100;
     var html = `<table id='smallCardSpecialPowersTable0' class='specialPowersTable' style='top:${top}px;'>`;
@@ -150,7 +154,7 @@ class SmallUnitView extends BaseUnitView {
               <img class='specialPowerRallyDie' src='/static/images/misc/d6_${power.rally_die}.png' alt='${power.rally_die}'/>
             </div>
           </td>`;
-      } else if (type == "consolation") {
+      } else if (wasIcon) {
         // Don't use an icon, but add a tag to preserve spacing.
         iconHtml = "<td class='specialPowerImg'></td>";
       } else if (type) {
@@ -161,6 +165,10 @@ class SmallUnitView extends BaseUnitView {
       } else {
         // Don't use an icon and use the full space of the card.
         iconHtml = "";
+      }
+      
+      if (!wasIcon && iconHtml != "") {
+        wasIcon = true;
       }
 
       const CHARS_PER_NAME_LINE = iconHtml.length == 0 ? CHARS_PER_NAME_LINE_WITHOUT_ICON : CHARS_PER_NAME_LINE_WITH_ICON;

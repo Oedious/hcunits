@@ -37,7 +37,11 @@ const TYPE_LIST = {
   },
   "battlefield_condition": {
     "name": "Battlefield Condition",
-    "icon": "tour",
+    "icon": "thunderstorm",
+  },
+  "feat": {
+    "name": "Feat",
+    "icon": "sprint",
   },
   /*
   "terrain": {

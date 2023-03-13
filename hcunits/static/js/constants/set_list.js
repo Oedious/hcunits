@@ -911,6 +911,16 @@ const SET_LIST = {
     "release_date": "2010-12-01",
     "universe": "dc"
   },
+  "bd": {
+    "name": "Brightest Day",
+    "release_date": "2010-10-27",
+    "universe": "dc"
+  },
+  "ws": {
+    "name": "Web of Spider-Man",
+    "release_date": "2010-09-08",
+    "universe": "marvel"
+  },
   "wk": {
     "name": "WizKids Standard Game Pieces",
     "release_date": "2002-05-01",

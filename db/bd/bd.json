@@ -1,0 +1,813 @@
+[
+  {
+    "unit_id": "bd001", 
+    "set_id": "bd", 
+    "collector_number": "001", 
+    "name": "Martian Manhunter", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      158
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Brightest Day", 
+      "Detective"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "DETECTIVE OF THE DEAD", 
+        "description": "If an opposing character is KO'd during your turn, Martian Manhunter can use Exploit Weakness, Outwit, and Probability Control until the beginning of your next turn.", 
+        "powers": [
+          "exploit_weakness", 
+          "outwit", 
+          "probability_control"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "6", 
+    "targets": "1", 
+    "speed_type": "wing", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "impervious", 
+        "defense_value": 18, 
+        "damage_power": "shape_change", 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "stealth", 
+        "speed_value": 8, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 11, 
+        "defense_power": "impervious", 
+        "defense_value": 18, 
+        "damage_power": "shape_change", 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "stealth", 
+        "speed_value": 7, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "shape_change", 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "hypersonic_speed", 
+        "speed_value": 12, 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "hypersonic_speed", 
+        "speed_value": 10, 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "perplex", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "hypersonic_speed", 
+        "speed_value": 9, 
+        "attack_value": 9, 
+        "defense_power": "invulnerability", 
+        "defense_value": 16, 
+        "damage_power": "perplex", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "hypersonic_speed", 
+        "speed_value": 9, 
+        "attack_value": 9, 
+        "defense_power": "regeneration", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "bd002", 
+    "set_id": "bd", 
+    "collector_number": "002", 
+    "name": "Firestorm", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      141
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Brightest Day"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "FIGHT FOR CONTROL", 
+        "description": "At the beginning of your turn, if Firestorm has no action tokens, you may roll 1d6. If you roll 1-3, Firestorm can use Penetrating/Psychic Blast. If you roll 4-6, Firestorm can use Perplex. He can use that power until he begins your turn with no action tokens.", 
+        "powers": [
+          "penetrating_psychic_blast", 
+          "perplex"
+        ]
+      }, 
+      {
+        "type": "damage", 
+        "name": "RESTRUCTURE", 
+        "description": "Give Firestorm a power action. You may destroy up to three wall segments and/or blocking terrain within his line of fire."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "8", 
+    "targets": "2", 
+    "speed_type": "wing", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 12, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 11, 
+        "attack_power": "pulse_wave", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "running_shot", 
+        "speed_value": 10, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 9, 
+        "defense_power": "invulnerability", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "running_shot", 
+        "speed_value": 10, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 8, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 15, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_power": "pulse_wave", 
+        "attack_value": 9, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 6, 
+        "speed_value": 8, 
+        "attack_power": "pulse_wave", 
+        "attack_value": 10, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 17, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 7, 
+        "speed_value": 8, 
+        "attack_power": "pulse_wave", 
+        "attack_value": 9, 
+        "defense_power": "regeneration", 
+        "defense_value": 16, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "bd003", 
+    "set_id": "bd", 
+    "collector_number": "003", 
+    "name": "Deadman", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      87
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "mystics"
+    ], 
+    "keywords": [
+      "Brightest Day", 
+      "Mystical", 
+      "White Lantern Corps"
+    ], 
+    "special_powers": [
+      {
+        "type": "attack", 
+        "name": "WHITE REBIRTH", 
+        "description": "Deadman can use Support and Telekinesis. When he uses support, his minimum result is 2.", 
+        "powers": [
+          "support", 
+          "telekinesis"
+        ]
+      }, 
+      {
+        "type": "defense", 
+        "name": "LIVE!", 
+        "description": "Deadman can use Regeneration. When turning the dial, if this click is revealed due to damage taken from an opponent's attack, stop turning the dial.", 
+        "powers": [
+          "regeneration"
+        ]
+      }, 
+      {
+        "type": "damage", 
+        "name": "SUMMON THE WHITE", 
+        "description": "Give Deadman a power action. Any number of friendly characters with the Brightest Day and/or White Lantern Corps keywords can be placed adjacent to him, up to the number of adjacent unoccupied squares. Those characters can't be given actions until your next turn."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "6", 
+    "targets": "1", 
+    "speed_type": "wing", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 10, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 18, 
+        "damage_power": "leadership", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "force_blast", 
+        "speed_value": 8, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "force_blast", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "force_blast", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 10, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_value": 9, 
+        "attack_value": 9, 
+        "defense_power": "special", 
+        "defense_value": 16, 
+        "damage_power": "support", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "bd004", 
+    "set_id": "bd", 
+    "collector_number": "004", 
+    "name": "Hawkgirl", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      71
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Brightest Day", 
+      "Warrior"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "MASTER AERIAL COMBATANT", 
+        "description": "When Hawkgirl attacks a character who can use the Flight ability, modify her attack and damage values by +1 until the end of your turn."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "wing", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 10, 
+        "attack_power": "super_strength", 
+        "attack_value": 11, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "battle_fury", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "charge", 
+        "speed_value": 10, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_power": "battle_fury", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "flurry", 
+        "speed_value": 11, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "battle_fury", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "flurry", 
+        "speed_value": 11, 
+        "attack_power": "super_strength", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "battle_fury", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "flurry", 
+        "speed_value": 9, 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "flurry", 
+        "speed_value": 9, 
+        "attack_value": 9, 
+        "defense_power": "regeneration", 
+        "defense_value": 15, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "bd005", 
+    "set_id": "bd", 
+    "collector_number": "005", 
+    "name": "Captain Boomerang", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      61
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Brightest Day", 
+      "Rogues"
+    ], 
+    "special_powers": [
+      {
+        "type": "attack", 
+        "name": "BOOMERANG'S PATH", 
+        "description": "Give Captain Boomerang a power action and choose up to 6 different squares within line of fire (ignoring characters for this purpose.) Each square must be different, adjacent to the previously chosen square, and the first and last squares chosen must be adjacent to this character. Make a ranged combat attack and compare the result to each opposing\ncharacter occupying a chosen square. Each character hit this way is dealt 2 damage. This attack does not target."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "6", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "sharpshooter", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 16, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "running_shot", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "running_shot", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 17, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "energy_shield_deflection", 
+        "defense_value": 16, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 6, 
+        "attack_power": "special", 
+        "attack_value": 8, 
+        "defense_power": "regeneration", 
+        "defense_value": 15, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "bd006", 
+    "set_id": "bd", 
+    "collector_number": "006", 
+    "name": "Aquaman", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      105
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Atlantis", 
+      "Brightest Day"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "THE UNDEAD SEA", 
+        "description": "Whenever another friendly character with the Atlantis keyword is KO'd, deal 2 damage to each opposing character that dealt damage to that character this turn."
+      }, 
+      {
+        "type": "attack", 
+        "name": "TENTACLE WHIP", 
+        "description": "When Aquaman occupies water terrain, he has a range of 8 and his line of fire to other characters occupying water terrain is never blocked."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "transport_dolphin", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 10, 
+        "attack_power": "super_strength", 
+        "attack_value": 11, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "charge", 
+        "speed_value": 10, 
+        "attack_power": "super_strength", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 18, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "super_strength", 
+        "attack_value": 9, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "mind_control", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "mind_control", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "support", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "mind_control", 
+        "speed_value": 6, 
+        "attack_power": "special", 
+        "attack_value": 8, 
+        "defense_power": "regeneration", 
+        "defense_value": 16, 
+        "damage_power": "support", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "bd007", 
+    "set_id": "bd", 
+    "collector_number": "007", 
+    "name": "Osiris", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      127
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Brightest Day", 
+      "Mystical"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "QUEST FOR BLACK ADAM", 
+        "description": "Once per game, when Osiris hits with a critical hit that hasn't been re-rolled yet, after actions resolve, modify his combat values by +1 for the rest of the game."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "3", 
+    "targets": "1", 
+    "speed_type": "wing", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 9, 
+        "attack_power": "super_strength", 
+        "attack_value": 10, 
+        "defense_power": "impervious", 
+        "defense_value": 17, 
+        "damage_power": "battle_fury", 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "charge", 
+        "speed_value": 10, 
+        "attack_power": "super_strength", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "battle_fury", 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "hypersonic_speed", 
+        "speed_value": 10, 
+        "attack_power": "quake", 
+        "attack_value": 11, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "flurry", 
+        "speed_value": 11, 
+        "attack_power": "quake", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "flurry", 
+        "speed_value": 9, 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "hypersonic_speed", 
+        "speed_value": 7, 
+        "attack_value": 8, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "hypersonic_speed", 
+        "speed_value": 8, 
+        "attack_power": "quake", 
+        "attack_value": 8, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "battle_fury", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 8, 
+        "speed_value": 8, 
+        "attack_power": "quake", 
+        "attack_value": 8, 
+        "defense_power": "regeneration", 
+        "defense_value": 15, 
+        "damage_power": "battle_fury", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "bdM001", 
+    "set_id": "bd", 
+    "collector_number": "M001", 
+    "name": "The Crater", 
+    "type": "map", 
+    "point_values": [], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [], 
+    "special_powers": [
+      {
+        "description": "Orange squares are Fallen Cosmic Object squares. Objects placed in one of these squares can't be picked up, moved, or destroyed."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "map_url": "https://hcmaps.net/maps/bd/the_crater.json", 
+    "dial": []
+  }, 
+  {
+    "unit_id": "bdM002", 
+    "set_id": "bd", 
+    "collector_number": "M002", 
+    "name": "The Monument", 
+    "type": "map", 
+    "point_values": [], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [], 
+    "special_powers": [], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "map_url": "https://hcmaps.net/maps/bd/the_monument.json", 
+    "dial": []
+  }
+]

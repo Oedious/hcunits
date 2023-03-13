@@ -672,6 +672,12 @@ SET_MAP = {
   "an": {
     "name": "DC 75th Anniversary",
   },
+  "bd": {
+    "name": "Brightest Day",
+  },
+  "ws": {
+    "name": "Web of Spider-Man",
+  },
 }
 
 POWERS = {
@@ -781,7 +787,7 @@ POWER_VALUES = [
 ]
 
 TYPE_VALUES = [
-  'character', 'object', 'equipment', 'map', 'bystander', 'tarot_card', 'mystery_card', 'id_card', 'attachment', 'battlefield_condition'
+  'character', 'object', 'equipment', 'map', 'bystander', 'tarot_card', 'mystery_card', 'id_card', 'attachment', 'battlefield_condition', 'feat'
 ]
 
 RARITY_VALUES = [
@@ -819,6 +825,7 @@ SPECIAL_POWER_TYPE_VALUES = [
   "trap_spell",
   "ritual",
   "deathtrap",
+  "prerequisites",
 ]
 
 RALLY_TYPE_VALUES = [
@@ -1083,6 +1090,7 @@ class Unit:
         rarity == "Rarity: Mini Game" or
         rarity == "Rarity: Team Pack" or
         rarity == "Rarity: PNP" or
+        rarity == "Rarity: Action Pack" or
         rarity == "Rarity: Deadpool Gravity Feed"):
       self.rarity = "common"
     elif rarity == "Rarity: Uncommon":
@@ -1225,6 +1233,8 @@ class Unit:
         self.attachment_type = "construct"
     elif figure_rank == "battlefield_condition":
       self.type = "battlefield_condition"
+    elif figure_rank == "feat":
+      self.type = "feat"
 
     if not self.type:
       raise RuntimeError("The unit type (%s) for '%s' is currently not supported" % (figure_rank, self.unit_id))
@@ -1242,7 +1252,8 @@ class Unit:
           self.type == "id_card" or
           self.type == "mystery_card" or
           self.type == "attachment" or
-          self.type == "battlefield_condition"):
+          self.type == "battlefield_condition" or
+          self.type == "feat"):
       point_value_tag = soup.find("td", class_="tfoot")
     elif self.type == "team_up" or self.type == "tarot_card":
       point_value_tag = None
@@ -1504,19 +1515,35 @@ class Unit:
 
     # Parse tarot cards
     if self.type == "tarot_card":
-      equip_tag = soup.find("td", class_="card_tarot_card").parent
-      desc_tag = equip_tag.next_sibling.next_sibling.find("div")
+      card_tag = soup.find("td", class_="card_tarot_card").parent
+      desc_tag = card_tag.next_sibling.next_sibling.find("div")
       self.special_powers.append(OrderedDict([
         ("description", clean_string(desc_tag.string.strip()))
       ]))
 
     # Parse battlefield conditions
     if self.type == "battlefield_condition":
-      equip_tag = soup.find("td", class_="card_battlefield_condition").parent
-      desc_tag = equip_tag.next_sibling.next_sibling.find("div")
+      card_tag = soup.find("td", class_="card_battlefield_condition").parent
+      desc_tag = card_tag.next_sibling.next_sibling.find("div")
       self.special_powers.append(OrderedDict([
         ("description", clean_string(desc_tag.string.strip()))
       ]))
+
+    # Parse feats
+    if self.type == "feat":
+      card_tag = soup.find("td", class_="card_feat").parent
+      for tag in card_tag.next_sibling.next_sibling.find_all("div"):
+        if tag.strong and tag.strong.string.strip() == "Prerequisites:":
+          sp_desc = list(tag.children)[2].string.strip()
+          self.special_powers.append(OrderedDict([
+            ("name", "Prerequisites"),
+            ("description", clean_string(sp_desc))
+          ]))
+        else:
+          self.special_powers.append(OrderedDict([
+            ("description", clean_string(tag.string.strip()))
+          ]))
+          
 
     # Parse ID cards
     if self.type == "id_card":
@@ -1603,8 +1630,6 @@ class Unit:
                sp_name == "MERGE" or
                sp_name == "TINY SIZE")):
             continue
-          
-          # Skip special powers that describe merge, split and 
           
           # Handle special power that describes the number of passengers.
           if ((self.type == "character" or self.type == "bystander") and
