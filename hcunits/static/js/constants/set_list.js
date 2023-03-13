@@ -851,6 +851,26 @@ const SET_LIST = {
     "release_date": "2011-12-01",
     "universe": "lotr"
   },
+  "ih": {
+    "name": "Incredible Hulk",
+    "release_date": "2011-11-01",
+    "universe": "marvel"
+  },
+  "ffih": {
+    "name": "Fast Forces: Incredible Hulk",
+    "release_date": "2011-11-01",
+    "universe": "marvel"
+  },
+  "sm": {
+    "name": "Superman",
+    "release_date": "2011-09-01",
+    "universe": "dc"
+  },
+  "ffsm": {
+    "name": "Fast Forces: Superman",
+    "release_date": "2011-12-01",
+    "universe": "dc"
+  },
   "wk": {
     "name": "WizKids Standard Game Pieces",
     "release_date": "2002-05-01",

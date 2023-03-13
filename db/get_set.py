@@ -636,6 +636,18 @@ SET_MAP = {
   "lotr": {
     "name": "Lord of the Rings",
   },
+  "ih": {
+    "name": "Incredible Hulk",
+  },
+  "ffih": {
+    "name": "Fast Forces: Incredible Hulk",
+  },
+  "sm": {
+    "name": "Superman",
+  },
+  "ffsm": {
+    "name": "Fast Forces: Superman",
+  },
 }
 
 POWERS = {

@@ -1,0 +1,111 @@
+{
+  "updates": {
+    "sm002": {
+      "special_powers": [{
+        "powers": ["willpower"]
+      }]
+    },
+    "sm003": {
+      "special_powers": [{
+        "powers": ["willpower"]
+      }]
+    },
+    "sm004": {
+      "special_powers": [{
+        "powers": ["toughness"]
+      }]
+    },
+    "sm008": {
+      "special_powers": [{
+      }, {
+        "powers": ["outwit", "perplex", "probability_control"]
+      }]
+    },
+    "sm009": {
+      "special_powers": [{
+        "powers": ["stealth", "earthbound_neutralized"]
+      }]
+    },
+    "sm014": {
+      "special_powers": [{
+        "powers": ["defend"]
+      }]
+    },
+    "sm034": {
+      "special_powers": [{
+      }, {
+        "powers": ["telekinesis"]
+      }]
+    },
+    "sm043": {
+      "special_powers": [{
+        "powers": ["battle_fury"]
+      }]
+    },
+    "sm050": {
+      "special_powers": [{
+      }, {
+      }, {
+        "powers": ["energy_explosion", "incapacitate", "pulse_wave"]
+      }]
+    },
+    "sm055": {
+      "point_values": [300, 200, 100],
+      "dial": [{
+      }, {
+      }, {
+      }, {
+        "starting_line": true
+      }]
+    },
+    "sm102": {
+      "special_powers": [{
+      }, {
+        "powers": ["regeneration"]
+      }]
+    },
+    "sm103": {
+      "special_powers": [{
+        "powers": ["incapacitate"]
+      }, {
+        "powers": ["willpower"]
+      }]
+    },
+    "smS101": {
+      "object_size": "light"
+    },
+    "smS102": {
+      "object_size": "light"
+    },
+    "smS103": {
+      "object_size": "light"
+    },
+    "smS104": {
+      "object_size": "light"
+    },
+    "smS105": {
+      "object_size": "light"
+    },
+    "smS106": {
+      "object_size": "light"
+    }
+  },
+  "deletions": [
+    "sm054e"
+  ],
+  "additions": [{
+    "unit_id": "smM001",
+    "set_id": "sm",
+    "collector_number": "M001",
+    "name": "Fortress of Solitude",
+    "type": "map",
+    "map_url": "https://hcmaps.net/maps/sm/fortress_of_solitude.json"
+  }, {
+    "unit_id": "smM002",
+    "set_id": "sm",
+    "collector_number": "M002",
+    "name": "Metropolis City Battleground",
+    "type": "map",
+    "map_url": "https://hcmaps.net/maps/sm/metropolis_city_battleground.json"
+  }]
+}
