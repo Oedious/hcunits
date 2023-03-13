@@ -1,0 +1,27 @@
+{
+  "updates": {
+    "ffwm002": {
+      "special_powers": [{
+        "powers": ["perplex", "flurry"]
+      }]
+    }
+  },
+  "additions": [{
+    "unit_id": "ffwmM001",
+    "set_id": "ffwm",
+    "collector_number": "M001",
+    "name": "Karnak",
+    "type": "map",
+    "special_powers": [{
+      "description": "Orange squares are Intrinsic Field Subtractor Squares. After an action resolves, if during that action a character moved into an orange square, roll a d6 for each character that did so. On a roll of 1-3, deal that character 1 penetrating damage. On a roll of 4-6, heal that character of 1 damage."
+    }],
+    "map_url": "https://hcmaps.net/maps/wm/karnak.json"
+  }, {
+    "unit_id": "ffwmM002",
+    "set_id": "ffwm",
+    "collector_number": "M002",
+    "name": "Dr. Manhattan's Lab",
+    "type": "map",
+    "map_url": "https://hcmaps.net/maps/wm/dr_manhattans_lab.json"
+  }]
+}

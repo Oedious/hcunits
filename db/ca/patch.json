@@ -1,0 +1,229 @@
+{
+  "updates": {
+    "ca002": {
+      "special_powers": [{
+        "powers": ["ranged_combat_expert"]
+      }]
+    },
+    "ca004": {
+      "special_powers": [{
+        "powers": ["support"]
+      }]
+    },
+    "ca005": {
+      "special_powers": [{
+        "powers": ["stealth"]
+      }]
+    },
+    "ca008": {
+      "special_powers": [{
+        "powers": ["toughness", "invulnerability"]
+      }]
+    },
+    "ca014": {
+      "special_powers": [{
+        "powers": ["willpower", "toughness", "invulnerability"]
+      }]
+    },
+    "ca030": {
+      "special_powers": [{
+        "powers": ["super_senses"]
+      }]
+    },
+    "ca032": {
+      "special_powers": [{
+        "powers": ["invulnerability"]
+      }]
+    },
+    "ca037": {
+      "special_powers": [{
+        "powers": ["support"]
+      }]
+    },
+    "ca040": {
+      "special_powers": [{
+        "powers": ["energy_shield_deflection", "running_shot"]
+      }]
+    },
+    "ca043": {
+      "special_powers": [{
+        "powers": ["smoke_cloud"]
+      }]
+    },
+    "ca046": {
+      "special_powers": [{
+      }, {
+        "powers": ["energy_explosion"]
+      }]
+    },
+    "ca051": {
+      "special_powers": [{
+        "powers": ["energy_shield_deflection", "penetrating_psychic_blast"]
+      }, {
+        "__delete__": true
+      }]
+    },
+    "ca055": {
+      "special_powers": [{
+        "powers": ["phasing_teleport", "stealth", "toughness"]
+      }]
+    },
+    "ca056": {
+      "special_powers": [{
+        "powers": ["super_senses"]
+      }]
+    },
+    "ca057": {
+      "special_powers": [{
+        "powers": ["energy_shield_deflection"]
+      }]
+    },
+    "ca058": {
+      "special_powers": [{
+        "powers": ["poison"]
+      }, {
+        "powers": ["pulse_wave"]
+      }, {
+        "powers": ["energy_shield_deflection", "toughness"]
+      }]
+    },
+    "ca059": {
+      "dial": [{
+        "speed_value": "",
+        "attack_value": "4",
+        "defense_value": "",
+        "damage_value": ""
+      }, {
+        "speed_value": "",
+        "attack_value": "3",
+        "defense_value": "",
+        "damage_value": ""
+      }, {
+        "speed_value": "",
+        "attack_value": "2",
+        "defense_value": "",
+        "damage_value": ""
+      }, {
+        "speed_value": "",
+        "attack_value": "1",
+        "defense_value": "",
+        "damage_value": ""
+      }]
+    },
+    "ca060": {
+      "dial": [{
+        "speed_value": "",
+        "attack_value": "4",
+        "defense_value": "",
+        "damage_value": ""
+      }, {
+        "speed_value": "",
+        "attack_value": "3",
+        "defense_value": "",
+        "damage_value": ""
+      }, {
+        "speed_value": "",
+        "attack_value": "2",
+        "defense_value": "",
+        "damage_value": ""
+      }, {
+        "speed_value": "",
+        "attack_value": "1",
+        "defense_value": "",
+        "damage_value": ""
+      }]
+    },
+    "ca102": {
+      "special_powers": [{
+      }, {
+        "powers": ["probability_control"]
+      }]
+    },
+    "caS101": {
+      "object_type": "relic",
+      "object_size": "immobile",
+      "relic_roll_min": 5,
+      "special_powers": [{
+        "description": "Modify this character's range value by +2 and this character can use Penetrating/Psychic Blast.",
+        "powers": ["penetrating_psychic_blast"]
+      }]
+    },
+    "caS102": {
+      "object_type": "standard",
+      "object_size": "light",
+      "special_powers": [{
+        "__delete__": true
+      }]
+    }
+  },
+  "deletions": [
+    "ca201",
+    "ca202",
+    "ca203",
+    "ca204"
+  ],
+  "additions": [{
+    "unit_id": "ca051r",
+    "set_id": "ca",
+    "collector_number": "051r",
+    "name": "Zodiak Key",
+    "type": "object",
+    "object_type": "relic",
+    "object_size": "immobile",
+    "relic_roll_min": 6,
+    "special_powers": [{
+      "description": "Modify this character's combat values by +1 and this character can use Probability Control if it cannot already.",
+      "powers": ["probability_control"]
+    }]
+  }, {
+    "unit_id": "caM001",
+    "set_id": "ca",
+    "collector_number": "M001",
+    "name": "S.H.I.E.L.D. Helicarrier Bow",
+    "type": "map",
+    "special_powers": [{
+      "description": "Orange squares are the edge of the Helicarrier squares. At the end of each turn, if a character that can't use the Flight ability is occupying one of these squares, place them in the nearest non-orange square that they could be placed in and give them an action token."
+    }],
+    "map_url": "https://hcmaps.net/maps/ca/shield_helicarrier_bow.json"
+  }, {
+    "unit_id": "caM002",
+    "set_id": "ca",
+    "collector_number": "M002",
+    "name": "S.H.I.E.L.D. Helicarrier Midsection",
+    "type": "map",
+    "special_powers": [{
+      "name": "Stair Squares",
+      "description": "If you are using map S-4, you may give a character occupying this square a power action and place them in the corresponding square on that map. If that square is occupied, place the character in the nearest square they could be placed in."
+    }, {
+      "name": "Balcony Below Squares",
+      "description": "If you are using map S-4, you may give a character occupying this square a power action and roll a d6, adding 1 to the result if they can use the Flight ability. On a result of 4-6 place them in the corresponding square on that map. If that square is occupied, place the character in the nearest square they could be placed in."
+    }],
+    "map_url": "https://hcmaps.net/maps/ca/shield_helicarrier_midsection.json"
+  }, {
+    "unit_id": "caM003",
+    "set_id": "ca",
+    "collector_number": "M003",
+    "name": "S.H.I.E.L.D. Helicarrier Stern",
+    "type": "map",
+    "special_powers": [{
+      "description": "Orange squares are the edge of the Helicarrier squares. At the end of each turn, if a character that can't use the Flight ability is occupying one of these squares, place them in the nearest non-orange square that they could be placed in and give them an action token."
+    }],
+    "map_url": "https://hcmaps.net/maps/ca/shield_helicarrier_stern.json"
+  }, {
+    "unit_id": "caM004",
+    "set_id": "ca",
+    "collector_number": "M004",
+    "name": "S.H.I.E.L.D. Helicarrier Below Decks",
+    "type": "map",
+    "special_powers": [{
+      "description": "Orange squares are 10,000 feet below squares. Characters can't move into or occupy these squares. If a character's knock back path is stopped by one of these squares, deal that character an additional 1 unavoidable damage."
+    }, {
+      "name": "Stair Squares",
+      "description": "If you are using map S-2, you may give a character occupying this square a power action and place them in the corresponding square on that map. If that square is occupied, place the character in the nearest square they could be placed in."
+    }, {
+      "name": "Balcony Below Squares",
+      "description": "If you are using map S-2, you may give a character occupying this square a power action and roll a d6, adding 1 to the result if they can use the Flight ability. On a result of 4-6 place them in the corresponding square on that map. If that square is occupied, place the character in the nearest square they could be placed in."
+    }],
+    "map_url": "https://hcmaps.net/maps/ca/shield_helicarrier_below_decks.json"
+  }]
+}

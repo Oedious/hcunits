@@ -871,6 +871,26 @@ const SET_LIST = {
     "release_date": "2011-12-01",
     "universe": "dc"
   },
+  "sf": {
+    "name": "Street Fighter",
+    "release_date": "2011-08-15",
+    "universe": "street_fighter"
+  },
+  "ffha": {
+    "name": "Fast Forces: Hammer of Thor",
+    "release_date": "2011-07-06",
+    "universe": "marvel"
+  },
+  "ffwm": {
+    "name": "Fast Forces: Watchmen",
+    "release_date": "2011-07-06",
+    "universe": "dc"
+  },
+  "ca": {
+    "name": "Captain America",
+    "release_date": "2011-07-01",
+    "universe": "marvel"
+  },
   "wk": {
     "name": "WizKids Standard Game Pieces",
     "release_date": "2002-05-01",

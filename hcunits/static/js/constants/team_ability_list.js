@@ -279,6 +279,13 @@ const TEAM_ABILITY_LIST = {
     "copyable": true,
     "wildcard": false
   },
+  "watchmen": {
+    "name": "Watchmen",
+    "universe": "dc",
+    "description": "The combat values of characters using the Watchmen team ability can’t be modified by opposing characters.",
+    "copyable": true,
+    "wildcard": false,
+  },
   "wonder_woman_ally": {
     "name": "Wonder Woman Ally",
     "universe": "dc",
@@ -438,6 +445,13 @@ const TEAM_ABILITY_LIST = {
     "universe": "assassins_creed",
     "description": "When this character has one or more action tokens at the beginning of your turn, as a free action they can modify the attack or defense value of an adjacent friendly character by +1 until your next turn.",
     "copyable": true,
+    "wildcard": false,
+  },
+  "street_fighter": {
+    "name": "Street Fighter",
+    "universe": "street_fighter",
+    "description": "Give this character a power action to move up to 3 squares and then make a close combat attack. Uncopyable.",
+    "copyable": false,
     "wildcard": false,
   },
 }

@@ -648,6 +648,18 @@ SET_MAP = {
   "ffsm": {
     "name": "Fast Forces: Superman",
   },
+  "sf": {
+    "name": "Street Fighter",
+  },
+  "ffha": {
+    "name": "Fast Forces: Hammer of Thor",
+  },
+  "ffwm": {
+    "name": "Fast Forces: Watchmen",
+  },
+  "ca": {
+    "name": "Captain America",
+  },
 }
 
 POWERS = {
@@ -2117,7 +2129,9 @@ class Unit:
             key == "rarity" or
             key == "keywords" or
             key == "defense_type" or
+            key == "object_type" or
             key == "object_size" or
+            key == "relic_roll_min" or
             key == "bystander_type" or
             key == "point_values" or
             key == "team_abilities" or
