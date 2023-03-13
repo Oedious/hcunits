@@ -1,0 +1,2948 @@
+[
+  {
+    "unit_id": "wm001", 
+    "set_id": "wm", 
+    "collector_number": "001", 
+    "name": "Rorschach", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      57
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "watchmen"
+    ], 
+    "keywords": [
+      "Detective", 
+      "Watchmen"
+    ], 
+    "special_powers": [
+      {
+        "type": "speed", 
+        "name": "FROM THE GUTTERS TO THE ROOFTOPS ", 
+        "description": "Rorschach can use Leap/Climb and Stealth.", 
+        "powers": [
+          "leap_climb", 
+          "stealth"
+        ]
+      }, 
+      {
+        "type": "damage", 
+        "name": "NEVER COMPROMISE! NEVER SURRENDER! ", 
+        "description": "Rorschach can use Perplex, but he can only modify his own combat values.", 
+        "powers": [
+          "perplex"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "indomitable", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "special", 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "flurry", 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "flurry", 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "stealth", 
+        "speed_value": 6, 
+        "attack_value": 8, 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "stealth", 
+        "speed_value": 6, 
+        "attack_value": 8, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 15, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "stealth", 
+        "speed_value": 6, 
+        "attack_value": 8, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 14, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "wm002", 
+    "set_id": "wm", 
+    "collector_number": "002", 
+    "name": "Silk Spectre", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      46
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "watchmen"
+    ], 
+    "keywords": [
+      "Watchmen"
+    ], 
+    "special_powers": [
+      {
+        "type": "speed", 
+        "name": "MOM TAUGHT ME EVERYTHING", 
+        "description": "Silk Spectre can use Charge, Flurry, and Leap/Climb.", 
+        "powers": [
+          "charge", 
+          "flurry", 
+          "leap_climb"
+        ]
+      }, 
+      {
+        "type": "attack", 
+        "name": "YOU'RE SUCH AN...", 
+        "description": "Silk Spectre can make a ranged combat attack as if she had a range value of 6."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 8, 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "special", 
+        "speed_value": 8, 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "leap_climb", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "enhancement", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "leap_climb", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 8, 
+        "defense_value": 16, 
+        "damage_power": "enhancement", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "leap_climb", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 8, 
+        "defense_value": 15, 
+        "damage_power": "enhancement", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "leap_climb", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 8, 
+        "defense_value": 15, 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "wm003", 
+    "set_id": "wm", 
+    "collector_number": "003", 
+    "name": "Nite Owl", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      53
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "watchmen"
+    ], 
+    "keywords": [
+      "Watchmen"
+    ], 
+    "special_powers": [
+      {
+        "type": "attack", 
+        "name": "GOGGLES", 
+        "description": "Nite Owl ignores other characters' Stealth."
+      }, 
+      {
+        "type": "damage", 
+        "name": "POCKET LASER", 
+        "description": "Nite Owl can use Penetrating/Psychic Blast as if he had a range of 8.", 
+        "powers": [
+          "penetrating_psychic_blast"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "4", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "leap_climb", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "leap_climb", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "leap_climb", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "leap_climb", 
+        "speed_value": 6, 
+        "attack_power": "smoke_cloud", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 6, 
+        "attack_power": "smoke_cloud", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 15, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 6, 
+        "speed_value": 6, 
+        "attack_power": "smoke_cloud", 
+        "attack_value": 8, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 15, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 7, 
+        "speed_value": 6, 
+        "attack_power": "smoke_cloud", 
+        "attack_value": 8, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 14, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "wm004", 
+    "set_id": "wm", 
+    "collector_number": "004", 
+    "name": "Ozymandias", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      83
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "watchmen"
+    ], 
+    "keywords": [
+      "Celebrity", 
+      "Watchmen"
+    ], 
+    "special_powers": [
+      {
+        "type": "damage", 
+        "name": "SMARTEST MAN ON EARTH", 
+        "description": "Ozymandias can use Outwit. Ozymandias can use Outwit a second time during your turn, but must be given a power action instead of a free action to use it.", 
+        "powers": [
+          "outwit"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "leap_climb", 
+        "speed_value": 9, 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 18, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "leap_climb", 
+        "speed_value": 9, 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "leap_climb", 
+        "speed_value": 8, 
+        "attack_value": 9, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "leap_climb", 
+        "speed_value": 8, 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 8, 
+        "attack_value": 8, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 6, 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 7, 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_power": "willpower", 
+        "defense_value": 15, 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "wm005", 
+    "set_id": "wm", 
+    "collector_number": "005", 
+    "name": "Dr. Manhattan", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      276
+    ], 
+    "properties": [
+      "unique"
+    ], 
+    "team_abilities": [
+      "watchmen"
+    ], 
+    "keywords": [
+      "Scientist", 
+      "Watchmen"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "TRAIT", 
+        "description": "The powers of Dr. Manhattan can't be countered."
+      }, 
+      {
+        "type": "attack", 
+        "name": "ATOMIC MANIPULATION", 
+        "description": "Dr. Manhattan can use Barrier, Penetrating/Psychic Blast, and Telekinesis.", 
+        "powers": [
+          "barrier", 
+          "penetrating_psychic_blast", 
+          "telekinesis"
+        ]
+      }, 
+      {
+        "type": "defense", 
+        "name": "THAT DIDN'T KILL OSTERMAN...", 
+        "description": "Dr. Manhattan can use Impervious, but on a roll of 3-4, instead of the normal effect, you may choose to reduce the damage dealt to 0 and place Dr. Manhattan in your starting area.", 
+        "powers": [
+          "impervious"
+        ]
+      }, 
+      {
+        "type": "damage", 
+        "name": "SIMULTANEOUS PERCEPTION", 
+        "description": "Dr. Manhattan can use Probability Control and Super Senses.", 
+        "powers": [
+          "probability_control", 
+          "super_senses"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "10", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 14, 
+        "attack_power": "special", 
+        "attack_value": 12, 
+        "defense_power": "impervious", 
+        "defense_value": 18, 
+        "damage_power": "special", 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 13, 
+        "attack_power": "special", 
+        "attack_value": 11, 
+        "defense_power": "impervious", 
+        "defense_value": 18, 
+        "damage_power": "special", 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 12, 
+        "attack_power": "special", 
+        "attack_value": 11, 
+        "defense_power": "impervious", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 12, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 11, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_power": "special", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 11, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 16, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 10, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 9, 
+        "defense_power": "special", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 8, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 10, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 9, 
+        "defense_power": "invulnerability", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 9, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 10, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 9, 
+        "defense_power": "invulnerability", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 10, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 10, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 9, 
+        "defense_power": "invulnerability", 
+        "defense_value": 15, 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "wm006", 
+    "set_id": "wm", 
+    "collector_number": "006", 
+    "name": "The Comedian", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      83
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "watchmen"
+    ], 
+    "keywords": [
+      "Soldier", 
+      "Watchmen"
+    ], 
+    "special_powers": [], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "8", 
+    "targets": "2", 
+    "speed_type": "boot", 
+    "attack_type": "sharpshooter", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_value": 8, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 11, 
+        "defense_power": "willpower", 
+        "defense_value": 17, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_power": "willpower", 
+        "defense_value": 17, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_power": "ranged_combat_expert", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 6, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 6, 
+        "speed_value": 6, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 8, 
+        "defense_value": 15, 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "wm007", 
+    "set_id": "wm", 
+    "collector_number": "007", 
+    "name": "Hooded Justice", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      43
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Minutemen"
+    ], 
+    "special_powers": [
+      {
+        "type": "attack", 
+        "name": "STRONGMAN", 
+        "description": "Hooded Justice can use Super Strength, but he cannot pick up or carry heavy objects.", 
+        "powers": [
+          "super_strength"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "flurry", 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "flurry", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "willpower", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "flurry", 
+        "speed_value": 6, 
+        "attack_value": 8, 
+        "defense_power": "willpower", 
+        "defense_value": 15, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_value": 6, 
+        "attack_value": 7, 
+        "defense_power": "willpower", 
+        "defense_value": 15, 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "wm008", 
+    "set_id": "wm", 
+    "collector_number": "008", 
+    "name": "Captain Metropolis", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      40
+    ], 
+    "properties": [
+      "unique"
+    ], 
+    "team_abilities": [], 
+    "keywords": [
+      "Minutemen", 
+      "Soldier"
+    ], 
+    "special_powers": [
+      {
+        "type": "defense", 
+        "name": "WE HAVE TO STAND TOGETHER!", 
+        "description": "When Captain Metropolis is adjacent to a friendly character, modify the defense value of Captain Metropolis and all friendly characters adjacent to Captain Metropolisby +1."
+      }, 
+      {
+        "type": "damage", 
+        "name": "MILITARY EXPERIENCE", 
+        "description": "Captain Metropolis can use Enhancement and Leadership.", 
+        "powers": [
+          "enhancement", 
+          "leadership"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "6", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 2, 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 3, 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "special", 
+        "defense_value": 15, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 5, 
+        "attack_value": 8, 
+        "defense_power": "special", 
+        "defense_value": 15, 
+        "damage_power": "enhancement", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 5, 
+        "attack_value": 7, 
+        "defense_power": "special", 
+        "defense_value": 15, 
+        "damage_power": "enhancement", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "wm009", 
+    "set_id": "wm", 
+    "collector_number": "009", 
+    "name": "The Comedian", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      49
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Minutemen"
+    ], 
+    "special_powers": [
+      {
+        "type": "speed", 
+        "name": "CLEANING UP THE WATERFRONT", 
+        "description": "The Comedian can use Charge and Flurry; if the Comedian uses Flurry in the same turn as Charge and targets the same character with both attacks, modify his damage value by -1 for the second attack.", 
+        "powers": [
+          "charge", 
+          "flurry"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 8, 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "special", 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 15, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "special", 
+        "speed_value": 6, 
+        "attack_value": 8, 
+        "defense_power": "mastermind", 
+        "defense_value": 15, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "flurry", 
+        "speed_value": 7, 
+        "attack_value": 8, 
+        "defense_power": "mastermind", 
+        "defense_value": 15, 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "flurry", 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_power": "mastermind", 
+        "defense_value": 16, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "flurry", 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_power": "mastermind", 
+        "defense_value": 16, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "wm010", 
+    "set_id": "wm", 
+    "collector_number": "010", 
+    "name": "Silk Spectre", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      38
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Celebrity", 
+      "Minutemen"
+    ], 
+    "special_powers": [
+      {
+        "type": "speed", 
+        "name": "BEAUTY AND BRAWN", 
+        "description": "Silk Spectre can use Charge and Leap/Climb.", 
+        "powers": [
+          "charge", 
+          "leap_climb"
+        ]
+      }, 
+      {
+        "type": "defense", 
+        "name": "ALWAYS SURROUND YOURSELF WITH GOOD MEN", 
+        "description": "Silk Spectre can replace her defense value with the unmodified defense value of an adjacent friendly character."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_value": 9, 
+        "defense_power": "special", 
+        "defense_value": 16, 
+        "damage_power": "shape_change", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "special", 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "special", 
+        "defense_value": 16, 
+        "damage_power": "shape_change", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "special", 
+        "speed_value": 6, 
+        "attack_value": 8, 
+        "defense_power": "special", 
+        "defense_value": 15, 
+        "damage_power": "shape_change", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "special", 
+        "speed_value": 6, 
+        "attack_value": 8, 
+        "defense_value": 15, 
+        "damage_power": "shape_change", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 6, 
+        "attack_value": 8, 
+        "defense_value": 14, 
+        "damage_power": "shape_change", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "wm011", 
+    "set_id": "wm", 
+    "collector_number": "011", 
+    "name": "Dr. Manhattan", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      105
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Scientist", 
+      "Watchmen"
+    ], 
+    "special_powers": [
+      {
+        "type": "attack", 
+        "name": "SURRENDER TO ME PERSONALLY", 
+        "description": "Dr. Manhattan can use Incapacitate. When Dr. Manhattan hits a character with Incapacitate, he deals the character 1 penetrating damage in addition to the normal effect.", 
+        "powers": [
+          "incapacitate"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "10", 
+    "targets": "2", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "giant", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 12, 
+        "defense_power": "barrier", 
+        "defense_value": 16, 
+        "damage_power": "enhancement", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_value": 8, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 11, 
+        "defense_power": "invulnerability", 
+        "defense_value": 16, 
+        "damage_power": "enhancement", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_value": 7, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 16, 
+        "damage_power": "enhancement", 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 6, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 9, 
+        "defense_power": "barrier", 
+        "defense_value": 15, 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 6, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 9, 
+        "defense_power": "barrier", 
+        "defense_value": 16, 
+        "damage_value": 4
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 10, 
+        "attack_power": "special", 
+        "attack_value": 11, 
+        "defense_power": "regeneration", 
+        "defense_value": 17, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 8, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 12, 
+        "attack_power": "special", 
+        "attack_value": 11, 
+        "defense_power": "regeneration", 
+        "defense_value": 18, 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "wm012", 
+    "set_id": "wm", 
+    "collector_number": "012", 
+    "name": "Nite Owl", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      88
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "watchmen"
+    ], 
+    "keywords": [
+      "Armor", 
+      "Scientist"
+    ], 
+    "special_powers": [
+      {
+        "type": "speed", 
+        "name": "GLIDERS AND RESPIRATORS", 
+        "description": "Nite Owl can use the Flight and Swim abilities."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "6", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 8, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "shape_change", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "special", 
+        "speed_value": 8, 
+        "attack_power": "smoke_cloud", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "special", 
+        "speed_value": 7, 
+        "attack_power": "smoke_cloud", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "leap_climb", 
+        "speed_value": 7, 
+        "attack_power": "smoke_cloud", 
+        "attack_value": 8, 
+        "defense_power": "toughness", 
+        "defense_value": 15, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "leap_climb", 
+        "speed_value": 6, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 8, 
+        "defense_power": "toughness", 
+        "defense_value": 15, 
+        "damage_power": "shape_change", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "leap_climb", 
+        "speed_value": 6, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 8, 
+        "defense_value": 15, 
+        "damage_power": "shape_change", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "leap_climb", 
+        "speed_value": 6, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 7, 
+        "defense_value": 14, 
+        "damage_power": "shape_change", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "wm013", 
+    "set_id": "wm", 
+    "collector_number": "013", 
+    "name": "Walter Kovacs", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      38
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Detective", 
+      "Herald"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "LEAVE ME ALONE!", 
+        "description": "Walter Kovacs can use the Stealth ability.", 
+        "powers": [
+          "stealth"
+        ]
+      }, 
+      {
+        "type": "speed", 
+        "name": "ALTER EGO: RORSCHACH", 
+        "description": "Give this character a power action and replace this character with a WM #001 Rorschach on its orange starting line. Existing action tokens from this character, as well as action tokens and pushing damage for this action are applied to the replacement. If replaced, no victory points are awarded for this character and the replacement is considered to be its orange point value for all game effects."
+      }, 
+      {
+        "type": "attack", 
+        "name": "I READ THE DROPPINGS OF THE CITY", 
+        "description": "At the beginning of your turn, choose a keyword belonging to an opposing character adjacent to Walter Kovacs. Until the beginning of your next turn, modify the attack value of Walter Kovacs or a character friendly to Walter Kovacs by +1 when they attack a character that possesses the chosen keyword."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_value": 6, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_value": 16, 
+        "damage_power": "shape_change", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 2, 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_value": 16, 
+        "damage_power": "shape_change", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 3, 
+        "speed_value": 6, 
+        "attack_power": "special", 
+        "attack_value": 8, 
+        "defense_value": 15, 
+        "damage_power": "shape_change", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "special", 
+        "speed_value": 5, 
+        "attack_value": 9, 
+        "defense_value": 15, 
+        "damage_power": "shape_change", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "special", 
+        "speed_value": 5, 
+        "attack_value": 10, 
+        "defense_value": 14, 
+        "damage_power": "shape_change", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "wm014", 
+    "set_id": "wm", 
+    "collector_number": "014", 
+    "name": "Mask-Killer", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      60
+    ], 
+    "properties": [
+      "unique"
+    ], 
+    "team_abilities": [], 
+    "keywords": [
+      "Martial Artist"
+    ], 
+    "special_powers": [
+      {
+        "type": "speed", 
+        "name": "STALKER", 
+        "description": "Mask-Killer can use Charge, Flurry, and Stealth; when Mask-Killer makes and attack using Charge but not using Flurry, the damage from the attack is penetrating damage.", 
+        "powers": [
+          "charge", 
+          "flurry", 
+          "stealth"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "special", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "special", 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "flurry", 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "flurry", 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 15, 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 14, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 6, 
+        "speed_value": 6, 
+        "attack_value": 8, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 14, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "wm015", 
+    "set_id": "wm", 
+    "collector_number": "015", 
+    "name": "Bubastis", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      40
+    ], 
+    "properties": [], 
+    "team_abilities": [], 
+    "keywords": [
+      "Animal"
+    ], 
+    "special_powers": [], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "leap_climb", 
+        "speed_value": 9, 
+        "attack_value": 9, 
+        "defense_value": 17, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_value": 8, 
+        "defense_value": 17, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "charge", 
+        "speed_value": 8, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 8, 
+        "defense_power": "defend", 
+        "defense_value": 17, 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 7, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 7, 
+        "defense_power": "defend", 
+        "defense_value": 17, 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 7, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 7, 
+        "defense_power": "defend", 
+        "defense_value": 17, 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "wm016", 
+    "set_id": "wm", 
+    "collector_number": "016", 
+    "name": "Knot Top Leader", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      37
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "underworld"
+    ], 
+    "keywords": [
+      "Knot Top"
+    ], 
+    "special_powers": [], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "6", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "stealth", 
+        "speed_value": 6, 
+        "attack_power": "incapacitate", 
+        "attack_value": 9, 
+        "defense_value": 17, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "flurry", 
+        "speed_value": 6, 
+        "attack_value": 8, 
+        "defense_value": 16, 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "flurry", 
+        "speed_value": 6, 
+        "attack_value": 7, 
+        "defense_value": 16, 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 5, 
+        "attack_value": 7, 
+        "defense_value": 15, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 5, 
+        "attack_value": 7, 
+        "defense_value": 15, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "wm017", 
+    "set_id": "wm", 
+    "collector_number": "017", 
+    "name": "Knot Top", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      25
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "underworld"
+    ], 
+    "keywords": [
+      "Knot Top", 
+      "Teen"
+    ], 
+    "special_powers": [
+      {
+        "type": "attack", 
+        "name": "SWITCHBLADE", 
+        "description": "Knot Top can use Blades/Claws/Fangs, but when determining damage any result greater than 3 is reduced to 3.", 
+        "powers": [
+          "blades_claws_fangs"
+        ]
+      }, 
+      {
+        "type": "damage", 
+        "name": "MINION: MOB MENTALITY", 
+        "description": "When a friendly character with the Knot Top keyword and a higher point value is within 8 squares, modify Knot Top's attack value by +1."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "6", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "stealth", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 8, 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "stealth", 
+        "speed_value": 6, 
+        "attack_power": "special", 
+        "attack_value": 7, 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "flurry", 
+        "speed_value": 6, 
+        "attack_value": 7, 
+        "defense_value": 15, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "flurry", 
+        "speed_value": 5, 
+        "attack_value": 6, 
+        "defense_value": 15, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "wm018", 
+    "set_id": "wm", 
+    "collector_number": "018", 
+    "name": "Moloch the Mystic", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      79
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "underworld"
+    ], 
+    "keywords": [
+      "Celebrity"
+    ], 
+    "special_powers": [
+      {
+        "type": "defense", 
+        "name": "COMPELLING COMMAND", 
+        "description": "Moloch the Mystic can use Leadership; when a friendly character uses an action gained through Moloch the Mystic's Leadership, they can use Willpower until the action is resolved.", 
+        "powers": [
+          "leadership"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "10", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "mind_control", 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "special", 
+        "defense_value": 16, 
+        "damage_power": "shape_change", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "mind_control", 
+        "speed_value": 6, 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_power": "shape_change", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "mind_control", 
+        "speed_value": 5, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_power": "shape_change", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "mind_control", 
+        "speed_value": 5, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 9, 
+        "defense_power": "special", 
+        "defense_value": 18, 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "mind_control", 
+        "speed_value": 5, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 9, 
+        "defense_value": 18, 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "mind_control", 
+        "speed_value": 4, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 8, 
+        "defense_value": 17, 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "wm019", 
+    "set_id": "wm", 
+    "collector_number": "019", 
+    "name": "Big Figure", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      49
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "underworld"
+    ], 
+    "keywords": [
+      "Brute"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "TAKE A DIVE FOR ME", 
+        "description": "When Big Figure uses Mastermind, he can deal the damage to an adjacent friendly character with a point value of 100 or less. This damage cannot later be dealt to Big Figure."
+      }, 
+      {
+        "type": "attack", 
+        "name": "THIS PLACE IS GONNA EXPLODE!", 
+        "description": "During your opponent's turn, immediately after a character friendly to Big Figure is defeated, Big Figure or a character friendly to Big Figure can make a close combat attack or a ranged combat attack as a free action."
+      }, 
+      {
+        "type": "damage", 
+        "name": "I GOT THE DIRT ON EVERYONE", 
+        "description": "Once during your turn, Big Figure can use Outwit or Perplex.", 
+        "powers": [
+          "outwit", 
+          "perplex"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "6", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_value": 4, 
+        "attack_value": 9, 
+        "defense_power": "mastermind", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 2, 
+        "speed_value": 4, 
+        "attack_power": "special", 
+        "attack_value": 8, 
+        "defense_power": "mastermind", 
+        "defense_value": 15, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 3, 
+        "speed_value": 4, 
+        "attack_power": "special", 
+        "attack_value": 8, 
+        "defense_power": "mastermind", 
+        "defense_value": 15, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 3, 
+        "attack_power": "special", 
+        "attack_value": 7, 
+        "defense_power": "mastermind", 
+        "defense_value": 14, 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "wm020", 
+    "set_id": "wm", 
+    "collector_number": "020", 
+    "name": "Larry and Mike", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x1", 
+    "point_values": [
+      33
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "underworld"
+    ], 
+    "keywords": [
+      "Brute"
+    ], 
+    "special_powers": [
+      {
+        "type": "attack", 
+        "name": "YOU HOLD 'EM, I'LL HIT 'EM", 
+        "description": "When Larry and Mike use the Duo Attack Ability, they may use Probability Control.", 
+        "powers": [
+          "probability_control"
+        ]
+      }, 
+      {
+        "type": "damage", 
+        "name": "MINION: HENCHMEN", 
+        "description": "When a friendly character with the Underworld team ability and a higher point value is within 8 squares, Larry and Mike can use Willpower and modifies their damage value by +1.", 
+        "powers": [
+          "willpower"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "6", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "duo", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 8, 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 2, 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 8, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 3, 
+        "speed_value": 6, 
+        "attack_power": "special", 
+        "attack_value": 7, 
+        "defense_power": "toughness", 
+        "defense_value": 15, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 6, 
+        "attack_value": 7, 
+        "defense_power": "toughness", 
+        "defense_value": 15, 
+        "damage_power": "special", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "wm021", 
+    "set_id": "wm", 
+    "collector_number": "021", 
+    "name": "The Comedian and Nite Owl", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x2", 
+    "point_values": [
+      116
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "watchmen"
+    ], 
+    "keywords": [], 
+    "special_powers": [
+      {
+        "type": "attack", 
+        "name": "THIS IS GETTING HEAVY", 
+        "description": "After the resolution of the Duo Attack ability used by The Comedian and Night Owl, roll a d6 and subtract 3 (minimum result 0); place one action token on a number of adjacent opposing characters equal to the result or less. Pushing damage resulting from these tokens is ignored."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "8", 
+    "targets": "2", 
+    "speed_type": "boot", 
+    "attack_type": "duo", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "running_shot", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 17, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "leap_climb", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_value": 3
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "leap_climb", 
+        "speed_value": 8, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "leap_climb", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 15, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "leap_climb", 
+        "speed_value": 7, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 8, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 14, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_value": 7, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 8, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 14, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 7, 
+        "speed_value": 6, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 14, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 1
+      }, 
+      {
+        "click_number": 8, 
+        "speed_value": 6, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 13, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 1
+      }
+    ]
+  }, 
+  {
+    "unit_id": "wm022", 
+    "set_id": "wm", 
+    "collector_number": "022", 
+    "name": "Silk Spectre and Dr. Manhattan", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x2", 
+    "point_values": [
+      150
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "watchmen"
+    ], 
+    "keywords": [], 
+    "special_powers": [
+      {
+        "type": "speed", 
+        "name": "YOU WILL RETURN TO YOUR HOMES", 
+        "description": "After the resolution of an attack by Silk Spectre and Dr. Manhattan using the Duo Attack ability, you may place any target successfully hit by the attack in a square of unoccupied terrain up to a number of squares away from Silk Spectre and Dr. Manhattan equal to their speed value."
+      }, 
+      {
+        "type": "attack", 
+        "name": "NICE OF YOU TO COME ON PATROL WITH ME...", 
+        "description": "When Silk Spectre and Dr. Manhattan use the Duo Attack ability, do not modify their damage value by -1 for the second attack."
+      }, 
+      {
+        "type": "defense", 
+        "name": "ATOMIC FABRICATION", 
+        "description": "Silk Spectre and Dr. Manhattan can use Barrier and Super Senses. Once per turn, they can use Barrier as a free action, but can only place two blocking terrain markers.", 
+        "powers": [
+          "barrier", 
+          "super_senses"
+        ]
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "8", 
+    "targets": "1", 
+    "speed_type": "transport_boot", 
+    "attack_type": "duo", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 12, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "barrier", 
+        "defense_value": 18, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 11, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 10, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 16, 
+        "damage_power": "close_combat_expert", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "special", 
+        "speed_value": 9, 
+        "attack_power": "special", 
+        "attack_value": 11, 
+        "defense_power": "super_senses", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "special", 
+        "speed_value": 8, 
+        "attack_value": 11, 
+        "defense_power": "special", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "special", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "special", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "special", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 8, 
+        "speed_power": "special", 
+        "speed_value": 7, 
+        "attack_value": 9, 
+        "defense_power": "special", 
+        "defense_value": 15, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 9, 
+        "speed_power": "special", 
+        "speed_value": 7, 
+        "attack_value": 8, 
+        "defense_power": "special", 
+        "defense_value": 15, 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "wm023", 
+    "set_id": "wm", 
+    "collector_number": "023", 
+    "name": "Ozymandias and Bubastis", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x2", 
+    "point_values": [
+      88
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "watchmen"
+    ], 
+    "keywords": [], 
+    "special_powers": [
+      {
+        "type": "defense", 
+        "name": "SACRIFICIAL LYNX", 
+        "description": "If an attack roll targeting Ozymandias and Bubastis doesn't exceed their defense value by 2 or more, reduce the damage dealt by the attack by 2."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "0", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "duo", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "leap_climb", 
+        "speed_value": 8, 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "leap_climb", 
+        "speed_value": 7, 
+        "attack_value": 10, 
+        "defense_power": "super_senses", 
+        "defense_value": 17, 
+        "damage_power": "outwit", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_value": 7, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 9, 
+        "defense_power": "special", 
+        "defense_value": 17, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 7, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 8, 
+        "defense_power": "special", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 7, 
+        "attack_power": "blades_claws_fangs", 
+        "attack_value": 8, 
+        "defense_power": "special", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_value": 6, 
+        "attack_value": 9, 
+        "defense_power": "special", 
+        "defense_value": 15, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 7, 
+        "speed_value": 6, 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 15, 
+        "damage_value": 3
+      }
+    ]
+  }, 
+  {
+    "unit_id": "wm024", 
+    "set_id": "wm", 
+    "collector_number": "024", 
+    "name": "Nite Owl and Rorschach", 
+    "type": "character", 
+    "rarity": "common", 
+    "dimensions": "1x2", 
+    "point_values": [
+      82
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "watchmen"
+    ], 
+    "keywords": [], 
+    "special_powers": [
+      {
+        "type": "attack", 
+        "name": "WE MADE A GOOD TEAM", 
+        "description": "When Nite Owl and Rorschach use the Duo Attack ability, modify their attack value by +1 for each adjacent opposing character; damage from the second attack made using the Duo Attack ability is penetrating damage."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "4", 
+    "targets": "1", 
+    "speed_type": "boot", 
+    "attack_type": "duo", 
+    "defense_type": "shield", 
+    "damage_type": "starburst", 
+    "dial_size": "12", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "leap_climb", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "leap_climb", 
+        "speed_value": 7, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 16, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "leap_climb", 
+        "speed_value": 6, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 15, 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 4, 
+        "speed_value": 6, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 15, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 5, 
+        "speed_value": 6, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "combat_reflexes", 
+        "defense_value": 15, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }, 
+      {
+        "click_number": 6, 
+        "speed_value": 6, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_value": 16, 
+        "damage_power": "perplex", 
+        "damage_value": 2
+      }
+    ]
+  }, 
+  {
+    "unit_id": "wm025v", 
+    "set_id": "wm", 
+    "collector_number": "025v", 
+    "name": "Dr. Manhattan", 
+    "type": "character", 
+    "rarity": "chase", 
+    "dimensions": "3x6", 
+    "point_values": [
+      1800
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "watchmen"
+    ], 
+    "keywords": [
+      "Celebrity", 
+      "Scientist", 
+      "Watchmen"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "SPECIAL", 
+        "description": "When used as part of a force, Dr. Manhattan can use the Multiattack ability."
+      }, 
+      {
+        "type": "speed", 
+        "name": "CALM THE CROWD", 
+        "description": "After resolving any attack made by Dr. Manhattan on a target character, place an action token on all other opposing characters adjacent to the target that have zero action tokens."
+      }, 
+      {
+        "type": "attack", 
+        "name": "CLEAR THE SKIES", 
+        "description": "Dr. Manhattan can use Penetrating/Psychic Blast. After Dr. Manhattan uses Penetrating/Psychic Blast, he can immediately use Pulse Wave as a free action. When using Pulse Wave as a free action, Dr. Manhattan's range value is not halved, but only characters with any of the following symbols have lines of fire drawn to them: {flight},{flight-transport},{giant},{colossal}", 
+        "powers": [
+          "penetrating_psychic_blast", 
+          "pulse_wave"
+        ]
+      }, 
+      {
+        "type": "defense", 
+        "name": "ATOMIC DISASSEMBLY", 
+        "description": "Dr. Manhattan can use Invulnerability. Once during your turn, you may give Dr. Manhattan a free action and remove all blocking terrain markers and hindering terrain markers from the battlefield and roll a d6. On a result of 1-2, destroy the nearest 3 objects (including objects carried by opposing characters and those in squares occupied by characters); on a result of 3-4, the nearest area of elevated terrain becomes grounded terrain until the end of the game; on a result of 5-6, the nearest blocking terrain if destroyed.", 
+        "powers": [
+          "invulnerability"
+        ]
+      }, 
+      {
+        "type": "trait", 
+        "name": "LEAVE ME ALONE!", 
+        "description": "When the Aspect Dial is turned to reveal this symbol, immediately place Dr. Manhattan in the starting area of the active player's choosing. If any opposing characters occupy that starting area, place them in the starting area furthest from Dr. Manhattan's new position."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "16", 
+    "targets": "2", 
+    "speed_type": "wing", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "colossal", 
+    "dial_size": "20", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 18, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 13, 
+        "defense_power": "invulnerability", 
+        "defense_value": 18, 
+        "damage_value": 7
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 17, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 12, 
+        "defense_power": "invulnerability", 
+        "defense_value": 18, 
+        "damage_value": 7
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 17, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 12, 
+        "defense_power": "impervious", 
+        "defense_value": 18, 
+        "damage_value": 7
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 16, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 12, 
+        "defense_power": "impervious", 
+        "defense_value": 19, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 7
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 16, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 12, 
+        "defense_power": "impervious", 
+        "defense_value": 19, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 7
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 16, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 12, 
+        "defense_power": "impervious", 
+        "defense_value": 19, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 7
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 15, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 12, 
+        "defense_power": "special", 
+        "defense_value": 18, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 7
+      }, 
+      {
+        "click_number": 8, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 15, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 11, 
+        "defense_power": "invulnerability", 
+        "defense_value": 18, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 7
+      }, 
+      {
+        "click_number": 9, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 15, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 11, 
+        "defense_power": "special", 
+        "defense_value": 18, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 6
+      }, 
+      {
+        "click_number": 10, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 15, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 11, 
+        "defense_power": "special", 
+        "defense_value": 18, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 6
+      }, 
+      {
+        "click_number": 11, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 14, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 6
+      }, 
+      {
+        "click_number": 12, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 14, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 17, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 6
+      }, 
+      {
+        "click_number": 13, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 13, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 10, 
+        "defense_power": "invulnerability", 
+        "defense_value": 16, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 6
+      }, 
+      {
+        "click_number": 14, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 12, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 16, 
+        "damage_value": 5
+      }, 
+      {
+        "click_number": 15, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 12, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_value": 5
+      }, 
+      {
+        "click_number": 16, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 11, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "toughness", 
+        "defense_value": 16, 
+        "damage_value": 5
+      }, 
+      {
+        "click_number": 17, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 11, 
+        "attack_power": "special", 
+        "attack_value": 10, 
+        "defense_power": "special", 
+        "defense_value": 16, 
+        "damage_value": 5
+      }, 
+      {
+        "click_number": 18, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 10, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "special", 
+        "defense_value": 15, 
+        "damage_value": 5
+      }, 
+      {
+        "click_number": 19, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 10, 
+        "attack_power": "special", 
+        "attack_value": 9, 
+        "defense_power": "special", 
+        "defense_value": 15, 
+        "damage_value": 5
+      }
+    ]
+  }, 
+  {
+    "unit_id": "wm026v", 
+    "set_id": "wm", 
+    "collector_number": "026v", 
+    "name": "Jon Osterman: Dr. Manhattan", 
+    "type": "character", 
+    "rarity": "chase", 
+    "dimensions": "3x6", 
+    "point_values": [
+      1200
+    ], 
+    "properties": [], 
+    "team_abilities": [
+      "watchmen"
+    ], 
+    "keywords": [
+      "Celebrity", 
+      "Scientist", 
+      "Watchmen"
+    ], 
+    "special_powers": [
+      {
+        "type": "trait", 
+        "name": "SPECIAL", 
+        "description": "When used as part of a force, Dr. Manhattan can use the Multiattack ability."
+      }
+    ], 
+    "improved_movement": [], 
+    "improved_targeting": [], 
+    "object_keyphrases": [], 
+    "unit_range": "16", 
+    "targets": "3", 
+    "speed_type": "wing", 
+    "attack_type": "fist", 
+    "defense_type": "shield", 
+    "damage_type": "colossal", 
+    "dial_size": "20", 
+    "dial": [
+      {
+        "click_number": 1, 
+        "starting_line": true, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 20, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 15, 
+        "defense_power": "impervious", 
+        "defense_value": 21, 
+        "damage_value": 8
+      }, 
+      {
+        "click_number": 2, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 20, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 15, 
+        "defense_power": "impervious", 
+        "defense_value": 21, 
+        "damage_value": 8
+      }, 
+      {
+        "click_number": 3, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 20, 
+        "attack_power": "pulse_wave", 
+        "attack_value": 15, 
+        "defense_power": "impervious", 
+        "defense_value": 21, 
+        "damage_value": 8
+      }, 
+      {
+        "click_number": 4, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 20, 
+        "attack_power": "pulse_wave", 
+        "attack_value": 15, 
+        "defense_power": "impervious", 
+        "defense_value": 21, 
+        "damage_value": 8
+      }, 
+      {
+        "click_number": 5, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 20, 
+        "attack_power": "pulse_wave", 
+        "attack_value": 16, 
+        "defense_power": "impervious", 
+        "defense_value": 21, 
+        "damage_value": 8
+      }, 
+      {
+        "click_number": 6, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 20, 
+        "attack_power": "pulse_wave", 
+        "attack_value": 16, 
+        "defense_power": "impervious", 
+        "defense_value": 20, 
+        "damage_value": 8
+      }, 
+      {
+        "click_number": 7, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 20, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 16, 
+        "defense_power": "impervious", 
+        "defense_value": 20, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 7
+      }, 
+      {
+        "click_number": 8, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 20, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 16, 
+        "defense_power": "impervious", 
+        "defense_value": 20, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 7
+      }, 
+      {
+        "click_number": 9, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 20, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 15, 
+        "defense_power": "impervious", 
+        "defense_value": 20, 
+        "damage_power": "exploit_weakness", 
+        "damage_value": 7
+      }, 
+      {
+        "click_number": 10, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 20, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 14, 
+        "defense_power": "invulnerability", 
+        "defense_value": 20, 
+        "damage_value": 7
+      }, 
+      {
+        "click_number": 11, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 20, 
+        "attack_power": "penetrating_psychic_blast", 
+        "attack_value": 14, 
+        "defense_power": "invulnerability", 
+        "defense_value": 20, 
+        "damage_value": 7
+      }, 
+      {
+        "click_number": 12, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 20, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 14, 
+        "defense_power": "invulnerability", 
+        "defense_value": 20, 
+        "damage_value": 7
+      }, 
+      {
+        "click_number": 13, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 20, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 14, 
+        "defense_power": "invulnerability", 
+        "defense_value": 20, 
+        "damage_value": 7
+      }, 
+      {
+        "click_number": 14, 
+        "speed_power": "phasing_teleport", 
+        "speed_value": 20, 
+        "attack_power": "energy_explosion", 
+        "attack_value": 14, 
+        "defense_power": "invulnerability", 
+        "defense_value": 20, 
+        "damage_value": 7
+      }
+    ]
+  }
+]

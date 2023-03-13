@@ -678,6 +678,9 @@ SET_MAP = {
   "ws": {
     "name": "Web of Spider-Man",
   },
+  "wm": {
+    "name": "Watchmen",
+  },
 }
 
 POWERS = {
@@ -1091,6 +1094,7 @@ class Unit:
         rarity == "Rarity: Team Pack" or
         rarity == "Rarity: PNP" or
         rarity == "Rarity: Action Pack" or
+        rarity == "Rarity: Collector Set" or
         rarity == "Rarity: Deadpool Gravity Feed"):
       self.rarity = "common"
     elif rarity == "Rarity: Uncommon":
@@ -1113,6 +1117,7 @@ class Unit:
           rarity == "Rarity: Con In Your Store Exclusive" or
           rarity == "Rarity: WOL Gravity Feed" or
           rarity == "Rarity: Lantern Pack Case Assortment" or
+          rarity == "Rarity: 2010 Convention Exclusive" or
           rarity == "Rarity: 2011 Convention Exclusive" or
           rarity == "Rarity: 2012 Convention Exclusive" or
           rarity == "Rarity: 2014 Convention Exclusive" or
@@ -1235,6 +1240,9 @@ class Unit:
       self.type = "battlefield_condition"
     elif figure_rank == "feat":
       self.type = "feat"
+    elif figure_rank == "event_dial":
+      print("Skipping event dial '%s'" % (self.unit_id))
+      return False
 
     if not self.type:
       raise RuntimeError("The unit type (%s) for '%s' is currently not supported" % (figure_rank, self.unit_id))

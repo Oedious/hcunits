@@ -921,6 +921,11 @@ const SET_LIST = {
     "release_date": "2010-09-08",
     "universe": "marvel"
   },
+  "wm": {
+    "name": "Watchmen",
+    "release_date": "2010-08-25",
+    "universe": "dc"
+  },
   "wk": {
     "name": "WizKids Standard Game Pieces",
     "release_date": "2002-05-01",
