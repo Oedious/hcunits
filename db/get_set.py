@@ -690,6 +690,12 @@ SET_MAP = {
   "bb": {
     "name": "Brave and the Bold",
   },
+  "cl": {
+    "name": "Classics",
+  },
+  "ha": {
+    "name": "Hammer of Thor",
+  },
 }
 
 POWERS = {
@@ -711,6 +717,8 @@ POWERS = {
   "Quake": "quake",
   "Super Strength": "super_strength",
   "Incapacitate": "incapacitate",
+  # Note: Psychic blast has multiple entries because the name changed 10-years in.
+  "Psychic Blast": "penetrating_psychic_blast",
   "Penetrating/Psychic Blast": "penetrating_psychic_blast",
   "Smoke Cloud": "smoke_cloud",
   "Precision Strike": "precision_strike",
@@ -1126,6 +1134,7 @@ class Unit:
           rarity == "Rarity: Con In Your Store Exclusive" or
           rarity == "Rarity: WOL Gravity Feed" or
           rarity == "Rarity: Lantern Pack Case Assortment" or
+          rarity == "Rarity: 2009 Convention Exclusive" or
           rarity == "Rarity: 2010 Convention Exclusive" or
           rarity == "Rarity: 2011 Convention Exclusive" or
           rarity == "Rarity: 2012 Convention Exclusive" or
@@ -1363,7 +1372,7 @@ class Unit:
             self.object_size = "ultra_light"
           elif part == "Ultra Heavy Object":
             self.object_size = "ultra_heavy"
-          elif part == "Immobile Object":
+          elif part.lower() == "immobile object":
             self.object_size = "immobile"
           elif part == "Special Object":
             self.object_type = "special"
@@ -1550,17 +1559,57 @@ class Unit:
     if self.type == "feat":
       card_tag = soup.find("td", class_="card_feat").parent
       for tag in card_tag.next_sibling.next_sibling.find_all("div"):
-        if tag.strong and tag.strong.string.strip() == "Prerequisites:":
-          sp_desc = list(tag.children)[2].string.strip()
+        if tag.strong:
+          sp_name = tag.strong.string.strip()
+          if sp_name == "Prerequisites:":
+            sp_desc = list(tag.children)[2].string.strip()
+            self.special_powers.append(OrderedDict([
+              ("name", sp_name[:-1]),
+              ("description", clean_string(sp_desc))
+            ]))
+          else:
+            print("For unit '%s', can't parse feat special power %s" % (self.unit_id, sp_name))
+        elif tag.string:
           self.special_powers.append(OrderedDict([
-            ("name", "Prerequisites"),
-            ("description", clean_string(sp_desc))
-          ]))
-        else:
-          self.special_powers.append(OrderedDict([
+            ("name", "Feat"),
             ("description", clean_string(tag.string.strip()))
           ]))
-          
+        else:
+          parts = []
+          sp_name = "Feat"
+          sp_desc_prev = None
+          for subtag in tag.children:
+            if subtag.name == "b":
+              sp_name = clean_string(subtag.string.strip()[:-1])
+            elif subtag.string:
+              sp_desc = clean_string(subtag.string.strip())
+              if len(sp_desc) == 0:
+                continue
+              # Hack to put "Choose a character" strings together with the next line.
+              if sp_desc == "Choose a character.":
+                sp_desc_prev = sp_desc
+                continue
+              if sp_desc_prev:
+                sp_desc = sp_desc_prev + " " + sp_desc
+                sp_desc_prev = None
+              if sp_name:
+                self.special_powers.append(OrderedDict([
+                  ("name", sp_name),
+                  ("description", sp_desc)
+                ]))
+                if sp_name == "Feat":
+                  sp_name = None
+                else:
+                  sp_name = "Feat"
+              else:
+                self.special_powers.append(OrderedDict([
+                  ("description", sp_desc)
+                ]))
+            elif subtag.name == "br":
+              # Just ignore it
+              continue
+            else:
+              print("Unit '%s' has an unknown feat special power - %s" % (self.unit_id, subtag))
 
     # Parse ID cards
     if self.type == "id_card":

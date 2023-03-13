@@ -58,6 +58,7 @@ const TYPE_LIST = {
 const OBJECT_TYPE_INFO = {
   "standard": {
     "name": "Object",
+    "icon": "cookie",
   },
   "special": {
     "name": "Special Object",
@@ -180,4 +181,7 @@ const CARD_TYPE_INFO = {
   "battlefield_condition": {
     "name": "Battlefield Condition",
   },
+  "feat": {
+    "name": "Feat",
+  }
 };

@@ -941,6 +941,16 @@ const SET_LIST = {
     "release_date": "2010-04-14",
     "universe": "dc"
   },
+  "cl": {
+    "name": "Classics",
+    "release_date": "2009-11-12",
+    "universe": "marvel"
+  },
+  "ha": {
+    "name": "Hammer of Thor",
+    "release_date": "2009-07-23",
+    "universe": "marvel"
+  },
   "wk": {
     "name": "WizKids Standard Game Pieces",
     "release_date": "2002-05-01",

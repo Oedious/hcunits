@@ -1,0 +1,128 @@
+{
+  "updates": {
+    "ha004": {
+      "special_powers": [{
+        "powers": ["charge"]
+      }]
+    },
+    "ha007": {
+      "special_powers": [{
+        "powers": ["mind_control", "incapacitate"]
+      }]
+    },
+    "ha012": {
+      "special_powers": [{
+        "powers": ["support"]
+      }]
+    },
+    "ha014": {
+      "special_powers": [{
+        "powers": ["charge"]
+      }]
+    },
+    "ha015": {
+      "special_powers": [{
+        "powers": ["charge"]
+      }]
+    },
+    "ha027": {
+      "special_powers": [{
+        "powers": ["blades_claws_fangs", "penetrating_psychic_blast"]
+      }]
+    },
+    "ha037": {
+      "special_powers": [{
+        "description": "Songbird can use Running Shot and Force Blast.",
+        "powers": ["running_shot", "force_blast"]
+      }]
+    },
+    "ha045": {
+      "special_powers": [{
+        "powers": ["energy_shield_deflection"]
+      }]
+    },
+    "ha047": {
+      "special_powers": [{
+        "powers": ["flurry", "leap_climb", "phasing_teleport", "earthbound_neutralized", "charge", "mind_control", "plasticity", "force_blast", "sidestep", "hypersonic_speed", "stealth", "running_shot", "blades_claws_fangs", "energy_explosion", "pulse_wave", "quake", "super_strength", "incapacitate", "penetrating_psychic_blast", "smoke_cloud", "precision_strike", "poison", "steal_energy", "telekinesis", "super_senses", "toughness", "defend", "combat_reflexes", "energy_shield_deflection", "barrier", "mastermind", "willpower", "invincible", "impervious", "regeneration", "invulnerability", "ranged_combat_expert", "battle_fury", "support", "exploit_weakness", "enhancement", "probability_control", "shape_change", "close_combat_expert", "empower", "perplex", "outwit", "leadership"]
+      }]
+    },
+    "ha053": {
+      "special_powers": [{
+        "powers": ["battle_fury", "shape_change"]
+      }]
+    },
+    "ha056": {
+      "special_powers": [{
+        "powers": ["exploit_weakness"]
+      }]
+    },
+    "ha057": {
+      "special_powers": [{
+        "powers": ["invulnerability"]
+      }, {
+        "powers": ["running_shot", "shape_change"]
+      }, {
+        "powers": ["super_strength", "perplex"]
+      }, {
+        "powers": ["battle_fury", "exploit_weakness"]
+      }, {
+        "powers": ["quake", "outwit"]
+      }]
+    },
+    "ha100": {
+      "special_powers": [{
+        "powers": ["stealth"]
+      }, {
+      }, {
+        "powers": ["shape_change", "exploit_weakness"]
+      }]
+    },
+    "ha103": {
+      "special_powers": [{
+        "powers": ["perplex"]
+      }]
+    },
+    "ha105": {
+      "special_powers": [{
+      }, {
+        "powers": ["ranged_combat_expert"]
+      }]
+    },
+    "haF002": {
+      "special_powers": [{
+      }, {
+        "powers": ["incapacitate"]
+      }]
+    },
+    "haF003": {
+      "special_powers": [{
+      }, {
+        "powers": ["steal_energy"]
+      }]
+    },
+    "haS101": {
+      "special_powers": [{
+        "powers": ["quake", "steal_energy"]
+      }]
+    },
+    "haS102": {
+      "object_type": "standard",
+      "object_size": "heavy",
+      "special_powers": [{
+        "__delete__": true
+      }]
+    }
+  },
+  "additions": [{
+    "unit_id": "haM001",
+    "set_id": "ha",
+    "collector_number": "M001",
+    "name": "Fountain of Asgard",
+    "type": "map",
+    "special_powers": [{
+      "name": "Lo, the rainbow bridge Bifrost will transport us instantaneously from the mortal realm to Asgard!",
+      "description": "Squares inside the border of an orange line are bridge terrain. Bridge terrain is clear terrain, but when a character is moving as a result of an action assigned to that character, they can treat squares of bridge terrain in the same numbered row as adjacent for movement purposes only. (Not for tournament play)"
+    }],
+    "map_url": "https://hcmaps.net/maps/ha/fountain_of_asgard.json"
+  }]
+}
