@@ -1,0 +1,107 @@
+{
+  "updates": {
+    "an001": {
+      "special_powers": [{
+        "powers": ["running_shot"]
+      }]
+    },
+    "an003": {
+      "special_powers": [{
+        "name": "MINION: LOWER CASTE",
+        "powers": ["outwit"]
+      }]
+    },
+    "an004": {
+      "special_powers": [{
+        "powers": ["incapacitate"]
+      }]
+    },
+    "an011": {
+      "special_powers": [{
+        "powers": ["outwit"]
+      }]
+    },
+    "an026": {
+      "special_powers": [{
+        "powers": ["willpower", "exploit_weakness"]
+      }]
+    },
+    "an027": {
+      "special_powers": [{
+        "powers": ["probability_control"]
+      }, {
+        "powers": ["blades_claws_fangs"]
+      }]
+    },
+    "an031": {
+      "special_powers": [{
+        "powers": ["smoke_cloud"]
+      }]
+    },
+    "an033": {
+      "special_powers": [{
+      }, {
+        "powers": ["quake"]
+      }]
+    },
+    "an038": {
+      "special_powers": [{
+        "powers": ["telekinesis"]
+      }]
+    },
+    "an039": {
+      "special_powers": [{
+        "powers": ["close_combat_expert"]
+      }]
+    },
+    "an046": {
+      "special_powers": [{
+        "powers": ["barrier"]
+      }, {
+        "powers": ["energy_shield_deflection"]
+      }]
+    },
+    "an047": {
+      "special_powers": [{
+        "powers": ["support"]
+      }]
+    },
+    "an053": {
+      "special_powers": [{
+      }, {
+        "powers": ["flurry", "leap_climb", "phasing_teleport", "earthbound_neutralized", "charge", "mind_control", "plasticity", "force_blast", "sidestep", "hypersonic_speed", "stealth", "running_shot", "blades_claws_fangs", "energy_explosion", "pulse_wave", "quake", "super_strength", "incapacitate", "penetrating_psychic_blast", "smoke_cloud", "precision_strike", "poison", "steal_energy", "telekinesis", "super_senses", "toughness", "defend", "combat_reflexes", "energy_shield_deflection", "barrier", "mastermind", "willpower", "invincible", "impervious", "regeneration", "invulnerability", "ranged_combat_expert", "battle_fury", "support", "exploit_weakness", "enhancement", "probability_control", "shape_change", "close_combat_expert", "empower", "perplex", "outwit", "leadership"]
+      }]
+    },
+    "an059": {
+      "special_powers": [{
+      }, {
+        "powers": ["barrier", "phasing_teleport", "smoke_cloud", "incapacitate"]
+      }, {
+        "powers": ["charge", "quake", "plasticity", "super_strength", "blades_claws_fangs"]
+      }, {
+        "__delete__": true
+      }]
+    }
+  },
+  "additions": [{
+    "unit_id": "anM001",
+    "set_id": "an",
+    "collector_number": "M001",
+    "name": "Airport Terminal",
+    "type": "map",
+    "special_powers": [{
+      "description": "Orange squares are moving walkways. At the beginning of each turn, each character completely occupying a moving walkway square that cannot use the Flight ability must move as if they had a Speed value of 1 and automatically breaks away. This move starts with the character closest to the thick orange line and must be in the direction of that thick orange line."
+    }],
+    "map_url": "https://hcmaps.net/maps/an/airport_terminal.json"
+  }, {
+    "unit_id": "anM002",
+    "set_id": "an",
+    "collector_number": "M002",
+    "name": "Hawkworld",
+    "type": "map",
+    "special_powers": [{
+      "description": "Orange square are Open Air (Low Gravity). After actions resolve, if a character who can't use the Flight ability occupies an Open Air square, deal them 1 unavoidable damage, and then that character's owner may place them in their starting area. Non-carried objects in Open Air squares are removed from the map. Open Air squares are otherwise treated as clear terrain."
+    }],
+    "map_url": "https://hcmaps.net/maps/an/hawkworld.json"
+  }]
+}

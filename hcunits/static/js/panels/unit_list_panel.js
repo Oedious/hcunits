@@ -1,15 +1,3 @@
-const TYPE_TO_ICON = {
-  "character": "accessibility_new",
-  "object": "cookie",
-  "equipment": "swords",
-  "map": "map",
-  "bystander": "pets",
-  "tarot_card": "content_copy",
-  "mystery_card": "psychology_alt",
-  "id_card": "badge",
-  "attachment": "settings_account_box",
-};
-
 const SORT_ORDERS = {
   "set_id": {
     "name": "Sort by Set",
@@ -254,32 +242,25 @@ class UnitListPanel extends ListPanel {
         }
         var minorInfo = "";
         var icon = null;
+        // If the point is zero, just show the type.
+        var typeInfo = null;
+        if (unit.type == "object") {
+          typeInfo = OBJECT_TYPE_INFO[unit.object_type];
+        } else if (unit.type == "bystander") {
+          typeInfo = BYSTANDER_TYPE_INFO[unit.bystander_type];
+        } else if (unit.type == "attachment") {
+          typeInfo = ATTACHMENT_TYPE_INFO[unit.attachment_type];
+        } else {
+          typeInfo = TYPE_LIST[unit.type];
+          if (!typeInfo || !typeInfo.name) {
+            throw new Error(`Unit '{unit.unit_id}' has unknown type '${unit.type}'`)
+          }
+        }
         if (unit.type != "character") {
-          // If the point is zero, just show the type.
-          var typeInfo = null;
-          if (unit.type == "object") {
-            typeInfo = OBJECT_TYPE_INFO[unit.object_type];
-          } else if (unit.type == "bystander") {
-            typeInfo = BYSTANDER_TYPE_INFO[unit.bystander_type];
-          } else if (unit.type == "attachment") {
-            typeInfo = ATTACHMENT_TYPE_INFO[unit.attachment_type];
-          } else {
-            typeInfo = TYPE_LIST[unit.type];
-            if (!typeInfo || !typeInfo.name) {
-              throw new Error(`Unit '{unit.unit_id}' has unknown type '${unit.type}'`)
-            }
-          }
           minorInfo = typeInfo.name;
-          if (typeInfo.icon) {
-            icon = typeInfo.icon;
-          }
           if (unit.point_values.length > 0) {
             minorInfo += " - ";
           }
-        }
-        // If there was no specialized icon, use a more generic one.
-        if (!icon) {
-          icon = TYPE_TO_ICON[unit.type];
         }
         if (unit.point_values.length > 0) {
           for (var j = 0; j < unit.point_values.length; ++j) {
@@ -294,7 +275,7 @@ class UnitListPanel extends ListPanel {
             <li class='collection-item avatar'>
               <a id='${this.panelName()}Item_${i}' class='unitListItem' href='' onclick='sideNav.setUnit("${unit.unit_id}"); return false;'>
                 <div class='listPanelImageDiv'>
-                  <i class='material-symbols-outlined' style='color:${color}'>${icon}</i>
+                  <i class='material-symbols-outlined' style='color:${color}'>${typeInfo.icon}</i>
                 </div>
                 <div class='listPanelInfo'>
                   <span class='title'>${unit.collector_number} - ${unit.name}</span>

@@ -31,8 +31,8 @@ CREATE TABLE units (
   name TEXT(128) NOT NULL,
 
   -- The type of the unit.
-  -- TODO: Add types for 'battlefield_condition', 'event_dial', 'resource', 'terrain'
-  type ENUM('character', 'object', 'equipment', 'map', 'bystander', 'tarot_card', 'mystery_card', 'id_card', 'attachment') NOT NULL,
+  -- TODO: Add types for 'event_dial', 'resource', 'terrain'
+  type ENUM('character', 'object', 'equipment', 'map', 'bystander', 'tarot_card', 'mystery_card', 'id_card', 'attachment', 'battlefield_condition) NOT NULL,
 
   -- A JSON array of numbers containing point values of different starting lines.
   point_values JSON,
@@ -1014,6 +1014,26 @@ LOAD XML LOCAL INFILE 'ffha/ffha.xml'
   ROWS IDENTIFIED BY '<row>';
 
 LOAD XML LOCAL INFILE 'ffwm/ffwm.xml'
+  REPLACE
+  INTO TABLE units
+  ROWS IDENTIFIED BY '<row>';
+
+LOAD XML LOCAL INFILE 'ca/ca.xml'
+  REPLACE
+  INTO TABLE units
+  ROWS IDENTIFIED BY '<row>';
+
+LOAD XML LOCAL INFILE 'glgf/glgf.xml'
+  REPLACE
+  INTO TABLE units
+  ROWS IDENTIFIED BY '<row>';
+
+LOAD XML LOCAL INFILE 'ffgl/ffgl.xml'
+  REPLACE
+  INTO TABLE units
+  ROWS IDENTIFIED BY '<row>';
+
+LOAD XML LOCAL INFILE 'gx/gx.xml'
   REPLACE
   INTO TABLE units
   ROWS IDENTIFIED BY '<row>';

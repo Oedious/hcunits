@@ -4,13 +4,14 @@ class CardView extends SmallUnitView {
     return type == "id_card" ||
            type == "mystery_card" ||
            type == "tarot_card" ||
-           type == "attachment";
+           type == "attachment" ||
+           type == "battlefield_condition";
   }
 
   constructor(unit) {
     super(unit);
     if (!CardView.isType(this.unit_.type)) {
-      throw new Error("Mismatched unit type: CardView require type='id_card', 'mystery_card', 'tarot_card' or 'attachment'");
+      throw new Error("Mismatched unit type: CardView require type='id_card', 'mystery_card', 'tarot_card', 'battlefield_condition' or 'attachment'");
     }
   }
 

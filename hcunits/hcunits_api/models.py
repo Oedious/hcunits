@@ -15,7 +15,7 @@ class Unit(models.Model):
     set_id = models.CharField(max_length=8)
     collector_number = models.CharField(max_length=24)
     name = models.TextField()
-    type = models.CharField(max_length=12)
+    type = models.CharField(max_length=21)
     point_values = models.JSONField()
     rarity = models.CharField(max_length=15, blank=True, null=True)
     real_name = models.TextField(blank=True, null=True)

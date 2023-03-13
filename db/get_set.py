@@ -669,6 +669,9 @@ SET_MAP = {
   "gx": {
     "name": "Giant-Size X-Men",
   },
+  "an": {
+    "name": "DC 75th Anniversary",
+  },
 }
 
 POWERS = {
@@ -778,7 +781,7 @@ POWER_VALUES = [
 ]
 
 TYPE_VALUES = [
-  'character', 'object', 'equipment', 'map', 'bystander', 'tarot_card', 'mystery_card', 'id_card', 'attachment'
+  'character', 'object', 'equipment', 'map', 'bystander', 'tarot_card', 'mystery_card', 'id_card', 'attachment', 'battlefield_condition'
 ]
 
 RARITY_VALUES = [
@@ -1079,6 +1082,7 @@ class Unit:
         rarity == "Rarity: Fast Forces" or
         rarity == "Rarity: Mini Game" or
         rarity == "Rarity: Team Pack" or
+        rarity == "Rarity: PNP" or
         rarity == "Rarity: Deadpool Gravity Feed"):
       self.rarity = "common"
     elif rarity == "Rarity: Uncommon":
@@ -1219,6 +1223,8 @@ class Unit:
       if self.unit_id.startswith("wolR2"):
         self.type = "attachment"
         self.attachment_type = "construct"
+    elif figure_rank == "battlefield_condition":
+      self.type = "battlefield_condition"
 
     if not self.type:
       raise RuntimeError("The unit type (%s) for '%s' is currently not supported" % (figure_rank, self.unit_id))
@@ -1235,7 +1241,8 @@ class Unit:
           self.type == "equipment" or
           self.type == "id_card" or
           self.type == "mystery_card" or
-          self.type == "attachment"):
+          self.type == "attachment" or
+          self.type == "battlefield_condition"):
       point_value_tag = soup.find("td", class_="tfoot")
     elif self.type == "team_up" or self.type == "tarot_card":
       point_value_tag = None
@@ -1498,6 +1505,14 @@ class Unit:
     # Parse tarot cards
     if self.type == "tarot_card":
       equip_tag = soup.find("td", class_="card_tarot_card").parent
+      desc_tag = equip_tag.next_sibling.next_sibling.find("div")
+      self.special_powers.append(OrderedDict([
+        ("description", clean_string(desc_tag.string.strip()))
+      ]))
+
+    # Parse battlefield conditions
+    if self.type == "battlefield_condition":
+      equip_tag = soup.find("td", class_="card_battlefield_condition").parent
       desc_tag = equip_tag.next_sibling.next_sibling.find("div")
       self.special_powers.append(OrderedDict([
         ("description", clean_string(desc_tag.string.strip()))

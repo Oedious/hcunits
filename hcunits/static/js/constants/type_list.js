@@ -1,40 +1,50 @@
 const TYPE_LIST = {
   "character": {
-    "name": "Character"
+    "name": "Character",
+    "icon": "accessibility_new",
   },
   "object": {
-    "name": "Object"
+    "name": "Object",
+    "icon": "cookie",
   },
   "equipment": {
-    "name": "Equipment"
+    "name": "Equipment",
+    "icon": "swords",
   },
   "map": {
-    "name": "Map"
+    "name": "Map",
+    "icon": "map",
   },
   "bystander": {
-    "name": "Bystander"
+    "name": "Bystander",
+    "icon": "pets",
   },
   "mystery_card": {
-    "name": "Mystery Card"
+    "name": "Mystery Card",
+    "icon": "psychology_alt",
   },
   "tarot_card": {
-    "name": "Tarot Card"
+    "name": "Tarot Card",
+    "icon": "content_copy",
   },
   "id_card": {
-    "name": "ID Card"
+    "name": "ID Card",
+    "icon": "badge",
   },
   "attachment": {
-    "name": "Attachment"
-  }
+    "name": "Attachment",
+    "icon": "settings_account_box",
+  },
+  "battlefield_condition": {
+    "name": "Battlefield Condition",
+    "icon": "tour",
+  },
   /*
   "terrain": {
     "name": "Terrain"
   },
   "resource": {
     "name": "Resource"
-  },
-  "battlefield_condition": {
-    "name": "Battlefield Condition"
   },
   "event_dial": {
     "name": "Event Dial"
@@ -138,7 +148,6 @@ const BYSTANDER_TYPE_INFO = {
 const ATTACHMENT_TYPE_INFO = {
   "comic_panel": {
     "name": "Comic Panel",
-    "title": "COMIC PANEL",
     "description": "At the beginning of your turn, if [DXF Chase Unit] has no action tokens, you may attach a comic panel to him, removing an already attached one. He can use the listed effect.",
     "icon": "background_replace",
   },
@@ -156,15 +165,15 @@ const ATTACHMENT_TYPE_INFO = {
 const CARD_TYPE_INFO = {
   "mystery_card": {
     "name": "Mystery Card",
-    "title": "MYSTERY CARD",
     "description": "During force construction, you may include any number of Mystery Cards on your Sideline. All Mystery Cards are UNIQUE.<br><br>Each Mystery Card has a list of keywords and a CLUE EFFECT that allows that card to gain Clue tokens. When a CLUE EFFECT is triggered, place a Clue token on that card. If multiple Mystery Cards have the same named CLUE EFFECT, you may only place a Clue token on one of those cards when that named CLUE EFFECT is triggered.<br><br>Each Mystery Card has effects that may be used while the number of Clue tokens on that card is equal to or greater than the number listed in parenthesis next to that effect. All CLUE EFFECTS and named effects have SIDELINE ACTIVE."
   },
   "tarot_card": {
     "name": "Tarot Card",
-    "title": "TAROT CARD",
   },
   "id_card": {
     "name": "ID Card",
-    "title": "ID CARD",
+  },
+  "battlefield_condition": {
+    "name": "Battlefield Condition",
   },
 };

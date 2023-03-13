@@ -906,6 +906,11 @@ const SET_LIST = {
     "release_date": "2011-01-20",
     "universe": "marvel"
   },
+  "an": {
+    "name": "DC 75th Anniversary",
+    "release_date": "2010-12-01",
+    "universe": "dc"
+  },
   "wk": {
     "name": "WizKids Standard Game Pieces",
     "release_date": "2002-05-01",
