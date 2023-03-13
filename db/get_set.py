@@ -681,6 +681,15 @@ SET_MAP = {
   "wm": {
     "name": "Watchmen",
   },
+  "jh": {
+    "name": "Jonah Hex",
+  },
+  "bn": {
+    "name": "Blackest Night",
+  },
+  "bb": {
+    "name": "Brave and the Bold",
+  },
 }
 
 POWERS = {
@@ -1346,7 +1355,7 @@ class Unit:
           if part.startswith("Relic X"):
             continue
 
-          if part == "Light Object":
+          if part == "Light Object" or part == "Light: Continual":
             self.object_size = "light"
           elif part == "Heavy Object":
             self.object_size = "heavy"

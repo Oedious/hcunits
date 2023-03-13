@@ -1,0 +1,198 @@
+{
+  "updates": {
+    "bb004": {
+      "special_powers": [{
+        "powers": ["exploit_weakness"]
+      }]
+    },
+    "bb005": {
+      "special_powers": [{
+        "powers": ["willpower"]
+      }]
+    },
+    "bb009": {
+      "special_powers": [{
+        "powers": ["toughness", "super_senses", "invulnerability"]
+      }]
+    },
+    "bb016": {
+      "dial": [{
+      }, {
+      }, {
+      }, {
+      }, {
+        "starting_line": "orange"
+      }]
+    },
+    "bb017": {
+      "dial": [{
+      }, {
+      }, {
+      }, {
+      }, {
+      }, {
+      }, {
+      }, {
+        "starting_line": "orange"
+      }]
+    },
+    "bb018": {
+      "dial": [{
+      }, {
+      }, {
+      }, {
+      }, {
+      }, {
+        "starting_line": "orange"
+      }]
+    },
+    "bb022": {
+      "special_powers": [{
+      }, {
+        "powers": ["quake"]
+      }]
+    },
+    "bb025": {
+      "special_powers": [{
+        "powers": ["exploit_weakness", "willpower"]
+      }]
+    },
+    "bb027": {
+      "special_powers": [{
+      }, {
+        "powers": ["outwit"]
+      }]
+    },
+    "bb030": {
+      "special_powers": [{
+        "description": "The Parademon can use Pulse Wave as if he had a range value of 10. After that action is resolved, deal him 1 unavoidable damage.",
+        "powers": ["pulse_wave"]
+      }]
+    },
+    "bb039": {
+      "dial": [{
+      }, {
+      }, {
+      }, {
+      }, {
+      }, {
+        "starting_line": "orange"
+      }]
+    },
+    "bb040": {
+      "special_powers": [{
+      }, {
+        "powers": ["outwit"]
+      }]
+    },
+    "bb045": {
+      "special_powers": [{
+        "powers": ["earthbound_neutralized"]
+      }]
+    },
+    "bb046": {
+      "special_powers": [{
+      }, {
+        "powers": ["stealth"]
+      }, {
+        "powers": ["incapacitate", "smoke_cloud"]
+      }]
+    },
+    "bb048": {
+      "special_powers": [{
+        "powers": ["hypersonic_speed"]
+      }, {
+        "powers": ["telekinesis"]
+      }, {
+        "powers": ["ranged_combat_expert", "battle_fury", "support", "exploit_weakness", "enhancement", "probability_control", "shape_change", "close_combat_expert", "empower", "perplex", "outwit", "leadership"]
+      }]
+    },
+    "bb049": {
+      "special_powers": [{
+      }, {
+        "powers": ["hypersonic_speed"]
+      }, {
+      }, {
+        "powers": ["super_senses", "invulnerability"]
+      }, {
+        "powers": ["outwit", "enhancement"]
+      }]
+    },
+    "bb050": {
+      "special_powers": [{
+        "powers": ["barrier", "poison", "toughness"]
+      }]
+    },
+    "bb052": {
+      "special_powers": [{
+      }, {
+      }, {
+        "powers": ["energy_shield_deflection", "toughness"]
+      }]
+    },
+    "bb053": {
+      "special_powers": [{
+      }, {
+        "powers": ["poison", "smoke_cloud"]
+      }, {
+        "powers": ["toughness", "combat_reflexes"]
+      }, {
+        "powers": ["outwit"]
+      }]
+    },
+    "bb054": {
+      "special_powers": [{
+        "powers": ["charge", "leap_climb"]
+      }]
+    },
+    "bb055": {
+      "point_values": [280, 140],
+      "special_powers": [{
+      }, {
+        "powers": ["hypersonic_speed"]
+      }, {
+        "powers": ["energy_explosion"]
+      }],
+      "dial": [{
+      }, {
+      }, {
+      }, {
+      }, {
+      }, {
+      }, {
+        "starting_line": "red"
+      }]
+    },
+    "bb058": {
+      "special_powers": [{
+      }, {
+        "powers": ["flurry"]
+      }]
+    },
+    "bb100": {
+      "special_powers": [{
+      }, {
+        "powers": ["leap_climb"]
+      }, {
+      }, {
+        "powers": ["combat_reflexes", "willpower"]
+      }]
+    }
+  },
+  "deletions": [
+    "bb055a",
+    "bb055b"
+  ],
+  "additions": [{
+    "unit_id": "bbM001",
+    "set_id": "bb",
+    "collector_number": "M001",
+    "name": "Graveyard",
+    "type": "map",
+    "special_powers": [{
+      "name": "Open Graves",
+      "description": "Orange squares are hindering terrain for movement purposes and clear terrain for line of fire purposes. Any line of fire drawn to a character occupying an orange square is blocked."
+    }],
+    "map_url": "https://hcmaps.net/maps/bb/graveyard.json"
+  }]
+}

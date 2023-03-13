@@ -926,6 +926,21 @@ const SET_LIST = {
     "release_date": "2010-08-25",
     "universe": "dc"
   },
+  "jh": {
+    "name": "Jonah Hex",
+    "release_date": "2010-06-21",
+    "universe": "dc"
+  },
+  "bn": {
+    "name": "Blackest Night",
+    "release_date": "2010-06-09",
+    "universe": "dc"
+  },
+  "bb": {
+    "name": "Brave and the Bold",
+    "release_date": "2010-04-14",
+    "universe": "dc"
+  },
   "wk": {
     "name": "WizKids Standard Game Pieces",
     "release_date": "2002-05-01",
